@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dataset",
+      "@id": "#dataset",
+      "name": "Kauffmann List – Stolpersteine in Germany",
+      "alternateName": ["Lista Kauffmann", "Kauffmann-Liste", "Stolpersteine", "Stumbling Stones", "אבני נגף"],
+      "description": "Open, searchable map and dataset of every Stolperstein (memorial plaque for victims of National Socialism) in Germany, so families anywhere can find a plaque by name, surname or address and see its data and story. Motto: Cada placa, cada nombre, cada historia. Nunca olvidar.",
+      "inLanguage": ["es", "de", "en"],
+      "keywords": ["Stolpersteine", "Stumbling Stones", "Holocaust", "Shoah", "memorial", "Germany", "genealogy", "victims of National Socialism", "Gunter Demnig", "map"],
+      "creator": {"@type": "Person", "name": "Carlos Kauffmann"},
+      "spatialCoverage": {"@type": "Place", "name": "Germany"},
+      "temporalCoverage": "1933/1945",
+      "isAccessibleForFree": true,
+      "license": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "isBasedOn": [
+        {"@type": "Dataset", "name": "OpenStreetMap (memorial=stolperstein)", "url": "https://www.openstreetmap.org", "license": "https://opendatacommons.org/licenses/odbl/1-0/", "dateModified": "2026-11-04"},
+        {"@type": "Dataset", "name": "Wikidata", "url": "https://www.wikidata.org", "license": "https://creativecommons.org/publicdomain/zero/1.0/", "dateModified": "2026-11-07"}
+      ],
+      "dateModified": "2026-11-07",
+      "variableMeasured": [
+        {"@type": "PropertyValue", "name": "Stolpersteine in dataset", "value": 64576},
+        {"@type": "PropertyValue", "name": "with name", "value": 64401},
+        {"@type": "PropertyValue", "name": "with inscription", "value": 60943},
+        {"@type": "PropertyValue", "name": "with address", "value": 59319},
+        {"@type": "PropertyValue", "name": "with birth date", "value": 35468},
+        {"@type": "PropertyValue", "name": "with death date", "value": 16957},
+        {"@type": "PropertyValue", "name": "with Wikimedia Commons photo", "value": 50636},
+        {"@type": "PropertyValue", "name": "with Bundesarchiv Gedenkbuch ID", "value": 5880},
+        {"@type": "PropertyValue", "name": "with USHMM ID", "value": 1595},
+        {"@type": "PropertyValue", "name": "with Yad Vashem ID", "value": 378},
+        {"@type": "PropertyValue", "name": "Wikipedia biography shown (CC BY-SA, certain match)", "value": 4038},
+        {"@type": "PropertyValue", "name": "official or archive link only, no biography text", "value": 24451},
+        {"@type": "PropertyValue", "name": "no biography and no official or archive link", "value": 36087}
+      ],
+      "distribution": [
+        {"@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "../exports/stolpersteine_germany.geojson"},
+        {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "../exports/stolpersteine_germany.csv"},
+        {"@type": "DataDownload", "encodingFormat": "application/vnd.google-earth.kmz", "contentUrl": "../exports/stolpersteine_germany.kmz"}
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "#app",
+      "name": "Lista Kauffmann",
+      "applicationCategory": "ReferenceApplication",
+      "operatingSystem": "Any (web browser, installable PWA)",
+      "inLanguage": ["es", "de", "en"],
+      "isAccessibleForFree": true,
+      "offers": {"@type": "Offer", "price": 0, "priceCurrency": "EUR"},
+      "featureList": [
+        "Search by first name, surname or address with camera fly-to",
+        "3D golden column for every Stolperstein",
+        "1945 / today aerial comparison slider (1945 currently Bremerhaven only)",
+        "Highest-resolution official state orthophotos (10–20 cm) as today's view",
+        "'Recordar a todos' remembrance mode",
+        "Links to Bundesarchiv Gedenkbuch, Yad Vashem and USHMM records",
+        "Google Earth KML/KMZ, GeoJSON and CSV downloads"
+      ],
+      "mainEntity": {"@id": "#dataset"},
+      "creator": {"@type": "Person", "name": "Carlos Kauffmann"}
+    },
+    {
+      "@type": "Project",
+      "@id": "#project",
+      "name": "Kauffmann List",
+      "url": "https://roquena71-a11y.github.io/kauffmann-list/proyecto/",
+      "creativeWorkStatus": "In preparation",
+      "founder": {"@type": "Person", "name": "Carlos Kauffmann"},
+      "contactPoint": {"@type": "ContactPoint", "email": "listakauffmann@gmail.com"},
+      "description": "Goal: no stone and no victim left out. Status 2026-11-07, in preparation, not published: 64,576 stones mapped from open data; an estimated 40,000+ German stones are not yet in open data (Stiftung Spuren counts 116,000+ in 31 countries). No charitable status is claimed and no partnership is agreed. Biography texts shown only from Wikipedia CC BY-SA on a certain match (4,038); official pages and archive records are linked, not copied. Pending: public release."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://roquena71-a11y.github.io/kauffmann-list/proyecto/#webpage",
+      "url": "https://roquena71-a11y.github.io/kauffmann-list/proyecto/",
+      "name": "Kauffmann-Liste — für Institutionen",
+      "inLanguage": ["de", "en", "es"],
+      "isAccessibleForFree": true,
+      "creativeWorkStatus": "In preparation",
+      "about": {"@id": "#project"},
+      "description": "Draft page for institutions asked to collaborate. Not published. No partnership is agreed and no charitable status is claimed. States what the Kauffmann List is, the measured coverage on 7 November 2026, the principles, and what is asked, including how attribution would look."
+    }
+  ]
+}

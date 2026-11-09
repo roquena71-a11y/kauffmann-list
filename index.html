@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lista Kauffmann · Kauffmann-Liste · Kauffmann List</title>
+<meta name="description" content="Lista Kauffmann (Kauffmann-Liste, Kauffmann List): mapa libre de cada Stolperstein en Alemania. Busque un nombre, apellido o dirección. Jede Platte, jeder Name, jede Geschichte. Every plaque, every name, every story. Nunca olvidar.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://roquena71-a11y.github.io/kauffmann-list/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lista Kauffmann">
+<meta property="og:url" content="https://roquena71-a11y.github.io/kauffmann-list/">
+<meta property="og:title" content="Lista Kauffmann · Kauffmann-Liste · Kauffmann List">
+<meta property="og:description" content="Mapa libre de los Stolpersteine en Alemania: un nombre, un apellido o una dirección. Offene Karte der Stolpersteine in Deutschland. Free map of every Stolperstein in Germany. Cada placa, cada nombre, cada historia. Nunca olvidar.">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lista Kauffmann · Kauffmann-Liste · Kauffmann List">
+<meta name="twitter:description" content="Stolpersteine en Alemania · Stolpersteine in Deutschland · Stolpersteine in Germany. Cada placa, cada nombre, cada historia. Nunca olvidar.">
+<link rel="alternate" type="application/ld+json" href="kauffmann-list.jsonld" title="Schema.org">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#07111f">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 10 10%22%3E%3Crect width=%2210%22 height=%2210%22 fill=%22%23c6a15b%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style3d.css">
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var force = q.get('intro') === '1';
+    var skip = q.get('intro') === '0' || location.hash.indexOf('#s=') === 0 || q.get('vigil') || q.get('q');
+    var seen = false;
+    try { seen = localStorage.getItem('kauffmann.introSeen') === '1'; } catch (e) {}
+    if ((seen && !force) || skip) document.documentElement.classList.add('intro-skip');
+  })();
+</script>
+</head>
+<body class="dark">
+<header class="top">
+  <div class="brand">
+    <span class="plate" aria-hidden="true"></span>
+    <div>
+      <h1 data-i18n="title">Lista Kauffmann</h1>
+      <p class="sub" data-i18n="subtitle">Stolpersteine en Alemania · Un nombre, una vida.</p>
+    </div>
+  </div>
+  <div class="topright">
+    <button id="remember" class="remember" data-i18n="remember">Recordar a todos</button>
+    <nav class="lang" aria-label="Idioma / Sprache / Language">
+      <button data-lang="es">ES</button><button data-lang="de">DE</button><button data-lang="en">EN</button>
+    </nav>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="side" id="side">
+    <div class="search">
+      <label for="q" class="vh" data-i18n="searchLabel">Buscar</label>
+      <input id="q" type="search" autocomplete="off" spellcheck="false" data-i18n-ph="searchPh" placeholder="Nombre, apellido o dirección…">
+      <div class="filters">
+        <label for="city" class="vh" data-i18n="cityLabel">Lugar</label>
+        <input id="city" list="cities" autocomplete="off" data-i18n-ph="cityPh" placeholder="Filtrar por lugar (opcional)">
+        <datalist id="cities"></datalist>
+      </div>
+      <p id="status" class="status" aria-live="polite"></p>
+    </div>
+    <ol id="results" class="results"></ol>
+    <article id="detail" class="detail" hidden></article>
+  </aside>
+  <div class="mapwrap">
+    <div id="map" class="map" role="region" aria-label="Mapa 3D"></div>
+    <div id="mapHist" class="maphist" hidden></div>
+    <div id="aerialHud" class="aerial-hud" hidden>
+      <p id="hoyHint" class="hoy-hint"></p>
+      <div id="epochToggle" class="epoch-toggle" role="group" aria-label="1945 / Hoy"></div>
+    </div>
+    <div id="swipe" class="swipe" hidden>
+      <span class="swipe-tag" id="swipeTagL">1945</span>
+      <span class="swipe-tag swipe-tag-r" id="swipeTagR">Hoy</span>
+      <div class="swipe-line" id="swipeLine"></div>
+      <button type="button" id="swipeHandle" class="swipe-handle" aria-label="Comparar 1945 y hoy"></button>
+    </div>
+    <p id="imgCredit" class="imgcredit" hidden></p>
+    <div class="basemaps" role="group" aria-label="Mapa base">
+      <button data-base="night" data-i18n="baseNight">Noche</button>
+      <button data-base="day" data-i18n="baseDay">Día</button>
+      <button data-base="hoy" data-i18n="baseHoy">Hoy</button>
+      <button data-base="sat" data-i18n="baseSat" title="Sentinel-2, 2016, vista general">2016</button>
+      <button type="button" id="sourcesBtn" data-i18n="sourcesBtn">Fuentes</button>
+    </div>
+    <div id="vigil" class="vigil" hidden>
+      <p class="vigil-count" id="vigilCount"></p>
+      <p class="vigil-text" id="vigilText"></p>
+      <p class="vigil-place" id="vigilPlace"></p>
+      <p class="vigil-names" id="vigilNames" aria-live="off"></p>
+      <div class="vigil-actions">
+        <button id="vigilPause" data-i18n="pause">Pausar</button>
+        <button id="vigilExit" data-i18n="exit">Salir</button>
+      </div>
+    </div>
+    <div id="nogl" class="nogl" hidden></div>
+  </div>
+</main>
+
+<footer class="foot">
+  <p data-i18n-html="attribution3d"></p>
+  <p><a href="2d/" data-i18n="classic">Mapa clásico 2D</a> · <a href="proyecto/" data-i18n="project">Sobre el proyecto</a> · <a href="#" id="aboutLink" data-i18n="about">Acerca de los datos</a> · <button type="button" id="replayIntro" class="linkish" data-i18n="replay">Introducción</button></p>
+</footer>
+
+<dialog id="about" class="about">
+  <div id="aboutBody"></div>
+  <div class="actions">
+    <button type="button" id="dlGeo" data-i18n="dlGeo">Descargar GeoJSON</button>
+    <button type="button" id="dlKml" data-i18n="dlKml">Descargar KML</button>
+  </div>
+  <form method="dialog"><button data-i18n="close">Cerrar</button></form>
+</dialog>
+<dialog id="contribDlg" class="about"><p id="contribNote"></p><form method="dialog"><button data-i18n="close">Cerrar</button></form></dialog>
+<dialog id="sourcesDlg" class="about sources-dlg">
+  <div id="sourcesBody"></div>
+  <form method="dialog"><button type="submit" id="sourcesClose" data-i18n="close">Cerrar</button></form>
+</dialog>
+
+<div id="intro" class="intro" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+  <button type="button" id="introSkip" class="intro-skip-btn">Omitir</button>
+  <div class="intro-lower">
+    <p class="intro-kicker">Lista Kauffmann</p>
+    <h2 id="introTitle">Cada placa, cada nombre, cada historia.</h2>
+    <p id="introBody">Nunca olvidar.</p>
+    <div class="intro-nav">
+      <div class="intro-dots" id="introDots"></div>
+      <button type="button" id="introNext" class="intro-next">Continuar</button>
+    </div>
+  </div>
+</div>
+
+<!-- distribution contentUrl values are relative to web/ and point at ../exports/, the directory scripts/build.py writes. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dataset",
+      "@id": "#dataset",
+      "name": "Kauffmann List – Stolpersteine in Germany",
+      "alternateName": ["Lista Kauffmann", "Kauffmann-Liste", "Stolpersteine", "Stumbling Stones", "אבני נגף"],
+      "description": "Open, searchable map and dataset of every Stolperstein (memorial plaque for victims of National Socialism) in Germany, so families anywhere can find a plaque by name, surname or address and see its data and story. Motto: Cada placa, cada nombre, cada historia. Nunca olvidar.",
+      "inLanguage": ["es", "de", "en"],
+      "keywords": ["Stolpersteine", "Stumbling Stones", "Holocaust", "Shoah", "memorial", "Germany", "genealogy", "victims of National Socialism", "Gunter Demnig", "map"],
+      "creator": {"@type": "Person", "name": "Carlos Kauffmann"},
+      "spatialCoverage": {"@type": "Place", "name": "Germany"},
+      "temporalCoverage": "1933/1945",
+      "isAccessibleForFree": true,
+      "license": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "isBasedOn": [
+        {"@type": "Dataset", "name": "OpenStreetMap (memorial=stolperstein)", "url": "https://www.openstreetmap.org", "license": "https://opendatacommons.org/licenses/odbl/1-0/", "dateModified": "2026-11-04"},
+        {"@type": "Dataset", "name": "Wikidata", "url": "https://www.wikidata.org", "license": "https://creativecommons.org/publicdomain/zero/1.0/", "dateModified": "2026-11-07"}
+      ],
+      "dateModified": "2026-11-07",
+      "variableMeasured": [
+        {"@type": "PropertyValue", "name": "Stolpersteine in dataset", "value": 64576},
+        {"@type": "PropertyValue", "name": "with name", "value": 64401},
+        {"@type": "PropertyValue", "name": "with inscription", "value": 60943},
+        {"@type": "PropertyValue", "name": "with address", "value": 59319},
+        {"@type": "PropertyValue", "name": "with birth date", "value": 35468},
+        {"@type": "PropertyValue", "name": "with death date", "value": 16957},
+        {"@type": "PropertyValue", "name": "with Wikimedia Commons photo", "value": 50636},
+        {"@type": "PropertyValue", "name": "with Bundesarchiv Gedenkbuch ID", "value": 5880},
+        {"@type": "PropertyValue", "name": "with USHMM ID", "value": 1595},
+        {"@type": "PropertyValue", "name": "with Yad Vashem ID", "value": 378},
+        {"@type": "PropertyValue", "name": "Wikipedia biography shown (CC BY-SA, certain match)", "value": 4038},
+        {"@type": "PropertyValue", "name": "official or archive link only, no biography text", "value": 24451},
+        {"@type": "PropertyValue", "name": "no biography and no official or archive link", "value": 36087}
+      ],
+      "distribution": [
+        {"@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "../exports/stolpersteine_germany.geojson"},
+        {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "../exports/stolpersteine_germany.csv"},
+        {"@type": "DataDownload", "encodingFormat": "application/vnd.google-earth.kmz", "contentUrl": "../exports/stolpersteine_germany.kmz"}
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "#app",
+      "name": "Lista Kauffmann",
+      "applicationCategory": "ReferenceApplication",
+      "operatingSystem": "Any (web browser, installable PWA)",
+      "inLanguage": ["es", "de", "en"],
+      "isAccessibleForFree": true,
+      "offers": {"@type": "Offer", "price": 0, "priceCurrency": "EUR"},
+      "featureList": [
+        "Search by first name, surname or address with camera fly-to",
+        "3D golden column for every Stolperstein",
+        "1945 / today aerial comparison slider (1945 currently Bremerhaven only)",
+        "Highest-resolution official state orthophotos (10–20 cm) as today's view",
+        "'Recordar a todos' remembrance mode",
+        "Links to Bundesarchiv Gedenkbuch, Yad Vashem and USHMM records",
+        "Google Earth KML/KMZ, GeoJSON and CSV downloads"
+      ],
+      "mainEntity": {"@id": "#dataset"},
+      "creator": {"@type": "Person", "name": "Carlos Kauffmann"}
+    },
+    {
+      "@type": "Project",
+      "@id": "#project",
+      "name": "Kauffmann List",
+      "url": "https://roquena71-a11y.github.io/kauffmann-list/proyecto/",
+      "creativeWorkStatus": "In preparation",
+      "founder": {"@type": "Person", "name": "Carlos Kauffmann"},
+      "contactPoint": {"@type": "ContactPoint", "email": "listakauffmann@gmail.com"},
+      "description": "Goal: no stone and no victim left out. Status 2026-11-07, in preparation, not published: 64,576 stones mapped from open data; an estimated 40,000+ German stones are not yet in open data (Stiftung Spuren counts 116,000+ in 31 countries). No charitable status is claimed and no partnership is agreed. Biography texts shown only from Wikipedia CC BY-SA on a certain match (4,038); official pages and archive records are linked, not copied. Pending: public release."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://roquena71-a11y.github.io/kauffmann-list/proyecto/#webpage",
+      "url": "https://roquena71-a11y.github.io/kauffmann-list/proyecto/",
+      "name": "Kauffmann-Liste — für Institutionen",
+      "inLanguage": ["de", "en", "es"],
+      "isAccessibleForFree": true,
+      "creativeWorkStatus": "In preparation",
+      "about": {"@id": "#project"},
+      "description": "Draft page for institutions asked to collaborate. Not published. No partnership is agreed and no charitable status is claimed. States what the Kauffmann List is, the measured coverage on 7 November 2026, the principles, and what is asked, including how attribution would look."
+    }
+  ]
+}
+</script>
+<script src="vendor/maplibre/maplibre-gl.js"></script>
+<script src="imagery.js"></script>
+<script src="app3d.js"></script>
+<script>if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");</script>
+</body>
+</html>

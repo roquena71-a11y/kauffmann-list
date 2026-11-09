@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roquena71-a11y.github.io/kauffmann-list/sitemap.xml
