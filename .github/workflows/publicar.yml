@@ -1,0 +1,73 @@
+# Genera los datos (pipeline/) y publica el sitio completo en GitHub Pages.
+# Los datos generados (api/, data/search/, llms.txt, .well-known/) NO se guardan en el repo:
+# se crean aquí en cada publicación. Requiere: Settings → Pages → Source = "GitHub Actions".
+name: Publicar sitio y datos
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 3 * * 1"   # cada lunes 03:17 UTC: refresca Wikidata
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Semana actual (clave de caché)
+        id: week
+        run: echo "w=$(date -u +%G-%V)" >> "$GITHUB_OUTPUT"
+
+      # Caché de respuestas de Wikidata: dura una semana, así un push no repite 90 min de consultas.
+      - uses: actions/cache@v4
+        with:
+          path: pipeline/cache
+          key: pipeline-cache-${{ steps.week.outputs.w }}
+
+      - name: Tests
+        run: python3 -m unittest discover -s pipeline/tests -t .
+
+      - name: Generar datos
+        # --strict: si una fuente falla no se publica nada y sigue en línea la versión anterior.
+        run: python3 -m pipeline build --strict --sources stolpersteine_de,wikidata_holocaust_victims
+
+      - name: Validar
+        run: python3 -m pipeline validate
+
+      - name: Montar el sitio
+        run: |
+          mkdir _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude '_site' \
+                   --exclude 'pipeline' --exclude 'docs' --exclude '__pycache__' ./ _site/
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

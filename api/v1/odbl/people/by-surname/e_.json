@@ -1,6 +1,0 @@
-{"count":1,
-"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
-"people":[
-{"birth_date":"1911","fate":"murdered","fate_basis":"inscription_text","field_sources":{"birth_date":["stolpersteine_de"],"fate":["stolpersteine_de"],"name":["stolpersteine_de"]},"id":"st-Q121864169","identifiers":{},"memorials":[{"address":"Friedrich-Wilhelm-Weber-Straße 30, Gelände der LWL-Klinik Münster, Münster","country":"DE","image":"https://commons.wikimedia.org/wiki/File:StolpersteinTheodor_E.jpg","inscription":"﻿HIER LEBTE THEODOR E. JG. 1911 EINGEWIESEN 1943 HEILANSTALT HADAMAR IN HESSEN ERMORDET 1943","lat":51.976323,"locality":"Gelände der LWL-Klinik Münster","lon":7.618471,"memorial_id":"Q121864169","source_id":"stolpersteine_de","type":"stolperstein"}],"name":"Theodor E.","sources":[{"attribution":"Wikidata (CC0 1.0)","license":"CC0-1.0","record_id":"Q121864169","retrieved":"2026-11-04","source_id":"stolpersteine_de","url":"https://www.wikidata.org/wiki/Q121864169"}]}
-],
-"prefix":"e_"}

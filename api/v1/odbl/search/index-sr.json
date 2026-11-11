@@ -1,9 +1,0 @@
-{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
-"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
-"prefix":"sr",
-"rows":[
-["st-n12056262296","Bertha Bluma Sroka",1889,"Berlin",52.5284,13.40758,"sr"],
-["st-n6504343533","Ester Sroka",1900,"Hamburg",53.45507,9.98722,"sr"],
-["st-n12056262295","Ire Sroka",1889,"Berlin",52.5284,13.40759,"sr"],
-["st-n6504343531","Moszek Sroka",1889,"Hamburg",53.45507,9.98722,"sr"]
-]}

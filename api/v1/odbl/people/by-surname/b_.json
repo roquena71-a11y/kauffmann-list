@@ -1,6 +1,0 @@
-{"count":1,
-"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
-"people":[
-{"birth_date":"1898","fate":"unknown","field_sources":{"birth_date":["stolpersteine_de"],"fate":["stolpersteine_de"],"name":["stolpersteine_de"]},"id":"st-n14189074479","identifiers":{"osm":["n14189074479"]},"memorials":[{"country":"DE","inscription":"HIER LEBTE CHARLOTTE B. JG. 1898 VERLEGT 24.5.1940 T4-AKTION","lat":52.8452161,"lon":13.828451,"memorial_id":"n14189074479","source_id":"stolpersteine_de","type":"stolperstein"}],"name":"Charlotte B.","sources":[{"attribution":"© OpenStreetMap contributors (ODbL 1.0) + Wikidata (CC0 1.0)","license":"ODbL-1.0","record_id":"n14189074479","retrieved":"2026-11-04","source_id":"stolpersteine_de","url":"https://www.openstreetmap.org/node/14189074479"}]}
-],
-"prefix":"b_"}

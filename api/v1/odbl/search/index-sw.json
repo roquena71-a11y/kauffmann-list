@@ -1,9 +1,0 @@
-{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
-"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
-"prefix":"sw",
-"rows":[
-["st-Q135296344","Michail Swiridenko",1900,"Frankfurt am Main",50.08377,8.6332,"sw"],
-["st-n13987539810","Wanda Switaiski",1920,"Bochum",51.47276,7.21819,"sw"],
-["st-Q135296345","Zdenek Switek",1924,"Frankfurt am Main",50.08377,8.6332,"sw"],
-["wd-Q132143911","Schmul Franz Switytzki",1882,"Berlin",52.53407,13.47564,"sw"]
-]}

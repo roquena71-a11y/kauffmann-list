@@ -1,6 +1,0 @@
-{"count":1,
-"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
-"people":[
-{"birth_date":"1886","fate":"unknown","field_sources":{"birth_date":["stolpersteine_de"],"fate":["stolpersteine_de"],"name":["stolpersteine_de"]},"id":"st-n14189074476","identifiers":{"osm":["n14189074476"]},"memorials":[{"country":"DE","inscription":"HIER LEBTE GUSTAV K. JG. 1886 VERLEGT 7.1.1940 T4-AKTION","lat":52.8452171,"lon":13.8284462,"memorial_id":"n14189074476","source_id":"stolpersteine_de","type":"stolperstein"}],"name":"Gustav K.","sources":[{"attribution":"© OpenStreetMap contributors (ODbL 1.0) + Wikidata (CC0 1.0)","license":"ODbL-1.0","record_id":"n14189074476","retrieved":"2026-11-04","source_id":"stolpersteine_de","url":"https://www.openstreetmap.org/node/14189074476"}]}
-],
-"prefix":"k_"}

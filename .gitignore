@@ -4,3 +4,10 @@ pipeline/inbox/
 pipeline/reports/
 __pycache__/
 *.pyc
+
+# Datos generados por el pipeline: los crea GitHub Actions al publicar (.github/workflows/publicar.yml)
+/api/
+/data/search/
+/llms.txt
+/.well-known/
+/_site/

@@ -1,9 +1,0 @@
-{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
-"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
-"prefix":"sw",
-"rows":[
-["Q135296344","Michail Swiridenko","Goldsteinstraße 145, 60528 Frankfurt am Main","Frankfurt am Main",50.08377,8.633204,"1900","st-Q135296344"],
-["n13987539810","Wanda Switaiski","Jakobstraße GGÜ 9, 44789 Bochum","Bochum",51.472762,7.218187,"1920","st-n13987539810"],
-["Q135296345","Zdenek Switek","Goldsteinstraße 145, 60528 Frankfurt am Main","Frankfurt am Main",50.08377,8.633204,"1924","st-Q135296345"],
-["n13299542759","Schmul Franz Switytzki","Weißenseer Weg 32, 13055 Berlin","Berlin",52.534074,13.475639,"1882","wd-Q132143911"]
-]}
