@@ -102,3 +102,7 @@ body.dark .src-tag{color:#e0bc62}
 .help{font-size:.95rem;line-height:1.45;margin:.4rem 0 1rem}
 .story-wait{color:#8a8478}
 [hidden]{display:none!important}
+
+/* Personas de Wikidata en la lista de resultados (people.js) */
+.results .wd-sep{border-bottom:0}
+.results .wd-sep .section-t{padding:.8rem 1rem 0;margin:.6rem 0 0}
