@@ -9,7 +9,7 @@
 
   Object.assign(I18N.es, {
     wdPeople:'Personas registradas en Wikidata (sin placa en este mapa)', wdMore:'Busque por apellido para ver más personas de Wikidata.',
-    wdData:'Datos de Wikidata', wdNote:'Datos de Wikidata (CC0). No hay placa de esta persona en el mapa.',
+    wdData:'Datos de Wikidata', wdNote:'Datos de Wikidata (CC0). No hay placa de esta persona en el mapa.', wdStone:'Datos de Wikidata (CC0). Esta persona tiene placa en el mapa:',
     fate:'Destino', murdered:'Asesinado/a', suicide:'Suicidio durante la persecución', records:'Fichas en archivos y memoriales',
     hcz:'holocaust.cz — Base de víctimas (Chequia)', jm:'Joods Monument (Países Bajos)', wikipedia:'Wikipedia',
     fix:'Corregir o pedir retirada', fixNote:'Abre un formulario en GitHub (necesita cuenta). Indique qué dato es erróneo y la fuente.',
@@ -17,7 +17,7 @@
   });
   Object.assign(I18N.de, {
     wdPeople:'In Wikidata erfasste Personen (ohne Stein auf dieser Karte)', wdMore:'Suchen Sie nach dem Nachnamen, um weitere Personen aus Wikidata zu sehen.',
-    wdData:'Daten aus Wikidata', wdNote:'Daten aus Wikidata (CC0). Für diese Person gibt es keinen Stein auf der Karte.',
+    wdData:'Daten aus Wikidata', wdNote:'Daten aus Wikidata (CC0). Für diese Person gibt es keinen Stein auf der Karte.', wdStone:'Daten aus Wikidata (CC0). Für diese Person gibt es einen Stein auf der Karte:',
     fate:'Schicksal', murdered:'Ermordet', suicide:'Suizid während der Verfolgung', records:'Einträge in Archiven und Gedenkstätten',
     hcz:'holocaust.cz — Opferdatenbank (Tschechien)', jm:'Joods Monument (Niederlande)', wikipedia:'Wikipedia',
     fix:'Korrektur oder Entfernung beantragen', fixNote:'Öffnet ein Formular auf GitHub (Konto nötig). Bitte Fehler und Quelle angeben.',
@@ -25,7 +25,7 @@
   });
   Object.assign(I18N.en, {
     wdPeople:'People recorded in Wikidata (no stone on this map)', wdMore:'Search by surname to see more people from Wikidata.',
-    wdData:'Data from Wikidata', wdNote:'Data from Wikidata (CC0). There is no stone for this person on the map.',
+    wdData:'Data from Wikidata', wdNote:'Data from Wikidata (CC0). There is no stone for this person on the map.', wdStone:'Data from Wikidata (CC0). This person has a stone on the map:',
     fate:'Fate', murdered:'Murdered', suicide:'Suicide during persecution', records:'Records in archives and memorials',
     hcz:'holocaust.cz — Victims database (Czechia)', jm:'Joods Monument (Netherlands)', wikipedia:'Wikipedia',
     fix:'Report a correction or request removal', fixNote:'Opens a form on GitHub (account needed). Please state the error and the source.',
@@ -145,9 +145,15 @@
     const {facts, recs} = personBlocks(p);
     const qid = p.identifiers && p.identifiers.wikidata;
     const d = $('#detail');
+    // Placas enlazadas a esta persona por su Qid (s.p); si hay, el aviso lo dice y enlaza a ellas.
+    const qn = qid ? String(qid).replace(/^wd-/, '') : (pid.startsWith('wd-') ? pid.slice(3) : null);
+    const linked = qn ? [...byId.values()].filter(s => s.p === qn) : [];
+    const note = linked.length
+      ? `${esc(T('wdStone'))} ${linked.map(s => `<a href="#" data-stone="${esc(s.id)}">${esc([s.a, s.a && s.a.includes(cityOf(s)) ? "" : cityOf(s)].filter(Boolean).join(", ") || s.n)}</a>`).join(', ')}`
+      : esc(T('wdNote'));
     d.innerHTML = `<button class="back" id="back">${T('back')}</button>
       <h2>${esc(p.name||'—')}</h2>
-      <p class="note">${esc(T('wdNote'))}</p>
+      <p class="note">${note}</p>
       <dl class="facts">${facts}</dl>
       <div class="actions"><button id="share">${T('shareP')}</button></div>
       ${recs ? `<div class="section-t">${T('records')}</div><ul class="links">${recs}</ul>` : ''}
@@ -157,6 +163,7 @@
     $('#results').hidden = true; d.hidden = false; d.scrollTop = 0;
     $('#back').onclick = () => closeDetail(true);
     $('#share').onclick = e => { navigator.clipboard?.writeText(location.href); e.target.textContent = T('copied'); };
+    d.querySelectorAll('a[data-stone]').forEach(a => a.onclick = ev => { ev.preventDefault(); openStone(a.dataset.stone, false); });
     return true;
   }
 
