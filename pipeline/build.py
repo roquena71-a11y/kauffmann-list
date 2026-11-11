@@ -11,7 +11,7 @@ from .config import load_families, load_sources, load_suppressed
 from .http import HttpError, OfflineCacheMiss
 from .jsonschema_lite import Validator
 from .merge import merge_family, possible_duplicates
-from .policy import apply_person_policy, license_gate, suppress
+from .policy import apply_person_policy, license_gate, quality_flags, suppress
 from .util import (PIPELINE_DIR, REPO_ROOT, clean_str, date_year, fold, load_json, person_shard, slugify,
                    surname_key, write_json)
 
@@ -255,6 +255,12 @@ def write_family(w, fam_id, fam, persons, sources_used, generated, quality, shar
     w.json(base + "quality/blocked-merges.json",
            {"meta": dmeta, "rule": "Registros que comparten un identificador pero tienen Qid distinto o año de nacimiento incompatible. NO se han fusionado.",
             "items": quality["blocked_merges"]}, ("items",))
+    flagged = [[p["id"], p.get("name"), p.get("birth_date"), p.get("death_date"), p["quality_flags"]]
+               for p in persons if p.get("quality_flags")]
+    w.json(base + "quality/date-flags.json",
+           {"meta": dmeta, "rule": "Fechas dudosas marcadas y NO corregidas: nacimiento < 1800 o posterior al año de los datos, "
+                                   "muerte < 1800 o posterior, nacimiento posterior a la muerte. Verificar en la fuente.",
+            "columns": ["id", "name", "birth_date", "death_date", "flags"], "rows": flagged}, ("rows",))
     stats = family_stats(persons)
     w.json(base + "stats.json", {"meta": dmeta, "stats": stats})
     findex = {
@@ -309,7 +315,16 @@ def family_stats(persons):
             "memorials_by_country": dict(sorted(countries.items())),
             "with_birth_date": sum(1 for p in persons if p.get("birth_date")),
             "with_death_date": sum(1 for p in persons if p.get("death_date")),
-            "restricted_survivor_minimization": sum(1 for p in persons if "survivor_minimization" in (p.get("restrictions") or []))}
+            "restricted_survivor_minimization": sum(1 for p in persons if "survivor_minimization" in (p.get("restrictions") or [])),
+            "quality_flags": dict(sorted(_count_flags(persons).items()))}
+
+
+def _count_flags(persons):
+    c = {}
+    for p in persons:
+        for f in p.get("quality_flags") or []:
+            c[f] = c.get(f, 0) + 1
+    return c
 
 
 def write_plaques(root, plaques, published_ids, generated, fam):
@@ -339,7 +354,7 @@ def write_plaques(root, plaques, published_ids, generated, fam):
 
 def run(source_ids=None, limit=None, offline=False, out=None, site_root=None, fixtures=None,
         strict=False, sources=None, suppressed=None, generated=None, shard_chars=2, write_site=True,
-        sources_dir=None):
+        sources_dir=None, reports_dir=None):
     out = out or os.path.join(REPO_ROOT, "api", "v1")
     all_sources = sources if sources is not None else load_sources(sources_dir)
     families = load_families(sources=all_sources)
@@ -400,6 +415,7 @@ def run(source_ids=None, limit=None, offline=False, out=None, site_root=None, fi
         fam_policy = {}
         for p in persons:
             pls = p.pop("_plaques", None)
+            quality_flags(p, ref_year)
             q = apply_person_policy(p, ref_year, fam_policy)
             if q is not None:
                 published.append(q)
@@ -445,7 +461,7 @@ def run(source_ids=None, limit=None, offline=False, out=None, site_root=None, fi
                                families["odbl"])
             site_files.update({"data/search/" + k: v for k, v in pf.items()})
     # informes internos (no publicados; pueden mencionar ids retenidos)
-    rep_dir = os.path.join(PIPELINE_DIR, "reports")
+    rep_dir = reports_dir or os.path.join(PIPELINE_DIR, "reports")
     os.makedirs(rep_dir, exist_ok=True)
     write_json(os.path.join(rep_dir, "license_gate.json"), {"generated": generated, "withheld_by_license": gate_report.get("withheld_by_license", {})})
     write_json(os.path.join(rep_dir, "build.json"), {"generated": generated, "sources": report["sources"],

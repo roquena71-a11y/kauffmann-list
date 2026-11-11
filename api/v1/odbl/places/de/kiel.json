@@ -1,5 +1,5 @@
 {"columns":["id","name","birth_year","role","detail","lat","lon"],
-"count":263,
+"count":262,
 "country":"DE",
 "label":"Kiel",
 "meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
@@ -265,7 +265,6 @@
 ["st-n2648230973","Willibald K. Cohn",1875,"memorial","Pickertstraße 2, Kiel",54.31298,10.15292],
 ["st-Q132744335","Willy Verdieck",1883,"memorial","Langenbeckstraße 45, Kiel",54.32283,10.10906],
 ["st-Q132472201","Wolf Abraham Grünbaum",1879,"memorial","Damperhofstraße 21, Kiel",54.32509,10.12455],
-["st-n5725476929","Wolf Hirsch",1921,"memorial","Faulstraße, Kiel",54.32434,10.13785],
 ["st-Q132795158","Wolf Sandbank",1926,"memorial","Ringstraße 36, Kiel",54.31611,10.12632],
 ["st-n5733236107","Wolf Willy Hirsch",1898,"memorial","Faulstraße, Kiel",54.32436,10.13788],
 ["st-Q132710497","Zita Feldmann",1938,"memorial","Jungmannstraße 70a, Kiel",54.33251,10.12862]

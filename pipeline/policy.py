@@ -42,6 +42,14 @@ def record_keys(r):
         keys.add("wd-" + q)
     for k in r.get("alternate_ids") or []:
         keys.add(k)
+    # Ids externos ("gedenkbuch:851018", "yad_vashem:123"…) e ids de memorial (nodo OSM o Qid de la placa),
+    # para poder retirar aunque cambie el id de persona.
+    for scheme, v in (r.get("identifiers") or {}).items():
+        for x in ([v] if isinstance(v, str) else (v or [])):
+            keys.add("%s:%s" % (scheme, x))
+    for m in r.get("memorials") or []:
+        if m.get("memorial_id"):
+            keys.add(m["memorial_id"])
     return keys
 
 
@@ -97,3 +105,24 @@ def apply_person_policy(p, ref_year, report):
         report["survivor_minimized"] = report.get("survivor_minimized", 0) + 1
         report["survivor_links_removed"] = report.get("survivor_links_removed", 0) + before - len(p["links"])
     return p
+
+
+def quality_flags(p, ref_year):
+    """Marca (sin corregir) fechas imposibles o dudosas. Devuelve la lista de flags."""
+    flags = []
+    by, dy = date_year(p.get("birth_date")), date_year(p.get("death_date"))
+    if by is not None:
+        if by < 1800:
+            flags.append("birth_before_1800")
+        if by > ref_year:
+            flags.append("birth_after_data_year")
+    if dy is not None:
+        if dy < 1800:
+            flags.append("death_before_1800")
+        if dy > ref_year:
+            flags.append("death_after_data_year")
+    if by is not None and dy is not None and by > dy:
+        flags.append("birth_after_death")
+    if flags:
+        p["quality_flags"] = flags
+    return flags

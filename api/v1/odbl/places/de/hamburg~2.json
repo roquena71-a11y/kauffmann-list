@@ -1,12 +1,11 @@
 {"columns":["id","name","birth_year","role","detail","lat","lon"],
-"count":7246,
+"count":7245,
 "country":"DE",
 "label":"Hamburg",
 "meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
 "page":2,
 "pages":2,
 "rows":[
-["wd-Q132731364","Jenny Fränkel",1879,"memorial","Gneisenaustraße, Hamburg",53.57729,9.96987],
 ["st-Q120669820","Jenny Freundlich",1904,"memorial","Lange Reihe 117, 20099 Hamburg",53.56008,10.01444],
 ["st-n687356486","Jenny Friedemann",1868,"memorial","Kurzer Kamp 6, Hamburg",53.63713,10.03023],
 ["wd-Q104651960","Jenny Friedemann",1868,"memorial","Kurzer Kamp 6",53.63713,10.03023],

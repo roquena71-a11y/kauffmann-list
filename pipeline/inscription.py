@@ -13,46 +13,72 @@ SUICIDE = re.compile(_W + r"(flucht in den tod|freitod|suizid|selbstmord|nahm si
 MURDERED = re.compile(_W + r"(ermordet|hingerichtet|erschossen|erhängt|erhaengt|getötet|getoetet|totgeschlagen|vergast|umgebracht|euthanasie)" + _E)
 DIED = re.compile(_W + r"(tot|gestorben|starb|umgekommen|verstorben|für tot erklärt|fuer tot erklaert|todesmarsch|tod)" + _E)
 MISSING = re.compile(_W + r"(verschollen|schicksal unbekannt)" + _E)
-SURVIVED = re.compile(_W + r"(überlebt|ueberlebt|uberlebt|befreit|entkam|entkommen)" + _E)
-FLED = re.compile(_W + r"(flucht|geflohen|geflüchtet|gefluechtet|flüchtete|fluechtete|emigriert|ausgewandert|entkam|entkommen)" + _E)
+# Supervivencia: se reconoce también como PREFIJO de palabra (überlebte, befreiten, versteckte, Fluchtweg…).
+SURVIVAL_PREFIX = re.compile(_W + r"(überlebt|ueberlebt|uberlebt|gerettet|befreit|entkam|entkommen|versteckt)")
+FLIGHT_PREFIX = re.compile(_W + r"(flucht|flücht|fluecht|geflohen|geflüchtet|gefluechtet|emigriert|ausgewandert)")
+FLED = FLIGHT_PREFIX
 DEPORTED = re.compile(_W + r"(deportiert|abgeschoben|ausgewiesen|polenaktion)" + _E)
 IMPRISONED = re.compile(_W + r"(verhaftet|inhaftiert|zuchthaus|gefängnis|gefaengnis|kz|schutzhaft|lager)" + _E)
-NEGATED_SURVIVAL = re.compile(r"(nicht|nur (eine|einer|einer?s?)|keine?r?)\s+(überlebt|ueberlebt|uberlebt)")
+NEGATED_SURVIVAL = re.compile(r"(nicht|nur (eine|einer|eines)|keine?r?)\s+(überlebt|ueberlebt|uberlebt)")
+# Muerte "débil" (tot, Tod, Todesmarsch, gestorben…) acompañada de fecha explícita: "tot 1942", "gestorben 3.4.1944".
+DATED_DEATH = re.compile(_W + r"(tot|gestorben|starb|umgekommen|verstorben|für tot erklärt|fuer tot erklaert)" + _E
+                         + r"[^|;]{0,40}?\b(\d{1,2}\.\s?\d{1,2}\.\s?)?(1[89]\d\d)\b")
 
-# Marcadores que la política de datos trata como "posible superviviente" (docs/legal: regla 5).
-SURVIVOR_MARKERS = re.compile(_W + r"(überlebt|ueberlebt|uberlebt|flucht|flüchtete|fluechtete|geflohen|geflüchtet|befreit|entkam|entkommen)" + _E)
+ATTEMPT = re.compile(r"versucht\w*[\s/,.]+(?:die\s+|eine\s+)?(?:flucht in den tod|freitod|suizid|selbstmord)|(?:suizid|selbstmord)versuch\w*")
 
 DEATH_FATES = {"murdered", "died_in_persecution", "suicide"}
 
 
-def fate_from_text(text):
-    """Devuelve (fate, basis) a partir de palabras clave de la inscripción. Orden conservador."""
+def _clean(text):
     t = (text or "").lower()
-    if not t.strip():
+    # Un intento ("versuchte Flucht in den Tod", "Suizidversuch") no es suicidio consumado.
+    t = ATTEMPT.sub(" ", t)
+    # "Flucht in den Tod" es suicidio: no es marca de huida ni de supervivencia.
+    return t, t.replace("flucht in den tod", " ")
+
+
+def has_survival_word(text):
+    _, t = _clean(text)
+    return bool(SURVIVAL_PREFIX.search(t)) and not NEGATED_SURVIVAL.search(t)
+
+
+def has_survivor_marker(text):
+    """Marca de posible superviviente (docs/legal regla 5): ÜBERLEBT/FLUCHT/BEFREIT/ENTKAM y variantes."""
+    _, t = _clean(text)
+    return bool(SURVIVAL_PREFIX.search(t) and not NEGATED_SURVIVAL.search(t)) or bool(FLIGHT_PREFIX.search(t))
+
+
+def fate_from_text(text):
+    """Devuelve (fate, basis) a partir de palabras escritas en la inscripción. Orden conservador.
+
+    - Asesinato explícito (ermordet, hingerichtet, erschossen…) prevalece siempre.
+    - Si hay marca de supervivencia/huida, las palabras de muerte débiles (tot, Tod, Todesmarsch, gestorben…)
+      solo cuentan si llevan fecha explícita; si no, survived (überlebt/befreit/gerettet/entkam/versteckt) o fled.
+    """
+    raw, t = _clean(text)
+    if not raw.strip():
         return "unknown", None
-    if SUICIDE.search(t):
+    if SUICIDE.search(raw):
         return "suicide", "inscription_text"
     if MURDERED.search(t):
         return "murdered", "inscription_text"
-    t_no_flight_death = t.replace("flucht in den tod", "")
-    if DIED.search(t_no_flight_death):
+    survival = has_survival_word(t)
+    flight = bool(FLIGHT_PREFIX.search(t))
+    if survival or flight:
+        if DATED_DEATH.search(t):
+            return "died_in_persecution", "inscription_text"
+        if MISSING.search(t):
+            return "missing", "inscription_text"
+        return ("survived" if survival else "fled"), "inscription_text"
+    if DIED.search(t):
         return "died_in_persecution", "inscription_text"
     if MISSING.search(t):
         return "missing", "inscription_text"
-    if SURVIVED.search(t) and not NEGATED_SURVIVAL.search(t):
-        return "survived", "inscription_text"
-    if FLED.search(t_no_flight_death):
-        return "fled", "inscription_text"
     if DEPORTED.search(t):
         return "deported", "inscription_text"
     if IMPRISONED.search(t):
         return "imprisoned", "inscription_text"
     return "unknown", None
-
-
-def has_survivor_marker(text):
-    t = (text or "").lower().replace("flucht in den tod", "")
-    return bool(SURVIVOR_MARKERS.search(t))
 
 
 _BIRTHNAME = re.compile(r"\b(?:geb\.|geborene?|geb)\s*([A-ZÄÖÜa-zäöüß][\wÄÖÜäöüß'\-]+)", re.I)

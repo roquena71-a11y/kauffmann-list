@@ -44,6 +44,11 @@ repetido no cambia ningún byte y los diffs de git muestran solo registros cambi
    `python3 -m pipeline build --sources wikidata_holocaust_victims --limit 40 --out /tmp/kl-wd --no-site`
 5. Build de todas las fuentes activadas (`enabled: true`): `python3 -m pipeline build`
 6. Revisar informes internos (no publicados): `pipeline/reports/build.json` y `pipeline/reports/license_gate.json`
+   (los tests escriben sus informes en un directorio temporal; después de `python3 -m unittest` no hace falta nada).
+
+**Build completo con Wikidata (pendiente de decisión; ~130.000 personas en `cc0/`, unos 30–60 min la primera vez,
+luego desde caché):**
+`python3 -m pipeline build --sources stolpersteine_de,wikidata_holocaust_victims && python3 -m pipeline validate`
 
 Opciones: `--limit N` (registros por fuente), `--offline` (solo caché `pipeline/cache/`), `--out DIR`, `--no-site`
 (no escribe `llms.txt`, `.well-known/` ni `data/search/`), `--fixture fuente=ruta` (archivo de prueba en vez de
@@ -63,6 +68,11 @@ detalle se pide en lotes de 150 Qids con `VALUES`.
 |---|---|---|---|---|---|
 | `stolpersteine_de` | 1 | sí | sí | `stones` | odbl |
 | `wikidata_holocaust_victims` | 1 | sí (red) | sí | `wikidata_sparql` | cc0 |
+
+`wikidata_holocaust_victims` selecciona personas con id en holocaust.cz, Gedenkbuch, USHMM, Yad Vashem, Arolsen o
+Joods Monument. **Tener uno de esos ids no implica haber muerto** (USHMM incluye supervivientes): `fate` solo se marca
+con P1196 y, sin fecha de muerte, se aplica el filtro de posibles vivos. Mapping the Lives (P9805, censo de 1939) no se
+usa porque no es una lista de víctimas.
 | `osm_stolpersteine_europe` | 1 | no (Overpass pesado) | sí | `overpass` | odbl |
 | `yadvashem`, `arolsen`, `ushmm`, `bundesarchiv_gedenkbuch` | 2 | no | **no** | `generic_tabular` | partners/<fuente> |
 
@@ -107,17 +117,37 @@ La validación de configuración impide errores de licencia: una fuente de fase 
 4. **Supervivientes**: placa con ÜBERLEBT/FLUCHT/BEFREIT/ENTKAM (y variantes; "Flucht in den Tod" no cuenta) y
    nacimiento ≥ 1916 o desconocido → sin enlaces a fichas ni ids de registros (`restrictions: ["survivor_minimization"]`).
 5. **Sin terceros**: solo se publica lo que dice la placa o la fuente estructurada; ningún texto biográfico.
-6. **Nunca inferir**: `given_name`/`family_name` solo si la fuente los da; el apellido usado para particionar es una
+6. **Calidad de fechas**: nacimiento < 1800 o posterior al año de los datos, muerte < 1800 o posterior, o nacimiento
+   posterior a la muerte → el dato NO se corrige; se marca en `quality_flags` de la ficha, se cuenta en `stats.json` y
+   se lista en `<familia>/quality/date-flags.json`.
+7. **Supervivencia frente a muerte** (`inscription.py`): las marcas de supervivencia se reconocen como prefijo de
+   palabra (überlebt/überlebte/ueberlebte, gerettet, befreit, entkam/entkommen, versteckt; huida: Flucht…, geflohen,
+   emigriert). Con marca de supervivencia/huida, las palabras de muerte "débiles" (tot, Tod, Todesmarsch, gestorben,
+   starb, umgekommen…) solo cuentan si van con fecha ("tot 28.2.1945"); si no → `survived` (o `fled` si solo hay
+   huida). Excepción deliberada: un asesinato explícito (ermordet, hingerichtet, erschossen, vergast…) cuenta aunque no
+   lleve fecha ("FLUCHT 1939 HOLLAND … AUSCHWITZ ERMORDET"), porque convertir en superviviente a una persona asesinada
+   sería el error más grave. "Versuchte Flucht in den Tod … überlebt" es un intento, no un suicidio.
+8. **Nunca inferir**: `given_name`/`family_name` solo si la fuente los da; el apellido usado para particionar es una
    heurística interna que no se publica; fechas de Wikidata con precisión de década o peor no se convierten en año;
    si Wikidata da dos apellidos distintos no se elige uno. `fate` sale solo de palabras escritas en la placa o del
    campo de la fuente (`fate_basis`), y los valores que discrepan se guardan en `variants`.
-7. **Sin índices por origen o religión**: lugares solo por memorial y por lugar de muerte.
+9. **Sin índices por origen o religión**: lugares solo por memorial y por lugar de muerte.
+10. **Alcance exacto** (también en `index.json` → `scope` y en `llms.txt`): la API de personas (`api/v1`) excluye a
+    los posibles vivos. `data/search/` y `data/stones.json` NO son fichas de personas sino transcripciones de placas
+    públicas e incluyen TODAS las placas; `data/search/` solo lleva nombre de la placa, dirección, coordenadas y año
+    (`jg` solo si la placa dice "Jg."), sin enlaces ni destino.
 
 ## Retiradas (`pipeline/suppressed.json`)
 
 1. Recibir la petición (familiar, error grave, petición de una institución). Plazo objetivo ≤ 14 días.
-2. Añadir el id a `"ids"` en `pipeline/suppressed.json` — **solo ids**, nunca motivos ni datos personales. Vale el id
-   de persona (`st-n123…`, `wd-Q…`), el id de la placa (`n123…`), el Qid o el id institucional del registro.
+2. Añadir el id a `"ids"` en `pipeline/suppressed.json` — **solo ids**, nunca motivos ni datos personales. Formatos:
+   - id de persona: `st-n123…`, `wd-Q…`, `yv-…`
+   - id de la placa: nodo/vía OSM `n123…`/`w123…` o Qid de la placa en Wikidata
+   - Qid de la persona: `Q123…`
+   - id externo `<esquema>:<id>`: `gedenkbuch:851018`, `yad_vashem:…`, `ushmm:…`, `arolsen:…`, `holocaust_cz:…`
+
+   Los ids de nodo OSM pueden cambiar (se borra y se vuelve a crear el nodo); por eso conviene retirar además por
+   Qid o por id externo cuando existan.
 3. `python3 -m pipeline build --sources stolpersteine_de --offline && python3 -m pipeline validate` (la validación
    falla si un id retirado sigue presente) y commit.
 4. Retirar un id elimina a la persona entera (todas sus placas) de `api/v1/` y de `data/search/`. `data/stones.json`

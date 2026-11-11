@@ -783,7 +783,7 @@
 ["Q44200097","John Höxter","Hardenbergstraße 28a, Berlin-Charlottenburg","Berlin",52.505588,13.332865,"1884","wd-Q133250142"],
 ["n2600985387","Kurt Leo Höxter","Im Burgfeld 6, Frankfurt a.M., Römerstadt, DE","Frankfurt a.M.",50.151933,8.636615,"1908","st-n2600985387"],
 ["n3294825439","Levy Höxter","Hauptstraße 83, Langerwehe","Langerwehe",50.817762,6.359955,"1888","st-n3294825439"],
-["Q63840560","Margot Höxter","Hans-Böheim-Straße 2, 01309 Dresden","Dresden",51.045919,13.776525,"1920","st-Q63840560"],
+["Q63840560","Margot Höxter","Hans-Böheim-Straße 2, 01309 Dresden","Dresden",51.045919,13.776525,"1920",null],
 ["Q134822315","Ricka Höxter","Poststraße 1, 34537 Bad Willdungen","Bad Willdungen",51.119304,9.121866,"1884","st-Q134822315"],
 ["Q133226233","Robert Höxter","Bahnhofstraße 1, 34576 Homberg (Efze)","Homberg (Efze)",51.033381,9.401714,"1875","st-Q133226233"],
 ["n14145536169","Salomea Höxter","Tucholskystraße 11, 10117 Berlin","Berlin",52.524304,13.392354,"1888","wd-Q132135361"],

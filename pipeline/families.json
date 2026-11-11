@@ -4,16 +4,21 @@
     "odbl": {
       "license": "ODbL-1.0",
       "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
-      "attribution": ["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)", "Wikidata (CC0 1.0, https://www.wikidata.org)"],
+      "attribution": [
+        "© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)",
+        "Wikidata (CC0 1.0, https://www.wikidata.org)"
+      ],
       "source_url": "https://www.openstreetmap.org/copyright",
       "description": "Derivative Database (ODbL 1.0) de Stolpersteine (OpenStreetMap + Wikidata). Share-alike: si redistribuyes la base o un extracto sustancial, debe seguir bajo ODbL 1.0 con atribución."
     },
     "cc0": {
       "license": "CC0-1.0",
       "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "attribution": ["Wikidata (CC0 1.0, https://www.wikidata.org)"],
+      "attribution": [
+        "Wikidata (CC0 1.0, https://www.wikidata.org)"
+      ],
       "source_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
-      "description": "Registros solo de Wikidata (CC0), sin coordenadas ni ids de OpenStreetMap, publicados aparte de la familia ODbL."
+      "description": "Registros solo de Wikidata (CC0): personas con identificador en bases de datos sobre la Shoah y la persecución nazi (no todas son víctimas mortales; ver fate y death_date). Sin coordenadas ni ids de OpenStreetMap; publicados aparte de la familia ODbL."
     }
   }
 }

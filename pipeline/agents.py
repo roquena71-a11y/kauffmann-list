@@ -6,6 +6,13 @@ from .util import write_json, write_text
 SITE = "https://roquena71-a11y.github.io/kauffmann-list"
 API = SITE + "/api/v1"
 FULL_DOWNLOAD = SITE + "/data/stones.json"
+SCOPE = ("La API de personas (api/v1) excluye a las personas posiblemente vivas (sin indicio de muerte y nacidas hace "
+         "menos de 110 años, o sin año) y quita los enlaces a fichas de registro de posibles supervivientes nacidos desde 1916. "
+         "data/search/ y data/stones.json NO son fichas de personas: son transcripciones de placas públicas (memoriales "
+         "físicos en la calle) e incluyen TODAS las placas, también las de personas posiblemente vivas. data/search/ solo "
+         "contiene nombre tal como figura en la placa, dirección, coordenadas y año; data/stones.json es la base de placas "
+         "completa (OpenStreetMap + Wikidata) con la inscripción y las etiquetas y enlaces que esas placas tienen en "
+         "OSM/Wikidata. Para datos de personas usa api/v1.")
 DOC_LICENSE = {"name": "CC0-1.0", "url": "https://creativecommons.org/publicdomain/zero/1.0/"}
 
 USAGE_RULES = [
@@ -14,7 +21,7 @@ USAGE_RULES = [
     "No combines registros de familias distintas en un mismo objeto para redistribuirlo; crúzalos solo por identificador (Qid de Wikidata o id institucional).",
     "No presentes inferencias como hechos: los datos proceden de placas y bases abiertas y pueden contener errores; remite a la fuente primaria.",
     "Prohibido usar estos datos para acosar, elaborar listas de descendientes, perfiles étnico-religiosos de personas vivas, negacionismo o fines antisemitas.",
-    "Personas posiblemente vivas no están en esta API (sin indicio de muerte y nacidas hace menos de 110 años o sin año).",
+    "Usa api/v1 para datos de personas; data/search/ y data/stones.json son transcripciones de placas, no fichas (ver scope).",
 ]
 
 
@@ -58,8 +65,13 @@ def write_catalog(w, fam_indexes, fam_stats, families, sources, generated, repor
         "schema": "schema/person.schema.json",
         "openapi": "openapi.json",
         "stats": "stats.json",
+        "scope": SCOPE,
         "full_database": {"url": FULL_DOWNLOAD, "license": "ODbL-1.0",
-                          "note": "Base completa descargable (oferta ODbL §4.6)."},
+                          "note": "Base de placas completa descargable (oferta ODbL §4.6). Es una transcripción de placas públicas, "
+                                  "no una base de fichas de personas: para datos de personas usa api/v1."},
+        "plaque_index": {"url": SITE + "/data/search/manifest.json", "license": "ODbL-1.0",
+                         "note": "Índice de placas para el mapa: texto de la placa (nombre), dirección, coordenadas y año; "
+                                 "sin enlaces ni destino. No es la API de personas."},
         "usage_rules": USAGE_RULES,
         "corrections": {"how": "Corrige en OpenStreetMap o Wikidata (fuente original), o pide la retirada de una ficha al proyecto; las retiradas se aplican en el siguiente build mediante pipeline/suppressed.json (solo ids).",
                         "repository": "https://github.com/roquena71-a11y/kauffmann-list"},
@@ -179,7 +191,11 @@ def llms_txt(fam_indexes, families, generated):
         "- `api/v1/cc0/`: Wikidata, CC0 1.0.",
         "- `api/v1/partners/<fuente>/` (si existe): licencia propia de cada institución, en meta.license de cada archivo; no reutilizar fuera de lo que permita.",
         "- Textos de Wikipedia: no se copian en la API; solo enlaces (permalink con oldid). Su licencia es CC BY-SA 4.0.",
-        "- [Base completa descargable (ODbL)](%s)" % FULL_DOWNLOAD,
+        "- [Base de placas completa descargable (ODbL)](%s): transcripción de placas públicas, no fichas de personas." % FULL_DOWNLOAD,
+        "",
+        "## Alcance",
+        "",
+        SCOPE,
         "",
         "## Reglas de uso",
         "",

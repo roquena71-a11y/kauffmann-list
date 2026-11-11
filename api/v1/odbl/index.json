@@ -1,4 +1,4 @@
-{"count_people":56451,
+{"count_people":56410,
 "endpoints":{"ids":"odbl/ids/{scheme}.json","people":"odbl/people/by-surname/{prefix}.json","person_lookup":"odbl/person/{shard}.json","place":"odbl/places/{country}/{slug}.json","places_index":"odbl/places/index.json","search":"odbl/search/index-{prefix}.json","stats":"odbl/stats.json"},
 "family":"odbl",
 "id_schemes":["gedenkbuch","ushmm","wikidata","yad_vashem"],
@@ -7,6 +7,6 @@
 "person_shard_chars":2,
 "person_shard_rule":"shard = los 2 últimos caracteres del id en minúsculas, otros caracteres → '_' (JS: id.slice(-2).toLowerCase().replace(/[^a-z0-9]/g,'_')). person/<shard>.json da el people_prefix; la ficha completa está en people/by-surname/<people_prefix>.json.",
 "person_shards":["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99"],
-"places":1364,
+"places":1363,
 "search_prefixes":["_","a","b_","ba","be","bi","bj","bl","bo","br","bu","by","c","d","e","f","g","h_","ha","he","hi","ho","hr","hu","hy","i","j","k_","ka","ke","kh","ki","kl","km","kn","ko","kr","ks","ku","kw","ky","la","le","li","lj","lo","lr","lu","lw","ly","ma","me","mi","ml","mo","mr","mu","my","n","o","p","q","r","sa","sb","sc","se","sh","si","sk","sl","sm","sn","so","sp","sr","st","su","sw","sy","sz","t","u","v","w","y","z"],
 "surname_prefix_rule":"clave = apellido normalizado: minúsculas, ß→ss, sin acentos, ä/ae→a, ö/oe→o, ü/ue→u, solo a-z, sin partículas iniciales (von, van, de, zu…). Si la fuente no da apellido, se usa el último token del nombre (solo para particionar; no se publica como apellido). Probar clave[:6], clave[:5], … clave[:1] (rellenando con '_') y usar el primero que exista en la lista de prefijos."}

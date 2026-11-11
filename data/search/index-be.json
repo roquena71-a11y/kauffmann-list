@@ -292,7 +292,7 @@
 ["Q131286620","Gustav Behrendt","Bäckerstraße 25, Hameln","Hameln",52.10162,9.35615,"1880","wd-Q133249446"],
 ["Q132855068","Hans Behrendt","Schreinerstraße 51, 10247 Berlin-Friedrichshain","Berlin",52.517358,13.466029,"1919","st-Q132855068"],
 ["n7721699040","Heinrich Behrendt","Cimbernstraße 3, 14129 Berlin","Berlin",52.427223,13.193596,"1923","wd-Q104222147"],
-["Q109279703","Heinz Behrendt","Mendelssohnstraße 3, 10405 Berlin-Prenzlauer Berg","Berlin",52.526916,13.418702,"1919","wd-Q132143977"],
+["Q109279703","Heinz Behrendt","Mendelssohnstraße 3, 10405 Berlin-Prenzlauer Berg","Berlin",52.526916,13.418702,"1919",null],
 ["n12850879360","Heinz Helmuth Behrendt","Eisenacher Straße 69, 10823 Berlin","Berlin",52.486097,13.351351,"1914","st-n12850879360"],
 ["Q44429246","Helene Behrendt","Bredowstraße 49","Berlin",52.526735,13.339905,"1894","wd-Q132143709"],
 ["n13273772984","Henriette Behrendt","Hentigstraße 24 a, 10318 Berlin","Berlin",52.487779,13.523788,"1882","wd-Q132137113"],

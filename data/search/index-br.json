@@ -347,7 +347,7 @@
 ["Q115283797","Gustav Brecher","Augustusplatz, 04109 Leipzig","Leipzig",51.339825,12.381256,"1879","wd-Q214222"],
 ["n1688818235","Gustav Brecher","Dammtorstraße 28, Hamburg","Hamburg",53.556826,9.988459,"1879","wd-Q214222"],
 ["n1762991801","Meier Brecher","Viktoriastraße 16, 44789 Bochum","Bochum",51.473327,7.216098,"1887","st-n1762991801"],
-["n12174084706","Baruch Bernhard Brechner","Kortenpfad 3, 44787 Bochum","Bochum",51.484261,7.209854,"1922","st-n12174084706"],
+["n12174084706","Baruch Bernhard Brechner","Kortenpfad 3, 44787 Bochum","Bochum",51.484261,7.209854,"1922",null],
 ["n12176071961","Ester Chaja Brechner","Kortenpfad 3, 44787 Bochum","Bochum",51.484288,7.209868,"1922","st-n12176071961"],
 ["n12177134701","Mirla Brechner","Kortenpfad 3, 44787 Bochum","Bochum",51.484296,7.209872,"1918","st-n12177134701"],
 ["n12171075713","Moses Brechner","Kortenpfad 3, 44787 Bochum","Bochum",51.484245,7.209845,"1887","st-n12171075713"],

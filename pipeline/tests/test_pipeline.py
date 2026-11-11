@@ -24,6 +24,7 @@ def run_build(sources, tmp, **kw):
     out = os.path.join(tmp, "api", "v1")
     with redirect_stderr(io.StringIO()):
         res = build.run(sources=sources, out=out, site_root=tmp, suppressed=kw.pop("suppressed", []),
+                        reports_dir=os.path.join(tmp, "reports"),
                         source_ids=kw.pop("source_ids", None), **kw)
     return out, res
 
@@ -90,6 +91,35 @@ class TestInscription(unittest.TestCase):
         self.assertEqual(inscription.death_place_from("ERMORDET IN AUSCHWITZ"), "Auschwitz")
         self.assertTrue(inscription.has_survivor_marker("FLUCHT 1939 ENGLAND"))
         self.assertTrue(inscription.has_survivor_marker("entkam 1944"))
+        self.assertFalse(inscription.has_survivor_marker("Flucht in den Tod"))
+
+
+class TestSurvivalVsDeath(unittest.TestCase):
+    """Auditoría 1: supervivencia como prefijo; 'Tod'/'Todesmarsch' no son muerte si hay marca de supervivencia."""
+
+    def test_real_cases(self):
+        f = inscription.fate_from_text
+        # wd-Q132139110 (Jg. 1925)
+        self.assertEqual(f("HIER WOHNTE FRED BACHNER JG. 1925 AUSGEWIESEN JUNI 1939 POLEN GHETTO CHRZANÓW 1943 "
+                           "ZWANGSARBEIT GRADITZ 1944 AUSCHWITZ TODESMARSCH 1945 DACHAU BEFREIT")[0], "survived")
+        # st-n13625639423/24/27/28
+        self.assertEqual(f("Hier überlebte 1943-1945 Ursula Giessler, versteckt/gerettet vor Deportation und Tod "
+                           "von Pater Heinrich Middendorf SCJ")[0], "survived")
+
+    def test_prefixes_and_rules(self):
+        f = inscription.fate_from_text
+        self.assertEqual(f("ueberlebte Theresienstadt")[0], "survived")
+        self.assertEqual(f("versteckt 1943-1945")[0], "survived")
+        self.assertEqual(f("gerettet 1944")[0], "survived")
+        self.assertEqual(f("Flucht 1938 England")[0], "fled")
+        self.assertEqual(f("Flucht 1939 Frankreich tot 1942 Gurs")[0], "died_in_persecution")   # muerte con fecha
+        self.assertEqual(f("befreit tot an den Folgen 11.10.1945")[0], "died_in_persecution")
+        self.assertEqual(f("versteckt gelebt deportiert 1943 Auschwitz ermordet")[0], "murdered")  # asesinato explícito
+        self.assertEqual(f("versuchte / Flucht in den Tod / überlebt")[0], "survived")          # intento ≠ suicidio
+        self.assertEqual(f("FLUCHT IN DEN TOD 1941")[0], "suicide")
+        self.assertEqual(f("tot in Theresienstadt")[0], "died_in_persecution")                  # sin marca de supervivencia
+        for t in ("überlebte", "gerettet", "versteckt", "befreiten", "Fluchtweg", "entkam"):
+            self.assertTrue(inscription.has_survivor_marker(t), t)
         self.assertFalse(inscription.has_survivor_marker("Flucht in den Tod"))
 
 
@@ -280,6 +310,75 @@ class TestPolicy(BuildCase):
         self.assertEqual([p["name"] for p in people(out).values()], ["Tot Ohne Jahr"])
 
 
+class TestAuditFixes(BuildCase):
+    def test_hidden_child_excluded_from_api_but_plaque_kept(self):
+        tmp, sources = self.env(partner=False, stones=[
+            {"id": "n20", "la": 52, "lo": 7.6, "src": "osm", "n": "Ursula Test",
+             "i": "Hier überlebte 1943-1945 Ursula Test, versteckt/gerettet vor Deportation und Tod", "b": "1935",
+             "a": "Weg 1, Münster", "c": "Münster", "gb": ["777"]}])
+        out, res = run_build(sources, tmp)
+        self.assertEqual(people(out), {})                                   # posible viva: fuera de la API
+        man = load_json(os.path.join(tmp, "data", "search", "manifest.json"))
+        self.assertEqual(man["prefixes"], ["t"])
+        rows = load_json(os.path.join(tmp, "data", "search", "index-t.json"))["rows"]
+        # jg = None: la placa no lleva "Jg."; el año 1935 es una etiqueta OSM, no texto de la placa
+        self.assertEqual(rows, [["n20", "Ursula Test", "Weg 1, Münster", "Münster", 52, 7.6, None, None]])
+        self.assertNotIn("http", json.dumps(rows))                           # sin enlaces en las filas
+        blob = "\n".join(read_all(os.path.join(tmp, "data", "search")).values())
+        self.assertNotIn("777", blob)                                         # ni ids de registros
+
+    def test_scope_statements(self):
+        tmp, sources = self.env(partner=False)
+        out, _ = run_build(sources, tmp)
+        idx = load_json(os.path.join(out, "index.json"))
+        self.assertIn("NO son fichas de personas", idx["scope"])
+        self.assertIn("TODAS las placas", idx["scope"])
+        self.assertIn("no una base de fichas de personas", idx["full_database"]["note"])
+        with open(os.path.join(tmp, "llms.txt"), encoding="utf-8") as fh:
+            llms = fh.read()
+        self.assertIn("NO tiene valor jurídico propio", llms)
+        self.assertIn("NO son fichas de personas", llms)
+        self.assertIn("ODbL", llms)
+
+    def test_quality_flags(self):
+        tmp, sources = self.env(partner=False, stones=[
+            {"id": "n30", "la": 1, "lo": 1, "src": "osm", "n": "Anna Datum", "b": "1950", "d": "1942-01-01",
+             "i": "HIER WOHNTE ANNA DATUM ERMORDET"},
+            {"id": "n31", "la": 1, "lo": 1, "src": "osm", "n": "Otto Alt", "b": "1020", "i": "HIER WOHNTE OTTO ALT ERMORDET"},
+            {"id": "n32", "la": 1, "lo": 1, "src": "osm", "n": "Ida Gut", "b": "1890", "d": "1942",
+             "i": "HIER WOHNTE IDA GUT ERMORDET 1942"}])
+        out, _ = run_build(sources, tmp)
+        ps = {p["name"]: p for p in people(out).values()}
+        self.assertEqual(ps["Anna Datum"]["quality_flags"], ["birth_after_death"])
+        self.assertEqual(ps["Anna Datum"]["birth_date"], "1950")                # se marca, no se corrige
+        self.assertEqual(ps["Otto Alt"]["quality_flags"], ["birth_before_1800"])
+        self.assertNotIn("quality_flags", ps["Ida Gut"])
+        rows = load_json(os.path.join(out, "odbl", "quality", "date-flags.json"))["rows"]
+        self.assertEqual(sorted(r[1] for r in rows), ["Anna Datum", "Otto Alt"])
+        st = load_json(os.path.join(out, "odbl", "stats.json"))["stats"]["quality_flags"]
+        self.assertEqual(st, {"birth_after_death": 1, "birth_before_1800": 1})
+
+    def test_tests_do_not_touch_repo_reports(self):
+        rep = os.path.join(PIPELINE_DIR, "reports")
+        before = {f: os.path.getmtime(os.path.join(rep, f)) for f in os.listdir(rep)} if os.path.isdir(rep) else {}
+        tmp, sources = self.env(partner=False)
+        run_build(sources, tmp)
+        after = {f: os.path.getmtime(os.path.join(rep, f)) for f in os.listdir(rep)} if os.path.isdir(rep) else {}
+        self.assertEqual(before, after)
+        self.assertTrue(os.path.exists(os.path.join(tmp, "reports", "build.json")))
+
+    def test_wikidata_source_scope(self):
+        cfg = load_sources()["wikidata_holocaust_victims"]
+        self.assertFalse(any("P9805" in x for x in cfg["selectors"]))
+        self.assertNotIn("P9805", cfg["identifier_properties"])
+        self.assertTrue(any("P4130" in x for x in cfg["selectors"]))           # USHMM se mantiene
+        self.assertNotIn("víctimas de", cfg["name"].lower())
+        b = {"item": {"value": "http://www.wikidata.org/entity/Q5000"}, "label1": {"value": "U S"},
+             "ids_P4130": {"value": "1"}, "birth": {"value": "1880-01-01T00:00:00Z"}, "birth_prec": {"value": "11"}}
+        r = wikidata_sparql.binding_to_record(b, cfg, "2026-11-11")
+        self.assertEqual(r["fate"], "unknown")                                  # tener id USHMM no implica víctima
+
+
 class TestSuppressed(BuildCase):
     def test_suppressed_ids_removed_everywhere(self):
         tmp, sources = self.env(partner=False)
@@ -290,6 +389,15 @@ class TestSuppressed(BuildCase):
         self.assertNotIn("Dorfstraße 1", blob)
         self.assertIn("Paul Gebe", blob)
         self.assertEqual(validate(out=out, sources=sources, suppressed={"n5", "Q900000010"})["errors"], [])
+
+    def test_suppressed_by_external_id_and_memorial(self):
+        tmp, sources = self.env(partner=False)
+        out, _ = run_build(sources, tmp, suppressed=["gedenkbuch:333", "n6"])
+        names = [p["name"] for p in people(out).values()]
+        self.assertNotIn("Paul Gebe", names)                 # retirado por id del Gedenkbuch
+        self.assertEqual(names.count("Martha Schwarz"), 1)   # n6 (Frankfurt) retirado por id de placa
+        plaques = "\n".join(read_all(os.path.join(tmp, "data", "search")).values())
+        self.assertNotIn("Paul Gebe", plaques)
 
     def test_suppressed_by_person_id(self):
         tmp, sources = self.env(partner=False)

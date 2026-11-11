@@ -466,6 +466,20 @@
         ]
       },
       "description": "Políticas aplicadas al publicar (p. ej. survivor_minimization: sin enlaces a fichas de registro)."
+    },
+    "quality_flags": {
+      "type": "array",
+      "description": "Problemas de calidad detectados (el dato NO se corrige; verificar en la fuente).",
+      "items": {
+        "type": "string",
+        "enum": [
+          "birth_before_1800",
+          "birth_after_data_year",
+          "death_before_1800",
+          "death_after_data_year",
+          "birth_after_death"
+        ]
+      }
     }
   },
   "$defs": {

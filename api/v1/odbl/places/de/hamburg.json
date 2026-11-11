@@ -1,5 +1,5 @@
 {"columns":["id","name","birth_year","role","detail","lat","lon"],
-"count":7246,
+"count":7245,
 "country":"DE",
 "label":"Hamburg",
 "meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
@@ -477,7 +477,6 @@
 ["st-Q63894286","Amalie Paasch",1882,"memorial","Lattenkampstieg 4, 22299 Hamburg",53.59747,9.99535],
 ["wd-Q105457074","Amalie Röhmann",1852,"memorial","Wellingsbütteler Landstraße 165, Hamburg",53.63289,10.04476],
 ["st-n676132422","Amalie Salomon",1887,"memorial","Isestraße 67, Hamburg",53.58275,9.98368],
-["st-n14068991047","Amanda Ada Löwe",1921,"memorial","Zimmerstraße 29–33, Hamburg",53.57498,10.01846],
 ["st-n1706048356","Amanda Baumgarten",1872,"memorial","Sillemstraße 10, Hamburg",53.57526,9.94827],
 ["st-n1091824403","Amanda Tietz",1889,"memorial","Ritterstraße, Hamburg",53.56307,10.04584],
 ["st-n884681823","Amandus Hartung",1901,"memorial","Lindleystraße, 20539 Hamburg",53.53464,10.03896],
@@ -4005,6 +4004,7 @@
 ["st-n1680903998","Jenny Drucker",1889,"memorial","Bornstraße, Hamburg",53.56843,9.98135],
 ["st-n2889836641","Jenny Eckstein",1876,"memorial","Schanzenstraße 119, Hamburg",53.56485,9.96557],
 ["wd-Q104549239","Jenny Falck",1870,"memorial","Großneumarkt 38, 20459 Hamburg",53.54996,9.97978],
-["wd-Q104543045","Jenny Frank",1864,"memorial","Hartungstraße 12, 20146 Hamburg",53.57035,9.98707]
+["wd-Q104543045","Jenny Frank",1864,"memorial","Hartungstraße 12, 20146 Hamburg",53.57035,9.98707],
+["wd-Q132731364","Jenny Fränkel",1879,"memorial","Gneisenaustraße, Hamburg",53.57729,9.96987]
 ],
 "slug":"hamburg"}

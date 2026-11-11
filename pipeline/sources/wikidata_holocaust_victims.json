@@ -1,7 +1,7 @@
 {
   "id": "wikidata_holocaust_victims",
-  "name": "Wikidata – personas con identificadores de bases de víctimas de la Shoah",
-  "description": "Personas (P31=Q5) con identificador de una base de víctimas: holocaust.cz (P9109), Gedenkbuch del Bundesarchiv (P7571), USHMM (P4130), Yad Vashem YVNG (P7624), Arolsen (P7656), Joods Monument (P9155), Mapping the Lives (P9805). Unión ≈133.000 personas (verificado 2026-11-11). Solo se copian datos de Wikidata (CC0: P569/P570/P19/P20, nombre); de las instituciones solo el id como enlace.",
+  "name": "Wikidata – personas con identificadores en bases de datos sobre la Shoah y la persecución nazi",
+  "description": "Personas (P31=Q5) con identificador en: holocaust.cz (P9109), Gedenkbuch del Bundesarchiv (P7571), USHMM (P4130, incluye supervivientes), Yad Vashem YVNG (P7624), Arolsen (P7656) o Joods Monument (P9155). Tener uno de estos ids NO significa que la persona muriera: fate solo se marca con P1196 (manera de muerte) y sin fecha de muerte se aplica el filtro de posibles vivos. Solo se copian datos de Wikidata (CC0: P569/P570/P19/P20, nombre); de las instituciones solo el id como enlace. Mapping the Lives (P9805, censo de 1939) no se usa: no es una lista de víctimas.",
   "phase": 1,
   "enabled": true,
   "publish_allowed": true,
@@ -20,7 +20,6 @@
     "?item wdt:P4130 ?_us",
     "?item wdt:P7656 ?_ar",
     "?item wdt:P9155 ?_jm",
-    "?item wdt:P9805 ?_mtl",
     "?item wdt:P9109 ?_hcz"
   ],
   "identifier_properties": {
@@ -29,8 +28,7 @@
     "P4130": "ushmm",
     "P7656": "arolsen",
     "P9109": "holocaust_cz",
-    "P9155": "joods_monument",
-    "P9805": "mapping_the_lives"
+    "P9155": "joods_monument"
   },
   "label_languages": [
     "de",
@@ -43,8 +41,7 @@
     "ushmm": "https://www.ushmm.org/online/hsv/person_view.php?PersonId={id}",
     "arolsen": "https://collections.arolsen-archives.org/en/document/{id}",
     "holocaust_cz": "https://www.holocaust.cz/en/database-of-victims/victim/{id}/",
-    "joods_monument": "https://www.joodsmonument.nl/en/page/{id}",
-    "mapping_the_lives": "https://www.mappingthelives.org/bio/{id}"
+    "joods_monument": "https://www.joodsmonument.nl/en/page/{id}"
   },
   "network": {
     "page_size": 5000,
