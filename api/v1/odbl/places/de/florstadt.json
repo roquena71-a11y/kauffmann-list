@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"DE",
+"label":"Florstadt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q130801469","Berta Halberstadt",1879,"memorial","Orlesstraße 12, 61197 Florstadt",50.33188,8.94562],
+["st-Q130801540","Erwin Halberstadt",1909,"memorial","Orlesstraße 12, 61197 Florstadt",50.33188,8.94562],
+["st-Q130801301","Gerson Halberstadt",1882,"memorial","Orlesstraße 12, 61197 Florstadt",50.33188,8.94562],
+["st-Q130801735","Julius Jakob Halberstadt",1914,"memorial","Orlesstraße 12, 61197 Florstadt",50.33188,8.94562],
+["st-Q130801798","Leopold Eliezer Halberstadt",1914,"memorial","Orlesstraße 12, 61197 Florstadt",50.33188,8.94562],
+["st-Q130801613","Recha Halberstadt",1911,"memorial","Orlesstraße 12, 61197 Florstadt",50.33188,8.94562],
+["st-Q130801667","Selma Halberstadt",1912,"memorial","Orlesstraße 12, 61197 Florstadt",50.33188,8.94562]
+],
+"slug":"florstadt"}

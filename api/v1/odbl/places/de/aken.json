@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Aken",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131404036","Berta Wilkenfeld",1928,"memorial","Bahnhofstraße 15, 06385 Aken",51.85501,12.0374],
+["st-Q131404041","Gitel Wilkenfeld",1901,"memorial","Bahnhofstraße 15, 06385 Aken",51.85501,12.0374],
+["st-Q131404043","Isidor Leib Wilkenfeld",1899,"memorial","Bahnhofstraße 15, 06385 Aken",51.85501,12.0374],
+["wd-Q131404581","Karl Falkenberg",1904,"memorial","Angerstraße 2, 06385 Aken",51.85143,12.04633],
+["st-Q131404044","Norbert Wilkenfeld",null,"memorial","Bahnhofstraße 15, 06385 Aken",51.85142,12.04632]
+],
+"slug":"aken"}

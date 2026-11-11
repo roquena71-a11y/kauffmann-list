@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Forst (Lausitz)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q141563119","Alfons Gerhard Miodowski",1904,"memorial","Cottbuser Str. 17, 03149 Forst (Lausitz)",51.74469,14.64479],
+["wd-Q105373802","Dr. Felix Miodowski",1872,"memorial","Cottbuser Str. 17, 03149 Forst (Lausitz)",51.74469,14.64479],
+["st-Q141563071","Erna Perlich",1893,"memorial","Mühlenstraße 18, 03149 Forst (Lausitz)",51.74397,14.65017],
+["st-Q141564337","Gerhard Levy",1898,"memorial","Max-Fritz-Hammer-Straße 15, 03149 Forst (Lausitz)",51.74051,14.65075],
+["st-Q141563116","Henriette Miodowski",1880,"memorial","Cottbuser Str. 17, 03149 Forst (Lausitz)",51.74469,14.64479],
+["st-Q141562981","Ilse Pick",1921,"memorial","Mühlenstraße 18, 03149 Forst (Lausitz)",51.74397,14.65017],
+["st-Q141563120","Margot Lotte Miodowski",1907,"memorial","Cottbuser Str. 17, 03149 Forst (Lausitz)",51.74469,14.64479],
+["st-Q141564351","Mary Levy",1907,"memorial","Max-Fritz-Hammer-Straße 15, 03149 Forst (Lausitz)",51.74051,14.65075],
+["st-Q141563122","Werner Miodowski",1908,"memorial","Cottbuser Str. 17, 03149 Forst (Lausitz)",51.74469,14.64479]
+],
+"slug":"forst-lausitz"}

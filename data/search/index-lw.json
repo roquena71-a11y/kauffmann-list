@@ -1,0 +1,11 @@
+{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"lw",
+"rows":[
+["n13097191329","Hertha Lwinnek","Ahornallee 10, 14050 Berlin","Berlin",52.515466,13.276565,"1878","st-n13097191329"],
+["Q126044872","Dora Lwowski","Leipziger Straße 15, 08056 Zwickau","Zwickau",50.724131,12.494311,"1899","st-Q126044872"],
+["Q126044873","Friedel Lwowski","Leipziger Straße 15, 08056 Zwickau","Zwickau",50.724131,12.494311,"1931",null],
+["Q87849960","Martin Lwowski","Pestalozzistr. 15, 10625 Berlin","Berlin",52.508,13.31541,"1923","wd-Q132137359"],
+["Q126044876","Rachel Lwowski","Leipziger Straße 15, 08056 Zwickau","Zwickau",50.724131,12.494311,"1941",null],
+["Q126044879","Srul Lwowski","Leipziger Straße 15, 08056 Zwickau","Zwickau",50.724131,12.494311,"1898","st-Q126044879"]
+]}

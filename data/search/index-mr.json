@@ -1,0 +1,10 @@
+{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"mr",
+"rows":[
+["n13703964114","Margarethe Mrosek","Up de Schanz 24, Hamburg","Hamburg",53.558189,9.843555,"1902","wd-Q1895001"],
+["n13628737398","Josef Mrosowska","Essener Straße 54, Hamburg","Hamburg",53.67216,9.992388,"1944","st-n13628737398"],
+["Q125856640","Alfons Mroß","Huygensstraße 3, 04159 Leipzig","Leipzig",51.366519,12.349839,"1914","st-Q125856640"],
+["Q44427566","Paula Mroz","Chausseestraße 44","Berlin",52.53488,13.37831,"1913","wd-Q132135462"],
+["Q76429658","Genowefa Mruk",null,"Burgwedel",52.491826,9.854875,null,"st-Q76429658"]
+]}

@@ -1,0 +1,98 @@
+{
+  "id": "yadvashem",
+  "name": "Yad Vashem – Central Database of Shoah Victims' Names",
+  "description": "PLANTILLA fase 2. Ajustar los nombres de columna del mapeo cuando llegue el archivo real. No activar publish_allowed hasta tener permiso escrito (ver docs/legal/).",
+  "phase": 2,
+  "enabled": false,
+  "publish_allowed": false,
+  "adapter": "generic_tabular",
+  "license": "LicenseRef-permiso-pendiente",
+  "license_url": null,
+  "attribution": "Yad Vashem – The World Holocaust Remembrance Center, Central Database of Shoah Victims' Names",
+  "homepage": "https://collections.yadvashem.org/en/names",
+  "license_family": "partners/yadvashem",
+  "id_prefix": "yv",
+  "priority": 50,
+  "input": {
+    "path": "pipeline/inbox/yadvashem.csv",
+    "format": "csv",
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "retrieved": null
+  },
+  "mapping": {
+    "record_id": "Item ID",
+    "name": {
+      "first": [
+        {
+          "concat": [
+            "First Name",
+            "Last Name"
+          ],
+          "sep": " "
+        },
+        "Full Name"
+      ]
+    },
+    "given_name": "First Name",
+    "family_name": "Last Name",
+    "birth_name": "Maiden Name",
+    "birth_date": {
+      "column": "Date of Birth",
+      "format": "date"
+    },
+    "birth_place": "Place of Birth",
+    "death_date": {
+      "column": "Date of Death",
+      "format": "date"
+    },
+    "death_place": "Place of Death",
+    "fate": {
+      "column": "Fate",
+      "map": {
+        "murdered": "murdered",
+        "perished": "died_in_persecution",
+        "survived": "survived",
+        "unknown": "unknown"
+      },
+      "default": "unknown"
+    },
+    "places": [
+      {
+        "role": "residence",
+        "label": "Permanent Place of Residence",
+        "country": "Residence Country Code"
+      },
+      {
+        "role": "birth",
+        "label": "Place of Birth"
+      },
+      {
+        "role": "death",
+        "label": "Place of Death"
+      }
+    ],
+    "deportations": [
+      {
+        "date": "Deportation Date",
+        "place": "Deportation Destination",
+        "from": "Deportation From"
+      }
+    ],
+    "identifiers": {
+      "yad_vashem": "Item ID",
+      "wikidata": "Wikidata QID"
+    },
+    "record_url": {
+      "template": "https://collections.yadvashem.org/en/names/{Item ID}"
+    },
+    "links": [
+      {
+        "type": "yad_vashem",
+        "url": {
+          "template": "https://collections.yadvashem.org/en/names/{Item ID}"
+        }
+      }
+    ]
+  }
+}

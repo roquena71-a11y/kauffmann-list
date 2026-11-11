@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Ortenberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13585750168","Bertha Leopold",1878,"memorial","Wasenstraße 22, 63683 Ortenberg",50.32853,9.04753],
+["st-n13584853896","David Leopold",1875,"memorial","Wasenstraße 22, 63683 Ortenberg",50.32852,9.04753],
+["st-n13585750175","Harri Leopold",1931,"memorial","Wasenstraße 22, 63683 Ortenberg",50.32853,9.04755],
+["st-n13585750169","Irma Leopold",1909,"memorial","Wasenstraße 22, 63683 Ortenberg",50.32852,9.04754],
+["st-n13585750172","Irmtraud Leopold",1928,"memorial","Wasenstraße 22, 63683 Ortenberg",50.32853,9.04755],
+["st-n13585750171","Ludwig Leopold",1903,"memorial","Wasenstraße 22, 63683 Ortenberg",50.32853,9.04754],
+["st-n13585750174","Toni Leopold",1904,"memorial","Wasenstraße 22, 63683 Ortenberg",50.32853,9.04754],
+["st-n13585750173","Willi Leopold",1905,"memorial","Wasenstraße 22, 63683 Ortenberg",50.32851,9.04754]
+],
+"slug":"ortenberg"}

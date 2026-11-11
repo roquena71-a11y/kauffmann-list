@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Estenfeld",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4424105701","Babette Meyer",1892,"memorial","Bäckerstraße 14, 97230 Estenfeld",49.82789,10.00828],
+["wd-Q104252412","Carry Birn",1880,"memorial","Zinnergasse 2, 97230 Estenfeld",49.82705,10.00864],
+["wd-Q105365513","Emma Löwenthal",1891,"memorial","Würzburger Str. 25, 97230 Estenfeld",49.83095,10.00447],
+["st-n4424105700","Emma Meyer",1866,"memorial","Bäckerstraße 14, 97230 Estenfeld",49.82789,10.00828],
+["wd-Q104220290","Hanna Bayer",1864,"memorial","Zinnergasse 2, 97230 Estenfeld",49.82705,10.00863],
+["st-n4424098744","Ida Jette",1897,"memorial","Zinnergasse 2, 97230 Estenfeld",49.82705,10.00862],
+["wd-Q104252416","Isaac Birn",1859,"memorial","Zinnergasse 2, 97230 Estenfeld",49.82704,10.00863],
+["wd-Q104252418","Josef Birn",1873,"memorial","Zinnergasse 2, 97230 Estenfeld",49.82704,10.00864],
+["wd-Q105365581","Leo Löwenthal",1876,"memorial","Würzburger Str. 25, 97230 Estenfeld",49.83095,10.00447],
+["st-n4424105699","Max Meyer",1898,"memorial","Bäckerstraße 14, 97230 Estenfeld",49.82789,10.00828],
+["st-n4424098741","Siegfried Birn",1877,"memorial","Zinnergasse 2, 97230 Estenfeld",49.82704,10.00862]
+],
+"slug":"estenfeld"}

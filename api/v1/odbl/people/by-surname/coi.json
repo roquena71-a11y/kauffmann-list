@@ -1,0 +1,6 @@
+{"count":1,
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"people":[
+{"birth_date":"1943-12-20","death_date":"1944-03-04","fate":"murdered","fate_basis":"inscription_text","field_sources":{"birth_date":["stolpersteine_de"],"death_date":["stolpersteine_de"],"fate":["stolpersteine_de"],"name":["stolpersteine_de"]},"id":"st-n13909120183","identifiers":{"osm":["n13909120183"]},"memorials":[{"country":"DE","inscription":"Westrina Coinewska|geb. 20.12.1943|ermordet 4.3.1944","lat":50.1032403,"locality":"Frankfurt am Main","lon":8.6404613,"memorial_id":"n13909120183","source_id":"stolpersteine_de","type":"stolperstein"}],"name":"Walestrina Coinewska","sources":[{"attribution":"© OpenStreetMap contributors (ODbL 1.0) + Wikidata (CC0 1.0)","license":"ODbL-1.0","record_id":"n13909120183","retrieved":"2026-11-04","source_id":"stolpersteine_de","url":"https://www.openstreetmap.org/node/13909120183"}]}
+],
+"prefix":"coi"}

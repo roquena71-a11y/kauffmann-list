@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Bleckede",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105457281","Josef Rosen",1874,"memorial","Friedrich-Kücken-Straße 16, Bleckede",53.29356,10.72772],
+["st-Q100144414","Otfried Rosen",1917,"memorial","Friedrich-Kücken-Straße 16, Bleckede",53.29356,10.72772],
+["wd-Q105387568","Ottilie Rosen",1873,"memorial","Friedrich-Kücken-Straße 16, Bleckede",53.29356,10.72772]
+],
+"slug":"bleckede"}

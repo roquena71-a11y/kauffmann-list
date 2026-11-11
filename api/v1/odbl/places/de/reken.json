@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Reken",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13075563422","Albert Levinstein",1888,"memorial","Harrierstraße 13, 48734 Reken",51.83067,7.04626],
+["wd-Q105361242","Berta Lebenstein",1867,"memorial","Surkstamm 22-24, 48734 Reken",51.82886,7.04145],
+["st-n13075563424","Bertha Levinstein",1886,"memorial","Harrierstraße 13, 48734 Reken",51.83067,7.04626],
+["st-n13075563419","David Levinstein",1867,"memorial","Surkstamm 22-24, 48734 Reken",51.82886,7.04145],
+["st-n13075563423","Friederich Levinstein",1898,"memorial","Harrierstraße 13, 48734 Reken",51.83067,7.04626],
+["st-n13075563425","Hermann Levinstein",1885,"memorial","Harrierstraße 13, 48734 Reken",51.83068,7.04626],
+["wd-Q104806043","Johanna Humberg",1866,"memorial","Dorfstraße 21, 48734 Reken",51.78777,7.03843],
+["st-n13075563421","Martha Levinstein",1903,"memorial","Surkstamm 22-24, 48734 Reken",51.82886,7.04145],
+["st-n13074873851","Rosa Silberschmidt",1882,"memorial","Harrierstraße 2, 48734 Reken",51.83148,7.04591],
+["st-n13075563418","Salomon Levinstein",1870,"memorial","Surkstamm 22-24, 48734 Reken",51.82886,7.04145]
+],
+"slug":"reken"}

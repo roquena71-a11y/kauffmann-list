@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Hagen am Teutoburger Wald",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4225102189","Alex Plogmann",1908,"memorial","Dorfstraße 3, 49170 Hagen am Teutoburger Wald",52.19696,7.9815],
+["wd-Q1338225","Gustav Görsmann",1873,"memorial","Kirchstraße 3, 49170 Hagen am Teutoburger Wald",52.19933,7.93982]
+],
+"slug":"hagen-am-teutoburger-wald"}

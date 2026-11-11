@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Ettenheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q137797529","Fanny Lion",1871,"memorial","Festungsstraße 16, 77955 Ettenheim",48.25535,7.81193],
+["st-Q137797528","Hedwig Levistein",1883,"memorial","Festungsstraße 8, 77955 Ettenheim",48.25535,7.81263],
+["st-Q137797530","Helene Lion",1866,"memorial","Friedrichstraße 8, 77955 Ettenheim",48.25295,7.81332],
+["st-Q137797531","Julia Lion",1878,"memorial","Friedrichstraße 6, 77955 Ettenheim",48.25287,7.8133],
+["st-Q137797532","Karoline Lion",1854,"memorial","Zunftgasse 1, 77955 Ettenheim",48.25315,7.81304],
+["st-Q137797533","Sophie Lion",1871,"memorial","Friedrichstraße 8, 77955 Ettenheim",48.25295,7.81329]
+],
+"slug":"ettenheim"}

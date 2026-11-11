@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Greifswald",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105513361","Alice Margarethe Weismann-Sichel",1889,"memorial","Robert-Blum-Straße 11, Greifswald",54.09342,13.3917],
+["wd-Q90809","Edmund Forster",1878,"memorial","Ellernholzstraße 2, Greifswald",54.09342,13.3917],
+["st-Q132944338","Elise Rosenberg",1877,"memorial","Knopfstraße 18, Greifswald",54.09667,13.38232],
+["st-Q132953149","Else Burchard",1898,"memorial","Kuhstraße 7, Greifswald",54.09669,13.37378],
+["st-Q132951615","Else Pauline Wasmund",1915,"memorial","Erich-Böhmke-Straße 32, Greifswald",54.09121,13.37862],
+["st-Q132943936","Friederike Feldmann",1887,"memorial","Gützkower Straße 39, Greifswald",54.08791,13.38001],
+["st-Q132943744","Georg Feldmann",1884,"memorial","Gützkower Straße 39, Greifswald",54.08791,13.38001],
+["wd-Q106469986","Georg Heymann",1859,"memorial","Robert-Blum-Straße 11, Greifswald",54.09342,13.3917],
+["wd-Q106470263","Gerhard Knoche",1893,"memorial","Domstraße 9a, Greifswald",54.09475,13.37348],
+["st-Q132941767","Julius Futter",1885,"memorial","Brüggstraße 12, Greifswald",54.09642,13.38341],
+["wd-Q105513191","Paula Gabriele Sichel",1882,"memorial","Robert-Blum-Straße 11, Greifswald",54.09342,13.3917],
+["wd-Q105373664","Simon Michels",1853,"memorial","Kapaunenstraße 14, Greifswald",54.09669,13.37378],
+["st-Q132939080","Thea Futter",1886,"memorial","Brüggstraße 12, Greifswald",54.09642,13.38341]
+],
+"slug":"greifswald"}

@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Warstein",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3559341572","Bertha Kaufmann",1880,"memorial","Hauptstraße 94, Warstein",51.44242,8.35412],
+["st-n3559341574","Friede Kaufmann",1893,"memorial","Hauptstraße 94, Warstein",51.44241,8.35412],
+["st-n3559341576","Irma Gonsenhäuser",1898,"memorial","Hauptstraße 33, Warstein",51.44694,8.35505],
+["st-n3559341577","Julius Gonsenhäuser",1895,"memorial","Hauptstraße 33, Warstein",51.44695,8.35506],
+["st-n3559341579","Margot Kaufmann",1915,"memorial","Hauptstraße 94, Warstein",51.44241,8.35414],
+["st-n3559341580","Moritz Kaufmann",1885,"memorial","Hauptstraße 94, Warstein",51.44242,8.35414],
+["st-n3559341581","Regina Cohn",1890,"memorial","Auf’m Bruch 17, Warstein",51.44479,8.35321],
+["st-n3559341582","Walter Cohn",1913,"memorial","Auf’m Bruch 17, Warstein",51.44478,8.35319],
+["st-n3559341583","Willi Cohn",1883,"memorial","Auf’m Bruch 17, Warstein",51.4448,8.35319]
+],
+"slug":"warstein"}

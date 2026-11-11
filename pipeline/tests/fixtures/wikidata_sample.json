@@ -1,0 +1,28 @@
+{
+  "retrieved": "2026-11-11",
+  "_comment": "Respuesta SPARQL reducida (datos de Wikidata, CC0) para pruebas sin red.",
+  "head": {"vars": ["item"]},
+  "results": {"bindings": [
+    {"item": {"type": "uri", "value": "http://www.wikidata.org/entity/Q104424595"},
+     "label1": {"type": "literal", "value": "Berta Davids"},
+     "given": {"type": "literal", "value": "Berta"},
+     "family": {"type": "literal", "value": "Sachs|Davids"},
+     "birth": {"type": "literal", "value": "1868-02-25T00:00:00Z"}, "birth_prec": {"type": "literal", "value": "11"},
+     "death": {"type": "literal", "value": "1943-01-12T00:00:00Z"}, "death_prec": {"type": "literal", "value": "11"},
+     "bplace": {"type": "uri", "value": "http://www.wikidata.org/entity/Q2112"}, "bplace_label": {"type": "literal", "value": "Bielefeld"},
+     "bplace_coord": {"type": "literal", "value": "Point(8.533333333 52.016666666)"}, "bplace_cc": {"type": "literal", "value": "DE"},
+     "dplace": {"type": "uri", "value": "http://www.wikidata.org/entity/Q160175"}, "dplace_label": {"type": "literal", "value": "Konzentrationslager Theresienstadt"},
+     "dplace_coord": {"type": "literal", "value": "Point(14.149722 50.510278)"}, "dplace_cc": {"type": "literal", "value": "CZ"},
+     "ids_P7571": {"type": "literal", "value": "851018"}, "ids_P4130": {"type": "literal", "value": "9224258"}},
+    {"item": {"type": "uri", "value": "http://www.wikidata.org/entity/Q105388305"},
+     "label2": {"type": "literal", "value": "Dr. Adolf Rosenthal"},
+     "given": {"type": "literal", "value": "Adolf"}, "family": {"type": "literal", "value": "Rosenthal"},
+     "birth": {"type": "literal", "value": "1873-08-11T00:00:00Z"}, "birth_prec": {"type": "literal", "value": "11"},
+     "death": {"type": "literal", "value": "1940-01-01T00:00:00Z"}, "death_prec": {"type": "literal", "value": "8"},
+     "ids_P7571": {"type": "literal", "value": "953296"}},
+    {"item": {"type": "uri", "value": "http://www.wikidata.org/entity/Q900000001"},
+     "label1": {"type": "literal", "value": "Testperson Ohne Tod"},
+     "birth": {"type": "literal", "value": "1925-05-01T00:00:00Z"}, "birth_prec": {"type": "literal", "value": "9"},
+     "ids_P7624": {"type": "literal", "value": "123"}}
+  ]}
+}

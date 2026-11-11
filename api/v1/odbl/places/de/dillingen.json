@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Dillingen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11664721648","Alice Cahn",1908,"memorial","Hüttenwerkstraße 21, 66763 Dillingen",49.35477,6.72953],
+["st-n11664742894","Flora Levy",1912,"memorial","In der Lach 5, 66763 Dillingen",49.35598,6.70851],
+["st-n4776892665","Johanna Levy",1865,"memorial","Heiligenbergstraße 21, 66763 Dillingen",49.3571,6.72737],
+["st-n11700935467","Julia Weiler",1887,"memorial","Düppenweilerstraße 35, 66763 Dillingen",49.37477,6.76331],
+["wd-Q105362836","Lion Levy",1865,"memorial","Heiligenbergstraße 21, 66763 Dillingen",49.35712,6.72737],
+["st-n12756653869","Martha Weiler",1899,"memorial","Düppenweilerstraße 35, 66763 Dillingen",49.37477,6.76331],
+["st-n11701656885","Moritz Weiler",1889,"memorial","Düppenweilerstraße 35, 66763 Dillingen",49.37477,6.76331],
+["st-n3432169465","Paul Cahn",1897,"memorial","Hüttenwerkstraße 21, 66763 Dillingen",49.35476,6.72953],
+["st-n11664742895","Rosine Levy",1881,"memorial","In der Lach 5, 66763 Dillingen",49.35598,6.70851],
+["wd-Q134974811","Simon Levy",1877,"memorial","In der Lach 5, 66763 Dillingen",49.35598,6.70851]
+],
+"slug":"dillingen"}

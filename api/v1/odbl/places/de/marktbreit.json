@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Marktbreit",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134726338","Abraham Goldbach",1881,"memorial","Ochsenfurter Straße 3, Marktbreit",49.6673,10.14315],
+["st-Q134726336","Carola Bolley",1908,"memorial","Marktstraße 10, Marktbreit",49.66748,10.1436],
+["st-Q134726343","Clara Oppenheimer",1882,"memorial","Pförtleinsgasse 9, Marktbreit",49.66653,10.14522],
+["st-Q134726337","Esther Friedländer",1909,"memorial","Pförtleinsgasse 9, Marktbreit",49.66653,10.14522],
+["st-Q134726340","Frieda Lauber",1892,"memorial","Schustergasse 22, Marktbreit",49.66667,10.14581],
+["st-Q134726344","Jetta Ida Rosenberg",1881,"memorial","Schulgasse 13, Marktbreit",49.66677,10.14433],
+["st-Q134726346","Jette Wolfrom",1880,"memorial","Schustergasse 4, Marktbreit",49.6674,10.14418],
+["st-Q134726341","Karl Lauber",1884,"memorial","Schustergasse 22, Marktbreit",49.66667,10.14581],
+["st-Q134726339","Klara Goldbach",1889,"memorial","Ochsenfurter Straße 3, Marktbreit",49.6673,10.14315],
+["st-Q134726345","Mendel Samuel Rosenberg",1880,"memorial","Schulgasse 13, Marktbreit",49.66677,10.14433]
+],
+"slug":"marktbreit"}

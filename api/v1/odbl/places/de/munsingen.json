@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Münsingen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q136350585","Andreas Bückle",1889,"memorial","Tragolfstraße 2, 72525 Münsingen",48.43177,9.49592],
+["wd-Q136350955","Särle Levi",1872,"memorial","Im Glack 1, 72525 Münsingen",48.41278,9.49396]
+],
+"slug":"munsingen"}

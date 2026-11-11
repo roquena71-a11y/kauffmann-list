@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Rothenburg ob der Tauber",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q106468029","Bella Lissberger",1879,"memorial","Herrngasse 21, 91541 Rothenburg ob der Tauber",49.37679,10.17588],
+["st-n2282168243","Helene Kirschbaum",1874,"memorial","Neugasse 34, 91541 Rothenburg ob der Tauber",49.37553,10.1827],
+["wd-Q105463881","Ida Wurzinger",1872,"memorial","Herrngasse 21, 91541 Rothenburg ob der Tauber",49.37679,10.17589],
+["wd-Q104673595","Jonas Gottlob",1853,"memorial","Kirchgasse 1, 91541 Rothenburg ob der Tauber",49.37722,10.17746],
+["wd-Q104699914","Rosa Hamburger",1875,"memorial","Judengasse 22, 91541 Rothenburg ob der Tauber",49.37866,10.17931],
+["wd-Q105462524","Samson Wurzinger",1868,"memorial","Herrngasse 21, 91541 Rothenburg ob der Tauber",49.37679,10.17588],
+["st-n2282168233","Siegfried Steinberger",1889,"memorial","Obere Schmiedgasse 15, 91541 Rothenburg ob der Tauber",49.37621,10.17957],
+["st-n2282168232","Sigmund Fritz Kirschbaum",1902,"memorial","Neugasse 34, 91541 Rothenburg ob der Tauber",49.37552,10.18269],
+["st-n2282168227","Sigmund Hamburger",1864,"memorial","Judengasse 22, 91541 Rothenburg ob der Tauber",49.37866,10.17931],
+["wd-Q105364595","Sigmund Lissberger",1875,"memorial","Herrngasse 21, 91541 Rothenburg ob der Tauber",49.37679,10.17588]
+],
+"slug":"rothenburg-ob-der-tauber"}

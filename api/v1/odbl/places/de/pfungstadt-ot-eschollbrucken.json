@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Pfungstadt OT Eschollbrücken",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134691164","Agathe Landsberg",1887,"memorial","Darmstädter Straße 31, 64319 Pfungstadt OT Eschollbrücken",49.81037,8.5658],
+["st-Q134691167","Alphons Lorch",1890,"memorial","Freitagsgasse 19a, 64319 Pfungstadt OT Eschollbrücken",49.81034,8.56381],
+["st-Q134691173","Arthur Lorch",1882,"memorial","Pfungstädter Straße 17, 64319 Pfungstadt OT Eschollbrücken",49.8076,8.56592],
+["st-Q134691174","Eugen Lorch",1885,"memorial","Pfungstädter Straße 17, 64319 Pfungstadt OT Eschollbrücken",49.8076,8.56592],
+["st-Q134691166","Günter Abraham Landsberg",1927,"memorial","Darmstädter Straße 31, 64319 Pfungstadt OT Eschollbrücken",49.81037,8.5658],
+["st-Q134691170","Helene Wolf",1909,"memorial","Pfungstädter Straße 6, 64319 Pfungstadt OT Eschollbrücken",49.8085,8.56482],
+["st-Q134691163","Hermann Landsberg",1885,"memorial","Darmstädter Straße 31, 64319 Pfungstadt OT Eschollbrücken",49.81037,8.5658],
+["st-Q134691171","Julius Lorch",1875,"memorial","Pfungstädter Straße 17, 64319 Pfungstadt OT Eschollbrücken",49.8076,8.56592],
+["st-Q134691165","Margot Landsberg",1922,"memorial","Darmstädter Straße 31, 64319 Pfungstadt OT Eschollbrücken",49.81037,8.5658],
+["st-Q134691175","Rudolph Lorch",1893,"memorial","Pfungstädter Straße 17, 64319 Pfungstadt OT Eschollbrücken",49.8076,8.56592],
+["st-Q134691168","Samuel Wolf",1880,"memorial","Pfungstädter Straße 6, 64319 Pfungstadt OT Eschollbrücken",49.8085,8.56482],
+["st-Q134691169","Selma Wolf",1886,"memorial","Pfungstädter Straße 6, 64319 Pfungstadt OT Eschollbrücken",49.8085,8.56482],
+["st-Q134691172","Sessie Lorch",1874,"memorial","Pfungstädter Straße 17, 64319 Pfungstadt OT Eschollbrücken",49.8076,8.56592]
+],
+"slug":"pfungstadt-ot-eschollbrucken"}

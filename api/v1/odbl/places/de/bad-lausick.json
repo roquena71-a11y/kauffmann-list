@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Bad Lausick",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11902166848","Bruno Ernst Hönig",1907,"memorial","Angerstraße 17, 04651 Bad Lausick",51.14543,12.63713],
+["st-Q125925840","Dora Baunack",1907,"memorial","Fabianstraße 10, 04651 Bad Lausick",51.14356,12.64563],
+["st-Q125925892","Else Hirsch",1903,"memorial","Straße der Einheit 40, 04651 Bad Lausick",51.14432,12.64051],
+["st-Q125925888","Fanny Hirsch",1900,"memorial","Straße der Einheit 40, 04651 Bad Lausick",51.14432,12.64051],
+["st-n12466570409","Friedrich Kaubisch",1895,"memorial","August-Bebel-Straße 25, 04651 Bad Lausick",51.14357,12.64132],
+["wd-Q126283337","Johanna Charlotte Michaelis",1899,"memorial","Straße der Einheit 40, 04651 Bad Lausick",51.14432,12.64051],
+["st-n12511768775","Karl Köppel",1893,"memorial","Leipziger Straße 13, 04651 Bad Lausick",51.14648,12.63811],
+["st-Q125925890","Margarethe Hirsch",1902,"memorial","Straße der Einheit 40, 04651 Bad Lausick",51.14432,12.64051],
+["st-Q125925896","Max Hirsch",1908,"memorial","Straße der Einheit 40, 04651 Bad Lausick",51.14432,12.64051],
+["st-n12466638805","Max Lohmann",1896,"memorial","Reichersdorfer Straße 1, 04651 Bad Lausick",51.14122,12.64912],
+["wd-Q104702871","Siegmund Hirsch",1860,"memorial","Straße der Einheit 40",51.14428,12.64048],
+["st-Q125925887","Sophie Hirsch",1894,"memorial","Straße der Einheit 40, 04651 Bad Lausick",51.14432,12.64051],
+["st-Q125925826","Walter Baunack",1905,"memorial","Fabianstraße 10, 04651 Bad Lausick",51.14356,12.64563]
+],
+"slug":"bad-lausick"}

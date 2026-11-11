@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"DE",
+"label":"Quickborn",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3916849241","Hermann Hinrichs",1878,"memorial","Fritz-Reuter-Straße 3, 25451 Quickborn",53.75069,9.96139],
+["st-n3937897064","Jan Sodzcyk",1924,"memorial","Friedenstraße 10, 25451 Quickborn",53.72107,9.85953],
+["st-Q99587876","Magda Janzen",1913,"memorial","Kieler Straße 138, 25451 Quickborn",53.73603,9.89267],
+["wd-Q99587741","Martha Weidmann",1902,"memorial","Heinrich-Lohse-Straße 7, 25451 Quickborn",53.7313,9.91015],
+["wd-Q99587821","Max Kellermann",1897,"memorial","Friedrichsgaber Straße 37, 25451 Quickborn",53.74833,9.93795],
+["st-n3937897066","Paul Thomsen",1908,"memorial","Kieler Straße 157, 25451 Quickborn",53.74913,9.88519],
+["st-n3916849243","Richard Weise",1889,"memorial","Lerchenweg/Grandweg, 25451 Quickborn",53.74914,9.94423]
+],
+"slug":"quickborn"}

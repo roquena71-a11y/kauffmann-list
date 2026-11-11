@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Tostedt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11565266229","Boleslaw Marzec",1916,"memorial","Schützenstraße 24, Tostedt",53.27777,9.7099],
+["st-n11565266233","Erna Rosen",1893,"memorial","Poststraße 62, Tostedt",53.27192,9.72973],
+["st-n11565266227","Friedrich Meyer",1892,"memorial","Poststraße 1, Tostedt",53.28159,9.71389],
+["st-n11565266231","Käthe Rosen",1904,"memorial","Poststraße 62, Tostedt",53.27191,9.72974],
+["st-n11565266234","Martha Rosen",1891,"memorial","Poststraße 62, Tostedt",53.27193,9.72972],
+["wd-Q104701950","Olga Rosen",1895,"memorial","Poststraße 62, Tostedt",53.27192,9.72973],
+["st-n11565266226","Rosette Dörnbrack",1883,"memorial","Bahnhofstraße 35, Tostedt",53.27762,9.71679],
+["wd-Q104408307","Selma Blumann",1882,"memorial","Unter den Linden 39, Tostedt",53.2808,9.70443]
+],
+"slug":"tostedt"}

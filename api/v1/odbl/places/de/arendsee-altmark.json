@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Arendsee (Altmark)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105388243","Julius Rosenstein",1860,"memorial","Friedensstraße 35, 39619 Arendsee (Altmark)",52.88157,11.48493],
+["wd-Q105388263","Siegmund Rosenstein",1870,"memorial","Friedensstraße 35, 39619 Arendsee (Altmark)",52.88157,11.48493]
+],
+"slug":"arendsee-altmark"}

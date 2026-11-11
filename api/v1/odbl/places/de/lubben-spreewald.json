@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Lübben (Spreewald)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104408797","Albert Bock",1870,"memorial","Logenstraße 12 (neben), 15907 Lübben (Spreewald)",51.93877,13.89048],
+["st-Q141443886","Frieda Moses",1893,"memorial","Kirchstraße 29, 15907 Lübben (Spreewald)",51.94223,13.89924],
+["wd-Q105461941","Johanna Wolff",1859,"memorial","Hauptstraße 16, 15907 Lübben (Spreewald)",51.9414,13.89683],
+["st-Q141441255","Julius Burchardi",1878,"memorial","Am Schutzgraben 11, 15907 Lübben (Spreewald)",51.94225,13.90066],
+["wd-Q105374319","Julius Moses",1883,"memorial","Kirchstraße 29, 15907 Lübben (Spreewald)",51.94223,13.89924],
+["st-Q141441249","Minna Burchardi",1878,"memorial","Am Schutzgraben 11, 15907 Lübben (Spreewald)",51.94225,13.90066],
+["st-Q141444210","Rosalie Kassel",1911,"memorial","Kirchstraße 29, 15907 Lübben (Spreewald)",51.94223,13.89924],
+["st-Q100926805","Sophie-Charlotte Astrich",1893,"memorial","Brunnenstraße 8, 15907 Lübben (Spreewald)",51.93886,13.87561]
+],
+"slug":"lubben-spreewald"}

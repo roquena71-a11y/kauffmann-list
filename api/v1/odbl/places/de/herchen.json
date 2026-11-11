@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Herchen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4188863794","Charlotte Burbach",1895,"memorial","Höher Landstr. 2, Herchen",50.78158,7.51243],
+["st-n4188859694","Lothar Burbach",1895,"memorial","Höher Landstr. 2, Herchen",50.78158,7.51243]
+],
+"slug":"herchen"}

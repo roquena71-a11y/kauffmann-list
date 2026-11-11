@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Straelen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3977627037","Edith Mendel",1921,"memorial","Bahnstraße 9, Straelen",51.44303,6.26896],
+["st-n3243573340","Eduard Mendel",1875,"memorial","Venloer Straße 10, Straelen",51.44357,6.26649],
+["st-n3977627038","Emanuel Hoffstadt",1864,"memorial","Annastraße 7, Straelen",51.44225,6.26617],
+["st-n3243432392","Fanny Sanders",1902,"memorial","Mühlenstraße 10, Straelen",51.44487,6.26537],
+["st-n3977627040","Hans Mendel",1912,"memorial","Bahnstraße 9, Straelen",51.44303,6.26896],
+["st-n3977627041","Ilse Mendel",1914,"memorial","Bahnstraße 9, Straelen",51.44303,6.26896],
+["st-n3243432393","Isidor Sanders",1900,"memorial","Mühlenstraße 10, Straelen",51.44487,6.26536],
+["st-n3977627044","Oskar Mendel",1876,"memorial","Bahnstraße 9, Straelen",51.44303,6.26896],
+["st-n3977627045","Siegfried Hoffstadt",1908,"memorial","Annastraße 7, Straelen",51.44225,6.26617],
+["st-n3977627046","Sophia Mendel",1881,"memorial","Bahnstraße 9, Straelen",51.44303,6.26896]
+],
+"slug":"straelen"}

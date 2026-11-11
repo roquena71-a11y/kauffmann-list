@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Ahrensburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q99616671","Alice Nathan",1871,"memorial","Albert-Mahlstedt-Straße 20, 23701 Ahrensburg",54.13606,10.61333],
+["st-n2670244594","Anneliese Oelte",1934,"memorial","Ernst-Ziese-Straße 2, Ahrensburg",53.66323,10.23672],
+["wd-Q139116249","Carl Ullrich",1889,"memorial","Klaus-Groth-Straße 9, 23701 Ahrensburg",54.12946,10.61219],
+["wd-Q15439248","Dorle Rath",1921,"memorial","Waldstraße 8, 22926 Ahrensburg",53.66958,10.23963],
+["wd-Q104530211","Hugo Rath",1876,"memorial","Waldstraße 8, 22926 Ahrensburg",53.66958,10.23963],
+["st-Q99616761","Jenny Nathan",1856,"memorial","Albert-Mahlstedt-Straße 20, 23701 Ahrensburg",54.13606,10.61333],
+["st-n2670244605","Magnus Lehmann",1885,"memorial","Große Straße 42, Ahrensburg",53.67343,10.239],
+["wd-Q104530210","Veronika Rath",1883,"memorial","Waldstraße 8, 22926 Ahrensburg",53.66958,10.23963]
+],
+"slug":"ahrensburg"}

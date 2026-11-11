@@ -1,0 +1,11 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":1,
+"country":"DE",
+"label":"früher Königstraße 157",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q73289216","Elfriede Gottschalk",1895,"memorial","Friedrich-Ebert-Straße 157, früher Königstraße 157, Wuppertal, Elberfeld",51.24964,7.12527]
+],
+"slug":"fruher-konigstrae-157"}

@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Georgsmarienhütte",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11778310448","Albert Baller",1909,"memorial","Karlsrtraße 14, Georgsmarienhütte",52.21981,8.0322],
+["st-n11778310445","Bernhardine Mönkedieck",1940,"memorial","Oeseder Straße 44, Georgsmarienhütte",52.21111,8.06372],
+["st-n11778310450","Helene Plock",1858,"memorial","Karlsrtraße 14, Georgsmarienhütte",52.20446,8.04218],
+["st-n11778310447","Ignatz Wojewoda",1894,"memorial","Sutthauser Straße 56, Georgsmarienhütte",52.22388,8.00955],
+["st-n11778310446","Katharina Westenberg",1887,"memorial","Oeseder Straße 85, Georgsmarienhütte",52.2053,8.06603]
+],
+"slug":"georgsmarienhutte"}

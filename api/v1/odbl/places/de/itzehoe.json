@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Itzehoe",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4875435173","Aaron Rieder",1897,"memorial","Sandberg 11, Itzehoe",53.92312,9.51951],
+["st-n4875435178","Alice Eichwald",1903,"memorial","Breite Straße 11, Itzehoe",53.92263,9.51847],
+["st-n4875435176","Elisabeth Abraham",1908,"memorial","Kirchenstraße 18, Itzehoe",53.92344,9.51738],
+["st-n4875435171","Erika Rieder",1931,"memorial","Sandberg 11, Itzehoe",53.92312,9.51951],
+["st-n4875435179","Erna Gortakowski",1891,"memorial","Breite Straße 29, Itzehoe",53.92214,9.518],
+["st-n4875435172","Gisela Rieder",1900,"memorial","Sandberg 11, Itzehoe",53.92312,9.51951],
+["st-n4875435170","Hannelore Rieder",1897,"memorial","Sandberg 11, Itzehoe",53.92312,9.51951],
+["st-n4875435174","Hermann Abraham",1896,"memorial","Kirchenstraße 18, Itzehoe",53.92344,9.51738],
+["st-n4875435177","Ilse Gortakowski",1916,"memorial","Breite Straße 29, Itzehoe",53.92214,9.518],
+["st-n4875435180","Sophie Eichwald",1864,"memorial","Breite Straße 11, Itzehoe",53.92263,9.51847]
+],
+"slug":"itzehoe"}

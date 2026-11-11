@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"DE",
+"label":"Stolzenau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3643906729","Anni Goldschmidt",1917,"memorial","Weserstraße 4",52.51025,9.07778],
+["st-n3643906730","Emilie Blumenfeld",1896,"memorial","Lange Straße 10",52.51063,9.07599],
+["wd-Q123285829","Martha Lipmann",1889,"memorial","Bahnhofstraße 13",52.51,9.07704],
+["st-n3648262242","Ruth Blumenfeld",1926,"memorial","Lange Straße 10",52.51062,9.07599],
+["st-n3648262243","Sara Goldschmidt",1884,"memorial","Weserstraße 4",52.51025,9.07778],
+["st-n3648262244","Selig Blumenfeld",1877,"memorial","Lange Straße 10",52.51062,9.076],
+["st-n3648262246","Werner Blumenfeld",1923,"memorial","Lange Straße 10",52.51062,9.076]
+],
+"slug":"stolzenau"}

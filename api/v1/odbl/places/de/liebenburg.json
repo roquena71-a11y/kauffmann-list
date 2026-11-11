@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Liebenburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131300224","Anna Windmüller",1900,"memorial","Lindenstraße 15, Liebenburg",52.02324,10.4329],
+["st-Q131300215","Elsa Tasse",1886,"memorial","Lindenstraße 15, Liebenburg",52.02324,10.4329],
+["st-Q131300220","Ernestine Weil",1893,"memorial","Lindenstraße 15, Liebenburg",52.02324,10.4329],
+["st-Q131300188","Ida Bloch",1886,"memorial","Lindenstraße 15, Liebenburg",52.02324,10.4329],
+["st-Q131300204","Johanne Steinberg",1878,"memorial","Lindenstraße 15, Liebenburg",52.02324,10.4329],
+["st-Q131300193","Julchen Leeser",1874,"memorial","Lindenstraße 15, Liebenburg",52.02324,10.4329],
+["st-Q131300191","Sabine Drack",1889,"memorial","Lindenstraße 15, Liebenburg",52.02324,10.4329],
+["st-Q131300199","Sophie Rosenthal",1888,"memorial","Lindenstraße 15, Liebenburg",52.02324,10.4329],
+["st-Q131300201","Sophie Schönthal",1894,"memorial","Lindenstraße 15, Liebenburg",52.02324,10.4329]
+],
+"slug":"liebenburg"}

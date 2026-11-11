@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Schacht-Audorf",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q101007602","Friedrich Plagmann",1885,"memorial","Kieler Straße 25, 24790 Schacht-Audorf",54.31343,9.71785],
+["st-Q132860292","Friedrich Streich",1883,"memorial","Kieler Straße 25, Schacht-Audorf",54.31342,9.71785]
+],
+"slug":"schacht-audorf"}

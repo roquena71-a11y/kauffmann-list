@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Lahnstein",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4774135336","Agnes Dehe",1898,"memorial","Salhofplatz, Lahnstein",50.30215,7.6048],
+["st-n4774135332","Anni Dorothea Richter",1919,"memorial","Salhofplatz, Lahnstein",50.30216,7.6048],
+["st-n4774135334","Dr. Ernst Emil Gassen",1896,"memorial","Salhofplatz, Lahnstein",50.30216,7.6048],
+["st-n4774135333","Gertrude Scheh",1890,"memorial","Salhofplatz, Lahnstein",50.30215,7.6048],
+["st-n4774135331","Johanna May",1928,"memorial","Salhofplatz, Lahnstein",50.30216,7.60481]
+],
+"slug":"lahnstein"}

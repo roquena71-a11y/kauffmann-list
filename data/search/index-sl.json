@@ -1,0 +1,22 @@
+{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"sl",
+"rows":[
+["Q130987288","Gustav Slabe",null,"Augsburg",48.381027,10.915647,"1902","st-Q130987288"],
+["Q135296337","Alexandr Slabtschenko","Goldsteinstraße 114, 60528 Frankfurt am Main","Frankfurt am Main",50.084715,8.633048,"1923","st-Q135296337"],
+["Q52824523","David Slager","Richard-Wagner-Straße 30, Bremen","Bremen",53.082068,8.827713,"1890","wd-Q105655585"],
+["n2347165553","Horst Adolf Slager","Trajanstraße 5, Köln","Köln",50.919712,6.965045,"1921","st-n2347165553"],
+["n8691073262","Ella Slanowitsch","Neustraße 5, Horstmar","Horstmar",52.080768,7.301075,"1903","st-n8691073262"],
+["Q134267573","Theodor Slepoj","Steigstraße 9, Mühlacker","Mühlacker",48.945975,8.843475,"1889","st-Q134267573"],
+["n12916918680","Fery Slotowski","Nonnenstraße 13, 02826 Görlitz","Görlitz",51.154187,14.987177,"1933",null],
+["n12752624311","Gertrud Slotowski","Großstraße 79, 14929 Treuenbrietzen","Treuenbrietzen",52.097113,12.871321,null,"st-n12752624311"],
+["n12916918678","Ibolyka Slotowski","Nonnenstraße 13, 02826 Görlitz","Görlitz",51.154188,14.987176,"1900","st-n12916918678"],
+["n12752624310","Paul Slotowski","Großstraße 79, 14929 Treuenbrietzen","Treuenbrietzen",52.097114,12.871321,null,"st-n12752624310"],
+["n12916918679","Tibor Slotowski","Nonnenstraße 13, 02826 Görlitz","Görlitz",51.154187,14.987175,"1928",null],
+["n12916918677","Walter Slotowski","Nonnenstraße 13, 02826 Görlitz","Görlitz",51.154187,14.987175,"1896","st-n12916918677"],
+["n8196138459","Mieczyslaw Slowik","Kriegerstraße 28, Mannheim","Mannheim",49.545209,8.443691,null,null],
+["n13639539199","Anatol Slusar","Essener Straße 54, Hamburg","Hamburg",53.672154,9.992387,"1944","st-n13639539199"],
+["Q132149471","Bella Slutzkin","Savignyplatz 6, Berlin-Charlottenburg","Berlin",52.50666,13.32204,"1886","wd-Q132144610"],
+["Q132149472","Julius Slutzkin","Savignyplatz 6, Berlin-Charlottenburg","Berlin",52.50666,13.32204,"1880","wd-Q132144611"],
+["n13484554063","Nastja Slywinska","Weg beim Jäger 150","Hamburg",53.620436,9.997371,"1944","st-n13484554063"]
+]}

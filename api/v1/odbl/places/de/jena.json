@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Jena",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94776936","Agnes Holzmann",1863,"memorial","Forstweg 23, 07745 Jena",50.92641,11.57725],
+["wd-Q17310829","Clara Rosenthal",1863,"memorial","Mälzerstraße 11, 07745 Jena",50.91948,11.5796],
+["wd-Q131366710","Heinrich Hess",1916,"memorial","Forstweg 25, 07745 Jena",50.92639,11.57715],
+["wd-Q15823689","Klara Griefahn",1897,"memorial","Klara-Griefahn-Straße 14, 07747 Jena",50.89484,11.60535]
+],
+"slug":"jena"}

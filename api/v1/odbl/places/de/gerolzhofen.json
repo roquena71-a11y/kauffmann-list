@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Gerolzhofen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131743180","Albert Lichtenauer",1925,"memorial","Bahnhofstraße 16, Gerolzhofen",49.90191,10.34552],
+["st-Q131743188","Amalie Kohn",1873,"memorial","Marktstraße 20, Gerolzhofen",49.90214,10.34717],
+["st-Q131743190","Hermann Kohn",1871,"memorial","Marktstraße 20, Gerolzhofen",49.90214,10.34717],
+["st-Q131743181","Janette Lichtenauer",1881,"memorial","Bahnhofstraße 16, Gerolzhofen",49.90191,10.34552],
+["st-Q131743182","Jenny Lichtenauer",1893,"memorial","Bahnhofstraße 16, Gerolzhofen",49.90191,10.34552],
+["st-Q131743179","Katharina Langstädter",1884,"memorial","Bahnhofstraße 5, Gerolzhofen",49.90187,10.34653],
+["st-Q131743185","Max Henle",1882,"memorial","Marktstraße 7, Gerolzhofen",49.90133,10.3483],
+["st-Q131743186","Meta Henle",1883,"memorial","Marktstraße 7, Gerolzhofen",49.90133,10.3483],
+["st-Q131743187","Paul Simon Henle",1925,"memorial","Marktstraße 7, Gerolzhofen",49.90133,10.3483],
+["st-Q131743183","Rafael Lichtenauer",1878,"memorial","Bahnhofstraße 16, Gerolzhofen",49.90191,10.34552],
+["st-Q131743184","Stefan Löbhardt",1897,"memorial","Marktplatz 15, Gerolzhofen",49.90099,10.34977]
+],
+"slug":"gerolzhofen"}

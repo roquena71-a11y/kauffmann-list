@@ -1,0 +1,11 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"ky",
+"rows":[
+["st-n14268103380","Annemarie Kychenthal",1910,"Schwerin",53.62879,11.41446,"ky"],
+["wd-Q105360557","Louis Kychenthal",1863,"Schwerin",53.62879,11.41445,"ky"],
+["st-n14268093066","Ludwig Kychenthal",1897,"Schwerin",53.6288,11.41446,"ky"],
+["st-n14268100144","Willy Kychenthal",1907,"Schwerin",53.62879,11.41446,"ky"],
+["wd-Q132135931","Ida Kylies",1889,"Berlin",52.62291,13.3261,"ky"],
+["st-n762637012","Theodor Kynast",1904,"Göppingen",48.70057,9.65835,"ky"]
+]}

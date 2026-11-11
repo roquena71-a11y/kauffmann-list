@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Weeze",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n685226018","Heinrich Koopmann",1894,"memorial","Kevelaerer Straße 32,Weeze",51.62555,6.20056],
+["st-n685223116","Leonhard Koopmann",1862,"memorial","Wasserstraße 55, 47652 Weeze",51.629,6.19834],
+["st-n739525320","Marion Koopmann",1930,"memorial","Kevelaerer Straße 32,Weeze",51.62555,6.20056],
+["st-n739525318","Paula Koopmann",1905,"memorial","Kevelaerer Straße 32,Weeze",51.62555,6.20055],
+["st-n739525319","Rosemarie Koopmann",1932,"memorial","Kevelaerer Straße 32,Weeze",51.62555,6.20056],
+["st-n685223276","Simon Hertz",1888,"memorial","Alte Heerstraße 11,Weeze",51.62402,6.20111]
+],
+"slug":"weeze"}

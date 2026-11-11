@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Altenahr",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n9884391573","Gerda Schweitzer",1913,"memorial","Roßberg 39, 53505 Altenahr",50.51863,6.99373],
+["st-n9884391576","Karl Schweitzer",1882,"memorial","Roßberg 39, 53505 Altenahr",50.51864,6.99373],
+["st-n9884391574","Leo Schweitzer",1909,"memorial","Roßberg 39, 53505 Altenahr",50.51863,6.99372],
+["st-n9884391575","Rosa Schweitzer",1884,"memorial","Roßberg 39, 53505 Altenahr",50.51864,6.99374],
+["st-n9884391572","Tilly Schweitzer",1915,"memorial","Roßberg 39, 53505 Altenahr",50.51863,6.99373]
+],
+"slug":"altenahr"}

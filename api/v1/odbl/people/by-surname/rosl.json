@@ -1,0 +1,6 @@
+{"count":1,
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"people":[
+{"birth_date":"1906","fate":"imprisoned","fate_basis":"inscription_text","field_sources":{"birth_date":["stolpersteine_de"],"fate":["stolpersteine_de"],"name":["stolpersteine_de"]},"id":"st-n14169656061","identifiers":{"osm":["n14169656061"]},"memorials":[{"country":"DE","image":"https://commons.wikimedia.org/wiki/File:Stolperstein_Tübingen_Agnes_Rösler.jpg","inscription":"HIER WOHNTE|AGNES RÖSLER|JG. 1906|IM WIDERSTAND/KPD|VERHAFTET 1937|'VORBEREITUNG HOCHVERRAT'|SCHWÄBISCH GMÜND|GOTTESZELL|ENTLASSEN JAN.1939","lat":48.530321,"lon":9.0675631,"memorial_id":"n14169656061","source_id":"stolpersteine_de","type":"stolperstein"}],"name":"Agnes Rösler","sources":[{"attribution":"© OpenStreetMap contributors (ODbL 1.0) + Wikidata (CC0 1.0)","license":"ODbL-1.0","record_id":"n14169656061","retrieved":"2026-11-04","source_id":"stolpersteine_de","url":"https://www.openstreetmap.org/node/14169656061"}]}
+],
+"prefix":"rosl"}

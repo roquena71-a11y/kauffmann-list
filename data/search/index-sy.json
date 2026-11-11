@@ -1,0 +1,21 @@
+{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"sy",
+"rows":[
+["Q131624802","Stefan Sydoriw","Herdfeldstraße 49, Kirchheim unter Teck","Kirchheim unter Teck",48.65087,9.45678,"1925","st-Q131624802"],
+["Q141551551","Amalie von Sydow","Klopstockstraße 2, 65187 Wiesbaden","Wiesbaden",50.070533,8.235274,"1867","wd-Q141604679"],
+["Q131314071","Werner Sylten","Eleonorenstraße 20a, 07586 Bad Köstritz","Bad Köstritz",50.92467,11.99907,"1893","wd-Q2562743"],
+["n12369107550","Werner Sylten","Bachstraße 14, 99867 Gotha","Gotha",50.954554,10.698417,"1893","wd-Q2562743"],
+["n13917038737","Werner Sylten","Ostendorfstraße 19, 12557 Berlin","Berlin",52.41998,13.590284,"1893","wd-Q2562743"],
+["n3893100926","Leah Syman","Theodorstraße 19, 45968 Gladbeck","Gladbeck",51.553953,7.000975,"1893","st-n3893100926"],
+["n8973804804","Leon Syman","Theodorstraße 19, 45968 Gladbeck","Gladbeck",51.553947,7.000957,"1921",null],
+["n8973804806","Lisbeth Syman","Theodorstraße 19, 45968 Gladbeck","Gladbeck",51.553952,7.000969,"1925",null],
+["n8973804805","Salomon Syman","Theodorstraße 19, 45968 Gladbeck","Gladbeck",51.553949,7.000963,"1924",null],
+["n8973804803","Samson Syman","Theodorstraße 19, 45968 Gladbeck","Gladbeck",51.553944,7.000949,"1899","st-n8973804803"],
+["n13596685928","Ðie Synagoge",null,null,51.005747,10.161247,null,null],
+["n7876049932","Die Synagoge","Mühlentorstraße 7, 31547 Rehburg-Loccum","Rehburg-Loccum",52.473497,9.227889,null,"st-n7876049932"],
+["n14240839697","Eine Synagoge","Sigismundstraße 19, 78462 Konstanz","Konstanz",47.658389,9.175332,null,null],
+["n10313140101","Synagoge","Agathawall 3-5, Uedem","Uedem",51.666972,6.272509,null,null],
+["n3596073673","Synagoge","Nordwall 39, 47608 Geldern","Geldern",51.519594,6.324377,null,null],
+["n13090472330","Synagogue","Kirschstraße 32, 54669 Bollendorf","Bollendorf",49.85165,6.363265,null,null]
+]}

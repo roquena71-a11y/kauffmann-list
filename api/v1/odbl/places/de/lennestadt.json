@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"DE",
+"label":"Lennestadt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2476435768","Aron Neuhaus",1877,"memorial","Hundemstraße 33, Lennestadt",51.10356,8.07229],
+["st-n2476435781","Dora Neuhaus",1912,"memorial","Hundemstraße 33, Lennestadt",51.10356,8.07229],
+["st-n2476435788","Else Neuhaus",1911,"memorial","Hundemstraße 33, Lennestadt",51.10356,8.07229],
+["st-n2476435793","Emilie Neheimer",1869,"memorial","Geschwister Neheimer-Platz, Lennestadt",51.15297,8.05888],
+["st-n2476435797","Emma Neheimer",1865,"memorial","Geschwister Neheimer-Platz, Lennestadt",51.15297,8.05888],
+["st-n2476435798","Franz Peters",1918,"memorial","Schnettmecke 12, Lennestadt",51.09323,8.02028],
+["st-n2476435799","Frieda Neheimer",1873,"memorial","Geschwister Neheimer-Platz, Lennestadt",51.15297,8.05888],
+["st-n2476435804","Günter Tigges",1933,"memorial","Twiene 3, Lennestadt",51.13247,8.01381],
+["st-n2476435805","Johanna Neuhaus",1877,"memorial","Hundemstraße 33, Lennestadt",51.10356,8.07229],
+["st-n2476435808","Mathilde Köhler",1920,"memorial","Oberelsper Straße, Lennestadt",51.16837,8.08487],
+["st-n2476435903","Rika Neheimer",1879,"memorial","Geschwister Neheimer-Platz, Lennestadt",51.15297,8.05888],
+["st-n2476435904","Rosa Neheimer",1875,"memorial","Geschwister Neheimer-Platz, Lennestadt",51.15297,8.05888]
+],
+"slug":"lennestadt"}

@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"DE",
+"label":"Ingelheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2540961898","Berta Nussbaum",1879,"memorial","Mainzer Straße 78, Ingelheim",49.97629,8.07187],
+["st-n2540969348","Betty Schäfer",1904,"memorial","Binger Straße 4, Ingelheim",49.97571,8.0641],
+["st-n2542793320","Elisabeth Langstädter",1895,"memorial","Stiegelgasse 25, Ingelheim",49.96248,8.06001],
+["st-n2543092502","Ernst Simon Eisemann",1891,"memorial","Stiegelgasse 51, Ingelheim",49.96118,8.05993],
+["st-n2541024579","Ferdinand Mayer",1887,"memorial","Bahnhofstraße 129, Ingelheim",49.96474,8.05985],
+["st-n2541315027","Gustav Nussbaum",1874,"memorial","Mainzer Straße 78, Ingelheim",49.97629,8.07188],
+["st-n2541588928","Henrietta Mina Mayer",1861,"memorial","Bahnhofstraße 129, Ingelheim",49.96474,8.05985],
+["st-n2541315029","Lina Koch",1883,"memorial","Mainzer Straße 14, Ingelheim",49.97581,8.06532],
+["st-n2541315031","Luise \"Lilly\" Neumann",1882,"memorial","Bahnhofstraße 23, Ingelheim",49.97367,8.05496],
+["st-n2541002389","Moritz Neumann",1876,"memorial","Bahnhofstraße 79, Ingelheim",49.96867,8.05766],
+["st-n2541315033","Otto Mayer",1882,"memorial","Mainzer Straße 31, Ingelheim",49.97589,8.06669],
+["st-n2543092575","Thekla Eisemann",1902,"memorial","Stiegelgasse 51, Ingelheim",49.96118,8.05993]
+],
+"slug":"ingelheim"}

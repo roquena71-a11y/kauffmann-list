@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Unna",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7042340221","Else Weinberg",1900,"memorial","Friedrich-Ebert-Straße 31, 59425 Unna",51.54265,7.68525],
+["st-n9801598978","Felix Hanauer",1912,"memorial",null,51.54195,7.68642],
+["st-n7019656048","Julius Weinberg",1873,"memorial","Friedrich-Ebert-Straße 31, 59425 Unna",51.54265,7.68524],
+["st-n9801598979","Käthe Hanauer",1887,"memorial",null,51.54195,7.68642],
+["st-n7042340222","Klara Weinberg",1878,"memorial","Friedrich-Ebert-Straße 31, 59425 Unna",51.54265,7.68525],
+["st-n9801598981","Paul Hanauer",1915,"memorial",null,51.54195,7.68642],
+["st-n9801598980","Siegfried Hanauer",1878,"memorial",null,51.54195,7.68642],
+["st-n9801598982","Victor Hanauer",1911,"memorial",null,51.54195,7.68642]
+],
+"slug":"unna"}

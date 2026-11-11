@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Bergen auf Rügen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q101072652","Albert Noack",1866,"memorial","Markt 19, 18528 Bergen auf Rügen",54.41732,13.43373],
+["st-Q101072671","Ida Noack",1861,"memorial","Markt 19, 18528 Bergen auf Rügen",54.41732,13.43373]
+],
+"slug":"bergen-auf-rugen"}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Schopfheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131683686","Bella Auerbacher",1903,"memorial","Wallstraße 5, 79650 Schopfheim",47.65033,7.81989],
+["st-Q131683703","Herbert Mayer",1902,"memorial","Hauptstraße 49, Schopfheim",47.65013,7.82254],
+["st-Q131683705","Katharina Waldi",1890,"memorial","Hauptstraße 14, Schopfheim",47.64904,7.81795],
+["st-Q131683701","Melitta Auerbacher",1906,"memorial","Wallstraße 5, Schopfheim",47.65033,7.81989],
+["st-Q131683704","Meta Mayer",1886,"memorial","Hauptstraße 49, Schopfheim",47.65013,7.82254],
+["st-Q131683702","Wilhelm Auerbacher",1897,"memorial","Wallstraße 5, Schopfheim",47.65033,7.81989]
+],
+"slug":"schopfheim"}

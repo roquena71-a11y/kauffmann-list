@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Frankenberg/Sa.",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134497151","Herta Fickert",1909,"memorial","Mittweidaer Straße 8, 09669 Frankenberg/Sa.",50.93965,13.03649],
+["st-Q125948209","Herta Lieselotte Lewi",1914,"memorial","Freiberger Straße 1, 09669 Frankenberg/Sa.",50.91144,13.03283],
+["st-n3250251265","Lieselotte Lewi",1914,"memorial","Freiberger Straße 1",50.91144,13.03283],
+["st-Q134497102","Otto Fickert",1903,"memorial","Mittweidaer Straße 8, 09669 Frankenberg/Sa.",50.93965,13.03649],
+["st-n3250251266","Paula Sielmann",1883,"memorial","Freiberger Straße 1",50.91144,13.03285],
+["st-n3250251268","Wilhelm Sielmann",1883,"memorial","Freiberger Straße 1",50.91145,13.03282]
+],
+"slug":"frankenberg-sa"}

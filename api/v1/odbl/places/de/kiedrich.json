@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Kiedrich",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q126364779","Erna Stern",1894,"memorial","Scharfensteiner Straße 16, 65399 Kiedrich",50.04611,8.08],
+["wd-Q1515033","Gerson Stern",1874,"memorial","Scharfensteiner Straße 16, 65399 Kiedrich",50.04611,8.08]
+],
+"slug":"kiedrich"}

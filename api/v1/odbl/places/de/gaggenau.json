@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Gaggenau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n1833593860","Emilie Maier",1881,"memorial","Landstraße 49, 76571 Gaggenau",48.78155,8.3433],
+["st-n2549571007","Frieda Meyerhoff",1880,"memorial","Murgtalstraße 101, Gaggenau",48.80942,8.31216],
+["st-n2549571046","Gertrud Meyerhoff",1910,"memorial","Murgtalstraße 101, Gaggenau",48.80942,8.31216],
+["st-n1850651914","Hans Maier",1922,"memorial","Hördener Straße 5,76571 Gaggenau",48.78311,8.34459],
+["st-n2549571060","Isidor Meyerhoff",1875,"memorial","Murgtalstraße 101, Gaggenau",48.80942,8.31216],
+["st-n1833593872","Julie Stern",1891,"memorial","Landstraße 34, 76571 Gaggenau",48.77895,8.34405],
+["st-n1833593874","Julius Maier",1872,"memorial","Landstraße 49, 76571 Gaggenau",48.78155,8.3433],
+["st-n2549571053","Liselotte Meyerhoff",1908,"memorial","Murgtalstraße 101, Gaggenau",48.80942,8.31216],
+["st-n1833593882","Ludwig Stern",1886,"memorial","Landstraße 34, 76571 Gaggenau",48.77895,8.34405],
+["st-n1255080771","Nathan Kahn",1878,"memorial","Hauptstraße 101, Gaggenau",48.80067,8.32202],
+["st-n1850651923","Zerline Stengel",1858,"memorial","Hördener Straße 5,76571 Gaggenau",48.78311,8.34459]
+],
+"slug":"gaggenau"}

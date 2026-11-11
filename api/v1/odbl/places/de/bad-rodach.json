@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Bad Rodach",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q136039931","Daniel Strauss",1894,"memorial","Coburger Straße 1, Bad Rodach",50.34138,10.77906],
+["st-Q136039935","Gertrud Strauss",1893,"memorial","Coburger Straße 1, Bad Rodach",50.34138,10.77906],
+["st-Q134571493","Konrad Balmberger",1889,"memorial","Markt 8, Bad Rodach",50.34096,10.77826],
+["st-Q134571496","Ludwig Sachs",1894,"memorial","Markt 8, Bad Rodach",50.34096,10.77826],
+["st-Q134571495","Marie Sachs",1901,"memorial","Markt 8, Bad Rodach",50.34096,10.77826],
+["st-Q134571497","Martha Sachs",1903,"memorial","Markt 8, Bad Rodach",50.34096,10.77826],
+["st-Q134571498","Rosa Regina Sachs",1869,"memorial","Markt 8, Bad Rodach",50.34096,10.77826],
+["st-Q134571499","Salomon Sachs",1864,"memorial","Markt 8, Bad Rodach",50.34096,10.77826],
+["st-Q134571500","Sigmund Sachs",1896,"memorial","Markt 8, Bad Rodach",50.34096,10.77826]
+],
+"slug":"bad-rodach"}

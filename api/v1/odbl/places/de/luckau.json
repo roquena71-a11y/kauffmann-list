@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Luckau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n8364347518","Arthur Simon",1887,"memorial","Lange Straße 52, 15926 Luckau",51.85183,13.71652],
+["st-n8364347519","Betty Simon",1885,"memorial","Lange Straße 52, 15926 Luckau",51.85182,13.71652],
+["st-n12873583245","David Tasselkraut",1899,"memorial","Gartenstraße 4, 15926 Luckau",51.85081,13.71949]
+],
+"slug":"luckau"}

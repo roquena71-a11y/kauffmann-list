@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Ravenstein",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134931696","Alois Beichert",1893,"memorial","Herderstraße 4, 74747 Ravenstein",49.42962,9.55905],
+["st-Q104412664","Ida Fleischhacker",1891,"memorial","Akazienstraße 3, Ravenstein",49.40114,9.50861],
+["st-Q104412604","Nathan Fleischhacker",1887,"memorial","Akazienstraße 3, Ravenstein",49.40114,9.50861]
+],
+"slug":"ravenstein"}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Fröndenberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n5801728363","Bertha Neufeld",1871,"memorial","Ruhrstraße, Fröndenberg",51.4708,7.7683],
+["st-n5803676075","Else Bernstein",1895,"memorial","Kirchplatz 1, Fröndenberg",51.47347,7.76629],
+["st-n5803676076","Helene Simons",1892,"memorial","Kirchplatz 1, Fröndenberg",51.47347,7.76629],
+["st-n5803676078","Jeanette Bernstein",1861,"memorial","Kirchplatz 1, Fröndenberg",51.47347,7.76629],
+["st-n5803676074","Johanna Himmelstern",1861,"memorial","Kirchplatz 1, Fröndenberg",51.47347,7.76629],
+["st-n5803676077","Rosa Bernstein",1885,"memorial","Kirchplatz 1, Fröndenberg",51.47347,7.76629]
+],
+"slug":"frondenberg"}

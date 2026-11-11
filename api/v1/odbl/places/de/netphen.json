@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Netphen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2177659475","Berta Betty Lennhoff",1888,"memorial","Lahnstraße 4, Netphen",50.91402,8.09963],
+["st-n2177659473","Clara Faber",1883,"memorial","Lahnstraße 4, Netphen",50.91402,8.09963],
+["st-n2177659465","Gustav Faber",1884,"memorial","Lahnstraße 4, Netphen",50.91402,8.09963],
+["st-n2177659476","Heinz Lennhoff",1921,"memorial","Lahnstraße 4, Netphen",50.91402,8.09963],
+["st-n2177659477","Julius Lennhoff",1884,"memorial","Lahnstraße 4, Netphen",50.91402,8.09963],
+["st-n2177659474","Ruth Anita Faber",1884,"memorial","Lahnstraße 4, Netphen",50.91402,8.09963]
+],
+"slug":"netphen"}

@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Greven",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6640923626","Franciszek Banaś",1914,"memorial","Markt, 48268 Greven",52.09285,7.61256],
+["st-n6640923625","Polnische Kriegsgefangene",null,"memorial","Markt, 48268 Greven",52.09285,7.61256],
+["st-n6640923624","Wacław Ceglewski",1921,"memorial","Markt, 48268 Greven",52.09285,7.61256]
+],
+"slug":"greven"}

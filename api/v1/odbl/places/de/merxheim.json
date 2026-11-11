@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Merxheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105373606","Bernhard Michel",1886,"memorial","Neugasse 24, 55627 Merxheim",49.7936,7.56042],
+["st-n13241484483","Berthold Michel",1895,"memorial","Neugasse 24, 55627 Merxheim",49.7936,7.56042],
+["st-n13241484478","Daniel Michel",1873,"memorial","Großstraße 2, 55627 Merxheim",49.7944,7.56149],
+["wd-Q105373614","Elvira Michel",1869,"memorial","Neugasse 24, 55627 Merxheim",49.7936,7.56042],
+["st-n13241484476","Hermann Levy",1903,"memorial","Großstraße 2, 55627 Merxheim",49.7944,7.56149],
+["st-n13241484474","Herta Levy",1902,"memorial","Großstraße 2, 55627 Merxheim",49.79441,7.5615],
+["st-n13241484481","Jakob Michel",1900,"memorial","Neugasse 24, 55627 Merxheim",49.7936,7.56042],
+["st-n13241484480","Julius Michel",1897,"memorial","Neugasse 24, 55627 Merxheim",49.7936,7.56042],
+["st-n13241484482","Salomon Michel",1893,"memorial","Neugasse 24, 55627 Merxheim",49.7936,7.56042],
+["st-n13241484477","Sophie Michel",1879,"memorial","Großstraße 2, 55627 Merxheim",49.79441,7.56149],
+["st-n13241484479","Walter Michel",1901,"memorial","Neugasse 24, 55627 Merxheim",49.7936,7.56042]
+],
+"slug":"merxheim"}

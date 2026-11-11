@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Dattenfeld (Windeck)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n1906694296","Gertrud Simon",1928,"memorial","Haupstraße 128, Dattenfeld (Windeck)",50.80639,7.55739],
+["st-n1906694297","Heinz Simon",1930,"memorial","Haupstraße 128, Dattenfeld (Windeck)",50.80639,7.55739],
+["st-n1906694298","Irma Simon",1898,"memorial","Haupstraße 128, Dattenfeld (Windeck)",50.80639,7.55739],
+["st-n1906694299","Julius Simon",1895,"memorial","Haupstraße 128, Dattenfeld (Windeck)",50.80639,7.55739],
+["st-n1906694301","Norbert Simon",1935,"memorial","Haupstraße 128, Dattenfeld (Windeck)",50.80639,7.55739]
+],
+"slug":"dattenfeld-windeck"}

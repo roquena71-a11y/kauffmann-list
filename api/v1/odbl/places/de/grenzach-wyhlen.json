@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Grenzach-Wyhlen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12620245357","Anna Bloch",1898,"memorial","Basler Straße 7, 79639 Grenzach-Wyhlen",47.55279,7.66045],
+["st-Q136345943","Berta Bloch",null,"memorial","Basler Straße 7, 76639 Grenzach-Wyhlen",47.55282,7.66048],
+["st-Q136348564","Josephine Bloch",1871,"memorial","Basler Straße 7, 76639 Grenzach-Wyhlen",47.55282,7.66048],
+["st-Q136348595","Karl Bloch",1896,"memorial","Basler Straße 7, 76639 Grenzach-Wyhlen",47.55282,7.66048],
+["st-Q136348747","Leopold Stein",1893,"memorial","Basler Straße 1, 76639 Grenzach-Wyhlen",47.55275,7.66103],
+["st-Q136348615","Paula Bloch",1905,"memorial","Basler Straße 7, 76639 Grenzach-Wyhlen",47.55282,7.66048],
+["st-Q136348657","Salomon Bloch",1867,"memorial","Basler Straße 7, 76639 Grenzach-Wyhlen",47.55282,7.66048],
+["st-Q136348670","Selma Bloch",1896,"memorial","Basler Straße 7, 76639 Grenzach-Wyhlen",47.55282,7.66048],
+["st-Q136348812","Toni Stein",1900,"memorial","Basler Straße 1, 76639 Grenzach-Wyhlen",47.55275,7.66103]
+],
+"slug":"grenzach-wyhlen"}

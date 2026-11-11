@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Sigmaringen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q102115232","Anna Frank",1889,"memorial","Karlstraße 31, Sigmaringen",48.08337,9.22289],
+["wd-Q102077422","Emma Frank",1887,"memorial","Karlstraße 31, Sigmaringen",48.08337,9.22289],
+["wd-Q102115575","Kurt Frank",1911,"memorial","Karlstraße 31, Sigmaringen",48.08337,9.22289],
+["wd-Q102077670","Lisa Mathilde Heyman",1918,"memorial","Karlstraße 31, Sigmaringen",48.08337,9.22289],
+["wd-Q102077306","Siegfried Frank",1879,"memorial","Karlstraße 31, Sigmaringen",48.08337,9.22289],
+["wd-Q102115351","Werner Frank",1913,"memorial","Karlstraße 31, Sigmaringen",48.08337,9.22289]
+],
+"slug":"sigmaringen"}

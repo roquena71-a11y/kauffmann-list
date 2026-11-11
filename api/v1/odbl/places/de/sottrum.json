@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Sottrum",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q130711648","Albert Moses",1891,"memorial","Große Straße 36, Sottrum",53.11609,9.23348],
+["st-Q130711655","Ida Moses",1892,"memorial","Große Straße 36, Sottrum",53.11609,9.23348],
+["st-Q130711719","Rudolf Moses",1883,"memorial","Große Straße 25, Sottrum",53.11616,9.23251]
+],
+"slug":"sottrum"}

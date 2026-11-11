@@ -1,0 +1,6 @@
+{"count":1,
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"people":[
+{"birth_date":"1885","death_date":"1944","fate":"murdered","fate_basis":"inscription_text","field_sources":{"birth_date":["stolpersteine_de"],"death_date":["stolpersteine_de"],"fate":["stolpersteine_de"],"name":["stolpersteine_de"]},"id":"st-n10300603790","identifiers":{"osm":["n10300603790"]},"memorials":[{"country":"DE","inscription":"Hier wohnte Wilhelm Hokamp Jg. 1885 Mitglied/SPD verhaftet Aug. 1944 'Aktion Gitter' Sachsenhausen ermordet","lat":51.676023,"lon":7.8389255,"memorial_id":"n10300603790","source_id":"stolpersteine_de","type":"stolperstein"}],"name":"Wilhelm Hokamp","sources":[{"attribution":"© OpenStreetMap contributors (ODbL 1.0) + Wikidata (CC0 1.0)","license":"ODbL-1.0","record_id":"n10300603790","retrieved":"2026-11-04","source_id":"stolpersteine_de","url":"https://www.openstreetmap.org/node/10300603790"}]}
+],
+"prefix":"hok"}

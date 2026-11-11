@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Perleberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q136802327","Adolf Lewandowski",1865,"memorial","An der Mauer 7, 19348 Perleberg",53.07839,11.86098],
+["st-Q136802344","Malwine Sternberg",1864,"memorial","Großer Markt 11, 19348 Perleberg",53.07726,11.86311],
+["st-Q136802345","Margarete Franke",1899,"memorial","Parchimer Straße 17, 19348 Perleberg",53.07817,11.8629],
+["st-Q136802343","Markus Lang",1879,"memorial","Am Hohen Ende 4, 19348 Perleberg",53.07862,11.86231]
+],
+"slug":"perleberg"}

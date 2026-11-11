@@ -1,0 +1,10 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"mr",
+"rows":[
+["wd-Q1895001","Margarethe Mrosek",1902,"Hamburg",53.55819,9.84355,"mr"],
+["st-n13628737398","Josef Mrosowska",1944,"Hamburg",53.67216,9.99239,"mr"],
+["st-Q125856640","Alfons Mroß",1914,"Leipzig",51.36652,12.34984,"mr"],
+["wd-Q132135462","Paula Mroz",1913,"Berlin",52.53488,13.37831,"mr"],
+["st-Q76429658","Genowefa Mruk",null,"Burgwedel",52.49183,9.85488,"mr"]
+]}

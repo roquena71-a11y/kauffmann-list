@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Glückstadt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105392074","Lea Laura Selcke",1869,"memorial","Schlachterstraße 6, Glückstadt",53.78722,9.42254],
+["st-n9770484264","Magda Levy",1879,"memorial","Schlachterstraße 7, Glückstadt",53.78712,9.42234],
+["wd-Q105373223","Paula ‚Pauline‘ Meyer",1860,"memorial","Schlachterstraße 3, Glückstadt",53.78739,9.42282]
+],
+"slug":"gluckstadt"}

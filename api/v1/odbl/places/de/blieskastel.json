@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Blieskastel",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11801843573","Anna Oppenheimer",1863,"memorial","Kardinal-Wendel-Straße 62, 66440 Blieskastel",49.23901,7.25906],
+["st-n11801871070","Blandina Joseph",1865,"memorial","Gerbergasse, 66440 Blieskastel",49.23698,7.2587],
+["st-n11801871071","Edgar Joseph",1893,"memorial","Gerbergasse, 66440 Blieskastel",49.23698,7.2587],
+["wd-Q104807252","Fanny Joseph",1860,"memorial","Gerbergasse, 66440 Blieskastel",49.23698,7.2587],
+["wd-Q134077554","Georg Bieg",1908,"memorial","Bezirksstraße 34, 66440 Blieskastel",49.24317,7.19426],
+["st-Q137779321","Heinrich Bieg",1901,"memorial","Bezirksstraße 16, 66440 Blieskastel",49.24348,7.19284],
+["st-Q137809263","Martha Neuberger",1903,"memorial","Gerbergasse, 66440 Blieskastel",49.23698,7.25871],
+["st-n11801871072","Myrtil Neuberger",1882,"memorial","Gerbergasse, 66440 Blieskastel",49.23698,7.25871],
+["st-Q137779671","Otto Bieg",1910,"memorial","Bezirksstraße 34, 66440 Blieskastel",49.24317,7.19426]
+],
+"slug":"blieskastel"}

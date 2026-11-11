@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Velbert",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3132929396","Adolf Nathan",1886,"memorial",null,51.35086,7.11988],
+["st-n3133504086","Bella Isaac",1899,"memorial",null,51.35237,7.11738],
+["st-n3132929397","Betty Nathan",1888,"memorial",null,51.35085,7.11987],
+["st-n3133504087","Cilla Caspari",1880,"memorial","Kamper Straße 3, 42555 Velbert",51.35263,7.12129],
+["st-n3133504088","Louis Caspari",1873,"memorial","Kamper Straße 3, 42555 Velbert",51.35263,7.12131],
+["st-n3133504089","Walter Isaac",1899,"memorial",null,51.35238,7.11737]
+],
+"slug":"velbert"}

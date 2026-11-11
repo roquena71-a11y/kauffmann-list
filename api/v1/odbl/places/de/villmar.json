@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"DE",
+"label":"Villmar",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q129255595","Albert Schönberg",1885,"memorial","Brühlstraße 7, 65606 Villmar",50.36598,8.22449],
+["st-Q129255569","Betty Blumenthal",1857,"memorial","Brühlstraße 7, 65606 Villmar",50.36598,8.22449],
+["st-Q129255674","Emil Simon",1877,"memorial","Laubusstraße 14, 65606 Villmar",50.36764,8.22449],
+["st-Q129255601","Hermann Walter Schönberg",1922,"memorial","Brühlstraße 7, 65606 Villmar",50.36598,8.22449],
+["st-Q129255625","Herta Irene Heymann",1907,"memorial","Laubusstraße 14, 65606 Villmar",50.36764,8.22449],
+["st-Q129255684","Ida Simon",1883,"memorial","Laubusstraße 14, 65606 Villmar",50.36764,8.22449],
+["wd-Q104543052","Johanna Frank",1889,"memorial","Lahnstraße 31, 65606 Villmar",50.40483,8.25455],
+["st-Q129255653","Julius Heymann",1901,"memorial","Laubusstraße 14, 65606 Villmar",50.36764,8.22449],
+["st-Q129255605","Karoline Schönberg",1887,"memorial","Brühlstraße 7, 65606 Villmar",50.36598,8.22449],
+["st-Q129255668","Mina Saalberg",1863,"memorial","Laubusstraße 14, 65606 Villmar",50.36764,8.22449],
+["st-Q129255336","Sally Frank",1883,"memorial","Lahnstraße 31, 65606 Villmar",50.40483,8.25455],
+["st-Q129255559","Salomon Rosenthal",1897,"memorial","Peter-Paul-Straße 44, 65606 Villmar",50.39085,8.19225]
+],
+"slug":"villmar"}

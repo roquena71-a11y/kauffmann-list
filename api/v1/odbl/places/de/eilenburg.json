@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Eilenburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q125944222","Emanuel Suchestow",1906,"memorial","Bergstraße 4, 04838 Eilenburg",51.45791,12.62586],
+["st-Q125947052","Ernst Max Samuel",1900,"memorial","Am Ring 32, 04838 Eilenburg",51.4573,12.57322],
+["st-Q125947149","Hans Freimann",1920,"memorial","Torgauer Straße 19, 04838 Eilenburg",51.46086,12.63694],
+["st-Q125947015","Herman Michaelis",1886,"memorial","Bergstraße 73, 04838 Eilenburg",51.45768,12.62354],
+["st-Q125662060","Kurt Bennewitz",1902,"memorial","Puschkinstraße 64, 04838 Eilenburg",51.47049,12.66373],
+["st-Q125944234","Manfred Suchestow",1933,"memorial","Bergstraße 4, 04838 Eilenburg",51.45791,12.62586],
+["st-Q125944236","Meta Suchestow",1911,"memorial","Bergstraße 4, 04838 Eilenburg",51.45791,12.62586],
+["st-Q125947029","Moritz Lenker",1889,"memorial","Bergstraße 73, 04838 Eilenburg",51.45768,12.62354],
+["wd-Q105389752","Nathan Samuel",1869,"memorial","Am Ring 32, 04838 Eilenburg",51.4573,12.57322],
+["st-Q125947176","Otto Tuchel",1901,"memorial","Am Ehrenfriedhof 11, 04838 Eilenburg",51.45884,12.61631],
+["st-Q125947081","Werner Glaser",1897,"memorial","Eckartstraße 22, 04838 Eilenburg",51.45856,12.63009]
+],
+"slug":"eilenburg"}

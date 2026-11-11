@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Bad Winpfen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n5921987786","Adolf Baer",1854,"memorial","Marktrain 6, Bad Winpfen",49.22972,9.1627],
+["st-n5921987787","Friederike Mannheimer",1872,"memorial","Hauptstraße 35, Bad Winpfen",49.22941,9.16304],
+["st-n5921987785","Hedwig Baer",1892,"memorial","Marktrain 6, Bad Winpfen",49.22971,9.1627],
+["st-n5921987788","Manfred Pfeifer",1928,"memorial","Schiedstraße 18, Bad Winpfen",49.22838,9.15953]
+],
+"slug":"bad-winpfen"}

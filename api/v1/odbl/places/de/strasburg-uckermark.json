@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Strasburg (Uckermark)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6126329100","Bertold Wiersch",1914,"memorial","Baustraße 6, 17335 Strasburg (Uckermark)",53.50775,13.74323],
+["wd-Q104806688","Georg Jacobsohn",1873,"memorial","Pfarrstraße 1, 17335 Strasburg (Uckermark)",53.50787,13.74467],
+["st-n7882974047","Gerhard Jacobsohn",1912,"memorial","Pfarrstraße 1, 17335 Strasburg (Uckermark)",53.50786,13.74472],
+["st-n7882974048","Hulda 'Huldi' Jacobsohn",1885,"memorial","Pfarrstraße 1, 17335 Strasburg (Uckermark)",53.50782,13.74472],
+["wd-Q104806700","Hulda Jacobsohn",1885,"memorial","Pfarrstraße 1, 17335 Strasburg (Uckermark)",53.5079,13.74466],
+["st-n7882974046","Liselotte 'Lilo' Jacobsohn",1914,"memorial","Pfarrstraße 1, 17335 Strasburg (Uckermark)",53.50784,13.74467],
+["st-n6126329098","Martha Wiersch",1897,"memorial","Baustraße 6, 17335 Strasburg (Uckermark)",53.50776,13.74321],
+["st-n6124760989","Siegfried Wiersch",1886,"memorial","Baustraße 6, 17335 Strasburg (Uckermark)",53.50778,13.74322]
+],
+"slug":"strasburg-uckermark"}

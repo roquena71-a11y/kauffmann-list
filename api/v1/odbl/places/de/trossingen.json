@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Trossingen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q137997679","Adomina Birk",1904,"memorial","Ernst-Hohner-Straße 46, 78647 Trossingen",48.07576,8.62954],
+["st-Q137997773","Barbara Burger",1889,"memorial","Butschstraße 6, 78647 Trossingen",48.07776,8.63797],
+["st-Q137997780","Berta Schäfer",1908,"memorial","Uhlandstraße 3, 78647 Trossingen",48.07738,8.64377],
+["st-Q137997777","Emma Kratt",1905,"memorial","Hauptstraße 45, 78647 Trossingen",48.07445,8.63468],
+["st-Q137997776","Ernst Koch",1913,"memorial","Butschstraße 20, 78647 Trossingen",48.07895,8.63997],
+["st-Q137997775","Hans Hohner",1904,"memorial","Tuninger Straße 10, 78647 Trossingen",48.07097,8.63147],
+["st-Q137997772","Inge Birk",1938,"memorial","Eberhardstraße 17, 78647 Trossingen",48.07415,8.63546],
+["st-Q137997774","Klara Maria Gamper",1887,"memorial","Marktplatz 1, 78647 Trossingen",48.07726,8.63756]
+],
+"slug":"trossingen"}

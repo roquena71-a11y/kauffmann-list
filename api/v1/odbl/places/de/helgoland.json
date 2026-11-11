@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Helgoland",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q121245103","Erich Paul Jansen Friedrichs",1890,"memorial","Lung Wai, 27498 Helgoland",54.18168,7.88984],
+["st-n1821312158","Georg Eduard Braun",1902,"memorial","Kirchstraße, 27498 Helgoland",54.1829,7.88557],
+["st-n1821312157","Heinrich Karl Wilhelm Prüss",1889,"memorial","Steanaker, 27498 Helgoland",54.1827,7.88737],
+["st-n1821312156","Karl Fnouka",1908,"memorial","Lung Wai, 27498 Helgoland",54.18231,7.88824],
+["st-n1821312155","Kurt Arthur Pester",1908,"memorial","Lung Wai, 27498 Helgoland",54.18213,7.88881],
+["st-n2422302143","Martin Otto Wachtel",null,"memorial","Klippenrandweg, 27498 Helgoland",54.18042,7.88642]
+],
+"slug":"helgoland"}

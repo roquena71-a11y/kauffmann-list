@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Staudernheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104807122","Adolf Jonas",1885,"memorial","Brunnenstraße 3, 55568 Staudernheim",49.77521,7.68705],
+["wd-Q104807133","Berta Jonas",1889,"memorial","Brunnenstraße 3, 55568 Staudernheim",49.77521,7.68705],
+["st-n13234389643","Carola Katharina Oppenheimer",1915,"memorial","Hauptstraße, 55568 Staudernheim",49.77646,7.68915],
+["st-n13234389642","Frieda Eichel",1891,"memorial","Hauptstraße, 55568 Staudernheim",49.77646,7.68915],
+["st-n13234389644","Jenny Oppenheimer",1881,"memorial","Hauptstraße, 55568 Staudernheim",49.77646,7.68915],
+["st-n13234389649","Johanna Mayer",1880,"memorial","Hauptstraße 14, 55568 Staudernheim",49.77672,7.68923],
+["st-n13234389647","Mathilde Marx",1878,"memorial","Hauptstraße 41, 55568 Staudernheim",49.77439,7.68766],
+["st-n13235409534","Moses Marx",1878,"memorial","Hauptstraße 41, 55568 Staudernheim",49.77439,7.68766],
+["st-n13234389648","Ruben Oppenheimer",1881,"memorial","Hauptstraße, 55568 Staudernheim",49.77646,7.68915]
+],
+"slug":"staudernheim"}

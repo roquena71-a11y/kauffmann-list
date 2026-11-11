@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Markkleeberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104446805","Alexander Eisenberg",1888,"memorial","Am Wolfswinkel 14, 04416 Markkleeberg",51.29177,12.36151],
+["st-Q125973734","Friedrich Berliner",1921,"memorial","Rathausstraße 34, 04416 Markkleeberg",51.27916,12.36921],
+["wd-Q115283662","Gertrud Brecher",1894,"memorial","Parkstraße 2, 04416 Markkleeberg",51.28335,12.37544],
+["st-Q125973737","Gertrud Lubo",1914,"memorial","Rathausstraße 34, 04416 Markkleeberg",51.27916,12.36921],
+["wd-Q214222","Gustav Brecher",1879,"memorial","Parkstraße 2, 04416 Markkleeberg",51.28335,12.37544],
+["st-Q125973691","Helene Knothe",1892,"memorial","Pater-Kolbe-Straße 23, 04416 Markkleeberg",51.28392,12.36748],
+["st-Q125973735","Lucie Berliner",1910,"memorial","Rathausstraße 34, 04416 Markkleeberg",51.27916,12.36921],
+["wd-Q104218829","Ludwig Philip Bamberger",1882,"memorial","Hauptstraße 3, 04416 Markkleeberg",51.28655,12.37331],
+["st-Q125973721","Rosa Berliner",1881,"memorial","Rathausstraße 34, 04416 Markkleeberg",51.27916,12.36921],
+["wd-Q19798648","unbekannter Wert",1895,"memorial","Hauptstraße 3, 04416 Markkleeberg",51.28655,12.37331]
+],
+"slug":"markkleeberg"}

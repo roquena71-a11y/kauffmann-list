@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Norderney",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q130705706","Christine Lemmersmann",1863,"memorial","Karlstraße 6, Norderney",53.70728,7.14172],
+["st-n2569973209","Clementine Lemmersmann",1863,"memorial","Karlstraße 6, 26548 Norderney",53.70729,7.14173],
+["wd-Q105388213","Engeline Rosenstamm",1863,"memorial","Bismarckstraße 8, Norderney",53.70868,7.14453],
+["st-n2569973211","Friedrich Hoffmann",1889,"memorial","Bismarckstraße 4, 26548 Norderney",53.70905,7.14399],
+["wd-Q105374567","Julie Müller",1876,"memorial","Bismarckstraße 8, Norderney",53.7087,7.14449],
+["st-n2569973214","Karl Ekiba Müller",1872,"memorial","Bismarckstraße 8, Norderney",53.70872,7.14447],
+["st-n2569973226","Rebecka Hoffmann",1893,"memorial","Bismarckstraße 4, Norderney",53.70902,7.14404],
+["wd-Q105355733","Rosette Klompus",1863,"memorial","Karlstraße 6, 26548 Norderney",53.70553,7.1419]
+],
+"slug":"norderney"}

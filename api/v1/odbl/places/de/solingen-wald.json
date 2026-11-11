@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Solingen-Wald",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n5395839789","Albert Tobias",1891,"memorial",null,51.18473,7.03201],
+["st-n5395794417","Hans Debus",1919,"memorial",null,51.18241,7.02894],
+["wd-Q1579111","Hans Debus",1919,"memorial","Krausen 1 – 3, Solingen-Wald",51.18294,7.02974]
+],
+"slug":"solingen-wald"}

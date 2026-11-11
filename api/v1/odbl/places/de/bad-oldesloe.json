@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Bad Oldesloe",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q101008620","Hans Wöltje",null,"memorial","Hindenburgstraße 49, 23843 Bad Oldesloe",53.80967,10.37452],
+["st-Q101008649","Robert Kersten",1883,"memorial","Kirchberg 4, 23843 Bad Oldesloe",53.80882,10.37541]
+],
+"slug":"bad-oldesloe"}

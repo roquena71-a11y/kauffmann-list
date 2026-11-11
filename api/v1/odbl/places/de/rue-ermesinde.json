@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Rue Ermesinde",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13085210376","Fanny Levy-Nussbaum",1879,"memorial","15, Rue Ermesinde",49.81537,6.41591],
+["st-n13085210378","Pauline Mayer",1876,"memorial","15, Rue Ermesinde",49.81537,6.4159],
+["st-n13085210377","Simon Mayer",1875,"memorial","15, Rue Ermesinde",49.81537,6.41591]
+],
+"slug":"rue-ermesinde"}

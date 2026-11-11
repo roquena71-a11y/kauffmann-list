@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Bad Lauterberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11554396883","Clara Pelz",1895,"memorial","Hauptstraße 166, Bad Lauterberg",51.63138,10.47025],
+["st-n11554419287","Karl Pape",1893,"memorial","Hauptstraße 21, Bad Lauterberg",51.62773,10.46267],
+["st-n11554396881","Max Pelz",1875,"memorial","Hauptstraße 166, Bad Lauterberg",51.63138,10.47024]
+],
+"slug":"bad-lauterberg"}

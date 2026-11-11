@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Mainz-Hechtsheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6794452852","Berthold Selig",1878,"memorial","Grauelstr. 19, Mainz-Hechtsheim",49.9586,8.27997],
+["wd-Q105461245","Clara Weiss",1872,"memorial","Bachstr. 1, Mainz-Hechtsheim",49.96399,8.2812],
+["st-n6788821321","David Kapp",1882,"memorial","Alte Mainzer Straße 8, Mainz-Hechtsheim",49.96145,8.28059],
+["st-n6796957631","Emma Weiss",1887,"memorial","Heuerstr. 9, Mainz-Hechtsheim",49.96022,8.27903],
+["st-n6796518963","Margarethe Selig",1879,"memorial","Grauelstr. 19, Mainz-Hechtsheim",49.95859,8.27997]
+],
+"slug":"mainz-hechtsheim"}

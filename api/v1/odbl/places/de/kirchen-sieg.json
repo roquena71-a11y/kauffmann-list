@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Kirchen (Sieg)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3391373880","Emma Moses",1871,"memorial","Bahnhofstraße 24, Kirchen (Sieg)",50.80652,7.87942],
+["st-n3888146157","Julius Moses",1868,"memorial","Bahnhofstraße 24, Kirchen (Sieg)",50.80652,7.87942],
+["st-n3888146158","Otto G. Moses",1911,"memorial","Bahnhofstraße 24, Kirchen (Sieg)",50.80652,7.87942]
+],
+"slug":"kirchen-sieg"}

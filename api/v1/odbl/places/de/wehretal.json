@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Wehretal",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105458082","Albert Stein",1866,"memorial","Steinweg 40, 37287 Wehretal",51.15066,9.99503],
+["st-n13631078465","Hilde Seelig",1920,"memorial","Herrengasse 7, 37287 Wehretal",51.15074,9.99377],
+["st-n13631078460","Joseph Seelig",1871,"memorial","Herrengasse 7, 37287 Wehretal",51.15076,9.99379],
+["st-n13631078464","Julius Seelig",1908,"memorial","Herrengasse 7, 37287 Wehretal",51.15074,9.99377],
+["wd-Q105458327","Nanny Stein",1870,"memorial","Steinweg 40, 37287 Wehretal",51.15065,9.99503],
+["st-n13631078461","Paula Seelig",1884,"memorial","Herrengasse 7, 37287 Wehretal",51.15075,9.99378],
+["st-n13631078459","Regina Seelig",1892,"memorial","Herrengasse 7, 37287 Wehretal",51.15077,9.99379],
+["st-n13631078462","Rosel Spier",1891,"memorial","Herrengasse 7, 37287 Wehretal",51.15076,9.99378],
+["st-n13629850178","Samuel Seelig",1877,"memorial","Herrengasse 7, 37287 Wehretal",51.15078,9.9938],
+["st-n13631078463","Willi Spier",1891,"memorial","Herrengasse 7, 37287 Wehretal",51.15075,9.99377]
+],
+"slug":"wehretal"}

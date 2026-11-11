@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Dieburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n14166129721","Ida Lorch",1892,"memorial","Frankfurter Str. 15, 64807 Dieburg",49.90031,8.84487],
+["st-n14166104501","Max Lorch",1883,"memorial","Frankfurter Str. 15, 64807 Dieburg",49.90032,8.84487],
+["st-n14166129720","Sigrid Lorch",1923,"memorial","Frankfurter Str. 15, 64807 Dieburg",49.90032,8.84487]
+],
+"slug":"dieburg"}

@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Remscheid-Lennep",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3229520718","Betti Rosenbaum",null,"memorial","Hermannstr. 1, Remscheid-Lennep",51.18668,7.2555],
+["st-n3229497675","David Rosenbaum",1882,"memorial","Kölner Str. 99, Remscheid-Lennep",51.18548,7.25472],
+["st-n3229503124","Egon Rosenbaum",1922,"memorial","Kölner Str. 99, Remscheid-Lennep",51.18541,7.2547],
+["st-n3229507515","Inge Rosenbaum",1919,"memorial","Kölner Str. 99, Remscheid-Lennep",51.18543,7.25471],
+["st-n3229497676","Lilli Rosenbaum",1887,"memorial","Kölner Str. 99, Remscheid-Lennep",51.18545,7.25472]
+],
+"slug":"remscheid-lennep"}

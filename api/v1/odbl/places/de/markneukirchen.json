@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Markneukirchen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q125915275","Dieter Brandt",1937,"memorial","Unterer Markt 18, 08258 Markneukirchen",50.31177,12.32964],
+["st-Q125915226","Johannes Brandt",1901,"memorial","Unterer Markt 18, 08258 Markneukirchen",50.31177,12.32964],
+["st-Q125915276","Lina Brandt",1910,"memorial","Unterer Markt 18, 08258 Markneukirchen",50.31177,12.32964]
+],
+"slug":"markneukirchen"}

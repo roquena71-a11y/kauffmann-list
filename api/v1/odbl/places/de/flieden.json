@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Flieden",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12294281455","Hilda Goldschmidt",1882,"memorial","Am Küppel 1",50.42279,9.56342],
+["st-n12294281452","Isidor Seliger",1883,"memorial","Reinhardstraße 2",50.42377,9.56624],
+["st-n12294281453","Johanna Seliger",1879,"memorial","Reinhardstraße 2",50.42376,9.56625],
+["st-n12294281454","Markus Goldschmidt",1880,"memorial","Am Küppel 1",50.42279,9.56342]
+],
+"slug":"flieden"}

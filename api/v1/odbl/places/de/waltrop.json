@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Waltrop",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105387999","Bertha Rosenblum",1886,"memorial","Dortmunder Straße 54, 45731 Waltrop",51.62337,7.40196],
+["st-n12920633024","Bertha Rosenthal",1865,"memorial","Dortmunder Straße 33, 45731 Waltrop",51.62323,7.39969],
+["wd-Q123412336","Bertha Rosenthal",1875,"memorial","Hochstraße 99, 45731 Waltrop",51.62429,7.39498],
+["st-n12920633017","Eduard Spanier",1904,"memorial","Hochstraße 99, 45731 Waltrop",51.62429,7.39498],
+["st-n12920633015","Helmut Baum",1913,"memorial","Rösterstraße 2, 45731 Waltrop",51.62355,7.39576],
+["st-n12920633012","Jakob Baum",1878,"memorial","Rösterstraße 2, 45731 Waltrop",51.62355,7.39576],
+["st-n12920633025","Josef Rosenthal",1862,"memorial","Dortmunder Straße 33, 45731 Waltrop",51.62323,7.39969],
+["st-n12920633026","Leo Rosenblum",1888,"memorial","Dortmunder Straße 54, 45731 Waltrop",51.62337,7.40196],
+["st-n12920633018","Louis Spanier",1867,"memorial","Hochstraße 99, 45731 Waltrop",51.62429,7.39498],
+["st-n12920633013","Marta Baum",1889,"memorial","Rösterstraße 2, 45731 Waltrop",51.62355,7.39576],
+["st-n12920633022","Meta Rosenthal",1898,"memorial","Dortmunder Straße 33, 45731 Waltrop",51.62323,7.39969],
+["st-n12920633016","Werner Baum",1915,"memorial","Rösterstraße 2, 45731 Waltrop",51.62355,7.39576],
+["st-n12920633023","Willi Rosenthal",1888,"memorial","Dortmunder Straße 33, 45731 Waltrop",51.62323,7.39969]
+],
+"slug":"waltrop"}

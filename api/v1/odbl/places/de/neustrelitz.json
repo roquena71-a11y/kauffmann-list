@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Neustrelitz",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n10804354260","Else Burchard",1898,"memorial","Glambecker Straße 41, 17235 Neustrelitz",53.3639,13.06359],
+["st-n10804354261","Ernst Burchard",1885,"memorial","Glambecker Straße 41, 17235 Neustrelitz",53.3639,13.06359],
+["st-n10804354262","Gerhard Burchard",1923,"memorial","Glambecker Straße 41, 17235 Neustrelitz",53.36391,13.0636],
+["st-n10712670133","Hans Litten",1887,"memorial","Strelitzer Str. 46, 17235 Neustrelitz",53.36106,13.06551],
+["st-n12966606796","Martha Litten",1887,"memorial","Strelitzer Str. 46, 17235 Neustrelitz",53.36107,13.0655]
+],
+"slug":"neustrelitz"}

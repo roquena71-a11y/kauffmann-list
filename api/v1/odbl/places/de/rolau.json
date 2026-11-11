@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Roßlau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2986542853","Stolpersteine, Anna Bruck und Hertha Bruck",1910,"memorial","Mühlenstraße 47 (Amtsmühle), Roßlau",51.89251,12.24892],
+["st-n2986343150","Stolpersteine, MaxFried, Hedwig Fried, Eva Fried und Bertha Ruth Kiewe",1914,"memorial","Hauptstr. 11, Roßlau",51.88954,12.24495]
+],
+"slug":"rolau"}

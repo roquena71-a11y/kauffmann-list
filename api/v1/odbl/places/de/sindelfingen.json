@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Sindelfingen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134930890","Emil Ullmann",1899,"memorial","Obere Vorstadt 1, 71063 Sindelfingen",48.71132,9.00044],
+["st-n12999458153","Emil Ullmann",1899,"memorial",null,48.71076,9.00009],
+["st-n12997899822","Karl Keinath",1895,"memorial","Bahnhofstraße 31, Sindelfingen",48.70478,9.00243],
+["st-Q134930897","Lili Ullmann",1893,"memorial","Obere Vorstadt 1, 71063 Sindelfingen",48.71132,9.00044],
+["st-n12999458152","Lili Ullmann",1893,"memorial",null,48.71075,9.00009],
+["st-Q134930916","Siegfried Ullmann",1889,"memorial","Obere Vorstadt 1, 71063 Sindelfingen",48.71132,9.00044],
+["st-n12999458151","Siegfried Ullmann",1889,"memorial",null,48.71074,9.00008],
+["st-n12997913019","Wilhelm Brendle",1889,"memorial","Uhlandstraße 25, Sindelfingen",48.71089,9.01061]
+],
+"slug":"sindelfingen"}

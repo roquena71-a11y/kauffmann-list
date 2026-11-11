@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"DE",
+"label":"Püttlingen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13181408954","Bertha Jacob",1987,"memorial",null,49.28775,6.87954],
+["wd-Q1467000","Friedrich Klein",1898,"memorial","Engelfanger Straße 13, 66346 Püttlingen",49.29743,6.89803],
+["st-n13181409011","Jakob Nalbach",1886,"memorial","Marktstraße 46, 66346 Püttlingen",49.28738,6.88736],
+["st-n13181409005","Leo Altmeyer",1897,"memorial",null,49.28791,6.88742],
+["st-n13244661133","Leo Rupp",1897,"memorial",null,49.29926,6.9003],
+["st-n13181409012","Margarete Nalbach",1887,"memorial","Marktstraße 46, 66346 Püttlingen",49.28738,6.88735],
+["st-Q134933119","Maria Alt",1914,"memorial","Bärenbergstraße 124, 66346 Püttlingen",49.29765,6.91042],
+["st-n13031221132","Maria Irene Rink",1896,"memorial","Weiherbergstraße 38, 66346 Püttlingen",49.28216,6.88873],
+["st-n13181408953","Oscar Jakob",1885,"memorial",null,49.28775,6.87955],
+["st-n13181408950","Paul Aloysius Meyer",1923,"memorial","Derler Straße 44, 66346 Püttlingen",49.2868,6.87711],
+["st-n13181409013","Rosa Nalbach",1910,"memorial","Marktstraße 46, 66346 Püttlingen",49.28738,6.88735],
+["st-Q134943944","Rosa Rech",1900,"memorial","Fresagrandinariastraße, 66346 Püttlingen",49.30088,6.89529]
+],
+"slug":"puttlingen"}

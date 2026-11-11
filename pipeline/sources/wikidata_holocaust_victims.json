@@ -1,0 +1,59 @@
+{
+  "id": "wikidata_holocaust_victims",
+  "name": "Wikidata – personas con identificadores de bases de víctimas de la Shoah",
+  "description": "Personas (P31=Q5) con identificador de una base de víctimas: holocaust.cz (P9109), Gedenkbuch del Bundesarchiv (P7571), USHMM (P4130), Yad Vashem YVNG (P7624), Arolsen (P7656), Joods Monument (P9155), Mapping the Lives (P9805). Unión ≈133.000 personas (verificado 2026-11-11). Solo se copian datos de Wikidata (CC0: P569/P570/P19/P20, nombre); de las instituciones solo el id como enlace.",
+  "phase": 1,
+  "enabled": true,
+  "publish_allowed": true,
+  "adapter": "wikidata_sparql",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "attribution": "Wikidata (CC0 1.0)",
+  "homepage": "https://www.wikidata.org",
+  "license_family": "cc0",
+  "id_prefix": "wd",
+  "priority": 20,
+  "endpoint": "https://query.wikidata.org/sparql",
+  "selectors": [
+    "?item wdt:P7571 ?_gb",
+    "?item wdt:P7624 ?_yv",
+    "?item wdt:P4130 ?_us",
+    "?item wdt:P7656 ?_ar",
+    "?item wdt:P9155 ?_jm",
+    "?item wdt:P9805 ?_mtl",
+    "?item wdt:P9109 ?_hcz"
+  ],
+  "identifier_properties": {
+    "P7571": "gedenkbuch",
+    "P7624": "yad_vashem",
+    "P4130": "ushmm",
+    "P7656": "arolsen",
+    "P9109": "holocaust_cz",
+    "P9155": "joods_monument",
+    "P9805": "mapping_the_lives"
+  },
+  "label_languages": [
+    "de",
+    "en",
+    "mul"
+  ],
+  "link_templates": {
+    "gedenkbuch": "https://www.bundesarchiv.de/gedenkbuch/de{id}",
+    "yad_vashem": "https://collections.yadvashem.org/en/names/{id}",
+    "ushmm": "https://www.ushmm.org/online/hsv/person_view.php?PersonId={id}",
+    "arolsen": "https://collections.arolsen-archives.org/en/document/{id}",
+    "holocaust_cz": "https://www.holocaust.cz/en/database-of-victims/victim/{id}/",
+    "joods_monument": "https://www.joodsmonument.nl/en/page/{id}",
+    "mapping_the_lives": "https://www.mappingthelives.org/bio/{id}"
+  },
+  "network": {
+    "page_size": 5000,
+    "detail_batch_size": 150,
+    "min_interval_seconds": 1.5,
+    "retries": 4,
+    "timeout_seconds": 120
+  },
+  "selectors_note": "Paginación por selector (una propiedad) con ORDER BY ?item LIMIT/OFFSET; el selector más grande es P9109 (≈124.500). Para una ejecución ligera, quitar P9109.",
+  "test_fixture": "pipeline/tests/fixtures/wikidata_sample.json",
+  "link_templates_note": "Plantillas tomadas del 'formatter URL' (P1630) de cada propiedad en Wikidata, verificado 2026-11-11."
+}

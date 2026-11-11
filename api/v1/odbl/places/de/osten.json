@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Osten",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12917080672","Adolf Philippsohn",1899,"memorial","Fährstraße, 21756 Osten",53.69457,9.1834],
+["st-n12917080647","Anna Luisa Philippsohn",1928,"memorial","Fährstraße, 21756 Osten",53.69457,9.18339],
+["st-n12917092070","Irmgard Philippsohn",1903,"memorial","Fährstraße, 21756 Osten",53.69457,9.18341]
+],
+"slug":"osten"}

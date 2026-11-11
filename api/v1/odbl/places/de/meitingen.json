@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Meitingen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2493561970","Dr. Max Josef Metzger",1887,"memorial","St.-Wolfgang-Straße 14, Meitingen",48.54494,10.85126],
+["st-n2493561975","Josef Ruf",1905,"memorial","St.-Wolfgang-Straße 14, Meitingen",48.54494,10.85126],
+["st-n2493561981","Michael Lerpscher",1905,"memorial","St.-Wolfgang-Straße 14, Meitingen",48.54494,10.85126]
+],
+"slug":"meitingen"}

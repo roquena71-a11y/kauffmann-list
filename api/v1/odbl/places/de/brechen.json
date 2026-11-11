@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Brechen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q129254783","Dora Stern",1883,"memorial","Lange Str. 14, 65611 Brechen",50.352,8.19685],
+["st-Q129254654","Jette Stern",1873,"memorial","Lange Str. 2, 65611 Brechen",50.35239,8.19549],
+["st-Q129254703","Kurt Stern",1913,"memorial","Lange Str. 2, 65611 Brechen",50.35239,8.19549],
+["wd-Q105458936","Moses Stern",1872,"memorial","Lange Str. 14, 65611 Brechen",50.352,8.19685],
+["st-Q129254672","Siegfried Stern",1879,"memorial","Lange Str. 2, 65611 Brechen",50.35239,8.19549],
+["st-Q129254685","Sophie Stern",1889,"memorial","Lange Str. 2, 65611 Brechen",50.35239,8.19549]
+],
+"slug":"brechen"}

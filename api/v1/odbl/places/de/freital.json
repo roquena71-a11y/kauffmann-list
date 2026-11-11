@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"DE",
+"label":"Freital",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q125662690","Alois Eckstein",1883,"memorial","Dresdner Straße 52, 01705 Freital",51.01352,13.66346],
+["st-Q139084077","Aron Schapiro",1887,"memorial","Weißiger Straße 53, 01705 Freital",51.00498,13.63385],
+["st-Q126685522","Gustav Schlochauer, Dr.",1889,"memorial","Dresdner Straße 40, 01705 Freital",51.01414,13.66416],
+["st-Q125956029","Ida Eckstein",1893,"memorial","Dresdner Straße 52, 01705 Freital",51.01352,13.66346],
+["st-Q126685525","Marianne Schlochauer",1892,"memorial","Dresdner Straße 40, 01705 Freital",51.01414,13.66416],
+["st-Q128304076","Martin Max Weinhold",1909,"memorial","Freitaler Straße 5B, 01705 Freital",51.02634,13.65458],
+["wd-Q104673482","Samuel Gorodiski",1873,"memorial","Krönertstraße 20, 01705 Freital",50.99279,13.64595]
+],
+"slug":"freital"}

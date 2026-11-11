@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Pinneberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n1912498363","Heinrich Boschen",1884,"memorial","Bahnhofstraße 15, Pinneberg",53.65684,9.79831],
+["st-n6964213532","Heinrich Geick",1872,"memorial","Friedenstraße 50, Pinneberg",53.66728,9.7959],
+["st-n6964213533","Wilhelm Schmitt",1888,"memorial","Prisdorfer Straße 15, Pinneberg",53.66483,9.79032]
+],
+"slug":"pinneberg"}

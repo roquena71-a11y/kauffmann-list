@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Garz",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12078629451","Arthur Cohn",1877,"memorial","Lange Straße 34, Garz",54.31646,13.35063],
+["wd-Q104423783","Ludwig Cohn",1907,"memorial","Lange Straße 34, Garz",54.31646,13.35063],
+["st-n12078629452","Thekla Cohn",1908,"memorial","Lange Straße 34, Garz",54.31646,13.35063]
+],
+"slug":"garz"}

@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Grabow",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6459346946","Alfred Wolff",1875,"memorial","Steindamm 8, 19000 Grabow",53.2803,11.56072],
+["st-n6459346949","Emma Sabielak",1898,"memorial","Marktstraße 7, 19000 Grabow",53.27884,11.56416],
+["st-n6459346950","Josef Sabielak",1895,"memorial","Marktstraße 7, 19000 Grabow",53.27884,11.56415]
+],
+"slug":"grabow"}

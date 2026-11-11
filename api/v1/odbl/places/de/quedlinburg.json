@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Quedlinburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q55881213","Berta Sommerfeld",1898,"memorial","Steinweg 81, Quedlinburg",51.79016,11.14819],
+["wd-Q55881212","Bruno Sommerfeld",1886,"memorial","Steinweg 81, Quedlinburg",51.79016,11.14819],
+["wd-Q131441534","Dr. Mane Weinberg",1881,"memorial","Steinweg 10, Quedlinburg",51.7903,11.14832]
+],
+"slug":"quedlinburg"}

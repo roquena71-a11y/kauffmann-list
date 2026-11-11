@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Meldorf",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q100798609","Antje Hinrichs",1940,"memorial","Grabenstraße 4",54.08839,9.07398],
+["wd-Q1460045","Friedrich Jansen",1883,"memorial","Süderstraße 2, 25704 Meldorf",54.09014,9.07218],
+["st-Q99615867","Heinke Hoffmann",1939,"memorial","Österstraße 6, 25704 Meldorf",54.08908,9.08346],
+["wd-Q1625703","Johann Wilhelm Jasper",1898,"memorial","Marschstraße 37, 25704 Meldorf",54.08396,9.07311]
+],
+"slug":"meldorf"}

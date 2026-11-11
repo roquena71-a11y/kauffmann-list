@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"DE",
+"label":"Havixbeck",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104652962","Berta Gerson",1874,"memorial","Hauptstraße 73",51.97444,7.41326],
+["st-n3296350777","Elisabeth Eichwald",1896,"memorial","Bergstraße 5",51.97719,7.41084],
+["wd-Q104652968","Fritz Gerson",1869,"memorial","Hauptstraße 73",51.97444,7.41327],
+["st-n3296350779","Kurt Gerson",1908,"memorial","Hauptstraße 73",51.97445,7.41327],
+["st-n3296350780","Pia Eichwald",1889,"memorial","Bergstraße 5",51.97718,7.41083],
+["wd-Q105391014","Sybilla Schmitz",1864,"memorial","Hauptstraße 65",51.9751,7.41303],
+["wd-Q104652990","Yvonne Gerson",1874,"memorial","Hauptstraße 73",51.97445,7.41326]
+],
+"slug":"havixbeck"}

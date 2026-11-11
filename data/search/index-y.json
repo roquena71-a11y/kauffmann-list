@@ -1,0 +1,10 @@
+{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"y",
+"rows":[
+["Q132150063","Estera „Jenny“ Yasgur-Driller","Wielandstr. 15, 10629 Berlin-Charlottenburg","Berlin",52.50299,13.31497,"1902","wd-Q132144642"],
+["n14162882752","Chung Ying","Talstraße, 20359 Hamburg","Hamburg",53.551332,9.96012,"1898","st-n14162882752"],
+["Q107370999","Shiu Ying","Schmuckstraße Ecke Talstraße, 20359 Hamburg","Hamburg",53.551278,9.960083,"1896","st-Q107370999"],
+["Q107371008","Shing Yip","Schmuckstraße Ecke Talstraße, 20359 Hamburg","Hamburg",53.551278,9.960083,"1907","st-Q107371008"],
+["Q132149473","Yva","Schlüterstr. 45, Berlin-Charlottenburg","Berlin",52.50052,13.316883,"1900","wd-Q2602123"]
+]}

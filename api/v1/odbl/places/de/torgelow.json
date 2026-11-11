@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Torgelow",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q100980918","Fritz Gronemann",1902,"memorial","Wilhelmstraße 1, 17358 Torgelow",53.62857,14.0058],
+["st-Q100980956","Hans Gronemann",1905,"memorial","Wilhelmstraße 1, 17358 Torgelow",53.62857,14.0058],
+["st-Q100980970","Julius Gronemann",1871,"memorial","Wilhelmstraße 1, 17358 Torgelow",53.62857,14.0058],
+["st-Q100980839","Käthe Freundlich",1904,"memorial","Wilhelmstraße 1, 17358 Torgelow",53.62857,14.0058]
+],
+"slug":"torgelow"}

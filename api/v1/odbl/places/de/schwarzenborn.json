@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Schwarzenborn",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13460777393","Jenny Oppenheimer",1900,"memorial","Kirchgasse 11, 34639 Schwarzenborn",50.90967,9.44631],
+["st-n13460777394","Martin Oppenheimer",1930,"memorial","Kirchgasse 11, 34639 Schwarzenborn",50.90967,9.4463],
+["st-n13460777392","Siegfried Oppenheimer",1894,"memorial","Kirchgasse 11, 34639 Schwarzenborn",50.90967,9.44631]
+],
+"slug":"schwarzenborn"}

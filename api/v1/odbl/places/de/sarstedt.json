@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"DE",
+"label":"Sarstedt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131369644","Alice Liebmann",1905,"memorial","Steinstraße 21, Sarstedt",52.23413,9.853],
+["st-Q131369618","Anna Neuberg",1879,"memorial","Lappenberg 1, Sarstedt",52.17103,10.35513],
+["st-Q131369641","Fritz Liebmann",1897,"memorial","Steinstraße 21, Sarstedt",52.23413,9.853],
+["st-Q131369633","Gisela Neuberg",1909,"memorial","Steinstraße 13, Sarstedt",52.23412,9.85244],
+["st-Q131369623","Helene Aschenbrandt",1895,"memorial","Steinstraße 13, Sarstedt",52.23412,9.85244],
+["st-Q131369632","Ida Neuberg",1879,"memorial","Steinstraße 13, Sarstedt",52.23412,9.85244],
+["st-Q131369621","Milian Aschenbrandt",1892,"memorial","Steinstraße 13, Sarstedt",52.23412,9.85244],
+["st-Q131369615","Otto Neuberg",1867,"memorial","Lappenberg 1, Sarstedt",52.17103,10.35513],
+["st-Q131369635","Paula Gliksmann",1914,"memorial","Steinstraße 13, Sarstedt",52.23412,9.85244],
+["st-Q131369609","Robert Neuberg",1860,"memorial","Lappenberg 1, Sarstedt",52.17103,10.35513],
+["st-Q131369629","Sally Aschenbrandt",1939,"memorial","Steinstraße 13, Sarstedt",52.23412,9.85244],
+["st-Q131369638","Werner Freundlich",1922,"memorial","Steinstraße 13, Sarstedt",52.23412,9.85244]
+],
+"slug":"sarstedt"}

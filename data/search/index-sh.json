@@ -1,0 +1,8 @@
+{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"sh",
+"rows":[
+["n3302881204","Dr. Herman Ernst Sheets","Helmholtzstraße 3b, Dresden","Dresden",51.030113,13.724671,"1908","st-n3302881204"],
+["n13677159103","Dov Shimoni","Rosenstraße 20, 99310 Arnstadt","Arnstadt",50.834984,10.942567,"1921",null],
+["n5383538740","Ilse Shindel","Elisenstraße 9","Solingen",51.168593,7.084749,"1914","st-n5383538740"]
+]}

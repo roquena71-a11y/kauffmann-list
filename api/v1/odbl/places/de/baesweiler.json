@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Baesweiler",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2789844267","David Randerath",1877,"memorial","Bahnhofstraße 13, Baesweiler",50.89502,6.18972],
+["st-n8091096645","Ernst Elkan",1922,"memorial","Hauptstraße 9, Baesweiler",50.92028,6.19919],
+["st-n8091096646","Henriette Elkan",1892,"memorial","Hauptstraße 9, Baesweiler",50.92028,6.19919],
+["st-n8091096642","Herschel Falke",1900,"memorial","Breite Straße 17, Baesweiler",50.9111,6.18048],
+["st-n13952875060","Johanna Randerath",1879,"memorial","Bahnhofstraße 13, Baesweiler",50.89502,6.18972],
+["st-n9497580049","Josefine Randerath",1878,"memorial","Bahnhofstraße 13, Baesweiler",50.89502,6.18972],
+["st-n8091096647","Joseph Elkan",1887,"memorial","Hauptstraße 9, Baesweiler",50.92028,6.19919],
+["st-n8091096639","Richard Levy",1894,"memorial","Breite Straße 74, Baesweiler",50.91178,6.18518],
+["st-n8091096640","Rosa Falke",1903,"memorial","Breite Straße 17, Baesweiler",50.9111,6.18048],
+["st-n8091096643","Sally Kahn",1914,"memorial","Hauptstraße 9, Baesweiler",50.92028,6.19919],
+["st-n8091096638","Sibille Levy",1895,"memorial","Breite Straße 74, Baesweiler",50.91178,6.18518],
+["st-n8091096641","Simon Falke",1929,"memorial","Breite Straße 17, Baesweiler",50.9111,6.18048],
+["st-n8091096644","Walter Elkan",1925,"memorial","Hauptstraße 9, Baesweiler",50.92028,6.19919]
+],
+"slug":"baesweiler"}

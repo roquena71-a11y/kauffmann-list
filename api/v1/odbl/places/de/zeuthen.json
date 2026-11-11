@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Zeuthen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12741514189","Georg Elias",1905,"memorial","Fontaneallee 12, 15738 Zeuthen",52.33803,13.63758],
+["st-n12738532434","Georg Müller",1870,"memorial","Schulstraße 4, 15738 Zeuthen",52.35266,13.62735],
+["st-n12738532432","Hermann Baum",1869,"memorial","Schulstraße 4, 15738 Zeuthen",52.35266,13.62735],
+["wd-Q106471064","Ludwig Pelz",1890,"memorial","Lindenallee 13, 15738 Zeuthen",52.34451,13.63245],
+["wd-Q105455383","Regina Pelz",1896,"memorial","Lindenallee 13, 15738 Zeuthen",52.34451,13.63245],
+["st-n12738532436","Rita Witzenhausen",1901,"memorial","Schulstraße 4, 15738 Zeuthen",52.35266,13.62736],
+["st-n12741046714","Simon Lerner",1879,"memorial","Friesenstraße 12, 15738 Zeuthen",52.35198,13.62393],
+["st-n12738532433","Walter Oppenheimer",1891,"memorial","Schulstraße 4, 15738 Zeuthen",52.35266,13.62735]
+],
+"slug":"zeuthen"}

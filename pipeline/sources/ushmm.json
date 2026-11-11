@@ -1,0 +1,64 @@
+{
+  "id": "ushmm",
+  "name": "USHMM – Holocaust Survivors and Victims Database",
+  "description": "PLANTILLA fase 2. Ajustar los nombres de columna del mapeo cuando llegue el archivo real. No activar publish_allowed hasta tener permiso escrito (ver docs/legal/).",
+  "phase": 2,
+  "enabled": false,
+  "publish_allowed": false,
+  "adapter": "generic_tabular",
+  "license": "LicenseRef-permiso-pendiente",
+  "license_url": null,
+  "attribution": "United States Holocaust Memorial Museum, Holocaust Survivors and Victims Database",
+  "homepage": "https://www.ushmm.org/remember/resources-holocaust-survivors-victims",
+  "license_family": "partners/ushmm",
+  "id_prefix": "us",
+  "priority": 52,
+  "input": {
+    "path": "pipeline/inbox/ushmm.csv",
+    "format": "csv",
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "retrieved": null
+  },
+  "mapping": {
+    "record_id": "PersonId",
+    "name": "Name",
+    "given_name": "First Name",
+    "family_name": "Last Name",
+    "birth_date": {
+      "column": "Date of Birth",
+      "format": "date"
+    },
+    "birth_place": "Place of Birth",
+    "death_date": {
+      "column": "Date of Death",
+      "format": "date"
+    },
+    "death_place": "Place of Death",
+    "places": [
+      {
+        "role": "birth",
+        "label": "Place of Birth"
+      },
+      {
+        "role": "death",
+        "label": "Place of Death"
+      }
+    ],
+    "identifiers": {
+      "ushmm": "PersonId",
+      "wikidata": "Wikidata"
+    },
+    "record_url": {
+      "template": "https://www.ushmm.org/online/hsv/person_view.php?PersonId={PersonId}"
+    },
+    "links": [
+      {
+        "type": "ushmm",
+        "url": {
+          "template": "https://www.ushmm.org/online/hsv/person_view.php?PersonId={PersonId}"
+        }
+      }
+    ]
+  }
+}

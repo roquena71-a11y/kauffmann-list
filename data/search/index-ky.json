@@ -1,0 +1,11 @@
+{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"ky",
+"rows":[
+["n14268103380","Annemarie Kychenthal","Am Markt 4, 19055 Schwerin","Schwerin",53.628795,11.414456,"1910","st-n14268103380"],
+["n14255602762","Louis Kychenthal","Am Markt 4, 19055 Schwerin","Schwerin",53.628792,11.414454,"1863","wd-Q105360557"],
+["n14268093066","Ludwig Kychenthal","Am Markt 4, 19055 Schwerin","Schwerin",53.628797,11.414457,"1897","st-n14268093066"],
+["n14268100144","Willy Kychenthal","Am Markt 4, 19055 Schwerin","Schwerin",53.628791,11.414459,"1907","st-n14268100144"],
+["Q132148328","Ida Kylies","Bertramstraße 112, 13467 Berlin-Hermsdorf","Berlin",52.622914,13.326097,null,"wd-Q132135931"],
+["n762637012","Theodor Kynast","Vordere Karlstraße 64, Göppingen, DE","Göppingen",48.700566,9.658352,"1904","st-n762637012"]
+]}

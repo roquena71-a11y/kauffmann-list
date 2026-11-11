@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Esssen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12331539699","David Weis",1881,"memorial",null,51.446,7.00907],
+["st-n12331491112","Heinrich Gelles",1885,"memorial",null,51.44637,7.00893],
+["st-n4173949923","Hermann Kaminski",1873,"memorial","Dreilindenstraße, Esssen",51.44809,7.00915],
+["st-n12331491109","Joachim Gelles",1936,"memorial",null,51.44639,7.00893],
+["st-n12331491110","Josua Gelles",1936,"memorial",null,51.44639,7.00895],
+["st-n12331491111","Olga Gelles",1901,"memorial",null,51.44638,7.00892],
+["st-n12331539697","Richard Weis",1916,"memorial",null,51.446,7.00909],
+["st-n12331539698","Rosa Weis",1884,"memorial",null,51.44601,7.00908]
+],
+"slug":"esssen"}

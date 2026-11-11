@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Westerland",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q132862124","Heinrich Bohnoff",1902,"memorial","Wenningstedter Weg 64, Westerland, Sylt",54.92347,8.31958],
+["st-Q132862052","Johanna Herold",1883,"memorial","Paulstraße 15, Westerland, Sylt",54.908,8.30316],
+["st-Q132861975","Karl Jessen",1882,"memorial","Johann-Möller-Straße 20, Westerland, Sylt",54.91208,8.30649],
+["st-Q132862027","Karl Quaas",1895,"memorial","Kjeirstraße 14, Westerland, Sylt",54.90945,8.31037],
+["st-Q132862065","Käthe Siegert",1894,"memorial","Strandstraße 22, Westerland, Sylt",54.90917,8.30173],
+["st-Q132862020","Kurt Brüggen",1910,"memorial","Kjeirstraße 12, Westerland, Sylt",54.90928,8.31041],
+["st-Q132861938","Max Feddersen",1900,"memorial","Am Seedeich 1, Westerland, Sylt",54.90117,8.30583],
+["st-Q132861947","Nikolaus Ehlers",1907,"memorial","Andreas-Nielsen-Straße 1, Westerland, Sylt",54.9091,8.30626]
+],
+"slug":"westerland"}

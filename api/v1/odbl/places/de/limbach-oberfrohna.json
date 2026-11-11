@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Limbach-Oberfrohna",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7243514888","Georg Arthur Sallmann",1882,"memorial","Chemnitzer Straße 18, Limbach-Oberfrohna",50.85638,12.77327],
+["st-n8830050865","Heinz Malz",1925,"memorial","Weststraße 13, 09212 Limbach-Oberfrohna",50.85745,12.76327],
+["st-n6043690598","Herbert Granz",1917,"memorial","Moritzstraße 15, 09212 Limbach-Oberfrohna",50.85879,12.76274],
+["st-n8618995200","Herrmann Richard Knorr",1895,"memorial","Querstraße 13, 09212 Limbach-Oberfrohna",50.85792,12.75326],
+["st-n8758961175","Richard Freimann",1885,"memorial","Pleißaer Straße 25, 09212 Limbach-Oberfrohna",50.8539,12.77521],
+["st-n7243514889","Rosa Margarete Kirsten",1900,"memorial","Marktsteig 3, Limbach-Oberfrohna",50.85606,12.76751]
+],
+"slug":"limbach-oberfrohna"}

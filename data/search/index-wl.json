@@ -1,0 +1,8 @@
+{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"wl",
+"rows":[
+["n13949349701","Konstantin Wladimirow",null,null,50.965614,7.160304,null,null],
+["Q131600050","Paijak Wladislawa","Koppelstraße 31, Osterholz-Scharmbeck","Osterholz-Scharmbeck",53.2327,8.7901,"1907","st-Q131600050"],
+["n9770484271","Josef Wlodarczyk","Am Sudholtshof 20, Ahlen","Ahlen",51.743344,7.89071,"1915","st-n9770484271"]
+]}

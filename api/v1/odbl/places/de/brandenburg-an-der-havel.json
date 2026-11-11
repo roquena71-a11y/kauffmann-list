@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Brandenburg an der Havel",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q136190279","Amalie Schwarz",1891,"memorial","Ritterstraße 92, 14770 Brandenburg an der Havel",52.41245,12.55438],
+["st-n10556494587","Bernhard Meyer",1862,"memorial","Packhofstraße 12, 14776 Brandenburg an der Havel",52.4118,12.5613],
+["st-Q136190294","Bertha Bertl Schwarz",1913,"memorial","Ritterstraße 92, 14770 Brandenburg an der Havel",52.41245,12.55438],
+["st-n10556500183","Bruno Schubert",1883,"memorial","Neustädtische Heidestraße 26, 14776 Brandenburg an der Havel",52.40634,12.56174],
+["st-n11589647836","Dr. Luise 'Lilli' Friesicke",1888,"memorial",null,52.40848,12.56138],
+["st-n10556490566","Gustav Schernikau",1891,"memorial","Katharinenkirchplatz 5, 14776 Brandenburg an der Havel",52.40878,12.56086],
+["st-n11589647835","Heinz Herbert Friesicke",1921,"memorial",null,52.40849,12.56136],
+["st-Q136190264","Josef Schwarz",1884,"memorial","Ritterstraße 92, 14770 Brandenburg an der Havel",52.41245,12.55438],
+["st-n10556531637","Sally Cohn",1879,"memorial","Packhofstraße 24, 14776 Brandenburg an der Havel",52.41182,12.56035]
+],
+"slug":"brandenburg-an-der-havel"}

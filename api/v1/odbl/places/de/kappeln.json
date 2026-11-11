@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"DE",
+"label":"Kappeln",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104450060","Alfred Eichwald",1862,"memorial","Mühlenstraße 36, Kappeln",54.66059,9.9311],
+["st-n837426857","Arthur Eichwald",1889,"memorial","Mühlenstraße 36, Kappeln",54.6606,9.93111],
+["st-n837426858","Emilie Eichwald",1889,"memorial","Mühlenstraße 36, Kappeln",54.6606,9.9311],
+["wd-Q104450062","Emma Eichwald",1865,"memorial","Mühlenstraße 36, Kappeln",54.66059,9.9311],
+["st-n837426855","Jeanette Simenauer",1896,"memorial","Mühlenstraße 36, Kappeln",54.66059,9.9311],
+["st-n837426840","Richard Eichwald",1890,"memorial","Mühlenstraße 36, Kappeln",54.6606,9.9311],
+["st-n837426835","Selly Eichwald",1891,"memorial","Mühlenstraße 36, Kappeln",54.6606,9.9311]
+],
+"slug":"kappeln"}

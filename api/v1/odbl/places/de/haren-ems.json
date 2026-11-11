@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Haren (Ems)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q130577140","Bela de Vries",1887,"memorial","Wesuweer Straße 7, Haren (Ems)",52.79091,7.23221],
+["st-Q130576640","Erich Sternberg",1904,"memorial","Lange Straße 21, Haren (Ems)",52.79098,7.23958],
+["st-Q130576824","Gottfried Frank",1872,"memorial","Lange Straße 44, Haren (Ems)",52.79028,7.23787],
+["st-Q130576881","Isaak Frank",1876,"memorial","Lange Straße 44, Haren (Ems)",52.79028,7.23787],
+["st-Q130576926","Iwan Frank",1923,"memorial","Lange Straße 44, Haren (Ems)",52.79028,7.23787],
+["st-Q130576705","Leopold Sternberg",1886,"memorial","Lange Straße 21, Haren (Ems)",52.79098,7.23958],
+["wd-Q105459077","Levi Sternberg",1867,"memorial","Lange Straße 21, Haren (Ems)",52.79098,7.23958],
+["st-Q130576749","Lotte Sternberg",1924,"memorial","Lange Straße 21, Haren (Ems)",52.79098,7.23958],
+["st-Q130576675","Regine Sternberg",1906,"memorial","Lange Straße 21, Haren (Ems)",52.79098,7.23958],
+["st-Q130576995","Sally de Vries",1881,"memorial","Wesuweer Straße 7, Haren (Ems)",52.79091,7.23221],
+["st-Q130576852","Sara Frank",1880,"memorial","Lange Straße 44, Haren (Ems)",52.79028,7.23787]
+],
+"slug":"haren-ems"}

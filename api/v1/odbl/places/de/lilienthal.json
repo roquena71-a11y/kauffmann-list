@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Lilienthal",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q130705576","Julius Frank",1907,"memorial","Hauptstraße 44, Lilienthal",53.13985,8.90486],
+["st-Q130705581","Ludwig Frank",1900,"memorial","Hauptstraße 44, Lilienthal",53.13985,8.90486],
+["st-Q130705600","Ursula Grützmacher",1939,"memorial","Konventshof 12, Lilienthal",53.14297,8.91235]
+],
+"slug":"lilienthal"}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Insel Hiddensee",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q78422","Adolf Reichwein",1898,"memorial","Süderende 103, 18565 Insel Hiddensee",54.56362,13.10313],
+["wd-Q1095144","Clara Arnheim",1865,"memorial","Norderende 174, 18565 Insel Hiddensee",54.56949,13.10467],
+["wd-Q1434857","Henni Lehmann",1863,"memorial","Wiesenweg 2, 18565 Insel Hiddensee",54.56898,13.1054],
+["wd-Q272713","Julie Wolfthorn",1864,"memorial","Süderende 73, 18565 Insel Hiddensee",54.56467,13.10328],
+["wd-Q1795538","Käthe Loewenthal",1878,"memorial","Süderende 130, 18565 Insel Hiddensee",54.56297,13.10295],
+["st-n2674760649","Susanne Ritscher",1878,"memorial","Süderende 130, 18565 Insel Hiddensee",54.56298,13.10295]
+],
+"slug":"insel-hiddensee"}

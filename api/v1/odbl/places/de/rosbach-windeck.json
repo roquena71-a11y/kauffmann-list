@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"DE",
+"label":"Rosbach (Windeck)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4502959493","Albert Simon",1898,"memorial","Bergstraße 8, Rosbach (Windeck)",50.7976,7.6123],
+["st-n4487407494","Amalie Simon",1858,"memorial","Bergstraße 6, Rosbach (Windeck)",50.79744,7.61211],
+["st-n1896592314","Edith Seligmann",1935,"memorial","Mittelstraße 20, Rosbach (Windeck)",50.80045,7.60971],
+["st-n4487407495","Ferdinand Simon",1896,"memorial","Bergstraße 6, Rosbach (Windeck)",50.79744,7.61211],
+["st-n1896592322","Frieda Seligmann",1899,"memorial","Mittelstraße 20, Rosbach (Windeck)",50.80045,7.60971],
+["st-n4502989291","Jenny Simon",1897,"memorial","Bergstraße 8, Rosbach (Windeck)",50.7976,7.6123],
+["st-n1896592329","Julius Seligmann",1897,"memorial","Mittelstraße 20, Rosbach (Windeck)",50.80045,7.60971],
+["st-n4502989290","Lothar Simon",1933,"memorial","Bergstraße 8, Rosbach (Windeck)",50.7976,7.6123],
+["st-n1896592331","Max Seligmann",1901,"memorial","Mittelstraße 20, Rosbach (Windeck)",50.80045,7.60971],
+["st-n1896592335","Paula Seligmann",1904,"memorial","Mittelstraße 20, Rosbach (Windeck)",50.80045,7.60971],
+["st-n1896592672","Selma Seligmann",1898,"memorial","Mittelstraße 20, Rosbach (Windeck)",50.80045,7.60971],
+["st-n4487430990","Simon Simon",1866,"memorial","Bergstraße 6, Rosbach (Windeck)",50.79744,7.61211]
+],
+"slug":"rosbach-windeck"}

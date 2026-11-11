@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Gersthofen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134615714","Alois Dureder",1899,"memorial","Ludwig-Herrmann-Straße 67 Gersthofen, Gersthofen",48.43716,10.88111],
+["st-Q134615718","Georg Kottmair",1909,"memorial","Ludwig-Herrmann-Straße 35 Gersthofen, Gersthofen",48.43192,10.88221],
+["st-Q134615738","Gino Rossi",1925,"memorial","Weiherweg 1 Gersthofen, Gersthofen",48.43781,10.88123],
+["st-Q134615717","Herrmann Wilhelm Jensch",1907,"memorial","Ludwig-Herrmann-Straße 55 Gersthofen, Gersthofen",48.43449,10.88195],
+["st-Q134615735","Johann Mayer",1919,"memorial","Heimstättenweg 6 Gersthofen, Gersthofen",48.43548,10.88453],
+["st-Q134615724","Johann Stegmüller",1910,"memorial","Wertingerstraße 6 Hirblingen, Gersthofen",48.42191,10.83078],
+["st-Q134615716","Josef Heim",1908,"memorial","Schmutterstraße 6 Batzenhofen, Gersthofen",48.42979,10.81761],
+["st-Q134615734","Kreszenz Maria Hartmann",1878,"memorial","Augsburger Straße 14 Gersthofen, Gersthofen",48.42283,10.87959],
+["st-Q134615713","Rosa Deisenhofer",1907,"memorial","Wertingerstraße 42 Hirblingen, Gersthofen",48.42579,10.82873],
+["st-Q134615737","Viktoria Pfundmeier",1905,"memorial","Sommerstraße 7 Gersthofen, Gersthofen",48.42193,10.88263]
+],
+"slug":"gersthofen"}

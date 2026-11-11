@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Großbeeren",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11906187956","Elsa Riess",1895,"memorial","Dorfaue 12, 14979 Großbeeren",52.35425,13.30698],
+["st-n11906187959","Erich Karpes",1891,"memorial","Dorfaue 18, 14979 Großbeeren",52.3532,13.30707],
+["st-n11906187960","Erika Karpers",1902,"memorial","Dorfaue 18, 14979 Großbeeren",52.35323,13.30707],
+["st-n11906187951","Louis Zydower",1899,"memorial","Berliner Str. 18, 14979 Großbeeren",52.35813,13.30917],
+["st-n11906187958","Luise Gumpert",1875,"memorial","Dorfaue 12, 14979 Großbeeren",52.3543,13.30698],
+["st-n11906187952","Martha Zydower",1900,"memorial","Berliner Str. 18, 14979 Großbeeren",52.35815,13.30918],
+["wd-Q105464079","Max Lewy",1869,"memorial","Berliner Str. 18, 14979 Großbeeren",52.35811,13.30915],
+["st-n11906187957","Moritz Gumpert",1883,"memorial","Dorfaue 12, 14979 Großbeeren",52.35427,13.30698],
+["st-n11906187953","Richard Zydower",1928,"memorial","Berliner Str. 18, 14979 Großbeeren",52.35817,13.30919],
+["st-n11906187954","Ruth Zydower",1925,"memorial","Berliner Str. 18, 14979 Großbeeren",52.35819,13.3092],
+["st-n11906187955","Wilhelm Riess",1895,"memorial","Dorfaue 12, 14979 Großbeeren",52.35422,13.30698]
+],
+"slug":"grobeeren"}

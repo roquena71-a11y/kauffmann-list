@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Treuenbrietzen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12752624311","Gertrud Slotowski",null,"memorial","Großstraße 79, 14929 Treuenbrietzen",52.09711,12.87132],
+["st-n12752624310","Paul Slotowski",null,"memorial","Großstraße 79, 14929 Treuenbrietzen",52.09711,12.87132]
+],
+"slug":"treuenbrietzen"}

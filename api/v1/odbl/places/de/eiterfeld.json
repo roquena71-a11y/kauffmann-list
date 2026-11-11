@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Eiterfeld",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105388288","Helene Rosenstock",1871,"memorial","Hermann-Lietz-Straße 3, 36132 Eiterfeld",50.78054,9.76733],
+["wd-Q105388291","Levi Rosenstock",1885,"memorial","Hermann-Lietz-Straße 3, 36132 Eiterfeld",50.78054,9.7673],
+["wd-Q105388292","Malchen Rosenstock",1881,"memorial","Hermann-Lietz-Straße 3, 36132 Eiterfeld",50.78054,9.76731],
+["st-n13672974718","Manchen Rosenstock",1869,"memorial",null,50.78054,9.76734],
+["wd-Q105388285","Menachem Rosenstock",1869,"memorial","Hermann-Lietz-Straße 3, 36132 Eiterfeld",50.78055,9.76728],
+["wd-Q105388293","Veilchen Rosenstock",1873,"memorial","Hermann-Lietz-Straße 3, 36132 Eiterfeld",50.78054,9.76732]
+],
+"slug":"eiterfeld"}

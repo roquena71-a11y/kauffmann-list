@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Bad Wildungen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4322880471","Auguste Mannheimer",1898,"memorial","Lindenstraße 3, 34537 Bad Wildungen",51.12006,9.12418],
+["st-Q134488358","Cilly Neuwirth",1911,"memorial","Richard-Kirchner-Straße 10, 34537 Bad Wildungen",51.11421,9.1117],
+["st-Q134488376","David Katz",1875,"memorial","Bahnhofstraße 9, 34537 Bad Wildungen",51.11767,9.12129],
+["wd-Q104700194","Max Hammerschlag",1899,"memorial","Brunnenstraße 20, 34537 Bad Wildungen",51.12006,9.12555]
+],
+"slug":"bad-wildungen"}

@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Albbruck",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13484612602","Augusta Jehle",1901,"memorial","Leiterbachstraße 12, 79774 Albbruck",47.64397,8.12698],
+["st-n13484609911","Max Graf",1884,"memorial","Dr. Jakob-Ebner-Weg, 79774 Albbruck",47.64741,8.13315]
+],
+"slug":"albbruck"}

@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"DE",
+"label":"Birkenfeld",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n10048651572","Doris Senator",1930,"memorial","Achtstraße 9, 55765 Birkenfeld",49.64917,7.1687],
+["wd-Q1508809","Gerhard Storm",1888,"memorial","Schneewiesenstraße 22, 55765 Birkenfeld",49.64811,7.16561],
+["st-n9612283465","Ida Schiffmann",1878,"memorial","Bahnhofstraße 7, Birkenfeld",49.64614,7.16672],
+["st-n10048651573","Lydia Senator",1889,"memorial","Achtstraße 9, 55765 Birkenfeld",49.64917,7.1687],
+["st-n10048651574","Max Senator",1889,"memorial","Achtstraße 9, 55765 Birkenfeld",49.64917,7.1687],
+["st-n10110691075","Otto Pick",1882,"memorial","Am Kirchplatz 13, Birkenfeld",49.64817,7.16826],
+["st-n9612283464","Rosa Schiffmann",1877,"memorial","Bahnhofstraße 7, Birkenfeld",49.64614,7.16672]
+],
+"slug":"birkenfeld"}

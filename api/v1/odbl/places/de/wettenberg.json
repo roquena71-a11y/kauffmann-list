@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Wettenberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q128795981","Karl Drescher",1864,"memorial","Kinzenbacher Str. 11, 35435 Wettenberg",50.62081,8.63388],
+["st-Q128796123","Klara Schleenbecker",1897,"memorial","Wetzlarer Str. 18, 35435 Wettenberg",50.62063,8.63744],
+["st-Q128796105","Louis Schleenbecker",1897,"memorial","Wetzlarer Str. 18, 35435 Wettenberg",50.62063,8.63744],
+["st-Q128796092","Margarethe Bechthold",1898,"memorial","Kirchgärten 3, 35435 Wettenberg",50.62272,8.66173],
+["st-Q128795967","Mathilde Schwalb",1902,"memorial","Bahnhofstraße 8, 35435 Wettenberg",50.63334,8.6789],
+["st-Q128796131","Wilfried Bender",1934,"memorial","Wiesenstraße 30, 35435 Wettenberg",50.62325,8.63802],
+["st-Q128795999","Wilhelm Bechthold",1902,"memorial","Kirchgärten 3, 35435 Wettenberg",50.62272,8.66173],
+["st-Q128796099","Wilhelmine Bechthold",1893,"memorial","Kirchgärten 3, 35435 Wettenberg",50.62272,8.66173]
+],
+"slug":"wettenberg"}

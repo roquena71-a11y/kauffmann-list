@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Barntrup",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104702093","Berta Herzberg",1867,"memorial","Obere Straße 26, Barntrup",51.99128,9.11362],
+["wd-Q104683940","Emma Grünewald",1862,"memorial","Obere Straße 26, Barntrup",51.99128,9.11362],
+["wd-Q104702106","Hermann Herzberg",1869,"memorial","Obere Straße 26, Barntrup",51.99128,9.11362],
+["wd-Q105354941","Julie Katz",1878,"memorial","Obere Straße 26, Barntrup",51.99128,9.11362]
+],
+"slug":"barntrup"}

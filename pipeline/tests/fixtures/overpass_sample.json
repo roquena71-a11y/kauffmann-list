@@ -1,0 +1,10 @@
+{
+  "retrieved": "2026-11-11",
+  "country": "AT",
+  "_comment": "Respuesta Overpass reducida y ficticia para pruebas sin red.",
+  "elements": [
+    {"type": "node", "id": 900000001, "lat": 48.2, "lon": 16.37,
+     "tags": {"memorial": "stolperstein", "name": "Anna Beispiel", "inscription": "Hier wohnte Anna Beispiel Jg. 1890 deportiert 1942 Maly Trostinec ermordet 1942",
+              "addr:street": "Testgasse", "addr:housenumber": "1", "addr:city": "Wien"}}
+  ]
+}

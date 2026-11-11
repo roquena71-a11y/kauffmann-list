@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Wurzen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q125700844","Arthur Seligmann, Dr.",1893,"memorial","Domgasse 19, 04808 Wurzen",51.36914,12.73416],
+["st-Q126008081","Bianca Goldschmidt",1896,"memorial","Dr.-Rudolf-Friedrichs-Straße 10, 04808 Wurzen",51.36685,12.74765],
+["st-Q126008024","Emma Susanne Seligmann",1900,"memorial","Domgasse 19, 04808 Wurzen",51.36914,12.73416],
+["st-Q126008065","Friedrich Goldschmidt",1885,"memorial","Dr.-Rudolf-Friedrichs-Straße 10, 04808 Wurzen",51.36685,12.74765],
+["st-Q127416386","Friedrich Goldschmidt (Arbeit)",1885,"memorial","Jacobsgasse 13, 04808 Wurzen",51.3703,12.73685],
+["st-Q126008167","Hedwig Luchtenstein",1889,"memorial","Heinrich-Heine-Straße 3, 04808 Wurzen",51.37281,12.74559],
+["st-Q127786506","Hedwig Luchtenstein (Arbeit)",1889,"memorial","Jacobsgasse 10, 04808 Wurzen",51.37006,12.737],
+["st-Q126008135","Hiltrud Helft",1902,"memorial","Färbergasse 2, 04808 Wurzen",51.36799,12.73468],
+["st-Q126008153","Hugo Luchtenstein",1879,"memorial","Heinrich-Heine-Straße 3, 04808 Wurzen",51.37281,12.74559],
+["st-Q127786487","Hugo Luchtenstein (Arbeit)",1879,"memorial","Jacobsgasse 10, 04808 Wurzen",51.37006,12.737],
+["st-Q126008138","Ingeborg Helft",1926,"memorial","Färbergasse 2, 04808 Wurzen",51.36799,12.73468],
+["wd-Q141759577","Johanna Finkenstein",1864,"memorial","Färbergasse 2, 04808 Wurzen",51.36799,12.73468],
+["wd-Q104700532","Lina Hartmann",1873,"memorial","Färbergasse 2, 04808 Wurzen",51.36799,12.73468]
+],
+"slug":"wurzen"}

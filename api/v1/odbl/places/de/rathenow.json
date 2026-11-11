@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Rathenow",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n14310130182","Alfred Kornblum",1878,"memorial","Steinstraße 1, 14712 Rathenow",52.60724,12.33493],
+["st-Q100987984","Berta Blanka Kadden",1866,"memorial","Steinstraße 40, 14712 Rathenow",52.60694,12.33562],
+["st-Q100987985","Emmy Sinasohn",1903,"memorial","Steinstraße 40, 14712 Rathenow",52.60694,12.33562],
+["st-n14310130183","Franziska Kornblum",1879,"memorial","Steinstraße 1, 14712 Rathenow",52.60724,12.33494]
+],
+"slug":"rathenow"}

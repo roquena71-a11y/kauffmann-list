@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Blankenburg (Harz)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104544255","Anna Louise Ewh",1875,"memorial","Herzogstraße 16A, Blankenburg (Harz)",51.79291,10.96065],
+["st-n11483220904","Ida Westfeld",1901,"memorial","Markt 5, Blankenburg (Harz)",51.78866,10.95486],
+["st-n11482615456","Jack Crohn",1885,"memorial","Tränkestr. 21, Blankenburg (Harz)",51.78918,10.95382],
+["st-n11482615454","Johanna Crohn",1889,"memorial","Tränkestr. 21, Blankenburg (Harz)",51.78918,10.95383],
+["st-n11554323128","Lina Herz",1878,"memorial","Roh 2, Blankenburg (Harz)",51.79147,10.94805],
+["st-n11554323127","Margarete Herz",1872,"memorial","Roh 2, Blankenburg (Harz)",51.79147,10.94806],
+["wd-Q105461490","Moritz Westfeld",1868,"memorial","Markt 5, Blankenburg (Harz)",51.78866,10.95485],
+["st-n11554321077","Siegfried Sokolowski",1884,"memorial","Roh 5a, Blankenburg (Harz)",51.79123,10.94581],
+["wd-Q123721441","Thea Westfeld",1899,"memorial","Markt 5, Blankenburg (Harz)",51.78866,10.95485]
+],
+"slug":"blankenburg-harz"}

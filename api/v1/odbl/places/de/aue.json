@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Aue",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q125658630","Bernd Ludwig Kaiser",1915,"memorial","Lessingstraße 1, 08280 Aue",50.587,12.6989],
+["st-n11911780043","Betty Schüftan",1897,"memorial","Schwarzenberger Straße 1, 08280 Aue",50.58599,12.70316],
+["st-n11911753883","David Thorn",1865,"memorial","Schwarzenberger Straße 1, 08280 Aue",50.586,12.70316],
+["st-Q127370772","Dieter Kreinberg",1928,"memorial","Schwarzenberger Straße 1, 08280 Aue",50.58599,12.70316],
+["st-Q125658556","Gerda Kaiser",1910,"memorial","Lessingstraße 1, 08280 Aue",50.587,12.6989],
+["st-n11911782067","Hertha Thorn",1902,"memorial","Schwarzenberger Straße 1, 08280 Aue",50.58599,12.70316],
+["st-Q125658654","Lina Kaiser",1880,"memorial","Lessingstraße 1, 08280 Aue",50.587,12.6989],
+["st-n11911783403","Max Schüftan",1894,"memorial","Schwarzenberger Straße 1, 08280 Aue",50.586,12.70316],
+["wd-Q105460010","Rosette Thorn",1867,"memorial","Schwarzenberger Straße 1, 08280 Aue",50.58599,12.70316]
+],
+"slug":"aue"}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Legden",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3468146190","Bertha Neuberg",1891,"memorial","Osnabrücker Straße 11, 48739 Legden",52.02979,7.10541],
+["st-n3462215531","Grete Eichenwald",1902,"memorial","Hauptstraße 22, 48739 Legden",52.03083,7.10382],
+["st-n3468146191","Jettchen Rosenbaum",1888,"memorial","Osnabrücker Straße 11, 48739 Legden",52.02978,7.1054],
+["st-n3462215532","Karl Seligmann",1907,"memorial","Hauptstraße 22, 48739 Legden",52.03083,7.10383],
+["st-n3462215533","Moritz Seligmann",1878,"memorial","Hauptstraße 22, 48739 Legden",52.03083,7.10382],
+["st-n3462215534","Rika Seligmann",1899,"memorial","Hauptstraße 22, 48739 Legden",52.03083,7.10381]
+],
+"slug":"legden"}

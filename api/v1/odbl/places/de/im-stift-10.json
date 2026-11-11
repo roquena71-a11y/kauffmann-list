@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Im Stift 10",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n5802363436","Alfred Neufeld",1933,"memorial","Himmelmannplatz, Im Stift 10, Fröndenberg",51.47277,7.76576],
+["st-n5801727251","Berta Neufeld",1861,"memorial","Himmelmannplatz, Im Stift 10, Fröndenberg",51.47277,7.76576],
+["st-n5802363441","Betty Neufeld",1890,"memorial","Himmelmannplatz, Im Stift 10, Fröndenberg",51.47277,7.76576],
+["st-n5802363437","Dorit Neufeld",1861,"memorial","Himmelmannplatz, Im Stift 10, Fröndenberg",51.47277,7.76576],
+["st-n5802363443","Herz Neufeld",1861,"memorial","Himmelmannplatz, Im Stift 10, Fröndenberg",51.47277,7.76576],
+["st-n5802363439","Hugo Neufeld",1892,"memorial","Himmelmannplatz, Im Stift 10, Fröndenberg",51.47277,7.76576],
+["st-n5802363434","Johanna Neufeld",1908,"memorial","Himmelmannplatz, Im Stift 10, Fröndenberg",51.47277,7.76577],
+["st-n5802363438","Johanna Neufeld",1892,"memorial","Himmelmannplatz, Im Stift 10, Fröndenberg",51.47277,7.76576],
+["st-n5802363440","Nathalie Neufeld",1895,"memorial","Himmelmannplatz, Im Stift 10, Fröndenberg",51.47277,7.76576],
+["st-n5802363442","Nathan Neufeld",1887,"memorial","Himmelmannplatz, Im Stift 10, Fröndenberg",51.47277,7.76576],
+["st-n5802363435","Paul Neufeld",1901,"memorial","Himmelmannplatz, Im Stift 10, Fröndenberg",51.47277,7.76577]
+],
+"slug":"im-stift-10"}

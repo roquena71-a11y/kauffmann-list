@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Bietigheim-Bissingen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3892029970","Emil Weil",1901,"memorial","Bahnhofstraße 25, Bietigheim-Bissingen, DE",48.94653,9.10437],
+["st-n11920088515","Emma Sofie Grözinger",1893,"memorial","Burgstraße 9, 74321 Bietigheim-Bissingen",48.94687,9.09208],
+["st-n5169016402","Erna Unkel",1923,"memorial","Bei der Kelter 14, Bietigheim-Bissingen",48.96009,9.12568],
+["st-n3892029971","Eugen Brust",1912,"memorial","Bissinger Straße 4, Bietigheim-Bissingen, DE",48.94487,9.08317],
+["st-n3841225714","Frida Ziegelmaier",1901,"memorial","Pfarrstraße 6, Bietigheim-Bissingen, DE",48.96022,9.12532],
+["st-n4285793878","Gustav Strenger",1896,"memorial","Ringstraße 8, 74321 Bietigheim-Bissingen",48.95449,9.13248],
+["st-n12864229196","Karl Binder",1905,"memorial","Hindenburgstraße 16, Bietigheim-Bissingen, DE",48.95986,9.12227],
+["st-n5169016401","Karl Reinhardt",1886,"memorial","Weinstraße 4, Bietigheim-Bissingen, DE",48.95978,9.12645],
+["st-n4285793879","Lydia Mack",1897,"memorial","Backhausstraße 3, Bietigheim-Bissingen, DE",48.9475,9.09845],
+["st-n4285793880","Marie Sick",1884,"memorial","Kreuzstraße 22, Bietigheim-Bissingen, DE",48.94662,9.09924],
+["st-n5169016400","Walter Haas",1921,"memorial","Fräuleinstraße 4",48.96,9.12827]
+],
+"slug":"bietigheim-bissingen"}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Horhausen (Westerwald)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12951141309","Betty Kahn",1911,"memorial","Tannenstraße 13, 56593 Horhausen (Westerwald)",50.58711,7.52912],
+["st-n12951141310","Karoline Kahn",1885,"memorial","Tannenstraße 13, 56593 Horhausen (Westerwald)",50.58711,7.52912],
+["st-n12951141325","Maria Lettery",1915,"memorial","Hufer Garten 10, 56593 Horhausen (Westerwald)",50.59093,7.52223],
+["st-n12951141311","Siegmund Kahn",1879,"memorial","Tannenstraße 13, 56593 Horhausen (Westerwald)",50.58711,7.52912]
+],
+"slug":"horhausen-westerwald"}

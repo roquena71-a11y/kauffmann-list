@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Bergisch Gladbach",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q106819810","Dr. Erich Deutsch",1877,"memorial","Altenberger-Dom-Straße 128, Bergisch Gladbach",51.01492,7.08021],
+["wd-Q104808160","Elise Joschkowitz",1859,"memorial","An der Tent 2, Bergisch Gladbach",50.98342,7.12722],
+["wd-Q104807538","Erna Kahn",1890,"memorial","Bensberger Str. 188a, Bergisch Gladbach",50.97915,7.13752],
+["st-n3886631057","Ernst Danzig",1885,"memorial","Bensberger Str. 188a, Bergisch Gladbach",50.97915,7.13752],
+["wd-Q109142279","Gertrud Stockhausen",1900,"memorial","Bärbroich 17, Bergisch Gladbach",50.98326,7.22126],
+["wd-Q104654005","Harry Freymuth",1881,"memorial","Hüttenstraße 40, Bergisch Gladbach",50.97451,7.13575],
+["st-n3886641757","Henriettte Zimmermann",1875,"memorial","Ahornweg 9, Bergisch Gladbach",50.9817,7.1225],
+["st-n3886653357","Reinhold Joschkowitz",1894,"memorial","An der Tent 2, Bergisch Gladbach",50.98342,7.12722]
+],
+"slug":"bergisch-gladbach"}

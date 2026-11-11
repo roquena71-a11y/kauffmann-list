@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Burgstädt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n8350050804","Albert Hößler",null,"memorial","Heimstättenstraße 9, 09217 Burgstädt",50.89134,12.82673],
+["st-Q134486909","Gertrud Königsberger",1892,"memorial","Lindenstraße 3, 09217 Burgstädt",50.91839,12.81382],
+["st-Q134486744","Kurt Herbert Dathe",1909,"memorial",null,50.89804,12.80339],
+["st-Q134486001","Max Moserth",1907,"memorial","Dr.-Robert-Koch-Straße 24, 09217 Burgstädt",50.91889,12.80661],
+["st-Q134486891","Willi Königsberger",1885,"memorial","Lindenstraße 3, 09217 Burgstädt",50.91839,12.81382]
+],
+"slug":"burgstadt"}

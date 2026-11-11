@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Jüterbog",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6818340597","Albert Joel",1878,"memorial","Mönchenstraße 33, 14913 Jüterbog",51.9913,13.0785],
+["st-n6818340594","Gisela Joel",1923,"memorial","Mönchenstraße 33, 14913 Jüterbog",51.9913,13.0785],
+["st-n6818340596","Lina Joel",1890,"memorial","Mönchenstraße 33, 14913 Jüterbog",51.9913,13.0785],
+["st-n6818340595","Thea Joel",1921,"memorial","Mönchenstraße 33, 14913 Jüterbog",51.9913,13.0785]
+],
+"slug":"juterbog"}

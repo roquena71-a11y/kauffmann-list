@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Zerbst",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12504376486","Dora Spanier",1899,"memorial","Wolfsbrücke 35, 39261 Zerbst",51.96619,12.08884],
+["wd-Q106468094","Elise Michels",1870,"memorial","Wolfsbrücke 35, 39261 Zerbst",51.96619,12.08884],
+["st-n12993681329","Ella Jacob",1891,"memorial","Fritz-Brandt-Straße 4, 39261 Zerbst",51.96322,12.08545],
+["wd-Q105366247","Frieda Maerker",1875,"memorial","Wolfsbrücke 35, 39261 Zerbst",51.96619,12.08885],
+["st-n12504376490","Hanna Tikotzki",1884,"memorial","Wolfsbrücke 35, 39261 Zerbst",51.96619,12.08884],
+["st-n12504376485","Hermann Spanier",1889,"memorial","Wolfsbrücke 35, 39261 Zerbst",51.96619,12.08884],
+["st-n12504376489","Hermann Tikotzki",1884,"memorial","Wolfsbrücke 35, 39261 Zerbst",51.96619,12.08884],
+["st-n12993681330","Leo Jacob",1890,"memorial","Fritz-Brandt-Straße 4, 39261 Zerbst",51.96322,12.08545],
+["wd-Q105361681","Martha Leiser",1876,"memorial","Alte Brücke 2, 39261 Zerbst",51.96653,12.0845],
+["wd-Q105361683","Martin Leiser",1875,"memorial","Alte Brücke 2, 39261 Zerbst",51.96653,12.08451]
+],
+"slug":"zerbst"}

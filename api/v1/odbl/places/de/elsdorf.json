@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Elsdorf",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2783521189","Betty Stern geb Hausmann",1904,"memorial","Auf dem Driesch 18, Elsdorf",50.93571,6.56649],
+["st-n2785938923","Carla Simon",1929,"memorial","Kerpener Straße, 50189 Elsdorf",50.92291,6.58717],
+["st-n2783521191","Ernst Hausmann",1902,"memorial","Auf dem Driesch 18, Elsdorf",50.93571,6.56649],
+["st-n2783521192","Helmut Julius Hausmann",1920,"memorial","Auf dem Driesch 18, Elsdorf",50.9357,6.56649],
+["st-n2783521193","Hugo Stern",1864,"memorial","Auf dem Driesch 18, Elsdorf",50.9357,6.56649],
+["st-n2785938936","Ilse Simon",1922,"memorial","Kerpener Straße, 50189 Elsdorf",50.92289,6.58713],
+["st-n2782964672","Lena Lina Hausmann",1865,"memorial","Auf dem Driesch 18, Elsdorf",50.93571,6.56649],
+["st-n2782954855","Michael Hausmann",1864,"memorial","Auf dem Driesch 18, Elsdorf",50.93571,6.56649],
+["st-n2786516685","Michael Hausmann",1861,"memorial","Gladbacher Straße 41, Elsdorf",50.93602,6.56786],
+["st-n1563599975","Selma Simon",1892,"memorial","Kerpener Straße, 50189 Elsdorf",50.9229,6.58715],
+["st-n2786516723","Sigismund Hausmann",1868,"memorial","Gladbacher Straße 41, Elsdorf",50.93603,6.56788]
+],
+"slug":"elsdorf"}

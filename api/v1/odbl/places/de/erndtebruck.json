@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Erndtebrück",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2359365866","Arthur Winter",1888,"memorial","Marburger Straße 6, Erndtebrück",50.98884,8.25654],
+["st-n2359365867","Bella Simon",1896,"memorial","Marburger Straße 15, Erndtebrück",50.98936,8.25735],
+["st-n2359365868","Betty Moses",1892,"memorial","Bergstraße 10, Erndtebrück",50.9879,8.25595],
+["st-n2359365869","Friederike Dickhaut",1874,"memorial","Marburger Straße 12, Erndtebrück",50.98899,8.25693],
+["st-n2359365870","Heinz Simon",1928,"memorial","Marburger Straße 15, Erndtebrück",50.98936,8.25735],
+["st-n2359365871","Inge Simon",1930,"memorial","Marburger Straße 15, Erndtebrück",50.98936,8.25735],
+["st-n2359365872","Kurt Winter",1921,"memorial","Marburger Straße 6, Erndtebrück",50.98884,8.25654],
+["st-n2359365873","Luise Winter",1899,"memorial","Marburger Straße 6, Erndtebrück",50.98883,8.25654],
+["st-n2359365874","Moritz Moses",1875,"memorial","Bergstraße 10, Erndtebrück",50.98789,8.25595],
+["st-n2359365933","Ruth Winter",1928,"memorial","Marburger Straße 6, Erndtebrück",50.98884,8.25654]
+],
+"slug":"erndtebruck"}

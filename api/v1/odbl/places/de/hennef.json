@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Hennef",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2223059573","Hermann Wolff",1900,"memorial","Bonner Straße 71, 53773 Hennef",50.77247,7.27218],
+["st-n2223059574","Karola Wolff",1915,"memorial","Bonner Straße 71, 53773 Hennef",50.77246,7.27218],
+["st-n2223059579","Mathilde Wolff",1870,"memorial","Bonner Straße 71, 53773 Hennef",50.77247,7.27218],
+["st-n4347480138","Mathilde Wolff",1902,"memorial","Bonner Straße 71, 53773 Hennef",50.77247,7.27219],
+["st-n2223059638","Werner Wolff",1931,"memorial","Bonner Straße 71, 53773 Hennef",50.77246,7.27219]
+],
+"slug":"hennef"}

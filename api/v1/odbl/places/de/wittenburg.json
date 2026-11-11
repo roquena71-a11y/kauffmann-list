@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Wittenburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105459174","Anna Stiel",1875,"memorial","Große Straße 67, 19243 Wittenburg",53.51362,11.07061],
+["st-Q100717902","Martha Lazarus",1889,"memorial","Große Straße 54, 19243 Wittenburg",53.51282,11.07231],
+["st-Q100717886","Max Lazarus",1884,"memorial","Große Straße 54, 19243 Wittenburg",53.51282,11.07231],
+["wd-Q105459175","Philipp Stiel",1863,"memorial","Große Straße 67, 19243 Wittenburg",53.51362,11.07061]
+],
+"slug":"wittenburg"}

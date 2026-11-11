@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"DE",
+"label":"Rheurdt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6289178976","Bernhard Leiser",1901,"memorial","Rathausstraße 27, 47509 Rheurdt",51.46699,6.46985],
+["st-n6289178979","Frieda Seelmann",1888,"memorial","Aldekerker Straße 5, 47509 Rheurdt",51.46742,6.46879],
+["st-n6289178981","Friedrich Seelmann",1888,"memorial","Aldekerker Straße 5, 47509 Rheurdt",51.46742,6.46877],
+["st-n6289178978","Hans Leiser",1938,"memorial","Rathausstraße 27, 47509 Rheurdt",51.46698,6.46986],
+["st-n6289178983","Jakob David",1865,"memorial","Aldekerker Straße 5, 47509 Rheurdt",51.46743,6.46878],
+["st-n6289179187","Kaufmann, Amalie",1889,"memorial","Rathausstraße 70, 47509 Rheurdt",51.4709,6.46758],
+["st-n6289179186","Kaufmann, Georg",1891,"memorial","Rathausstraße 70, 47509 Rheurdt",51.47089,6.46759],
+["st-n6289179185","Kaufmann, Margot",1930,"memorial","Rathausstraße 70, 47509 Rheurdt",51.47089,6.4676],
+["st-n6289178984","Kaufmann, Paula",1902,"memorial","Rathausstraße 70, 47509 Rheurdt",51.47088,6.4676],
+["st-n6289178977","Martha Leiser",1897,"memorial","Rathausstraße 27, 47509 Rheurdt",51.46699,6.46986],
+["st-n6289178975","Moses David",1884,"memorial","Rathausstraße 27, 47509 Rheurdt",51.46699,6.46985],
+["st-n6289178982","Rosette David",1856,"memorial","Aldekerker Straße 5, 47509 Rheurdt",51.46743,6.46878]
+],
+"slug":"rheurdt"}

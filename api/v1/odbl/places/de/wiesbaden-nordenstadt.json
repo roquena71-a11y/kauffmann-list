@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Wiesbaden-Nordenstadt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n1019336028","Martha Schiffer",1889,"memorial","Stolberger Straße 43, Wiesbaden-Nordenstadt",50.06259,8.34357],
+["st-n1019329327","Selma Fried",1889,"memorial","Stolberger Straße 43, Wiesbaden-Nordenstadt",50.06259,8.34357]
+],
+"slug":"wiesbaden-nordenstadt"}

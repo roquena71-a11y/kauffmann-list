@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Hornschuchallee 4",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7281001204","Rosa Tiesler",1875,"memorial","Forchheim, Hornschuchallee 4",49.7208,11.05882],
+["wd-Q105356220","Sofie Kotz",1860,"memorial","Forchheim, Hornschuchallee 4",49.72081,11.05882]
+],
+"slug":"hornschuchallee-4"}

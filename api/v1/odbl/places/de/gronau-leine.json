@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Gronau (Leine)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q139753340","Albert Heine",1877,"memorial","Blanke Str. 41, 31028 Gronau (Leine)",52.08481,9.77281],
+["st-Q139753616","Erich Rosenstern",1899,"memorial","Blanke Str. 46, 31028 Gronau (Leine)",52.08479,9.77249],
+["st-Q139753691","Frieda Rosenstern",1905,"memorial","Blanke Str. 46, 31028 Gronau (Leine)",52.08479,9.77249],
+["st-Q139753508","Herbert Heine",1908,"memorial","Blanke Str. 41, 31028 Gronau (Leine)",52.08481,9.77281],
+["st-Q139754024","Irmgard Harf",1921,"memorial","Junkernstraße 11, 31028 Gronau (Leine)",52.08544,9.77602],
+["wd-Q104700487","Leo Harf",1887,"memorial","Junkernstraße 11, 31028 Gronau (Leine)",52.08544,9.77602],
+["st-Q139753436","Mally Heine",1885,"memorial","Blanke Str. 41, 31028 Gronau (Leine)",52.08481,9.77281],
+["wd-Q104700490","Paula Harf",1890,"memorial","Junkernstraße 11, 31028 Gronau (Leine)",52.08544,9.77602],
+["st-Q139753942","Selma Harf",1891,"memorial","Junkernstraße 11, 31028 Gronau (Leine)",52.08544,9.77602],
+["st-Q139753985","Willi Harf",1907,"memorial","Junkernstraße 11, 31028 Gronau (Leine)",52.08544,9.77602]
+],
+"slug":"gronau-leine"}

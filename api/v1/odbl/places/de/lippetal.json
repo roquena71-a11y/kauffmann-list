@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"DE",
+"label":"Lippetal",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105454432","Adele Neukircher",1877,"memorial","Hovestädter Straße 5, 59510 Lippetal",51.63472,8.10055],
+["st-Q101444692","Alfred Neukircher",1888,"memorial","Hovestädter Straße 5, 59510 Lippetal",51.63472,8.10055],
+["wd-Q104805708","Hermann Hoffmann",1887,"memorial","Hovestädter Straße 5, 59510 Lippetal",51.63472,8.10055],
+["wd-Q105457449","Julius Sommer",1855,"memorial","Brückenstraße Ecke Bahnhofstraße, 59510 Lippetal",51.65741,8.14339],
+["wd-Q105454435","Paul Neukircher",1876,"memorial","Hovestädter Straße 5, 59510 Lippetal",51.63472,8.10055],
+["st-Q101444678","Paula Cohn",1877,"memorial","Brückenstraße Ecke Bahnhofstraße, 59510 Lippetal",51.65741,8.14339],
+["st-Q101444680","Rudolf Cohn",1883,"memorial","Brückenstraße Ecke Bahnhofstraße, 59510 Lippetal",51.65741,8.14339]
+],
+"slug":"lippetal"}

@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Weissach",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n14287434655","Edith Zloczower",1934,"memorial","Hauptstraße 10, 71287 Weissach",48.84711,8.92588],
+["st-n14287434658","Eugen Hermann Hettler",1913,"memorial","Nussdorfer Straße 29, 71287 Weissach",48.84978,8.92684],
+["st-n14287434657","Georg Friedrich Alle",1902,"memorial","I. Querstraße 3, 71287 Weissach",48.84704,8.92439],
+["st-n14287434656","Gerda Metzger",1939,"memorial","Weissacher Straße, 71287 Weissach",48.83457,8.91315],
+["st-Q141751938","Gerda Metzger (Weissach)",1939,"memorial","Weissacher Straße / Bergstraße",48.83457,8.91315],
+["st-n14287434654","Heinrich Zloczower",1905,"memorial","Hauptstraße 10, 71287 Weissach",48.84711,8.92587],
+["st-n14287434652","Kläre Zloczower",1908,"memorial","Hauptstraße 10, 71287 Weissach",48.84711,8.92588],
+["st-n14285795797","Marie Christine Ruf",1878,"memorial","Marktplatz, 71287 Weissach",48.8468,8.92834],
+["st-n14287434653","Stefan Zloczower",1936,"memorial","Hauptstraße 10, 71287 Weissach",48.84712,8.92588]
+],
+"slug":"weissach"}

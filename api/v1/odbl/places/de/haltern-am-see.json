@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Haltern am See",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q110562","Alexander Lebenstein",1927,"memorial","Disselhof 36, Haltern am See",51.74463,7.18555],
+["wd-Q106472948","Bernhard Leo Peters",1912,"memorial","Kastanienstraße 2, 45721 Haltern am See",51.77921,7.16152],
+["wd-Q106459568","Caecilia Chava Meyer",1877,"memorial","Rekumer Straße 18, 45721 Haltern am See",51.74384,7.18601],
+["st-n5000519325","Caecilia Meyer",1877,"memorial","Rekumer Straße 18, Haltern am See",51.74384,7.18601],
+["wd-Q106450344","Charlotte Lebenstein",1884,"memorial","Disselhof 36, Haltern am See",51.74463,7.18555],
+["wd-Q106474035","Dora Meyer",1874,"memorial","Rekumer Straße 18, Haltern am See",51.74384,7.18601],
+["wd-Q104424345","Ella Daniel",1894,"memorial","Rekumer Straße 5, Haltern am See",51.74314,7.18669],
+["wd-Q104424351","Hannelore Daniel",1928,"memorial","Rekumer Straße 5, Haltern am See",51.74316,7.18668],
+["wd-Q104424352","Heinrich Daniel",1888,"memorial","Rekumer Straße 5, Haltern am See",51.74313,7.1867],
+["wd-Q106472987","Hermann Cohn",1873,"memorial","Münsterstraße 28, Haltern am See",51.74718,7.19116],
+["wd-Q106436549","Jeanette Kleeberg",1885,"memorial","Blombrink 1, Haltern am See",51.74238,7.18642],
+["wd-Q106436984","Nathan Lebenstein",1880,"memorial","Disselhof 36, Haltern am See",51.74463,7.18554],
+["wd-Q106473100","Rosalie Meyer",1874,"memorial","Recklinghäuser Straße 33, Haltern am See",51.74031,7.18742]
+],
+"slug":"haltern-am-see"}

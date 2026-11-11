@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Reichenbach im Vogtland",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q125996435","Arthur Bohm",1888,"memorial","Am Graben 2, 08468 Reichenbach im Vogtland",50.62187,12.30351],
+["st-Q125696324","Dr. Albert Beutler",1897,"memorial","Weinholdstraße 13, 08468 Reichenbach im Vogtland",50.62285,12.30095],
+["st-Q125996235","Elisabeth Beutler",1866,"memorial","Weststraße 24, 08468 Reichenbach im Vogtland",50.62362,12.29901],
+["wd-Q104251625","Flora Beutler",1873,"memorial","Weststraße 24, 08468 Reichenbach im Vogtland",50.62362,12.29901],
+["st-Q125996268","Isidor Beutler",1859,"memorial","Dr.-Külz-Straße 6, 08468 Reichenbach im Vogtland",50.62453,12.29349],
+["st-Q125996445","Johannes Frank",1889,"memorial","Markt 20, 08468 Reichenbach im Vogtland",50.62149,12.30368],
+["st-Q125996303","Leo Beutler",1872,"memorial","Zwickauer Straße 29, 08468 Reichenbach im Vogtland",50.62412,12.30255],
+["st-Q125996460","Martin Frey",1886,"memorial","Am Graben 35, 08468 Reichenbach im Vogtland",50.62058,12.3054],
+["wd-Q104651877","Sofie Frey",1871,"memorial","Bebelstraße 29, 08468 Reichenbach im Vogtland",50.6252,12.3057]
+],
+"slug":"reichenbach-im-vogtland"}

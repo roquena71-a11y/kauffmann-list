@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"DE",
+"label":"Passau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13988392624","ANNA KATHINKA BURIAN",1882,"memorial","Angerstraße 41, Passau",48.57792,13.46156],
+["st-n13988392625","EMIL BURIAN",1877,"memorial","Angerstraße 41, Passau",48.57792,13.46156],
+["st-n13988392623","GERTRUD KAROLINA BURIAN",1908,"memorial","Angerstraße 41, Passau",48.57792,13.46156],
+["st-n13988378576","HENRIETTE PICK",1874,"memorial","Ludwigstraße 19, Passau",48.57409,13.45892],
+["st-n13988378767","ILSE GRÜNEBAUM",1910,"memorial","Nikolastraße 10, Passau",48.57234,13.45955],
+["st-n13988392622","KURT BURIAN",1913,"memorial","Angerstraße 41, Passau",48.57792,13.46156],
+["st-n13988352260","LILLY PICK",1902,"memorial","Ludwigstraße 19, Passau",48.57409,13.45892],
+["st-n13988378768","MARGARETE GRÜNEBAUM",1884,"memorial","Nikolastraße 10, Passau",48.57233,13.45955],
+["st-n13988344095","MARGOT GRÜNBAUM",1911,"memorial","Nikolastraße 10, Passau",48.57234,13.45956],
+["st-n13988367283","PAULA PICK",1904,"memorial","Ludwigstraße 19, Passau",48.57408,13.45892],
+["st-n13988367282","ROBERT WEILHEIMER",1900,"memorial","Ludwigstraße 19, Passau",48.57409,13.45892],
+["st-n13988337012","ROSA GRÜNEBAUM",1912,"memorial","Nikolastraße 10, Passau",48.57233,13.45957]
+],
+"slug":"passau"}

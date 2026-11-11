@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Gemünden am Main",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13160276501","Arthur Kahn",1911,"memorial","Obertorstraße 26, Gemünden am Main",50.05539,9.69114],
+["st-Q131743129","Erna Blum",1888,"memorial","Marktplatz",50.05659,9.68997],
+["st-n12532480337","Fanny Weinberg",1913,"memorial","Obertorstraße 26, Gemünden am Main",50.05539,9.69113],
+["wd-Q104683563","Heinemann Grünbaum",1865,"memorial","Scherenbergstraße 11, Gemünden am Main",50.05714,9.69026],
+["st-n12532480336","Heinrich Grünbaum",1894,"memorial","Obertorstraße 15, Gemünden am Main",50.05553,9.69092],
+["wd-Q105392299","Laura Sichel",1879,"memorial","Marktplatz, Gemünden am Main",50.05659,9.68997],
+["wd-Q105392301","Nathan Sichel",1873,"memorial","Marktplatz, Gemünden am Main",50.05659,9.68997],
+["st-n13160276502","Nathan Weinberg",1935,"memorial","Obertorstraße 26, Gemünden am Main",50.05539,9.69113]
+],
+"slug":"gemunden-am-main"}

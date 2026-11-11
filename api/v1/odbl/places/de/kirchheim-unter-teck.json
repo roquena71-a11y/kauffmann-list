@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Kirchheim unter Teck",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131624821","Auguste Reutlinger",1898,"memorial","Jesinger Straße 18, Kirchheim unter Teck",48.64641,9.45611],
+["wd-Q105456804","Babette Reutlinger",1860,"memorial","Jesinger Straße 18, Kirchheim unter Teck",48.64641,9.45611],
+["st-Q131624815","Clara Sarah Goldschmidt",1901,"memorial","Jesinger Straße 18, Kirchheim unter Teck",48.64641,9.45611],
+["st-Q131624777","Elya Rytschkow",null,"memorial","Dettinger Straße 63, Kirchheim unter Teck",48.64314,9.45209],
+["st-Q131624760","Emil Salmon",1888,"memorial","Dettinger Straße 4, Kirchheim unter Teck",48.64556,9.45136],
+["st-Q131624737","Hannchen Reutlinger",1901,"memorial","Alleenstraße 87, Kirchheim unter Teck",48.64719,9.4537],
+["st-Q131624785","Sally Reutlinger",1895,"memorial","Eugenstraße 22, Kirchheim unter Teck",48.65293,9.44363],
+["st-Q131624802","Stefan Sydoriw",1925,"memorial","Herdfeldstraße 49, Kirchheim unter Teck",48.65087,9.45678],
+["st-Q131624774","Wasily Kutscherow",null,"memorial","Dettinger Straße 63, Kirchheim unter Teck",48.64314,9.45209],
+["st-Q131624829","Wolf Reutlinger",1901,"memorial","Jesinger Straße 18, Kirchheim unter Teck",48.64641,9.45611]
+],
+"slug":"kirchheim-unter-teck"}

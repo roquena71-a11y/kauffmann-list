@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Kamen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n10000282441","Hugo Herrmann",1889,"memorial","Gartenplatz 9, 59174 Kamen",51.59697,7.66992],
+["st-n10000282440","Irma Herrmann",1901,"memorial","Gartenplatz 9, 59174 Kamen",51.59697,7.66992],
+["st-n10000282439","Lore Herrmann",1928,"memorial","Gartenplatz 9, 59174 Kamen",51.59697,7.66992],
+["st-n9960319297","Walter Joseph",1894,"memorial","Weststraße 1, Kamen",51.59297,7.66506]
+],
+"slug":"kamen"}

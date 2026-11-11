@@ -1,0 +1,95 @@
+{
+  "id": "bundesarchiv_gedenkbuch",
+  "name": "Bundesarchiv – Gedenkbuch. Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft in Deutschland 1933–1945",
+  "description": "PLANTILLA fase 2. Ajustar los nombres de columna del mapeo cuando llegue el archivo real. No activar publish_allowed hasta tener permiso escrito (ver docs/legal/).",
+  "phase": 2,
+  "enabled": false,
+  "publish_allowed": false,
+  "adapter": "generic_tabular",
+  "license": "LicenseRef-permiso-pendiente",
+  "license_url": null,
+  "attribution": "Bundesarchiv, Gedenkbuch – Opfer der Verfolgung der Juden unter der nationalsozialistischen Gewaltherrschaft in Deutschland 1933–1945",
+  "homepage": "https://www.bundesarchiv.de/gedenkbuch/",
+  "license_family": "partners/bundesarchiv_gedenkbuch",
+  "id_prefix": "gb",
+  "priority": 53,
+  "input": {
+    "path": "pipeline/inbox/bundesarchiv_gedenkbuch.csv",
+    "format": "csv",
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "retrieved": null
+  },
+  "mapping": {
+    "record_id": "id",
+    "name": {
+      "concat": [
+        "vorname",
+        "nachname"
+      ],
+      "sep": " "
+    },
+    "given_name": "vorname",
+    "family_name": "nachname",
+    "birth_name": "geburtsname",
+    "birth_date": {
+      "column": "geburtsdatum",
+      "format": "date"
+    },
+    "birth_place": "geburtsort",
+    "death_date": {
+      "column": "todesdatum",
+      "format": "date"
+    },
+    "death_place": "todesort",
+    "fate": {
+      "column": "schicksal",
+      "map": {
+        "für tot erklärt": "died_in_persecution",
+        "ermordet": "murdered",
+        "verschollen": "missing",
+        "suizid": "suicide"
+      },
+      "default": "unknown"
+    },
+    "places": [
+      {
+        "role": "residence",
+        "label": "wohnort",
+        "country": {
+          "const": "DE"
+        }
+      },
+      {
+        "role": "birth",
+        "label": "geburtsort"
+      },
+      {
+        "role": "death",
+        "label": "todesort"
+      }
+    ],
+    "deportations": [
+      {
+        "date": "deportation_datum",
+        "place": "deportation_ziel",
+        "from": "deportation_ab"
+      }
+    ],
+    "identifiers": {
+      "gedenkbuch": "id",
+      "wikidata": "wikidata"
+    },
+    "record_url": {
+      "template": "https://www.bundesarchiv.de/gedenkbuch/de{id}"
+    },
+    "links": [
+      {
+        "type": "gedenkbuch",
+        "url": {
+          "template": "https://www.bundesarchiv.de/gedenkbuch/de{id}"
+        }
+      }
+    ]
+  }
+}

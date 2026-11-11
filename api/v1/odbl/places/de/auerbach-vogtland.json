@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Auerbach/Vogtland",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q125648192","Alfred Seltmann",1904,"memorial","Liebknechtstraße 1a, 08209 Auerbach/Vogtland",50.49619,12.39628],
+["wd-Q136721780","Erich Barthel",1907,"memorial","Falkensteiner Straße 40, 08209 Auerbach/Vogtland",50.49878,12.39253],
+["st-Q125647976","Harry Levy",1904,"memorial","Kaiserstraße 19, 08209 Auerbach/Vogtland",50.50818,12.39303]
+],
+"slug":"auerbach-vogtland"}

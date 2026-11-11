@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Kreuztal",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2232353298","Berthold Meier",1911,"memorial","Lindenweg 3, Kreuztal",51.00294,7.97657],
+["st-n2232353299","Eva Marx",1879,"memorial","Grubenstraße 2, Kreuztal",51.00374,7.9778],
+["st-n2232353300","Fred Meier",1939,"memorial","Hagener Straße 393, Kreuztal",51.00339,7.97669],
+["st-n2232353301","Grete Meier",1913,"memorial","Lindenweg 3, Kreuztal",51.00294,7.97657],
+["st-n2232353304","Hugo Meier",1905,"memorial","Hagener Straße 393, Kreuztal",51.00339,7.97668],
+["st-n2232353305","Johanna Meier",1875,"memorial","Grubenstraße 2, Kreuztal",51.00374,7.9778],
+["st-n2232353306","Johanna Rosenhelm",1872,"memorial","Hagener Straße 231, Kreuztal",50.98724,7.96007],
+["st-n11665437128","Karl Dornseifer",1891,"memorial","Ernsdorfstraße Nr. 21/23, Kreuztal",50.96338,7.99905],
+["st-n2232353307","Minna Meier",1901,"memorial","Hagener Straße 393, Kreuztal",51.00339,7.97668],
+["st-n2232353327","Raphael Meier",1875,"memorial","Grubenstraße 2, Kreuztal",51.00374,7.9778],
+["st-n2232353328","Sarah Meier",1865,"memorial","Hagener Straße 393, Kreuztal",51.00339,7.97668],
+["st-n2232353329","Siegfried Meier",1903,"memorial","Hagener Straße 393, Kreuztal",51.00339,7.97668],
+["st-n2232353330","Toni Meier",1880,"memorial","Lindenweg 3, Kreuztal",51.00295,7.97657]
+],
+"slug":"kreuztal"}

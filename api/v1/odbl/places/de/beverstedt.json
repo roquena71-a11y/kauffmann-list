@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Beverstedt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q130535450","Anneliese Brumsack",1913,"memorial","Poststraße 16, Beverstedt",53.43542,8.82129],
+["st-Q130535428","Arnold Brumsack",1887,"memorial","Poststraße 16, Beverstedt",53.43542,8.82129],
+["st-Q130535438","Elise Brumsack",1881,"memorial","Poststraße 16, Beverstedt",53.43542,8.82129],
+["st-Q130535389","Emma Brumsack",1879,"memorial","Meyerhofstraße 12, Beverstedt",53.43685,8.82411],
+["st-Q130535386","Grete Brumsack",1910,"memorial","Meyerhofstraße 12, Beverstedt",53.43685,8.82411],
+["st-Q130535454","Hans Leo Brumsack",1915,"memorial","Poststraße 16, Beverstedt",53.43542,8.82129],
+["wd-Q21033109","Julius Brumsack",1915,"memorial","Meyerhofstraße 12, Beverstedt",53.43685,8.82411],
+["st-Q130535441","Rosa Brumsack",1890,"memorial","Poststraße 16, Beverstedt",53.43542,8.82129],
+["wd-Q104672792","Selma Goldberger",1871,"memorial","Logestraße 5, Beverstedt",53.43401,8.81979],
+["st-Q130535433","Siegmund Brumsack",1878,"memorial","Poststraße 16, Beverstedt",53.43542,8.82129]
+],
+"slug":"beverstedt"}

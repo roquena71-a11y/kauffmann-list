@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Kirkel",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q141631702","Albrecht Binkle",1895,"memorial","Ludwigsthaler Str. 12, 66459 Kirkel",49.31642,7.27211],
+["st-Q141631802","Heinrich Alfons Schneider",1925,"memorial","Blieskasteler Str. 55, 66459 Kirkel",49.2791,7.23373],
+["st-Q141631791","Joachim Hirsch",1905,"memorial","Hauptstraße 16, 66459 Kirkel",49.31706,7.27681]
+],
+"slug":"kirkel"}

@@ -1,0 +1,4 @@
+Item ID,First Name,Last Name,Maiden Name,Date of Birth,Place of Birth,Date of Death,Place of Death,Fate,Permanent Place of Residence,Residence Country Code,Wikidata QID,Deportation Date,Deportation Destination,Deportation From
+YV-1,Martha,Schwarz,,1897,Mühringen,1942,Riga,murdered,Mühringen,de,Q900000010,1941-12-01,Riga,Stuttgart
+YV-2,Erna,Test,Muster,12.03.1901,Berlin,,,survived,Berlin,DE,,,,
+,Sin,Id,,,,,,,,,,,,

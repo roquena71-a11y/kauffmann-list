@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Denzlingen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q138075416","Anna Bassinger",1891,"memorial","Hauptstraße 233, 79211 Denzlingen",48.06476,7.89159],
+["st-Q138075418","Jakob Bühler",1897,"memorial","Hauptstraße 53, 79211 Denzlingen",48.07092,7.87001],
+["st-Q138075420","Kazimierz Dworak",1917,"memorial","Im Untergraben 63, 79211 Denzlingen",48.07026,7.88146]
+],
+"slug":"denzlingen"}

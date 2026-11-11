@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Walsrode",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q101113357","Daniel Moses",1860,"memorial",null,52.86054,9.59065],
+["wd-Q135392663","Edith Hurwitz",1901,"memorial",null,52.8611,9.59543],
+["wd-Q105454286","Emilie Neuberg",1876,"memorial",null,52.86166,9.59499],
+["wd-Q123335399","Ernst Neuberg",1904,"memorial","Moorstraße 9, 29664 Walsrode",52.86166,9.59499],
+["st-Q101113375","Käthe Littauer",1901,"memorial",null,52.86166,9.59499],
+["wd-Q105454290","Paul Neuberg",1872,"memorial",null,52.86166,9.59499]
+],
+"slug":"walsrode"}

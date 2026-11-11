@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Maßbach",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134726459","Betty Kahn",1900,"memorial","Bäckergasse Ecke Volkershausener Straße, Maßbach",50.18228,10.27633],
+["st-Q134726453","Bianka Frank",1876,"memorial","Neue Straße 13, Maßbach",50.18375,10.27832],
+["st-Q134726454","David Frank",1896,"memorial","Wirthsgasse 4, Maßbach",50.18402,10.27655],
+["st-Q134726455","Hannchen Frank",1873,"memorial","Wirthsgasse 4, Maßbach",50.18402,10.27655],
+["wd-Q104449836","Johanna Eberhardt",1878,"memorial","Marktplatz 2, Maßbach",50.1845,10.27617],
+["wd-Q104700872","Lina Heidelberger",1861,"memorial","Neue Straße 6, Maßbach",50.18346,10.27689],
+["st-Q134726456","Maria Gips",1878,"memorial","Neue Straße 13, Maßbach",50.18375,10.27832],
+["wd-Q106469378","Marianne Eberhardt",1881,"memorial","Marktplatz 2, Maßbach",50.1845,10.27617],
+["st-Q134726457","Max Gips",1878,"memorial","Neue Straße 13, Maßbach",50.18375,10.27832],
+["st-Q134726462","Rebekka Strauss",1862,"memorial","Poppenlauererstraße 9, Maßbach",50.18385,10.27585],
+["st-Q134726461","Recha Rothschild",1893,"memorial","Bäckergasse Ecke Volkershausener Straße, Maßbach",50.18228,10.27633],
+["st-Q134726452","Simon Max Eberhardt",1877,"memorial","Marktplatz 2, Maßbach",50.1845,10.27617],
+["st-Q134726460","Simon Nussbaum",1866,"memorial","Bäckergasse Ecke Volkershausener Straße, Maßbach",50.18228,10.27633]
+],
+"slug":"mabach"}

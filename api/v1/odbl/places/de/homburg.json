@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Homburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q141636455","Alice Clementine Salmon",1908,"memorial","Eisenbahnstraße 6, 66424 Homburg",49.32235,7.34095],
+["st-Q141636392","Berta Graber",1877,"memorial","Klosterstraße 1, 66424 Homburg",49.32122,7.34202],
+["st-Q141636441","Eugen Oppenheimer",1869,"memorial","Marktplatz 15, 66424 Homburg",49.32141,7.34172],
+["st-Q141636416","Fischel Simon Frommer",1884,"memorial","Marktplatz 15, 66424 Homburg",49.32141,7.34172],
+["st-Q141636423","Franz Josef Frommer",1914,"memorial","Marktplatz 15, 66424 Homburg",49.32141,7.34172],
+["st-Q141636444","Friederike Oppenheimer",1873,"memorial","Marktplatz 15, 66424 Homburg",49.32141,7.34172],
+["st-Q141636487","Friedrich Wolf",1920,"memorial","Karlsbergstraße 20, 66424 Homburg",49.32212,7.34277],
+["st-Q141636489","Heinrich Wolf",1894,"memorial","Karlsbergstraße 20, 66424 Homburg",49.32212,7.34277],
+["st-Q141636494","Irma Wolf",1892,"memorial","Karlsbergstraße 20, 66424 Homburg",49.32212,7.34277],
+["st-Q141636431","Johanna Frommer",1878,"memorial","Marktplatz 15, 66424 Homburg",49.32141,7.34172],
+["st-Q141636471","Karl Salmon",1901,"memorial","Eisenbahnstraße 6, 66424 Homburg",49.32235,7.34095],
+["st-Q141636477","Paula Salmon",1896,"memorial","Eisenbahnstraße 6, 66424 Homburg",49.32235,7.34095],
+["st-Q141636481","Rosa Salmon",1867,"memorial","Eisenbahnstraße 6, 66424 Homburg",49.32235,7.34095]
+],
+"slug":"homburg"}

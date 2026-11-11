@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Kyllburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q106470946","Hermann Nussbaum",1866,"memorial","Bahnhofstraße 5, 54655 Kyllburg",50.04127,6.59085],
+["st-n13089147028","Joseph Nussbaum",1899,"memorial","Bahnhofstraße 5, 54655 Kyllburg",50.04127,6.59085],
+["st-n13089147029","Rebecka Nussbaum",1906,"memorial","Bahnhofstraße 5, 54655 Kyllburg",50.04127,6.59086],
+["wd-Q105454829","Sara Nussbaum",1883,"memorial","Bahnhofstraße 5, 54655 Kyllburg",50.04128,6.59086]
+],
+"slug":"kyllburg"}

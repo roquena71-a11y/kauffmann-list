@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Rosenheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12942467274","Alexander Wiener",1873,"memorial","Münchener Straße 28, Rosenheim",47.85375,12.12307],
+["st-n12942871316","Charlotte Wiener",1914,"memorial","Münchener Straße 28, Rosenheim",47.85375,12.12307],
+["wd-Q1382944","Ewald Thunig",1897,"memorial","Brixstraße 2, Rosenheim",47.85361,12.12708],
+["st-n12942871317","Frieda Wiener",1873,"memorial","Münchener Straße 28, Rosenheim",47.85375,12.12307],
+["st-n12942871319","Isidor Camnitzer",1865,"memorial","Münchener Straße 28, Rosenheim",47.85375,12.12307],
+["st-n12942871318","Katharina Reichner",1905,"memorial","Münchener Straße 28, Rosenheim",47.85375,12.12307]
+],
+"slug":"rosenheim"}

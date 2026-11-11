@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Seelow",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q139963544","Adelheid Philippsborn",1879,"memorial","Berliner Straße 46, 15306 Seelow",52.53322,14.37884],
+["st-Q139963372","Berthold Irmlig",1900,"memorial","Kleine Kirchstraße 9, 15306 Seelow",52.53297,14.37948],
+["st-Q139963403","Hildegard Wangenheim",1915,"memorial","Kleine Kirchstraße 9, 15306 Seelow",52.53297,14.37948],
+["st-Q139963400","Isidor Irmlig",1867,"memorial","Kleine Kirchstraße 9, 15306 Seelow",52.53297,14.37948],
+["st-Q139963401","Julie Irmlig",1877,"memorial","Kleine Kirchstraße 9, 15306 Seelow",52.53297,14.37948],
+["st-Q139963405","Karl-Heinz Wangenheim",1910,"memorial","Kleine Kirchstraße 9, 15306 Seelow",52.53297,14.37948],
+["st-Q139963502","Louis Reissner",1882,"memorial","Berliner Straße 20, 15306 Seelow",52.53284,14.37698],
+["st-Q139963493","Martha Reissner",1887,"memorial","Berliner Straße 20, 15306 Seelow",52.53284,14.37698],
+["st-Q139963505","Ruth Reissner",1915,"memorial","Berliner Straße 20, 15306 Seelow",52.53284,14.37698]
+],
+"slug":"seelow"}

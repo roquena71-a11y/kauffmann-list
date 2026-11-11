@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Lehrstraße 3, Heppenheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4293123507","Else Miriam Sundheimer",1913,"memorial","Lehrstraße 3, 64646 Lehrstraße 3, Heppenheim",49.64324,8.64219],
+["st-n4293123508","Eva Sundheimer",1923,"memorial","Lehrstraße 3, 64646 Lehrstraße 3, Heppenheim",49.64324,8.6422],
+["st-n4293123510","Ida Sundheimer",1885,"memorial","Lehrstraße 3, 64646 Lehrstraße 3, Heppenheim",49.64324,8.6422],
+["st-n4293123511","Käthe Sundheimer",1912,"memorial","Lehrstraße 3, 64646 Lehrstraße 3, Heppenheim",49.64325,8.64219],
+["st-n4293123512","Ludwig Sundheimer",1913,"memorial","Lehrstraße 3, 64646 Lehrstraße 3, Heppenheim",49.64324,8.6422],
+["st-n4293123513","Maier Sundheimer",1881,"memorial","Lehrstraße 3, 64646 Lehrstraße 3, Heppenheim",49.64325,8.6422]
+],
+"slug":"lehrstrae-3-heppenheim"}

@@ -1,0 +1,11 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"sn",
+"rows":[
+["st-n8729402161","Lotte Snatager",1904,"Steinfurt",52.14804,7.33207,"sn"],
+["st-n2960051334","Betty Snopek",1899,"Heidelbereg",49.40334,8.69203,"sn"],
+["st-n2957246142","Ludwig Snopek",1871,"Heidelbereg",49.40334,8.69203,"sn"],
+["wd-Q132139074","Philipp Snopek",1881,"Berlin",52.52672,13.40146,"sn"],
+["st-n2960051340","Sara Snopek",1867,"Heidelbereg",49.40334,8.69203,"sn"],
+["wd-Q132139072","Sara Snopek",1880,"Berlin",52.52672,13.40146,"sn"]
+]}

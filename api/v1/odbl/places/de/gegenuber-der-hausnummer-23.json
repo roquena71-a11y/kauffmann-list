@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"gegenüber der Hausnummer 23",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q132143750","Alice Herschfeld",1901,"memorial","Michaelkirchstraße, gegenüber der Hausnummer 23",52.51182,13.42248],
+["wd-Q132143749","Gerda Herschfeld",1925,"memorial","Michaelkirchstraße, gegenüber der Hausnummer 23",52.51182,13.42248],
+["wd-Q132143751","Jakob Herschfeld",1897,"memorial","Michaelkirchstraße, gegenüber der Hausnummer 23",52.51182,13.42248]
+],
+"slug":"gegenuber-der-hausnummer-23"}

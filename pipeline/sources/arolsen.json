@@ -1,0 +1,71 @@
+{
+  "id": "arolsen",
+  "name": "Arolsen Archives – International Center on Nazi Persecution",
+  "description": "PLANTILLA fase 2. Ajustar los nombres de columna del mapeo cuando llegue el archivo real. No activar publish_allowed hasta tener permiso escrito (ver docs/legal/).",
+  "phase": 2,
+  "enabled": false,
+  "publish_allowed": false,
+  "adapter": "generic_tabular",
+  "license": "LicenseRef-permiso-pendiente",
+  "license_url": null,
+  "attribution": "Arolsen Archives – International Center on Nazi Persecution",
+  "homepage": "https://collections.arolsen-archives.org",
+  "license_family": "partners/arolsen",
+  "id_prefix": "ar",
+  "priority": 51,
+  "input": {
+    "path": "pipeline/inbox/arolsen.csv",
+    "format": "csv",
+    "delimiter": ",",
+    "encoding": "utf-8-sig",
+    "retrieved": null
+  },
+  "mapping": {
+    "record_id": "DocID",
+    "name": {
+      "concat": [
+        "Vorname",
+        "Nachname"
+      ],
+      "sep": " "
+    },
+    "given_name": "Vorname",
+    "family_name": "Nachname",
+    "birth_name": "Geburtsname",
+    "birth_date": {
+      "column": "Geburtsdatum",
+      "format": "date"
+    },
+    "birth_place": "Geburtsort",
+    "death_date": {
+      "column": "Sterbedatum",
+      "format": "date"
+    },
+    "death_place": "Sterbeort",
+    "places": [
+      {
+        "role": "birth",
+        "label": "Geburtsort"
+      },
+      {
+        "role": "death",
+        "label": "Sterbeort"
+      }
+    ],
+    "identifiers": {
+      "arolsen": "DocID",
+      "wikidata": "Wikidata"
+    },
+    "record_url": {
+      "template": "https://collections.arolsen-archives.org/en/document/{DocID}"
+    },
+    "links": [
+      {
+        "type": "arolsen",
+        "url": {
+          "template": "https://collections.arolsen-archives.org/en/document/{DocID}"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Biedenkopf",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2522255756","Ernst Bäcker",1915,"memorial","Thauwinkelstraße 12, Biedenkopf",50.91235,8.53156],
+["st-n2522255721","Johanna Bäcker",1894,"memorial","Thauwinkelstraße 12, Biedenkopf",50.91235,8.53156],
+["st-n2522255724","Ludwig Bäcker",1891,"memorial","Thauwinkelstraße 12, Biedenkopf",50.91235,8.53156],
+["st-n2522255757","Ludwig Bäcker",1915,"memorial","Thauwinkelstraße 12, Biedenkopf",50.91235,8.53156],
+["st-Q128792234","Ludwig Bäcker (1891)",1891,"memorial","Thauwinkelstraße 12, 35216 Biedenkopf",50.91235,8.53156],
+["st-n2522255725","Mathilde Bäcker",1919,"memorial","Thauwinkelstraße 12, Biedenkopf",50.91235,8.53156],
+["st-n2522255750","Otto Bäcker",1935,"memorial","Thauwinkelstraße 12, Biedenkopf",50.91235,8.53155],
+["st-n2522255744","Wilhelm Bäcker",1928,"memorial","Thauwinkelstraße 12, Biedenkopf",50.91235,8.53155]
+],
+"slug":"biedenkopf"}

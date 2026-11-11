@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Schmelz",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11665252964","Alfred Liffmann",1886,"memorial","Am Hasenberg, 66839 Schmelz",49.44011,6.85685],
+["st-n3021857038","Edmund Herz",1877,"memorial","Lindenstraße 4, 66839 Schmelz",49.44024,6.85686],
+["st-n3021857041","Julius Georg Marx",1892,"memorial","Lindenstraße 2, 66839 Schmelz",49.44039,6.85685],
+["st-n3017789056","Margaretha Weber",1882,"memorial","Düppenweilerstraße 13",49.42218,6.84166],
+["st-n3021857042","Otto Moritz Herz",1905,"memorial","Lindenstraße 4, 66839 Schmelz",49.44023,6.85686],
+["st-n3021857043","Paula Marx",1893,"memorial","Lindenstraße 2, 66839 Schmelz",49.44039,6.85685],
+["st-n11656227777","Rosa Liffmann",1885,"memorial","Am Hasenberg, 66839 Schmelz",49.44009,6.85686],
+["st-n3021857045","Walter Nathan Herz",1904,"memorial","Lindenstraße 4, 66839 Schmelz",49.44023,6.85686]
+],
+"slug":"schmelz"}

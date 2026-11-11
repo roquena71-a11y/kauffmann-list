@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Sinntal",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4984198220","Adele Aronsohn",1925,"memorial","Sinntalstraße 34, Sinntal",50.3333,9.71085],
+["st-n4984198218","Frieda Aronsohn",1916,"memorial","Sinntalstraße 34, Sinntal",50.3333,9.71085],
+["st-n4984198219","Judith Allmeier",1914,"memorial","Sinntalstraße 34, Sinntal",50.3333,9.71084],
+["wd-Q104210431","Samuel Aronsohn",1882,"memorial","Sinntalstraße 34, Sinntal",50.3333,9.71085],
+["wd-Q104210433","Thekla Aronsohn",1890,"memorial","Sinntalstraße 34, Sinntal",50.3333,9.71085]
+],
+"slug":"sinntal"}

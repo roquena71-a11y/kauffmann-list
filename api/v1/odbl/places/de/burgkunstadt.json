@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Burgkunstadt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134572316","Bianka Iglauer",1902,"memorial","Lichtenfelser Straße 18, Burgkunstadt",50.14198,11.24582],
+["st-Q134572315","Lore Herzfeld",1874,"memorial","Burgweg (ungefähr Ecke Plan), Burgkunstadt",50.14098,11.2487],
+["wd-Q104652197","Marie Friedmann",1876,"memorial","Burgweg (ungefähr Ecke Plan), Burgkunstadt",50.14098,11.2487],
+["st-Q134572320","Stefan Iglauer",1891,"memorial","Lichtenfelser Straße 18, Burgkunstadt",50.14198,11.24582]
+],
+"slug":"burgkunstadt"}

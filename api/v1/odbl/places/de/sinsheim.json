@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Sinsheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134931272","Bianca 'Berta' Adler",1873,"memorial","Muthstraße 13, 74889 Sinsheim",49.25136,8.87398],
+["st-Q134931374","Emilie Kohn",1871,"memorial","Hauptstraße 102, 74889 Sinsheim",49.25287,8.87807],
+["st-Q134931462","Erna Kohn",1904,"memorial","Hauptstraße 102, 74889 Sinsheim",49.25287,8.87807],
+["st-Q134931643","Fanny Ledermann",1871,"memorial","Muthstraße 11, 74889 Sinsheim",49.25127,8.87439],
+["st-Q134931654","Fred 'Sallo' Ledermann",1899,"memorial","Muthstraße 11, 74889 Sinsheim",49.25127,8.87439],
+["st-n13709197341","Friederike Häussler",1888,"memorial","Kleine Grabengasse 3, 74889 Sinsheim",49.25388,8.87585],
+["st-Q134931672","Hildegard Wolf",1912,"memorial","Muthstraße 13, 74889 Sinsheim",49.25137,8.87399],
+["st-Q134931555","Max Kohn",1865,"memorial","Hauptstraße 102, 74889 Sinsheim",49.25287,8.87807],
+["st-Q134931650","Moritz Ledermann",1865,"memorial","Muthstraße 11, 74889 Sinsheim",49.25127,8.87439],
+["st-Q134931678","Saly Wolf",1902,"memorial","Muthstraße 13, 74889 Sinsheim",49.25137,8.87399]
+],
+"slug":"sinsheim"}

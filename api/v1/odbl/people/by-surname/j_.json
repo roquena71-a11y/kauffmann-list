@@ -1,0 +1,6 @@
+{"count":1,
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"people":[
+{"birth_date":"1892","fate":"unknown","field_sources":{"birth_date":["stolpersteine_de"],"fate":["stolpersteine_de"],"name":["stolpersteine_de"]},"id":"st-n14189074475","identifiers":{"osm":["n14189074475"]},"memorials":[{"country":"DE","inscription":"HIER LEBTE ERICH J. JG. 1892 VERLEGT 7.1.1941 T4-AKTION","lat":52.8452174,"lon":13.8284447,"memorial_id":"n14189074475","source_id":"stolpersteine_de","type":"stolperstein"}],"name":"Erich J.","sources":[{"attribution":"© OpenStreetMap contributors (ODbL 1.0) + Wikidata (CC0 1.0)","license":"ODbL-1.0","record_id":"n14189074475","retrieved":"2026-11-04","source_id":"stolpersteine_de","url":"https://www.openstreetmap.org/node/14189074475"}]}
+],
+"prefix":"j_"}

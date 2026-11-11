@@ -1,0 +1,23 @@
+{
+  "id": "stolpersteine_de",
+  "name": "Stolpersteine en Alemania (Lista Kauffmann: OpenStreetMap + Wikidata)",
+  "description": "Base combinada actual del sitio (data/stones.json) más los datos estructurados de inscripción y enlaces de data/bio/*.json. Los extractos de Wikipedia (data/bio/text) NO se copian: solo se enlaza el permalink.",
+  "phase": 1,
+  "enabled": true,
+  "publish_allowed": true,
+  "adapter": "stones",
+  "license": "ODbL-1.0",
+  "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "attribution": "© OpenStreetMap contributors (ODbL 1.0) + Wikidata (CC0 1.0)",
+  "homepage": "https://roquena71-a11y.github.io/kauffmann-list/",
+  "license_family": "odbl",
+  "id_prefix": "st",
+  "priority": 10,
+  "input": {"stones": "data/stones.json", "bio_dir": "data/bio"},
+  "link_templates": {
+    "gedenkbuch": "https://www.bundesarchiv.de/gedenkbuch/de{id}",
+    "yad_vashem": "https://collections.yadvashem.org/en/names/{id}",
+    "ushmm": "https://www.ushmm.org/online/hsv/person_view.php?PersonId={id}"
+  },
+  "mapping_note": "Mapeo fijo en adapters/stones.py: n→name (+ 'geb. X'→birth_name), b/inscripción JG→birth_date, d→death_date, i→memorials[].inscription, a→address, c/cd→locality, la/lo→lat/lon, laid, img→image, p→identifiers.wikidata, gb/yv/us→identifiers + links, data/bio insc→fate/deportations/death_place (solo palabras escritas en la placa)."
+}

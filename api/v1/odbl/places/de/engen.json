@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Engen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q137710958","Berta Böttinger",1910,"memorial","Hauptstraße 43a, 78234 Engen",47.85079,8.7708],
+["st-Q137710960","Bertha Mathilda Barbara Volkert",1883,"memorial","Marktplatz 2, 78234 Engen",47.85231,8.77064],
+["st-n12329301344","Bertha Mathilda Volkert",1883,"memorial",null,47.85231,8.77064],
+["st-n12329301348","Karl Schmid",1896,"memorial","Außer-Ort-Straße 1, 78234 Engen",47.84793,8.77009],
+["st-Q137710957","Salomon Guttmann",1883,"memorial","Breitestraße 10, 78234 Engen",47.8556,8.77357],
+["st-n12329301343","Stiojan Grbic",1905,"memorial","Lindenstraße 2, 78234 Engen",47.83995,8.7707]
+],
+"slug":"engen"}

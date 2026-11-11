@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Pirna",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12493973237","Arthur Pautzsch",1896,"memorial","Rosa-Luxemburg-Straße 9, 01796 Pirna",50.96172,13.93309],
+["st-n6920486895","Dr. Benno Scholze",1891,"memorial","Dr.-Wilhelm-Külz-Straße 3, 01796 Pirna",50.96106,13.94035],
+["st-n6920482246","Karl Emil Heinrich",1892,"memorial","Niedere Burgstraße 6, 01796 Pirna",50.96267,13.94416],
+["st-Q125996031","Martin Kretschmer",1897,"memorial","Martin-Kretschmer-Straße 3, 01796 Pirna",51.00734,13.94253]
+],
+"slug":"pirna"}

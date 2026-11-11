@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Kellinghusen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q100708086","Otto Fabian",1909,"memorial","Feldstraße 42, 25548 Kellinghusen",53.94763,9.73672],
+["st-Q100708226","Otto Linke",1887,"memorial","Schützenstraße 35, 25548 Kellinghusen",53.95199,9.73463],
+["st-Q100708384","Otto Ralfs",1894,"memorial","Mathildenstraße 4, 25548 Kellinghusen",53.95307,9.71846],
+["st-Q132471717","Piotr Skiermont",1919,"memorial","Hauptstraße 5, 25548 Kellinghusen",53.94871,9.71917],
+["st-Q132471707","Stanislaw Burny",1926,"memorial","Hauptstraße 5, 25548 Kellinghusen",53.94871,9.71917],
+["st-Q132471731","Stanislaw Zbrog",1914,"memorial","Lindenstraße 97, 25548 Kellinghusen",53.95805,9.71949]
+],
+"slug":"kellinghusen"}

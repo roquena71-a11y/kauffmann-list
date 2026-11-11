@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Bergkamen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n9450932604","Amalie Hertz",1884,"memorial","Präsidentenstraße 53, Bergkamen",51.62071,7.64016],
+["st-n9450932592","August Kühler",1901,"memorial","Beverstraße 89, Bergkamen",51.6406,7.66857],
+["st-n9472148899","Ernst Bronheim",1887,"memorial","Glückaufstraße 6, Bergkamen",51.64961,7.65884],
+["st-n9450932603","Grete Hertz",1911,"memorial","Präsidentenstraße 53, Bergkamen",51.62071,7.64016],
+["st-n9450932605","Hermann Hertz",1879,"memorial","Präsidentenstraße 53, Bergkamen",51.62071,7.64016],
+["st-n9472148843","Max Herrmann",1899,"memorial","Präsidentenstraße 53, Bergkamen",51.62294,7.65883]
+],
+"slug":"bergkamen"}

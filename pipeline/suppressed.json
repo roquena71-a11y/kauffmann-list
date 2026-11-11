@@ -1,0 +1,4 @@
+{
+  "_comment": "Retiradas (correcciones de familiares, peticiones justificadas, errores graves). SOLO ids: id de persona (st-..., wd-...), id de registro de origen (n123, Q123, id institucional) o Qid de Wikidata. Se aplica en cada build a todas las salidas de api/v1/ y data/search/. Ver pipeline/README.md, sección 'Retiradas'.",
+  "ids": []
+}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Volmerdingsen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n1998774910","Berta Grünenklee",1886,"memorial","Röhn 63, Volmerdingsen, DE",52.25184,8.78177],
+["st-n1998774916","Heinz Grünenklee",1920,"memorial","Röhn 63, Volmerdingsen, DE",52.25184,8.78177],
+["st-n1998774921","Hermann Grünenklee",1889,"memorial","Röhn 63, Volmerdingsen, DE",52.25184,8.78177],
+["st-n1998774926","Ilse Grünenklee",1922,"memorial","Röhn 63, Volmerdingsen, DE",52.25184,8.78177]
+],
+"slug":"volmerdingsen"}

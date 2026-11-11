@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Neumünster",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105755925","Alice Bertha Spitz",1906,"memorial","Kieler Straße 21, Neumünster",54.07662,9.98311],
+["wd-Q105723735","Bertha Benjamin",1886,"memorial","Großflecken, Neumünster",54.0701,9.98759],
+["wd-Q1452882","Frederick Geußenhainer",1912,"memorial","Großflecken 17, Neumünster",54.07293,9.98619],
+["wd-Q105756139","Hans Georg Spitz",1929,"memorial","Kieler Straße 21, Neumünster",54.07661,9.9831],
+["wd-Q105808481","Ludwig Tamm",1883,"memorial","Großflecken 63, Neumünster",54.07008,9.98818],
+["wd-Q105756337","Rosa Minden",1883,"memorial","Kieler Straße 94, Neumünster",54.08134,9.98457]
+],
+"slug":"neumunster"}

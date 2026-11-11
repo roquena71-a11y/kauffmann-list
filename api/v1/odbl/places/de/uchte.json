@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Uchte",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q106471446","Adolf Scheurenberg",1863,"memorial","Straße zur Sparkasse, Uchte",52.49833,8.9057],
+["st-Q130712409","Alfred Meyer",1906,"memorial","Färberplatz, Uchte",52.49663,8.90547],
+["wd-Q105390507","Elise Scheurenberg",1862,"memorial","Straße zur Sparkasse, Uchte",52.49833,8.9057],
+["st-Q130712427","Ella Paradies",1895,"memorial","Straße zur Sparkasse, Uchte",52.49833,8.9057],
+["wd-Q105372827","Emma Meyer",1878,"memorial","Färberplatz, Uchte",52.49663,8.90547],
+["st-Q130712393","Frieda Simon",1900,"memorial","Brinkstraße 20, Uchte",52.4982,8.90863],
+["st-Q130712388","Harry Simon",1891,"memorial","Brinkstraße 20, Uchte",52.4982,8.90863],
+["wd-Q105372969","Hermann Meyer",1873,"memorial","Färberplatz, Uchte",52.49663,8.90547],
+["st-Q130712389","Johanna Simon",1893,"memorial","Brinkstraße 20, Uchte",52.4982,8.90863],
+["st-Q130712391","Max Simon",1897,"memorial","Brinkstraße 20, Uchte",52.4982,8.90863],
+["st-Q130712421","Sophie Scheurenberg",1893,"memorial","Straße zur Sparkasse, Uchte",52.49833,8.9057]
+],
+"slug":"uchte"}

@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"DE",
+"label":"Wildeshausen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3991189549","Alfred Heinemann",1886,"memorial","Huntestraße 26",52.89747,8.43827],
+["st-n3991189550","Arthur Goldstein",1902,"memorial","Sögestraße 16",52.89514,8.43544],
+["st-n3991189552","Bernhard de Haas",1882,"memorial","Sägekuhle 3",52.89842,8.4376],
+["st-n3991189553","Frieda de Vries",1913,"memorial","Sägekuhle 6",52.89837,8.43749],
+["st-n3991189554","Fritz de Haas",1925,"memorial","Sägekuhle 3",52.89842,8.4376],
+["st-n3991189555","Golda Herzberg",1884,"memorial","Huntestraße 26",52.89747,8.43827],
+["st-n3991189556","Helene de Haas",1883,"memorial","Sägekuhle 3",52.89842,8.4376],
+["st-n3991190657","Jenny de Vries",1910,"memorial","Sägekuhle 6",52.89837,8.43748],
+["st-n3991190658","Jonny de Vries",1912,"memorial","Sägekuhle 6",52.89836,8.43747],
+["st-n3991190659","Moritz de Haas",1884,"memorial","Westerstraße 24",52.89643,8.43556],
+["st-n3991190693","Ruth de Haas",1927,"memorial","Sägekuhle 3",52.89842,8.4376],
+["st-n3991190694","Sophie de Haas",1883,"memorial","Westerstraße 24",52.89643,8.43556]
+],
+"slug":"wildeshausen"}

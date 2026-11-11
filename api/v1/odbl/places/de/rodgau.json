@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Rodgau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12582330239","Alfons Schlösser",1911,"memorial","Waldstraße 4;Weiskirchen,DE",50.05303,8.88639],
+["st-Q133187692","Friedrich Fritz Meyer",1898,"memorial","Schillerstraße 7, 63110 Rodgau",50.05102,8.88551],
+["st-n11625059852","Johanna Lilienthal",1888,"memorial","Waldstraße 4;Weiskirchen,DE",50.05308,8.8864],
+["st-n12582330240","Milli Schlösser",1909,"memorial","Waldstraße 4;Weiskirchen,DE",50.05304,8.8864],
+["st-n12582330241","Theodor Lilienthal",1911,"memorial","Waldstraße 4;Weiskirchen,DE",50.05305,8.8864]
+],
+"slug":"rodgau"}

@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Giengen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q138568768","Anna Schock",1886,"memorial","Marktstraße 53, Giengen",48.62061,10.24741],
+["st-Q138568766","Babette Mack",1892,"memorial","Gartenstraße 5, Giengen",48.6216,10.2481],
+["st-n11079166686","Christine Mayer",1900,"memorial","Kirchgasse 5, Giengen",48.62102,10.24467],
+["st-n11074444864","Ernst Wolff",1902,"memorial","Heidenheimer Straße 5, Giengen",48.62287,10.24276],
+["st-Q138568765","Frida Langer",1888,"memorial","Beim Kreuzstein 1, Giengen",48.6185,10.23076],
+["st-n11079144955","Karl Krauss",1888,"memorial","Obertorstraße 11",48.6216,10.24355],
+["st-Q138568760","Margarete Ludwig",1878,"memorial","Stettbergstraße 39, Giengen",48.58258,10.22966],
+["st-n11079166685","Maria Kinzler",1899,"memorial","Hohe Straße 1, Giengen",48.62069,10.24374],
+["wd-Q105451289","Martin Bader",1901,"memorial","Kirchplatz 5, Giengen",48.6219,10.24475],
+["st-Q138568762","Reinhold Hähnle",1881,"memorial","Weinbergstraße 14, Giengen",48.62377,10.248]
+],
+"slug":"giengen"}

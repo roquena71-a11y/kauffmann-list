@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Groß-Bieberau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q132734051","Amalia Levi",1874,"memorial","Bachgasse 26, 64401 Groß-Bieberau",49.79929,8.82639],
+["st-Q132734193","Gertrud Neidhardt",1901,"memorial","Bahnhofstraße 53, 64401 Groß-Bieberau",49.80586,8.82614],
+["st-Q132734081","Ludwig Levi",1912,"memorial","Bachgasse 26, 64401 Groß-Bieberau",49.79929,8.82639],
+["st-Q132734091","Ludwig May",1878,"memorial","Lichtenberger Str. 1, 64401 Groß-Bieberau",49.79818,8.82257],
+["st-Q132734101","Sidonie May",1886,"memorial","Lichtenberger Str. 1, 64401 Groß-Bieberau",49.79818,8.82257]
+],
+"slug":"gro-bieberau"}

@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Waldheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q126007608","Aron Adalbert Kosterlitz",1907,"memorial","Mittelgäßchen, 04736 Waldheim",51.07183,13.02855],
+["st-Q126007511","Bernhard Rubinstein",1875,"memorial","Augustinerplatz, 04736 Waldheim",51.07292,13.02796],
+["st-Q126007551","Eugen Becker",1879,"memorial","Augustinerplatz, 04736 Waldheim",51.07292,13.02796],
+["st-Q125699611","Eugen Heymann",1885,"memorial","Augustinerplatz, 04736 Waldheim",51.07296,13.02798],
+["st-Q126007552","Hermann Aussenberg",1899,"memorial","Augustinerplatz, 04736 Waldheim",51.07292,13.02796],
+["st-Q126007607","Jenny Kosterlitz",1898,"memorial","Mittelgäßchen, 04736 Waldheim",51.07183,13.02855],
+["wd-Q105356203","Josef Kosterlitz",1899,"memorial","Mittelgäßchen, 04736 Waldheim",51.07183,13.02855],
+["st-Q126007553","Marie Heller",1906,"memorial","Augustinerplatz, 04736 Waldheim",51.07292,13.02796],
+["st-Q126007554","Sally Jacobs",1900,"memorial","Augustinerplatz, 04736 Waldheim",51.07292,13.02796]
+],
+"slug":"waldheim"}

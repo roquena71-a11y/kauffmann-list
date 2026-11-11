@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Bad Münder am Deister",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q63950349","Eugen Herze",1896,"memorial","Wallstraße 2, 31848 Bad Münder am Deister, Deutschland",52.1968,9.4621],
+["wd-Q104700062","Frieda Hammerschlag",1867,"memorial","Wallstraße 2, 31848 Bad Münder am Deister, Deutschland",52.1968,9.4621],
+["st-Q63950395","Hedwig Chana Herze",1891,"memorial","Wallstraße 2, 31848 Bad Münder am Deister, Deutschland",52.1968,9.4621],
+["wd-Q105454679","Helene Ney",1865,"memorial","Vor dem Oberntore 8, 31848 Bad Münder am Deister, Deutschland",52.2005,9.4621],
+["wd-Q104700101","Henny Hammerschlag",1870,"memorial","Wallstraße 2, 31848 Bad Münder am Deister, Deutschland",52.1968,9.4621],
+["st-Q63950457","Hermann Friedheim",1891,"memorial","Wallstraße 2, 31848 Bad Münder am Deister, Deutschland",52.1968,9.4621],
+["wd-Q133249396","Ingrid Friedheim",1936,"memorial","Wallstraße 2, 31848 Bad Münder am Deister, Deutschland",52.1968,9.4621],
+["st-Q63950505","Sophie Friedheim",1909,"memorial","Wallstraße 2, 31848 Bad Münder am Deister, Deutschland",52.1968,9.4621]
+],
+"slug":"bad-munder-am-deister"}

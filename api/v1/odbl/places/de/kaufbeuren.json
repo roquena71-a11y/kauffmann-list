@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Kaufbeuren",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q100254199","Ernst Buxbaum",1897,"memorial","Schmiedgasse 2, 87600 Kaufbeuren",47.88034,10.61971],
+["st-Q137783120","Ferdinand Weitnauer",1904,"memorial","Kaiser-Max-Straße 9, Kaufbeuren",47.87968,10.62219],
+["st-Q100254200","Georg Riedel",1897,"memorial","Ledergasse 11, 87600 Kaufbeuren",47.88145,10.62063],
+["st-Q100254201","Marie Espermüller",1893,"memorial","Espachstraße 17, 87600 Kaufbeuren",47.88385,10.62088]
+],
+"slug":"kaufbeuren"}

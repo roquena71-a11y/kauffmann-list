@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Neustadt a. d. Weinstraße",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4769028944","Alfred Kern",1903,"memorial","Amalienstraße 4, Neustadt a. d. Weinstraße",49.35052,8.13332],
+["st-n4741041034","Dr. Karl Strauss",1883,"memorial","Villenstraße 8, Neustadt a. d. Weinstraße",49.3565,8.13985],
+["st-n4769028945","Ernst Kern",1899,"memorial","Amalienstraße 4, Neustadt a. d. Weinstraße",49.35052,8.13332],
+["st-n4769028946","Ferdinand Kern",1867,"memorial","Amalienstraße 4, Neustadt a. d. Weinstraße",49.35053,8.13332],
+["st-n4741041033","Flora Strauss",1895,"memorial","Villenstraße 8, Neustadt a. d. Weinstraße",49.3565,8.13985],
+["st-n4769028947","Helene Kern",1873,"memorial","Amalienstraße 4, Neustadt a. d. Weinstraße",49.35053,8.13332],
+["st-n4741138236","Henriette Loeb",1881,"memorial","Arndtstraße 3, Neustadt a. d. Weinstraße",49.35079,8.13118],
+["st-n4741041022","Herbert Klein",1917,"memorial","Amalienstraße 33, Neustadt a. d. Weinstraße",49.3504,8.13177],
+["st-n4741041024","Klara Klein",1876,"memorial","Amalienstraße 33, Neustadt a. d. Weinstraße",49.35039,8.13177],
+["st-n4741830964","Ludwig Altschüler",1887,"memorial","Maximilianstraße 37, Neustadt a. d. Weinstraße",49.35622,8.14604],
+["st-n4741830965","Margaretha Altschüler",1892,"memorial","Maximilianstraße 37, Neustadt a. d. Weinstraße",49.35622,8.14603],
+["st-n4741138235","Maria Fehr",1897,"memorial","Volksbadstraße 5, Neustadt a. d. Weinstraße",49.35086,8.13228],
+["st-n4741041025","Theodor Klein",1869,"memorial","Amalienstraße 33, Neustadt a. d. Weinstraße",49.35039,8.13177]
+],
+"slug":"neustadt-a-d-weinstrae"}

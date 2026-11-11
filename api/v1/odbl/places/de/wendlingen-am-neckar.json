@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Wendlingen am Neckar",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131622085","Charlotta Hammelehle",1879,"memorial","Ecke Schulstraße/Im Städtle, Wendlingen am Neckar",48.67568,9.38646],
+["st-Q131622132","Otto Wisst",1912,"memorial","Bismarckstraße 42, Wendlingen am Neckar",48.67224,9.38541]
+],
+"slug":"wendlingen-am-neckar"}

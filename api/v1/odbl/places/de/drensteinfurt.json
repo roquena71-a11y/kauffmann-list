@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"DE",
+"label":"Drensteinfurt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3762968981","Else Salomon",1895,"memorial","Südwall 5, Drensteinfurt",51.79627,7.7425],
+["st-n12460886973","Emma Terhoch",1901,"memorial",null,51.79621,7.74224],
+["st-Q98971539","Fanny Irma Salomon",1929,"memorial","Südwall 5, 48317 Drensteinfurt",51.79627,7.74249],
+["st-n3762968982","Fanny Salomon",1929,"memorial","Südwall 5, Drensteinfurt",51.79626,7.7425],
+["st-n3762972200","Frieda Salomon",1922,"memorial","Hammer Straße, Drensteinfurt",51.79615,7.74204],
+["st-n12460886974","Helene Terhoch",1903,"memorial","Südwall 2, Drensteinfurt",51.79621,7.74225],
+["st-n3762972201","Jenny Seelig",1912,"memorial","Hammer Straße, Drensteinfurt",51.79615,7.74204],
+["st-n3762972202","Johanna Salomon",1887,"memorial","Hammer Straße, Drensteinfurt",51.79615,7.74205],
+["st-n3762972203","Rudolf Seelig",1910,"memorial","Hammer Straße, Drensteinfurt",51.79615,7.74204],
+["st-n3762968983","Siegmund Salomon",1893,"memorial","Südwall 5, Drensteinfurt",51.79627,7.74249]
+],
+"slug":"drensteinfurt"}

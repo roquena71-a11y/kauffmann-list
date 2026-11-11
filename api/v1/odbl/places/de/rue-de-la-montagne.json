@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Rue de la Montagne",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13085100061","Alma Gottlieb",1906,"memorial","37, Rue de la Montagne",49.81178,6.42335],
+["st-n13085100063","Berthe Gottlieb",1878,"memorial","37, Rue de la Montagne",49.81178,6.42335],
+["st-n13085100062","Josephine Gottlieb",1884,"memorial","37, Rue de la Montagne",49.81178,6.42335]
+],
+"slug":"rue-de-la-montagne"}

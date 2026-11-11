@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Bielefeld-Altenhagen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n934052933","August Beckmann",1890,"memorial","Kusenweg, Bielefeld-Altenhagen",52.041,8.64553],
+["st-n934052939","Frieda Horstbrink",1896,"memorial","Kusenweg, Bielefeld-Altenhagen",52.041,8.64554],
+["st-n934052928","Gustav Horstbrink",1889,"memorial","Kusenweg, Bielefeld-Altenhagen",52.041,8.64554],
+["st-n934052946","Lina Beckmann",1894,"memorial","Kusenweg, Bielefeld-Altenhagen",52.041,8.64553]
+],
+"slug":"bielefeld-altenhagen"}

@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"DE",
+"label":"Ostercappeln",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q130711397","Erna Meyer",1896,"memorial","Bahnhofstraße 11, Ostercappeln",52.34952,8.23111],
+["st-Q130711419","Franz Riepe",1885,"memorial","Kirchplatz, Ostercappeln",52.34407,8.22426],
+["st-Q130711404","Hans Meyer",1928,"memorial","Bahnhofstraße 11, Ostercappeln",52.34952,8.23111],
+["st-Q130711390","Helene Meyer",1855,"memorial","Windthorststraße, Ostercappeln",52.34414,8.22597],
+["st-Q130711413","Hugo Meyer",1894,"memorial","Bahnhofstraße 11, Ostercappeln",52.34952,8.23111],
+["wd-Q105373039","Josef Meyer",1855,"memorial","Windthorststraße, Ostercappeln",52.34414,8.22597],
+["st-Q130711424","Wigbert Beckers",1890,"memorial","Kirchplatz, Ostercappeln",52.34407,8.22426]
+],
+"slug":"ostercappeln"}

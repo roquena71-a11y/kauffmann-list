@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Hagenow",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q100748252","Dora Davidsohn",1912,"memorial","Parkstraße 33, 19230 Hagenow",53.42899,11.18661],
+["st-Q100747746","Dr. Hans A. Sommerfeld",1894,"memorial","Bahnhofstraße 4, 19230 Hagenow",53.43093,11.19318],
+["st-Q100748414","Gerda Davidsohn",1909,"memorial","Parkstraße 33, 19230 Hagenow",53.42899,11.18661],
+["st-Q100748028","Hanna Meinungen",1940,"memorial","Lange Straße 108, 19230 Hagenow",53.43204,11.19093],
+["st-Q100748445","Heinz Davidsohn",1906,"memorial","Parkstraße 33, 19230 Hagenow",53.42899,11.18661],
+["st-Q100747906","Hermann Meinungen",1900,"memorial","Lange Straße 108, 19230 Hagenow",53.43204,11.19093],
+["st-Q100748011","Käthe Meinungen",1904,"memorial","Lange Straße 108, 19230 Hagenow",53.43204,11.19093],
+["st-Q100748123","Kurt Meyerheim",1907,"memorial","Parkstraße 33, 19230 Hagenow",53.42899,11.18661],
+["st-Q100747540","Margarete Sommerfeld",1892,"memorial","Bahnhofstraße 4, 19230 Hagenow",53.43093,11.19318],
+["st-Q100747847","Samuel Meinungen",1867,"memorial","Lange Straße 108, 19230 Hagenow",53.43204,11.19093],
+["st-Q100748207","Thea Meyerheim",1910,"memorial","Parkstraße 33, 19230 Hagenow",53.42899,11.18661]
+],
+"slug":"hagenow"}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"sm",
+"rows":[
+["st-Q131254656","Leo Smechow",1912,"Hamburg",53.55042,9.95316,"sm"],
+["wd-Q132144119","Bernhard Smedresman",1899,"Berlin",52.47315,13.42346,"sm"],
+["wd-Q132144120","Luise Cäcilia Smedresman",1903,"Berlin",52.47315,13.42346,"sm"],
+["wd-Q89490","Günther Smend",1912,"Mülheim an der Ruhr",51.42101,6.87793,"sm"],
+["wd-Q132140600","Esther Smietanka",1904,"Berlin",52.52793,13.38964,"sm"],
+["wd-Q132140601","Lejb Smietanka",1888,"Berlin",52.52793,13.38964,"sm"],
+["wd-Q132136157","Franziska Smolen",1884,"Berlin",52.47007,13.42822,"sm"],
+["st-Q132855007","Fritz Smoschewer",1894,"Berlin",52.50219,13.34039,"sm"],
+["wd-Q132139630","Irma Smoschewer",1898,"Berlin",52.50219,13.34039,"sm"],
+["st-n3241419042","Anna Smulowicz",1891,"Witten",51.43499,7.33181,"sm"],
+["st-n3241419046","Markus Smulowicz",1885,"Witten",51.43499,7.33181,"sm"],
+["st-n3241419050","Willi Smulowicz",1913,"Witten",51.43499,7.33181,"sm"],
+["st-n12753834150","Rufina Smyschljaewa",1917,null,51.09001,6.88691,"sm"]
+]}

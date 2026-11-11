@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Olbernhau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q125992681","Berta Lawenda",1913,"memorial","Blumenauer Straße 5, 09526 Olbernhau",50.66199,13.33175],
+["st-Q125992799","Chana Zylberstein",1901,"memorial","Blumenauer Straße 5, 09526 Olbernhau",50.66199,13.33175],
+["st-Q125992683","Dina Lawenda",1911,"memorial","Blumenauer Straße 5, 09526 Olbernhau",50.66199,13.33175],
+["st-Q125992140","Hugo Franz",1888,"memorial","Blumenauer Straße 33, 09526 Olbernhau",50.66309,13.32042],
+["st-Q125688173","Ididio Estersohn",1897,"memorial","Blumenauer Straße 5, 09526 Olbernhau",50.66199,13.33175],
+["st-Q125992690","Luba Lawenda",1915,"memorial","Blumenauer Straße 5, 09526 Olbernhau",50.66199,13.33175],
+["st-Q125992692","Malka Lawenda",1889,"memorial","Blumenauer Straße 5, 09526 Olbernhau",50.66199,13.33175],
+["st-Q125992789","Nora Lawenda",1932,"memorial","Blumenauer Straße 5, 09526 Olbernhau",50.66199,13.33175],
+["st-Q125992793","Philipp Lawenda",1921,"memorial","Blumenauer Straße 5, 09526 Olbernhau",50.66199,13.33175],
+["st-Q125992794","Ruth Lawenda",1929,"memorial","Blumenauer Straße 5, 09526 Olbernhau",50.66199,13.33175],
+["st-Q125992798","Sara Tannenbaum",1904,"memorial","Blumenauer Straße 5, 09526 Olbernhau",50.66199,13.33175],
+["st-Q125992800","Sonja Esther Zylberstein",1934,"memorial","Blumenauer Straße 5, 09526 Olbernhau",50.66199,13.33175],
+["st-Q125992796","Zalko Lawenda",1905,"memorial","Blumenauer Straße 5, 09526 Olbernhau",50.66199,13.33175]
+],
+"slug":"olbernhau"}

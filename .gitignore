@@ -1,0 +1,6 @@
+# Pipeline de datos: caché de red, entradas de socios (fase 2, sin permiso de publicación) e informes internos
+pipeline/cache/
+pipeline/inbox/
+pipeline/reports/
+__pycache__/
+*.pyc

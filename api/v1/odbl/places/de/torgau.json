@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Torgau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q104889582","Doris Kukurutz Torgau",1892,"memorial","Breite Straße 4, 04860 Torgau",51.55814,13.00268],
+["st-n7247935534","Dr. Kurt Behmack",1887,"memorial","Karl Marx Platz 6, Torgau",51.55756,12.99579],
+["st-n7247859382","Gerdrut Isaacsohn",1882,"memorial","Karl Marx Platz 2, Torgau",51.55793,12.99587],
+["st-n7247844675","Gertrud Ahlfeld",1897,"memorial","August-Bebel-Straße 15, Torgau",51.55848,12.99598],
+["st-n7247844676","Luise Ahlfeld",1902,"memorial","August-Bebel-Straße 15, Torgau",51.55848,12.99598],
+["st-n7247859383","Max Isaacsohn",1883,"memorial","Karl Marx Platz 2, Torgau",51.55792,12.99586],
+["st-Q104889559","Max Kukurutz Torgau",1891,"memorial","Breite Straße 4, 04860 Torgau",51.55814,13.00268],
+["st-n7247844677","Selmar Ahlfeld",1889,"memorial","August-Bebel-Straße 15, Torgau",51.55848,12.99598]
+],
+"slug":"torgau"}

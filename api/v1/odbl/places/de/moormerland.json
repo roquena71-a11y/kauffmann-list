@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"DE",
+"label":"Moormerland",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6345073294","Bertha Polak",1884,"memorial","Am Großen Tief 10, 26802 Moormerland",53.32771,7.33861],
+["st-n6345073291","Ingeborg Herz",1937,"memorial","Am Großen Tief 10, 26802 Moormerland",53.32771,7.33861],
+["st-n6345073295","Isaak-Abraham Polak",1877,"memorial","Am Großen Tief 10, 26802 Moormerland",53.32771,7.33861],
+["st-n6345073378","Isaak Cohen",1884,"memorial","Zum Rorichumer Tief 3, 26802 Moormerland",53.32697,7.34178],
+["st-n6345073296","Marianne Cohen",1890,"memorial","Zum Rorichumer Tief 3, 26802 Moormerland",53.32697,7.34178],
+["st-n6345073292","Martha Herz",1880,"memorial","Am Großen Tief 10, 26802 Moormerland",53.32771,7.33861],
+["st-n6345073293","Siegfried Herz",1889,"memorial","Am Großen Tief 10, 26802 Moormerland",53.32771,7.33861]
+],
+"slug":"moormerland"}

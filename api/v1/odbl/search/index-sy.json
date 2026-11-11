@@ -1,0 +1,11 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"sy",
+"rows":[
+["st-Q131624802","Stefan Sydoriw",1925,"Kirchheim unter Teck",48.65087,9.45678,"sy"],
+["wd-Q141604679","Amalie von Sydow",1867,"Wiesbaden",50.07053,8.23527,"sy"],
+["wd-Q2562743","Werner Sylten",1893,"Bad Köstritz",50.92467,11.99907,"sy"],
+["st-n3893100926","Leah Syman",1893,"Gladbeck",51.55395,7.00098,"sy"],
+["st-n8973804803","Samson Syman",1899,"Gladbeck",51.55394,7.00095,"sy"],
+["st-n7876049932","Die Synagoge",1878,"Rehburg-Loccum",52.4735,9.22789,"sy"]
+]}

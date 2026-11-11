@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"DE",
+"label":"Lamspringe",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q123401600","Edith Rosenberg",1927,"memorial","Hauptstraße 35, Lamspringe",51.96064,10.01154],
+["wd-Q123401612","Else Rosenberg",1899,"memorial","Hauptstraße 35, Lamspringe",51.96064,10.01154],
+["wd-Q123399999","Max Rosenberg",1882,"memorial","Hauptstraße 35, Lamspringe",51.96064,10.01154],
+["wd-Q123400034","Werner Rosenberg",1929,"memorial","Hauptstraße 35, Lamspringe",51.96064,10.01154]
+],
+"slug":"lamspringe"}

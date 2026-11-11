@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Oldenburg / Holstein",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n955843094","Gertrud Taeger",1916,"memorial","Hoheluftstraße 22, Oldenburg / Holstein",54.29279,10.87948],
+["st-n955843099","Ingeborg Paula Schulz",1912,"memorial","Hoheluftstraße 22, Oldenburg / Holstein",54.2928,10.87949],
+["st-n955843103","Margot Rosenblum",1917,"memorial","Hoheluftstraße 22, Oldenburg / Holstein",54.29279,10.8795],
+["st-n949402058","Otto C. F. Güldensupp",1882,"memorial","Giddendorfer Weg 1, Oldenburg / Holstein",54.29894,10.8878],
+["st-n955843087","Paul Günther Rosenblum",1919,"memorial","Hoheluftstraße 22, Oldenburg / Holstein",54.29279,10.87951],
+["st-n949402059","Siegfried Rosenblum",1886,"memorial","Hoheluftstraße 22, Oldenburg / Holstein",54.2928,10.87947]
+],
+"slug":"oldenburg-holstein"}

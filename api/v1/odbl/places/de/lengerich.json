@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"DE",
+"label":"Lengerich",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104700951","Abraham Heilbronn",1874,"memorial","Mühlenstraße 1, Lengerich",52.55307,7.53013],
+["wd-Q104701947","Bendix Heilbronn",1883,"memorial","Mühlenstraße 20, Lengerich",52.55346,7.52819],
+["st-Q131300068","Berta Heilbronn",1909,"memorial","Mühlenstraße 1, Lengerich",52.55307,7.53013],
+["st-Q131300098","Emil Heilbronn",1920,"memorial","Mühlenstraße 1, Lengerich",52.55307,7.53013],
+["st-Q131300120","Johanna Heilbronn",1899,"memorial","Mühlenstraße 20, Lengerich",52.55346,7.52819],
+["st-Q131300042","Josef Heilbronn",1880,"memorial","Handruper Straße 5, Lengerich",52.55721,7.53238],
+["st-Q131300077","Julius Heilbronn",1914,"memorial","Mühlenstraße 1, Lengerich",52.55307,7.53013],
+["st-Q131300066","Leonard Heilbronn",1908,"memorial","Mühlenstraße 1, Lengerich",52.55307,7.53013],
+["st-Q131300084","Meinhard Heilbronn",1916,"memorial","Mühlenstraße 1, Lengerich",52.55307,7.53013],
+["wd-Q104700975","Meta Heilbronn",1878,"memorial","Mühlenstraße 1, Lengerich",52.55307,7.53013],
+["st-Q131300070","Paul Heilbronn",1912,"memorial","Mühlenstraße 1, Lengerich",52.55307,7.53013],
+["st-Q131300048","Rosa Heilbronn",1901,"memorial","Handruper Straße 5, Lengerich",52.55721,7.53238]
+],
+"slug":"lengerich"}

@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Rosenberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q126974608","Elise Heimberger",1866,"memorial","Marktstraße 4, Rosenberg",49.48828,9.45529],
+["st-Q104419575","Jette Schorsch",1867,"memorial","Kirnautalstraße 25, 74749 Rosenberg",49.48676,9.45512],
+["st-Q104419394","Klara Rothschild",1866,"memorial","Bofsheimer Straße 2, 74749 Rosenberg",49.48664,9.45461],
+["st-Q104420106","Susanna Schorsch",1872,"memorial","Kirnautalstraße 25, 74749 Rosenberg",49.48676,9.45512],
+["st-Q104416763","Walter Viktor Hecht",1910,"memorial","Kirnautalstraße 23, 74749 Rosenberg",49.4869,9.4547]
+],
+"slug":"rosenberg"}

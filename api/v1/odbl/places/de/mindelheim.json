@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Mindelheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134571521","Fanny Liebschütz",1904,"memorial","Maximilianstraße 30 (Marienplatz), Mindelheim",48.04665,10.4883],
+["st-Q134571520","Jakob Grünwald",1903,"memorial","Gerberstraße 21, Mindelheim",48.04715,10.48608],
+["st-Q134571522","Jakob Liebschütz",1893,"memorial","Maximilianstraße 30 (Marienplatz), Mindelheim",48.04665,10.4883]
+],
+"slug":"mindelheim"}

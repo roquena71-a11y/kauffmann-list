@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Worms",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-07","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11772486472","Abraham Mayer",1880,"memorial",null,49.63366,8.35066],
+["st-n11772486471","Elsa Mayer",1886,"memorial",null,49.63366,8.35066],
+["st-n11716227355","Johanna Mayer",1818,"memorial",null,49.63366,8.35066],
+["st-n11772486473","Ludwig Mayer",1912,"memorial",null,49.63366,8.35066],
+["st-n11727750477","Mathilde Mayer",1874,"memorial",null,49.63446,8.35171]
+],
+"slug":"worms"}
