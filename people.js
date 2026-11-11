@@ -32,6 +32,14 @@
     nearPlace:'Show place on the map', shareP:'Copy link to this record'
   });
 
+
+  Object.assign(I18N.es, { deathBtn:'Dónde murieron', deathTitle:(n)=>`${n} personas registradas en Wikidata murieron aquí`,
+    deathNote:'Lugar de muerte según Wikidata (CC0). La lista está incompleta: solo incluye a quienes ya están en Wikidata.', more:'Ver más' });
+  Object.assign(I18N.de, { deathBtn:'Wo sie starben', deathTitle:(n)=>`${n} in Wikidata erfasste Personen starben hier`,
+    deathNote:'Sterbeort laut Wikidata (CC0). Die Liste ist unvollständig: sie enthält nur Personen, die bereits in Wikidata erfasst sind.', more:'Mehr anzeigen' });
+  Object.assign(I18N.en, { deathBtn:'Where they died', deathTitle:(n)=>`${n} people recorded in Wikidata died here`,
+    deathNote:'Place of death according to Wikidata (CC0). The list is incomplete: it only includes people already in Wikidata.', more:'Show more' });
+
   /* ---------- carga perezosa con caché en memoria ---------- */
   const cache = new Map();
   function getJSON(u){
@@ -183,6 +191,104 @@
     if (m){ openPerson(decodeURIComponent(m[1])).then(ok => { if (!ok) _route(); }); return; }
     _route();
   };
+
+
+  /* ---------- capa «Dónde murieron»: lugares de muerte de las personas de Wikidata ---------- */
+  let deathOn = false, deathFC = null;
+  async function deathData(){
+    if (deathFC) return deathFC;
+    const idx = await getJSON(API + 'places/index.json'); if (!idx) return null;
+    const C = Object.fromEntries(idx.columns.map((c, i) => [c, i]));
+    deathFC = {type:'FeatureCollection', features: idx.rows.filter(r => r[C.lat] != null).map(r => ({type:'Feature',
+      properties:{cc:r[C.country], slug:r[C.slug], label:r[C.label], n:r[C.count], pages:r[C.pages]},
+      geometry:{type:'Point', coordinates:[r[C.lon], r[C.lat]]}}))};
+    return deathFC;
+  }
+  function addDeathLayer(){
+    if (!deathOn || !deathFC || !map || map.getSource('death')) return;
+    map.addSource('death', {type:'geojson', data:deathFC});
+    map.addLayer({id:'death-glow', type:'circle', source:'death',
+      paint:{'circle-radius':['interpolate',['linear'],['zoom'],3,['*',1.6,['^',['get','n'],0.3333]],8,['*',3.2,['^',['get','n'],0.3333]],12,['*',6,['^',['get','n'],0.3333]]],
+             'circle-color':'#dfe6f0','circle-opacity':0.18,'circle-blur':0.8,'circle-pitch-alignment':'map'}});
+    map.addLayer({id:'death', type:'circle', source:'death',
+      paint:{'circle-radius':['interpolate',['linear'],['zoom'],3,['max',2.5,['*',0.8,['^',['get','n'],0.3333]]],8,['max',4,['*',1.6,['^',['get','n'],0.3333]]],12,['max',6,['*',3,['^',['get','n'],0.3333]]]],
+             'circle-color':'#cfd8e6','circle-opacity':0.75,'circle-stroke-color':'#f6f3ec','circle-stroke-width':1,'circle-pitch-alignment':'map'}});
+  }
+  function removeDeathLayer(){
+    if (!map) return;
+    ['death', 'death-glow'].forEach(l => { if (map.getLayer(l)) map.removeLayer(l); });
+    if (map.getSource('death')) map.removeSource('death');
+  }
+  async function toggleDeath(){
+    deathOn = !deathOn; paintDeathBtn();
+    if (!deathOn){ removeDeathLayer(); return; }
+    await deathData(); addDeathLayer();
+    if (map) map.flyTo({center:[15.5, 50.8], zoom:4.9, pitch:20, duration: reduceMotion ? 0 : 2200, essential:true});
+  }
+  function paintDeathBtn(){ const b = $('#deathBtn'); if (b){ b.textContent = T('deathBtn'); b.setAttribute('aria-pressed', deathOn); } }
+
+  async function openPlace(props, page){
+    const name = props.slug + (page > 1 ? '~' + page : '');
+    const pk = await getJSON(API + 'places/' + props.cc.toLowerCase() + '/' + name + '.json'); if (!pk) return;
+    const C = Object.fromEntries(pk.columns.map((c, i) => [c, i]));
+    const items = pk.rows.map(r => `<li><button data-pid="${esc(r[C.id])}"><div class="nm">${esc(r[C.name]||'—')}</div>
+      <div class="meta">${r[C.birth_year] ? '* ' + esc(r[C.birth_year]) : ''}</div></button></li>`).join('');
+    const d = $('#detail');
+    if (page > 1){
+      d.querySelector('#placeMore')?.remove();
+      d.querySelector('#placeList').insertAdjacentHTML('beforeend', items);
+    } else {
+      if (document.body.classList.contains('vigil-on')) stopVigil();
+      selected = null; refreshSel();
+      d.innerHTML = `<button class="back" id="back">${T('back')}</button>
+        <h2>${esc(props.label)}</h2>
+        <p class="place">${esc(T('deathTitle')(fmtNum(props.n)))}</p>
+        <p class="note">${esc(T('deathNote'))}</p>
+        <ul class="results" id="placeList">${items}</ul>`;
+      $('#results').hidden = true; d.hidden = false; d.scrollTop = 0;
+      $('#back').onclick = () => closeDetail(true);
+    }
+    if (page < props.pages){
+      d.insertAdjacentHTML('beforeend', `<p id="placeMore"><button class="linkish">${esc(T('more'))}</button></p>`);
+      d.querySelector('#placeMore button').onclick = () => openPlace(props, page + 1);
+    }
+  }
+
+  // Botón en la barra de mapas base, junto a «Fuentes».
+  const bar = document.querySelector('.basemaps');
+  if (bar){
+    bar.insertAdjacentHTML('beforeend', '<button type="button" id="deathBtn" class="death-btn" aria-pressed="false"></button>');
+    paintDeathBtn();
+    $('#deathBtn').onclick = toggleDeath;
+  }
+  $('#detail').addEventListener('click', e => { const b = e.target.closest('button[data-pid]'); if (b) openPerson(b.dataset.pid); });
+  // Cambiar de idioma repinta el botón.
+  document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', paintDeathBtn));
+  // Al cambiar el mapa base se rehacen las capas: volver a poner la de lugares de muerte.
+  const _addOverlays = addOverlays;
+  addOverlays = function(){ _addOverlays(); addDeathLayer(); };
+  // Clic y cursor en los círculos (el mapa ya existe cuando se carga este archivo, o se crea enseguida).
+  (function wire(){
+    if (!map){ setTimeout(wire, 200); return; }
+    map.on('click', 'death', e => {
+      // Varios lugares en el mismo punto (p. ej. «Terezín», «Ghetto Theresienstadt», «KZ Theresienstadt»): elegir.
+      const seen = new Set(), fs = (e.features || []).map(f => f.properties).filter(p => !seen.has(p.slug + p.cc) && seen.add(p.slug + p.cc))
+        .sort((a, b) => b.n - a.n);
+      if (fs.length === 1) { openPlace(fs[0], 1); return; }
+      if (!fs.length) return;
+      if (document.body.classList.contains('vigil-on')) stopVigil();
+      const d = $('#detail');
+      d.innerHTML = `<button class="back" id="back">${T('back')}</button><h2>${esc(T('deathBtn'))}</h2>
+        <p class="note">${esc(T('deathNote'))}</p>
+        <ul class="results">${fs.map((p, i) => `<li><button data-place="${i}"><div class="nm">${esc(p.label)}</div>
+          <div class="meta">${fmtNum(p.n)}</div></button></li>`).join('')}</ul>`;
+      $('#results').hidden = true; d.hidden = false; d.scrollTop = 0;
+      $('#back').onclick = () => closeDetail(true);
+      d.querySelectorAll('button[data-place]').forEach(b => b.onclick = () => openPlace(fs[+b.dataset.place], 1));
+    });
+    map.on('mouseenter', 'death', () => map.getCanvas().style.cursor = 'pointer');
+    map.on('mouseleave', 'death', () => map.getCanvas().style.cursor = '');
+  })();
 
   // Búsqueda: tras pintar las placas, añade las personas de Wikidata.
   const _search = search;

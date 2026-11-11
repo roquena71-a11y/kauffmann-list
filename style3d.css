@@ -106,3 +106,6 @@ body.dark .src-tag{color:#e0bc62}
 /* Personas de Wikidata en la lista de resultados (people.js) */
 .results .wd-sep{border-bottom:0}
 .results .wd-sep .section-t{padding:.8rem 1rem 0;margin:.6rem 0 0}
+.basemaps .death-btn{box-shadow:inset 0 0 0 1px #8d99ab}
+.basemaps .death-btn[aria-pressed=true]{background:#cfd8e6;color:#0b1220;box-shadow:none}
+#detail #placeList{overflow:visible}
