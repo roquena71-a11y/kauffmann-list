@@ -215,3 +215,13 @@ buscar y pintar. Cambio propuesto para la **búsqueda**:
   catálogo, OpenAPI, `llms.txt`, `api-catalog` · `validate.py` validación de salida · `jsonschema_lite.py` validador
   de esquema sin dependencias · `http.py` cliente con caché/reintentos · `config.py` carga de fuentes y familias ·
   `adapters/` (`stones`, `wikidata_sparql`, `overpass`, `generic_tabular`) · `tests/` (unittest + fixtures).
+
+## Publicación automática (GitHub Actions)
+
+Los datos generados (`api/`, `data/search/`, `llms.txt`, `.well-known/`) ya no se guardan en el repo: los crea `.github/workflows/publicar.yml` en cada push a `main`, cada lunes (refresco de Wikidata) o a mano desde la pestaña Actions.
+
+1. Una sola vez: en GitHub, Settings → Pages → Source = **GitHub Actions**.
+2. El flujo corre los tests, `build --strict` (si una fuente falla no publica nada y sigue en línea la versión anterior), `validate` y despliega el sitio sin `pipeline/` ni `docs/`.
+3. La caché de Wikidata dura una semana; sin caché, la consulta completa tarda ~1,5 h.
+
+Para trabajar en local: `python3 -m pipeline build --sources stolpersteine_de,wikidata_holocaust_victims`.
