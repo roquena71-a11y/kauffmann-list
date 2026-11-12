@@ -155,7 +155,7 @@ function square(lo, la, halfM){
 }
 // Individual columns: stones sharing an address are laid out as a small field (1.9 m apart) around the true point,
 // like the stelae field; the detail panel and directions always use the exact recorded coordinates.
-const COL_HALF = 0.75, COL_STEP = 2.0, COL_H = 16;
+const COL_HALF = 0.75, COL_STEP = 3.6, COL_H = 16;
 function buildStones(){
   const groups = new Map();
   for (const s of DATA){ const k = s.la.toFixed(5)+','+s.lo.toFixed(5); (groups.get(k) || groups.set(k,[]).get(k)).push(s); }
@@ -236,16 +236,20 @@ function addOverlays(){
     map.addLayer({id:L.id, type:'fill-extrusion', source:L.id, minzoom:L.min, maxzoom:L.max,
       paint:{'fill-extrusion-color':GOLD, 'fill-extrusion-height':['get','h'], 'fill-extrusion-opacity':0.92, 'fill-extrusion-vertical-gradient':true}});
   }
-  map.addSource('stones',{type:'geojson', data:STONES_FC, maxzoom:16, buffer:16, tolerance:0});
-  map.addLayer({id:'stones', type:'fill-extrusion', source:'stones', minzoom:14.6,
-    paint:{'fill-extrusion-color':GOLD, 'fill-extrusion-height':COL_H, 'fill-extrusion-opacity':0.95, 'fill-extrusion-vertical-gradient':true}});
   map.addSource('sel',{type:'geojson', data:selFC()});
   refreshSel && setTimeout(refreshSel,0);
   map.addLayer({id:'sel-glow', type:'circle', source:'sel', filter:['==',['geometry-type'],'Point'],
     paint:{'circle-radius':['interpolate',['linear'],['zoom'],12,18,18,60], 'circle-color':'#ffd56b', 'circle-opacity':0.45, 'circle-blur':1, 'circle-pitch-alignment':'map'}});
   map.addLayer({id:'sel', type:'fill-extrusion', source:'sel', filter:['==',['geometry-type'],'Polygon'],
     paint:{'fill-extrusion-color':'#fff3c4', 'fill-extrusion-height':['get','h'], 'fill-extrusion-opacity':1}});
-  map.setLight({anchor:'map', position:[1.4, 210, 35], color:'#fff1d0', intensity:0.5});
+  // columnas individuales (modelos en columns.js); si no carga, la columna simple de antes
+  if (window.KLCols) KLCols.add(firstSymbol);
+  else {
+    map.addSource('stones',{type:'geojson', data:STONES_FC, maxzoom:16, buffer:16, tolerance:0});
+    map.addLayer({id:'stones', type:'fill-extrusion', source:'stones', minzoom:14.6,
+      paint:{'fill-extrusion-color':GOLD, 'fill-extrusion-height':COL_H, 'fill-extrusion-opacity':0.95, 'fill-extrusion-vertical-gradient':true}}, 'sel-glow');
+  }
+  map.setLight({anchor:"map", position:[1.5, 215, 62], color:"#fff1d0", intensity:0.62});
   try { map.setSky(base==='day'
       ? {'sky-color':'#d5e2f0','horizon-color':'#f4f1ea','fog-color':'#efe6d4','sky-horizon-blend':0.6,'horizon-fog-blend':0.55,'fog-ground-blend':0.55,'atmosphere-blend':0.4}
       : {'sky-color':'#07111f','horizon-color':'#1a3358','fog-color':'#101820','sky-horizon-blend':0.55,'horizon-fog-blend':0.55,'fog-ground-blend':0.65,'atmosphere-blend':0.55}); } catch(e){}
@@ -259,7 +263,7 @@ function selFC(){
   feats.push({type:'Feature', properties:{h: zoomed ? 34 : 400}, geometry:{type:'Polygon', coordinates:square(s._dlo,s._dla, zoomed ? COL_HALF*1.15 : 12)}});
   return {type:'FeatureCollection', features:feats};
 }
-function refreshSel(){ const src = map.getSource('sel'); if (src) src.setData(selFC()); if (map.getLayer('stones')) map.setFilter('stones', selected ? ['!=',['get','id'],selected] : null); }
+function refreshSel(){ const src = map.getSource('sel'); if (src) src.setData(selFC()); if (window.KLCols) KLCols.filterSel(); else if (map.getLayer('stones')) map.setFilter('stones', selected ? ['!=',['get','id'],selected] : null); }
 
 function paintBaseButtons(){
   document.body.classList.toggle('dark', base!=='day');
@@ -305,10 +309,11 @@ function initMap(){
     maxPitch:70, attributionControl:{compact:true}, hash:false,
     fadeDuration: narrowScreen ? 0 : 250,
     antialias: !narrowScreen,
-    pixelRatio: Math.min(window.devicePixelRatio || 1, narrowScreen ? 1.25 : 1.6),
+    pixelRatio: Math.min(window.devicePixelRatio || 1, narrowScreen ? 2 : 3),   // resolución completa de la pantalla
     projection: intro ? 'globe' : 'mercator',
     canvasContextAttributes:{antialias: !narrowScreen}
   };
+  if (new URLSearchParams(location.search).has('captura')) mapOpts.maxCanvasSize = [8192, 8192];   // solo para imágenes 8K
   try { map = new maplibregl.Map(mapOpts); }
   catch (err) { console.warn('map', err); delete mapOpts.projection; map = new maplibregl.Map(mapOpts); }
   map.addControl(new maplibregl.NavigationControl({visualizePitch:true}), 'top-right');

@@ -1,7 +1,7 @@
 /* Kauffmann List — service worker: offline app shell + last downloaded stone data.
    Map tiles and orthophoto WMS requests are NOT cached (keep them online; no bulk prefetch). */
-const VERSION = 'kauffmann-v8-pages';
-const SHELL = ['./','index.html','style.css','style3d.css','app3d.js','people.js','imagery.js','manifest.webmanifest',
+const VERSION = 'kauffmann-v9-pages';
+const SHELL = ['./','index.html','style.css','style3d.css','app3d.js','people.js','columns.js','imagery.js','manifest.webmanifest',
   'kauffmann-list.jsonld','robots.txt','sitemap.xml','data/bio/manifest.json',
   'proyecto/','proyecto/index.html','proyecto/proyecto.css','proyecto/proyecto.js',
   'proyecto/blatt-de.html','proyecto/blatt-en.html',

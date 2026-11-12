@@ -109,3 +109,15 @@ body.dark .src-tag{color:#e0bc62}
 .basemaps .death-btn{box-shadow:inset 0 0 0 1px #8d99ab}
 .basemaps .death-btn[aria-pressed=true]{background:#cfd8e6;color:#0b1220;box-shadow:none}
 #detail #placeList{overflow:visible}
+
+/* botones de giro del mapa */
+#rotBtns{position:absolute;right:10px;top:50%;transform:translateY(-50%);z-index:5;display:flex;flex-direction:column;gap:6px}
+#rotBtns button{width:40px;height:40px;border-radius:10px;border:1px solid rgba(240,212,138,.45);background:rgba(10,16,28,.82);color:#f0d48a;font:600 18px/1 system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+#rotBtns button:hover,#rotBtns button:focus-visible{background:rgba(240,212,138,.18);outline:2px solid #f0d48a;outline-offset:1px}
+body:not(.dark) #rotBtns button{background:rgba(255,255,255,.92);color:#7a5a17;border-color:rgba(122,90,23,.35)}
+/* selector de modelos de columna (solo en prueba, ?modelos=1) */
+#modelPick{position:absolute;left:10px;top:10px;flex-direction:column;align-items:stretch;z-index:6;display:flex;gap:6px;align-items:center;padding:6px 8px;border-radius:12px;background:rgba(10,16,28,.88);border:1px solid rgba(240,212,138,.4);color:#f0d48a;font:500 13px system-ui,sans-serif}
+#modelPick span{padding:0 4px;opacity:.8}
+#modelPick button{border:1px solid rgba(240,212,138,.35);background:transparent;color:#f0d48a;border-radius:8px;padding:6px 10px;cursor:pointer;font:inherit}
+#modelPick button[aria-pressed="true"]{background:#f0d48a;color:#111}
+@media (max-width:760px){#rotBtns{top:auto;bottom:44px;transform:none;flex-direction:row}#rotBtns button{width:44px;height:44px}#modelPick{font-size:12px}}
