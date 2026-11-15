@@ -15,21 +15,27 @@
   let layerIds = [], sourceIds = [], firstSym = null;
   let T = 1, animating = false;
 
-  function poly(lo, la, halfM, rad){
+  function poly(lo, la, halfM, rad, ang){
     // cuadrado de media anchura halfM con esquinas redondeadas (radio rad*halfM), 8 segmentos por esquina
     const r = rad * halfM, c = halfM - r, mLa = 1 / M_LAT, mLo = 1 / (M_LAT * Math.cos(la * Math.PI / 180)), ring = [];
+    const cA = Math.cos(ang||0), sA = Math.sin(ang||0);
     const corners = [[c, c, 0], [-c, c, 1], [-c, -c, 2], [c, -c, 3]];
     for (const [cx, cy, q] of corners)
-      for (let k = 0; k <= 8; k++){ const a = (q + k / 8) * Math.PI / 2; ring.push([lo + (cx + Math.cos(a) * r) * mLo, la + (cy + Math.sin(a) * r) * mLa]); }
+      for (let k = 0; k <= 8; k++){
+        const a = (q + k / 8) * Math.PI / 2;
+        const x = cx + Math.cos(a) * r, y = cy + Math.sin(a) * r;
+        ring.push([lo + (x*cA - y*sA) * mLo, la + (x*sA + y*cA) * mLa]);
+      }
     ring.push(ring[0]);
     return [ring];
   }
   const fcCache = {};
   function fcFor(half, sides){
     const k = half + ':' + sides; if (fcCache[k]) return fcCache[k];
-    return fcCache[k] = {type:'FeatureCollection', features: DATA.map((s, i) => ({type:'Feature',
+    const rows = (typeof VISIBLE !== 'undefined' && VISIBLE.length) ? VISIBLE : DATA;
+    return fcCache[k] = {type:'FeatureCollection', features: rows.map((s, i) => ({type:'Feature',
       properties:{id:s.id, r: ((i * 2654435761) >>> 0) % 1000 / 1000},          // retraso fijo por columna (0–1)
-      geometry:{type:'Polygon', coordinates:poly(s._dlo, s._dla, half, sides)}}))};
+      geometry:{type:'Polygon', coordinates:poly(s._dlo, s._dla, half, sides, s._ang)}}))};
   }
   // altura animada: cada columna sube con su propio retraso
   const grow = (v, ring) => ['*', v, ['max', 0, ['min', 1, ['*', ['-', T, ['*', ['get','r'], 0.7]], ring ? 3.3 : 3.3]]]];
@@ -70,6 +76,10 @@
   function filterSel(){
     const f = selected ? ['!=', ['get','id'], selected] : null;
     for (const id of layerIds) if (map.getLayer(id)) map.setFilter(id, f);
+    if (selected && map.getZoom() >= 14.6){
+      const s = byId.get(selected); if (s){ tipPinned = true; showTip(s); return; }
+    }
+    if (!tipHover) { tipPinned = false; hideTip(); }
   }
   function setModel(n){
     if (!MODELS[n]) return; current = n;
@@ -110,8 +120,61 @@
     d.querySelectorAll('button[data-r]').forEach(b => { const v = tr[keys[b.dataset.r]]; if (typeof v === 'string') { b.title = v; b.setAttribute('aria-label', v); } });
   }
 
+  // ---------- nombre al pasar el cursor o al tocar (solo s.n del dato; nunca se inventa) ----------
+  let tip = null, tipId = null, tipPinned = false, tipHover = false;
+  function tipEl(){
+    if (tip) return tip;
+    tip = document.createElement('div');
+    tip.id = 'stoneTip';
+    tip.setAttribute('role','status');
+    tip.hidden = true;
+    map.getContainer().appendChild(tip);
+    return tip;
+  }
+  function topPx(lo, la, h){
+    const p = map.project([lo, la]);
+    const mpp = 156543.03392 * Math.cos(la * Math.PI/180) / Math.pow(2, map.getZoom());
+    p.y -= (h / mpp) * Math.sin(map.getPitch() * Math.PI/180);
+    return p;
+  }
+  function showTip(s){
+    if (!s){ hideTip(); return; }
+    const el = tipEl();
+    const name = ((s._n||s.n) && String(s._n||s.n).trim()) || '—';
+    if (tipId !== s.id){ el.textContent = name; tipId = s.id; }
+    const p = topPx(s._dlo, s._dla, COL_H);
+    const W = map.getContainer().clientWidth, Hmap = map.getContainer().clientHeight;
+    el.hidden = false;
+    const tw = el.offsetWidth || 160, th = el.offsetHeight || 28;
+    const x = Math.max(6, Math.min(W - tw - 6, p.x - tw/2));
+    const y = Math.max(6, Math.min(Hmap - th - 6, p.y - th - 10));
+    el.style.left = x + 'px'; el.style.top = y + 'px';
+  }
+  function hideTip(){
+    if (!tip || tipPinned) return;
+    tip.hidden = true; tipId = null;
+  }
+  function bindTip(){
+    if (map._klTipBound) return; map._klTipBound = true;
+    map.on('mousemove', 'stones', e => {
+      const s = byId.get(e.features[0].properties.id); if (!s) return;
+      tipHover = true; tipPinned = false; showTip(s);
+    });
+    map.on('mouseleave', 'stones', () => {
+      tipHover = false;
+      if (selected && map.getZoom() >= 14.6){ const s = byId.get(selected); if (s){ tipPinned = true; showTip(s); return; } }
+      hideTip();
+    });
+    map.on('click', 'stones', e => {
+      const s = byId.get(e.features[0].properties.id);
+      if (s){ tipPinned = true; tipHover = false; showTip(s); }
+    });
+    map.on('move', () => { if (tip && !tip.hidden && tipId){ const s = byId.get(tipId); if (s) showTip(s); } });
+    map.on('zoomend', () => { if (tip && !tip.hidden && map.getZoom() < 14.6){ tipPinned = false; tipHover = false; hideTip(); } });
+  }
+
   window.KLCols = { add, filterSel, setModel, rise, MODELS, relabel };
   const boot = () => { if (!window.map || !map.on) return setTimeout(boot, 200);
-    map.on('zoomend', watchZoom); rotateButtons(); picker(); };
+    map.on('zoomend', watchZoom); rotateButtons(); picker(); bindTip(); };
   boot();
 })();

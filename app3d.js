@@ -149,34 +149,322 @@ function lev(a,b,max){
 }
 
 /* ---------- state ---------- */
-var map; let DATA=[], META={}, byId=new Map(), selected=null, base='night', AGG=[], STONES_FC=null, POINTS_FC=null, CITY_STATS=[];
+var map; let DATA=[], META={}, byId=new Map(), VISIBLE=[], selected=null, base='night', AGG=[], STONES_FC=null, POINTS_FC=null, LIGHTS_FC=null, CITY_STATS=[];
 const cityOf = s => s.c || s.cd || '';
 
 /* ---------- geometry ---------- */
 const M_LAT = 111320;
-function square(lo, la, halfM){
-  const dLa = halfM / M_LAT, dLo = halfM / (M_LAT*Math.cos(la*Math.PI/180));
-  return [[[lo-dLo,la-dLa],[lo+dLo,la-dLa],[lo+dLo,la+dLa],[lo-dLo,la+dLa],[lo-dLo,la-dLa]]];
+function square(lo, la, halfM, ang){
+  const mLa = 1/M_LAT, mLo = 1/(M_LAT*Math.cos(la*Math.PI/180));
+  const cA = Math.cos(ang||0), sA = Math.sin(ang||0);
+  const pts = [[-halfM,-halfM],[halfM,-halfM],[halfM,halfM],[-halfM,halfM],[-halfM,-halfM]];
+  return [pts.map(([x,y]) => [lo + (x*cA - y*sA)*mLo, la + (x*sA + y*cA)*mLa])];
 }
-// Individual columns: stones sharing an address are laid out as a small field (1.9 m apart) around the true point,
-// like the stelae field; the detail panel and directions always use the exact recorded coordinates.
-const COL_HALF = 0.75, COL_STEP = 3.6, COL_H = 16;
+// Individual columns: stones of the same house are laid out as a neat grid around the true point
+// (same size everywhere: 1.20 m wide, 16 m tall). The detail panel and directions still use the recorded coordinates.
+const COL_HALF = 0.60, COL_STEP = 1.85, COL_H = 16, COL_GAP_MIN = 1.55;
+function addrKey(s){
+  const fold = t => (t||'').toLowerCase().replace(/ß/g,'ss').replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue');
+  let a = fold(s.a)
+    .replace(/\b\d{5}\b/g,'')
+    .replace(/\b(deutschland|germany)\b/g,'')
+    .replace(/[.,;/]/g,' ')
+    .replace(/\bstr(?:asse)?\./g,'strasse ')
+    .replace(/([a-z])str\b/g,'$1strasse')
+    .replace(/\bstr\b/g,'strasse')
+    .replace(/\s+/g,' ').trim();
+  // Keep street + house number; drop trailing place names so "… 14, Berlin-Tempelhof" matches "… 14".
+  const m = a.match(/^(.*?)(\d+\s*[a-z]?)(?:\s+|$)/);
+  if (m) a = (m[1]+m[2]).replace(/\s+/g,' ').trim();
+  return a;
+}
+function streetKey(s){ return addrKey(s).replace(/\d+\s*[a-z]?$/i,'').trim(); }
+function distM(la1,lo1,la2,lo2){
+  const mid = (la1+la2)/2 * Math.PI/180;
+  return Math.hypot((la1-la2)*M_LAT, (lo1-lo2)*M_LAT*Math.cos(mid));
+}
+function clusterByDist(list, maxD){
+  const n = list.length;
+  if (!n) return [];
+  if (n === 1) return [list.slice()];
+  const parent = list.map((_,i)=>i);
+  const find = i => parent[i]===i ? i : (parent[i]=find(parent[i]));
+  for (let i=0;i<n;i++) for (let j=i+1;j<n;j++)
+    if (distM(list[i].la,list[i].lo,list[j].la,list[j].lo) <= maxD){
+      const a=find(i), b=find(j); if (a!==b) parent[a]=b;
+    }
+  const m = new Map();
+  list.forEach((s,i)=> (m.get(find(i)) || m.set(find(i),[]).get(find(i))).push(s));
+  return [...m.values()];
+}
+function yearOf(v){ const m = String(v||'').match(/(1[7-9]|20)\d{2}/); return m ? m[0] : ''; }
+function nameKey(s){
+  let n = (s.n||'').toLowerCase().replace(/ß/g,'ss').replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue');
+  n = n.replace(/\b(dr|prof|med)\.?\b/g,'').replace(/[.,]/g,' ').replace(/\s+/g,' ').trim();
+  return n;
+}
+function nameCore(s){ return nameKey(s).replace(/\s+(?:geb|geboren|nee|née)\b.*/,'').trim(); }
+function isGenericName(s){
+  if (typeof isAnonStone === 'function' && isAnonStone(s)) return true;
+  return /^(ein[e]?\s+)?(romm|rommni|sinto|sinteza|sintiza)(\s|$)/i.test(nameKey(s));
+}
+function yearsCompatible(a,b){
+  const ba=a._by!=null?a._by:yearOf(a.b), bb=b._by!=null?b._by:yearOf(b.b); if (ba && bb && ba!==bb) return false;
+  const da=a._dy!=null?a._dy:yearOf(a.d), db=b._dy!=null?b._dy:yearOf(b.d); if (da && db && da!==db) return false;
+  return true;
+}
+function samePerson(a,b){
+  if ((a._generic!=null?a._generic:isGenericName(a)) || (b._generic!=null?b._generic:isGenericName(b))) return false;
+  const ka=a._nk!=null?a._nk:nameKey(a), kb=b._nk!=null?b._nk:nameKey(b);
+  if (!ka || ka.length<3 || !kb) return false;
+  if (ka===kb) return yearsCompatible(a,b);
+  const ca=a._core!=null?a._core:nameCore(a), cb=b._core!=null?b._core:nameCore(b);
+  if (ca && ca.length>=5 && ca===cb) return yearsCompatible(a,b);
+  return false;
+}
+function richness(s){
+  let n=0;
+  if (s.i) n+=3; if (s.img) n+=2; if (s.b) n+=2; if (s.d) n+=1;
+  if (s.wd) n+=2; if (s.src && String(s.src).includes('osm')) n+=1;
+  if (s.w && s.w.length) n+=1; if (s.wp) n+=1; if (s.p) n+=1;
+  return n;
+}
+function fillFrom(pri, o){
+  if (!pri.b && o.b) pri.b = o.b;
+  if (!pri.d && o.d) pri.d = o.d;
+  if (!pri.i && o.i) pri.i = o.i;
+  if (!pri.img && o.img) pri.img = o.img;
+  if (!pri.wd && o.wd) pri.wd = o.wd;
+  if (!pri.p && o.p) pri.p = o.p;
+  if (!pri.a && o.a) pri.a = o.a;
+  if (!pri.c && o.c) pri.c = o.c;
+  if (!pri.laid && o.laid) pri.laid = o.laid;
+  if (!pri.wp && o.wp) pri.wp = o.wp;
+  if ((!pri.w || !pri.w.length) && o.w && o.w.length) pri.w = o.w;
+  if ((o.n||'').length > (pri._n||pri.n||'').length) pri._n = o.n;
+}
+function principalAngle(pts){
+  if (pts.length<2) return null;
+  const la0=pts.reduce((t,p)=>t+p.la,0)/pts.length, lo0=pts.reduce((t,p)=>t+p.lo,0)/pts.length;
+  const cos=Math.cos(la0*Math.PI/180);
+  const xy=pts.map(p=>({x:(p.lo-lo0)*M_LAT*cos, y:(p.la-la0)*M_LAT}));
+  let xx=0, yy=0, xyC=0;
+  for (const p of xy){ xx+=p.x*p.x; yy+=p.y*p.y; xyC+=p.x*p.y; }
+  const n=xy.length, tr=xx+yy, disc=Math.sqrt(Math.max(0,(xx-yy)*(xx-yy)/4 + xyC*xyC));
+  const ev1=tr/2+disc, ev2=tr/2-disc;
+  const lenMaj=Math.sqrt(Math.max(0,ev1)/n)*2, lenMin=Math.sqrt(Math.max(0,ev2)/n)*2;
+  if (lenMaj<4 || lenMaj<2.2*Math.max(lenMin,0.8)) return null;
+  let ang=0.5*Math.atan2(2*xyC, xx-yy);
+  if (ang<0) ang+=Math.PI;
+  return ang;
+}
+
 function buildStones(){
-  const groups = new Map();
-  for (const s of DATA){ const k = s.la.toFixed(5)+','+s.lo.toFixed(5); (groups.get(k) || groups.set(k,[]).get(k)).push(s); }
-  const feats = [];
-  for (const g of groups.values()){
-    const n = g.length, cols = Math.ceil(Math.sqrt(n)), rows = Math.ceil(n/cols);
-    g.forEach((s,i)=>{
-      const cx = (i%cols) - (cols-1)/2, cy = Math.floor(i/cols) - (rows-1)/2;
-      const la = s.la + cy*COL_STEP/M_LAT, lo = s.lo + cx*COL_STEP/(M_LAT*Math.cos(s.la*Math.PI/180));
-      s._dla = la; s._dlo = lo;
-      feats.push({type:'Feature', properties:{id:s.id}, geometry:{type:'Polygon', coordinates:square(lo,la,COL_HALF)}});
+  for (const s of DATA){
+    s._nk = nameKey(s);
+    s._core = nameCore(s);
+    s._generic = isGenericName(s);
+    s._by = yearOf(s.b);
+    s._dy = yearOf(s.d);
+  }
+  const byAddr = new Map(), noAddr = [];
+  for (const s of DATA){
+    const k = addrKey(s);
+    if (!k) noAddr.push(s);
+    else (byAddr.get(k) || byAddr.set(k,[]).get(k)).push(s);
+  }
+  let clusters = [];
+  for (const list of byAddr.values()) clusters.push(...clusterByDist(list, 15));
+  clusters.push(...clusterByDist(noAddr, 3.5));
+  // Same recorded point, different wording of the address (or a shared wrong coordinate):
+  // join them so the columns form one grid instead of sitting on top of each other.
+  {
+    const parent=clusters.map((_,i)=>i);
+    const find=i=>parent[i]===i?i:(parent[i]=find(parent[i]));
+    const cents=clusters.map(g=>({la:g.reduce((t,s)=>t+s.la,0)/g.length, lo:g.reduce((t,s)=>t+s.lo,0)/g.length}));
+    const cell=0.00002, grid=new Map(); // ~2 m cells
+    const key=(la,lo)=>Math.floor(la/cell)+':'+Math.floor(lo/cell);
+    cents.forEach((c,i)=>{ const k=key(c.la,c.lo); (grid.get(k)||grid.set(k,[]).get(k)).push(i); });
+    cents.forEach((c,i)=>{
+      const a0=Math.floor(c.la/cell), b0=Math.floor(c.lo/cell);
+      for (let di=-1;di<=1;di++) for (let dj=-1;dj<=1;dj++)
+        for (const j of (grid.get((a0+di)+':'+(b0+dj))||[])){
+          if (j<=i) continue;
+          if (distM(c.la,c.lo,cents[j].la,cents[j].lo)<0.8){ const a=find(i), b=find(j); if (a!==b) parent[a]=b; }
+        }
+    });
+    const m=new Map();
+    clusters.forEach((g,i)=> (m.get(find(i))||m.set(find(i),[]).get(find(i))).push(...g));
+    clusters=[...m.values()];
+  }
+
+  // Display-only merge: same person (same name at the same house, dates not in conflict).
+  // stones.json is not changed; aliases stay in DATA/byId so a link to either id still opens the ficha.
+  // Merge on the address group with a 25 m cap (OSM and Wikidata of the same house are often 15–20 m apart).
+  let mergeGroups=0, mergeExtra=0;
+  function mergePeople(list, maxD){
+    if (list.length<2) return;
+    const parent=list.map((_,i)=>i);
+    const find=i=>parent[i]===i?i:(parent[i]=find(parent[i]));
+    const tryPair=(i,j)=>{
+      if (samePerson(list[i], list[j]) && distM(list[i].la,list[i].lo,list[j].la,list[j].lo)<=maxD){
+        const a=find(i), b=find(j); if (a!==b) parent[a]=b;
+      }
+    };
+    if (list.length<=40){
+      for (let i=0;i<list.length;i++) for (let j=i+1;j<list.length;j++) tryPair(i,j);
+    } else {
+      const cell=0.00015, grid=new Map();
+      const key=(la,lo)=>Math.floor(la/cell)+':'+Math.floor(lo/cell);
+      list.forEach((s,i)=>{ const k=key(s.la,s.lo); (grid.get(k)||grid.set(k,[]).get(k)).push(i); });
+      list.forEach((s,i)=>{
+        const a=Math.floor(s.la/cell), b=Math.floor(s.lo/cell);
+        for (let di=-1;di<=1;di++) for (let dj=-1;dj<=1;dj++)
+          for (const j of (grid.get((a+di)+':'+(b+dj))||[])) if (j>i) tryPair(i,j);
+      });
+    }
+    const buckets=new Map();
+    list.forEach((s,i)=> (buckets.get(find(i))||buckets.set(find(i),[]).get(find(i))).push(s));
+    for (const recs of buckets.values()){
+      if (recs.length<2) continue;
+      recs.sort((a,b)=> richness(b)-richness(a) || String(a.id).localeCompare(String(b.id)));
+      const pri=recs[0];
+      pri._also=recs.slice(1);
+      pri._ids=recs.map(s=>s.id);
+      pri._n=pri.n;
+      for (const o of pri._also){ o._aliasOf=pri.id; fillFrom(pri, o); }
+      mergeGroups++; mergeExtra+=recs.length-1;
+    }
+  }
+  for (const list of byAddr.values()) mergePeople(list, 25);
+  mergePeople(noAddr, 8);
+
+  const groups = clusters.map(g => {
+    const vis=g.filter(s=>!s._aliasOf);
+    vis.sort((a,b)=> ((a._n||a.n)||'').localeCompare((b._n||b.n)||'','de') || String(a.id).localeCompare(String(b.id)));
+    const la0 = g.reduce((t,s)=>t+s.la,0)/g.length;
+    const lo0 = g.reduce((t,s)=>t+s.lo,0)/g.length;
+    return {g:vis, all:g, la0, lo0, origLa:la0, origLo:lo0, step:COL_STEP, ang:0, sk:streetKey(g[0])};
+  });
+
+  // Street direction from our own coordinates (not live OSM tiles: those are only in the current view
+  // after the style loads, so they cannot lay out the whole country at start).
+  // 1) Principal axis of other houses on the same street within 180 m (needs 3 points, or 2 if >12 m apart).
+  // 2) If that fails, the elongated cloud of this house's own recorded points.
+  // 3) Smooth with the circular mean of neighbouring angles on the same street (80 m), then north–south if still none.
+  function neighbors(pg, i, radius, cell, near){
+    const pts=[], idxs=[];
+    if (!pg.sk) return {pts, idxs};
+    const a0=Math.floor(pg.la0/cell), b0=Math.floor(pg.lo0/cell);
+    for (let di=-2;di<=2;di++) for (let dj=-2;dj<=2;dj++)
+      for (const j of (near.get(pg.sk+'|'+((a0+di)+':'+(b0+dj)))||[])){
+        const o=groups[j];
+        if (distM(pg.la0,pg.lo0,o.la0,o.lo0)<=radius){ pts.push({la:o.la0, lo:o.lo0}); idxs.push(j); }
+      }
+    return {pts, idxs};
+  }
+  function meanAngle(angs){
+    if (!angs.length) return null;
+    let x=0,y=0;
+    for (const a of angs){ x+=Math.cos(2*a); y+=Math.sin(2*a); }
+    let m=0.5*Math.atan2(y,x); if (m<0) m+=Math.PI; return m;
+  }
+  const cellA=0.001, near=new Map();
+  const akey=(sk,la,lo)=>sk+'|'+Math.floor(la/cellA)+':'+Math.floor(lo/cellA);
+  groups.forEach((pg,i)=>{ if (!pg.sk) return; const k=akey(pg.sk,pg.la0,pg.lo0); (near.get(k)||near.set(k,[]).get(k)).push(i); });
+  groups.forEach((pg,i)=>{
+    let ang=null;
+    if (pg.sk){
+      const {pts}=neighbors(pg,i,180,cellA,near);
+      if (pts.length>=3) ang=principalAngle(pts);
+      else if (pts.length===2 && distM(pts[0].la,pts[0].lo,pts[1].la,pts[1].lo)>12) ang=principalAngle(pts);
+    }
+    if (ang==null) ang=principalAngle(pg.all.map(s=>({la:s.la, lo:s.lo})));
+    pg._rawAng = ang;
+  });
+  groups.forEach((pg,i)=>{
+    let ang=pg._rawAng;
+    if (pg.sk){
+      const {idxs}=neighbors(pg,i,80,cellA,near);
+      const angs=idxs.map(j=>groups[j]._rawAng).filter(a=>a!=null);
+      if (angs.length>=2) ang=meanAngle(angs);
+    }
+    pg.ang = ang||0;
+    for (const s of pg.all) s._ang=pg.ang;
+  });
+
+  function layout(pg){
+    const n=pg.g.length, cols=Math.ceil(Math.sqrt(n));
+    const rows=Math.ceil(n/cols)||1;
+    const cos=Math.cos(pg.la0*Math.PI/180), cA=Math.cos(pg.ang||0), sA=Math.sin(pg.ang||0);
+    pg.g.forEach((s,i)=>{
+      const cx=(i%cols)-(cols-1)/2, cy=Math.floor(i/cols)-(rows-1)/2;
+      const east=cx*pg.step*cA - cy*pg.step*sA;
+      const north=cx*pg.step*sA + cy*pg.step*cA;
+      s._dla = pg.la0 + north/M_LAT;
+      s._dlo = pg.lo0 + east/(M_LAT*cos);
     });
   }
+  for (const pg of groups) layout(pg);
+
+  // If two houses sit very close, shrink the grid a little and nudge the smaller field so columns never overlap.
+  // Do not move a field more than 8 m from its recorded point.
+  const maxShift = 8;
+  for (let iter=0; iter<16; iter++){
+    const cell=0.0002, grid=new Map();
+    const key=(la,lo)=>Math.floor(la/cell)+':'+Math.floor(lo/cell);
+    groups.forEach((pg,gi)=> pg.g.forEach(s=>{
+      const k=key(s._dla,s._dlo); (grid.get(k)||grid.set(k,[]).get(k)).push({s,gi});
+    }));
+    const shift = groups.map(()=>({dy:0,dx:0,hits:0}));
+    const shrink = groups.map(()=>false);
+    let moved=false;
+    groups.forEach((pg,gi)=> pg.g.forEach(s=>{
+      const a=Math.floor(s._dla/cell), b=Math.floor(s._dlo/cell);
+      for (let di=-1;di<=1;di++) for (let dj=-1;dj<=1;dj++)
+        for (const o of (grid.get((a+di)+':'+(b+dj))||[])){
+          if (o.gi<=gi) continue;
+          const d=distM(s._dla,s._dlo,o.s._dla,o.s._dlo);
+          if (d>=COL_GAP_MIN) continue;
+          const A=groups[gi], B=groups[o.gi];
+          let dy=(A.la0-B.la0)*M_LAT, dx=(A.lo0-B.lo0)*M_LAT*Math.cos(A.la0*Math.PI/180);
+          let L=Math.hypot(dx,dy);
+          if (L<0.2){ dx=1; dy=0; L=1; }
+          const push=(COL_GAP_MIN-d+0.12)/2;
+          const uy=dy/L, ux=dx/L;
+          if (A.g.length<=B.g.length){ shift[gi].dy+=uy*push; shift[gi].dx+=ux*push; shift[gi].hits++; }
+          else { shift[o.gi].dy-=uy*push; shift[o.gi].dx-=ux*push; shift[o.gi].hits++; }
+          if (L<5 && (A.g.length>1 || B.g.length>1)){ shrink[gi]=true; shrink[o.gi]=true; }
+          moved=true;
+        }
+    }));
+    if (!moved) break;
+    groups.forEach((pg,i)=>{
+      if (shrink[i] && pg.step>1.50) pg.step=Math.max(1.50, pg.step-0.08);
+      if (shift[i].hits){
+        const mLa=1/M_LAT, mLo=1/(M_LAT*Math.cos(pg.la0*Math.PI/180));
+        let nla=pg.la0+shift[i].dy*mLa, nlo=pg.lo0+shift[i].dx*mLo;
+        const sh=distM(nla,nlo,pg.origLa,pg.origLo);
+        if (sh>maxShift){ const k=maxShift/sh; nla=pg.origLa+(nla-pg.origLa)*k; nlo=pg.origLo+(nlo-pg.origLo)*k; }
+        pg.la0=nla; pg.lo0=nlo;
+      }
+      if (shrink[i] || shift[i].hits) layout(pg);
+    });
+  }
+
+  for (const s of DATA){
+    if (s._aliasOf){ const p=byId.get(s._aliasOf); if (p){ s._dla=p._dla; s._dlo=p._dlo; s._ang=p._ang; } }
+  }
+  VISIBLE = DATA.filter(s=>!s._aliasOf);
+  const feats = VISIBLE.map(s => ({type:'Feature', properties:{id:s.id}, geometry:{type:'Polygon', coordinates:square(s._dlo,s._dla,COL_HALF,s._ang)}}));
   STONES_FC = {type:'FeatureCollection', features:feats};
-  POINTS_FC = {type:'FeatureCollection', features: DATA.map(s=>({type:'Feature', properties:{}, geometry:{type:'Point', coordinates:[s.lo,s.la]}}))};
+  POINTS_FC = {type:'FeatureCollection', features: VISIBLE.map(s=>({type:'Feature', properties:{}, geometry:{type:'Point', coordinates:[s.lo,s.la]}}))};
+  LIGHTS_FC = {type:'FeatureCollection', features: groups.map(pg=>({type:'Feature', properties:{n:pg.g.length}, geometry:{type:'Point', coordinates:[pg.lo0, pg.la0]}}))};
+  const ise69 = VISIBLE.filter(s => /Isestr/i.test(s.a||'') && /\b69\b/.test(s.a||'')).length;
+  var KLMerge = {groups:mergeGroups, extra:mergeExtra, visible:VISIBLE.length, source:DATA.length, isestr69:ise69};
+  if (typeof window!=='undefined') window.KLMerge = KLMerge;
 }
+
 // Aggregated columns per grid cell, one level per zoom band. Height ~ sqrt(count) so Berlin does not hide small towns.
 const LEVELS = [
   {id:'a0', dLa:0.25,  dLo:0.40,   min:0,    max:7.5,  k:1500, half:1500},
@@ -185,9 +473,10 @@ const LEVELS = [
   {id:'a3', dLa:0.004, dLo:0.0064, min:11.8, max:14.6, k:70,   half:28},
 ];
 function buildAgg(){
+  const rows = (VISIBLE && VISIBLE.length) ? VISIBLE : DATA;
   AGG = LEVELS.map(L=>{
     const cells = new Map();
-    for (const s of DATA){
+    for (const s of rows){
       const k = Math.floor(s.la/L.dLa)+':'+Math.floor(s.lo/L.dLo);
       let c = cells.get(k); if (!c) cells.set(k, c={n:0,la:0,lo:0});
       c.n++; c.la+=s.la; c.lo+=s.lo;
@@ -236,6 +525,16 @@ function addOverlays(){
            'heatmap-weight':0.5,
            'heatmap-color':['interpolate',['linear'],['heatmap-density'],0,'rgba(0,0,0,0)',0.15,'rgba(150,110,40,0.25)',0.5,'rgba(210,165,70,0.45)',1,'rgba(255,225,150,0.7)'],
            'heatmap-opacity': base==='day' ? 0.5 : 0.85}}, firstSymbol);
+  // Night: one soft light per house (not per stone). Cheap circle layer; hidden by day.
+  if (LIGHTS_FC){
+    map.addSource('house-lights',{type:'geojson', data:LIGHTS_FC, maxzoom:14});
+    map.addLayer({id:'house-lights', type:'circle', source:'house-lights', minzoom:4, maxzoom:14.2,
+      layout:{visibility: base==='day' ? 'none' : 'visible'},
+      paint:{'circle-radius':['interpolate',['linear'],['zoom'],4,1.15,8,2.1,12,3.4,14,5],
+             'circle-color':'#ffe2a0',
+             'circle-opacity':['interpolate',['linear'],['zoom'],4,0.4,9,0.75,13.5,0.2],
+             'circle-blur':0.65, 'circle-pitch-alignment':'map'}}, firstSymbol);
+  }
   for (const {L,fc} of AGG){
     map.addSource(L.id,{type:'geojson', data:fc});
     map.addLayer({id:L.id, type:'fill-extrusion', source:L.id, minzoom:L.min, maxzoom:L.max,
@@ -265,7 +564,7 @@ function selFC(){
   const zoomed = map && map.getZoom() >= 14.6;
   const feats = [{type:'Feature', properties:{}, geometry:{type:'Point', coordinates:[s._dlo,s._dla]}}];
   // the remembered person's column: same place, brighter and taller so it stands above the roofs
-  feats.push({type:'Feature', properties:{h: zoomed ? 34 : 400}, geometry:{type:'Polygon', coordinates:square(s._dlo,s._dla, zoomed ? COL_HALF*1.15 : 12)}});
+  feats.push({type:'Feature', properties:{h: zoomed ? 34 : 400}, geometry:{type:'Polygon', coordinates:square(s._dlo,s._dla, zoomed ? COL_HALF*1.15 : 12, s._ang)}});
   return {type:'FeatureCollection', features:feats};
 }
 function refreshSel(){ const src = map.getSource('sel'); if (src) src.setData(selFC()); if (window.KLCols) KLCols.filterSel(); else if (map.getLayer('stones')) map.setFilter('stones', selected ? ['!=',['get','id'],selected] : null); }
@@ -403,13 +702,15 @@ async function load(){
   $('#status').textContent = T('loading');
   const j = await (await fetch('data/stones.json')).json();
   META = j.meta; DATA = j.stones;
-  const cities = new Map();
   for (const s of DATA){
     s._t = norm([s.n, s.a, s.sub, cityOf(s)].join(' ')).split(' ');
     s._c = norm(cityOf(s)); byId.set(s.id, s);
-    const c = cityOf(s); if (c){ const o = cities.get(c) || cities.set(c,{n:0,ids:[]}).get(c); o.n++; o.ids.push(s.id); }
   }
   buildStones(); buildAgg();
+  const cities = new Map();
+  for (const s of VISIBLE){
+    const c = cityOf(s); if (c){ const o = cities.get(c) || cities.set(c,{n:0,ids:[]}).get(c); o.n++; o.ids.push(s.id); }
+  }
   CITY_STATS = [...cities.entries()].sort((a,b)=>b[1].n-a[1].n);
   $('#cities').innerHTML = [...cities.entries()].sort((a,b)=>a[0].localeCompare(b[0],'de')).map(([c,o])=>`<option value="${esc(c)}">${esc(c)} (${o.n})</option>`).join('');
   if (map.isStyleLoaded() || map._pendingOverlays) { if (!map.getSource('stones')) addOverlays(); }
@@ -425,6 +726,7 @@ function search(){
   if (!q && !cq){ list.innerHTML=''; $('#status').textContent=T('ready')(fmtNum(DATA.length)); return; }
   const qt = q ? q.split(' ') : [], out=[], LIMIT=300;
   for (const s of DATA){
+    if (s._aliasOf) continue;
     if (cq && !s._c.startsWith(cq) && !s._c.includes(' '+cq)) continue;
     let score=0, ok=true, minTok=3;
     for (const w of qt){
@@ -542,9 +844,10 @@ function loadStory(s){
   }).catch(() => paintStory(s, null));
 }
 function openStone(id, fromMap){
-  const s = byId.get(id); if (!s) return;
+  let s = byId.get(id); if (!s) return;
+  if (s._aliasOf) s = byId.get(s._aliasOf) || s;
   if (document.body.classList.contains('vigil-on')) stopVigil();
-  selected = id; refreshSel();
+  selected = s.id; refreshSel();
   const targetZoom = 17.6;
   if (!fromMap || map.getZoom() < 16.5)
     map.flyTo({center:[s._dlo,s._dla], zoom:targetZoom, pitch:58, offset:[0, 60], bearing: map.getBearing() || -20, duration: reduceMotion ? 0 : 3200, essential:true, curve:1.5});
@@ -556,13 +859,15 @@ function openStone(id, fromMap){
   const bio=[]; (s.w||[]).forEach(u=>{ let h=u; try{h=new URL(u).hostname.replace(/^www\./,'')}catch(e){} bio.push(`<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(h)}</a></li>`); });
   if (s.wp) bio.push(`<li><a href="${esc(wpUrl(s.wp))}" target="_blank" rel="noopener">Wikipedia: ${esc(s.wp.replace(/^[a-z]+:/,''))}</a></li>`);
   if (s.desc) bio.unshift(`<li>${esc(s.desc)}</li>`);
-  const src=[]; if (osmUrl(s)) src.push(`<li><a href="${osmUrl(s)}" target="_blank" rel="noopener">OpenStreetMap</a></li>`);
-  if (s.wd) src.push(`<li><a href="https://www.wikidata.org/wiki/${esc(s.wd)}" target="_blank" rel="noopener">Wikidata ${esc(s.wd)}</a></li>`);
-  if (s.p) src.push(`<li><a href="https://www.wikidata.org/wiki/${esc(s.p)}" target="_blank" rel="noopener">Wikidata (persona/Person) ${esc(s.p)}</a></li>`);
+  const recs = [s, ...(s._also||[])];
+  const src=[]; const seenSrc=new Set();
+  for (const r of recs){ const u=osmUrl(r); if (u && !seenSrc.has(u)){ seenSrc.add(u); src.push(`<li><a href="${u}" target="_blank" rel="noopener">OpenStreetMap</a></li>`); } }
+  for (const r of recs){ if (r.wd && !seenSrc.has('wd:'+r.wd)){ seenSrc.add('wd:'+r.wd); src.push(`<li><a href="https://www.wikidata.org/wiki/${esc(r.wd)}" target="_blank" rel="noopener">Wikidata ${esc(r.wd)}</a></li>`); } }
+  for (const r of recs){ if (r.p && !seenSrc.has('p:'+r.p)){ seenSrc.add('p:'+r.p); src.push(`<li><a href="https://www.wikidata.org/wiki/${esc(r.p)}" target="_blank" rel="noopener">Wikidata (persona/Person) ${esc(r.p)}</a></li>`); } }
   const photo = s.img ? `<figure class="photo"><a href="${commonsPage(s.img)}" target="_blank" rel="noopener"><img loading="lazy" src="${commonsThumb(s.img,480)}" alt="${esc(s.n||'')}"></a><figcaption><a href="${commonsPage(s.img)}" target="_blank" rel="noopener">${T('photo')}</a></figcaption></figure>` : '';
   const d = $('#detail');
   d.innerHTML = `<button class="back" id="back">${T('back')}</button>
-    <h2>${esc(s.n||'—')}</h2><p class="place">${esc([s.a, s.a&&s.a.includes(cityOf(s))?'':cityOf(s)].filter(Boolean).join(', '))}</p>
+    <h2>${esc(s._n||s.n||'—')}</h2><p class="place">${esc([s.a, s.a&&s.a.includes(cityOf(s))?'':cityOf(s)].filter(Boolean).join(', '))}</p>
     <p class="dates" id="inscDates" hidden></p>
     <div class="section-t">${T('inscription')}</div>
     ${insc?`<div class="brassplate">${insc}</div>`:`<p class="note">${T('noinsc')}</p>`}
