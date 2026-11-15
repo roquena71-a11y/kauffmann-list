@@ -3,11 +3,10 @@
 # se crean aquí en cada publicación. Requiere: Settings → Pages → Source = "GitHub Actions".
 name: Publicar sitio y datos
 
+# Solo se publica a mano y con el OK de Carlos (Actions → «Publicar sitio y datos» → Run workflow,
+# o `gh workflow run publicar.yml`). Sin publicación automática por push ni por calendario.
+# Para refrescar Wikidata, basta con lanzar este mismo workflow a mano.
 on:
-  push:
-    branches: [main]
-  schedule:
-    - cron: "17 3 * * 1"   # cada lunes 03:17 UTC: refresca Wikidata
   workflow_dispatch:
 
 permissions:

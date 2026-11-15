@@ -100,9 +100,17 @@
     d.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; const r = +b.dataset.r;
       map.easeTo({bearing: r === 0 ? 0 : map.getBearing() + r, duration: 900, essential:true}); });
     map.getContainer().appendChild(d);           // dentro del mapa, también en el móvil
+    relabel();
+  }
+  // textos de los botones de giro en el idioma elegido (ES/DE/EN, definidos en app3d.js)
+  function relabel(){
+    // (aquí «T» es la variable de animación de este archivo, así que se lee la tabla I18N de app3d.js directamente)
+    const d = document.getElementById('rotBtns'); if (!d || typeof I18N === 'undefined' || typeof lang === 'undefined') return;
+    const tr = I18N[lang] || I18N.es, keys = {'-45':'rotLeft', '0':'rotNorth', '45':'rotRight'};
+    d.querySelectorAll('button[data-r]').forEach(b => { const v = tr[keys[b.dataset.r]]; if (typeof v === 'string') { b.title = v; b.setAttribute('aria-label', v); } });
   }
 
-  window.KLCols = { add, filterSel, setModel, rise, MODELS };
+  window.KLCols = { add, filterSel, setModel, rise, MODELS, relabel };
   const boot = () => { if (!window.map || !map.on) return setTimeout(boot, 200);
     map.on('zoomend', watchZoom); rotateButtons(); picker(); };
   boot();

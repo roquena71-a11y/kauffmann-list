@@ -106,6 +106,9 @@ const EXTRA = {
        attribution3d:'Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL) and <a href="https://www.wikidata.org">Wikidata</a> (CC0). Base map: <a href="https://openfreemap.org">OpenFreeMap</a> © OpenMapTiles.' }
 };
 for (const l in EXTRA) Object.assign(I18N[l], EXTRA[l]);
+Object.assign(I18N.es, {pitchTo3d:'Ver en ángulo (3D)', pitchTo2d:'Ver desde arriba (2D)', pitchFlatOnly:'La foto de 1945 se ve solo desde arriba', rotLeft:'Girar a la izquierda', rotNorth:'Mirar al norte', rotRight:'Girar a la derecha'});
+Object.assign(I18N.de, {pitchTo3d:'Schräg ansehen (3D)', pitchTo2d:'Von oben ansehen (2D)', pitchFlatOnly:'Das Luftbild von 1945 gibt es nur von oben', rotLeft:'Nach links drehen', rotNorth:'Nach Norden ausrichten', rotRight:'Nach rechts drehen'});
+Object.assign(I18N.en, {pitchTo3d:'View at an angle (3D)', pitchTo2d:'View from above (2D)', pitchFlatOnly:'The 1945 photo can only be viewed from above', rotLeft:'Rotate left', rotNorth:'Face north', rotRight:'Rotate right'});
 
 let lang = (new URLSearchParams(location.search).get('lang') || localStorage.getItem('lang') || (navigator.language||'es').slice(0,2));
 if (!I18N[lang]) lang = 'es';
@@ -122,6 +125,8 @@ function applyI18n(){
   document.querySelectorAll('[data-i18n-html]').forEach(el => el.innerHTML = T(el.dataset.i18nHtml));
   document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
   document.title = T('title');
+  if (typeof updatePitchBtn === 'function') updatePitchBtn();
+  if (window.KLCols && KLCols.relabel) KLCols.relabel();
 }
 
 /* ---------- search (same rules as the 2D map) ---------- */
@@ -294,6 +299,64 @@ function shouldIntro(){
   try { return localStorage.getItem('kauffmann.introSeen') !== '1'; } catch (e) { return false; }
 }
 const narrowScreen = matchMedia('(max-width: 760px)').matches;
+/* ---------- 3D angle button ----------
+   Fix: the compass (NavigationControl, visualizePitch) only resets to north AND flat (pitch 0),
+   and there was no control to tilt back. This button always reflects the real pitch (also after
+   touch / ctrl-drag gestures) and toggles between flat and the last used angle. */
+const PITCH_FLAT = 8;                       // below this the map counts as "seen from above"
+let lastAngle = null;                       // last angle the user had (restored by the button)
+const defaultAngle = () => narrowScreen ? 42 : 52;
+function flatOnly(){                        // 1945 photo / compare mode keeps the map flat on purpose
+  try { const st = window.KLImagery && KLImagery.status(); return !!(st && st.aerial && st.region === 'BHV' && (st.epoch === '1945' || st.epoch === 'swipe')); }
+  catch(e){ return false; }
+}
+function tiltBack(north){
+  if (!map) return;
+  const target = Math.min(Math.max(lastAngle || defaultAngle(), 30), 65);
+  const v = north ? {pitch:target, bearing:0} : {pitch:target};
+  if (reduceMotion) map.jumpTo(v); else map.easeTo({...v, duration:700, essential:true});
+}
+function updatePitchBtn(){
+  const btn = document.querySelector('.kl-pitch-btn'); if (!btn || !map) return;
+  const tilted = map.getPitch() >= PITCH_FLAT;
+  const locked = !tilted && flatOnly();
+  btn.textContent = tilted ? '2D' : '3D';
+  btn.setAttribute('aria-pressed', String(tilted));
+  btn.disabled = locked;
+  const label = locked ? T('pitchFlatOnly') : (tilted ? T('pitchTo2d') : T('pitchTo3d'));
+  btn.setAttribute('aria-label', label); btn.title = label;
+}
+class PitchControl {
+  onAdd(m){
+    this._c = document.createElement('div');
+    this._c.className = 'maplibregl-ctrl maplibregl-ctrl-group';
+    const btn = document.createElement('button');
+    btn.type = 'button'; btn.className = 'kl-pitch-btn';
+    btn.addEventListener('click', () => {
+      if (m.getPitch() >= PITCH_FLAT) {
+        lastAngle = m.getPitch();
+        if (reduceMotion) m.jumpTo({pitch:0}); else m.easeTo({pitch:0, duration:700, essential:true});
+      } else if (!flatOnly()) tiltBack();
+    });
+    this._c.append(btn);
+    const remember = () => { const p = m.getPitch(); if (p >= PITCH_FLAT + 10) lastAngle = p; };
+    m.on('pitch', updatePitchBtn); m.on('pitchend', () => { remember(); updatePitchBtn(); });
+    m.on('moveend', updatePitchBtn);
+    setTimeout(updatePitchBtn, 0);
+    return this._c;
+  }
+  onRemove(){ this._c.remove(); }
+}
+/* Compass: when the map is flat, a press turns it north AND tilts it back (instead of doing nothing). */
+function fixCompassTilt(){
+  const cb = map.getContainer().querySelector('.maplibregl-ctrl-compass'); if (!cb) return;
+  cb.addEventListener('click', e => {
+    if (map.getPitch() < PITCH_FLAT && !flatOnly()) {
+      e.stopImmediatePropagation(); e.preventDefault(); tiltBack(true);
+    }
+  }, true);
+}
+
 function initMap(){
   const intro = shouldIntro();
   base = intro ? 'night' : (localStorage.getItem('base') || 'night');
@@ -317,6 +380,8 @@ function initMap(){
   try { map = new maplibregl.Map(mapOpts); }
   catch (err) { console.warn('map', err); delete mapOpts.projection; map = new maplibregl.Map(mapOpts); }
   map.addControl(new maplibregl.NavigationControl({visualizePitch:true}), 'top-right');
+  map.addControl(new PitchControl(), 'top-right');
+  fixCompassTilt();
   map.addControl(new maplibregl.GeolocateControl({trackUserLocation:false}), 'top-right');
   map.on('error', e => console.warn('map error', e && e.error && e.error.message));
   map.once('style.load', ()=>{

@@ -121,3 +121,7 @@ body:not(.dark) #rotBtns button{background:rgba(255,255,255,.92);color:#7a5a17;b
 #modelPick button{border:1px solid rgba(240,212,138,.35);background:transparent;color:#f0d48a;border-radius:8px;padding:6px 10px;cursor:pointer;font:inherit}
 #modelPick button[aria-pressed="true"]{background:#f0d48a;color:#111}
 @media (max-width:760px){#rotBtns{top:auto;bottom:44px;transform:none;flex-direction:row}#rotBtns button{width:44px;height:44px}#modelPick{font-size:12px}}
+/* 3D / 2D angle button (top-right, under the compass) */
+.maplibregl-ctrl-group button.kl-pitch-btn{font:700 12px/29px system-ui,-apple-system,"Segoe UI",sans-serif;color:#1d1d1d;letter-spacing:.02em}
+.maplibregl-ctrl-group button.kl-pitch-btn:disabled{color:#767676;cursor:not-allowed}
+.maplibregl-ctrl-group button.kl-pitch-btn:focus-visible{outline:2px solid #0b57d0;outline-offset:1px}
