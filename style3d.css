@@ -129,3 +129,6 @@ body:not(.dark) #rotBtns button{background:rgba(255,255,255,.92);color:#7a5a17;b
 /* nombre al pasar / tocar una columna (prueba local) */
 #stoneTip{position:absolute;z-index:7;pointer-events:none;max-width:260px;padding:7px 11px;border-radius:10px;background:rgba(10,16,28,.92);border:1px solid rgba(240,212,138,.55);color:#f0d48a;font:650 14px/1.35 system-ui,sans-serif;letter-spacing:.01em;box-shadow:0 4px 14px rgba(0,0,0,.4);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 body:not(.dark) #stoneTip{background:rgba(255,255,255,.96);color:#5c4310;border-color:rgba(122,90,23,.4)}
+/* Focus ring on the dark theme: light blue (#9cc3ff ≈10:1 on #0e1726) with a navy halo so it also stands out on light map areas (WCAG 1.4.11 ≥3:1). */
+body.dark{--focus:#9cc3ff}
+body.dark a:focus-visible,body.dark button:focus-visible,body.dark input:focus-visible,body.dark select:focus-visible,body.dark summary:focus-visible{outline:3px solid var(--focus);outline-offset:2px;box-shadow:0 0 0 2px #07111f}

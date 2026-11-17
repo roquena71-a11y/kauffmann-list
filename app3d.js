@@ -6,10 +6,16 @@ const I18N = {
     results:(n,more)=>`${n}${more?'+':''} resultado${n===1?'':'s'}`, none:'Sin resultados. Pruebe otra grafía, solo el apellido, o quite el filtro de lugar.',
     similar:'(grafías parecidas)', back:'← Volver a los resultados', inscription:'Inscripción de la placa', address:'Dirección', place:'Lugar', district:'Barrio',
     born:'Nacimiento', died:'Muerte', laid:'Placa colocada', type:'Tipo', threshold:'Stolperschwelle (umbral conmemorativo)',
-    photo:'Foto de la placa: Wikimedia Commons — ver autor y licencia', bio:'Biografía y fuentes', research:'Buscar en archivos y memoriales',
-    researchNote:'Los enlaces directos solo aparecen cuando la ficha ya está vinculada en Wikidata. Los demás abren el buscador del archivo; copie el nombre para buscar.',
+    photo:'Foto de la placa: Wikimedia Commons — ver autor y licencia', bio:'Biografía y fuentes', research:'Buscar en las fuentes',
+    researchNote:'Enlaces externos; la Lista Kauffmann no copia sus datos.',
     gb:'Libro Conmemorativo del Archivo Federal Alemán (Gedenkbuch)', yv:'Yad Vashem — Base central de nombres de víctimas de la Shoá', ushmm:'USHMM — Base de sobrevivientes y víctimas', arolsen:'Arolsen Archives',
     gbSearch:'Buscar en el Gedenkbuch', yvSearch:'Buscar en Yad Vashem', ushmmSearch:'Buscar en USHMM', arolsenSearch:'Buscar en Arolsen Archives',
+    gbSearchPage:'Gedenkbuch (Bundesarchiv): abrir la página de búsqueda (el nombre no se rellena solo)',
+    arolsenSearchName:n=>`Buscar «${n}» en Arolsen Archives`,
+    yvSearchName:n=>`Buscar «${n}» en Yad Vashem (Base central de nombres de víctimas de la Shoá)`,
+    ushmmSearchName:n=>`Buscar «${n}» en USHMM (base de sobrevivientes y víctimas)`,
+    hhSearchName:n=>`Buscar «${n}» en Stolpersteine Hamburg`,
+    beSearchName:n=>`Buscar «${n}» en Stolpersteine Berlin`,
     share:'Copiar enlace a esta placa', copied:'Enlace copiado', copyName:'Copiar nombre', nameCopied:'Nombre copiado',
     directions:'Cómo llegar (Google Maps)', osmDir:'Cómo llegar (OpenStreetMap)', sources:'Fuentes de esta ficha', derived:'(lugar deducido de placas cercanas)',
     about:'Acerca de los datos', close:'Cerrar', noinsc:'No hay transcripción de la inscripción en las fuentes.',
@@ -26,10 +32,16 @@ const I18N = {
     results:(n,more)=>`${n}${more?'+':''} Treffer`, none:'Keine Treffer. Versuchen Sie eine andere Schreibweise, nur den Nachnamen oder entfernen Sie den Ortsfilter.',
     similar:'(ähnliche Schreibweisen)', back:'← Zurück zu den Treffern', inscription:'Inschrift', address:'Adresse', place:'Ort', district:'Stadtteil',
     born:'Geboren', died:'Gestorben', laid:'Verlegt', type:'Art', threshold:'Stolperschwelle',
-    photo:'Foto des Steins: Wikimedia Commons — Urheber und Lizenz ansehen', bio:'Biografie und Quellen', research:'In Archiven und Gedenkstätten suchen',
-    researchNote:'Direkte Links erscheinen nur, wenn der Eintrag bereits in Wikidata verknüpft ist. Die übrigen öffnen die Suche des Archivs; kopieren Sie den Namen.',
+    photo:'Foto des Steins: Wikimedia Commons — Urheber und Lizenz ansehen', bio:'Biografie und Quellen', research:'In den Quellen suchen',
+    researchNote:'Externe Links; die Kauffmann-Liste kopiert deren Daten nicht.',
     gb:'Gedenkbuch des Bundesarchivs', yv:'Yad Vashem — Zentrale Datenbank der Namen der Holocaustopfer', ushmm:'USHMM — Holocaust Survivors and Victims Database', arolsen:'Arolsen Archives',
     gbSearch:'Im Gedenkbuch suchen', yvSearch:'Bei Yad Vashem suchen', ushmmSearch:'Beim USHMM suchen', arolsenSearch:'In den Arolsen Archives suchen',
+    gbSearchPage:'Gedenkbuch (Bundesarchiv): Suchseite öffnen (der Name wird nicht vorausgefüllt)',
+    arolsenSearchName:n=>`„${n}“ in den Arolsen Archives suchen`,
+    yvSearchName:n=>`„${n}“ bei Yad Vashem suchen (Zentrale Datenbank der Namen der Holocaustopfer)`,
+    ushmmSearchName:n=>`„${n}“ beim USHMM suchen (Holocaust Survivors and Victims Database)`,
+    hhSearchName:n=>`„${n}“ bei Stolpersteine Hamburg suchen`,
+    beSearchName:n=>`„${n}“ bei Stolpersteine Berlin suchen`,
     share:'Link zu diesem Stein kopieren', copied:'Link kopiert', copyName:'Namen kopieren', nameCopied:'Name kopiert',
     directions:'Route (Google Maps)', osmDir:'Route (OpenStreetMap)', sources:'Quellen dieses Eintrags', derived:'(Ort aus benachbarten Steinen abgeleitet)',
     about:'Über die Daten', close:'Schließen', noinsc:'Für diesen Stein ist in den Quellen keine Inschrift erfasst.',
@@ -46,10 +58,16 @@ const I18N = {
     results:(n,more)=>`${n}${more?'+':''} result${n===1?'':'s'}`, none:'No results. Try another spelling, the surname only, or clear the place filter.',
     similar:'(similar spellings)', back:'← Back to results', inscription:'Inscription', address:'Address', place:'Place', district:'District',
     born:'Born', died:'Died', laid:'Stone laid', type:'Type', threshold:'Stolperschwelle (memorial threshold)',
-    photo:'Photo of the stone: Wikimedia Commons — see author and licence', bio:'Biography and sources', research:'Search archives and memorials',
-    researchNote:'Direct links appear only where the record is already linked in Wikidata. The others open the archive’s search; copy the name to search.',
+    photo:'Photo of the stone: Wikimedia Commons — see author and licence', bio:'Biography and sources', research:'Search the sources',
+    researchNote:'External links; the Kauffmann List does not copy their data.',
     gb:'German Federal Archives Memorial Book (Gedenkbuch)', yv:'Yad Vashem — Central Database of Shoah Victims’ Names', ushmm:'USHMM — Holocaust Survivors and Victims Database', arolsen:'Arolsen Archives',
     gbSearch:'Search the Gedenkbuch', yvSearch:'Search Yad Vashem', ushmmSearch:'Search USHMM', arolsenSearch:'Search Arolsen Archives',
+    gbSearchPage:'Gedenkbuch (Bundesarchiv): open the search page (the name is not pre-filled)',
+    arolsenSearchName:n=>`Search “${n}” in the Arolsen Archives`,
+    yvSearchName:n=>`Search “${n}” in Yad Vashem (Central Database of Shoah Victims’ Names)`,
+    ushmmSearchName:n=>`Search “${n}” in the USHMM Holocaust Survivors and Victims Database`,
+    hhSearchName:n=>`Search “${n}” on Stolpersteine Hamburg`,
+    beSearchName:n=>`Search “${n}” on Stolpersteine Berlin`,
     share:'Copy link to this stone', copied:'Link copied', copyName:'Copy name', nameCopied:'Name copied',
     directions:'Directions (Google Maps)', osmDir:'Directions (OpenStreetMap)', sources:'Sources for this record', derived:'(place inferred from nearby stones)',
     about:'About the data', close:'Close', noinsc:'No transcription of the inscription in the sources.',
@@ -109,6 +127,31 @@ for (const l in EXTRA) Object.assign(I18N[l], EXTRA[l]);
 Object.assign(I18N.es, {pitchTo3d:'Ver en ángulo (3D)', pitchTo2d:'Ver desde arriba (2D)', pitchFlatOnly:'La foto de 1945 se ve solo desde arriba', rotLeft:'Girar a la izquierda', rotNorth:'Mirar al norte', rotRight:'Girar a la derecha'});
 Object.assign(I18N.de, {pitchTo3d:'Schräg ansehen (3D)', pitchTo2d:'Von oben ansehen (2D)', pitchFlatOnly:'Das Luftbild von 1945 gibt es nur von oben', rotLeft:'Nach links drehen', rotNorth:'Nach Norden ausrichten', rotRight:'Nach rechts drehen'});
 Object.assign(I18N.en, {pitchTo3d:'View at an angle (3D)', pitchTo2d:'View from above (2D)', pitchFlatOnly:'The 1945 photo can only be viewed from above', rotLeft:'Rotate left', rotNorth:'Face north', rotRight:'Rotate right'});
+// Privacy note in «Acerca de»: honest in both states of the visit counter (counter.js, off by default).
+Object.assign(I18N.es, {privacyHtml:on=>on
+  ? '<p><strong>Privacidad.</strong> Sin cookies, sin publicidad y sin perfiles. Contamos las visitas con GoatCounter (servidores en Alemania y Finlandia): solo se envía la sección visitada, nunca el nombre buscado ni la ficha abierta. GoatCounter recibe la dirección IP y el navegador para contar, pero según su <a href="https://www.goatcounter.com/help/privacy">política de privacidad</a> no los guarda y solo guarda totales. Si su navegador pide «no rastrear», su visita no se cuenta.</p>'
+  : '<p><strong>Privacidad.</strong> Sin cookies, sin publicidad, sin rastreadores y sin contador de visitas.</p>'});
+Object.assign(I18N.de, {privacyHtml:on=>on
+  ? '<p><strong>Datenschutz.</strong> Keine Cookies, keine Werbung, keine Profile. Besuche zählen wir mit GoatCounter (Server in Deutschland und Finnland): Übermittelt wird nur der besuchte Bereich, nie der gesuchte Name oder die geöffnete Karte. GoatCounter erhält zum Zählen IP-Adresse und Browser, speichert sie laut seiner <a href="https://www.goatcounter.com/help/privacy">Datenschutzerklärung</a> aber nicht, sondern nur Summen. Wenn Ihr Browser „Do Not Track“ sendet, wird Ihr Besuch nicht gezählt.</p>'
+  : '<p><strong>Datenschutz.</strong> Keine Cookies, keine Werbung, keine Tracker und kein Besucherzähler.</p>'});
+Object.assign(I18N.en, {privacyHtml:on=>on
+  ? '<p><strong>Privacy.</strong> No cookies, no ads, no profiles. We count visits with GoatCounter (servers in Germany and Finland): only the section visited is sent, never the name searched or the record opened. GoatCounter receives the IP address and browser in order to count, but according to its <a href="https://www.goatcounter.com/help/privacy">privacy policy</a> it does not store them and keeps only totals. If your browser sends “Do Not Track”, your visit is not counted.</p>'
+  : '<p><strong>Privacy.</strong> No cookies, no ads, no trackers and no visit counter.</p>'});
+// Source links (audits A/B/C, 17-11-2026): accurate wording, neutral scope note, no claim about OSM/Wikidata.
+Object.assign(I18N.es, {
+  researchNote:'Enlaces a archivos e iniciativas externos. La Lista Kauffmann no copia sus datos: solo enlaza. Al abrir un enlace de búsqueda, el nombre se envía a ese sitio.',
+  scopeNote:'Yad Vashem y el Gedenkbuch registran a las víctimas judías de la persecución nazi; las personas perseguidas por otros motivos pueden no figurar allí.',
+  berlinBio:'Biografía de la iniciativa Stolpersteine in Berlin', hamburgBio:'Biografía de la iniciativa Stolpersteine Hamburg', bremenBio:'Biografía de la iniciativa Stolpersteine Bremen'});
+Object.assign(I18N.de, {
+  researchNote:'Links zu externen Archiven und Initiativen. Die Kauffmann-Liste kopiert deren Daten nicht, sie verlinkt nur. Beim Öffnen eines Such-Links wird der Name an diese Website übermittelt.',
+  scopeNote:'Yad Vashem und das Gedenkbuch verzeichnen die jüdischen Opfer der NS-Verfolgung; aus anderen Gründen verfolgte Menschen sind dort möglicherweise nicht erfasst.',
+  yv:'Yad Vashem — Central Database of Shoah Victims’ Names',
+  yvSearchName:n=>`„${n}“ bei Yad Vashem suchen (Central Database of Shoah Victims’ Names)`,
+  berlinBio:'Biografie bei Stolpersteine in Berlin', hamburgBio:'Biografie bei Stolpersteine Hamburg', bremenBio:'Biografie bei Stolpersteine Bremen'});
+Object.assign(I18N.en, {
+  researchNote:'Links to external archives and initiatives. The Kauffmann List does not copy their data; it only links to them. When you open a search link, the name is sent to that site.',
+  scopeNote:'Yad Vashem and the Gedenkbuch record the Jewish victims of Nazi persecution; people persecuted for other reasons may not be listed there.',
+  berlinBio:'Biography by the Stolpersteine in Berlin initiative', hamburgBio:'Biography by the Stolpersteine Hamburg initiative', bremenBio:'Biography by the Stolpersteine Bremen initiative'});
 
 let lang = (new URLSearchParams(location.search).get('lang') || localStorage.getItem('lang') || (navigator.language||'es').slice(0,2));
 if (!I18N[lang]) lang = 'es';
@@ -197,31 +240,8 @@ function clusterByDist(list, maxD){
   list.forEach((s,i)=> (m.get(find(i)) || m.set(find(i),[]).get(find(i))).push(s));
   return [...m.values()];
 }
-function yearOf(v){ const m = String(v||'').match(/(1[7-9]|20)\d{2}/); return m ? m[0] : ''; }
-function nameKey(s){
-  let n = (s.n||'').toLowerCase().replace(/ß/g,'ss').replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue');
-  n = n.replace(/\b(dr|prof|med)\.?\b/g,'').replace(/[.,]/g,' ').replace(/\s+/g,' ').trim();
-  return n;
-}
-function nameCore(s){ return nameKey(s).replace(/\s+(?:geb|geboren|nee|née)\b.*/,'').trim(); }
-function isGenericName(s){
-  if (typeof isAnonStone === 'function' && isAnonStone(s)) return true;
-  return /^(ein[e]?\s+)?(romm|rommni|sinto|sinteza|sintiza)(\s|$)/i.test(nameKey(s));
-}
-function yearsCompatible(a,b){
-  const ba=a._by!=null?a._by:yearOf(a.b), bb=b._by!=null?b._by:yearOf(b.b); if (ba && bb && ba!==bb) return false;
-  const da=a._dy!=null?a._dy:yearOf(a.d), db=b._dy!=null?b._dy:yearOf(b.d); if (da && db && da!==db) return false;
-  return true;
-}
-function samePerson(a,b){
-  if ((a._generic!=null?a._generic:isGenericName(a)) || (b._generic!=null?b._generic:isGenericName(b))) return false;
-  const ka=a._nk!=null?a._nk:nameKey(a), kb=b._nk!=null?b._nk:nameKey(b);
-  if (!ka || ka.length<3 || !kb) return false;
-  if (ka===kb) return yearsCompatible(a,b);
-  const ca=a._core!=null?a._core:nameCore(a), cb=b._core!=null?b._core:nameCore(b);
-  if (ca && ca.length>=5 && ca===cb) return yearsCompatible(a,b);
-  return false;
-}
+// Name/date comparison for the display-only merge lives in dedupe.js (KLDedupe), tested in tests/dedupe-test.mjs.
+const samePerson = (a,b) => KLDedupe.samePerson(a,b);
 function richness(s){
   let n=0;
   if (s.i) n+=3; if (s.img) n+=2; if (s.b) n+=2; if (s.d) n+=1;
@@ -260,13 +280,6 @@ function principalAngle(pts){
 }
 
 function buildStones(){
-  for (const s of DATA){
-    s._nk = nameKey(s);
-    s._core = nameCore(s);
-    s._generic = isGenericName(s);
-    s._by = yearOf(s.b);
-    s._dy = yearOf(s.d);
-  }
   const byAddr = new Map(), noAddr = [];
   for (const s of DATA){
     const k = addrKey(s);
@@ -301,7 +314,7 @@ function buildStones(){
   // Display-only merge: same person (same name at the same house, dates not in conflict).
   // stones.json is not changed; aliases stay in DATA/byId so a link to either id still opens the ficha.
   // Merge on the address group with a 25 m cap (OSM and Wikidata of the same house are often 15–20 m apart).
-  let mergeGroups=0, mergeExtra=0;
+  let mergeGroups=0, mergeExtra=0; const mergeDoubt=[];
   function mergePeople(list, maxD){
     if (list.length<2) return;
     const parent=list.map((_,i)=>i);
@@ -327,6 +340,10 @@ function buildStones(){
     list.forEach((s,i)=> (buckets.get(find(i))||buckets.set(find(i),[]).get(find(i))).push(s));
     for (const recs of buckets.values()){
       if (recs.length<2) continue;
+      // Chained matches (A~B, B~C) must also hold for every pair; otherwise, when in doubt, show them all.
+      let ok=true;
+      for (let i=0;i<recs.length && ok;i++) for (let j=i+1;j<recs.length;j++) if (!samePerson(recs[i],recs[j])){ ok=false; break; }
+      if (!ok){ mergeDoubt.push(recs.map(s=>s.id)); continue; }
       recs.sort((a,b)=> richness(b)-richness(a) || String(a.id).localeCompare(String(b.id)));
       const pri=recs[0];
       pri._also=recs.slice(1);
@@ -461,7 +478,7 @@ function buildStones(){
   POINTS_FC = {type:'FeatureCollection', features: VISIBLE.map(s=>({type:'Feature', properties:{}, geometry:{type:'Point', coordinates:[s.lo,s.la]}}))};
   LIGHTS_FC = {type:'FeatureCollection', features: groups.map(pg=>({type:'Feature', properties:{n:pg.g.length}, geometry:{type:'Point', coordinates:[pg.lo0, pg.la0]}}))};
   const ise69 = VISIBLE.filter(s => /Isestr/i.test(s.a||'') && /\b69\b/.test(s.a||'')).length;
-  var KLMerge = {groups:mergeGroups, extra:mergeExtra, visible:VISIBLE.length, source:DATA.length, isestr69:ise69};
+  var KLMerge = {groups:mergeGroups, extra:mergeExtra, doubtful:mergeDoubt, visible:VISIBLE.length, source:DATA.length, isestr69:ise69};
   if (typeof window!=='undefined') window.KLMerge = KLMerge;
 }
 
@@ -754,7 +771,7 @@ function commonsPage(f){ return 'https://commons.wikimedia.org/wiki/File:'+encod
 function wpUrl(v){ const m=/^([a-z\-]+):(.+)$/.exec(v); return m?`https://${m[1]}.wikipedia.org/wiki/${encodeURIComponent(m[2].replace(/ /g,'_'))}`:''; }
 function osmUrl(s){ return /^[nw]\d+$/.test(s.id)?`https://www.openstreetmap.org/${s.id[0]==='n'?'node':'way'}/${s.id.slice(1)}`:''; }
 
-const ANON_NAME = /\b(sinto|sinti|sintiza|romni|rommni|roma|rom|unbekannt|anonym|namenlos)\b|^\s*n\.?\s*n\.?\s*$/i;
+const ANON_NAME = /\b(sinto|sinti|sintiza|romni|rommni|roma|rom|unbekannt\w*|anonym\w*|namenlos\w*)\b|^\s*n\.?\s*n\.?\s*$/i;
 function isAnonStone(s){ const n=(s.n||'').trim(); return !n || n.length<3 || ANON_NAME.test(n); }
 function citySlug(city){
   let s = (city||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^\x00-\x7F]/g,'');
@@ -777,27 +794,38 @@ async function recordFor(s){
   const pack = await loadCityPack(slug);
   return pack[s.id] || null;
 }
-function archiveItems(s, rec){
-  const L2 = lang==='de' ? 'de' : 'en';
-  const links = (rec && rec.links) || {};
+function extLink(href, label){
+  return `<li><a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a></li>`;
+}
+function sourceSearchLabel(it){
+  const fn = I18N[lang] && I18N[lang][it.key];
+  if (typeof fn === 'function') return fn(it.q || '');
+  return T(it.key);
+}
+function sourceSearchItems(s, rec, opts){
   const items = [];
-  const add = (href, label) => items.push(`<li><a href="${esc(href)}" target="_blank" rel="noopener">${esc(label)}</a></li>`);
-  if (links.berlin) add(links.berlin, T('berlinBio'));
-  if (links.hamburg) add(links.hamburg, T('hamburgBio'));
-  if (links.bremen) add(links.bremen, T('bremenBio'));
-  (links.describedAt||[]).forEach(u => { let h=u; try{h=new URL(u).hostname.replace(/^www\./,'')}catch(e){} add(u, T('describedAt')+' · '+h); });
-  const gb = links.gedenkbuch || s.gb || [];
-  const yv = links.yadvashem || s.yv || [];
-  const us = links.ushmm || s.us || [];
-  gb.forEach(g => add('https://www.bundesarchiv.de/gedenkbuch/'+L2+g, T('gb')));
-  yv.forEach(y => add('https://collections.yadvashem.org/'+L2+'/names/'+y, T('yv')));
-  us.forEach(u => add('https://www.ushmm.org/online/hsv/person_view.php?PersonId='+u, T('ushmm')));
-  if (!gb.length) add('https://www.bundesarchiv.de/gedenkbuch/'+L2, T('gbSearch'));
-  if (!yv.length) add('https://collections.yadvashem.org/'+L2+'/names/search-results-names', T('yvSearch'));
-  if (!us.length) add('https://www.ushmm.org/remember/resources-holocaust-survivors-victims/database-of-holocaust-survivor-and-victim-names/search-names', T('ushmmSearch'));
-  add('https://collections.arolsen-archives.org/'+L2+'/search', T('arolsenSearch'));
+  const add = (href, label) => { if (href && label) items.push(extLink(href, label)); };
+  const list = (typeof KLSourceLinks !== 'undefined' && KLSourceLinks.sourceSearchList)
+    ? KLSourceLinks.sourceSearchList(s, rec, lang, Object.assign({anon: isAnonStone(s)}, opts||{}))
+    : [];
+  const seen = new Set();
+  list.forEach(it => { if (!seen.has(it.href)){ seen.add(it.href); add(it.href, sourceSearchLabel(it)); } });
+  const links = (rec && rec.links) || {};
+  const safe = (typeof KLSourceLinks !== 'undefined' && KLSourceLinks.safeUrl) ? KLSourceLinks.safeUrl : (u => /^https?:\/\//i.test(String(u||'')) ? String(u) : '');
+  (links.describedAt||[]).forEach(u0 => { const u=safe(u0); if (!u || seen.has(u)) return; seen.add(u); let h=u; try{h=new URL(u).hostname.replace(/^www\./,'')}catch(e){} add(u, T('describedAt')+' · '+h); });
+  // OpenStreetMap and Wikidata are NOT repeated here: they are in «Fuentes de esta ficha» (their data is used, under ODbL/CC0).
+  sourceSearchItems.lastKeys = list.map(it => it.key);
   return items;
 }
+function renderSourceSearch(s, rec, opts){
+  const box = document.getElementById('sourceSearch');
+  if (!box) return;
+  const items = sourceSearchItems(s, rec, opts);
+  const keys = sourceSearchItems.lastKeys || [];
+  const scope = keys.some(k => /^(yv|gb)/.test(k)) ? ` ${T('scopeNote')}` : '';
+  box.innerHTML = (items.length ? `<ul class="links">${items.join('')}</ul>` : '') + `<p class="note">${T('researchNote')}${scope}</p>`;
+}
+function archiveItems(s, rec){ return sourceSearchItems(s, rec); }
 function paintStory(s, rec){
   const slot = $('#storySlot'); if (!slot || selected !== s.id) return;
   const dates = $('#inscDates');
@@ -818,15 +846,14 @@ function paintStory(s, rec){
     const w = rec.wp;
     parts.push(`<div class="section-t">${T('story')}</div>`);
     parts.push(`<div class="story">${esc(w.text)}</div>`);
-    parts.push(`<p class="cite">${esc(T('wpCite'))} <a href="${esc(w.permalink)}" target="_blank" rel="noopener">${esc(w.title)}</a>, ${esc(T('wpRev'))} ${esc(w.revid)}. <a href="${esc(w.authors)}" target="_blank" rel="noopener">${esc(T('wpAuthors'))}</a>. <a href="${esc(w.licenseUrl)}" target="_blank" rel="noopener">${esc(w.license)}</a>.</p>`);
+    parts.push(`<p class="cite">${esc(T('wpCite'))} <a href="${esc(w.permalink)}" target="_blank" rel="noopener noreferrer">${esc(w.title)}</a>, ${esc(T('wpRev'))} ${esc(w.revid)}. <a href="${esc(w.authors)}" target="_blank" rel="noopener noreferrer">${esc(T('wpAuthors'))}</a>. <a href="${esc(w.licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(w.license)}</a>.</p>`);
   } else if (anon) {
     parts.push(`<p class="help">${esc(T('anonNote'))}</p>`);
   } else if (!official) {
     parts.push(`<p class="help">${esc(T('noStory'))} <a href="#contribuir" id="contrib">${esc(T('helpUs'))}</a></p>`);
   }
-  const items = archiveItems(s, rec);
-  if (items.length) parts.push(`<div class="section-t">${T('archives')}</div><ul class="links">${items.join('')}</ul><p class="note">${T('researchNote')}</p>`);
   slot.innerHTML = parts.join('');
+  renderSourceSearch(s, rec);
   const c = $('#contrib');
   if (c) c.onclick = e => { e.preventDefault(); $('#contribNote').textContent = T('contribNote'); $('#contribDlg').showModal(); };
 }
@@ -853,18 +880,21 @@ function openStone(id, fromMap){
     map.flyTo({center:[s._dlo,s._dla], zoom:targetZoom, pitch:58, offset:[0, 60], bearing: map.getBearing() || -20, duration: reduceMotion ? 0 : 3200, essential:true, curve:1.5});
   map.once('moveend', refreshSel);
   history.replaceState(null,'','#s='+encodeURIComponent(id));
-  const insc = s.i ? esc(s.i).split(/\s*\|\s*/).join('<br>') : '';
+  // Merged records (same person, e.g. a second stone or a second Wikidata item): show every distinct inscription.
+  const inscSeen = new Set(), inscList = [];
+  for (const r of [s, ...(s._also||[])]){ if (!r.i) continue; const k = KLDedupe.fold(r.i).replace(/[^a-z0-9]+/g,''); if (!inscSeen.has(k)){ inscSeen.add(k); inscList.push(r.i); } }
+  const insc = inscList.map(t => esc(t).split(/\s*\|\s*/).join('<br>')).join('</div><div class="brassplate">');
   const facts=[[T('address'),s.a],[T('place'),cityOf(s)+(s.cd&&!s.c?' '+T('derived'):'')],[T('district'),s.sub],[T('born'),s.b],[T('died'),s.d],[T('laid'),s.laid],[T('type'),s.kind==='stolperschwelle'?T('threshold'):'']]
     .filter(x=>x[1]).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
-  const bio=[]; (s.w||[]).forEach(u=>{ let h=u; try{h=new URL(u).hostname.replace(/^www\./,'')}catch(e){} bio.push(`<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(h)}</a></li>`); });
-  if (s.wp) bio.push(`<li><a href="${esc(wpUrl(s.wp))}" target="_blank" rel="noopener">Wikipedia: ${esc(s.wp.replace(/^[a-z]+:/,''))}</a></li>`);
+  const bio=[]; (s.w||[]).filter(u=>/^https?:\/\//i.test(String(u||''))).forEach(u=>{ let h=u; try{h=new URL(u).hostname.replace(/^www\./,'')}catch(e){} bio.push(`<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(h)}</a></li>`); });
+  if (s.wp) bio.push(`<li><a href="${esc(wpUrl(s.wp))}" target="_blank" rel="noopener noreferrer">Wikipedia: ${esc(s.wp.replace(/^[a-z]+:/,''))}</a></li>`);
   if (s.desc) bio.unshift(`<li>${esc(s.desc)}</li>`);
   const recs = [s, ...(s._also||[])];
   const src=[]; const seenSrc=new Set();
-  for (const r of recs){ const u=osmUrl(r); if (u && !seenSrc.has(u)){ seenSrc.add(u); src.push(`<li><a href="${u}" target="_blank" rel="noopener">OpenStreetMap</a></li>`); } }
-  for (const r of recs){ if (r.wd && !seenSrc.has('wd:'+r.wd)){ seenSrc.add('wd:'+r.wd); src.push(`<li><a href="https://www.wikidata.org/wiki/${esc(r.wd)}" target="_blank" rel="noopener">Wikidata ${esc(r.wd)}</a></li>`); } }
-  for (const r of recs){ if (r.p && !seenSrc.has('p:'+r.p)){ seenSrc.add('p:'+r.p); src.push(`<li><a href="https://www.wikidata.org/wiki/${esc(r.p)}" target="_blank" rel="noopener">Wikidata (persona/Person) ${esc(r.p)}</a></li>`); } }
-  const photo = s.img ? `<figure class="photo"><a href="${commonsPage(s.img)}" target="_blank" rel="noopener"><img loading="lazy" src="${commonsThumb(s.img,480)}" alt="${esc(s.n||'')}"></a><figcaption><a href="${commonsPage(s.img)}" target="_blank" rel="noopener">${T('photo')}</a></figcaption></figure>` : '';
+  for (const r of recs){ const u=osmUrl(r); if (u && !seenSrc.has(u)){ seenSrc.add(u); src.push(`<li><a href="${u}" target="_blank" rel="noopener noreferrer">OpenStreetMap</a></li>`); } }
+  for (const r of recs){ if (r.wd && !seenSrc.has('wd:'+r.wd)){ seenSrc.add('wd:'+r.wd); src.push(`<li><a href="https://www.wikidata.org/wiki/${esc(r.wd)}" target="_blank" rel="noopener noreferrer">Wikidata ${esc(r.wd)}</a></li>`); } }
+  for (const r of recs){ if (r.p && !seenSrc.has('p:'+r.p)){ seenSrc.add('p:'+r.p); src.push(`<li><a href="https://www.wikidata.org/wiki/${esc(r.p)}" target="_blank" rel="noopener noreferrer">Wikidata (persona/Person) ${esc(r.p)}</a></li>`); } }
+  const photo = s.img ? `<figure class="photo"><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${commonsThumb(s.img,480)}" alt="${esc(s.n||'')}"></a><figcaption><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer">${T('photo')}</a></figcaption></figure>` : '';
   const d = $('#detail');
   d.innerHTML = `<button class="back" id="back">${T('back')}</button>
     <h2>${esc(s._n||s.n||'—')}</h2><p class="place">${esc([s.a, s.a&&s.a.includes(cityOf(s))?'':cityOf(s)].filter(Boolean).join(', '))}</p>
@@ -875,16 +905,19 @@ function openStone(id, fromMap){
     <dl class="facts">${facts}</dl>
     <div class="actions">
       <button id="share">${T('share')}</button>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=${s.la},${s.lo}" target="_blank" rel="noopener">${T('directions')}</a>
-      <a href="https://www.openstreetmap.org/directions?to=${s.la}%2C${s.lo}#map=19/${s.la}/${s.lo}" target="_blank" rel="noopener">${T('osmDir')}</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=${s.la},${s.lo}" target="_blank" rel="noopener noreferrer">${T('directions')}</a>
+      <a href="https://www.openstreetmap.org/directions?to=${s.la}%2C${s.lo}#map=19/${s.la}/${s.lo}" target="_blank" rel="noopener noreferrer">${T('osmDir')}</a>
     </div>
     <div id="storySlot"><p class="story-wait">…</p></div>
     ${bio.length?`<div class="section-t">${T('bio')}</div><ul class="links">${bio.join('')}</ul>`:''}
+    <div class="section-t">${T('research')}</div>
+    <div id="sourceSearch"></div>
     <div class="section-t">${T('sources')}</div><ul class="links">${src.join('')}</ul>
     <p class="note">${T('attribution')}</p>`;
   $('#results').hidden = true; d.hidden = false; d.scrollTop = 0;
   $('#back').onclick = ()=>closeDetail(true);
   $('#share').onclick = e=>{ navigator.clipboard?.writeText(location.href); e.target.textContent=T('copied'); };
+  renderSourceSearch(s, null);
   loadStory(s);
 }
 function closeDetail(restore){
@@ -962,7 +995,7 @@ $('#q').addEventListener('input',debounced); $('#city').addEventListener('input'
 $('#results').addEventListener('click',e=>{const b=e.target.closest('button[data-id]'); if(b) openStone(b.dataset.id);});
 document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>{lang=b.dataset.lang; localStorage.setItem('lang',lang); applyI18n(); if (window.KLImagery) KLImagery.refresh(); if(selected) openStone(selected,true); else search();});
 document.querySelectorAll('.basemaps button[data-base]').forEach(b=>b.onclick=()=>setBase(b.dataset.base));
-$('#aboutLink').onclick=e=>{e.preventDefault(); $('#aboutBody').innerHTML=T('aboutHtml')({...META,count:fmtNum(META.count||DATA.length)}); $('#about').showModal();};
+$('#aboutLink').onclick=e=>{e.preventDefault(); $('#aboutBody').innerHTML=T('aboutHtml')({...META,count:fmtNum(META.count||DATA.length)})+T('privacyHtml')(typeof KLCounter!=='undefined' && KLCounter.isOn()); $('#about').showModal();};
 window.addEventListener('hashchange', route);
 function stoneProps(s){
   return {id:s.id, name:s.n||'', inscription:s.i||'', address:s.a||'', city:s.c||'', city_derived:s.cd||'',

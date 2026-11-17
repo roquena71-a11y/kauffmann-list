@@ -124,14 +124,14 @@
                    [T('died'), [p.death_date, p.death_place].filter(Boolean).join(' · ')],
                    [T('fate'), fate]]
       .filter(x => x[1]).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
-    const recs = (p.links||[]).filter(l => LINK_LABEL[l.type] && !(skip && skip.has(l.url)))
-      .map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(T(LINK_LABEL[l.type]))}</a></li>`).join('');
+    const recs = (p.links||[]).filter(l => LINK_LABEL[l.type] && /^https?:\/\//i.test(String(l.url||'')) && !(skip && skip.has(l.url)))
+      .map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(T(LINK_LABEL[l.type]))}</a></li>`).join('');
     return {facts, recs};
   }
   function fixLink(kind, id, name){
     const title = `${kind === 'stone' ? 'Placa' : 'Persona'} ${id}: corrección / retirada`;
     const body = `Ficha: ${location.origin}${location.pathname}#${kind === 'stone' ? 's' : 'p'}=${encodeURIComponent(id)}\nNombre: ${name||''}\n\nQué dato es erróneo o por qué pide la retirada:\n\nFuente que lo demuestra:\n`;
-    return `<p class="note"><a href="${REPO_ISSUES}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}" target="_blank" rel="noopener">${esc(T('fix'))}</a> — ${esc(T('fixNote'))}</p>`;
+    return `<p class="note"><a href="${REPO_ISSUES}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}" target="_blank" rel="noopener noreferrer">${esc(T('fix'))}</a> — ${esc(T('fixNote'))}</p>`;
   }
 
   async function openPerson(pid, pt){
@@ -157,13 +157,22 @@
       <dl class="facts">${facts}</dl>
       <div class="actions"><button id="share">${T('shareP')}</button></div>
       ${recs ? `<div class="section-t">${T('records')}</div><ul class="links">${recs}</ul>` : ''}
+      <div class="section-t">${T('research')}</div>
+      <div id="sourceSearch"></div>
       <div class="section-t">${T('sources')}</div>
-      <ul class="links">${qid ? `<li><a href="https://www.wikidata.org/wiki/${esc(qid)}" target="_blank" rel="noopener">Wikidata ${esc(qid)}</a> (CC0)</li>` : ''}</ul>
+      <ul class="links">${qid ? `<li><a href="https://www.wikidata.org/wiki/${esc(qid)}" target="_blank" rel="noopener noreferrer">Wikidata ${esc(qid)}</a> (CC0)</li>` : ''}</ul>
       ${fixLink('person', pid, p.name)}`;
     $('#results').hidden = true; d.hidden = false; d.scrollTop = 0;
     $('#back').onclick = () => closeDetail(true);
     $('#share').onclick = e => { navigator.clipboard?.writeText(location.href); e.target.textContent = T('copied'); };
     d.querySelectorAll('a[data-stone]').forEach(a => a.onclick = ev => { ev.preventDefault(); openStone(a.dataset.stone, false); });
+    if (typeof renderSourceSearch === 'function'){
+      const places = (p.places||[]).map(x => x.name || x.place || x.label || '').join(' ');
+      const sLike = {n:p.name, b:p.birth_date, c:[p.birth_place, p.death_place, places].filter(Boolean).join(' '), a:''};
+      // Direct records already listed under «Registros»: do not also offer the generic search for that archive.
+      const types = new Set((p.links||[]).map(l => l.type));
+      renderSourceSearch(sLike, null, {has:{gb:types.has('gedenkbuch'), yv:types.has('yad_vashem'), ushmm:types.has('ushmm')}});
+    }
     return true;
   }
 
