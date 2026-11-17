@@ -74,7 +74,6 @@ async def one(p, name, vp, mobile):
     await pg.evaluate('closeDetail(true)')
     await pg.click('#aboutLink'); await pg.wait_for_timeout(500)
     run['privacy'] = await pg.evaluate('document.querySelector("#aboutBody").innerText.split("\\n").filter(l=>/Privacidad/.test(l))')
-    run['counter_requests'] = None
     await pg.keyboard.press('Escape')
     # 7) foco visible
     await pg.evaluate('openStone("n676133185", true)'); await pg.wait_for_timeout(800)
@@ -84,7 +83,7 @@ async def one(p, name, vp, mobile):
     await pg.wait_for_timeout(1500)
     run['console_errors'] = errors; run['pageerrors'] = pageerrors
     run['failed_requests'] = [u for u in failed if 'tiles.openfreemap' not in u][:20]
-    run['goatcounter_requests'] = [u for u in failed if 'goatcounter' in u]
+    run['counter_requests'] = [u for u in failed if 'workers.dev' in u]
     out['runs'].append(run)
     await b.close()
 

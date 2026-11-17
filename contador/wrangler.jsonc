@@ -1,0 +1,20 @@
+// Lista Kauffmann — contador propio (Cloudflare Worker + D1). NO desplegado.
+// Antes de desplegar: poner el database_id que da `wrangler d1 create kl-contador` (no es secreto).
+{
+  "name": "kl-contador",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  // Sin registros: Cloudflare activa los logs por defecto en Workers nuevos; aquí se apagan
+  // para que no quede ninguna petición (ni IP ni navegador) guardada en la cuenta.
+  "observability": { "enabled": false, "logs": { "enabled": false, "invocation_logs": false } },
+  "vars": {
+    "ALLOWED_ORIGIN": "https://roquena71-a11y.github.io",
+    "MAX_PER_DAY": "20000",
+    "STATS_PUBLIC": "true"
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "kl-contador", "database_id": "da575e77-e675-4ba7-8c6c-62b08f4bfb30" }
+  ]
+}

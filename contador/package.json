@@ -1,0 +1,10 @@
+{
+  "name": "kl-contador",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "dev": "wrangler dev --local"
+  },
+  "devDependencies": { "wrangler": "4.164.0" }
+}

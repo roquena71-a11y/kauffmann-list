@@ -1,6 +1,6 @@
 # Lista Kauffmann · Kauffmann-Liste · Kauffmann List — Datos y licencias
 
-Sitio estático (sin cookies, sin analítica, sin rastreadores). Hay un contador de visitas preparado pero desactivado (`counter.js`, véase `docs/contador.md`). Nada se inventa: cada dato procede de las fuentes abiertas siguientes.
+Sitio estático (sin cookies, sin analítica de terceros, sin rastreadores). Tiene un contador de visitas propio que solo guarda el número de visitas por día y sección, sin IP ni datos personales (`counter.js` y el código del servidor en `contador/`, véase `docs/contador.md`). Nada se inventa: cada dato procede de las fuentes abiertas siguientes.
 
 - **OpenStreetMap** — © OpenStreetMap contributors, ODbL 1.0 (https://opendatacommons.org/licenses/odbl/). La base combinada `data/stones.json` es por tanto ODbL.
 - **Wikidata** — CC0 1.0.
