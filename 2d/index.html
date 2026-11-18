@@ -18,15 +18,15 @@
   </div>
   <a href="../">Mapa 3D</a>
 </header>
-<div class="layout">
-  <aside>
+<main class="layout">
+  <section class="side" aria-label="Búsqueda">
     <input id="q" type="search" placeholder="Nombre, apellido o dirección…" autocomplete="off">
     <p id="status"></p>
     <ol id="results"></ol>
-  </aside>
+  </section>
   <div id="map"></div>
-</div>
-<p class="foot">Datos: © colaboradores de OpenStreetMap (ODbL) y Wikidata (CC0). Teselas © OpenStreetMap.</p>
+</main>
+<footer class="foot"><p>Datos: © colaboradores de OpenStreetMap (ODbL) y Wikidata (CC0). Teselas © OpenStreetMap.</p></footer>
 <script src="../vendor/leaflet/leaflet.js"></script>
 <script src="../vendor/leaflet.markercluster/leaflet.markercluster.js"></script>
 <script src="app.js"></script>

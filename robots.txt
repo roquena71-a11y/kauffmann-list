@@ -1,4 +1,83 @@
+# Lista Kauffmann – open data. Humans, search engines and AI agents are welcome.
+# Cada placa, cada nombre, cada historia. Nunca olvidar.
+# Start here for agents: https://roquena71-a11y.github.io/kauffmann-list/llms.txt (short) · https://roquena71-a11y.github.io/kauffmann-list/llms-full.txt (full guide)
+# Machine-readable API: https://roquena71-a11y.github.io/kauffmann-list/api/v1/index.json · OpenAPI 3.1: https://roquena71-a11y.github.io/kauffmann-list/api/v1/openapi.json
+# Data licences: ODbL 1.0 (api/v1/odbl) and CC0 1.0 (api/v1/cc0). Please cache and fetch only what you need.
+
 User-agent: *
+Allow: /
+
+# AI crawlers and agents: explicitly allowed (same rules as above)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
 Allow: /
 
 Sitemap: https://roquena71-a11y.github.io/kauffmann-list/sitemap.xml

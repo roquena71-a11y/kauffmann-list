@@ -34,11 +34,25 @@
         {"@type": "PropertyValue", "name": "official or archive link only, no biography text", "value": 24670},
         {"@type": "PropertyValue", "name": "no biography and no official or archive link", "value": 37112}
       ],
+      "url": "https://roquena71-a11y.github.io/kauffmann-list/",
       "distribution": [
-        {"@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "../exports/stolpersteine_germany.geojson"},
-        {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "../exports/stolpersteine_germany.csv"},
-        {"@type": "DataDownload", "encodingFormat": "application/vnd.google-earth.kmz", "contentUrl": "../exports/stolpersteine_germany.kmz"}
-      ]
+        {"@type": "DataDownload", "name": "Stolpersteine database (plaque transcriptions)", "encodingFormat": "application/json", "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/data/stones.json", "license": "https://opendatacommons.org/licenses/odbl/1-0/"},
+        {"@type": "DataDownload", "name": "Person records, ODbL family (static JSON API)", "encodingFormat": "application/json", "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json", "license": "https://opendatacommons.org/licenses/odbl/1-0/"},
+        {"@type": "DataDownload", "name": "Person records, CC0 family (Wikidata, static JSON API)", "encodingFormat": "application/json", "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json", "license": "https://creativecommons.org/publicdomain/zero/1.0/"}
+      ],
+      "subjectOf": {"@id": "#api"}
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "#api",
+      "name": "Lista Kauffmann – static JSON API",
+      "description": "Read-only static JSON files (GET): search by name, place and year; person records with sources and licence. Cite Lista Kauffmann + person link + original source. Never invent data.",
+      "documentation": ["https://roquena71-a11y.github.io/kauffmann-list/llms.txt", "https://roquena71-a11y.github.io/kauffmann-list/llms-full.txt"],
+      "url": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/",
+      "isAccessibleForFree": true,
+      "termsOfService": "https://roquena71-a11y.github.io/kauffmann-list/llms.txt",
+      "provider": {"@type": "Person", "name": "Carlos Kauffmann"},
+      "potentialAction": {"@type": "SearchAction", "target": "https://roquena71-a11y.github.io/kauffmann-list/?q={search_term_string}", "query-input": "required name=search_term_string"}
     },
     {
       "@type": "WebApplication",

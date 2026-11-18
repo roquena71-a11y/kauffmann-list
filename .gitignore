@@ -9,6 +9,7 @@ __pycache__/
 /api/
 /data/search/
 /llms.txt
+/llms-full.txt
 /.well-known/
 /_site/
 /reports/
@@ -19,3 +20,9 @@ __pycache__/
 /INFORME-wd.md
 /pendiente-sin-coordenadas.csv
 /NOTAS-v14.md
+
+# Trabajo interno de la puerta para IA (v15): no se publica
+/INFORME-ia.md
+/NOTAS-v15.md
+/work-ia/
+/host-root-propuesta/

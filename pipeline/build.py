@@ -10,6 +10,7 @@ from .adapters import ADAPTERS
 from .config import load_families, load_sources, load_suppressed
 from .http import HttpError, OfflineCacheMiss
 from .jsonschema_lite import Validator
+from .find import write_find
 from .merge import merge_family, possible_duplicates
 from .policy import apply_person_policy, license_gate, quality_flags, suppress
 from .util import (PIPELINE_DIR, REPO_ROOT, clean_str, date_year, fold, load_json, person_shard, slugify,
@@ -291,6 +292,14 @@ def write_family(w, fam_id, fam, persons, sources_used, generated, quality, shar
             "stats": base + "stats.json",
         },
     }
+    findex["find"] = write_find(w, fam_id, fam, persons, where, dmeta, generated)
+    findex["endpoints"].update({
+        "find_index": base + "find/index.json",
+        "find_name": base + "find/name/{prefix}.json",
+        "find_city_index": base + "find/city/index.json",
+        "find_city": base + "find/city/{country}/{slug}.json",
+        "find_year": base + "find/year/{birth|death}/{year}.json",
+    })
     w.json(base + "index.json", findex)
     return findex, stats
 

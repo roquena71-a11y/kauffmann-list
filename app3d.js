@@ -82,7 +82,7 @@ const I18N = {
 const EXTRA = {
   es:{ remember:'Recordar a todos', baseNight:'Noche', baseDay:'Día', baseHoy:'Hoy', baseSat:'2016', sourcesBtn:'Fuentes', pause:'Pausar', resume:'Continuar', exit:'Salir',
        replay:'Introducción', project:'Sobre el proyecto', dlGeo:'Descargar GeoJSON', dlKml:'Descargar KML',
-       classic:'Mapa clásico 2D', searchPh:'Nombre, apellido o dirección (calle y ciudad)…',
+       classic:'Mapa clásico 2D', dataapi:'Datos abiertos y API', searchPh:'Nombre, apellido o dirección (calle y ciudad)…',
        vigilCount:n=>`${n} nombres`, vigilText:'Cada columna dorada recuerda a una persona, frente a la casa donde vivió. En silencio, recordamos sus nombres.',
        vigilPlace:(p,n)=>`${p} · ${n} placas`,
        nogl:'Este dispositivo no puede mostrar el mapa 3D. <a href="2d/">Abrir el mapa clásico 2D</a>.',
@@ -96,7 +96,7 @@ const EXTRA = {
        attribution3d:'Datos: © <a href="https://www.openstreetmap.org/copyright">colaboradores de OpenStreetMap</a> (ODbL) y <a href="https://www.wikidata.org">Wikidata</a> (CC0). Mapa base: <a href="https://openfreemap.org">OpenFreeMap</a> © OpenMapTiles.' },
   de:{ remember:'Aller gedenken', baseNight:'Nacht', baseDay:'Tag', baseHoy:'Heute', baseSat:'2016', sourcesBtn:'Quellen', pause:'Anhalten', resume:'Fortsetzen', exit:'Beenden',
        replay:'Einführung', project:'Über das Projekt', dlGeo:'GeoJSON herunterladen', dlKml:'KML herunterladen',
-       classic:'Klassische 2D-Karte', searchPh:'Vorname, Nachname oder Adresse (Straße und Ort)…',
+       classic:'Klassische 2D-Karte', dataapi:'Offene Daten und API', searchPh:'Vorname, Nachname oder Adresse (Straße und Ort)…',
        vigilCount:n=>`${n} Namen`, vigilText:'Jede goldene Säule erinnert an einen Menschen, vor dem Haus, in dem er lebte. In Stille gedenken wir ihrer Namen.',
        vigilPlace:(p,n)=>`${p} · ${n} Steine`,
        nogl:'Dieses Gerät kann die 3D-Karte nicht anzeigen. <a href="2d/">Klassische 2D-Karte öffnen</a>.',
@@ -110,7 +110,7 @@ const EXTRA = {
        attribution3d:'Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL) und <a href="https://www.wikidata.org">Wikidata</a> (CC0). Karte: <a href="https://openfreemap.org">OpenFreeMap</a> © OpenMapTiles.' },
   en:{ remember:'Remember them all', baseNight:'Night', baseDay:'Day', baseHoy:'Today', baseSat:'2016', sourcesBtn:'Sources', pause:'Pause', resume:'Resume', exit:'Exit',
        replay:'Introduction', project:'About the project', dlGeo:'Download GeoJSON', dlKml:'Download KML',
-       classic:'Classic 2D map', searchPh:'First name, surname or address (street and city)…',
+       classic:'Classic 2D map', dataapi:'Open data and API', searchPh:'First name, surname or address (street and city)…',
        vigilCount:n=>`${n} names`, vigilText:'Each golden column remembers one person, in front of the home where they lived. In silence, we remember their names.',
        vigilPlace:(p,n)=>`${p} · ${n} stones`,
        nogl:'This device cannot display the 3D map. <a href="2d/">Open the classic 2D map</a>.',
@@ -124,9 +124,9 @@ const EXTRA = {
        attribution3d:'Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL) and <a href="https://www.wikidata.org">Wikidata</a> (CC0). Base map: <a href="https://openfreemap.org">OpenFreeMap</a> © OpenMapTiles.' }
 };
 for (const l in EXTRA) Object.assign(I18N[l], EXTRA[l]);
-Object.assign(I18N.es, {pitchTo3d:'Ver en ángulo (3D)', pitchTo2d:'Ver desde arriba (2D)', pitchFlatOnly:'La foto de 1945 se ve solo desde arriba', rotLeft:'Girar a la izquierda', rotNorth:'Mirar al norte', rotRight:'Girar a la derecha'});
-Object.assign(I18N.de, {pitchTo3d:'Schräg ansehen (3D)', pitchTo2d:'Von oben ansehen (2D)', pitchFlatOnly:'Das Luftbild von 1945 gibt es nur von oben', rotLeft:'Nach links drehen', rotNorth:'Nach Norden ausrichten', rotRight:'Nach rechts drehen'});
-Object.assign(I18N.en, {pitchTo3d:'View at an angle (3D)', pitchTo2d:'View from above (2D)', pitchFlatOnly:'The 1945 photo can only be viewed from above', rotLeft:'Rotate left', rotNorth:'Face north', rotRight:'Rotate right'});
+Object.assign(I18N.es, {pitchTo3d:'3D: ver en ángulo', pitchTo2d:'2D: ver desde arriba', pitchFlatOnly:'La foto de 1945 se ve solo desde arriba', rotLeft:'Girar a la izquierda', rotNorth:'Mirar al norte', rotRight:'Girar a la derecha'});
+Object.assign(I18N.de, {pitchTo3d:'3D: schräg ansehen', pitchTo2d:'2D: von oben ansehen', pitchFlatOnly:'Das Luftbild von 1945 gibt es nur von oben', rotLeft:'Nach links drehen', rotNorth:'Nach Norden ausrichten', rotRight:'Nach rechts drehen'});
+Object.assign(I18N.en, {pitchTo3d:'3D: view at an angle', pitchTo2d:'2D: view from above', pitchFlatOnly:'The 1945 photo can only be viewed from above', rotLeft:'Rotate left', rotNorth:'Face north', rotRight:'Rotate right'});
 // Privacy note in «Acerca de»: honest in both states of the visit counter (counter.js; own counter in contador/, on since v13).
 Object.assign(I18N.es, {privacyHtml:on=>on
   ? '<p><strong>Privacidad.</strong> Sin cookies, sin publicidad y sin perfiles. Contamos las visitas con un contador propio (código abierto, en una cuenta personal de Cloudflare): solo se envía la sección visitada, nunca el nombre buscado ni la ficha abierta. Como cualquier servidor, Cloudflare recibe la dirección IP y el navegador para entregar la petición; nuestro contador no los lee ni los guarda, no tiene registros activados y solo guarda el número de visitas por día. Si su navegador pide «no rastrear», su visita no se cuenta.</p>'

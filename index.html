@@ -19,6 +19,11 @@
 <meta name="twitter:title" content="Lista Kauffmann · Kauffmann-Liste · Kauffmann List">
 <meta name="twitter:description" content="Stolpersteine en Alemania · Stolpersteine in Deutschland · Stolpersteine in Germany. Cada placa, cada nombre, cada historia. Nunca olvidar.">
 <link rel="alternate" type="application/ld+json" href="kauffmann-list.jsonld" title="Schema.org">
+<link rel="alternate" type="text/plain" href="llms.txt" title="Instrucciones para agentes de IA (llms.txt)">
+<link rel="service-desc" type="application/vnd.oai.openapi+json;version=3.1" href="api/v1/openapi.json" title="OpenAPI 3.1">
+<link rel="service-doc" type="text/plain" href="llms-full.txt" title="Guía completa para agentes de IA">
+<link rel="describedby" type="application/json" href="api/v1/index.json" title="Catálogo de la API">
+<link rel="api-catalog" href=".well-known/api-catalog">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#07111f">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -28,6 +33,12 @@
 <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="style3d.css">
+<noscript><style>
+  /* Sin JavaScript no hay intro ni mapa: se muestra el texto, la cabecera, los enlaces a los datos y el pie */
+  .intro,html:not(.intro-skip) body .side,html:not(.intro-skip) body .mapwrap,html:not(.intro-skip) body .topright{display:none!important}
+  html:not(.intro-skip) body .top,html:not(.intro-skip) body .foot{display:flex!important}
+  html:not(.intro-skip) body .layout{display:block;height:auto}
+</style></noscript>
 <script>
   (function () {
     var q = new URLSearchParams(location.search);
@@ -55,6 +66,18 @@
     </nav>
   </div>
 </header>
+
+<noscript>
+  <section class="noscript" aria-label="Sin JavaScript">
+    <h2>Lista Kauffmann · Kauffmann-Liste · Kauffmann List</h2>
+    <p>Mapa libre de los Stolpersteine y de las víctimas de la Shoah. Cada placa, cada nombre, cada historia. Nunca olvidar. El mapa necesita JavaScript; los datos no.</p>
+    <ul>
+      <li><a href="llms.txt">llms.txt</a> · <a href="llms-full.txt">llms-full.txt</a> (instrucciones para agentes de IA / for AI agents)</li>
+      <li><a href="api/v1/index.json">API JSON</a> · <a href="api/v1/openapi.json">OpenAPI 3.1</a> · <a href="api/v1/odbl/find/index.json">búsqueda ODbL</a> · <a href="api/v1/cc0/find/index.json">búsqueda CC0</a></li>
+      <li><a href="data/stones.json">data/stones.json</a> (ODbL) · <a href="sitemap.xml">sitemap.xml</a> · <a href="proyecto/">Sobre el proyecto</a> · <a href="2d/">Mapa clásico 2D</a></li>
+    </ul>
+  </section>
+</noscript>
 
 <main class="layout">
   <aside class="side" id="side">
@@ -108,7 +131,7 @@
 
 <footer class="foot">
   <p data-i18n-html="attribution3d"></p>
-  <p><a href="2d/" data-i18n="classic">Mapa clásico 2D</a> · <a href="proyecto/" data-i18n="project">Sobre el proyecto</a> · <a href="#" id="aboutLink" data-i18n="about">Acerca de los datos</a> · <button type="button" id="replayIntro" class="linkish" data-i18n="replay">Introducción</button></p>
+  <p><a href="2d/" data-i18n="classic">Mapa clásico 2D</a> · <a href="proyecto/" data-i18n="project">Sobre el proyecto</a> · <a href="llms.txt" data-i18n="dataapi">Datos abiertos y API</a> · <a href="#" id="aboutLink" data-i18n="about">Acerca de los datos</a> · <button type="button" id="replayIntro" class="linkish" data-i18n="replay">Introducción</button></p>
 </footer>
 
 <dialog id="about" class="about">
@@ -138,7 +161,6 @@
   </div>
 </div>
 
-<!-- distribution contentUrl values are relative to web/ and point at ../exports/, the directory scripts/build.py writes. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -176,11 +198,25 @@
         {"@type": "PropertyValue", "name": "official or archive link only, no biography text", "value": 24670},
         {"@type": "PropertyValue", "name": "no biography and no official or archive link", "value": 37112}
       ],
+      "url": "https://roquena71-a11y.github.io/kauffmann-list/",
       "distribution": [
-        {"@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "../exports/stolpersteine_germany.geojson"},
-        {"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "../exports/stolpersteine_germany.csv"},
-        {"@type": "DataDownload", "encodingFormat": "application/vnd.google-earth.kmz", "contentUrl": "../exports/stolpersteine_germany.kmz"}
-      ]
+        {"@type": "DataDownload", "name": "Stolpersteine database (plaque transcriptions)", "encodingFormat": "application/json", "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/data/stones.json", "license": "https://opendatacommons.org/licenses/odbl/1-0/"},
+        {"@type": "DataDownload", "name": "Person records, ODbL family (static JSON API)", "encodingFormat": "application/json", "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json", "license": "https://opendatacommons.org/licenses/odbl/1-0/"},
+        {"@type": "DataDownload", "name": "Person records, CC0 family (Wikidata, static JSON API)", "encodingFormat": "application/json", "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json", "license": "https://creativecommons.org/publicdomain/zero/1.0/"}
+      ],
+      "subjectOf": {"@id": "#api"}
+    },
+    {
+      "@type": "WebAPI",
+      "@id": "#api",
+      "name": "Lista Kauffmann – static JSON API",
+      "description": "Read-only static JSON files (GET): search by name, place and year; person records with sources and licence. Cite Lista Kauffmann + person link + original source. Never invent data.",
+      "documentation": ["https://roquena71-a11y.github.io/kauffmann-list/llms.txt", "https://roquena71-a11y.github.io/kauffmann-list/llms-full.txt"],
+      "url": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/",
+      "isAccessibleForFree": true,
+      "termsOfService": "https://roquena71-a11y.github.io/kauffmann-list/llms.txt",
+      "provider": {"@type": "Person", "name": "Carlos Kauffmann"},
+      "potentialAction": {"@type": "SearchAction", "target": "https://roquena71-a11y.github.io/kauffmann-list/?q={search_term_string}", "query-input": "required name=search_term_string"}
     },
     {
       "@type": "WebApplication",

@@ -1,7 +1,7 @@
 """Validador mínimo de JSON Schema (subconjunto de 2020-12) sin dependencias.
 
 Soporta: type (incl. listas), enum, const, required, properties, additionalProperties (bool o esquema),
-items, minItems, minLength, pattern, minimum, maximum, $ref local (#/$defs/...), anyOf, oneOf.
+items, prefixItems, minItems, maxItems, minLength, pattern, minimum, maximum, $ref local (#/$defs/...), anyOf, oneOf.
 """
 import re
 
@@ -74,8 +74,13 @@ class Validator:
         if isinstance(value, list):
             if "minItems" in schema and len(value) < schema["minItems"]:
                 out.append("%s: menos de %d elementos" % (path, schema["minItems"]))
+            if "maxItems" in schema and len(value) > schema["maxItems"]:
+                out.append("%s: más de %d elementos" % (path, schema["maxItems"]))
+            pre = schema.get("prefixItems") or []
+            for i, v in enumerate(value[:len(pre)]):
+                out.extend(self.errors(v, pre[i], "%s[%d]" % (path, i)))
             if "items" in schema:
-                for i, v in enumerate(value):
+                for i, v in enumerate(value[len(pre):], len(pre)):
                     out.extend(self.errors(v, schema["items"], "%s[%d]" % (path, i)))
         if "anyOf" in schema:
             if not any(not self.errors(value, s, path) for s in schema["anyOf"]):

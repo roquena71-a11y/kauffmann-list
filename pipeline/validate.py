@@ -79,5 +79,42 @@ def validate(out=None, sources=None, suppressed=None, max_bytes=MAX_BYTES):
                         keys.add(q)
                     if keys & suppressed:
                         errors.append("%s %s: id retirado presente" % (rel, p["id"]))
+    errors.extend(_check_find(out))
     return {"errors": errors, "warnings": warnings, "files": n_files, "people": n_people, "bytes": total,
             "max_bytes": biggest, "max_file": biggest_file}
+
+
+def _check_find(out):
+    """find/: todos los archivos que anuncia el manifiesto existen y las filas tienen el formato común."""
+    errors = []
+    for fam in sorted(os.listdir(out)):
+        fi = os.path.join(out, fam, "find", "index.json")
+        if not os.path.exists(fi):
+            continue
+        base = os.path.join(out, fam, "find")
+        idx = load_json(fi)
+        for pre, n in idx["name"]["prefixes"].items():
+            path = os.path.join(base, "name", pre + ".json")
+            if not os.path.exists(path):
+                errors.append("%s/find: falta name/%s.json" % (fam, pre))
+                continue
+            d = load_json(path)
+            if len(d["rows"]) != n:
+                errors.append("%s/find/name/%s.json: %d filas, el manifiesto dice %d" % (fam, pre, len(d["rows"]), n))
+            if d["columns"] != ["token", "id", "name", "birth_year", "death_year", "place", "people_prefix"]:
+                errors.append("%s/find/name/%s.json: columnas inesperadas" % (fam, pre))
+        for kind in ("birth", "death"):
+            for y, n in idx["year"][kind].items():
+                path = os.path.join(base, "year", kind, y + ".json")
+                if not os.path.exists(path) or load_json(path)["count"] != n:
+                    errors.append("%s/find/year/%s/%s.json: falta o recuento distinto" % (fam, kind, y))
+                    continue
+                for pg in range(2, load_json(path)["pages"] + 1):
+                    if not os.path.exists(os.path.join(base, "year", kind, "%s~%d.json" % (y, pg))):
+                        errors.append("%s/find/year/%s: falta %s~%d.json" % (fam, kind, y, pg))
+        for key, cc, slug, label, count, pages in load_json(os.path.join(base, "city", "index.json"))["rows"]:
+            for pg in range(pages):
+                name = slug if pg == 0 else "%s~%d" % (slug, pg + 1)
+                if not os.path.exists(os.path.join(base, "city", cc.lower(), name + ".json")):
+                    errors.append("%s/find/city: falta %s/%s.json" % (fam, cc.lower(), name))
+    return errors

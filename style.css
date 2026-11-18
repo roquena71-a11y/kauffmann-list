@@ -61,3 +61,8 @@ dl.facts dt{color:var(--muted)}dl.facts dd{margin:0}
   h1{font-size:1rem} .top{padding:.5rem .7rem} .lang button{padding:.2rem .4rem;margin-left:.15rem}
   .foot{font-size:.7rem}
 }
+
+/* Sin JavaScript (<noscript> de index.html): texto legible con enlaces a los datos */
+.noscript{padding:1rem 1.25rem;max-width:60rem;margin:0 auto;color:#f3ead6;background:#07111f;line-height:1.5}
+.noscript a{color:#e6c982;text-decoration:underline}
+.noscript h2{font-size:1.25rem;margin:0 0 .5rem}

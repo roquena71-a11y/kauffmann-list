@@ -17,13 +17,18 @@ agentes de IA. Solo usa la librería estándar de Python (3.9+). No modifica `da
 | `api/v1/cc0/…` | Familia CC0: personas solo de Wikidata | CC0 1.0 |
 | `api/v1/partners/<fuente>/…` | Una familia por institución (fase 2), solo con permiso | la de cada institución |
 | `data/search/index-<prefijo>.json` | Índice de **placas** para el mapa (solo lo que dice la placa) | ODbL 1.0 |
-| `llms.txt`, `.well-known/api-catalog` | Descripción para agentes (RFC 9727 linkset) | CC0 |
+| `llms.txt`, `llms-full.txt`, `.well-known/api-catalog` | Descripción para agentes (llms.txt corto y guía completa; RFC 9727 linkset) | CC0 |
 
 Dentro de cada familia `<f>`:
 
 - `<f>/index.json` — prefijos, regla de particionado, endpoints, meta con licencia y fuentes.
 - `<f>/people/by-surname/<prefijo>.json` — **fichas completas** (archivo canónico; ≤ ~1 MB).
 - `<f>/search/index-<prefijo>.json` — filas ligeras `[id, name, birth_year, locality, lat, lon, people_prefix]`.
+- `<f>/find/index.json` — manifiesto de búsqueda para agentes (prefijos de nombre, años, reglas, ejemplos).
+- `<f>/find/name/<prefijo>.json` — búsqueda por nombre: una fila por cada palabra del nombre `[token, id, name, birth_year, death_year, place, people_prefix]`.
+- `<f>/find/city/index.json` y `find/city/<país>/<slug>.json` — búsqueda por lugar (memorial o muerte, nunca nacimiento); alias de ciudades conocidas.
+- `<f>/find/year/{birth|death}/<año>.json` — personas por año de nacimiento o de muerte.
+  Todo `find/` se deriva de las fichas ya publicadas (hereda el filtro de posibles vivos, las retiradas y la licencia). Código: `pipeline/find.py`.
 - `<f>/person/<shard>.json` — búsqueda por id: filas `[id, people_prefix]`; `shard` = 2 últimos caracteres del id.
 - `<f>/places/index.json` y `<f>/places/<país>/<slug>.json` (páginas extra `<slug>~2.json`…) — solo lugar del
   memorial y lugar de muerte (nunca por origen).

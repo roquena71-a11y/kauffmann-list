@@ -39,6 +39,10 @@ jobs:
           path: pipeline/cache
           key: pipeline-cache-${{ steps.week.outputs.w }}
 
+      # Solo para comprobar el OpenAPI (versiones fijadas); el pipeline no las usa.
+      - name: Instalar el validador de OpenAPI (fijado)
+        run: python3 -m pip install -r tests/requirements-ci.txt
+
       - name: Tests
         run: python3 -m unittest discover -s pipeline/tests -t .
 
@@ -49,11 +53,20 @@ jobs:
       - name: Validar
         run: python3 -m pipeline validate
 
+      # Puerta para IA: enlaces, OpenAPI, coherencia de find/ con las fichas y una IA simulada
+      # que busca 10 personas por nombre/ciudad solo con los archivos públicos y las cita.
+      - name: Comprobar la puerta para IA
+        env:
+          REQUIRE_OAV: "1"          # sin el validador instalado, la comprobación falla en vez de saltarse el OpenAPI
+        run: |
+          python3 tests/ai-door-check.py
+          python3 tests/ai-sim.py . --n 10 --seed 1
+
       - name: Montar el sitio
         run: |
           mkdir _site
           rsync -a --exclude '.git' --exclude '.github' --exclude '_site' \
-                   --exclude 'pipeline' --exclude 'docs' --exclude '__pycache__' ./ _site/
+                   --exclude 'pipeline' --exclude 'docs' --exclude 'tests' --exclude 'contador' --exclude '__pycache__' ./ _site/
 
       - uses: actions/configure-pages@v5
 
