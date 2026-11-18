@@ -3,7 +3,7 @@
 Sitio estático (sin cookies, sin analítica de terceros, sin rastreadores). Tiene un contador de visitas propio que solo guarda el número de visitas por día y sección, sin IP ni datos personales (`counter.js` y el código del servidor en `contador/`, véase `docs/contador.md`). Nada se inventa: cada dato procede de las fuentes abiertas siguientes.
 
 - **OpenStreetMap** — © OpenStreetMap contributors, ODbL 1.0 (https://opendatacommons.org/licenses/odbl/). La base combinada `data/stones.json` es por tanto ODbL.
-- **Wikidata** — CC0 1.0.
+- **Wikidata** — CC0 1.0. Las piedras de Wikidata sin coordenadas propias se sitúan en el edificio de su dirección con **Nominatim / OpenStreetMap**: esas coordenadas son © OpenStreetMap contributors (ODbL 1.0), y el registro de la API lo declara así (licencia ODbL, atribución OSM + Wikidata); la ficha lo muestra como «Posición aproximada».
 - **Wikipedia (de)** — los textos en `data/bio/text/` son extractos literales de los artículos "Liste der Stolpersteine in …", CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). Cada registro en `data/bio/*.json` lleva título, revisión (permalink `oldid`), página de autores y licencia.
 - **Wikimedia Commons** — fotos enlazadas (no copiadas); cada archivo con su propia licencia y autor en su página de Commons.
 - **Mapas base** — OpenFreeMap / OpenMapTiles, datos de OpenStreetMap. Vista general: EOX "Sentinel-2 cloudless 2016", CC BY 4.0.

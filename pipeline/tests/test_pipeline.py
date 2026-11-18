@@ -447,6 +447,17 @@ class TestBuildOffline(BuildCase):
         self.assertEqual(v["errors"], [])
         self.assertGreater(v["people"], 1000)
 
+    def test_geocoded_wikidata_stone_is_odbl(self):
+        """Piedra de Wikidata (src wd) con coordenadas geocodificadas desde OSM/Nominatim (gm): licencia ODbL, no CC0."""
+        from pipeline.adapters import stones
+        cfg = load_sources()["stolpersteine_de"]
+        base = {"id": "Q1", "src": "wd", "wd": "Q1", "la": 50.1, "lo": 8.7, "n": "Test Person", "a": "Hauptstraße 1", "c": "Frankfurt am Main"}
+        r0 = stones.stone_to_record(dict(base), None, cfg, "2026-11-18")
+        r1 = stones.stone_to_record(dict(base, gm="geocoded:nominatim:house", gc="high", go="way/1"), None, cfg, "2026-11-18")
+        self.assertEqual(r0["sources"][0]["license"], "CC0-1.0")          # coordenadas de Wikidata (P625): CC0
+        self.assertEqual(r1["sources"][0]["license"], "ODbL-1.0")         # coordenadas de OSM: ODbL
+        self.assertIn("OpenStreetMap", r1["sources"][0]["attribution"])
+
     def test_safe_reset_refuses_foreign_dir(self):
         tmp, sources = self.env(partner=False)
         foreign = os.path.join(tmp, "foreign")

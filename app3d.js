@@ -17,7 +17,7 @@ const I18N = {
     hhSearchName:n=>`Buscar «${n}» en Stolpersteine Hamburg`,
     beSearchName:n=>`Buscar «${n}» en Stolpersteine Berlin`,
     share:'Copiar enlace a esta placa', copied:'Enlace copiado', copyName:'Copiar nombre', nameCopied:'Nombre copiado',
-    directions:'Cómo llegar (Google Maps)', osmDir:'Cómo llegar (OpenStreetMap)', sources:'Fuentes de esta ficha', derived:'(lugar deducido de placas cercanas)',
+    directions:'Cómo llegar (Google Maps)', osmDir:'Cómo llegar (OpenStreetMap)', sources:'Fuentes de esta ficha', derived:'(lugar deducido de placas cercanas)', posApprox:'Posición aproximada (del edificio, por su dirección en OpenStreetMap)', posLabel:'Posición',
     about:'Acerca de los datos', close:'Cerrar', noinsc:'No hay transcripción de la inscripción en las fuentes.',
     attribution:'Datos: © <a href="https://www.openstreetmap.org/copyright">colaboradores de OpenStreetMap</a> (ODbL) y <a href="https://www.wikidata.org">Wikidata</a> (CC0). Mapa base © OpenStreetMap.',
     aboutHtml:m=>`<h2>Acerca de este mapa</h2><p>Los <em>Stolpersteine</em> («piedras de tropiezo») son placas de latón del artista Gunter Demnig, colocadas frente al último domicilio elegido libremente por personas perseguidas, deportadas o asesinadas por el nazismo.</p>
@@ -43,7 +43,7 @@ const I18N = {
     hhSearchName:n=>`„${n}“ bei Stolpersteine Hamburg suchen`,
     beSearchName:n=>`„${n}“ bei Stolpersteine Berlin suchen`,
     share:'Link zu diesem Stein kopieren', copied:'Link kopiert', copyName:'Namen kopieren', nameCopied:'Name kopiert',
-    directions:'Route (Google Maps)', osmDir:'Route (OpenStreetMap)', sources:'Quellen dieses Eintrags', derived:'(Ort aus benachbarten Steinen abgeleitet)',
+    directions:'Route (Google Maps)', osmDir:'Route (OpenStreetMap)', sources:'Quellen dieses Eintrags', derived:'(Ort aus benachbarten Steinen abgeleitet)', posApprox:'Ungefähre Position (Gebäude laut Adresse in OpenStreetMap)', posLabel:'Position',
     about:'Über die Daten', close:'Schließen', noinsc:'Für diesen Stein ist in den Quellen keine Inschrift erfasst.',
     attribution:'Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL) und <a href="https://www.wikidata.org">Wikidata</a> (CC0). Kartengrundlage © OpenStreetMap.',
     aboutHtml:m=>`<h2>Über diese Karte</h2><p>Stolpersteine sind Gedenktafeln aus Messing des Künstlers Gunter Demnig, verlegt vor dem letzten frei gewählten Wohnort von Menschen, die im Nationalsozialismus verfolgt, deportiert oder ermordet wurden.</p>
@@ -69,7 +69,7 @@ const I18N = {
     hhSearchName:n=>`Search “${n}” on Stolpersteine Hamburg`,
     beSearchName:n=>`Search “${n}” on Stolpersteine Berlin`,
     share:'Copy link to this stone', copied:'Link copied', copyName:'Copy name', nameCopied:'Name copied',
-    directions:'Directions (Google Maps)', osmDir:'Directions (OpenStreetMap)', sources:'Sources for this record', derived:'(place inferred from nearby stones)',
+    directions:'Directions (Google Maps)', osmDir:'Directions (OpenStreetMap)', sources:'Sources for this record', derived:'(place inferred from nearby stones)', posApprox:'Approximate position (the building, from its address in OpenStreetMap)', posLabel:'Position',
     about:'About the data', close:'Close', noinsc:'No transcription of the inscription in the sources.',
     attribution:'Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL) and <a href="https://www.wikidata.org">Wikidata</a> (CC0). Base map © OpenStreetMap.',
     aboutHtml:m=>`<h2>About this map</h2><p>Stolpersteine (“stumbling stones”) are brass plaques by the artist Gunter Demnig, set in front of the last freely chosen home of people persecuted, deported or murdered under National Socialism.</p>
@@ -884,7 +884,7 @@ function openStone(id, fromMap){
   const inscSeen = new Set(), inscList = [];
   for (const r of [s, ...(s._also||[])]){ if (!r.i) continue; const k = KLDedupe.fold(r.i).replace(/[^a-z0-9]+/g,''); if (!inscSeen.has(k)){ inscSeen.add(k); inscList.push(r.i); } }
   const insc = inscList.map(t => esc(t).split(/\s*\|\s*/).join('<br>')).join('</div><div class="brassplate">');
-  const facts=[[T('address'),s.a],[T('place'),cityOf(s)+(s.cd&&!s.c?' '+T('derived'):'')],[T('district'),s.sub],[T('born'),s.b],[T('died'),s.d],[T('laid'),s.laid],[T('type'),s.kind==='stolperschwelle'?T('threshold'):'']]
+  const facts=[[T('address'),s.a],[T('place'),cityOf(s)+(s.cd&&!s.c?' '+T('derived'):'')],[T('district'),s.sub],[T('born'),s.b],[T('died'),s.d],[T('laid'),s.laid],[T('posLabel'),s.gm?T('posApprox'):''],[T('type'),s.kind==='stolperschwelle'?T('threshold'):'']]
     .filter(x=>x[1]).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
   const bio=[]; (s.w||[]).filter(u=>/^https?:\/\//i.test(String(u||''))).forEach(u=>{ let h=u; try{h=new URL(u).hostname.replace(/^www\./,'')}catch(e){} bio.push(`<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(h)}</a></li>`); });
   if (s.wp) bio.push(`<li><a href="${esc(wpUrl(s.wp))}" target="_blank" rel="noopener noreferrer">Wikipedia: ${esc(s.wp.replace(/^[a-z]+:/,''))}</a></li>`);

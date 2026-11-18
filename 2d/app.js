@@ -15,6 +15,7 @@ function popup(s){
   const name = s.n || '—';
   const place = [s.a, s.c || s.cd].filter(Boolean).join(', ');
   return '<strong>'+esc(name)+'</strong><br>'+esc(place)+
+    (s.gm ? '<br><small>Posición aproximada (del edificio, por su dirección en OpenStreetMap)</small>' : '')+
     '<br><a href="../#s='+encodeURIComponent(s.id)+'">Abrir en el mapa 3D</a>';
 }
 function esc(s){ return String(s??'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }

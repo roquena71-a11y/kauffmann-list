@@ -12,3 +12,10 @@ __pycache__/
 /.well-known/
 /_site/
 /reports/
+
+# Trabajo interno de la carga de Wikidata (v14): no se publica (el workflow copia todo lo que no excluye)
+/work/
+/shots/
+/INFORME-wd.md
+/pendiente-sin-coordenadas.csv
+/NOTAS-v14.md

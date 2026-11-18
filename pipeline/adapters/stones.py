@@ -55,7 +55,8 @@ def stone_to_record(s, bio_rec, cfg, retrieved):
     sid = cfg["id"]
     stone_id = s["id"]
     src = s.get("src") or ""
-    lic = ODBL if "osm" in src else CC0
+    # ODbL si el registro viene de OSM o si sus coordenadas se geocodificaron con OSM/Nominatim (gm): ahí el dato es © OpenStreetMap contributors.
+    lic = ODBL if ("osm" in src or s.get("gm")) else CC0
     is_osm = bool(re.match(r"^[nw]\d+$", stone_id))
     insc_txt = clean_str(s.get("i"))
     insc = (bio_rec or {}).get("insc") or {}

@@ -1,4 +1,4 @@
-// Contador propio (activado), service worker v13 y textos de las auditorías.
+// Contador propio (activado), service worker v14 y textos de las auditorías.
 const fs = require('fs'), path = require('path');
 const ROOT = path.join(__dirname, '..');
 function assert(c, m) { if (!c) throw new Error('FAIL: ' + m); }
@@ -31,7 +31,7 @@ assert(!/document\.cookie|localStorage|sessionStorage|indexedDB|goatcounter|new 
 
 // --- Service worker ---
 const sw = fs.readFileSync(path.join(ROOT, 'sw.js'), 'utf8');
-assert(/VERSION = 'kauffmann-v13-pages'/.test(sw), 'sw v13');
+assert(/VERSION = 'kauffmann-v14-pages'/.test(sw), 'sw v14');
 const shell = eval(sw.match(/const SHELL = (\[[\s\S]*?\]);/)[1]);
 for (const f of ['source-links.js', 'dedupe.js', 'counter.js', 'app3d.js', 'people.js', 'index.html']) assert(shell.includes(f), 'SHELL has ' + f);
 for (const f of shell) { const p = path.join(ROOT, f === './' ? 'index.html' : f.endsWith('/') ? f + 'index.html' : f); assert(fs.existsSync(p), 'SHELL file exists: ' + f); }
@@ -51,4 +51,4 @@ function lum(h) { const c = [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16) /
 const cr = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
 for (const bg of ['#0e1726', '#07111f', '#101c30', '#17263c', '#152033']) assert(cr('#9cc3ff', bg) >= 3, 'focus contrast ≥3:1 on ' + bg + ' = ' + cr('#9cc3ff', bg).toFixed(2));
 assert(cr('#9cc3ff', '#07111f') >= 3, 'focus vs its navy halo');
-console.log('OK counter propio (on, DNT/GPC, sin cookies, solo sección), sw v13 + SHELL, labels, focus contrast ' + cr('#9cc3ff', '#0e1726').toFixed(2) + ':1');
+console.log('OK counter propio (on, DNT/GPC, sin cookies, solo sección), sw v14 + SHELL, labels, focus contrast ' + cr('#9cc3ff', '#0e1726').toFixed(2) + ':1');
