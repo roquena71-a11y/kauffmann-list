@@ -205,7 +205,7 @@
   function padding(){
     if (isLand()) return {top: topH() + 12, bottom: 16, left: Math.round(side.getBoundingClientRect().width) + 16, right: 56};
     if (isMobile()) return {top: topH() + 16, bottom: Math.round(heightFor('peek')) + 20, left: 20, right: 56};
-    return {top: 20, bottom: 30, left: 20, right: 60};
+    return {top: 20, bottom: 100, left: 20, right: 60};   // escritorio: la barra de capas (Noche · Día · Hoy…) ocupa ~70 px abajo; v18: Malmö quedaba tapada
   }
   function dataBounds(){
     if (!COUNTRIES.length) return DEFAULT_BOUNDS;

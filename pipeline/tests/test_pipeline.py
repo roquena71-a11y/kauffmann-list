@@ -577,6 +577,7 @@ class TestSwedishInscriptions(unittest.TestCase):
         self.assertEqual(ins.fate_from_text("HÄR BODDE ERICH HOLEWA FÖDD 1896 BERLIN FLYDDE TILL SVERIGE UTVISAD SEPT. 1938 DEPORTERAD 1942 MÖRDAD AUSCHWITZ")[0], "murdered")
         self.assertEqual(ins.fate_from_text("HÄR BODDE CURT MOSES FÖDD 1886 BRESLAU FLYDDE TILL SVERIGE UTVISAD MAJ 1937 ÖDE OKÄNT")[0], "missing")
         self.assertEqual(ins.fate_from_text("Hier wohnte Max Muster ermordet in Auschwitz")[0], "murdered")
+        self.assertEqual(ins.fate_from_text("HÄR BODDE X FÖDD 1920 FLYDDE TILL SVERIGE")[0], "fled")   # v18: flydde = huyó
         self.assertEqual(ins.fate_from_text("HIER WOHNTE X FLUCHT 1939 ÜBERLEBT")[0], "survived")
 
     def test_stone_country_se(self):

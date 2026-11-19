@@ -174,6 +174,7 @@ function applyI18n(){
 }
 
 /* ---------- search (same rules as the 2D map) ---------- */
+const COUNTRY_WORDS = {IE:'irlanda irland ireland', SE:'suecia schweden sweden'};
 function norm(s){
   return String(s||'').toLowerCase().replace(/ß/g,'ss').replace(/ä/g,'a').replace(/ö/g,'o').replace(/ü/g,'u')
     .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
@@ -722,7 +723,7 @@ async function load(){
   const j = await (await fetch('data/stones.json')).json();
   META = j.meta; DATA = j.stones;
   for (const s of DATA){
-    s._t = norm([s.n, s.a, s.sub, cityOf(s)].join(' ')).split(' ');
+    s._t = norm([s.n, s.a, s.sub, cityOf(s), s.cc && s.cc !== 'DE' ? (COUNTRY_WORDS[s.cc] || '') : ''].join(' ')).split(' ');   // v18: «Suecia/Schweden/Sweden», «Irlanda/Irland/Ireland» encuentran sus piedras (Alemania no: sería todo)
     s._c = norm(cityOf(s)); byId.set(s.id, s);
   }
   buildStones(); buildAgg();

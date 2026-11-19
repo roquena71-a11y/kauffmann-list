@@ -23,7 +23,9 @@
     if (/\d/.test(head)) return true; // «12 Bürger…», «Romm Jg. 1904», «8 Stolpersteine: …»
     if (/[:;]/.test(n)) return true;
     if (/\b(?:und|and|&|sowie)\b/i.test(n.replace(/\(.*?\)/g, ''))) return true; // dos o más personas
-    if (/\b(?:synagoge|synagogue|gemeinde|b[üu]rger|opfer|juden|j[üu]dische[nrs]?|stolpersteine?|gedenk\w*|denkmal|zwangsarbeiter\w*)\b|^https?:/i.test(n)) return true;
+    if (/\b(?:synagoge|synagogue|gemeinde|opfer|juden|j[üu]dische[nrs]?|stolpersteine?|gedenk\w*|denkmal|zwangsarbeiter\w*)\b|^https?:/i.test(n)) return true;
+    // «Bürger» es palabra de grupo («Bürger von X», «12 Bürger») pero también apellido (Schulim Bürger): solo es grupo si NO va tras un nombre de pila.
+    if (/\bb[üu]rger\b/i.test(n) && !/^\p{Lu}[\p{L}'.-]+\s+(?:\p{Lu}[\p{L}'.-]+\s+)*B[üu]rger$/u.test(n.replace(/\([^)]*\)/g, '').trim())) return true;
     return false;
   }
 

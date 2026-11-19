@@ -47,6 +47,7 @@ added.forEach(s => assert(!oldIds.has(s.id), 'id nuevo ' + s.id));
 assert(!added.some(s => s.id === 'n13892986434'), 'el nodo sin nombre (Nykvarn) no está en el mapa');
 M.excluded.forEach(e => assert(!added.some(s => s.id === e.id), 'excluido ausente: ' + e.id));
 assert(M.excluded.length === 1 && M.excluded[0].id === 'n13892986434', 'excluido: n13892986434');
+assert(added.find(s => s.id === 'n12247227671').wp === 'sv:Erich Holewa', 'Holewa: enlace a sv.wikipedia (sitelink de Wikidata Q80913948)');
 assert(added.find(s => s.id === 'n12228264289').laid === '2019-06-14', 'Szybilski colocada 2019-06-14 (OSM start_date)');
 assert(added.filter(s => s.laid).length === 1, 'laid solo donde no hay conflicto de fuentes');
 console.log('OK se-added: 6 placas (Malmö 3, Estocolmo 3), SE, base de 65826 intacta, excluido n13892986434');

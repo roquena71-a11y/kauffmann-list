@@ -15,7 +15,7 @@ DIED = re.compile(_W + r"(tot|gestorben|starb|umgekommen|verstorben|für tot erk
 MISSING = re.compile(_W + r"(verschollen|schicksal unbekannt|öde okänt)" + _E)
 # Supervivencia: se reconoce también como PREFIJO de palabra (überlebte, befreiten, versteckte, Fluchtweg…).
 SURVIVAL_PREFIX = re.compile(_W + r"(überlebt|ueberlebt|uberlebt|gerettet|befreit|entkam|entkommen|versteckt)")
-FLIGHT_PREFIX = re.compile(_W + r"(flucht|flücht|fluecht|geflohen|geflüchtet|gefluechtet|emigriert|ausgewandert)")
+FLIGHT_PREFIX = re.compile(_W + r"(flucht|flücht|fluecht|geflohen|geflüchtet|gefluechtet|emigriert|ausgewandert|flydde)")
 FLED = FLIGHT_PREFIX
 DEPORTED = re.compile(_W + r"(deportiert|abgeschoben|ausgewiesen|polenaktion|deporterad)" + _E)
 IMPRISONED = re.compile(_W + r"(verhaftet|inhaftiert|zuchthaus|gefängnis|gefaengnis|kz|schutzhaft|lager)" + _E)

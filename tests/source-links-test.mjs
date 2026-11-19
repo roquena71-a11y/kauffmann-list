@@ -94,6 +94,13 @@ pq('Anna Chana Strauß', 'Anna Chana', 'Strauß');
 for (const n of ['unbekannter Wert','Unbekannt','die unbekannten Kinder des Kinderkrankenhauses Rothenburgsort','Familie Frank','12 Bürger jüdischen Glaubens',
   '8 Stolpersteine: Charlotte Steinbock, Max X','Synagogue','Walter Isay, Friederike Isay und Fanny Isay','Romm Jg. 1904','N.N.','http://www.wikidata.org/.well-known/genid/abc'])
   assert(KL.isCollectiveName(n), 'collective/anonymous: '+n);
+// v18: «Bürger» como apellido (Schulim Bürger, Suecia) ya no es nombre colectivo; como palabra de grupo sigue siéndolo.
+for (const n of ['Schulim Bürger','Hans Bürger','Anna Maria Bürger','Anna Burger'])
+  assert(!KL.isCollectiveName(n), 'apellido Bürger no es colectivo: '+n);
+for (const n of ['Bürger von Weener','Bürger','Die Bürger der Stadt','jüdische Bürger','Bürger jüdischen Glaubens','12 Bürger','Familie Bürger'])
+  assert(KL.isCollectiveName(n), 'Bürger de grupo sigue siendo colectivo: '+n);
+{ const Lb = KL.sourceSearchList({n:'Schulim Bürger', c:'Malmö', b:'1887'}, null, 'es');
+  const yb = Lb.find(x=>x.key==='yvSearchName'); assert(yb && yb.href.includes('gn_first_name=Schulim&') && yb.href.includes('gn_last_name=B'), 'Schulim Bürger tiene búsqueda con nombre en Yad Vashem'); }
 for (const n of ['Resi Heim','Albert Levy, Arbeitsort','Hilde Lewin, geb.1920','Stolperstein, Thekla Abel','Elfriede Löpert'])
   assert(!KL.isCollectiveName(n), 'not collective: '+n);
 for (const n of ['unbekannter Wert','Familie Frank','12 Bürger jüdischen Glaubens']) {
