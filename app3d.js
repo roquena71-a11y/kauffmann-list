@@ -1,10 +1,10 @@
 const I18N = {
   es: {
-    title:'Lista Kauffmann', subtitle:'Stolpersteine en Alemania, Irlanda y Suecia · Un nombre, una vida.',
+    title:'Lista Kauffmann', subtitle:'Stolpersteine en Alemania, Irlanda, Suecia, Jersey, Finlandia y Rumanía · Un nombre, una vida.',
     searchLabel:'Buscar por nombre', searchPh:'Nombre, apellido o calle…', cityLabel:'Lugar', cityPh:'Filtrar por lugar (opcional)',
     loading:'Cargando las placas…', ready:n=>`${n} placas en el mapa. Escriba un nombre para buscar.`,
     results:(n,more)=>`${n}${more?'+':''} resultado${n===1?'':'s'}`, none:'Sin resultados. Pruebe otra grafía, solo el apellido, o quite el filtro de lugar.',
-    similar:'(grafías parecidas)', back:'← Volver a los resultados', inscription:'Inscripción de la placa', address:'Dirección', country:'País', countryName:{DE:'Alemania',IE:'Irlanda',SE:'Suecia'}, place:'Lugar', district:'Barrio',
+    similar:'(grafías parecidas)', back:'← Volver a los resultados', inscription:'Inscripción de la placa', address:'Dirección', country:'País', countryName:{DE:'Alemania',IE:'Irlanda',SE:'Suecia',JE:'Jersey',FI:'Finlandia',RO:'Rumanía'}, place:'Lugar', district:'Barrio',
     born:'Nacimiento', died:'Muerte', laid:'Placa colocada', type:'Tipo', threshold:'Stolperschwelle (umbral conmemorativo)',
     photo:'Foto de la placa: Wikimedia Commons — ver autor y licencia', bio:'Biografía y fuentes', research:'Buscar en las fuentes',
     researchNote:'Enlaces externos; la Lista Kauffmann no copia sus datos.',
@@ -21,16 +21,17 @@ const I18N = {
     about:'Acerca de los datos', close:'Cerrar', noinsc:'No hay transcripción de la inscripción en las fuentes.',
     attribution:'Datos: © <a href="https://www.openstreetmap.org/copyright">colaboradores de OpenStreetMap</a> (ODbL) y <a href="https://www.wikidata.org">Wikidata</a> (CC0). Mapa base © OpenStreetMap.',
     aboutHtml:m=>`<h2>Acerca de este mapa</h2><p>Los <em>Stolpersteine</em> («piedras de tropiezo») son placas de latón del artista Gunter Demnig, colocadas frente al último domicilio elegido libremente por personas perseguidas, deportadas o asesinadas por el nazismo.</p>
-      <p>Este mapa reúne <strong>${m.count}</strong> placas en Alemania, Irlanda y Suecia a partir de datos abiertos: OpenStreetMap (instantánea ${m.osm_snapshot}) y Wikidata (${m.wikidata_snapshot}). <strong>No están todas</strong>: según la Stiftung Spuren – Gunter Demnig hay más de 116.000 Stolpersteine en Europa, la mayoría en Alemania, y muchas aún no están registradas en datos abiertos. Si no encuentra a su familiar, consulte también <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> y las iniciativas locales (p. ej. <a href="https://www.stolpersteine-berlin.de">Berlín</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburgo</a>).</p>
+      <p>Este mapa reúne <strong>${m.count}</strong> placas en Alemania, Irlanda, Suecia, Jersey, Finlandia y Rumanía a partir de datos abiertos: OpenStreetMap (instantánea ${m.osm_snapshot}) y Wikidata (${m.wikidata_snapshot}). <strong>No están todas</strong>: según la Stiftung Spuren – Gunter Demnig hay más de 116.000 Stolpersteine en Europa, la mayoría en Alemania, y muchas aún no están registradas en datos abiertos. Si no encuentra a su familiar, consulte también <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> y las iniciativas locales (p. ej. <a href="https://www.stolpersteine-berlin.de">Berlín</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburgo</a>).</p>
       <p>Ningún dato ha sido inventado: cada campo procede de las fuentes citadas. Pueden existir errores o duplicados; las correcciones se hacen en OpenStreetMap o Wikidata.</p>
+      <p>Posición en el mapa: las columnas se dibujan sobre la acera. Si el punto registrado cae dentro de un edificio de OpenStreetMap o a menos de un metro de su fachada (Irlanda, Suecia, Jersey, Finlandia, Rumanía), solo se desplaza el dibujo hacia la calle (nunca más de 25 m); las coordenadas de los datos y de los enlaces «Cómo llegar» siguen siendo las originales.</p>
       <p>Licencia de la base de datos: <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>. Fotos: Wikimedia Commons, cada una con su propia licencia.</p>`
   },
   de: {
-    title:'Kauffmann-Liste', subtitle:'Stolpersteine in Deutschland, Irland und Schweden · Ein Name, ein Leben.',
+    title:'Kauffmann-Liste', subtitle:'Stolpersteine in Deutschland, Irland, Schweden, Jersey, Finnland und Rumänien · Ein Name, ein Leben.',
     searchLabel:'Nach Namen suchen', searchPh:'Vorname, Nachname oder Straße…', cityLabel:'Ort', cityPh:'Nach Ort filtern (optional)',
     loading:'Stolpersteine werden geladen…', ready:n=>`${n} Stolpersteine auf der Karte. Geben Sie einen Namen ein.`,
     results:(n,more)=>`${n}${more?'+':''} Treffer`, none:'Keine Treffer. Versuchen Sie eine andere Schreibweise, nur den Nachnamen oder entfernen Sie den Ortsfilter.',
-    similar:'(ähnliche Schreibweisen)', back:'← Zurück zu den Treffern', inscription:'Inschrift', address:'Adresse', country:'Land', countryName:{DE:'Deutschland',IE:'Irland',SE:'Schweden'}, place:'Ort', district:'Stadtteil',
+    similar:'(ähnliche Schreibweisen)', back:'← Zurück zu den Treffern', inscription:'Inschrift', address:'Adresse', country:'Land', countryName:{DE:'Deutschland',IE:'Irland',SE:'Schweden',JE:'Jersey',FI:'Finnland',RO:'Rumänien'}, place:'Ort', district:'Stadtteil',
     born:'Geboren', died:'Gestorben', laid:'Verlegt', type:'Art', threshold:'Stolperschwelle',
     photo:'Foto des Steins: Wikimedia Commons — Urheber und Lizenz ansehen', bio:'Biografie und Quellen', research:'In den Quellen suchen',
     researchNote:'Externe Links; die Kauffmann-Liste kopiert deren Daten nicht.',
@@ -47,16 +48,17 @@ const I18N = {
     about:'Über die Daten', close:'Schließen', noinsc:'Für diesen Stein ist in den Quellen keine Inschrift erfasst.',
     attribution:'Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL) und <a href="https://www.wikidata.org">Wikidata</a> (CC0). Kartengrundlage © OpenStreetMap.',
     aboutHtml:m=>`<h2>Über diese Karte</h2><p>Stolpersteine sind Gedenktafeln aus Messing des Künstlers Gunter Demnig, verlegt vor dem letzten frei gewählten Wohnort von Menschen, die im Nationalsozialismus verfolgt, deportiert oder ermordet wurden.</p>
-      <p>Diese Karte zeigt <strong>${m.count}</strong> Steine in Deutschland, Irland und Schweden aus offenen Daten: OpenStreetMap (Stand ${m.osm_snapshot}) und Wikidata (${m.wikidata_snapshot}). <strong>Sie ist unvollständig</strong>: Laut Stiftung Spuren – Gunter Demnig liegen über 116.000 Stolpersteine in Europa, die meisten in Deutschland. Finden Sie einen Namen nicht, sehen Sie bitte auch bei <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> und den lokalen Initiativen nach (z. B. <a href="https://www.stolpersteine-berlin.de">Berlin</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburg</a>).</p>
+      <p>Diese Karte zeigt <strong>${m.count}</strong> Steine in Deutschland, Irland, Schweden, Jersey, Finnland und Rumänien aus offenen Daten: OpenStreetMap (Stand ${m.osm_snapshot}) und Wikidata (${m.wikidata_snapshot}). <strong>Sie ist unvollständig</strong>: Laut Stiftung Spuren – Gunter Demnig liegen über 116.000 Stolpersteine in Europa, die meisten in Deutschland. Finden Sie einen Namen nicht, sehen Sie bitte auch bei <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> und den lokalen Initiativen nach (z. B. <a href="https://www.stolpersteine-berlin.de">Berlin</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburg</a>).</p>
       <p>Es wurden keine Angaben erfunden; jedes Feld stammt aus den genannten Quellen. Fehler oder Doppelungen sind möglich; Korrekturen erfolgen in OpenStreetMap bzw. Wikidata.</p>
+      <p>Position auf der Karte: Die Säulen stehen auf dem Gehweg. Liegt ein erfasster Punkt in einem OpenStreetMap-Gebäude oder weniger als einen Meter von dessen Fassade entfernt (Irland, Schweden, Jersey, Finnland, Rumänien), wird nur die Darstellung zur Straße hin verschoben (höchstens 25 m); die Koordinaten in den Daten und in den Routenlinks bleiben die ursprünglichen.</p>
       <p>Datenbanklizenz: <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>. Fotos: Wikimedia Commons mit jeweils eigener Lizenz.</p>`
   },
   en: {
-    title:'Kauffmann List', subtitle:'Stolpersteine in Germany, Ireland and Sweden · One name, one life.',
+    title:'Kauffmann List', subtitle:'Stolpersteine in Germany, Ireland, Sweden, Jersey, Finland and Romania · One name, one life.',
     searchLabel:'Search by name', searchPh:'First name, surname or street…', cityLabel:'Place', cityPh:'Filter by place (optional)',
     loading:'Loading stones…', ready:n=>`${n} stones on the map. Type a name to search.`,
     results:(n,more)=>`${n}${more?'+':''} result${n===1?'':'s'}`, none:'No results. Try another spelling, the surname only, or clear the place filter.',
-    similar:'(similar spellings)', back:'← Back to results', inscription:'Inscription', address:'Address', country:'Country', countryName:{DE:'Germany',IE:'Ireland',SE:'Sweden'}, place:'Place', district:'District',
+    similar:'(similar spellings)', back:'← Back to results', inscription:'Inscription', address:'Address', country:'Country', countryName:{DE:'Germany',IE:'Ireland',SE:'Sweden',JE:'Jersey',FI:'Finland',RO:'Romania'}, place:'Place', district:'District',
     born:'Born', died:'Died', laid:'Stone laid', type:'Type', threshold:'Stolperschwelle (memorial threshold)',
     photo:'Photo of the stone: Wikimedia Commons — see author and licence', bio:'Biography and sources', research:'Search the sources',
     researchNote:'External links; the Kauffmann List does not copy their data.',
@@ -73,8 +75,9 @@ const I18N = {
     about:'About the data', close:'Close', noinsc:'No transcription of the inscription in the sources.',
     attribution:'Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL) and <a href="https://www.wikidata.org">Wikidata</a> (CC0). Base map © OpenStreetMap.',
     aboutHtml:m=>`<h2>About this map</h2><p>Stolpersteine (“stumbling stones”) are brass plaques by the artist Gunter Demnig, set in front of the last freely chosen home of people persecuted, deported or murdered under National Socialism.</p>
-      <p>This map shows <strong>${m.count}</strong> stones in Germany, Ireland and Sweden from open data: OpenStreetMap (snapshot ${m.osm_snapshot}) and Wikidata (${m.wikidata_snapshot}). <strong>It is incomplete</strong>: according to Stiftung Spuren – Gunter Demnig there are over 116,000 Stolpersteine in Europe, most of them in Germany. If you cannot find a name, please also check <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> and local initiatives (e.g. <a href="https://www.stolpersteine-berlin.de">Berlin</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburg</a>).</p>
+      <p>This map shows <strong>${m.count}</strong> stones in Germany, Ireland, Sweden, Jersey, Finland and Romania from open data: OpenStreetMap (snapshot ${m.osm_snapshot}) and Wikidata (${m.wikidata_snapshot}). <strong>It is incomplete</strong>: according to Stiftung Spuren – Gunter Demnig there are over 116,000 Stolpersteine in Europe, most of them in Germany. If you cannot find a name, please also check <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> and local initiatives (e.g. <a href="https://www.stolpersteine-berlin.de">Berlin</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburg</a>).</p>
       <p>No data has been invented; every field comes from the cited sources. Errors or duplicates are possible; corrections belong in OpenStreetMap or Wikidata.</p>
+      <p>Position on the map: the columns are drawn on the pavement. If a recorded point falls inside an OpenStreetMap building or less than a metre from its façade (Ireland, Sweden, Jersey, Finland, Romania), only the drawing is moved towards the street (never more than 25 m); the coordinates in the data and in the directions links stay the original ones.</p>
       <p>Database licence: <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>. Photos: Wikimedia Commons, each under its own licence.</p>`
   }
 };
@@ -174,7 +177,7 @@ function applyI18n(){
 }
 
 /* ---------- search (same rules as the 2D map) ---------- */
-const COUNTRY_WORDS = {IE:'irlanda irland ireland', SE:'suecia schweden sweden'};
+const COUNTRY_WORDS = {IE:'irlanda irland ireland', SE:'suecia schweden sweden', JE:'jersey', FI:'finlandia finnland finland suomi', RO:'rumania rumanien romania'};
 function norm(s){
   return String(s||'').toLowerCase().replace(/ß/g,'ss').replace(/ä/g,'a').replace(/ö/g,'o').replace(/ü/g,'u')
     .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
@@ -722,6 +725,9 @@ async function load(){
   $('#status').textContent = T('loading');
   const j = await (await fetch('data/stones.json')).json();
   META = j.meta; DATA = j.stones;
+  // v19: posición de DIBUJO. Si el archivo trae dla/dlo (placa dentro de un edificio de OSM o a menos de 1 m de la fachada), la columna se dibuja ahí
+  // (en la acera, hacia la calle); la coordenada de origen queda en sla/slo y es la que usan «Cómo llegar» y las descargas.
+  for (const s of DATA){ if (s.dla != null && s.dlo != null){ s.sla = s.la; s.slo = s.lo; s.la = s.dla; s.lo = s.dlo; } }
   for (const s of DATA){
     s._t = norm([s.n, s.a, s.sub, cityOf(s), s.cc && s.cc !== 'DE' ? (COUNTRY_WORDS[s.cc] || '') : ''].join(' ')).split(' ');   // v18: «Suecia/Schweden/Sweden», «Irlanda/Irland/Ireland» encuentran sus piedras (Alemania no: sería todo)
     s._c = norm(cityOf(s)); byId.set(s.id, s);
@@ -909,8 +915,8 @@ function openStone(id, fromMap){
     <dl class="facts">${facts}</dl>
     <div class="actions">
       <button id="share">${T('share')}</button>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=${s.la},${s.lo}" target="_blank" rel="noopener noreferrer">${T('directions')}</a>
-      <a href="https://www.openstreetmap.org/directions?to=${s.la}%2C${s.lo}#map=19/${s.la}/${s.lo}" target="_blank" rel="noopener noreferrer">${T('osmDir')}</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=${s.sla ?? s.la},${s.slo ?? s.lo}" target="_blank" rel="noopener noreferrer">${T('directions')}</a>
+      <a href="https://www.openstreetmap.org/directions?to=${s.sla ?? s.la}%2C${s.slo ?? s.lo}#map=19/${s.sla ?? s.la}/${s.slo ?? s.lo}" target="_blank" rel="noopener noreferrer">${T('osmDir')}</a>
     </div>
     <div id="storySlot"><p class="story-wait">…</p></div>
     ${bio.length?`<div class="section-t">${T('bio')}</div><ul class="links">${bio.join('')}</ul>`:''}
@@ -1014,17 +1020,17 @@ function downloadText(name, mime, text){
 $('#dlGeo').onclick = () => {
   if (!DATA.length) return;
   const fc = {type:'FeatureCollection', name:'stolpersteine_germany', license: META.license,
-    features: DATA.map(s => ({type:'Feature', geometry:{type:'Point', coordinates:[s.lo, s.la]}, properties:stoneProps(s)}))};
+    features: DATA.map(s => ({type:'Feature', geometry:{type:'Point', coordinates:[s.slo ?? s.lo, s.sla ?? s.la]}, properties:stoneProps(s)}))};
   downloadText('stolpersteine_germany.geojson', 'application/geo+json', JSON.stringify(fc));
 };
 $('#dlKml').onclick = () => {
   if (!DATA.length) return;
   const xe = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const parts = ['<?xml version="1.0" encoding="UTF-8"?>','<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Stolpersteine in Deutschland, Irland und Schweden</name>'];
+  const parts = ['<?xml version="1.0" encoding="UTF-8"?>','<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Stolpersteine in Deutschland, Irland, Schweden, Jersey, Finnland und Rumänien</name>'];
   for (const s of DATA) {
     const p = stoneProps(s);
     const desc = [p.address, p.city, p.birth && ('* '+p.birth), p.death && ('† '+p.death), p.inscription].filter(Boolean).join(' · ');
-    parts.push('<Placemark><name>'+xe(p.name)+'</name><description>'+xe(desc)+'</description><Point><coordinates>'+s.lo+','+s.la+',0</coordinates></Point></Placemark>');
+    parts.push('<Placemark><name>'+xe(p.name)+'</name><description>'+xe(desc)+'</description><Point><coordinates>'+(s.slo ?? s.lo)+','+(s.sla ?? s.la)+',0</coordinates></Point></Placemark>');
   }
   parts.push('</Document></kml>');
   downloadText('stolpersteine_germany.kml', 'application/vnd.google-earth.kml+xml', parts.join('\n'));

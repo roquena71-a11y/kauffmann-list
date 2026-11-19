@@ -1,0 +1,357 @@
+{
+ "meta": {
+  "countries": {
+   "JE": 20,
+   "FI": 7,
+   "RO": 2
+  },
+  "added": 29,
+  "excluded": 2,
+  "osm_snapshot": "2026-11-19T10:51:08Z",
+  "wikidata_queried_at": "2026-11-19",
+  "previous_records": 65832,
+  "previous_sha256_json_list": "fbe6968437d16b5328de0a7c1d1fea191faa877a8fa9894204ee03e9ec202cb8",
+  "sources": {
+   "JE": "OSM ODbL (nodos memorial=stolperstein; área ISO3166-1=JE)",
+   "FI": "OSM ODbL + Wikidata CC0",
+   "RO": "Wikidata CC0 (OSM: 0 nodos)"
+  }
+ },
+ "added": [
+  {
+   "id": "n13019914730",
+   "wd": null,
+   "p": null,
+   "n": "Michael Ginns",
+   "c": "Grouville",
+   "cc": "JE",
+   "la": 49.1862459,
+   "lo": -2.0409002,
+   "src": "osm"
+  },
+  {
+   "id": "n13021249318",
+   "wd": null,
+   "p": null,
+   "n": "Jean Marie Rossi",
+   "c": "St Saviour",
+   "cc": "JE",
+   "la": 49.210006,
+   "lo": -2.0625658,
+   "src": "osm"
+  },
+  {
+   "id": "n13021292775",
+   "wd": null,
+   "p": "Q219634",
+   "n": "Lucy Renee Schwob 'Claude Cahun'",
+   "c": "St Brelade",
+   "cc": "JE",
+   "la": 49.1847097,
+   "lo": -2.2025139,
+   "src": "osm"
+  },
+  {
+   "id": "n13021292776",
+   "wd": null,
+   "p": "Q219636",
+   "n": "Suzanne Malherbe 'Marcel Moore'",
+   "c": "St Brelade",
+   "cc": "JE",
+   "la": 49.1847096,
+   "lo": -2.2025124,
+   "src": "osm"
+  },
+  {
+   "id": "n13021346173",
+   "wd": null,
+   "p": null,
+   "n": "Hyam Goldman",
+   "c": "St Peter",
+   "cc": "JE",
+   "la": 49.2140168,
+   "lo": -2.1707454,
+   "src": "osm"
+  },
+  {
+   "id": "n13021370465",
+   "wd": null,
+   "p": null,
+   "n": "Walter 'Sonny' Gallichan",
+   "c": "St Helier",
+   "cc": "JE",
+   "la": 49.1987115,
+   "lo": -2.1085214,
+   "src": "osm"
+  },
+  {
+   "id": "n13021376749",
+   "wd": null,
+   "p": "Q19325872",
+   "n": "Harold Le Druillenec",
+   "c": "St Saviour",
+   "cc": "JE",
+   "la": 49.1964816,
+   "lo": -2.0896883,
+   "src": "osm"
+  },
+  {
+   "id": "n13021473673",
+   "wd": null,
+   "p": null,
+   "n": "Erica Richardson born Oljenick",
+   "c": "St Saviour",
+   "cc": "JE",
+   "la": 49.1782849,
+   "lo": -2.0952706,
+   "src": "osm"
+  },
+  {
+   "id": "n13021473674",
+   "wd": null,
+   "p": null,
+   "n": "John Max Finkelstein",
+   "c": "St Saviour",
+   "cc": "JE",
+   "la": 49.1794009,
+   "lo": -2.09103,
+   "src": "osm"
+  },
+  {
+   "id": "n13021473675",
+   "wd": null,
+   "p": null,
+   "n": "Esther Pauline Lloyd",
+   "c": "St Clement",
+   "cc": "JE",
+   "la": 49.1774726,
+   "lo": -2.0919219,
+   "src": "osm"
+  },
+  {
+   "id": "n13021473676",
+   "wd": null,
+   "p": null,
+   "n": "Ruby Ellen Still",
+   "c": "St Clement",
+   "cc": "JE",
+   "la": 49.1768126,
+   "lo": -2.0880927,
+   "src": "osm"
+  },
+  {
+   "id": "n13021473677",
+   "wd": null,
+   "p": null,
+   "n": "Emile 'Harry' Du Bois",
+   "c": "St Clement",
+   "cc": "JE",
+   "la": 49.1737285,
+   "lo": -2.0830069,
+   "src": "osm"
+  },
+  {
+   "id": "n13021664954",
+   "wd": null,
+   "p": null,
+   "n": "Joseph Arthur Mière",
+   "c": "St Helier",
+   "cc": "JE",
+   "la": 49.1924138,
+   "lo": -2.1054288,
+   "src": "osm"
+  },
+  {
+   "id": "n13021664955",
+   "wd": null,
+   "p": "Q4772481",
+   "n": "Charles 'Anthony' Faramus",
+   "c": "St Helier",
+   "cc": "JE",
+   "la": 49.18995,
+   "lo": -2.1045195,
+   "src": "osm"
+  },
+  {
+   "id": "n13021664956",
+   "wd": null,
+   "p": null,
+   "n": "Nathan Davidson",
+   "c": "St Helier",
+   "cc": "JE",
+   "la": 49.1895,
+   "lo": -2.1006075,
+   "src": "osm"
+  },
+  {
+   "id": "n13021664957",
+   "wd": null,
+   "p": null,
+   "n": "Emma Constance Marshall",
+   "c": "St Helier",
+   "cc": "JE",
+   "la": 49.1882299,
+   "lo": -2.1014933,
+   "src": "osm"
+  },
+  {
+   "id": "n13021664958",
+   "wd": null,
+   "p": null,
+   "n": "Peter Denis Hassall",
+   "c": "St Helier",
+   "cc": "JE",
+   "la": 49.1884118,
+   "lo": -2.1048038,
+   "src": "osm"
+  },
+  {
+   "id": "n13021664959",
+   "wd": null,
+   "p": "Q126890936",
+   "n": "Hedwig Bercu",
+   "c": "St Helier",
+   "cc": "JE",
+   "la": 49.1858168,
+   "lo": -2.1063112,
+   "src": "osm"
+  },
+  {
+   "id": "n13021664960",
+   "wd": null,
+   "p": null,
+   "n": "Gordon Augustin Prigent",
+   "c": "St Helier",
+   "cc": "JE",
+   "la": 49.1832686,
+   "lo": -2.1072762,
+   "src": "osm"
+  },
+  {
+   "id": "n13021664961",
+   "wd": null,
+   "p": null,
+   "n": "Victor Emanuel",
+   "c": "St Helier",
+   "cc": "JE",
+   "la": 49.1823644,
+   "lo": -2.0991102,
+   "src": "osm"
+  },
+  {
+   "id": "n5666091193",
+   "wd": "Q54875400",
+   "p": null,
+   "n": "Tri. Georg Kollmann",
+   "c": "Helsinki",
+   "cc": "FI",
+   "la": 60.1976337,
+   "lo": 24.8778773,
+   "src": "osm+wd"
+  },
+  {
+   "id": "n5666091194",
+   "wd": "Q54875405",
+   "p": null,
+   "n": "Franz Olof Kollmann",
+   "c": "Helsinki",
+   "cc": "FI",
+   "la": 60.197639,
+   "lo": 24.8778486,
+   "src": "osm+wd"
+  },
+  {
+   "id": "n5666108973",
+   "wd": "Q54875407",
+   "p": null,
+   "n": "Janka Kollmann",
+   "c": "Helsinki",
+   "cc": "FI",
+   "la": 60.197645,
+   "lo": 24.8778248,
+   "src": "osm+wd"
+  },
+  {
+   "id": "n6787944216",
+   "wd": "Q65048647",
+   "p": null,
+   "n": "Elias Kopelowsky",
+   "c": "Helsinki",
+   "cc": "FI",
+   "la": 60.167949,
+   "lo": 24.9385975,
+   "src": "osm+wd"
+  },
+  {
+   "id": "n11716782879",
+   "wd": "Q102117141",
+   "p": null,
+   "n": "Hans Korn",
+   "c": "Helsinki",
+   "cc": "FI",
+   "la": 60.1599091,
+   "lo": 24.9467163,
+   "src": "osm+wd"
+  },
+  {
+   "id": "n11716782880",
+   "wd": "Q102117204",
+   "p": null,
+   "n": "Heinrich Huppert",
+   "c": "Helsinki",
+   "cc": "FI",
+   "la": 60.1790161,
+   "lo": 24.9531771,
+   "src": "osm+wd"
+  },
+  {
+   "id": "n11716782881",
+   "wd": "Q102117231",
+   "p": null,
+   "n": "Kurt Huppert",
+   "c": "Helsinki",
+   "cc": "FI",
+   "la": 60.1790092,
+   "lo": 24.9531777,
+   "src": "osm+wd"
+  },
+  {
+   "id": "Q44101523",
+   "wd": "Q44101523",
+   "p": null,
+   "n": "Bloch Lorand",
+   "c": "Timișoara",
+   "cc": "RO",
+   "la": 45.756517,
+   "lo": 21.248265,
+   "src": "wd"
+  },
+  {
+   "id": "Q44103124",
+   "wd": "Q44103124",
+   "p": "Q37819936",
+   "n": "Miriam Zeiger Mozes",
+   "c": "Marca",
+   "cc": "RO",
+   "la": 47.235223,
+   "lo": 22.552878,
+   "src": "wd"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "n919561807",
+   "cc": "FI",
+   "la": 60.2496347,
+   "lo": 25.0111686,
+   "reason": "nodo OSM memorial=stolperstein que solo tiene dirección (Pekanraitti 15, Helsinki); sin nombre ni inscripción"
+  },
+  {
+   "id": "Q44068923",
+   "cc": "RO",
+   "la": 47.235222222,
+   "lo": 22.552877777,
+   "reason": "Wikidata (Eva Kor Mozes, Marca): sin inscripción ni dirección; no cumple datos completos"
+  }
+ ]
+}

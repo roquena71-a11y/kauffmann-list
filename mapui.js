@@ -190,8 +190,8 @@
     if (document.body.classList.contains('vigil-on') && typeof stopVigil === 'function') stopVigil();
     if (isMobile()) setSheet('peek');
     // Pocas placas juntas (una calle, Dublín): acercarse e inclinar. Pocas placas pero en ciudades lejanas (Suecia: Malmö y Estocolmo, ~500 km): ver todas, sin inclinar (v18).
-    const tiny = c.n < 50 && Math.max(c.e - c.w, c.nn - c.s) < 0.5;
-    const pad = tiny ? 0.002 : 0.15;
+    const tiny = c.n < 50 && Math.max(c.e - c.w, c.nn - c.s) < 0.02;   // v19: ≈2 km (una calle: Dublín); Jersey (isla de ~12 km) y Helsinki (~5 km) se ven enteras, sin inclinar
+    const ext = Math.max(c.e - c.w, c.nn - c.s), pad = tiny ? 0.002 : (ext < 1 ? 0.01 : 0.15);
     const box = [[c.w - pad, c.s - pad], [c.e + pad, c.nn + pad]], spread = c.n < 50 && !tiny;
     let cam = null;
     try { cam = spread ? fitCamera(box) : map.cameraForBounds(box, {padding: padding()}); } catch (err) {}   // spread: cálculo propio (cameraForBounds falla con el mapa inclinado)

@@ -1,0 +1,844 @@
+{
+ "meta": {
+  "osm_timestamp": "2026-11-19T10:58:19Z",
+  "clear_m": 0.95,
+  "max_move_m": 25.0,
+  "method": "Si la placa cae dentro de un edificio de OSM o la columna dibujada (1,2 m) tocaría su huella, la posición de dibujo (dla/dlo) se desplaza el mínimo hacia la vía de OSM más cercana hasta dejar la columna libre; la coordenada de origen (la/lo) no cambia."
+ },
+ "stones": [
+  {
+   "id": "n13067653175",
+   "n": "Ephraim Saks",
+   "cc": "IE",
+   "la": 53.3332359,
+   "lo": -6.2829292,
+   "grupo": 6,
+   "dentro_edificio": false,
+   "borde_m": 6.02,
+   "edificio": "w228792684",
+   "necesita_m": 3.02,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w376465146",
+    "highway": "tertiary",
+    "name": "Donore Avenue",
+    "m": 7.0
+   }
+  },
+  {
+   "id": "n13067653176",
+   "n": "Isaac Shishi",
+   "cc": "IE",
+   "la": 53.3332337,
+   "lo": -6.2829266,
+   "grupo": 6,
+   "dentro_edificio": false,
+   "borde_m": 6.02,
+   "edificio": "w228792684",
+   "necesita_m": 3.02,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w376465146",
+    "highway": "tertiary",
+    "name": "Donore Avenue",
+    "m": 7.0
+   }
+  },
+  {
+   "id": "n13067653177",
+   "n": "Leon Gluck",
+   "cc": "IE",
+   "la": 53.3332315,
+   "lo": -6.282924,
+   "grupo": 6,
+   "dentro_edificio": false,
+   "borde_m": 6.02,
+   "edificio": "w228792684",
+   "necesita_m": 3.02,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w376465146",
+    "highway": "tertiary",
+    "name": "Donore Avenue",
+    "m": 7.0
+   }
+  },
+  {
+   "id": "n13067653178",
+   "n": "Wojteck Gluck",
+   "cc": "IE",
+   "la": 53.3332293,
+   "lo": -6.2829215,
+   "grupo": 6,
+   "dentro_edificio": false,
+   "borde_m": 6.02,
+   "edificio": "w228792684",
+   "necesita_m": 3.02,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w376465146",
+    "highway": "tertiary",
+    "name": "Donore Avenue",
+    "m": 7.0
+   }
+  },
+  {
+   "id": "n13067653179",
+   "n": "Jeanne (Lena) Saks",
+   "cc": "IE",
+   "la": 53.3332381,
+   "lo": -6.2829318,
+   "grupo": 6,
+   "dentro_edificio": false,
+   "borde_m": 6.02,
+   "edificio": "w228792684",
+   "necesita_m": 3.02,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w376465146",
+    "highway": "tertiary",
+    "name": "Donore Avenue",
+    "m": 7.0
+   }
+  },
+  {
+   "id": "n13067653180",
+   "n": "Ettie Gluck born Steinberg",
+   "cc": "IE",
+   "la": 53.3332271,
+   "lo": -6.2829189,
+   "grupo": 6,
+   "dentro_edificio": false,
+   "borde_m": 6.02,
+   "edificio": "w228792684",
+   "necesita_m": 3.02,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w376465146",
+    "highway": "tertiary",
+    "name": "Donore Avenue",
+    "m": 7.0
+   }
+  },
+  {
+   "id": "n12212839191",
+   "n": "Siegfried Gutmann",
+   "cc": "SE",
+   "la": 55.6099177,
+   "lo": 12.9978798,
+   "grupo": 3,
+   "dentro_edificio": false,
+   "borde_m": 42.1,
+   "edificio": "w52243653",
+   "necesita_m": 2.26,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w706108667",
+    "highway": "cycleway",
+    "name": null,
+    "m": 11.6
+   },
+   "avisos": [
+    "ningún edificio de OSM a menos de 20 m (42 m): no se puede comprobar la fachada"
+   ]
+  },
+  {
+   "id": "n12212839192",
+   "n": "Walter Gerson",
+   "cc": "SE",
+   "la": 55.6099239,
+   "lo": 12.9978788,
+   "grupo": 3,
+   "dentro_edificio": false,
+   "borde_m": 42.1,
+   "edificio": "w52243653",
+   "necesita_m": 2.26,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w706108667",
+    "highway": "cycleway",
+    "name": null,
+    "m": 11.6
+   },
+   "avisos": [
+    "ningún edificio de OSM a menos de 20 m (42 m): no se puede comprobar la fachada"
+   ]
+  },
+  {
+   "id": "n12212839193",
+   "n": "Schulim Bürger",
+   "cc": "SE",
+   "la": 55.6099299,
+   "lo": 12.9978783,
+   "grupo": 3,
+   "dentro_edificio": false,
+   "borde_m": 42.1,
+   "edificio": "w52243653",
+   "necesita_m": 2.26,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w706108667",
+    "highway": "cycleway",
+    "name": null,
+    "m": 11.6
+   },
+   "avisos": [
+    "ningún edificio de OSM a menos de 20 m (42 m): no se puede comprobar la fachada"
+   ]
+  },
+  {
+   "id": "n12228264289",
+   "n": "Hans Eduard Szybilski",
+   "cc": "SE",
+   "la": 59.3364147,
+   "lo": 18.0645088,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 0.82,
+   "edificio": "w1377961923",
+   "necesita_m": 0.95,
+   "estado": "ajustada",
+   "via_mas_cercana": {
+    "id": "w4706306",
+    "highway": "residential",
+    "name": "Apelbergsgatan",
+    "m": 5.5
+   },
+   "dla": 59.3364135,
+   "dlo": 18.0645101,
+   "desplazamiento_m": 0.15,
+   "borde_despues_m": 0.97
+  },
+  {
+   "id": "n12247227671",
+   "n": "Erich Holewa",
+   "cc": "SE",
+   "la": 59.3275512,
+   "lo": 18.0426892,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 4.18,
+   "edificio": "w1350008585",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w4352649",
+    "highway": "tertiary",
+    "name": "Kungsholmstorg",
+    "m": 2.2
+   }
+  },
+  {
+   "id": "n12247228901",
+   "n": "Curt Moses",
+   "cc": "SE",
+   "la": 59.3357791,
+   "lo": 18.0895638,
+   "grupo": 1,
+   "dentro_edificio": true,
+   "borde_m": 0.0,
+   "edificio": "w1352481857",
+   "necesita_m": 0.95,
+   "estado": "ajustada",
+   "via_mas_cercana": {
+    "id": "w155080630",
+    "highway": "cycleway",
+    "name": "Gumshornsgatan",
+    "m": 6.8
+   },
+   "dla": 59.3357891,
+   "dlo": 18.0895586,
+   "desplazamiento_m": 1.15,
+   "borde_despues_m": 0.95
+  },
+  {
+   "id": "n13019914730",
+   "n": "Michael Ginns",
+   "cc": "JE",
+   "la": 49.1862459,
+   "lo": -2.0409002,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 2.59,
+   "edificio": "w227494763",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w167308006",
+    "highway": "unclassified",
+    "name": "Rue de la Croix",
+    "m": 3.3
+   }
+  },
+  {
+   "id": "n13021249318",
+   "n": "Jean Marie Rossi",
+   "cc": "JE",
+   "la": 49.210006,
+   "lo": -2.0625658,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 57.46,
+   "edificio": "w908857942",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w168430164",
+    "highway": "residential",
+    "name": "Chestnut Avenue",
+    "m": 0.7
+   },
+   "avisos": [
+    "sobre el eje de la calzada (residential, a 0.7 m): posible desvío de la fuente o calle sin acera",
+    "ningún edificio de OSM a menos de 20 m (57 m): no se puede comprobar la fachada"
+   ]
+  },
+  {
+   "id": "n13021292775",
+   "n": "Lucy Renee Schwob 'Claude Cahun'",
+   "cc": "JE",
+   "la": 49.1847097,
+   "lo": -2.2025139,
+   "grupo": 2,
+   "dentro_edificio": false,
+   "borde_m": 1.09,
+   "edificio": "w908384539",
+   "necesita_m": 1.87,
+   "estado": "ajustada",
+   "via_mas_cercana": {
+    "id": "w170724908",
+    "highway": "service",
+    "name": null,
+    "m": 3.9
+   },
+   "dla": 49.1847127,
+   "dlo": -2.2025239,
+   "desplazamiento_m": 0.8,
+   "borde_despues_m": 1.93
+  },
+  {
+   "id": "n13021292776",
+   "n": "Suzanne Malherbe 'Marcel Moore'",
+   "cc": "JE",
+   "la": 49.1847096,
+   "lo": -2.2025124,
+   "grupo": 2,
+   "dentro_edificio": false,
+   "borde_m": 1.09,
+   "edificio": "w908384539",
+   "necesita_m": 1.87,
+   "estado": "ajustada",
+   "via_mas_cercana": {
+    "id": "w170724908",
+    "highway": "service",
+    "name": null,
+    "m": 3.9
+   },
+   "dla": 49.1847126,
+   "dlo": -2.2025224,
+   "desplazamiento_m": 0.8,
+   "borde_despues_m": 1.82
+  },
+  {
+   "id": "n13021346173",
+   "n": "Hyam Goldman",
+   "cc": "JE",
+   "la": 49.2140168,
+   "lo": -2.1707454,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 1000000000.0,
+   "edificio": null,
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w697784708",
+    "highway": "cycleway",
+    "name": "St Peter's Valley",
+    "m": 0.0
+   },
+   "avisos": [
+    "ningún edificio de OSM a menos de 20 m (sin edificios en 110 m): no se puede comprobar la fachada"
+   ]
+  },
+  {
+   "id": "n13021370465",
+   "n": "Walter 'Sonny' Gallichan",
+   "cc": "JE",
+   "la": 49.1987115,
+   "lo": -2.1085214,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 6.05,
+   "edificio": "w408292567",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w165494705",
+    "highway": "residential",
+    "name": "Manor Park Road",
+    "m": 2.5
+   }
+  },
+  {
+   "id": "n13021376749",
+   "n": "Harold Le Druillenec",
+   "cc": "JE",
+   "la": 49.1964816,
+   "lo": -2.0896883,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 38.47,
+   "edificio": "w199350266",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w121558815",
+    "highway": "residential",
+    "name": "Langley Avenue",
+    "m": 1.8
+   },
+   "avisos": [
+    "ningún edificio de OSM a menos de 20 m (38 m): no se puede comprobar la fachada"
+   ]
+  },
+  {
+   "id": "n13021473673",
+   "n": "Erica Richardson born Oljenick",
+   "cc": "JE",
+   "la": 49.1782849,
+   "lo": -2.0952706,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 2.32,
+   "edificio": "w963604133",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w119155727",
+    "highway": "secondary",
+    "name": "Dicq Road",
+    "m": 2.5
+   }
+  },
+  {
+   "id": "n13021473674",
+   "n": "John Max Finkelstein",
+   "cc": "JE",
+   "la": 49.1794009,
+   "lo": -2.09103,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 46.87,
+   "edificio": "w477144720",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w8591017",
+    "highway": "primary",
+    "name": "Georgetown Road",
+    "m": 2.2
+   },
+   "avisos": [
+    "ningún edificio de OSM a menos de 20 m (47 m): no se puede comprobar la fachada"
+   ]
+  },
+  {
+   "id": "n13021473675",
+   "n": "Esther Pauline Lloyd",
+   "cc": "JE",
+   "la": 49.1774726,
+   "lo": -2.0919219,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 14.91,
+   "edificio": "w963603538",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w119156709",
+    "highway": "service",
+    "name": "Georgetown Park Estate",
+    "m": 5.6
+   }
+  },
+  {
+   "id": "n13021473676",
+   "n": "Ruby Ellen Still",
+   "cc": "JE",
+   "la": 49.1768126,
+   "lo": -2.0880927,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 10.31,
+   "edificio": "w963598309",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w332931792",
+    "highway": "secondary",
+    "name": "Victoria Road",
+    "m": 3.0
+   }
+  },
+  {
+   "id": "n13021473677",
+   "n": "Emile 'Harry' Du Bois",
+   "cc": "JE",
+   "la": 49.1737285,
+   "lo": -2.0830069,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 24.42,
+   "edificio": "w210537329",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w205210958",
+    "highway": "residential",
+    "name": "Samares Avenue",
+    "m": 3.4
+   },
+   "avisos": [
+    "ningún edificio de OSM a menos de 20 m (24 m): no se puede comprobar la fachada"
+   ]
+  },
+  {
+   "id": "n13021664954",
+   "n": "Joseph Arthur Mière",
+   "cc": "JE",
+   "la": 49.1924138,
+   "lo": -2.1054288,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 3.88,
+   "edificio": "w902307784",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w113076202",
+    "highway": "secondary",
+    "name": "Midvale Road",
+    "m": 4.1
+   }
+  },
+  {
+   "id": "n13021664955",
+   "n": "Charles 'Anthony' Faramus",
+   "cc": "JE",
+   "la": 49.18995,
+   "lo": -2.1045195,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 6.65,
+   "edificio": "w907165203",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w164982462",
+    "highway": "secondary",
+    "name": "Val Plaisant",
+    "m": 3.6
+   }
+  },
+  {
+   "id": "n13021664956",
+   "n": "Nathan Davidson",
+   "cc": "JE",
+   "la": 49.1895,
+   "lo": -2.1006075,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 12.2,
+   "edificio": "w210666576",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w113076192",
+    "highway": "secondary",
+    "name": "Stopford Road",
+    "m": 4.2
+   }
+  },
+  {
+   "id": "n13021664957",
+   "n": "Emma Constance Marshall",
+   "cc": "JE",
+   "la": 49.1882299,
+   "lo": -2.1014933,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 4.3,
+   "edificio": "w956433201",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w117005509",
+    "highway": "residential",
+    "name": "Chevalier Road",
+    "m": 2.9
+   }
+  },
+  {
+   "id": "n13021664958",
+   "n": "Peter Denis Hassall",
+   "cc": "JE",
+   "la": 49.1884118,
+   "lo": -2.1048038,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 1.22,
+   "edificio": "w830907448",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w116347753",
+    "highway": "unclassified",
+    "name": "Winchester Street",
+    "m": 2.5
+   }
+  },
+  {
+   "id": "n13021664959",
+   "n": "Hedwig Bercu",
+   "cc": "JE",
+   "la": 49.1858168,
+   "lo": -2.1063112,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 0.49,
+   "edificio": "w251419544",
+   "necesita_m": 0.95,
+   "estado": "ajustada",
+   "via_mas_cercana": {
+    "id": "w110971530",
+    "highway": "pedestrian",
+    "name": "New Street",
+    "m": 5.0
+   },
+   "dla": 49.1858156,
+   "dlo": -2.1063046,
+   "desplazamiento_m": 0.5,
+   "borde_despues_m": 0.99
+  },
+  {
+   "id": "n13021664960",
+   "n": "Gordon Augustin Prigent",
+   "cc": "JE",
+   "la": 49.1832686,
+   "lo": -2.1072762,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 4.02,
+   "edificio": "w166372917",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w111137127",
+    "highway": "unclassified",
+    "name": "Hope Street",
+    "m": 1.4
+   },
+   "avisos": [
+    "sobre el eje de la calzada (unclassified, a 1.4 m): posible desvío de la fuente o calle sin acera"
+   ]
+  },
+  {
+   "id": "n13021664961",
+   "n": "Victor Emanuel",
+   "cc": "JE",
+   "la": 49.1823644,
+   "lo": -2.0991102,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 16.6,
+   "edificio": "w907165228",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w26807060",
+    "highway": "primary",
+    "name": "Don Road",
+    "m": 5.0
+   }
+  },
+  {
+   "id": "n5666091193",
+   "n": "Tri. Georg Kollmann",
+   "cc": "FI",
+   "la": 60.1976337,
+   "lo": 24.8778773,
+   "grupo": 2,
+   "dentro_edificio": false,
+   "borde_m": 2.33,
+   "edificio": "w27620854",
+   "necesita_m": 1.87,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w311439289",
+    "highway": "footway",
+    "name": null,
+    "m": 0.5
+   }
+  },
+  {
+   "id": "n5666091194",
+   "n": "Franz Olof Kollmann",
+   "cc": "FI",
+   "la": 60.197639,
+   "lo": 24.8778486,
+   "grupo": 2,
+   "dentro_edificio": false,
+   "borde_m": 2.33,
+   "edificio": "w27620854",
+   "necesita_m": 1.87,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w311439289",
+    "highway": "footway",
+    "name": null,
+    "m": 0.5
+   }
+  },
+  {
+   "id": "n5666108973",
+   "n": "Janka Kollmann",
+   "cc": "FI",
+   "la": 60.197645,
+   "lo": 24.8778248,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 2.45,
+   "edificio": "w27620854",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w311439289",
+    "highway": "footway",
+    "name": null,
+    "m": 0.7
+   }
+  },
+  {
+   "id": "n6787944216",
+   "n": "Elias Kopelowsky",
+   "cc": "FI",
+   "la": 60.167949,
+   "lo": 24.9385975,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 1.03,
+   "edificio": "w123525580",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w324204721",
+    "highway": "footway",
+    "name": null,
+    "m": 0.0
+   }
+  },
+  {
+   "id": "n11716782879",
+   "n": "Hans Korn",
+   "cc": "FI",
+   "la": 60.1599091,
+   "lo": 24.9467163,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 1.3,
+   "edificio": "w86934361",
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w86503434",
+    "highway": "footway",
+    "name": null,
+    "m": 0.0
+   }
+  },
+  {
+   "id": "n11716782880",
+   "n": "Heinrich Huppert",
+   "cc": "FI",
+   "la": 60.1790161,
+   "lo": 24.9531771,
+   "grupo": 2,
+   "dentro_edificio": false,
+   "borde_m": 2.04,
+   "edificio": "w76315833",
+   "necesita_m": 1.87,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w28638882",
+    "highway": "footway",
+    "name": null,
+    "m": 0.0
+   }
+  },
+  {
+   "id": "n11716782881",
+   "n": "Kurt Huppert",
+   "cc": "FI",
+   "la": 60.1790092,
+   "lo": 24.9531777,
+   "grupo": 2,
+   "dentro_edificio": false,
+   "borde_m": 2.04,
+   "edificio": "w76315833",
+   "necesita_m": 1.87,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w28638882",
+    "highway": "footway",
+    "name": null,
+    "m": 0.0
+   }
+  },
+  {
+   "id": "Q44101523",
+   "n": "Bloch Lorand",
+   "cc": "RO",
+   "la": 45.756517,
+   "lo": 21.248265,
+   "grupo": 1,
+   "dentro_edificio": true,
+   "borde_m": 0.0,
+   "edificio": "w550507723",
+   "necesita_m": 0.95,
+   "estado": "ajustada",
+   "via_mas_cercana": {
+    "id": "w841438402",
+    "highway": "footway",
+    "name": null,
+    "m": 6.4
+   },
+   "dla": 45.7565255,
+   "dlo": 21.2481959,
+   "desplazamiento_m": 5.45,
+   "borde_despues_m": 0.97
+  },
+  {
+   "id": "Q44103124",
+   "n": "Miriam Zeiger Mozes",
+   "cc": "RO",
+   "la": 47.235223,
+   "lo": 22.552878,
+   "grupo": 1,
+   "dentro_edificio": false,
+   "borde_m": 1000000000.0,
+   "edificio": null,
+   "necesita_m": 0.95,
+   "estado": "ok",
+   "via_mas_cercana": {
+    "id": "w172860934",
+    "highway": "tertiary",
+    "name": null,
+    "m": 8.5
+   },
+   "avisos": [
+    "ningún edificio de OSM a menos de 20 m (sin edificios en 110 m): no se puede comprobar la fachada"
+   ]
+  }
+ ]
+}

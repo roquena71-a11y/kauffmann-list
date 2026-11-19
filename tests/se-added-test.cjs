@@ -10,7 +10,7 @@ assert(D.meta.sweden_added && D.meta.sweden_added.records === 6, 'meta.sweden_ad
 const base = M.meta.previous_records;
 assert(base === 65826, 'base anterior 65826 (Alemania 65820 + Irlanda 6)');
 const added = S.slice(base, base + 6), old = S.slice(0, base);
-assert(S.length === base + 6, 'total 65832: ' + S.length);
+assert(S.length === base + 6 + 29, 'total 65861 (v19 añadió 29 más): ' + S.length);
 assert(added.length === 6 && added.length === M.added.length, '6 registros de Suecia');
 // La base (Alemania + Irlanda) no cambió ni un byte.
 const h = crypto.createHash('sha256').update(JSON.stringify(old)).digest('hex');

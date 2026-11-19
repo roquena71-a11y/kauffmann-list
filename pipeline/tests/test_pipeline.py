@@ -580,6 +580,33 @@ class TestSwedishInscriptions(unittest.TestCase):
         self.assertEqual(ins.fate_from_text("HÄR BODDE X FÖDD 1920 FLYDDE TILL SVERIGE")[0], "fled")   # v18: flydde = huyó
         self.assertEqual(ins.fate_from_text("HIER WOHNTE X FLUCHT 1939 ÜBERLEBT")[0], "survived")
 
+    def test_english_finnish_romanian_words_v19(self):
+        """v19: Jersey (inglés), Finlandia (finés) y Rumanía (rumano) se leen tal cual; el alemán no cambia."""
+        from pipeline import inscription as ins
+        f = lambda x: ins.fate_from_text(x)[0]
+        self.assertEqual(f("HERE LIVED NATHAN DAVIDSON BORN 1881 ARRIVED 1935 FROM ROMANIA PERSECUTED DIED 29.2.1944 ST SAVIOUR'S HOSPITAL"), "died_in_persecution")
+        self.assertEqual(f("HERE LIVED VICTOR EMANUEL BORN 1870 PERSECUTED SUICIDE 9.4.1944"), "suicide")
+        self.assertEqual(f("HERE LIVED JOHN MAX FINKELSTEIN BORN 1882 DEPORTED 13.2.1943 GERMANY INTERNED LAUFEN DEPORTED BUCHENWALD LIBERATED THERESIENSTADT"), "survived")
+        self.assertEqual(f("HERE LIVED HEDWIG BERCU BORN 1919 ARRIVED 1938 FROM AUSTRIA SURVIVED IN HIDING"), "survived")
+        self.assertEqual(f("HERE LIVED MICHAEL GINNS BORN 1927 DEPORTED 18.9.1942 GERMANY INTERNED BIBERACH LIBERARED WURZACH"), "survived")
+        self.assertEqual(f("Tässä asui Franz Olof Kollmann s. 1941 Helsinki Luovutettiin Gestapolle 6.11.1942 Vietiin Auschwitziin 1943 Murhattiin"), "murdered")
+        self.assertEqual(f("Tässä asui Tri Georg Kollmann s. 1912 Itävalta Pakeni Suomeen Luovutettiin Gestapolle 6.11.1942 Vietiin Auschwitziin 1943 Vapautui"), "survived")
+        self.assertEqual(f("Aici locuia Miriam Zeiger Mozes născuta 1934 arestata Martie 1944 deportata 1944 Auschwitz-Birkenau eliberată/supravietuit"), "survived")
+        # el alemán no cambia
+        self.assertEqual(f("HIER WOHNTE MAX MUSTER JG. 1900 DEPORTIERT 1942 ERMORDET"), "murdered")
+        self.assertEqual(f("HIER WOHNTE MAX MUSTER JG. 1900 DEPORTIERT 1942"), "deported")
+        self.assertEqual(f("HIER WOHNTE MAX MUSTER JG. 1900 FLUCHT 1939 USA"), "fled")
+
+    def test_stone_country_je_fi_ro(self):
+        from pipeline.adapters.stones import stone_to_record
+        cfg = {"id": "stolpersteine_de", "id_prefix": "st", "license": "ODbL-1.0", "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+               "attribution": "© OpenStreetMap contributors", "link_templates": {}}
+        for cc, c in (("JE", "St Helier"), ("FI", "Helsinki"), ("RO", "Timișoara")):
+            r = stone_to_record({"id": "n1", "la": 49.1, "lo": -2.1, "src": "osm", "n": "A B", "i": "HERE LIVED A B", "a": "X", "c": c, "cc": cc, "dla": 49.10001, "dlo": -2.10001}, None, cfg, "2026-11-19")
+            m = r["memorials"][0]
+            self.assertEqual(m["country"], cc); self.assertEqual(m["locality"], c)
+            self.assertEqual((m["lat"], m["lon"]), (49.1, -2.1))        # la API conserva la coordenada de origen, no la de dibujo
+
     def test_stone_country_se(self):
         from pipeline.adapters.stones import stone_to_record
         cfg = {"id": "stolpersteine_de", "id_prefix": "st", "license": "ODbL-1.0",
