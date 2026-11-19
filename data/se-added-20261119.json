@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "country": "SE",
+  "country_label_es": "Suecia",
+  "added": 6,
+  "excluded": 1,
+  "wd_matched": 3,
+  "wd_only": 0,
+  "osm_candidates": 7,
+  "wd_candidates": 3,
+  "osm_snapshot": "2026-11-19T07:56:02Z",
+  "wikidata_queried_at": "2026-11-19",
+  "city_source": "OSM memorial:addr (ODbL 1.0)",
+  "address_source": "OSM memorial:addr (ODbL 1.0)",
+  "coord_source": "OSM node lat/lon (ODbL 1.0)",
+  "previous_records": 65826,
+  "previous_sha256_json_list": "4f79dc8f9eff8a0709ad8152db6fa651e55bd998fbda361fa6d920f74d19ca87"
+ },
+ "added": [
+  {
+   "id": "n12212839191",
+   "wd": null,
+   "p": null,
+   "n": "Siegfried Gutmann",
+   "c": "Malmö",
+   "cc": "SE",
+   "la": 55.6099177,
+   "lo": 12.9978798,
+   "src": "osm"
+  },
+  {
+   "id": "n12212839192",
+   "wd": null,
+   "p": null,
+   "n": "Walter Gerson",
+   "c": "Malmö",
+   "cc": "SE",
+   "la": 55.6099239,
+   "lo": 12.9978788,
+   "src": "osm"
+  },
+  {
+   "id": "n12212839193",
+   "wd": null,
+   "p": null,
+   "n": "Schulim Bürger",
+   "c": "Malmö",
+   "cc": "SE",
+   "la": 55.6099299,
+   "lo": 12.9978783,
+   "src": "osm"
+  },
+  {
+   "id": "n12228264289",
+   "wd": "Q100231158",
+   "p": "Q58425875",
+   "n": "Hans Eduard Szybilski",
+   "c": "Stockholm",
+   "cc": "SE",
+   "la": 59.3364147,
+   "lo": 18.0645088,
+   "src": "osm+wd"
+  },
+  {
+   "id": "n12247227671",
+   "wd": "Q100231159",
+   "p": "Q80913948",
+   "n": "Erich Holewa",
+   "c": "Stockholm",
+   "cc": "SE",
+   "la": 59.3275512,
+   "lo": 18.0426892,
+   "src": "osm+wd"
+  },
+  {
+   "id": "n12247228901",
+   "wd": "Q81041528",
+   "p": "Q81041488",
+   "n": "Curt Moses",
+   "c": "Stockholm",
+   "cc": "SE",
+   "la": 59.3357791,
+   "lo": 18.0895638,
+   "src": "osm+wd"
+  }
+ ],
+ "excluded": [
+  {
+   "id": "n13892986434",
+   "la": 59.2473701,
+   "lo": 17.3104272,
+   "reason": "nodo OSM memorial=stolperstein sin nombre, sin inscripción y sin dirección; no cumple datos completos"
+  }
+ ]
+}

@@ -7,6 +7,7 @@ node tests/source-links-test.mjs
 node tests/dedupe-test.cjs
 node tests/wd-added-test.cjs
 node tests/ie-added-test.cjs
+node tests/se-added-test.cjs
 node tests/counter-sw-test.cjs
 node tests/update-flow-test.cjs
 node tests/version-test.cjs

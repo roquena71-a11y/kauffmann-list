@@ -10,14 +10,14 @@ _W = r"(?<![a-zäöüß])"   # inicio de palabra (alemán)
 _E = r"(?![a-zäöüß])"    # fin de palabra
 
 SUICIDE = re.compile(_W + r"(flucht in den tod|freitod|suizid|selbstmord|nahm sich das leben)" + _E)
-MURDERED = re.compile(_W + r"(ermordet|hingerichtet|erschossen|erhängt|erhaengt|getötet|getoetet|totgeschlagen|vergast|umgebracht|euthanasie)" + _E)
+MURDERED = re.compile(_W + r"(ermordet|hingerichtet|erschossen|erhängt|erhaengt|getötet|getoetet|totgeschlagen|vergast|umgebracht|euthanasie|mördad)" + _E)
 DIED = re.compile(_W + r"(tot|gestorben|starb|umgekommen|verstorben|für tot erklärt|fuer tot erklaert|todesmarsch|tod)" + _E)
-MISSING = re.compile(_W + r"(verschollen|schicksal unbekannt)" + _E)
+MISSING = re.compile(_W + r"(verschollen|schicksal unbekannt|öde okänt)" + _E)
 # Supervivencia: se reconoce también como PREFIJO de palabra (überlebte, befreiten, versteckte, Fluchtweg…).
 SURVIVAL_PREFIX = re.compile(_W + r"(überlebt|ueberlebt|uberlebt|gerettet|befreit|entkam|entkommen|versteckt)")
 FLIGHT_PREFIX = re.compile(_W + r"(flucht|flücht|fluecht|geflohen|geflüchtet|gefluechtet|emigriert|ausgewandert)")
 FLED = FLIGHT_PREFIX
-DEPORTED = re.compile(_W + r"(deportiert|abgeschoben|ausgewiesen|polenaktion)" + _E)
+DEPORTED = re.compile(_W + r"(deportiert|abgeschoben|ausgewiesen|polenaktion|deporterad)" + _E)
 IMPRISONED = re.compile(_W + r"(verhaftet|inhaftiert|zuchthaus|gefängnis|gefaengnis|kz|schutzhaft|lager)" + _E)
 NEGATED_SURVIVAL = re.compile(r"(nicht|nur (eine|einer|eines)|keine?r?)\s+(überlebt|ueberlebt|uberlebt)")
 # Muerte "débil" (tot, Tod, Todesmarsch, gestorben…) acompañada de fecha explícita: "tot 1942", "gestorben 3.4.1944".

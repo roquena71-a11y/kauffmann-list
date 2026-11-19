@@ -9,7 +9,7 @@ const S = D.stones;
 assert(S.length === D.meta.count, 'meta.count = número de registros');
 assert(D.meta.ireland_added && D.meta.ireland_added.records === 6, 'meta.ireland_added.records = 6');
 const base = V14.meta.base_records + V14.added.length;
-const added = S.slice(base);
+const added = S.slice(base, base + 6);
 const old = S.slice(0, base);
 assert(old.length === 65820, 'la base alemana (v14) sigue en 65820: ' + old.length);
 assert(added.length === 6 && added.length === M.added.length, '6 registros de Irlanda');

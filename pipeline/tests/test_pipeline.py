@@ -567,3 +567,28 @@ class TestStoneCountry(unittest.TestCase):
         self.assertIn("ODbL", r["sources"][0]["license"])
         r2 = stone_to_record({**s, "id": "n1", "cc": None}, None, cfg, "2026-11-18")
         self.assertEqual(r2["memorials"][0]["country"], "DE")
+
+
+class TestSwedishInscriptions(unittest.TestCase):
+    def test_swedish_words_read_literally(self):
+        """v18: MÖRDAD / DEPORTERAD / ÖDE OKÄNT de las piedras de Suecia se leen tal cual; el alemán no cambia."""
+        from pipeline import inscription as ins
+        self.assertEqual(ins.fate_from_text("HIT KOM WALTER GERSON FÖDD 1882 DANZIG AVVISAD JUN. 1939 MÖRDAD 12.9.1939 MSZANA DOLNA")[0], "murdered")
+        self.assertEqual(ins.fate_from_text("HÄR BODDE ERICH HOLEWA FÖDD 1896 BERLIN FLYDDE TILL SVERIGE UTVISAD SEPT. 1938 DEPORTERAD 1942 MÖRDAD AUSCHWITZ")[0], "murdered")
+        self.assertEqual(ins.fate_from_text("HÄR BODDE CURT MOSES FÖDD 1886 BRESLAU FLYDDE TILL SVERIGE UTVISAD MAJ 1937 ÖDE OKÄNT")[0], "missing")
+        self.assertEqual(ins.fate_from_text("Hier wohnte Max Muster ermordet in Auschwitz")[0], "murdered")
+        self.assertEqual(ins.fate_from_text("HIER WOHNTE X FLUCHT 1939 ÜBERLEBT")[0], "survived")
+
+    def test_stone_country_se(self):
+        from pipeline.adapters.stones import stone_to_record
+        cfg = {"id": "stolpersteine_de", "id_prefix": "st", "license": "ODbL-1.0",
+               "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+               "attribution": "© OpenStreetMap contributors", "link_templates": {}}
+        s = {"id": "n12247227671", "la": 59.3275512, "lo": 18.0426892, "src": "osm+wd", "wd": "Q100231159", "p": "Q80913948",
+             "n": "Erich Holewa", "a": "Kungsholmstorg 6", "c": "Stockholm", "cc": "SE", "b": "1896",
+             "i": "HÄR BODDE ERICH HOLEWA FÖDD 1896 BERLIN FLYDDE TILL SVERIGE UTVISAD SEPT. 1938 DEPORTERAD 1942 MÖRDAD AUSCHWITZ"}
+        r = stone_to_record(s, None, cfg, "2026-11-19")
+        self.assertEqual(r["memorials"][0]["country"], "SE")
+        self.assertEqual(r["memorials"][0]["locality"], "Stockholm")
+        self.assertEqual(r["fate"], "murdered")
+        self.assertEqual(r["id"], "wd-Q80913948")

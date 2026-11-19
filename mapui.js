@@ -189,11 +189,15 @@
     const c = COUNTRIES.find(x => x.cc === b.dataset.cc); if (!c) return;
     if (document.body.classList.contains('vigil-on') && typeof stopVigil === 'function') stopVigil();
     if (isMobile()) setSheet('peek');
-    const pad = c.n < 50 ? 0.002 : 0.15;
-    const cam = map.cameraForBounds([[c.w - pad, c.s - pad], [c.e + pad, c.nn + pad]], {padding: padding()});
-    if (!cam) return;
-    const z = Math.min(c.n < 50 ? 16.6 : 12, cam.zoom);
-    map.flyTo({center: cam.center, zoom: z, pitch: c.n < 50 ? 58 : map.getPitch(), duration: reduceMotion ? 0 : 2400, essential: true});
+    // Pocas placas juntas (una calle, Dublín): acercarse e inclinar. Pocas placas pero en ciudades lejanas (Suecia: Malmö y Estocolmo, ~500 km): ver todas, sin inclinar (v18).
+    const tiny = c.n < 50 && Math.max(c.e - c.w, c.nn - c.s) < 0.5;
+    const pad = tiny ? 0.002 : 0.15;
+    const box = [[c.w - pad, c.s - pad], [c.e + pad, c.nn + pad]], spread = c.n < 50 && !tiny;
+    let cam = null;
+    try { cam = spread ? fitCamera(box) : map.cameraForBounds(box, {padding: padding()}); } catch (err) {}   // spread: cálculo propio (cameraForBounds falla con el mapa inclinado)
+    if (!cam || !isFinite(cam.zoom)) return;
+    const z = Math.min(tiny ? 16.6 : 12, cam.zoom);
+    map.flyTo({center: cam.center, zoom: z, pitch: tiny ? 58 : (spread ? 0 : map.getPitch()), bearing: spread ? 0 : map.getBearing(), duration: reduceMotion ? 0 : 2400, essential: true});
   });
   document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => { applyI18n(); paintCountries(); setSheet(sheet, {quiet: true}); }));
 

@@ -68,7 +68,7 @@ async function fetchVia(S, url, mode) {
   const t0 = Date.now(); r = await fetchVia(S, B + 'data/stones.json');
   assert(r.body === 'net:' + B + 'data/stones.json' && Date.now() - t0 < 5500, 'red lenta: la copia en ' + (Date.now() - t0) + ' ms');
   await Promise.all(S.bg);
-  const c17 = S.caches.get('kauffmann-v17-pages')._m;
+  const c17 = S.caches.get('kauffmann-v' + ver + '-pages')._m;
   assert(c17.get(B + 'data/stones.json').body.endsWith('-nuevo'), 'la red lenta actualiza la copia por detrás');
   S.ctx.delay = 0; S.ctx.tag = '';
   // páginas con ?q=: una sola copia por página (no una por búsqueda)
@@ -93,11 +93,11 @@ async function fetchVia(S, url, mode) {
   assert(await fetchVia(S, 'https://tiles.openfreemap.org/x.pbf') === 'passthrough', 'teselas sin service worker');
   // 3) activar una versión nueva sobre una anterior recarga las pestañas abiertas (también páginas viejas sin listener)
   const S2 = makeSW(); const navs = [];
-  await S2.ctx.caches.open('kauffmann-v16-pages');
+  await S2.ctx.caches.open('kauffmann-v' + (ver - 1) + '-pages');
   S2.ctx.self.clients.matchAll = async () => [{ url: B + '#s=n1', navigate: async u => navs.push(u) }];
   let w; S2.handlers.activate({ waitUntil: p => { w = p; } }); await w; await new Promise(r => setTimeout(r, 20));
   assert(navs.length === 1 && navs[0] === B + '#s=n1', 'recarga la pestaña abierta con su misma dirección');
-  assert(!(await S2.ctx.caches.keys()).includes('kauffmann-v16-pages'), 'borra la caché vieja');
+  assert(!(await S2.ctx.caches.keys()).includes('kauffmann-v' + (ver - 1) + '-pages'), 'borra la caché vieja');
   const S3 = makeSW(); const navs3 = [];
   S3.ctx.self.clients.matchAll = async () => [{ url: B, navigate: async u => navs3.push(u) }];
   S3.handlers.activate({ waitUntil: p => { w = p; } }); await w; await new Promise(r => setTimeout(r, 20));
