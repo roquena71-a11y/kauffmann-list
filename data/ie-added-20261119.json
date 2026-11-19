@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "country": "IE",
+    "country_label_es": "Irlanda",
+    "added": 6,
+    "excluded": 1,
+    "wd_matched": 6,
+    "wd_only": 0,
+    "osm_candidates": 7,
+    "wd_candidates": 6,
+    "osm_snapshot": "2026-11-18T18:45:00Z",
+    "wikidata_queried_at": "2026-11-18T19:31:49+01:00",
+    "city_source": "Wikidata P131 Q1761 (Dublin) and P6375 \"8 Donore Avenue, Dublin\" (CC0 1.0)",
+    "address_source": "OSM memorial:addr (ODbL 1.0)",
+    "coord_source": "OSM node lat/lon (ODbL 1.0)",
+    "previous_records": 65820,
+    "previous_sha256_json_list": "e2245cc58986935dd28a2087fe394ba4d6f34a308e3a0deed648c9f2150f4e7a"
+  },
+  "added": [
+    {
+      "id": "n13067653175",
+      "wd": "Q112257540",
+      "p": null,
+      "n": "Ephraim Saks",
+      "c": "Dublin",
+      "cc": "IE",
+      "la": 53.3332359,
+      "lo": -6.2829292,
+      "src": "osm+wd"
+    },
+    {
+      "id": "n13067653176",
+      "wd": "Q112257603",
+      "p": null,
+      "n": "Isaac Shishi",
+      "c": "Dublin",
+      "cc": "IE",
+      "la": 53.3332337,
+      "lo": -6.2829266,
+      "src": "osm+wd"
+    },
+    {
+      "id": "n13067653177",
+      "wd": "Q112257480",
+      "p": null,
+      "n": "Leon Gluck",
+      "c": "Dublin",
+      "cc": "IE",
+      "la": 53.3332315,
+      "lo": -6.282924,
+      "src": "osm+wd"
+    },
+    {
+      "id": "n13067653178",
+      "wd": "Q112257388",
+      "p": null,
+      "n": "Wojteck Gluck",
+      "c": "Dublin",
+      "cc": "IE",
+      "la": 53.3332293,
+      "lo": -6.2829215,
+      "src": "osm+wd"
+    },
+    {
+      "id": "n13067653179",
+      "wd": "Q112257400",
+      "p": null,
+      "n": "Jeanne (Lena) Saks",
+      "c": "Dublin",
+      "cc": "IE",
+      "la": 53.3332381,
+      "lo": -6.2829318,
+      "src": "osm+wd"
+    },
+    {
+      "id": "n13067653180",
+      "wd": "Q112257343",
+      "p": "Q56036390",
+      "n": "Ettie Gluck born Steinberg",
+      "c": "Dublin",
+      "cc": "IE",
+      "la": 53.3332271,
+      "lo": -6.2829189,
+      "src": "osm+wd"
+    }
+  ],
+  "excluded": [
+    {
+      "id": "n12723562419",
+      "la": 51.8504686,
+      "lo": -8.551633,
+      "reason": "nodo OSM memorial=stolperstein sin nombre, sin inscripción y sin dirección (condado de Cork, no Dublín); no cumple datos completos"
+    }
+  ],
+  "duplicates_wd_matched_not_added_twice": [
+    {
+      "wd": "Q112257540",
+      "osm": "n13067653175",
+      "reason": "el ítem de Wikidata es la misma piedra que el nodo OSM (etiqueta wikidata / misma persona-lugar)"
+    },
+    {
+      "wd": "Q112257603",
+      "osm": "n13067653176",
+      "reason": "el ítem de Wikidata es la misma piedra que el nodo OSM (etiqueta wikidata / misma persona-lugar)"
+    },
+    {
+      "wd": "Q112257480",
+      "osm": "n13067653177",
+      "reason": "el ítem de Wikidata es la misma piedra que el nodo OSM (etiqueta wikidata / misma persona-lugar)"
+    },
+    {
+      "wd": "Q112257388",
+      "osm": "n13067653178",
+      "reason": "el ítem de Wikidata es la misma piedra que el nodo OSM (etiqueta wikidata / misma persona-lugar)"
+    },
+    {
+      "wd": "Q112257400",
+      "osm": "n13067653179",
+      "reason": "el ítem de Wikidata es la misma piedra que el nodo OSM (etiqueta wikidata / misma persona-lugar)"
+    },
+    {
+      "wd": "Q112257343",
+      "osm": "n13067653180",
+      "reason": "el ítem de Wikidata es la misma piedra que el nodo OSM (etiqueta wikidata / misma persona-lugar)"
+    }
+  ]
+}

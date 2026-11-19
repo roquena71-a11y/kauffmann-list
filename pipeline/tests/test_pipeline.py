@@ -549,3 +549,21 @@ class TestRepoConfig(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestStoneCountry(unittest.TestCase):
+    def test_stone_country_from_cc(self):
+        """Un registro con cc=IE no se publica como Alemania; sin cc sigue DE."""
+        from pipeline.adapters.stones import stone_to_record
+        cfg = {"id": "stolpersteine_de", "id_prefix": "st",
+               "license": "ODbL-1.0", "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+               "attribution": "© OpenStreetMap contributors", "link_templates": {}}
+        s = {"id": "n13067653175", "la": 53.3332359, "lo": -6.2829292, "src": "osm+wd",
+             "n": "Ephraim Saks", "a": "Donore Avenue 8", "c": "Dublin", "cc": "IE",
+             "i": "EPHRAIM SAKS\nMURDERED 1942", "b": "1915", "d": "1942"}
+        r = stone_to_record(s, None, cfg, "2026-11-18")
+        self.assertEqual(r["memorials"][0]["country"], "IE")
+        self.assertEqual(r["memorials"][0]["locality"], "Dublin")
+        self.assertIn("ODbL", r["sources"][0]["license"])
+        r2 = stone_to_record({**s, "id": "n1", "cc": None}, None, cfg, "2026-11-18")
+        self.assertEqual(r2["memorials"][0]["country"], "DE")

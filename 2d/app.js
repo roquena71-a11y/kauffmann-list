@@ -13,7 +13,7 @@ const icon = L.divIcon({className:'', iconSize:[12,12], iconAnchor:[6,6],
 
 function popup(s){
   const name = s.n || '—';
-  const place = [s.a, s.c || s.cd].filter(Boolean).join(', ');
+  const place = [s.a, s.c || s.cd, s.cc && s.cc!=='DE' ? s.cc : ''].filter(Boolean).join(', ');
   return '<strong>'+esc(name)+'</strong><br>'+esc(place)+
     (s.gm ? '<br><small>Posición aproximada (del edificio, por su dirección en OpenStreetMap)</small>' : '')+
     '<br><a href="../#s='+encodeURIComponent(s.id)+'">Abrir en el mapa 3D</a>';

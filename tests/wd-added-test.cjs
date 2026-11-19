@@ -7,7 +7,7 @@ const D = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/stones.json'), 'utf8'
 const M = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/wd-added-20261118.json'), 'utf8'));
 const S = D.stones, base = M.meta.base_records;
 assert(S.length === D.meta.count, 'meta.count = número de registros');
-const added = S.slice(base), old = S.slice(0, base);
+const added = S.slice(base, base + M.added.length), old = S.slice(0, base);
 assert(added.length === M.added.length && added.length === D.meta.wikidata_added.records, 'cuenta: ' + added.length + ' = manifiesto = meta');
 assert(added.length > 0, 'hay registros añadidos');
 // La base no cambió ni un byte.

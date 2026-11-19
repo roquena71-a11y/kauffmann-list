@@ -88,6 +88,9 @@ def stone_to_record(s, bio_rec, cfg, retrieved):
     locality = _locality(s)
     address = clean_str(s.get("a"))
     kind = "stolperschwelle" if s.get("kind") == "stolperschwelle" else "stolperstein"
+    cc = (s.get("cc") or "DE").upper()
+    if not re.match(r"^[A-Z]{2}$", cc):
+        cc = "DE"
 
     image = None
     if s.get("img"):
@@ -96,13 +99,13 @@ def stone_to_record(s, bio_rec, cfg, retrieved):
         image = s["imgx"]
 
     memorial = {"type": kind, "memorial_id": stone_id, "inscription": insc_txt, "address": address,
-                "locality": locality, "country": "DE", "lat": lat, "lon": lon,
+                "locality": locality, "country": cc, "lat": lat, "lon": lon,
                 "laid": normalize_date(s.get("laid")), "image": image, "source_id": sid}
     # El lugar del memorial (dirección + coordenadas) está en memorials[]; aquí no se repite.
     places = []
     if insc_txt and re.search(r"\bwohnte\b", insc_txt, re.I) and (address or locality):
         places.append({"role": "residence", "label": address or locality, "locality": locality,
-                       "country": "DE", "source_id": sid})
+                       "country": cc, "source_id": sid})
     deportations = ins.deportations_from(insc.get("deportation"), sid)
     # Los destinos de deportación ya están en deportations[]; no se repiten en places[].
     if death_place:

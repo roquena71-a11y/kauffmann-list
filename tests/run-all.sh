@@ -6,6 +6,7 @@ for f in source-links.js dedupe.js counter.js app3d.js people.js columns.js imag
 node tests/source-links-test.mjs
 node tests/dedupe-test.cjs
 node tests/wd-added-test.cjs
+node tests/ie-added-test.cjs
 node tests/counter-sw-test.cjs
 # Pipeline y puerta para IA (find/, OpenAPI, llms.txt, robots, JSON-LD). Si fallan, el script falla.
 python3 -m unittest discover -s pipeline/tests -t . > /tmp/kl-unittest.log 2>&1 || { tail -40 /tmp/kl-unittest.log; exit 1; }
