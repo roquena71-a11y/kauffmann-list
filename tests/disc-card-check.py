@@ -26,6 +26,8 @@ async def main():
             print(lang, w, r['h2'], '|', r['addr'], '|', sorted(hosts), '| axe', ax, '| errores', errs)
             if not {'www.bbc.co.uk', 'jerseyeveningpost.com', 'www.bailiwickexpress.com', 'de.wikipedia.org', 'www.frankfallaarchive.org', 'www.liberationroute.com', 'www.openstreetmap.org'} <= hosts: bad.append((lang, 'faltan enlaces', sorted(hosts)))
             if 'Byron Lane' not in r['text'] or 'Winchester' not in r['text']: bad.append((lang, 'el aviso no nombra ambas direcciones'))
+            if '0,85' not in r['text'] and '0.85' not in r['text']: bad.append((lang, 'el aviso no cuantifica el desplazamiento del dibujo (0,85 m)'))
+            if 'has not been moved' in r['text'] or 'no se ha movido' in r['text'] or 'nicht verschoben' in r['text']: bad.append((lang, 'texto antiguo y falso: el dibujo sí se desplaza'))
             if 'Winchester House, Winchester Street' not in r['addr']: bad.append((lang, 'la dirección mostrada no es la de OSM'))
             if not all(l[1] == '_blank' and 'noopener' in (l[2] or '') for l in r['links']): bad.append((lang, 'enlaces sin noopener'))
             if not any('49.1884118' in d and '-2.1048038' in d for d in r['dirs']): bad.append((lang, 'Cómo llegar no usa la coordenada de origen', r['dirs']))

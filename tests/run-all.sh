@@ -36,6 +36,13 @@ if [ -x /usr/bin/google-chrome ] && /usr/bin/python3 -c "import playwright" 2>/d
   tail -1 /tmp/kl-row.log
   /usr/bin/python3 tests/disc-card-check.py http://127.0.0.1:8899/ > /tmp/kl-disc.log 2>&1 || { tail -15 /tmp/kl-disc.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-disc.log
+  /usr/bin/python3 tests/attribution-check.py http://127.0.0.1:8899/ > /tmp/kl-attr.log 2>&1 || { tail -15 /tmp/kl-attr.log; kill $SRV; exit 1; }
+  tail -1 /tmp/kl-attr.log
+  # encuadre de países (9 tamaños + 320x568; ~7 min). SKIP_COUNTRY_BUTTONS=1 lo omite en iteraciones rápidas.
+  if [ -z "$SKIP_COUNTRY_BUTTONS" ]; then
+    /usr/bin/python3 tests/country-buttons-check.py http://127.0.0.1:8899/ > /tmp/kl-cb.log 2>&1 || { tail -25 /tmp/kl-cb.log; kill $SRV; exit 1; }
+    tail -1 /tmp/kl-cb.log
+  fi
   kill $SRV
 else
   echo "(omitido: tests/sidewalk-render-check.py necesita playwright y Chrome)"

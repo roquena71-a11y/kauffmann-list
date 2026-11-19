@@ -54,12 +54,18 @@
   function heightFor(st){
     const max = vh() - topH() - 6;
     if (st === 'full' || (st === 'half' && isLand())) return max;
-    if (st === 'half') return Math.min(max, Math.max(peekH + 120, Math.round(vh() * 0.5)));
+    if (st === 'half'){
+      let hh = Math.min(max, Math.max(peekH + 120, Math.round(vh() * 0.5)));
+      // v19 ronda 4: en pantallas bajas la hoja a media altura no debe tapar los controles de la derecha (zoom, brújula, 3D, ubicación) ni dejar la atribución encima de ellos (24 px + holgura)
+      const tr = document.querySelector('.maplibregl-ctrl-top-right');
+      if (tr && !isLand()){ const bottom = tr.getBoundingClientRect().bottom; if (bottom > 0) hh = Math.max(peekH + 60, Math.min(hh, Math.round(vh() - bottom - 40))); }
+      return hh;
+    }
     return peekH;
   }
   function paintVars(h){
     root.style.setProperty('--top-h', topH() + 'px');
-    root.style.setProperty('--sheet-h', (isMobile() && !isLand() ? Math.min(h, Math.round(vh() * 0.5)) : 0) + 'px');
+    root.style.setProperty('--sheet-h', (isMobile() && !isLand() ? Math.min(h, Math.max(Math.round(vh() * 0.5), heightFor('half'))) : 0) + 'px');   // v19 ronda 4: con la hoja a media altura (ficha abierta) la atribución y los controles suben con la hoja real, también en pantallas bajas (360×640: la hoja mide 353 px > 50 %)
   }
   function setSheet(st, opts){
     if (!isMobile()){ side.removeAttribute('data-sheet'); side.style.height = ''; paintVars(0); return; }
@@ -209,7 +215,7 @@
   /* ---------- vista inicial: todos los países ---------- */
   function padding(){
     if (isLand()) return {top: topH() + 12, bottom: 70, left: Math.round(side.getBoundingClientRect().width) + 72, right: 84};   // v19 ronda 3: libre de la barra de capas (a la derecha de la lista), de los botones de giro, de la atribución y de los controles de la derecha
-    if (isMobile()) return {top: topH() + 16, bottom: Math.round(heightFor('peek')) + 104, left: 20, right: 84};   // v19 ronda 3: encima de la hoja van los botones ⟲ N ⟳ (a 46 px de la hoja, 40 px de alto): el país no debe quedar detrás
+    if (isMobile()) return {top: topH() + 16, bottom: Math.round(heightFor('peek')) + 104, left: 40, right: 84};   // v19 ronda 4: left 40 (a 320 px el recuadro de Hyam Goldman tocaba el botón de capas, que llega a x=54). v19 ronda 3: encima de la hoja van los botones ⟲ N ⟳ (a 46 px de la hoja, 40 px de alto): el país no debe quedar detrás
     return {top: 20, bottom: 100, left: 20, right: 60};   // escritorio: la barra de capas (Noche · Día · Hoy…) ocupa ~70 px abajo; v18: Malmö quedaba tapada
   }
   function dataBounds(){
