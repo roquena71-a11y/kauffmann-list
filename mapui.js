@@ -208,8 +208,8 @@
 
   /* ---------- vista inicial: todos los países ---------- */
   function padding(){
-    if (isLand()) return {top: topH() + 12, bottom: 16, left: Math.round(side.getBoundingClientRect().width) + 16, right: 56};
-    if (isMobile()) return {top: topH() + 16, bottom: Math.round(heightFor('peek')) + 20, left: 20, right: 56};
+    if (isLand()) return {top: topH() + 12, bottom: 70, left: Math.round(side.getBoundingClientRect().width) + 72, right: 84};   // v19 ronda 3: libre de la barra de capas (a la derecha de la lista), de los botones de giro, de la atribución y de los controles de la derecha
+    if (isMobile()) return {top: topH() + 16, bottom: Math.round(heightFor('peek')) + 104, left: 20, right: 84};   // v19 ronda 3: encima de la hoja van los botones ⟲ N ⟳ (a 46 px de la hoja, 40 px de alto): el país no debe quedar detrás
     return {top: 20, bottom: 100, left: 20, right: 60};   // escritorio: la barra de capas (Noche · Día · Hoy…) ocupa ~70 px abajo; v18: Malmö quedaba tapada
   }
   function dataBounds(){

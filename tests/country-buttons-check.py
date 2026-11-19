@@ -1,11 +1,12 @@
-"""v18: botones DE/IE/SE en varios tamaños (F1 de la auditoría): los puntos de referencia del país deben quedar dentro de la pantalla
+"""v19 ronda 3: los 6 países en 9 tamaños (teléfono vertical y horizontal, escritorio); cada placa debe verse ENTERA: su recuadro de 32 px (centro y 8 puntos) cae dentro del mapa y sobre el lienzo, no bajo botones, hoja ni controles.
+v18: botones DE/IE/SE en varios tamaños (F1 de la auditoría): los puntos de referencia del país deben quedar dentro de la pantalla
 y libres (elementFromPoint = el lienzo del mapa, no la barra de capas, los controles ni el panel). Solo localhost, sin contador.
 Uso: python3 tests/country-buttons-check.py BASE_URL [OUT_DIR] → JSON por tamaño"""
 import asyncio, sys, os, json
 from playwright.async_api import async_playwright
 BASE = sys.argv[1]; OUT = sys.argv[2] if len(sys.argv) > 2 else None
 if OUT: os.makedirs(OUT, exist_ok=True)
-SIZES = [('1280x800', 1280, 800, False), ('1366x768', 1366, 768, False), ('1920x1080', 1920, 1080, False), ('412x915', 412, 915, True), ('844x390', 844, 390, True)]
+SIZES = [('1280x800', 1280, 800, False), ('1366x768', 1366, 768, False), ('1920x1080', 1920, 1080, False), ('360x640', 360, 640, True), ('360x740', 360, 740, True), ('390x844', 390, 844, True), ('412x915', 412, 915, True), ('844x390', 844, 390, True), ('667x375', 667, 375, True)]
 REF = {'DE': [('Berlín', [13.405, 52.52]), ('Hamburgo', [9.99, 53.55]), ('Múnich', [11.58, 48.14]), ('Colonia', [6.96, 50.94])]}
 async def main():
     bad = []; R = {}
@@ -22,12 +23,17 @@ async def main():
                 if cc != 'DE' or True:
                     await pg.click(f'#countries button[data-cc={cc}]'); await pg.wait_for_timeout(5500)
                 if cc != 'DE': REF[cc] = [(s['n'], [s['lo'], s['la']]) for s in await pg.evaluate("DATA.filter(s=>s.cc==='%s' && !s._aliasOf).map(s=>({n:s.n,lo:s.lo,la:s.la}))" % cc)]   # v19: todas las placas del país (posición de dibujo)
-                res = await pg.evaluate("""(refs) => refs.map(([n, ll]) => { const p = map.project(ll), cr = map.getContainer().getBoundingClientRect(); const el = document.elementFromPoint(cr.left + p.x, cr.top + p.y);
-                    return {n, x: Math.round(p.x), y: Math.round(p.y), inside: p.x > 0 && p.y > 0 && p.x < cr.width && p.y < cr.height && cr.left + p.x < innerWidth && cr.top + p.y < innerHeight, hit: el ? (el.id || el.className || el.tagName).toString().slice(0, 40) : null, canvas: !!el && el.tagName === 'CANVAS' || !!el && !!el.closest('.maplibregl-canvas-container')}; })""", REF[cc])
+                res = await pg.evaluate("""(refs) => refs.map(([n, ll]) => { const p = map.project(ll), cr = map.getContainer().getBoundingClientRect();
+                    const onCanvas = (x, y) => { const el = document.elementFromPoint(cr.left + x, cr.top + y); return !!el && (el.tagName === 'CANVAS' || !!el.closest('.maplibregl-canvas-container')); };
+                    const inMap = (x, y) => x > 0 && y > 0 && x < cr.width && y < cr.height && cr.left + x < innerWidth && cr.top + y < innerHeight;
+                    const pts = []; for (const dx of [-16, 0, 16]) for (const dy of [-16, 0, 16]) pts.push([p.x + dx, p.y + dy]);
+                    const el = document.elementFromPoint(cr.left + p.x, cr.top + p.y);
+                    return {n, x: Math.round(p.x), y: Math.round(p.y), inside: inMap(p.x, p.y), hit: el ? (el.id || el.className || el.tagName).toString().slice(0, 40) : null, canvas: onCanvas(p.x, p.y),
+                            whole: pts.every(([x, y]) => inMap(x, y) && onCanvas(x, y)), covered: pts.filter(([x, y]) => !(inMap(x, y) && onCanvas(x, y))).length}; })""", REF[cc])
                 R[name][cc] = res
                 for r in res:
                     if cc == 'DE' and not (r['inside']): continue          # Alemania es ancha: solo exigimos libres los que caen dentro
-                    if not r['inside'] or not r['canvas']: bad.append((name, cc, r))
+                    if not r['inside'] or not r['canvas'] or not r['whole']: bad.append((name, cc, r))
                 if OUT: await pg.screenshot(path=f'{OUT}/cb-{name}-{cc}.png')
             if errs: bad.append((name, 'pageerror', errs[:2]))
             await ctx.close()
