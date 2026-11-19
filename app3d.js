@@ -18,6 +18,7 @@ const I18N = {
     beSearchName:n=>`Buscar «${n}» en Stolpersteine Berlin`,
     share:'Copiar enlace a esta placa', copied:'Enlace copiado', copyName:'Copiar nombre', nameCopied:'Nombre copiado',
     directions:'Cómo llegar (Google Maps)', osmDir:'Cómo llegar (OpenStreetMap)', sources:'Fuentes de esta ficha', derived:'(lugar deducido de placas cercanas)', posApprox:'Posición aproximada (del edificio, por su dirección en OpenStreetMap)', posLabel:'Posición',
+    discTitle:'Las fuentes no coinciden', discBody:(a,alt)=>`Esta ficha muestra la dirección y la posición de OpenStreetMap («${a}»; el punto está en esa calle). Otras fuentes dan «${alt}» (a unos 250–330 m). No se sabe con certeza dónde está la piedra: no se ha movido el punto.`, discAlt:alt=>`Dan «${alt}»:`, discMain:a=>`Dan «${a}»:`,
     about:'Acerca de los datos', close:'Cerrar', noinsc:'No hay transcripción de la inscripción en las fuentes.',
     attribution:'Datos: © <a href="https://www.openstreetmap.org/copyright">colaboradores de OpenStreetMap</a> (ODbL) y <a href="https://www.wikidata.org">Wikidata</a> (CC0). Mapa base © OpenStreetMap.',
     aboutHtml:m=>`<h2>Acerca de este mapa</h2><p>Los <em>Stolpersteine</em> («piedras de tropiezo») son placas de latón del artista Gunter Demnig, colocadas frente al último domicilio elegido libremente por personas perseguidas, deportadas o asesinadas por el nazismo.</p>
@@ -45,6 +46,7 @@ const I18N = {
     beSearchName:n=>`„${n}“ bei Stolpersteine Berlin suchen`,
     share:'Link zu diesem Stein kopieren', copied:'Link kopiert', copyName:'Namen kopieren', nameCopied:'Name kopiert',
     directions:'Route (Google Maps)', osmDir:'Route (OpenStreetMap)', sources:'Quellen dieses Eintrags', derived:'(Ort aus benachbarten Steinen abgeleitet)', posApprox:'Ungefähre Position (Gebäude laut Adresse in OpenStreetMap)', posLabel:'Position',
+    discTitle:'Die Quellen widersprechen sich', discBody:(a,alt)=>`Dieser Eintrag zeigt Adresse und Position aus OpenStreetMap („${a}“; der Punkt liegt an dieser Straße). Andere Quellen nennen „${alt}“ (etwa 250–330 m entfernt). Wo der Stein wirklich liegt, ist nicht sicher: der Punkt wurde nicht verschoben.`, discAlt:alt=>`Nennen „${alt}“:`, discMain:a=>`Nennen „${a}“:`,
     about:'Über die Daten', close:'Schließen', noinsc:'Für diesen Stein ist in den Quellen keine Inschrift erfasst.',
     attribution:'Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL) und <a href="https://www.wikidata.org">Wikidata</a> (CC0). Kartengrundlage © OpenStreetMap.',
     aboutHtml:m=>`<h2>Über diese Karte</h2><p>Stolpersteine sind Gedenktafeln aus Messing des Künstlers Gunter Demnig, verlegt vor dem letzten frei gewählten Wohnort von Menschen, die im Nationalsozialismus verfolgt, deportiert oder ermordet wurden.</p>
@@ -72,6 +74,7 @@ const I18N = {
     beSearchName:n=>`Search “${n}” on Stolpersteine Berlin`,
     share:'Copy link to this stone', copied:'Link copied', copyName:'Copy name', nameCopied:'Name copied',
     directions:'Directions (Google Maps)', osmDir:'Directions (OpenStreetMap)', sources:'Sources for this record', derived:'(place inferred from nearby stones)', posApprox:'Approximate position (the building, from its address in OpenStreetMap)', posLabel:'Position',
+    discTitle:'Sources disagree', discBody:(a,alt)=>`This record shows the address and position from OpenStreetMap (“${a}”; the point lies on that street). Other sources give “${alt}” (about 250–330 m away). It is not certain where the stone is: the point has not been moved.`, discAlt:alt=>`Give “${alt}”:`, discMain:a=>`Give “${a}”:`,
     about:'About the data', close:'Close', noinsc:'No transcription of the inscription in the sources.',
     attribution:'Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL) and <a href="https://www.wikidata.org">Wikidata</a> (CC0). Base map © OpenStreetMap.',
     aboutHtml:m=>`<h2>About this map</h2><p>Stolpersteine (“stumbling stones”) are brass plaques by the artist Gunter Demnig, set in front of the last freely chosen home of people persecuted, deported or murdered under National Socialism.</p>
@@ -880,6 +883,15 @@ function loadStory(s){
     paintStory(s, rec);
   }).catch(() => paintStory(s, null));
 }
+function hostLinks(urls){ return urls.filter(u=>/^https:\/\//i.test(u)).map(u=>{ let h=u; try{h=new URL(u).hostname.replace(/^www\./,'')}catch(e){} return `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(h)}</a>`; }).join(', '); }
+// v19: las fuentes discrepan sobre la dirección (campo disc de data/stones.json): aviso visible en la ficha, con enlaces
+function discHtml(s){
+  const d = s.disc; if (!d || !d.alt) return '';
+  const osm = osmUrl(s) ? [osmUrl(s)] : [];
+  return `<div class="disc" role="note"><strong>${esc(T('discTitle'))}.</strong> ${esc(T('discBody')(s.a||'', d.alt))}`+
+    `<br>${esc(T('discAlt')(d.alt))} ${hostLinks(d.alt_src||[])}`+
+    `<br>${esc(T('discMain')(s.a||''))} ${hostLinks([...osm, ...(d.main_src||[])])}</div>`;
+}
 function openStone(id, fromMap){
   let s = byId.get(id); if (!s) return;
   if (s._aliasOf) s = byId.get(s._aliasOf) || s;
@@ -908,6 +920,7 @@ function openStone(id, fromMap){
   const d = $('#detail');
   d.innerHTML = `<button class="back" id="back">${T('back')}</button>
     <h2>${esc(s._n||s.n||'—')}</h2><p class="place">${esc([s.a, s.a&&s.a.includes(cityOf(s))?'':cityOf(s), countryLabel(s)].filter(Boolean).join(', '))}</p>
+    ${discHtml(s)}
     <p class="dates" id="inscDates" hidden></p>
     <div class="section-t">${T('inscription')}</div>
     ${insc?`<div class="brassplate">${insc}</div>`:`<p class="note">${T('noinsc')}</p>`}

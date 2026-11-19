@@ -27,7 +27,15 @@ fi
 # v19: columnas DIBUJADAS fuera de los edificios de OSM (necesita playwright + Chrome; si no hay, se omite con aviso)
 if [ -x /usr/bin/google-chrome ] && /usr/bin/python3 -c "import playwright" 2>/dev/null; then
   python3 -m http.server 8899 --bind 127.0.0.1 >/dev/null 2>&1 & SRV=$!
-  sleep 1; /usr/bin/python3 tests/sidewalk-render-check.py http://127.0.0.1:8899/ | tail -1 || { kill $SRV; exit 1; }
+  sleep 1
+  /usr/bin/python3 tests/sidewalk-render-check.py http://127.0.0.1:8899/ > /tmp/kl-sidewalk.log 2>&1 || { tail -15 /tmp/kl-sidewalk.log; kill $SRV; exit 1; }
+  tail -1 /tmp/kl-sidewalk.log
+  /usr/bin/python3 tests/map2d-check.py http://127.0.0.1:8899/ > /tmp/kl-map2d.log 2>&1 || { tail -15 /tmp/kl-map2d.log; kill $SRV; exit 1; }
+  tail -1 /tmp/kl-map2d.log
+  /usr/bin/python3 tests/country-row-check.py http://127.0.0.1:8899/ > /tmp/kl-row.log 2>&1 || { tail -15 /tmp/kl-row.log; kill $SRV; exit 1; }
+  tail -1 /tmp/kl-row.log
+  /usr/bin/python3 tests/disc-card-check.py http://127.0.0.1:8899/ > /tmp/kl-disc.log 2>&1 || { tail -15 /tmp/kl-disc.log; kill $SRV; exit 1; }
+  tail -1 /tmp/kl-disc.log
   kill $SRV
 else
   echo "(omitido: tests/sidewalk-render-check.py necesita playwright y Chrome)"

@@ -49,7 +49,7 @@
     const search = side.querySelector('.search'), filters = side.querySelector('.filters');
     const fh = (filters && getComputedStyle(filters).display !== 'none') ? filters.getBoundingClientRect().height + 8 : 0;
     peekH = Math.round(handle.getBoundingClientRect().height + search.getBoundingClientRect().height - fh);
-    peekH = Math.max(96, Math.min(peekH, Math.round(vh() * 0.4)));
+    peekH = Math.max(96, Math.min(peekH, Math.round(vh() * (isLand() ? 0.5 : 0.4))));   // v19: en horizontal la hoja cerrada puede llegar a la mitad para que se vea la fila de países entera
   }
   function heightFor(st){
     const max = vh() - topH() - 6;
@@ -183,7 +183,12 @@
     if (COUNTRIES.length < 1){ box.replaceChildren(); return; }
     box.innerHTML = `<span class="countries-t">${esc(T('countries'))}:</span>` + COUNTRIES.map(c =>
       `<button type="button" data-cc="${esc(c.cc)}"><span class="sq" aria-hidden="true"></span>${esc(cname(c.cc))} <span class="n">${fmtNum(c.n)}</span></button>`).join('');
+    if (isMobile() && sheet === 'peek') setSheet('peek');   // v19: la fila de países ahora se parte en líneas: volver a medir la hoja cerrada
   }
+  // v19: degradado de «hay más países» (solo en horizontal, ver mapui.css): se quita cuando la fila llega al final
+  (function(){ const box = $('#countries'); if (!box) return;
+    const upd = () => box.classList.toggle('at-end', box.scrollLeft + box.clientWidth >= box.scrollWidth - 4);
+    box.addEventListener('scroll', upd, {passive:true}); window.addEventListener('resize', upd); new MutationObserver(upd).observe(box, {childList:true}); upd(); })();
   $('#countries').addEventListener('click', e => {
     const b = e.target.closest('button[data-cc]'); if (!b || !window.map) return;
     const c = COUNTRIES.find(x => x.cc === b.dataset.cc); if (!c) return;

@@ -16,13 +16,16 @@ function popup(s){
   const place = [s.a, s.c || s.cd, s.cc && s.cc!=='DE' ? s.cc : ''].filter(Boolean).join(', ');
   return '<strong>'+esc(name)+'</strong><br>'+esc(place)+
     (s.gm ? '<br><small>Posición aproximada (del edificio, por su dirección en OpenStreetMap)</small>' : '')+
+    (s.disc ? '<br><small>Las fuentes no coinciden en la dirección (OpenStreetMap: «'+esc(s.a)+'»; otras fuentes: «'+esc(s.disc.alt)+'»). Ver la ficha en el mapa 3D.</small>' : '')+
     '<br><a href="../#s='+encodeURIComponent(s.id)+'">Abrir en el mapa 3D</a>';
 }
 function esc(s){ return String(s??'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 
+// Posición de DIBUJO (v19): dla/dlo si existen (columna sacada de un edificio hacia la acera); la de origen (la/lo) no se toca y es la que usan los enlaces de ruta y los datos.
+const dpos = s => [s.dla ?? s.la, s.dlo ?? s.lo];
 function show(s){
-  const m = L.marker([s.la, s.lo], {icon}).bindPopup(popup(s));
-  map.flyTo([s.la, s.lo], 17);
+  const m = L.marker(dpos(s), {icon}).bindPopup(popup(s));
+  map.flyTo(dpos(s), 17);
   m.addTo(map).openPopup();
 }
 function search(){
@@ -47,7 +50,7 @@ fetch('../data/stones.json').then(r => r.json()).then(j => {
   for (const s of DATA) {
     s._t = norm([s.n, s.a, s.c, s.cd].join(' ')).split(' ');
     byId.set(s.id, s);
-    cluster.addLayer(L.marker([s.la, s.lo], {icon}).bindPopup(popup(s)));
+    cluster.addLayer(L.marker(dpos(s), {icon}).bindPopup(popup(s)));
   }
   map.addLayer(cluster);
   $('#status').textContent = DATA.length.toLocaleString('es') + ' placas. Escriba un nombre.';

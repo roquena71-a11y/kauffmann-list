@@ -10,6 +10,7 @@ from playwright.async_api import async_playwright
 BASE = sys.argv[1]; OUT = sys.argv[sys.argv.index('--json') + 1] if '--json' in sys.argv else None
 FP = json.load(open(R / 'tests/sidewalk/footprints-v19.json'))
 CCS = ('IE', 'SE', 'JE', 'FI', 'RO')
+MARGIN = 0.5   # holgura mínima columna–fachada (m), ronda 2 de la v19
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch(executable_path='/usr/bin/google-chrome', headless=True, args=['--use-gl=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'])
@@ -22,7 +23,7 @@ async def main():
     half = rows['half']; bad = []; res = []
     for r in rows['rows']:
         if r['alias']: continue
-        o = (r['dla'], r['dlo']); sq = square_corners(0, 0, half, r['ang'] or 0)
+        o = (r['dla'], r['dlo']); sq = square_corners(0, 0, half + MARGIN, r['ang'] or 0)   # columna de 1,2 m ensanchada 0,5 m por lado: no toca ningún edificio
         worst = 1e9; hit = None
         for bid in FP['near'].get(r['id'], []):
             bd = FP['buildings'][bid]
@@ -39,5 +40,5 @@ async def main():
     for x in sorted(res, key=lambda x: x['centro_a_edificio_m'])[:8]: print('  ', x)
     if OUT: json.dump(res, open(OUT, 'w'), ensure_ascii=False, indent=1)
     if bad or errs or len(res) != 41: print('FALLO', bad[:5], 'n=', len(res)); sys.exit(1)
-    print('OK: ninguna columna dibujada toca un edificio')
+    print('OK: ninguna columna dibujada (1,2 m + 0,5 m de holgura) toca un edificio')
 asyncio.run(main())

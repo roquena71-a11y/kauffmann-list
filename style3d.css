@@ -135,3 +135,5 @@ body.dark a:focus-visible,body.dark button:focus-visible,body.dark input:focus-v
 
 /* Atribución del mapa (MapLibre): fondo claro → enlaces oscuros (contraste ≥ 4,5:1; antes dorado sobre blanco = 1,64:1) */
 body.dark .maplibregl-ctrl-attrib a,.maplibregl-ctrl-attrib a{color:#0b3d91}
+.detail .disc{margin:.7rem 0;padding:.55rem .7rem;border-left:3px solid #e0bc62;background:rgba(224,188,98,.12);font-size:.86rem;line-height:1.45}
+.detail .disc a{color:inherit;text-decoration:underline;overflow-wrap:anywhere}
