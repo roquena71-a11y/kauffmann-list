@@ -1,0 +1,120 @@
+/* Lista Kauffmann — interfaz del mapa v17 (mapui.js). Escritorio: solo la lista de países y el botón de capas oculto.
+   Teléfono y tableta en vertical (≤900 px de ancho) y teléfono en horizontal (≤500 px de alto) ( solo con JavaScript: html.js; sin JavaScript queda el texto con los enlaces): mapa a pantalla completa, cabecera fina con menú, capas en un botón, hoja inferior arrastrable. */
+.menu-btn,.layers-btn,.sheet-handle{display:none}
+/* Puntos de la introducción: el punto se ve de 9 px, pero el objetivo táctil mide 24 × 24 px (WCAG 2.5.8) */
+.intro-dots{gap:.2rem}
+.intro-dots button{width:24px;height:24px;border-radius:50%;background:transparent;position:relative;transform:none}
+.intro-dots button:before{content:"";position:absolute;left:50%;top:50%;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:rgba(246,243,236,.35)}
+.intro-dots button[aria-current=true]{background:transparent;transform:none}
+.intro-dots button[aria-current=true]:before{background:#f0d48a;transform:scale(1.2)}
+.countries{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;margin:.55rem 0 0;font-size:.82rem}
+.countries:empty{display:none}
+.countries-t{color:var(--muted);margin-right:.1rem}
+body.dark .countries-t{color:#b7c0cc}
+.countries button{display:inline-flex;align-items:center;gap:.4rem;min-height:32px;font:inherit;font-size:.82rem;cursor:pointer;border-radius:3px;padding:.3rem .6rem;
+  background:#fff;color:var(--ink);border:1px solid var(--brass)}
+body.dark .countries button{background:#152033;color:#f3efe6;border-color:#8d6a32}
+.countries button:hover{border-color:#e0bc62}
+.countries .sq{width:10px;height:10px;flex:none;background:linear-gradient(135deg,#f0d48a,#c6a15b 55%,#8d6a32);box-shadow:0 0 0 1px #1a140c}
+.countries .n{color:#8d6a32;font-variant-numeric:tabular-nums}
+body.dark .countries .n{color:#e0bc62}
+
+@media (max-width:900px), (max-height:500px){
+  :root{--top-h:52px;--sheet-h:150px}
+  html.js,html.js body{overflow:hidden;overscroll-behavior:none}
+  html.js body{height:100dvh}
+  /* cabecera fina, flotando sobre el mapa */
+  html.js .top{position:fixed;left:0;right:0;top:0;z-index:30;padding:max(6px,env(safe-area-inset-top)) .5rem 8px .75rem;min-height:52px;flex-wrap:nowrap;gap:.5rem;
+    background:rgba(7,17,31,.94);backdrop-filter:blur(4px)}
+  html.js .top:after{height:4px;background:linear-gradient(#f6f3ec,#f6f3ec) 0 0/100% 1px no-repeat, linear-gradient(#1f4f86,#1f4f86) 0 2px/100% 2px no-repeat}
+  html.js .brand{gap:.55rem;min-width:0}
+  html.js .plate{width:22px;height:22px;flex:none}
+  html.js h1{font-size:1.1rem;white-space:nowrap}
+  html.js .menu-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:40px;flex:none;border-radius:3px;border:1px solid #8d6a32;background:#101c30;color:#f0d48a;cursor:pointer;padding:0}
+  html.js .menu-ic,html.js .menu-ic:before,html.js .menu-ic:after{display:block;width:20px;height:2px;background:currentColor;position:relative}
+  html.js .menu-ic:before,html.js .menu-ic:after{content:"";position:absolute;left:0}
+  html.js .menu-ic:before{top:-6px}
+  html.js .menu-ic:after{top:6px}
+  html.js .top.menu-open .menu-ic{background:transparent}
+  html.js .top.menu-open .menu-ic:before{top:0;transform:rotate(45deg)}
+  html.js .top.menu-open .menu-ic:after{top:0;transform:rotate(-45deg)}
+  /* el menú: recordar, idioma y los enlaces del pie */
+  html.js .topright{display:none}
+  html.js .top.menu-open .topright{display:flex;flex-direction:column;align-items:stretch;gap:.75rem;position:absolute;top:100%;right:0;left:0;
+    max-height:calc(100dvh - var(--top-h));overflow:auto;padding:1rem;background:#07111f;border-bottom:1px solid #24344c;box-shadow:0 10px 24px rgba(0,0,0,.45)}
+  html.js .top.menu-open .remember{font-size:1rem;padding:.75rem 1rem;min-height:44px}
+  html.js .top.menu-open .lang{display:flex;gap:.4rem}
+  html.js .top.menu-open .lang button{flex:1;min-height:44px;margin:0;font-size:1rem}
+  html.js .topright .foot{display:block;position:static;border:0;background:none;padding:.4rem 0 0;font-size:.85rem;line-height:1.55;color:#c5c0b4}
+  html.js .topright .foot p{margin:0 0 .7rem}
+  html.js .topright .foot a,html.js .topright .foot .linkish{display:inline-block;min-height:24px;padding:.1rem 0}
+  html.js body > .foot{display:none}
+  /* mapa a pantalla completa */
+  html.js .layout{position:fixed;inset:0;display:block;height:auto}
+  html.js .mapwrap{position:absolute;inset:0;height:auto!important;flex:none}
+  html.js .mapwrap .map,html.js .map{position:absolute;inset:0;height:auto!important}
+  html.js .maplibregl-ctrl-top-right{top:calc(var(--top-h) + 4px)}
+  html.js .maplibregl-ctrl-bottom-right,html.js .maplibregl-ctrl-bottom-left{bottom:calc(var(--sheet-h) + 2px)}
+  html.js .maplibregl-ctrl-top-right .maplibregl-ctrl-group button{width:40px;height:40px}
+  /* capas: un solo botón */
+  html.js .layers-btn{display:inline-flex;align-items:center;justify-content:center;position:absolute;z-index:6;left:10px;top:calc(var(--top-h) + 10px);width:44px;height:44px;
+    border-radius:3px;border:1px solid #8d6a32;background:rgba(10,16,28,.9);color:#f0d48a;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.4);padding:0}
+  html.js .layers-btn[aria-expanded=true]{background:#c6a15b;color:#1a140c;border-color:#c6a15b}
+  html.js .basemaps{display:none;top:calc(var(--top-h) + 60px);bottom:auto;left:10px;right:auto;width:min(300px,calc(100% - 70px));max-width:none;flex-direction:column;align-items:stretch;
+    gap:4px;padding:6px;border-radius:4px;background:rgba(7,17,31,.96);border:1px solid #24344c;box-shadow:0 10px 24px rgba(0,0,0,.45)}
+  html.js .basemaps.open{display:flex}
+  html.js .basemaps{max-height:calc(100dvh - var(--top-h) - 70px);overflow-y:auto;overscroll-behavior:contain}
+  html.js .sub{display:none}
+  /* «Recordar a todos»: la hoja se oculta, los controles bajan al borde (F5) */
+  html.js body.vigil-on{--sheet-h:0px}
+  html.js .basemaps button{min-height:44px;text-align:left;padding:.6rem .8rem;font-size:14px;border-radius:3px}
+  html.js:not(.intro-skip) .layers-btn{display:none!important}
+  /* hoja inferior */
+  html.js .side{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:20;width:auto;height:var(--sheet-h);max-height:calc(100dvh - var(--top-h) - 6px);
+    border:0;border-top:1px solid #3a4e6b;border-radius:14px 14px 0 0;box-shadow:0 -8px 24px rgba(0,0,0,.45);overflow:hidden;
+    transition:height .22s ease;padding-bottom:env(safe-area-inset-bottom)}
+  html.js .side.dragging{transition:none}
+  html.js .sheet-handle{display:flex;justify-content:center;align-items:center;width:100%;height:24px;flex:none;border:0;background:transparent;cursor:grab;padding:0;touch-action:none}
+  html.js .sheet-handle span{width:44px;height:5px;border-radius:3px;background:#8d99ab}
+  html.js .sheet-handle:focus-visible{outline-offset:-3px}
+  html.js .search{padding:0 .75rem .6rem;touch-action:none}
+  html.js .search input{font-size:16px;min-height:46px}
+  html.js .filters input{min-height:40px;font-size:15px}
+  html.js .side[data-sheet=peek] .filters{display:none}
+  /* con una ficha abierta, solo el campo de búsqueda queda arriba */
+  html.js .side.has-detail .filters,html.js .side.has-detail .status,html.js .side.has-detail .countries{display:none}
+  html.js .status{font-size:.8rem;margin-top:.4rem}
+  html.js .countries{flex-wrap:nowrap;overflow-x:auto;margin-top:.45rem;padding-bottom:2px;scrollbar-width:none;touch-action:pan-x}
+  html.js .countries::-webkit-scrollbar{display:none}
+  html.js .countries button{flex:none;min-height:36px}
+  html.js .results,html.js .detail{overscroll-behavior:contain}
+  html.js .results button{min-height:44px}
+  /* controles del mapa por encima de la hoja */
+  html.js #rotBtns{top:auto;bottom:calc(var(--sheet-h) + 46px);left:10px;right:auto;transform:none;flex-direction:row;gap:6px}
+  html.js #rotBtns button{width:40px;height:40px}
+  html.js body.layers-open #rotBtns{display:none}
+  html.js .aerial-hud{top:calc(var(--top-h) + 10px);bottom:auto;left:64px;right:60px;transform:none;width:auto}
+  html.js .imgcredit{bottom:calc(var(--sheet-h) + 84px);left:8px;right:8px}
+  html.js .vigil{top:calc(var(--top-h) + 12px)}
+  html.js .vigil-actions button{min-height:40px;padding:.4rem 1rem}
+  html.js .swipe-tag{top:calc(var(--top-h) + 64px)}
+  html.js #stoneTip{max-width:70vw}
+}
+@media (max-width:900px) and (prefers-reduced-motion:reduce), (max-height:500px) and (prefers-reduced-motion:reduce){ html.js .side{transition:none} }
+
+/* Teléfono en horizontal: la lista va a la izquierda (como un mapa de teléfono girado); el mapa ocupa el resto, a toda altura. */
+@media (max-height:500px) and (orientation:landscape){
+  :root{--side-w:min(340px,46vw)}
+  html.js .top{min-height:46px;padding-top:max(4px,env(safe-area-inset-top));padding-bottom:6px}
+  html.js .side{right:auto;width:var(--side-w);border-radius:0 14px 0 0;padding-left:env(safe-area-inset-left)}
+  html.js .layers-btn{left:calc(var(--side-w) + 10px);top:calc(var(--top-h) + 8px)}
+  html.js .basemaps{left:calc(var(--side-w) + 10px);top:calc(var(--top-h) + 58px);width:min(260px,calc(100vw - var(--side-w) - 70px))}
+  html.js .basemaps button{min-height:40px;padding:.45rem .8rem}
+  html.js #rotBtns{left:auto;right:10px;bottom:46px}
+  html.js .maplibregl-ctrl-top-right .maplibregl-ctrl-group button{width:36px;height:36px}
+  html.js .maplibregl-ctrl-top-right .maplibregl-ctrl{margin-top:6px}
+  html.js .aerial-hud{left:calc(var(--side-w) + 64px);right:56px}
+  html.js .imgcredit{left:calc(var(--side-w) + 8px);bottom:80px}
+  html.js .vigil{max-width:min(460px,calc(100vw - 140px));padding:.5rem .9rem}
+  html.js .top.menu-open .topright{left:auto;width:min(420px,100vw);max-height:calc(100dvh - var(--top-h))}
+}

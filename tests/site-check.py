@@ -72,6 +72,8 @@ async def one(p, name, vp, mobile):
     run['person_view'] = pv
     # 6) Acerca de: nota de privacidad
     await pg.evaluate('closeDetail(true)')
+    if await pg.locator('#menuBtn').is_visible():   # v17: en el teléfono, «Acerca de los datos» está en el menú
+        await pg.click('#menuBtn'); await pg.wait_for_timeout(300)
     await pg.click('#aboutLink'); await pg.wait_for_timeout(500)
     run['privacy'] = await pg.evaluate('document.querySelector("#aboutBody").innerText.split("\\n").filter(l=>/Privacidad/.test(l))')
     await pg.keyboard.press('Escape')

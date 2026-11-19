@@ -62,6 +62,11 @@ jobs:
           python3 tests/ai-door-check.py
           python3 tests/ai-sim.py . --n 10 --seed 1
 
+      # Versión única: ?v= de index.html, VERSION del service worker y huellas de JS/CSS deben coincidir
+      # (si cambió un archivo de la app sin `python3 tests/bump-version.py`, los teléfonos verían la versión vieja).
+      - name: Comprobar la versión de la app
+        run: node tests/version-test.cjs
+
       - name: Montar el sitio
         run: |
           mkdir _site

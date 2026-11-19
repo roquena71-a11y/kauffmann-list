@@ -30,3 +30,6 @@ __pycache__/
 # Trabajo interno de la carga de Irlanda (v16): no se publica
 /INFORME-irlanda.md
 /pendiente-irlanda.csv
+
+# Notas internas del rediseño móvil (v17): no se publican
+/ESTADO-movil.md

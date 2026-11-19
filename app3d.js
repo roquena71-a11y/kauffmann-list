@@ -166,6 +166,7 @@ function applyI18n(){
   document.querySelectorAll('[data-i18n]').forEach(el => { const v=T(el.dataset.i18n); if (typeof v==='string') el.textContent=v; });
   document.querySelectorAll('[data-i18n-ph]').forEach(el => el.placeholder = T(el.dataset.i18nPh));
   document.querySelectorAll('[data-i18n-html]').forEach(el => el.innerHTML = T(el.dataset.i18nHtml));
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => { const v=T(el.dataset.i18nAria); if (typeof v==='string' && v) { el.setAttribute('aria-label', v); if (el.tagName === 'BUTTON') el.title = v; } });
   document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
   document.title = T('title');
   if (typeof updatePitchBtn === 'function') updatePitchBtn();
@@ -736,6 +737,7 @@ async function load(){
   if (window.KLImagery) KLImagery.onData();
   $('#status').textContent = T('ready')(fmtNum(DATA.length));
   route();
+  document.dispatchEvent(new CustomEvent('kl:data'));   // mapui.js: países, vista inicial con todos los países
 }
 
 function search(){
@@ -878,7 +880,7 @@ function openStone(id, fromMap){
   selected = s.id; refreshSel();
   const targetZoom = 17.6;
   if (!fromMap || map.getZoom() < 16.5)
-    map.flyTo({center:[s._dlo,s._dla], zoom:targetZoom, pitch:58, offset:[0, 60], bearing: map.getBearing() || -20, duration: reduceMotion ? 0 : 3200, essential:true, curve:1.5});
+    map.flyTo({center:[s._dlo,s._dla], zoom:targetZoom, pitch:58, offset:(window.KLUI && KLUI.offset) ? KLUI.offset() : [0, 60], bearing: map.getBearing() || -20, duration: reduceMotion ? 0 : 3200, essential:true, curve:1.5});
   map.once('moveend', refreshSel);
   history.replaceState(null,'','#s='+encodeURIComponent(id));
   // Merged records (same person, e.g. a second stone or a second Wikidata item): show every distinct inscription.
@@ -1091,11 +1093,11 @@ function closeIntro(fly){
   setTimeout(() => map.resize(), 40);
   if (!fly) {
     try { map.setProjection({type:'mercator'}); } catch (e) {}
-    map.jumpTo({center:[10.45,51.0], zoom:narrowScreen?4.9:5.3, pitch:narrowScreen?42:52, bearing:-12});
+    map.jumpTo(Object.assign({center:[10.45,51.0], zoom:narrowScreen?4.9:5.3, pitch:narrowScreen?42:52, bearing:-12}, (window.KLUI && KLUI.home) ? KLUI.home() : {}));
     return;
   }
   const dur = reduceMotion ? 0 : 5200;
-  map.flyTo({center:[10.45, 51.05], zoom:narrowScreen?4.9:5.35, pitch:narrowScreen?46:52, bearing:-14, duration:dur, essential:true, curve:1.4});
+  map.flyTo(Object.assign({center:[10.45, 51.05], zoom:narrowScreen?4.9:5.35, pitch:narrowScreen?46:52, bearing:-14}, (window.KLUI && KLUI.home) ? KLUI.home() : {}, {duration:dur, essential:true, curve:1.4}));
   const toMerc = () => { try { map.setProjection({type:'mercator'}); } catch (e) {} };
   if (dur === 0) toMerc(); else map.once('moveend', toMerc);
 }

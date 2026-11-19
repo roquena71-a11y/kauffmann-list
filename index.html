@@ -31,15 +31,20 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 10 10%22%3E%3Crect width=%2210%22 height=%2210%22 fill=%22%23c6a15b%22/%3E%3C/svg%3E">
 <link rel="stylesheet" href="fonts/fonts.css">
 <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="style3d.css">
+<link rel="stylesheet" href="style.css?v=17">
+<link rel="stylesheet" href="style3d.css?v=17">
+<link rel="stylesheet" href="mapui.css?v=17">
 <noscript><style>
   /* Sin JavaScript no hay intro ni mapa: se muestra el texto, la cabecera, los enlaces a los datos y el pie */
   .intro,html:not(.intro-skip) body .side,html:not(.intro-skip) body .mapwrap,html:not(.intro-skip) body .topright{display:none!important}
   html:not(.intro-skip) body .top,html:not(.intro-skip) body .foot{display:flex!important}
   html:not(.intro-skip) body .layout{display:block;height:auto}
+  /* sin JavaScript: fuera los controles que no harían nada y el hueco de color crema */
+  .js-only,#remember,.menu-btn{display:none!important}
+  body{background:#07111f}
 </style></noscript>
 <script>
+  document.documentElement.classList.add('js');   // mapui.css: diseño de mapa a pantalla completa solo con JavaScript
   (function () {
     var q = new URLSearchParams(location.search);
     var force = q.get('intro') === '1';
@@ -59,7 +64,8 @@
       <p class="sub" data-i18n="subtitle">Stolpersteine en Alemania e Irlanda · Un nombre, una vida.</p>
     </div>
   </div>
-  <div class="topright">
+  <button type="button" id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="topMenu" data-i18n-aria="menu" aria-label="Menú"><span class="menu-ic" aria-hidden="true"></span></button>
+  <div class="topright" id="topMenu">
     <button id="remember" class="remember" data-i18n="remember">Recordar a todos</button>
     <nav class="lang" aria-label="Idioma / Sprache / Language">
       <button data-lang="es">ES</button><button data-lang="de">DE</button><button data-lang="en">EN</button>
@@ -81,6 +87,7 @@
 
 <main class="layout">
   <aside class="side" id="side">
+    <button type="button" id="sheetHandle" class="sheet-handle" aria-controls="side" aria-expanded="false" data-i18n-aria="sheetOpen" aria-label="Mostrar resultados"><span aria-hidden="true"></span></button>
     <div class="search">
       <label for="q" class="vh" data-i18n="searchLabel">Buscar</label>
       <input id="q" type="search" autocomplete="off" spellcheck="false" data-i18n-ph="searchPh" placeholder="Nombre, apellido o dirección…">
@@ -90,12 +97,13 @@
         <datalist id="cities"></datalist>
       </div>
       <p id="status" class="status" aria-live="polite"></p>
+      <div id="countries" class="countries" role="group" data-i18n-aria="countries" aria-label="Países"></div>
     </div>
     <ol id="results" class="results"></ol>
     <article id="detail" class="detail" hidden></article>
   </aside>
   <div class="mapwrap">
-    <div id="map" class="map" role="region" aria-label="Mapa 3D"></div>
+    <div id="map" class="map" role="region" aria-label="Mapa 3D" data-i18n-aria="mapLabel"></div>
     <div id="mapHist" class="maphist" hidden></div>
     <div id="aerialHud" class="aerial-hud" hidden>
       <p id="hoyHint" class="hoy-hint"></p>
@@ -108,7 +116,8 @@
       <button type="button" id="swipeHandle" class="swipe-handle" aria-label="Comparar 1945 y hoy"></button>
     </div>
     <p id="imgCredit" class="imgcredit" hidden></p>
-    <div class="basemaps" role="group" aria-label="Mapa base">
+    <button type="button" id="layersBtn" class="layers-btn" aria-expanded="false" aria-controls="basemapsPanel" data-i18n-aria="layers" aria-label="Capas del mapa"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M12 3 2 8l10 5 10-5-10-5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m2 12.5 10 5 10-5M2 16.8l10 5 10-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+    <div class="basemaps" id="basemapsPanel" role="group" aria-label="Mapa base" data-i18n-aria="basemapsLabel">
       <button data-base="night" data-i18n="baseNight">Noche</button>
       <button data-base="day" data-i18n="baseDay">Día</button>
       <button data-base="hoy" data-i18n="baseHoy">Hoy</button>
@@ -131,7 +140,7 @@
 
 <footer class="foot">
   <p data-i18n-html="attribution3d"></p>
-  <p><a href="2d/" data-i18n="classic">Mapa clásico 2D</a> · <a href="proyecto/" data-i18n="project">Sobre el proyecto</a> · <a href="llms.txt" data-i18n="dataapi">Datos abiertos y API</a> · <a href="#" id="aboutLink" data-i18n="about">Acerca de los datos</a> · <button type="button" id="replayIntro" class="linkish" data-i18n="replay">Introducción</button></p>
+  <p><a href="2d/" data-i18n="classic">Mapa clásico 2D</a> · <a href="proyecto/" data-i18n="project">Sobre el proyecto</a> · <a href="llms.txt" data-i18n="dataapi">Datos abiertos y API</a><span class="js-only"> · <a href="#" id="aboutLink" data-i18n="about">Acerca de los datos</a> · <button type="button" id="replayIntro" class="linkish" data-i18n="replay">Introducción</button></span></p>
 </footer>
 
 <dialog id="about" class="about">
@@ -264,13 +273,27 @@
 }
 </script>
 <script src="vendor/maplibre/maplibre-gl.js"></script>
-<script src="imagery.js"></script>
-<script src="source-links.js"></script>
-<script src="dedupe.js"></script>
-<script src="app3d.js"></script>
-<script src="columns.js"></script>
-<script src="people.js"></script>
-<script src="counter.js"></script>
-<script>if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");</script>
+<script src="imagery.js?v=17"></script>
+<script src="source-links.js?v=17"></script>
+<script src="dedupe.js?v=17"></script>
+<script src="app3d.js?v=17"></script>
+<script src="columns.js?v=17"></script>
+<script src="people.js?v=17"></script>
+<script src="mapui.js?v=17"></script>
+<script src="counter.js?v=17"></script>
+<script>
+/* Service worker: la página nueva llega siempre (HTML y datos primero de la red; ver sw.js).
+   Si se activa una versión nueva mientras la página está abierta, se recarga una sola vez. */
+if ("serviceWorker" in navigator) (function () {
+  var hadSW = !!navigator.serviceWorker.controller, reloaded = false;
+  navigator.serviceWorker.register("sw.js", {updateViaCache: "none"}).then(function (reg) {
+    document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") reg.update().catch(function () {}); });
+  }).catch(function () {});
+  navigator.serviceWorker.addEventListener("controllerchange", function () {
+    // La versión nueva ya recarga esta pestaña desde sw.js; esto es solo por si no pudo (una sola vez).
+    if (!hadSW || reloaded) return; reloaded = true; setTimeout(function () { location.reload(); }, 1500);
+  });
+})();
+</script>
 </body>
 </html>

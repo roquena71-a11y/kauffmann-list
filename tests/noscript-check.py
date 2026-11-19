@@ -12,13 +12,15 @@ with sync_playwright() as p:
           const vis=(e)=>{const r=e.getBoundingClientRect();const cs=getComputedStyle(e);return r.width>0&&r.height>0&&cs.visibility!=='hidden'&&cs.display!=='none'};
           const ns=document.querySelector('.noscript');out.noscript=ns?vis(ns):null;
           out.intro=getComputedStyle(document.getElementById('intro')).display;
-          out.links=[...document.querySelectorAll('.noscript a, .foot a, .top a')].map(a=>{const r=a.getBoundingClientRect();const cx=r.x+r.width/2,cy=r.y+r.height/2;const el=document.elementFromPoint(cx,cy);return [a.getAttribute('href')||a.textContent, vis(a), el===a||a.contains(el)]});
+          out.dead=[...document.querySelectorAll('.js-only, #remember, .menu-btn')].map(vis);
+          out.links=[...document.querySelectorAll('.noscript a, .foot a, .top a')].filter(a=>!a.closest('.js-only')).map(a=>{const r=a.getBoundingClientRect();const cx=r.x+r.width/2,cy=r.y+r.height/2;const el=document.elementFromPoint(cx,cy);return [a.getAttribute('href')||a.textContent, vis(a), el===a||a.contains(el)]});
           out.top=vis(document.querySelector('.top'));out.foot=vis(document.querySelector('.foot'));
           out.scrollH=document.documentElement.scrollHeight;return out}""")
         print(vp['width'], res['noscript'], res['intro'], res['top'], res['foot'], res['scrollH'])
         assert res['noscript'] and res['intro'] == 'none' and res['top'] and res['foot'], res
         bad = [l for l in res['links'] if not l[1] or (not l[2] and l[0] != '#')]
         assert not bad, bad
+        assert not any(res['dead']), ('controles sin función visibles sin JS', res['dead'])   # F7: lo que necesita JS no se muestra
         c.close()
     b.close()
 print('noscript-check: OK')

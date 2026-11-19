@@ -31,12 +31,13 @@ assert(!/document\.cookie|localStorage|sessionStorage|indexedDB|goatcounter|new 
 
 // --- Service worker ---
 const sw = fs.readFileSync(path.join(ROOT, 'sw.js'), 'utf8');
-assert(/VERSION = 'kauffmann-v16-pages'/.test(sw), 'sw v16');
+assert(/VERSION = 'kauffmann-v17-pages'/.test(sw), 'sw v17');
 const shell = eval(sw.match(/const SHELL = (\[[\s\S]*?\]);/)[1]);
-for (const f of ['source-links.js', 'dedupe.js', 'counter.js', 'app3d.js', 'people.js', 'index.html']) assert(shell.includes(f), 'SHELL has ' + f);
-for (const f of shell) { const p = path.join(ROOT, f === './' ? 'index.html' : f.endsWith('/') ? f + 'index.html' : f); assert(fs.existsSync(p), 'SHELL file exists: ' + f); }
+const bare = shell.map(f => f.replace(/\?v=\d+$/, ''));
+for (const f of ['source-links.js', 'dedupe.js', 'counter.js', 'app3d.js', 'people.js', 'mapui.js', 'mapui.css', 'index.html']) assert(bare.includes(f), 'SHELL has ' + f);
+for (const f of bare) { const p = path.join(ROOT, f === './' ? 'index.html' : f.endsWith('/') ? f + 'index.html' : f); assert(fs.existsSync(p), 'SHELL file exists: ' + f); }
 const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
-const order = ['source-links.js', 'dedupe.js', 'app3d.js', 'people.js', 'counter.js'].map(f => html.indexOf('src="' + f + '"'));
+const order = ['source-links.js', 'dedupe.js', 'app3d.js', 'people.js', 'mapui.js', 'counter.js'].map(f => { const m = new RegExp('src="' + f.replace('.', '\\.') + '(\\?v=\\d+)?"').exec(html); return m ? m.index : -1; });
 assert(order.every(i => i > 0) && order.every((v, i) => !i || v > order[i - 1]), 'script order ' + order);
 
 // --- Textos ---
@@ -51,4 +52,4 @@ function lum(h) { const c = [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16) /
 const cr = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
 for (const bg of ['#0e1726', '#07111f', '#101c30', '#17263c', '#152033']) assert(cr('#9cc3ff', bg) >= 3, 'focus contrast ≥3:1 on ' + bg + ' = ' + cr('#9cc3ff', bg).toFixed(2));
 assert(cr('#9cc3ff', '#07111f') >= 3, 'focus vs its navy halo');
-console.log('OK counter propio (on, DNT/GPC, sin cookies, solo sección), sw v16 + SHELL, labels, focus contrast ' + cr('#9cc3ff', '#0e1726').toFixed(2) + ':1');
+console.log('OK counter propio (on, DNT/GPC, sin cookies, solo sección), sw v17 + SHELL, labels, focus contrast ' + cr('#9cc3ff', '#0e1726').toFixed(2) + ':1');
