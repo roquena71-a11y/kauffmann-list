@@ -41,3 +41,5 @@ Dir de trabajo: /workspace/countries-proto-v20 (copia de v19 = 49e7725, origin/m
 ## 05:26 finalize21 3 rondas: pares <1,55 m 845→68, fallos 36 (19 'revisar' en grupos grandes/dentro, 17 ajustadas con déficit <0,4 m). Lanzado loop21 4 iteraciones más (loop21b.log). Luego: documentar residuales en CSV, bump v20, footprints20, tests.
 
 ## 05:35 PARADO el bucle (orden de Carlos). Estado final = finalize21 ronda 3 (stones.json 05:16): 36 fallos residuales (33 DE, 3 NL) + 26 revisar sin fallo → residuales-acera-v20.csv. Pares de columnas <1,55 m entre grupos: 68 (de 845). SIGUE: bump v20.
+- 05:40 bump v20 hecho (sw kauffmann-v20-pages, counter-sw-test v20).
+- 05:43 footprints20 hecho (7.954 placas, 150.570 edificios, 7,8 MB gz).

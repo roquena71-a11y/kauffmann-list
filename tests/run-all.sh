@@ -9,6 +9,7 @@ node tests/wd-added-test.cjs
 node tests/ie-added-test.cjs
 node tests/se-added-test.cjs
 node tests/jefiro-added-test.cjs
+node tests/v20-added-test.cjs
 node tests/sidewalk-test.cjs
 node tests/counter-sw-test.cjs
 node tests/update-flow-test.cjs
