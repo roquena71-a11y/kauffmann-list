@@ -87,8 +87,8 @@ def compose_addr(street, hn, cc):
 def parse_memorial_addr(a):
     """memorial:addr «Calle 12, Ciudad» → (calle, número) cuando se puede leer sin adivinar; si no, (None, None)."""
     a = (a or '').strip()
-    m = re.match(r'^(.*?[^\d,\s])[ ,]+(\d+[a-zA-Z]?(?:[-/]\d+[a-zA-Z]?)?)(?:,|$| )', a)
-    if m: return m.group(1).strip(), m.group(2)
+    m = re.match(r'^(.*?[^\d,\s])[ ,]+(\d+(?:\s?[a-zA-Z](?![a-zA-Z]))?(?:[-/]\d+[a-zA-Z]?)?)(?:\s*,|$| )', a)   # v20r3 (B, W11): «25 A» (letra del portal separada por un espacio)
+    if m: return m.group(1).strip(), re.sub(r'\s+', '', m.group(2))
     m = re.match(r'^(\d+[a-zA-Z]?)(?:,| )\s*([^\d,][^,]*)', a)
     if m: return m.group(2).strip(), m.group(1)
     return None, None
@@ -123,7 +123,7 @@ def strip_years(raw):
     return raw, None, None
 
 # ---- v20r2 (auditoría B): nombres que no son una sola persona ----
-NOT_PERSON_RE = re.compile(r'\b(hier|waren|wohnten|wohnte|stellvertretend|zwangsarbeit|festspiele|quartett|institut|blindeninstitut|kulturschaffenden|juedischen|menschen|vielen|opfern|oost polen|lager|suppenkuche|suppenkuchen|gemeinde|schulverein|verein|erinnerung|idokapszula|kapszula|capsule|stolpersteine|stolperstein|llambordes)\b|^a [a-z]')
+NOT_PERSON_RE = re.compile(r'\b(hier|waren|wohnten|wohnte|stellvertretend|zwangsarbeit|festspiele|quartett|institut|blindeninstitut|kulturschaffenden|juedischen|menschen|vielen|opfern|oost polen|lager|suppenkuche|suppenkuchen|gemeinde|schulverein|verein|erinnerung|idokapszula|kapszula|capsule|stolpersteine|stolperstein|llambordes)\b|\b\w*(familie|verein|waisenhaus|bethaus|synagoge|kinderheim|altersheim|krankenhaus)\b|^a [a-z]')   # v20r3 (A/B ronda 2): Großfamilie, Turnverein, Waisenhaus, Bethaus…
 COMMA_JUNK = re.compile(r'^(geb|geboren|nee|née|born|f|dit|alias|gen|genannt|jr|sr|dr|prof)\b', re.I)
 def not_one_person(name):
     """Motivo (str) si el «nombre» no es UNA persona: varias personas («A & B», «A; B», «A, B», «...»), rótulo o institución; None si parece una persona."""
@@ -151,7 +151,7 @@ def name_exact_in(name, text):
     words = set(norm(text).split())
     return all(x in words for x in tk)
 
-COUNTRY_NAMES = {norm(x) for x in ('Belgium Belgique België Belgien Schweiz Suisse Svizzera Switzerland Svizra Česko Czechia Czech Republic Česká republika Ceska republika Nederland Netherlands The Netherlands Pays-Bas Niederlande France Frankreich Luxembourg Luxemburg Lëtzebuerg Deutschland Germany Allemagne Österreich Austria Autriche Italia Italy Italie España Spain Espagne Polska Poland Pologne Magyarország Hungary Hongrie Slovensko Slovakia Slovaquie Norge Norway Norvège Danmark Denmark Danemark Lietuva Lithuania Latvija Latvia Hrvatska Croatia Croatie Liechtenstein Andorra Guernsey Jersey United Kingdom UK Ireland Éire Sverige Sweden Suomi Finland România Romania').split() } | {norm(x) for x in ('Czech Republic', 'The Netherlands', 'United Kingdom', 'Česká republika')}
+COUNTRY_NAMES = {norm(x) for x in ('Belgium Belgique België Belgien Schweiz Suisse Svizzera Switzerland Svizra Česko Czechia Czech Republic Česká republika Ceska republika Nederland Netherlands The Netherlands Pays-Bas Niederlande France Frankreich Luxembourg Luxemburg Lëtzebuerg Deutschland Germany Allemagne Österreich Austria Autriche Italia Italy Italie España Spain Espagne Polska Poland Pologne Magyarország Hungary Hongrie Slovensko Slovakia Slovaquie Norge Norway Norvège Danmark Denmark Danemark Lietuva Lithuania Latvija Latvia Hrvatska Croatia Croatie Liechtenstein Andorra Guernsey Jersey United Kingdom UK Ireland Éire Sverige Sweden Suomi Finland România Romania').split() } | {norm(x) for x in ('Czech Republic', 'The Netherlands', 'United Kingdom', 'Česká republika')} | {norm(x) for x in 'CZ SK AT CH FR LU NL BE IT HU PL DK NO LV LT HR LI AD GG JE GB IE SE FI RO DE ES SI GR UA UK'.split()}   # v20r3 (A ronda 2): códigos ISO («…, Brno, CZ»)
 STREET_RE = re.compile(r"^(rue|avenue|av\.?|boulevard|bd\.?|place|chemin|grand'?\s?rue|grande rue|route|impasse|all[ée]e|quai|square|cours|passage|sentier|faubourg|ruelle|rte|stra(ss|ß)e|weg|gasse|platz|laan|straat|plein|singel|gracht|via|viale|piazza|calle|plaza|ulice|ul\.|náměstí|namesti|utca|út|tér|ulica|iela|gatvė|lane|road|street)\b|(stra(ss|ß)e|straat|gasse|platz|weg|laan|ulice|utca|lane|road|street)$", re.I)
 def bad_city(c):
     c = (c or '').strip()
@@ -186,3 +186,24 @@ def same_person_dup(s, t, maxm=15):
     if not names_compatible(s['n'], t['n']): return False
     by1, by2 = birth_year(s), birth_year(t)
     return not (by1 and by2 and by1 != by2)
+
+
+import re as _re2
+def clean_pasted_tags(s):
+    """v20r3 (A ronda 2, F9): etiquetas OSM pegadas dentro del texto de la inscripción («…memorial=stolperstein name=… network=…», «…1944historic=memorial»)."""
+    return _re2.sub(r'\s*(?<![A-Za-z])(historic|memorial(?::\w+)?|network|name|stolperstein)=.*$', '', s or '', flags=_re2.S).strip()
+
+def norm_date(v):
+    """v20r3 (B ronda 2, R2-2): ISO aaaa[-mm[-dd]]; «23.04.1942» y «1884-1-29» se normalizan; «Jg. 1926» → 1926; «unknown», «unbek.», URLs… → ''."""
+    v = (v or '').strip()
+    if _re2.fullmatch(r'\d{4}(-\d\d(-\d\d)?)?', v): return v
+    m = _re2.fullmatch(r'(\d{1,2})\.\s?(\d{1,2})\.\s?(\d{4})', v)
+    if m: d, mo, y = int(m[1]), int(m[2]), m[3]
+    else:
+        m = _re2.fullmatch(r'(\d{4})-(\d{1,2})-(\d{1,2})', v)
+        if m: y, mo, d = m[1], int(m[2]), int(m[3])
+        else:
+            m = _re2.fullmatch(r'Jg\.?\s*(\d{4})', v)
+            return m[1] if m else ''
+    if 1 <= mo <= 12 and 1 <= d <= 31: return '%s-%02d-%02d' % (y, mo, d)
+    return ''

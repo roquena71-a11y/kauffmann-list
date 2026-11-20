@@ -17,6 +17,20 @@ TRUE = {('%s%d' % (e['type'][0], e['id'])): e['cc'] for e in json.load(open(D / 
 relabel = 0
 for s in S:
     if not s.get('cc') and TRUE.get(s['id'], 'DE') != 'DE': s['cc'] = TRUE[s['id']]; relabel += 1
+# v20r3 (B ronda 2, R2-2/R2-4): fechas que no son fechas (unknown, unbek., URLs, dd.mm.aaaa) normalizadas o vaciadas; municipios que eran una calle (Echternach, Tägerwilen)
+sys.path.insert(0, str(Path(__file__).resolve().parent)); from v20_common import norm_date
+_nd = 0
+for s in S:
+    for k in ('b', 'd'):
+        if s.get(k):
+            v = norm_date(s[k])
+            if v != s[k]:
+                _nd += 1
+                if v: s[k] = v
+                else: s.pop(k)
+    if s['id'] in ('n13085210376', 'n13085210378', 'n13085210377', 'n13085100061', 'n13085100063', 'n13085100062'): s['c'] = 'Echternach'
+    if s['id'] == 'n4142422013': s['c'] = 'Tägerwilen'; s['a'] = 'Konstanzer Strasse 123'
+print('fechas normalizadas/vaciadas en la base:', _nd)
 n0 = len(S); ids = {s['id'] for s in S}
 added = []; man = {'countries': {}, 'pending': [], 'duplicates': []}
 for cc in ccs:
@@ -38,6 +52,10 @@ if (D / 'out/D1480.json').exists() and '--no1480' not in sys.argv:
         if r['id'] in ('Q98983030', 'Q98983031'): r['a'] = 'Adolfsallee 33'; r['c'] = 'Wiesbaden'; r['sub'] = 'Mitte'   # A, F8: WD P6375 = 65185 Wiesbaden; «Mitte» es el barrio
 # v20r2: placas solo-Wikidata que son la misma persona que una placa ya presente (v19 reasignada, otra de OSM) a <=15 m con nombre compatible → duplicado, no se añade
 sys.path.insert(0, str(Path(__file__).resolve().parent)); from v20_common import names_compatible, same_person_dup; from geo import hav
+# v20r3 (B ronda 2, R2-6): padre e hijo (Bogomolno) y madre/nuera (Levinsohn) con el mismo nombre y sin fechas: nacimiento (P569) de la persona del ítem (Wikidata CC0, consultado el 2026-11-20)
+for r in added:
+    b_ = {'Q44181939': '1926-09-06', 'Q44181958': '1891-02-25', 'Q44180057': '1907-06-25'}.get(r['id'])
+    if b_ and not r.get('b'): r['b'] = b_
 _grid = {}
 for s in S + d1480 + [r for r in added if r.get('src') != 'wd']: _grid.setdefault((int(s['la'] / 0.0003), int(s['lo'] / 0.0005)), []).append(s)
 _keep = []
@@ -56,6 +74,15 @@ for r in d1480:   # las 32 de las 1.480 contra lo ya presente (auditoría A, F5:
     if d: man['duplicates'].append({'cc': r.get('cc') or 'DE', 'id': r['id'], 'dup_de': d['id'], 'n': r['n'], 'regla': 'merge: <=15 m y nombres compatibles (las 1.480)'}); continue
     _k2.append(r)
 d1480 = _k2
+# v20r3 (B ronda 2, R2-3): el CSV de las 1.480 refleja lo que hay en el mapa (las que se fusionan con una placa existente figuran como duplicadas y con la placa a la que se fusionaron)
+_dupq = {d['id']: d['dup_de'] for d in man['duplicates'] if d.get('regla', '').endswith('(las 1.480)')}
+_f = R / 'pendiente-1480-v20.csv'
+if _f.exists():
+    _rows = list(csv.reader(open(_f, encoding='utf-8'))); _hd = _rows[0]; _o = []
+    for rw in _rows[1:]:
+        if rw[0] in _dupq: rw[1] = 'duplicado'; rw[5] = 'ya hay una placa de la misma persona a <=15 m en el mapa (%s): no se añade otra' % _dupq[rw[0]]
+        _o.append(rw)
+    with open(_f, 'w', newline='', encoding='utf-8') as fh: w = csv.writer(fh); w.writerow(_hd); w.writerows(_o)
 data['stones'] = S + d1480 + added; data['meta']['count'] = len(data['stones']); data['meta']['v20_wd1480_added'] = len(d1480)
 data['meta']['layout_pinned'] = True   # v20: la app no separa grupos (lo hace sidewalk20): dibujo = dla/dlo exacto
 data['meta']['v20_added'] = {'records': len(added), 'countries': {cc: man['countries'][cc]['anadidas'] for cc in ccs},

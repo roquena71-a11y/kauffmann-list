@@ -22,6 +22,8 @@ citymap = J('city/%s.json' % CC) if (D / ('city/%s.json' % CC)).exists() else {}
 ADDR = [{**v, 'k': k} for k, v in near.get('addr', {}).items()]
 try: COMMONS = json.load(open(D / 'commons_coords20.json', encoding='utf-8'))
 except FileNotFoundError: COMMONS = {}
+VIENNA = {'Innere Stadt', 'Leopoldstadt', 'Landstraße', 'Wieden', 'Margareten', 'Mariahilf', 'Neubau', 'Josefstadt', 'Alsergrund', 'Favoriten', 'Simmering', 'Meidling', 'Hietzing', 'Penzing', 'Rudolfsheim-Fünfhaus', 'Ottakring', 'Hernals', 'Währing', 'Döbling', 'Brigittenau', 'Floridsdorf', 'Donaustadt', 'Liesing'}
+MANUAL_PENDING = {'n8307048446': 'la inscripción nombra a más de una persona (Erna y Georg Duschinsky): una ficha por persona no es posible con un solo nodo'}   # v20r3 (A ronda 2, F3)
 def commons_check(la, lo, fname):
     """('ok' <=60 m | 'lejos' >150 m | 'medio' | 'sin_datos', distancia mínima a una coordenada del fichero de Commons)."""
     cs = COMMONS.get('File:' + fname) if fname else None
@@ -33,6 +35,19 @@ ADDR_OK = 40.0     # m: objeto addr:* de OSM con la misma calle y número
 SPLIT_RE = re.compile(r'\s*[;|]\s*')
 
 STONE_KEYS = {'%s%d' % (e['type'][0], e['id']) for e in J('osm20_%s.json' % CC)['elements']} if (D / ('osm20_%s.json' % CC)).exists() else set()
+def edge_dist(la, lo, k):
+    """v20r3 (A ronda 2): un objeto addr:* que es un EDIFICIO (vía) se mide al borde del polígono, no a su centroide (0 si la placa está dentro)."""
+    b = (near.get('buildings') or {}).get(k)
+    g = b.get('geometry') if isinstance(b, dict) else None
+    if not g or len(g) < 3: return None
+    kx = 111320.0 * math.cos(math.radians(la)); P = [((p['lon'] - lo) * kx, (p['lat'] - la) * 111320.0) for p in g]
+    inside = False; best = 1e9
+    for (x1, y1), (x2, y2) in zip(P, P[1:] + P[:1]):
+        if (y1 > 0) != (y2 > 0) and 0 < x1 + (0 - y1) * (x2 - x1) / (y2 - y1): inside = not inside
+        dx, dy = x2 - x1, y2 - y1; L = dx * dx + dy * dy
+        u = 0.0 if L == 0 else max(0.0, min(1.0, -(x1 * dx + y1 * dy) / L)); best = min(best, math.hypot(x1 + u * dx, y1 + u * dy))
+    return 0.0 if inside else best
+
 def addr_check(la, lo, street, hn, indep=False):
     """('ok'|'lejos'|'sin_coincidencia'|'sin_datos', distancia al objeto addr:* coincidente más cercano)."""
     if not street or not hn: return 'sin_datos', None
@@ -45,6 +60,9 @@ def addr_check(la, lo, street, hn, indep=False):
         if not hn_match(t.get('addr:housenumber', ''), hn): continue
         st = t.get('addr:street') or t.get('addr:place') or ''
         d = hav(la, lo, x['la'], x['lo'])
+        if x.get('k', '')[:1] in ('w', 'r'):
+            _e = edge_dist(la, lo, x['k'])
+            if _e is not None: d = min(d, _e)
         if not st:   # objeto con número pero sin calle (la calle va en una relación associatedStreet): solo cuenta si está pegado (<= 25 m)
             if d <= 25 and (bestn is None or d < bestn): bestn = d
             continue
@@ -108,7 +126,7 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     if _pq in SUBJ and SUBJ[_pq] and not SUBJ[_pq].get('human'): P(sid, 'subject:wikidata (%s) no es un humano en Wikidata' % _pq, n=name, **base); continue
     if len(toks(name)) < 2 and len(name.split()) < 2: P(sid, 'nombre de una sola palabra (%s)' % name, **base); continue
     insc_raw = t.get('inscription') or t.get('memorial:text') or ''
-    insc = split_insc(insc_raw)
+    insc = clean_pasted_tags(split_insc(insc_raw))
     if re.search(r'\.(jpe?g|png|gif|webp)\b|^File:|^Opname van|\bvideo\b', insc, re.I): insc = ''   # v20r2 (A, F2): descripción de vídeo / nombre de fichero, no inscripción
     # dirección
     street = t.get('addr:street') or t.get('object:street') or t.get('memorial:addr:street')
@@ -176,6 +194,9 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     if d_ and (not date_ok(d_) or int(d_[:4]) < 1930 or (b_ and int(d_[:4]) < int(b_[:4])) or (yrs and d_[:4] not in yrs) or (death_years(insc) and d_[:4] not in death_years(insc))):   # v20r2: el año de muerte debe aparecer en la inscripción (si ésta trae años)
         notes.append('muerte %s de OSM descartada' % d_); d_ = ''
     if ly_b and not b_ and not d_ and (not yrs or (ly_d in yrs and ly_b in yrs)): b_, d_ = ly_b, ly_d; notes.append('años (%s–%s) leídos del nombre de OSM' % (ly_b, ly_d))
+    _dy = [int(y) for y in death_years(insc)] + ([int(d_[:4])] if d_ else [])
+    if _dy and max(_dy) > 1950: P(sid, 'la placa recuerda una muerte posterior a 1950 (%d): fuera del periodo de persecución nazi, no se añade como víctima' % max(_dy), n=name, **base); continue
+    if sid in MANUAL_PENDING: P(sid, MANUAL_PENDING[sid], n=name, **base); continue
     rec = {'id': sid, 'la': e['lat'], 'lo': e['lon'], 'src': 'osm'}
     q = t.get('wikidata') or t.get('memorial:wikidata')
     if q in wd:
@@ -263,18 +284,21 @@ for q, w in sorted(wd.items()):
     if len(ad) > 1 or len(ins) > 1:
         P(q, 'Wikidata trae varias direcciones o inscripciones distintas', **base, la=la, lo=lo); continue
     if not (ad or ins): P(q, 'sin dirección P6375 ni inscripción P1684 en Wikidata', **base, la=la, lo=lo); continue
-    insc = split_insc(re.sub(r'^"|"$', '', ins[0])) if ins else ''
+    insc = clean_pasted_tags(split_insc(re.sub(r'^"|"$', '', ins[0]))) if ins else ''
     if insc and (name_in_text(nm, insc) < 0.99 or not name_exact_in(nm, insc)): P(q, 'el nombre de Wikidata no coincide con su inscripción', **base, la=la, lo=lo); continue
     street = hn = None; a = None
     if ad:
         ps, ph = parse_memorial_addr(ad[0].split(',')[0] if CC not in ('FR',) else ad[0])
+        if not (ps and ph) and CC != 'FR':   # v20r3 (A ronda 2, F10): «Via Giuseppe Garibaldi, 31, Torino» (calle, nº, ciudad) y «Lakkegata71, 0562 Oslo» (calle pegada al nº)
+            _m = re.match(r'^\s*([^,\d][^,]*?),\s*(\d+\s?[A-Za-z]?)(?:\s*[,/-].*)?$', ad[0]) or re.match(r'^\s*([^,\d]*[^,\d\s])\s*(\d+\s?[A-Za-z]?)\s*(?:,.*)?$', ad[0])
+            if _m: ps, ph = _m.group(1).strip(), _m.group(2).replace(' ', '')
         if CC == 'FR':
             m = re.match(r'^(\d+\w?)\s+(.*?)\s+\d{5}\s+(.*)$', ad[0])
             if m: ph, ps = m.group(1), m.group(2)
         if ps: street, hn = ps, ph
         a = compose_addr(street, hn, CC) if street else ad[0].split(',')[0].strip()
     if not street or not hn:
-        P(q, 'la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM', **base, la=la, lo=lo); continue
+        P(q, 'la dirección de Wikidata («%s») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM' % (ad[0][:60] if ad else ''), **base, la=la, lo=lo); continue
     pos, dpos = addr_check(la, lo, street, hn)
     fimg = unquote(sorted(w['img'])[0].rsplit('/', 1)[-1]).replace('_', ' ') if w['img'] else None
     cpos, cd = commons_check(la, lo, fimg)
@@ -338,6 +362,11 @@ for r in fin:
     c1 = clean_city(c0) if c0 else c0
     if c1 and bad_city(c1): c1 = None
     if not c1 and cm.get('c') and not bad_city(clean_city(cm['c'])): c1 = clean_city(cm['c'])
+    if not c1:   # v20r3 (B ronda 2, R2-4): ciudades-municipio que OSM parte solo en distritos (nivel 9/10): Praga, Bratislava, Viena
+        _lv = [n for v in (cm.get('levels') or {}).values() for n in v] + ([cm['sub']] if cm.get('sub') else [])
+        if CC == 'CZ' and any(n.startswith('Praha') for n in _lv): c1 = 'Praha'
+        elif CC == 'SK' and any(n.startswith('Bratislava') for n in _lv): c1 = 'Bratislava'
+        elif CC == 'AT' and any(n in VIENNA for n in _lv): c1 = 'Wien'
     if c1: r['c'] = c1
     else: r.pop('c', None)
     if r.get('sub') and (r['sub'] == r.get('c') or bad_city(r['sub'])): r.pop('sub', None)
