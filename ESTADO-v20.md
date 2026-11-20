@@ -43,3 +43,4 @@ Dir de trabajo: /workspace/countries-proto-v20 (copia de v19 = 49e7725, origin/m
 ## 05:35 PARADO el bucle (orden de Carlos). Estado final = finalize21 ronda 3 (stones.json 05:16): 36 fallos residuales (33 DE, 3 NL) + 26 revisar sin fallo → residuales-acera-v20.csv. Pares de columnas <1,55 m entre grupos: 68 (de 845). SIGUE: bump v20.
 - 05:40 bump v20 hecho (sw kauffmann-v20-pages, counter-sw-test v20).
 - 05:43 footprints20 hecho (7.954 placas, 150.570 edificios, 7,8 MB gz).
+- 05:55 pipeline build/validate OK (0 errores, 4 avisos de tamaño). Lanzado run-all REQUIRE_OAV=1 (venv-ci) → /workspace/v20-data/runall.log

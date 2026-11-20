@@ -62,7 +62,8 @@ def main():
         x = x.replace('Stolpersteine in Germany, Ireland, Sweden, Jersey, Finland and Romania', 'Stolpersteine in ' + short['en'])
         x = x.replace('of every Stolperstein (memorial plaque for victims of National Socialism) in Germany, Ireland, Sweden, Jersey, Finland and Romania', 'of the Stolpersteine (memorial plaques for victims of National Socialism) that open data (OpenStreetMap, Wikidata) allows us to verify in ' + en)
         x = x.replace('"Germany", "Ireland", "Sweden", "Jersey", "Finland", "Romania"', ', '.join('"%s"' % NAMES[c][2] for c in order))
-        return x
+        places = ', '.join('{"@type": "Place", "name": "%s"}' % NAMES[c][2] for c in order)
+        return re.sub(r'"spatialCoverage": \[[^\]]*\]', lambda m: '"spatialCoverage": [' + places + ']', x, count=1)
     h = ld(h)
     h = h.replace('Stolperstein (memorial plaque for victims of National Socialism) in ' + OLD['en'], 'Stolperstein (memorial plaque for victims of National Socialism) in ' + en)
     h = h.replace('Germany, Ireland, Sweden, Jersey, Finland and Romania', short['en'].replace('Germany and', 'Germany and'))
