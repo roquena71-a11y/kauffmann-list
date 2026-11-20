@@ -28,10 +28,6 @@ for r in SWt:
             'columna/chincheta a <0,5 m de una huella de OSM tras el cierre (grupo de %d placas con la misma dirección; calle sin hueco libre de edificios a <=25 m del origen para la cuadrícula completa; no se mueve más para no falsear su dirección)' % n])
     elif r['estado'] == 'revisar':
         rows.append([r['id'], r['cc'], r.get('n'), 'revisar-sin-contacto', 'revisar', '', '', '', 'el solver no encontró hueco, pero la comprobación independiente sobre la app real (shapely, OSM) NO detecta contacto (holgura >=0,5 m en 3D y 2D): se documenta, no hay solape'])
-# auditoría C: 4 placas cuyo dibujo queda más cerca de otra calle que la de su dirección (comprobado con blockcheck sobre el volcado de la app; origen a 2,5-7 m de su calle, desplazadas 12-14 m)
-MANZANA = {'n13041383986': 'Rue de l\'Hôpital', 'n13032352978': 'Place Eugène Ferry', 'n13032352980': 'Place Eugène Ferry', 'Q133230139': 'Dammstraße'}
-for i_, calle in MANZANA.items():
-    if i_ in byid: rows.append([i_, byid[i_].get('cc') or 'DE', byid[i_].get('n'), 'manzana-dudosa', 'ajustada', '', '', '', 'el dibujo (separado de los edificios 12-14 m) queda más cerca de «%s» que de la calle de su dirección; la coordenada de origen es la correcta y es la que usan «Cómo llegar» y las descargas. Sin mover más: requeriría restringir el solver a la calle de la dirección (pendiente de decisión)' % calle])
 with open(R / 'residuales-acera-v20.csv', 'w', newline='', encoding='utf-8') as fh:
     w = csv.writer(fh); w.writerow(['id', 'pais', 'nombre', 'tipo', 'estado_solver', 'holgura3d_m', 'holgura2d_m', 'deficit_m', 'motivo']); w.writerows(rows)
 M = 111320; ex = []
@@ -42,3 +38,16 @@ for r in dump['rows']:
 with open(R / 'excepciones-25m-v20.csv', 'w', newline='', encoding='utf-8') as fh:
     w = csv.writer(fh); w.writerow(['id', 'pais', 'nombre', 'dibujo_vs_origen_m', 'placas_en_el_grupo', 'motivo']); w.writerows(ex)
 print('residuales', len(rows), Counter(r[3] for r in rows), '| excepciones >25 m:', len(ex), Counter(r[4] > 20 for r in ex))
+# v20r3 (auditoría C ronda 2): pares de columnas de grupos distintos a <1,55 m (gaps20.py sobre el volcado de la app) → pares-solapados-v20.csv, cada uno con su causa
+gp = Path(os.environ.get('V20_DATA', '/workspace/v20-data-r3')) / 'gaps20.json'
+pr = []
+if gp.exists():
+    for a_, b_, dd in json.load(open(gp)):
+        if a_ not in byid or b_ not in byid: continue
+        A, Bs = byid[a_], byid[b_]; so = math.hypot((A['la'] - Bs['la']) * M, (A['lo'] - Bs['lo']) * M * math.cos(math.radians(A['la'])))
+        why = ('orígenes a %.1f m entre sí: la fuente ya los sitúa casi en el mismo punto (direcciones distintas); la separación entre grupos queda limitada por el hueco libre de la acera' % so) if so < 3 else \
+              ('grupos de direcciones distintas (orígenes a %.1f m) cuyas casillas de acera quedan a %.2f m; separación entre grupos acotada por MAXSEP (8 m) y por los edificios' % (so, dd))
+        pr.append([a_, A.get('cc') or 'DE', A.get('n'), A.get('a') or '', b_, Bs.get('cc') or 'DE', Bs.get('n'), Bs.get('a') or '', dd, round(so, 1), why])
+with open(R / 'pares-solapados-v20.csv', 'w', newline='', encoding='utf-8') as fh:
+    w = csv.writer(fh); w.writerow(['id_a', 'pais_a', 'nombre_a', 'direccion_a', 'id_b', 'pais_b', 'nombre_b', 'direccion_b', 'distancia_dibujo_m', 'distancia_origen_m', 'motivo']); w.writerows(pr)
+print('pares solapados (<1,55 m, grupos distintos):', len(pr))

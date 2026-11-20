@@ -86,8 +86,8 @@ def compose_addr(street, hn, cc):
 
 def parse_memorial_addr(a):
     """memorial:addr «Calle 12, Ciudad» → (calle, número) cuando se puede leer sin adivinar; si no, (None, None)."""
-    a = (a or '').strip()
-    m = re.match(r'^(.*?[^\d,\s])[ ,]+(\d+(?:\s?[a-zA-Z](?![a-zA-Z]))?(?:[-/]\d+[a-zA-Z]?)?)(?:\s*,|$| )', a)   # v20r3 (B, W11): «25 A» (letra del portal separada por un espacio)
+    a = re.sub(r'^\d{4,5}\s+(?=\D)', '', (a or '').strip())   # v20r3 (A, C6b): «1071 Budapest Damjanich utca 3» (código postal delante)
+    m = re.match(r'^(.*?[^\d,\s])[ ,]+(\d+(?:\s?[a-zA-Z](?![a-zA-Z]))?(?:[-/](?:\d+[a-zA-Z]?|[a-zA-Z](?![a-zA-Z])))?)(?:\s*,|\.?$| )', a)   # v20r3 (B, W11): «25 A» (letra del portal separada por un espacio)
     if m: return m.group(1).strip(), re.sub(r'\s+', '', m.group(2))
     m = re.match(r'^(\d+[a-zA-Z]?)(?:,| )\s*([^\d,][^,]*)', a)
     if m: return m.group(2).strip(), m.group(1)

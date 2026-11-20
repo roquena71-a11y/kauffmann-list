@@ -173,6 +173,7 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
         if fr < 0.99 or not name_exact_in(name, insc):   # v20r2 (A, F4): el nombre debe estar TAL CUAL (palabras completas) en la inscripción
             P(sid, 'el nombre de OSM no coincide con la inscripción (%.0f %% de las palabras del nombre están en la inscripción)' % (fr * 100), n=name, i=insc[:120], **base); continue
     # posición: dirección etiquetada ↔ objeto addr:* de OSM, y coordenada del fichero de Commons
+    if street and city and norm(street).startswith(norm(city) + ' ') and len(norm(street)) > len(norm(city)) + 3: street = street[len(city):].strip(' ,')   # v20r3: «Budapest Damjanich utca» → «Damjanich utca»
     pos, dpos = addr_check(e['lat'], e['lon'], street, hn)
     fcom = (t.get('wikimedia_commons') or '')[5:] if (t.get('wikimedia_commons') or '').startswith('File:') else None
     cpos, cd = commons_check(e['lat'], e['lon'], fcom)
