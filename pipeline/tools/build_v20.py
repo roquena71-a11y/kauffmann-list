@@ -22,6 +22,10 @@ citymap = J('city/%s.json' % CC) if (D / ('city/%s.json' % CC)).exists() else {}
 ADDR = [{**v, 'k': k} for k, v in near.get('addr', {}).items()]
 try: COMMONS = json.load(open(D / 'commons_coords20.json', encoding='utf-8'))
 except FileNotFoundError: COMMONS = {}
+BOX_WIEN = (48.10, 16.18, 48.33, 16.58); BOX_PRAHA = (49.94, 14.22, 50.18, 14.71); BOX_BRATISLAVA = (48.05, 16.95, 48.25, 17.30)   # (lat_min, lon_min, lat_max, lon_max)
+def in_box(r, b): return b[0] <= r['la'] <= b[2] and b[1] <= r['lo'] <= b[3]
+# v20r4: municipio que los límites de OSM no dan y que Nominatim (OSM, reverse zoom 18, 2026-11-20) confirma: n2975306671 (Josef Logar, 46,6233 N 14,3033 E) = Klagenfurt am Wörthersee (barrio Innere Stadt)
+CITY_MANUAL = {'n2975306671': 'Klagenfurt am Wörthersee'}
 VIENNA = {'Innere Stadt', 'Leopoldstadt', 'Landstraße', 'Wieden', 'Margareten', 'Mariahilf', 'Neubau', 'Josefstadt', 'Alsergrund', 'Favoriten', 'Simmering', 'Meidling', 'Hietzing', 'Penzing', 'Rudolfsheim-Fünfhaus', 'Ottakring', 'Hernals', 'Währing', 'Döbling', 'Brigittenau', 'Floridsdorf', 'Donaustadt', 'Liesing'}
 MANUAL_PENDING = {'n8307048446': 'la inscripción nombra a más de una persona (Erna y Georg Duschinsky): una ficha por persona no es posible con un solo nodo'}   # v20r3 (A ronda 2, F3)
 def commons_check(la, lo, fname):
@@ -127,6 +131,7 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     if len(toks(name)) < 2 and len(name.split()) < 2: P(sid, 'nombre de una sola palabra (%s)' % name, **base); continue
     insc_raw = t.get('inscription') or t.get('memorial:text') or ''
     insc = clean_pasted_tags(split_insc(insc_raw))
+    insc = re.sub(r'^inscription\s*=\s*', '', insc, flags=re.I)   # v20r4 (A ronda 3, R3-2): «inscription= HIER WOONDE…» (etiqueta pegada en el texto)
     if re.search(r'\.(jpe?g|png|gif|webp)\b|^File:|^Opname van|\bvideo\b', insc, re.I): insc = ''   # v20r2 (A, F2): descripción de vídeo / nombre de fichero, no inscripción
     # dirección
     street = t.get('addr:street') or t.get('object:street') or t.get('memorial:addr:street')
@@ -189,6 +194,9 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     yrs = years_in(insc)
     b_ = (t.get('person:date_of_birth') or '').strip(); d_ = (t.get('person:date_of_death') or '').strip()
     notes = [] if name_from == 'name' else ['nombre tomado de la etiqueta %s' % name_from]
+    _dsc = t.get('description') or ''
+    b_, _n1 = fix_osm_date(b_, _dsc); d_, _n2 = fix_osm_date(d_, _dsc)
+    notes += [x for x in (_n1, _n2) if x]
     if subj_ok: notes.append('persona verificada en Wikidata (humano, nombre y años coinciden) vía subject:wikidata; sin dirección ni inscripción en OSM')
     if b_ and (not date_ok(b_) or (yrs and b_[:4] not in yrs)):
         notes.append('nacimiento %s de OSM descartado' % b_); b_ = ''
@@ -365,9 +373,12 @@ for r in fin:
     if not c1 and cm.get('c') and not bad_city(clean_city(cm['c'])): c1 = clean_city(cm['c'])
     if not c1:   # v20r3 (B ronda 2, R2-4): ciudades-municipio que OSM parte solo en distritos (nivel 9/10): Praga, Bratislava, Viena
         _lv = [n for v in (cm.get('levels') or {}).values() for n in v] + ([cm['sub']] if cm.get('sub') else [])
-        if CC == 'CZ' and any(n.startswith('Praha') for n in _lv): c1 = 'Praha'
-        elif CC == 'SK' and any(n.startswith('Bratislava') for n in _lv): c1 = 'Bratislava'
-        elif CC == 'AT' and any(n in VIENNA for n in _lv): c1 = 'Wien'
+        # v20r4 (A ronda 3, R3-1): los nombres de distrito se repiten fuera de la ciudad («Innere Stadt» también existe en Klagenfurt): además hay que estar dentro de la caja de la ciudad
+        if CC == 'CZ' and any(n.startswith('Praha') for n in _lv) and in_box(r, BOX_PRAHA): c1 = 'Praha'
+        elif CC == 'SK' and any(n.startswith('Bratislava') for n in _lv) and in_box(r, BOX_BRATISLAVA): c1 = 'Bratislava'
+        elif CC == 'AT' and any(n in VIENNA for n in _lv) and in_box(r, BOX_WIEN): c1 = 'Wien'
+    if not c1 and r['id'] in CITY_MANUAL: c1 = CITY_MANUAL[r['id']]
+    if CC == 'CZ' and c1 == 'Prague': c1 = 'Praha'   # v20r4 (A ronda 3, R3-6): mismo municipio, endónimo como el resto de las 133 fichas
     if c1: r['c'] = c1
     else: r.pop('c', None)
     if r.get('sub') and (r['sub'] == r.get('c') or bad_city(r['sub'])): r.pop('sub', None)

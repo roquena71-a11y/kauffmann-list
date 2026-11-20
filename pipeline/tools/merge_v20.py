@@ -51,6 +51,7 @@ if (D / 'out/D1480.json').exists() and '--no1480' not in sys.argv:
     for r in d1480: r['n'] = _re.sub(r'[\s|\[;,/:]+$', '', _re.sub(r'\s+', ' ', r['n']).strip())   # v20r2: dobles espacios («Albert  Platz») y «[» suelta
     for r in d1480:   # v20r2 (auditoría B, W7a): Henny Reiss: Wikidata e inscripción dicen «Kasinostraße 4-6» (OSM tiene addr 4-6 a 4 m); la foto dice 10, pero la dirección registrada es la de Wikidata/OSM
         if r.get('wd') == 'Q134878005' or r['id'] == 'Q134878005': r['a'] = 'Kasinostraße 4-6'
+        if r['id'] == 'Q134877719': r['a'] = 'Eichbergstraße 16, Darmstadt'   # v20r4 (A ronda 3, R3-4): Wikidata P6375 = «Eichbergstraße 16, Darmstadt» (y el nombre de la foto dice 16); la posición no cambia
         if r['id'] in ('Q98983030', 'Q98983031'): r['a'] = 'Adolfsallee 33'; r['c'] = 'Wiesbaden'; r['sub'] = 'Mitte'   # A, F8: WD P6375 = 65185 Wiesbaden; «Mitte» es el barrio
 # v20r2: placas solo-Wikidata que son la misma persona que una placa ya presente (v19 reasignada, otra de OSM) a <=15 m con nombre compatible → duplicado, no se añade
 sys.path.insert(0, str(Path(__file__).resolve().parent)); from v20_common import names_compatible, same_person_dup; from geo import hav

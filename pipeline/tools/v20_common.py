@@ -62,6 +62,24 @@ def split_insc(t):
 def date_ok(s):
     return bool(re.fullmatch(r'\d{4}(-\d{2}(-\d{2})?)?', (s or '').strip()))
 
+_MES = {1: 'jan|januari|january|januar|janvier|enero', 2: 'feb|februari|february|februar|f[eé]vrier|febrero', 3: 'mrt|maart|march|m[aä]rz|mars|marzo', 4: 'apr|april|avril|abril', 5: 'mei|may|mai|mayo', 6: 'jun|juni|june|juin|junio', 7: 'jul|juli|july|juillet|julio', 8: 'aug|augustus|august|ao[uû]t|agosto', 9: 'sep|sept|september|septembre|septiembre', 10: 'okt|oct|oktober|october|octobre|octubre', 11: 'nov|november|novembre|noviembre', 12: 'dec|dez|december|dezember|d[eé]cembre|diciembre'}
+def fix_osm_date(v, desc=''):
+    """v20r4 (A ronda 3, R3-3): fecha de OSM de la persona → (valor, nota|None). «1943-20-28» (mes con las cifras cambiadas) solo se corrige si la descripción de OSM trae ese día, mes y año («28 February 1943»);
+    un día que no existe en el calendario («1945-02-29») se recorta a año-mes; «aaaa-00-00» / «aaaa-mm-00» (fecha parcial de OSM) se recorta a «aaaa» / «aaaa-mm». Nunca se inventa un valor."""
+    import calendar
+    v = (v or '').strip(); m = re.fullmatch(r'(\d{4})-(\d\d)-(\d\d)', v)
+    if not m: return v, None
+    y, mo, d = m[1], int(m[2]), int(m[3])
+    if mo > 12 and 1 <= int(m[2][::-1]) <= 12 and 1 <= d <= 31:
+        mo2 = int(m[2][::-1])
+        if re.search(r'\b0?%d\.?\s+(?:%s)\w*\.?,?\s+%s\b' % (d, _MES[mo2], y), desc or '', re.I):
+            return '%s-%02d-%02d' % (y, mo2, d), '«%s» de OSM corregida a %s-%02d-%02d: la descripción de OSM dice esa fecha' % (v, y, mo2, d)
+        return v, None
+    if mo == 0: return y, None
+    if d == 0: return '%s-%02d' % (y, mo), None
+    if 1 <= mo <= 12 and d > calendar.monthrange(int(y), mo)[1]: return '%s-%02d' % (y, mo), '«%s» de OSM no existe en el calendario: se conserva año y mes' % v
+    return v, None
+
 def years_in(text):
     return set(re.findall(r'\b(1[89]\d\d|20[0-2]\d)\b', text or ''))
 

@@ -39,7 +39,7 @@ with open(R / 'excepciones-25m-v20.csv', 'w', newline='', encoding='utf-8') as f
     w = csv.writer(fh); w.writerow(['id', 'pais', 'nombre', 'dibujo_vs_origen_m', 'placas_en_el_grupo', 'motivo']); w.writerows(ex)
 print('residuales', len(rows), Counter(r[3] for r in rows), '| excepciones >25 m:', len(ex), Counter(r[4] > 20 for r in ex))
 # v20r3 (auditoría C ronda 2): pares de columnas de grupos distintos a <1,55 m (gaps20.py sobre el volcado de la app) → pares-solapados-v20.csv, cada uno con su causa
-gp = Path(os.environ.get('V20_DATA', '/workspace/v20-data-r3')) / 'gaps20.json'
+gp = Path(os.environ.get('V20_DATA', '/workspace/v20-data-r4')) / 'gaps20.json'
 pr = []
 if gp.exists():
     for a_, b_, dd in json.load(open(gp)):
