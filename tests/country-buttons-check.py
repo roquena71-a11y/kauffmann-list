@@ -8,6 +8,7 @@ BASE = sys.argv[1]; OUT = sys.argv[2] if len(sys.argv) > 2 else None
 if OUT: os.makedirs(OUT, exist_ok=True)
 SIZES = [('320x568', 320, 568, True), ('1280x800', 1280, 800, False), ('1366x768', 1366, 768, False), ('1920x1080', 1920, 1080, False), ('360x640', 360, 640, True), ('360x740', 360, 740, True), ('390x844', 390, 844, True), ('412x915', 412, 915, True), ('844x390', 844, 390, True), ('667x375', 667, 375, True)]
 REF = {'DE': [('Berlín', [13.405, 52.52]), ('Hamburgo', [9.99, 53.55]), ('Múnich', [11.58, 48.14]), ('Colonia', [6.96, 50.94])]}
+if os.environ.get('CB_SIZES'): SIZES = [s for s in SIZES if s[0] in os.environ['CB_SIZES'].split(',')]   # solo para iterar (run-all los ejecuta todos)
 async def main():
     bad = []; R = {}
     async with async_playwright() as p:
