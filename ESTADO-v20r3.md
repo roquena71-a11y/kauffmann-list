@@ -4,3 +4,6 @@ Auditorías ronda 2 sobre 87215e2: A FAIL menor, B PASS con avisos, C FAIL. Tare
 ## 12:25 worktree + datos r3 creados (cp de r2, rutas reescritas)
 
 ## 12:55 C (código) hecho: groups_of/app3d (calle sin número ⇒ 8 m), solve_relaxed en sidewalk20, sidewalk-facade20.json (3 grupos), DE/FR/NL --only recalculados (DE revisar → 0). Pendiente: datos A/B, rebuild, sidewalk nuevos, finalize, tests C (centro dentro, pares CSV, padding).
+
+## 61bf2b97 A/B (código) confirmado; rebuild en curso (rebuild_r3.sh → /workspace/v20-data-r3/rebuild_r3.log)
+Tras el rebuild: DE transplanta dla de 628f59d9; sidewalk completo a los nuevos (ccs_new.txt) + `--only` DE (changed_groups.json); finalize21; luego tests C, texts20.py (proyecto/) + hook ui20 (index/jsonld), INFORME, build API offline, run-all.

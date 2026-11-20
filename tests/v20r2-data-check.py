@@ -5,7 +5,7 @@ b/d que no son fecha ISO, o una muerte cuyo año no aparece en la inscripción; 
 import json, os, re, sys
 from pathlib import Path
 R = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(R / 'pipeline/tools'))
-from v20_common import same_person_dup, not_one_person, bad_city, name_exact_in, names_compatible, death_years, years_in, parse_wp
+from v20_common import same_person_dup, not_one_person, bad_city, name_exact_in, names_compatible, death_years, years_in, parse_wp, post1950_nonvictim
 from geo import hav
 data = json.load(open(R / 'data/stones.json', encoding='utf-8')); S = data['stones']
 man = json.load(open(R / 'data/v20-added-20261120.json', encoding='utf-8'))
@@ -54,8 +54,7 @@ for s in S:   # TODAS las placas (también las de la v19): b/d solo fechas ISO (
     if (s.get('cc') in ('LU', 'CH')) and s.get('c') and bad_city(s['c']): B(s, 'c es país/calle (%r)' % s['c'])
 for s in new:
     if re.search(r'(?<![A-Za-z])(historic|memorial|network|name|stolperstein)=', s.get('i') or ''): B(s, 'la inscripción trae etiquetas de OSM pegadas')
-    dy = [int(y) for y in death_years(s.get('i') or '')] + ([int(s['d'][:4])] if s.get('d') else [])
-    if dy and max(dy) > 1950 and s.get('gm') is None and s.get('src') != 'wd': B(s, 'muerte posterior a 1950 (%d): no es una víctima del nazismo' % max(dy))
+    if s.get('gm') is None and s.get('src') != 'wd' and post1950_nonvictim(s.get('i') or ''): B(s, 'hecho posterior a 1950 sin ninguna fecha 1933-1945: no es víctima del nazismo')
     if s.get('cc') in ('CZ', 'SK', 'AT') and not s.get('c') and s.get('a'): B(s, 'sin municipio con dirección')
 print('v20r2-data-check:', len(new), 'placas nuevas;', len(bad), 'fallos')
 for b in bad[:40]: print('  ', b)

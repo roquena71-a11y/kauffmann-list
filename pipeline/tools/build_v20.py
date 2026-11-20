@@ -194,8 +194,8 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     if d_ and (not date_ok(d_) or int(d_[:4]) < 1930 or (b_ and int(d_[:4]) < int(b_[:4])) or (yrs and d_[:4] not in yrs) or (death_years(insc) and d_[:4] not in death_years(insc))):   # v20r2: el año de muerte debe aparecer en la inscripción (si ésta trae años)
         notes.append('muerte %s de OSM descartada' % d_); d_ = ''
     if ly_b and not b_ and not d_ and (not yrs or (ly_d in yrs and ly_b in yrs)): b_, d_ = ly_b, ly_d; notes.append('años (%s–%s) leídos del nombre de OSM' % (ly_b, ly_d))
-    _dy = [int(y) for y in death_years(insc)] + ([int(d_[:4])] if d_ else [])
-    if _dy and max(_dy) > 1950: P(sid, 'la placa recuerda una muerte posterior a 1950 (%d): fuera del periodo de persecución nazi, no se añade como víctima' % max(_dy), n=name, **base); continue
+    _yi = [int(y) for y in years_in(insc)]; _dy = [y for y in _yi if y > 1950]
+    if post1950_nonvictim(insc): P(sid, 'la placa recuerda un hecho posterior a 1950 (%d), sin ninguna fecha 1933-1945 ni palabra de persecución: no es una víctima del nazismo, no se añade' % max(_dy), n=name, **base); continue
     if sid in MANUAL_PENDING: P(sid, MANUAL_PENDING[sid], n=name, **base); continue
     rec = {'id': sid, 'la': e['lat'], 'lo': e['lon'], 'src': 'osm'}
     q = t.get('wikidata') or t.get('memorial:wikidata')
@@ -298,7 +298,7 @@ for q, w in sorted(wd.items()):
         if ps: street, hn = ps, ph
         a = compose_addr(street, hn, CC) if street else ad[0].split(',')[0].strip()
     if not street or not hn:
-        P(q, 'la dirección de Wikidata («%s») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM' % (ad[0][:60] if ad else ''), **base, la=la, lo=lo); continue
+        P(q, ('la dirección de Wikidata («%s») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM' % ad[0][:60]) if ad and ad[0].strip() else 'el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM', **base, la=la, lo=lo); continue
     pos, dpos = addr_check(la, lo, street, hn)
     fimg = unquote(sorted(w['img'])[0].rsplit('/', 1)[-1]).replace('_', ' ') if w['img'] else None
     cpos, cd = commons_check(la, lo, fimg)

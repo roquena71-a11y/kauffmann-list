@@ -207,3 +207,10 @@ def norm_date(v):
             return m[1] if m else ''
     if 1 <= mo <= 12 and 1 <= d <= 31: return '%s-%02d-%02d' % (y, mo, d)
     return ''
+
+
+PERSECUTION_RE = re.compile(r'deport|internat|lager|camp\b|\bkz\b|auschwitz|theresienstadt|terez[ií]n|buchenwald|dachau|verfolg|flucht|vertrieb|persecut|rafle|r[eé]sist|widerstand|gestapo|nazi|shoah|holocaust|ermordet|assassin|zavra|vyhn', re.I)
+def post1950_nonvictim(insc):
+    """True si la inscripción solo habla de algo posterior a 1950 (ninguna fecha 1933-1945 ni palabra de persecución): no es una víctima del nazismo (v20r3)."""
+    yi = [int(y) for y in years_in(insc)]
+    return bool([y for y in yi if y > 1950]) and not any(1933 <= y <= 1945 for y in yi) and not PERSECUTION_RE.search(insc or '')

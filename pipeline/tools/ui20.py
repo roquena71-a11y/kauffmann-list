@@ -80,7 +80,22 @@ def main():
     h = h.replace('Germany, Ireland, Sweden, Jersey, Finland and Romania', short['en'].replace('Germany and', 'Germany and'))
     places = ', '.join('{"@type": "Place", "name": "%s"}' % NAMES[c][2] for c in order)
     h = re.sub(r'"spatialCoverage": \[[^\]]*\]', lambda m: '"spatialCoverage": [' + places + ']', h, count=1)
+    def stats(x):   # v20r3 (B R2-5): cifras y fechas actuales de los datos (JSON-LD de index.html y kauffmann-list.jsonld)
+        SS = json.load(open(R / 'data/stones.json', encoding='utf-8'))['stones']; n = len(SS); de = sum(1 for s in SS if not s.get('cc') or s['cc'] == 'DE')
+        cnt = lambda k: sum(1 for s in SS if s.get(k))
+        for lab, k in (('with name', 'n'), ('with inscription', 'i'), ('with address', 'a'), ('with birth date', 'b'), ('with death date', 'd'), ('with Wikimedia Commons photo', 'img'),
+                       ('with Bundesarchiv Gedenkbuch ID', 'gb'), ('with USHMM ID', 'us'), ('with Yad Vashem ID', 'yv')):
+            x, m = re.subn(r'("name": "%s", "value": )\d+' % lab, lambda mm: mm.group(1) + str(cnt(k)), x); assert m <= 1
+        x = re.sub(r'("name": "Stolpersteine in dataset", "value": )\d+', lambda mm: mm.group(1) + str(n), x)
+        for lab in ('Wikipedia biography shown (CC BY-SA, certain match)', 'official or archive link only, no biography text', 'no biography and no official or archive link'):
+            x = x.replace('"name": "%s"' % lab, '"name": "%s (Germany only, measured 2026-11-18)"' % lab)
+        x = x.replace('Status 2026-11-18, in preparation, not published: 65,820 stones mapped from open data', 'Status 2026-11-20, in preparation, not published: {:,} stones in 27 countries ({:,} in Germany) mapped from open data'.format(n, de))
+        x = x.replace('Biography texts shown only from Wikipedia CC BY-SA on a certain match (4,038)', 'Biography texts shown only from Wikipedia CC BY-SA on a certain match (4,038, Germany only)')
+        x = x.replace('the measured coverage on 18 November 2026', 'the measured coverage on 20 November 2026')
+        x = x.replace('"dateModified": "2026-11-18"', '"dateModified": "2026-11-20"').replace('"dateModified": "2026-11-04"', '"dateModified": "2026-11-18"')
+        return x
+    h = stats(h)
     (R / 'index.html').write_text(h, encoding='utf-8')
-    (R / 'kauffmann-list.jsonld').write_text(ld(head('kauffmann-list.jsonld')), encoding='utf-8')
+    (R / 'kauffmann-list.jsonld').write_text(stats(ld(head('kauffmann-list.jsonld'))), encoding='utf-8')
     print('países', order, 'cortos', short)
 if __name__ == '__main__': main()

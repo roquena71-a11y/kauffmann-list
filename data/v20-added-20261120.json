@@ -1,6 +1,6 @@
 {
  "meta": {
-  "records": 6148,
+  "records": 6216,
   "previous_records": 65861,
   "countries": {
    "AD": {
@@ -30,82 +30,85 @@
     }
    },
    "AT": {
-    "anadidas": 1122,
-    "pendientes": 466,
+    "anadidas": 1115,
+    "pendientes": 473,
     "duplicados": 18,
     "osm_snapshot": "2026-11-19T23:33:17Z",
     "stats": {
      "osm_objetos": 1502,
      "wd_items": 149,
-     "anadidas": 1126,
-     "pendientes": 466,
+     "anadidas": 1119,
+     "pendientes": 473,
      "duplicados": 18,
      "src": {
-      "osm": 1037,
+      "osm": 1030,
       "osm+wd": 57,
       "wd": 32
      },
      "posicion": {
-      "ok": 931,
-      "sin_coincidencia": 82,
+      "ok": 925,
+      "sin_coincidencia": 81,
       "sin_datos": 109,
       "lejos": 4
      },
      "commons": {
-      "sin_datos": 419,
-      "ok": 703,
+      "sin_datos": 417,
+      "ok": 698,
       "medio": 4
      },
      "motivos_pendiente": {
       "el nombre de OSM no coincide con la inscripción": 98,
       "la dirección etiquetada existe en OSM pero a 48 m de la posición de la": 1,
       "OSM marca la posición como dudosa": 4,
-      "la dirección etiquetada existe en OSM pero a 90 m de la posición de la": 1,
+      "la dirección etiquetada existe en OSM pero a 81 m de la posición de la": 1,
       "nota de OSM: placa retirada, ausente o desaparecida": 3,
-      "el": 17,
+      "el": 23,
       "sin nombre": 141,
       "el nombre parece colectivo o de varias personas": 48,
       "la dirección etiquetada existe en OSM pero a 40 m de la posición de la": 2,
       "el nombre junta a varias personas": 44,
       "el nombre contiene cifras": 26,
+      "la inscripción nombra a más de una persona": 1,
       "el nombre junta a varias personas separadas por comas": 2,
+      "la placa recuerda un hecho posterior a 1950": 1,
       "el nombre es solo una inicial y un apellido": 1,
       "nombre genérico": 1,
       "nombre de una sola palabra": 1,
       "sin dirección ni inscripción en OSM": 9,
-      "subject:wikidata": 1,
       "nombre genérico con texto que no es un nombre": 6,
       "OSM y Wikidata": 1,
       "el nombre de OSM": 1,
-      "la dirección de Wikidata no tiene calle y número legibles; sin comprob": 30,
+      "la dirección de Wikidata": 27,
       "sin coordenadas P625 únicas en Wikidata": 18,
       "la coordenada de Wikidata no se confirma con una dirección de OSM ni c": 6,
-      "el nombre de Wikidata no coincide con su inscripción": 4
+      "el nombre de Wikidata no coincide con su inscripción": 4,
+      "el ítem de Wikidata no trae ningún texto de dirección": 3
      }
     }
    },
    "BE": {
-    "anadidas": 171,
-    "pendientes": 118,
+    "anadidas": 172,
+    "pendientes": 117,
     "duplicados": 0,
     "osm_snapshot": "2026-11-19T23:33:17Z",
     "stats": {
      "osm_objetos": 238,
      "wd_items": 52,
-     "anadidas": 171,
-     "pendientes": 118,
+     "anadidas": 172,
+     "pendientes": 117,
      "duplicados": 0,
      "src": {
       "osm": 170,
-      "osm+wd": 1
+      "osm+wd": 1,
+      "wd": 1
      },
      "posicion": {
       "sin_datos": 35,
-      "ok": 115,
+      "ok": 116,
       "sin_coincidencia": 21
      },
      "commons": {
-      "sin_datos": 160,
+      "sin_datos": 161,
       "ok": 11
      },
      "motivos_pendiente": {
@@ -118,8 +121,7 @@
       "el nombre parece colectivo o de varias personas": 5,
       "la dirección etiquetada existe en OSM pero a 48 m de la posición de la": 1,
       "la dirección etiquetada existe en OSM pero a 52 m de la posición de la": 1,
-      "sin coordenadas P625 únicas en Wikidata": 50,
-      "la dirección de Wikidata no tiene calle y número legibles; sin comprob": 1
+      "sin coordenadas P625 únicas en Wikidata": 50
      }
     }
    },
@@ -152,10 +154,11 @@
      "motivos_pendiente": {
       "sin dirección ni inscripción en OSM": 4,
       "el nombre de OSM no coincide con la inscripción": 3,
-      "la dirección de Wikidata no tiene calle y número legibles; sin comprob": 8,
+      "la dirección de Wikidata": 4,
       "la coordenada de Wikidata no se confirma con una dirección de OSM ni c": 3,
       "el nombre de Wikidata no coincide con su inscripción": 3,
       "Wikidata trae varias direcciones o inscripciones distintas": 4,
+      "el ítem de Wikidata no trae ningún texto de dirección": 4,
       "sin coordenadas P625 únicas en Wikidata": 1
      }
     }
@@ -200,10 +203,11 @@
       "el nombre contiene cifras": 1,
       "sin dirección P6375 ni inscripción P1684 en Wikidata": 216,
       "la etiqueta de Wikidata": 1003,
-      "la dirección de Wikidata no tiene calle y número legibles; sin comprob": 13,
+      "el ítem de Wikidata no trae ningún texto de dirección": 12,
       "nombre colectivo en Wikidata": 1,
       "sin coordenadas P625 únicas en Wikidata": 66,
       "la coordenada de Wikidata no se confirma con una dirección de OSM ni c": 2,
+      "la dirección de Wikidata": 1,
       "Wikidata trae varias direcciones o inscripciones distintas": 2
      }
     }
@@ -241,27 +245,28 @@
     }
    },
    "ES": {
-    "anadidas": 325,
-    "pendientes": 149,
+    "anadidas": 328,
+    "pendientes": 146,
     "duplicados": 0,
     "osm_snapshot": "2026-11-19T23:33:17Z",
     "stats": {
      "osm_objetos": 434,
      "wd_items": 114,
-     "anadidas": 325,
-     "pendientes": 149,
+     "anadidas": 328,
+     "pendientes": 146,
      "duplicados": 0,
      "src": {
       "osm": 259,
-      "osm+wd": 66
+      "osm+wd": 66,
+      "wd": 3
      },
      "posicion": {
       "sin_datos": 67,
-      "ok": 121,
+      "ok": 124,
       "sin_coincidencia": 137
      },
      "commons": {
-      "sin_datos": 315,
+      "sin_datos": 318,
       "ok": 10
      },
      "motivos_pendiente": {
@@ -277,38 +282,39 @@
       "OSM marca la posición como dudosa": 1,
       "OSM y Wikidata": 7,
       "el nombre de OSM": 1,
-      "la dirección de Wikidata no tiene calle y número legibles; sin comprob": 6,
+      "el ítem de Wikidata no trae ningún texto de dirección": 2,
       "el nombre de Wikidata no coincide con su inscripción": 2,
       "sin dirección P6375 ni inscripción P1684 en Wikidata": 17,
       "sin coordenadas P625 únicas en Wikidata": 2,
+      "la coordenada de Wikidata no se confirma con una dirección de OSM ni c": 1,
       "la etiqueta de Wikidata": 13
      }
     }
    },
    "FR": {
-    "anadidas": 1151,
-    "pendientes": 279,
+    "anadidas": 1155,
+    "pendientes": 275,
     "duplicados": 16,
     "osm_snapshot": "2026-11-19T23:33:17Z",
     "stats": {
      "osm_objetos": 1362,
      "wd_items": 320,
-     "anadidas": 1151,
-     "pendientes": 279,
+     "anadidas": 1155,
+     "pendientes": 275,
      "duplicados": 16,
      "src": {
-      "osm": 862,
+      "osm": 866,
       "osm+wd": 247,
       "wd": 42
      },
      "posicion": {
-      "ok": 802,
+      "ok": 807,
       "sin_datos": 185,
-      "sin_coincidencia": 164
+      "sin_coincidencia": 163
      },
      "commons": {
       "ok": 59,
-      "sin_datos": 1090,
+      "sin_datos": 1094,
       "medio": 2
      },
      "motivos_pendiente": {
@@ -317,10 +323,9 @@
       "el nombre contiene cifras": 1,
       "Stolperschwelle": 1,
       "el": 1,
-      "OSM marca la posición como dudosa": 158,
+      "OSM marca la posición como dudosa": 154,
       "la foto de Commons está a 321 m de la posición de la placa en OSM": 1,
-      "la dirección etiquetada existe en OSM pero a 56 m de la posición de la": 1,
-      "la dirección etiquetada existe en OSM pero a 55 m de la posición de la": 1,
+      "la dirección etiquetada existe en OSM pero a 41 m de la posición de la": 2,
       "sin dirección ni inscripción en OSM": 3,
       "la dirección etiquetada existe en OSM pero a 71 m de la posición de la": 1,
       "la dirección etiquetada existe en OSM pero a 45 m de la posición de la": 5,
@@ -331,34 +336,34 @@
       "Wikidata trae varias direcciones o inscripciones distintas": 1,
       "sin coordenadas P625 únicas en Wikidata": 8,
       "la coordenada de Wikidata no se confirma con una dirección de OSM ni c": 15,
-      "la dirección de Wikidata no tiene calle y número legibles; sin comprob": 1
+      "el ítem de Wikidata no trae ningún texto de dirección": 1
      }
     }
    },
    "GB": {
-    "anadidas": 3,
-    "pendientes": 1,
+    "anadidas": 2,
+    "pendientes": 2,
     "duplicados": 0,
     "osm_snapshot": "2026-11-19T23:33:17Z",
     "stats": {
      "osm_objetos": 3,
      "wd_items": 2,
-     "anadidas": 3,
-     "pendientes": 1,
+     "anadidas": 2,
+     "pendientes": 2,
      "duplicados": 0,
      "src": {
       "osm+wd": 1,
-      "osm": 1,
       "wd": 1
      },
      "posicion": {
-      "sin_datos": 2,
+      "sin_datos": 1,
       "ok": 1
      },
      "commons": {
-      "sin_datos": 3
+      "sin_datos": 2
      },
      "motivos_pendiente": {
+      "la placa recuerda un hecho posterior a 1950": 1,
       "sin dirección ni inscripción en OSM": 1
      }
     }
@@ -478,30 +483,31 @@
     }
    },
    "IT": {
-    "anadidas": 440,
-    "pendientes": 277,
+    "anadidas": 474,
+    "pendientes": 243,
     "duplicados": 1,
     "osm_snapshot": "2026-11-19T23:33:17Z",
     "stats": {
      "osm_objetos": 561,
      "wd_items": 167,
-     "anadidas": 440,
-     "pendientes": 277,
+     "anadidas": 474,
+     "pendientes": 243,
      "duplicados": 1,
      "src": {
-      "osm": 374,
+      "osm": 373,
       "osm+wd": 10,
-      "wd": 56
+      "wd": 91
      },
      "posicion": {
-      "sin_datos": 338,
-      "sin_coincidencia": 26,
-      "ok": 76
+      "sin_datos": 337,
+      "sin_coincidencia": 29,
+      "ok": 108
      },
      "commons": {
-      "ok": 171,
-      "sin_datos": 267,
-      "medio": 2
+      "ok": 177,
+      "sin_datos": 293,
+      "medio": 2,
+      "lejos": 2
      },
      "motivos_pendiente": {
       "el nombre de OSM no coincide con la inscripción": 21,
@@ -512,14 +518,16 @@
       "sin nombre": 57,
       "nota de OSM: placa retirada, ausente o desaparecida": 4,
       "nombre genérico con texto que no es un nombre": 11,
+      "la placa recuerda un hecho posterior a 1950": 1,
       "el nombre junta a varias personas": 3,
       "el nombre parece colectivo o de varias personas": 1,
       "el": 2,
       "sin coordenadas P625 únicas en Wikidata": 4,
-      "la coordenada de Wikidata no se confirma con una dirección de OSM ni c": 21,
-      "la dirección de Wikidata no tiene calle y número legibles; sin comprob": 67,
+      "la coordenada de Wikidata no se confirma con una dirección de OSM ni c": 46,
       "el nombre de Wikidata no coincide con su inscripción": 8,
-      "la etiqueta de Wikidata": 1
+      "la etiqueta de Wikidata": 1,
+      "la dirección de Wikidata": 6,
+      "el ítem de Wikidata no trae ningún texto de dirección": 1
      }
     }
    },
@@ -547,32 +555,30 @@
     }
    },
    "LT": {
-    "anadidas": 67,
-    "pendientes": 7,
+    "anadidas": 70,
+    "pendientes": 4,
     "duplicados": 0,
     "osm_snapshot": "2026-11-19T23:34:21Z",
     "stats": {
      "osm_objetos": 74,
      "wd_items": 0,
-     "anadidas": 67,
-     "pendientes": 7,
+     "anadidas": 70,
+     "pendientes": 4,
      "duplicados": 0,
      "src": {
-      "osm": 67
+      "osm": 70
      },
      "posicion": {
       "sin_datos": 5,
-      "ok": 60,
+      "ok": 63,
       "sin_coincidencia": 2
      },
      "commons": {
-      "sin_datos": 67
+      "sin_datos": 70
      },
      "motivos_pendiente": {
       "el nombre de OSM no coincide con la inscripción": 2,
-      "la dirección etiquetada existe en OSM pero a 47 m de la posición de la": 1,
-      "OSM marca la posición como dudosa": 2,
-      "la dirección etiquetada existe en OSM pero a 43 m de la posición de la": 2
+      "OSM marca la posición como dudosa": 2
      }
     }
    },
@@ -675,38 +681,39 @@
       "nombre genérico con texto que no es un nombre": 3,
       "sin dirección ni inscripción en OSM": 354,
       "la dirección etiquetada existe en OSM pero a 46 m de la posición de la": 1,
-      "la dirección de Wikidata no tiene calle y número legibles; sin comprob": 3,
+      "el ítem de Wikidata no trae ningún texto de dirección": 2,
       "la etiqueta de Wikidata": 15,
       "sin coordenadas P625 únicas en Wikidata": 11,
       "sin dirección P6375 ni inscripción P1684 en Wikidata": 1,
+      "la dirección de Wikidata": 1,
       "el nombre de Wikidata no coincide con su inscripción": 1
      }
     }
    },
    "NO": {
-    "anadidas": 580,
-    "pendientes": 282,
+    "anadidas": 611,
+    "pendientes": 251,
     "duplicados": 2,
     "osm_snapshot": "2026-11-19T23:34:21Z",
     "stats": {
      "osm_objetos": 158,
      "wd_items": 759,
-     "anadidas": 580,
-     "pendientes": 282,
+     "anadidas": 611,
+     "pendientes": 251,
      "duplicados": 2,
      "src": {
       "osm+wd": 52,
       "osm": 17,
-      "wd": 511
+      "wd": 542
      },
      "posicion": {
       "sin_datos": 7,
-      "ok": 571,
+      "ok": 602,
       "sin_coincidencia": 1,
       "lejos": 1
      },
      "commons": {
-      "sin_datos": 568,
+      "sin_datos": 599,
       "ok": 12
      },
      "motivos_pendiente": {
@@ -720,9 +727,9 @@
       "el nombre de OSM": 2,
       "OSM y Wikidata": 1,
       "sin coordenadas P625 únicas en Wikidata": 1,
-      "la coordenada de Wikidata no se confirma con una dirección de OSM ni c": 107,
+      "la coordenada de Wikidata no se confirma con una dirección de OSM ni c": 124,
       "la etiqueta de Wikidata": 1,
-      "la dirección de Wikidata no tiene calle y número legibles; sin comprob": 83,
+      "la dirección de Wikidata": 35,
       "el nombre de Wikidata no coincide con su inscripción": 1
      }
     }
@@ -759,7 +766,7 @@
       "el nombre parece colectivo o de varias personas": 1,
       "el nombre de OSM no coincide con la inscripción": 1,
       "nombre de una sola palabra": 1,
-      "la dirección de Wikidata no tiene calle y número legibles; sin comprob": 1
+      "el ítem de Wikidata no trae ningún texto de dirección": 1
      }
     }
    },
@@ -814,7 +821,7 @@
       "sin dirección ni inscripción en OSM": 2,
       "nombre genérico con texto que no es un nombre": 1,
       "nombre de una sola palabra": 13,
-      "la dirección de Wikidata no tiene calle y número legibles; sin comprob": 1
+      "el ítem de Wikidata no trae ningún texto de dirección": 1
      }
     }
    },
@@ -1064,17 +1071,6 @@
    "src": "osm"
   },
   {
-   "id": "n10581509322",
-   "wd": null,
-   "p": null,
-   "n": "Jüdisches Waisenhaus",
-   "c": "Wien",
-   "cc": "AT",
-   "la": 48.2208635,
-   "lo": 16.3662271,
-   "src": "osm"
-  },
-  {
    "id": "n10581509323",
    "wd": null,
    "p": null,
@@ -1211,7 +1207,7 @@
    "wd": null,
    "p": null,
    "n": "Rudolf Fuchs",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.1439353,
    "lo": 16.2928629,
@@ -1248,17 +1244,6 @@
    "cc": "AT",
    "la": 48.2042848,
    "lo": 16.3070811,
-   "src": "osm"
-  },
-  {
-   "id": "n11336279971",
-   "wd": null,
-   "p": null,
-   "n": "Großfamilie Bleier",
-   "c": "Wien",
-   "cc": "AT",
-   "la": 48.2490166,
-   "lo": 16.3552122,
    "src": "osm"
   },
   {
@@ -1475,7 +1460,7 @@
    "wd": null,
    "p": null,
    "n": "Gisela Kranz",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.2230201,
    "lo": 16.3579394,
@@ -1508,7 +1493,7 @@
    "wd": null,
    "p": null,
    "n": "Richard Raab",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.1489301,
    "lo": 16.3504251,
@@ -1519,7 +1504,7 @@
    "wd": null,
    "p": null,
    "n": "Karl Eisner",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.226769,
    "lo": 16.3647449,
@@ -1838,7 +1823,7 @@
    "wd": null,
    "p": null,
    "n": "Kurt Richter",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.2121631,
    "lo": 16.3615145,
@@ -1849,7 +1834,7 @@
    "wd": null,
    "p": null,
    "n": "Erich Schmid",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.194681,
    "lo": 16.3460952,
@@ -1893,7 +1878,7 @@
    "wd": null,
    "p": null,
    "n": "Ernst Buchbinder",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.1489722,
    "lo": 16.328044,
@@ -1904,7 +1889,7 @@
    "wd": null,
    "p": null,
    "n": "Alfred Goldhammer",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.1457294,
    "lo": 16.3326435,
@@ -7019,7 +7004,7 @@
    "wd": null,
    "p": null,
    "n": "Josef Logar",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 46.6233309,
    "lo": 14.3032644,
@@ -8856,7 +8841,7 @@
    "wd": null,
    "p": null,
    "n": "Alfred Kleppner",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.1562886,
    "lo": 16.3127679,
@@ -8988,7 +8973,7 @@
    "wd": null,
    "p": null,
    "n": "Heinz Joachim Kindler",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.2036326,
    "lo": 16.3473529,
@@ -8999,7 +8984,7 @@
    "wd": null,
    "p": null,
    "n": "Edith Abeles",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.2038549,
    "lo": 16.3490441,
@@ -9021,7 +9006,7 @@
    "wd": null,
    "p": null,
    "n": "Leon Löwenschuss",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.2036329,
    "lo": 16.3473591,
@@ -9032,7 +9017,7 @@
    "wd": null,
    "p": null,
    "n": "Hene Abeles",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.2038547,
    "lo": 16.3490378,
@@ -9043,7 +9028,7 @@
    "wd": null,
    "p": null,
    "n": "Rosalie Brod",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.2038505,
    "lo": 16.3490449,
@@ -9054,7 +9039,7 @@
    "wd": null,
    "p": null,
    "n": "Irena Bräuner",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.2038502,
    "lo": 16.3490383,
@@ -9065,7 +9050,7 @@
    "wd": null,
    "p": null,
    "n": "Josef Gans",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.2038464,
    "lo": 16.3490447,
@@ -9076,7 +9061,7 @@
    "wd": null,
    "p": null,
    "n": "Josefa Friedenthal",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.203846,
    "lo": 16.3490386,
@@ -9087,7 +9072,7 @@
    "wd": null,
    "p": null,
    "n": "Leopold Huppert",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.2038422,
    "lo": 16.3490459,
@@ -9098,7 +9083,7 @@
    "wd": null,
    "p": null,
    "n": "Irma Huppert",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.203842,
    "lo": 16.3490392,
@@ -9109,7 +9094,7 @@
    "wd": null,
    "p": null,
    "n": "Julie Sterblitsch",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.203838,
    "lo": 16.3490471,
@@ -9142,7 +9127,7 @@
    "wd": null,
    "p": null,
    "n": "Jetty Löwenschuss",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.2036291,
    "lo": 16.347357,
@@ -9190,17 +9175,6 @@
    "cc": "AT",
    "la": 48.2165318,
    "lo": 16.3306395,
-   "src": "osm"
-  },
-  {
-   "id": "n8307048446",
-   "wd": null,
-   "p": null,
-   "n": "Erna Duschinsky",
-   "c": "Wien",
-   "cc": "AT",
-   "la": 48.2331988,
-   "lo": 16.3418816,
    "src": "osm"
   },
   {
@@ -9479,17 +9453,6 @@
    "src": "osm"
   },
   {
-   "id": "n8430002928",
-   "wd": null,
-   "p": null,
-   "n": "Bethaus des Oberrabbiners Israel Friedmann",
-   "c": "Wien",
-   "cc": "AT",
-   "la": 48.2237562,
-   "lo": 16.3540547,
-   "src": "osm"
-  },
-  {
    "id": "n8440683048",
    "wd": null,
    "p": null,
@@ -9560,7 +9523,7 @@
    "wd": null,
    "p": "Q105506550",
    "n": "Szerena Tempelmayr",
-   "c": null,
+   "c": "Wien",
    "cc": "AT",
    "la": 48.1988524,
    "lo": 16.3389629,
@@ -9663,17 +9626,6 @@
    "cc": "AT",
    "la": 48.1964265,
    "lo": 16.3216874,
-   "src": "osm"
-  },
-  {
-   "id": "n8575843304",
-   "wd": null,
-   "p": null,
-   "n": "Springer'sche Waisenhaus",
-   "c": "Wien",
-   "cc": "AT",
-   "la": 48.1950943,
-   "lo": 16.3215288,
    "src": "osm"
   },
   {
@@ -10917,17 +10869,6 @@
    "cc": "AT",
    "la": 48.2115038,
    "lo": 16.3770037,
-   "src": "osm"
-  },
-  {
-   "id": "n8685608852",
-   "wd": null,
-   "p": null,
-   "n": "Ernst Kirchweger",
-   "c": "Wien",
-   "cc": "AT",
-   "la": 48.2038217,
-   "lo": 16.3699094,
    "src": "osm"
   },
   {
@@ -12831,17 +12772,6 @@
    "cc": "AT",
    "la": 48.2475867,
    "lo": 16.3555677,
-   "src": "osm"
-  },
-  {
-   "id": "n9568482044",
-   "wd": null,
-   "p": null,
-   "n": "Turnverein Hasmonäa Makkabi",
-   "c": "Wien",
-   "cc": "AT",
-   "la": 48.2125092,
-   "lo": 16.390855,
    "src": "osm"
   },
   {
@@ -15144,6 +15074,17 @@
    "src": "osm"
   },
   {
+   "id": "Q98825273",
+   "wd": "Q98825273",
+   "p": null,
+   "n": "Laurent-Joseph Degueldre",
+   "c": "Pepinster",
+   "cc": "BE",
+   "la": 50.567186,
+   "lo": 5.803247,
+   "src": "wd"
+  },
+  {
    "id": "n10895750603",
    "wd": "Q135406480",
    "p": "Q135406750",
@@ -16193,7 +16134,7 @@
    "wd": null,
    "p": "Q105599086",
    "n": "Oskar Schnürmacher",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0917113,
    "lo": 14.4274157,
@@ -16204,7 +16145,7 @@
    "wd": null,
    "p": "Q105599088",
    "n": "Valerie Schnürmacherová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0917034,
    "lo": 14.4274154,
@@ -16215,7 +16156,7 @@
    "wd": "Q133846371",
    "p": "Q104209010",
    "n": "Alois Allina",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.089974,
    "lo": 14.4199253,
@@ -16237,7 +16178,7 @@
    "wd": "Q140394631",
    "p": "Q105563267",
    "n": "Karel Markus",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0911746,
    "lo": 14.4174735,
@@ -16248,7 +16189,7 @@
    "wd": "Q134078020",
    "p": "Q105563241",
    "n": "Berta Markusová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0911731,
    "lo": 14.4174709,
@@ -16259,7 +16200,7 @@
    "wd": "Q140394632",
    "p": "Q104545759",
    "n": "Helena Fahnová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0911717,
    "lo": 14.4174686,
@@ -16270,7 +16211,7 @@
    "wd": "Q140394633",
    "p": "Q104545762",
    "n": "Karel Fahn",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0911693,
    "lo": 14.4174651,
@@ -16281,7 +16222,7 @@
    "wd": null,
    "p": "Q105594142",
    "n": "Emanuel Roubíček",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0792158,
    "lo": 14.4180758,
@@ -16292,7 +16233,7 @@
    "wd": null,
    "p": "Q105594344",
    "n": "Pavla Roubíčková roz. Spitzová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0792328,
    "lo": 14.4180729,
@@ -16303,7 +16244,7 @@
    "wd": null,
    "p": "Q105638585",
    "n": "Ella Wesselsová roz. Roubíčková",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0792463,
    "lo": 14.4180683,
@@ -16314,7 +16255,7 @@
    "wd": null,
    "p": "Q105524136",
    "n": "Jindřich Kohn",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0880467,
    "lo": 14.4190837,
@@ -16325,7 +16266,7 @@
    "wd": "Q133846372",
    "p": "Q105522448",
    "n": "Adelheida Kohnová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.088065,
    "lo": 14.4190684,
@@ -16336,7 +16277,7 @@
    "wd": null,
    "p": "Q104404578",
    "n": "Rachel Blauová roz. Roseová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0869928,
    "lo": 14.4350934,
@@ -16347,7 +16288,7 @@
    "wd": null,
    "p": "Q104658556",
    "n": "Ernestina Glückaufová roz. Freundová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0905726,
    "lo": 14.4319911,
@@ -16358,7 +16299,7 @@
    "wd": null,
    "p": "Q104658570",
    "n": "Karel Glückauf",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0905705,
    "lo": 14.4319925,
@@ -16369,7 +16310,7 @@
    "wd": null,
    "p": "Q104658565",
    "n": "Jiří Glückauf",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.090567,
    "lo": 14.4319944,
@@ -16380,7 +16321,7 @@
    "wd": null,
    "p": "Q105577473",
    "n": "Oskar Pražák",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0905787,
    "lo": 14.4319874,
@@ -16391,7 +16332,7 @@
    "wd": null,
    "p": "Q105577470",
    "n": "Ludvík Pražák",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0905753,
    "lo": 14.4319896,
@@ -16402,7 +16343,7 @@
    "wd": null,
    "p": "Q104704870",
    "n": "Růžena Hallerová roz. Weissová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0804966,
    "lo": 14.4169234,
@@ -16413,7 +16354,7 @@
    "wd": null,
    "p": null,
    "n": "MUDr. Otto Herman",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0914599,
    "lo": 14.4335475,
@@ -16424,7 +16365,7 @@
    "wd": null,
    "p": null,
    "n": "Markéta Hermanová roz. Kleinová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0914598,
    "lo": 14.4335452,
@@ -16435,7 +16376,7 @@
    "wd": null,
    "p": null,
    "n": "MUDr. Alexandr Herman",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0914609,
    "lo": 14.4335501,
@@ -16446,7 +16387,7 @@
    "wd": null,
    "p": null,
    "n": "Markéta Hermanová roz. Hahndelová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0914597,
    "lo": 14.4335427,
@@ -16457,7 +16398,7 @@
    "wd": null,
    "p": null,
    "n": "Ruth Hermanová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0914596,
    "lo": 14.4335401,
@@ -16622,7 +16563,7 @@
    "wd": null,
    "p": null,
    "n": "Josef Pollak",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0886417,
    "lo": 14.4237011,
@@ -16952,7 +16893,7 @@
    "wd": null,
    "p": null,
    "n": "Gustav Schwarzwald",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.090757,
    "lo": 14.4266236,
@@ -19009,7 +18950,7 @@
    "wd": "Q133846243",
    "p": null,
    "n": "Albert Heller",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0885625,
    "lo": 14.4197438,
@@ -19020,7 +18961,7 @@
    "wd": "Q133846244",
    "p": null,
    "n": "Artur Lasch",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0890314,
    "lo": 14.401384,
@@ -19053,7 +18994,7 @@
    "wd": null,
    "p": null,
    "n": "Eduard Böhm",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.08801,
    "lo": 14.4188504,
@@ -19075,7 +19016,7 @@
    "wd": null,
    "p": null,
    "n": "Flora Mohrová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0823077,
    "lo": 14.4157805,
@@ -19086,7 +19027,7 @@
    "wd": null,
    "p": null,
    "n": "Gréta Hellerová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0885815,
    "lo": 14.4197277,
@@ -19097,7 +19038,7 @@
    "wd": null,
    "p": null,
    "n": "Hermína Böhmová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0880124,
    "lo": 14.4188543,
@@ -19108,7 +19049,7 @@
    "wd": null,
    "p": null,
    "n": "JUdr. Artur Mohr",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0823197,
    "lo": 14.415801,
@@ -19119,7 +19060,7 @@
    "wd": null,
    "p": null,
    "n": "JUdr. Přemysl Šámal",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0859446,
    "lo": 14.4042818,
@@ -19130,7 +19071,7 @@
    "wd": null,
    "p": null,
    "n": "Kateřina Mohrová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0823157,
    "lo": 14.4157847,
@@ -19141,7 +19082,7 @@
    "wd": null,
    "p": null,
    "n": "Lore Winternitzová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0883896,
    "lo": 14.419847,
@@ -19163,7 +19104,7 @@
    "wd": null,
    "p": null,
    "n": "Štěpán Michael Winternitz",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0884163,
    "lo": 14.4198296,
@@ -19174,7 +19115,7 @@
    "wd": "Q133846245",
    "p": "Q104654845",
    "n": "Adéla Freudenfeldová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0904269,
    "lo": 14.4198423,
@@ -19185,7 +19126,7 @@
    "wd": null,
    "p": null,
    "n": "Arnošt Grosslicht",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0895303,
    "lo": 14.4199785,
@@ -19196,7 +19137,7 @@
    "wd": null,
    "p": null,
    "n": "Elsa Grosslichtová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0895317,
    "lo": 14.4199824,
@@ -19218,7 +19159,7 @@
    "wd": null,
    "p": null,
    "n": "František Grosslicht",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0895333,
    "lo": 14.4199867,
@@ -19240,7 +19181,7 @@
    "wd": null,
    "p": null,
    "n": "Max Eckstein",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0885477,
    "lo": 14.4191284,
@@ -19328,7 +19269,7 @@
    "wd": "Q134077964",
    "p": null,
    "n": "Berta Krumpelesová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0907438,
    "lo": 14.4177971,
@@ -19350,7 +19291,7 @@
    "wd": "Q140393840",
    "p": "Q105574543",
    "n": "Eva Mia Pollaková",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0912049,
    "lo": 14.4175416,
@@ -19394,7 +19335,7 @@
    "wd": "Q140393847",
    "p": "Q105575336",
    "n": "Vilma Pollaková roz. Roubíčková",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0912041,
    "lo": 14.41754,
@@ -19405,7 +19346,7 @@
    "wd": null,
    "p": null,
    "n": "Beila Bergmannová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0883796,
    "lo": 14.4186237,
@@ -19427,7 +19368,7 @@
    "wd": "Q133846248",
    "p": null,
    "n": "Artur Bass",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0858666,
    "lo": 14.4239383,
@@ -19438,7 +19379,7 @@
    "wd": null,
    "p": null,
    "n": "Felicie Stránská roz. Schleissner",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0823271,
    "lo": 14.4298891,
@@ -19449,7 +19390,7 @@
    "wd": null,
    "p": null,
    "n": "Františka Schleissnerová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0823289,
    "lo": 14.4298884,
@@ -19471,7 +19412,7 @@
    "wd": null,
    "p": null,
    "n": "Heřman Hellmann",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0806563,
    "lo": 14.4242892,
@@ -19482,7 +19423,7 @@
    "wd": null,
    "p": null,
    "n": "Jan Urbach",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.08622,
    "lo": 14.4292763,
@@ -19493,7 +19434,7 @@
    "wd": null,
    "p": null,
    "n": "Jindřich Urbach",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0862179,
    "lo": 14.4292767,
@@ -19504,7 +19445,7 @@
    "wd": null,
    "p": null,
    "n": "Josef Waldmann",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0828454,
    "lo": 14.4291697,
@@ -19526,7 +19467,7 @@
    "wd": null,
    "p": null,
    "n": "Kity Kopecká",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0823309,
    "lo": 14.4298842,
@@ -19537,7 +19478,7 @@
    "wd": null,
    "p": null,
    "n": "Ludvík Hasterlík",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0857591,
    "lo": 14.4198641,
@@ -19548,7 +19489,7 @@
    "wd": null,
    "p": null,
    "n": "Mariana Kopecká",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0823292,
    "lo": 14.4298832,
@@ -19559,7 +19500,7 @@
    "wd": null,
    "p": null,
    "n": "Marie Elišáková",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0817433,
    "lo": 14.4263009,
@@ -19570,7 +19511,7 @@
    "wd": null,
    "p": null,
    "n": "Marie Hellmannová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0806632,
    "lo": 14.4242995,
@@ -19581,7 +19522,7 @@
    "wd": null,
    "p": null,
    "n": "Matylda Hasterlíková",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0857583,
    "lo": 14.4198614,
@@ -19592,7 +19533,7 @@
    "wd": null,
    "p": null,
    "n": "Melanie Urbachová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0862189,
    "lo": 14.4292766,
@@ -19603,7 +19544,7 @@
    "wd": null,
    "p": null,
    "n": "Oskar Schwarzkopf",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0872142,
    "lo": 14.4254546,
@@ -19625,7 +19566,7 @@
    "wd": null,
    "p": null,
    "n": "Růžena Hasterlíková",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0857566,
    "lo": 14.4198636,
@@ -19636,7 +19577,7 @@
    "wd": null,
    "p": null,
    "n": "Vilém Hasterlík",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0857596,
    "lo": 14.4198615,
@@ -19647,7 +19588,7 @@
    "wd": null,
    "p": null,
    "n": "Vilém Stránský",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0823267,
    "lo": 14.4298858,
@@ -19658,7 +19599,7 @@
    "wd": null,
    "p": null,
    "n": "Zuzana Kopecká",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0823321,
    "lo": 14.4298814,
@@ -19669,7 +19610,7 @@
    "wd": null,
    "p": null,
    "n": "Jiří Krása",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0890619,
    "lo": 14.4307997,
@@ -19680,7 +19621,7 @@
    "wd": null,
    "p": null,
    "n": "Irma Krásová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0890625,
    "lo": 14.4308012,
@@ -19691,7 +19632,7 @@
    "wd": null,
    "p": null,
    "n": "Ota Krása",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.089063,
    "lo": 14.4308027,
@@ -19702,7 +19643,7 @@
    "wd": "Q88681334",
    "p": null,
    "n": "Julie Fischerová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0887348,
    "lo": 14.4237304,
@@ -19713,7 +19654,7 @@
    "wd": null,
    "p": null,
    "n": "Herbert Fischer",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0887353,
    "lo": 14.4237317,
@@ -19724,7 +19665,7 @@
    "wd": null,
    "p": null,
    "n": "Markéta Auerbachová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0886104,
    "lo": 14.4275548,
@@ -19735,7 +19676,7 @@
    "wd": null,
    "p": "Q105593672",
    "n": "Benjamin Rosenstein",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0882439,
    "lo": 14.4230635,
@@ -19746,7 +19687,7 @@
    "wd": null,
    "p": null,
    "n": "Helena Winterová roz. Popperová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0879495,
    "lo": 14.4263527,
@@ -19757,7 +19698,7 @@
    "wd": null,
    "p": null,
    "n": "Ida Aschenbrennerová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0890503,
    "lo": 14.4259379,
@@ -19768,7 +19709,7 @@
    "wd": null,
    "p": null,
    "n": "Karel Mautner",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0898976,
    "lo": 14.4271619,
@@ -19823,7 +19764,7 @@
    "wd": null,
    "p": null,
    "n": "Robert Kohn",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0909684,
    "lo": 14.4239242,
@@ -19845,7 +19786,7 @@
    "wd": "Q134077967",
    "p": null,
    "n": "Bedřich Schulz",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0920329,
    "lo": 14.4239236,
@@ -19856,7 +19797,7 @@
    "wd": null,
    "p": "Q116238232",
    "n": "Ludvík Mackerle",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1906097,
    "lo": 16.5625465,
@@ -19867,7 +19808,7 @@
    "wd": "Q43653140",
    "p": "Q23926338",
    "n": "Vojtěch Beneš",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1906131,
    "lo": 16.5625484,
@@ -19878,7 +19819,7 @@
    "wd": "Q96146853",
    "p": "Q45023206",
    "n": "Karel Tomeš",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1956511,
    "lo": 16.592391,
@@ -19889,7 +19830,7 @@
    "wd": "Q99112239",
    "p": "Q105604055",
    "n": "Hugo Sonnenschein",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1956501,
    "lo": 16.6131709,
@@ -19900,7 +19841,7 @@
    "wd": "Q99112244",
    "p": "Q134425434",
    "n": "Otto Slunsky-Sonnenschein",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1956511,
    "lo": 16.6131735,
@@ -19911,7 +19852,7 @@
    "wd": "Q99112240",
    "p": "Q105604115",
    "n": "Pavel Sonnenschein",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1956527,
    "lo": 16.6131723,
@@ -19922,7 +19863,7 @@
    "wd": "Q99112248",
    "p": "Q105604043",
    "n": "Trude Sonnenscheinová",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1956517,
    "lo": 16.6131694,
@@ -19933,7 +19874,7 @@
    "wd": "Q99111956",
    "p": "Q105565923",
    "n": "Ida Musilová",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.2010307,
    "lo": 16.6111801,
@@ -19944,7 +19885,7 @@
    "wd": "Q99111955",
    "p": "Q105565924",
    "n": "Richard Musil",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.2010291,
    "lo": 16.6111803,
@@ -19955,7 +19896,7 @@
    "wd": "Q99111873",
    "p": "Q106819689",
    "n": "Willi Bondi",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.2028036,
    "lo": 16.6109797,
@@ -19966,7 +19907,7 @@
    "wd": "Q99111971",
    "p": "Q105572239",
    "n": "Alice Anna Perlhefter",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.2015153,
    "lo": 16.6076806,
@@ -19977,7 +19918,7 @@
    "wd": "Q134077968",
    "p": "Q134426751",
    "n": "Doris Julia Rauch",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.2015143,
    "lo": 16.6076808,
@@ -19988,7 +19929,7 @@
    "wd": "Q43676693",
    "p": "Q12017487",
    "n": "František Skorkovský",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1956356,
    "lo": 16.6087986,
@@ -19999,7 +19940,7 @@
    "wd": "Q96109153",
    "p": "Q104410334",
    "n": "Adele Bocková",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1941154,
    "lo": 16.6126097,
@@ -20010,7 +19951,7 @@
    "wd": "Q99112235",
    "p": "Q105603733",
    "n": "Eva Sobel",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1936207,
    "lo": 16.6116452,
@@ -20021,7 +19962,7 @@
    "wd": "Q96109154",
    "p": "Q104408852",
    "n": "Leopold Bock",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1941142,
    "lo": 16.6126071,
@@ -20032,7 +19973,7 @@
    "wd": null,
    "p": "Q104656881",
    "n": "Emílie Fuchsová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0882671,
    "lo": 14.4178161,
@@ -20043,7 +19984,7 @@
    "wd": "Q99111905",
    "p": "Q104699786",
    "n": "Emma Herzogová",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1932964,
    "lo": 16.6106227,
@@ -20054,7 +19995,7 @@
    "wd": "Q99111903",
    "p": "Q104700452",
    "n": "Leopold Herzog",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.193297,
    "lo": 16.6106249,
@@ -20065,7 +20006,7 @@
    "wd": null,
    "p": "Q105599457",
    "n": "Leontina Schönhauserová",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.203492,
    "lo": 16.6103792,
@@ -20076,7 +20017,7 @@
    "wd": "Q43653110",
    "p": "Q12345223",
    "n": "Ing. Antonín František Slavík",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.2061584,
    "lo": 16.5831262,
@@ -20087,7 +20028,7 @@
    "wd": "Q43653118",
    "p": "Q23893314",
    "n": "Prof. PhDr. Jan Uher",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.2015941,
    "lo": 16.5796249,
@@ -20098,7 +20039,7 @@
    "wd": null,
    "p": "Q9369070",
    "n": "Vojtěch Boris Luža",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.2033798,
    "lo": 16.5801602,
@@ -20109,7 +20050,7 @@
    "wd": "Q133846249",
    "p": null,
    "n": "Anna Krausová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5940435,
    "lo": 17.2497876,
@@ -20120,7 +20061,7 @@
    "wd": "Q133846250",
    "p": null,
    "n": "Arnošt Kraus",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5940419,
    "lo": 17.2497891,
@@ -20131,7 +20072,7 @@
    "wd": null,
    "p": null,
    "n": "Irena Schwarzová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5943417,
    "lo": 17.2492137,
@@ -20142,7 +20083,7 @@
    "wd": null,
    "p": null,
    "n": "Herta Kaufmannová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5943405,
    "lo": 17.2492084,
@@ -20153,7 +20094,7 @@
    "wd": null,
    "p": null,
    "n": "Karel Schwarz",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5943443,
    "lo": 17.249209,
@@ -20164,7 +20105,7 @@
    "wd": null,
    "p": null,
    "n": "Ilona Schwarzová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5943429,
    "lo": 17.2492115,
@@ -20175,7 +20116,7 @@
    "wd": "Q134077969",
    "p": null,
    "n": "Bedřiška Kaufmannová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5943429,
    "lo": 17.2492071,
@@ -20186,7 +20127,7 @@
    "wd": null,
    "p": null,
    "n": "Pavel A. Kopecký",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0823174,
    "lo": 14.429894,
@@ -20197,7 +20138,7 @@
    "wd": "Q133846251",
    "p": null,
    "n": "Anna Löblová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5970963,
    "lo": 17.2627923,
@@ -20208,7 +20149,7 @@
    "wd": null,
    "p": null,
    "n": "František Löbl",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.597097,
    "lo": 17.2627904,
@@ -20219,7 +20160,7 @@
    "wd": "Q133846252",
    "p": null,
    "n": "Adolf Ziffer",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.597042,
    "lo": 17.2623298,
@@ -20230,7 +20171,7 @@
    "wd": null,
    "p": null,
    "n": "Alžběta Massařiková",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.597089,
    "lo": 17.2627508,
@@ -20241,7 +20182,7 @@
    "wd": "Q134077970",
    "p": null,
    "n": "Bedřich Hersch",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.597089,
    "lo": 17.262754,
@@ -20252,7 +20193,7 @@
    "wd": null,
    "p": null,
    "n": "Karel Massařik",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.597089,
    "lo": 17.2627474,
@@ -20263,7 +20204,7 @@
    "wd": null,
    "p": null,
    "n": "Zita Gottliebová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5970906,
    "lo": 17.2627507,
@@ -20274,7 +20215,7 @@
    "wd": null,
    "p": null,
    "n": "Gerta Abelová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5970906,
    "lo": 17.2627539,
@@ -20285,7 +20226,7 @@
    "wd": "Q134077972",
    "p": null,
    "n": "Berta Gottliebová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5970905,
    "lo": 17.2627473,
@@ -20296,7 +20237,7 @@
    "wd": "Q133846254",
    "p": null,
    "n": "Arnoštka Herschová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.597092,
    "lo": 17.2627506,
@@ -20307,7 +20248,7 @@
    "wd": null,
    "p": null,
    "n": "Irena Abelová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.597092,
    "lo": 17.2627539,
@@ -20318,7 +20259,7 @@
    "wd": null,
    "p": null,
    "n": "Greta Försterová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.597092,
    "lo": 17.2627472,
@@ -20329,7 +20270,7 @@
    "wd": null,
    "p": null,
    "n": "Herbert Abel",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5970936,
    "lo": 17.2627538,
@@ -20340,7 +20281,7 @@
    "wd": null,
    "p": null,
    "n": "Lina Abelová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5970936,
    "lo": 17.2627506,
@@ -20351,7 +20292,7 @@
    "wd": null,
    "p": null,
    "n": "Tereza Försterová",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5970935,
    "lo": 17.2627472,
@@ -20362,7 +20303,7 @@
    "wd": "Q96146547",
    "p": "Q105557621",
    "n": "Marta Löfflerová",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.192898,
    "lo": 16.6088735,
@@ -20373,7 +20314,7 @@
    "wd": "Q96146548",
    "p": "Q105557625",
    "n": "Oskar Löffler",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.1928966,
    "lo": 16.6088746,
@@ -20384,7 +20325,7 @@
    "wd": null,
    "p": null,
    "n": "Josef Tyras",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5942099,
    "lo": 17.2723696,
@@ -20395,7 +20336,7 @@
    "wd": null,
    "p": "Q104447572",
    "n": "JUDr. Gertruda Deutschová",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.2047362,
    "lo": 16.6146253,
@@ -20406,7 +20347,7 @@
    "wd": null,
    "p": "Q105520862",
    "n": "Emma Kleinová",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.2047371,
    "lo": 16.6146222,
@@ -20417,7 +20358,7 @@
    "wd": null,
    "p": "Q105615696",
    "n": "Marie Tugendhatová",
-   "c": "CZ",
+   "c": "Brno",
    "cc": "CZ",
    "la": 49.2047367,
    "lo": 16.6146236,
@@ -20428,7 +20369,7 @@
    "wd": null,
    "p": null,
    "n": "Josef Šanta",
-   "c": "CZ",
+   "c": "Olomouc",
    "cc": "CZ",
    "la": 49.5887886,
    "lo": 17.2580341,
@@ -20802,7 +20743,7 @@
    "wd": null,
    "p": null,
    "n": "Ema Melicharová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1006853,
    "lo": 14.4131438,
@@ -20813,7 +20754,7 @@
    "wd": null,
    "p": null,
    "n": "Artur Melichar",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1006896,
    "lo": 14.4131526,
@@ -20824,7 +20765,7 @@
    "wd": null,
    "p": null,
    "n": "Hermína Guthová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.101469,
    "lo": 14.4139807,
@@ -20835,7 +20776,7 @@
    "wd": null,
    "p": null,
    "n": "Otokar Guth",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.101475,
    "lo": 14.4139834,
@@ -20857,7 +20798,7 @@
    "wd": null,
    "p": null,
    "n": "Julius Schneider",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1003217,
    "lo": 14.4019983,
@@ -20868,7 +20809,7 @@
    "wd": null,
    "p": null,
    "n": "Charlotta Kalichová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1003008,
    "lo": 14.4019926,
@@ -20879,7 +20820,7 @@
    "wd": null,
    "p": null,
    "n": "Věra Kalichová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1003145,
    "lo": 14.402044,
@@ -20890,7 +20831,7 @@
    "wd": null,
    "p": null,
    "n": "Lotta Kalichová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1002962,
    "lo": 14.4020261,
@@ -20901,7 +20842,7 @@
    "wd": "Q134077976",
    "p": null,
    "n": "Bedřich Kalich",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1002924,
    "lo": 14.4020496,
@@ -20912,7 +20853,7 @@
    "wd": null,
    "p": null,
    "n": "Hana Kalichová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.100332,
    "lo": 14.4019218,
@@ -20923,7 +20864,7 @@
    "wd": null,
    "p": null,
    "n": "Marie Kalichová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1003243,
    "lo": 14.40196,
@@ -20934,7 +20875,7 @@
    "wd": null,
    "p": null,
    "n": "Hanuš Kalich",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1003104,
    "lo": 14.4019142,
@@ -20945,7 +20886,7 @@
    "wd": null,
    "p": null,
    "n": "Karel Kalich",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1003064,
    "lo": 14.4019531,
@@ -20956,7 +20897,7 @@
    "wd": null,
    "p": null,
    "n": "Sonja Spitzová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1017043,
    "lo": 14.4001546,
@@ -20967,7 +20908,7 @@
    "wd": "Q133846261",
    "p": null,
    "n": "Anna Spitzová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1016974,
    "lo": 14.4001445,
@@ -20978,7 +20919,7 @@
    "wd": null,
    "p": null,
    "n": "Arnošt Spitz",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1016905,
    "lo": 14.4001365,
@@ -20989,7 +20930,7 @@
    "wd": null,
    "p": null,
    "n": "Milada Šámalová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1024879,
    "lo": 14.4021012,
@@ -21000,7 +20941,7 @@
    "wd": null,
    "p": null,
    "n": "Jaromír Šámal",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1024802,
    "lo": 14.4020918,
@@ -21011,7 +20952,7 @@
    "wd": null,
    "p": null,
    "n": "Ludvika Bořkovcova",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1067217,
    "lo": 14.3927423,
@@ -21022,7 +20963,7 @@
    "wd": "Q133846263",
    "p": null,
    "n": "Anna Jaretzki",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1053351,
    "lo": 14.3951147,
@@ -21033,7 +20974,7 @@
    "wd": null,
    "p": null,
    "n": "Ida Metzl",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1015365,
    "lo": 14.4355946,
@@ -21044,7 +20985,7 @@
    "wd": null,
    "p": null,
    "n": "Ernestina Metzl",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1015363,
    "lo": 14.4355859,
@@ -21055,7 +20996,7 @@
    "wd": null,
    "p": null,
    "n": "Gustav Metzl",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1015361,
    "lo": 14.4355772,
@@ -21066,7 +21007,7 @@
    "wd": null,
    "p": null,
    "n": "Katharina Wienerová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1017628,
    "lo": 14.4351869,
@@ -21077,7 +21018,7 @@
    "wd": null,
    "p": null,
    "n": "Eugen Wiener",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1017537,
    "lo": 14.4351876,
@@ -21088,7 +21029,7 @@
    "wd": null,
    "p": null,
    "n": "Janička Neumannová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1022299,
    "lo": 14.4345231,
@@ -21099,7 +21040,7 @@
    "wd": null,
    "p": null,
    "n": "Ida Frischmannová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1026742,
    "lo": 14.4327427,
@@ -21110,7 +21051,7 @@
    "wd": null,
    "p": null,
    "n": "Emil Frischmann",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1026806,
    "lo": 14.4327367,
@@ -21132,7 +21073,7 @@
    "wd": null,
    "p": null,
    "n": "Josefa Pollaková",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1008265,
    "lo": 14.4247817,
@@ -21143,7 +21084,7 @@
    "wd": null,
    "p": null,
    "n": "Jiří Pollak",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1008351,
    "lo": 14.4247795,
@@ -21154,7 +21095,7 @@
    "wd": null,
    "p": null,
    "n": "Rudolf Pollak",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1008431,
    "lo": 14.4247775,
@@ -21165,7 +21106,7 @@
    "wd": null,
    "p": null,
    "n": "Hedvika Mellionová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1023142,
    "lo": 14.4261204,
@@ -21176,7 +21117,7 @@
    "wd": null,
    "p": null,
    "n": "Karolina Mellionová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1023056,
    "lo": 14.4261251,
@@ -21187,7 +21128,7 @@
    "wd": null,
    "p": null,
    "n": "Jiří Schick",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1021619,
    "lo": 14.4234925,
@@ -21198,7 +21139,7 @@
    "wd": null,
    "p": null,
    "n": "Eva Beckmannová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1021714,
    "lo": 14.4234918,
@@ -21209,7 +21150,7 @@
    "wd": null,
    "p": null,
    "n": "Rudolf Pick",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1022785,
    "lo": 14.4231934,
@@ -21220,7 +21161,7 @@
    "wd": null,
    "p": null,
    "n": "Růžena Lindtová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1022664,
    "lo": 14.4231948,
@@ -21231,7 +21172,7 @@
    "wd": null,
    "p": null,
    "n": "Edita Hartmannová Kaufmannová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1024634,
    "lo": 14.4215666,
@@ -21242,7 +21183,7 @@
    "wd": null,
    "p": null,
    "n": "Karel Hartmann",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1024535,
    "lo": 14.4215707,
@@ -21253,7 +21194,7 @@
    "wd": "Q133846264",
    "p": null,
    "n": "Alexandra Glaserová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1029982,
    "lo": 14.4192284,
@@ -21264,7 +21205,7 @@
    "wd": null,
    "p": null,
    "n": "Irma Glaserová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1029976,
    "lo": 14.4192338,
@@ -21275,7 +21216,7 @@
    "wd": "Q133846267",
    "p": null,
    "n": "Albína Inka Lebenhartová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1001205,
    "lo": 14.4210412,
@@ -21286,7 +21227,7 @@
    "wd": null,
    "p": null,
    "n": "Jindřiška Duňa Scheimannová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1000993,
    "lo": 14.4210498,
@@ -21297,7 +21238,7 @@
    "wd": null,
    "p": null,
    "n": "Pavla Brucková",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.1001164,
    "lo": 14.4210117,
@@ -21308,7 +21249,7 @@
    "wd": "Q133846268",
    "p": null,
    "n": "Alžběta Sgalitzerová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0997133,
    "lo": 14.4199875,
@@ -21319,7 +21260,7 @@
    "wd": null,
    "p": null,
    "n": "Bedřich Sgalitzer",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0997115,
    "lo": 14.4199781,
@@ -21330,7 +21271,7 @@
    "wd": "Q133846269",
    "p": null,
    "n": "Alice Aschnerová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0994621,
    "lo": 14.418352,
@@ -21374,7 +21315,7 @@
    "wd": "Q133846279",
    "p": "Q105616183",
    "n": "Aloisie Vesecká",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0802108,
    "lo": 14.4521171,
@@ -21385,7 +21326,7 @@
    "wd": "Q133846301",
    "p": null,
    "n": "Alfred Müller",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0316874,
    "lo": 14.30958,
@@ -21396,7 +21337,7 @@
    "wd": null,
    "p": null,
    "n": "Pavel Müller",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0316878,
    "lo": 14.3095828,
@@ -21407,7 +21348,7 @@
    "wd": null,
    "p": null,
    "n": "Otakar Müller",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0316886,
    "lo": 14.3095891,
@@ -21418,7 +21359,7 @@
    "wd": null,
    "p": null,
    "n": "Irma Soferová",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0320444,
    "lo": 14.3113567,
@@ -21429,7 +21370,7 @@
    "wd": null,
    "p": null,
    "n": "Otto Sofer",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.0320468,
    "lo": 14.3113626,
@@ -21627,7 +21568,7 @@
    "wd": "Q134077982",
    "p": null,
    "n": "Dr. Arpad Hirschberger",
-   "c": null,
+   "c": "Praha",
    "cc": "CZ",
    "la": 50.076633,
    "lo": 14.459394,
@@ -25999,6 +25940,39 @@
    "la": 40.4337519,
    "lo": -3.6747953,
    "src": "osm+wd"
+  },
+  {
+   "id": "Q131125978",
+   "wd": "Q131125978",
+   "p": null,
+   "n": "Teodoro Arranz Saugar",
+   "c": "Madrid",
+   "cc": "ES",
+   "la": 40.401668,
+   "lo": -3.696977,
+   "src": "wd"
+  },
+  {
+   "id": "Q131151543",
+   "wd": "Q131151543",
+   "p": null,
+   "n": "Eufemio García García",
+   "c": "Madrid",
+   "cc": "ES",
+   "la": 40.458463,
+   "lo": -3.714779,
+   "src": "wd"
+  },
+  {
+   "id": "Q131151928",
+   "wd": "Q131151928",
+   "p": null,
+   "n": "Juan Martín de Loeches García Morales",
+   "c": "Madrid",
+   "cc": "ES",
+   "la": 40.426313,
+   "lo": -3.654698,
+   "src": "wd"
   },
   {
    "id": "n10941688220",
@@ -32040,6 +32014,17 @@
    "src": "osm"
   },
   {
+   "id": "n13110437170",
+   "wd": null,
+   "p": null,
+   "n": "Bernard Braun",
+   "c": "Giromagny",
+   "cc": "FR",
+   "la": 47.7379166,
+   "lo": 6.8287476,
+   "src": "osm"
+  },
+  {
    "id": "n13110684875",
    "wd": null,
    "p": null,
@@ -35351,6 +35336,28 @@
    "src": "osm"
   },
   {
+   "id": "n13799926665",
+   "wd": null,
+   "p": null,
+   "n": "Henri Leskes",
+   "c": "Lunéville",
+   "cc": "FR",
+   "la": 48.5932241,
+   "lo": 6.4901376,
+   "src": "osm"
+  },
+  {
+   "id": "n13799926667",
+   "wd": null,
+   "p": null,
+   "n": "Samuel Leskes",
+   "c": "Lunéville",
+   "cc": "FR",
+   "la": 48.5932232,
+   "lo": 6.4901381,
+   "src": "osm"
+  },
+  {
    "id": "n13799940057",
    "wd": null,
    "p": null,
@@ -35590,6 +35597,17 @@
    "cc": "FR",
    "la": 48.8161169,
    "lo": 2.289995,
+   "src": "osm"
+  },
+  {
+   "id": "n13809803821",
+   "wd": null,
+   "p": null,
+   "n": "Aloyse Arblade",
+   "c": "Malakoff",
+   "cc": "FR",
+   "la": 48.8185135,
+   "lo": 2.3009364,
    "src": "osm"
   },
   {
@@ -38671,17 +38689,6 @@
    "la": 51.512032,
    "lo": -0.1369416,
    "src": "osm+wd"
-  },
-  {
-   "id": "n13254180143",
-   "wd": null,
-   "p": null,
-   "n": "Joanne Reilly",
-   "c": "Newry, Mourne and Down District",
-   "cc": "GB",
-   "la": 54.1020719,
-   "lo": -6.2558928,
-   "src": "osm"
   },
   {
    "id": "Q137642768",
@@ -44052,17 +44059,6 @@
    "src": "osm"
   },
   {
-   "id": "n9631521134",
-   "wd": null,
-   "p": null,
-   "n": "Cor Vanlaer",
-   "c": "Altopascio",
-   "cc": "IT",
-   "la": 43.8266231,
-   "lo": 10.6428773,
-   "src": "osm"
-  },
-  {
    "id": "n9969745686",
    "wd": null,
    "p": null,
@@ -44316,6 +44312,39 @@
    "src": "wd"
   },
   {
+   "id": "Q137857580",
+   "wd": "Q137857580",
+   "p": null,
+   "n": "Benvenuto Colombo",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.071585,
+   "lo": 7.68464,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857581",
+   "wd": "Q137857581",
+   "p": null,
+   "n": "Mario Colombo",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.071585,
+   "lo": 7.68464,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857582",
+   "wd": "Q137857582",
+   "p": null,
+   "n": "Enrico Colombo",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.071585,
+   "lo": 7.68464,
+   "src": "wd"
+  },
+  {
    "id": "Q137857583",
    "wd": "Q137857583",
    "p": null,
@@ -44338,6 +44367,17 @@
    "src": "wd"
   },
   {
+   "id": "Q137857587",
+   "wd": "Q137857587",
+   "p": null,
+   "n": "Luigi Nada",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.101066,
+   "lo": 7.740857,
+   "src": "wd"
+  },
+  {
    "id": "Q137857589",
    "wd": "Q137857589",
    "p": null,
@@ -44346,6 +44386,17 @@
    "cc": "IT",
    "la": 45.064549,
    "lo": 7.680773,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857590",
+   "wd": "Q137857590",
+   "p": null,
+   "n": "Silvio Segre",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.065815,
+   "lo": 7.68943,
    "src": "wd"
   },
   {
@@ -44701,6 +44752,50 @@
    "src": "wd"
   },
   {
+   "id": "Q137857635",
+   "wd": "Q137857635",
+   "p": null,
+   "n": "Franco Levi",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.056865,
+   "lo": 7.678438,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857636",
+   "wd": "Q137857636",
+   "p": null,
+   "n": "Marco Ottolenghi",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.067009,
+   "lo": 7.670632,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857637",
+   "wd": "Q137857637",
+   "p": null,
+   "n": "Giorgio Ottolenghi",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.055761,
+   "lo": 7.670416,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857638",
+   "wd": "Q137857638",
+   "p": null,
+   "n": "Giacomo Ottolenghi",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.055761,
+   "lo": 7.670416,
+   "src": "wd"
+  },
+  {
    "id": "Q137857642",
    "wd": "Q137857642",
    "p": null,
@@ -44709,6 +44804,292 @@
    "cc": "IT",
    "la": 45.0591,
    "lo": 7.682604,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857643",
+   "wd": "Q137857643",
+   "p": null,
+   "n": "Franco Gallina",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.079216,
+   "lo": 7.69216,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857644",
+   "wd": "Q137857644",
+   "p": null,
+   "n": "Umberto Nizza",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.064441,
+   "lo": 7.674977,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857645",
+   "wd": "Q137857645",
+   "p": null,
+   "n": "Remo Obbermito",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.061272,
+   "lo": 7.688743,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857646",
+   "wd": "Q137857646",
+   "p": null,
+   "n": "Teodoro Sacerdote",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.056941,
+   "lo": 7.695659,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857647",
+   "wd": "Q137857647",
+   "p": null,
+   "n": "Rosetta Fubini in Sacerdote",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.056941,
+   "lo": 7.695659,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857655",
+   "wd": "Q137857655",
+   "p": null,
+   "n": "Luigi Scala",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.065344,
+   "lo": 7.695645,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857660",
+   "wd": "Q137857660",
+   "p": null,
+   "n": "Vittorio Staccione",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.079857,
+   "lo": 7.665394,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857661",
+   "wd": "Q137857661",
+   "p": null,
+   "n": "Celestina Muggia in Sacerdote",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.07336,
+   "lo": 7.693021,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857662",
+   "wd": "Q137857662",
+   "p": null,
+   "n": "Bice Sacerdote in Tedeschi",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.07336,
+   "lo": 7.693021,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857663",
+   "wd": "Q137857663",
+   "p": null,
+   "n": "Natalia Tedeschi",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.07336,
+   "lo": 7.693021,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857664",
+   "wd": "Q137857664",
+   "p": null,
+   "n": "Vittorio Tedeschi",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.07336,
+   "lo": 7.693021,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857665",
+   "wd": "Q137857665",
+   "p": null,
+   "n": "Marisa Ancona",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.077732,
+   "lo": 7.655867,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857669",
+   "wd": "Q137857669",
+   "p": null,
+   "n": "Tranquillo Sartore",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.075831,
+   "lo": 7.68134,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857670",
+   "wd": "Q137857670",
+   "p": null,
+   "n": "Francesco Staccione",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.088242,
+   "lo": 7.656708,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857676",
+   "wd": "Q137857676",
+   "p": null,
+   "n": "Nicola Battista",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.06992,
+   "lo": 7.70284,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857677",
+   "wd": "Q137857677",
+   "p": null,
+   "n": "Marco Norzi",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.05547,
+   "lo": 7.69449,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857686",
+   "wd": "Q137857686",
+   "p": null,
+   "n": "Ida Moresco",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.056865,
+   "lo": 7.68344,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857687",
+   "wd": "Q137857687",
+   "p": null,
+   "n": "Umberto Valabrega",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.056865,
+   "lo": 7.68344,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857688",
+   "wd": "Q137857688",
+   "p": null,
+   "n": "Donato Colombo",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.069906,
+   "lo": 7.679027,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857689",
+   "wd": "Q137857689",
+   "p": null,
+   "n": "Emma Ottolenghi",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.069906,
+   "lo": 7.679027,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857690",
+   "wd": "Q137857690",
+   "p": null,
+   "n": "Arturo Beltrando",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.073518,
+   "lo": 7.678392,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857691",
+   "wd": "Q137857691",
+   "p": null,
+   "n": "Lucia Beltrando",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.073518,
+   "lo": 7.678392,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857692",
+   "wd": "Q137857692",
+   "p": null,
+   "n": "Noè Clerino",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.076907,
+   "lo": 7.672227,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857695",
+   "wd": "Q137857695",
+   "p": null,
+   "n": "Mauro Finiguerra",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.101405,
+   "lo": 7.69398,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857696",
+   "wd": "Q137857696",
+   "p": null,
+   "n": "Cesarina Levi",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.08543,
+   "lo": 7.689442,
+   "src": "wd"
+  },
+  {
+   "id": "Q137857698",
+   "wd": "Q137857698",
+   "p": null,
+   "n": "Cesare Levi",
+   "c": "Turin",
+   "cc": "IT",
+   "la": 45.074382,
+   "lo": 7.680746,
    "src": "wd"
   },
   {
@@ -45240,6 +45621,17 @@
    "src": "osm"
   },
   {
+   "id": "n13205323009",
+   "wd": null,
+   "p": null,
+   "n": "Černė Percikovičiūtė",
+   "c": "Kaunas",
+   "cc": "LT",
+   "la": 54.8934859,
+   "lo": 23.9247311,
+   "src": "osm"
+  },
+  {
    "id": "n13205323010",
    "wd": null,
    "p": null,
@@ -45449,6 +45841,17 @@
    "src": "osm"
   },
   {
+   "id": "n13207718483",
+   "wd": null,
+   "p": null,
+   "n": "Jokūbas Šeras",
+   "c": "Vilnius",
+   "cc": "LT",
+   "la": 54.668832,
+   "lo": 25.2868031,
+   "src": "osm"
+  },
+  {
    "id": "n13207718484",
    "wd": null,
    "p": null,
@@ -45468,6 +45871,17 @@
    "cc": "LT",
    "la": 54.6778413,
    "lo": 25.2802297,
+   "src": "osm"
+  },
+  {
+   "id": "n13207718486",
+   "wd": null,
+   "p": "Q11833226",
+   "n": "Rachelė Suckever-Ušajeva",
+   "c": "Vilnius",
+   "cc": "LT",
+   "la": 54.6810042,
+   "lo": 25.2718755,
    "src": "osm"
   },
   {
@@ -64677,6 +65091,17 @@
    "src": "wd"
   },
   {
+   "id": "Q44177918",
+   "wd": "Q44177918",
+   "p": "Q138606829",
+   "n": "Ernst Salomon Savosnick",
+   "c": "Trondheim",
+   "cc": "NO",
+   "la": 63.434533,
+   "lo": 10.41684,
+   "src": "wd"
+  },
+  {
    "id": "Q44177933",
    "wd": "Q44177933",
    "p": "Q138361022",
@@ -64714,6 +65139,17 @@
    "wd": "Q44178173",
    "p": "Q138360589",
    "n": "Samuel Jacob Arsch",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.929713,
+   "lo": 10.723415,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178184",
+   "wd": "Q44178184",
+   "p": "Q138360587",
+   "n": "Sara Gitel Arsch",
    "c": "Oslo",
    "cc": "NO",
    "la": 59.929713,
@@ -64765,6 +65201,17 @@
    "src": "wd"
   },
   {
+   "id": "Q44178247",
+   "wd": "Q44178247",
+   "p": "Q138699062",
+   "n": "Claire Türkheimer",
+   "c": "Kvam",
+   "cc": "NO",
+   "la": 60.430939,
+   "lo": 6.431994,
+   "src": "wd"
+  },
+  {
    "id": "Q44178261",
    "wd": "Q44178261",
    "p": "Q138606856",
@@ -64787,6 +65234,83 @@
    "src": "wd"
   },
   {
+   "id": "Q44178421",
+   "wd": "Q44178421",
+   "p": "Q138607362",
+   "n": "Marie Hurwitz",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91365,
+   "lo": 10.772529,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178436",
+   "wd": "Q44178436",
+   "p": "Q138686675",
+   "n": "Salomon Hurwitz",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91365,
+   "lo": 10.772529,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178448",
+   "wd": "Q44178448",
+   "p": "Q138607710",
+   "n": "Bjørn Johnny Gedanken",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91869,
+   "lo": 10.764809,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178461",
+   "wd": "Q44178461",
+   "p": "Q138692869",
+   "n": "Heiman David Gedanken",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91869,
+   "lo": 10.764809,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178472",
+   "wd": "Q44178472",
+   "p": "Q138607023",
+   "n": "Josef Gedanken",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91869,
+   "lo": 10.764809,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178479",
+   "wd": "Q44178479",
+   "p": "Q138607460",
+   "n": "Lilly Gedanken",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91869,
+   "lo": 10.764809,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178494",
+   "wd": "Q44178494",
+   "p": "Q138607043",
+   "n": "Lina Gedanken",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91869,
+   "lo": 10.764809,
+   "src": "wd"
+  },
+  {
    "id": "Q44178507",
    "wd": "Q44178507",
    "p": "Q138607326",
@@ -64795,6 +65319,61 @@
    "cc": "NO",
    "la": 59.91869,
    "lo": 10.764809,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178522",
+   "wd": "Q44178522",
+   "p": "Q138606931",
+   "n": "Esther Jaffe",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91869,
+   "lo": 10.764809,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178531",
+   "wd": "Q44178531",
+   "p": "Q138692054",
+   "n": "Hanna Jaffe",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91869,
+   "lo": 10.764809,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178543",
+   "wd": "Q44178543",
+   "p": "Q138607370",
+   "n": "Ida Jaffe",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91869,
+   "lo": 10.764809,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178554",
+   "wd": "Q44178554",
+   "p": "Q138606852",
+   "n": "Isak Jaffe",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91869,
+   "lo": 10.764809,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178571",
+   "wd": "Q44178571",
+   "p": "Q138699914",
+   "n": "Benzel Braude",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.920129,
+   "lo": 10.756335,
    "src": "wd"
   },
   {
@@ -64828,6 +65407,17 @@
    "cc": "NO",
    "la": 59.920129,
    "lo": 10.756335,
+   "src": "wd"
+  },
+  {
+   "id": "Q44178627",
+   "wd": "Q44178627",
+   "p": "Q138606974",
+   "n": "Mathilde Rothenberg",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.919411,
+   "lo": 10.748996,
    "src": "wd"
   },
   {
@@ -64941,6 +65531,17 @@
    "src": "wd"
   },
   {
+   "id": "Q44178967",
+   "wd": "Q44178967",
+   "p": "Q138607726",
+   "n": "Leonard Elieser Isaksen",
+   "c": "Trondheim",
+   "cc": "NO",
+   "la": 63.424873,
+   "lo": 10.382154,
+   "src": "wd"
+  },
+  {
    "id": "Q44179008",
    "wd": "Q44179008",
    "p": "Q138607646",
@@ -65015,6 +65616,17 @@
    "cc": "NO",
    "la": 63.434799,
    "lo": 10.419508,
+   "src": "wd"
+  },
+  {
+   "id": "Q44179154",
+   "wd": "Q44179154",
+   "p": "Q138359187",
+   "n": "Sigurd Dvoretsky",
+   "c": "Trondheim",
+   "cc": "NO",
+   "la": 63.432421,
+   "lo": 10.390052,
    "src": "wd"
   },
   {
@@ -67075,6 +67687,17 @@
    "src": "wd"
   },
   {
+   "id": "Q44181436",
+   "wd": "Q44181436",
+   "p": "Q138360976",
+   "n": "Wulff Becker",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.916255,
+   "lo": 10.752048,
+   "src": "wd"
+  },
+  {
    "id": "Q44181440",
    "wd": "Q44181440",
    "p": "Q138360981",
@@ -67438,6 +68061,17 @@
    "src": "wd"
   },
   {
+   "id": "Q44181859",
+   "wd": "Q44181859",
+   "p": "Q138607753",
+   "n": "Arne Willy Steinsapir",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.92714,
+   "lo": 10.749515,
+   "src": "wd"
+  },
+  {
    "id": "Q44181869",
    "wd": "Q44181869",
    "p": "Q138607249",
@@ -67680,6 +68314,50 @@
    "src": "wd"
   },
   {
+   "id": "Q44182400",
+   "wd": "Q44182400",
+   "p": "Q138606906",
+   "n": "Simon Mahler",
+   "c": "Trondheim",
+   "cc": "NO",
+   "la": 63.42912,
+   "lo": 10.401167,
+   "src": "wd"
+  },
+  {
+   "id": "Q44182414",
+   "wd": "Q44182414",
+   "p": "Q138607689",
+   "n": "Selik Elieser Mahler",
+   "c": "Trondheim",
+   "cc": "NO",
+   "la": 63.42912,
+   "lo": 10.401167,
+   "src": "wd"
+  },
+  {
+   "id": "Q44182489",
+   "wd": "Q44182489",
+   "p": "Q138607056",
+   "n": "Malke Rachel Mahler",
+   "c": "Trondheim",
+   "cc": "NO",
+   "la": 63.429094,
+   "lo": 10.40113,
+   "src": "wd"
+  },
+  {
+   "id": "Q44182503",
+   "wd": "Q44182503",
+   "p": "Q138607720",
+   "n": "Mina Scholamis Mahler",
+   "c": "Trondheim",
+   "cc": "NO",
+   "la": 63.42912,
+   "lo": 10.401167,
+   "src": "wd"
+  },
+  {
    "id": "Q44182665",
    "wd": "Q44182665",
    "p": "Q138359158",
@@ -67757,6 +68435,39 @@
    "src": "wd"
   },
   {
+   "id": "Q44182843",
+   "wd": "Q44182843",
+   "p": "Q138606844",
+   "n": "Isak Leib Jelaawitz",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91924,
+   "lo": 10.740034,
+   "src": "wd"
+  },
+  {
+   "id": "Q44182856",
+   "wd": "Q44182856",
+   "p": "Q138360611",
+   "n": "Edda Aschkanaze",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.917346,
+   "lo": 10.716345,
+   "src": "wd"
+  },
+  {
+   "id": "Q44182868",
+   "wd": "Q44182868",
+   "p": "Q138360612",
+   "n": "Sarah Aschkanaze",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.917346,
+   "lo": 10.716345,
+   "src": "wd"
+  },
+  {
    "id": "Q44182879",
    "wd": "Q44182879",
    "p": "Q138695376",
@@ -67765,6 +68476,50 @@
    "cc": "NO",
    "la": 59.9215,
    "lo": 10.712398,
+   "src": "wd"
+  },
+  {
+   "id": "Q44182893",
+   "wd": "Q44182893",
+   "p": "Q138606796",
+   "n": "Friedrich Weiner",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.918722,
+   "lo": 10.733522,
+   "src": "wd"
+  },
+  {
+   "id": "Q44182905",
+   "wd": "Q44182905",
+   "p": "Q138606825",
+   "n": "Ida Weiner",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.918722,
+   "lo": 10.733522,
+   "src": "wd"
+  },
+  {
+   "id": "Q44182918",
+   "wd": "Q44182918",
+   "p": "Q138695134",
+   "n": "Lewek Levi Jacobowitz",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.918722,
+   "lo": 10.733522,
+   "src": "wd"
+  },
+  {
+   "id": "Q44182930",
+   "wd": "Q44182930",
+   "p": "Q138607735",
+   "n": "Benno Hurwitz",
+   "c": "Oslo",
+   "cc": "NO",
+   "la": 59.91365,
+   "lo": 10.772529,
    "src": "wd"
   },
   {
@@ -68135,7 +68890,7 @@
    "wd": null,
    "p": null,
    "n": "Samuel Reichenberg",
-   "c": null,
+   "c": "Bratislava",
    "cc": "SK",
    "la": 48.142637,
    "lo": 17.1039474,
@@ -68146,7 +68901,7 @@
    "wd": null,
    "p": null,
    "n": "Irena Kanka",
-   "c": null,
+   "c": "Bratislava",
    "cc": "SK",
    "la": 48.1426373,
    "lo": 17.1039509,
@@ -68157,7 +68912,7 @@
    "wd": null,
    "p": null,
    "n": "Edith Reichenberg",
-   "c": null,
+   "c": "Bratislava",
    "cc": "SK",
    "la": 48.1426376,
    "lo": 17.1039537,
@@ -68168,7 +68923,7 @@
    "wd": null,
    "p": null,
    "n": "Margita Závadská",
-   "c": null,
+   "c": "Bratislava",
    "cc": "SK",
    "la": 48.1426379,
    "lo": 17.1039569,
@@ -68179,7 +68934,7 @@
    "wd": null,
    "p": null,
    "n": "Štefan Vécsei",
-   "c": null,
+   "c": "Bratislava",
    "cc": "SK",
    "la": 48.1550736,
    "lo": 17.1044254,
@@ -68190,7 +68945,7 @@
    "wd": null,
    "p": null,
    "n": "Jozefa Vécseiová",
-   "c": null,
+   "c": "Bratislava",
    "cc": "SK",
    "la": 48.1550755,
    "lo": 17.1044192,
@@ -68201,7 +68956,7 @@
    "wd": null,
    "p": null,
    "n": "Ignác Vécsei",
-   "c": null,
+   "c": "Bratislava",
    "cc": "SK",
    "la": 48.1550722,
    "lo": 17.1044307,
@@ -68212,7 +68967,7 @@
    "wd": null,
    "p": null,
    "n": "Alexander Neumann",
-   "c": null,
+   "c": "Bratislava",
    "cc": "SK",
    "la": 48.1433179,
    "lo": 17.1080469,
@@ -68223,7 +68978,7 @@
    "wd": null,
    "p": null,
    "n": "Margit Neumann",
-   "c": null,
+   "c": "Bratislava",
    "cc": "SK",
    "la": 48.1433172,
    "lo": 17.1080491,
@@ -68234,7 +68989,7 @@
    "wd": null,
    "p": null,
    "n": "Dr. Emil Pásztor",
-   "c": null,
+   "c": "Bratislava",
    "cc": "SK",
    "la": 48.1414802,
    "lo": 17.1116399,
@@ -68245,7 +69000,7 @@
    "wd": null,
    "p": null,
    "n": "Pavol Rotter",
-   "c": null,
+   "c": "Bratislava",
    "cc": "SK",
    "la": 48.1423838,
    "lo": 17.1144473,
@@ -68256,7 +69011,7 @@
    "wd": null,
    "p": "Q528677",
    "n": "Gizela Fleischmannová",
-   "c": null,
+   "c": "Bratislava",
    "cc": "SK",
    "la": 48.144659,
    "lo": 17.1049391,
@@ -68578,7 +69333,7 @@
   {
    "id": "n2537618510",
    "cc": "AT",
-   "reason": "la dirección etiquetada existe en OSM pero a 90 m de la posición de la placa",
+   "reason": "la dirección etiquetada existe en OSM pero a 81 m de la posición de la placa",
    "n": "Richard Zach",
    "la": 47.0595941,
    "lo": 15.4384973
@@ -68839,6 +69594,14 @@
    "lo": 16.3266233
   },
   {
+   "id": "n8307048446",
+   "cc": "AT",
+   "reason": "la inscripción nombra a más de una persona (Erna y Georg Duschinsky): una ficha por persona no es posible con un solo nodo",
+   "n": "Erna Duschinsky",
+   "la": 48.2331988,
+   "lo": 16.3418816
+  },
+  {
    "id": "n8307055513",
    "cc": "AT",
    "reason": "sin nombre",
@@ -68886,6 +69649,13 @@
    "reason": "el nombre contiene cifras (53 jüdische Frauen und Männer)",
    "la": 48.222561,
    "lo": 16.3536245
+  },
+  {
+   "id": "n8430002928",
+   "cc": "AT",
+   "reason": "el «nombre» es un rótulo o una institución, no una persona (Bethaus des Oberrabbiners Israel Friedmann)",
+   "la": 48.2237562,
+   "lo": 16.3540547
   },
   {
    "id": "n8440683047",
@@ -68956,6 +69726,13 @@
    "reason": "el nombre junta a varias personas (Hugo & Paula Reiner)",
    "la": 48.1964241,
    "lo": 16.3216834
+  },
+  {
+   "id": "n8575843304",
+   "cc": "AT",
+   "reason": "el «nombre» es un rótulo o una institución, no una persona (Springer'sche Waisenhaus)",
+   "la": 48.1950943,
+   "lo": 16.3215288
   },
   {
    "id": "n8575843307",
@@ -69107,6 +69884,14 @@
    "reason": "el nombre parece colectivo o de varias personas (Hilda, Jakob und Erika Grünbaum)",
    "la": 48.2123733,
    "lo": 16.3707381
+  },
+  {
+   "id": "n8685608852",
+   "cc": "AT",
+   "reason": "la placa recuerda un hecho posterior a 1950 (1965), sin ninguna fecha 1933-1945 ni palabra de persecución: no es una víctima del nazismo, no se añade",
+   "n": "Ernst Kirchweger",
+   "la": 48.2038217,
+   "lo": 16.3699094
   },
   {
    "id": "n8685608853",
@@ -69630,6 +70415,13 @@
    "reason": "el «nombre» es un rótulo o una institución, no una persona (Israelitisches Blindeninstitut)",
    "la": 48.2475896,
    "lo": 16.3555659
+  },
+  {
+   "id": "n9568482044",
+   "cc": "AT",
+   "reason": "el «nombre» es un rótulo o una institución, no una persona (Turnverein Hasmonäa Makkabi)",
+   "la": 48.2125092,
+   "lo": 16.390855
   },
   {
    "id": "n9570945581",
@@ -70504,6 +71296,13 @@
    "lo": 16.3644765
   },
   {
+   "id": "n10581509322",
+   "cc": "AT",
+   "reason": "el «nombre» es un rótulo o una institución, no una persona (Jüdisches Waisenhaus)",
+   "la": 48.2208635,
+   "lo": 16.3662271
+  },
+  {
    "id": "n10739576969",
    "cc": "AT",
    "reason": "el nombre junta a varias personas (Mathilde & Erich Frischwasser)",
@@ -70610,6 +71409,13 @@
    "lo": 16.3730178
   },
   {
+   "id": "n11336279971",
+   "cc": "AT",
+   "reason": "el «nombre» es un rótulo o una institución, no una persona (Großfamilie Bleier)",
+   "la": 48.2490166,
+   "lo": 16.3552122
+  },
+  {
    "id": "n11339479083",
    "cc": "AT",
    "reason": "el nombre parece colectivo o de varias personas (Familie Hindels)",
@@ -70675,8 +71481,7 @@
   {
    "id": "n11343144282",
    "cc": "AT",
-   "reason": "subject:wikidata (Q2375443) no es un humano en Wikidata",
-   "n": "Synagoge",
+   "reason": "el «nombre» es un rótulo o una institución, no una persona (Synagoge)",
    "la": 48.2305823,
    "lo": 16.3717588
   },
@@ -71556,7 +72361,7 @@
   {
    "id": "Q115099778",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («St.-Peter-Bezirk, 5020 Salzburg») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Gottfried Neunhäuserer",
    "la": 47.7975,
    "lo": 13.0442
@@ -71592,7 +72397,7 @@
   {
    "id": "Q135988478",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Anton Ammann",
    "la": 47.50446,
    "lo": 9.74641
@@ -71600,7 +72405,7 @@
   {
    "id": "Q135988489",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Karl Beck",
    "la": 47.50446,
    "lo": 9.74641
@@ -71608,7 +72413,7 @@
   {
    "id": "Q135988490",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Herta Böckle",
    "la": 47.50446,
    "lo": 9.74641
@@ -71616,7 +72421,7 @@
   {
    "id": "Q135988491",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Berta Dietrich",
    "la": 47.50446,
    "lo": 9.74641
@@ -71624,7 +72429,7 @@
   {
    "id": "Q135988492",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Eckart Ehringer",
    "la": 47.50446,
    "lo": 9.74641
@@ -71632,7 +72437,7 @@
   {
    "id": "Q135988493",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Paul Eppler",
    "la": 47.50446,
    "lo": 9.74641
@@ -71640,7 +72445,7 @@
   {
    "id": "Q135988494",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Karin Fleisch",
    "la": 47.50446,
    "lo": 9.74641
@@ -71656,7 +72461,7 @@
   {
    "id": "Q135988497",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Franz Josef Geiger",
    "la": 47.50446,
    "lo": 9.74641
@@ -71664,7 +72469,7 @@
   {
    "id": "Q135988499",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Anna Graziosa Giacomelli",
    "la": 47.50446,
    "lo": 9.74641
@@ -71672,7 +72477,7 @@
   {
    "id": "Q135988500",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Maria Anna Gorbach",
    "la": 47.50446,
    "lo": 9.74641
@@ -71680,7 +72485,7 @@
   {
    "id": "Q135988501",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Hermine Gruber",
    "la": 47.50446,
    "lo": 9.74641
@@ -71688,7 +72493,7 @@
   {
    "id": "Q135988502",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Herta Hirsch",
    "la": 47.50446,
    "lo": 9.74641
@@ -71696,7 +72501,7 @@
   {
    "id": "Q135988503",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Anna Hotz",
    "la": 47.50446,
    "lo": 9.74641
@@ -71704,7 +72509,7 @@
   {
    "id": "Q135988504",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Lorenz Kahn",
    "la": 47.50446,
    "lo": 9.74641
@@ -71712,7 +72517,7 @@
   {
    "id": "Q135988505",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Anna Knöpfler",
    "la": 47.50446,
    "lo": 9.74641
@@ -71720,7 +72525,7 @@
   {
    "id": "Q135988506",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Ernst Meyer",
    "la": 47.50446,
    "lo": 9.74641
@@ -71728,7 +72533,7 @@
   {
    "id": "Q135988507",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Georg Meyer",
    "la": 47.50446,
    "lo": 9.74641
@@ -71736,7 +72541,7 @@
   {
    "id": "Q135988509",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Rosa Michel",
    "la": 47.50446,
    "lo": 9.74641
@@ -71744,7 +72549,7 @@
   {
    "id": "Q135988510",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Johann Armin Müller",
    "la": 47.50446,
    "lo": 9.74641
@@ -71752,7 +72557,7 @@
   {
    "id": "Q135988511",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Veronika Plattner",
    "la": 47.50446,
    "lo": 9.74641
@@ -71768,7 +72573,7 @@
   {
    "id": "Q135988513",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Wilhelm Rauch",
    "la": 47.50446,
    "lo": 9.74641
@@ -71776,7 +72581,7 @@
   {
    "id": "Q135988514",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Maria Rehor",
    "la": 47.50446,
    "lo": 9.74641
@@ -71784,7 +72589,7 @@
   {
    "id": "Q135988515",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Georg Sohler",
    "la": 47.50446,
    "lo": 9.74641
@@ -71792,7 +72597,7 @@
   {
    "id": "Q135988516",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Sofie Toth",
    "la": 47.50446,
    "lo": 9.74641
@@ -71800,7 +72605,7 @@
   {
    "id": "Q135988517",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Anna Tripp",
    "la": 47.50446,
    "lo": 9.74641
@@ -71808,7 +72613,7 @@
   {
    "id": "Q136001619",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Theodor Anwander",
    "la": 47.50446,
    "lo": 9.74641
@@ -71824,7 +72629,7 @@
   {
    "id": "Q137294337",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Anton Wimmer",
    "la": 47.349158,
    "lo": 13.20282
@@ -71968,7 +72773,7 @@
   {
    "id": "Q43650927",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Adolf Altmann",
    "la": 47.80758333,
    "lo": 13.04969167
@@ -71976,7 +72781,7 @@
   {
    "id": "Q43676095",
    "cc": "AT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Johann Nobis",
    "la": 48.01364,
    "lo": 12.93283
@@ -72786,14 +73591,6 @@
    "n": "Joseph Markus Schalit"
   },
   {
-   "id": "Q98825273",
-   "cc": "BE",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Laurent-Joseph Degueldre",
-   "la": 50.567186111,
-   "lo": 5.803247222
-  },
-  {
    "id": "n10895750600",
    "cc": "CH",
    "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
@@ -72855,7 +73652,7 @@
   {
    "id": "Q135298019",
    "cc": "CH",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Viale Lungolago, 6614 Brissago, Schweiz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Adele Horitzki Gruenberger",
    "la": 46.11818,
    "lo": 8.71076
@@ -72863,7 +73660,7 @@
   {
    "id": "Q135298043",
    "cc": "CH",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Viale Lungolago, 6614 Brissago, Schweiz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Errico Gruenberger",
    "la": 46.11818,
    "lo": 8.71076
@@ -72871,7 +73668,7 @@
   {
    "id": "Q135298046",
    "cc": "CH",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Viale Lungolago, 6614 Brissago, Schweiz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Regina Horitzki",
    "la": 46.11818,
    "lo": 8.71076
@@ -72879,7 +73676,7 @@
   {
    "id": "Q135298049",
    "cc": "CH",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Viale Lungolago, 6614 Brissago, Schweiz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Egone Gruenberger",
    "la": 46.11818,
    "lo": 8.71076
@@ -72895,7 +73692,7 @@
   {
    "id": "Q135411979",
    "cc": "CH",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Genfergasse 22: dirección lejos a 67 m; Commons sin_datos)",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Genfergasse 22: dirección lejos a 45 m; Commons sin_datos)",
    "n": "Céline Zagiel",
    "la": 46.951718,
    "lo": 7.44208
@@ -72959,7 +73756,7 @@
   {
    "id": "Q136934423",
    "cc": "CH",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Martha Schwartz",
    "la": 47.545225,
    "lo": 7.557747
@@ -72981,7 +73778,7 @@
   {
    "id": "Q141645036",
    "cc": "CH",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "André Weill",
    "la": 47.10405,
    "lo": 6.826882
@@ -72989,7 +73786,7 @@
   {
    "id": "Q141645337",
    "cc": "CH",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Ida Silberschmidt",
    "la": 47.103351,
    "lo": 6.830836
@@ -72997,7 +73794,7 @@
   {
    "id": "Q141744325",
    "cc": "CH",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Anton Reinhardt",
    "la": 47.609638,
    "lo": 8.235501
@@ -86142,7 +86939,7 @@
   {
    "id": "Q133846265",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Arnošt Gasler",
    "la": 50.102997,
    "lo": 14.4192385
@@ -88296,7 +89093,7 @@
   {
    "id": "Q140393838",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Ervín Fröhlich",
    "la": 50.0909322,
    "lo": 14.418608
@@ -88304,7 +89101,7 @@
   {
    "id": "Q140393842",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "MUDr. Otto Heller",
    "la": 50.0908163,
    "lo": 14.4186753
@@ -88312,7 +89109,7 @@
   {
    "id": "Q140393845",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Pavla Fröhlichová",
    "la": 50.0909333,
    "lo": 14.4186074
@@ -93700,7 +94497,7 @@
   {
    "id": "Q43676631",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Lilly Luisa Liebesná",
    "la": 49.406526944,
    "lo": 16.412056944
@@ -93708,7 +94505,7 @@
   {
    "id": "Q43676636",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Markéta Liebesná",
    "la": 49.406526944,
    "lo": 16.412056944
@@ -93716,7 +94513,7 @@
   {
    "id": "Q43676648",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Otto Liebesný",
    "la": 49.406526944,
    "lo": 16.412056944
@@ -93724,7 +94521,7 @@
   {
    "id": "Q43676655",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Ida Weissbartová",
    "la": 49.406527,
    "lo": 16.412057
@@ -93732,7 +94529,7 @@
   {
    "id": "Q43676660",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Berthold Oppenheim",
    "la": 49.5906793,
    "lo": 17.2509987
@@ -93760,7 +94557,7 @@
   {
    "id": "Q44200342",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Louise Hermanová",
    "la": 49.756338,
    "lo": 16.466526
@@ -93768,7 +94565,7 @@
   {
    "id": "Q44200346",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Masarykovo nám. 96/I, Třeboň») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Karel Brady-Metzl",
    "la": 49.004257,
    "lo": 14.771297
@@ -93960,7 +94757,7 @@
   {
    "id": "Q94433802",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Josef Waldmann",
    "la": 50.082935,
    "lo": 14.429012
@@ -93968,7 +94765,7 @@
   {
    "id": "Q98448922",
    "cc": "CZ",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Petr Ginz",
    "la": 50.0922709,
    "lo": 14.435997
@@ -95242,7 +96039,7 @@
   {
    "id": "Q110141551",
    "cc": "ES",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Lluís Companys",
    "la": 41.382788296,
    "lo": 2.176879832
@@ -95360,34 +96157,10 @@
    "lo": 1.67552
   },
   {
-   "id": "Q131125978",
-   "cc": "ES",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Teodoro Arranz Saugar",
-   "la": 40.401668,
-   "lo": -3.696977
-  },
-  {
    "id": "Q131139292",
    "cc": "ES",
    "reason": "sin coordenadas P625 únicas en Wikidata",
    "n": "José Fontanet Moreno"
-  },
-  {
-   "id": "Q131151543",
-   "cc": "ES",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Eufemio García García",
-   "la": 40.458463,
-   "lo": -3.714779
-  },
-  {
-   "id": "Q131151928",
-   "cc": "ES",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Juan Martín de Loeches García Morales",
-   "la": 40.426313,
-   "lo": -3.654698
   },
   {
    "id": "Q131179030",
@@ -95398,7 +96171,7 @@
   {
    "id": "Q131240862",
    "cc": "ES",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Calle Elfo 9: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Pedro Villaverde Petralanda",
    "la": 40.433248,
    "lo": -3.655872
@@ -95524,7 +96297,7 @@
   {
    "id": "Q44060009",
    "cc": "ES",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Francesc Comellas Llinares",
    "la": 41.616497,
    "lo": 2.087935
@@ -95743,7 +96516,7 @@
   {
    "id": "n13075948226",
    "cc": "FR",
-   "reason": "la dirección etiquetada existe en OSM pero a 56 m de la posición de la placa",
+   "reason": "la dirección etiquetada existe en OSM pero a 41 m de la posición de la placa",
    "n": "Gabrielle Bicard née Weill",
    "la": 48.0393411,
    "lo": 7.545405
@@ -95751,7 +96524,7 @@
   {
    "id": "n13075948227",
    "cc": "FR",
-   "reason": "la dirección etiquetada existe en OSM pero a 55 m de la posición de la placa",
+   "reason": "la dirección etiquetada existe en OSM pero a 41 m de la posición de la placa",
    "n": "Théophile Bicard",
    "la": 48.039341,
    "lo": 7.5454065
@@ -96332,14 +97105,6 @@
    "n": "Rosa Steinitz",
    "la": 47.3312934,
    "lo": 5.0212146
-  },
-  {
-   "id": "n13110437170",
-   "cc": "FR",
-   "reason": "OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",
-   "n": "Bernard Braun",
-   "la": 47.7379166,
-   "lo": 6.8287476
   },
   {
    "id": "n13110437171",
@@ -97034,35 +97799,11 @@
    "lo": 6.7998187
   },
   {
-   "id": "n13799926665",
-   "cc": "FR",
-   "reason": "OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",
-   "n": "Henri Leskes",
-   "la": 48.5932241,
-   "lo": 6.4901376
-  },
-  {
    "id": "n13799926666",
    "cc": "FR",
    "reason": "sin nombre",
    "la": 48.593225,
    "lo": 6.4901371
-  },
-  {
-   "id": "n13799926667",
-   "cc": "FR",
-   "reason": "OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",
-   "n": "Samuel Leskes",
-   "la": 48.5932232,
-   "lo": 6.4901381
-  },
-  {
-   "id": "n13809803821",
-   "cc": "FR",
-   "reason": "OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",
-   "n": "Aloyse Arblade",
-   "la": 48.8185135,
-   "lo": 2.3009364
   },
   {
    "id": "n13811759323",
@@ -97685,7 +98426,7 @@
   {
    "id": "Q62071440",
    "cc": "FR",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (rue des Quatre Lieues, 14: dirección lejos a 78 m; Commons sin_datos)",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (rue des Quatre Lieues, 14: dirección lejos a 69 m; Commons sin_datos)",
    "n": "Jean Leger",
    "la": 45.185147222,
    "lo": -0.581302777
@@ -97693,10 +98434,18 @@
   {
    "id": "Q87641003",
    "cc": "FR",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Rachel Brzesko",
    "la": 48.8459369,
    "lo": 2.4589191
+  },
+  {
+   "id": "n13254180143",
+   "cc": "GB",
+   "reason": "la placa recuerda un hecho posterior a 1950 (1989), sin ninguna fecha 1933-1945 ni palabra de persecución: no es una víctima del nazismo, no se añade",
+   "n": "Joanne Reilly",
+   "la": 54.1020719,
+   "lo": -6.2558928
   },
   {
    "id": "n13328895011",
@@ -100271,7 +101020,7 @@
   {
    "id": "Q136911696",
    "cc": "HU",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Fö Utca 66: dirección lejos a 54 m; Commons sin_datos)",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Fö Utca 66: dirección lejos a 46 m; Commons sin_datos)",
    "n": "Zsigmond Váradi",
    "la": 47.111993,
    "lo": 17.73432
@@ -100279,7 +101028,7 @@
   {
    "id": "Q136912085",
    "cc": "HU",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Fö Utca 66: dirección lejos a 54 m; Commons sin_datos)",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Fö Utca 66: dirección lejos a 46 m; Commons sin_datos)",
    "n": "Ilona Stern",
    "la": 47.111993,
    "lo": 17.73432
@@ -100619,6 +101368,14 @@
    "n": "Annina Santomarrone",
    "la": 42.3282023,
    "lo": 13.3584906
+  },
+  {
+   "id": "n9631521134",
+   "cc": "IT",
+   "reason": "la placa recuerda un hecho posterior a 1950 (2015), sin ninguna fecha 1933-1945 ni palabra de persecución: no es una víctima del nazismo, no se añade",
+   "n": "Cor Vanlaer",
+   "la": 43.8266231,
+   "lo": 10.6428773
   },
   {
    "id": "n9758791771",
@@ -101702,7 +102459,7 @@
   {
    "id": "Q133289239",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Garibaldi 138: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Anna Luciana Norzi",
    "la": 43.820373,
    "lo": 7.781648
@@ -101710,7 +102467,7 @@
   {
    "id": "Q133289254",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Garibaldi 138: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Guido Norzi",
    "la": 43.820373,
    "lo": 7.781648
@@ -101718,7 +102475,7 @@
   {
    "id": "Q133289261",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Garibaldi 138: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Vittorina Segre",
    "la": 43.820373,
    "lo": 7.781648
@@ -101748,7 +102505,7 @@
   {
    "id": "Q137857561",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («unito, Torino») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Rosetta Rimini",
    "la": 45.06078,
    "lo": 7.685109
@@ -101786,30 +102543,6 @@
    "lo": 7.690898
   },
   {
-   "id": "Q137857580",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Benvenuto Colombo",
-   "la": 45.071585,
-   "lo": 7.68464
-  },
-  {
-   "id": "Q137857581",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Mario Colombo",
-   "la": 45.071585,
-   "lo": 7.68464
-  },
-  {
-   "id": "Q137857582",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Enrico Colombo",
-   "la": 45.071585,
-   "lo": 7.68464
-  },
-  {
    "id": "Q137857585",
    "cc": "IT",
    "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Mazzini 12: dirección sin_coincidencia; Commons sin_datos)",
@@ -101824,22 +102557,6 @@
    "n": "Italo Momigliano",
    "la": 45.073677,
    "lo": 7.709278
-  },
-  {
-   "id": "Q137857587",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Luigi Nada",
-   "la": 45.101066,
-   "lo": 7.740857
-  },
-  {
-   "id": "Q137857590",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Silvio Segre",
-   "la": 45.065815,
-   "lo": 7.68943
   },
   {
    "id": "Q137857604",
@@ -101924,47 +102641,15 @@
   {
    "id": "Q137857631",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Piazza Giambattista Bodoni (Conservatorio), Torino») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Leone Sinigaglia",
    "la": 45.06302,
    "lo": 7.684461
   },
   {
-   "id": "Q137857635",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Franco Levi",
-   "la": 45.056865,
-   "lo": 7.678438
-  },
-  {
-   "id": "Q137857636",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Marco Ottolenghi",
-   "la": 45.067009,
-   "lo": 7.670632
-  },
-  {
-   "id": "Q137857637",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Giorgio Ottolenghi",
-   "la": 45.055761,
-   "lo": 7.670416
-  },
-  {
-   "id": "Q137857638",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Giacomo Ottolenghi",
-   "la": 45.055761,
-   "lo": 7.670416
-  },
-  {
    "id": "Q137857639",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Vigliani 172: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Giovanni Roncaglio",
    "la": 45.017123,
    "lo": 7.653072
@@ -101972,55 +102657,15 @@
   {
    "id": "Q137857640",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Spezia 55: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Giovanni Bini",
    "la": 45.036815,
    "lo": 7.674615
   },
   {
-   "id": "Q137857643",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Franco Gallina",
-   "la": 45.079216,
-   "lo": 7.69216
-  },
-  {
-   "id": "Q137857644",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Umberto Nizza",
-   "la": 45.064441,
-   "lo": 7.674977
-  },
-  {
-   "id": "Q137857645",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Remo Obbermito",
-   "la": 45.061272,
-   "lo": 7.688743
-  },
-  {
-   "id": "Q137857646",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Teodoro Sacerdote",
-   "la": 45.056941,
-   "lo": 7.695659
-  },
-  {
-   "id": "Q137857647",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Rosetta Fubini in Sacerdote",
-   "la": 45.056941,
-   "lo": 7.695659
-  },
-  {
    "id": "Q137857648",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Vigone 54: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Luigi Bachi",
    "la": 45.065883,
    "lo": 7.653752
@@ -102028,7 +102673,7 @@
   {
    "id": "Q137857649",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Garibaldi 53: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Livia Deutschova",
    "la": 45.074876,
    "lo": 7.674496
@@ -102044,7 +102689,7 @@
   {
    "id": "Q137857652",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Via della Consolata, 1 bis, Torino») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Giuseppe Abramo Levi",
    "la": 45.073985,
    "lo": 7.676606
@@ -102052,23 +102697,15 @@
   {
    "id": "Q137857653",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Spezia 55: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Enrico Mellano",
    "la": 45.036815,
    "lo": 7.674615
   },
   {
-   "id": "Q137857655",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Luigi Scala",
-   "la": 45.065344,
-   "lo": 7.695645
-  },
-  {
    "id": "Q137857656",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Via Duchessa Jolanda, 27 bis, Torino») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Abramo Segre",
    "la": 45.075072,
    "lo": 7.65883
@@ -102076,7 +102713,7 @@
   {
    "id": "Q137857657",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Via Duchessa Jolanda, 27 bis, Torino») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Rosa Segre",
    "la": 45.075072,
    "lo": 7.65883
@@ -102084,7 +102721,7 @@
   {
    "id": "Q137857658",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Fontanesi 38: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Aldo Momigliano",
    "la": 45.073677,
    "lo": 7.709278
@@ -102098,54 +102735,6 @@
    "lo": 7.709278
   },
   {
-   "id": "Q137857660",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Vittorio Staccione",
-   "la": 45.079857,
-   "lo": 7.665394
-  },
-  {
-   "id": "Q137857661",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Celestina Muggia in Sacerdote",
-   "la": 45.07336,
-   "lo": 7.693021
-  },
-  {
-   "id": "Q137857662",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Bice Sacerdote in Tedeschi",
-   "la": 45.07336,
-   "lo": 7.693021
-  },
-  {
-   "id": "Q137857663",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Natalia Tedeschi",
-   "la": 45.07336,
-   "lo": 7.693021
-  },
-  {
-   "id": "Q137857664",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Vittorio Tedeschi",
-   "la": 45.07336,
-   "lo": 7.693021
-  },
-  {
-   "id": "Q137857665",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Marisa Ancona",
-   "la": 45.077732,
-   "lo": 7.655867
-  },
-  {
    "id": "Q137857666",
    "cc": "IT",
    "reason": "el nombre de Wikidata no coincide con su inscripción",
@@ -102156,7 +102745,7 @@
   {
    "id": "Q137857667",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Piazzi 3: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Elena Colombo",
    "la": 45.056997,
    "lo": 7.66196
@@ -102164,31 +102753,15 @@
   {
    "id": "Q137857668",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Piazzi 3: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Alessandro Colombo",
    "la": 45.056997,
    "lo": 7.66196
   },
   {
-   "id": "Q137857669",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Tranquillo Sartore",
-   "la": 45.075831,
-   "lo": 7.68134
-  },
-  {
-   "id": "Q137857670",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Francesco Staccione",
-   "la": 45.0882425,
-   "lo": 7.6567084
-  },
-  {
    "id": "Q137857671",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (via Giuseppe Baretti 31: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Evelina Valbrega",
    "la": 45.055963,
    "lo": 7.665527
@@ -102196,7 +102769,7 @@
   {
    "id": "Q137857672",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (via Giuseppe Baretti 31: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Anselmo Jachia",
    "la": 45.055963,
    "lo": 7.665527
@@ -102204,7 +102777,7 @@
   {
    "id": "Q137857673",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (via Giuseppe Baretti 31: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Ercole Jachia",
    "la": 45.055963,
    "lo": 7.665527
@@ -102212,7 +102785,7 @@
   {
    "id": "Q137857674",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (via Giuseppe Baretti 31: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Ida Jachia",
    "la": 45.055963,
    "lo": 7.665527
@@ -102220,31 +102793,15 @@
   {
    "id": "Q137857675",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (via Giuseppe Baretti 31: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Pasqua Jachia",
    "la": 45.055963,
    "lo": 7.665527
   },
   {
-   "id": "Q137857676",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Nicola Battista",
-   "la": 45.06992,
-   "lo": 7.70284
-  },
-  {
-   "id": "Q137857677",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Marco Norzi",
-   "la": 45.05547,
-   "lo": 7.69449
-  },
-  {
    "id": "Q137857678",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Guglielmo Marconi 11: dirección lejos a 170 m; Commons sin_datos)",
    "n": "Vanda Maestro",
    "la": 45.056688,
    "lo": 7.676885
@@ -102252,7 +102809,7 @@
   {
    "id": "Q137857679",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via San Pio V 28: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Isacco Cohen",
    "la": 45.05944,
    "lo": 7.682837
@@ -102260,7 +102817,7 @@
   {
    "id": "Q137857680",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Madama Cristina 18: dirección lejos a 170 m; Commons sin_datos)",
    "n": "Nella della Rocca",
    "la": 45.057984,
    "lo": 7.680696
@@ -102268,7 +102825,7 @@
   {
    "id": "Q137857681",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Madama Cristina 18: dirección lejos a 170 m; Commons sin_datos)",
    "n": "Gina Sbrana",
    "la": 45.057984,
    "lo": 7.680696
@@ -102276,7 +102833,7 @@
   {
    "id": "Q137857682",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Breglio 38: dirección lejos a 175 m; Commons sin_datos)",
    "n": "Valentino Merlo",
    "la": 45.098886,
    "lo": 7.67883
@@ -102292,71 +102849,15 @@
   {
    "id": "Q137857685",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Giulio Bizzozero 24: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Antonio Lazzarin",
    "la": 45.03709,
    "lo": 7.667335
   },
   {
-   "id": "Q137857686",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Ida Moresco",
-   "la": 45.056865,
-   "lo": 7.68344
-  },
-  {
-   "id": "Q137857687",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Umberto Valabrega",
-   "la": 45.056865,
-   "lo": 7.68344
-  },
-  {
-   "id": "Q137857688",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Donato Colombo",
-   "la": 45.069906,
-   "lo": 7.679027
-  },
-  {
-   "id": "Q137857689",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Emma Ottolenghi",
-   "la": 45.069906,
-   "lo": 7.679027
-  },
-  {
-   "id": "Q137857690",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Arturo Beltrando",
-   "la": 45.073518,
-   "lo": 7.678392
-  },
-  {
-   "id": "Q137857691",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Lucia Beltrando",
-   "la": 45.073518,
-   "lo": 7.678392
-  },
-  {
-   "id": "Q137857692",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Noè Clerino",
-   "la": 45.076907,
-   "lo": 7.672227
-  },
-  {
    "id": "Q137857693",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Del Carmine 24: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Giuseppe Ghiotti",
    "la": 45.086358,
    "lo": 7.680097
@@ -102364,47 +102865,23 @@
   {
    "id": "Q137857694",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Galleria San Federico, Torino») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Giovanni Battisti",
    "la": 45.069003,
    "lo": 7.682767
   },
   {
-   "id": "Q137857695",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Mauro Finiguerra",
-   "la": 45.101405,
-   "lo": 7.69398
-  },
-  {
-   "id": "Q137857696",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Cesarina Levi",
-   "la": 45.08543,
-   "lo": 7.689442
-  },
-  {
    "id": "Q137857697",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Porta Palatina 17: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Giovanni Abati",
    "la": 45.07403,
    "lo": 7.683716
   },
   {
-   "id": "Q137857698",
-   "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Cesare Levi",
-   "la": 45.074382,
-   "lo": 7.680746
-  },
-  {
    "id": "Q137857699",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via G.Verdi 10: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Luigi Ottino",
    "la": 45.069242,
    "lo": 7.690014
@@ -102418,7 +102895,7 @@
   {
    "id": "Q43651621",
    "cc": "IT",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Riccardo Reuven Pacifici",
    "la": 44.408376,
    "lo": 8.93509
@@ -102453,14 +102930,6 @@
    "lo": 21.2558111
   },
   {
-   "id": "n13205323009",
-   "cc": "LT",
-   "reason": "la dirección etiquetada existe en OSM pero a 47 m de la posición de la placa",
-   "n": "Černė Percikovičiūtė",
-   "la": 54.8934859,
-   "lo": 23.9247311
-  },
-  {
    "id": "n13205323011",
    "cc": "LT",
    "reason": "OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",
@@ -102484,22 +102953,6 @@
    "i": "Čia gyveno ir dirbo\nDr. Samuelis\nMorgalis\ng. 1889 m.\nįkalintas 1941 09 07\nVilniaus gete\nnužudytas 1944 07 05\nPaneriuose",
    "la": 54.683755,
    "lo": 25.2791199
-  },
-  {
-   "id": "n13207718483",
-   "cc": "LT",
-   "reason": "la dirección etiquetada existe en OSM pero a 43 m de la posición de la placa",
-   "n": "Jokūbas Šeras",
-   "la": 54.668832,
-   "lo": 25.2868031
-  },
-  {
-   "id": "n13207718486",
-   "cc": "LT",
-   "reason": "la dirección etiquetada existe en OSM pero a 43 m de la posición de la placa",
-   "n": "Rachelė Suckever-Ušajeva",
-   "la": 54.6810042,
-   "lo": 25.2718755
   },
   {
    "id": "n4780670794",
@@ -113241,7 +113694,7 @@
   {
    "id": "Q100725462",
    "cc": "NL",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Andries Gerrits Gort",
    "la": 52.262714082,
    "lo": 6.1433959
@@ -113365,7 +113818,7 @@
   {
    "id": "Q137212257",
    "cc": "NL",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Hermine Bonn",
    "la": 51.368185,
    "lo": 6.1691174
@@ -113421,7 +113874,7 @@
   {
    "id": "Q98448912",
    "cc": "NL",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Kloostersteeg -, Doesburg») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Meier Lebensbaum",
    "la": 52.012189,
    "lo": 6.135163
@@ -114164,7 +114617,7 @@
   {
    "id": "Q138608140",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Sentralveien (i krysset Solfallsveien), 1430 Ås.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Herman Bild (1882-1942)",
    "la": 59.665543,
    "lo": 10.799715
@@ -114172,7 +114625,7 @@
   {
    "id": "Q138608141",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Sentralveien (i krysset Solfallsveien), 1430 Ås.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Thina Bild (1881-1942)",
    "la": 59.665543,
    "lo": 10.799715
@@ -114180,7 +114633,7 @@
   {
    "id": "Q138608142",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Sentralveien (i krysset Solfallsveien), 1430 Ås.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Leopold Lars Bild (1910 - 1943)",
    "la": 59.665543,
    "lo": 10.799715
@@ -114188,7 +114641,7 @@
   {
    "id": "Q138608143",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Sentralveien (i krysset Solfallsveien), 1430 Ås .») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Philip Moses Bild",
    "la": 59.665543,
    "lo": 10.799715
@@ -114196,7 +114649,7 @@
   {
    "id": "Q138608144",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Sentralveien (i krysset Solfallsveien), 1430 Ås.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Ida Seline Bild (1922-1942)",
    "la": 59.665543,
    "lo": 10.799715
@@ -114204,7 +114657,7 @@
   {
    "id": "Q138608145",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Kongsvegen  , 2647 Sør-Fron.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Klara Karpol (1899-1942)",
    "la": 61.55678,
    "lo": 9.939688
@@ -114212,7 +114665,7 @@
   {
    "id": "Q138608146",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Kongsvegen , 2647 Sør-Fron.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Samuel Karpol (1901 - 1943)",
    "la": 61.55678,
    "lo": 9.939688
@@ -114220,7 +114673,7 @@
   {
    "id": "Q138608147",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Kongsvegen , 2647 Sør-Fron.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Esther Karpol (1903 - 1942)",
    "la": 61.55678,
    "lo": 9.939688
@@ -114228,7 +114681,7 @@
   {
    "id": "Q138608158",
    "cc": "NO",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Kirkeveien 112: dirección sin_coincidencia; Commons sin_datos)",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Kirkeveien 112A: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Herman Mesner",
    "la": 59.934343,
    "lo": 10.727675
@@ -114236,7 +114689,7 @@
   {
    "id": "Q138608165",
    "cc": "NO",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Bernt Ankers gate (tidligere Mariboes gate 12) 10: dirección sin_coincidencia; Commons sin_datos)",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Bernt Ankers gate (tidligere Mariboes gate 12) 10B: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Gerda Kermann",
    "la": 59.917205,
    "lo": 10.7514
@@ -114244,7 +114697,7 @@
   {
    "id": "Q138608166",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Bernt Ankers gate (tidligere Mariboes gate 12), 0183 Oslo.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Markus Kermann",
    "la": 59.917205,
    "lo": 10.7514
@@ -114252,7 +114705,7 @@
   {
    "id": "Q138608167",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Bernt Ankers gate (tidligere Mariboes gate 12), 0183 Oslo.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Morris Kermann",
    "la": 59.917205,
    "lo": 10.7514
@@ -114260,7 +114713,7 @@
   {
    "id": "Q138608168",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Bernt Ankers gate (tidligere Mariboes gate 12), 0183 Oslo.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Olga Kermann",
    "la": 59.917205,
    "lo": 10.7514
@@ -114300,7 +114753,7 @@
   {
    "id": "Q138608205",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Walter Einziger (1905-1942)",
    "la": 59.810823,
    "lo": 10.799467
@@ -114308,7 +114761,7 @@
   {
    "id": "Q138608206",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Emil Gunst (1891-1943)",
    "la": 59.810823,
    "lo": 10.799467
@@ -114316,7 +114769,7 @@
   {
    "id": "Q138608207",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Gertrud Gunst (1930-1942)",
    "la": 59.810823,
    "lo": 10.799467
@@ -114324,7 +114777,7 @@
   {
    "id": "Q138608208",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Lilly Gunst (1911-1942)",
    "la": 59.810823,
    "lo": 10.799467
@@ -114332,7 +114785,7 @@
   {
    "id": "Q138608209",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Ernst Knöpfler",
    "la": 59.810823,
    "lo": 10.799467
@@ -114340,7 +114793,7 @@
   {
    "id": "Q138608210",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Helene Knöpfler (1915-1942)",
    "la": 59.810823,
    "lo": 10.799467
@@ -114348,7 +114801,7 @@
   {
    "id": "Q138608211",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Leopold Knöpfler (1939-1942)",
    "la": 59.810823,
    "lo": 10.799467
@@ -114356,7 +114809,7 @@
   {
    "id": "Q138608212",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Odd Knöpfler (1940-1942)",
    "la": 59.810823,
    "lo": 10.799467
@@ -114404,7 +114857,7 @@
   {
    "id": "Q138608225",
    "cc": "NO",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15: dirección sin_coincidencia; Commons sin_datos)",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15A: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Leiser Bodd (1872-1942)",
    "la": 59.916341,
    "lo": 10.762129
@@ -114412,7 +114865,7 @@
   {
    "id": "Q138608226",
    "cc": "NO",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15: dirección sin_coincidencia; Commons sin_datos)",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15A: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Janta Bodd (1902-1942)",
    "la": 59.916341,
    "lo": 10.762129
@@ -114420,7 +114873,7 @@
   {
    "id": "Q138608227",
    "cc": "NO",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15: dirección sin_coincidencia; Commons sin_datos)",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15A: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Anna Bodd (1908-1942)",
    "la": 59.916341,
    "lo": 10.762129
@@ -114428,7 +114881,7 @@
   {
    "id": "Q138608228",
    "cc": "NO",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15: dirección sin_coincidencia; Commons sin_datos)",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15A: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Bernhard Bodd (1912-1945)",
    "la": 59.916341,
    "lo": 10.762129
@@ -114436,7 +114889,7 @@
   {
    "id": "Q138608229",
    "cc": "NO",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15: dirección sin_coincidencia; Commons sin_datos)",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15A: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Moritz Bodd",
    "la": 59.916341,
    "lo": 10.762129
@@ -114444,7 +114897,7 @@
   {
    "id": "Q138608230",
    "cc": "NO",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15: dirección sin_coincidencia; Commons sin_datos)",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15A: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Sofie Bodd (1913-1942)",
    "la": 59.916341,
    "lo": 10.762129
@@ -114674,14 +115127,6 @@
    "lo": 10.4088179
   },
   {
-   "id": "Q44177918",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Ernst Salomon Savosnick",
-   "la": 63.4345333,
-   "lo": 10.4168395
-  },
-  {
    "id": "Q44177946",
    "cc": "NO",
    "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 27: dirección sin_coincidencia; Commons sin_datos)",
@@ -114692,7 +115137,7 @@
   {
    "id": "Q44177960",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Øysteins gate 1: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Gerd Gittel Isaksen",
    "la": 63.430515,
    "lo": 10.395053
@@ -114700,7 +115145,7 @@
   {
    "id": "Q44177974",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Øysteins gate 1: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Harry Samuel Isaksen",
    "la": 63.430515,
    "lo": 10.395053
@@ -114730,22 +115175,6 @@
    "lo": 10.3907273
   },
   {
-   "id": "Q44178184",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Sara Gitel Arsch",
-   "la": 59.929713,
-   "lo": 10.723415
-  },
-  {
-   "id": "Q44178247",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Claire Türkheimer",
-   "la": 60.430939,
-   "lo": 6.431994
-  },
-  {
    "id": "Q44178286",
    "cc": "NO",
    "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 51: dirección lejos a 166 m; Commons sin_datos)",
@@ -114770,113 +115199,9 @@
    "lo": 10.4183763
   },
   {
-   "id": "Q44178421",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Marie Hurwitz",
-   "la": 59.91365,
-   "lo": 10.772529
-  },
-  {
-   "id": "Q44178436",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Salomon Hurwitz",
-   "la": 59.91365,
-   "lo": 10.772529
-  },
-  {
-   "id": "Q44178448",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Bjørn Johnny Gedanken",
-   "la": 59.91869,
-   "lo": 10.764809
-  },
-  {
-   "id": "Q44178461",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Heiman David Gedanken",
-   "la": 59.91869,
-   "lo": 10.764809
-  },
-  {
-   "id": "Q44178472",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Josef Gedanken",
-   "la": 59.91869,
-   "lo": 10.764809
-  },
-  {
-   "id": "Q44178479",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Lilly Gedanken",
-   "la": 59.91869,
-   "lo": 10.764809
-  },
-  {
-   "id": "Q44178494",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Lina Gedanken",
-   "la": 59.91869,
-   "lo": 10.764809
-  },
-  {
-   "id": "Q44178522",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Esther Jaffe",
-   "la": 59.91869,
-   "lo": 10.764809
-  },
-  {
-   "id": "Q44178531",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Hanna Jaffe",
-   "la": 59.91869,
-   "lo": 10.764809
-  },
-  {
-   "id": "Q44178543",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Ida Jaffe",
-   "la": 59.91869,
-   "lo": 10.764809
-  },
-  {
-   "id": "Q44178554",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Isak Jaffe",
-   "la": 59.91869,
-   "lo": 10.764809
-  },
-  {
-   "id": "Q44178571",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Benzel Braude",
-   "la": 59.920129,
-   "lo": 10.756335
-  },
-  {
-   "id": "Q44178627",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Mathilde Rothenberg",
-   "la": 59.919411,
-   "lo": 10.748996
-  },
-  {
    "id": "Q44178639",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rosteds gate 14: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Anna Sara Feinberg",
    "la": 59.919544,
    "lo": 10.748698
@@ -114884,7 +115209,7 @@
   {
    "id": "Q44178654",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rosteds gate 14: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Herman Feinberg",
    "la": 59.919544,
    "lo": 10.748698
@@ -114892,7 +115217,7 @@
   {
    "id": "Q44178669",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rosteds gate 14: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Martin Feinberg",
    "la": 59.919544,
    "lo": 10.748698
@@ -114900,7 +115225,7 @@
   {
    "id": "Q44178683",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rosteds gate 14: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Nathan Reichmann",
    "la": 59.919544,
    "lo": 10.748698
@@ -114924,23 +115249,15 @@
   {
    "id": "Q44178886",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 9: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Josef Grabowski",
    "la": 63.430515,
    "lo": 10.395053
   },
   {
-   "id": "Q44178967",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Leonard Elieser Isaksen",
-   "la": 63.424873,
-   "lo": 10.382154
-  },
-  {
    "id": "Q44178994",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 9: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Liesbeth Dorothea Grabowski f. Wolff",
    "la": 63.430515,
    "lo": 10.395053
@@ -114964,7 +115281,7 @@
   {
    "id": "Q44179132",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Øysteins gate 1: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Rosa Isaksen",
    "la": 63.430515,
    "lo": 10.395053
@@ -114976,14 +115293,6 @@
    "n": "Rosa Kahn f. Fischer",
    "la": 63.434375552,
    "lo": 10.402427
-  },
-  {
-   "id": "Q44179154",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Sigurd Dvoretsky",
-   "la": 63.4324207,
-   "lo": 10.3900521
   },
   {
    "id": "Q44179181",
@@ -115036,7 +115345,7 @@
   {
    "id": "Q44179929",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Torget, Larvik») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Israel Leib Sachnowitz",
    "la": 59.05316,
    "lo": 10.026924
@@ -115068,7 +115377,7 @@
   {
    "id": "Q44180103",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Paulus plass 3: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Dina Leimann",
    "la": 59.923463,
    "lo": 10.758624
@@ -115076,7 +115385,7 @@
   {
    "id": "Q44180122",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Paulus plass 3: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Isak Leimann",
    "la": 59.923463,
    "lo": 10.758624
@@ -115092,7 +115401,7 @@
   {
    "id": "Q44180170",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Sofienberggata 10: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Rubin Pinkowitz",
    "la": 59.92236,
    "lo": 10.761096
@@ -115124,7 +115433,7 @@
   {
    "id": "Q44180608",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Øvregata, Haugesund») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Georg Rechenberg",
    "la": 59.413581,
    "lo": 5.267987
@@ -115132,7 +115441,7 @@
   {
    "id": "Q44180627",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Strandgaten, Haugesund») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Moritz Rabinowitz",
    "la": 59.413581,
    "lo": 5.267987
@@ -115172,7 +115481,7 @@
   {
    "id": "Q44180990",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Møllenprisbakken 4a: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Oscar Müller",
    "la": 60.391263,
    "lo": 5.322054
@@ -115188,7 +115497,7 @@
   {
    "id": "Q44181051",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Alexander Moses Scharff",
    "la": 60.165803,
    "lo": 10.255742
@@ -115196,7 +115505,7 @@
   {
    "id": "Q44181052",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Bjørn Meier Scharff",
    "la": 60.165803,
    "lo": 10.255742
@@ -115204,7 +115513,7 @@
   {
    "id": "Q44181059",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Herman Rafael Scharff",
    "la": 60.165803,
    "lo": 10.255742
@@ -115212,7 +115521,7 @@
   {
    "id": "Q44181062",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Idar Scharff",
    "la": 60.165803,
    "lo": 10.255742
@@ -115220,7 +115529,7 @@
   {
    "id": "Q44181065",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («søn, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Jacob Scharff",
    "la": 60.165803,
    "lo": 10.255742
@@ -115228,7 +115537,7 @@
   {
    "id": "Q44181072",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Jessy Scharff",
    "la": 60.165803,
    "lo": 10.255742
@@ -115236,7 +115545,7 @@
   {
    "id": "Q44181080",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Julius Meilach Scharff",
    "la": 60.165803,
    "lo": 10.255742
@@ -115244,7 +115553,7 @@
   {
    "id": "Q44181081",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Lisa Lea Scharff f. Bobrow",
    "la": 60.165803,
    "lo": 10.255742
@@ -115260,18 +115569,10 @@
   {
    "id": "Q44181433",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Hamar kretsfengsel, Hamar») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Fritz Robert Mankiewicz",
    "la": 60.79603,
    "lo": 11.064564
-  },
-  {
-   "id": "Q44181436",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Wulff Becker",
-   "la": 59.916255,
-   "lo": 10.752048
   },
   {
    "id": "Q44181454",
@@ -115332,7 +115633,7 @@
   {
    "id": "Q44181487",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata («Skoggt, Moss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Paul Heiman Ullmann",
    "la": 59.436553,
    "lo": 10.667362
@@ -115396,7 +115697,7 @@
   {
    "id": "Q44181658",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (C Sundts gt 18: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Julius Eidenbom",
    "la": 60.391231,
    "lo": 5.322016
@@ -115404,7 +115705,7 @@
   {
    "id": "Q44181730",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 25: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Wulff Isaksen",
    "la": 63.435032,
    "lo": 10.415935
@@ -115450,17 +115751,9 @@
    "lo": 10.74763
   },
   {
-   "id": "Q44181859",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Arne Willy Steinsapir",
-   "la": 59.92714,
-   "lo": 10.749515
-  },
-  {
    "id": "Q44182188",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata (««Brovoll», Nesbakken, 3520 Jevnaker») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "David Heyman Bersohn",
    "la": 60.240756,
    "lo": 10.383479
@@ -115468,7 +115761,7 @@
   {
    "id": "Q44182201",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata (««Brovoll», Nesbakken, 3520 Jevnaker») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Isak Meyer Bersohn",
    "la": 60.240756,
    "lo": 10.383479
@@ -115476,7 +115769,7 @@
   {
    "id": "Q44182217",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la dirección de Wikidata (««Brovoll», Nesbakken, 3520 Jevnaker») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Markus Aleksander Bersohn",
    "la": 60.240756,
    "lo": 10.383479
@@ -115492,7 +115785,7 @@
   {
    "id": "Q44182242",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Biskop Gunnerus gate 12: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Berit Leventhal",
    "la": 59.912142,
    "lo": 10.752978
@@ -115500,7 +115793,7 @@
   {
    "id": "Q44182255",
    "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Biskop Gunnerus gate 12: dirección sin_coincidencia; Commons sin_datos)",
    "n": "Esther Leventhal",
    "la": 59.912142,
    "lo": 10.752978
@@ -115554,22 +115847,6 @@
    "lo": 7.645556
   },
   {
-   "id": "Q44182400",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Simon Mahler",
-   "la": 63.42912,
-   "lo": 10.401167
-  },
-  {
-   "id": "Q44182414",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Selik Elieser Mahler",
-   "la": 63.42912,
-   "lo": 10.401167
-  },
-  {
    "id": "Q44182427",
    "cc": "NO",
    "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rasmus Rønnebergs gate 18: dirección lejos a 49 m; Commons sin_datos)",
@@ -115600,78 +115877,6 @@
    "n": "Reidun Rasche Steinfeld",
    "la": 62.471964,
    "lo": 6.157401
-  },
-  {
-   "id": "Q44182489",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Malke Rachel Mahler",
-   "la": 63.429094,
-   "lo": 10.40113
-  },
-  {
-   "id": "Q44182503",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Mina Scholamis Mahler",
-   "la": 63.42912,
-   "lo": 10.401167
-  },
-  {
-   "id": "Q44182843",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Isak Leib Jelaawitz",
-   "la": 59.91924,
-   "lo": 10.740034
-  },
-  {
-   "id": "Q44182856",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Edda Aschkanaze",
-   "la": 59.917346,
-   "lo": 10.716345
-  },
-  {
-   "id": "Q44182868",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Sarah Aschkanaze",
-   "la": 59.917346,
-   "lo": 10.716345
-  },
-  {
-   "id": "Q44182893",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Friedrich Weiner",
-   "la": 59.918722,
-   "lo": 10.733522
-  },
-  {
-   "id": "Q44182905",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Ida Weiner",
-   "la": 59.918722,
-   "lo": 10.733522
-  },
-  {
-   "id": "Q44182918",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Lewek Levi Jacobowitz",
-   "la": 59.918722,
-   "lo": 10.733522
-  },
-  {
-   "id": "Q44182930",
-   "cc": "NO",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
-   "n": "Benno Hurwitz",
-   "la": 59.91365,
-   "lo": 10.772529
   },
   {
    "id": "n2369176935",
@@ -115846,7 +116051,7 @@
   {
    "id": "Q136349984",
    "cc": "PL",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Ester Waksztok",
    "la": 52.406397,
    "lo": 16.933097
@@ -116294,7 +116499,7 @@
   {
    "id": "Q112122280",
    "cc": "SK",
-   "reason": "la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM",
+   "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
    "n": "Mária Schulzová",
    "la": 48.59027,
    "lo": 17.835641

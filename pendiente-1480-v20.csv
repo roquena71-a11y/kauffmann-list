@@ -199,7 +199,7 @@ Q134875254,pendiente,Leo Salomon,Gießen,1 sin dirección en Wikidata,el ítem n
 Q134875255,pendiente,Lina Salomon,Gießen,1 sin dirección en Wikidata,el ítem no tiene imagen (P18): ninguna fuente abierta de posición,https://www.wikidata.org/wiki/Q134875255
 Q135294728,pendiente,Siegfried Hahn,Frankfurt am Main,1 sin dirección en Wikidata,ya hay una placa del mismo nombre a ≤60 m en el mapa (n929933998),https://www.wikidata.org/wiki/Q135294728
 Q135294745,pendiente,Karl Hirsch,Frankfurt am Main,1 sin dirección en Wikidata,ya hay una placa del mismo nombre a ≤60 m en el mapa (n929934035),https://www.wikidata.org/wiki/Q135294745
-Q43652858,añadida,Margit Gutmann,Frankenthal,1 sin dirección en Wikidata,,https://www.wikidata.org/wiki/Q43652858
+Q43652858,duplicado,Margit Gutmann,Frankenthal,1 sin dirección en Wikidata,ya hay una placa de la misma persona a <=15 m en el mapa (n9518148283): no se añade otra,https://www.wikidata.org/wiki/Q43652858
 Q134873571,pendiente,Gertud Sondheimer,Gelnhausen,1 sin dirección en Wikidata,el ítem no tiene imagen (P18): ninguna fuente abierta de posición,https://www.wikidata.org/wiki/Q134873571
 Q134873573,pendiente,Werner Heilmann,Gelnhausen,1 sin dirección en Wikidata,el ítem no tiene imagen (P18): ninguna fuente abierta de posición,https://www.wikidata.org/wiki/Q134873573
 Q134873574,pendiente,Maja Berta Heilmann,Gelnhausen,1 sin dirección en Wikidata,el ítem no tiene imagen (P18): ninguna fuente abierta de posición,https://www.wikidata.org/wiki/Q134873574
@@ -652,7 +652,7 @@ Q141639848,pendiente,Rosa Edelstein,Saarwellingen,1 sin dirección en Wikidata,e
 Q141639243,pendiente,Leo Wollheim,Saarlouis,1 sin dirección en Wikidata,el ítem no tiene imagen (P18): ninguna fuente abierta de posición,https://www.wikidata.org/wiki/Q141639243
 Q141639244,pendiente,Ludwig Wollheim,Saarlouis,1 sin dirección en Wikidata,el ítem no tiene imagen (P18): ninguna fuente abierta de posición,https://www.wikidata.org/wiki/Q141639244
 Q43676064,pendiente,Karl Strauß,Neustadt an der Weinstraße,1 sin dirección en Wikidata,ya hay una placa del mismo nombre a ≤60 m en el mapa (n4741041034),https://www.wikidata.org/wiki/Q43676064
-Q100604473,añadida,Flora Strauß,Neustadt an der Weinstraße,1 sin dirección en Wikidata,,https://www.wikidata.org/wiki/Q100604473
+Q100604473,duplicado,Flora Strauß,Neustadt an der Weinstraße,1 sin dirección en Wikidata,ya hay una placa de la misma persona a <=15 m en el mapa (n4741041033): no se añade otra,https://www.wikidata.org/wiki/Q100604473
 Q134661095,pendiente,Bertha Schott,Mörfelden-Walldorf,1 sin dirección en Wikidata,el ítem no tiene imagen (P18): ninguna fuente abierta de posición,https://www.wikidata.org/wiki/Q134661095
 Q134661096,pendiente,Erna Strauß,Mörfelden-Walldorf,1 sin dirección en Wikidata,el ítem no tiene imagen (P18): ninguna fuente abierta de posición,https://www.wikidata.org/wiki/Q134661096
 Q134661098,pendiente,Kurt Strauß,Mörfelden-Walldorf,1 sin dirección en Wikidata,el ítem no tiene imagen (P18): ninguna fuente abierta de posición,https://www.wikidata.org/wiki/Q134661098
@@ -1230,7 +1230,7 @@ Q135234779,pendiente,Werner Blau,Kassel,"5 Nominatim: solo calle, sin casa (no e
 Q135234780,pendiente,Margit Blau,Kassel,"5 Nominatim: solo calle, sin casa (no está en OSM)",el ítem no tiene imagen (P18): ninguna fuente abierta de posición,https://www.wikidata.org/wiki/Q135234780
 Q135234781,pendiente,Berta Blau,Kassel,"5 Nominatim: solo calle, sin casa (no está en OSM)",el ítem no tiene imagen (P18): ninguna fuente abierta de posición,https://www.wikidata.org/wiki/Q135234781
 Q135234782,pendiente,Max Cohen,Kassel,"5 Nominatim: solo calle, sin casa (no está en OSM)",el ítem no tiene imagen (P18): ninguna fuente abierta de posición,https://www.wikidata.org/wiki/Q135234782
-Q135294691,añadida,Salomons Mina Salomons,Frankfurt am Main,"5 Nominatim: solo calle, sin casa (no está en OSM)",,https://www.wikidata.org/wiki/Q135294691
+Q135294691,duplicado,Salomons Mina Salomons,Frankfurt am Main,"5 Nominatim: solo calle, sin casa (no está en OSM)",ya hay una placa de la misma persona a <=15 m en el mapa (n12128326626): no se añade otra,https://www.wikidata.org/wiki/Q135294691
 Q135294692,pendiente,Dagobert Salomons,Frankfurt am Main,"5 Nominatim: solo calle, sin casa (no está en OSM)",ya hay una placa del mismo nombre a ≤60 m en el mapa (n12128326627),https://www.wikidata.org/wiki/Q135294692
 Q135294693,pendiente,Hanna Salomons,Frankfurt am Main,"5 Nominatim: solo calle, sin casa (no está en OSM)",ya hay una placa del mismo nombre a ≤60 m en el mapa (n12128326628),https://www.wikidata.org/wiki/Q135294693
 Q135899628,pendiente,Johanna Katz,Tübingen,"5 Nominatim: solo calle, sin casa (no está en OSM)",la imagen de Commons no tiene coordenadas,https://www.wikidata.org/wiki/Q135899628

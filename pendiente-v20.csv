@@ -11,7 +11,7 @@ AT,n2533857477,Ingeborg Ortner,"OSM marca la posición como dudosa («position �
 AT,n2533857478,Johann Reiter,"OSM marca la posición como dudosa («position überprüfen») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: ok)",47.8154173,13.0289736
 AT,n2533857480,Rosina Stieger,"OSM marca la posición como dudosa («position überprüfen») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: ok)",47.8154287,13.0290027
 AT,n2533857481,Therese Flachberger,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),47.8110389,13.0331229
-AT,n2537618510,Richard Zach,la dirección etiquetada existe en OSM pero a 90 m de la posición de la placa,47.0595941,15.4384973
+AT,n2537618510,Richard Zach,la dirección etiquetada existe en OSM pero a 81 m de la posición de la placa,47.0595941,15.4384973
 AT,n2538111825,,"nota de OSM: placa retirada, ausente o desaparecida (Stein wurde bei Asphaltierungsarbeiten entfernt - muss neu versetzt werden - Fot)",48.0826121,16.2940713
 AT,n2538111844,,"nota de OSM: placa retirada, ausente o desaparecida (Stein wurde bei Asphaltierungsarbeiten entfernt - muss neu versetzt werden - Fot)",48.082632,16.294039
 AT,n2538111847,,"nota de OSM: placa retirada, ausente o desaparecida ( Stein wurde im Zuge des Krankenhausneubaus entfernt und wird neu verlegt   )",48.0885912,16.2982722
@@ -45,6 +45,7 @@ AT,n8121350268,,"el «nombre» es un rótulo o una institución, no una persona 
 AT,n8260107809,,el nombre junta a varias personas (Max & Berta Steiner),48.2018914,16.3412914
 AT,n8260116334,,el nombre contiene cifras (12 jüdische Frauen und Männer),48.2012766,16.3491815
 AT,n8264262635,,el nombre parece colectivo o de varias personas (Gustav und Hermine Winterstein),48.214765,16.3266233
+AT,n8307048446,Erna Duschinsky,la inscripción nombra a más de una persona (Erna y Georg Duschinsky): una ficha por persona no es posible con un solo nodo,48.2331988,16.3418816
 AT,n8307055513,,sin nombre,48.2346462,16.3193774
 AT,n8338745910,,"el nombre contiene cifras (12 jüdische Frauen, Männer und Kinder)",48.2271228,16.3429589
 AT,n8381358187,,"el nombre junta a varias personas (Friedrich & Klara Schön, Paula Juhn)",48.2330127,16.3363913
@@ -52,6 +53,7 @@ AT,n8381450094,,el nombre parece colectivo o de varias personas (Osias und Pessi
 AT,n8415877072,,el nombre junta a varias personas (Kálmán & Elisabeth Klein),48.2145236,16.3349849
 AT,n8417533457,,sin nombre,48.2116738,16.3687817
 AT,n8430001462,,el nombre contiene cifras (53 jüdische Frauen und Männer),48.222561,16.3536245
+AT,n8430002928,,"el «nombre» es un rótulo o una institución, no una persona (Bethaus des Oberrabbiners Israel Friedmann)",48.2237562,16.3540547
 AT,n8440683047,,el nombre parece colectivo o de varias personas (Familie Ebner),48.2042104,16.3388493
 AT,n8489547791,,"el nombre contiene cifras (35 jüdische Frauen, Männer und Kinder)",48.217814,16.3637935
 AT,n8491481481,,"el nombre junta a varias personas separadas por comas (drei jüdische Menschen, die hier gelebt haben)",48.2289329,16.3452228
@@ -62,6 +64,7 @@ AT,n8572545678,,el nombre junta a varias personas (Cilli & David Klüger),48.195
 AT,n8573731635,,el nombre junta a varias personas (Arthur & Camilla Dubsky),48.1964242,16.3216795
 AT,n8573731638,,el nombre junta a varias personas (Annemarie & Franz Georg Dubsky),48.1964231,16.3216808
 AT,n8573731640,,el nombre junta a varias personas (Hugo & Paula Reiner),48.1964241,16.3216834
+AT,n8575843304,,"el «nombre» es un rótulo o una institución, no una persona (Springer'sche Waisenhaus)",48.1950943,16.3215288
 AT,n8575843307,,el nombre contiene cifras (106 jüdische Frauen und Männer),48.1950968,16.3215353
 AT,n8588799422,,el nombre parece colectivo o de varias personas (Zum Gedenken an zehn jüdische Männer und Frauen und einen Bu),48.2160037,16.3487627
 AT,n8592814113,Lea Ester Bibring,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),48.1967277,16.3449541
@@ -83,6 +86,7 @@ AT,n8665898971,,"el nombre parece colectivo o de varias personas (Franziska, Alf
 AT,n8672771731,,sin nombre,48.2078641,16.3705296
 AT,n8672798907,,el nombre contiene cifras (15 jüdische Frauen und Männer),48.210885,16.3713488
 AT,n8676225332,,"el nombre parece colectivo o de varias personas (Hilda, Jakob und Erika Grünbaum)",48.2123733,16.3707381
+AT,n8685608852,Ernst Kirchweger,"la placa recuerda un hecho posterior a 1950 (1965), sin ninguna fecha 1933-1945 ni palabra de persecución: no es una víctima del nazismo, no se añade",48.2038217,16.3699094
 AT,n8685608853,Ernst Kirchweger,el nombre de OSM no coincide con la inscripción (0 % de las palabras del nombre están en la inscripción),48.2038209,16.3699124
 AT,n8710111987,Leopold Meutzner,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),48.1944488,16.3440468
 AT,n8710573898,,sin nombre,48.1944446,16.3440549
@@ -156,6 +160,7 @@ AT,n9281451495,,"el «nombre» es un rótulo o una institución, no una persona 
 AT,n9281451496,,el nombre parece colectivo o de varias personas (Laura und Leon Papo),48.2157274,16.3837926
 AT,n9281451497,,el nombre parece colectivo o de varias personas (Marcell und Malwine Russo),48.2157261,16.3837921
 AT,n9568233858,,"el «nombre» es un rótulo o una institución, no una persona (Israelitisches Blindeninstitut)",48.2475896,16.3555659
+AT,n9568482044,,"el «nombre» es un rótulo o una institución, no una persona (Turnverein Hasmonäa Makkabi)",48.2125092,16.390855
 AT,n9570945581,,el nombre parece colectivo o de varias personas (Familie Neugebauer),48.2273142,16.3412306
 AT,n9570945583,Franziska (Fanni) Neugebauer,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),48.2273147,16.3412265
 AT,n9575040981,,el nombre parece colectivo o de varias personas (Familie Schlesinger),48.1945725,16.3572807
@@ -260,6 +265,7 @@ AT,n10184233458,,sin nombre,48.2272076,16.3633573
 AT,n10189375683,,sin nombre,48.2271196,16.3429647
 AT,n10574649092,,el nombre parece colectivo o de varias personas (Rudolf und Hermine Weiss),48.2248752,15.3308023
 AT,n10581509318,,sin nombre,48.2180242,16.3644765
+AT,n10581509322,,"el «nombre» es un rótulo o una institución, no una persona (Jüdisches Waisenhaus)",48.2208635,16.3662271
 AT,n10739576969,,el nombre junta a varias personas (Mathilde & Erich Frischwasser),48.1369602,16.2866365
 AT,n10739576971,,el nombre junta a varias personas (Ignaz & Kurt Machauf),48.137217,16.2869833
 AT,n10739576973,,"el nombre junta a varias personas (Friedrich Hochsinger, Irma Kudrna & Franziska Wasser)",48.1381895,16.2890954
@@ -275,6 +281,7 @@ AT,n10990159736,,sin nombre,48.2165497,16.3743332
 AT,n11049918052,,el nombre junta a varias personas (Karl & Riza Beran),48.1477732,16.2655885
 AT,n11105740401,,el nombre parece colectivo o de varias personas (Familie Kleiner),48.2251376,16.3695254
 AT,n11105774805,,sin nombre,48.2223493,16.3730178
+AT,n11336279971,,"el «nombre» es un rótulo o una institución, no una persona (Großfamilie Bleier)",48.2490166,16.3552122
 AT,n11339479083,,el nombre parece colectivo o de varias personas (Familie Hindels),48.2347219,16.3661708
 AT,n11339479085,,el nombre parece colectivo o de varias personas (Familie Paul),48.2329734,16.3661693
 AT,n11339479089,,sin nombre,48.2322882,16.3663102
@@ -284,7 +291,7 @@ AT,n11339566335,,sin nombre,48.2305459,16.3660498
 AT,n11339566336,,sin nombre,48.2298744,16.3663459
 AT,n11339566337,,el nombre junta a varias personas (Sara & Rosa Scholder),48.2303384,16.3673619
 AT,n11343144281,,sin nombre,48.2320143,16.3768762
-AT,n11343144282,Synagoge,subject:wikidata (Q2375443) no es un humano en Wikidata,48.2305823,16.3717588
+AT,n11343144282,,"el «nombre» es un rótulo o una institución, no una persona (Synagoge)",48.2305823,16.3717588
 AT,n11343144284,,sin nombre,48.2280226,16.3713151
 AT,n11375472232,,el nombre junta a varias personas (Flora & Bernhard Grünfeld),48.2136625,16.3660252
 AT,n11382413880,,"el «nombre» es un rótulo o una institución, no una persona (den Opfern der ""Euthanasie"")",47.4504446,9.9201278
@@ -408,41 +415,41 @@ AT,n14290076085,Erna Knobloch,sin dirección ni inscripción en OSM (y sin perso
 AT,n14317564739,,sin nombre,48.2352542,16.3666407
 AT,n2532459154,Max Reinhardt,OSM y Wikidata (Q43674751) sitúan la placa a 161 m una de otra,47.7891002,13.0372164
 AT,n4690128791,Friderike Zweig-Winternitz,el nombre de OSM («Friderike Zweig-Winternitz») y el de Wikidata Q43675690 («Friderike Maria Zweig») no coinciden,47.8027385,13.0472892
-AT,Q115099778,Gottfried Neunhäuserer,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.7975,13.0442
+AT,Q115099778,Gottfried Neunhäuserer,"la dirección de Wikidata («St.-Peter-Bezirk, 5020 Salzburg») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.7975,13.0442
 AT,Q135984681,Josef Nägele,sin coordenadas P625 únicas en Wikidata,,
 AT,Q135984688,Carl Lampert,sin coordenadas P625 únicas en Wikidata,,
 AT,Q135984691,Markus Silberstein,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Burgstraße 7: dirección sin_coincidencia; Commons sin_datos),47.3659234,9.687611
 AT,Q135984700,the victims of 'Euthanasia',el nombre de Wikidata no coincide con su inscripción,47.4504446,9.9201278
-AT,Q135988478,Anton Ammann,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988489,Karl Beck,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988490,Herta Böckle,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988491,Berta Dietrich,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988492,Eckart Ehringer,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988493,Paul Eppler,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988494,Karin Fleisch,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
+AT,Q135988478,Anton Ammann,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988489,Karl Beck,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988490,Herta Böckle,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988491,Berta Dietrich,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988492,Eckart Ehringer,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988493,Paul Eppler,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988494,Karin Fleisch,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
 AT,Q135988496,Viktor Fritz,el nombre de Wikidata no coincide con su inscripción,47.50446,9.74641
-AT,Q135988497,Franz Josef Geiger,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988499,Anna Graziosa Giacomelli,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988500,Maria Anna Gorbach,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988501,Hermine Gruber,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988502,Herta Hirsch,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988503,Anna Hotz,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988504,Lorenz Kahn,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988505,Anna Knöpfler,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988506,Ernst Meyer,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988507,Georg Meyer,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988509,Rosa Michel,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988510,Johann Armin Müller,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988511,Veronika Plattner,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
+AT,Q135988497,Franz Josef Geiger,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988499,Anna Graziosa Giacomelli,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988500,Maria Anna Gorbach,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988501,Hermine Gruber,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988502,Herta Hirsch,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988503,Anna Hotz,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988504,Lorenz Kahn,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988505,Anna Knöpfler,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988506,Ernst Meyer,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988507,Georg Meyer,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988509,Rosa Michel,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988510,Johann Armin Müller,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988511,Veronika Plattner,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
 AT,Q135988512,Wilhelimine Poschinger,el nombre de Wikidata no coincide con su inscripción,47.50446,9.74641
-AT,Q135988513,Wilhelm Rauch,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988514,Maria Rehor,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988515,Georg Sohler,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988516,Sofie Toth,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q135988517,Anna Tripp,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
-AT,Q136001619,Theodor Anwander,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.50446,9.74641
+AT,Q135988513,Wilhelm Rauch,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988514,Maria Rehor,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988515,Georg Sohler,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988516,Sofie Toth,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q135988517,Anna Tripp,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
+AT,Q136001619,Theodor Anwander,"la dirección de Wikidata («Rathausstraße, 6900 Bregenz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",47.50446,9.74641
 AT,Q136221650,Anna Lagler,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Hauptstraße 1: dirección sin_datos; Commons sin_datos),47.2879,13.0948
-AT,Q137294337,Anton Wimmer,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.349158,13.20282
+AT,Q137294337,Anton Wimmer,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,47.349158,13.20282
 AT,Q137294338,Josef Brugger,sin coordenadas P625 únicas en Wikidata,,
 AT,Q137294346,Kaspar Wind,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Pöllnstraße 2: dirección sin_coincidencia; Commons sin_datos),47.348472,13.200037
 AT,Q137299639,Johanna Brüggler,sin coordenadas P625 únicas en Wikidata,,
@@ -464,8 +471,8 @@ AT,Q139718980,Rupert Sinnhuber,la coordenada de Wikidata no se confirma con una 
 AT,Q139719064,Marie Wurm,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Virgilgasse 8: dirección lejos a 106 m; Commons sin_datos),47.8071,13.0516
 AT,Q139719104,Maria Peller,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Vogelweiderstraße 88: dirección sin_coincidencia; Commons sin_datos),47.81722529,13.053485
 AT,Q43650674,Maria Restituta Kafka,el nombre de Wikidata no coincide con su inscripción,48.088788,16.29724
-AT,Q43650927,Adolf Altmann,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.80758333,13.04969167
-AT,Q43676095,Johann Nobis,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,48.01364,12.93283
+AT,Q43650927,Adolf Altmann,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,47.80758333,13.04969167
+AT,Q43676095,Johann Nobis,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,48.01364,12.93283
 BE,n3478155393,,sin nombre,50.8234553,4.3467366
 BE,n7041711242,Ludwig Hoffmann,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),49.684296,5.813394
 BE,n7041711244,Alice Cerf,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),49.6821979,5.811568
@@ -583,7 +590,6 @@ BE,Q96065652,Emma Goldstein,sin coordenadas P625 únicas en Wikidata,,
 BE,Q96065655,Israel Schalit,sin coordenadas P625 únicas en Wikidata,,
 BE,Q96065659,Rosa Schalit,sin coordenadas P625 únicas en Wikidata,,
 BE,Q96065660,Joseph Markus Schalit,sin coordenadas P625 únicas en Wikidata,,
-BE,Q98825273,Laurent-Joseph Degueldre,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,50.567186111,5.803247222
 CH,n10895750600,Simon Zagiel,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),46.9516868,7.4421051
 CH,n10895750601,Celine Zagiel,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),46.9516836,7.4421067
 CH,n10895750602,Guido Zembsch-Schreve,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),46.9532457,7.4251698
@@ -591,12 +597,12 @@ CH,n13145098258,Federico Marescotti,el nombre de OSM no coincide con la inscripc
 CH,n13145098259,Adriano Bianchi,el nombre de OSM no coincide con la inscripción (0 % de las palabras del nombre están en la inscripción),46.1977534,8.5410916
 CH,n13145098260,Renzo Coen,el nombre de OSM no coincide con la inscripción (0 % de las palabras del nombre están en la inscripción),46.1977775,8.5410827
 CH,n13819047083,Margareta Gümpel,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),47.3603967,8.5608487
-CH,Q135298019,Adele Horitzki Gruenberger,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,46.11818,8.71076
-CH,Q135298043,Errico Gruenberger,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,46.11818,8.71076
-CH,Q135298046,Regina Horitzki,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,46.11818,8.71076
-CH,Q135298049,Egone Gruenberger,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,46.11818,8.71076
+CH,Q135298019,Adele Horitzki Gruenberger,"la dirección de Wikidata («Viale Lungolago, 6614 Brissago, Schweiz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",46.11818,8.71076
+CH,Q135298043,Errico Gruenberger,"la dirección de Wikidata («Viale Lungolago, 6614 Brissago, Schweiz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",46.11818,8.71076
+CH,Q135298046,Regina Horitzki,"la dirección de Wikidata («Viale Lungolago, 6614 Brissago, Schweiz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",46.11818,8.71076
+CH,Q135298049,Egone Gruenberger,"la dirección de Wikidata («Viale Lungolago, 6614 Brissago, Schweiz») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",46.11818,8.71076
 CH,Q135409868,Guido Zembsch-Schreve,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Distelweg 1: dirección sin_coincidencia; Commons sin_datos),46.953246111,7.42517
-CH,Q135411979,Céline Zagiel,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Genfergasse 22: dirección lejos a 67 m; Commons sin_datos),46.951718,7.44208
+CH,Q135411979,Céline Zagiel,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Genfergasse 22: dirección lejos a 45 m; Commons sin_datos),46.951718,7.44208
 CH,Q135415277,Sara Sabine Sommer,el nombre de Wikidata no coincide con su inscripción,47.37559,8.528805
 CH,Q135442596,Fanny Koplewits-Epstein,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Zwinglistrasse 32: dirección lejos a 74 m; Commons sin_datos),47.37838,8.52878
 CH,Q135442600,Julia Rothschild,el nombre de Wikidata no coincide con su inscripción,47.38201,8.54154
@@ -604,12 +610,12 @@ CH,Q135454348,Mina Koplewits-Epstein,el nombre de Wikidata no coincide con su in
 CH,Q135654297,Adriano Bianchi,Wikidata trae varias direcciones o inscripciones distintas,46.1977534,8.5410916
 CH,Q135734482,Renzo Coen (Onsernone),Wikidata trae varias direcciones o inscripciones distintas,46.1977775,8.5410827
 CH,Q135734857,Federico Marescotti,Wikidata trae varias direcciones o inscripciones distintas,46.1977307,8.5410966
-CH,Q136934423,Martha Schwartz,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.545225,7.557747
+CH,Q136934423,Martha Schwartz,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,47.545225,7.557747
 CH,Q139040299,Margareta Gümpel,sin coordenadas P625 únicas en Wikidata,,
 CH,Q141215177,Jakob Lütschg,Wikidata trae varias direcciones o inscripciones distintas,47.405035,9.609009
-CH,Q141645036,André Weill,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.10405,6.826882
-CH,Q141645337,Ida Silberschmidt,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.103351,6.830836
-CH,Q141744325,Anton Reinhardt,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,47.609638,8.235501
+CH,Q141645036,André Weill,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,47.10405,6.826882
+CH,Q141645337,Ida Silberschmidt,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,47.103351,6.830836
+CH,Q141744325,Anton Reinhardt,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,47.609638,8.235501
 CZ,n2456627030,,el nombre junta a varias personas (Ladislav Pám;Zdeněk Pám;Rudolf Pám;Berta Pámová;Jiří Pám),50.0009291,16.2253049
 CZ,n2817959423,,"nota de OSM: placa retirada, ausente o desaparecida (původně 32 – dům již neexistuje    )",50.0909322,14.418608
 CZ,n2817959427,,"nota de OSM: placa retirada, ausente o desaparecida (původně 30/199 – dům již neexistuje, jde o SV roh ulice Pařížská a Bílkova    )",50.0908163,14.4186753
@@ -2263,7 +2269,7 @@ CZ,Q133846257,Stolperstein Albíny Straussové,la etiqueta de Wikidata («Stolpe
 CZ,Q133846258,Stolperstein Armina Grünwalda,la etiqueta de Wikidata («Stolperstein Armina Grünwalda») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
 CZ,Q133846259,Stolperstein Artura Melichara,la etiqueta de Wikidata («Stolperstein Artura Melichara») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
 CZ,Q133846262,Stolperstein Arnošta Spitze,la etiqueta de Wikidata («Stolperstein Arnošta Spitze») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
-CZ,Q133846265,Arnošt Gasler,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,50.102997,14.4192385
+CZ,Q133846265,Arnošt Gasler,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,50.102997,14.4192385
 CZ,Q133846271,Stolperstein Arnošta Oplatky,la etiqueta de Wikidata («Stolperstein Arnošta Oplatky») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
 CZ,Q133846272,Adolf Heller,sin dirección P6375 ni inscripción P1684 en Wikidata,50.2600476,14.5201414
 CZ,Q133846273,Stolperstein Alžběty Hellerové,la etiqueta de Wikidata («Stolperstein Alžběty Hellerové») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
@@ -2584,9 +2590,9 @@ CZ,Q140393825,Stolperstein Kateřiny Mohrové,la etiqueta de Wikidata («Stolper
 CZ,Q140393826,Stolperstein Lore Winternitzové,la etiqueta de Wikidata («Stolperstein Lore Winternitzové») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
 CZ,Q140393827,Stolperstein Štěpána Michaela Winternitze,la etiqueta de Wikidata («Stolperstein Štěpána Michaela Winternitze») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
 CZ,Q140393830,Stolperstein Maxe Ecksteina,la etiqueta de Wikidata («Stolperstein Maxe Ecksteina») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
-CZ,Q140393838,Ervín Fröhlich,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,50.0909322,14.418608
-CZ,Q140393842,MUDr. Otto Heller,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,50.0908163,14.4186753
-CZ,Q140393845,Pavla Fröhlichová,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,50.0909333,14.4186074
+CZ,Q140393838,Ervín Fröhlich,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,50.0909322,14.418608
+CZ,Q140393842,MUDr. Otto Heller,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,50.0908163,14.4186753
+CZ,Q140393845,Pavla Fröhlichová,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,50.0909333,14.4186074
 CZ,Q140393848,Stolperstein Felicie Stránské roz. Schleissnerové,la etiqueta de Wikidata («Stolperstein Felicie Stránské roz. Schleissnerové») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
 CZ,Q140393850,Stolperstein Františky Schleissnerové,la etiqueta de Wikidata («Stolperstein Františky Schleissnerové») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
 CZ,Q140393852,Stolperstein Heřmana Hellmanna,la etiqueta de Wikidata («Stolperstein Heřmana Hellmanna») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
@@ -3460,16 +3466,16 @@ CZ,Q43653033,František Koláček,sin coordenadas P625 únicas en Wikidata,,
 CZ,Q43653048,Jan Jebavý,sin coordenadas P625 únicas en Wikidata,,
 CZ,Q43653159,Ladislav Jandásek,sin coordenadas P625 únicas en Wikidata,,
 CZ,Q43653261,Oskar Basch,sin coordenadas P625 únicas en Wikidata,,
-CZ,Q43676631,Lilly Luisa Liebesná,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,49.406526944,16.412056944
-CZ,Q43676636,Markéta Liebesná,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,49.406526944,16.412056944
-CZ,Q43676648,Otto Liebesný,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,49.406526944,16.412056944
-CZ,Q43676655,Ida Weissbartová,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,49.406527,16.412057
-CZ,Q43676660,Berthold Oppenheim,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,49.5906793,17.2509987
+CZ,Q43676631,Lilly Luisa Liebesná,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,49.406526944,16.412056944
+CZ,Q43676636,Markéta Liebesná,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,49.406526944,16.412056944
+CZ,Q43676648,Otto Liebesný,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,49.406526944,16.412056944
+CZ,Q43676655,Ida Weissbartová,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,49.406527,16.412057
+CZ,Q43676660,Berthold Oppenheim,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,49.5906793,17.2509987
 CZ,Q43676689,Vojtěch Rosický,sin coordenadas P625 únicas en Wikidata,,
 CZ,Q43676753,Friedrich Sommer,sin coordenadas P625 únicas en Wikidata,,
 CZ,Q44059536,Alžběta Kaufthalová,sin dirección P6375 ni inscripción P1684 en Wikidata,49.833638,18.279625
-CZ,Q44200342,Louise Hermanová,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,49.756338,16.466526
-CZ,Q44200346,Karel Brady-Metzl,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,49.004257,14.771297
+CZ,Q44200342,Louise Hermanová,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,49.756338,16.466526
+CZ,Q44200346,Karel Brady-Metzl,"la dirección de Wikidata («Masarykovo nám. 96/I, Třeboň») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",49.004257,14.771297
 CZ,Q62066933,Arnošt Bleiweis,sin dirección P6375 ni inscripción P1684 en Wikidata,49.406176,16.411482
 CZ,Q62066953,Jindřich Bleiweis,sin dirección P6375 ni inscripción P1684 en Wikidata,49.406176111,16.411481944
 CZ,Q62066969,Augusta Bleiweisová,sin dirección P6375 ni inscripción P1684 en Wikidata,49.406176111,16.411481944
@@ -3496,8 +3502,8 @@ CZ,Q94433750,Růžena Bergmannová,sin dirección P6375 ni inscripción P1684 en
 CZ,Q94433758,Josef Bergmann,sin dirección P6375 ni inscripción P1684 en Wikidata,50.099938,14.431355
 CZ,Q94433766,Hugo Kaufmann,sin dirección P6375 ni inscripción P1684 en Wikidata,50.056446,14.424859
 CZ,Q94433800,Kamila Leknerová,sin dirección P6375 ni inscripción P1684 en Wikidata,50.059338,14.420277
-CZ,Q94433802,Josef Waldmann,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,50.082935,14.429012
-CZ,Q98448922,Petr Ginz,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,50.0922709,14.435997
+CZ,Q94433802,Josef Waldmann,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,50.082935,14.429012
+CZ,Q98448922,Petr Ginz,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,50.0922709,14.435997
 CZ,Q99111860,Felix Altenstein,sin coordenadas P625 únicas en Wikidata,,
 CZ,Q99111863,Viktor Altenstein,sin coordenadas P625 únicas en Wikidata,,
 CZ,Q99111865,Anna Altensteinová,sin coordenadas P625 únicas en Wikidata,,
@@ -3670,7 +3676,7 @@ ES,n13429624845,Enrique Martínez Barona,OSM y Wikidata (Q131152148) sitúan la 
 ES,n13431240189,Antonio Ortíz Crespo,OSM y Wikidata (Q131176344) sitúan la placa a 212 m una de otra,40.440727,-3.6983985
 ES,n13431240190,Gonzalo Ortíz Crespo,OSM y Wikidata (Q131176361) sitúan la placa a 212 m una de otra,40.440727,-3.6983962
 ES,n13432694215,Tomás Carretero Velasco,el nombre de OSM («Tomás Carretero Velasco») y el de Wikidata Q131242099 («Tomás Carretero Velsaco») no coinciden,40.13997,-3.4228954
-ES,Q110141551,Lluís Companys,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,41.382788296,2.176879832
+ES,Q110141551,Lluís Companys,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,41.382788296,2.176879832
 ES,Q114982712,Julián Aparicio Baranda,el nombre de Wikidata no coincide con su inscripción,43.27854,-2.988
 ES,Q114983492,Gerardo Moro De la Fuente,sin dirección P6375 ni inscripción P1684 en Wikidata,43.2958066,-2.98766
 ES,Q114983494,Félix Urrutia,sin dirección P6375 ni inscripción P1684 en Wikidata,43.28792829,-2.975816888
@@ -3685,12 +3691,9 @@ ES,Q114983505,Demetrio Morales Morales,sin dirección P6375 ni inscripción P168
 ES,Q114983506,Eugenio Alarcia Obregón,sin dirección P6375 ni inscripción P1684 en Wikidata,43.294483974,-2.98656617
 ES,Q128212497,Pere Giner Castany,sin dirección P6375 ni inscripción P1684 en Wikidata,41.60569,2.29117
 ES,Q130492894,Josep Agustí,sin dirección P6375 ni inscripción P1684 en Wikidata,41.20891,1.67552
-ES,Q131125978,Teodoro Arranz Saugar,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,40.401668,-3.696977
 ES,Q131139292,José Fontanet Moreno,sin coordenadas P625 únicas en Wikidata,,
-ES,Q131151543,Eufemio García García,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,40.458463,-3.714779
-ES,Q131151928,Juan Martín de Loeches García Morales,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,40.426313,-3.654698
 ES,Q131179030,Manuel Salvadores Verdasco,sin coordenadas P625 únicas en Wikidata,,
-ES,Q131240862,Pedro Villaverde Petralanda,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,40.433248,-3.655872
+ES,Q131240862,Pedro Villaverde Petralanda,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Calle Elfo 9: dirección sin_coincidencia; Commons sin_datos),40.433248,-3.655872
 ES,Q131242545,Tomás Gonzáles Hurtado,el nombre de Wikidata no coincide con su inscripción,40.549333,-3.625383
 ES,Q131277469,Stolperstein de Pedro Chaves Álvarez,la etiqueta de Wikidata («Stolperstein de Pedro Chaves Álvarez») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
 ES,Q131566412,Josep Pont Antigas,sin dirección P6375 ni inscripción P1684 en Wikidata,41.60856,2.28728
@@ -3709,7 +3712,7 @@ ES,Q137797656,Francesc Mompart León,sin dirección P6375 ni inscripción P1684 
 ES,Q140002851,Stolperstein Josep Franquesa Vidal,la etiqueta de Wikidata («Stolperstein Josep Franquesa Vidal») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
 ES,Q141525839,Stolperstein Joan Rodríguez Pons,la etiqueta de Wikidata («Stolperstein Joan Rodríguez Pons») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
 ES,Q141525841,Stolperstein Ramir Badia Quintilla,la etiqueta de Wikidata («Stolperstein Ramir Badia Quintilla») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
-ES,Q44060009,Francesc Comellas Llinares,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,41.616497,2.087935
+ES,Q44060009,Francesc Comellas Llinares,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,41.616497,2.087935
 FR,n7176880951,Jaques Schenkel,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),48.5788369,7.7332042
 FR,n7176880965,Florentine Marx,el nombre de OSM no coincide con la inscripción (50 % de las palabras del nombre están en la inscripción),48.5913198,7.7476222
 FR,n7176880966,Lucie Brunschwieg,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),48.5913214,7.7476214
@@ -3736,8 +3739,8 @@ FR,n13071635577,Jean Léger,"OSM marca la posición como dudosa («position esti
 FR,n13071662487,Adolphe Bréret,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",45.8609027,-1.2388017
 FR,n13071674554,Fernand Mathieu Lasperches,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: sin_datos)",44.6821565,-0.5263131
 FR,n13072573523,Jean Cazauvieilh,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: lejos, Commons: sin_datos)",44.6833281,-0.5316165
-FR,n13075948226,Gabrielle Bicard née Weill,la dirección etiquetada existe en OSM pero a 56 m de la posición de la placa,48.0393411,7.545405
-FR,n13075948227,Théophile Bicard,la dirección etiquetada existe en OSM pero a 55 m de la posición de la placa,48.039341,7.5454065
+FR,n13075948226,Gabrielle Bicard née Weill,la dirección etiquetada existe en OSM pero a 41 m de la posición de la placa,48.0393411,7.545405
+FR,n13075948227,Théophile Bicard,la dirección etiquetada existe en OSM pero a 41 m de la posición de la placa,48.039341,7.5454065
 FR,n13094430383,Henri Marx,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: sin_datos)",47.6011137,-2.8519938
 FR,n13094430384,Lise Kwass,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: sin_datos)",47.6011188,-2.8519974
 FR,n13094430385,Aimé le Bouler,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),47.6011162,-2.8519936
@@ -3810,7 +3813,6 @@ FR,n13108660101,Malka Herckowicz,"OSM marca la posición como dudosa («position
 FR,n13108961519,Fernand Uhry,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",47.3268701,5.0384508
 FR,n13108961522,Mireille Steinitz,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",47.3312939,5.0212133
 FR,n13108961523,Rosa Steinitz,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",47.3312934,5.0212146
-FR,n13110437170,Bernard Braun,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",47.7379166,6.8287476
 FR,n13110437171,Émile Pierre,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: sin_datos)",47.7439936,6.8237483
 FR,n13112610336,Violette Silberstein,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",49.4970976,0.1279832
 FR,n13112610337,Rosalie Silberstein,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",49.4970976,0.1279847
@@ -3898,10 +3900,7 @@ FR,n13796129962,Alphonse Asch,la dirección etiquetada existe en OSM pero a 45 m
 FR,n13796129963,Marthe Asch née Mosbacher,la dirección etiquetada existe en OSM pero a 45 m de la posición de la placa,48.6377116,-2.0142612
 FR,n13798935146,Alice Kahn née Lévy,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",47.5101322,6.7998195
 FR,n13798935147,Gaston Kahn,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",47.5101332,6.7998187
-FR,n13799926665,Henri Leskes,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",48.5932241,6.4901376
 FR,n13799926666,,sin nombre,48.593225,6.4901371
-FR,n13799926667,Samuel Leskes,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",48.5932232,6.4901381
-FR,n13809803821,Aloyse Arblade,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",48.8185135,2.3009364
 FR,n13811759323,,sin nombre,48.5921619,6.4903942
 FR,n13812177343,Claude Rosen,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",48.5928335,6.4915215
 FR,n13812177344,Yvonne Prinz Rosen,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",48.5928336,6.4915229
@@ -3987,8 +3986,9 @@ FR,Q133262972,Simone Kanzler,la coordenada de Wikidata no se confirma con una di
 FR,Q135232802,André Aron,sin coordenadas P625 únicas en Wikidata,,
 FR,Q135969391,Chana Baumgart,sin coordenadas P625 únicas en Wikidata,,
 FR,Q135969399,Fernand Mathieux Lasperches,sin coordenadas P625 únicas en Wikidata,,
-FR,Q62071440,Jean Leger,"la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (rue des Quatre Lieues, 14: dirección lejos a 78 m; Commons sin_datos)",45.185147222,-0.581302777
-FR,Q87641003,Rachel Brzesko,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,48.8459369,2.4589191
+FR,Q62071440,Jean Leger,"la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (rue des Quatre Lieues, 14: dirección lejos a 69 m; Commons sin_datos)",45.185147222,-0.581302777
+FR,Q87641003,Rachel Brzesko,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,48.8459369,2.4589191
+GB,n13254180143,Joanne Reilly,"la placa recuerda un hecho posterior a 1950 (1989), sin ninguna fecha 1933-1945 ni palabra de persecución: no es una víctima del nazismo, no se añade",54.1020719,-6.2558928
 GB,n13328895011,Jane Haining Memorial,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),55.9583664,-3.2033248
 GG,n13078376059,Frank Falla,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: sin_datos)",49.4582415,-2.5463095
 GG,n13078376060,Kingston Bailey,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: sin_datos)",49.4554075,-2.5512971
@@ -4344,8 +4344,8 @@ HU,n14079830323,Bartos Lipót és Schäffer Zsófia,sin dirección ni inscripci�
 HU,n14302520793,,"el «nombre» es un rótulo o una institución, no una persona (Agnes Denes időkapszula)",47.5136375,19.0845016
 HU,Q134874179,Imre Kinszky,sin dirección P6375 ni inscripción P1684 en Wikidata,47.514362,19.111396
 HU,Q136911312,Erzsébet Friedrich,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Fö Utca 48: dirección sin_coincidencia; Commons sin_datos),47.112882,17.733469
-HU,Q136911696,Zsigmond Váradi,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Fö Utca 66: dirección lejos a 54 m; Commons sin_datos),47.111993,17.73432
-HU,Q136912085,Ilona Stern,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Fö Utca 66: dirección lejos a 54 m; Commons sin_datos),47.111993,17.73432
+HU,Q136911696,Zsigmond Váradi,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Fö Utca 66: dirección lejos a 46 m; Commons sin_datos),47.111993,17.73432
+HU,Q136912085,Ilona Stern,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Fö Utca 66: dirección lejos a 46 m; Commons sin_datos),47.111993,17.73432
 HU,Q43857990,Balogh Dezső,sin dirección P6375 ni inscripción P1684 en Wikidata,47.497572,19.067236
 HU,Q44861271,Antal Grósz,sin dirección P6375 ni inscripción P1684 en Wikidata,46.430647222,19.480383333
 IT,n3954355257,Mario Ruggeri,el nombre de OSM no coincide con la inscripción (0 % de las palabras del nombre están en la inscripción),45.5975791,9.8824226
@@ -4389,6 +4389,7 @@ IT,n9425154961,Salomone Akivà Maestro (Carlo),el nombre de OSM no coincide con 
 IT,n9455721278,Alessandro Schiffer,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),44.4103679,7.5528187
 IT,n9462990240,Luigi Santomarrone,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),42.3281877,13.3584953
 IT,n9462990241,Annina Santomarrone,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),42.3282023,13.3584906
+IT,n9631521134,Cor Vanlaer,"la placa recuerda un hecho posterior a 1950 (2015), sin ninguna fecha 1933-1945 ni palabra de persecución: no es una víctima del nazismo, no se añade",43.8266231,10.6428773
 IT,n9758791771,Mario Sguazzini,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),44.6929278,10.6382186
 IT,n9810711059,,sin nombre,45.5215287,9.592793
 IT,n9906017289,Giorgio Nullo Foà,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),44.8010685,10.328197
@@ -4531,24 +4532,19 @@ IT,Q133289133,Edvige Norzi,la coordenada de Wikidata no se confirma con una dire
 IT,Q133289146,Vittorio Ottolenghi,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Giardini Vittorio Veneto 10: dirección sin_coincidencia; Commons sin_datos),43.814201,7.776718
 IT,Q133289182,Giuseppe Jerusalaimi Bohor,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Vincenzo Gioberti 25: dirección sin_coincidencia; Commons sin_datos),43.816392,7.776747
 IT,Q133289221,Giulio Osimo,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Volturno 19: dirección sin_coincidencia; Commons sin_datos),43.81712,7.777699
-IT,Q133289239,Anna Luciana Norzi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,43.820373,7.781648
-IT,Q133289254,Guido Norzi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,43.820373,7.781648
-IT,Q133289261,Vittorina Segre,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,43.820373,7.781648
+IT,Q133289239,Anna Luciana Norzi,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Garibaldi 138: dirección sin_coincidencia; Commons sin_datos),43.820373,7.781648
+IT,Q133289254,Guido Norzi,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Garibaldi 138: dirección sin_coincidencia; Commons sin_datos),43.820373,7.781648
+IT,Q133289261,Vittorina Segre,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Garibaldi 138: dirección sin_coincidencia; Commons sin_datos),43.820373,7.781648
 IT,Q133289284,Irma Neufeld,el nombre de Wikidata no coincide con su inscripción,43.816226,7.775092
 IT,Q135735915,Stolperstein dedicato to Renzo Coen Beninfante,la etiqueta de Wikidata («Stolperstein dedicato to Renzo Coen Beninfante») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
 IT,Q137857557,Alfonso Ogliaro,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Gioberti 69: dirección sin_coincidencia; Commons sin_datos),45.056854,7.67084
-IT,Q137857561,Rosetta Rimini,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.06078,7.685109
+IT,Q137857561,Rosetta Rimini,"la dirección de Wikidata («unito, Torino») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",45.06078,7.685109
 IT,Q137857566,Sergio Levi,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Fratelli Carle 6: dirección sin_coincidencia; Commons lejos),45.069328,7.686882
 IT,Q137857567,Germana Garda in Levi,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Fratelli Carle 6: dirección sin_coincidencia; Commons lejos),45.075783,7.670657
 IT,Q137857570,Gino Rossi,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Marconi 38/40: dirección sin_coincidencia; Commons sin_datos),45.054882,7.683488
 IT,Q137857579,Lina Letizia Zargani,el nombre de Wikidata no coincide con su inscripción,45.059146,7.690898
-IT,Q137857580,Benvenuto Colombo,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.071585,7.68464
-IT,Q137857581,Mario Colombo,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.071585,7.68464
-IT,Q137857582,Enrico Colombo,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.071585,7.68464
 IT,Q137857585,Giuseppe Davide Diena,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Mazzini 12: dirección sin_coincidencia; Commons sin_datos),45.062868,7.683863
 IT,Q137857586,Italo Momigliano,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Fontanesi 38: dirección sin_coincidencia; Commons sin_datos),45.073677,7.709278
-IT,Q137857587,Luigi Nada,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.101066,7.740857
-IT,Q137857590,Silvio Segre,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.065815,7.68943
 IT,Q137857604,Itala Lattes,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Passalacqua 6: dirección sin_coincidencia; Commons sin_datos),45.074545,7.670004
 IT,Q137857605,Edvige Lattes,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Passalacqua 6: dirección sin_coincidencia; Commons sin_datos),45.074545,7.670004
 IT,Q137857606,Leone Lattes,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Passalacqua 6: dirección sin_coincidencia; Commons sin_datos),45.074545,7.670004
@@ -4559,79 +4555,46 @@ IT,Q137857619,Renato Forlino,la coordenada de Wikidata no se confirma con una di
 IT,Q137857620,Giuseppe Girotti,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via San Domenico 0: dirección sin_coincidencia; Commons lejos),45.051627,7.681722
 IT,Q137857622,Ferdinando Bagatin,el nombre de Wikidata no coincide con su inscripción,45.074279,7.681696
 IT,Q137857629,Luigi Rosso,el nombre de Wikidata no coincide con su inscripción,45.083247,7.661703
-IT,Q137857631,Leone Sinigaglia,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.06302,7.684461
-IT,Q137857635,Franco Levi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.056865,7.678438
-IT,Q137857636,Marco Ottolenghi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.067009,7.670632
-IT,Q137857637,Giorgio Ottolenghi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.055761,7.670416
-IT,Q137857638,Giacomo Ottolenghi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.055761,7.670416
-IT,Q137857639,Giovanni Roncaglio,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.017123,7.653072
-IT,Q137857640,Giovanni Bini,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.036815,7.674615
-IT,Q137857643,Franco Gallina,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.079216,7.69216
-IT,Q137857644,Umberto Nizza,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.064441,7.674977
-IT,Q137857645,Remo Obbermito,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.061272,7.688743
-IT,Q137857646,Teodoro Sacerdote,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.056941,7.695659
-IT,Q137857647,Rosetta Fubini in Sacerdote,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.056941,7.695659
-IT,Q137857648,Luigi Bachi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.065883,7.653752
-IT,Q137857649,Livia Deutschova,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.074876,7.674496
+IT,Q137857631,Leone Sinigaglia,"la dirección de Wikidata («Piazza Giambattista Bodoni (Conservatorio), Torino») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",45.06302,7.684461
+IT,Q137857639,Giovanni Roncaglio,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Vigliani 172: dirección sin_coincidencia; Commons sin_datos),45.017123,7.653072
+IT,Q137857640,Giovanni Bini,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Spezia 55: dirección sin_coincidencia; Commons sin_datos),45.036815,7.674615
+IT,Q137857648,Luigi Bachi,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Vigone 54: dirección sin_coincidencia; Commons sin_datos),45.065883,7.653752
+IT,Q137857649,Livia Deutschova,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Garibaldi 53: dirección sin_coincidencia; Commons sin_datos),45.074876,7.674496
 IT,Q137857650,Raffaele Filippo Foa,el nombre de Wikidata no coincide con su inscripción,45.061387,7.68338
-IT,Q137857652,Giuseppe Abramo Levi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.073985,7.676606
-IT,Q137857653,Enrico Mellano,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.036815,7.674615
-IT,Q137857655,Luigi Scala,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.065344,7.695645
-IT,Q137857656,Abramo Segre,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.075072,7.65883
-IT,Q137857657,Rosa Segre,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.075072,7.65883
-IT,Q137857658,Aldo Momigliano,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.073677,7.709278
+IT,Q137857652,Giuseppe Abramo Levi,"la dirección de Wikidata («Via della Consolata, 1 bis, Torino») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",45.073985,7.676606
+IT,Q137857653,Enrico Mellano,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Spezia 55: dirección sin_coincidencia; Commons sin_datos),45.036815,7.674615
+IT,Q137857656,Abramo Segre,"la dirección de Wikidata («Via Duchessa Jolanda, 27 bis, Torino») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",45.075072,7.65883
+IT,Q137857657,Rosa Segre,"la dirección de Wikidata («Via Duchessa Jolanda, 27 bis, Torino») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",45.075072,7.65883
+IT,Q137857658,Aldo Momigliano,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Fontanesi 38: dirección sin_coincidencia; Commons sin_datos),45.073677,7.709278
 IT,Q137857659,Dante Momigliano,el nombre de Wikidata no coincide con su inscripción,45.073677,7.709278
-IT,Q137857660,Vittorio Staccione,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.079857,7.665394
-IT,Q137857661,Celestina Muggia in Sacerdote,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.07336,7.693021
-IT,Q137857662,Bice Sacerdote in Tedeschi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.07336,7.693021
-IT,Q137857663,Natalia Tedeschi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.07336,7.693021
-IT,Q137857664,Vittorio Tedeschi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.07336,7.693021
-IT,Q137857665,Marisa Ancona,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.077732,7.655867
 IT,Q137857666,Wanda Debora Foà Colombo,el nombre de Wikidata no coincide con su inscripción,45.056997,7.66196
-IT,Q137857667,Elena Colombo,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.056997,7.66196
-IT,Q137857668,Alessandro Colombo,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.056997,7.66196
-IT,Q137857669,Tranquillo Sartore,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.075831,7.68134
-IT,Q137857670,Francesco Staccione,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.0882425,7.6567084
-IT,Q137857671,Evelina Valbrega,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.055963,7.665527
-IT,Q137857672,Anselmo Jachia,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.055963,7.665527
-IT,Q137857673,Ercole Jachia,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.055963,7.665527
-IT,Q137857674,Ida Jachia,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.055963,7.665527
-IT,Q137857675,Pasqua Jachia,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.055963,7.665527
-IT,Q137857676,Nicola Battista,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.06992,7.70284
-IT,Q137857677,Marco Norzi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.05547,7.69449
-IT,Q137857678,Vanda Maestro,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.056688,7.676885
-IT,Q137857679,Isacco Cohen,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.05944,7.682837
-IT,Q137857680,Nella della Rocca,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.057984,7.680696
-IT,Q137857681,Gina Sbrana,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.057984,7.680696
-IT,Q137857682,Valentino Merlo,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.098886,7.67883
+IT,Q137857667,Elena Colombo,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Piazzi 3: dirección sin_coincidencia; Commons sin_datos),45.056997,7.66196
+IT,Q137857668,Alessandro Colombo,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Piazzi 3: dirección sin_coincidencia; Commons sin_datos),45.056997,7.66196
+IT,Q137857671,Evelina Valbrega,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (via Giuseppe Baretti 31: dirección sin_coincidencia; Commons sin_datos),45.055963,7.665527
+IT,Q137857672,Anselmo Jachia,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (via Giuseppe Baretti 31: dirección sin_coincidencia; Commons sin_datos),45.055963,7.665527
+IT,Q137857673,Ercole Jachia,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (via Giuseppe Baretti 31: dirección sin_coincidencia; Commons sin_datos),45.055963,7.665527
+IT,Q137857674,Ida Jachia,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (via Giuseppe Baretti 31: dirección sin_coincidencia; Commons sin_datos),45.055963,7.665527
+IT,Q137857675,Pasqua Jachia,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (via Giuseppe Baretti 31: dirección sin_coincidencia; Commons sin_datos),45.055963,7.665527
+IT,Q137857678,Vanda Maestro,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Guglielmo Marconi 11: dirección lejos a 170 m; Commons sin_datos),45.056688,7.676885
+IT,Q137857679,Isacco Cohen,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via San Pio V 28: dirección sin_coincidencia; Commons sin_datos),45.05944,7.682837
+IT,Q137857680,Nella della Rocca,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Madama Cristina 18: dirección lejos a 170 m; Commons sin_datos),45.057984,7.680696
+IT,Q137857681,Gina Sbrana,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Madama Cristina 18: dirección lejos a 170 m; Commons sin_datos),45.057984,7.680696
+IT,Q137857682,Valentino Merlo,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Breglio 38: dirección lejos a 175 m; Commons sin_datos),45.098886,7.67883
 IT,Q137857684,Bortolo Gatti,el nombre de Wikidata no coincide con su inscripción,45.111295,7.655454
-IT,Q137857685,Antonio Lazzarin,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.03709,7.667335
-IT,Q137857686,Ida Moresco,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.056865,7.68344
-IT,Q137857687,Umberto Valabrega,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.056865,7.68344
-IT,Q137857688,Donato Colombo,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.069906,7.679027
-IT,Q137857689,Emma Ottolenghi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.069906,7.679027
-IT,Q137857690,Arturo Beltrando,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.073518,7.678392
-IT,Q137857691,Lucia Beltrando,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.073518,7.678392
-IT,Q137857692,Noè Clerino,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.076907,7.672227
-IT,Q137857693,Giuseppe Ghiotti,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.086358,7.680097
-IT,Q137857694,Giovanni Battisti,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.069003,7.682767
-IT,Q137857695,Mauro Finiguerra,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.101405,7.69398
-IT,Q137857696,Cesarina Levi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.08543,7.689442
-IT,Q137857697,Giovanni Abati,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.07403,7.683716
-IT,Q137857698,Cesare Levi,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.074382,7.680746
-IT,Q137857699,Luigi Ottino,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,45.069242,7.690014
+IT,Q137857685,Antonio Lazzarin,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Giulio Bizzozero 24: dirección sin_coincidencia; Commons sin_datos),45.03709,7.667335
+IT,Q137857693,Giuseppe Ghiotti,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Del Carmine 24: dirección sin_coincidencia; Commons sin_datos),45.086358,7.680097
+IT,Q137857694,Giovanni Battisti,"la dirección de Wikidata («Galleria San Federico, Torino») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",45.069003,7.682767
+IT,Q137857697,Giovanni Abati,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via Porta Palatina 17: dirección sin_coincidencia; Commons sin_datos),45.07403,7.683716
+IT,Q137857699,Luigi Ottino,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Via G.Verdi 10: dirección sin_coincidencia; Commons sin_datos),45.069242,7.690014
 IT,Q138030652,Antonio Milani,sin coordenadas P625 únicas en Wikidata,,
-IT,Q43651621,Riccardo Reuven Pacifici,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,44.408376,8.93509
+IT,Q43651621,Riccardo Reuven Pacifici,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,44.408376,8.93509
 IT,Q43747482,Giorgio Labò,sin coordenadas P625 únicas en Wikidata,,
 IT,Q44200291,Giuliano Nicolini,sin coordenadas P625 únicas en Wikidata,,
 IT,Q98825448,Antonio Ayroldi,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Corso Cavour 52: dirección sin_coincidencia; Commons medio),40.730858333,17.579494444
 LT,n13198128892,Iseris Veibordas,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),56.0227531,21.2558111
-LT,n13205323009,Černė Percikovičiūtė,la dirección etiquetada existe en OSM pero a 47 m de la posición de la placa,54.8934859,23.9247311
 LT,n13205323011,Regina Lazersonienė-Safočinskaitė,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",54.9040782,23.9486368
 LT,n13205323012,Dr. Vladimiras Lazersonas,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",54.904079,23.9486363
 LT,n13207297999,Dr. Samuelis Margolis,el nombre de OSM no coincide con la inscripción (50 % de las palabras del nombre están en la inscripción),54.683755,25.2791199
-LT,n13207718483,Jokūbas Šeras,la dirección etiquetada existe en OSM pero a 43 m de la posición de la placa,54.668832,25.2868031
-LT,n13207718486,Rachelė Suckever-Ušajeva,la dirección etiquetada existe en OSM pero a 43 m de la posición de la placa,54.6810042,25.2718755
 LU,n4780670794,Sigmund Koppel,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),49.5092454,5.9247912
 LU,n13009120845,Andrea Viventi,el nombre de OSM no coincide con la inscripción (0 % de las palabras del nombre están en la inscripción),49.469464,5.9583174
 LU,n13052159548,Karl Goldschmidt,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),49.5238536,5.8893844
@@ -6095,7 +6058,7 @@ NL,n14246514081,Mietje Hes-Marcus,el nombre de OSM no coincide con la inscripci�
 NL,n14260026965,Karel Sanders,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),52.5108744,6.0984826
 NL,n14274619779,Levie de Leeuw,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),52.5129978,6.0977083
 NL,n14361909176,,sin nombre,52.1413658,5.2079815
-NL,Q100725462,Andries Gerrits Gort,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,52.262714082,6.1433959
+NL,Q100725462,Andries Gerrits Gort,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,52.262714082,6.1433959
 NL,Q100968587,Stumbling stone in memory of Dina Muller-Berg,la etiqueta de Wikidata («Stumbling stone in memory of Dina Muller-Berg») no sigue el patrón «Stolperstein für/for/voor… NOMBRE»; no se deduce el nombre,,
 NL,Q101414677,David Muller,sin coordenadas P625 únicas en Wikidata,,
 NL,Q101415118,Izaak Muller,sin coordenadas P625 únicas en Wikidata,,
@@ -6115,7 +6078,7 @@ NL,Q101416059,Stumbling Stone in memory of Louis de Vries,la etiqueta de Wikidat
 NL,Q115265032,Edith Stein,sin coordenadas P625 únicas en Wikidata,,
 NL,Q124970050,Helene Mayer-Freudenberg,sin dirección P6375 ni inscripción P1684 en Wikidata,52.011661111,4.722736111
 NL,Q135618406,Stolperstein in Amsterdam,la etiqueta de Wikidata («Stolperstein in Amsterdam») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición,,
-NL,Q137212257,Hermine Bonn,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,51.368185,6.1691174
+NL,Q137212257,Hermine Bonn,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,51.368185,6.1691174
 NL,Q137218033,Hans Günther Bonn,sin coordenadas P625 únicas en Wikidata,,
 NL,Q137218350,Levie Bonn,sin coordenadas P625 únicas en Wikidata,,
 NL,Q137219925,Robert Bonn,sin coordenadas P625 únicas en Wikidata,,
@@ -6124,7 +6087,7 @@ NL,Q87847504,Jan Josephus Hoeder,sin coordenadas P625 únicas en Wikidata,,
 NL,Q87847505,Ares Gerrit Dijkstra,sin coordenadas P625 únicas en Wikidata,,
 NL,Q87847507,Harmen Koopmans,sin coordenadas P625 únicas en Wikidata,,
 NL,Q87847508,Hendrik Jan Droppers,sin coordenadas P625 únicas en Wikidata,,
-NL,Q98448912,Meier Lebensbaum,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,52.012189,6.135163
+NL,Q98448912,Meier Lebensbaum,"la dirección de Wikidata («Kloostersteeg -, Doesburg») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",52.012189,6.135163
 NL,Q98925927,Emanuel (Maantje) Manasse,el nombre de Wikidata no coincide con su inscripción,52.009292,5.729281
 NO,n4567696961,,"el nombre junta a varias personas separadas por comas (Julius Fein, Rösi Fein)",58.9717885,5.7350663
 NO,n7009278790,Sara Rottman,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),59.9119052,10.7499037
@@ -6219,42 +6182,42 @@ NO,Q108164912,Tormod Nygaard,sin coordenadas P625 únicas en Wikidata,,
 NO,Q125500921,Robert Reiss,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Vollholen 39: dirección lejos a 48 m; Commons sin_datos),59.632924152,10.848361724
 NO,Q136649408,"Skoggata 2, minnesmerke","la etiqueta de Wikidata («Skoggata 2, minnesmerke») no sigue el patrón «Stolperstein für/for/voor… NOMBRE»; no se deduce el nombre",,
 NO,Q138608139,Isak Glick,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Ole Sverres plass 1: dirección sin_coincidencia; Commons sin_datos),59.667177,10.766877
-NO,Q138608140,Herman Bild (1882-1942),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.665543,10.799715
-NO,Q138608141,Thina Bild (1881-1942),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.665543,10.799715
-NO,Q138608142,Leopold Lars Bild (1910 - 1943),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.665543,10.799715
-NO,Q138608143,Philip Moses Bild,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.665543,10.799715
-NO,Q138608144,Ida Seline Bild (1922-1942),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.665543,10.799715
-NO,Q138608145,Klara Karpol (1899-1942),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,61.55678,9.939688
-NO,Q138608146,Samuel Karpol (1901 - 1943),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,61.55678,9.939688
-NO,Q138608147,Esther Karpol (1903 - 1942),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,61.55678,9.939688
-NO,Q138608158,Herman Mesner,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Kirkeveien 112: dirección sin_coincidencia; Commons sin_datos),59.934343,10.727675
-NO,Q138608165,Gerda Kermann,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Bernt Ankers gate (tidligere Mariboes gate 12) 10: dirección sin_coincidencia; Commons sin_datos),59.917205,10.7514
-NO,Q138608166,Markus Kermann,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.917205,10.7514
-NO,Q138608167,Morris Kermann,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.917205,10.7514
-NO,Q138608168,Olga Kermann,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.917205,10.7514
+NO,Q138608140,Herman Bild (1882-1942),"la dirección de Wikidata («Sentralveien (i krysset Solfallsveien), 1430 Ås.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.665543,10.799715
+NO,Q138608141,Thina Bild (1881-1942),"la dirección de Wikidata («Sentralveien (i krysset Solfallsveien), 1430 Ås.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.665543,10.799715
+NO,Q138608142,Leopold Lars Bild (1910 - 1943),"la dirección de Wikidata («Sentralveien (i krysset Solfallsveien), 1430 Ås.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.665543,10.799715
+NO,Q138608143,Philip Moses Bild,"la dirección de Wikidata («Sentralveien (i krysset Solfallsveien), 1430 Ås .») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.665543,10.799715
+NO,Q138608144,Ida Seline Bild (1922-1942),"la dirección de Wikidata («Sentralveien (i krysset Solfallsveien), 1430 Ås.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.665543,10.799715
+NO,Q138608145,Klara Karpol (1899-1942),"la dirección de Wikidata («Kongsvegen  , 2647 Sør-Fron.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",61.55678,9.939688
+NO,Q138608146,Samuel Karpol (1901 - 1943),"la dirección de Wikidata («Kongsvegen , 2647 Sør-Fron.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",61.55678,9.939688
+NO,Q138608147,Esther Karpol (1903 - 1942),"la dirección de Wikidata («Kongsvegen , 2647 Sør-Fron.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",61.55678,9.939688
+NO,Q138608158,Herman Mesner,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Kirkeveien 112A: dirección sin_coincidencia; Commons sin_datos),59.934343,10.727675
+NO,Q138608165,Gerda Kermann,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Bernt Ankers gate (tidligere Mariboes gate 12) 10B: dirección sin_coincidencia; Commons sin_datos),59.917205,10.7514
+NO,Q138608166,Markus Kermann,"la dirección de Wikidata («Bernt Ankers gate (tidligere Mariboes gate 12), 0183 Oslo.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.917205,10.7514
+NO,Q138608167,Morris Kermann,"la dirección de Wikidata («Bernt Ankers gate (tidligere Mariboes gate 12), 0183 Oslo.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.917205,10.7514
+NO,Q138608168,Olga Kermann,"la dirección de Wikidata («Bernt Ankers gate (tidligere Mariboes gate 12), 0183 Oslo.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.917205,10.7514
 NO,Q138608190,Israel Jacob Gittelsen,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Thomas Heftyes gate 58: dirección lejos a 139 m; Commons sin_datos),59.922055,10.705008
 NO,Q138608191,Lea Gittelsen,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Thomas Heftyes gate 58: dirección lejos a 139 m; Commons sin_datos),59.922055,10.705008
 NO,Q138608192,Signe Gittelsen,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Thomas Heftyes gate 58: dirección lejos a 139 m; Commons sin_datos),59.922055,10.705008
 NO,Q138608201,Bernhard Müller,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Radøyvegen 237: dirección sin_coincidencia; Commons sin_datos),60.576308,5.220957
-NO,Q138608205,Walter Einziger (1905-1942),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.810823,10.799467
-NO,Q138608206,Emil Gunst (1891-1943),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.810823,10.799467
-NO,Q138608207,Gertrud Gunst (1930-1942),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.810823,10.799467
-NO,Q138608208,Lilly Gunst (1911-1942),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.810823,10.799467
-NO,Q138608209,Ernst Knöpfler,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.810823,10.799467
-NO,Q138608210,Helene Knöpfler (1915-1942),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.810823,10.799467
-NO,Q138608211,Leopold Knöpfler (1939-1942),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.810823,10.799467
-NO,Q138608212,Odd Knöpfler (1940-1942),la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.810823,10.799467
+NO,Q138608205,Walter Einziger (1905-1942),"la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.810823,10.799467
+NO,Q138608206,Emil Gunst (1891-1943),"la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.810823,10.799467
+NO,Q138608207,Gertrud Gunst (1930-1942),"la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.810823,10.799467
+NO,Q138608208,Lilly Gunst (1911-1942),"la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.810823,10.799467
+NO,Q138608209,Ernst Knöpfler,"la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.810823,10.799467
+NO,Q138608210,Helene Knöpfler (1915-1942),"la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.810823,10.799467
+NO,Q138608211,Leopold Knöpfler (1939-1942),"la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.810823,10.799467
+NO,Q138608212,Odd Knöpfler (1940-1942),"la dirección de Wikidata («Jan Baalsruds plass, 1410 Kolbotn.») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.810823,10.799467
 NO,Q138608213,Ludwig Melzer (1886-1942),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Kyrkjeberget 2: dirección lejos a 49 m; Commons sin_datos),58.517969,5.809569
 NO,Q138608214,Jenny Marie Weinstock (1938-1942),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Grefsenveien 30-32: dirección sin_coincidencia; Commons sin_datos),59.943858,10.774316
 NO,Q138608215,Josef Weinstock (1908-1943),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Grefsenveien 30-32: dirección sin_coincidencia; Commons sin_datos),59.943858,10.774316
 NO,Q138608216,Sara Weinstock (1909-1942),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Grefsenveien 30-32: dirección sin_coincidencia; Commons sin_datos),59.943858,10.774316
 NO,Q138608224,Phillip Philipsohn,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Samfunnsgata 2b: dirección lejos a 44 m; Commons sin_datos),70.856857,29.092049
-NO,Q138608225,Leiser Bodd (1872-1942),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15: dirección sin_coincidencia; Commons sin_datos),59.916341,10.762129
-NO,Q138608226,Janta Bodd (1902-1942),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15: dirección sin_coincidencia; Commons sin_datos),59.916341,10.762129
-NO,Q138608227,Anna Bodd (1908-1942),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15: dirección sin_coincidencia; Commons sin_datos),59.916341,10.762129
-NO,Q138608228,Bernhard Bodd (1912-1945),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15: dirección sin_coincidencia; Commons sin_datos),59.916341,10.762129
-NO,Q138608229,Moritz Bodd,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15: dirección sin_coincidencia; Commons sin_datos),59.916341,10.762129
-NO,Q138608230,Sofie Bodd (1913-1942),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15: dirección sin_coincidencia; Commons sin_datos),59.916341,10.762129
+NO,Q138608225,Leiser Bodd (1872-1942),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15A: dirección sin_coincidencia; Commons sin_datos),59.916341,10.762129
+NO,Q138608226,Janta Bodd (1902-1942),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15A: dirección sin_coincidencia; Commons sin_datos),59.916341,10.762129
+NO,Q138608227,Anna Bodd (1908-1942),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15A: dirección sin_coincidencia; Commons sin_datos),59.916341,10.762129
+NO,Q138608228,Bernhard Bodd (1912-1945),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15A: dirección sin_coincidencia; Commons sin_datos),59.916341,10.762129
+NO,Q138608229,Moritz Bodd,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15A: dirección sin_coincidencia; Commons sin_datos),59.916341,10.762129
+NO,Q138608230,Sofie Bodd (1913-1942),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lakkegata 15A: dirección sin_coincidencia; Commons sin_datos),59.916341,10.762129
 NO,Q138608231,David Bergmann (1925-1943),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Sigurds gate 5: dirección sin_coincidencia; Commons sin_datos),59.911666,10.773179
 NO,Q138608232,Else Marie Bergmann (1922-1942),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Sigurds gate 5: dirección sin_coincidencia; Commons sin_datos),59.911666,10.773179
 NO,Q138608233,Martin Bergmann (1896-1943),la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Sigurds gate 5: dirección sin_coincidencia; Commons sin_datos),59.911666,10.773179
@@ -6283,81 +6246,62 @@ NO,Q44177851,Bertha Pauline Buchmann f. Fischer,la coordenada de Wikidata no se 
 NO,Q44177864,Cissi Pera Klein,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Museumsplass 3: dirección sin_coincidencia; Commons sin_datos),63.430515,10.395053
 NO,Q44177891,David Wolfsohn,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Nedre Bakklandet 91: dirección sin_coincidencia; Commons sin_datos),63.432644,10.409729
 NO,Q44177905,Dina Sofie Fischer f. Bekker,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 27: dirección sin_coincidencia; Commons sin_datos),63.4322163,10.4088179
-NO,Q44177918,Ernst Salomon Savosnick,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.4345333,10.4168395
 NO,Q44177946,Eva Jenny Fischer,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 27: dirección sin_coincidencia; Commons sin_datos),63.4322163,10.4088179
-NO,Q44177960,Gerd Gittel Isaksen,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.430515,10.395053
-NO,Q44177974,Harry Samuel Isaksen,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.430515,10.395053
+NO,Q44177960,Gerd Gittel Isaksen,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Øysteins gate 1: dirección sin_coincidencia; Commons sin_datos),63.430515,10.395053
+NO,Q44177974,Harry Samuel Isaksen,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Øysteins gate 1: dirección sin_coincidencia; Commons sin_datos),63.430515,10.395053
 NO,Q44177986,Henrik Mendelsohn,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Kjøpmannsgata 40: dirección sin_coincidencia; Commons sin_datos),63.430515,10.395053
 NO,Q44177997,Herman Schidorsky,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 9: dirección lejos a 65 m; Commons sin_datos),63.4339571,10.4137391
 NO,Q44178009,Hirsch Zvi Komissar,el nombre de Wikidata no coincide con su inscripción,63.4227399,10.3907273
-NO,Q44178184,Sara Gitel Arsch,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.929713,10.723415
-NO,Q44178247,Claire Türkheimer,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.430939,6.431994
 NO,Q44178286,Jenny Rosenberg f. Philipsohn,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 51: dirección lejos a 166 m; Commons sin_datos),63.4350462,10.4183763
 NO,Q44178302,Bernhard Rosenberg,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 51: dirección lejos a 166 m; Commons sin_datos),63.4350462,10.4183763
 NO,Q44178312,Charles Efraim Rosenberg,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 51: dirección lejos a 166 m; Commons sin_datos),63.4350462,10.4183763
-NO,Q44178421,Marie Hurwitz,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91365,10.772529
-NO,Q44178436,Salomon Hurwitz,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91365,10.772529
-NO,Q44178448,Bjørn Johnny Gedanken,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91869,10.764809
-NO,Q44178461,Heiman David Gedanken,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91869,10.764809
-NO,Q44178472,Josef Gedanken,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91869,10.764809
-NO,Q44178479,Lilly Gedanken,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91869,10.764809
-NO,Q44178494,Lina Gedanken,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91869,10.764809
-NO,Q44178522,Esther Jaffe,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91869,10.764809
-NO,Q44178531,Hanna Jaffe,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91869,10.764809
-NO,Q44178543,Ida Jaffe,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91869,10.764809
-NO,Q44178554,Isak Jaffe,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91869,10.764809
-NO,Q44178571,Benzel Braude,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.920129,10.756335
-NO,Q44178627,Mathilde Rothenberg,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.919411,10.748996
-NO,Q44178639,Anna Sara Feinberg,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.919544,10.748698
-NO,Q44178654,Herman Feinberg,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.919544,10.748698
-NO,Q44178669,Martin Feinberg,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.919544,10.748698
-NO,Q44178683,Nathan Reichmann,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.919544,10.748698
+NO,Q44178639,Anna Sara Feinberg,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rosteds gate 14: dirección sin_coincidencia; Commons sin_datos),59.919544,10.748698
+NO,Q44178654,Herman Feinberg,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rosteds gate 14: dirección sin_coincidencia; Commons sin_datos),59.919544,10.748698
+NO,Q44178669,Martin Feinberg,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rosteds gate 14: dirección sin_coincidencia; Commons sin_datos),59.919544,10.748698
+NO,Q44178683,Nathan Reichmann,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rosteds gate 14: dirección sin_coincidencia; Commons sin_datos),59.919544,10.748698
 NO,Q44178858,Jacob Maliniak,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Elgesetergate 30: dirección sin_coincidencia; Commons sin_datos),63.430515,10.395053
 NO,Q44178871,Jenny Charlotte Schidorsky f. Savosnick,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 9: dirección sin_coincidencia; Commons sin_datos),63.4322163,10.4088179
-NO,Q44178886,Josef Grabowski,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.430515,10.395053
-NO,Q44178967,Leonard Elieser Isaksen,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.424873,10.382154
-NO,Q44178994,Liesbeth Dorothea Grabowski f. Wolff,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.430515,10.395053
+NO,Q44178886,Josef Grabowski,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 9: dirección sin_coincidencia; Commons sin_datos),63.430515,10.395053
+NO,Q44178994,Liesbeth Dorothea Grabowski f. Wolff,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 9: dirección sin_coincidencia; Commons sin_datos),63.430515,10.395053
 NO,Q44179037,Mathilde Dorothea Maliniak f. Halpern,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Elgesetergate 30: dirección sin_coincidencia; Commons sin_datos),63.430515,10.395053
 NO,Q44179117,Robert Savosnick,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Wessels gate 5: dirección sin_coincidencia; Commons sin_datos),63.430515,10.395053
-NO,Q44179132,Rosa Isaksen,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.430515,10.395053
+NO,Q44179132,Rosa Isaksen,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Øysteins gate 1: dirección sin_coincidencia; Commons sin_datos),63.430515,10.395053
 NO,Q44179140,Rosa Kahn f. Fischer,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Brattørveita 7: dirección sin_coincidencia; Commons sin_datos),63.434375552,10.402427
-NO,Q44179154,Sigurd Dvoretsky,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.4324207,10.3900521
 NO,Q44179181,Wulf Klein,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Museumsplass 3: dirección sin_coincidencia; Commons sin_datos),63.430515,10.395053
 NO,Q44179524,Moses Katz,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Karl den 12: dirección sin_coincidencia; Commons sin_datos),59.912552,10.755725
 NO,Q44179532,Salomon Pinkowitz,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Karl den 12: dirección sin_coincidencia; Commons sin_datos),59.912552,10.755725
 NO,Q44179742,Max Oster,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rådhusgaten 28: dirección sin_coincidencia; Commons lejos),59.908611,10.746482
 NO,Q44179758,Selig Blomberg,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Bygdøy allé 59: dirección sin_coincidencia; Commons sin_datos),59.922064,10.688943
 NO,Q44179911,Herman Sachnowitz,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Torget 4: dirección sin_coincidencia; Commons sin_datos),59.059,10.027088
-NO,Q44179929,Israel Leib Sachnowitz,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.05316,10.026924
+NO,Q44179929,Israel Leib Sachnowitz,"la dirección de Wikidata («Torget, Larvik») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.05316,10.026924
 NO,Q44180012,Isak Krupp,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lilleakerveien 34: dirección sin_coincidencia; Commons sin_datos),59.917447,10.637018
 NO,Q44180026,Jan Larry Lasse Krupp,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lilleakerveien 34: dirección sin_coincidencia; Commons sin_datos),59.917447,10.637018
 NO,Q44180041,Rachel Krupp f. Rothschild,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Lilleakerveien 34: dirección sin_coincidencia; Commons sin_datos),59.917447,10.637018
-NO,Q44180103,Dina Leimann,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.923463,10.758624
-NO,Q44180122,Isak Leimann,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.923463,10.758624
+NO,Q44180103,Dina Leimann,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Paulus plass 3: dirección sin_coincidencia; Commons sin_datos),59.923463,10.758624
+NO,Q44180122,Isak Leimann,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Paulus plass 3: dirección sin_coincidencia; Commons sin_datos),59.923463,10.758624
 NO,Q44180136,Anna Esther Kronik,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Sofienberggata 4: dirección lejos a 161 m; Commons sin_datos),59.92346,10.758624
-NO,Q44180170,Rubin Pinkowitz,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.92236,10.761096
+NO,Q44180170,Rubin Pinkowitz,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Sofienberggata 10: dirección sin_coincidencia; Commons sin_datos),59.92236,10.761096
 NO,Q44180374,Simon Davidsen,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Holbergs plass 7A: dirección sin_coincidencia; Commons sin_datos),59.9193855,10.7340274
 NO,Q44180470,Ida Oster f. Tarschys,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Colletsgt 10B: dirección sin_coincidencia; Commons sin_datos),59.925261,10.736987
 NO,Q44180485,Mirjam Oster,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Colletsgt 10B: dirección sin_coincidencia; Commons sin_datos),59.925261,10.736987
-NO,Q44180608,Georg Rechenberg,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.413581,5.267987
-NO,Q44180627,Moritz Rabinowitz,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.413581,5.267987
+NO,Q44180608,Georg Rechenberg,"la dirección de Wikidata («Øvregata, Haugesund») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.413581,5.267987
+NO,Q44180627,Moritz Rabinowitz,"la dirección de Wikidata («Strandgaten, Haugesund») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.413581,5.267987
 NO,Q44180645,Moses Schapiro,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skolegata 5: dirección sin_coincidencia; Commons sin_datos),65.838873,13.192428
 NO,Q44180804,Karl Jacques Ajzenberg,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Seehusensgate 45: dirección sin_coincidencia; Commons sin_datos),58.970714,5.71288
 NO,Q44180984,Ida Becker f. Goldmann,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Welhavens gate 36: dirección sin_coincidencia; Commons sin_datos),60.385778,5.320656
 NO,Q44180989,Israel Josef Becker,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Welhavensgate 36: dirección sin_coincidencia; Commons sin_datos),60.385778,5.320656
-NO,Q44180990,Oscar Müller,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.391263,5.322054
+NO,Q44180990,Oscar Müller,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Møllenprisbakken 4a: dirección sin_coincidencia; Commons sin_datos),60.391263,5.322054
 NO,Q44180993,Sam Becker,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Welhavens gate 36: dirección sin_coincidencia; Commons sin_datos),60.385727,5.320776
-NO,Q44181051,Alexander Moses Scharff,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.165803,10.255742
-NO,Q44181052,Bjørn Meier Scharff,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.165803,10.255742
-NO,Q44181059,Herman Rafael Scharff,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.165803,10.255742
-NO,Q44181062,Idar Scharff,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.165803,10.255742
-NO,Q44181065,Jacob Scharff,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.165803,10.255742
-NO,Q44181072,Jessy Scharff,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.165803,10.255742
-NO,Q44181080,Julius Meilach Scharff,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.165803,10.255742
-NO,Q44181081,Lisa Lea Scharff f. Bobrow,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.165803,10.255742
+NO,Q44181051,Alexander Moses Scharff,"la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",60.165803,10.255742
+NO,Q44181052,Bjørn Meier Scharff,"la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",60.165803,10.255742
+NO,Q44181059,Herman Rafael Scharff,"la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",60.165803,10.255742
+NO,Q44181062,Idar Scharff,"la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",60.165803,10.255742
+NO,Q44181065,Jacob Scharff,"la dirección de Wikidata («søn, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",60.165803,10.255742
+NO,Q44181072,Jessy Scharff,"la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",60.165803,10.255742
+NO,Q44181080,Julius Meilach Scharff,"la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",60.165803,10.255742
+NO,Q44181081,Lisa Lea Scharff f. Bobrow,"la dirección de Wikidata («Søndre Torv, Hønefoss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",60.165803,10.255742
 NO,Q44181224,David Isak Bermann,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Geitmyrsveien 15a: dirección sin_coincidencia; Commons sin_datos),59.926632,10.743163
-NO,Q44181433,Fritz Robert Mankiewicz,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.79603,11.064564
-NO,Q44181436,Wulff Becker,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.916255,10.752048
+NO,Q44181433,Fritz Robert Mankiewicz,"la dirección de Wikidata («Hamar kretsfengsel, Hamar») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",60.79603,11.064564
 NO,Q44181454,Arvid Bodd,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Haneborgveien 70: dirección sin_coincidencia; Commons sin_datos),59.940498,10.973408
 NO,Q44181458,Bjørn Benjamin Bodd,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Haneborgveien 70: dirección sin_coincidencia; Commons sin_datos),59.940525,10.973377
 NO,Q44181463,Isak Bodd,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Haneborgveien 70: dirección sin_coincidencia; Commons sin_datos),59.940525,10.973426
@@ -6365,7 +6309,7 @@ NO,Q44181469,Liv Bodd,la coordenada de Wikidata no se confirma con una direcció
 NO,Q44181471,Mary Dora Bodd,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Haneborgveien 70: dirección sin_coincidencia; Commons sin_datos),59.940547,10.973417
 NO,Q44181478,Rakel Bodd,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Haneborgveien 70: dirección sin_coincidencia; Commons sin_datos),59.940552,10.973364
 NO,Q44181480,Salomon David Bodd,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Haneborgveien 70: dirección sin_coincidencia; Commons sin_datos),59.94052,10.973381
-NO,Q44181487,Paul Heiman Ullmann,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.436553,10.667362
+NO,Q44181487,Paul Heiman Ullmann,"la dirección de Wikidata («Skoggt, Moss») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",59.436553,10.667362
 NO,Q44181506,Michael Davidsen,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skolegata 1: dirección lejos a 45 m; Commons sin_datos),59.950546,11.011903
 NO,Q44181507,John Charles Davidsen,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skolegata 1: dirección lejos a 44 m; Commons sin_datos),59.950568,11.011919
 NO,Q44181510,Israel Smith,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skolegata 1: dirección lejos a 46 m; Commons sin_datos),59.950575,11.011888
@@ -6373,41 +6317,29 @@ NO,Q44181523,Leopold Rottmann,la coordenada de Wikidata no se confirma con una d
 NO,Q44181525,Sara Rottmann,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Jernbantorget 5: dirección sin_coincidencia; Commons sin_datos),59.910815,10.749886
 NO,Q44181577,Rubin Claes,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Heimdalsgata 38: dirección sin_coincidencia; Commons sin_datos),59.914562,10.767019
 NO,Q44181587,Sofie Claes f. Sneider,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Heimdalsgata 38: dirección sin_coincidencia; Commons sin_datos),59.914556,10.767004
-NO,Q44181658,Julius Eidenbom,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.391231,5.322016
-NO,Q44181730,Wulff Isaksen,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.435032,10.415935
+NO,Q44181658,Julius Eidenbom,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (C Sundts gt 18: dirección sin_coincidencia; Commons sin_datos),60.391231,5.322016
+NO,Q44181730,Wulff Isaksen,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Innherredsveien 25: dirección sin_coincidencia; Commons sin_datos),63.435032,10.415935
 NO,Q44181758,Luise Benvenida Seligmann,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Irisveien 20: dirección lejos a 51 m; Commons sin_datos),59.950892,10.74763
 NO,Q44181768,Richard Sally Seligmann,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Irisveien 20: dirección lejos a 51 m; Commons sin_datos),59.950892,10.74763
 NO,Q44181783,Rolf Sally Seligmann,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Irisveien 20: dirección lejos a 51 m; Commons sin_datos),59.950892,10.74763
 NO,Q44181800,Julius Heilbut,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Irisveien 20: dirección lejos a 51 m; Commons sin_datos),59.950892,10.74763
 NO,Q44181816,Rosalie Heilbut,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Irisveien 20: dirección lejos a 51 m; Commons sin_datos),59.950892,10.74763
-NO,Q44181859,Arne Willy Steinsapir,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.92714,10.749515
-NO,Q44182188,David Heyman Bersohn,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.240756,10.383479
-NO,Q44182201,Isak Meyer Bersohn,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.240756,10.383479
-NO,Q44182217,Markus Aleksander Bersohn,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,60.240756,10.383479
+NO,Q44182188,David Heyman Bersohn,"la dirección de Wikidata (««Brovoll», Nesbakken, 3520 Jevnaker») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",60.240756,10.383479
+NO,Q44182201,Isak Meyer Bersohn,"la dirección de Wikidata (««Brovoll», Nesbakken, 3520 Jevnaker») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",60.240756,10.383479
+NO,Q44182217,Markus Aleksander Bersohn,"la dirección de Wikidata (««Brovoll», Nesbakken, 3520 Jevnaker») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",60.240756,10.383479
 NO,Q44182229,Benjamin Markus Leventhal,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Biskop Gunnerus gate 12: dirección sin_coincidencia; Commons sin_datos),59.912142,10.752978
-NO,Q44182242,Berit Leventhal,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.912142,10.752978
-NO,Q44182255,Esther Leventhal,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.912142,10.752978
+NO,Q44182242,Berit Leventhal,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Biskop Gunnerus gate 12: dirección sin_coincidencia; Commons sin_datos),59.912142,10.752978
+NO,Q44182255,Esther Leventhal,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Biskop Gunnerus gate 12: dirección sin_coincidencia; Commons sin_datos),59.912142,10.752978
 NO,Q44182326,Fritz Hammerschlag,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Marcus Thranes gate 30: dirección sin_coincidencia; Commons sin_datos),59.125064,11.382967
 NO,Q44182341,Toni Hammerschlag,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Marcus Thranesgate 30: dirección sin_coincidencia; Commons sin_datos),59.125064,11.382967
 NO,Q44182353,Nora Lustig,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skåla Kleive 6456: dirección sin_coincidencia; Commons sin_datos),62.797057,7.645556
 NO,Q44182367,Robert Weinstein,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skåla Kleive 6456: dirección sin_coincidencia; Commons sin_datos),62.797057,7.645556
 NO,Q44182379,Tibor Taglicht,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skåla Kleive 6456: dirección sin_coincidencia; Commons sin_datos),62.797057,7.645556
 NO,Q44182390,Vera Taglicht,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skåla Kleive 6456: dirección sin_coincidencia; Commons sin_datos),62.797057,7.645556
-NO,Q44182400,Simon Mahler,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.42912,10.401167
-NO,Q44182414,Selik Elieser Mahler,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.42912,10.401167
 NO,Q44182427,Lea Steinfeld,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rasmus Rønnebergs gate 18: dirección lejos a 49 m; Commons sin_datos),62.471964,6.157401
 NO,Q44182443,Israel Steinfeld,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rasmus Rønnebergs gate 18: dirección lejos a 49 m; Commons sin_datos),62.471964,6.157401
 NO,Q44182458,Morten Steinfeld,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rasmus Rønnebergs gate 18: dirección lejos a 49 m; Commons sin_datos),62.471964,6.157401
 NO,Q44182471,Reidun Rasche Steinfeld,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rasmus Rønnebergs gate 18: dirección lejos a 49 m; Commons sin_datos),62.471964,6.157401
-NO,Q44182489,Malke Rachel Mahler,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.429094,10.40113
-NO,Q44182503,Mina Scholamis Mahler,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,63.42912,10.401167
-NO,Q44182843,Isak Leib Jelaawitz,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91924,10.740034
-NO,Q44182856,Edda Aschkanaze,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.917346,10.716345
-NO,Q44182868,Sarah Aschkanaze,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.917346,10.716345
-NO,Q44182893,Friedrich Weiner,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.918722,10.733522
-NO,Q44182905,Ida Weiner,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.918722,10.733522
-NO,Q44182918,Lewek Levi Jacobowitz,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.918722,10.733522
-NO,Q44182930,Benno Hurwitz,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,59.91365,10.772529
 PL,n2369176935,Pomnik pamięci mieszkańców poległych w czasie II Wojny Światowej,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),51.1165732,18.8691391
 PL,n4431010985,,el nombre contiene cifras (Miejsce zbrodni 1939.12.13),52.6080433,16.5808471
 PL,n5351143202,,sin nombre,52.6083496,16.5861318
@@ -6431,7 +6363,7 @@ PL,n13732239980,Ludwik Wodzicki,sin dirección ni inscripción en OSM (y sin per
 PL,n13912865690,Frank Wilhelm Herzberg,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),50.3027924,18.7917641
 PL,n14103623453,Szyfra Gottlieb z d. Ałasowicz,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),53.1281157,23.1552209
 PL,Q136349728,AbrrahamWaksztok,nombre de una sola palabra (AbrrahamWaksztok),,
-PL,Q136349984,Ester Waksztok,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,52.406397,16.933097
+PL,Q136349984,Ester Waksztok,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,52.406397,16.933097
 SI,n12250199338,,sin nombre,46.054198,14.5887316
 SI,n12366997502,,sin nombre,45.8413294,13.5835047
 SI,n12367020910,Grobnica na pokopališču,el nombre de OSM no coincide con la inscripción (0 % de las palabras del nombre están en la inscripción),45.8518478,13.5801699
@@ -6488,7 +6420,7 @@ SK,n13919460960,Eva Rotterová,el nombre de OSM no coincide con la inscripción 
 SK,n14121105171,Pamätná tabuľa J. V. Luňáčka,el nombre de OSM no coincide con la inscripción (33 % de las palabras del nombre están en la inscripción),48.2697883,19.3629398
 SK,n14175205669,,sin nombre,48.2861552,17.2707968
 SK,n14391757889,,sin nombre,48.152216,17.1098586
-SK,Q112122280,Mária Schulzová,la dirección de Wikidata no tiene calle y número legibles; sin comprobar contra OSM,48.59027,17.835641
+SK,Q112122280,Mária Schulzová,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,48.59027,17.835641
 UA,n3497889193,Меморіал на місці загибелі Бруно Шульца,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),49.352758,23.5050264
 UA,n5378715682,,sin nombre,50.4497584,30.4608684
 UA,n6672731907,Володимир Мисечко,el nombre de OSM no coincide con la inscripción (0 % de las palabras del nombre están en la inscripción),50.6193524,26.2491207
