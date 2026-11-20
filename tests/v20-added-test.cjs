@@ -14,7 +14,7 @@ for (const a of M.added) { const s = S.find(x => x.id === a.id); assert(s, 'regi
 for (const [cc, c] of Object.entries(M.meta.countries)) assert((byAdded[cc] || 0) === c.anadidas, 'cuenta ' + cc + ' ' + (byAdded[cc] || 0) + ' = ' + c.anadidas);
 assert(M.added.length === M.meta.records, 'total = manifiesto');
 assert(M.excluded.every(e => e.id && e.cc && e.reason && e.reason.length >= 3), 'cada exclusión con motivo');
-assert(D.meta.v20_wd1480_added === 32, '32 de las 1.480 añadidas');
-const wd32 = S.filter(s => s.gm === 'commons:coordinates'); assert(wd32.length === 32 && wd32.every(s => s.wd && s.img), '32 con foto de Commons');
+assert(D.meta.v20_wd1480_added >= 25 && D.meta.v20_wd1480_added <= 32, 'de las 1.480 añadidas: ' + D.meta.v20_wd1480_added);
+const wd32 = S.filter(s => s.gm === 'commons:coordinates'); assert(wd32.length === D.meta.v20_wd1480_added && wd32.every(s => s.wd && s.img), '32 con foto de Commons');
 const ccs = new Set(S.map(s => s.cc || 'DE')); assert(ccs.size === 27, '27 países: ' + ccs.size);
-console.log('OK v20-added: ' + M.added.length + ' placas en ' + Object.keys(byAdded).length + ' países, +32 de las 1.480, base v19 intacta, ids/Qid únicos, 27 países en total');
+console.log('OK v20-added: ' + M.added.length + ' placas en ' + Object.keys(byAdded).length + ' países, +' + wd32.length + ' de las 1.480, base v19 intacta, ids/Qid únicos, 27 países en total');

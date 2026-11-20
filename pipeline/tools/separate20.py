@@ -14,7 +14,9 @@ dump = json.load(open(sys.argv[1])); ccs = sys.argv[2:]
 S = json.load(open(R / 'data/stones.json', encoding='utf-8'))['stones']; byid = {s['id']: s for s in S}
 rows = {r[0]: r for r in dump['rows']}
 cf = Path(__file__).with_name('sidewalk-comp20.json'); comp = json.load(open(cf)) if cf.exists() else {}
-legit = set(json.load(open(D / 'legit_inside.json'))); A_ = json.load(open(D / 'ang20.json')); angs = A_['ang']; alias = set(A_['alias'])
+legit = set(json.load(open(D / 'legit_inside.json')))
+xf = Path(__file__).with_name('sidewalk-extra20.json'); EXTRA = json.load(open(xf)) if xf.exists() else {}   # holgura extra del grupo (si no, sidewalk20 descarta el desplazamiento por no caber)
+A_ = json.load(open(D / 'ang20.json')); angs = A_['ang']; alias = set(A_['alias'])
 changed = set(); total_pairs = 0; unresolved = 0
 for cc in ccs:
     sel = [s for s in S if (s.get('cc') or 'DE') == cc]
@@ -56,7 +58,7 @@ for cc in ccs:
         PB, polys, ids, lines, RW = SW.local_geom(NN, la0, lo0)
         pins = [SW.to_xy(s['la'], s['lo'], o) for s in g]
         vis = [s for s in g if s['id'] not in alias] or g; ang = angs.get(vis[0]['id'])
-        okf = SW.make_okf(PB, pins, SW.slots(len(vis), ang or 0.0), ang, SW.icon_half(la0), 0.0)
+        okf = SW.make_okf(PB, pins, SW.slots(len(vis), ang or 0.0), ang, SW.icon_half(la0), EXTRA.get(g_, 0.0))
         cur = [(s['dla'], s['dlo']) for s in g if 'dla' in s]
         q0 = SW.to_xy(sum(a for a, b in cur) / len(cur), sum(b for a, b in cur) / len(cur), o) if cur else (0.0, 0.0)
         mem = [(sid, pts[sid]) for sid in (s['id'] for s in g) if sid in pts]
@@ -65,7 +67,7 @@ for cc in ccs:
             ux, uy = math.cos(math.radians(a)), math.sin(math.radians(a)); t = 0.2
             while t <= MAXSEP:
                 q = (q0[0] + ux * t, q0[1] + uy * t)
-                if math.hypot(*q) <= SW.MAXMOVE and okf(q) and not any(near_pts(py + uy * t, px + ux * t, g_, GAP) for _, (py, px, _) in mem):
+                if math.hypot(*q) <= SW.MAXMOVE - (SW.spread(len(g)) if 1 < len(g) <= 20 else 0.0) and okf(q) and not any(near_pts(py + uy * t, px + ux * t, g_, GAP) for _, (py, px, _) in mem):
                     if best is None or t < best[0]: best = (t, q)
                     break
                 t += 0.2

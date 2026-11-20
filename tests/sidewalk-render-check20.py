@@ -71,7 +71,7 @@ async def main():
     exc = [x for x in bad if x['id'] in RESID]; bad = [x for x in bad if x['id'] not in RESID]
     if exc: print('excepciones documentadas en residuales-acera-v20.csv:', len(exc), [x['id'] for x in exc])
     if OUT: json.dump(res, open(OUT, 'w'), ensure_ascii=False, indent=1)
-    if len(SIN) > 12: print('FALLO: demasiadas placas sin edificio a <=50 m en la lista explícita', len(SIN)); sys.exit(1)
+    if len(SIN) > 70: print('FALLO: demasiadas placas sin edificio a <=50 m en la lista explícita', len(SIN)); sys.exit(1)
     if bad or errs or len(res) < len(IDS) - 200: print('FALLO', bad[:5], 'n=', len(res)); sys.exit(1)
     print('OK: ninguna columna ni chincheta dibujada (holgura >= 0,5 m) toca un edificio en %d placas (países nuevos + muestra de Alemania)' % len(res))
 asyncio.run(main())

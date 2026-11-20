@@ -26,6 +26,18 @@ for cc, ss in byc.items():
 # v20r2 (auditoría C, F1): placas sin ningún edificio de OSM a <=50 m (tras volver a traer las huellas): lista explícita; el test falla si aparece alguna fuera de ella
 def _d50(s, bids): return any(min(SW.hav(s['la'], s['lo'], a, b) for r in B[bid]['o'] for a, b in r) <= 50 for bid in bids)
 sin_ed = sorted(i for i in ids if not _d50(next(s for s in sel if s['id'] == i), near[i])) if False else sorted(s['id'] for s in sel if not _d50(s, near[s['id']]))
+# CSV con la distancia al edificio más cercano (los datos incluyen edificios hasta 120 m: más lejos = ninguno en OSM)
+import csv
+def _dmin(s):
+    N = _N.setdefault(s.get('cc') or 'DE', SW.load_near(s.get('cc') or 'DE')); best = None
+    for bid in N.around(N.bi, s['la'], s['lo'], 2):
+        o, i, t_ = N.b[bid]; d_ = min(SW.hav(s['la'], s['lo'], a, b) for r in o for a, b in r); best = d_ if best is None else min(best, d_)
+    return best
+_N = {}; _sin = {s['id']: s for s in sel if s['id'] in set(sin_ed)}
+with open(R / 'sin-edificios-v20.csv', 'w', newline='', encoding='utf-8') as f:
+    w = csv.writer(f); w.writerow(['id', 'pais', 'nombre', 'direccion', 'ciudad', 'edificio_mas_cercano_m'])
+    for i in sin_ed:
+        s = _sin[i]; d_ = _dmin(s); w.writerow([i, s.get('cc') or 'DE', s.get('n'), s.get('a'), s.get('c'), ('%.0f' % d_) if d_ is not None and d_ <= 150 else '>150 (ninguno en OSM)'])
 out = {'ids': sorted(set(ids)), 'legit': sorted(legit & set(ids)), 'sin_edificios_50m': sin_ed, 'near': near, 'buildings': B}
 p = R / 'tests/sidewalk/footprints-v20.json.gz'
 with gzip.open(p, 'wt', encoding='utf-8', compresslevel=9) as f: json.dump(out, f, separators=(',', ':'))

@@ -15,3 +15,8 @@ Datos de trabajo: V20_DATA=/workspace/v20-data-r2 (copia; near/pbf enlazados). I
 - F1 refetch_near20.py + near-extra (LU 46, IT 31, ES 21, GG 5, CZ 5, NL 2, FR 1 sin edificio a ≤50 m; refetch hecho; NL 2 + CZ 5 sin edificios en OSM) · sidewalk20 carga near-extra · footprints20 guarda sin_edificios_50m · render-check20 falla si no hay edificios (salvo lista ≤12) y si dibujo >25 m (salvo excepciones-25m-v20.csv).
 - F2 tope: _TMAX = 25 − dispersión (grupos ≤20); >20 = excepción documentada. F5 legit_inside = 3. F6 mapui.js landscape bottom 106, top +24; country-buttons-check: países nuevos en los 10 tamaños (844x390/667x375/320x568/360x640 OK).
 - NL «Ciudad:Calle:Nº» (Alkmaar) parseado. Siguiente: rebuild → sidewalk nuevos → finalize → DE (--only grupos + finalize separate) → informe.
+
+## 08:55 cadena de geometría (DE + nuevos): fallos encontrados
+- Tras 3 rondas de finalize: 58 pares <1,55 m y 38 fallos DE. Causa: separate20 calculaba el hueco con extra=0 y sidewalk20 (con extra del grupo) descartaba el desplazamiento → corregido (separate20 usa extra y tope de 25 m menos dispersión).
+- Placas sin edificio ≤50 m tras refetch: 57 (ES 21, IT 23, GG 5, CZ 5, NL 2, FR 1; edificios a 51–171 m o ninguno): footprints20 escribe sin-edificios-v20.csv; límite del test 70.
+- Cadena de 4 rondas "DE + nuevos" en curso (chain3_r2.log). Siguiente: residuales20, ui20, bump, footprints, informe, build --strict, run-all.
