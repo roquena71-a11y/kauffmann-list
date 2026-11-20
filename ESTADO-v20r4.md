@@ -51,3 +51,23 @@ footprints 9337 placas / 172608 edificios (cobertura residuales+excepciones+calz
 About es/de/en: 292 / 109 / ~47 m. INFORME v20r5 + cuenta exacta 75 solo chincheta 2D. n5885430141 c=Vaals.
 Karlsruhe n2310732548 fuera de residuales (0,50 m de la fachada). PDFs/blatt sin cambio (totales iguales; no se tocó el 65.820 de las biografías).
 Siguiente: API offline, run-all REQUIRE_OAV=1, commit final (sin push).
+
+## 22:10 API offline en curso
+PID: 20011  log: /workspace/v20-data-r4/api_build_r5.log
+Tras el build: validate, run-all REQUIRE_OAV=1 (nohup, PID en ESTADO), commit final (sin push).
+
+## 22:15 run-all REQUIRE_OAV=1 en segundo plano
+PID: 21404  log: /workspace/v20-data-r4/runall_r5.log
+API offline ya validada (2026-11-20, 9399 archivos, 0 errores, 4 avisos). Tras run-all: git add -f api data/search llms, commit final (sin push).
+
+## 22:20 run-all REQUIRE_OAV=1 relanzado (wd-added: base_fixes c=Vaals)
+PID: 22996  log: /workspace/v20-data-r4/runall_r5b.log
+
+## 22:25 run-all REQUIRE_OAV=1 relanzado (bump --sync)
+PID: 24857  log: /workspace/v20-data-r4/runall_r5c.log
+
+## 22:45 run-all REQUIRE_OAV=1: OK (log /workspace/v20-data-r4/runall_r5c.log; PID 24857 terminó).
+FALLOS country-buttons: ninguno. sidewalk-render-check20 OK en 9329 placas (cobertura residuales/excepciones/calzada/V19/Unna; 0 centros dentro de edificio fuera de LEGIT). v20r4-checks OK (CSV 292, máx. 46,6 m, coincide con Acerca de e INFORME). API offline generated=2026-11-20, 9399 archivos, validate 0 errores 4 avisos (iguales que r4). Versión 20. Commit final, sin push.
+Cuentas: 72.110 total. DE 65.830, NL 1.284, FR 1.177, AT 1.119, NO 611, CZ 600, IT 474, ES 328, BE 172, LU 146, HU 87, LT 70, CH 51, PL 33, SK 33, JE 20, HR 17, DK 14, GG 8, FI 7, AD 7, IE 6, SE 6, LV 4, RO 2, GB 2, LI 2.
+Calzada 110 (109 + 3 JE − 2 Unna que salieron de la calzada), residuales 109 (75 solo chincheta 2D, 24 holgura 3D <0,5 m), excepciones >25 m 292 (29 grupos, máx. 46,6 m; las 6 de B R4-1 incluidas), pares <1,55 m 46 (incl. los 3 de C: 1,53 1,46 1,45).
+Unna 0,2 m N + 3,2 m E (centros fuera de w99407314, holgura de columna ≥0,80 m). Karlsruhe n2310732548 alejado 0,50 m de la fachada (ya no residual). n13021249318 y 2 JE más en calzada-v20.csv. n5885430141 c=Vaals (base_fixes). PDFs sin cambio (totales iguales; se conservó el 65.820 de las biografías).
