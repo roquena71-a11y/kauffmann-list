@@ -174,6 +174,19 @@ def road_zone(N, la0, lo0, PB, rad_bld=RWY.BLD_NEAR_MAX):
     if not bufs: return None
     return prep(unary_union(bufs)), prep(PB.buffer(RWY.BLD_EXEMPT_NEAR))
 
+def road_zone_strict(N, la0, lo0, PB):
+    """v20r4 (C ronda 3, Rue Sainte-Marie): como road_zone pero SIN exención junto a la fachada (para calles estrechas entre fachadas, donde la acera exenta es en realidad la calzada/cruce)."""
+    if PB is None: return None
+    o = (la0, lo0); bufs = []
+    for hid in N.around(N.hi, la0, lo0, 1):
+        pts, t = N.h[hid]
+        if not RWY.constrained(t): continue
+        ls = LineString([to_xy(a, c, o) for a, c in pts])
+        if ls.distance(Point(0, 0)) > 120: continue
+        bufs.append(ls.buffer(RWY.semiwidth(t) + RWY.SOLVER_MARGIN))
+    if not bufs: return None
+    return prep(unary_union(bufs)), prep(Point(1e7, 1e7).buffer(1))
+
 def road_bad(zone, x, y):
     if zone is None: return False
     p = Point(x, y); return zone[0].contains(p) and not zone[1].contains(p)
@@ -355,6 +368,12 @@ def process_cc(cc, stones, N, extra, legit, only=None, comp=None, angs=None, ali
                 for k, (km, md) in enumerate(plan, 1):
                     shift, info = solve(PB, lines, RW, okf, insd, keep_min=km, min_dot=md, tstep=ts)
                     if shift is not None: tier = k; break
+            if shift is None and g[0]['id'] in FACADE:   # v20r4: antes de relajar, hueco con holguras completas (edificios >=0,5 m) y centro fuera de TODA calzada (sin exención) a <=25 m del origen
+                zs = road_zone_strict(N, la0, lo0, PB)
+                if zs is not None:
+                    okfs = make_okf(PB, pins, slots(nv, ang or 0.0), ang, h2, ex, zs)
+                    shift = solve_road(okfs, PB, _TMAX[0], tstep=0.2)
+                    if shift is not None: tier = 6
             if shift is None:   # v20r3: colocación relajada (centros fuera de edificios y de la calzada; fila pegada a la fachada)
                 shift, tier = solve_relaxed(PB, RW, lines, pins, slots(nv, ang or 0.0), FACADE.get(g[0]['id']))
             status = 'revisar' if shift is None else 'ajustada'
