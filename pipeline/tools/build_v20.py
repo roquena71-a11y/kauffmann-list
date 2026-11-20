@@ -13,6 +13,7 @@ from v20_common import *
 D = Path(os.environ.get('V20_DATA', '/workspace/v20-data'))
 CC = sys.argv[1]
 J = lambda n: json.load(open(D / n, encoding='utf-8'))
+SUBJ = J('subjects.json') if (D / 'subjects.json').exists() else {}
 osm = J('osm20_%s.json' % CC); els = osm['elements']
 try: wdraw = J('wd_%s.json' % CC)['results']['bindings']
 except FileNotFoundError: wdraw = []
@@ -118,8 +119,14 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     city = t.get('addr:city') or t.get('object:city') or t.get('memorial:addr:city') or t.get('addr:place')
     if not city and maddr and ',' in maddr:
         city = maddr.split(',')[-1].strip() if not re.search(r'\d', maddr.split(',')[-1]) else None
-    if not (a or insc): P(sid, 'sin dirección ni inscripción en OSM', n=name, **base); continue
-    if not insc and not a: continue
+    subj_ok = False
+    if not (a or insc):
+        sq = (t.get('subject:wikidata') or '').strip(); sj = SUBJ.get(sq)
+        by = (t.get('person:date_of_birth') or '')[:4]; dy = (t.get('person:date_of_death') or '')[:4]
+        # sin dirección ni inscripción: solo si la persona (subject:wikidata) es un humano en Wikidata, el nombre coincide con una de sus etiquetas y los años de OSM coinciden con los de Wikidata
+        if sj and sj.get('human') and any(name_in_text(name, l) >= 0.99 and name_in_text(l, name) >= 0.99 for l in sj['labels']) and (by or dy) \
+           and (not by or not sj['b'] or by in sj['b']) and (not dy or not sj['d'] or dy in sj['d']): subj_ok = True
+        else: P(sid, 'sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)', n=name, **base); continue
     # nombre ⊂ inscripción
     if insc:
         fr = name_in_text(name, insc)
@@ -139,6 +146,7 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     yrs = years_in(insc)
     b_ = (t.get('person:date_of_birth') or '').strip(); d_ = (t.get('person:date_of_death') or '').strip()
     notes = [] if name_from == 'name' else ['nombre tomado de la etiqueta %s' % name_from]
+    if subj_ok: notes.append('persona verificada en Wikidata (humano, nombre y años coinciden) vía subject:wikidata; sin dirección ni inscripción en OSM')
     if b_ and (not date_ok(b_) or (yrs and b_[:4] not in yrs)):
         notes.append('nacimiento %s de OSM descartado' % b_); b_ = ''
     if d_ and (not date_ok(d_) or int(d_[:4]) < 1930 or (b_ and int(d_[:4]) < int(b_[:4]))):
