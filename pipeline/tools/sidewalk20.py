@@ -172,11 +172,15 @@ def process_cc(cc, stones, N, extra, legit, only=None):
         if all(s['id'] in legit for s in g) and (insd or not ok_at((0, 0), PB, need, h2)):
             status = 'legitima'
         elif insd or not ok_at((0, 0), PB, need, h2):
-            shift, info = solve(PB, lines, RW, need, h2, insd); tier = 1
             need1 = DIAG + MARGIN + extra.get(g[0]['id'], 0)
-            if shift is None and len(g) > 1: shift, info = solve(PB, lines, RW, need1, h2, insd); tier = 2      # grupo grande en acera estrecha: sitio para una columna; la comprobación con la cuadrícula real de la app (bucle) añade lo que falte
-            if shift is None: shift, info = solve(PB, lines, RW, need1, h2, insd, keep_min=0.4); tier = 3          # acera muy estrecha: se permite acercarse más al eje de la calzada
-            if shift is None: shift, info = solve(PB, lines, RW, need1, h2, insd, keep_min=0.4, min_dot=-1.01); tier = 4   # sin sitio hacia la calle (patio, esquina): cualquier dirección, sin cruzar la calzada
+            # niveles: 1 sitio para toda la cuadrícula en la acera; 2-3 la cuadrícula puede pisar el borde de la calzada (acera estrecha); 4-6 sitio para una columna (el bucle con la app real añade lo que falte)
+            plan = [(need, 1.5, 0.5), (need, 0.4, 0.5), (need, 0.4, -1.01), (need, -1, -1.01)]
+            if len(g) > 1: plan += [(need1, 1.5, 0.5), (need1, 0.4, 0.5)]
+            plan += [(need1, 0.4, -1.01), (need1, -1, -1.01)]
+            shift, tier = None, 0
+            for k, (nd, km, md) in enumerate(plan, 1):
+                shift, info = solve(PB, lines, RW, nd, h2, insd, keep_min=km, min_dot=md)
+                if shift is not None: tier = k; break
             status = 'revisar' if shift is None else 'ajustada'
         if status == 'ok': n_ok += len(g); continue
         for s in g:

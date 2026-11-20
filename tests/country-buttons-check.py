@@ -19,9 +19,15 @@ async def main():
             await pg.wait_for_function("typeof DATA!=='undefined' && DATA.length>60000 && document.querySelector('#countries button')", timeout=120000)
             await pg.wait_for_timeout(2500)
             R[name] = {}
-            for cc in ('SE', 'IE', 'JE', 'FI', 'RO', 'DE'):
-                if cc != 'DE' or True:
-                    await pg.click(f'#countries button[data-cc={cc}]'); await pg.wait_for_timeout(5500)
+            allcc = await pg.evaluate("[...document.querySelectorAll('#countries button[data-cc]')].map(b=>b.dataset.cc)")
+            OLD = ['SE', 'IE', 'JE', 'FI', 'RO']
+            todo = [c for c in allcc if c not in OLD and c != 'DE'] if name in ('320x568', '360x740', '1280x800', '1920x1080') else []   # v20: los países nuevos en 4 tamaños (el resto, los 6 de siempre)
+            for cc in OLD + todo + ['DE']:
+                more = await pg.query_selector('#countries button.more')
+                if more and await more.is_visible() and await pg.evaluate("(c)=>{const b=document.querySelector(`#countries button[data-cc=${c}]`);return !b || getComputedStyle(b).display==='none'}", cc):
+                    if await more.get_attribute('aria-expanded') != 'true': await more.click(); await pg.wait_for_timeout(250)
+                await pg.evaluate("(c)=>document.querySelector(`#countries button[data-cc=${c}]`).scrollIntoView({block:'nearest'})", cc)
+                await pg.click(f'#countries button[data-cc={cc}]'); await pg.wait_for_timeout(5500 if cc in OLD + ['DE'] else 3300)
                 if cc != 'DE': REF[cc] = [(s['n'], [s['lo'], s['la']]) for s in await pg.evaluate("DATA.filter(s=>s.cc==='%s' && !s._aliasOf).map(s=>({n:s.n,lo:s.lo,la:s.la}))" % cc)]   # v19: todas las placas del país (posición de dibujo)
                 res = await pg.evaluate("""(refs) => refs.map(([n, ll]) => { const p = map.project(ll), cr = map.getContainer().getBoundingClientRect();
                     const onCanvas = (x, y) => { const el = document.elementFromPoint(cr.left + x, cr.top + y); return !!el && (el.tagName === 'CANVAS' || !!el.closest('.maplibregl-canvas-container')); };
@@ -32,7 +38,7 @@ async def main():
                             whole: pts.every(([x, y]) => inMap(x, y) && onCanvas(x, y)), covered: pts.filter(([x, y]) => !(inMap(x, y) && onCanvas(x, y))).length}; })""", REF[cc])
                 R[name][cc] = res
                 for r in res:
-                    if cc == 'DE' and not (r['inside']): continue          # Alemania es ancha: solo exigimos libres los que caen dentro
+                    if (cc == 'DE' or len(REF[cc]) >= 50) and not (r['inside']): continue          # países anchos (Alemania, Francia, Italia…): solo exigimos libres los que caen dentro
                     if not r['inside'] or not r['canvas'] or not r['whole']: bad.append((name, cc, r))
                 if OUT: await pg.screenshot(path=f'{OUT}/cb-{name}-{cc}.png')
             if errs: bad.append((name, 'pageerror', errs[:2]))

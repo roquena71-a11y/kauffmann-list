@@ -36,14 +36,18 @@ def addr_check(la, lo, street, hn):
     if not street or not hn: return 'sin_datos', None
     cand = [x for x in ADDR if abs(x['la'] - la) < 0.0015 and abs(x['lo'] - lo) < 0.0025]
     if not cand: return 'sin_datos', None
-    best = None
+    best = None; bestn = None
     for x in cand:
         t = x['t']
         if not hn_match(t.get('addr:housenumber', ''), hn): continue
         st = t.get('addr:street') or t.get('addr:place') or ''
-        if street_sim(st, street) < 0.8: continue
         d = hav(la, lo, x['la'], x['lo'])
+        if not st:   # objeto con número pero sin calle (la calle va en una relación associatedStreet): solo cuenta si está pegado (<= 25 m)
+            if d <= 25 and (bestn is None or d < bestn): bestn = d
+            continue
+        if street_sim(st, street) < 0.8: continue
         if best is None or d < best: best = d
+    if best is None and bestn is not None: best = bestn
     if best is None: return 'sin_coincidencia', None
     return ('ok' if best <= ADDR_OK else 'lejos'), round(best, 1)
 
@@ -104,7 +108,10 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     maddr = (t.get('memorial:addr') or '').strip()
     a = None
     if street: a = compose_addr(street, hn, CC)
-    elif maddr: a = maddr.split(',')[0].strip() if re.search(r'\d', maddr.split(',')[0]) or ',' not in maddr else maddr.split(',')[0].strip()
+    elif maddr:
+        _p = [x.strip() for x in maddr.split(',') if x.strip()]
+        a = ', '.join(_p[:-1]) if len(_p) >= 2 and not re.search(r'\d', _p[-1]) else ', '.join(_p)   # quita solo la ciudad final
+        a = re.sub(r'^(\d+[a-zA-Z]?),\s+', r'\1 ', a)                                              # «17, Rue X» → «17 Rue X»
     if street is None and maddr:
         ps, ph = parse_memorial_addr(maddr)
         if ps: street, hn = ps, ph
