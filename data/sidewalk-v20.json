@@ -33,7 +33,7 @@
  "counts": {
   "DE": {
    "ok": 30358,
-   "ajustada": 35473,
+   "ajustada": 35469,
    "legitima": 3
   },
   "AD": {
@@ -83,8 +83,8 @@
    "ajustada": 21
   },
   "LU": {
-   "ok": 67,
-   "ajustada": 101
+   "ok": 46,
+   "ajustada": 100
   },
   "LV": {
    "ok": 0,
@@ -111,12 +111,12 @@
    "ajustada": 432
   },
   "FR": {
-   "ok": 347,
-   "ajustada": 808
+   "ok": 368,
+   "ajustada": 809
   },
   "NL": {
    "ok": 299,
-   "ajustada": 981
+   "ajustada": 985
   }
  },
  "stones": [
@@ -512104,7 +512104,7 @@
   {
    "id": "n6913214276",
    "n": "Drielsma",
-   "cc": "DE",
+   "cc": "NL",
    "la": 50.7696826,
    "lo": 6.022237,
    "grupo": 1,
@@ -512123,7 +512123,7 @@
   {
    "id": "n2789468236",
    "n": "Stolperstein: Caspar Niessen",
-   "cc": "DE",
+   "cc": "NL",
    "la": 50.7707638,
    "lo": 6.0224139,
    "grupo": 1,
@@ -512142,7 +512142,7 @@
   {
    "id": "n1417354281",
    "n": "Stolperstein: Simon Hertz",
-   "cc": "DE",
+   "cc": "NL",
    "la": 50.7709393,
    "lo": 6.0233898,
    "grupo": 1,
@@ -512161,7 +512161,7 @@
   {
    "id": "n5885430141",
    "n": "Stolpestein Simon Gans",
-   "cc": "DE",
+   "cc": "NL",
    "la": 50.7691444,
    "lo": 6.0224083,
    "grupo": 1,
@@ -719299,7 +719299,7 @@
   {
    "id": "n13017677435",
    "n": "Luigi de Battisti",
-   "cc": "LU",
+   "cc": "FR",
    "la": 49.473203,
    "lo": 5.9600451,
    "grupo": 1,

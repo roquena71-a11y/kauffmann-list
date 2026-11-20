@@ -11,3 +11,4 @@ Tareas: A R3-1 Wien/Klagenfurt, B R3-1 22 LU→FR, B R3-2 texto 25 m, menores (A
 - texts20_r4.py (NUEVO; correr DESPUÉS de ui20): 65.820 medido el 18-nov; sitemap lastmod 2026-11-20.
 - v20-data-r4/border_isin_r4.py (Overpass is_in, 660 candidatos; salida border_isin_r4.json) → luego assign cc corregido (osm_all_cc.json + osm20_*.json mover LU→FR) + test de frontera.
 ## Pendiente: aplicar cc, rebuild (rebuild_r3.sh → renombrar r4), sidewalk solo cambiados, texts20.py, ui20, texts20_r4, PDFs, footprints, INFORME, API offline (+10 ficheros), tests nuevos (Wien bbox, frontera, texto 25 m), run-all.
+export GIT_AUTHOR_NAME="Carlos Kauffmann" GIT_AUTHOR_EMAIL=roquena71-a11y@users.noreply.github.com GIT_COMMITTER_NAME="Carlos Kauffmann" GIT_COMMITTER_EMAIL=roquena71-a11y@users.noreply.github.com  # para commits

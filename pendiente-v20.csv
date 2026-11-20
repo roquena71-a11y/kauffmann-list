@@ -3727,6 +3727,7 @@ FR,n12811010451,,"Stolperschwelle (placa colectiva, no se modela en v20)",48.513
 FR,n12825667202,,"el «nombre» es un rótulo o una institución, no una persona (A.F.N)",48.6019339,1.6817244
 FR,n12855865448,,sin nombre,48.0780879,7.3630446
 FR,n12855942890,,sin nombre,48.0796689,7.353268
+FR,n13009120845,Andrea Viventi,el nombre de OSM no coincide con la inscripción (0 % de las palabras del nombre están en la inscripción),49.469464,5.9583174
 FR,n13025699865,Eta Fraindt née Krajman,el nombre de OSM no coincide con la inscripción (67 % de las palabras del nombre están en la inscripción),49.1559995,5.3907897
 FR,n13027308923,Virgilio Dago,"OSM marca la posición como dudosa («position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: sin_datos)",48.73465,6.167975
 FR,n13027308924,Mario Dago,"OSM marca la posición como dudosa («position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: sin_datos)",48.7346506,6.1679732
@@ -3734,6 +3735,7 @@ FR,n13027308925,Florian Dago,"OSM marca la posición como dudosa («position») 
 FR,n13027308926,Tranquillo Dago,"OSM marca la posición como dudosa («position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: sin_datos)",48.7346517,6.1679696
 FR,n13028620671,Yvettte Schacké,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),48.7246225,7.7104349
 FR,n13038059153,Ferdinand Rapiteau,la foto de Commons está a 321 m de la posición de la placa en OSM,45.3124641,-0.4038897
+FR,n13063748762,Hejnoch Moïse Kossowski dit Maurice,el nombre de OSM no coincide con la inscripción (75 % de las palabras del nombre están en la inscripción),49.4735078,5.957303
 FR,n13071635577,Jean Léger,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: sin_datos)",45.1857333,-0.5804686
 FR,n13071662487,Adolphe Bréret,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",45.8609027,-1.2388017
 FR,n13071674554,Fernand Mathieu Lasperches,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_datos, Commons: sin_datos)",44.6821565,-0.5263131
@@ -4591,12 +4593,10 @@ LT,n13205323011,Regina Lazersonienė-Safočinskaitė,"OSM marca la posición com
 LT,n13205323012,Dr. Vladimiras Lazersonas,"OSM marca la posición como dudosa («position estimated») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: sin_datos)",54.904079,23.9486363
 LT,n13207297999,Dr. Samuelis Margolis,el nombre de OSM no coincide con la inscripción (50 % de las palabras del nombre están en la inscripción),54.683755,25.2791199
 LU,n4780670794,Sigmund Koppel,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),49.5092454,5.9247912
-LU,n13009120845,Andrea Viventi,el nombre de OSM no coincide con la inscripción (0 % de las palabras del nombre están en la inscripción),49.469464,5.9583174
 LU,n13052159548,Karl Goldschmidt,el nombre de OSM no coincide con la inscripción (100 % de las palabras del nombre están en la inscripción),49.5238536,5.8893844
 LU,n13052396041,,"Stolperschwelle (placa colectiva, no se modela en v20)",49.8469794,6.0995958
 LU,n13056557004,Fernand Hayum,la foto de Commons está a 480 m de la posición de la placa en OSM,49.6797199,6.4443541
 LU,n13056557007,Oskar Hayum,la foto de Commons está a 480 m de la posición de la placa en OSM,49.6797205,6.4443529
-LU,n13063748762,Hejnoch Moïse Kossowski dit Maurice,el nombre de OSM no coincide con la inscripción (75 % de las palabras del nombre están en la inscripción),49.4735078,5.957303
 NL,n2655945939,Jacob Cohen,el nombre de OSM no coincide con la inscripción (0 % de las palabras del nombre están en la inscripción),52.1408046,6.195087
 NL,n2806847396,,sin nombre,52.3026489,6.7610742
 NL,n2813402067,,"el «nombre» es un rótulo o una institución, no una persona (Oost Polen)",52.2997809,6.761031
