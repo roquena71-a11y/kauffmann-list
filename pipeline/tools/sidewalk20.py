@@ -140,6 +140,7 @@ def make_okf(PB, pins, sl, ang, h2, extra=0.0):
         for (sx, sy) in sl:
             x, y = q[0] + sx, q[1] + sy
             d = PB.distance(Point(x, y))
+            if d < need2: return False                   # la chincheta 2D se comprueba también en la posición de la columna (como las auditorías: usan la posición dibujada)
             if d >= DIAG + need3: continue
             if d < hf + need3 - 1e-9: return False   # el cuadrado contiene círculo de radio hf: si el centro está más cerca, falla
             if ang is None: return False                 # ángulo desconocido: criterio conservador (disco)

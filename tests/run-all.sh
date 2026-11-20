@@ -30,6 +30,8 @@ if [ -x /usr/bin/google-chrome ] && /usr/bin/python3 -c "import playwright" 2>/d
   sleep 1
   /usr/bin/python3 tests/sidewalk-render-check.py http://127.0.0.1:8899/ > /tmp/kl-sidewalk.log 2>&1 || { tail -15 /tmp/kl-sidewalk.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-sidewalk.log
+  /usr/bin/python3 tests/sidewalk-render-check20.py http://127.0.0.1:8899/ > /tmp/kl-sidewalk20.log 2>&1 || { tail -15 /tmp/kl-sidewalk20.log; kill $SRV; exit 1; }
+  tail -1 /tmp/kl-sidewalk20.log
   /usr/bin/python3 tests/map2d-check.py http://127.0.0.1:8899/ > /tmp/kl-map2d.log 2>&1 || { tail -15 /tmp/kl-map2d.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-map2d.log
   /usr/bin/python3 tests/country-row-check.py http://127.0.0.1:8899/ > /tmp/kl-row.log 2>&1 || { tail -15 /tmp/kl-row.log; kill $SRV; exit 1; }
