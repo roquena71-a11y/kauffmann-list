@@ -1,5 +1,6 @@
 id,pais,nombre,direccion,ciudad,edificio_mas_cercano_m
 Q137857643,IT,Franco Gallina,Via Parma 24,Turin,51
+Q44103124,RO,Miriam Zeiger Mozes,,Marca,>150 (ninguno en OSM)
 Q98925879,NL,Samuel Bromberg,Bosbeekweg 19-21,Ede,>150 (ninguno en OSM)
 Q98925932,NL,Fanny Manasse-Hartogsohn,Bosbeekweg 19-21,Ede,>150 (ninguno en OSM)
 n10136352833,IT,Anita Di Capua Valabreda,,Roma,56
@@ -8,6 +9,8 @@ n10265027789,ES,Melcior Cañellas Mañé,"Carrer de la Serralada, 67",Sabadell,>
 n11835202362,IT,Guglielmo Corradini,,Scandiano,53
 n12593937301,ES,Antonio Caro Jiménez,,La Campana,59
 n12641698768,ES,Tiburcio Vigara Carrasco,,Belalcázar,>150 (ninguno en OSM)
+n13021249318,JE,Jean Marie Rossi,"Ypriana, 3, Chestnut Avenue, Maufant",St Saviour,57
+n13021346173,JE,Hyam Goldman,"La Petit Ruche D’Or, St Peter’s Valley",St Peter,>150 (ninguno en OSM)
 n13023092356,GG,John Ingrouille,Springtides,Vale,93
 n13399419318,ES,Martí Cabanes Bel,"Carrer de la Joventut, 11",l'Hospitalet de Llobregat,51
 n13437119695,ES,Ferran Masip Arenillas,"Carrer de Pere IV, 413",Barcelona,59

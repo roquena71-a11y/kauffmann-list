@@ -43,3 +43,11 @@ Causa del test que no pilló Unna: `sidewalk-render-check20.py` ya marca «centr
 - gaps20: distancia con latitud media (antes sobreestimaba y dejaba fuera los 3 pares de C).
 - INFORME: cuenta exacta «solo chincheta 2D» del CSV. n5885430141 c=Vaals.
 Pendiente: volcado, check_layout_r5, residuales/pares/calzada, footprints+roads, About/INFORME, textos/PDF, API, run-all, commit final (sin push).
+
+## 22:05 r5 datos y textos listos (WIP 81d3458d + pendientes de commit)
+Unna corregido a **0,2 m N + 3,2 m E** (no 2,3+2,3: eso metía 6 columnas más en Mozartstraße). Volcado `layout_r5b.json`, `layout_check_r5.json` (0 centros dentro; 109 fallos). 
+Cuentas: residuales 109 (75 solo chincheta 2D, 24 holgura 3D <0,5 m), excepciones 292 (29 grupos, máx. 46,6 m; las 6 de B R4-1 incluidas), calzada 110 (entrán 3 JE incl. n13021249318; salen 2 Unna de la calzada), pares 46 (incl. los 3 de C a 1,45–1,53 m), sin-edificios 60.
+footprints 9337 placas / 172608 edificios (cobertura residuales+excepciones+calzada+V19+Unna); roads 14459 vías.
+About es/de/en: 292 / 109 / ~47 m. INFORME v20r5 + cuenta exacta 75 solo chincheta 2D. n5885430141 c=Vaals.
+Karlsruhe n2310732548 fuera de residuales (0,50 m de la fachada). PDFs/blatt sin cambio (totales iguales; no se tocó el 65.820 de las biografías).
+Siguiente: API offline, run-all REQUIRE_OAV=1, commit final (sin push).
