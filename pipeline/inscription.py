@@ -14,8 +14,8 @@ MURDERED = re.compile(_W + r"(ermordet|hingerichtet|erschossen|erhängt|erhaengt
 DIED = re.compile(_W + r"(tot|gestorben|starb|umgekommen|verstorben|für tot erklärt|fuer tot erklaert|todesmarsch|tod|died)" + _E)
 MISSING = re.compile(_W + r"(verschollen|schicksal unbekannt|öde okänt)" + _E)
 # Supervivencia: se reconoce también como PREFIJO de palabra (überlebte, befreiten, versteckte, Fluchtweg…).
-SURVIVAL_PREFIX = re.compile(_W + r"(überlebt|ueberlebt|uberlebt|gerettet|befreit|entkam|entkommen|versteckt|survived|liberated|liberared|released|vapautui|supravie|eliberat)")
-FLIGHT_PREFIX = re.compile(_W + r"(flucht|flücht|fluecht|geflohen|geflüchtet|gefluechtet|emigriert|ausgewandert|flydde|fled|pakeni)")
+SURVIVAL_PREFIX = re.compile(_W + r"(überlebt|ueberlebt|uberlebt|gerettet|befreit|entkam|entkommen|versteckt|survived|liberated|liberared|released|vapautui|supravie|eliberat|surv[eé]cu|lib[eé]r[eé]|rescap|[eé]chapp|[eé]vad|overleefd|overleefde|bevrijd|ondergedoken|sopravviss|liberat|scampat|sobreviv|liberad|rescatad|przeżył|przezyl|ocalał|ocalal|uwolnion|přežil|prezil|osvobozen|prežil|oslobod|túlél|megmenek|szabadul|preživ|oslobođ|pobegnil|overlevde|overlevede|befridd|befriet|izdzīvoj|atbrīvo|sobrevisqu|επιζ|вижив|врятува|iwwerlieft)")
+FLIGHT_PREFIX = re.compile(_W + r"(flucht|flücht|fluecht|geflohen|geflüchtet|gefluechtet|emigriert|ausgewandert|flydde|fled|pakeni|fuite|fui[st]|escaped|ontsnapt|gevlucht|vlucht|fuga|fuggit|huy[óo]|escap|uciek|uciec|uprchl|emigrova|ušiel|utiekol|emigrir|menekül|pobjeg|pobeg|flyktet|flygtede|aizbēg|pabēg|втік|εγκατέλ|emigrat|emigrer|emigré|exil)")
 FLED = FLIGHT_PREFIX
 DEPORTED = re.compile(_W + r"(deportiert|abgeschoben|ausgewiesen|polenaktion|deporterad|deported)" + _E)
 IMPRISONED = re.compile(_W + r"(verhaftet|inhaftiert|zuchthaus|gefängnis|gefaengnis|kz|schutzhaft|lager|imprisoned|interned)" + _E)

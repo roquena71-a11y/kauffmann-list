@@ -11,21 +11,21 @@
          ml:{'NavigationControl.ZoomIn':'Acercar','NavigationControl.ZoomOut':'Alejar','NavigationControl.ResetBearing':'Arrastrar para girar el mapa; pulsar para volver al norte',
              'GeolocateControl.FindMyLocation':'Mostrar mi ubicación','GeolocateControl.LocationNotAvailable':'Ubicación no disponible',
              'AttributionControl.ToggleAttribution':'Mostrar u ocultar créditos del mapa','Map.Title':'Mapa'},
-         menu:'Menú', layers:'Capas del mapa', countries:'Países', countriesT:'Placas por país',
+         menu:'Menú', layers:'Capas del mapa', countries:'Países', countriesT:'Placas por país', countriesMore:'Más países ({n})', countriesLess:'Menos países',
          sheetOpen:'Mostrar la lista', sheetClose:'Ocultar la lista', sheetFull:'Ampliar la lista',
          cluTip:n=>`${n} placas aquí. Toque para acercar.`},
     de: {mapLabel:'3D-Karte', basemapsLabel:'Grundkarte', searchPhShort:'Vorname, Nachname oder Straße…',
          ml:{'NavigationControl.ZoomIn':'Vergrößern','NavigationControl.ZoomOut':'Verkleinern','NavigationControl.ResetBearing':'Ziehen zum Drehen der Karte; klicken, um nach Norden auszurichten',
              'GeolocateControl.FindMyLocation':'Meinen Standort zeigen','GeolocateControl.LocationNotAvailable':'Standort nicht verfügbar',
              'AttributionControl.ToggleAttribution':'Kartennachweise ein- oder ausblenden','Map.Title':'Karte'},
-         menu:'Menü', layers:'Kartenebenen', countries:'Länder', countriesT:'Steine nach Land',
+         menu:'Menü', layers:'Kartenebenen', countries:'Länder', countriesT:'Steine nach Land', countriesMore:'Weitere Länder ({n})', countriesLess:'Weniger Länder',
          sheetOpen:'Liste zeigen', sheetClose:'Liste ausblenden', sheetFull:'Liste vergrößern',
          cluTip:n=>`${n} Steine hier. Tippen zum Hineinzoomen.`},
     en: {mapLabel:'3D map', basemapsLabel:'Base map', searchPhShort:'First name, surname or street…',
          ml:{'NavigationControl.ZoomIn':'Zoom in','NavigationControl.ZoomOut':'Zoom out','NavigationControl.ResetBearing':'Drag to rotate the map; click to reset north',
              'GeolocateControl.FindMyLocation':'Show my location','GeolocateControl.LocationNotAvailable':'Location not available',
              'AttributionControl.ToggleAttribution':'Show or hide map credits','Map.Title':'Map'},
-         menu:'Menu', layers:'Map layers', countries:'Countries', countriesT:'Stones by country',
+         menu:'Menu', layers:'Map layers', countries:'Countries', countriesT:'Stones by country', countriesMore:'More countries ({n})', countriesLess:'Fewer countries',
          sheetOpen:'Show the list', sheetClose:'Hide the list', sheetFull:'Expand the list',
          cluTip:n=>`${n} stones here. Tap to zoom in.`}
   };
@@ -184,11 +184,16 @@
     paintCountries();
   }
   function cname(cc){ const names = T('countryName') || {}; return names[cc] || cc; }
+  // v20: con ~30 países la fila no cabe en la hoja del teléfono: se muestran los 6 con más placas y un botón «Más países (+N)» (aria-expanded) que abre la lista completa, con scroll propio.
+  let countriesOpen = false; const COUNTRIES_SHOWN = 6;
   function paintCountries(){
     const box = $('#countries'); if (!box) return;
     if (COUNTRIES.length < 1){ box.replaceChildren(); return; }
-    box.innerHTML = `<span class="countries-t">${esc(T('countries'))}:</span>` + COUNTRIES.map(c =>
-      `<button type="button" data-cc="${esc(c.cc)}"><span class="sq" aria-hidden="true"></span>${esc(cname(c.cc))} <span class="n">${fmtNum(c.n)}</span></button>`).join('');
+    const more = COUNTRIES.length > COUNTRIES_SHOWN, hidden = COUNTRIES.length - COUNTRIES_SHOWN;
+    box.classList.toggle('has-more', more); box.classList.toggle('more-open', more && countriesOpen);
+    box.innerHTML = `<span class="countries-t">${esc(T('countries'))}:</span>` + COUNTRIES.map((c, i) =>
+      `<button type="button" data-cc="${esc(c.cc)}"${more && i >= COUNTRIES_SHOWN ? ' class="extra"' : ''}><span class="sq" aria-hidden="true"></span>${esc(cname(c.cc))} <span class="n">${fmtNum(c.n)}</span></button>`).join('')
+      + (more ? `<button type="button" class="more" data-more="1" aria-expanded="${countriesOpen}" aria-controls="countries">${esc(String(T(countriesOpen ? 'countriesLess' : 'countriesMore')).replace('{n}', hidden))}</button>` : '');
     if (isMobile() && sheet === 'peek') setSheet('peek');   // v19: la fila de países ahora se parte en líneas: volver a medir la hoja cerrada
   }
   // v19: degradado de «hay más países» (solo en horizontal, ver mapui.css): se quita cuando la fila llega al final
@@ -196,8 +201,11 @@
     const upd = () => box.classList.toggle('at-end', box.scrollLeft + box.clientWidth >= box.scrollWidth - 4);
     box.addEventListener('scroll', upd, {passive:true}); window.addEventListener('resize', upd); new MutationObserver(upd).observe(box, {childList:true}); upd(); })();
   $('#countries').addEventListener('click', e => {
+    const mb = e.target.closest('button[data-more]');
+    if (mb){ countriesOpen = !countriesOpen; paintCountries(); const nb = $('#countries button[data-more]'); if (nb) nb.focus(); return; }
     const b = e.target.closest('button[data-cc]'); if (!b || !window.map) return;
     const c = COUNTRIES.find(x => x.cc === b.dataset.cc); if (!c) return;
+    if (isMobile() && countriesOpen){ countriesOpen = false; paintCountries(); const nb2 = $('#countries button[data-cc="' + c.cc + '"]'); if (nb2) nb2.focus(); }
     if (document.body.classList.contains('vigil-on') && typeof stopVigil === 'function') stopVigil();
     if (isMobile()) setSheet('peek');
     // Pocas placas juntas (una calle, Dublín): acercarse e inclinar. Pocas placas pero en ciudades lejanas (Suecia: Malmö y Estocolmo, ~500 km): ver todas, sin inclinar (v18).

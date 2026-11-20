@@ -10,6 +10,10 @@
 .countries{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;margin:.55rem 0 0;font-size:.82rem}
 .countries:empty{display:none}
 .countries-t{color:var(--muted);margin-right:.1rem}
+/* v20: lista de países plegable (ver paintCountries) */
+.countries.has-more:not(.more-open) button.extra{display:none}
+.countries.more-open{max-height:11.5rem;overflow-y:auto;overscroll-behavior:contain}
+.countries button.more{border-style:dashed}
 body.dark .countries-t{color:#b7c0cc}
 .countries button{display:inline-flex;align-items:center;gap:.4rem;min-height:32px;font:inherit;font-size:.82rem;cursor:pointer;border-radius:3px;padding:.3rem .6rem;
   background:#fff;color:var(--ink);border:1px solid var(--brass)}
@@ -109,6 +113,9 @@ body.dark .countries .n{color:#e0bc62}
   /* v19: en horizontal la hoja es baja: los países van en una fila que se desliza, con un degradado que indica que hay más (se quita al llegar al final) */
   html.js .countries{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;padding-bottom:6px;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 36px),transparent)}
   html.js .countries.at-end{-webkit-mask-image:none;mask-image:none}
+  html.js .countries button.extra{display:inline-flex!important}   /* v20: en horizontal la fila ya se desliza: todos los países, sin botón «Más» */
+  html.js .countries button.more{display:none}
+  html.js .countries.more-open{max-height:none;overflow-y:visible}
   html.js .side{right:auto;width:var(--side-w);border-radius:0 14px 0 0;padding-left:env(safe-area-inset-left)}
   html.js .layers-btn{left:calc(var(--side-w) + 10px);top:calc(var(--top-h) + 8px)}
   html.js .basemaps{left:calc(var(--side-w) + 10px);top:calc(var(--top-h) + 58px);width:min(260px,calc(100vw - var(--side-w) - 70px))}
