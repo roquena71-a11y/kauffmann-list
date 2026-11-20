@@ -27,5 +27,5 @@ Datos de trabajo: V20_DATA=/workspace/v20-data-r2 (copia; near/pbf enlazados). I
 - Siguiente: pipeline build --strict, commit, run-all REQUIRE_OAV=1 completo.
 
 ## 10:25 pipeline build
-- La fuente wikidata_holocaust_victims no se puede reconstruir aquí: la caché local (pipeline/cache, 928 páginas del 2026-11-19) falla en --offline con un lote de detalle sin caché (tras 480 aciertos) y en línea WDQS contesta ~3 páginas/min (cientos de lotes pendientes). api/ y llms*.txt están en .gitignore (los regenera GitHub Actions al publicar). Se construye con --sources stolpersteine_de (72.038 registros = stones.json), que es lo que estaba obsoleto en las auditorías.
-- 10:30 build OK (--sources stolpersteine_de --generated 2026-11-20): 72.038 registros, 62.489 publicadas; validate 0 errores, 1 aviso (hirsch.json 1,05 MB). Lanzado run-all REQUIRE_OAV=1 (venv-ci, sin SKIP) → /workspace/v20-data-r2/runall_r2.log
+- (corregido 10:45) El primer build en línea había sobrescrito páginas de lista de la caché con datos de hoy y desalineaba los lotes; restaurada la caché desde la del árbol v20 y build --offline con ambas fuentes OK.
+- 10:45 build OK (--offline --generated 2026-11-20, stolpersteine_de + wikidata_holocaust_victims): odbl 72.038 registros → 62.489 publicadas; cc0 133.301 → 118.254; validate 0 errores, 4 avisos de tamaño. Lanzado run-all REQUIRE_OAV=1 (venv-ci, sin SKIP) → /workspace/v20-data-r2/runall_r2.log
