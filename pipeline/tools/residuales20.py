@@ -28,6 +28,13 @@ for r in SWt:
             'columna/chincheta a <0,5 m de una huella de OSM tras el cierre (grupo de %d placas con la misma dirección; calle sin hueco libre de edificios a <=25 m del origen para la cuadrícula completa; no se mueve más para no falsear su dirección)' % n])
     elif r['estado'] == 'revisar':
         rows.append([r['id'], r['cc'], r.get('n'), 'revisar-sin-contacto', 'revisar', '', '', '', 'el solver no encontró hueco, pero la comprobación independiente sobre la app real (shapely, OSM) NO detecta contacto (holgura >=0,5 m en 3D y 2D): se documenta, no hay solape'])
+# v20r5: fallos de check_layout de placas sin fila en sidewalk-v20.json (p. ej. IE/SE/JE/FI/RO, que el solver no recalcula)
+_have = {r[0] for r in rows}
+for _id, b in fallos.items():
+    if _id in _have or _id not in byid: continue
+    s = byid[_id]; n = gsize.get(_id, 1)
+    rows.append([_id, s.get('cc') or 'DE', s.get('n'), 'fallo', SWd.get(_id, {}).get('estado', ''), b['holgura3d_m'], b['holgura2d_m'], round(max(0, 0.5 - min(b['holgura3d_m'], b['holgura2d_m'])), 2),
+        'columna/chincheta a <0,5 m de una huella de OSM tras el cierre (no figuraba en sidewalk-v20.json; p. ej. país v19 o sin pasada del solver). Documentado; no se mueve más.'])
 with open(R / 'residuales-acera-v20.csv', 'w', newline='', encoding='utf-8') as fh:
     w = csv.writer(fh); w.writerow(['id', 'pais', 'nombre', 'tipo', 'estado_solver', 'holgura3d_m', 'holgura2d_m', 'deficit_m', 'motivo']); w.writerows(rows)
 M = 111320; ex = []; _seen = set(); _dump = {r[0]: r for r in dump['rows']}
