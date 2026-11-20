@@ -1,0 +1,80 @@
+{
+ "paises": [
+  "Alemania 65.837",
+  "Países Bajos 1367",
+  "Austria 1197",
+  "Francia 1172",
+  "Chequia 604",
+  "Noruega 583",
+  "Italia 443",
+  "España 342",
+  "Bélgica 175",
+  "Luxemburgo 170",
+  "Hungría 93",
+  "Lituania 70",
+  "Suiza 55",
+  "Polonia 35",
+  "Eslovaquia 34",
+  "Jersey 20",
+  "Croacia 17",
+  "Dinamarca 14",
+  "Guernsey 8",
+  "Finlandia 7",
+  "Andorra 7",
+  "Irlanda 6",
+  "Suecia 6",
+  "Letonia 4",
+  "Reino Unido 3",
+  "Rumanía 2",
+  "Liechtenstein 2",
+  "Más países (21)"
+ ],
+ "visibles_NL": [
+  1367,
+  1367
+ ],
+ "visibles_FR": [
+  1172,
+  1172
+ ],
+ "visibles_AT": [
+  1197,
+  1197
+ ],
+ "visibles_NO": [
+  583,
+  583
+ ],
+ "visibles_CZ": [
+  604,
+  604
+ ],
+ "cerca": [
+  [
+   "NL",
+   "n10203429792",
+   "Alida de Vries"
+  ],
+  [
+   "FR",
+   "n10941688220",
+   "Jean-Pierre Catherine"
+  ],
+  [
+   "NO",
+   "n12818375507",
+   "Daniel Caplan"
+  ],
+  [
+   "AT",
+   "n10107222623",
+   "Johanna Sonnenschein"
+  ],
+  [
+   "DE",
+   "Q135684044",
+   "Martha Schwarz"
+  ]
+ ],
+ "errores": []
+}

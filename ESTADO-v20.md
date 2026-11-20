@@ -48,3 +48,4 @@ Dir de trabajo: /workspace/countries-proto-v20 (copia de v19 = 49e7725, origin/m
 - 06:35 fix CSS fila de países abierta (scroll propio; html.js .countries overflow:visible lo anulaba) + country-row-check ajustado (solo botones visibles). Relanzando run-all.
 - 06:50 INFORME-v20.md + CSVs generados y commiteados. Falta: resultado run-all, capturas 412 px, commit final.
 - 07:05 attribution-check: clic por JS (27 países). Lanzado run-all completo (REQUIRE_OAV=1, venv-ci) → runall.log; capturas con v20-shots.py en paralelo.
+- 07:15 capturas 412 px en shots/ (17 png + v20-shots.json). Esperando run-all completo.
