@@ -28,3 +28,8 @@ export GIT_AUTHOR_NAME="Carlos Kauffmann" GIT_AUTHOR_EMAIL=roquena71-a11y@users.
 ## 19:51 run-all REQUIRE_OAV=1 en segundo plano (nohup).
 PID: 691051  log: /workspace/v20-data-r4/runall_r4.log
 Bump ya en v20 (--sync). API offline ya generada (2026-11-20, 9399 archivos, validate 0 errores). Tras run-all: git add -f api data/search llms, commit final (sin push).
+
+## 20:22 run-all REQUIRE_OAV=1: OK (log /workspace/v20-data-r4/runall_r4.log; PID 691051 terminó).
+FALLOS country-buttons: ninguno. sidewalk-render-check20 OK en 8928 placas (incluye regla de calzada). v20r4-checks OK. API offline generated=2026-11-20, 9399 archivos, validate 0 errores 4 avisos (archivos grandes, iguales que r3). Versión 20. Commit final, sin push.
+Cuentas: 72.110 total. DE 65.830, NL 1.284, FR 1.177, AT 1.119, NO 611, CZ 600, IT 474, ES 328, BE 172, LU 146, HU 87, LT 70, CH 51, PL 33, SK 33, JE 20, HR 17, DK 14, GG 8, FI 7, AD 7, IE 6, SE 6, LV 4, RO 2, GB 2, LI 2.
+Calzada 109, residuales 147, excepciones >25 m 250 (29 grupos), pares <1,55 m 46 (incl. 1,51 1,52 1,54). Tepfer corregido a 18,2 m (tier 6). C-extras n2310732548 / Q132934563 / Q132934701 corregidos (near-extra/DE.json). 22 LU→FR, 4 Vaals DE→NL, Wien/Klagenfurt n2975306671.
