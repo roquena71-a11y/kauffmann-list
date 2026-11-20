@@ -14,6 +14,7 @@ byc = {}
 for i in FP['ids']: byc.setdefault(S[i].get('cc') or 'DE', []).append(S[i])
 roads = {}; near = {}
 for cc, ss in byc.items():
+    if not ((SW.D / ('near/%s.json' % cc)).exists() or (SW.D / ('near/%s.pkl' % cc)).exists()): continue
     N = SW.load_near(cc)
     for s in ss:
         near[s['id']] = []

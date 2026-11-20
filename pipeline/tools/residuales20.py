@@ -35,6 +35,14 @@ for r in dump['rows']:
     if r[7]: continue
     d = math.hypot((r[4] - r[2]) * M, (r[5] - r[3]) * M * math.cos(math.radians(r[2])))
     if d > 25.0 and r[0] in byid: ex.append([r[0], r[1], byid[r[0]].get('n'), round(d, 1), gsize.get(r[0], 1), ('dibujo a >25 m de la coordenada de origen de la placa: grupo de %d placas con la misma dirección; desplazamiento del grupo %s m + casilla de la cuadrícula (hasta ~%.0f m) y/o dispersión de las coordenadas de origen dentro del grupo (la placa no está en el centro). %s' % (gsize.get(r[0], 1), (SWd.get(r[0], {}).get('desplazamiento_m', 0)), SW.spread(gsize.get(r[0], 1)), 'Grupo de >20 placas: excepción documentada.' if gsize.get(r[0], 1) > 20 else 'Grupo de <=20: el tope del solver (25 m menos la dispersión) se cumple para el centro del grupo, no para cada casilla; documentado, sin mover más para no falsear la dirección.'))])
+# v20r4 (C ronda 3): los grupos «FACADE» (calle estrecha entre fachadas continuas, p. ej. los 7 Tepfer de 21 Rue Sainte-Marie, ) llevan un motivo propio, no el genérico
+_ff = Path(__file__).with_name('sidewalk-facade20.json'); _FAC = json.load(open(_ff)) if _ff.exists() else {}
+for _e in ex:
+    _gi = SWd.get(_e[0], {}).get('grupo_id')
+    if _gi in _FAC:
+        _street = _FAC[_gi] or 'su calle'
+        _e[5] = ('grupo de %d placas en una calle estrecha entre fachadas continuas (%s): el intento con holguras completas (columnas a >=0,5 m de todo edificio y centros fuera de TODA calzada de vía rodada, sin la exención de fachada) no tiene solución a <=25 m del origen (nivel %s en data/sidewalk-v20.json); '
+                 'se dibuja en la posición relajada más cercana con los centros fuera de edificios y de la calzada (a %.1f m del origen, desplazamiento del grupo %s m), sin falsear la dirección: la coordenada de origen no se toca' % (_e[4], _street, SWd.get(_e[0], {}).get('nivel'), _e[3], SWd.get(_e[0], {}).get('desplazamiento_m')))
 with open(R / 'excepciones-25m-v20.csv', 'w', newline='', encoding='utf-8') as fh:
     w = csv.writer(fh); w.writerow(['id', 'pais', 'nombre', 'dibujo_vs_origen_m', 'placas_en_el_grupo', 'motivo']); w.writerows(ex)
 print('residuales', len(rows), Counter(r[3] for r in rows), '| excepciones >25 m:', len(ex), Counter(r[4] > 20 for r in ex))

@@ -30,6 +30,7 @@ byc = {}
 for s in sel: byc.setdefault(s.get('cc') or 'DE', []).append(s)
 near = {}; B = {}; ids = []
 for cc, ss in byc.items():
+    if not ((SW.D / ('near/%s.json' % cc)).exists() or (SW.D / ('near/%s.pkl' % cc)).exists()): print('omitido (sin near):', cc, len(ss)); continue
     N = SW.load_near(cc)
     for s in ss:
         la, lo = s['la'], s['lo']; ids.append(s['id']); near[s['id']] = []
