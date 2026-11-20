@@ -31,7 +31,7 @@ assert(!/document\.cookie|localStorage|sessionStorage|indexedDB|goatcounter|new 
 
 // --- Service worker ---
 const sw = fs.readFileSync(path.join(ROOT, 'sw.js'), 'utf8');
-assert(/VERSION = 'kauffmann-v19-pages'/.test(sw), 'sw v19');
+assert(/VERSION = 'kauffmann-v20-pages'/.test(sw), 'sw v20');
 const shell = eval(sw.match(/const SHELL = (\[[\s\S]*?\]);/)[1]);
 const bare = shell.map(f => f.replace(/\?v=\d+$/, ''));
 for (const f of ['source-links.js', 'dedupe.js', 'counter.js', 'app3d.js', 'people.js', 'mapui.js', 'mapui.css', 'index.html']) assert(bare.includes(f), 'SHELL has ' + f);
@@ -52,4 +52,4 @@ function lum(h) { const c = [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16) /
 const cr = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
 for (const bg of ['#0e1726', '#07111f', '#101c30', '#17263c', '#152033']) assert(cr('#9cc3ff', bg) >= 3, 'focus contrast ≥3:1 on ' + bg + ' = ' + cr('#9cc3ff', bg).toFixed(2));
 assert(cr('#9cc3ff', '#07111f') >= 3, 'focus vs its navy halo');
-console.log('OK counter propio (on, DNT/GPC, sin cookies, solo sección), sw v19 + SHELL, labels, focus contrast ' + cr('#9cc3ff', '#0e1726').toFixed(2) + ':1');
+console.log('OK counter propio (on, DNT/GPC, sin cookies, solo sección), sw v20 + SHELL, labels, focus contrast ' + cr('#9cc3ff', '#0e1726').toFixed(2) + ':1');
