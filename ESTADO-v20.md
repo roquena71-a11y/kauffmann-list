@@ -50,3 +50,4 @@ Dir de trabajo: /workspace/countries-proto-v20 (copia de v19 = 49e7725, origin/m
 - 07:05 attribution-check: clic por JS (27 países). Lanzado run-all completo (REQUIRE_OAV=1, venv-ci) → runall.log; capturas con v20-shots.py en paralelo.
 - 07:15 capturas 412 px en shots/ (17 png + v20-shots.json). Esperando run-all completo.
 - 07:55 country-buttons: 30 fallos (caja de 32 px tocaba el botón de capas) → mapui.js padding móvil left 40→72; CB 320x568+360x740 OK; faltan 360x640/390x844/412x915 y run-all final (SKIP_COUNTRY_BUTTONS para el resto).
+- 08:20 FINAL: run-all REQUIRE_OAV=1 OK (log /workspace/v20-data/runall_final.log), capturas regeneradas, informe. Commit final local, sin push.

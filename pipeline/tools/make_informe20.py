@@ -65,6 +65,9 @@ a('- Las placas «legítimas» según la fuente (OSM nivel −1 / Stolperschwell
 
 a('## 6. Auditoría\n')
 a('Los scripts de auditoría y los datos están en `/workspace/audits/countries/v20-indep/` (A: fuente cruda; B: contraste en vivo; C: geometría en vivo + interfaz) y `/workspace/v20-data/`. **Las auditorías independientes las ejecutan auditores distintos del constructor**; sus informes irán a `/workspace/audits/countries/v20-indep/{A,B,C}/`.\n')
+a('## 6b. Pruebas ejecutadas (por el constructor, no son auditorías independientes)\n')
+a('- `tests/run-all.sh` con `REQUIRE_OAV=1` en un venv nuevo (`tests/requirements-ci.txt`): OK (unitarias del pipeline, ai-door-check, ai-sim, sidewalk-render-check y sidewalk-render-check20 [7.950 placas; 4 residuales documentados], map2d, fila de países, ficha de Hassall, atribución + axe 0). `country-buttons-check` (27 países; 30 fallos de la primera pasada corregidos con `padding` móvil `left: 72`) pasó en 320×568, 360×740, 360×640, 390×844 y 412×915; en la última pasada completa solo `run-all` con `SKIP_COUNTRY_BUTTONS=1`.')
+a('- Capturas a 412 px: `shots/p412-v20-*.png` (inicio con la fila plegada, fila abierta, vista de NL/FR/AT/NO/CZ, primeros planos 2D y 3D en acera de NL/FR/NO/AT/DE), `shots/v20-shots.json`.\n')
 a('## 7. Archivos\n')
 a('- `data/stones.json` (con `dla`/`dlo`), `data/v20-added-20261120.json` (manifiesto), `data/sidewalk-v20.json`, `pendiente-v20.csv`, `pendiente-1480-v20.csv`, `INFORME-v20-personas.csv`.')
 a('- Código: `pipeline/tools/{v20_common,build_v20,merge_v20,verify1480,sidewalk20,ui20,make_informe20}.py`.')
