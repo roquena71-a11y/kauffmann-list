@@ -106,6 +106,18 @@ def groups_of(stones):
                 for dj in (-1, 0, 1):
                     for j in grid.get((ci + di, cj + dj), ()):
                         if j > i and hav(s['la'], s['lo'], stones[j]['la'], stones[j]['lo']) <= lim: par[find(i)] = find(j)
+    # v20r4: como la app (buildStones): grupos con el centroide a <0,8 m se unen (misma posición con distinta redacción de la dirección); sin esto el solver trataba como dos grupos lo que la app dibuja como uno (cuadrícula de 2 columnas, desplazadas ~0,9 m)
+    cl = defaultdict(list)
+    for i in range(len(stones)): cl[find(i)].append(i)
+    keys = list(cl); cen = {k: (sum(stones[i]['la'] for i in cl[k]) / len(cl[k]), sum(stones[i]['lo'] for i in cl[k]) / len(cl[k])) for k in keys}
+    cg = defaultdict(list)
+    for k in keys: cg[(math.floor(cen[k][0] / 0.00002), math.floor(cen[k][1] / 0.00002))].append(k)
+    for k in keys:
+        a0, b0 = math.floor(cen[k][0] / 0.00002), math.floor(cen[k][1] / 0.00002)
+        for di in (-1, 0, 1):
+            for dj in (-1, 0, 1):
+                for k2 in cg.get((a0 + di, b0 + dj), ()):
+                    if k2 > k and hav(cen[k][0], cen[k][1], cen[k2][0], cen[k2][1]) < 0.8: par[find(k)] = find(k2)
     gs = defaultdict(list)
     for i in range(len(stones)): gs[find(i)].append(stones[i])
     return [sorted(g, key=lambda s: s['id']) for g in gs.values()]

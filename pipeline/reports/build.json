@@ -1,6 +1,6 @@
-{"bytes":324622110,
+{"bytes":324620823,
 "failures":{},
-"files":9401,
+"files":9399,
 "generated":"2026-11-20",
 "max_file_bytes":3769188,
 "notes":{"stolpersteine_de":{"snapshot":"2026-11-19T00:00+01:00"},"wikidata_holocaust_victims":{"http":{"cache_hits":928,"requests":0,"retries":0}}},
