@@ -10,8 +10,8 @@ _W = r"(?<![a-zäöüß])"   # inicio de palabra (alemán)
 _E = r"(?![a-zäöüß])"    # fin de palabra
 
 SUICIDE = re.compile(_W + r"(flucht in den tod|freitod|suizid|selbstmord|nahm sich das leben|suicide)" + _E)
-MURDERED = re.compile(_W + r"(ermordet|hingerichtet|erschossen|erhängt|erhaengt|getötet|getoetet|totgeschlagen|vergast|umgebracht|euthanasie|mördad|murdered|murhattiin)" + _E)
-DIED = re.compile(_W + r"(tot|gestorben|starb|umgekommen|verstorben|für tot erklärt|fuer tot erklaert|todesmarsch|tod|died)" + _E)
+MURDERED = re.compile(_W + r"(ermordet|hingerichtet|erschossen|erhängt|erhaengt|getötet|getoetet|totgeschlagen|vergast|umgebracht|euthanasie|mördad|murdered|murhattiin|vermoord|geëxecuteerd|gefusilleerd|assassin[ée]e?s?|assassinat|fusill[ée]e?s?|zavražděn[aoiy]?|umučen[aoiy]?|popraven[aoiy]?|assassinat[oa]|uccis[oa]|fucilat[oa]|asesinad[oa]|fusilad[oa]|zamordowan[aoyi]?|rozstrzelan[aoyi]?|meggyilkolt|zavraždený|zavraždená|ubijen[aoi]?)" + _E)
+DIED = re.compile(_W + r"(tot|gestorben|starb|umgekommen|verstorben|für tot erklärt|fuer tot erklaert|todesmarsch|tod|died|overleden|omgekomen|décédée?|decedut[oa]|mort|morte|morto|morta|muerto|muerta|fallecid[oa]|murió|zemřel[a]?|zahynul[a]?|zmarł[a]?|zginął|zginęła|zomrel[a]?|meghalt)" + _E)
 MISSING = re.compile(_W + r"(verschollen|schicksal unbekannt|öde okänt)" + _E)
 # Supervivencia: se reconoce también como PREFIJO de palabra (überlebte, befreiten, versteckte, Fluchtweg…).
 SURVIVAL_PREFIX = re.compile(_W + r"(überlebt|ueberlebt|uberlebt|gerettet|befreit|entkam|entkommen|versteckt|survived|liberated|liberared|released|vapautui|supravie|eliberat|surv[eé]cu|lib[eé]r[eé]|rescap|[eé]chapp|[eé]vad|overleefd|overleefde|bevrijd|ondergedoken|sopravviss|liberat|scampat|sobreviv|liberad|rescatad|przeżył|przezyl|ocalał|ocalal|uwolnion|přežil|prezil|osvobozen|prežil|oslobod|túlél|megmenek|szabadul|preživ|oslobođ|pobegnil|overlevde|overlevede|befridd|befriet|izdzīvoj|atbrīvo|sobrevisqu|επιζ|вижив|врятува|iwwerlieft)")

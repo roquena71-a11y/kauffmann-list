@@ -100,6 +100,10 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     name, why = clean_name(raw)
     if not name: P(sid, why, **base); continue
     if COLLECTIVE_RE.search(name): P(sid, 'el nombre parece colectivo o de varias personas (%s)' % name[:60], **base); continue
+    _np = not_one_person(name)
+    if _np: P(sid, _np, **base); continue
+    _pq = (t.get('subject:wikidata') or '').strip()
+    if _pq in SUBJ and SUBJ[_pq] and not SUBJ[_pq].get('human'): P(sid, 'subject:wikidata (%s) no es un humano en Wikidata' % _pq, n=name, **base); continue
     if len(toks(name)) < 2 and len(name.split()) < 2: P(sid, 'nombre de una sola palabra (%s)' % name, **base); continue
     insc_raw = t.get('inscription') or t.get('memorial:text') or ''
     insc = split_insc(insc_raw)
@@ -108,7 +112,13 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     hn = t.get('addr:housenumber') or t.get('object:housenumber') or t.get('memorial:addr:housenumber')
     maddr = (t.get('memorial:addr') or '').strip()
     a = None
-    if street: a = compose_addr(street, hn, CC)
+    mnf = re.match(r'^(\d+\s?[a-zA-Z]?)\s*,\s*(.+)$', maddr) if (maddr and not street) else None   # v20r2: «3, Rue X[, Ciudad]» = nº, calle (FR/LU)
+    mnf_city = None
+    if mnf:
+        _pp = [x.strip() for x in mnf.group(2).split(',') if x.strip()]
+        a = '%s %s' % (re.sub(r'\s+', '', mnf.group(1)), _pp[0])
+        if len(_pp) > 1 and not re.search(r'\d', _pp[-1]): mnf_city = _pp[-1]
+    elif street: a = compose_addr(street, hn, CC)
     elif maddr:
         _p = [x.strip() for x in maddr.split(',') if x.strip()]
         a = ', '.join(_p[:-1]) if len(_p) >= 2 and not re.search(r'\d', _p[-1]) else ', '.join(_p)   # quita solo la ciudad final
@@ -117,7 +127,8 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
         ps, ph = parse_memorial_addr(maddr)
         if ps: street, hn = ps, ph
     city = t.get('addr:city') or t.get('object:city') or t.get('memorial:addr:city') or t.get('addr:place')
-    if not city and maddr and ',' in maddr:
+    if not city and mnf: city = mnf_city
+    elif not city and maddr and ',' in maddr:
         city = maddr.split(',')[-1].strip() if not re.search(r'\d', maddr.split(',')[-1]) else None
     subj_ok = False
     if not (a or insc):
@@ -139,6 +150,7 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     fx = ' '.join(t.get(k, '') for k in ('fixme', 'FIXME', 'note') if t.get(k))
     posflag = bool(fx and POS_FIXME.search(fx))
     verified = pos == 'ok' or cpos == 'ok'
+    if posflag: verified = (pos == 'ok' and dpos is not None and dpos <= 15) or (cpos == 'ok' and (cd is None or cd > 1))   # v20r2: con fixme de posición, la dirección debe estar a <=15 m y la foto de Commons no puede coincidir al metro con OSM (coordenada copiada, no independiente)
     if posflag and not verified: P(sid, 'OSM marca la posición como dudosa («%s») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: %s, Commons: %s)' % (fx[:50], pos, cpos), n=name, **base); continue
     if pos == 'lejos' and cpos != 'ok': P(sid, 'la dirección etiquetada existe en OSM pero a %.0f m de la posición de la placa' % dpos, n=name, **base); continue
     if cpos == 'lejos' and pos != 'ok': P(sid, 'la foto de Commons está a %d m de la posición de la placa en OSM' % cd, n=name, **base); continue
@@ -149,9 +161,9 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     if subj_ok: notes.append('persona verificada en Wikidata (humano, nombre y años coinciden) vía subject:wikidata; sin dirección ni inscripción en OSM')
     if b_ and (not date_ok(b_) or (yrs and b_[:4] not in yrs)):
         notes.append('nacimiento %s de OSM descartado' % b_); b_ = ''
-    if d_ and (not date_ok(d_) or int(d_[:4]) < 1930 or (b_ and int(d_[:4]) < int(b_[:4]))):
+    if d_ and (not date_ok(d_) or int(d_[:4]) < 1930 or (b_ and int(d_[:4]) < int(b_[:4])) or (yrs and d_[:4] not in yrs)):   # v20r2: el año de muerte debe aparecer en la inscripción (si ésta trae años)
         notes.append('muerte %s de OSM descartada' % d_); d_ = ''
-    if ly_b and not b_ and not d_: b_, d_ = ly_b, ly_d; notes.append('años (%s–%s) leídos del nombre de OSM' % (ly_b, ly_d))
+    if ly_b and not b_ and not d_ and (not yrs or (ly_d in yrs and ly_b in yrs)): b_, d_ = ly_b, ly_d; notes.append('años (%s–%s) leídos del nombre de OSM' % (ly_b, ly_d))
     rec = {'id': sid, 'la': e['lat'], 'lo': e['lon'], 'src': 'osm'}
     q = t.get('wikidata') or t.get('memorial:wikidata')
     if q in wd:
@@ -172,8 +184,8 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     if b_: rec['b'] = b_
     if d_: rec['d'] = d_
     if t.get('start_date') and re.fullmatch(r'\d{4}(-\d{2}(-\d{2})?)?', t['start_date'].strip()): rec['laid'] = t['start_date'].strip()
-    f = t.get('wikimedia_commons') or ''
-    if f.startswith('File:'): rec['img'] = f[5:]
+    f = (t.get('wikimedia_commons') or '').strip()
+    if f: rec['img'] = f   # v20r2: se normaliza al final (pick_img: varios ficheros con «;», prefijo File:, existencia en Commons, foto de otra persona)
     rec['_v'] = {'pos': pos, 'dpos': dpos, 'commons': cpos, 'dcommons': cd, 'notes': notes, 'osm_version': e.get('version'), 'osm_time': e.get('timestamp')}
     osm_recs.append(rec)
 
@@ -190,7 +202,7 @@ for r in osm_recs:
         for w in wd.values():
             if w['ll'] and hav(w['ll'][0], w['ll'][1], r['la'], r['lo']) <= 15:
                 nm = wd_name(w)
-                if nm and name_in_text(nm, r['n']) >= 0.99 and name_in_text(r['n'], nm) >= 0.99: q = w['q']; break
+                if nm and names_compatible(nm, r['n']): q = w['q']; break
     if q and q in wd:
         w = wd[q]
         if w['ll'] and hav(w['ll'][0], w['ll'][1], r['la'], r['lo']) > MAXWD:
@@ -225,6 +237,9 @@ for q, w in sorted(wd.items()):
     nm, wy_b, wy_d = strip_years(nm)
     nm, why = clean_name(nm)
     if not nm or COLLECTIVE_RE.search(nm): P(q, why or 'nombre colectivo en Wikidata', **base); continue
+    _np = not_one_person(nm)
+    if _np: P(q, _np, **base); continue
+    if len(toks(nm)) < 2 and len(nm.split()) < 2: P(q, 'nombre de una sola palabra (%s)' % nm, **base); continue
     if not w['ll'] or w['multi_coord']: P(q, 'sin coordenadas P625 únicas en Wikidata', **base); continue
     la, lo = w['ll']
     ins = sorted(w['inscr']); ad = sorted(w['addr'])
@@ -253,7 +268,7 @@ for q, w in sorted(wd.items()):
     rec = {'id': q, 'la': round(la, 6), 'lo': round(lo, 6), 'src': 'wd', 'wd': q}
     if len(w['subj']) == 1 and re.fullmatch(r'Q\d+', next(iter(w['subj']))): rec['p'] = next(iter(w['subj']))
     rec['n'] = nm
-    if wy_b: rec['b'] = wy_b; rec['d'] = wy_d
+    if wy_b and (not insc or not years_in(insc) or (wy_b in years_in(insc) and wy_d in years_in(insc))): rec['b'] = wy_b; rec['d'] = wy_d
     if insc: rec['i'] = insc
     rec['a'] = a
     if c: rec['c'] = c
@@ -275,9 +290,29 @@ for q, w in sorted(wd.items()):
 fin = []
 for r in osm_recs:
     if r['src'] == 'wd':
-        dup = next((s for s in fin if s['src'] != 'wd' and norm(s['n']) == norm(r['n']) and hav(s['la'], s['lo'], r['la'], r['lo']) <= 100), None)
+        dup = next((s for s in fin if s['src'] != 'wd' and ((norm(s['n']) == norm(r['n']) and hav(s['la'], s['lo'], r['la'], r['lo']) <= 100) or (hav(s['la'], s['lo'], r['la'], r['lo']) <= 15 and names_compatible(s['n'], r['n'])))), None)   # v20r2: <=15 m y nombres compatibles (subconjunto)
         if dup: dups.append({'id': r['id'], 'dup_de': dup['id'], 'n': r['n']}); continue
     fin.append(r)
+# ---- imágenes (v20r2, auditoría B): «A.jpg;File:B.jpg» → un solo fichero, sin «File:», que exista hoy en Commons y no sea la foto de otra persona ----
+EXISTS = json.load(open(D / 'commons_exists20.json', encoding='utf-8')) if (D / 'commons_exists20.json').exists() else {}
+PHOTO_FOR = re.compile(r'^Stolperstein(?:e|en)?\s+(?:f[üu]r|voor|pour|per|para|f[öo]r|til|dla|pro)\s+(?P<nm>.+?)(?:\s*\(.*\))?(?:\s*\d+)?\.\w+$', re.I)
+def pick_img(rec):
+    raw = rec.get('img')
+    if not raw: return None
+    for c in re.split(r'\s*;\s*', raw):
+        c = c.strip()
+        if c.startswith('File:'): c = c[5:]
+        c = c.replace('_', ' ')
+        if not c or not EXISTS.get(c): continue
+        m = PHOTO_FOR.match(c)
+        if m and name_in_text(rec['n'], m.group('nm')) < 0.5 and name_in_text(m.group('nm'), rec['n']) < 0.5: continue   # la foto es de otra persona
+        return c
+    return None
+for r in fin:
+    ni = pick_img(r)
+    if r.get('img') and ni != r['img']: r['_v'].setdefault('notes', []).append('imagen %s descartada (no existe en Commons, es de otra persona o venía con varios ficheros)' % r['img'][:80])
+    if ni: r['img'] = ni
+    else: r.pop('img', None)
 ORDER = ['id', 'la', 'lo', 'src', 'wd', 'p', 'wp', 'n', 'i', 'a', 'c', 'sub', 'cc', 'b', 'd', 'laid', 'img']
 added = [{k: r[k] for k in ORDER if k in r} | {'_v': r['_v']} for r in fin]
 from collections import Counter

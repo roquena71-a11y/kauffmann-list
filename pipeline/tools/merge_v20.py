@@ -31,6 +31,18 @@ if (D / 'out/D1480.json').exists() and '--no1480' not in sys.argv:
     o = json.load(open(D / 'out/D1480.json', encoding='utf-8'))
     d1480 = [{k: v for k, v in r.items() if k != '_v'} for r in o['added'] if r['id'] not in ids]
     for r in d1480: ids.add(r['id'])
+# v20r2: placas solo-Wikidata que son la misma persona que una placa ya presente (v19 reasignada, otra de OSM) a <=15 m con nombre compatible → duplicado, no se añade
+sys.path.insert(0, str(Path(__file__).resolve().parent)); from v20_common import names_compatible; from geo import hav
+_grid = {}
+for s in S + d1480 + [r for r in added if r.get('src') != 'wd']: _grid.setdefault((int(s['la'] / 0.0003), int(s['lo'] / 0.0005)), []).append(s)
+_keep = []
+for r in added:
+    if r.get('src') == 'wd':
+        ci, cj = int(r['la'] / 0.0003), int(r['lo'] / 0.0005)
+        d = next((s for di in (-1, 0, 1) for dj in (-1, 0, 1) for s in _grid.get((ci + di, cj + dj), []) if s['id'] != r['id'] and (s.get('cc') or 'DE') == (r.get('cc') or 'DE') and hav(s['la'], s['lo'], r['la'], r['lo']) <= 15 and names_compatible(s['n'], r['n'])), None)
+        if d: man['duplicates'].append({'cc': r['cc'], 'id': r['id'], 'dup_de': d['id'], 'n': r['n'], 'regla': 'merge: <=15 m y nombres compatibles'}); man['countries'][r['cc']]['anadidas'] -= 1; man['countries'][r['cc']]['duplicados'] += 1; continue
+    _keep.append(r)
+added = _keep
 data['stones'] = S + d1480 + added; data['meta']['count'] = len(data['stones']); data['meta']['v20_wd1480_added'] = len(d1480)
 data['meta']['layout_pinned'] = True   # v20: la app no separa grupos (lo hace sidewalk20): dibujo = dla/dlo exacto
 data['meta']['v20_added'] = {'records': len(added), 'countries': {cc: man['countries'][cc]['anadidas'] for cc in ccs},

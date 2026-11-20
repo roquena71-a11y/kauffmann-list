@@ -69,9 +69,11 @@ def parse_wp(v):
     m = re.match(r'https?://([a-z\-]+)\.wikipedia\.org/wiki/(.+)$', v)
     if m:
         from urllib.parse import unquote
-        return '%s:%s' % (m.group(1), unquote(m.group(2)).replace('_', ' '))
-    m = re.match(r'^([a-z]{2,3}(?:-[a-z]+)?):(.+)$', v)
-    return v if m else None
+        v = '%s:%s' % (m.group(1), unquote(m.group(2)).replace('_', ' '))
+    elif not re.match(r'^([a-z]{2,3}(?:-[a-z]+)?):(.+)$', v): return None
+    # v20r2: la página genérica sobre las piedras (no sobre la persona) no es un enlace de persona
+    if re.fullmatch(r"(pietre d.inciampo|stolpersteine|stolperstein|struikelstenen|pierres? d.achoppement|stolpersteine in .*|liste der stolpersteine.*|lista (de )?(delle )?(pietre|piedras).*|kamienie pami[eę]ci|stolpersteine?)", v.split(':', 1)[1].strip(), re.I): return None
+    return v
 
 NUMBER_FIRST = {'FR', 'GB', 'GG', 'JE', 'IE', 'AD', 'LU', 'BE_FR'}
 
@@ -118,3 +120,23 @@ def strip_years(raw):
     m = YEARS_RE.match((raw or '').strip())
     if m and int(m.group('d')) > int(m.group('b')) and int(m.group('d')) - int(m.group('b')) <= 100: return m.group('nm').strip(), m.group('b'), m.group('d')
     return raw, None, None
+
+# ---- v20r2 (auditoría B): nombres que no son una sola persona ----
+NOT_PERSON_RE = re.compile(r'\b(hier|waren|wohnten|wohnte|stellvertretend|zwangsarbeit|festspiele|quartett|institut|blindeninstitut|kulturschaffenden|juedischen|menschen|vielen|oost polen)\b')
+COMMA_JUNK = re.compile(r'^(geb|geboren|nee|née|born|f|dit|alias|gen|genannt|jr|sr|dr|prof)\b', re.I)
+def not_one_person(name):
+    """Motivo (str) si el «nombre» no es UNA persona: varias personas («A & B», «A; B», «A, B», «...»), rótulo o institución; None si parece una persona."""
+    n = (name or '').strip()
+    if re.search(r'[;&]|\.\.\.|…', n): return 'el nombre junta a varias personas (%s)' % n[:70]
+    segs = [s.strip() for s in n.split(',') if s.strip()]
+    segs = [s for s in segs if not COMMA_JUNK.match(s)]
+    if len(segs) >= 2 and all(len(toks(s)) >= 2 or len(s.split()) >= 2 for s in segs): return 'el nombre junta a varias personas separadas por comas (%s)' % n[:70]
+    if NOT_PERSON_RE.search(norm(n)): return 'el «nombre» es un rótulo o una institución, no una persona (%s)' % n[:70]
+    return None
+
+def names_compatible(a, b):
+    """Nombres de la misma persona: iguales (normalizados) o los tokens de uno (>= 2) son subconjunto de los del otro (segundo nombre, apellido de soltera)."""
+    if norm(a) == norm(b): return True
+    ta, tb = set(toks(a)), set(toks(b))
+    sm, bg = (ta, tb) if len(ta) <= len(tb) else (tb, ta)
+    return len(sm) >= 2 and sm <= bg
