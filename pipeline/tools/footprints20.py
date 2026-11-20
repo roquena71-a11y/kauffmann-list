@@ -10,7 +10,7 @@ S = json.load(open(R / 'data/stones.json', encoding='utf-8'))['stones']
 legit = set(json.load(open(SW.D / 'legit_inside.json')))
 random.seed(20261120)
 de = [s for s in S if (s.get('cc') or 'DE') == 'DE']
-sel = [s for s in S if (s.get('cc') or 'DE') not in ('DE',) + SW.V19] + random.sample(de, 1500) + [s for s in de if s['id'] in legit]
+sel = [s for s in S if (s.get('cc') or 'DE') != 'DE'] + random.sample(de, 1500) + [s for s in de if s['id'] in legit]  # v20r5: IE/SE/JE/FI/RO también (ya hay near/)
 # v20r3 (auditoría C ronda 2): los grupos que el auditor halló con el centro dentro de un edificio, las 4 placas en calzada y las 3 chinchetas 2D dentro de un edificio se comprueban SIEMPRE (todos los miembros de su grupo)
 C_IDS = set('Q44067803 n6140555537 n7120057503 n7120057504 n7120057505 Q134694663 n13186250730 n2478709768 Q139713238 Q139713259 Q139713347 Q139713355 n14280924398 n13041383986 n13032352978 n13032352980 Q133230139 n1680242278 Q139713321 Q139713367'.split())
 _fixed = {}
@@ -23,9 +23,26 @@ _road = set(open(R / 'tests/sidewalk/road-ids-v20.txt').read().split())
 if (R / 'calzada-v20.csv').exists():
     import csv as _csv
     _road |= {r['id'] for r in _csv.DictReader(open(R / 'calzada-v20.csv', encoding='utf-8'))}
-_rs = random.Random(20261120); _mv = sorted(s['id'] for s in S if s.get('dla') is not None and (s.get('cc') or 'DE') not in SW.V19)
+_rs = random.Random(20261120); _mv = sorted(s['id'] for s in S if s.get('dla') is not None)
 _road |= set(_rs.sample(_mv, 600))
+# v20r5 (auditoría C ronda 4): el test falló en Unna porque n12438845078/081 no estaban en la muestra del fixture
+# (el fallo «centro dentro» ya era hard=True, sin exención por residuales). Se incluyen SIEMPRE residuales, excepciones,
+# calzada, V19, el grupo de Unna (Mozartstraße) y Herrenstraße 22 (Karlsruhe).
+import csv as _csv2
+_always = set()
+for _fn in ('residuales-acera-v20.csv', 'excepciones-25m-v20.csv', 'calzada-v20.csv'):
+    if (R / _fn).exists():
+        _always |= {r['id'] for r in _csv2.DictReader(open(R / _fn, encoding='utf-8'))}
+_always |= {s['id'] for s in S if (s.get('cc') or 'DE') in SW.V19}
+_always |= {'n2310732548', 'n2310732531', 'n2310732544', 'n12438845078', 'n12438845081'}
+try:
+    _sw = json.load(open(R / 'data/sidewalk-v20.json', encoding='utf-8'))['stones']
+    _ug = {r.get('grupo_id') for r in _sw if r['id'] in ('n12438845078', 'n12438845081')}
+    _always |= {r['id'] for r in _sw if r.get('grupo_id') in _ug}
+except Exception:
+    pass
 _have = {s['id'] for s in sel}; sel = sel + [s for s in S if s['id'] in _road and s['id'] not in _have]
+_have = {s['id'] for s in sel}; sel = sel + [s for s in S if s['id'] in _always and s['id'] not in _have]
 byc = {}
 for s in sel: byc.setdefault(s.get('cc') or 'DE', []).append(s)
 near = {}; B = {}; ids = []
@@ -34,9 +51,13 @@ for cc, ss in byc.items():
     N = SW.load_near(cc)
     for s in ss:
         la, lo = s['la'], s['lo']; ids.append(s['id']); near[s['id']] = []
-        for bid in N.around(N.bi, la, lo, 1):
+        _pts = [(la, lo)] + ([(s['dla'], s['dlo'])] if s.get('dla') is not None else [])
+        _bids = set()
+        for _la, _lo in _pts:
+            _bids.update(N.around(N.bi, _la, _lo, 1))
+        for bid in _bids:
             outer, inner, tags = N.b[bid]
-            if min(SW.hav(la, lo, a, b) for r in outer for a, b in r) > 70: continue
+            if min(min(SW.hav(pla, plo, a, b) for r in outer for a, b in r) for pla, plo in _pts) > 70: continue
             near[s['id']].append(bid)
             if bid not in B: B[bid] = {'o': [[[round(a, 7), round(b, 7)] for a, b in r] for r in outer], 'i': [[[round(a, 7), round(b, 7)] for a, b in r] for r in inner]}
 # v20r2 (auditoría C, F1): placas sin ningún edificio de OSM a <=50 m (tras volver a traer las huellas): lista explícita; el test falla si aparece alguna fuera de ella

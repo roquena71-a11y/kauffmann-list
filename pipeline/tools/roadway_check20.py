@@ -18,7 +18,7 @@ legit = set(json.load(open(D / 'legit_inside.json'))) if (D / 'legit_inside.json
 rows_cc = defaultdict(list)
 for r in dump:
     _cc = byid[r[0]].get('cc') or 'DE'
-    if not r[7] and _cc not in SW.V19: rows_cc[_cc].append(r)
+    if not r[7]: rows_cc[_cc].append(r)  # v20r5: IE/SE/JE/FI/RO también (ronda 4: n13021249318 JE no se comprobó porque no había near/ ni se incluían)
 def bdist(N, la, lo, rc=1):
     o = (la, lo); db = 1e9
     for bid in N.around(N.bi, la, lo, rc):

@@ -25,7 +25,7 @@ except FileNotFoundError: COMMONS = {}
 BOX_WIEN = (48.10, 16.18, 48.33, 16.58); BOX_PRAHA = (49.94, 14.22, 50.18, 14.71); BOX_BRATISLAVA = (48.05, 16.95, 48.25, 17.30)   # (lat_min, lon_min, lat_max, lon_max)
 def in_box(r, b): return b[0] <= r['la'] <= b[2] and b[1] <= r['lo'] <= b[3]
 # v20r4: municipio que los límites de OSM no dan y que Nominatim (OSM, reverse zoom 18, 2026-11-20) confirma: n2975306671 (Josef Logar, 46,6233 N 14,3033 E) = Klagenfurt am Wörthersee (barrio Innere Stadt)
-CITY_MANUAL = {'n2975306671': 'Klagenfurt am Wörthersee'}
+CITY_MANUAL = {'n2975306671': 'Klagenfurt am Wörthersee', 'n5885430141': 'Vaals'}  # imagen Commons «Stolperstein Simon Gans, Vaals.jpg»; cd ya era Vaals; las otras placas de Vaals tienen c=Vaals
 VIENNA = {'Innere Stadt', 'Leopoldstadt', 'Landstraße', 'Wieden', 'Margareten', 'Mariahilf', 'Neubau', 'Josefstadt', 'Alsergrund', 'Favoriten', 'Simmering', 'Meidling', 'Hietzing', 'Penzing', 'Rudolfsheim-Fünfhaus', 'Ottakring', 'Hernals', 'Währing', 'Döbling', 'Brigittenau', 'Floridsdorf', 'Donaustadt', 'Liesing'}
 MANUAL_PENDING = {'n8307048446': 'la inscripción nombra a más de una persona (Erna y Georg Duschinsky): una ficha por persona no es posible con un solo nodo'}   # v20r3 (A ronda 2, F3)
 def commons_check(la, lo, fname):

@@ -33,3 +33,13 @@ Bump ya en v20 (--sync). API offline ya generada (2026-11-20, 9399 archivos, val
 FALLOS country-buttons: ninguno. sidewalk-render-check20 OK en 8928 placas (incluye regla de calzada). v20r4-checks OK. API offline generated=2026-11-20, 9399 archivos, validate 0 errores 4 avisos (archivos grandes, iguales que r3). Versión 20. Commit final, sin push.
 Cuentas: 72.110 total. DE 65.830, NL 1.284, FR 1.177, AT 1.119, NO 611, CZ 600, IT 474, ES 328, BE 172, LU 146, HU 87, LT 70, CH 51, PL 33, SK 33, JE 20, HR 17, DK 14, GG 8, FI 7, AD 7, IE 6, SE 6, LV 4, RO 2, GB 2, LI 2.
 Calzada 109, residuales 147, excepciones >25 m 250 (29 grupos), pares <1,55 m 46 (incl. 1,51 1,52 1,54). Tepfer corregido a 18,2 m (tier 6). C-extras n2310732548 / Q132934563 / Q132934701 corregidos (near-extra/DE.json). 22 LU→FR, 4 Vaals DE→NL, Wien/Klagenfurt n2975306671.
+
+## 21:20 r5 (auditoría C ronda 4 FAIL / B menor) — WIP (reaplicado tras un reset del worktree a ea5fba73; near/ V19 y near-extra/DE del Overpass 20-nov 21:13 UTC se conservaron)
+Causa del test que no pilló Unna: `sidewalk-render-check20.py` ya marca «centro dentro» como hard=True (residuales no eximen; solo LEGIT n12461266505/6/7), pero n12438845078/081 no estaban en `footprints-v20.json.gz`.
+- Unna Mozartstraße (162): dla/dlo +2,3 m N +2,3 m E (3,25 m NE). `layout_nudge20.json`.
+- Karlsruhe Herrenstraße 22: grupo 0,50 m más lejos de w108964401 (holgura de columna era 0,08 m).
+- near/ IE SE JE FI RO; roadway_check y footprints ya no omiten V19. n13021249318 (JE): 0,72 m del eje, sin acera ni edificio ≤25 m → calzada al regenerar.
+- excepciones: unión columna>25 m o chincheta dla>25 m. Osterfeldstraße 12: motivo específico (no se cambia la regla global de 15 m).
+- gaps20: distancia con latitud media (antes sobreestimaba y dejaba fuera los 3 pares de C).
+- INFORME: cuenta exacta «solo chincheta 2D» del CSV. n5885430141 c=Vaals.
+Pendiente: volcado, check_layout_r5, residuales/pares/calzada, footprints+roads, About/INFORME, textos/PDF, API, run-all, commit final (sin push).

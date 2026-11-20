@@ -14,6 +14,26 @@ RESID = {r['id'] for r in csv.DictReader(open(R / 'residuales-acera-v20.csv', en
 IDS = set(FP['ids']); LEGIT = set(FP['legit']); MARGIN = 0.5
 # v20r2 (auditoría C, F1): ninguna placa sin datos de edificios (el test antiguo recorría listas vacías y daba OK); solo la lista explícita (campo/costa sin edificio a <=50 m en OSM)
 SIN = set(FP.get('sin_edificios_50m', []))
+# v20r5 (auditoría C ronda 4): el test ya trataba «centro dentro de un edificio» como hard=True
+# (residuales-acera NO exime: solo LEGIT n12461266505/6/7). Falló Unna porque esos ids no estaban en
+# footprints-v20.json.gz (muestra + listas fijas). Exigir que residuales, excepciones, calzada, V19 y
+# las placas de Unna/Karlsruhe del fallo estén en el fixture; si faltan, el test FALLA (cobertura).
+_V19 = {'IE', 'SE', 'JE', 'FI', 'RO'}
+_req = set()
+if (R / 'residuales-acera-v20.csv').exists():
+    _req |= {r['id'] for r in csv.DictReader(open(R / 'residuales-acera-v20.csv', encoding='utf-8'))}
+if (R / 'excepciones-25m-v20.csv').exists():
+    _req |= {r['id'] for r in csv.DictReader(open(R / 'excepciones-25m-v20.csv', encoding='utf-8'))}
+if (R / 'calzada-v20.csv').exists():
+    _req |= {r['id'] for r in csv.DictReader(open(R / 'calzada-v20.csv', encoding='utf-8'))}
+if (R / 'data/stones.json').exists():
+    _req |= {s['id'] for s in json.load(open(R / 'data/stones.json', encoding='utf-8'))['stones'] if (s.get('cc') or 'DE') in _V19}
+_req |= {'n12438845078', 'n12438845081', 'n2310732548', 'n13021249318'}
+_missing = sorted(_req - IDS)
+if _missing:
+    print('FALLO de cobertura del fixture: %d ids documentados o V19 no están en footprints-v20.json.gz (así se escapó Unna en ronda 4):' % len(_missing), _missing[:20])
+    raise SystemExit(1)
+
 _vac = []
 # v20r4 (auditoría C ronda 3, calzada): el centro dibujado no puede caer sobre la calzada de una vía rodada de OSM (ejes: tests/sidewalk/roads-v20.json.gz; semiancho por clase o width) salvo que haya un edificio a <6 m
 # (acera pegada a la fachada) o la placa esté documentada con motivo en calzada-v20.csv
