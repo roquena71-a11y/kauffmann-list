@@ -16,6 +16,8 @@ for p in glob.glob(str(D / 'osm20_*.json')):
 for p in glob.glob(str(D / 'wd_*.json')):
     for b in json.load(open(p, encoding='utf-8'))['results']['bindings']:
         if 'img' in b: add(urllib.parse.unquote(b['img']['value'].rsplit('/', 1)[-1]))
+for p in glob.glob(str(D / 'out/D1480.json')):
+    for r in json.load(open(p, encoding='utf-8'))['added']: add(r.get('img'))
 cf = D / 'commons_exists20.json'; cache = json.load(open(cf)) if cf.exists() else {}
 todo = sorted(n for n in names if n not in cache); print(len(names), 'nombres;', len(todo), 'por consultar')
 for i in range(0, len(todo), 40):

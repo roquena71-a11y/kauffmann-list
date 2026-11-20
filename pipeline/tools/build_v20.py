@@ -19,7 +19,7 @@ try: wdraw = J('wd_%s.json' % CC)['results']['bindings']
 except FileNotFoundError: wdraw = []
 near = J('near/%s.json' % CC) if (D / ('near/%s.json' % CC)).exists() else {'addr': {}, 'points': {}}
 citymap = J('city/%s.json' % CC) if (D / ('city/%s.json' % CC)).exists() else {}
-ADDR = list(near.get('addr', {}).values())
+ADDR = [{**v, 'k': k} for k, v in near.get('addr', {}).items()]
 try: COMMONS = json.load(open(D / 'commons_coords20.json', encoding='utf-8'))
 except FileNotFoundError: COMMONS = {}
 def commons_check(la, lo, fname):
@@ -32,10 +32,12 @@ MAXWD = 50.0       # m entre nodo OSM y ítem de Wikidata
 ADDR_OK = 40.0     # m: objeto addr:* de OSM con la misma calle y número
 SPLIT_RE = re.compile(r'\s*[;|]\s*')
 
-def addr_check(la, lo, street, hn):
+STONE_KEYS = {'%s%d' % (e['type'][0], e['id']) for e in J('osm20_%s.json' % CC)['elements']} if (D / ('osm20_%s.json' % CC)).exists() else set()
+def addr_check(la, lo, street, hn, indep=False):
     """('ok'|'lejos'|'sin_coincidencia'|'sin_datos', distancia al objeto addr:* coincidente más cercano)."""
     if not street or not hn: return 'sin_datos', None
     cand = [x for x in ADDR if abs(x['la'] - la) < 0.0015 and abs(x['lo'] - lo) < 0.0025]
+    if indep: cand = [x for x in cand if x.get('k') not in STONE_KEYS and not (x['t'].get('memorial') or x['t'].get('historic') == 'memorial' or x['t'].get('stolperstein') or x['t'].get('memorial:type'))]   # v20r2: la placa no se confirma a sí misma (sus propios addr:*)
     if not cand: return 'sin_datos', None
     best = None; bestn = None
     for x in cand:
@@ -107,12 +109,16 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     if len(toks(name)) < 2 and len(name.split()) < 2: P(sid, 'nombre de una sola palabra (%s)' % name, **base); continue
     insc_raw = t.get('inscription') or t.get('memorial:text') or ''
     insc = split_insc(insc_raw)
+    if re.search(r'\.(jpe?g|png|gif|webp)\b|^File:|^Opname van|\bvideo\b', insc, re.I): insc = ''   # v20r2 (A, F2): descripción de vídeo / nombre de fichero, no inscripción
     # dirección
     street = t.get('addr:street') or t.get('object:street') or t.get('memorial:addr:street')
     hn = t.get('addr:housenumber') or t.get('object:housenumber') or t.get('memorial:addr:housenumber')
     maddr = (t.get('memorial:addr') or '').strip()
+    _mp = [x.strip() for x in maddr.split(',') if x.strip()]
+    while len(_mp) > 1 and norm(_mp[-1]) in COUNTRY_NAMES: _mp.pop()   # v20r2 (A, F1): se quita el país final antes de partir
+    maddr = ', '.join(_mp)
     a = None
-    mnf = re.match(r'^(\d+\s?[a-zA-Z]?)\s*,\s*(.+)$', maddr) if (maddr and not street) else None   # v20r2: «3, Rue X[, Ciudad]» = nº, calle (FR/LU)
+    mnf = re.match(r'^(\d+\s?(?:bis|ter|quater|[a-zA-Z])?(?:\s*[-–/]\s*\d+\s?[a-zA-Z]?)?)\s*,\s*(.+)$', maddr) if (maddr and not street) else None   # v20r2: «3, Rue X[, Ciudad]» = nº, calle (FR/LU)
     mnf_city = None
     if mnf:
         _pp = [x.strip() for x in mnf.group(2).split(',') if x.strip()]
@@ -141,7 +147,7 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     # nombre ⊂ inscripción
     if insc:
         fr = name_in_text(name, insc)
-        if fr < 0.99:
+        if fr < 0.99 or not name_exact_in(name, insc):   # v20r2 (A, F4): el nombre debe estar TAL CUAL (palabras completas) en la inscripción
             P(sid, 'el nombre de OSM no coincide con la inscripción (%.0f %% de las palabras del nombre están en la inscripción)' % (fr * 100), n=name, i=insc[:120], **base); continue
     # posición: dirección etiquetada ↔ objeto addr:* de OSM, y coordenada del fichero de Commons
     pos, dpos = addr_check(e['lat'], e['lon'], street, hn)
@@ -150,7 +156,8 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     fx = ' '.join(t.get(k, '') for k in ('fixme', 'FIXME', 'note') if t.get(k))
     posflag = bool(fx and POS_FIXME.search(fx))
     verified = pos == 'ok' or cpos == 'ok'
-    if posflag: verified = (pos == 'ok' and dpos is not None and dpos <= 15) or (cpos == 'ok' and (cd is None or cd > 1))   # v20r2: con fixme de posición, la dirección debe estar a <=15 m y la foto de Commons no puede coincidir al metro con OSM (coordenada copiada, no independiente)
+    pos_i, dpos_i = addr_check(e['lat'], e['lon'], street, hn, indep=True)
+    if posflag: verified = (pos_i == 'ok' and dpos_i is not None and dpos_i <= 15) or (cpos == 'ok' and (cd is None or cd > 1))   # v20r2: con fixme de posición, la dirección debe estar a <=15 m y la foto de Commons no puede coincidir al metro con OSM (coordenada copiada, no independiente)
     if posflag and not verified: P(sid, 'OSM marca la posición como dudosa («%s») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: %s, Commons: %s)' % (fx[:50], pos, cpos), n=name, **base); continue
     if pos == 'lejos' and cpos != 'ok': P(sid, 'la dirección etiquetada existe en OSM pero a %.0f m de la posición de la placa' % dpos, n=name, **base); continue
     if cpos == 'lejos' and pos != 'ok': P(sid, 'la foto de Commons está a %d m de la posición de la placa en OSM' % cd, n=name, **base); continue
@@ -161,7 +168,7 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     if subj_ok: notes.append('persona verificada en Wikidata (humano, nombre y años coinciden) vía subject:wikidata; sin dirección ni inscripción en OSM')
     if b_ and (not date_ok(b_) or (yrs and b_[:4] not in yrs)):
         notes.append('nacimiento %s de OSM descartado' % b_); b_ = ''
-    if d_ and (not date_ok(d_) or int(d_[:4]) < 1930 or (b_ and int(d_[:4]) < int(b_[:4])) or (yrs and d_[:4] not in yrs)):   # v20r2: el año de muerte debe aparecer en la inscripción (si ésta trae años)
+    if d_ and (not date_ok(d_) or int(d_[:4]) < 1930 or (b_ and int(d_[:4]) < int(b_[:4])) or (yrs and d_[:4] not in yrs) or (death_years(insc) and d_[:4] not in death_years(insc))):   # v20r2: el año de muerte debe aparecer en la inscripción (si ésta trae años)
         notes.append('muerte %s de OSM descartada' % d_); d_ = ''
     if ly_b and not b_ and not d_ and (not yrs or (ly_d in yrs and ly_b in yrs)): b_, d_ = ly_b, ly_d; notes.append('años (%s–%s) leídos del nombre de OSM' % (ly_b, ly_d))
     rec = {'id': sid, 'la': e['lat'], 'lo': e['lon'], 'src': 'osm'}
@@ -186,7 +193,7 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     if t.get('start_date') and re.fullmatch(r'\d{4}(-\d{2}(-\d{2})?)?', t['start_date'].strip()): rec['laid'] = t['start_date'].strip()
     f = (t.get('wikimedia_commons') or '').strip()
     if f: rec['img'] = f   # v20r2: se normaliza al final (pick_img: varios ficheros con «;», prefijo File:, existencia en Commons, foto de otra persona)
-    rec['_v'] = {'pos': pos, 'dpos': dpos, 'commons': cpos, 'dcommons': cd, 'notes': notes, 'osm_version': e.get('version'), 'osm_time': e.get('timestamp')}
+    rec['_v'] = {'pos': pos, 'dpos': dpos, 'pos_indep': pos_i, 'commons': cpos, 'dcommons': cd, 'notes': notes, 'osm_version': e.get('version'), 'osm_time': e.get('timestamp')}
     osm_recs.append(rec)
 
 # ---- fusión OSM–Wikidata ----
@@ -247,7 +254,7 @@ for q, w in sorted(wd.items()):
         P(q, 'Wikidata trae varias direcciones o inscripciones distintas', **base, la=la, lo=lo); continue
     if not (ad or ins): P(q, 'sin dirección P6375 ni inscripción P1684 en Wikidata', **base, la=la, lo=lo); continue
     insc = split_insc(re.sub(r'^"|"$', '', ins[0])) if ins else ''
-    if insc and name_in_text(nm, insc) < 0.99: P(q, 'el nombre de Wikidata no coincide con su inscripción', **base, la=la, lo=lo); continue
+    if insc and (name_in_text(nm, insc) < 0.99 or not name_exact_in(nm, insc)): P(q, 'el nombre de Wikidata no coincide con su inscripción', **base, la=la, lo=lo); continue
     street = hn = None; a = None
     if ad:
         ps, ph = parse_memorial_addr(ad[0].split(',')[0] if CC not in ('FR',) else ad[0])
@@ -268,7 +275,7 @@ for q, w in sorted(wd.items()):
     rec = {'id': q, 'la': round(la, 6), 'lo': round(lo, 6), 'src': 'wd', 'wd': q}
     if len(w['subj']) == 1 and re.fullmatch(r'Q\d+', next(iter(w['subj']))): rec['p'] = next(iter(w['subj']))
     rec['n'] = nm
-    if wy_b and (not insc or not years_in(insc) or (wy_b in years_in(insc) and wy_d in years_in(insc))): rec['b'] = wy_b; rec['d'] = wy_d
+    if wy_b and (not insc or not years_in(insc) or (wy_b in years_in(insc) and wy_d in years_in(insc) and (not death_years(insc) or wy_d in death_years(insc)))): rec['b'] = wy_b; rec['d'] = wy_d
     if insc: rec['i'] = insc
     rec['a'] = a
     if c: rec['c'] = c
@@ -290,8 +297,15 @@ for q, w in sorted(wd.items()):
 fin = []
 for r in osm_recs:
     if r['src'] == 'wd':
-        dup = next((s for s in fin if s['src'] != 'wd' and ((norm(s['n']) == norm(r['n']) and hav(s['la'], s['lo'], r['la'], r['lo']) <= 100) or (hav(s['la'], s['lo'], r['la'], r['lo']) <= 15 and names_compatible(s['n'], r['n'])))), None)   # v20r2: <=15 m y nombres compatibles (subconjunto)
-        if dup: dups.append({'id': r['id'], 'dup_de': dup['id'], 'n': r['n']}); continue
+        dup = next((s for s in fin if s['src'] != 'wd' and ((norm(s['n']) == norm(r['n']) and hav(s['la'], s['lo'], r['la'], r['lo']) <= 100) or (hav(s['la'], s['lo'], r['la'], r['lo']) <= 15 and same_person_dup(s, r)))), None)   # v20r2: <=15 m y nombres compatibles (subconjunto)
+        if dup and dup.get('b') and r.get('b') and dup['b'][:4] != r['b'][:4]: dup = None   # v20r2: mismo año de nacimiento si ambos lo traen
+        if dup:
+            dups.append({'id': r['id'], 'dup_de': dup['id'], 'n': r['n']})
+            if not dup.get('wd'):   # se fusiona: la ficha OSM recibe el enlace a Wikidata (y persona/foto si le faltan)
+                dup['wd'] = r['wd']; dup['src'] = 'osm+wd'
+                if not dup.get('p') and r.get('p'): dup['p'] = r['p']
+                if not dup.get('img') and r.get('img'): dup['img'] = r['img']
+            continue
     fin.append(r)
 # ---- imágenes (v20r2, auditoría B): «A.jpg;File:B.jpg» → un solo fichero, sin «File:», que exista hoy en Commons y no sea la foto de otra persona ----
 EXISTS = json.load(open(D / 'commons_exists20.json', encoding='utf-8')) if (D / 'commons_exists20.json').exists() else {}
@@ -308,6 +322,15 @@ def pick_img(rec):
         if m and name_in_text(rec['n'], m.group('nm')) < 0.5 and name_in_text(m.group('nm'), rec['n']) < 0.5: continue   # la foto es de otra persona
         return c
     return None
+# ---- ciudad (v20r2, A, F1/W1): nunca país ni calle ni «X Municipality»; si no vale, municipio de los límites administrativos de OSM ----
+for r in fin:
+    c0 = r.get('c'); cm = citymap.get(r['id']) or {}
+    c1 = clean_city(c0) if c0 else c0
+    if c1 and bad_city(c1): c1 = None
+    if not c1 and cm.get('c') and not bad_city(clean_city(cm['c'])): c1 = clean_city(cm['c'])
+    if c1: r['c'] = c1
+    else: r.pop('c', None)
+    if r.get('sub') and (r['sub'] == r.get('c') or bad_city(r['sub'])): r.pop('sub', None)
 for r in fin:
     ni = pick_img(r)
     if r.get('img') and ni != r['img']: r['_v'].setdefault('notes', []).append('imagen %s descartada (no existe en Commons, es de otra persona o venía con varios ficheros)' % r['img'][:80])

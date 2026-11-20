@@ -31,18 +31,29 @@ if (D / 'out/D1480.json').exists() and '--no1480' not in sys.argv:
     o = json.load(open(D / 'out/D1480.json', encoding='utf-8'))
     d1480 = [{k: v for k, v in r.items() if k != '_v'} for r in o['added'] if r['id'] not in ids]
     for r in d1480: ids.add(r['id'])
+    for r in d1480:   # v20r2 (auditoría B, W7a): Henny Reiss: Wikidata e inscripción dicen «Kasinostraße 4-6» (OSM tiene addr 4-6 a 4 m); la foto dice 10, pero la dirección registrada es la de Wikidata/OSM
+        if r.get('wd') == 'Q134878005' or r['id'] == 'Q134878005': r['a'] = 'Kasinostraße 4-6'
+        if r['id'] in ('Q98983030', 'Q98983031'): r['a'] = 'Adolfsallee 33'; r['c'] = 'Wiesbaden'; r['sub'] = 'Mitte'   # A, F8: WD P6375 = 65185 Wiesbaden; «Mitte» es el barrio
 # v20r2: placas solo-Wikidata que son la misma persona que una placa ya presente (v19 reasignada, otra de OSM) a <=15 m con nombre compatible → duplicado, no se añade
-sys.path.insert(0, str(Path(__file__).resolve().parent)); from v20_common import names_compatible; from geo import hav
+sys.path.insert(0, str(Path(__file__).resolve().parent)); from v20_common import names_compatible, same_person_dup; from geo import hav
 _grid = {}
 for s in S + d1480 + [r for r in added if r.get('src') != 'wd']: _grid.setdefault((int(s['la'] / 0.0003), int(s['lo'] / 0.0005)), []).append(s)
 _keep = []
 for r in added:
     if r.get('src') == 'wd':
         ci, cj = int(r['la'] / 0.0003), int(r['lo'] / 0.0005)
-        d = next((s for di in (-1, 0, 1) for dj in (-1, 0, 1) for s in _grid.get((ci + di, cj + dj), []) if s['id'] != r['id'] and (s.get('cc') or 'DE') == (r.get('cc') or 'DE') and hav(s['la'], s['lo'], r['la'], r['lo']) <= 15 and names_compatible(s['n'], r['n'])), None)
+        d = next((s for di in (-1, 0, 1) for dj in (-1, 0, 1) for s in _grid.get((ci + di, cj + dj), []) if s['id'] != r['id'] and (s.get('cc') or 'DE') == (r.get('cc') or 'DE') and hav(s['la'], s['lo'], r['la'], r['lo']) <= 15 and same_person_dup(s, r)), None)
+        if d and d.get('b') and r.get('b') and d['b'][:4] != r['b'][:4]: d = None
         if d: man['duplicates'].append({'cc': r['cc'], 'id': r['id'], 'dup_de': d['id'], 'n': r['n'], 'regla': 'merge: <=15 m y nombres compatibles'}); man['countries'][r['cc']]['anadidas'] -= 1; man['countries'][r['cc']]['duplicados'] += 1; continue
     _keep.append(r)
 added = _keep
+_k2 = []
+for r in d1480:   # las 32 de las 1.480 contra lo ya presente (auditoría A, F5: Q43652858↔n9518148283, Q135294691↔n12128326626)
+    ci, cj = int(r['la'] / 0.0003), int(r['lo'] / 0.0005)
+    d = next((s for di in (-1, 0, 1) for dj in (-1, 0, 1) for s in _grid.get((ci + di, cj + dj), []) if s['id'] != r['id'] and hav(s['la'], s['lo'], r['la'], r['lo']) <= 15 and same_person_dup(s, r)), None)
+    if d: man['duplicates'].append({'cc': r.get('cc') or 'DE', 'id': r['id'], 'dup_de': d['id'], 'n': r['n'], 'regla': 'merge: <=15 m y nombres compatibles (las 1.480)'}); continue
+    _k2.append(r)
+d1480 = _k2
 data['stones'] = S + d1480 + added; data['meta']['count'] = len(data['stones']); data['meta']['v20_wd1480_added'] = len(d1480)
 data['meta']['layout_pinned'] = True   # v20: la app no separa grupos (lo hace sidewalk20): dibujo = dla/dlo exacto
 data['meta']['v20_added'] = {'records': len(added), 'countries': {cc: man['countries'][cc]['anadidas'] for cc in ccs},

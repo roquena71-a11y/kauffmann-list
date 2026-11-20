@@ -30,7 +30,7 @@ def name_in_text(name, text):
     tn = norm(text); words = set(tn.split())
     return sum(tok_in(t, tn, words) for t in tk) / len(tk)
 
-GENERIC_RE = re.compile(r'^(stolpersteine?|stolperschwelle|stolpersteen|stolpersteine|struikelstenen?|struikelsteen|pierres? (d.|de )?achoppement|pav[ée]s? (de la m[ée]moire|d.achoppement)?|pietr[ae] d.inciampo|piedras? (de )?(tropiezo)|stolperstein|zlat[ýy] k[aá]men|potknutí k[aá]men|kamie[nń] pami[eę]ci|botl|k[ao]ste|[ck]ameni? spotik|spotikalni kamen|botlekamen|bot[li]e?kamen|st[oö]testen|forgyller|minnestein|snublestein|drag|stumbling stones?|botlestein)\b[\s:,.\-–]*(?P<rest>.*)$', re.I)
+GENERIC_RE = re.compile(r'^(stolpersteine?|stolperschwelle|stolpersteen|stolpersteine|struikelstenen?|struikelsteen|pierres? (d.|de )?achoppement|pav[ée]s? (de la m[ée]moire|d.achoppement)?|pietr[ae] d.inciampo|piedras? (de )?(tropiezo)|stolperstein|zlat[ýy] k[aá]men|potknutí k[aá]men|kamie[nń] pami[eę]ci|botl|k[ao]ste|[ck]ameni? spotik|spotikalni kamen|botlekamen|bot[li]e?kamen|st[oö]testen|forgyller|minnestein|snublestein|drag|stumbling stones?|botlestein|stein der erinnerung|stein zur erinnerung)\b[\s:,.\-–]*(?P<rest>.*)$', re.I)
 PREFIX_FOR = re.compile(r'^(f[üu]r|voor|pour|per|dla|for|av|f[öo]r|til|til minne om|zum gedenken an|in memoriam|dedicated to|to|a|ter nagedachtenis aan|à la mémoire de|alla memoria di|na pamiątkę|na pamiatku|na památku|pro|za|pre|para|en memoria de|v spomin na|az? emlékére)\b[\s:,.\-–]*(?P<nm>.+)$', re.I)
 COLLECTIVE_RE = re.compile(r'\b(familie|family|famille|familia|rodina|rodiny|rodzina|familj|familien|famiglia|gezin|mit familie|geschwister|brothers|sisters|siblings|geschwisterpaar|ehepaar|und kinder|\&|\bund\b|\bet\b|\bund\b| en | i | a )\b', re.I)
 
@@ -122,7 +122,7 @@ def strip_years(raw):
     return raw, None, None
 
 # ---- v20r2 (auditoría B): nombres que no son una sola persona ----
-NOT_PERSON_RE = re.compile(r'\b(hier|waren|wohnten|wohnte|stellvertretend|zwangsarbeit|festspiele|quartett|institut|blindeninstitut|kulturschaffenden|juedischen|menschen|vielen|oost polen)\b')
+NOT_PERSON_RE = re.compile(r'\b(hier|waren|wohnten|wohnte|stellvertretend|zwangsarbeit|festspiele|quartett|institut|blindeninstitut|kulturschaffenden|juedischen|menschen|vielen|opfern|oost polen|lager|suppenkuche|suppenkuchen|gemeinde|schulverein|verein|erinnerung|idokapszula|kapszula|capsule|stolpersteine|stolperstein|llambordes)\b|^a [a-z]')
 COMMA_JUNK = re.compile(r'^(geb|geboren|nee|née|born|f|dit|alias|gen|genannt|jr|sr|dr|prof)\b', re.I)
 def not_one_person(name):
     """Motivo (str) si el «nombre» no es UNA persona: varias personas («A & B», «A; B», «A, B», «...»), rótulo o institución; None si parece una persona."""
@@ -131,6 +131,7 @@ def not_one_person(name):
     segs = [s.strip() for s in n.split(',') if s.strip()]
     segs = [s for s in segs if not COMMA_JUNK.match(s)]
     if len(segs) >= 2 and all(len(toks(s)) >= 2 or len(s.split()) >= 2 for s in segs): return 'el nombre junta a varias personas separadas por comas (%s)' % n[:70]
+    if re.match(r'^[A-Za-zÀ-ž]\.\s*[^\s.]+$', n): return 'el nombre es solo una inicial y un apellido (%s): no identifica a la persona' % n[:60]
     if NOT_PERSON_RE.search(norm(n)): return 'el «nombre» es un rótulo o una institución, no una persona (%s)' % n[:70]
     return None
 
@@ -140,3 +141,47 @@ def names_compatible(a, b):
     ta, tb = set(toks(a)), set(toks(b))
     sm, bg = (ta, tb) if len(ta) <= len(tb) else (tb, ta)
     return len(sm) >= 2 and sm <= bg
+
+_IGN = {'geb', 'geboren', 'born', 'nee', 'f', 'fod', 'fodt', 'urodzona', 'rozena', 'rozen', 'dit', 'dite', 'alias', 'the', 'of', 'family', 'dr', 'prof', 'jr', 'sr', 'med', 'ing', 'mag'}
+def name_exact_in(name, text):
+    """Estricto (auditoría A, F4): cada palabra del nombre (con partículas von/van/de…, ignorando grafía ß/diacríticos y mayúsculas) aparece TAL CUAL en la inscripción."""
+    tk = [x for x in norm(name).split() if len(x) >= 2 and x not in _IGN]
+    if not tk: return False
+    words = set(norm(text).split())
+    return all(x in words for x in tk)
+
+COUNTRY_NAMES = {norm(x) for x in ('Belgium Belgique België Belgien Schweiz Suisse Svizzera Switzerland Svizra Česko Czechia Czech Republic Česká republika Ceska republika Nederland Netherlands The Netherlands Pays-Bas Niederlande France Frankreich Luxembourg Luxemburg Lëtzebuerg Deutschland Germany Allemagne Österreich Austria Autriche Italia Italy Italie España Spain Espagne Polska Poland Pologne Magyarország Hungary Hongrie Slovensko Slovakia Slovaquie Norge Norway Norvège Danmark Denmark Danemark Lietuva Lithuania Latvija Latvia Hrvatska Croatia Croatie Liechtenstein Andorra Guernsey Jersey United Kingdom UK Ireland Éire Sverige Sweden Suomi Finland România Romania').split() } | {norm(x) for x in ('Czech Republic', 'The Netherlands', 'United Kingdom', 'Česká republika')}
+STREET_RE = re.compile(r"^(rue|avenue|av\.?|boulevard|bd\.?|place|chemin|grand'?\s?rue|grande rue|route|impasse|all[ée]e|quai|square|cours|passage|sentier|faubourg|ruelle|rte|stra(ss|ß)e|weg|gasse|platz|laan|straat|plein|singel|gracht|via|viale|piazza|calle|plaza|ulice|ul\.|náměstí|namesti|utca|út|tér|ulica|iela|gatvė|lane|road|street)\b|(stra(ss|ß)e|straat|gasse|platz|weg|laan|ulice|utca|lane|road|street)$", re.I)
+def bad_city(c):
+    c = (c or '').strip()
+    return (not c) or norm(c) in COUNTRY_NAMES or bool(STREET_RE.search(c)) or bool(re.search(r'\d', c))
+def clean_city(c):
+    c = re.sub(r'\s+(municipality|kommune|kommun)$', '', (c or '').strip(), flags=re.I)
+    return c
+
+def death_years(insc):
+    """Años que la inscripción escribe junto a una palabra de muerte (ermordet/assassiné/zavražděn… + fecha, 45 caracteres después o, si no hay, antes en la misma línea)."""
+    import sys as _s
+    from pathlib import Path as _P
+    _s.path.insert(0, str(_P(__file__).resolve().parents[2]))
+    from pipeline.inscription import MURDERED, DIED, SUICIDE
+    low = (insc or '').lower(); out = set()
+    for rx in (MURDERED, DIED, SUICIDE):
+        for m in rx.finditer(low):
+            after = low[m.end(): m.end() + 45].split('\n')[0]
+            ys = re.findall(r'\b(1[89]\d\d|20[0-2]\d)\b', after)
+            if ys: out.add(ys[0]); continue
+            line_start = low.rfind('\n', 0, m.start()) + 1
+            ys = re.findall(r'\b(1[89]\d\d|20[0-2]\d)\b', low[max(line_start, m.start() - 45): m.start()])
+            if ys: out.add(ys[-1])
+    return out
+
+def birth_year(s):
+    if s.get('b'): return s['b'][:4]
+    ys = sorted(years_in(s.get('i') or ''))
+    return ys[0] if ys else None
+def same_person_dup(s, t, maxm=15):
+    """Misma persona: <= maxm m (lo comprueba quien llama), nombres compatibles y, si ambas traen año de nacimiento (campo b o el más antiguo de la inscripción), el mismo."""
+    if not names_compatible(s['n'], t['n']): return False
+    by1, by2 = birth_year(s), birth_year(t)
+    return not (by1 and by2 and by1 != by2)
