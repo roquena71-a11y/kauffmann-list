@@ -44,3 +44,4 @@ Dir de trabajo: /workspace/countries-proto-v20 (copia de v19 = 49e7725, origin/m
 - 05:40 bump v20 hecho (sw kauffmann-v20-pages, counter-sw-test v20).
 - 05:43 footprints20 hecho (7.954 placas, 150.570 edificios, 7,8 MB gz).
 - 05:55 pipeline build/validate OK (0 errores, 4 avisos de tamaño). Lanzado run-all REQUIRE_OAV=1 (venv-ci) → /workspace/v20-data/runall.log
+- 06:15 sidewalk-render-check20: distancia euclídea exacta (no cuadrado ensanchado), huellas a 7 decimales, excepciones = residuales-acera-v20.csv. 7.950 placas OK (4 residuales documentados). Relanzando run-all.

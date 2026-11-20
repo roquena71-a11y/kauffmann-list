@@ -22,7 +22,7 @@ for cc, ss in byc.items():
             outer, inner, tags = N.b[bid]
             if min(SW.hav(la, lo, a, b) for r in outer for a, b in r) > 70: continue
             near[s['id']].append(bid)
-            if bid not in B: B[bid] = {'o': [[[round(a, 6), round(b, 6)] for a, b in r] for r in outer], 'i': [[[round(a, 6), round(b, 6)] for a, b in r] for r in inner]}
+            if bid not in B: B[bid] = {'o': [[[round(a, 7), round(b, 7)] for a, b in r] for r in outer], 'i': [[[round(a, 7), round(b, 7)] for a, b in r] for r in inner]}
 out = {'ids': sorted(set(ids)), 'legit': sorted(legit & set(ids)), 'near': near, 'buildings': B}
 p = R / 'tests/sidewalk/footprints-v20.json.gz'
 with gzip.open(p, 'wt', encoding='utf-8', compresslevel=9) as f: json.dump(out, f, separators=(',', ':'))
