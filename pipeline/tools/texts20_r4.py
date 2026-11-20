@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """v20r4 (auditoría B ronda 3, R3-5): las cifras de biografías/enlaces (4.038 + 24.670 + 37.112 = 65.820) se midieron el 18-nov-2026 sobre las 65.820 placas que entonces se contaban como Alemania;
-hoy Alemania tiene 65.834 (−15 reclasificadas, +29 de las 1.480). Se dice así, sin cambiar las cifras. Idempotente. Uso: texts20_r4.py"""
+hoy Alemania tiene 65.830 (−19 reclasificadas, +29 de las 1.480). Se dice así, sin cambiar las cifras. Idempotente. Uso: texts20_r4.py"""
 from pathlib import Path
 R = Path(__file__).resolve().parents[2]
 REP = {

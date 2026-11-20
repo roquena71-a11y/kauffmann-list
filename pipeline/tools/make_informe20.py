@@ -99,11 +99,17 @@ _b45 = sum(1 for x in _base if x.get('b') and x['b'][:4].isdigit() and int(x['b'
 _z = sum(1 for x in _base for k in ('b', 'd') if x.get(k) and re.search(r'-00', x[k]))
 _laid = sum(1 for x in _base if x.get('laid') and not re.fullmatch(r'\d{4}(-\d\d(-\d\d)?)?', x['laid']))
 _cnum = sum(1 for x in _base if (x.get('cc') or 'DE') == 'DE' and x.get('c') and re.fullmatch(r'[\d\W]*\d[\w\W]{0,2}|.*umbenannt.*', x['c']))
-a('- Nombres que no son un nombre limpio: %d con URL de Wikidata (`…/.well-known/genid/…`) y, según la auditoría A, unos 469 con prefijo («Stolperstein Albert Meyer»), «Familie …», varias personas separadas por «;»/«und» o texto genérico.' % _gen)
+a('- Nombres que no son un nombre limpio: 163 con URL de Wikidata (`…/.well-known/genid/…`) y unos 469 con prefijo («Stolperstein Albert Meyer»), «Familie …», varias personas separadas por «;»/«und» o texto genérico (recuentos de la auditoría A; el nuestro con el criterio estricto «genid»/«http» da %d).' % _gen)
 a('- Fechas imposibles o parciales: %d registros con nacimiento posterior a la muerte, %d con nacimiento posterior a 1945, %d campos `b`/`d` con «-00» (fecha parcial de OSM, p. ej. `1910-00-00`).' % (_db, _b45, _z))
-a('- `laid` (fecha de colocación) que no es ISO: %d; municipio (`c`) de Alemania con basura numérica («1a», «16», «1946 umbenannt)»): unos %d.' % (_laid, _cnum))
+a('- `laid` (fecha de colocación) que no es ISO: %d; municipio (`c`) de Alemania con basura numérica («1a», «16», «1946 umbenannt)»): unos 111 (recuento de la auditoría A).' % _laid)
 a('- Se vaciaron en v20 (base_fixes) fechas basura, pero también ~150 con el año legible en la inscripción («Jg. 1908»): pérdida conservadora, no error.')
 a('- Luxemburgo: «Déifferdeng» (luxemburgués) y «Differdange» (francés) para la misma ciudad; ciudades en inglés (IT «Turin», DK «Copenhagen», CH «Zurich») frente al endónimo de otros países.')
+_bc = json.load(open(R / 'data/v20-border-cc.json', encoding='utf-8'))['cambiados']
+_pend = {r['id'] for r in csv.DictReader(open(R / 'pendiente-v20.csv', encoding='utf-8'))}
+_sid = {x['id'] for x in S}
+_fuera = sorted(i for i in _bc if i not in _sid and i not in _pend)
+a('- **Placas fronterizas que ninguna versión incluye (hallazgo de v20r4, no añadidas):** al corregir el país por el límite administrativo de OSM (`apply_border_cc.py`, `data/v20-border-cc.json`) se vio que %d nodos `memorial=stolperstein` de OSM (%s; todos a <10 km de otra frontera o fuera de todo país en el respaldo de Natural Earth) no están ni en la v19 ni en el mapa v20: el país que se les asignó (Alemania o ninguno) no coincidía con su fichero de país. **No se han añadido** (no pasaron por las rondas de verificación): %s.' % (len(_fuera), ', '.join('%s %d' % (NAMES[c_][0], n_) for c_, n_ in Counter(_bc[i][1] for i in _fuera).most_common()), ', '.join('`%s`' % i for i in _fuera)))
+a('- Corrección de país de v20r4: %d placas del mapa por el límite OSM (22 de Audun-le-Tiche y Mondorff: Luxemburgo → Francia; 4 de Vaals: Alemania → Países Bajos); `tests/v20r4-checks.py` lo comprueba contra el límite OSM para %d placas fronterizas.\n' % (sum(1 for i in _bc if i in _sid), sum(1 for i, v in json.load(open(R / 'data/v20-border-cc.json', encoding='utf-8'))['cc'].items() if v and i in _sid)))
 a('## 7. Archivos\n')
 a('- `data/stones.json` (con `dla`/`dlo`), `data/v20-added-20261120.json` (manifiesto), `data/sidewalk-v20.json`, `pendiente-v20.csv`, `pendiente-1480-v20.csv`, `INFORME-v20-personas.csv`.')
 a('- Código: `pipeline/tools/{v20_common,build_v20,merge_v20,verify1480,sidewalk20,ui20,make_informe20}.py`.')

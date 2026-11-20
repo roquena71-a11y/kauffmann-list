@@ -56,9 +56,10 @@ for cc in ccs:
         la0 = sum(s['la'] for s in g) / len(g); lo0 = sum(s['lo'] for s in g) / len(g); o = (la0, lo0)
         if NN is None: NN = SW.load_near(cc)
         PB, polys, ids, lines, RW = SW.local_geom(NN, la0, lo0)
+        road = SW.road_zone(NN, la0, lo0, PB)   # v20r4: la separación tampoco puede devolver una columna a la calzada
         pins = [SW.to_xy(s['la'], s['lo'], o) for s in g]
         vis = [s for s in g if s['id'] not in alias] or g; ang = angs.get(vis[0]['id'])
-        okf = SW.make_okf(PB, pins, SW.slots(len(vis), ang or 0.0), ang, SW.icon_half(la0), EXTRA.get(g_, 0.0))
+        okf = SW.make_okf(PB, pins, SW.slots(len(vis), ang or 0.0), ang, SW.icon_half(la0), EXTRA.get(g_, 0.0), road)
         cur = [(s['dla'], s['dlo']) for s in g if 'dla' in s]
         q0 = SW.to_xy(sum(a for a, b in cur) / len(cur), sum(b for a, b in cur) / len(cur), o) if cur else (0.0, 0.0)
         mem = [(sid, pts[sid]) for sid in (s['id'] for s in g) if sid in pts]

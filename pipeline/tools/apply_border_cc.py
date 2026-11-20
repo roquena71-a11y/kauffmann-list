@@ -32,7 +32,9 @@ for old in {o for o, _ in moved.values() if o}:
         jo['elements'] = [x for x in jo['elements'] if ('%s%d' % (x['type'][0], x['id'])) not in ids]
         json.dump(jn, open(fn, 'w', encoding='utf-8'), ensure_ascii=False); print('movidos', len(mv), old, '→', new)
     json.dump(jo, open(fo, 'w', encoding='utf-8'), ensure_ascii=False)
+chg = {('%s%d' % (e['type'][0], e['id'])): [e.get('cc_ne'), e['cc']] for e in json.load(open(D / 'osm_all_cc.json', encoding='utf-8')) if e.get('cc_src') == 'osm_admin2_isin' and e.get('cc_ne') != e['cc']}
 fx = {'meta': {'method': 'país por límite administrativo admin_level=2 de OSM (Overpass is_in), 2026-11-20, para las placas que estaban a <~10 km de otra frontera y cuyo país salió del respaldo de Natural Earth', 'source': 'OpenStreetMap contributors, ODbL 1.0'},
+      'cambiados': dict(sorted(chg.items())),
       'cc': {k: (v[0] if len(set(v)) == 1 else None) for k, v in sorted(isin.items())}}
 (R / 'data/v20-border-cc.json').write_text(json.dumps(fx, ensure_ascii=False, indent=0), encoding='utf-8')
 from collections import Counter

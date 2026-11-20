@@ -15,6 +15,7 @@ from shapely.ops import unary_union, nearest_points
 from shapely.prepared import prep
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from geo import to_xy, to_ll, hav, building_polygons
+import roadway20 as RWY
 R = Path(__file__).resolve().parents[2]
 D = Path(os.environ.get('V20_DATA', '/workspace/v20-data'))
 V19 = ('IE', 'SE', 'JE', 'FI', 'RO')
@@ -131,6 +132,24 @@ def local_geom(N, la0, lo0, rad=70):
         if t.get('highway') in ROADWAY: roads.append(ls)
     return PB, polys, ids, lines, (unary_union(roads) if roads else None)
 
+def road_zone(N, la0, lo0, PB, rad_bld=RWY.BLD_NEAR_MAX):
+    """v20r4 (auditoría C ronda 3): zona de calzada (vías rodadas de OSM con buffer semiancho+0,3 m) y zona de exención (a <= 6 m de un edificio: acera pegada a la fachada).
+    None si el grupo no tiene ningún edificio a <= 25 m (no hay acera que deducir: se documenta, no se mueve) o no hay vías rodadas. Devuelve (calzada, exencion) preparados."""
+    if PB is None or PB.distance(Point(0, 0)) > rad_bld: return None
+    o = (la0, lo0); bufs = []
+    for hid in N.around(N.hi, la0, lo0, 1):
+        pts, t = N.h[hid]
+        if not RWY.constrained(t): continue
+        ls = LineString([to_xy(a, c, o) for a, c in pts])
+        if ls.distance(Point(0, 0)) > 60: continue
+        bufs.append(ls.buffer(RWY.semiwidth(t) + RWY.SOLVER_MARGIN))
+    if not bufs: return None
+    return prep(unary_union(bufs)), prep(PB.buffer(RWY.BLD_EXEMPT_NEAR))
+
+def road_bad(zone, x, y):
+    if zone is None: return False
+    p = Point(x, y); return zone[0].contains(p) and not zone[1].contains(p)
+
 def ok_at(q, PB, need, h2):
     if PB is None: return True
     if PB.distance(Point(q)) < need: return False
@@ -146,7 +165,7 @@ def slots(n, ang, step=COL_STEP):
         out.append((cx * step * cA - cy * step * sA, cx * step * sA + cy * step * cA))
     return out
 
-def make_okf(PB, pins, sl, ang, h2, extra=0.0):
+def make_okf(PB, pins, sl, ang, h2, extra=0.0, road=None):
     """Exacto como la comprobación: cada chincheta 2D (en su coordenada de origen + q) a >= h2+0,5 m de toda fachada y cada columna 3D (cuadrado de 1,2 m girado ang, en su casilla) a >= 0,5 m."""
     if PB is None: return lambda q: True
     c_, s_ = math.cos(ang or 0.0), math.sin(ang or 0.0); hf = COL_HALF
@@ -158,6 +177,7 @@ def make_okf(PB, pins, sl, ang, h2, extra=0.0):
         for (sx, sy) in sl:
             x, y = q[0] + sx, q[1] + sy
             d = PB.distance(Point(x, y))
+            if road is not None and road_bad(road, x, y): return False   # v20r4: el centro de la columna no puede quedar sobre la calzada de una vía rodada
             if d < need2: return False                   # la chincheta 2D se comprueba también en la posición de la columna (como las auditorías: usan la posición dibujada)
             if d >= DIAG + need3: continue
             if d < hf + need3 - 1e-9: return False   # el cuadrado contiene círculo de radio hf: si el centro está más cerca, falla
@@ -202,6 +222,21 @@ def solve(PB, lines, RW, okf, inside, keep_min=1.5, min_dot=0.5, tstep=0.05):
     if best is None: return None, (dH, ht)
     return best[1], (dH, ht)
 
+
+def solve_road(okf, PB, cap, tstep=0.1, band=1.5):
+    """v20r4: grupo cuya única falta es tener el centro de alguna columna sobre la calzada: el menor desplazamiento (cualquier dirección, <= cap) que cumple todo (edificios + calzada);
+    entre las soluciones a <= t_min + 1,5 m se elige la más cercana a un edificio (banda de acera junto a la línea de fachada)."""
+    first = []
+    for a in range(0, 360, 5):
+        ux, uy = math.cos(math.radians(a)), math.sin(math.radians(a)); t = tstep
+        while t <= cap:
+            q = (ux * t, uy * t)
+            if okf(q): first.append((t, q)); break
+            t += tstep
+    if not first: return None
+    tmin = min(t for t, _ in first)
+    cand = [(PB.distance(Point(q)) if PB is not None else 0.0, t, q) for t, q in first if t <= tmin + band]
+    cand.sort(); return cand[0][2]
 
 CLEAR_LEVELS = (1.5, 1.0, 0.6, 0.3, 0.1)   # v20r3: holgura del CENTRO de cada columna/chincheta a la huella (m) en la colocación «relajada»
 def solve_relaxed(PB, RW, lines, pins, sl, street=None, tstep=0.25):
@@ -260,13 +295,15 @@ def process_cc(cc, stones, N, extra, legit, only=None, comp=None, angs=None, ali
             for s in g: s.pop('dla', None); s.pop('dlo', None)
         la0 = sum(s['la'] for s in g) / len(g); lo0 = sum(s['lo'] for s in g) / len(g); o = (la0, lo0)
         PB, polys, ids, lines, RW = local_geom(N, la0, lo0)
+        road = road_zone(N, la0, lo0, PB)
         ex = extra.get(g[0]['id'], 0)
         h2 = icon_half(la0); P0 = Point(0, 0)
         pins = [to_xy(s['la'], s['lo'], o) for s in g]
         nv = max(1, sum(1 for s in g if s['id'] not in alias))
         vis = [s for s in g if s['id'] not in alias] or g
         ang = angs.get(vis[0]['id'])
-        okf = make_okf(PB, pins, slots(nv, ang or 0.0), ang, h2, ex)
+        okf = make_okf(PB, pins, slots(nv, ang or 0.0), ang, h2, ex, road)
+        okf_b = make_okf(PB, pins, slots(nv, ang or 0.0), ang, h2, ex) if road is not None else okf
         need = DIAG + MARGIN + (spread(len(g)) if len(g) > 1 else 0) + ex
         _TMAX[0] = MAXMOVE - (spread(len(g)) if 1 < len(g) <= 20 else 0.0)   # grupos de más de 20 placas (campos de Stolpersteine): excepción documentada
         insd = bool(PB is not None and PB.contains(P0)); d0 = 0.0 if insd else (PB.distance(P0) if PB is not None else 1e9)
@@ -274,6 +311,12 @@ def process_cc(cc, stones, N, extra, legit, only=None, comp=None, angs=None, ali
         fit0 = okf((0.0, 0.0))
         if all(s['id'] in legit for s in g) and (insd or not fit0):
             status = 'legitima'
+        elif road is not None and not fit0 and not insd and okf_b((0.0, 0.0)) and g[0]['id'] not in FACADE:
+            # v20r4: edificios bien, pero el centro de alguna columna cae en la calzada de una vía rodada: se mueve el mínimo hacia la acera (<= 25 m); si no hay hueco, se queda y lo documenta calzada-v20.csv
+            _TMAX[0] = MAXMOVE - (spread(len(g)) if 1 < len(g) <= 20 else 0.0)
+            shift = solve_road(okf, PB, _TMAX[0], tstep=0.1 if len(g) <= 6 else 0.2)
+            tier = 5
+            status = 'ajustada' if shift is not None else 'ok'
         elif insd or not fit0 or g[0]['id'] in FACADE:
             # niveles: 1-2 solo hacia la acera sin invadir la calzada; 3-4 la cuadrícula puede pisar el borde de la calzada (acera estrecha)
             plan = [(1.5, 0.5), (0.4, 0.5), (0.4, -1.01), (-1, -1.01)]
