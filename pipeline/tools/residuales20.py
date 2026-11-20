@@ -18,6 +18,7 @@ for cc in {(s.get('cc') or 'DE') for s in S}:
     for g in SW.groups_of([s for s in S if (s.get('cc') or 'DE') == cc]):
         for s in g: gsize[s['id']] = len(g)
 SWt = json.load(open(R / 'data/sidewalk-v20.json', encoding='utf-8'))['stones']
+SWd = {r['id']: r for r in SWt}
 rows = []
 for r in SWt:
     if r['id'] not in byid: continue
@@ -27,13 +28,17 @@ for r in SWt:
             'columna/chincheta a <0,5 m de una huella de OSM tras el cierre (grupo de %d placas con la misma dirección; calle sin hueco libre de edificios a <=25 m del origen para la cuadrícula completa; no se mueve más para no falsear su dirección)' % n])
     elif r['estado'] == 'revisar':
         rows.append([r['id'], r['cc'], r.get('n'), 'revisar-sin-contacto', 'revisar', '', '', '', 'el solver no encontró hueco, pero la comprobación independiente sobre la app real (shapely, OSM) NO detecta contacto (holgura >=0,5 m en 3D y 2D): se documenta, no hay solape'])
+# auditoría C: 4 placas cuyo dibujo queda más cerca de otra calle que la de su dirección (comprobado con blockcheck sobre el volcado de la app; origen a 2,5-7 m de su calle, desplazadas 12-14 m)
+MANZANA = {'n13041383986': 'Rue de l\'Hôpital', 'n13032352978': 'Place Eugène Ferry', 'n13032352980': 'Place Eugène Ferry', 'Q133230139': 'Dammstraße'}
+for i_, calle in MANZANA.items():
+    if i_ in byid: rows.append([i_, byid[i_].get('cc') or 'DE', byid[i_].get('n'), 'manzana-dudosa', 'ajustada', '', '', '', 'el dibujo (separado de los edificios 12-14 m) queda más cerca de «%s» que de la calle de su dirección; la coordenada de origen es la correcta y es la que usan «Cómo llegar» y las descargas. Sin mover más: requeriría restringir el solver a la calle de la dirección (pendiente de decisión)' % calle])
 with open(R / 'residuales-acera-v20.csv', 'w', newline='', encoding='utf-8') as fh:
     w = csv.writer(fh); w.writerow(['id', 'pais', 'nombre', 'tipo', 'estado_solver', 'holgura3d_m', 'holgura2d_m', 'deficit_m', 'motivo']); w.writerows(rows)
 M = 111320; ex = []
 for r in dump['rows']:
     if r[7]: continue
     d = math.hypot((r[4] - r[2]) * M, (r[5] - r[3]) * M * math.cos(math.radians(r[2])))
-    if d > 25.0 and r[0] in byid: ex.append([r[0], r[1], byid[r[0]].get('n'), round(d, 1), gsize.get(r[0], 1), 'dibujo (casilla de la cuadrícula) a >25 m del origen: grupo de %d placas con la misma dirección (la cuadrícula completa mide hasta ~%.0f m)' % (gsize.get(r[0], 1), SW.spread(gsize.get(r[0], 1)))])
+    if d > 25.0 and r[0] in byid: ex.append([r[0], r[1], byid[r[0]].get('n'), round(d, 1), gsize.get(r[0], 1), ('dibujo a >25 m de la coordenada de origen de la placa: grupo de %d placas con la misma dirección; desplazamiento del grupo %s m + casilla de la cuadrícula (hasta ~%.0f m) y/o dispersión de las coordenadas de origen dentro del grupo (la placa no está en el centro). %s' % (gsize.get(r[0], 1), (SWd.get(r[0], {}).get('desplazamiento_m', 0)), SW.spread(gsize.get(r[0], 1)), 'Grupo de >20 placas: excepción documentada.' if gsize.get(r[0], 1) > 20 else 'Grupo de <=20: el tope del solver (25 m menos la dispersión) se cumple para el centro del grupo, no para cada casilla; documentado, sin mover más para no falsear la dirección.'))])
 with open(R / 'excepciones-25m-v20.csv', 'w', newline='', encoding='utf-8') as fh:
     w = csv.writer(fh); w.writerow(['id', 'pais', 'nombre', 'dibujo_vs_origen_m', 'placas_en_el_grupo', 'motivo']); w.writerows(ex)
 print('residuales', len(rows), Counter(r[3] for r in rows), '| excepciones >25 m:', len(ex), Counter(r[4] > 20 for r in ex))

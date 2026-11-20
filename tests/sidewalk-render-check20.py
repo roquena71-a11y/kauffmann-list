@@ -49,12 +49,13 @@ async def main():
         if r['alias']: continue
         o = (r['dla'], r['dlo']); ang = r['ang'] or 0
         ih = 6 * 40075016.686 / (256 * 2 ** 19) * math.cos(math.radians(r['dla']))   # chincheta 2D: 12 px a zoom 19
-        worst = 1e9; hit = None; inside = False; d3 = 1e9
+        worst = 1e9; hit = None; inside = False; d3 = 1e9; dsrc = 1e9; osrc = (r['la'], r['lo'])
         for bid in FP['near'].get(r['id'], []):
             bd = FP['buildings'][bid]
             ro = [[to_xy(a, c, o) for a, c in ring] for ring in bd['o']]; ri = [[to_xy(a, c, o) for a, c in ring] for ring in bd['i']]
             dd3 = square_dist(half, ang, ro, ri); d3 = min(d3, dd3)
             if dd3 < MARGIN - 1e-6: hit = bid
+            dsrc = min(dsrc, dist_to_rings(0, 0, [[to_xy(a, c, osrc) for a, c in ring] for ring in bd['o']])[0])   # distancia desde la coordenada de ORIGEN de la placa
             d, _ = dist_to_rings(0, 0, ro)
             if inside_poly(0, 0, ro, ri): d = 0; inside = True
             worst = min(worst, d)
@@ -65,7 +66,7 @@ async def main():
         if hit or inside: bad.append(x)
         elif worst - ih < MARGIN - 1e-6: bad.append(dict(x, motivo='chincheta 2D a menos de 0,5 m de una huella'))
         if mv > 25.0 and r['id'] not in EXC25: bad.append(dict(x, motivo='dibujo a más de 25 m del origen (y no está en excepciones-25m-v20.csv)'))
-        if worst > 50 and r['id'] not in SIN: bad.append(dict(x, motivo='sin ningún edificio de OSM a <=50 m en los datos (footprints): geometría no comprobable'))
+        if dsrc > 50 and r['id'] not in SIN: bad.append(dict(x, motivo='sin ningún edificio de OSM a <=50 m en los datos (footprints): geometría no comprobable'))
     print('placas comprobadas', len(res), '| fallos:', len(bad), '| errores de página:', errs)
     for x in sorted(res, key=lambda x: x['centro_a_edificio_m'])[:5]: print('  ', x)
     exc = [x for x in bad if x['id'] in RESID]; bad = [x for x in bad if x['id'] not in RESID]

@@ -20,3 +20,8 @@ Datos de trabajo: V20_DATA=/workspace/v20-data-r2 (copia; near/pbf enlazados). I
 - Tras 3 rondas de finalize: 58 pares <1,55 m y 38 fallos DE. Causa: separate20 calculaba el hueco con extra=0 y sidewalk20 (con extra del grupo) descartaba el desplazamiento → corregido (separate20 usa extra y tope de 25 m menos dispersión).
 - Placas sin edificio ≤50 m tras refetch: 57 (ES 21, IT 23, GG 5, CZ 5, NL 2, FR 1; edificios a 51–171 m o ninguno): footprints20 escribe sin-edificios-v20.csv; límite del test 70.
 - Cadena de 4 rondas "DE + nuevos" en curso (chain3_r2.log). Siguiente: residuales20, ui20, bump, footprints, informe, build --strict, run-all.
+
+## 09:50 cadena cerrada (4 rondas DE + nuevos) y artefactos
+- Resultado: 35 pares <1,55 m (de 845 en v19), 45 placas con holgura <0,5 m (DE 42, NL 3) + 48 «revisar» sin contacto + 4 «manzana-dudosa» (FR×3, DE×1, blockcheck) → residuales-acera-v20.csv (97 filas, cada una con motivo); 25 dibujos >25 m → excepciones-25m-v20.csv (16 en grupos >20, 9 en grupos ≤20: centro del grupo ≤25 m, casilla/dispersión suma); 57 sin edificio ≤50 m → sin-edificios-v20.csv.
+- ui20 (fechas de instantánea; assert corregido), bump-version --sync, footprints20, make_informe20 (relabels 15, +29 DE, textos de cobertura/residuales), render-check20 OK local (7.662 placas).
+- Siguiente: pipeline build --strict, commit, run-all REQUIRE_OAV=1 completo.

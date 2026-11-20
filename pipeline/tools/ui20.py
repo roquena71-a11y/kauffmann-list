@@ -58,7 +58,8 @@ def main():
     a = a.replace("OpenStreetMap (Stand ${m.osm_snapshot}) und Wikidata (${m.wikidata_snapshot})", "OpenStreetMap (Stand ${m.osm_snapshot.slice(0,10)} für Deutschland, Irland, Schweden, Jersey, Finnland und Rumänien; ${%s.snapshot_osm.slice(0,10)}, am 2026-11-20 aufgefrischt, für die übrigen) und Wikidata (${m.wikidata_snapshot} für diese Länder; ${%s.snapshot_wikidata} für die übrigen)" % (V, V), 1)
     a = a.replace("OpenStreetMap (snapshot ${m.osm_snapshot}) and Wikidata (${m.wikidata_snapshot})", "OpenStreetMap (snapshot ${m.osm_snapshot.slice(0,10)} for Germany, Ireland, Sweden, Jersey, Finland and Romania; ${%s.snapshot_osm.slice(0,10)}, refreshed on 2026-11-20, for the rest) and Wikidata (${m.wikidata_snapshot} for those countries; ${%s.snapshot_wikidata} for the rest)" % (V, V), 1)
     assert a.count('snapshot_osm.slice') == 3
-    for lang in OLD: assert OLD[lang] not in a or lang == '', lang
+    _chk = re.sub(r'instantánea \$\{m\.osm_snapshot[^`]*?para el resto\)|Stand \$\{m\.osm_snapshot[^`]*?für die übrigen\)|snapshot \$\{m\.osm_snapshot[^`]*?for the rest\)', '', a)   # el texto de «Acerca de» nombra a propósito los países de la v19
+    for lang in OLD: assert OLD[lang] not in _chk or lang == '', lang
     (R / 'app3d.js').write_text(a, encoding='utf-8')
     # index.html / jsonld / agents
     h = head('index.html')
