@@ -17,6 +17,8 @@ bad = []
 def B(s, why): bad.append('%s %s: %s' % (s['id'], (s.get('n') or '')[:40], why))
 for s in new:
     a = s.get('a') or ''; c = s.get('c') or ''
+    if re.search(r'  |[|]|^\s|\s$|\[$|^\]', s['n']): B(s, 'nombre con espacios dobles o separadores sueltos (%r)' % s['n'])
+    if re.search(r'[;:|]', a): B(s, 'a no legible (%r)' % a)
     if a and not re.search(r'[^\W\d_]', a): B(s, 'a sin letras (%r)' % a)
     if c and (bad_city(c) or re.search(r'municipality$', c, re.I)): B(s, 'c es país/calle/Municipality (%r)' % c)
     if s.get('sub') and s['sub'] == c: B(s, 'sub == c')

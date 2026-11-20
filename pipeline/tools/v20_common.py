@@ -38,6 +38,7 @@ def clean_name(raw):
     """(nombre, motivo_si_no). Solo quita prefijos literales «Stolperstein für …»; nunca reconstruye un nombre."""
     n = (raw or '').strip()
     n = re.sub(r'\s+', ' ', n)
+    n = re.sub(r'[\s|\[;,/:]+$', '', n); n = re.sub(r'^[\s|\]]+', '', n)   # v20r2: separadores sueltos («Hugo Lippers|», «Hergott[»)
     if not n: return None, 'sin nombre'
     m = GENERIC_RE.match(n)
     if m:

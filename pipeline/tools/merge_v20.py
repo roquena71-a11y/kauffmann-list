@@ -31,6 +31,8 @@ if (D / 'out/D1480.json').exists() and '--no1480' not in sys.argv:
     o = json.load(open(D / 'out/D1480.json', encoding='utf-8'))
     d1480 = [{k: v for k, v in r.items() if k != '_v'} for r in o['added'] if r['id'] not in ids]
     for r in d1480: ids.add(r['id'])
+    import re as _re
+    for r in d1480: r['n'] = _re.sub(r'[\s|\[;,/:]+$', '', _re.sub(r'\s+', ' ', r['n']).strip())   # v20r2: dobles espacios («Albert  Platz») y «[» suelta
     for r in d1480:   # v20r2 (auditoría B, W7a): Henny Reiss: Wikidata e inscripción dicen «Kasinostraße 4-6» (OSM tiene addr 4-6 a 4 m); la foto dice 10, pero la dirección registrada es la de Wikidata/OSM
         if r.get('wd') == 'Q134878005' or r['id'] == 'Q134878005': r['a'] = 'Kasinostraße 4-6'
         if r['id'] in ('Q98983030', 'Q98983031'): r['a'] = 'Adolfsallee 33'; r['c'] = 'Wiesbaden'; r['sub'] = 'Mitte'   # A, F8: WD P6375 = 65185 Wiesbaden; «Mitte» es el barrio

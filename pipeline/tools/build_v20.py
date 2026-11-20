@@ -129,6 +129,7 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
         _p = [x.strip() for x in maddr.split(',') if x.strip()]
         a = ', '.join(_p[:-1]) if len(_p) >= 2 and not re.search(r'\d', _p[-1]) else ', '.join(_p)   # quita solo la ciudad final
         a = re.sub(r'^(\d+[a-zA-Z]?),\s+', r'\1 ', a)                                              # «17, Rue X» → «17 Rue X»
+    if a and re.search(r'[;:|]', a): a = None; street = None if not t.get('addr:street') else street   # v20r2: «Alkmaar:Boterstraat:1a;hoek…» no es una dirección legible
     if street is None and maddr:
         ps, ph = parse_memorial_addr(maddr)
         if ps: street, hn = ps, ph

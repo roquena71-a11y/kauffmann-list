@@ -16,6 +16,16 @@ swc = SW['counts']; tbl = SW['stones']
 mv = {}
 for r in tbl:
     if 'desplazamiento_m' in r: mv.setdefault(r['cc'], []).append(r['desplazamiento_m'])
+# cobertura real de la confirmación de posición (auditoría A, C6b): A dirección independiente ≤40 m, B foto independiente, C foto con la coordenada copiada de OSM, D solo la coordenada de la fuente
+vid = {s['id'] for s in S}; cov = {}; covt = Counter()
+for cc_, o_ in list(outs.items()) + [('D1480', d1480)]:
+    for r in o_['added']:
+        if r['id'] not in vid or r['id'] in V19: continue
+        v = r.get('_v') or {}
+        k = 'A' if (v.get('pos_indep', v.get('pos')) == 'ok') else ('B' if v.get('commons') == 'ok' and (v.get('dcommons') or 0) > 1 else ('C' if v.get('commons') == 'ok' else 'D'))
+        cov.setdefault(r.get('cc') or 'DE', Counter())[k] += 1; covt[k] += 1
+ntot = sum(covt.values())
+relab = Counter(s['cc'] for s in S if s['id'] in V19 and s.get('cc'))
 now = datetime.now().strftime('%Y-%m-%d %H:%M')
 L = []; a = L.append
 tot_new = sum(new.values())
@@ -26,11 +36,13 @@ a('- Total de placas en el mapa: **{:,}** (v19: {:,}; **+{:,}**). {} países con
 a('- Nuevas por país (países nuevos + las 32 de las 1.480 en Alemania): ' + ' · '.join('%s %d' % (NAMES[c][0], n) for c, n in sorted(new.items(), key=lambda x: -x[1]) if n))
 a('- Datos abiertos únicamente: OpenStreetMap (ODbL; Geofabrik europe 2026-11-18 ~21:21 UTC, refrescado por id con Overpass el 2026-11-20) y Wikidata (CC0, consulta del 2026-11-20). Sin nombres de archivos cerrados.')
 a('- Las coordenadas de origen (`la`/`lo`) no se tocan nunca; la posición de dibujo va en `dla`/`dlo`.')
-a('- Cada placa nueva cumple: nombre limpio (solo se quitan prefijos literales como «Stolperstein für»), nombre contenido en la inscripción, dirección etiquetada contrastada con objetos `addr:*` de OSM (≤40 m; sin calle ≤25 m) o con la coordenada de la foto de Commons, sin `fixme` de posición sin comprobar, fusión OSM–Wikidata solo si ≤50 m y nombre compatible. Lo dudoso va a `pendiente-v20.csv` con su motivo.')
+a('- Controles aplicados a cada placa nueva (no todas tienen la misma confirmación de posición; ver cobertura abajo): nombre limpio (solo se quitan prefijos literales como «Stolperstein für»), nombre (palabras completas) tal cual en la inscripción cuando ésta existe, un solo nombre de persona (los registros con varias personas, rótulos o instituciones van a pendiente), año de muerte coherente con la inscripción, imagen de Commons existente, sin duplicado a ≤15 m (mismo nombre o subconjunto y mismo nacimiento), y, si OSM marca la posición como dudosa (`fixme`), solo con un objeto `addr:*` ajeno a la placa a ≤15 m o una foto cuya coordenada no sea copia de OSM; fusión OSM–Wikidata solo si ≤50 m y nombre compatible. Lo dudoso va a `pendiente-v20.csv` con su motivo.')
+a(('- **Cobertura real de la confirmación de posición** de las %d placas nuevas: **A** objeto `addr:*` de OSM ajeno a la placa, misma calle y número, ≤40 m: **%d (%.0f %%)** · **B** foto de Commons con coordenada independiente: %d · **C** foto de Commons cuya coordenada coincide con la de OSM al metro (no es independiente): %d · **D** solo la coordenada de la fuente (sin dirección ni foto que la contraste): **%d (%.0f %%)**. La dirección o la inscripción de cada ficha viene de la fuente, pero la posición solo está contrastada de forma independiente en A+B. Por país (A/B/C/D): ' % (ntot, covt['A'], 100 * covt['A'] / ntot, covt['B'], covt['C'], covt['D'], 100 * covt['D'] / ntot)) + '; '.join('%s %d/%d/%d/%d' % (c_, v_['A'], v_['B'], v_['C'], v_['D']) for c_, v_ in sorted(cov.items(), key=lambda x: -sum(x[1].values()))) + '.')
 a('- Regla de «posible superviviente / vivo»: igual que en la v19 (`policy.py`, 110 años; marcadores multilingües de superviviente en `pipeline/inscription.py`).\n')
 a('## Notas de la versión v20 (para publicar)\n')
+a(('- **Corrección de país de %d placas de la v19** (contadas como Alemania; el límite administrativo admin_level=2 de OSM las sitúa fuera): ' % sum(relab.values())) + ', '.join('%s %d' % (NAMES[c_][0], n_) for c_, n_ in relab.most_common()) + '. El contenido no cambia. Alemania: 65.820 (v19) − %d + %d de las 1.480 = %d.' % (sum(relab.values()), cnt['DE'] - (65820 - sum(relab.values())), cnt['DE']))
 a('- **27 países**: Alemania y 26 más de Europa (Países Bajos, Austria, Francia, Chequia, Noruega, Italia, España, Bélgica, Luxemburgo, Hungría, Lituania, Suiza, Polonia, Eslovaquia, Jersey, Croacia, Dinamarca, Guernsey, Finlandia, Andorra, Irlanda, Suecia, Letonia, Reino Unido, Rumanía y Liechtenstein). Botones de país y búsqueda en español, alemán e inglés; la fila de países se pliega en «Más países (N)».')
-a('- **+6.412 placas** verificables con datos abiertos (OSM ODbL + Wikidata CC0), cada una con enlace a su fuente; los casos dudosos quedan en pendiente con su motivo.')
+a(('- **+%s placas** verificables' % '{:,}'.format(len(S) - len(V19)).replace(',', '.')) + ' con datos abiertos (OSM ODbL + Wikidata CC0), cada una con enlace a su fuente; los casos dudosos quedan en pendiente con su motivo.')
 a('- **Todas las placas fuera de los edificios**: Alemania incluida, la posición de dibujo (`dla`/`dlo`) va a la acera con ≥0,5 m de holgura (salvo 36 placas residuales documentadas en `residuales-acera-v20.csv`); la coordenada de origen no se toca y es la que usan «Cómo llegar» y las descargas.')
 a('- Piedras con posición deducida de la foto de Commons: aviso «posición aproximada» propio. Regla de «posible superviviente» sin cambios.')
 a('- Caché del navegador: `kauffmann-v20-pages`.\n')
