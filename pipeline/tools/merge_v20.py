@@ -40,7 +40,7 @@ data['meta']['v20_added'] = {'records': len(added), 'countries': {cc: man['count
 (R / 'data/stones.json').write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
 (R / 'data/v20-added-20261120.json').write_text(json.dumps({'meta': {'records': len(added), 'previous_records': n0, 'countries': man['countries']},
     'added': [{k: r.get(k) for k in ('id', 'wd', 'p', 'n', 'c', 'cc', 'la', 'lo', 'src')} for r in added], 'excluded': man['pending'], 'duplicates': man['duplicates']}, ensure_ascii=False, indent=1), encoding='utf-8')
-with open('/workspace/countries-proto-v20/pendiente-v20.csv', 'w', newline='', encoding='utf-8') as f:
+with open(R / 'pendiente-v20.csv', 'w', newline='', encoding='utf-8') as f:
     w = csv.writer(f); w.writerow(['cc', 'id', 'nombre', 'motivo', 'lat', 'lon'])
     for p in man['pending']: w.writerow([p['cc'], p['id'], p.get('n') or '', p['reason'], p.get('la', ''), p.get('lo', '')])
 print('relabel', relabel, 'añadidas', len(added), '+1480:', len(d1480), 'total', len(data['stones']), {cc: man['countries'][cc]['anadidas'] for cc in ccs})
