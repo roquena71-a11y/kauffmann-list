@@ -33,3 +33,11 @@ Dir de trabajo: /workspace/countries-proto-v20 (copia de v19 = 49e7725, origin/m
 ## 04:00 loop21 it1: 1460 fallos (DE 1384, resto ~76) de 11134; converge. 'revisar' DE 48 (grupos grandes) → se documentarán si persisten.
 
 ## 04:22 ui20 ejecutado (base app3d.js = 7f726e0 con grupos fijos). 27 países (DE + 26). separate20.py escrito (separación entre grupos, usa sidewalk-comp20.json como desplazamiento total, a ejecutar tras loop21). loop21: fallos 1460→512→256→131.
+
+## 04:42 loop21 en 36 fallos (iter ~9/10). Listo finalize21.sh (separate20 + sidewalk --only + dump + check, rondas).
+
+## 04:54 loop21 terminó NO CERRADO: 34 fallos residuales (grupos grandes 'revisar' + algunos). Lanzado finalize21 (3 rondas: separación entre grupos + cierre) → /workspace/v20-data/final21.log
+
+## 05:26 finalize21 3 rondas: pares <1,55 m 845→68, fallos 36 (19 'revisar' en grupos grandes/dentro, 17 ajustadas con déficit <0,4 m). Lanzado loop21 4 iteraciones más (loop21b.log). Luego: documentar residuales en CSV, bump v20, footprints20, tests.
+
+## 05:35 PARADO el bucle (orden de Carlos). Estado final = finalize21 ronda 3 (stones.json 05:16): 36 fallos residuales (33 DE, 3 NL) + 26 revisar sin fallo → residuales-acera-v20.csv. Pares de columnas <1,55 m entre grupos: 68 (de 845). SIGUE: bump v20.

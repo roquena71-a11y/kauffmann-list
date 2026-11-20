@@ -1,0 +1,80 @@
+id,pais,nombre,estado_solver,holgura3d_m,holgura2d_m,deficit_m,motivo
+Q131924965,DE,Karoline Landauer,ajustada,0.79,0.46,0.04,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.79 m (3D) / 0.46 m (2D) de una huella de OSM"
+Q131925101,DE,Henriette Rosenthal,ajustada,0.22,-0.33,0.83,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.22 m (3D) / -0.33 m (2D) de una huella de OSM"
+Q132149149,DE,Ernestine Katz,ajustada,0.93,0.46,0.04,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.93 m (3D) / 0.46 m (2D) de una huella de OSM"
+Q132563818,DE,Max Kallmann,ajustada,0.6,0.13,0.37,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.60 m (3D) / 0.13 m (2D) de una huella de OSM"
+Q132563857,DE,Albert Brust,ajustada,0.5,0.21,0.29,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.50 m (3D) / 0.21 m (2D) de una huella de OSM"
+Q132564072,DE,Rosa Brauer,ajustada,0.55,0.29,0.21,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.55 m (3D) / 0.29 m (2D) de una huella de OSM"
+Q132854381,DE,Friederike Weinberg,ajustada,0.69,0.44,0.06,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.69 m (3D) / 0.44 m (2D) de una huella de OSM"
+Q132854687,DE,Arthur Wolff,ajustada,0.73,0.49,0.01,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.73 m (3D) / 0.49 m (2D) de una huella de OSM"
+Q132855124,DE,Willy Löwenthal,ajustada,0.98,0.49,0.01,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.98 m (3D) / 0.49 m (2D) de una huella de OSM"
+Q134652865,DE,Albert Frank,revisar,,,0,grupo de 3 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+Q134652867,DE,Walter Frank,revisar,,,0,grupo de 3 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+Q134652868,DE,Lina Sara Frank,revisar,0.0,-0.37,0.87,grupo de 3 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+Q134694663,DE,Settchen Lilie,revisar,0.0,0.0,0.5,la coordenada de origen cae dentro de un edificio de OSM y no hay hueco para el grupo a <=25 m: grupo de 2 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+Q139713238,DE,Hedwig Bachenheimer,revisar,0.0,0.0,0.5,la coordenada de origen cae dentro de un edificio de OSM y no hay hueco para el grupo a <=25 m: grupo de 10 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+Q139713259,DE,Sophie Bachenheimer,revisar,0.0,0.0,0.5,la coordenada de origen cae dentro de un edificio de OSM y no hay hueco para el grupo a <=25 m: grupo de 10 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+Q139713289,DE,Auguste Gottschalk,revisar,0.59,0.21,0.29,grupo de 10 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+Q139713321,DE,Abraham Sedeletzki,revisar,,,0,grupo de 10 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+Q139713347,DE,Erich Bachenheimer,revisar,0.0,0.0,0.5,la coordenada de origen cae dentro de un edificio de OSM y no hay hueco para el grupo a <=25 m: grupo de 10 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+Q139713355,DE,Lotte Bachenheimer,revisar,0.0,0.0,0.5,la coordenada de origen cae dentro de un edificio de OSM y no hay hueco para el grupo a <=25 m: grupo de 10 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+Q139713364,DE,Kurt Bachenheimer,revisar,0.06,-0.32,0.82,grupo de 10 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+Q139713367,DE,Heinz Bachenheimer,revisar,,,0,grupo de 10 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+Q139713376,DE,Werner Bachenheimer,revisar,0.0,-0.86,1.36,grupo de 10 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+Q44067803,DE,Ludwig Hornung,revisar,0.0,0.0,0.5,la coordenada de origen cae dentro de un edificio de OSM y no hay hueco para el grupo a <=25 m: grupo de 1 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+Q44161641,DE,Jenny-Auguste Flörsheim,ajustada,0.71,0.23,0.27,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.71 m (3D) / 0.23 m (2D) de una huella de OSM"
+Q44162052,DE,Margarete Friedländer,ajustada,0.74,0.26,0.24,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.74 m (3D) / 0.26 m (2D) de una huella de OSM"
+Q44203666,DE,Sidonie Happ,ajustada,0.68,0.23,0.27,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.68 m (3D) / 0.23 m (2D) de una huella de OSM"
+Q58045088,DE,Simon Morgenthau,ajustada,0.99,0.48,0.02,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.99 m (3D) / 0.48 m (2D) de una huella de OSM"
+n13077721274,DE,Lucie Hecht,ajustada,0.67,0.31,0.19,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.67 m (3D) / 0.31 m (2D) de una huella de OSM"
+n13186250730,DE,Mathilde Kloepfer,revisar,0.0,0.0,0.5,la coordenada de origen cae dentro de un edificio de OSM y no hay hueco para el grupo a <=25 m: grupo de 2 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+n13811566348,DE,Stolpersteine für Famile Leopold Bachenheimer,revisar,,,0,grupo de 10 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1599440362,DE,Alfons Liebenthal,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1599440363,DE,Carmen Liebenthal geb. Kargauer,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1599440364,DE,Fränzel Liebenthal,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1599440365,DE,Salo Liebenthal,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1680242278,DE,Benjamin Marchbein,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1680242290,DE,Edith Marchbein,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1680242293,DE,Elias Marchbein,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1680242296,DE,Elsa Marchbein,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1680242336,DE,Ignatz Marchbein,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1680242345,DE,Paula Marchbein geb. Kreph,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1680242349,DE,Sabine Marchbein geb. Rotter,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1680263206,DE,Salomon Engländer,revisar,,,0,grupo de 4 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1681952889,DE,Amalie Hagenow geb. Braun,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1681952933,DE,Arnold Hagenow,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1681952944,DE,Bertha de Haas geb. Heilbut,revisar,,,0,grupo de 4 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1704795954,DE,Alfred Behrens,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1704795993,DE,Bertha Brauer,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1704796050,DE,Friederike Petrover geb. Falk,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1704796097,DE,Georg Brauer,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1704796132,DE,Günther Brauer,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1704796288,DE,Melitta Petrover,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1704796309,DE,Moses Abraham Petrover,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1704796342,DE,Sophie Behrens geb. Meyer,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1704796345,DE,Uri Behrens,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1704796347,DE,Werner Behrens,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n1707810814,DE,Else Geiershoefer geb. Kann,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n2478708990,DE,Betty Rosenbusch,revisar,,,0,grupo de 7 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n2478708994,DE,Daniel Klaus,revisar,,,0,grupo de 7 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n2478709000,DE,Ernst Klaus,revisar,,,0,grupo de 7 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n2478709020,DE,Gerda Braunold,revisar,0.08,-0.36,0.86,grupo de 7 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+n2478709050,DE,Henriette Klaus,revisar,0.0,-0.67,1.17,grupo de 7 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+n2478709089,DE,Karoline Klaus,revisar,0.0,-0.9,1.4,grupo de 7 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+n2478709768,DE,Sigmund Klaus,revisar,0.0,0.0,0.5,la coordenada de origen cae dentro de un edificio de OSM y no hay hueco para el grupo a <=25 m: grupo de 7 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+n3311839354,DE,Werner Humberg,ajustada,0.59,0.32,0.18,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.59 m (3D) / 0.32 m (2D) de una huella de OSM"
+n3746170536,DE,Hermann Sander,revisar,,,0,grupo de 5 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n3746170537,DE,Rosa Sander,revisar,,,0,grupo de 5 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n3746170538,DE,Siegfried Sander,revisar,,,0,grupo de 5 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n3746170539,DE,Werner Kurt Sander,revisar,0.88,0.4,0.1,grupo de 5 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+n3746190634,DE,Rosalie Freiberg,revisar,,,0,grupo de 5 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n6482857593,DE,Bertha Holländer,ajustada,0.88,0.5,0,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.88 m (3D) / 0.50 m (2D) de una huella de OSM"
+n676830866,DE,Gerd Seelig,ajustada,0.8,0.49,0.01,"posición calculada con déficit de holgura (<0,5 m) tras el cierre de iteraciones; la chincheta/columna queda a 0.80 m (3D) / 0.49 m (2D) de una huella de OSM"
+n705411038,DE,Margarete Mandelik geb. Berg,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n705411091,DE,Adolf Mandelik,revisar,,,0,grupo de 26 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n705427734,DE,Jenny Klein geb. Ruben,revisar,,,0,grupo de 4 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n705427735,DE,Dr. Salomon Klein,revisar,,,0,grupo de 4 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n14280924396,NL,Rolf Eichenberg,revisar,,,0,grupo de 4 placas sin posición calculada; se queda en el origen y la comprobación no detecta solape
+n14280924397,NL,Martha Lippers-Stehberg,revisar,0.0,-0.66,1.16,grupo de 4 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+n14280924398,NL,Hugo Lippers|,revisar,0.0,0.0,0.5,la coordenada de origen cae dentro de un edificio de OSM y no hay hueco para el grupo a <=25 m: grupo de 4 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
+n14280924399,NL,Isidor Lippers,revisar,0.0,-0.87,1.37,grupo de 4 placas sin sitio libre en la acera a <=25 m con la cuadrícula completa (el solver no encontró posición); se queda en la coordenada de origen
