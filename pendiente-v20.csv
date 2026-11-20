@@ -3475,7 +3475,6 @@ CZ,Q43676689,Vojtěch Rosický,sin coordenadas P625 únicas en Wikidata,,
 CZ,Q43676753,Friedrich Sommer,sin coordenadas P625 únicas en Wikidata,,
 CZ,Q44059536,Alžběta Kaufthalová,sin dirección P6375 ni inscripción P1684 en Wikidata,49.833638,18.279625
 CZ,Q44200342,Louise Hermanová,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,49.756338,16.466526
-CZ,Q44200346,Karel Brady-Metzl,"la dirección de Wikidata («Masarykovo nám. 96/I, Třeboň») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",49.004257,14.771297
 CZ,Q62066933,Arnošt Bleiweis,sin dirección P6375 ni inscripción P1684 en Wikidata,49.406176,16.411482
 CZ,Q62066953,Jindřich Bleiweis,sin dirección P6375 ni inscripción P1684 en Wikidata,49.406176111,16.411481944
 CZ,Q62066969,Augusta Bleiweisová,sin dirección P6375 ni inscripción P1684 en Wikidata,49.406176111,16.411481944
@@ -4153,7 +4152,6 @@ HU,n11823004105,,sin nombre,47.520074,21.614488
 HU,n11823004106,,sin nombre,47.3270963,17.4685524
 HU,n11823004107,,sin nombre,47.6838758,16.5893729
 HU,n11823004108,,sin nombre,47.4927346,19.0858817
-HU,n11823004109,Wachtel Béla Ignác,"OSM marca la posición como dudosa («verify position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",47.5037456,19.0654749
 HU,n11823004111,,sin nombre,47.5080488,19.050718
 HU,n11823004112,,sin nombre,47.0920892,17.9098969
 HU,n11823004114,,sin nombre,46.451607,16.9911986
@@ -4239,7 +4237,7 @@ HU,n11823004207,,sin nombre,46.2519134,20.1406567
 HU,n11823004208,,sin nombre,47.508142,19.080746
 HU,n11823004209,,sin nombre,47.525174,21.626334
 HU,n11823004210,,sin nombre,47.1147567,17.7357034
-HU,n11823004211,Dr. Bajor Lajos,"OSM marca la posición como dudosa («position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: ok)",47.483028,19.1293518
+HU,n11823004211,Dr. Bajor Lajos,"OSM marca la posición como dudosa («position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: ok)",47.483028,19.1293518
 HU,n11823004212,,sin nombre,46.4512813,16.9919121
 HU,n11823004213,,sin nombre,46.454589,16.9860668
 HU,n11823004214,,sin nombre,47.5004944,19.0565631
@@ -4335,10 +4333,7 @@ HU,n13400526419,Grosz család,sin dirección ni inscripción en OSM (y sin perso
 HU,n13542798751,Kelemen József,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),47.489061,19.0577416
 HU,n13625738554,,sin nombre,47.4943304,19.0646843
 HU,n13651447799,Bartos László,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),46.2518774,20.1428808
-HU,n13828621711,Wachtel Edit,"OSM marca la posición como dudosa («verify position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",47.5037425,19.0654789
-HU,n13828621712,Wachtel Terézia,"OSM marca la posición como dudosa («verify position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",47.5037399,19.0654831
 HU,n13957434147,,sin nombre,46.0750755,18.2294583
-HU,n13972856192,Semler Sándor,"OSM marca la posición como dudosa («verify position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",47.4963759,19.0184209
 HU,n13987808816,,sin nombre,48.1068515,19.8111321
 HU,n14079830323,Bartos Lipót és Schäffer Zsófia,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),46.2521055,20.1474298
 HU,n14302520793,,"el «nombre» es un rótulo o una institución, no una persona (Agnes Denes időkapszula)",47.5136375,19.0845016
@@ -6058,6 +6053,7 @@ NL,n14246514081,Mietje Hes-Marcus,el nombre de OSM no coincide con la inscripci�
 NL,n14260026965,Karel Sanders,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),52.5108744,6.0984826
 NL,n14274619779,Levie de Leeuw,sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata),52.5129978,6.0977083
 NL,n14361909176,,sin nombre,52.1413658,5.2079815
+NL,n14367943786,Klara Adelaar-van Huiden,la foto de Commons está a 5559746 m de la posición de la placa en OSM,52.515707,6.1083693
 NL,Q100725462,Andries Gerrits Gort,el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM,52.262714082,6.1433959
 NL,Q100968587,Stumbling stone in memory of Dina Muller-Berg,la etiqueta de Wikidata («Stumbling stone in memory of Dina Muller-Berg») no sigue el patrón «Stolperstein für/for/voor… NOMBRE»; no se deduce el nombre,,
 NL,Q101414677,David Muller,sin coordenadas P625 únicas en Wikidata,,
@@ -6332,10 +6328,10 @@ NO,Q44182242,Berit Leventhal,la coordenada de Wikidata no se confirma con una di
 NO,Q44182255,Esther Leventhal,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Biskop Gunnerus gate 12: dirección sin_coincidencia; Commons sin_datos),59.912142,10.752978
 NO,Q44182326,Fritz Hammerschlag,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Marcus Thranes gate 30: dirección sin_coincidencia; Commons sin_datos),59.125064,11.382967
 NO,Q44182341,Toni Hammerschlag,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Marcus Thranesgate 30: dirección sin_coincidencia; Commons sin_datos),59.125064,11.382967
-NO,Q44182353,Nora Lustig,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skåla Kleive 6456: dirección sin_coincidencia; Commons sin_datos),62.797057,7.645556
-NO,Q44182367,Robert Weinstein,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skåla Kleive 6456: dirección sin_coincidencia; Commons sin_datos),62.797057,7.645556
-NO,Q44182379,Tibor Taglicht,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skåla Kleive 6456: dirección sin_coincidencia; Commons sin_datos),62.797057,7.645556
-NO,Q44182390,Vera Taglicht,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skåla Kleive 6456: dirección sin_coincidencia; Commons sin_datos),62.797057,7.645556
+NO,Q44182353,Nora Lustig,"la dirección de Wikidata («6456 Skåla Kleive, Nesjestranda») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",62.797057,7.645556
+NO,Q44182367,Robert Weinstein,"la dirección de Wikidata («6456 Skåla Kleive, Nesjestranda») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",62.797057,7.645556
+NO,Q44182379,Tibor Taglicht,"la dirección de Wikidata («6456 Skåla Kleive, Nesjestranda») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",62.797057,7.645556
+NO,Q44182390,Vera Taglicht,"la dirección de Wikidata («6456 Skåla Kleive, Nesjestranda») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",62.797057,7.645556
 NO,Q44182427,Lea Steinfeld,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rasmus Rønnebergs gate 18: dirección lejos a 49 m; Commons sin_datos),62.471964,6.157401
 NO,Q44182443,Israel Steinfeld,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rasmus Rønnebergs gate 18: dirección lejos a 49 m; Commons sin_datos),62.471964,6.157401
 NO,Q44182458,Morten Steinfeld,la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Rasmus Rønnebergs gate 18: dirección lejos a 49 m; Commons sin_datos),62.471964,6.157401

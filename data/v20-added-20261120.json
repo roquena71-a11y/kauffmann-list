@@ -1,6 +1,6 @@
 {
  "meta": {
-  "records": 6216,
+  "records": 6220,
   "previous_records": 65861,
   "countries": {
    "AD": {
@@ -164,29 +164,30 @@
     }
    },
    "CZ": {
-    "anadidas": 599,
-    "pendientes": 2919,
+    "anadidas": 600,
+    "pendientes": 2918,
     "duplicados": 1,
     "osm_snapshot": "2026-11-19T23:34:21Z",
     "stats": {
      "osm_objetos": 2156,
      "wd_items": 1525,
-     "anadidas": 599,
-     "pendientes": 2919,
+     "anadidas": 600,
+     "pendientes": 2918,
      "duplicados": 1,
      "src": {
       "osm": 377,
       "osm+wd": 162,
-      "wd": 60
+      "wd": 61
      },
      "posicion": {
       "sin_datos": 464,
-      "ok": 93,
+      "ok": 94,
       "sin_coincidencia": 42
      },
      "commons": {
-      "sin_datos": 557,
-      "ok": 42
+      "sin_datos": 546,
+      "ok": 50,
+      "medio": 4
      },
      "motivos_pendiente": {
       "el nombre junta a varias personas": 6,
@@ -207,7 +208,6 @@
       "nombre colectivo en Wikidata": 1,
       "sin coordenadas P625 únicas en Wikidata": 66,
       "la coordenada de Wikidata no se confirma con una dirección de OSM ni c": 2,
-      "la dirección de Wikidata": 1,
       "Wikidata trae varias direcciones o inscripciones distintas": 2
      }
     }
@@ -447,31 +447,32 @@
     }
    },
    "HU": {
-    "anadidas": 83,
-    "pendientes": 298,
+    "anadidas": 87,
+    "pendientes": 294,
     "duplicados": 0,
     "osm_snapshot": "2026-11-19T23:33:17Z",
     "stats": {
      "osm_objetos": 371,
      "wd_items": 10,
-     "anadidas": 83,
-     "pendientes": 298,
+     "anadidas": 87,
+     "pendientes": 294,
      "duplicados": 0,
      "src": {
-      "osm": 79,
+      "osm": 83,
       "wd": 4
      },
      "posicion": {
-      "sin_coincidencia": 76,
-      "sin_datos": 7
+      "ok": 67,
+      "sin_datos": 8,
+      "sin_coincidencia": 12
      },
      "commons": {
-      "sin_datos": 26,
+      "sin_datos": 30,
       "ok": 57
      },
      "motivos_pendiente": {
       "sin dirección ni inscripción en OSM": 18,
-      "OSM marca la posición como dudosa": 16,
+      "OSM marca la posición como dudosa": 12,
       "el nombre de OSM no coincide con la inscripción": 3,
       "sin nombre": 252,
       "el nombre contiene cifras": 1,
@@ -638,29 +639,30 @@
     }
    },
    "NL": {
-    "anadidas": 1281,
-    "pendientes": 1487,
+    "anadidas": 1280,
+    "pendientes": 1488,
     "duplicados": 5,
     "osm_snapshot": "2026-11-19T23:34:21Z",
     "stats": {
      "osm_objetos": 2731,
      "wd_items": 54,
-     "anadidas": 1281,
-     "pendientes": 1487,
+     "anadidas": 1280,
+     "pendientes": 1488,
      "duplicados": 5,
      "src": {
-      "osm": 1258,
+      "osm": 1257,
       "osm+wd": 12,
       "wd": 11
      },
      "posicion": {
-      "sin_datos": 616,
+      "sin_datos": 612,
       "ok": 562,
-      "sin_coincidencia": 103
+      "sin_coincidencia": 106
      },
      "commons": {
-      "sin_datos": 1261,
-      "ok": 20
+      "ok": 457,
+      "sin_datos": 822,
+      "medio": 1
      },
      "motivos_pendiente": {
       "el nombre de OSM no coincide con la inscripción": 56,
@@ -681,6 +683,7 @@
       "nombre genérico con texto que no es un nombre": 3,
       "sin dirección ni inscripción en OSM": 354,
       "la dirección etiquetada existe en OSM pero a 46 m de la posición de la": 1,
+      "la foto de Commons está a 5559746 m de la posición de la placa en OSM": 1,
       "el ítem de Wikidata no trae ningún texto de dirección": 2,
       "la etiqueta de Wikidata": 15,
       "sin coordenadas P625 únicas en Wikidata": 11,
@@ -727,9 +730,9 @@
       "el nombre de OSM": 2,
       "OSM y Wikidata": 1,
       "sin coordenadas P625 únicas en Wikidata": 1,
-      "la coordenada de Wikidata no se confirma con una dirección de OSM ni c": 124,
+      "la coordenada de Wikidata no se confirma con una dirección de OSM ni c": 120,
       "la etiqueta de Wikidata": 1,
-      "la dirección de Wikidata": 35,
+      "la dirección de Wikidata": 39,
       "el nombre de Wikidata no coincide con su inscripción": 1
      }
     }
@@ -22070,6 +22073,17 @@
    "src": "wd"
   },
   {
+   "id": "Q44200346",
+   "wd": "Q44200346",
+   "p": "Q23063225",
+   "n": "Karel Brady-Metzl",
+   "c": "Třeboň",
+   "cc": "CZ",
+   "la": 49.004257,
+   "lo": 14.771297,
+   "src": "wd"
+  },
+  {
    "id": "Q44200404",
    "wd": "Q44200404",
    "p": "Q22692814",
@@ -39142,6 +39156,17 @@
    "src": "osm"
   },
   {
+   "id": "n11823004109",
+   "wd": null,
+   "p": null,
+   "n": "Wachtel Béla Ignác",
+   "c": "Budapest",
+   "cc": "HU",
+   "la": 47.5037456,
+   "lo": 19.0654749,
+   "src": "osm"
+  },
+  {
    "id": "n11823004113",
    "wd": null,
    "p": null,
@@ -39755,6 +39780,39 @@
    "cc": "HU",
    "la": 46.9598411,
    "lo": 17.8691143,
+   "src": "osm"
+  },
+  {
+   "id": "n13828621711",
+   "wd": null,
+   "p": null,
+   "n": "Wachtel Edit",
+   "c": "Budapest",
+   "cc": "HU",
+   "la": 47.5037425,
+   "lo": 19.0654789,
+   "src": "osm"
+  },
+  {
+   "id": "n13828621712",
+   "wd": null,
+   "p": null,
+   "n": "Wachtel Terézia",
+   "c": "Budapest",
+   "cc": "HU",
+   "la": 47.5037399,
+   "lo": 19.0654831,
+   "src": "osm"
+  },
+  {
+   "id": "n13972856192",
+   "wd": null,
+   "p": null,
+   "n": "Semler Sándor",
+   "c": "Budapest",
+   "cc": "HU",
+   "la": 47.4963759,
+   "lo": 19.0184209,
    "src": "osm"
   },
   {
@@ -54121,17 +54179,6 @@
    "cc": "NL",
    "la": 52.5159899,
    "lo": 6.1098266,
-   "src": "osm"
-  },
-  {
-   "id": "n14367943786",
-   "wd": null,
-   "p": null,
-   "n": "Klara Adelaar-van Huiden",
-   "c": "Zwolle",
-   "cc": "NL",
-   "la": 52.515707,
-   "lo": 6.1083693,
    "src": "osm"
   },
   {
@@ -94563,14 +94610,6 @@
    "lo": 16.466526
   },
   {
-   "id": "Q44200346",
-   "cc": "CZ",
-   "reason": "la dirección de Wikidata («Masarykovo nám. 96/I, Třeboň») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
-   "n": "Karel Brady-Metzl",
-   "la": 49.004257,
-   "lo": 14.771297
-  },
-  {
    "id": "Q62066933",
    "cc": "CZ",
    "reason": "sin dirección P6375 ni inscripción P1684 en Wikidata",
@@ -99673,14 +99712,6 @@
    "lo": 19.0858817
   },
   {
-   "id": "n11823004109",
-   "cc": "HU",
-   "reason": "OSM marca la posición como dudosa («verify position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",
-   "n": "Wachtel Béla Ignác",
-   "la": 47.5037456,
-   "lo": 19.0654749
-  },
-  {
    "id": "n11823004111",
    "cc": "HU",
    "reason": "sin nombre",
@@ -100284,7 +100315,7 @@
   {
    "id": "n11823004211",
    "cc": "HU",
-   "reason": "OSM marca la posición como dudosa («position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: ok)",
+   "reason": "OSM marca la posición como dudosa («position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: ok, Commons: ok)",
    "n": "Dr. Bajor Lajos",
    "la": 47.483028,
    "lo": 19.1293518
@@ -100949,35 +100980,11 @@
    "lo": 20.1428808
   },
   {
-   "id": "n13828621711",
-   "cc": "HU",
-   "reason": "OSM marca la posición como dudosa («verify position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",
-   "n": "Wachtel Edit",
-   "la": 47.5037425,
-   "lo": 19.0654789
-  },
-  {
-   "id": "n13828621712",
-   "cc": "HU",
-   "reason": "OSM marca la posición como dudosa («verify position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",
-   "n": "Wachtel Terézia",
-   "la": 47.5037399,
-   "lo": 19.0654831
-  },
-  {
    "id": "n13957434147",
    "cc": "HU",
    "reason": "sin nombre",
    "la": 46.0750755,
    "lo": 18.2294583
-  },
-  {
-   "id": "n13972856192",
-   "cc": "HU",
-   "reason": "OSM marca la posición como dudosa («verify position») y ni una dirección de OSM ni la foto de Commons la confirman (dirección: sin_coincidencia, Commons: sin_datos)",
-   "n": "Semler Sándor",
-   "la": 47.4963759,
-   "lo": 19.0184209
   },
   {
    "id": "n13987808816",
@@ -113692,6 +113699,14 @@
    "lo": 5.2079815
   },
   {
+   "id": "n14367943786",
+   "cc": "NL",
+   "reason": "la foto de Commons está a 5559746 m de la posición de la placa en OSM",
+   "n": "Klara Adelaar-van Huiden",
+   "la": 52.515707,
+   "lo": 6.1083693
+  },
+  {
    "id": "Q100725462",
    "cc": "NL",
    "reason": "el ítem de Wikidata no trae ningún texto de dirección (P6375 vacío): sin dirección que comprobar contra OSM",
@@ -115817,7 +115832,7 @@
   {
    "id": "Q44182353",
    "cc": "NO",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skåla Kleive 6456: dirección sin_coincidencia; Commons sin_datos)",
+   "reason": "la dirección de Wikidata («6456 Skåla Kleive, Nesjestranda») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Nora Lustig",
    "la": 62.797057,
    "lo": 7.645556
@@ -115825,7 +115840,7 @@
   {
    "id": "Q44182367",
    "cc": "NO",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skåla Kleive 6456: dirección sin_coincidencia; Commons sin_datos)",
+   "reason": "la dirección de Wikidata («6456 Skåla Kleive, Nesjestranda») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Robert Weinstein",
    "la": 62.797057,
    "lo": 7.645556
@@ -115833,7 +115848,7 @@
   {
    "id": "Q44182379",
    "cc": "NO",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skåla Kleive 6456: dirección sin_coincidencia; Commons sin_datos)",
+   "reason": "la dirección de Wikidata («6456 Skåla Kleive, Nesjestranda») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Tibor Taglicht",
    "la": 62.797057,
    "lo": 7.645556
@@ -115841,7 +115856,7 @@
   {
    "id": "Q44182390",
    "cc": "NO",
-   "reason": "la coordenada de Wikidata no se confirma con una dirección de OSM ni con la foto de Commons (Skåla Kleive 6456: dirección sin_coincidencia; Commons sin_datos)",
+   "reason": "la dirección de Wikidata («6456 Skåla Kleive, Nesjestranda») no trae un número de casa y una calle que se puedan leer de forma fiable; sin comprobar contra OSM",
    "n": "Vera Taglicht",
    "la": 62.797057,
    "lo": 7.645556

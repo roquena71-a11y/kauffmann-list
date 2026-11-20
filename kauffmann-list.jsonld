@@ -20,13 +20,13 @@
       ],
       "dateModified": "2026-11-20",
       "variableMeasured": [
-        {"@type": "PropertyValue", "name": "Stolpersteine in dataset", "value": 72106},
-        {"@type": "PropertyValue", "name": "with name", "value": 71931},
-        {"@type": "PropertyValue", "name": "with inscription", "value": 66879},
-        {"@type": "PropertyValue", "name": "with address", "value": 65170},
-        {"@type": "PropertyValue", "name": "with birth date", "value": 39239},
-        {"@type": "PropertyValue", "name": "with death date", "value": 19606},
-        {"@type": "PropertyValue", "name": "with Wikimedia Commons photo", "value": 53584},
+        {"@type": "PropertyValue", "name": "Stolpersteine in dataset", "value": 72110},
+        {"@type": "PropertyValue", "name": "with name", "value": 71935},
+        {"@type": "PropertyValue", "name": "with inscription", "value": 66883},
+        {"@type": "PropertyValue", "name": "with address", "value": 65175},
+        {"@type": "PropertyValue", "name": "with birth date", "value": 39240},
+        {"@type": "PropertyValue", "name": "with death date", "value": 19607},
+        {"@type": "PropertyValue", "name": "with Wikimedia Commons photo", "value": 53587},
         {"@type": "PropertyValue", "name": "with Bundesarchiv Gedenkbuch ID", "value": 6091},
         {"@type": "PropertyValue", "name": "with USHMM ID", "value": 1603},
         {"@type": "PropertyValue", "name": "with Yad Vashem ID", "value": 389},
@@ -83,7 +83,7 @@
       "creativeWorkStatus": "In preparation",
       "founder": {"@type": "Person", "name": "Carlos Kauffmann"},
       "contactPoint": {"@type": "ContactPoint", "email": "listakauffmann@gmail.com"},
-      "description": "Goal: no stone and no victim left out. Status 2026-11-20, in preparation, not published: 72,106 stones in 27 countries (65,834 in Germany) mapped from open data; an estimated 40,000+ German stones are not yet in open data (Stiftung Spuren counts 116,000+ in 31 countries). No charitable status is claimed and no partnership is agreed. Biography texts shown only from Wikipedia CC BY-SA on a certain match (4,038, Germany only); official pages and archive records are linked, not copied. Pending: public release."
+      "description": "Goal: no stone and no victim left out. Status 2026-11-20, in preparation, not published: 72,110 stones in 27 countries (65,834 in Germany) mapped from open data; an estimated 40,000+ German stones are not yet in open data (Stiftung Spuren counts 116,000+ in 31 countries). No charitable status is claimed and no partnership is agreed. Biography texts shown only from Wikipedia CC BY-SA on a certain match (4,038, Germany only); official pages and archive records are linked, not copied. Pending: public release."
     },
     {
       "@type": "WebPage",
