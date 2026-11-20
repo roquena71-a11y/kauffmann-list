@@ -221,9 +221,16 @@
   document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => { applyI18n(); paintCountries(); setSheet(sheet, {quiet: true}); }));
 
   /* ---------- vista inicial: todos los países ---------- */
+  // v20r3 (auditoría C ronda 2, menor): el recuadro de 32 px de una placa no debe quedar bajo los botones de giro ⟲N⟳ (en 320×568 y 667×375 la hoja o la ventana los suben): se mide su posición real
+  function rotClear(){
+    const rb = document.getElementById('rotBtns'), c = map.getContainer().getBoundingClientRect();
+    if (!rb) return 0;
+    const bs = [...rb.querySelectorAll('button')].map(b => b.getBoundingClientRect()).filter(r => r.width > 0);
+    return bs.length ? Math.max(0, Math.round(c.bottom - Math.min(...bs.map(r => r.top)) + 46)) : 0;
+  }
   function padding(){
-    if (isLand()) return {top: topH() + 24, bottom: 106, left: Math.round(side.getBoundingClientRect().width) + 72, right: 84};   // v19 ronda 3: libre de la barra de capas (a la derecha de la lista), de los botones de giro, de la atribución y de los controles de la derecha
-    if (isMobile()) return {top: topH() + 16, bottom: Math.round(heightFor('peek')) + 104, left: 72, right: 84};   // v20: left 72 (la caja de 32 px de una placa en el borde izquierdo no toca el botón de capas, que llega a x=54, y=108)   // v19 ronda 4: left 40 (a 320 px el recuadro de Hyam Goldman tocaba el botón de capas, que llega a x=54). v19 ronda 3: encima de la hoja van los botones ⟲ N ⟳ (a 46 px de la hoja, 40 px de alto): el país no debe quedar detrás
+    if (isLand()) return {top: topH() + 24, bottom: Math.max(106, rotClear()), left: Math.round(side.getBoundingClientRect().width) + 72, right: 84};   // v19 ronda 3: libre de la barra de capas (a la derecha de la lista), de los botones de giro, de la atribución y de los controles de la derecha
+    if (isMobile()) return {top: topH() + 16, bottom: Math.max(Math.round(heightFor('peek')) + 104, rotClear()), left: 72, right: 84};   // v20: left 72 (la caja de 32 px de una placa en el borde izquierdo no toca el botón de capas, que llega a x=54, y=108)   // v19 ronda 4: left 40 (a 320 px el recuadro de Hyam Goldman tocaba el botón de capas, que llega a x=54). v19 ronda 3: encima de la hoja van los botones ⟲ N ⟳ (a 46 px de la hoja, 40 px de alto): el país no debe quedar detrás
     return {top: 20, bottom: 100, left: 20, right: 60};   // escritorio: la barra de capas (Noche · Día · Hoy…) ocupa ~70 px abajo; v18: Malmö quedaba tapada
   }
   function dataBounds(){

@@ -42,14 +42,14 @@ async def main():
         await pg.route('**/*.workers.dev/**', lambda r: r.abort())
         await pg.goto(BASE + 'index.html?intro=0&lang=es', wait_until='load')
         await pg.wait_for_function("typeof DATA!=='undefined' && DATA.length>60000 && DATA.every(s=>s._dla!==undefined || s._aliasOf)", timeout=300000)
-        rows = await pg.evaluate("(ids) => { const S = new Set(ids); return {half: COL_HALF, rows: DATA.filter(s => S.has(s.id)).map(s => ({id: s.id, n: s.n, cc: s.cc || 'DE', la: s.sla ?? s.la, lo: s.slo ?? s.lo, dla: s._dla, dlo: s._dlo, ang: s._ang, alias: s._aliasOf || null}))} }", sorted(IDS))
+        rows = await pg.evaluate("(ids) => { const S = new Set(ids); return {half: COL_HALF, rows: DATA.filter(s => S.has(s.id)).map(s => ({id: s.id, n: s.n, cc: s.cc || 'DE', la: s.sla ?? s.la, lo: s.slo ?? s.lo, dla: s._dla, dlo: s._dlo, pla: s.la, plo: s.lo, ang: s._ang, alias: s._aliasOf || null}))} }", sorted(IDS))
         await b.close()
     half = rows['half']; bad = []; res = []
     for r in rows['rows']:
         if r['alias']: continue
         o = (r['dla'], r['dlo']); ang = r['ang'] or 0
         ih = 6 * 40075016.686 / (256 * 2 ** 19) * math.cos(math.radians(r['dla']))   # chincheta 2D: 12 px a zoom 19
-        worst = 1e9; hit = None; inside = False; d3 = 1e9; dsrc = 1e9; osrc = (r['la'], r['lo'])
+        worst = 1e9; hit = None; inside = False; pin_inside = False; d3 = 1e9; dsrc = 1e9; osrc = (r['la'], r['lo'])
         for bid in FP['near'].get(r['id'], []):
             bd = FP['buildings'][bid]
             ro = [[to_xy(a, c, o) for a, c in ring] for ring in bd['o']]; ri = [[to_xy(a, c, o) for a, c in ring] for ring in bd['i']]
@@ -58,18 +58,23 @@ async def main():
             dsrc = min(dsrc, dist_to_rings(0, 0, [[to_xy(a, c, osrc) for a, c in ring] for ring in bd['o']])[0])   # distancia desde la coordenada de ORIGEN de la placa
             d, _ = dist_to_rings(0, 0, ro)
             if inside_poly(0, 0, ro, ri): d = 0; inside = True
+            pp = to_xy(r['pla'], r['plo'], o)   # chincheta 2D (v20r3, C): centro en s.la/s.lo tras aplicar dla/dlo
+            if inside_poly(pp[0], pp[1], ro, ri): pin_inside = True
             worst = min(worst, d)
         mv = hav(r['la'], r['lo'], r['dla'], r['dlo'])
         x = {'id': r['id'], 'n': r['n'], 'cc': r['cc'], 'centro_a_edificio_m': round(worst, 2), 'toca': hit, 'dibujo_vs_origen_m': round(mv, 2)}
         res.append(x)
         if r['id'] in LEGIT: continue
-        if hit or inside: bad.append(x)
+        # v20r3 (auditoría C ronda 2): el CENTRO de la columna 3D o de la chincheta 2D dentro de un edificio es un fallo SIN excepción (ni residuales-acera): solo las placas legítimamente dentro (LEGIT)
+        if inside: bad.append(dict(x, motivo='centro de la columna 3D dentro de un edificio', hard=True))
+        if pin_inside: bad.append(dict(x, motivo='centro de la chincheta 2D dentro de un edificio', hard=True))
+        if hit and not inside: bad.append(x)
         elif worst - ih < MARGIN - 1e-6: bad.append(dict(x, motivo='chincheta 2D a menos de 0,5 m de una huella'))
         if mv > 25.0 and r['id'] not in EXC25: bad.append(dict(x, motivo='dibujo a más de 25 m del origen (y no está en excepciones-25m-v20.csv)'))
         if dsrc > 50 and r['id'] not in SIN: bad.append(dict(x, motivo='sin ningún edificio de OSM a <=50 m en los datos (footprints): geometría no comprobable'))
     print('placas comprobadas', len(res), '| fallos:', len(bad), '| errores de página:', errs)
     for x in sorted(res, key=lambda x: x['centro_a_edificio_m'])[:5]: print('  ', x)
-    exc = [x for x in bad if x['id'] in RESID]; bad = [x for x in bad if x['id'] not in RESID]
+    exc = [x for x in bad if x['id'] in RESID and not x.get('hard')]; bad = [x for x in bad if x['id'] not in RESID or x.get('hard')]
     if exc: print('excepciones documentadas en residuales-acera-v20.csv:', len(exc), [x['id'] for x in exc])
     if OUT: json.dump(res, open(OUT, 'w'), ensure_ascii=False, indent=1)
     if len(SIN) > 70: print('FALLO: demasiadas placas sin edificio a <=50 m en la lista explícita', len(SIN)); sys.exit(1)

@@ -11,6 +11,13 @@ legit = set(json.load(open(SW.D / 'legit_inside.json')))
 random.seed(20261120)
 de = [s for s in S if (s.get('cc') or 'DE') == 'DE']
 sel = [s for s in S if (s.get('cc') or 'DE') not in ('DE',) + SW.V19] + random.sample(de, 1500) + [s for s in de if s['id'] in legit]
+# v20r3 (auditoría C ronda 2): los grupos que el auditor halló con el centro dentro de un edificio, las 4 placas en calzada y las 3 chinchetas 2D dentro de un edificio se comprueban SIEMPRE (todos los miembros de su grupo)
+C_IDS = set('Q44067803 n6140555537 n7120057503 n7120057504 n7120057505 Q134694663 n13186250730 n2478709768 Q139713238 Q139713259 Q139713347 Q139713355 n14280924398 n13041383986 n13032352978 n13032352980 Q133230139 n1680242278 Q139713321 Q139713367'.split())
+_fixed = {}
+for g in SW.groups_of(de + [s for s in S if (s.get('cc') or 'DE') != 'DE']):
+    if any(x['id'] in C_IDS for x in g):
+        for x in g: _fixed[x['id']] = x
+_have = {s['id'] for s in sel}; sel = sel + [x for i, x in _fixed.items() if i not in _have]
 byc = {}
 for s in sel: byc.setdefault(s.get('cc') or 'DE', []).append(s)
 near = {}; B = {}; ids = []

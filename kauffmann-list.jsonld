@@ -6,33 +6,33 @@
       "@id": "#dataset",
       "name": "Kauffmann List – Stolpersteine in Germany and 26 other European countries",
       "alternateName": ["Lista Kauffmann", "Kauffmann-Liste", "Stolpersteine", "Stumbling Stones", "אבני נגף"],
-      "description": "Open, searchable map and dataset of the Stolpersteine (memorial plaques for victims of National Socialism) that open data (OpenStreetMap, Wikidata) allows us to verify in Germany, Netherlands, France, Austria, Czechia, Norway, Italy, Spain, Belgium, Luxembourg, Hungary, Lithuania, Switzerland, Poland, Slovakia, Jersey, Croatia, Denmark, Guernsey, Finland, Andorra, Ireland, Sweden, Latvia, United Kingdom, Romania and Liechtenstein, so families anywhere can find a plaque by name, surname or address and see its data and story. Motto: Cada placa, cada nombre, cada historia. Nunca olvidar.",
+      "description": "Open, searchable map and dataset of the Stolpersteine (memorial plaques for victims of National Socialism) that open data (OpenStreetMap, Wikidata) allows us to verify in Germany, Netherlands, France, Austria, Norway, Czechia, Italy, Spain, Belgium, Luxembourg, Hungary, Lithuania, Switzerland, Poland, Slovakia, Jersey, Croatia, Denmark, Guernsey, Finland, Andorra, Ireland, Sweden, Latvia, Romania, United Kingdom and Liechtenstein, so families anywhere can find a plaque by name, surname or address and see its data and story. Motto: Cada placa, cada nombre, cada historia. Nunca olvidar.",
       "inLanguage": ["es", "de", "en"],
-      "keywords": ["Stolpersteine", "Stumbling Stones", "Holocaust", "Shoah", "memorial", "Germany", "Netherlands", "France", "Austria", "Czechia", "Norway", "Italy", "Spain", "Belgium", "Luxembourg", "Hungary", "Lithuania", "Switzerland", "Poland", "Slovakia", "Jersey", "Croatia", "Denmark", "Guernsey", "Finland", "Andorra", "Ireland", "Sweden", "Latvia", "United Kingdom", "Romania", "Liechtenstein", "genealogy", "victims of National Socialism", "Gunter Demnig", "map"],
+      "keywords": ["Stolpersteine", "Stumbling Stones", "Holocaust", "Shoah", "memorial", "Germany", "Netherlands", "France", "Austria", "Norway", "Czechia", "Italy", "Spain", "Belgium", "Luxembourg", "Hungary", "Lithuania", "Switzerland", "Poland", "Slovakia", "Jersey", "Croatia", "Denmark", "Guernsey", "Finland", "Andorra", "Ireland", "Sweden", "Latvia", "Romania", "United Kingdom", "Liechtenstein", "genealogy", "victims of National Socialism", "Gunter Demnig", "map"],
       "creator": {"@type": "Person", "name": "Carlos Kauffmann"},
-      "spatialCoverage": [{"@type": "Place", "name": "Germany"}, {"@type": "Place", "name": "Netherlands"}, {"@type": "Place", "name": "France"}, {"@type": "Place", "name": "Austria"}, {"@type": "Place", "name": "Czechia"}, {"@type": "Place", "name": "Norway"}, {"@type": "Place", "name": "Italy"}, {"@type": "Place", "name": "Spain"}, {"@type": "Place", "name": "Belgium"}, {"@type": "Place", "name": "Luxembourg"}, {"@type": "Place", "name": "Hungary"}, {"@type": "Place", "name": "Lithuania"}, {"@type": "Place", "name": "Switzerland"}, {"@type": "Place", "name": "Poland"}, {"@type": "Place", "name": "Slovakia"}, {"@type": "Place", "name": "Jersey"}, {"@type": "Place", "name": "Croatia"}, {"@type": "Place", "name": "Denmark"}, {"@type": "Place", "name": "Guernsey"}, {"@type": "Place", "name": "Finland"}, {"@type": "Place", "name": "Andorra"}, {"@type": "Place", "name": "Ireland"}, {"@type": "Place", "name": "Sweden"}, {"@type": "Place", "name": "Latvia"}, {"@type": "Place", "name": "United Kingdom"}, {"@type": "Place", "name": "Romania"}, {"@type": "Place", "name": "Liechtenstein"}],
+      "spatialCoverage": [{"@type": "Place", "name": "Germany"}, {"@type": "Place", "name": "Netherlands"}, {"@type": "Place", "name": "France"}, {"@type": "Place", "name": "Austria"}, {"@type": "Place", "name": "Norway"}, {"@type": "Place", "name": "Czechia"}, {"@type": "Place", "name": "Italy"}, {"@type": "Place", "name": "Spain"}, {"@type": "Place", "name": "Belgium"}, {"@type": "Place", "name": "Luxembourg"}, {"@type": "Place", "name": "Hungary"}, {"@type": "Place", "name": "Lithuania"}, {"@type": "Place", "name": "Switzerland"}, {"@type": "Place", "name": "Poland"}, {"@type": "Place", "name": "Slovakia"}, {"@type": "Place", "name": "Jersey"}, {"@type": "Place", "name": "Croatia"}, {"@type": "Place", "name": "Denmark"}, {"@type": "Place", "name": "Guernsey"}, {"@type": "Place", "name": "Finland"}, {"@type": "Place", "name": "Andorra"}, {"@type": "Place", "name": "Ireland"}, {"@type": "Place", "name": "Sweden"}, {"@type": "Place", "name": "Latvia"}, {"@type": "Place", "name": "Romania"}, {"@type": "Place", "name": "United Kingdom"}, {"@type": "Place", "name": "Liechtenstein"}],
       "temporalCoverage": "1933/1945",
       "isAccessibleForFree": true,
       "license": "https://opendatacommons.org/licenses/odbl/1-0/",
       "isBasedOn": [
-        {"@type": "Dataset", "name": "OpenStreetMap (memorial=stolperstein)", "url": "https://www.openstreetmap.org", "license": "https://opendatacommons.org/licenses/odbl/1-0/", "dateModified": "2026-11-04"},
-        {"@type": "Dataset", "name": "Wikidata", "url": "https://www.wikidata.org", "license": "https://creativecommons.org/publicdomain/zero/1.0/", "dateModified": "2026-11-18"}
+        {"@type": "Dataset", "name": "OpenStreetMap (memorial=stolperstein)", "url": "https://www.openstreetmap.org", "license": "https://opendatacommons.org/licenses/odbl/1-0/", "dateModified": "2026-11-18"},
+        {"@type": "Dataset", "name": "Wikidata", "url": "https://www.wikidata.org", "license": "https://creativecommons.org/publicdomain/zero/1.0/", "dateModified": "2026-11-20"}
       ],
-      "dateModified": "2026-11-18",
+      "dateModified": "2026-11-20",
       "variableMeasured": [
-        {"@type": "PropertyValue", "name": "Stolpersteine in dataset", "value": 65832},
-        {"@type": "PropertyValue", "name": "with name", "value": 65645},
-        {"@type": "PropertyValue", "name": "with inscription", "value": 61948},
-        {"@type": "PropertyValue", "name": "with address", "value": 60563},
-        {"@type": "PropertyValue", "name": "with birth date", "value": 35793},
-        {"@type": "PropertyValue", "name": "with death date", "value": 17152},
-        {"@type": "PropertyValue", "name": "with Wikimedia Commons photo", "value": 50636},
+        {"@type": "PropertyValue", "name": "Stolpersteine in dataset", "value": 72106},
+        {"@type": "PropertyValue", "name": "with name", "value": 71931},
+        {"@type": "PropertyValue", "name": "with inscription", "value": 66879},
+        {"@type": "PropertyValue", "name": "with address", "value": 65170},
+        {"@type": "PropertyValue", "name": "with birth date", "value": 39239},
+        {"@type": "PropertyValue", "name": "with death date", "value": 19606},
+        {"@type": "PropertyValue", "name": "with Wikimedia Commons photo", "value": 53584},
         {"@type": "PropertyValue", "name": "with Bundesarchiv Gedenkbuch ID", "value": 6091},
         {"@type": "PropertyValue", "name": "with USHMM ID", "value": 1603},
         {"@type": "PropertyValue", "name": "with Yad Vashem ID", "value": 389},
-        {"@type": "PropertyValue", "name": "Wikipedia biography shown (CC BY-SA, certain match)", "value": 4038},
-        {"@type": "PropertyValue", "name": "official or archive link only, no biography text", "value": 24670},
-        {"@type": "PropertyValue", "name": "no biography and no official or archive link", "value": 37112}
+        {"@type": "PropertyValue", "name": "Wikipedia biography shown (CC BY-SA, certain match) (Germany only, measured 2026-11-18)", "value": 4038},
+        {"@type": "PropertyValue", "name": "official or archive link only, no biography text (Germany only, measured 2026-11-18)", "value": 24670},
+        {"@type": "PropertyValue", "name": "no biography and no official or archive link (Germany only, measured 2026-11-18)", "value": 37112}
       ],
       "url": "https://roquena71-a11y.github.io/kauffmann-list/",
       "distribution": [
@@ -83,7 +83,7 @@
       "creativeWorkStatus": "In preparation",
       "founder": {"@type": "Person", "name": "Carlos Kauffmann"},
       "contactPoint": {"@type": "ContactPoint", "email": "listakauffmann@gmail.com"},
-      "description": "Goal: no stone and no victim left out. Status 2026-11-18, in preparation, not published: 65,820 stones mapped from open data; an estimated 40,000+ German stones are not yet in open data (Stiftung Spuren counts 116,000+ in 31 countries). No charitable status is claimed and no partnership is agreed. Biography texts shown only from Wikipedia CC BY-SA on a certain match (4,038); official pages and archive records are linked, not copied. Pending: public release."
+      "description": "Goal: no stone and no victim left out. Status 2026-11-20, in preparation, not published: 72,106 stones in 27 countries (65,834 in Germany) mapped from open data; an estimated 40,000+ German stones are not yet in open data (Stiftung Spuren counts 116,000+ in 31 countries). No charitable status is claimed and no partnership is agreed. Biography texts shown only from Wikipedia CC BY-SA on a certain match (4,038, Germany only); official pages and archive records are linked, not copied. Pending: public release."
     },
     {
       "@type": "WebPage",
@@ -94,7 +94,7 @@
       "isAccessibleForFree": true,
       "creativeWorkStatus": "In preparation",
       "about": {"@id": "#project"},
-      "description": "Draft page for institutions asked to collaborate. Not published. No partnership is agreed and no charitable status is claimed. States what the Kauffmann List is, the measured coverage on 18 November 2026, the principles, and what is asked, including how attribution would look."
+      "description": "Draft page for institutions asked to collaborate. Not published. No partnership is agreed and no charitable status is claimed. States what the Kauffmann List is, the measured coverage on 20 November 2026, the principles, and what is asked, including how attribution would look."
     }
   ]
 }
