@@ -1,0 +1,392 @@
+#!/usr/bin/env python3
+"""v20: posición de DIBUJO (dla/dlo) de TODAS las placas (Alemania incluida) fuera de los edificios de OSM, con shapely.
+Mismo criterio que v19 (sidewalk.py): columna 3D de 1,2 m (media diagonal 0,849 m) + chincheta 2D (12 px a zoom 19) con >= 0,5 m de holgura a toda fachada;
+el desplazamiento mira hacia la calle y es el mínimo; máximo 25 m, si no «revisar». La coordenada de origen (la/lo) NO se toca.
+Excepción: placas que la fuente sitúa legítimamente dentro de un edificio (OSM indoor=yes, location=indoor/inside, level distinto de 0): no se mueven.
+Las placas de IE/SE/JE/FI/RO conservan su cálculo de la v19 (data/sidewalk-v19.json).
+Entradas (V20_DATA): near/CC.json (Overpass: edificios y vías de OSM a <=100 m de cada candidato; ODbL) o near/DE.pkl (extraído del PBF de Geofabrik).
+Uso: sidewalk20.py [CC ...]   (por defecto todos los países con datos)  → data/stones.json (dla/dlo), data/sidewalk-v20.json"""
+import json, math, sys, os, pickle, glob
+from pathlib import Path
+from collections import defaultdict
+import shapely
+from shapely.geometry import Point, Polygon, LineString, MultiPolygon, box
+from shapely.ops import unary_union, nearest_points
+from shapely.prepared import prep
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from geo import to_xy, to_ll, hav, building_polygons
+import roadway20 as RWY
+R = Path(__file__).resolve().parents[2]
+D = Path(os.environ.get('V20_DATA', '/workspace/v20-data'))
+V19 = ('IE', 'SE', 'JE', 'FI', 'RO')
+COL_HALF = 0.60; DIAG = COL_HALF * math.sqrt(2); MARGIN = 0.50; ICON_PX = 12
+MPP19 = 40075016.686 / (256 * 2 ** 19); MAXMOVE = 25.0; COL_STEP = 1.85
+ROADWAY = {'motorway', 'trunk', 'primary', 'secondary', 'tertiary', 'unclassified', 'residential', 'living_street', 'service', 'road'}
+NOT_STREET = {'proposed', 'construction', 'platform', 'bus_stop', 'corridor', 'elevator', 'razed', 'abandoned', 'services', 'rest_area'}
+CELL = 0.001
+
+def icon_half(lat): return ICON_PX / 2 * MPP19 * math.cos(math.radians(lat))
+def spread(n):
+    cols = math.ceil(math.sqrt(n)); rows = math.ceil(n / cols)
+    return math.hypot((cols - 1) / 2, (rows - 1) / 2) * COL_STEP
+def cell(la, lo): return (math.floor(la / CELL), math.floor(lo / (CELL * 1.6)))
+
+class Near:
+    """Edificios y vías de un país, indexados por celdas de ~110 m."""
+    def __init__(self):
+        self.b = {}; self.h = {}; self.bi = defaultdict(list); self.hi = defaultdict(list); self.ts = None
+    def add_b(self, bid, outer, inner, tags):
+        if bid in self.b: return
+        self.b[bid] = (outer, inner, tags)
+        las = [p[0] for r in outer for p in r]; los = [p[1] for r in outer for p in r]
+        for i in range(cell(min(las), min(los))[0], cell(max(las), max(los))[0] + 1):
+            for j in range(cell(min(las), min(los))[1], cell(max(las), max(los))[1] + 1): self.bi[(i, j)].append(bid)
+    def add_h(self, hid, pts, tags):
+        if hid in self.h: return
+        self.h[hid] = (pts, tags)
+        las = [p[0] for p in pts]; los = [p[1] for p in pts]
+        for i in range(cell(min(las), min(los))[0], cell(max(las), max(los))[0] + 1):
+            for j in range(cell(min(las), min(los))[1], cell(max(las), max(los))[1] + 1): self.hi[(i, j)].append(hid)
+    def around(self, idx, la, lo, rc=1):
+        i, j = cell(la, lo); out = set()
+        for di in range(-rc, rc + 1):
+            for dj in range(-rc, rc + 1): out.update(idx.get((i + di, j + dj), ()))
+        return out
+
+def load_near(cc):
+    N = Near(); pk = D / ('near/%s.pkl' % cc); jf = D / ('near/%s.json' % cc)
+    if pk.exists():
+        d = pickle.load(open(pk, 'rb')); N.ts = d.get('osm_timestamp')
+        for bid, (o, i, t) in d['buildings'].items(): N.add_b(bid, o, i, t)
+        for hid, (p, t) in d['highways'].items(): N.add_h(hid, p, t)
+        _extra_near(N, cc)
+        return N
+    d = json.load(open(jf, encoding='utf-8')); N.ts = d.get('osm_timestamp')
+    for bid, b in building_polygons(d['buildings']).items(): N.add_b(bid, b['outer'], b['inner'], b['tags'])
+    for hid, h in d['highways'].items():
+        g = [(p['lat'], p['lon']) for p in h.get('geometry', [])]
+        if len(g) >= 2: N.add_h(hid, g, h.get('tags') or {})
+    _extra_near(N, cc)
+    return N
+
+def _extra_near(N, cc):
+    """v20r2 (auditoría C, F1): edificios/vías traídos de nuevo (refetch_near20.py) para placas que no tenían ninguno a <=50 m."""
+    ef = D / ('near-extra/%s.json' % cc)
+    if not ef.exists(): return
+    d = json.load(open(ef, encoding='utf-8'))
+    for bid, b in building_polygons(d['buildings']).items(): N.add_b(bid, b['outer'], b['inner'], b['tags'])
+    for hid, h in d['highways'].items():
+        if hid in N.h: continue
+        g = [(p['lat'], p['lon']) for p in h.get('geometry', [])]
+        if len(g) >= 2: N.add_h(hid, g, h.get('tags') or {})
+
+def has_number(a):
+    """Como addrKey de app3d.js: la dirección lleva número de casa (se ignoran los códigos postales de 5 cifras)."""
+    import re
+    return bool(re.search(r'\d', re.sub(r'\b\d{5}\b', '', a or '')))
+
+def groups_of(stones):
+    """Agrupación como la de la app (clusterByDist): enlace simple; 15 m entre placas con la misma dirección (addrKey), 3,5 m sin dirección."""
+    par = list(range(len(stones)))
+    def find(i):
+        while par[i] != i: par[i] = par[par[i]]; i = par[i]
+        return i
+    byk = defaultdict(list)
+    for i, s in enumerate(stones):
+        a = s.get('a'); k = ('A', (s.get('c') or '').strip().lower(), a.strip().lower()) if a else ('N',)
+        byk[k].append(i)
+    for k, idx in byk.items():
+        lim = (15.0 if has_number(k[2]) else 8.0) if k[0] == 'A' else 3.5   # v20r3 (auditoría C ronda 2): una dirección sin número de casa (solo la calle) no agrupa a >8 m (Brahmsallee/Grindelallee)
+        grid = defaultdict(list)
+        for i in idx:
+            s = stones[i]; grid[(math.floor(s['la'] / 0.0003), math.floor(s['lo'] / 0.0005))].append(i)
+        for i in idx:
+            s = stones[i]; ci, cj = math.floor(s['la'] / 0.0003), math.floor(s['lo'] / 0.0005)
+            for di in (-1, 0, 1):
+                for dj in (-1, 0, 1):
+                    for j in grid.get((ci + di, cj + dj), ()):
+                        if j > i and hav(s['la'], s['lo'], stones[j]['la'], stones[j]['lo']) <= lim: par[find(i)] = find(j)
+    # v20r4: como la app (buildStones): grupos con el centroide a <0,8 m se unen (misma posición con distinta redacción de la dirección); sin esto el solver trataba como dos grupos lo que la app dibuja como uno (cuadrícula de 2 columnas, desplazadas ~0,9 m)
+    cl = defaultdict(list)
+    for i in range(len(stones)): cl[find(i)].append(i)
+    keys = list(cl); cen = {k: (sum(stones[i]['la'] for i in cl[k]) / len(cl[k]), sum(stones[i]['lo'] for i in cl[k]) / len(cl[k])) for k in keys}
+    cg = defaultdict(list)
+    for k in keys: cg[(math.floor(cen[k][0] / 0.00002), math.floor(cen[k][1] / 0.00002))].append(k)
+    for k in keys:
+        a0, b0 = math.floor(cen[k][0] / 0.00002), math.floor(cen[k][1] / 0.00002)
+        for di in (-1, 0, 1):
+            for dj in (-1, 0, 1):
+                for k2 in cg.get((a0 + di, b0 + dj), ()):
+                    if k2 > k and hav(cen[k][0], cen[k][1], cen[k2][0], cen[k2][1]) < 0.8: par[find(k)] = find(k2)
+    gs = defaultdict(list)
+    for i in range(len(stones)): gs[find(i)].append(stones[i])
+    return [sorted(g, key=lambda s: s['id']) for g in gs.values()]
+
+def local_geom(N, la0, lo0, rad=70):
+    o = (la0, lo0); polys = []; ids = []
+    for bid in N.around(N.bi, la0, lo0, 1):
+        outer, inner, tags = N.b[bid]
+        ro = [[to_xy(a, c, o) for a, c in r] for r in outer]
+        if min(math.hypot(x, y) for r in ro for x, y in r) > rad + 40: continue
+        ri = [[to_xy(a, c, o) for a, c in r] for r in inner]
+        try:
+            ps = [Polygon(r) for r in ro]; ps = [p if p.is_valid else p.buffer(0) for p in ps]
+            u = unary_union(ps)
+            if ri: u = u.difference(unary_union([Polygon(r).buffer(0) for r in ri]))
+            polys.append(u); ids.append(bid)
+        except Exception: continue
+    PB = unary_union(polys) if polys else None
+    lines = []; roads = []
+    for hid in N.around(N.hi, la0, lo0, 1):
+        pts, t = N.h[hid]
+        if t.get('highway') in NOT_STREET or t.get('tunnel') or t.get('indoor'): continue
+        ls = LineString([to_xy(a, c, o) for a, c in pts]); lines.append((ls, t))
+        if t.get('highway') in ROADWAY: roads.append(ls)
+    return PB, polys, ids, lines, (unary_union(roads) if roads else None)
+
+def road_zone(N, la0, lo0, PB, rad_bld=RWY.BLD_NEAR_MAX):
+    """v20r4 (auditoría C ronda 3): zona de calzada (vías rodadas de OSM con buffer semiancho+0,3 m) y zona de exención (a <= 6 m de un edificio: acera pegada a la fachada).
+    None si el grupo no tiene ningún edificio a <= 25 m (no hay acera que deducir: se documenta, no se mueve) o no hay vías rodadas. Devuelve (calzada, exencion) preparados."""
+    if PB is None or PB.distance(Point(0, 0)) > rad_bld: return None
+    o = (la0, lo0); bufs = []
+    for hid in N.around(N.hi, la0, lo0, 1):
+        pts, t = N.h[hid]
+        if not RWY.constrained(t): continue
+        ls = LineString([to_xy(a, c, o) for a, c in pts])
+        if ls.distance(Point(0, 0)) > 60: continue
+        bufs.append(ls.buffer(RWY.semiwidth(t) + RWY.SOLVER_MARGIN))
+    if not bufs: return None
+    return prep(unary_union(bufs)), prep(PB.buffer(RWY.BLD_EXEMPT_NEAR))
+
+def road_bad(zone, x, y):
+    if zone is None: return False
+    p = Point(x, y); return zone[0].contains(p) and not zone[1].contains(p)
+
+def ok_at(q, PB, need, h2):
+    if PB is None: return True
+    if PB.distance(Point(q)) < need: return False
+    c, s = 1.0, 0.0; hh = h2 + MARGIN
+    return not Polygon([(q[0] - hh, q[1] - hh), (q[0] + hh, q[1] - hh), (q[0] + hh, q[1] + hh), (q[0] - hh, q[1] + hh)]).intersects(PB)
+
+
+def slots(n, ang, step=COL_STEP):
+    """Posiciones de las n columnas de un grupo respecto a su centro (misma cuadrícula que app3d.js layout(): cols=ceil(sqrt n), orden irrelevante para el conjunto)."""
+    cols = math.ceil(math.sqrt(n)); rows = math.ceil(n / cols) or 1; cA, sA = math.cos(ang), math.sin(ang); out = []
+    for i in range(n):
+        cx = (i % cols) - (cols - 1) / 2; cy = i // cols - (rows - 1) / 2
+        out.append((cx * step * cA - cy * step * sA, cx * step * sA + cy * step * cA))
+    return out
+
+def make_okf(PB, pins, sl, ang, h2, extra=0.0, road=None):
+    """Exacto como la comprobación: cada chincheta 2D (en su coordenada de origen + q) a >= h2+0,5 m de toda fachada y cada columna 3D (cuadrado de 1,2 m girado ang, en su casilla) a >= 0,5 m."""
+    if PB is None: return lambda q: True
+    c_, s_ = math.cos(ang or 0.0), math.sin(ang or 0.0); hf = COL_HALF
+    corners = [(c_ * dx - s_ * dy, s_ * dx + c_ * dy) for dx, dy in ((-hf, -hf), (hf, -hf), (hf, hf), (-hf, hf))]
+    need2 = h2 + MARGIN + extra; need3 = MARGIN + extra
+    def okf(q):
+        for (px, py) in pins:
+            if PB.distance(Point(px + q[0], py + q[1])) < need2: return False
+        for (sx, sy) in sl:
+            x, y = q[0] + sx, q[1] + sy
+            d = PB.distance(Point(x, y))
+            if road is not None and road_bad(road, x, y): return False   # v20r4: el centro de la columna no puede quedar sobre la calzada de una vía rodada
+            if d < need2: return False                   # la chincheta 2D se comprueba también en la posición de la columna (como las auditorías: usan la posición dibujada)
+            if d >= DIAG + need3: continue
+            if d < hf + need3 - 1e-9: return False   # el cuadrado contiene círculo de radio hf: si el centro está más cerca, falla
+            if ang is None: return False                 # ángulo desconocido: criterio conservador (disco)
+            if Polygon([(x + a, y + b) for a, b in corners]).distance(PB) < need3: return False
+        return True
+    return okf
+
+_TMAX = [MAXMOVE]   # v20r2 (auditoría C, F2): desplazamiento máximo del grupo; process_cc lo reduce por la dispersión de la cuadrícula para que lo DIBUJADO quede a <=25 m del origen
+def solve(PB, lines, RW, okf, inside, keep_min=1.5, min_dot=0.5, tstep=0.05):
+    P = Point(0, 0)
+    best_h = None
+    for ls, t in lines:
+        d = ls.distance(P)
+        if best_h is None or d < best_h[0]: best_h = (d, ls, t)
+    if best_h is None: return None, None
+    dH, hl, ht = best_h
+    if inside or PB is None:
+        hp = nearest_points(P, hl)[1]
+        if dH > 0.3: hx, hy = (hp.x) / dH, (hp.y) / dH
+        else: hx = hy = 0.0
+        use = dH > 0.3
+    else:
+        cp = nearest_points(PB, P)[0]; dd = P.distance(cp)
+        if dd < 1e-6: hx = hy = 0.0; use = False
+        else: hx, hy = (0 - cp.x) / dd, (0 - cp.y) / dd; use = True
+    rd0 = RW.distance(P) if RW is not None else 1e9; keep = min(rd0, keep_min) - 0.01
+    best = None
+    for a in range(0, 360, 5):
+        ux, uy = math.cos(math.radians(a)), math.sin(math.radians(a))
+        dot = ux * hx + uy * hy if use else 1.0
+        if dot < min_dot: continue
+        t = tstep
+        while t <= _TMAX[0]:
+            q = (ux * t, uy * t)
+            if (inside and use and min_dot > 0 and t * dot > dH + 0.5) or (RW is not None and RW.distance(Point(q)) < keep): break
+            if okf(q):
+                key = (round(t, 2), -dot)
+                if best is None or key < best[0]: best = (key, (q[0], q[1]), t)
+                break
+            t += tstep
+    if best is None: return None, (dH, ht)
+    return best[1], (dH, ht)
+
+
+def solve_road(okf, PB, cap, tstep=0.1, band=1.5):
+    """v20r4: grupo cuya única falta es tener el centro de alguna columna sobre la calzada: el menor desplazamiento (cualquier dirección, <= cap) que cumple todo (edificios + calzada);
+    entre las soluciones a <= t_min + 1,5 m se elige la más cercana a un edificio (banda de acera junto a la línea de fachada)."""
+    first = []
+    for a in range(0, 360, 5):
+        ux, uy = math.cos(math.radians(a)), math.sin(math.radians(a)); t = tstep
+        while t <= cap:
+            q = (ux * t, uy * t)
+            if okf(q): first.append((t, q)); break
+            t += tstep
+    if not first: return None
+    tmin = min(t for t, _ in first)
+    cand = [(PB.distance(Point(q)) if PB is not None else 0.0, t, q) for t, q in first if t <= tmin + band]
+    cand.sort(); return cand[0][2]
+
+CLEAR_LEVELS = (1.5, 1.0, 0.6, 0.3, 0.1)   # v20r3: holgura del CENTRO de cada columna/chincheta a la huella (m) en la colocación «relajada»
+def solve_relaxed(PB, RW, lines, pins, sl, street=None, tstep=0.25):
+    """v20r3 (auditoría C ronda 2): grupos para los que no hay hueco con las holguras completas: se busca la posición más cercana al origen en la que el CENTRO de todas las
+    columnas (y de las chinchetas 2D) queda FUERA de todo edificio con holgura decreciente (fila pegada a la fachada; la columna puede rozar la pared) y fuera de la calzada
+    (>=2 m de toda vía rodada). Con `street` (nombre de la calle de la dirección) el grupo debe quedar a <=9 m de esa calle. Primero dentro del tope de 25 m, luego hasta 40 m."""
+    if PB is None: return None, 0
+    sl0 = [(0.0, 0.0)] if not sl else sl
+    pts0 = [(px + sx, py + sy) for (px, py) in pins for (sx, sy) in ([(0.0, 0.0)])] + [(0.0, 0.0)]
+    sline = None
+    if street:
+        ls_ = [ls for ls, tg in lines if (tg.get('name') or '').strip().lower() == street.strip().lower()]
+        sline = unary_union(ls_) if ls_ else None
+    def okr(q, c, road):
+        for (px, py) in pins:
+            if PB.distance(Point(px + q[0], py + q[1])) < c: return False
+        for (sx, sy) in sl0:
+            p = Point(q[0] + sx, q[1] + sy)
+            if PB.distance(p) < c: return False
+            if road and RW is not None and RW.distance(p) < 2.0 and not (street and sline is not None and False): return False
+            if sline is not None and sline.distance(p) > 9.0: return False
+        return True
+    # orden de renuncias: nunca se renuncia antes a la calzada que a la calle de la dirección o al tope de 25 m (v20r3: placas dibujadas en la calzada, auditoría C)
+    combos = [(road, use_st, cap) for road in (True, False) for use_st in ((True, False) if sline is not None else (False,)) for cap in (_TMAX[0], 40.0)]
+    for road, use_st, cap in combos:
+        def okq(q, c, road=road, use_st=use_st):
+            for (px, py) in pins:
+                if PB.distance(Point(px + q[0], py + q[1])) < c: return False
+            for (sx, sy) in sl0:
+                p = Point(q[0] + sx, q[1] + sy)
+                if PB.distance(p) < c: return False
+                if road and RW is not None and RW.distance(p) < 2.0: return False
+                if use_st and sline.distance(p) > 9.0: return False
+            return True
+        for k, c in enumerate(CLEAR_LEVELS):
+            best = None
+            for a in range(0, 360, 5):
+                ux, uy = math.cos(math.radians(a)), math.sin(math.radians(a)); t = 0.0
+                while t <= cap:
+                    q = (ux * t, uy * t)
+                    if (best is None or t < best[0]) and okq(q, c): best = (t, q); break
+                    t += tstep
+            if best: return best[1], 10 + k + (0 if cap <= _TMAX[0] else 20) + (0 if road else 40) + (0 if use_st or sline is None else 80)
+    return None, 0
+
+def process_cc(cc, stones, N, extra, legit, only=None, comp=None, angs=None, alias=None):
+    angs = angs or {}; alias = alias or set()
+    ff = Path(__file__).with_name('sidewalk-facade20.json'); FACADE = json.load(open(ff)) if ff.exists() else {}   # v20r3: grupos que se dibujan en fila pegada a la fachada de la calle de su dirección
+    sel = [s for s in stones if (s.get('cc') or 'DE') == cc]
+    if only is None:
+        for s in sel: s.pop('dla', None); s.pop('dlo', None)
+    table = []; n_ok = 0
+    for g in groups_of(sel):
+        if only is not None:
+            if g[0]['id'] not in only: continue
+            for s in g: s.pop('dla', None); s.pop('dlo', None)
+        la0 = sum(s['la'] for s in g) / len(g); lo0 = sum(s['lo'] for s in g) / len(g); o = (la0, lo0)
+        PB, polys, ids, lines, RW = local_geom(N, la0, lo0)
+        road = road_zone(N, la0, lo0, PB)
+        ex = extra.get(g[0]['id'], 0)
+        h2 = icon_half(la0); P0 = Point(0, 0)
+        pins = [to_xy(s['la'], s['lo'], o) for s in g]
+        nv = max(1, sum(1 for s in g if s['id'] not in alias))
+        vis = [s for s in g if s['id'] not in alias] or g
+        ang = angs.get(vis[0]['id'])
+        okf = make_okf(PB, pins, slots(nv, ang or 0.0), ang, h2, ex, road)
+        okf_b = make_okf(PB, pins, slots(nv, ang or 0.0), ang, h2, ex) if road is not None else okf
+        need = DIAG + MARGIN + (spread(len(g)) if len(g) > 1 else 0) + ex
+        _TMAX[0] = MAXMOVE - (spread(len(g)) if 1 < len(g) <= 20 else 0.0)   # grupos de más de 20 placas (campos de Stolpersteine): excepción documentada
+        insd = bool(PB is not None and PB.contains(P0)); d0 = 0.0 if insd else (PB.distance(P0) if PB is not None else 1e9)
+        status, shift, tier = 'ok', None, 0
+        fit0 = okf((0.0, 0.0))
+        if all(s['id'] in legit for s in g) and (insd or not fit0):
+            status = 'legitima'
+        elif road is not None and not fit0 and not insd and okf_b((0.0, 0.0)) and g[0]['id'] not in FACADE:
+            # v20r4: edificios bien, pero el centro de alguna columna cae en la calzada de una vía rodada: se mueve el mínimo hacia la acera (<= 25 m); si no hay hueco, se queda y lo documenta calzada-v20.csv
+            _TMAX[0] = MAXMOVE - (spread(len(g)) if 1 < len(g) <= 20 else 0.0)
+            shift = solve_road(okf, PB, _TMAX[0], tstep=0.1 if len(g) <= 6 else 0.2)
+            tier = 5
+            status = 'ajustada' if shift is not None else 'ok'
+        elif insd or not fit0 or g[0]['id'] in FACADE:
+            # niveles: 1-2 solo hacia la acera sin invadir la calzada; 3-4 la cuadrícula puede pisar el borde de la calzada (acera estrecha)
+            plan = [(1.5, 0.5), (0.4, 0.5), (0.4, -1.01), (-1, -1.01)]
+            ts = 0.05 if len(g) <= 6 else 0.1
+            shift, tier = None, 0
+            if g[0]['id'] not in FACADE:
+                for k, (km, md) in enumerate(plan, 1):
+                    shift, info = solve(PB, lines, RW, okf, insd, keep_min=km, min_dot=md, tstep=ts)
+                    if shift is not None: tier = k; break
+            if shift is None:   # v20r3: colocación relajada (centros fuera de edificios y de la calzada; fila pegada a la fachada)
+                shift, tier = solve_relaxed(PB, RW, lines, pins, slots(nv, ang or 0.0), FACADE.get(g[0]['id']))
+            status = 'revisar' if shift is None else 'ajustada'
+        sp = (comp or {}).get(g[0]['id'])
+        if sp and status in ('ok', 'ajustada') and okf((sp[0], sp[1])):
+            shift = (sp[0], sp[1]); status = 'ajustada'; tier = 9   # separación entre grupos (la app ya no los separa: grupos fijos)
+        if status == 'ok': n_ok += len(g); continue
+        for s in g:
+            r = {'id': s['id'], 'n': s.get('n'), 'cc': cc, 'la': s['la'], 'lo': s['lo'], 'grupo': len(g), 'grupo_id': g[0]['id'], 'extra_m': round(extra.get(g[0]['id'], 0), 2),
+                 'dentro_edificio': insd, 'borde_m': round(d0, 2), 'necesita_m': round(need, 2), 'estado': status, 'nivel': (tier if shift else 0) if status != 'legitima' else 0}
+            if shift:
+                x, y = to_xy(s['la'], s['lo'], o); la, lo = to_ll(x + shift[0], y + shift[1], o)
+                s['dla'] = round(la, 7); s['dlo'] = round(lo, 7); r['dla'], r['dlo'] = s['dla'], s['dlo']; r['desplazamiento_m'] = round(math.hypot(*shift), 2)
+                r['borde_despues_m'] = round(PB.distance(Point(shift)) if PB is not None else 1e9, 2)
+            table.append(r)
+    return table, n_ok
+
+def main():
+    ccs = [a for a in sys.argv[1:] if not a.startswith('-')]
+    data = json.load(open(R / 'data/stones.json', encoding='utf-8')); S = data['stones']
+    extra = {}
+    xf = Path(__file__).with_name('sidewalk-extra20.json')
+    if xf.exists(): extra.update(json.load(open(xf)))
+    cf = Path(__file__).with_name('sidewalk-comp20.json'); comp = json.load(open(cf)) if cf.exists() else {}
+    af = D / 'ang20.json'; A_ = json.load(open(af)) if af.exists() else {'ang': {}, 'alias': []}; angs = A_['ang']; alias = set(A_['alias'])
+    legit = set(json.load(open(D / 'legit_inside.json'))) if (D / 'legit_inside.json').exists() else set()
+    have = sorted({(s.get('cc') or 'DE') for s in S} - set(V19))
+    if ccs: have = [c for c in have if c in ccs]
+    table = []; counts = {}; ts = {}
+    for cc in have:
+        if not ((D / ('near/%s.json' % cc)).exists() or (D / ('near/%s.pkl' % cc)).exists()): print('sin datos de edificios:', cc); continue
+        N = load_near(cc); ts[cc] = N.ts
+        only = set(json.load(open(D / 'changed_groups.json'))) if '--only' in sys.argv else None
+        t, nok = process_cc(cc, S, N, extra, legit, only, comp, angs, alias)
+        if only is not None:
+            pv = json.load(open(R / 'data/sidewalk-v20.json', encoding='utf-8'))
+            t = [r for r in pv['stones'] if r['cc'] == cc and r['grupo_id'] not in only] + t
+            nok = sum(1 for x in S if (x.get('cc') or 'DE') == cc) - len(t)
+        table += t
+        from collections import Counter
+        c = Counter(r['estado'] for r in t); counts[cc] = {'ok': nok, **{k: v for k, v in c.items()}}
+        print(cc, counts[cc], flush=True)
+    (R / 'data/stones.json').write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    prev = {}
+    p = R / 'data/sidewalk-v20.json'
+    if p.exists() and (ccs or True): prev = json.load(open(p, encoding='utf-8'))
+    tb = [r for r in prev.get('stones', []) if r['cc'] not in have] + table
+    cn = {**prev.get('counts', {}), **counts}
+    p.write_text(json.dumps({'meta': {'osm_timestamp': ts, 'clear_m': round(DIAG + MARGIN, 2), 'margin_m': MARGIN, 'icon2d_px': ICON_PX, 'max_move_m': MAXMOVE,
+        'method': 'Misma regla que v19 con shapely: si la placa cae dentro de un edificio de OSM o la columna 3D (1,2 m) o la chincheta 2D (12 px a zoom 19) quedaría a menos de 0,5 m de una huella, la posición de dibujo (dla/dlo) se desplaza el mínimo hacia la calle, máximo 25 m; la coordenada de origen no se toca. Solo se listan las placas no «ok».'},
+        'counts': cn, 'stones': tb}, ensure_ascii=False, indent=1), encoding='utf-8')
+if __name__ == '__main__': main()

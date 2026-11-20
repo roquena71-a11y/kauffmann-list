@@ -6,7 +6,7 @@ Excepción: placas que la fuente sitúa legítimamente dentro de un edificio (OS
 Las placas de IE/SE/JE/FI/RO conservan su cálculo de la v19 (data/sidewalk-v19.json).
 Entradas (V20_DATA): near/CC.json (Overpass: edificios y vías de OSM a <=100 m de cada candidato; ODbL) o near/DE.pkl (extraído del PBF de Geofabrik).
 Uso: sidewalk20.py [CC ...]   (por defecto todos los países con datos)  → data/stones.json (dla/dlo), data/sidewalk-v20.json"""
-import json, math, sys, os, pickle, glob
+import re, json, math, sys, os, pickle, glob
 from pathlib import Path
 from collections import defaultdict
 import shapely
@@ -85,6 +85,23 @@ def has_number(a):
     import re
     return bool(re.search(r'\d', re.sub(r'\b\d{5}\b', '', a or '')))
 
+def addr_key(a):
+    """Idéntica a addrKey() de app3d.js (calle + número; sin códigos postales ni ciudad). v20r4: el solver agrupaba por la cadena exacta de la dirección y la app por esta clave: dos placas con
+    «Werderstraße 43, 20144 Hamburg» y «Werderstraße 43, Hamburg» eran para el solver dos grupos y para la app uno (cuadrícula conjunta, columnas en otro sitio: causa de las falsas violaciones)."""
+    import re
+    A = re.ASCII
+    x = (a or '').lower().replace('ß', 'ss').replace('ä', 'ae').replace('ö', 'oe').replace('ü', 'ue')
+    x = re.sub(r'\b\d{5}\b', '', x, flags=A)
+    x = re.sub(r'\b(deutschland|germany)\b', '', x, flags=A)
+    x = re.sub(r'[.,;/]', ' ', x)
+    x = re.sub(r'\bstr(?:asse)?\.', 'strasse ', x, flags=A)
+    x = re.sub(r'([a-z])str\b', r'\1strasse', x, flags=A)
+    x = re.sub(r'\bstr\b', 'strasse', x, flags=A)
+    x = re.sub(r'\s+', ' ', x, flags=A).strip()
+    m = re.match(r'^(.*?)(\d+\s*[a-z]?)(?:\s+|$)', x, flags=A)
+    if m: x = re.sub(r'\s+', ' ', m.group(1) + m.group(2), flags=A).strip()
+    return x
+
 def groups_of(stones):
     """Agrupación como la de la app (clusterByDist): enlace simple; 15 m entre placas con la misma dirección (addrKey), 3,5 m sin dirección."""
     par = list(range(len(stones)))
@@ -93,10 +110,9 @@ def groups_of(stones):
         return i
     byk = defaultdict(list)
     for i, s in enumerate(stones):
-        a = s.get('a'); k = ('A', (s.get('c') or '').strip().lower(), a.strip().lower()) if a else ('N',)
-        byk[k].append(i)
+        k = addr_key(s.get('a')); byk[('A', k) if k else ('N',)].append(i)
     for k, idx in byk.items():
-        lim = (15.0 if has_number(k[2]) else 8.0) if k[0] == 'A' else 3.5   # v20r3 (auditoría C ronda 2): una dirección sin número de casa (solo la calle) no agrupa a >8 m (Brahmsallee/Grindelallee)
+        lim = (15.0 if re.search(r'\d', k[1]) else 8.0) if k[0] == 'A' else 3.5   # como app3d.js buildStones: 15 m con número de casa, 8 m solo la calle, 3,5 m sin dirección
         grid = defaultdict(list)
         for i in idx:
             s = stones[i]; grid[(math.floor(s['la'] / 0.0003), math.floor(s['lo'] / 0.0005))].append(i)
@@ -294,6 +310,7 @@ def solve_relaxed(PB, RW, lines, pins, sl, street=None, tstep=0.25):
             if best: return best[1], 10 + k + (0 if cap <= _TMAX[0] else 20) + (0 if road else 40) + (0 if use_st or sline is None else 80)
     return None, 0
 
+_RES = set()   # v20r4: placas de los grupos re-resueltos con --only (el agrupado puede haber cambiado: se quitan sus filas antiguas por id, no por grupo_id)
 def process_cc(cc, stones, N, extra, legit, only=None, comp=None, angs=None, alias=None):
     angs = angs or {}; alias = alias or set()
     ff = Path(__file__).with_name('sidewalk-facade20.json'); FACADE = json.load(open(ff)) if ff.exists() else {}   # v20r3: grupos que se dibujan en fila pegada a la fachada de la calle de su dirección
@@ -304,7 +321,7 @@ def process_cc(cc, stones, N, extra, legit, only=None, comp=None, angs=None, ali
     for g in groups_of(sel):
         if only is not None:
             if g[0]['id'] not in only: continue
-            for s in g: s.pop('dla', None); s.pop('dlo', None)
+            for s in g: s.pop('dla', None); s.pop('dlo', None); _RES.add(s['id'])
         la0 = sum(s['la'] for s in g) / len(g); lo0 = sum(s['lo'] for s in g) / len(g); o = (la0, lo0)
         PB, polys, ids, lines, RW = local_geom(N, la0, lo0)
         road = road_zone(N, la0, lo0, PB)
@@ -374,7 +391,7 @@ def main():
         t, nok = process_cc(cc, S, N, extra, legit, only, comp, angs, alias)
         if only is not None:
             pv = json.load(open(R / 'data/sidewalk-v20.json', encoding='utf-8'))
-            t = [r for r in pv['stones'] if r['cc'] == cc and r['grupo_id'] not in only] + t
+            t = [r for r in pv['stones'] if r['cc'] == cc and r['grupo_id'] not in only and r['id'] not in _RES] + t
             nok = sum(1 for x in S if (x.get('cc') or 'DE') == cc) - len(t)
         table += t
         from collections import Counter

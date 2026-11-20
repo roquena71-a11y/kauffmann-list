@@ -18,6 +18,14 @@ for g in SW.groups_of(de + [s for s in S if (s.get('cc') or 'DE') != 'DE']):
     if any(x['id'] in C_IDS for x in g):
         for x in g: _fixed[x['id']] = x
 _have = {s['id'] for s in sel}; sel = sel + [x for i, x in _fixed.items() if i not in _have]
+# v20r4 (auditoría C ronda 3, calzada): las 612 placas con el centro sobre la calzada que halló C, una muestra fija de las movidas por la regla de calzada y las documentadas en calzada-v20.csv se comprueban SIEMPRE
+_road = set(open(R / 'tests/sidewalk/road-ids-v20.txt').read().split())
+if (R / 'calzada-v20.csv').exists():
+    import csv as _csv
+    _road |= {r['id'] for r in _csv.DictReader(open(R / 'calzada-v20.csv', encoding='utf-8'))}
+_rs = random.Random(20261120); _mv = sorted(s['id'] for s in S if s.get('dla') is not None and (s.get('cc') or 'DE') not in SW.V19)
+_road |= set(_rs.sample(_mv, 600))
+_have = {s['id'] for s in sel}; sel = sel + [s for s in S if s['id'] in _road and s['id'] not in _have]
 byc = {}
 for s in sel: byc.setdefault(s.get('cc') or 'DE', []).append(s)
 near = {}; B = {}; ids = []

@@ -15,6 +15,21 @@ IDS = set(FP['ids']); LEGIT = set(FP['legit']); MARGIN = 0.5
 # v20r2 (auditoría C, F1): ninguna placa sin datos de edificios (el test antiguo recorría listas vacías y daba OK); solo la lista explícita (campo/costa sin edificio a <=50 m en OSM)
 SIN = set(FP.get('sin_edificios_50m', []))
 _vac = []
+# v20r4 (auditoría C ronda 3, calzada): el centro dibujado no puede caer sobre la calzada de una vía rodada de OSM (ejes: tests/sidewalk/roads-v20.json.gz; semiancho por clase o width) salvo que haya un edificio a <6 m
+# (acera pegada a la fachada) o la placa esté documentada con motivo en calzada-v20.csv
+RD = json.load(gzip.open(R / 'tests/sidewalk/roads-v20.json.gz', 'rt', encoding='utf-8'))
+CAL = {}
+for _r in csv.DictReader(open(R / 'calzada-v20.csv', encoding='utf-8')): CAL[_r['id']] = _r['motivo']
+EXEMPT_BLD = 6.0
+def road_hit(rid_list, o):
+    best = None
+    for rid in rid_list:
+        rd = RD['roads'][rid]
+        if not rd['c']: continue
+        pts = [to_xy(a, c, o) for a, c in rd['p']]
+        d = min(_pseg(0, 0, pts[i], pts[i + 1]) for i in range(len(pts) - 1))
+        if d < rd['hw'] and (best is None or d - rd['hw'] < best[0]): best = (d - rd['hw'], d, rd['hw'], rd['n'])
+    return best
 EXC25 = {r['id'] for r in csv.DictReader(open(R / 'excepciones-25m-v20.csv', encoding='utf-8'))} if (R / 'excepciones-25m-v20.csv').exists() else set()
 
 def _pseg(px, py, a, b):
@@ -44,7 +59,7 @@ async def main():
         await pg.wait_for_function("typeof DATA!=='undefined' && DATA.length>60000 && DATA.every(s=>s._dla!==undefined || s._aliasOf)", timeout=300000)
         rows = await pg.evaluate("(ids) => { const S = new Set(ids); return {half: COL_HALF, rows: DATA.filter(s => S.has(s.id)).map(s => ({id: s.id, n: s.n, cc: s.cc || 'DE', la: s.sla ?? s.la, lo: s.slo ?? s.lo, dla: s._dla, dlo: s._dlo, pla: s.la, plo: s.lo, ang: s._ang, alias: s._aliasOf || null}))} }", sorted(IDS))
         await b.close()
-    half = rows['half']; bad = []; res = []
+    half = rows['half']; bad = []; res = []; nroad = []
     for r in rows['rows']:
         if r['alias']: continue
         o = (r['dla'], r['dlo']); ang = r['ang'] or 0
@@ -62,6 +77,9 @@ async def main():
             if inside_poly(pp[0], pp[1], ro, ri): pin_inside = True
             worst = min(worst, d)
         mv = hav(r['la'], r['lo'], r['dla'], r['dlo'])
+        rh = road_hit(RD['near'].get(r['id'], []), o)
+        if rh and worst >= EXEMPT_BLD and r['id'] not in LEGIT and r['id'] not in CAL: bad.append({'id': r['id'], 'n': r['n'], 'cc': r['cc'], 'motivo': 'centro sobre la calzada: %.2f m del eje de %s (semiancho %.2f m), sin edificio a <6 m y sin documentar en calzada-v20.csv' % (rh[1], rh[3], rh[2]), 'hard': True})
+        if rh and worst >= EXEMPT_BLD: nroad.append(r['id'])
         x = {'id': r['id'], 'n': r['n'], 'cc': r['cc'], 'centro_a_edificio_m': round(worst, 2), 'toca': hit, 'dibujo_vs_origen_m': round(mv, 2)}
         res.append(x)
         if r['id'] in LEGIT: continue
@@ -72,6 +90,8 @@ async def main():
         elif worst - ih < MARGIN - 1e-6: bad.append(dict(x, motivo='chincheta 2D a menos de 0,5 m de una huella'))
         if mv > 25.0 and r['id'] not in EXC25: bad.append(dict(x, motivo='dibujo a más de 25 m del origen (y no está en excepciones-25m-v20.csv)'))
         if dsrc > 50 and r['id'] not in SIN: bad.append(dict(x, motivo='sin ningún edificio de OSM a <=50 m en los datos (footprints): geometría no comprobable'))
+    print('placas con el centro en la calzada y sin edificio a <6 m (todas documentadas en calzada-v20.csv):', len(nroad), '| placas con vía en el fixture:', sum(1 for i in RD['near'] if RD['near'][i]))
+    if [i for i, m in CAL.items() if not m.strip()]: print('FALLO: calzada-v20.csv con motivo vacío'); sys.exit(1)
     print('placas comprobadas', len(res), '| fallos:', len(bad), '| errores de página:', errs)
     for x in sorted(res, key=lambda x: x['centro_a_edificio_m'])[:5]: print('  ', x)
     exc = [x for x in bad if x['id'] in RESID and not x.get('hard')]; bad = [x for x in bad if x['id'] not in RESID or x.get('hard')]
