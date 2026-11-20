@@ -91,6 +91,7 @@ body.dark .countries .n{color:#e0bc62}
   /* v19: los países se parten en varias líneas (antes: una fila que se desliza y dejaba 3 de 6 fuera de la vista sin avisar) */
   html.js .countries{flex-wrap:wrap;overflow:visible;margin-top:.45rem;padding-bottom:2px;gap:.3rem}
   html.js .countries button{flex:none;min-height:36px}
+  html.js .countries.more-open{max-height:11.5rem;overflow-y:auto;overscroll-behavior:contain}   /* v20: abierta, la lista tiene scroll propio (más específico que overflow:visible de arriba) */
   html.js .results,html.js .detail{overscroll-behavior:contain}
   html.js .results button{min-height:44px}
   /* controles del mapa por encima de la hoja */

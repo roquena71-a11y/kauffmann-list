@@ -20,7 +20,7 @@ async def main():
               const vis=()=>bs.filter(b=>{const r=b.getBoundingClientRect(), cr=c.getBoundingClientRect(); return r.bottom<=vh+.5 && r.left>=cr.left-.5 && r.right<=cr.right+.5 && r.right<=vw+.5}).length;
               const mask=getComputedStyle(c).maskImage||getComputedStyle(c).webkitMaskImage||'none';
               const before={vis:vis(), mask, atEnd:c.classList.contains('at-end'), scrolls:c.scrollWidth>c.clientWidth+2};
-              c.scrollLeft=c.scrollWidth; return new Promise(res=>setTimeout(()=>res({before, after:{vis:vis(), lastVisible:(()=>{const r=bs[bs.length-1].getBoundingClientRect(), cr=c.getBoundingClientRect(); return r.right<=cr.right+.5&&r.left>=cr.left-.5&&r.bottom<=vh+.5})(), atEnd:c.classList.contains('at-end'), mask:getComputedStyle(c).maskImage||'none'}, minH:Math.min(...bs.map(b=>b.getBoundingClientRect().height)), minW:Math.min(...bs.map(b=>b.getBoundingClientRect().width))}),150));}""")
+              c.scrollLeft=c.scrollWidth; return new Promise(res=>setTimeout(()=>res({before, after:{vis:vis(), lastVisible:(()=>{const r=bs.filter(b=>!b.classList.contains('more')).pop().getBoundingClientRect(), cr=c.getBoundingClientRect(); return r.right<=cr.right+.5&&r.left>=cr.left-.5&&r.bottom<=vh+.5})(), atEnd:c.classList.contains('at-end'), mask:getComputedStyle(c).maskImage||'none'}, minH:Math.min(...bs.filter(b=>b.offsetParent!==null).map(b=>b.getBoundingClientRect().height)), minW:Math.min(...bs.filter(b=>b.offsetParent!==null).map(b=>b.getBoundingClientRect().width))}),150));}""")
             print(w, h, r)
             if r['minH'] < 24 or r['minW'] < 24: bad.append((w, h, 'objetivo < 24 px'))
             if not land:
