@@ -24,3 +24,7 @@ export GIT_AUTHOR_NAME="Carlos Kauffmann" GIT_AUTHOR_EMAIL=roquena71-a11y@users.
 ## 18:56 Tepfer FACADE estricto (tier 6) → 18–20 m (ya no >25 m). C-extras n2310732548/Q132934563/Q132934701 corregidos con near-extra/DE.json (OSM de hoy). calzada-v20.csv 109. residuales 147 / excepciones 250 / pares 46 (incl. 1,51–1,54). About actualizado. PDFs regenerados. footprints+roads fixture en curso → INFORME, API, run-all.
 
 ## 19:08 footprints20 OK (8934 placas, 168800 edificios, 57 sin edificio ≤50 m, 1 JE omitido sin near). roads_fixture20 OK (14303 vías, 1,04 MB). INFORME regenerado (250 excepciones = 29 grupos, justificado: regla de calzada + addrKey, no artefacto; residuales 147, 102 solo chincheta 2D). Siguiente: bump, API offline, run-all.
+
+## 19:51 run-all REQUIRE_OAV=1 en segundo plano (nohup).
+PID: 691051  log: /workspace/v20-data-r4/runall_r4.log
+Bump ya en v20 (--sync). API offline ya generada (2026-11-20, 9399 archivos, validate 0 errores). Tras run-all: git add -f api data/search llms, commit final (sin push).
