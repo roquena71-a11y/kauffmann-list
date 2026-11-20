@@ -1,5 +1,5 @@
 {"columns":["id","name","birth_year","role","detail","lat","lon"],
-"count":39,
+"count":41,
 "country":"FR",
 "label":"Lunéville",
 "meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
@@ -13,6 +13,7 @@
 ["st-n13032352983","Chaja Laja Tepfer",1899,"memorial","21 Rue Sainte-Marie",48.59303,6.49316],
 ["st-n13032033138","Eli Hubermann",1939,"memorial","18 Rue des Bosquets",48.59159,6.49782],
 ["st-n13032033135","Fanny Lang",1903,"memorial","19 Rue du Château",48.59415,6.49162],
+["st-n13799926665","Henri Leskes",1928,"memorial","41 Rue de la République",48.59322,6.49014],
 ["st-n13032352968","Hercz Hubermann",1902,"memorial","5 Rue Banaudon",48.59143,6.49151],
 ["st-n13812177350","Hersz Weberspiel",1883,"memorial","6 Rue de Lorraine",48.59331,6.49156],
 ["st-n13032352981","Irma Tepfer",1931,"memorial","21 Rue Sainte-Marie",48.59303,6.49316],
@@ -42,6 +43,7 @@
 ["st-n13032033140","Rywka Faïga Hubermann",1905,"memorial","18 Rue des Bosquets",48.59159,6.49781],
 ["st-n13032093191","Salomon Gliklich",1931,"memorial","20 Rue du Château",48.59397,6.49194],
 ["st-n13032093190","Samuel Gliklich",1901,"memorial","20 Rue du Château",48.59398,6.49194],
+["st-n13799926667","Samuel Leskes",1886,"memorial","41 Rue de la République",48.59322,6.49014],
 ["st-n13032352982","Schmul Léo Tepfer",1894,"memorial","21 Rue Sainte-Marie",48.59303,6.49316],
 ["st-n13032352973","Yvette Szymkovicz",1939,"memorial","8 Avenue Voltaire",48.59136,6.50576],
 ["st-n13032352969","Zelda Hubermann",1905,"memorial","5 Rue Banaudon",48.59143,6.49151]

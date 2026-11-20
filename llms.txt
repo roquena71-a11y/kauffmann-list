@@ -1,6 +1,6 @@
 # Lista Kauffmann
 
-> Free, open map and static JSON data of Stolpersteine (Germany and other European countries, see the app for the full list) and victims of the Shoah: 180,743 people records across 2 licence families, each with its sources. Cada placa, cada nombre, cada historia. Nunca olvidar. · Jede Platte, jeder Name, jede Geschichte. · Every plaque, every name, every story.
+> Free, open map and static JSON data of Stolpersteine (Germany and other European countries, see the app for the full list) and victims of the Shoah: 180,773 people records across 2 licence families, each with its sources. Cada placa, cada nombre, cada historia. Nunca olvidar. · Jede Platte, jeder Name, jede Geschichte. · Every plaque, every name, every story.
 
 Este archivo es informativo y NO tiene valor jurídico propio: lo que obliga son las licencias de los datos. (This file is informational and has no legal force: the data licences bind.)
 
@@ -17,7 +17,7 @@ Personal, non-commercial; no third-party trackers (only our own cookieless visit
 ## Find a person (static files, GET only)
 
 - [Search manifest – cc0 (CC0-1.0)](https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/find/index.json): 118,254 people. By name: `https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/find/name/<prefix>.json`; by place: `find/city/index.json` → `find/city/<cc>/<slug>.json`; by year: `find/year/birth|death/<yyyy>.json`.
-- [Search manifest – odbl (ODbL-1.0)](https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/find/index.json): 62,489 people. By name: `https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/find/name/<prefix>.json`; by place: `find/city/index.json` → `find/city/<cc>/<slug>.json`; by year: `find/year/birth|death/<yyyy>.json`.
+- [Search manifest – odbl (ODbL-1.0)](https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/find/index.json): 62,519 people. By name: `https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/find/name/<prefix>.json`; by place: `find/city/index.json` → `find/city/<cc>/<slug>.json`; by year: `find/year/birth|death/<yyyy>.json`.
 
 1. Normalise a word of the name with fold(): lowercase, ß→ss, strip accents, ä→a ö→o ü→u, ae/oe/ue→a/o/u, keep a-z0-9 (Müller → `muller`).
 2. Try the first 6, 5, … 1 letters of that key (pad short keys with `_`) until a prefix exists in `name.prefixes` of the manifest.

@@ -1,9 +1,9 @@
-{"bytes":324558856,
+{"bytes":324622110,
 "failures":{},
-"files":9399,
+"files":9401,
 "generated":"2026-11-20",
 "max_file_bytes":3769188,
 "notes":{"stolpersteine_de":{"snapshot":"2026-11-19T00:00+01:00"},"wikidata_holocaust_victims":{"http":{"cache_hits":928,"requests":0,"retries":0}}},
-"policy":{"cc0":{"blocked_merges":27,"input_records":133301,"people_after_merge":133301,"possible_duplicate_groups":1456,"possibly_living_excluded":15047,"published":118254},"odbl":{"blocked_merges":22,"input_records":72038,"people_after_merge":71353,"possible_duplicate_groups":1645,"possibly_living_excluded":8864,"published":62489,"survivor_links_removed":1047,"survivor_minimized":1244}},
-"sources":{"stolpersteine_de":{"records":72038},"wikidata_holocaust_victims":{"records":133301}},
+"policy":{"cc0":{"blocked_merges":27,"input_records":133301,"people_after_merge":133301,"possible_duplicate_groups":1456,"possibly_living_excluded":15047,"published":118254},"odbl":{"blocked_merges":22,"input_records":72110,"people_after_merge":71425,"possible_duplicate_groups":1645,"possibly_living_excluded":8906,"published":62519,"survivor_links_removed":1047,"survivor_minimized":1245}},
+"sources":{"stolpersteine_de":{"records":72110},"wikidata_holocaust_victims":{"records":133301}},
 "suppressed":[]}

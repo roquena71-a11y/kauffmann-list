@@ -17,3 +17,5 @@ Tras el rebuild: DE transplanta dla de 628f59d9; sidewalk completo a los nuevos 
 - Acera: finalize estable (24 fallos de holgura <0,5 m, 0 centros dentro de edificio; 21 pares <1,55 m en pares-solapados-v20.csv; residuales 54; excepciones >25 m 26). 4 placas de calzada: ya ninguna en calzada de otra calle (desplazamiento 18-39 m, en excepciones-25m).
 - texts20 + PDFs regenerados (Chrome headless), ui20 stats, bump --sync, footprints20, INFORME.
 - Falta: build API offline, run-all REQUIRE_OAV=1 (log /workspace/v20-data-r3/runall_r3.log), commit final.
+
+## 14:05 API offline OK (72.110 registros, validate 0 errores). wd-added-test adaptado: base_fixes documentados en v20-added-20261120.json (926 fichas: b/d normalizadas, 7 municipios). Relanzado run-all REQUIRE_OAV=1 → /workspace/v20-data-r3/runall_r3.log

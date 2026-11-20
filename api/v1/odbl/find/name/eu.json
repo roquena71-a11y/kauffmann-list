@@ -2,6 +2,7 @@
 "meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
 "prefix":"eu",
 "rows":[
+["eufemio","st-Q131151543","Eufemio García García",null,null,"Madrid","ga"],
 ["eufinger","st-Q129256125","Georg Eufinger",1896,1944,"Elz","eu"],
 ["eugen","st-Q141548722","Albert Eugen Stein",1875,1943,"Wiesbaden","stei"],
 ["eugen","st-Q127257308","Dr. Eugen Cohn",1860,null,"Leipzig","cohn"],
@@ -144,7 +145,7 @@
 ["eugen","wd-Q59533413","Eugen Weiler",1900,null,"Singen (Hohentwiel)","weil"],
 ["eugen","st-Q135287356","Eugen Weisenseel",1899,null,"Frankfurt am Main","weis"],
 ["eugen","wd-Q1372959","Eugen Wiedmaier",1900,1940,"Stuttgart","wi"],
-["eugen","st-n9522692673","Eugen Wiener",null,null,null,"wi"],
+["eugen","st-n9522692673","Eugen Wiener",null,null,"Praha","wi"],
 ["eugen","st-n8739427180","Eugen Wolf",1893,null,"Minsk","wolf_"],
 ["eugen","wd-Q132138732","Franz Eugen Fuchs",1899,null,"Berlin","fu"],
 ["eugen","wd-Q132136975","Gaston Eugen Aberlé",1912,null,"Berlin","ab"],

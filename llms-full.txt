@@ -9,7 +9,7 @@ Site: https://roquena71-a11y.github.io/kauffmann-list/ · API root: https://roqu
 ## 1. What is here
 
 - **cc0** (CC0-1.0, 118,254 people): Registros solo de Wikidata (CC0): personas con identificador en bases de datos sobre la Shoah y la persecución nazi (no todas son víctimas mortales; ver fate y death_date). Sin coordenadas ni ids de OpenStreetMap; publicados aparte de la familia ODbL.
-- **odbl** (ODbL-1.0, 62,489 people): Derivative Database (ODbL 1.0) de Stolpersteine (OpenStreetMap + Wikidata). Share-alike: si redistribuyes la base o un extracto sustancial, debe seguir bajo ODbL 1.0 con atribución.
+- **odbl** (ODbL-1.0, 62,519 people): Derivative Database (ODbL 1.0) de Stolpersteine (OpenStreetMap + Wikidata). Share-alike: si redistribuyes la base o un extracto sustancial, debe seguir bajo ODbL 1.0 con atribución.
 - Possibly-living people are excluded from all person records. `data/search/` and `data/stones.json` are transcriptions of public street plaques, not person records.
 
 ## 2. Find a person by name

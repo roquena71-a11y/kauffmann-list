@@ -1,5 +1,5 @@
 {"columns":["id","name","birth_year","role","detail","lat","lon"],
-"count":48,
+"count":50,
 "country":"ES",
 "label":"Madrid",
 "meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
@@ -17,6 +17,7 @@
 ["st-n13426865515","Eleuterio Díaz-Tendero Merchán",null,"memorial","Paseo del Prado 40",40.41043,-3.69282],
 ["wd-Q3587694","Eliane Sophie Browne Bartrolí",null,"memorial","Calle de Rafael Calvo 19",40.43402,-3.69394],
 ["st-n13431351257","Emilio Ramos González",null,"memorial","Calle Isaac Albéniz 1",40.39786,-3.71998],
+["st-Q131151543","Eufemio García García",null,"memorial","Calle Francos Rodríguez 104",40.45846,-3.71478],
 ["st-n13429616605","Eugenio Martín Sanz",null,"memorial","Calle de Diego de León 42",40.43469,-3.68022],
 ["st-n13431351255","Fausto Parra Galiana",null,"memorial","Calle de la Sombrerería 7",40.4077,-3.69919],
 ["st-n13431351262","Fernando Salcedo Rabanaque",null,"memorial","Paseo del General Martínez Campos 4",40.43488,-3.69802],
@@ -51,6 +52,7 @@
 ["st-n13431351260","Rodolfo Ruiz Dávila",null,"memorial","Calle de Pelayo 60",40.42414,-3.69748],
 ["st-n13431434296","Rubén Tabares Hernándes",null,"memorial","Calle de Carlos Arniches 17",40.40798,-3.70839],
 ["st-n13424550506","Saturnino Arroyo Alonso",null,"memorial","Calle del Duque de Osuna 8",40.42525,-3.71192],
+["st-Q131125978","Teodoro Arranz Saugar",null,"memorial","Calle Tarragona 13",40.40167,-3.69698],
 ["st-n13426865519","Valentìn Fouce Llana",null,"memorial","Calle de Espronceda 13",40.44071,-3.69788],
 ["st-n13431240188","Venancio Ortells Menéndez",null,"memorial","Calle del Carmen 4",40.41752,-3.70357],
 ["st-n13431434298","Victoriano Valencia Javalera",null,"memorial","Calle de Zurita 9",40.41011,-3.69852]

@@ -20,9 +20,9 @@
 ["marker","st-n13483787770","Alfred Maerker",1864,1942,null,"mar"],
 ["marker","wd-Q105366247","Frieda Maerker",1875,1940,"Zerbst","mar"],
 ["marker","st-n13484766646","Martha Maerker",1865,1942,null,"mar"],
-["marketa","st-n2820087190","Markéta Auerbachová",null,null,null,"au"],
-["marketa","st-n12362249150","Markéta Hermanová roz. Hahndelová",1908,1944,null,"hah"],
-["marketa","st-n12362249148","Markéta Hermanová roz. Kleinová",1890,1943,null,"kl"],
+["marketa","st-n2820087190","Markéta Auerbachová",null,null,"Praha","au"],
+["marketa","st-n12362249150","Markéta Hermanová roz. Hahndelová",1908,1944,"Praha","hah"],
+["marketa","st-n12362249148","Markéta Hermanová roz. Kleinová",1890,1943,"Praha","kl"],
 ["marketa","st-n13113051523","Markéta Österreicherová",null,null,"Pardubice","os"],
 ["marketa","st-n13113051529","Markéta Zenkerová",null,null,"Pardubice","ze"],
 ["markiel","st-Q99537714","Rose Gertrud Markiel",1888,null,"Hamburg","mar"],
@@ -64,7 +64,7 @@
 ["markus","st-n12548676231","Isaak Markus",1864,null,"Langen;DE","mar"],
 ["markus","st-n13958230520","Jakob Markus",1895,1943,"Berlin","mar"],
 ["markus","wd-Q105367147","Johanna Markus",1903,1940,"Berlin","mar"],
-["markus","wd-Q105563267","Karel Markus",1886,1942,null,"mar"],
+["markus","wd-Q105563267","Karel Markus",1886,1942,"Praha","mar"],
 ["markus","st-n9983769666","Karl-Markus Herz",1914,1943,"Braunschweig","her"],
 ["markus","st-n13097155798","Kurt Markus",1894,null,"Berlin","mar"],
 ["markus","st-n6219552399","Leopold Markus",1884,1943,"Bocholt","mar"],
@@ -174,5 +174,5 @@
 ["markuse","st-n3394957583","Joseph Markuse",1890,1942,"Köln","mar"],
 ["markuse","st-Q136720925","Kurt Markuse",1855,1943,"Zehdenick","mar"],
 ["markusova","wd-Q105563225","Amálie Markusová",1871,null,"Kutná Hora","mar"],
-["markusova","wd-Q105563241","Berta Markusová",1887,1944,null,"mar"]
+["markusova","wd-Q105563241","Berta Markusová",1887,1944,"Praha","mar"]
 ]}

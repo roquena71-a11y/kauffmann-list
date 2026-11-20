@@ -2,7 +2,7 @@
 "meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
 "prefix":"ph",
 "rows":[
-["phdr","wd-Q23893314","Prof. PhDr. Jan Uher",1891,1942,"CZ","u"],
+["phdr","wd-Q23893314","Prof. PhDr. Jan Uher",1891,1942,"Brno","u"],
 ["phdr","wd-Q19772325","prof. PhDr. Vladimír Groh",1895,1941,"Brno","gro"],
 ["phiebig","wd-Q132136750","Rosa Phiebig",1881,null,"Berlin","ph"],
 ["philemon","st-n8489859033","Philemon G. Grünfeld",1888,1942,"Darmstadt","gru"],

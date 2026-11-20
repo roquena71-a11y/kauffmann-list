@@ -1,11 +1,12 @@
 {"columns":["id","name","birth_year","role","detail","lat","lon"],
-"count":6,
+"count":7,
 "country":"LT",
 "label":"Kaunas",
 "meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
 "page":1,
 "pages":1,
 "rows":[
+["st-n13205323009","Černė Percikovičiūtė",1911,"memorial","Miško g. 1",54.89349,23.92473],
 ["st-n13205323016","Chaimas Basas",1864,"memorial","Vilniaus g. 72",54.89755,23.89971],
 ["st-n13205323013","Eliazaras Basas",1938,"memorial","Vilniaus g. 72",54.89755,23.8997],
 ["wd-Q6078689","Isakas Anolikas",1903,"memorial","Laisvės al. 3",54.89662,23.9271],

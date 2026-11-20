@@ -1,5 +1,5 @@
 {"columns":["id","name","birth_year","death_year","place","people_prefix"],
-"count":48,
+"count":50,
 "country":"ES",
 "label":"Madrid",
 "meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
@@ -17,6 +17,7 @@
 ["st-n13426865515","Eleuterio Díaz-Tendero Merchán",null,null,"Madrid","mer"],
 ["wd-Q3587694","Eliane Sophie Browne Bartrolí",null,null,"Madrid","bar"],
 ["st-n13431351257","Emilio Ramos González",null,null,"Madrid","gon"],
+["st-Q131151543","Eufemio García García",null,null,"Madrid","ga"],
 ["st-n13429616605","Eugenio Martín Sanz",null,null,"Madrid","san"],
 ["st-n13431351255","Fausto Parra Galiana",null,null,"Madrid","ga"],
 ["st-n13431351262","Fernando Salcedo Rabanaque",null,null,"Madrid","ra"],
@@ -51,6 +52,7 @@
 ["st-n13431351260","Rodolfo Ruiz Dávila",null,null,"Madrid","da"],
 ["st-n13431434296","Rubén Tabares Hernándes",null,null,"Madrid","her"],
 ["st-n13424550506","Saturnino Arroyo Alonso",null,null,"Madrid","al"],
+["st-Q131125978","Teodoro Arranz Saugar",null,null,"Madrid","sau"],
 ["st-n13426865519","Valentìn Fouce Llana",null,null,"Madrid","ll"],
 ["st-n13431240188","Venancio Ortells Menéndez",null,null,"Madrid","men"],
 ["st-n13431434298","Victoriano Valencia Javalera",null,null,"Madrid","jav"]

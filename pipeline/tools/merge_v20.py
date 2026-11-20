@@ -19,17 +19,19 @@ for s in S:
     if not s.get('cc') and TRUE.get(s['id'], 'DE') != 'DE': s['cc'] = TRUE[s['id']]; relabel += 1
 # v20r3 (B ronda 2, R2-2/R2-4): fechas que no son fechas (unknown, unbek., URLs, dd.mm.aaaa) normalizadas o vaciadas; municipios que eran una calle (Echternach, Tägerwilen)
 sys.path.insert(0, str(Path(__file__).resolve().parent)); from v20_common import norm_date
-_nd = 0
+_nd = 0; base_fixes = {}   # id → {campo: valor anterior (None = no existía)}: lo documenta data/v20-added-20261120.json y lo usa tests/wd-added-test.cjs para comprobar que la base solo cambió ahí
+def _fix(s, k, v):
+    base_fixes.setdefault(s['id'], {}).setdefault(k, s.get(k))
+    if v is None: s.pop(k, None)
+    else: s[k] = v
 for s in S:
     for k in ('b', 'd'):
         if s.get(k):
             v = norm_date(s[k])
             if v != s[k]:
-                _nd += 1
-                if v: s[k] = v
-                else: s.pop(k)
-    if s['id'] in ('n13085210376', 'n13085210378', 'n13085210377', 'n13085100061', 'n13085100063', 'n13085100062'): s['c'] = 'Echternach'
-    if s['id'] == 'n4142422013': s['c'] = 'Tägerwilen'; s['a'] = 'Konstanzer Strasse 123'
+                _nd += 1; _fix(s, k, v or None)
+    if s['id'] in ('n13085210376', 'n13085210378', 'n13085210377', 'n13085100061', 'n13085100063', 'n13085100062'): _fix(s, 'c', 'Echternach')
+    if s['id'] == 'n4142422013': _fix(s, 'c', 'Tägerwilen'); _fix(s, 'a', 'Konstanzer Strasse 123')
 print('fechas normalizadas/vaciadas en la base:', _nd)
 n0 = len(S); ids = {s['id'] for s in S}
 added = []; man = {'countries': {}, 'pending': [], 'duplicates': []}
@@ -91,7 +93,7 @@ data['meta']['v20_added'] = {'records': len(added), 'countries': {cc: man['count
               'fusión con Wikidata (<=50 m, nombre compatible); lo dudoso va a pendiente con su motivo. Municipio: límites administrativos de OSM. Posición de dibujo (dla/dlo): ver data/sidewalk-v20.json.'}
 (R / 'data/stones.json').write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
 (R / 'data/v20-added-20261120.json').write_text(json.dumps({'meta': {'records': len(added), 'previous_records': n0, 'countries': man['countries']},
-    'added': [{k: r.get(k) for k in ('id', 'wd', 'p', 'n', 'c', 'cc', 'la', 'lo', 'src')} for r in added], 'excluded': man['pending'], 'duplicates': man['duplicates']}, ensure_ascii=False, indent=1), encoding='utf-8')
+    'base_fixes': base_fixes, 'added': [{k: r.get(k) for k in ('id', 'wd', 'p', 'n', 'c', 'cc', 'la', 'lo', 'src')} for r in added], 'excluded': man['pending'], 'duplicates': man['duplicates']}, ensure_ascii=False, indent=1), encoding='utf-8')
 with open(R / 'pendiente-v20.csv', 'w', newline='', encoding='utf-8') as f:
     w = csv.writer(f); w.writerow(['cc', 'id', 'nombre', 'motivo', 'lat', 'lon'])
     for p in man['pending']: w.writerow([p['cc'], p['id'], p.get('n') or '', p['reason'], p.get('la', ''), p.get('lo', '')])
