@@ -46,3 +46,5 @@ Dir de trabajo: /workspace/countries-proto-v20 (copia de v19 = 49e7725, origin/m
 - 05:55 pipeline build/validate OK (0 errores, 4 avisos de tamaño). Lanzado run-all REQUIRE_OAV=1 (venv-ci) → /workspace/v20-data/runall.log
 - 06:15 sidewalk-render-check20: distancia euclídea exacta (no cuadrado ensanchado), huellas a 7 decimales, excepciones = residuales-acera-v20.csv. 7.950 placas OK (4 residuales documentados). Relanzando run-all.
 - 06:35 fix CSS fila de países abierta (scroll propio; html.js .countries overflow:visible lo anulaba) + country-row-check ajustado (solo botones visibles). Relanzando run-all.
+- 06:50 INFORME-v20.md + CSVs generados y commiteados. Falta: resultado run-all, capturas 412 px, commit final.
+- 07:05 attribution-check: clic por JS (27 países). Lanzado run-all completo (REQUIRE_OAV=1, venv-ci) → runall.log; capturas con v20-shots.py en paralelo.

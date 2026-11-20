@@ -29,7 +29,8 @@ async def main():
             for state in ('cerrada', 'abierta'):
                 if state == 'abierta':
                     await pg.fill('#q', 'Moses'); await pg.wait_for_timeout(1200)
-                    await pg.click('#results button'); await pg.wait_for_selector('#detail:not([hidden])', timeout=20000); await pg.wait_for_timeout(1500)
+                    await pg.evaluate("document.querySelector('#results button').click()");   # v20: clic por JS (con 27 países la fila de países ocupa más y el primer resultado queda bajo la hoja); lo que se prueba es la atribución
+                    await pg.wait_for_selector('#detail:not([hidden])', timeout=20000); await pg.wait_for_timeout(1500)
                 r = await pg.evaluate(PROBE); ax = await run_axe(pg)
                 print(w, h, state, r, 'axe', ax, flush=True)
                 if OUT: os.makedirs(OUT, exist_ok=True); await pg.screenshot(path=f'{OUT}/attr-{w}x{h}-{state}.png')
