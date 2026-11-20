@@ -224,17 +224,27 @@ def solve_relaxed(PB, RW, lines, pins, sl, street=None, tstep=0.25):
             if road and RW is not None and RW.distance(p) < 2.0 and not (street and sline is not None and False): return False
             if sline is not None and sline.distance(p) > 9.0: return False
         return True
-    for cap in (_TMAX[0], 40.0):
-        for road in (True, False):
-            for k, c in enumerate(CLEAR_LEVELS):
-                best = None
-                for a in range(0, 360, 5):
-                    ux, uy = math.cos(math.radians(a)), math.sin(math.radians(a)); t = 0.0
-                    while t <= cap:
-                        q = (ux * t, uy * t)
-                        if (best is None or t < best[0]) and okr(q, c, road): best = (t, q); break
-                        t += tstep
-                if best: return best[1], 10 + k + (0 if cap <= _TMAX[0] else 20)
+    # orden de renuncias: nunca se renuncia antes a la calzada que a la calle de la dirección o al tope de 25 m (v20r3: placas dibujadas en la calzada, auditoría C)
+    combos = [(road, use_st, cap) for road in (True, False) for use_st in ((True, False) if sline is not None else (False,)) for cap in (_TMAX[0], 40.0)]
+    for road, use_st, cap in combos:
+        def okq(q, c, road=road, use_st=use_st):
+            for (px, py) in pins:
+                if PB.distance(Point(px + q[0], py + q[1])) < c: return False
+            for (sx, sy) in sl0:
+                p = Point(q[0] + sx, q[1] + sy)
+                if PB.distance(p) < c: return False
+                if road and RW is not None and RW.distance(p) < 2.0: return False
+                if use_st and sline.distance(p) > 9.0: return False
+            return True
+        for k, c in enumerate(CLEAR_LEVELS):
+            best = None
+            for a in range(0, 360, 5):
+                ux, uy = math.cos(math.radians(a)), math.sin(math.radians(a)); t = 0.0
+                while t <= cap:
+                    q = (ux * t, uy * t)
+                    if (best is None or t < best[0]) and okq(q, c): best = (t, q); break
+                    t += tstep
+            if best: return best[1], 10 + k + (0 if cap <= _TMAX[0] else 20) + (0 if road else 40) + (0 if use_st or sline is None else 80)
     return None, 0
 
 def process_cc(cc, stones, N, extra, legit, only=None, comp=None, angs=None, alias=None):
