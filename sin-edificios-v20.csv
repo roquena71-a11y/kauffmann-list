@@ -1,4 +1,5 @@
 id,pais,nombre,direccion,ciudad,edificio_mas_cercano_m
+Q137857643,IT,Franco Gallina,Via Parma 24,Turin,51
 Q98925879,NL,Samuel Bromberg,Bosbeekweg 19-21,Ede,>150 (ninguno en OSM)
 Q98925932,NL,Fanny Manasse-Hartogsohn,Bosbeekweg 19-21,Ede,>150 (ninguno en OSM)
 n10136352833,IT,Anita Di Capua Valabreda,,Roma,56
@@ -55,4 +56,3 @@ n9428525844,IT,Isacco Gino Israel,,Trieste,69
 n9428525845,IT,Anna Israel Israel,,Trieste,67
 n9448447458,IT,Feliciano Ricciardelli,,Trieste,52
 n9448447459,IT,Giovanni Palatucci,,Trieste,51
-n9631521134,IT,Cor Vanlaer,,Altopascio,>150 (ninguno en OSM)

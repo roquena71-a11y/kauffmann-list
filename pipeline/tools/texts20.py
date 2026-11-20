@@ -12,6 +12,7 @@ dot = lambda n: '{:,}'.format(n).replace(',', '.'); com = lambda n: '{:,}'.forma
 pct_de = ('%.1f' % PCT).replace('.', ',') + ' %'; pct_en = '%.1f%%' % PCT
 print('total', N, 'DE', DE, 'img', IMG, pct_en, 'insc', INS)
 REP = [  # (cadena vieja, nueva)
+ ('65.820 Steine.', '%s Steine in 27 Ländern (%s in Deutschland).' % (dot(N), dot(DE))), ('65,820 stones.', '%s stones in 27 countries (%s in Germany).' % (com(N), com(DE))),
  ('65.820', dot(N)), ('65,820', com(N)), ('50.636', dot(IMG)), ('50,636', com(IMG)), ('61.948', dot(INS)), ('61,948', com(INS)),
  ('(76,9 %)', '(%s)' % pct_de), ('76,9 %)', pct_de + ')'), ('76.9%', pct_en),
  # alcance: Alemania y 26 países más
@@ -30,8 +31,6 @@ REP = [  # (cadena vieja, nueva)
   'Cifras del 20 de noviembre de 2026. Las placas vienen de OpenStreetMap, ODbL (Alemania, Irlanda, Suecia, Jersey, Finlandia y Rumanía: extracto del 4 de noviembre de 2026; los demás países: extracto del 18 de noviembre de 2026, refrescado por id el 20 de noviembre), y de Wikidata, CC0 (a 18 de noviembre de 2026 para esos seis países, 20 de noviembre para los demás); las cifras de textos biográficos y enlaces de abajo son solo de Alemania (a 18 de noviembre de 2026);'),
  ('OpenStreetMap, ODbL, 4. November 2026; Wikidata, CC0, 18. November 2026 (', 'OpenStreetMap, ODbL (Deutschland, Irland, Schweden, Jersey, Finnland, Rumänien: 4. November 2026; übrige Länder: 18. November 2026, am 20. November per Id aufgefrischt); Wikidata, CC0 (18. bzw. 20. November 2026) ('),
  ('OpenStreetMap, ODbL, 4 November 2026; Wikidata, CC0, 18 November 2026 (', 'OpenStreetMap, ODbL (Germany, Ireland, Sweden, Jersey, Finland, Romania: 4 November 2026; other countries: 18 November 2026, refreshed by id on 20 November); Wikidata, CC0 (18 and 20 November 2026) ('),
- ('65.820 Steine.', '%s Steine in 27 Ländern (%s in Deutschland).' % (dot(N), dot(DE))), ('65,820 stones.', '%s stones in 27 countries (%s in Germany).' % (com(N), com(DE))),
- ('72.038 Steine auf der Karte', '72.038 Steine auf der Karte'),
  # biografías/enlaces: solo Alemania
  ('die 4.038 auf der Karte', 'die 4.038 auf der Karte (nur Deutschland)'), ('the 4,038 on the map', 'the 4,038 on the map (Germany only)'), ('las 4.038 que aparecen en el mapa', 'las 4.038 que aparecen en el mapa (solo Alemania)'),
  ('4.038 Biografietexte auf der Karte,', '4.038 Biografietexte auf der Karte (nur Deutschland),'), ('4,038 biography texts on the map,', '4,038 biography texts on the map (Germany only),'),

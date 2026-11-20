@@ -12,3 +12,8 @@ Tras el rebuild: DE transplanta dla de 628f59d9; sidewalk completo a los nuevos 
 - Datos: no-personas (Waisenhaus/Bethaus/Verein/Familie/…, hechos >1950 sin fecha 1933-45 ni palabra de persecución, n8307048446 manual) → pendiente; c=ISO arreglado; WD IT/NO verificadas con OSM ≤40 m recuperadas; motivo veraz; fechas b/d ISO; Echternach; 1.480 = 29+3 duplicados con la placa destino.
 - C código: solve_relaxed, fachada, agrupación 8 m sin número; test render-check: centro (3D y 2D) dentro de edificio SIN excepción; footprints con ids fijos; padding rotBtns dinámico (mapui.js).
 - Pendiente (en curso): chain3.sh (sidewalk nuevos + finalize 3 rondas) → gaps → residuales (pares-solapados-v20.csv) → rebuild con commons coords de todas las imágenes (tools-r3/fetch_commons_missing.py ya ejecutado) y parseo HU «CP Ciudad calle nº» → sidewalk otra vez → texts20.py, ui20, bump, footprints, INFORME, build API offline, run-all.
+
+## 13:40 acera final + textos + INFORME hechos
+- Acera: finalize estable (24 fallos de holgura <0,5 m, 0 centros dentro de edificio; 21 pares <1,55 m en pares-solapados-v20.csv; residuales 54; excepciones >25 m 26). 4 placas de calzada: ya ninguna en calzada de otra calle (desplazamiento 18-39 m, en excepciones-25m).
+- texts20 + PDFs regenerados (Chrome headless), ui20 stats, bump --sync, footprints20, INFORME.
+- Falta: build API offline, run-all REQUIRE_OAV=1 (log /workspace/v20-data-r3/runall_r3.log), commit final.
