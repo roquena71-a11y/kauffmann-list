@@ -5,15 +5,15 @@ function assert(c, m) { if (!c) throw new Error('FAIL: ' + m); }
 const D = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/stones.json'), 'utf8'));
 const M = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/v19-added-20261119.json'), 'utf8'));
 const S = D.stones, base = M.meta.previous_records;
-assert(base === 65832 && S.length === base + 29 && S.length === D.meta.count, 'base 65832 + 29 = ' + S.length);
-const added = S.slice(base), old = S.slice(0, base);
+assert(base === 65832 && S.length >= base + 29 && S.length === D.meta.count, 'base 65832 + 29 + v20');
+const added = S.slice(base, base + 29), old = S.slice(0, base);
 assert(D.meta.v19_added.records === 29 && D.meta.v19_added.countries.JE === 20 && D.meta.v19_added.countries.FI === 7 && D.meta.v19_added.countries.RO === 2, 'meta.v19_added');
-const strip = s => { const { dla, dlo, ...r } = s; return r; };      // v19: dla/dlo (posición de dibujo) pueden añadirse a IE/SE; lo demás no cambia
+const strip = s => { const { dla, dlo, ...r } = s; if (['LU', 'AT', 'PL', 'CH'].includes(r.cc)) delete r.cc; return r; };   // v20: dla/dlo (posición de dibujo) y cc de los 15 registros alemanes reasignados a LU/AT/PL/CH (fuera de Alemania) no cuentan como cambio de la base
 const h = crypto.createHash('sha256').update(JSON.stringify(old.map(strip))).digest('hex');
 assert(h === M.meta.previous_sha256_json_list, 'base intacta (sha256, sin dla/dlo) ' + h);
 const cnt = cc => added.filter(s => s.cc === cc).length;
 assert(cnt('JE') === 20 && cnt('FI') === 7 && cnt('RO') === 2, 'JE 20, FI 7, RO 2');
-assert(old.filter(s => (s.cc || 'DE') === 'DE').length === 65820 && old.filter(s => s.cc === 'IE').length === 6 && old.filter(s => s.cc === 'SE').length === 6, 'DE 65820, IE 6, SE 6 intactos');
+assert(old.map(strip).filter(s => (s.cc || 'DE') === 'DE').length === 65820 && old.filter(s => s.cc === 'IE').length === 6 && old.filter(s => s.cc === 'SE').length === 6, 'DE 65820, IE 6, SE 6 intactos');
 const ids = new Set(old.map(s => s.id));
 added.forEach((s, i) => {
   assert(!ids.has(s.id), 'id nuevo ' + s.id); ids.add(s.id);

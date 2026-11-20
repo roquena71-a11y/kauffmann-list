@@ -57,11 +57,17 @@ def main():
     h = head('index.html')
     h = h.replace('mapa libre de Stolpersteine en ' + OLD['es'], 'mapa libre de Stolpersteine en ' + short['es']).replace('Mapa libre de los Stolpersteine en ' + OLD['es'], 'Mapa libre de los Stolpersteine en ' + short['es'])
     h = h.replace('Stolpersteine en ' + OLD['es'], 'Stolpersteine en ' + short['es']).replace('Stolpersteine in ' + OLD['de'], 'Stolpersteine in ' + short['de']).replace('Stolpersteine in ' + OLD['en'], 'Stolpersteine in ' + short['en'])
+    def ld(x):
+        x = x.replace('Stolpersteine in Germany, Ireland, Sweden, Jersey, Finland and Romania', 'Stolpersteine in ' + short['en'])
+        x = x.replace('of every Stolperstein (memorial plaque for victims of National Socialism) in Germany, Ireland, Sweden, Jersey, Finland and Romania', 'of the Stolpersteine (memorial plaques for victims of National Socialism) that open data (OpenStreetMap, Wikidata) allows us to verify in ' + en)
+        x = x.replace('"Germany", "Ireland", "Sweden", "Jersey", "Finland", "Romania"', ', '.join('"%s"' % NAMES[c][2] for c in order))
+        return x
+    h = ld(h)
     h = h.replace('Stolperstein (memorial plaque for victims of National Socialism) in ' + OLD['en'], 'Stolperstein (memorial plaque for victims of National Socialism) in ' + en)
     h = h.replace('Germany, Ireland, Sweden, Jersey, Finland and Romania', short['en'].replace('Germany and', 'Germany and'))
     places = ', '.join('{"@type": "Place", "name": "%s"}' % NAMES[c][2] for c in order)
     h = re.sub(r'"spatialCoverage": \[[^\]]*\]', lambda m: '"spatialCoverage": [' + places + ']', h, count=1)
-    h = re.sub(r'"keywords": \[[^\]]*\]', lambda m: '"keywords": [' + ', '.join('"%s"' % x for x in ['Stolpersteine', 'Stumbling Stones', 'Holocaust', 'Shoah', 'memorial'] + [NAMES[c][2] for c in order] + ['genealogy', 'victims of National Socialism', 'Gunter Demnig']) + ']', h, count=1) if False else m.group(0), h, count=1)
     (R / 'index.html').write_text(h, encoding='utf-8')
+    (R / 'kauffmann-list.jsonld').write_text(ld(head('kauffmann-list.jsonld')), encoding='utf-8')
     print('países', order, 'cortos', short)
 if __name__ == '__main__': main()

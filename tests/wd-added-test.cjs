@@ -8,10 +8,11 @@ const M = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/wd-added-20261118.jso
 const S = D.stones, base = M.meta.base_records;
 assert(S.length === D.meta.count, 'meta.count = número de registros');
 const added = S.slice(base, base + M.added.length), old = S.slice(0, base);
+const strip = s => { const { dla, dlo, ...r } = s; if (['LU', 'AT', 'PL', 'CH'].includes(r.cc)) delete r.cc; return r; };   // v20: dla/dlo (posición de dibujo) y cc de los 15 registros alemanes reasignados a LU/AT/PL/CH (fuera de Alemania) no cuentan como cambio de la base
 assert(added.length === M.added.length && added.length === D.meta.wikidata_added.records, 'cuenta: ' + added.length + ' = manifiesto = meta');
 assert(added.length > 0, 'hay registros añadidos');
 // La base no cambió ni un byte.
-const sha = crypto.createHash('sha256').update(JSON.stringify(old)).digest('hex');
+const sha = crypto.createHash('sha256').update(JSON.stringify(old.map(strip))).digest('hex');
 assert(sha === M.meta.base_sha256, 'los ' + base + ' registros anteriores no cambian');
 // Qid, enlace a la fuente, forma del registro.
 const ids = new Set(), ps = new Set(), seen = new Map();

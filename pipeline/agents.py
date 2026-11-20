@@ -320,7 +320,7 @@ def llms_txt(fam_indexes, families, generated):
     a = L.append
     a("# Lista Kauffmann")
     a("")
-    a("> Free, open map and static JSON data of Stolpersteine (Germany, Ireland, Sweden, Jersey, Finland and Romania) and victims of the Shoah: %s people records across %d licence %s, each with its sources. %s" % (
+    a("> Free, open map and static JSON data of Stolpersteine (Germany and other European countries, see the app for the full list) and victims of the Shoah: %s people records across %d licence %s, each with its sources. %s" % (
         "{:,}".format(total), len(n), "family" if len(n) == 1 else "families", MOTTO))
     a("")
     a("Este archivo es informativo y NO tiene valor jurídico propio: lo que obliga son las licencias de los datos. "

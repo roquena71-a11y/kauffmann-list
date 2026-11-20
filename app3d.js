@@ -370,7 +370,8 @@ function buildStones(){
     vis.sort((a,b)=> ((a._n||a.n)||'').localeCompare((b._n||b.n)||'','de') || String(a.id).localeCompare(String(b.id)));
     const la0 = g.reduce((t,s)=>t+s.la,0)/g.length;
     const lo0 = g.reduce((t,s)=>t+s.lo,0)/g.length;
-    return {g:vis, all:g, la0, lo0, origLa:la0, origLo:lo0, step:COL_STEP, ang:0, sk:streetKey(g[0])};
+    // v20: grupo «fijo» = todas sus placas traen posición de dibujo calculada en el servidor (dla/dlo, ya fuera de los edificios): la separación de grupos no lo mueve ni lo encoge.
+    return {g:vis, all:g, la0, lo0, origLa:la0, origLo:lo0, step:COL_STEP, ang:0, sk:streetKey(g[0]), pinned:!!(typeof META!=='undefined' && META && META.layout_pinned) || g.every(s=>s.sla!=null)};
   });
 
   // Street direction from our own coordinates (not live OSM tiles: those are only in the current view
@@ -458,9 +459,11 @@ function buildStones(){
           if (L<0.2){ dx=1; dy=0; L=1; }
           const push=(COL_GAP_MIN-d+0.12)/2;
           const uy=dy/L, ux=dx/L;
-          if (A.g.length<=B.g.length){ shift[gi].dy+=uy*push; shift[gi].dx+=ux*push; shift[gi].hits++; }
+          if (A.pinned && B.pinned) continue;   // v20: dos grupos fijos no se mueven (el servidor ya los separó)
+          const moveA = B.pinned ? true : (A.pinned ? false : A.g.length<=B.g.length);
+          if (moveA){ shift[gi].dy+=uy*push; shift[gi].dx+=ux*push; shift[gi].hits++; }
           else { shift[o.gi].dy-=uy*push; shift[o.gi].dx-=ux*push; shift[o.gi].hits++; }
-          if (L<5 && (A.g.length>1 || B.g.length>1)){ shrink[gi]=true; shrink[o.gi]=true; }
+          if (L<5 && (A.g.length>1 || B.g.length>1)){ if (!A.pinned) shrink[gi]=true; if (!B.pinned) shrink[o.gi]=true; }
           moved=true;
         }
     }));

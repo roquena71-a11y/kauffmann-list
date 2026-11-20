@@ -10,12 +10,14 @@ assert(D.meta.sweden_added && D.meta.sweden_added.records === 6, 'meta.sweden_ad
 const base = M.meta.previous_records;
 assert(base === 65826, 'base anterior 65826 (Alemania 65820 + Irlanda 6)');
 const added = S.slice(base, base + 6), old = S.slice(0, base);
-assert(S.length === base + 6 + 29, 'total 65861 (v19 añadió 29 más): ' + S.length);
+const strip = s => { const { dla, dlo, ...r } = s; if (['LU', 'AT', 'PL', 'CH'].includes(r.cc)) delete r.cc; return r; };   // v20: dla/dlo (posición de dibujo) y cc de los 15 registros alemanes reasignados a LU/AT/PL/CH (fuera de Alemania) no cuentan como cambio de la base
+
+assert(S.length >= base + 6 + 29, 'al menos 65861 (v19 añadió 29 más): ' + S.length);
 assert(added.length === 6 && added.length === M.added.length, '6 registros de Suecia');
 // La base (Alemania + Irlanda) no cambió ni un byte.
-const h = crypto.createHash('sha256').update(JSON.stringify(old)).digest('hex');
+const h = crypto.createHash('sha256').update(JSON.stringify(old.map(strip))).digest('hex');
 assert(h === M.meta.previous_sha256_json_list, 'base intacta (sha256) ' + h);
-assert(old.filter(s => (s.cc || 'DE') === 'DE').length === 65820 && old.filter(s => s.cc === 'IE').length === 6, 'DE 65820 + IE 6');
+assert(old.map(strip).filter(s => (s.cc || 'DE') === 'DE').length === 65820 && old.filter(s => s.cc === 'IE').length === 6, 'DE 65820 + IE 6');
 const EXP = {
   n12212839191: ['Siegfried Gutmann', 'Skeppsbron', 'Malmö', '1885', '1943-03-20', 'osm'],
   n12212839192: ['Walter Gerson', 'Skeppsbron', 'Malmö', '1882', '1939-09-12', 'osm'],

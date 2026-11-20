@@ -11,7 +11,9 @@ assert(D.meta.ireland_added && D.meta.ireland_added.records === 6, 'meta.ireland
 const base = V14.meta.base_records + V14.added.length;
 const added = S.slice(base, base + 6);
 const old = S.slice(0, base);
-assert(old.length === 65820, 'la base alemana (v14) sigue en 65820: ' + old.length);
+const strip = s => { const { dla, dlo, ...r } = s; if (['LU', 'AT', 'PL', 'CH'].includes(r.cc)) delete r.cc; return r; };   // v20: dla/dlo (posición de dibujo) y cc de los 15 registros alemanes reasignados a LU/AT/PL/CH (fuera de Alemania) no cuentan como cambio de la base
+
+assert(old.length === 65820 && old.map(strip).every(s => !s.cc), 'la base alemana (v14) sigue en 65820: ' + old.length);
 assert(added.length === 6 && added.length === M.added.length, '6 registros de Irlanda');
 added.forEach((s, i) => {
   assert(s.cc === 'IE', 'cc=IE ' + s.id);

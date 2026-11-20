@@ -32,6 +32,7 @@ if (D / 'out/D1480.json').exists() and '--no1480' not in sys.argv:
     d1480 = [{k: v for k, v in r.items() if k != '_v'} for r in o['added'] if r['id'] not in ids]
     for r in d1480: ids.add(r['id'])
 data['stones'] = S + d1480 + added; data['meta']['count'] = len(data['stones']); data['meta']['v20_wd1480_added'] = len(d1480)
+data['meta']['layout_pinned'] = True   # v20: la app no separa grupos (lo hace sidewalk20): dibujo = dla/dlo exacto
 data['meta']['v20_added'] = {'records': len(added), 'countries': {cc: man['countries'][cc]['anadidas'] for cc in ccs},
     'snapshot_osm': '2026-11-18T21:21:02Z (Geofabrik europe-latest) refrescado por id con Overpass el 2026-11-20', 'snapshot_wikidata': '2026-11-20',
     'method': 'OSM memorial=stolperstein (ODbL) y Wikidata P31=Q26703203 (CC0). Cada placa: nombre limpio, nombre contenido en la inscripción, dirección etiquetada contrastada con objetos addr:* de OSM o con la foto de Commons, '

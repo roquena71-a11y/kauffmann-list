@@ -119,7 +119,35 @@ def ok_at(q, PB, need, h2):
     c, s = 1.0, 0.0; hh = h2 + MARGIN
     return not Polygon([(q[0] - hh, q[1] - hh), (q[0] + hh, q[1] - hh), (q[0] + hh, q[1] + hh), (q[0] - hh, q[1] + hh)]).intersects(PB)
 
-def solve(PB, lines, RW, need, h2, inside, keep_min=1.5, min_dot=0.5):
+
+def slots(n, ang, step=COL_STEP):
+    """Posiciones de las n columnas de un grupo respecto a su centro (misma cuadrícula que app3d.js layout(): cols=ceil(sqrt n), orden irrelevante para el conjunto)."""
+    cols = math.ceil(math.sqrt(n)); rows = math.ceil(n / cols) or 1; cA, sA = math.cos(ang), math.sin(ang); out = []
+    for i in range(n):
+        cx = (i % cols) - (cols - 1) / 2; cy = i // cols - (rows - 1) / 2
+        out.append((cx * step * cA - cy * step * sA, cx * step * sA + cy * step * cA))
+    return out
+
+def make_okf(PB, pins, sl, ang, h2, extra=0.0):
+    """Exacto como la comprobación: cada chincheta 2D (en su coordenada de origen + q) a >= h2+0,5 m de toda fachada y cada columna 3D (cuadrado de 1,2 m girado ang, en su casilla) a >= 0,5 m."""
+    if PB is None: return lambda q: True
+    c_, s_ = math.cos(ang or 0.0), math.sin(ang or 0.0); hf = COL_HALF
+    corners = [(c_ * dx - s_ * dy, s_ * dx + c_ * dy) for dx, dy in ((-hf, -hf), (hf, -hf), (hf, hf), (-hf, hf))]
+    need2 = h2 + MARGIN + extra; need3 = MARGIN + extra
+    def okf(q):
+        for (px, py) in pins:
+            if PB.distance(Point(px + q[0], py + q[1])) < need2: return False
+        for (sx, sy) in sl:
+            x, y = q[0] + sx, q[1] + sy
+            d = PB.distance(Point(x, y))
+            if d >= DIAG + need3: continue
+            if d < hf + need3 - 1e-9: return False   # el cuadrado contiene círculo de radio hf: si el centro está más cerca, falla
+            if ang is None: return False                 # ángulo desconocido: criterio conservador (disco)
+            if Polygon([(x + a, y + b) for a, b in corners]).distance(PB) < need3: return False
+        return True
+    return okf
+
+def solve(PB, lines, RW, okf, inside, keep_min=1.5, min_dot=0.5, tstep=0.05):
     P = Point(0, 0)
     best_h = None
     for ls, t in lines:
@@ -142,20 +170,20 @@ def solve(PB, lines, RW, need, h2, inside, keep_min=1.5, min_dot=0.5):
         ux, uy = math.cos(math.radians(a)), math.sin(math.radians(a))
         dot = ux * hx + uy * hy if use else 1.0
         if dot < min_dot: continue
-        t = 0.05
+        t = tstep
         while t <= MAXMOVE:
             q = (ux * t, uy * t)
             if (inside and use and min_dot > 0 and t * dot > dH + 0.5) or (RW is not None and RW.distance(Point(q)) < keep): break
-            if ok_at(q, PB, need, h2):
+            if okf(q):
                 key = (round(t, 2), -dot)
                 if best is None or key < best[0]: best = (key, (q[0], q[1]), t)
                 break
-            t += 0.05
+            t += tstep
     if best is None: return None, (dH, ht)
     return best[1], (dH, ht)
 
-def process_cc(cc, stones, N, extra, legit, only=None, comp=None):
-    comp = comp or {}
+def process_cc(cc, stones, N, extra, legit, only=None, comp=None, angs=None, alias=None):
+    angs = angs or {}; alias = alias or set()
     sel = [s for s in stones if (s.get('cc') or 'DE') == cc]
     if only is None:
         for s in sel: s.pop('dla', None); s.pop('dlo', None)
@@ -166,27 +194,28 @@ def process_cc(cc, stones, N, extra, legit, only=None, comp=None):
             for s in g: s.pop('dla', None); s.pop('dlo', None)
         la0 = sum(s['la'] for s in g) / len(g); lo0 = sum(s['lo'] for s in g) / len(g); o = (la0, lo0)
         PB, polys, ids, lines, RW = local_geom(N, la0, lo0)
-        need = DIAG + MARGIN + (spread(len(g)) if len(g) > 1 else 0) + extra.get(g[0]['id'], 0)
+        ex = extra.get(g[0]['id'], 0)
         h2 = icon_half(la0); P0 = Point(0, 0)
+        pins = [to_xy(s['la'], s['lo'], o) for s in g]
+        nv = max(1, sum(1 for s in g if s['id'] not in alias))
+        vis = [s for s in g if s['id'] not in alias] or g
+        ang = angs.get(vis[0]['id'])
+        okf = make_okf(PB, pins, slots(nv, ang or 0.0), ang, h2, ex)
+        need = DIAG + MARGIN + (spread(len(g)) if len(g) > 1 else 0) + ex
         insd = bool(PB is not None and PB.contains(P0)); d0 = 0.0 if insd else (PB.distance(P0) if PB is not None else 1e9)
         status, shift, tier = 'ok', None, 0
-        if all(s['id'] in legit for s in g) and (insd or not ok_at((0, 0), PB, need, h2)):
+        fit0 = okf((0.0, 0.0))
+        if all(s['id'] in legit for s in g) and (insd or not fit0):
             status = 'legitima'
-        elif insd or not ok_at((0, 0), PB, need, h2):
-            need1 = DIAG + MARGIN + extra.get(g[0]['id'], 0)
-            # niveles: 1 sitio para toda la cuadrícula en la acera; 2-3 la cuadrícula puede pisar el borde de la calzada (acera estrecha); 4-6 sitio para una columna (el bucle con la app real añade lo que falte)
-            plan = [(need, 1.5, 0.5), (need, 0.4, 0.5), (need, 0.4, -1.01), (need, -1, -1.01)]
-            if len(g) > 1: plan += [(need1, 1.5, 0.5), (need1, 0.4, 0.5)]
-            plan += [(need1, 0.4, -1.01), (need1, -1, -1.01)]
+        elif insd or not fit0:
+            # niveles: 1-2 solo hacia la acera sin invadir la calzada; 3-4 la cuadrícula puede pisar el borde de la calzada (acera estrecha)
+            plan = [(1.5, 0.5), (0.4, 0.5), (0.4, -1.01), (-1, -1.01)]
+            ts = 0.05 if len(g) <= 6 else 0.1
             shift, tier = None, 0
-            for k, (nd, km, md) in enumerate(plan, 1):
-                shift, info = solve(PB, lines, RW, nd, h2, insd, keep_min=km, min_dot=md)
+            for k, (km, md) in enumerate(plan, 1):
+                shift, info = solve(PB, lines, RW, okf, insd, keep_min=km, min_dot=md, tstep=ts)
                 if shift is not None: tier = k; break
             status = 'revisar' if shift is None else 'ajustada'
-        cm = comp.get(g[0]['id'])
-        if cm:   # compensación de la separación entre grupos de la app (hasta 8 m): se resta lo que la app mueve el dibujo respecto al plan
-            if shift is None and status in ('ok', 'ajustada'): shift = (0.0, 0.0); status = 'ajustada'
-            if shift is not None: shift = (shift[0] + cm[0], shift[1] + cm[1])
         if status == 'ok': n_ok += len(g); continue
         for s in g:
             r = {'id': s['id'], 'n': s.get('n'), 'cc': cc, 'la': s['la'], 'lo': s['lo'], 'grupo': len(g), 'grupo_id': g[0]['id'], 'extra_m': round(extra.get(g[0]['id'], 0), 2),
@@ -205,6 +234,7 @@ def main():
     xf = Path(__file__).with_name('sidewalk-extra20.json')
     if xf.exists(): extra.update(json.load(open(xf)))
     cf = Path(__file__).with_name('sidewalk-comp20.json'); comp = json.load(open(cf)) if cf.exists() else {}
+    af = D / 'ang20.json'; A_ = json.load(open(af)) if af.exists() else {'ang': {}, 'alias': []}; angs = A_['ang']; alias = set(A_['alias'])
     legit = set(json.load(open(D / 'legit_inside.json'))) if (D / 'legit_inside.json').exists() else set()
     have = sorted({(s.get('cc') or 'DE') for s in S} - set(V19))
     if ccs: have = [c for c in have if c in ccs]
@@ -213,7 +243,7 @@ def main():
         if not ((D / ('near/%s.json' % cc)).exists() or (D / ('near/%s.pkl' % cc)).exists()): print('sin datos de edificios:', cc); continue
         N = load_near(cc); ts[cc] = N.ts
         only = set(json.load(open(D / 'changed_groups.json'))) if '--only' in sys.argv else None
-        t, nok = process_cc(cc, S, N, extra, legit, only, comp)
+        t, nok = process_cc(cc, S, N, extra, legit, only, comp, angs, alias)
         if only is not None:
             pv = json.load(open(R / 'data/sidewalk-v20.json', encoding='utf-8'))
             t = [r for r in pv['stones'] if r['cc'] == cc and r['grupo_id'] not in only] + t
