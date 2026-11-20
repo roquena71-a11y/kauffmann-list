@@ -22,7 +22,7 @@ async def main():
             R[name] = {}
             allcc = await pg.evaluate("[...document.querySelectorAll('#countries button[data-cc]')].map(b=>b.dataset.cc)")
             OLD = ['SE', 'IE', 'JE', 'FI', 'RO']
-            todo = [c for c in allcc if c not in OLD and c != 'DE'] if name in ('320x568', '360x740', '1280x800', '1920x1080') else []   # v20: los países nuevos en 4 tamaños (el resto, los 6 de siempre)
+            todo = [c for c in allcc if c not in OLD and c != 'DE']   # v20r2 (auditoría C, F6): los países nuevos en los 10 tamaños (vertical, horizontal, 412, escritorio)
             for cc in OLD + todo + ['DE']:
                 more = await pg.query_selector('#countries button.more')
                 if more and await more.is_visible() and await pg.evaluate("(c)=>{const b=document.querySelector(`#countries button[data-cc=${c}]`);return !b || getComputedStyle(b).display==='none'}", cc):

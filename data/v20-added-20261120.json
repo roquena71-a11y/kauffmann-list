@@ -1,6 +1,6 @@
 {
  "meta": {
-  "records": 6148,
+  "records": 6130,
   "previous_records": 65861,
   "countries": {
    "AD": {
@@ -632,28 +632,28 @@
     }
    },
    "NL": {
-    "anadidas": 1281,
-    "pendientes": 1487,
+    "anadidas": 1263,
+    "pendientes": 1505,
     "duplicados": 5,
     "osm_snapshot": "2026-11-19T23:34:21Z",
     "stats": {
      "osm_objetos": 2731,
      "wd_items": 54,
-     "anadidas": 1281,
-     "pendientes": 1487,
+     "anadidas": 1263,
+     "pendientes": 1505,
      "duplicados": 5,
      "src": {
-      "osm": 1258,
+      "osm": 1240,
       "osm+wd": 12,
       "wd": 11
      },
      "posicion": {
-      "sin_datos": 633,
+      "sin_datos": 616,
       "ok": 547,
-      "sin_coincidencia": 101
+      "sin_coincidencia": 100
      },
      "commons": {
-      "sin_datos": 1261,
+      "sin_datos": 1243,
       "ok": 20
      },
      "motivos_pendiente": {
@@ -671,9 +671,9 @@
       "la dirección etiquetada existe en OSM pero a 71 m de la posición de la": 1,
       "el nombre junta a varias personas separadas por comas": 2,
       "nombre genérico": 6,
+      "sin dirección ni inscripción en OSM": 372,
       "el nombre contiene cifras": 2,
       "nombre genérico con texto que no es un nombre": 3,
-      "sin dirección ni inscripción en OSM": 354,
       "la dirección etiquetada existe en OSM pero a 46 m de la posición de la": 1,
       "la dirección de Wikidata no tiene calle y número legibles; sin comprob": 3,
       "la etiqueta de Wikidata": 15,
@@ -52976,7 +52976,7 @@
    "id": "n14280924398",
    "wd": null,
    "p": null,
-   "n": "Hugo Lippers|",
+   "n": "Hugo Lippers",
    "c": "Zwolle",
    "cc": "NL",
    "la": 52.5110808,
@@ -58704,28 +58704,6 @@
    "src": "osm"
   },
   {
-   "id": "n5872817639",
-   "wd": null,
-   "p": null,
-   "n": "Johanna Hendrica Elzas",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6306267,
-   "lo": 4.7491588,
-   "src": "osm"
-  },
-  {
-   "id": "n5872828920",
-   "wd": null,
-   "p": null,
-   "n": "Eleazar Bing",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6312372,
-   "lo": 4.7488442,
-   "src": "osm"
-  },
-  {
    "id": "n5878861271",
    "wd": null,
    "p": null,
@@ -58910,182 +58888,6 @@
    "cc": "NL",
    "la": 52.0873975,
    "lo": 4.2721246,
-   "src": "osm"
-  },
-  {
-   "id": "n8589532219",
-   "wd": null,
-   "p": null,
-   "n": "Hartog Drielsma",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.628783,
-   "lo": 4.7498274,
-   "src": "osm"
-  },
-  {
-   "id": "n8589540786",
-   "wd": null,
-   "p": null,
-   "n": "Abraham de Vries",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6318029,
-   "lo": 4.7501627,
-   "src": "osm"
-  },
-  {
-   "id": "n8589888325",
-   "wd": null,
-   "p": null,
-   "n": "Louis Prins",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6338085,
-   "lo": 4.7476441,
-   "src": "osm"
-  },
-  {
-   "id": "n8589938088",
-   "wd": null,
-   "p": null,
-   "n": "Eduard Isaäc Vleeschdraager",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6398929,
-   "lo": 4.7344127,
-   "src": "osm"
-  },
-  {
-   "id": "n8590078449",
-   "wd": null,
-   "p": null,
-   "n": "Bloeme Botterman-Vreeland",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6294342,
-   "lo": 4.7534725,
-   "src": "osm"
-  },
-  {
-   "id": "n8590080454",
-   "wd": null,
-   "p": null,
-   "n": "Elisabeth Velleman-Godlieb",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.625841,
-   "lo": 4.7486043,
-   "src": "osm"
-  },
-  {
-   "id": "n8590212139",
-   "wd": null,
-   "p": null,
-   "n": "Samuel Menist",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6320927,
-   "lo": 4.7454098,
-   "src": "osm"
-  },
-  {
-   "id": "n8590219593",
-   "wd": null,
-   "p": null,
-   "n": "Beelo Koppel-Englander",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6247127,
-   "lo": 4.7469172,
-   "src": "osm"
-  },
-  {
-   "id": "n8590259378",
-   "wd": null,
-   "p": null,
-   "n": "Elisabeth Polk",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.630818,
-   "lo": 4.7501063,
-   "src": "osm"
-  },
-  {
-   "id": "n8590283673",
-   "wd": null,
-   "p": null,
-   "n": "Hartog Hammelburg",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6392012,
-   "lo": 4.7370547,
-   "src": "osm"
-  },
-  {
-   "id": "n8590287272",
-   "wd": null,
-   "p": null,
-   "n": "Elisabeth Elte-Wesseli",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6374677,
-   "lo": 4.7444335,
-   "src": "osm"
-  },
-  {
-   "id": "n8590336054",
-   "wd": null,
-   "p": null,
-   "n": "Maria Göttmer-Hagens",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6296247,
-   "lo": 4.7610497,
-   "src": "osm"
-  },
-  {
-   "id": "n8590367919",
-   "wd": null,
-   "p": null,
-   "n": "Leon Turksma",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6301538,
-   "lo": 4.7604302,
-   "src": "osm"
-  },
-  {
-   "id": "n8590422504",
-   "wd": null,
-   "p": null,
-   "n": "Karel van Thijn",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6364878,
-   "lo": 4.7414321,
-   "src": "osm"
-  },
-  {
-   "id": "n8590442119",
-   "wd": null,
-   "p": null,
-   "n": "Jakob Joseph Polak",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6373033,
-   "lo": 4.7411129,
-   "src": "osm"
-  },
-  {
-   "id": "n8590456749",
-   "wd": null,
-   "p": null,
-   "n": "Aaltje van der Kop-van Krefeld",
-   "c": "Alkmaar",
-   "cc": "NL",
-   "la": 52.6285258,
-   "lo": 4.7536603,
    "src": "osm"
   },
   {
@@ -103180,6 +102982,14 @@
    "lo": 4.7493551
   },
   {
+   "id": "n5872817639",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Johanna Hendrica Elzas",
+   "la": 52.6306267,
+   "lo": 4.7491588
+  },
+  {
    "id": "n5872819156",
    "cc": "NL",
    "reason": "el nombre junta a varias personas (Sientje Bing-Englander;Aron Bing;Leon de Jongh;Sara de Jongh-Bing)",
@@ -103192,6 +103002,14 @@
    "reason": "el nombre junta a varias personas (Hans Lion Frankenberg;Gertrude Klara Frankenberg-Goldschmidt)",
    "la": 52.6309377,
    "lo": 4.7487082
+  },
+  {
+   "id": "n5872828920",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Eleazar Bing",
+   "la": 52.6312372,
+   "lo": 4.7488442
   },
   {
    "id": "n5872841812",
@@ -103919,11 +103737,43 @@
    "lo": 4.7371298
   },
   {
+   "id": "n8589532219",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Hartog Drielsma",
+   "la": 52.628783,
+   "lo": 4.7498274
+  },
+  {
    "id": "n8589540724",
    "cc": "NL",
    "reason": "el nombre junta a varias personas (Levi Elzas;Bloemetje Elzas)",
    "la": 52.6267837,
    "lo": 4.7431085
+  },
+  {
+   "id": "n8589540786",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Abraham de Vries",
+   "la": 52.6318029,
+   "lo": 4.7501627
+  },
+  {
+   "id": "n8589888325",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Louis Prins",
+   "la": 52.6338085,
+   "lo": 4.7476441
+  },
+  {
+   "id": "n8589938088",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Eduard Isaäc Vleeschdraager",
+   "la": 52.6398929,
+   "lo": 4.7344127
   },
   {
    "id": "n8589968022",
@@ -103938,6 +103788,22 @@
    "reason": "el nombre junta a varias personas (Frans Grünwald;Else Ada Grünwald-Frankenberg;Leonard David Grünwald;Je)",
    "la": 52.6284378,
    "lo": 4.7463191
+  },
+  {
+   "id": "n8590078449",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Bloeme Botterman-Vreeland",
+   "la": 52.6294342,
+   "lo": 4.7534725
+  },
+  {
+   "id": "n8590080454",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Elisabeth Velleman-Godlieb",
+   "la": 52.625841,
+   "lo": 4.7486043
   },
   {
    "id": "n8590095499",
@@ -103982,6 +103848,22 @@
    "lo": 4.7462761
   },
   {
+   "id": "n8590212139",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Samuel Menist",
+   "la": 52.6320927,
+   "lo": 4.7454098
+  },
+  {
+   "id": "n8590219593",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Beelo Koppel-Englander",
+   "la": 52.6247127,
+   "lo": 4.7469172
+  },
+  {
    "id": "n8590224474",
    "cc": "NL",
    "reason": "el nombre junta a varias personas (Abraham Drukker;Juliëtte Drukker-Cohen;Marjan Drukker)",
@@ -103994,6 +103876,30 @@
    "reason": "el nombre junta a varias personas (Abraham Englander;Rozettha Englander-Berkleij;Aron Arend Englander)",
    "la": 52.6288335,
    "lo": 4.7385782
+  },
+  {
+   "id": "n8590259378",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Elisabeth Polk",
+   "la": 52.630818,
+   "lo": 4.7501063
+  },
+  {
+   "id": "n8590283673",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Hartog Hammelburg",
+   "la": 52.6392012,
+   "lo": 4.7370547
+  },
+  {
+   "id": "n8590287272",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Elisabeth Elte-Wesseli",
+   "la": 52.6374677,
+   "lo": 4.7444335
   },
   {
    "id": "n8590291794",
@@ -104017,11 +103923,35 @@
    "lo": 4.7388196
   },
   {
+   "id": "n8590336054",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Maria Göttmer-Hagens",
+   "la": 52.6296247,
+   "lo": 4.7610497
+  },
+  {
+   "id": "n8590367919",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Leon Turksma",
+   "la": 52.6301538,
+   "lo": 4.7604302
+  },
+  {
    "id": "n8590408305",
    "cc": "NL",
    "reason": "el nombre junta a varias personas (Salomon van der Kop;Roza van der Kop-Glaser)",
    "la": 52.6315115,
    "lo": 4.7332487
+  },
+  {
+   "id": "n8590422504",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Karel van Thijn",
+   "la": 52.6364878,
+   "lo": 4.7414321
   },
   {
    "id": "n8590427103",
@@ -104052,11 +103982,27 @@
    "lo": 4.743441
   },
   {
+   "id": "n8590442119",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Jakob Joseph Polak",
+   "la": 52.6373033,
+   "lo": 4.7411129
+  },
+  {
    "id": "n8590446917",
    "cc": "NL",
    "reason": "el nombre junta a varias personas (Retje Leon Vrieslander-Beek;Eva Vrieslander;Flora Vrieslander)",
    "la": 52.6371243,
    "lo": 4.7415259
+  },
+  {
+   "id": "n8590456749",
+   "cc": "NL",
+   "reason": "sin dirección ni inscripción en OSM (y sin persona verificable en Wikidata)",
+   "n": "Aaltje van der Kop-van Krefeld",
+   "la": 52.6285258,
+   "lo": 4.7536603
   },
   {
    "id": "n8590456750",

@@ -118,6 +118,9 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
     while len(_mp) > 1 and norm(_mp[-1]) in COUNTRY_NAMES: _mp.pop()   # v20r2 (A, F1): se quita el país final antes de partir
     maddr = ', '.join(_mp)
     a = None
+    mcs = re.match(r'^([^:;]+):([^:;]+):\s*(\d[^;(]*?)\s*(?:[;(].*)?$', maddr) if (maddr and not street) else None   # v20r2: «Ciudad:Calle:Nº» (Alkmaar)
+    if mcs: street, hn = mcs.group(2).strip(), mcs.group(3).strip(); maddr = ''; _cs_city = mcs.group(1).strip()
+    else: _cs_city = None
     mnf = re.match(r'^(\d+\s?(?:bis|ter|quater|[a-zA-Z])?(?:\s*[-–/]\s*\d+\s?[a-zA-Z]?)?)\s*,\s*(.+)$', maddr) if (maddr and not street) else None   # v20r2: «3, Rue X[, Ciudad]» = nº, calle (FR/LU)
     mnf_city = None
     if mnf:
@@ -134,6 +137,7 @@ for e in sorted(els, key=lambda e: (e['type'], e['id'])):
         ps, ph = parse_memorial_addr(maddr)
         if ps: street, hn = ps, ph
     city = t.get('addr:city') or t.get('object:city') or t.get('memorial:addr:city') or t.get('addr:place')
+    if not city and _cs_city: city = _cs_city
     if not city and mnf: city = mnf_city
     elif not city and maddr and ',' in maddr:
         city = maddr.split(',')[-1].strip() if not re.search(r'\d', maddr.split(',')[-1]) else None

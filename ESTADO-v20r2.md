@@ -10,3 +10,8 @@ Datos de trabajo: V20_DATA=/workspace/v20-data-r2 (copia; near/pbf enlazados). I
 ## 07:36 reconstrucción con fixes A+B (datos) — 6.148 añadidas + 29 de las 1.480 = 72.038 (sin sidewalk aún)
 - A: F1 país/calle/«Municipality» (clean_city/bad_city + c de límites admin), 9bis, F2 rótulos/instituciones/inicial, F4 estricto (name_exact_in), F5 dups con año de nacimiento (build+merge+1480), F6 addr propio no confirma (STONE_KEYS), F8 Lindt, inscripciones basura fuera.
 - Test nuevo tests/v20r2-data-check.py (0 fallos). Siguiente: sidewalk completo no-DE, cierre, ui20, versión, footprints, run-all.
+
+## 08:16 auditoría C: código (pendiente de ejecutar sidewalk)
+- F1 refetch_near20.py + near-extra (LU 46, IT 31, ES 21, GG 5, CZ 5, NL 2, FR 1 sin edificio a ≤50 m; refetch hecho; NL 2 + CZ 5 sin edificios en OSM) · sidewalk20 carga near-extra · footprints20 guarda sin_edificios_50m · render-check20 falla si no hay edificios (salvo lista ≤12) y si dibujo >25 m (salvo excepciones-25m-v20.csv).
+- F2 tope: _TMAX = 25 − dispersión (grupos ≤20); >20 = excepción documentada. F5 legit_inside = 3. F6 mapui.js landscape bottom 106, top +24; country-buttons-check: países nuevos en los 10 tamaños (844x390/667x375/320x568/360x640 OK).
+- NL «Ciudad:Calle:Nº» (Alkmaar) parseado. Siguiente: rebuild → sidewalk nuevos → finalize → DE (--only grupos + finalize separate) → informe.

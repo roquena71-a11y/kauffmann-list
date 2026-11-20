@@ -12,6 +12,10 @@ FP = json.load(gzip.open(R / 'tests/sidewalk/footprints-v20.json.gz', 'rt', enco
 import csv
 RESID = {r['id'] for r in csv.DictReader(open(R / 'residuales-acera-v20.csv', encoding='utf-8'))}   # excepciones documentadas (grupos sin hueco en la acera a <=25 m)
 IDS = set(FP['ids']); LEGIT = set(FP['legit']); MARGIN = 0.5
+# v20r2 (auditoría C, F1): ninguna placa sin datos de edificios (el test antiguo recorría listas vacías y daba OK); solo la lista explícita (campo/costa sin edificio a <=50 m en OSM)
+SIN = set(FP.get('sin_edificios_50m', []))
+_vac = []
+EXC25 = {r['id'] for r in csv.DictReader(open(R / 'excepciones-25m-v20.csv', encoding='utf-8'))} if (R / 'excepciones-25m-v20.csv').exists() else set()
 
 def _pseg(px, py, a, b):
     dx, dy = b[0] - a[0], b[1] - a[1]; L = dx * dx + dy * dy
@@ -60,12 +64,14 @@ async def main():
         if r['id'] in LEGIT: continue
         if hit or inside: bad.append(x)
         elif worst - ih < MARGIN - 1e-6: bad.append(dict(x, motivo='chincheta 2D a menos de 0,5 m de una huella'))
-        if mv > 45: bad.append(dict(x, motivo='dibujo a más de 45 m del origen'))
+        if mv > 25.0 and r['id'] not in EXC25: bad.append(dict(x, motivo='dibujo a más de 25 m del origen (y no está en excepciones-25m-v20.csv)'))
+        if worst > 50 and r['id'] not in SIN: bad.append(dict(x, motivo='sin ningún edificio de OSM a <=50 m en los datos (footprints): geometría no comprobable'))
     print('placas comprobadas', len(res), '| fallos:', len(bad), '| errores de página:', errs)
     for x in sorted(res, key=lambda x: x['centro_a_edificio_m'])[:5]: print('  ', x)
     exc = [x for x in bad if x['id'] in RESID]; bad = [x for x in bad if x['id'] not in RESID]
     if exc: print('excepciones documentadas en residuales-acera-v20.csv:', len(exc), [x['id'] for x in exc])
     if OUT: json.dump(res, open(OUT, 'w'), ensure_ascii=False, indent=1)
+    if len(SIN) > 12: print('FALLO: demasiadas placas sin edificio a <=50 m en la lista explícita', len(SIN)); sys.exit(1)
     if bad or errs or len(res) < len(IDS) - 200: print('FALLO', bad[:5], 'n=', len(res)); sys.exit(1)
     print('OK: ninguna columna ni chincheta dibujada (holgura >= 0,5 m) toca un edificio en %d placas (países nuevos + muestra de Alemania)' % len(res))
 asyncio.run(main())

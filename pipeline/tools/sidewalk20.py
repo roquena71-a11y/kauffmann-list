@@ -58,13 +58,26 @@ def load_near(cc):
         d = pickle.load(open(pk, 'rb')); N.ts = d.get('osm_timestamp')
         for bid, (o, i, t) in d['buildings'].items(): N.add_b(bid, o, i, t)
         for hid, (p, t) in d['highways'].items(): N.add_h(hid, p, t)
+        _extra_near(N, cc)
         return N
     d = json.load(open(jf, encoding='utf-8')); N.ts = d.get('osm_timestamp')
     for bid, b in building_polygons(d['buildings']).items(): N.add_b(bid, b['outer'], b['inner'], b['tags'])
     for hid, h in d['highways'].items():
         g = [(p['lat'], p['lon']) for p in h.get('geometry', [])]
         if len(g) >= 2: N.add_h(hid, g, h.get('tags') or {})
+    _extra_near(N, cc)
     return N
+
+def _extra_near(N, cc):
+    """v20r2 (auditoría C, F1): edificios/vías traídos de nuevo (refetch_near20.py) para placas que no tenían ninguno a <=50 m."""
+    ef = D / ('near-extra/%s.json' % cc)
+    if not ef.exists(): return
+    d = json.load(open(ef, encoding='utf-8'))
+    for bid, b in building_polygons(d['buildings']).items(): N.add_b(bid, b['outer'], b['inner'], b['tags'])
+    for hid, h in d['highways'].items():
+        if hid in N.h: continue
+        g = [(p['lat'], p['lon']) for p in h.get('geometry', [])]
+        if len(g) >= 2: N.add_h(hid, g, h.get('tags') or {})
 
 def groups_of(stones):
     """Agrupación como la de la app (clusterByDist): enlace simple; 15 m entre placas con la misma dirección (addrKey), 3,5 m sin dirección."""
@@ -148,6 +161,7 @@ def make_okf(PB, pins, sl, ang, h2, extra=0.0):
         return True
     return okf
 
+_TMAX = [MAXMOVE]   # v20r2 (auditoría C, F2): desplazamiento máximo del grupo; process_cc lo reduce por la dispersión de la cuadrícula para que lo DIBUJADO quede a <=25 m del origen
 def solve(PB, lines, RW, okf, inside, keep_min=1.5, min_dot=0.5, tstep=0.05):
     P = Point(0, 0)
     best_h = None
@@ -172,7 +186,7 @@ def solve(PB, lines, RW, okf, inside, keep_min=1.5, min_dot=0.5, tstep=0.05):
         dot = ux * hx + uy * hy if use else 1.0
         if dot < min_dot: continue
         t = tstep
-        while t <= MAXMOVE:
+        while t <= _TMAX[0]:
             q = (ux * t, uy * t)
             if (inside and use and min_dot > 0 and t * dot > dH + 0.5) or (RW is not None and RW.distance(Point(q)) < keep): break
             if okf(q):
@@ -203,6 +217,7 @@ def process_cc(cc, stones, N, extra, legit, only=None, comp=None, angs=None, ali
         ang = angs.get(vis[0]['id'])
         okf = make_okf(PB, pins, slots(nv, ang or 0.0), ang, h2, ex)
         need = DIAG + MARGIN + (spread(len(g)) if len(g) > 1 else 0) + ex
+        _TMAX[0] = MAXMOVE - (spread(len(g)) if 1 < len(g) <= 20 else 0.0)   # grupos de más de 20 placas (campos de Stolpersteine): excepción documentada
         insd = bool(PB is not None and PB.contains(P0)); d0 = 0.0 if insd else (PB.distance(P0) if PB is not None else 1e9)
         status, shift, tier = 'ok', None, 0
         fit0 = okf((0.0, 0.0))
