@@ -25,3 +25,7 @@ Datos de trabajo: V20_DATA=/workspace/v20-data-r2 (copia; near/pbf enlazados). I
 - Resultado: 35 pares <1,55 m (de 845 en v19), 45 placas con holgura <0,5 m (DE 42, NL 3) + 48 «revisar» sin contacto + 4 «manzana-dudosa» (FR×3, DE×1, blockcheck) → residuales-acera-v20.csv (97 filas, cada una con motivo); 25 dibujos >25 m → excepciones-25m-v20.csv (16 en grupos >20, 9 en grupos ≤20: centro del grupo ≤25 m, casilla/dispersión suma); 57 sin edificio ≤50 m → sin-edificios-v20.csv.
 - ui20 (fechas de instantánea; assert corregido), bump-version --sync, footprints20, make_informe20 (relabels 15, +29 DE, textos de cobertura/residuales), render-check20 OK local (7.662 placas).
 - Siguiente: pipeline build --strict, commit, run-all REQUIRE_OAV=1 completo.
+
+## 10:25 pipeline build
+- La fuente wikidata_holocaust_victims no se puede reconstruir aquí: la caché local (pipeline/cache, 928 páginas del 2026-11-19) falla en --offline con un lote de detalle sin caché (tras 480 aciertos) y en línea WDQS contesta ~3 páginas/min (cientos de lotes pendientes). api/ y llms*.txt están en .gitignore (los regenera GitHub Actions al publicar). Se construye con --sources stolpersteine_de (72.038 registros = stones.json), que es lo que estaba obsoleto en las auditorías.
+- 10:30 build OK (--sources stolpersteine_de --generated 2026-11-20): 72.038 registros, 62.489 publicadas; validate 0 errores, 1 aviso (hirsch.json 1,05 MB). Lanzado run-all REQUIRE_OAV=1 (venv-ci, sin SKIP) → /workspace/v20-data-r2/runall_r2.log
