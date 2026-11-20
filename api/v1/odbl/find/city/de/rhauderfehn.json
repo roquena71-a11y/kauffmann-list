@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Rhauderfehn",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4476540909","Adele Gumpertz",1897,1943,"Rhauderfehn","gu"],
+["wd-Q122707031","Albrecht Weinberg",1925,2026,"Rhauderfehn","wein"],
+["wd-Q105461033","Alfred Weinberg",1889,1940,"Rhauderfehn","wein"],
+["st-n4476540910","Beate Gumpertz",1925,1942,"Rhauderfehn","gu"],
+["wd-Q105461052","Flora Weinberg",1886,1940,"Rhauderfehn","wein"],
+["st-n4476540912","Helene Gumpertz",1920,1942,"Rhauderfehn","gu"],
+["st-n4476540913","Hermann Gumpertz",1892,1943,"Rhauderfehn","gu"],
+["st-n4472291195","Walter Nochum Cohen",1919,1942,"Rhauderfehn","cohe"]
+],
+"slug":"rhauderfehn"}

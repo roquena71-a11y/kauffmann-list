@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"death",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q134545705","Ad Roobeek",1923,1998,null,"roo"],
+["wd-Q128636768","Arthur Eduard Duldig",1922,1998,"Melbourne","du"],
+["wd-Q110897640","Eduard Hrabák",1914,1998,"Ascot","hr"],
+["wd-Q69501360","Elsa Pereira-d'Oliveira",1913,1998,"Bussum","per"],
+["wd-Q99028977","Hermann Fritz Baerwald",1912,1998,null,"bar"]
+],
+"year":1998}

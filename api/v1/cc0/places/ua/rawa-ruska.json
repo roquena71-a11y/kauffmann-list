@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"UA",
+"label":"Rawa-Ruska",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95109369","Bunim Goldshtein",1893,"death","Rawa-Ruska",50.25,23.61667],
+["wd-Q94976119","Sara Shimel",1920,"death","Rawa-Ruska",50.25,23.61667],
+["wd-Q95128571","Yaakov Peretz",1883,"death","Rawa-Ruska",50.25,23.61667]
+],
+"slug":"rawa-ruska"}

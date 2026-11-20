@@ -1,0 +1,18 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"rok",
+"rows":[
+["rokach","wd-Q105580208","Isak Rokach",1889,null,null,"rok"],
+["rokachova","wd-Q105580204","Beile Rokachová",1866,1942,"Konzentrationslager Theresienstadt","rok"],
+["rokachova","wd-Q105580206","Selma Rokachová",1895,null,null,"rok"],
+["rokeach","wd-Q105472603","Bronia Rokeach",1890,null,null,"rok"],
+["rokhat","wd-Q95124518","Khaia Rokhat",1920,1942,"Lublin","rok"],
+["rokhchie","wd-Q95107548","Rokhchie Forshteter",1912,1943,"Białystok","fo"],
+["rokhman","wd-Q95106089","Alter Rokhman",1892,1942,"Vernichtungslager Treblinka","rok"],
+["rokhman","wd-Q94976035","Rakhel Rokhman",null,1942,"Vernichtungslager Treblinka","rok"],
+["rokitowitz","wd-Q105513035","Abraham Rokitowitz",1915,1945,null,"rok"],
+["rokosova","wd-Q105580210","Hedvika Rokosová",1880,null,null,"rok"],
+["rokotnitz","wd-Q105580214","Samuel Rokotnitz",1865,1944,"Konzentrationslager Theresienstadt","rok"],
+["rokotnitzova","wd-Q105580211","Jana Rokotnitzová",1897,1943,"Konzentrationslager Theresienstadt","rok"],
+["rokotnitzova","wd-Q105580212","Josefa Rokotnitzová",1870,1944,"Konzentrationslager Theresienstadt","rok"]
+]}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"DE",
+"label":"Leipzig",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94776091","Anna Pevsner",1876,1942,"Leipzig","pev"],
+["wd-Q94790655","Gustav Herrmann",1871,1940,"Leipzig","herr"],
+["wd-Q105657754","Pavel Kohn",1913,1943,"Leipzig","kohn_"],
+["wd-Q105657858","Růžena Weilová",1915,1943,"Leipzig","weil"]
+],
+"slug":"leipzig"}

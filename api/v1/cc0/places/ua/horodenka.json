@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"UA",
+"label":"Horodenka",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95108192","Beniamin Primus",1900,"death","Horodenka",48.6675,25.50028],
+["wd-Q95110111","Feiga Prostak",1910,"death","Horodenka",48.6675,25.50028],
+["wd-Q95108788","Rozalia Preminger",1897,"death","Horodenka",48.6675,25.50028],
+["wd-Q94975860","Shmuel Laster",1907,"death","Horodenka",48.6675,25.50028],
+["wd-Q95119984","Yisrael Prifer",1893,"death","Horodenka",48.6675,25.50028]
+],
+"slug":"horodenka"}

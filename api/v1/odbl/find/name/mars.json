@@ -1,0 +1,22 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"mars",
+"rows":[
+["mars","st-n13039411481","Hilaire Mars",1922,1943,"Bourneau","mar"],
+["mars","st-n13908462637","Hyacinthe Mars",1908,1942,"Petite-Forêt","mar"],
+["marsch","st-n2949182050","Fritz Marsch",1894,null,"Graz","mar"],
+["marschner","wd-Q132139075","Charlotte Marschner",1906,1942,"Berlin","mar"],
+["marschner","wd-Q132140639","Emmy Marschner",1940,1941,"Berlin","mar"],
+["marschner","wd-Q132140635","Hermann Marschner",1900,1941,"Berlin","mar"],
+["marschner","wd-Q132139076","Karlheinz Marschner",1926,1942,"Berlin","mar"],
+["marschner","wd-Q132140637","Max Marschner",1937,1941,"Berlin","mar"],
+["marschner","wd-Q132140638","Reha Marschner",1938,1941,"Berlin","mar"],
+["marschner","wd-Q132140636","Selma Marschner",1915,1941,"Berlin","mar"],
+["marsha","st-n14133699316","Martha Marsha Miodowski",1908,null,"Görlitz","mi"],
+["marshall","st-n13021664957","Emma Constance Marshall",1894,null,"St Helier","mar"],
+["marsik","wd-Q105563344","Jiří Maršík",1921,1942,"Humpolec","mar"],
+["marsik","wd-Q105563348","Karel Maršík",1928,null,"Humpolec","mar"],
+["marsik","wd-Q105563350","Milan Maršík",1924,null,"Humpolec","mar"],
+["marsik","wd-Q105563355","Rudolf Maršík",1890,null,"Humpolec","mar"],
+["marsikova","st-n13652897525","Beata Maršíková",1891,null,"Humpolec","mar"]
+]}

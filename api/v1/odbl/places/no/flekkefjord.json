@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"NO",
+"label":"Flekkefjord",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13432887346","Alf Skaara",1914,"memorial","Kirkegaten 23",58.29617,6.66142],
+["st-n13432887351","Arne Jostein Ingebrethsen",1903,"memorial","Vollgaten 5",58.29615,6.65925],
+["st-n13433013540","Arne Nordheim Hansson",1908,"memorial","Abelnes 28",58.2377,6.64913],
+["wd-Q134369798","Einar Korsvig Rasmussen",1895,"memorial","Sirdalsgaten 4",58.29741,6.66213],
+["st-n13432887345","Thorvald Markus Thorkildsen",1901,"memorial","Høgåsveien 1",58.29542,6.67099],
+["wd-Q7825261","Tor Njaa",1912,"memorial","Elvegaten 11",58.29621,6.66251]
+],
+"slug":"flekkefjord"}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"FR",
+"label":"Corbigny",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13101619979","Fajga Silberstein née Breslauer",1899,1944,"Corbigny","bre"],
+["st-n13101619970","Ferdinand Conchodon",1892,1944,"Corbigny","con"],
+["st-n13101619978","Jacques Silberstein",1900,1944,"Corbigny","sil"],
+["st-n13101619977","Lucile Silberstein",1927,1944,"Corbigny","sil"],
+["st-n13101619974","Marcel Peigne",1922,null,"Corbigny","pe"],
+["st-n13101619969","René Cornu",1924,1944,"Corbigny","cor"],
+["st-n13101619971","Roger Dache",1922,1944,"Corbigny","da"],
+["st-n13101619972","Salomon Cory",1917,1944,"Corbigny","cor"]
+],
+"slug":"corbigny"}

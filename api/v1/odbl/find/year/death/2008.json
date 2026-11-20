@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q133250355","Ernest Beutler",1928,2008,"Berlin","beu"],
+["st-n12466778883","Gerda Schwarz",1912,2008,"Berlin","schw"],
+["wd-Q80906866","Hilde Schneider",1916,2008,"Hannover","schn"],
+["wd-Q90301258","Maria Leipelt",1925,2008,"Hamburg","lei"],
+["wd-Q7176514","Peter Rafael Bloch",1921,2008,"Frankfurt am Main","blo"],
+["wd-Q104702855","Ruth Hirsch",1928,2008,"Wallerfangen","hirsch"],
+["st-n7197139486","Susanna Lamm",1921,2008,"Kronach","lam"]
+],
+"year":2008}

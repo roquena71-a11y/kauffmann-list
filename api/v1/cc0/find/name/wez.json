@@ -1,0 +1,9 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"wez",
+"rows":[
+["wezel","wd-Q137686730","Betsy van Wezel-Halberstadt",1908,2003,"Amsterdam","wez"],
+["wezel","wd-Q105656161","Gerda Wezel-Lindenstaedt",1920,1945,null,"wez"],
+["wezel","wd-Q105656163","Louis Wezel",1936,1944,"KZ Auschwitz","wez"],
+["wezel","wd-Q105656166","Viktor Wezel",1934,1944,"KZ Auschwitz","wez"]
+]}

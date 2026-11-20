@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Tostedt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11565266229","Boleslaw Marzec",1916,null,"Tostedt","mar"],
+["st-n11565266233","Erna Rosen",1893,1944,"Tostedt","rosen_"],
+["st-n11565266227","Friedrich Meyer",1892,1941,"Tostedt","meyer_"],
+["st-n11565266231","Käthe Rosen",1904,1944,"Tostedt","rosen_"],
+["st-n11565266234","Martha Rosen",1891,1943,"Tostedt","rosen_"],
+["wd-Q104701950","Olga Rosen",1895,1944,"Tostedt","rosen_"],
+["st-n11565266226","Rosette Dörnbrack",1883,null,"Tostedt","do"],
+["wd-Q104408307","Selma Blumann",1882,1942,"Tostedt","blu"]
+],
+"slug":"tostedt"}

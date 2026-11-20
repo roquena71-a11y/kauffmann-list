@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"FR",
+"label":"Montigny-lès-Metz",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13013647744","Achille Alexandre",1885,1944,"Montigny-lès-Metz","al"],
+["wd-Q534343","Charles Delestraint",1879,1945,"Montigny-lès-Metz","de"],
+["st-n13013647745","Claude Alexandre",1943,1944,"Montigny-lès-Metz","al"],
+["st-n13017756284","Denise Bernard",1926,1944,"Montigny-lès-Metz","bern"],
+["st-n4580502668","Félix Peupion",1882,null,"Montigny-lès-Metz","pe"],
+["st-n13017756282","Georgette Bernard",1890,1944,"Montigny-lès-Metz","bern"],
+["st-n13017756283","Lucienne Bernard",1922,1944,"Montigny-lès-Metz","bern"],
+["st-n13020848565","Marcel Ney",1923,1942,"Montigny-lès-Metz","ney"],
+["st-n13020848564","Paul Simminger",1911,1943,"Montigny-lès-Metz","sim"]
+],
+"slug":"montigny-les-metz"}

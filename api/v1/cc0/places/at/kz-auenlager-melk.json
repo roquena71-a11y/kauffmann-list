@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"AT",
+"label":"KZ-Außenlager Melk",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q130312810","Friedrich Habermaier",1887,"death","KZ-Außenlager Melk",48.2205,15.3243],
+["wd-Q130383317","Gerhard Schlie",1902,"death","KZ-Außenlager Melk",48.2205,15.3243],
+["wd-Q105560759","Jindrich Lang",1907,"death","KZ-Außenlager Melk",48.2205,15.3243],
+["wd-Q104690377","Karel Grünfeld",1903,"death","KZ-Außenlager Melk",48.2205,15.3243],
+["wd-Q105516918","Oskar Fischer",1906,"death","KZ-Außenlager Melk",48.2205,15.3243],
+["wd-Q105619221","Rudolf Weinstein",1900,"death","KZ-Außenlager Melk",48.2205,15.3243],
+["wd-Q104409049","Samuel Bogen",1905,"death","KZ-Außenlager Melk",48.2205,15.3243],
+["wd-Q105575330","Vilém Pollak",1915,"death","KZ-Außenlager Melk",48.2205,15.3243]
+],
+"slug":"kz-auenlager-melk"}

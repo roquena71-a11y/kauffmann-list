@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Ebsdorfergrund",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q132745677","Auguste Lion",1878,null,"Ebsdorfergrund","lio"],
+["st-Q132745669","Emanuel Lion",1876,null,"Ebsdorfergrund","lio"],
+["st-Q132745651","Henni Walldorf",1912,null,"Ebsdorfergrund","wa"],
+["st-Q132745685","Leopold Lion",1915,null,"Ebsdorfergrund","lio"],
+["st-Q132745656","Max Walldorf",1914,null,"Ebsdorfergrund","wa"],
+["st-Q132745661","Moses Walldorf",1884,1942,"Ebsdorfergrund","wa"],
+["st-Q132745639","Thekla Walldorf",1886,1942,"Ebsdorfergrund","wa"]
+],
+"slug":"ebsdorfergrund"}

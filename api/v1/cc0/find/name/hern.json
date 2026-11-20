@@ -1,0 +1,15 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"hern",
+"rows":[
+["hern","wd-Q104703271","Berta Hern",1857,1942,"Konzentrationslager Theresienstadt","hern"],
+["hernerova","wd-Q104700181","Klára Hernerová",1902,null,null,"hern"],
+["hernes","wd-Q104703755","Jetti Hernes",1872,null,null,"hern"],
+["hernfeld","wd-Q104703756","Anna Hernfeld",1858,1942,"Konzentrationslager Theresienstadt","hern"],
+["hernfeld","wd-Q104703758","Helene Hernfeld",1878,null,null,"hern"],
+["hernfeld","wd-Q104703759","Markus Hernfeld",1875,null,null,"hern"],
+["hernfeld","wd-Q104703760","Regina Hernfeld",1888,null,null,"hern"],
+["hernfeldova","wd-Q104706681","Klára Hernfeldová",1873,null,null,"hern"],
+["hernried","wd-Q104703761","Martha Hernried",1885,null,null,"hern"],
+["hernstadt","wd-Q104701684","Elisabeth Hernstadt",1874,1943,"Konzentrationslager Theresienstadt","hern"]
+]}

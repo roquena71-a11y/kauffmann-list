@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"FR",
+"label":"Metzervisse",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13009394087","Adrien Picard",1927,"memorial","3 Rue des Anciens Fours à Chaux",49.31412,6.28118],
+["st-n13009394085","Alcan Picard",1893,"memorial","3 Rue des Anciens Fours à Chaux",49.31412,6.28118],
+["st-n13009394083","Bernard Picard",1883,"memorial","3 Rue des Anciens Fours à Chaux",49.31412,6.28118],
+["st-n13009394086","Camille Picard",1934,"memorial","3 Rue des Anciens Fours à Chaux",49.31412,6.28118],
+["st-n13009394088","Gilberte Picard",1921,"memorial","3 Rue des Anciens Fours à Chaux",49.31412,6.28118],
+["st-n13009394084","Julie Picard",null,"memorial","3 Rue des Anciens Fours à Chaux",49.31412,6.28118]
+],
+"slug":"metzervisse"}

@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Havixbeck",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104652962","Berta Gerson",1874,1942,"Havixbeck","ge"],
+["st-n3296350777","Elisabeth Eichwald",1896,1945,"Havixbeck","ei"],
+["wd-Q104652968","Fritz Gerson",1869,1943,"Havixbeck","ge"],
+["st-n3296350779","Kurt Gerson",1908,1944,"Havixbeck","ge"],
+["st-n3296350780","Pia Eichwald",1889,null,"Havixbeck","ei"],
+["wd-Q105391014","Sybilla Schmitz",1864,null,"Havixbeck","schm"],
+["wd-Q104652990","Yvonne Gerson",1874,1944,"Havixbeck","ge"]
+],
+"slug":"havixbeck"}

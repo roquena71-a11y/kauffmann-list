@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"DE",
+"label":"Vilseck",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134980812","Elsa Pollak",1893,"memorial","Breite Gasse 2, Vilseck",49.61198,11.80793],
+["st-Q134980810","Emma Eckstein",1886,"memorial","Herrengasse 8, Vilseck",49.61307,11.80618],
+["st-Q134980811","Irma Kohner",1900,"memorial","Breite Gasse 2, Vilseck",49.61198,11.80793],
+["st-Q134980814","Katharina Silbermann",1895,"memorial","Breite Gasse 2, Vilseck",49.61198,11.80793],
+["wd-Q105456025","Rosa Pollak",1863,"memorial","Breite Gasse 2, Vilseck",49.61198,11.80793]
+],
+"slug":"vilseck"}

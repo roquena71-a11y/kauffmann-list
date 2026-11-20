@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"NO",
+"label":"Gjøvik",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q138607718","Arnold Jaffe",1927,1942,"Gjøvik","jaf"],
+["wd-Q138686722","Robert Jaffe",1924,1943,"Gjøvik","jaf"],
+["wd-Q138607079","Ruth Jaffe født Zuckerman",1897,1942,"Gjøvik","zu"],
+["wd-Q138606927","Samson Jaffe",1887,1942,"Gjøvik","jaf"]
+],
+"slug":"gjvik"}

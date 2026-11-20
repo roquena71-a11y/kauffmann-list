@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"DE",
+"label":"Waltrop",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105387999","Bertha Rosenblum",1886,1940,"Waltrop","rosenb"],
+["st-n12920633024","Bertha Rosenthal",1865,1937,"Waltrop","rosent"],
+["wd-Q123412336","Bertha Rosenthal",1875,null,"Waltrop","rosent"],
+["st-n12920633017","Eduard Spanier",1904,null,"Waltrop","sp"],
+["st-n12920633015","Helmut Baum",1913,null,"Waltrop","bau"],
+["st-n12920633012","Jakob Baum",1878,1938,"Waltrop","bau"],
+["st-n12920633025","Josef Rosenthal",1862,1938,"Waltrop","rosent"],
+["st-n12920633026","Leo Rosenblum",1888,1942,"Waltrop","rosenb"],
+["st-n12920633018","Louis Spanier",1867,1939,"Waltrop","sp"],
+["st-n12920633013","Marta Baum",1889,null,"Waltrop","bau"],
+["st-n12920633022","Meta Rosenthal",1898,null,"Waltrop","rosent"],
+["st-n12920633016","Werner Baum",1915,null,"Waltrop","bau"],
+["st-n12920633023","Willi Rosenthal",1888,null,"Waltrop","rosent"]
+],
+"slug":"waltrop"}

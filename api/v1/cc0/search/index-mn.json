@@ -1,0 +1,6 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"mn",
+"rows":[
+["wd-Q105469905","Elisabeth Mnestian",1898,"Wien",48.20833,16.3725,"mn"]
+]}

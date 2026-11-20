@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Bierstadt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q141612952","Arthur Levy",1901,1941,"Bierstadt","levy"],
+["st-Q141612941","Irma Levy",1901,null,"Bierstadt","levy"],
+["st-Q58044994","Joseph Kahn",1905,null,"Bierstadt","kah"],
+["st-Q141612959","Lina Barton",1880,1943,"Bierstadt","bar"],
+["wd-Q105362858","Lina Levy",1869,1944,"Bierstadt","levy"],
+["st-Q141612988","Lucie Levy",1935,null,"Bierstadt","levy"],
+["wd-Q104807923","Pauline Kanter",1871,1940,"Bierstadt","kan"]
+],
+"slug":"bierstadt"}

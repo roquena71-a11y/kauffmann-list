@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"DE",
+"label":"Tötungsanstalt Bernburg",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q123121994","Arthur Sommer",1900,1942,"Tötungsanstalt Bernburg","so"],
+["wd-Q107355656","David Bartfeld",1896,1942,"Tötungsanstalt Bernburg","bar"],
+["wd-Q123014774","Gerhard Edel",1914,1942,"Tötungsanstalt Bernburg","ed"],
+["wd-Q121398813","Hermann Eckhaus",1922,1942,"Tötungsanstalt Bernburg","ec"],
+["wd-Q123056720","Jakob Hecht",1896,1942,"Tötungsanstalt Bernburg","hec"],
+["wd-Q122628376","Jakob Lubnicki",1918,1942,"Tötungsanstalt Bernburg","lu"],
+["wd-Q121154795","Martin Mojzesz Moritz Hallerz",1877,1942,"Tötungsanstalt Bernburg","hal"],
+["wd-Q94639685","Mary Pünjer",1904,1942,"Tötungsanstalt Bernburg","pu"],
+["wd-Q77526","Olga Benario-Prestes",1908,1942,"Tötungsanstalt Bernburg","ben"],
+["wd-Q123185055","Otto Rosenbaum",1894,1942,"Tötungsanstalt Bernburg","rosenb"],
+["wd-Q17126717","Rosa Menzer",1886,1942,"Tötungsanstalt Bernburg","men"],
+["wd-Q123151446","Rudolf Bier",1901,1942,"Tötungsanstalt Bernburg","bi"],
+["wd-Q121215533","Sylvia Elvira Klar",1885,1942,"Tötungsanstalt Bernburg","kla"]
+],
+"slug":"totungsanstalt-bernburg"}

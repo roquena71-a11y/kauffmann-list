@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"country":"AT",
+"label":"Hohenems",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q135984693","Alois Weil",1878,null,"Hohenems","weil"],
+["wd-Q104703570","Clara Heimann",1866,1942,"Hohenems","hei"],
+["st-Q135984690","Frieda Nagelberg",1889,null,"Hohenems","na"],
+["st-n2961965277","Frieda Nagelberg",1889,1942,"Hohenems","na"],
+["st-Q135983971","Gisela Figdor",1882,null,"Hohenems","fi"],
+["st-n2961965278","Gisela Figdor",1882,1942,"Hohenems","fi"],
+["wd-Q98318097","Hans Elkan",1900,1944,"Hohenems","el"],
+["wd-Q104447383","Helene Elkan",1879,1944,"Hohenems","el"],
+["st-n2961946396","Louis Weil",1878,1938,"Hohenems","weil"],
+["st-n2961965270","Markus Silberstein",1904,1942,"Hohenems","sil"],
+["wd-Q104703548","Sophie Hauser",1863,1942,"Hohenems","hau"],
+["wd-Q101063562","Theodor Elkan",1864,1942,"Hohenems","el"]
+],
+"slug":"hohenems"}

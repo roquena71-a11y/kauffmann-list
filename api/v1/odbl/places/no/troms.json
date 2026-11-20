@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"NO",
+"label":"Tromsø",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q138710050","Daniel Caplan",1870,"memorial","Strandgata 34",69.64804,18.95623],
+["wd-Q138607274","Eva Shotland",1908,"memorial","Kirkegata 10",69.64849,18.95589],
+["wd-Q138607231","Herman Smith",1907,"memorial","Bispegata",69.6526,18.95955],
+["wd-Q138607390","Hertze Caplan",1913,"memorial","Strandgata 34",69.64804,18.95624],
+["wd-Q138359450","Meyer Leib Shotland",1878,"memorial","Kirkegata 10",69.64849,18.95589],
+["wd-Q138607325","Moritz Klein",1911,"memorial","Storgata 62",69.64907,18.95513],
+["wd-Q138607376","Rebekka Sakolsky født Shotland",1912,"memorial","Strandgata 36",69.6482,18.95688],
+["wd-Q138607761","Ruth Sakolsky",1940,"memorial","Strandgata 36",69.6482,18.95688],
+["wd-Q138359430","Selik Sakolsky",1887,"memorial","Strandgata 36",69.6482,18.95688],
+["wd-Q96241565","Solly Caplan",1908,"memorial","Strandgata 34",69.64804,18.95624]
+],
+"slug":"troms"}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"birth",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105469828","Abraham Mühlendorf",1843,1944,"Konzentrationslager Theresienstadt","muh"],
+["wd-Q95114866","Khana Frimak",1843,1942,"Kiwerzi","frim"],
+["wd-Q105469819","Leopold Mostny",1843,1942,"Konzentrationslager Theresienstadt","mos"],
+["wd-Q104543244","Rudolf Fischer",1843,null,null,"fische"],
+["wd-Q105641429","Sali Zweigová",1843,1942,"Konzentrationslager Theresienstadt","zw"]
+],
+"year":1843}

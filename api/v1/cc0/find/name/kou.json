@@ -1,0 +1,12 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"kou",
+"rows":[
+["koubek","wd-Q105657777","Bozena Koubek",1906,1942,"KZ Auschwitz","kou"],
+["koubova","wd-Q105526681","Josefina Koubová",1897,null,null,"kou"],
+["koudeka","wd-Q105657776","Katerina Koudeka",1896,null,"KZ Auschwitz","kou"],
+["koudelkova","wd-Q105526682","Arnoštka Koudelková",1880,null,null,"kou"],
+["kounova","wd-Q105650978","Josefa Kounová",1904,null,null,"kou"],
+["kourilova","wd-Q105526684","Marie Valerie Kouřilová",1895,null,null,"kou"],
+["kous","wd-Q105654266","Johanna Franco Mendes-Kous",1913,null,null,"men"]
+]}

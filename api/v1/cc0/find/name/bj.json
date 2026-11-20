@@ -1,0 +1,8 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"bj",
+"rows":[
+["bjehava","wd-Q104252696","Helena Bjehavá",1885,null,null,"bj"],
+["bjelyj","wd-Q104252698","Sura Bjelyj",1884,1943,"Konzentrationslager Theresienstadt","bj"],
+["bjorn","wd-Q138361948","Arvid Bjørn Bodd",1922,1943,null,"bod"]
+]}

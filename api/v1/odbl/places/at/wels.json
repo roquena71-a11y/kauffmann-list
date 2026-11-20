@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"AT",
+"label":"Wels",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q1516528","August Wörndl",1894,"memorial","Stefan-Fadingerstraße 7",48.16757,14.02581],
+["wd-Q22132529","Elfriede Grünberg",1929,"memorial","Knorr-Straße 3",48.16309,14.03492],
+["st-n10748684429","Ernestine Grünberg",1897,"memorial","Knorr-Straße 3",48.16307,14.03494],
+["st-n10748669165","Ignaz Rößler",1887,"memorial","Rablstraße 3",48.1615,14.02458],
+["wd-Q20746580","Karl Ammer",1898,"memorial","Goethestraße 21",48.16476,14.03061],
+["st-n10748685347","Klara Grünberg",1899,"memorial","Knorr-Straße 3",48.16308,14.03493]
+],
+"slug":"wels"}

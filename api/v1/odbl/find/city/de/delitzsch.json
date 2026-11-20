@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Delitzsch",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q126000393","Alfred Pincus",1893,null,"Delitzsch","pi"],
+["st-Q126000437","Angela von Schacht",1916,null,"Delitzsch","scha"],
+["st-Q125661864","Edith Jacobsohn",1900,null,"Delitzsch","jac"],
+["st-Q126000450","Hedwig Zeising",1885,null,"Delitzsch","ze"],
+["st-Q126000421","Joachim Pincus",1928,null,"Delitzsch","pi"],
+["st-Q125661937","Walter Jacobsohn",1895,null,"Delitzsch","jac"]
+],
+"slug":"delitzsch"}

@@ -1,0 +1,15 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"roi",
+"rows":[
+["roimisher","wd-Q95106018","Minde Roimisher",null,1942,"Chmelnyzkyj","roi"],
+["roise","wd-Q105470990","Hene Roise Nussbaum",1877,null,null,"nu"],
+["roisensohn","wd-Q105472213","Abraham Roisensohn",1876,1942,"Konzentrationslager Theresienstadt","roi"],
+["roisensohn","wd-Q105472214","Cudla Roisensohn",1868,1942,"Konzentrationslager Theresienstadt","roi"],
+["roiter","wd-Q95121494","Arie Roiter",1880,1943,"Kowel","roi"],
+["roiza","wd-Q95113815","Roiza Fragman",1902,1942,"Warschauer Ghetto","frag"],
+["roizale","wd-Q95125835","Roizale Pres",1923,1943,"KZ Majdanek","pre"],
+["roize","wd-Q95121464","Roize Matias",1893,1943,"KZ Auschwitz","mat"],
+["roize","wd-Q94975691","Roize Milner",1912,1944,"KZ Auschwitz","mi"],
+["roizman","wd-Q95126699","Usher Roizman",null,1941,"Dserschinsk","roi"]
+]}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q107179480","Dorothea Steinhardt",1912,1998,"Nürnberg","stei"],
+["wd-Q137946305","Leo Sonnenblick",1923,1998,"Frankfurt am Main","so"],
+["wd-Q2097888","Placida Laubhardt",1904,1998,"Freiburg im Breisgau","lau"],
+["wd-Q140591518","Ruth Haas",1928,1998,"Hannover","haa"],
+["wd-Q104889190","Walter Heilbronner",1924,1998,"Memmingen","hei"]
+],
+"year":1998}

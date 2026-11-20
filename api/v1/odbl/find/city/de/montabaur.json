@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Montabaur",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2494907265","Alfred Löb",1893,null,"Montabaur","lob"],
+["st-n2494907272","David Levy",1891,null,"Montabaur","levy"],
+["st-n2494907275","Frieda Stern",1881,null,"Montabaur","stern"],
+["st-n2494907279","Julius Stern",1877,null,"Montabaur","stern"],
+["st-n3323236303","Ludwig Stern",1907,null,"Montabaur","stern"],
+["st-n2494862310","Moses Falkenstein",1868,1943,"Montabaur","fa"],
+["st-n2494907283","Ottmar Vey",1877,1937,"Montabaur","v"]
+],
+"slug":"montabaur"}

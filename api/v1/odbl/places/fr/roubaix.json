@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"FR",
+"label":"Roubaix",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q136102052","Alexandre Raby",1888,"memorial","36 Boulevard de Cambrai",50.68259,3.16526],
+["st-n13043829775","Charlotte Rosenberg née Keller",1900,"memorial","42 Boulevard d'Armentières",50.69889,3.15912],
+["st-n13042209313","Édouard Pieters",1903,"memorial","23 Rue Isabeau de Roubaix",50.69631,3.16521],
+["wd-Q136103053","Flore Raby",1913,"memorial","36 Boulevard de Cambrai",50.68259,3.16526],
+["wd-Q830456","Jean Lebas",1878,"memorial","17 Rue Dammartin",50.68402,3.17232],
+["st-n13043829776","Joseph Rosenberg",1893,"memorial","42 Boulevard d'Armentières",50.6989,3.15912],
+["st-n13042209314","Marcelle Pieters née Reynaert",1908,"memorial","23 Rue Isabeau de Roubaix",50.69631,3.16521],
+["wd-Q136757208","Nelly Devienne",1912,"memorial","96 Rue Montgolfier",50.68251,3.18702]
+],
+"slug":"roubaix"}

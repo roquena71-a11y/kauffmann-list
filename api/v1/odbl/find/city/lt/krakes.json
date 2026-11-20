@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"country":"LT",
+"label":"Krakės",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13197749407","Abramas Michelis Volpovičius",1895,1941,"Krakės","v"],
+["st-n13197749408","Aronas Polunskis",1898,1941,"Krakės","po"],
+["st-n13197749409","Boruchas Alperavičius",1896,1941,"Krakės","al"]
+],
+"slug":"krakes"}

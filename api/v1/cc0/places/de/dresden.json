@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"Dresden",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q47486956","Julius Ferdinand Wollf",1871,"death","Dresden",51.04933,13.73814],
+["wd-Q12031956","Kurt Konrad",1908,"death","Dresden",51.04933,13.73814],
+["wd-Q106821988","Leo Steiner",1912,"death","Dresden",51.04933,13.73814],
+["wd-Q1894948","Margarete Blank",1901,"death","Dresden",51.04933,13.73814],
+["wd-Q105354209","Mořic Neubauer",1899,"death","Dresden",51.04933,13.73814],
+["wd-Q104405533","Richard Bloch",1916,"death","Dresden",51.04933,13.73814],
+["wd-Q94975810","Tzvi Rozentzveig",1885,"death","Dresden",51.04933,13.73814],
+["wd-Q105657607","Vilém Singer",1896,"death","Dresden",51.04933,13.73814]
+],
+"slug":"dresden"}

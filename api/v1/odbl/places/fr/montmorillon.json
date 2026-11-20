@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"FR",
+"label":"Montmorillon",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13095008388","Alexandre Dallais",1915,"memorial","1 Avenue Victor Hugo",46.42927,0.87032],
+["st-n13095008387","Charles Rocher",1915,"memorial","2 Rue du Puits Cornet",46.42587,0.86683],
+["st-n13095008392","Fiszel Sawczycki",1905,"memorial","Place du Vieux Marché",46.42542,0.86512],
+["st-n13095008385","Gaston Bergeron",1909,"memorial","12 Rue d'Ypres",46.4239,0.87112],
+["st-n13095008390","Gilbert Auboyer",1920,"memorial","2 Rue Gilbert Auboyer",46.42745,0.86393],
+["st-n13095008386","Henri Rocher",1920,"memorial","2 Rue du Puits Cornet",46.42587,0.86683],
+["st-n13095008389","Raymonde Boisnault née Sixois-Laflamme",1902,"memorial","1 Avenue Victor Hugo",46.42927,0.87032],
+["st-n13095008391","René Michon",1900,"memorial","Place du Vieux Marché",46.42542,0.86512]
+],
+"slug":"montmorillon"}

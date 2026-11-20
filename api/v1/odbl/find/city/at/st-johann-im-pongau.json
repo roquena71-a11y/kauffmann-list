@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"AT",
+"label":"St Johann im Pongau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q131626631","Alois Buder",1908,null,"St Johann im Pongau","bu"],
+["wd-Q104808283","Auguste Holzer",1872,null,"St Johann im Pongau","hol"],
+["st-Q137294336","Elisabeth Schmidl",1901,null,"St Johann im Pongau","schm"],
+["st-Q137294317","Franz Furtner",1888,null,"St Johann im Pongau","fu"],
+["st-Q137294335","Gertraud Oberreiter",1924,null,"St Johann im Pongau","ob"],
+["st-Q137294334","Johann Burgschwaiger",1892,null,"St Johann im Pongau","bu"],
+["st-Q137294345","Johann Trausner",1908,null,"St Johann im Pongau","tr"],
+["st-Q137293465","Katharina Glatz",1881,null,"St Johann im Pongau","gl"],
+["st-Q137294340","Theresia Buder",1910,null,"St Johann im Pongau","bu"]
+],
+"slug":"st-johann-im-pongau"}

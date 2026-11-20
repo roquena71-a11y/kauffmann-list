@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"BE",
+"label":"Menen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12365814417","Desiré Vanzieleghem",1893,1944,"Menen","v"],
+["st-n12369298030","Edouard Vanhoof",1897,1945,"Menen","v"],
+["st-n12369298031","Jean Marie Monteyne",1922,1944,"Menen","mo"],
+["st-n12365795172","Jules Slambrouck",1900,1945,"Menen","sl"],
+["st-n11301889790","Julien Cagnie",1899,1945,"Menen","ca"],
+["st-n12365814374","Maurice Van de Steene",1924,1945,"Menen","stee"],
+["st-n12369298032","Remi Lernout",1890,1945,"Menen","ler"]
+],
+"slug":"menen"}

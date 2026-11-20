@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Brauneberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n10024905481","Ernst Mayer",1891,null,"Brauneberg","may"],
+["st-n10024905442","Hedwig Meyer",1906,null,"Brauneberg","meyer_"],
+["st-n10024905441","Horst Dieter Meyer",1930,null,"Brauneberg","meyer_"],
+["st-n10024905440","Inge Lore Meyer",1931,1942,"Brauneberg","meyer_"],
+["st-n10024905445","Johanna Maier",1872,null,"Brauneberg","mai"],
+["st-n10024905443","Ludwig Meyer",1902,1942,"Brauneberg","meyer_"],
+["st-n10024905478","Max Maier",1879,null,"Brauneberg","mai"],
+["st-n10024905479","Maxel Mayer",1925,1944,"Brauneberg","may"],
+["st-n10024905444","Regina Braun",1882,null,"Brauneberg","bra"],
+["st-n10024905480","Regina Mayer",1893,null,"Brauneberg","may"]
+],
+"slug":"brauneberg"}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"GG",
+"label":"Vale",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13938517149","Alfred Howlett",1891,null,"Vale","how"],
+["st-n13938517150","Charles Friend",1914,null,"Vale","fri"],
+["st-n13023092356","John Ingrouille",1920,1945,"Vale","i"],
+["st-n13078087496","Percy Miller",1883,1944,"Vale","mi"]
+],
+"slug":"vale"}

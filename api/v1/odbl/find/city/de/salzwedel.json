@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"country":"DE",
+"label":"Salzwedel",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3056515246","Betty Bachenheimer",1894,null,"Salzwedel","bac"],
+["st-n2973716673","Clara Weil",1883,null,"Salzwedel","weil"],
+["st-n1675651138","David Hirsch",1883,null,"Salzwedel","hirsch"],
+["st-n3056515247","Frieda Frenkel",1883,null,"Salzwedel","fre"],
+["st-n2973716675","Hanna Hirsch",1911,1942,"Salzwedel","hirsch"],
+["st-n3224127181","Jettchen Stein",1906,null,"Salzwedel","stei"],
+["st-n2973716678","Karl Jacob",1878,null,"Salzwedel","jac"],
+["st-n2973716679","Margarete Jacob",1878,null,"Salzwedel","jac"],
+["st-n2973716702","Rachel Hirsch",1939,1943,"Salzwedel","hirsch"],
+["st-n3056515251","Tobias \"Theo\" Bachenheimer",1890,null,"Salzwedel","bac"],
+["st-n4199856170","Walter Stein",1902,null,"Salzwedel","stei"]
+],
+"slug":"salzwedel"}

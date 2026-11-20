@@ -1,0 +1,19 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"at",
+"rows":[
+["atias","wd-Q94976811","Irena Atias",1917,1942,"KZ Auschwitz","at"],
+["atlas","wd-Q104210750","Bernard Atlas",1866,null,null,"at"],
+["atlas","wd-Q104210751","Gisela Atlas",1883,null,null,"at"],
+["atlas","wd-Q104210752","Isidor Atlas",1874,1942,null,"at"],
+["atlas","wd-Q104210753","Sabine Atlas",1865,1942,"Terezín","at"],
+["atlas","wd-Q104210754","Siegfried Atlas",1885,1943,"Terezín","at"],
+["atlas","wd-Q104210756","Wolf Atlas",1873,null,null,"at"],
+["atlasova","wd-Q104210757","Anna Atlasová",1907,null,null,"at"],
+["atlasova","wd-Q104210758","Berta Atlasová",1880,null,null,"at"],
+["atlasova","wd-Q104210760","Mína Atlasová",1877,null,null,"at"],
+["atlasz","wd-Q104210761","Arnold Atlasz",1872,null,null,"at"],
+["atoinette","wd-Q105473234","Atoinette Rubin",1876,1943,"Konzentrationslager Theresienstadt","ru"],
+["attermann","wd-Q104210762","Hermann Attermann",1857,1943,"Terezín","at"],
+["attermannova","wd-Q104210763","Laura Attermannová",1886,null,null,"at"]
+]}

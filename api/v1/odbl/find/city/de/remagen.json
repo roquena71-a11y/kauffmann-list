@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"country":"DE",
+"label":"Remagen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4337626595","Alice Marx",1910,null,"Remagen","mar"],
+["st-n4337615658","Else Fassbender",1894,null,"Remagen","fa"],
+["st-n4337626596","Fanny Marx",1866,1943,"Remagen","mar"],
+["st-n4337626597","Franziska Heumann",1875,1942,"Remagen","heu"],
+["st-n4337615659","Gerd Heinz Fassbender",1922,null,"Remagen","fa"],
+["st-n4337626598","Henriette Marx",1893,null,"Remagen","mar"],
+["st-n4337639595","Henriette Wolffs",1888,null,"Remagen","wolff"],
+["st-n4337615660","Inge Fassbender",1928,null,"Remagen","fa"],
+["st-n4337605946","John Fassbender",1882,null,"Remagen","fa"],
+["st-n4337639596","Jonas Levy",1883,null,"Remagen","levy"],
+["st-n4337626599","Max Marx",1906,null,"Remagen","mar"],
+["st-n4337639597","Sophia Levy",1890,null,"Remagen","levy"]
+],
+"slug":"remagen"}

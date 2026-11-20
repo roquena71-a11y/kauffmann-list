@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Dannenberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q139108638","Dr. Otto Karl Friedländer",1890,1943,"Dannenberg","fri"],
+["st-n3394335810","Ernst Wolff",1898,null,"Dannenberg","wolff"],
+["st-n3394335811","Hans Wolff",1832,null,"Dannenberg","wolff"],
+["st-n3394549242","Lilly Friedländer",1894,null,"Dannenberg","fri"],
+["st-n3394549243","Magdalena Friedländer",1894,null,"Dannenberg","fri"],
+["st-n3394335813","Selma Wolff",1869,null,"Dannenberg","wolff"]
+],
+"slug":"dannenberg"}

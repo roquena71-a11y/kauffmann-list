@@ -1,0 +1,10 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"sb",
+"rows":[
+["wd-Q105596317","Bedřiška Sborowitzová",1875,null,null,null,"sb"],
+["wd-Q105596318","Pavla Sborowitzová",1859,"Konzentrationslager Theresienstadt",50.51028,14.14972,"sb"],
+["wd-Q105643032","Elsa Sbrieser",1890,null,null,null,"sb"],
+["wd-Q105643031","Hermann Sbrieser",1873,"Wien",48.20833,16.3725,"sb"],
+["wd-Q105596319","Anna Sbrieserová",1915,"Bielitz-Biala",49.8225,19.04444,"sb"]
+]}

@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"karf",
+"rows":[
+["karfiol","wd-Q105358279","Frieda Karfiol",1874,null,null,"kar"],
+["karfiol","wd-Q105354732","Karl Karfiol",1866,1942,"Konzentrationslager Theresienstadt","kar"],
+["karfunkel","wd-Q105354733","Max Karfunkel",1872,1943,"Konzentrationslager Theresienstadt","kar"],
+["karfunkelstein","wd-Q105354734","Arnold Karfunkelstein",1869,1942,"Konzentrationslager Theresienstadt","kar"],
+["karfunkelstein","wd-Q105354735","Rosa Karfunkelstein",1875,null,null,"weisse"],
+["karfunkelstein","wd-Q105354736","Siegfried Karfunkelstein",1872,1943,"Konzentrationslager Theresienstadt","kar"]
+]}

@@ -1,0 +1,19 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ak",
+"rows":[
+["aker","wd-Q104208739","Jona Aker",1862,null,null,"ak"],
+["akiba","wd-Q105640271","Akiba Wulkan",1884,null,null,"wu"],
+["akiva","wd-Q95109941","Akiva Fishtzang",1885,1943,"KZ Auschwitz","fish"],
+["akiva","wd-Q118399320","Akiva Glazner",1885,1956,"Zürich","gla"],
+["akiva","wd-Q95120925","Akiva Katz",1902,1942,"Andijon","katz"],
+["akiva","wd-Q95119545","Akiva Maharshak",1889,1943,"Vilnius","mah"],
+["akiva","wd-Q94975717","Akiva Presburger",1867,1942,"Budapest","pre"],
+["akiwa","wd-Q104421134","Akiwa Berl Karl Brummer",1875,null,null,"bru"],
+["akker","wd-Q104208744","Dora Akker-Herz",1895,1944,"KZ Auschwitz","ak"],
+["akker","wd-Q106469005","Fritz Akker",1918,1945,"KZ-Außenlagerkomplex Kaufering","ak"],
+["akker","wd-Q104208740","Izak Akker",1925,1945,null,"ak"],
+["akker","wd-Q104208741","Louis Akker",1913,1944,"KZ Dachau","ak"],
+["akos","wd-Q105643622","Akos Schaffer",1912,null,null,"scha"],
+["aksel","wd-Q104208745","Scholem Aksel",1891,null,null,"ak"]
+]}

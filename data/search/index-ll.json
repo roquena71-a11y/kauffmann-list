@@ -1,0 +1,13 @@
+{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"ll",
+"rows":[
+["n13426865519","Valentìn Fouce Llana","Calle de Espronceda 13","Madrid",40.440706,-3.697884,null,"st-n13426865519"],
+["n8928166335","Vicens Gené Llanet","plaça de l'Ajuntament 12","Figueres",42.267499,2.960831,null,"st-n8928166335"],
+["n13119274373","José Sánchez Llaneza",null,"Mieres",43.246841,-5.774815,null,null],
+["n13397853836","Roberto Llaneza","Carrer de Gavà, 83","Barcelona",41.370361,2.138788,null,"st-n13397853836"],
+["n7261115561","Francesc Valls Llinares",null,"Castellar del Vallès",41.616258,2.088092,null,"st-n7261115561"],
+["n13521158587","Francesc Sas Llop","Carrer de Brujas, 165","Sabadell",41.553433,2.112355,null,"st-n13521158587"],
+["n13506057530","Narcís Canales Llopart","Passatge de Gertrudis Artigas, 5","Sabadell",41.559605,2.105892,null,"st-n13506057530"],
+["n13021473675","Esther Pauline Lloyd","Wye Dean, Georgetown Park Estate","St Clement",49.177473,-2.091922,null,"st-n13021473675"]
+]}

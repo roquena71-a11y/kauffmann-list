@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"LT",
+"label":"Rokiškis",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95125464","David Shpivak",null,"death","Rokiškis",55.96667,25.58333],
+["wd-Q94975694","Eidel Kremer",null,"death","Rokiškis",55.96667,25.58333],
+["wd-Q95126803","Glika Kur",1880,"death","Rokiškis",55.96667,25.58333],
+["wd-Q95124204","Hilel Eidelson",1861,"death","Rokiškis",55.96667,25.58333],
+["wd-Q94975971","Malka Shpivak",null,"death","Rokiškis",55.96667,25.58333],
+["wd-Q95119756","Misa Iakobson",1878,"death","Rokiškis",55.96667,25.58333]
+],
+"slug":"rokiskis"}

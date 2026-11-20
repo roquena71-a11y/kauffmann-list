@@ -1,0 +1,15 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"marj",
+"rows":[
+["marja","st-Q137258834","Marja Major",1916,null,"Großräschen","maj"],
+["marja","wd-Q132139371","Marja Miriam Wildstein",1893,null,"Berlin","wi"],
+["marjam","st-Q136806728","Marjam Finkel",1882,null,"München","fi"],
+["marjam","st-n2527653005","Marjam Kimmelmann",1910,null,"Landau in der Pfalz","ki"],
+["marjam","wd-Q127091398","Marjam Topf",1898,null,"Hannover","to"],
+["marjanna","wd-Q132135961","Marjanna Block",1929,1943,"Berlin","blo"],
+["marjanne","wd-Q104699802","Marjanne Häusler",1854,1942,"Lübeck","hau"],
+["marjans","st-n13484177499","Ignatz-Marjans Lipomann",1945,null,"Hamburg","lip"],
+["marjem","st-Q127327783","Marjem Bleiweiss",1895,null,"Leipzig","ble"],
+["marjen","st-Q135234531","Marjen Rosengarten",1909,null,"Kassel","roseng"]
+]}

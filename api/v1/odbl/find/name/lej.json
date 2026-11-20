@@ -1,0 +1,17 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"lej",
+"rows":[
+["leja","st-Q139836453","Leja Diller",1904,null,"Oranienburg","di"],
+["leja","st-n13207297995","Leja Šemiavičiūtė",1931,1943,"Vilnius","se"],
+["leja","wd-Q132136832","Leja Sobel",1882,null,"Berlin","so"],
+["leja","st-Q127374001","Malka Leja Rabinowitsch",1891,null,"Leipzig","ra"],
+["leja","st-n11043570504","Sara Leja Kagan",1879,null,"Magdeburg","kag"],
+["lejb","st-n13089123346","Lejb Cygielman",null,null,"Lublin","cy"],
+["lejb","wd-Q132140601","Lejb Smietanka",1888,null,"Berlin","sm"],
+["lejba","st-n13207297997","Lejba Šemiavičius",1889,1943,"Vilnius","se"],
+["lejeune","st-n13484177497","Alain Lejeune",1945,null,"Hamburg","lej"],
+["lejeune","wd-Q92497","Paul Lejeune-Jung",1882,1944,"Berlin","lej"],
+["lejser","st-n1726709745","Lejzor Lejser Rajsfus",1898,null,"Hamburg","ra"],
+["lejzor","st-n1726709745","Lejzor Lejser Rajsfus",1898,null,"Hamburg","ra"]
+]}

@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"ES",
+"label":"Figueres",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13516471827","Faustino Molina Velázquez",1896,"memorial","Carrer Concòrdia 3",42.26318,2.95885],
+["st-n8928166333","Joan Coronas Pujadas",1899,"memorial","carrer de Lasauca 12",42.26591,2.95926],
+["st-n8928166337","José Allueva Millán",1917,"memorial","carrer de Santa Llúcia 8",42.26758,2.9635],
+["st-n8928166332","José Santaló Recio",1914,"memorial","carrer de la Rosa 3",42.26529,2.95937],
+["st-n8928166334","Rossend Capellades Ferrer",1910,"memorial","carrer de Joan Maragall 3",42.26711,2.96156],
+["st-n8928166331","Tomàs Marmaneu Gratacós",1913,"memorial","carrer de Vilafant 44",42.26393,2.9591],
+["st-n8928166335","Vicens Gené Llanet",1888,"memorial","plaça de l'Ajuntament 12",42.2675,2.96083]
+],
+"slug":"figueres"}

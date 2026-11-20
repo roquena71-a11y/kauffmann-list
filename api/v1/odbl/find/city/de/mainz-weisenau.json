@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Mainz-Weisenau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n9977819711","Chana Kahn",1942,1944,"Mainz-Weisenau","kah"],
+["st-n9976193818","Emilie Hirsch",1894,null,"Mainz-Weisenau","hirsch"],
+["st-n9977899613","Frieda Stock",1899,null,"Mainz-Weisenau","sto"],
+["st-n9977819710","Gideon Kahn",1940,1944,"Mainz-Weisenau","kah"],
+["st-n9977819709","Irma Kahn",1910,1944,"Mainz-Weisenau","kah"],
+["st-n9977580029","Jenny Kaufmann",1880,null,"Mainz-Weisenau","kau"],
+["st-n9971061384","Jenny Metzger",1861,1942,"Mainz-Weisenau","met"],
+["st-n9977899612","Josef Stock",1864,1942,"Mainz-Weisenau","sto"],
+["st-n9977792460","Walter Kahn",1905,1945,"Mainz-Weisenau","kah"]
+],
+"slug":"mainz-weisenau"}

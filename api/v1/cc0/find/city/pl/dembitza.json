@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"PL",
+"label":"Dembitza",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95118730","Ela Faust",1880,1942,"Dembitza","fau"],
+["wd-Q95124011","Hertzki Shus",1895,1942,"Dembitza","sh"],
+["wd-Q95115418","Ida Metzger",1903,1942,"Dembitza","met"],
+["wd-Q95127622","Mania Faust",1912,1942,"Dembitza","fau"],
+["wd-Q95126488","Shlomo Forster",1911,1942,"Dembitza","fo"],
+["wd-Q95121299","Volf Fortgang",1874,1942,"Dembitza","fo"],
+["wd-Q95106996","Yekhiel Faust",1906,1942,"Dembitza","fau"]
+],
+"slug":"dembitza"}

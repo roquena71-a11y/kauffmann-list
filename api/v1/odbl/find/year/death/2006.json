@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4480207168","Gerhard Flehinger",1921,2006,"Baden-Baden","fl"],
+["wd-Q1607037","Henry Meyer",1923,2006,"Dresden","meyer_"],
+["wd-Q77549","Hilde Domin",1909,2006,"Köln","do"],
+["st-n4781687923","Hildegard Dina Löwenstein",1909,2006,"Köln","lowens"],
+["wd-Q64859","Paul Spiegel",1937,2006,"Warendorf","sp"]
+],
+"year":2006}

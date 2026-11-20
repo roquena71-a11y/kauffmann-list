@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"hr",
+"rows":[
+["wd-Q110897640","Eduard Hrabák",1914,"Wien",48.20833,16.3725,"hr"],
+["wd-Q104810804","Berta Hrabětová",1889,null,null,null,"hr"],
+["wd-Q104810809","Hermína Hrabiková",1875,null,null,null,"hr"],
+["wd-Q104810810","Růžena Hradilová",1871,null,null,null,"hr"],
+["wd-Q104810811","Evžen Hrbenský",1882,"Konzentrationslager Theresienstadt",50.51028,14.14972,"hr"],
+["wd-Q104810812","Elsa Hrdinová",1899,null,null,null,"hr"],
+["wd-Q104810815","Marie Hrdinová",1902,null,null,null,"hr"],
+["wd-Q104810823","Max Hrdlička",1870,null,null,null,"hr"],
+["wd-Q104810816","Alžběta Hrdličková",1890,null,null,null,"hr"],
+["wd-Q104810822","Julie Hrdličková",1878,null,null,null,"hr"],
+["wd-Q104810831","Helena Hřebiková",1894,null,null,null,"hr"],
+["wd-Q104810824","Růžena Hromadková",1885,null,null,null,"hr"],
+["wd-Q104810825","Emilie Hronešová",1887,null,null,null,"hr"],
+["wd-Q104810826","Arnoštka Hroudová",1898,null,null,null,"hr"],
+["wd-Q104810827","Berta Hrubá",1905,"Prag",50.0875,14.42139,"hr"],
+["wd-Q104810828","Herta Hrubá",1913,null,null,null,"hr"],
+["wd-Q104810829","Anna Hrubeschová",1894,null,null,null,"hr"],
+["wd-Q104810830","Kamila Hrušková",1884,"Konzentrationslager Theresienstadt",50.51028,14.14972,"hr"]
+]}

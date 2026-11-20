@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"BE",
+"label":"Gent",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7142994202","Camille Haegeman",1904,"memorial",null,51.03957,3.71179],
+["st-n7142994208","Charles Colyn",1888,"memorial",null,51.04327,3.72041],
+["st-n7142994206","Gustave Labens",1912,"memorial",null,51.03957,3.7118],
+["st-n7142994204","Julius Matthys",1905,"memorial",null,51.03958,3.7118],
+["st-n7142994210","Marcel Levy",1900,"memorial",null,51.05227,3.72181],
+["st-n7142994211","Margueritte Bloch",1900,"memorial",null,51.05227,3.72182],
+["wd-Q105047305","Martha Geiringer",1912,"memorial",null,51.05641,3.7327],
+["st-n7142994205","Maurice Wanzele",1907,"memorial",null,51.03957,3.71179],
+["st-n7295275263","Ovchie Lempert",1908,"memorial",null,51.04316,3.72023],
+["st-n7142994207","Roger Lammertyn",1922,"memorial",null,51.03957,3.7118],
+["st-n7142994209","Sophie Loeb-Bloch",1873,"memorial",null,51.05227,3.7218],
+["st-n7142994203","Victor De Paepe",1902,"memorial",null,51.03957,3.71178]
+],
+"slug":"gent"}

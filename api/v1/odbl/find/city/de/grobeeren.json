@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"country":"DE",
+"label":"Großbeeren",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11906187956","Elsa Riess",1895,null,"Großbeeren","ri"],
+["st-n11906187959","Erich Karpes",1891,null,"Großbeeren","kar"],
+["st-n11906187960","Erika Karpers",1902,null,"Großbeeren","kar"],
+["st-n11906187951","Louis Zydower",1899,null,"Großbeeren","zy"],
+["st-n11906187958","Luise Gumpert",1875,null,"Großbeeren","gu"],
+["st-n11906187952","Martha Zydower",1900,null,"Großbeeren","zy"],
+["wd-Q105464079","Max Lewy",1869,1943,"Großbeeren","lew"],
+["st-n11906187957","Moritz Gumpert",1883,null,"Großbeeren","gu"],
+["st-n11906187953","Richard Zydower",1928,null,"Großbeeren","zy"],
+["st-n11906187954","Ruth Zydower",1925,1943,"Großbeeren","zy"],
+["st-n11906187955","Wilhelm Riess",1895,null,"Großbeeren","ri"]
+],
+"slug":"grobeeren"}

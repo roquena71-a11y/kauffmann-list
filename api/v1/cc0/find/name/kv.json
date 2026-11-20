@@ -1,0 +1,14 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"kv",
+"rows":[
+["kvasnik","wd-Q105560367","Genendel Kvasnik-Rabinoviczová",1875,null,null,"kv"],
+["kvasnik","wd-Q105560368","Juda Kvasnik-Rabinovicz",1877,null,null,"kv"],
+["kveta","wd-Q105642798","Květa Krausová",1937,1942,null,"krauso"],
+["kveta","wd-Q105556665","Květa Levá",1890,null,null,"leva"],
+["kvetoslava","wd-Q104221929","Květoslava Běhalová",1888,null,null,"beh"],
+["kvetoslava","wd-Q105598955","Květoslava Schneiderová",1871,null,null,"schn"],
+["kvetuse","wd-Q104422627","Květuše Bunzlová",1883,1943,"KZ Auschwitz","bu"],
+["kvint","wd-Q105651909","Alexandr Kvint",1913,null,null,"kv"],
+["kvintner","wd-Q95123130","Shimon Kvintner",1895,1942,"Warschau","kv"]
+]}

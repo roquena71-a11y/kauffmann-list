@@ -1,0 +1,18 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"fry",
+"rows":[
+["frybortova","wd-Q104656597","Olga Frybortová",1904,null,null,"fry"],
+["fryda","wd-Q104548327","Frýda Fleschová",1894,null,null,"fle"],
+["fryda","wd-Q105518969","Frýda Kaudersová",1914,null,null,"kau"],
+["fryda","wd-Q105560905","Frýda Langerová",1885,null,null,"lang"],
+["fryde","wd-Q95115934","Guta Fryde",1912,1943,"Vernichtungslager Treblinka","fry"],
+["fryderyk","wd-Q104805988","Fryderyk Horowitz",1887,null,null,"hor"],
+["frydmann","wd-Q104654703","Luise Frydmann",1868,1943,null,"fry"],
+["frydova","wd-Q104656598","Kamila Frýdová",1884,null,null,"fry"],
+["frydova","wd-Q104656600","Valerie Frýdová",1909,null,null,"fry"],
+["fryma","wd-Q105503816","Fryma Schwarz",1892,null,null,"schwar"],
+["fryma","wd-Q105656463","Fryma Wajnstok-Lewkowitz",1893,null,null,"waj"],
+["frymet","wd-Q105456152","Frymet Praiss",1864,1942,"Konzentrationslager Theresienstadt","pra"],
+["frymeta","wd-Q141913138","Frymeta Ajnhorn",1928,1945,null,"aj"]
+]}

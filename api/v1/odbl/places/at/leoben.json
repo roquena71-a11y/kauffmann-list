@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"AT",
+"label":"Leoben",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6816203637","Berta Werdisheim",1885,"memorial","Waasenplatz 1",47.37804,15.09147],
+["st-n6816203641","David Spiess",1909,"memorial","Franz Josef-Straße 18, Leoben, AT 18",47.38471,15.09285],
+["st-n6816203639","Klara Scheck",1872,"memorial","Waasenplatz 1",47.37804,15.09146],
+["st-n6816203635","Max Werdisheim",1886,"memorial","Waasenplatz 1",47.37804,15.09147],
+["st-n6816203633","Roman Cebaus",1892,"memorial","Lorberaustraße 11",47.37623,15.07195],
+["st-n6816203642","Simon Trevisani",1884,"memorial","Ignaz Buchmüller-Platz 1",47.38552,15.0916]
+],
+"slug":"leoben"}

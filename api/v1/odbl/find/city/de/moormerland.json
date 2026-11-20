@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Moormerland",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6345073294","Bertha Polak",1884,null,"Moormerland","po"],
+["st-n6345073291","Ingeborg Herz",1937,null,"Moormerland","her"],
+["st-n6345073295","Isaak-Abraham Polak",1877,null,"Moormerland","po"],
+["st-n6345073378","Isaak Cohen",1884,null,"Moormerland","cohe"],
+["st-n6345073296","Marianne Cohen",1890,null,"Moormerland","cohe"],
+["st-n6345073292","Martha Herz",1880,null,"Moormerland","her"],
+["st-n6345073293","Siegfried Herz",1889,null,"Moormerland","her"]
+],
+"slug":"moormerland"}

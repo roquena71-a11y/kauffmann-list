@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"IT",
+"label":"Meran - Merano",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4179089493","Caterina Robitschek Breuer",1875,"memorial","Meinhardstraße - Via Meinardo 15",46.67263,11.15782],
+["st-n2995968044","Domenikus Geschini",null,"memorial","Freiheitsstraße 141",46.67108,11.15409],
+["st-n4179089494","Emma Saphir Götz",1870,"memorial","Meinhardstraße - Via Meinardo 15",46.67264,11.1578],
+["st-n4179089495","Guglielmo Breuer",1871,"memorial","Meinhardstraße - Via Meinardo 15",46.67263,11.15776],
+["st-n4179089496","Leopold Götz",1919,"memorial","Meinhardstraße - Via Meinardo 15",46.67263,11.15779],
+["st-n4179089497","Maurizio Götz",null,"memorial","Meinhardstraße - Via Meinardo 15",46.67264,11.15777]
+],
+"slug":"meran-merano"}

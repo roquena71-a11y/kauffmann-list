@@ -1,0 +1,17 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"sn",
+"rows":[
+["snabl","wd-Q105611478","Arnošt Šnabl",1888,null,null,"sn"],
+["snablova","wd-Q105611477","Anna Šnablová",1904,null,null,"sn"],
+["snablova","wd-Q105613681","Tereza Šnablová",1864,null,null,"sn"],
+["snapper","wd-Q133519447","Pollij Messias-Snapper",1871,1943,"KZ Auschwitz","sn"],
+["snell","wd-Q108133810","Louis Antoine Snell",1880,1944,"KZ Sonnenburg","sn"],
+["snijder","wd-Q125392639","Sal Snijder",1898,1950,"Amsterdam","sn"],
+["snijders","wd-Q105655599","Eva Snijders-Plukker",1891,1944,"KZ Auschwitz","sn"],
+["snijders","wd-Q105655600","Maurits Snijders",1888,1944,"KZ Auschwitz","sn"],
+["snijders","wd-Q105655601","Simon Snijders",1897,1945,null,"sn"],
+["snijders","wd-Q105655603","Sophia Snijders-Pesper",1892,null,null,"sn"],
+["snok","wd-Q105655182","Roosje Rabbie-Snoek",1886,1944,"KZ Auschwitz","ra"],
+["snyders","wd-Q105655604","Josef Snyders",1909,null,null,"sn"]
+]}

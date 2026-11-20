@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Bergkamen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n9450932604","Amalie Hertz",1884,null,"Bergkamen","her"],
+["st-n9450932592","August Kühler",1901,null,"Bergkamen","ku"],
+["st-n9472148899","Ernst Bronheim",1887,1933,"Bergkamen","bro"],
+["st-n9450932603","Grete Hertz",1911,null,"Bergkamen","her"],
+["st-n9450932605","Hermann Hertz",1879,null,"Bergkamen","her"],
+["st-n9472148843","Max Herrmann",1899,null,"Bergkamen","her"]
+],
+"slug":"bergkamen"}

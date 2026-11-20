@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"ES",
+"label":"Sant Cugat del Vallès",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13459768044","Francisco Calventus Navarro",1904,"memorial","Carrer de l'Hospital, 40-42",41.47344,2.08373],
+["st-n13459796600","Joaquín Moya Braulio",1900,"memorial","Carrer de Montserrat, 56",41.47443,2.08793],
+["st-n13459752599","Josep Puiggròs Paloma",1909,"memorial","Rambla Ribatallada",41.46709,2.08156],
+["st-n13459775168","Lorenzo Villa Gibanel",1904,"memorial","Carrer de les Escaletes",41.47356,2.08285]
+],
+"slug":"sant-cugat-del-valles"}

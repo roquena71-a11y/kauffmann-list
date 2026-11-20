@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"PL",
+"label":"Tykocin",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95106167","Babka Praznik",1895,1942,"Tykocin","pra"],
+["wd-Q94976858","David Drezels",1875,1941,"Tykocin","dr"],
+["wd-Q95122459","David Praznik",1890,1942,"Tykocin","pra"],
+["wd-Q95107737","Dvora Finki",1901,1941,"Tykocin","fin"]
+],
+"slug":"tykocin"}

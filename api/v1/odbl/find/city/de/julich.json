@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Jülich",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13514182988","Anna Voss",1873,null,"Jülich","v"],
+["st-n13514182984","Hannah Voss",1900,null,"Jülich","v"],
+["st-n13514182983","Hans Voss",1906,null,"Jülich","v"],
+["st-n13514182985","Hugo Voss",1898,null,"Jülich","v"],
+["wd-Q104805966","Philipp Horn",1874,1940,"Jülich","hor"],
+["wd-Q104805969","Rosa Horn",1875,1940,"Jülich","hor"]
+],
+"slug":"julich"}

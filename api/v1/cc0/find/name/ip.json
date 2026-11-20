@@ -1,0 +1,14 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ip",
+"rows":[
+["ippen","wd-Q104811324","Albert Ippen",1864,1942,"Konzentrationslager Theresienstadt","i"],
+["ippen","wd-Q104811326","Emil Ippen",1869,1943,"Konzentrationslager Theresienstadt","i"],
+["ippen","wd-Q104811330","Karel Ippen",1868,1942,"Konzentrationslager Theresienstadt","i"],
+["ippen","wd-Q104811333","Ota Ippen",1877,null,null,"i"],
+["ippenova","wd-Q104811325","Arnoštka Ippenová",1868,1942,"Konzentrationslager Theresienstadt","i"],
+["ippenova","wd-Q104811329","Ida Ippenová",1885,null,null,"i"],
+["ippenova","wd-Q104811331","Marie Ippenová",1878,null,null,"i"],
+["ippenova","wd-Q104811332","Markéta Ippenová",1885,null,null,"i"],
+["ippenova","wd-Q104811334","Valerie Ippenová",1886,null,null,"i"]
+]}

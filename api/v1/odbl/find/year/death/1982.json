@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n14223678233","Anna Remmel",1899,1982,"Siegburg","rem"],
+["wd-Q132140466","Eva Schocken",1918,1982,"Berlin","scho"],
+["st-n12857771753","Josef Oberle",1890,1982,"Baden-Baden","ob"],
+["st-n4995427021","Kurt Leffmann",1911,1982,"Kleve","lef"],
+["wd-Q9370696","Walter Rudolf Kirschbaum",1894,1982,"Hamburg","ki"],
+["wd-Q104158573","Wilhelm Breithecker",1897,1982,"Dietkirchen","bre"],
+["wd-Q86067005","Willy Brachmann",1903,1982,"Hamburg","bra"]
+],
+"year":1982}

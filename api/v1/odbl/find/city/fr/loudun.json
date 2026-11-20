@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"FR",
+"label":"Loudun",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13064499310","Bajla Apter née Ciesla",1896,1942,"Loudun","ci"],
+["st-n13064499306","Beile Dyment",1927,1944,"Loudun","dy"],
+["st-n13064499309","Georges Apter",1896,1942,"Loudun","ap"],
+["st-n13064499304","Justin Isner",1889,1942,"Loudun","i"],
+["st-n13064499303","Martha Guttman née Elkisch",1878,1942,"Loudun","el"],
+["st-n13064499307","Maurice Dyment",1935,1944,"Loudun","dy"],
+["st-n13064499305","Régine Rein",1937,1944,"Loudun","rei"],
+["st-n13064499308","Sara Dyment",1930,1944,"Loudun","dy"]
+],
+"slug":"loudun"}

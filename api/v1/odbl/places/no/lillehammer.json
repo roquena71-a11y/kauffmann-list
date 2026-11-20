@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"NO",
+"label":"Lillehammer",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q108813086","Carl Ludvig Elias",1891,"memorial","Jernbanetorget 2",61.11454,10.46147],
+["wd-Q42298795","Julie Elias",1866,"memorial","Jernbanetorget 2",61.11454,10.46147],
+["wd-Q138606838","Karoline Trebitsch",1880,"memorial","Jernbanetorget 2",61.11454,10.46147],
+["wd-Q138606783","Leonard Benjamin Ornstein",1868,"memorial","Jernbanetorget 2",61.11454,10.46147],
+["st-Q138608386","Ludvig Trebitsch",1867,"memorial","Jernbanetorget 2",61.11454,10.46147],
+["wd-Q138606847","Marta Leopold",1882,"memorial","Jernbanetorget 2",61.11454,10.46147],
+["wd-Q138606806","Stephanie Hirsch",1875,"memorial","Jernbanetorget 2",61.11454,10.46147]
+],
+"slug":"lillehammer"}

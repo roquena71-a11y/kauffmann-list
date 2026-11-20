@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"BE",
+"label":"Uccle - Ukkel",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q2833826","Alexandre 'Choura' Livschitz",1911,"memorial","Avenue Brugmann - Brugmannlaan 247",50.81396,4.34789],
+["wd-Q59417463","René Gobert",null,"memorial",null,50.80683,4.37135],
+["wd-Q3572898","Youra 'Georges' Livschitz",1917,"memorial","Avenue Brugmann - Brugmannlaan 247",50.81396,4.3479]
+],
+"slug":"uccle-ukkel"}

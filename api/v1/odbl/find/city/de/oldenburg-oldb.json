@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Oldenburg (Oldb)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6915346625","Alfons Evers",1926,1938,"Oldenburg (Oldb)","ev"],
+["st-Q130705892","Anna Gesine Wiechmann",1882,null,"Oldenburg (Oldb)","wi"],
+["st-n6915346623","Eva Maria Evers",1926,1940,"Oldenburg (Oldb)","ev"],
+["wd-Q141191441","Franz Reyersbach",1880,1936,"Oldenburg (Oldb)","rey"],
+["st-Q130705840","Georg Harbers",1908,null,"Oldenburg (Oldb)","har"],
+["st-Q130705794","Grete Reyersbach",1883,null,"Oldenburg (Oldb)","rey"],
+["wd-Q1570006","Johann Gerdes",1896,1933,"Oldenburg (Oldb)","ge"],
+["st-n6915346624","Otto Evers",1925,1938,"Oldenburg (Oldb)","ev"]
+],
+"slug":"oldenburg-oldb"}

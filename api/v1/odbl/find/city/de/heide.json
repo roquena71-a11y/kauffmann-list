@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Heide",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105712988","Dagobert David Stillschweig",1896,1943,"Heide","sti"],
+["wd-Q105712616","Emil Schmekel",1888,1944,"Heide","schm"],
+["wd-Q105712859","Erich Böhlig",1885,1945,"Heide","bo"],
+["wd-Q1363358","Erwin Rehn",1927,2000,"Heide","reh"],
+["wd-Q105713995","Frieda Alexander",1891,1943,"Heide","al"],
+["wd-Q105459183","Gertrud Stillschweig",1907,1940,"Hamburg","sti"],
+["wd-Q97579061","Lilly Wolff",1896,1942,"Flensburg","wolff"],
+["wd-Q105459184","Martha Stillschweig",1906,1940,"Heide","sti"]
+],
+"slug":"heide"}

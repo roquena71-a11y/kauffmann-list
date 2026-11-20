@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"FR",
+"label":"Elbeuf",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13118841630","Anna Sender",1919,"memorial","44 Rue du Général de Gaulle",49.28642,1.00995],
+["st-n13118841627","Chana Senders née Kac",1904,"memorial","44 Rue du Général de Gaulle",49.28642,1.00996],
+["st-n13118841626","Fanny Batakès née Nupel",1872,"memorial","25 ter Cours Carnot",49.287,1.01559],
+["st-n13118841624","Germaine Senders",1904,"memorial","25 ter Cours Carnot",49.287,1.01559],
+["st-n13118841621","Jean Katzburg",1927,"memorial","6 Rue Céleste",49.28735,1.00084],
+["st-n13118841625","Jean Senders",1936,"memorial","25 ter Cours Carnot",49.287,1.01559],
+["st-n13118841622","Lilly Katzburg née Dubsky",1900,"memorial","6 Rue Céleste",49.28735,1.00084],
+["st-n13118841628","Maurice Sender",1905,"memorial","44 Rue du Général de Gaulle",49.28642,1.00995],
+["st-n13118841623","Nicolas Katzburg",1891,"memorial","6 Rue Céleste",49.28735,1.00084],
+["st-n13118841629","Serge Senders",1936,"memorial","44 Rue du Général de Gaulle",49.28642,1.00995],
+["st-n13118841631","Simon Senders",1902,"memorial","44 Rue du Général de Gaulle",49.28642,1.00995]
+],
+"slug":"elbeuf"}

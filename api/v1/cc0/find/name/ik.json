@@ -1,0 +1,18 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ik",
+"rows":[
+["ikan","wd-Q95106217","Raichel Ikan",1905,1941,"Riga","i"],
+["ikenberg","wd-Q104806095","Adolf Ikenberg",1862,1942,"Konzentrationslager Theresienstadt","i"],
+["ikenberg","wd-Q104806096","Ernst Ikenberg",1901,null,null,"i"],
+["ikenberg","wd-Q104806097","Ida Ikenberg",1876,null,null,"i"],
+["ikenberg","wd-Q104806098","Josef Ikenberg",1869,1942,"Konzentrationslager Theresienstadt","i"],
+["ikenberg","wd-Q104806094","Karoline Ikenberg",1856,1942,"Konzentrationslager Theresienstadt","i"],
+["ikenberg","wd-Q104808035","Klara Ikenberg",1873,1943,"Konzentrationslager Theresienstadt","i"],
+["ikenberg","wd-Q104805515","Klara Ikenberg-Löwenhardt",1906,1944,"KZ Auschwitz","i"],
+["ikenberg","wd-Q104805626","Kurt Ikenberg",1941,1944,"KZ Auschwitz","i"],
+["ikenberg","wd-Q106470055","Ludwig Ikenberg",1907,1945,null,"i"],
+["ikenberg","wd-Q104806101","Philipp Ikenberg",1859,1942,"Konzentrationslager Theresienstadt","i"],
+["ikenberg","wd-Q104806106","Sophie Ikenberg",1876,1943,"Ghetto Theresienstadt","i"],
+["ikler","wd-Q104811244","Mořic Ikler",1906,null,null,"i"]
+]}

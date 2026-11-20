@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Giengen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q138568768","Anna Schock",1886,1940,"Giengen","scho"],
+["st-Q138568766","Babette Mack",1892,1940,"Giengen","mac"],
+["st-n11079166686","Christine Mayer",1900,1940,"Giengen","may"],
+["st-n11074444864","Ernst Wolff",1902,1940,"Giengen","wolff"],
+["st-Q138568765","Frida Langer",1888,null,"Giengen","lan"],
+["st-n11079144955","Karl Krauss",1888,1940,"Giengen","kr"],
+["st-Q138568760","Margarete Ludwig",1878,1940,"Giengen","lu"],
+["st-n11079166685","Maria Kinzler",1899,1940,"Giengen","ki"],
+["wd-Q105451289","Martin Bader",1901,1940,"Giengen","bad"],
+["st-Q138568762","Reinhold Hähnle",1881,1940,"Giengen","hah"]
+],
+"slug":"giengen"}

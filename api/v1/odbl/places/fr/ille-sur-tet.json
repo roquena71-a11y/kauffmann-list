@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"FR",
+"label":"Ille-sur-Têt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13069175541","Gerda Hirch Manheimer",1909,"memorial","4 Rue Franklin",42.67281,2.62237],
+["st-n13069175544","Hélène Schochet Beniacar",1914,"memorial","10 Rue Victor Hugo",42.67067,2.62301],
+["st-n13069175540","Jacqueline Manheimer",1935,"memorial","4 Rue Franklin",42.67281,2.62237],
+["st-n13069205904","Jacques Deit",1923,"memorial","1 Rue du Comte",42.67,2.61967],
+["st-n13069175543","Johanna Klein Manheimer",1878,"memorial","4 Rue Franklin",42.67281,2.62237],
+["st-n13069205903","Louis Boyer",1899,"memorial","25 Avenue Pasteur",42.66964,2.6191],
+["st-n13069175545","Michel Beniacar",1937,"memorial","10 Rue Victor Hugo",42.67067,2.62301],
+["st-n13069175546","Sadia Beniacar",1913,"memorial","10 Rue Victor Hugo",42.67068,2.62301],
+["st-n13069175542","Wilhem Manheimer",1900,"memorial","4 Rue Franklin",42.67281,2.62237]
+],
+"slug":"ille-sur-tet"}

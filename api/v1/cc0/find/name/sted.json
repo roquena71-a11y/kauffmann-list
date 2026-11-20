@@ -1,0 +1,14 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"sted",
+"rows":[
+["stedra","wd-Q105613763","Elsa Štědrá",1887,null,null,"sted"],
+["stedra","wd-Q105617052","Elsa Štědrá",1885,null,null,"sted"],
+["stedra","wd-Q105613767","Hedvika Štědrá",1875,null,null,"sted"],
+["stedra","wd-Q105613768","Hermína Štědrá",1871,null,null,"sted"],
+["stedra","wd-Q105613770","Růžena Štědrá",1906,null,null,"sted"],
+["stedry","wd-Q105613765","František Štědrý",1904,null,null,"sted"],
+["stedry","wd-Q105613766","František Štědrý",1908,null,null,"sted"],
+["stedry","wd-Q105613769","Karel Štědrý",1888,null,null,"sted"],
+["stedry","wd-Q95391076","Oldřich Štědrý",1870,1943,"Konzentrationslager Theresienstadt","sted"]
+]}

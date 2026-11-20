@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"joss",
+"rows":[
+["joss","wd-Q104808563","Klara Joss",1866,1943,"Konzentrationslager Theresienstadt","jo"],
+["joss","wd-Q95232139","Viktor Joss",1869,null,"Prag","jo"],
+["jossek","wd-Q104807353","Selma Jossek",1866,1943,"Konzentrationslager Theresienstadt","jo"],
+["jossel","wd-Q105469679","Jossel Aron Mikler",1876,null,null,"mi"],
+["jossel","wd-Q105473277","Jossel Rudich",1866,1943,"Konzentrationslager Theresienstadt","ru"],
+["jossel","wd-Q105502942","Jossel Schneider",1863,1943,"Konzentrationslager Theresienstadt","schn"],
+["jossova","wd-Q104812043","Eliška Jossová",1887,null,null,"jo"],
+["jossova","wd-Q104812044","Irma Jossová",1889,null,null,"jo"]
+]}

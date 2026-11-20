@@ -1,0 +1,21 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"ll",
+"rows":[
+["llana","st-n13426865519","Valentìn Fouce Llana",null,null,"Madrid","ll"],
+["llanet","st-n8928166335","Vicens Gené Llanet",1888,1940,"Figueres","ll"],
+["llaneza","st-n13397853836","Roberto Llaneza",1902,null,"Barcelona","ll"],
+["llinares","st-n7261115561","Francesc Valls Llinares",1896,null,"Castellar del Vallès","ll"],
+["llonch","st-n13506112292","Marià Llonch Casanovas",1898,null,"Sabadell","ca"],
+["llop","st-n13521158587","Francesc Sas Llop",1912,null,"Sabadell","ll"],
+["llopart","st-n14076145520","Josep Llopart Sola",1900,null,"Barcelona","so"],
+["llopart","st-n13506057530","Narcís Canales Llopart",1912,null,"Sabadell","ll"],
+["llorenc","st-n13354987437","Llorenç Vitrià Barrera",1908,null,"Barcelona","bar"],
+["lloyd","st-n13021473675","Esther Pauline Lloyd",1906,null,"St Clement","ll"],
+["llse","st-n9712104149","llse Kreisel",1926,null,"Magdeburg","kr"],
+["llse","st-n9743059362","llse Kupowski",1906,null,"Magdeburg","ku"],
+["llse","wd-Q132144687","llse Loewenberg",1900,null,"Berlin","lowenb"],
+["lluis","st-n13597530352","Lluís Onrubia Arqué",1910,null,"Terrassa","ar"],
+["lluis","st-n13871630323","Lluís Soy Vilanova",1940,null,"Olot","v"],
+["lluis","st-n13344062696","Lluís Villar Fornàs",1900,null,"Barcelona","fo"]
+]}

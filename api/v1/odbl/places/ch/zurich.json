@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"CH",
+"label":"Zurich",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q141960320","Florentine Sticki",1929,"memorial","Dufourstrasse 70",47.36151,8.54945],
+["wd-Q85101121","Gino Pezzani",1911,"memorial","Jungstrasse 9",47.41468,8.54445],
+["wd-Q135476492","Henrika Sigmann",1899,"memorial","Langstrasse 6",47.37461,8.52449],
+["wd-Q135471083","Julie Emma Flöscher",1913,"memorial","Staperstrasse 21",47.38337,8.54636],
+["wd-Q135615459","Margot Sara Correns",null,"memorial","Stockerstrasse 25",47.36626,8.53549],
+["wd-Q141962292","Marie Sticki",1934,"memorial","Dufourstrasse 70",47.36151,8.54945],
+["wd-Q141962394","Mauricette Sticki",1936,"memorial","Dufourstrasse 70",47.36151,8.54945],
+["wd-Q141959996","Rosa Sticki-Makow",1908,"memorial","Dufourstrasse 70",47.36151,8.54945],
+["wd-Q115250670","Walter Kölliker",1898,"memorial","Plattenstrasse 68",47.3713,8.55541]
+],
+"slug":"zurich"}

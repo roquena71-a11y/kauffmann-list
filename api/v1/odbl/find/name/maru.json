@@ -1,0 +1,14 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"maru",
+"rows":[
+["marum","st-n2489096038","Eva Brigitte Marum",1919,1943,"Karlsruhe","mar"],
+["marum","st-n4897707199","Grete Marum",1907,null,"Neuss","mar"],
+["marum","wd-Q60835428","Heinrich Marum",1848,1942,"Bad Sobernheim","mar"],
+["marum","wd-Q91187","Ludwig Marum",1882,1934,"Karlsruhe","mar"],
+["marum","st-Q132184053","Malwine Marum",1883,null,"Freiburg im Breisgau","mar"],
+["marum","st-n13540500571","Malwine Marum",1883,null,"Freiburg im Breisgau","mar"],
+["marum","st-Q124974177","Margarethe Marum",1877,null,"Hamburg","mar"],
+["marum","st-n12438845010","Mathilde Marum",1864,1939,null,"mar"],
+["marum","st-n4897707200","Wilhelm Marum",1889,null,"Neuss","mar"]
+]}

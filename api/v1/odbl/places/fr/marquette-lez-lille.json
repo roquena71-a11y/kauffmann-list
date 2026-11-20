@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"FR",
+"label":"Marquette-lez-Lille",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13908427699","Alphonse Devos",1903,"memorial","5 Pavillon de l'Épinette",50.67448,3.06507],
+["st-n13908437102","Charles Damerment",1893,"memorial","8 Rue des Martyrs de la Résistance",50.67625,3.06425],
+["st-n13908427700","Madeleine Damerment",1917,"memorial","8 Rue des Martyrs de la Résistance",50.67625,3.06425],
+["st-n13908427698","Théophile Andouche",1905,"memorial","5 Pavillon de l'Épinette",50.67448,3.06507]
+],
+"slug":"marquette-lez-lille"}

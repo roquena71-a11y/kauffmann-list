@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"country":"DE",
+"label":"Heilbad Heiligenstadt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q22694410","Hermann Joseph Vell",1894,1965,"Gelsenkirchen","v"],
+["wd-Q1704235","Josef Averesch",1902,1949,"Trier","av"],
+["st-n3647575948","Julius Haase",1879,null,"Heilbad Heiligenstadt","haa"]
+],
+"slug":"heilbad-heiligenstadt"}

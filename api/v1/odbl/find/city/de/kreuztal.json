@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"DE",
+"label":"Kreuztal",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2232353298","Berthold Meier",1911,null,"Kreuztal","mei"],
+["st-n2232353299","Eva Marx",1879,null,"Kreuztal","mar"],
+["st-n2232353300","Fred Meier",1939,null,"Kreuztal","mei"],
+["st-n2232353301","Grete Meier",1913,null,"Kreuztal","mei"],
+["st-n2232353304","Hugo Meier",1905,null,"Kreuztal","mei"],
+["st-n2232353305","Johanna Meier",1875,null,"Kreuztal","mei"],
+["st-n2232353306","Johanna Rosenhelm",1872,null,"Kreuztal","rosenh"],
+["st-n11665437128","Karl Dornseifer",1891,null,"Kreuztal","do"],
+["st-n2232353307","Minna Meier",1901,null,"Kreuztal","mei"],
+["st-n2232353327","Raphael Meier",1875,null,"Kreuztal","mei"],
+["st-n2232353328","Sarah Meier",1865,null,"Kreuztal","mei"],
+["st-n2232353329","Siegfried Meier",1903,null,"Kreuztal","mei"],
+["st-n2232353330","Toni Meier",1880,null,"Kreuztal","mei"]
+],
+"slug":"kreuztal"}

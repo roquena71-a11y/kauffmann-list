@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"LT",
+"label":"Švėkšna",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13200822729","Libė Zivaitė",1911,"memorial","Liepų a. 23",55.5162,21.62171],
+["st-n13200822727","Minda Zivaitė",1918,"memorial","Liepų a. 23",55.5162,21.62171],
+["st-n13200822728","Miriam Zivaitė",1915,"memorial","Liepų a. 23",55.5162,21.62172],
+["st-n13200822725","Mošė Zivas",1872,"memorial","Liepų a. 23",55.5162,21.62171],
+["st-n13200822724","Rachelė Pešė Kromaitė Zivienė",1883,"memorial","Liepų a. 23",55.5162,21.62171]
+],
+"slug":"sveksna"}

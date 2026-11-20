@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"ek",
+"rows":[
+["ekaterina","st-n12753834142","Ekaterina Arsentjeva",1907,null,null,"ar"],
+["ekert","st-Q124974190","Alice Ekert-Rotholz",1900,null,"Hamburg","ek"],
+["ekert","wd-Q104450185","Leon Ekert",1867,1943,"Hamburg","ek"],
+["ekert","st-Q124977072","Maximilian Ekert",1865,null,"Hamburg","ek"],
+["ekiba","st-n2569973214","Karl Ekiba Müller",1872,null,"Norderney","mu"],
+["ekstein","st-n14228238670","Beeltje Ekstein-Godschalk",1862,1942,"Sneek","ek"],
+["ekstein","wd-Q133250343","Elisabeth Ekstein",1900,1944,"Berlin","ek"],
+["ekstein","wd-Q104446860","Hans Ekstein",1894,1944,"Berlin","ek"]
+]}

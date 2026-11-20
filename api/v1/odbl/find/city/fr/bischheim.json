@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"FR",
+"label":"Bischheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13921353291","Charles Herm",1922,1944,"Bischheim","her"],
+["st-n13921305896","Jacques Salomon",1885,1943,"Bischheim","sal"],
+["st-n13921353293","Jeanne Sternheim",1916,1943,"Bischheim","stern"],
+["st-n13921305895","Pauline Salomon née Weill",1880,1943,"Bischheim","weil"],
+["st-n13921353292","Pierre Klotz",1912,1945,"Bischheim","kl"],
+["wd-Q138026793","Robert Kieffer",1920,1943,"Bischheim","ki"]
+],
+"slug":"bischheim"}

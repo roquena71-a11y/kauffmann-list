@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"country":"DE",
+"label":"Wendlingen am Neckar",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131622085","Charlotta Hammelehle",1879,1940,"Wendlingen am Neckar","ham"],
+["wd-Q95287149","Konrad Zäh",1877,1956,"Wendlingen am Neckar","za"],
+["st-Q131622132","Otto Wisst",1912,null,"Wendlingen am Neckar","wi"]
+],
+"slug":"wendlingen-am-neckar"}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"death",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104970087","Adele Strummer",1922,2016,null,"stru"],
+["wd-Q105654794","Beate Mohr",1917,2016,"San Francisco Gotera","moh"],
+["wd-Q124429949","Cantor Leopold Szneer",1921,2016,"Los Angeles","sz"],
+["wd-Q106311251","Erika Blumgrund",1924,2016,"Buenos Aires","blu"],
+["wd-Q104807140","Esther Bauer",1924,2016,"Yonkers","bau"],
+["wd-Q873728","Jules Schelvis",1921,2016,"Amstelveen","sche"],
+["wd-Q30605233","Vera Zsoldos",1924,2016,"Budapest","zs"]
+],
+"year":2016}

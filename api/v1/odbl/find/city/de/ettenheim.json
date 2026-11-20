@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Ettenheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q137797529","Fanny Lion",1871,null,"Ettenheim","lio"],
+["st-Q137797528","Hedwig Levistein",1883,null,"Ettenheim","levi"],
+["st-Q137797530","Helene Lion",1866,null,"Ettenheim","lio"],
+["st-Q137797531","Julia Lion",1878,null,"Ettenheim","lio"],
+["st-Q137797532","Karoline Lion",1854,null,"Ettenheim","lio"],
+["st-Q137797533","Sophie Lion",1871,null,"Ettenheim","lio"]
+],
+"slug":"ettenheim"}

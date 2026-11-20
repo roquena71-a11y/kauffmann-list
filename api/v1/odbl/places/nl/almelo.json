@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"NL",
+"label":"Almelo",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3872372190","Benjamin Northeimer",1884,"memorial","Boompjes 14",52.35433,6.66252],
+["st-n3872372191","David Lion Mendels",1909,"memorial","Oranjestraat 6",52.35965,6.66565],
+["st-n3872372192","Elisabeth Berg-Bos",1875,"memorial","Grotestraat 5",52.35929,6.66503],
+["st-n3872372193","Jacob Jozef Berg",1905,"memorial","Grotestraat 5",52.35929,6.66503],
+["st-n3872372194","Joseph Berg",1909,"memorial","Grotestraat 5",52.35929,6.66503],
+["st-n3872372195","Joseph Meijers",1890,"memorial","Ootmarsumsestraat 69",52.36263,6.66832],
+["st-n3872372196","Kaatje Northeimer-Frankenhuis",1885,"memorial","Boompjes 14",52.35433,6.66252],
+["st-n3872372197","Levi Berg",1882,"memorial","Grotestraat 5",52.35929,6.66503],
+["st-n3872372198","Rosalie Meijers Caffé",1894,"memorial","Ootmarsumsestraat 69",52.36263,6.66832],
+["st-n3872372199","Sophia Marlena Spanjer-Berg",1912,"memorial","Grotestraat 5",52.35929,6.66503]
+],
+"slug":"almelo"}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"FR",
+"label":"Biesheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13075948231","André Abraham Samuel",1925,"memorial","6A Rue Lucien Weil",48.03863,7.54601],
+["st-n13075948230","Camille Bicard",1903,"memorial","8 Rue Lucien Weil",48.03861,7.54566],
+["st-n13075948228","Fernande Seligmann née Bicard",1895,"memorial","8 Rue Lucien Weil",48.03861,7.54566],
+["st-n13075948232","Henriette Samuel née Ullmann",1889,"memorial","6A Rue Lucien Weil",48.03863,7.54601],
+["st-n13075948225","Isaac Rottenberg",1884,"memorial","13 Grand'Rue",48.04023,7.5454],
+["st-n13075948224","Mélanie Rottenberg née Alexandre",1893,"memorial","13 Grand'Rue",48.04023,7.5454],
+["st-n13075948229","Renée Seligmann",1933,"memorial","8 Rue Lucien Weil",48.03861,7.54566],
+["st-n13075948233","Simon Samuel",1879,"memorial","6A Rue Lucien Weil",48.03863,7.54601]
+],
+"slug":"biesheim"}

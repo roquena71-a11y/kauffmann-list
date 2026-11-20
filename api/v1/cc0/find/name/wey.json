@@ -1,0 +1,18 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"wey",
+"rows":[
+["weyl","wd-Q105460902","Abraham Weyl",1869,null,null,"wey"],
+["weyl","wd-Q105460907","Anna Weyl",1880,null,null,"wey"],
+["weyl","wd-Q105461518","Anna Weyl",1867,1942,"Konzentrationslager Theresienstadt","wey"],
+["weyl","wd-Q105461519","Aurelie Weyl",1875,1942,"Konzentrationslager Theresienstadt","wey"],
+["weyl","wd-Q105460963","Clara Weyl",1882,null,null,"wey"],
+["weyl","wd-Q105461520","David Weyl",1870,null,null,"wey"],
+["weyl","wd-Q105460920","Ella Weyl",1889,1943,"Ghetto Theresienstadt","wey"],
+["weyl","wd-Q105460925","Ernst Weyl",1873,null,null,"wey"],
+["weyl","wd-Q105461522","Franziska Weyl",1861,1942,"Konzentrationslager Theresienstadt","wey"],
+["weyl","wd-Q105461523","Lucie Weyl",1884,null,null,"wey"],
+["weyl","wd-Q94917163","Max Weyl",1873,1942,"Konzentrationslager Theresienstadt","wey"],
+["weyl","wd-Q105656156","Philip Weyl",1897,null,null,"wey"],
+["weyl","wd-Q105461525","Siegfried Weyl",1881,1943,"Konzentrationslager Theresienstadt","wey"]
+]}

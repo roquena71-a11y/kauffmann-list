@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"DE",
+"label":"Wurzen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q125700844","Arthur Seligmann, Dr.",1893,null,"Wurzen","dr"],
+["st-Q126008081","Bianca Goldschmidt",1896,1944,"Wurzen","golds"],
+["st-Q126008024","Emma Susanne Seligmann",1900,null,"Wurzen","se"],
+["st-Q126008065","Friedrich Goldschmidt",1885,1944,"Wurzen","golds"],
+["st-Q127416386","Friedrich Goldschmidt (Arbeit)",1885,1944,"Wurzen","golds"],
+["st-Q126008167","Hedwig Luchtenstein",1889,1942,"Wurzen","lu"],
+["st-Q127786506","Hedwig Luchtenstein (Arbeit)",1889,1942,"Wurzen","lu"],
+["st-Q126008135","Hiltrud Helft",1902,null,"Wurzen","hel"],
+["st-Q126008153","Hugo Luchtenstein",1879,1942,"Wurzen","lu"],
+["st-Q127786487","Hugo Luchtenstein (Arbeit)",1879,1942,"Wurzen","lu"],
+["st-Q126008138","Ingeborg Helft",1926,1943,"Wurzen","hel"],
+["wd-Q141759577","Johanna Finkenstein",1864,1943,"Wurzen","fi"],
+["wd-Q104700532","Lina Hartmann",1873,1943,"Wurzen","har"]
+],
+"slug":"wurzen"}

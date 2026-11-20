@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"DE",
+"label":"Falkensee",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q993070","Bruno Borchardt",1859,1939,"Falkensee","bo"],
+["st-n7893400467","Charly Friedenthal",1880,null,"Falkensee","fri"],
+["st-Q134929572","Ernst Lipstein",1874,null,"Falkensee","lip"],
+["st-n12729633940","Eva Zorn",1880,null,"Falkensee","zo"],
+["wd-Q68204","Gertrud Chodziesner",1894,1943,"Falkensee","ch"],
+["st-n12731534275","Gertrud Voss",1891,1941,"Falkensee","v"],
+["st-n12729633939","Hermann Zorn",1879,null,"Falkensee","zo"],
+["st-Q133808269","Karl Karthun",1877,1941,"Falkensee","kar"],
+["st-n12731696176","Kurt Wolfgang Skamper",1889,1942,"Falkensee","sk"],
+["wd-Q94805734","Ludwig Chodziesner",1861,1943,"Berlin","ch"],
+["st-Q134929454","Margarete Lipstein",1876,null,"Falkensee","lip"],
+["wd-Q104423872","Minna Rosa Cohn",1875,1942,"Falkensee","cohn"],
+["st-n12725852442","Wilhelmine Reinke",1877,null,"Falkensee","rei"]
+],
+"slug":"falkensee"}

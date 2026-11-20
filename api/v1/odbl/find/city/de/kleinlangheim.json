@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"DE",
+"label":"Kleinlangheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131676281","Arnold Levin",1889,null,"Kleinlangheim","levi"],
+["st-Q131676283","Getta Sondhelm",1866,null,"Kleinlangheim","so"],
+["st-Q131676285","Hermann Sondhelm",1861,null,"Kleinlangheim","so"],
+["st-Q131676282","Irma Levin",1896,null,"Kleinlangheim","levi"]
+],
+"slug":"kleinlangheim"}

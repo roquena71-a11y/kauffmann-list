@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Haßfurt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131743214","Babette Goldmann",1888,"memorial","Zwerchmaingasse 11, Haßfurt",50.03105,10.50829],
+["st-Q131743207","Cäcilie Rosenthal",1921,"memorial","Hauptstraße 23, Haßfurt",50.03133,10.50753],
+["st-Q131743208","Friedel Rosenthal",1915,"memorial","Hauptstraße 23, Haßfurt",50.03133,10.50753],
+["st-Q131743209","Hermann Rosenthal",1914,"memorial","Hauptstraße 23, Haßfurt",50.03133,10.50753],
+["st-Q131743210","Jonas Rosenthal",1879,"memorial","Hauptstraße 23, Haßfurt",50.03133,10.50753],
+["st-Q131743215","Julius Goldmann",1882,"memorial","Zwerchmaingasse 11, Haßfurt",50.03105,10.50829],
+["st-Q131743211","Karoline Rosenthal",1922,"memorial","Hauptstraße 23, Haßfurt",50.03133,10.50753],
+["st-Q131743212","Selma Rosenthal",1885,"memorial","Hauptstraße 23, Haßfurt",50.03133,10.50753],
+["st-Q131743213","Therese Rosenthal",1928,"memorial","Hauptstraße 23, Haßfurt",50.03133,10.50753]
+],
+"slug":"hafurt"}

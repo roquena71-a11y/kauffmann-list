@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"kind":"birth",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104810798","Eva Houdková",1945,1945,"Konzentrationslager Theresienstadt","hou"],
+["wd-Q104654737","Eva Maria Fried",1945,1945,"Konzentrationslager Theresienstadt","fried_"],
+["wd-Q104542759","Ludwig Fleischmann",1945,1945,"Konzentrationslager Theresienstadt","fle"],
+["wd-Q105512435","Michael Petschau",1945,1945,"Konzentrationslager Theresienstadt","pet"]
+],
+"year":1945}

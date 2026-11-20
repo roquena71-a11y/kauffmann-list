@@ -1,0 +1,9 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"wex",
+"rows":[
+["wexberg","wd-Q106822292","Marie Wexberg",1890,1942,"KZ Auschwitz","wex"],
+["wexberg","wd-Q105638631","Mořic Wexberg",1889,null,null,"wex"],
+["wexbergova","wd-Q105638629","Marie Wexbergová",1897,null,null,"wex"],
+["wexbergova","wd-Q105638632","Regina Wexbergová",1861,null,null,"wex"]
+]}

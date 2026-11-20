@@ -1,0 +1,19 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"sn",
+"rows":[
+["snatager","st-n4590753903","Betty Snatager-Polak",1914,1943,"Zutphen","sn"],
+["snatager","st-n4590573187","David Snatager",1880,1942,"Zutphen","sn"],
+["snatager","st-n4590753902","Emanuel Snatager",1943,1943,"Zutphen","sn"],
+["snatager","st-n4590573185","Flora Snatager",1917,1942,"Zutphen","sn"],
+["snatager","st-n4590573186","Hedwig Snatager-Anschel",1889,1942,"Zutphen","sn"],
+["snatager","st-n4590573184","Henriëtte Snatager",1922,1942,"Zutphen","sn"],
+["snatager","st-n4590753904","Herman Snatager",1912,1943,"Zutphen","sn"],
+["snatager","st-n4590753905","Julie Snatager-Wallerstein",1881,1943,"Zutphen","sn"],
+["snatager","st-n8729402161","Lotte Snatager",1904,null,"Steinfurt","sn"],
+["snopek","st-n2960051334","Betty Snopek",1899,null,"Heidelbereg","sn"],
+["snopek","st-n2957246142","Ludwig Snopek",1871,null,"Heidelbereg","sn"],
+["snopek","wd-Q132139074","Philipp Snopek",1881,1942,"Berlin","sn"],
+["snopek","st-n2960051340","Sara Snopek",1867,null,"Heidelbereg","sn"],
+["snopek","wd-Q132139072","Sara Snopek",1880,1942,"Berlin","sn"]
+]}

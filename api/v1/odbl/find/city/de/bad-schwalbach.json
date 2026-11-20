@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Bad Schwalbach",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n796573859","Dr. Hugo Tannenbaum",1898,null,"Bad Schwalbach","ta"],
+["st-n10139800174","Henny Woif",1821,1941,"Bad Schwalbach","woi"],
+["st-n798797582","Ludwig Katz",1896,null,"Bad Schwalbach","kat"],
+["wd-Q141751624","Manfred Ackermann",1892,null,"Bad Schwalbach","ac"],
+["st-n10139800176","Moritz Woif",1873,1941,"Bad Schwalbach","woi"],
+["st-n10139800175","Walter Woif",1910,null,"Bad Schwalbach","woi"]
+],
+"slug":"bad-schwalbach"}

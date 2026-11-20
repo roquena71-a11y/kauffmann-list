@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Kaufbeuren",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q100254199","Ernst Buxbaum",1897,null,"Kaufbeuren","bu"],
+["st-Q137783120","Ferdinand Weitnauer",1904,1940,"Kaufbeuren","weit"],
+["st-Q100254200","Georg Riedel",1897,null,"Kaufbeuren","ri"],
+["st-Q134693541","Johann Schaudig",1905,null,"Kaufbeuren","scha"],
+["st-Q134693540","Klemens Sailer",1903,null,"Kaufbeuren","sai"],
+["st-Q134693538","Leo Lutz",1904,null,"Kaufbeuren","lu"],
+["st-Q100254201","Marie Espermüller",1893,null,"Kaufbeuren","es"],
+["st-Q134693539","Michael Rauch",1894,null,"Kaufbeuren","ra"],
+["st-Q137783175","Stefan Juli",1903,null,"Kaufbeuren","ju"],
+["st-Q137783156","Wilhelm Lion",1909,null,"Kaufbeuren","lio"]
+],
+"slug":"kaufbeuren"}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"UA",
+"label":"Charkiw",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95111332","Borukh Maltzin",1913,1942,"Charkiw","mal"],
+["wd-Q94975572","Evsey Ashkinazi",null,1941,"Charkiw","as"],
+["wd-Q95108891","Shalom Preveznikov",1900,1943,"Charkiw","pre"],
+["wd-Q94975598","Vladimir Veisman",1907,1942,"Charkiw","ve"]
+],
+"slug":"charkiw"}

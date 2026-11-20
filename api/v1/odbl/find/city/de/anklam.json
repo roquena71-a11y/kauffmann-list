@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Anklam",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q101072500","Albert Bernhard",1868,1942,"Anklam","bern"],
+["st-Q101072515","Bernhard Philipp",1880,1941,"Anklam","ph"],
+["st-Q101072486","Cläre Klara Silbermann",1896,null,"Anklam","sil"],
+["st-Q101072495","Erich Silbermann",1887,null,"Anklam","sil"],
+["st-Q101072514","Henriette Philipp",1874,1942,"Anklam","ph"],
+["st-Q101072480","Margarete Wagner",1889,null,"Anklam","wa"],
+["st-Q101072457","Martin Wagner",1887,null,"Anklam","wa"],
+["st-Q101072508","Siegfried Becker",1911,null,"Anklam","bec"]
+],
+"slug":"anklam"}

@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Gengenbach",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n5226766050","Adolf Valfer",1880,null,"Gengenbach","v"],
+["st-n5226625122","Berthold Meier",1880,null,"Gengenbach","mei"],
+["st-Q137860259","Erna Stadecker",1905,null,"Gengenbach","sta"],
+["st-Q137860255","Ferdinand Blum",1875,null,"Gengenbach","blu"],
+["st-Q137860260","Franz J. Blum",1909,null,"Gengenbach","blu"],
+["st-n5226766051","Greta Valfer",1904,null,"Gengenbach","v"],
+["st-n5226766052","Isaak Valfer",1865,null,"Gengenbach","v"],
+["st-Q137860257","Julie Blum",1885,null,"Gengenbach","blu"],
+["st-n5226765953","Ludwig Valfer",1870,null,"Gengenbach","v"],
+["st-n5226626366","Sofie Meier",1878,1942,"Gengenbach","mei"]
+],
+"slug":"gengenbach"}

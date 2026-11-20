@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7948210151","Agnes Zimmermann",1902,1980,"Radolfzell","zi"],
+["wd-Q14544964","David Friedmann",1893,1980,"Berlin","fri"],
+["wd-Q55858828","Dora Philippson",1896,1980,"Bonn","ph"],
+["wd-Q1612951","Dr. Hermann Venedey",1904,1980,"Konstanz","v"],
+["wd-Q102077422","Emma Frank",1887,1980,"Sigmaringen","fra"],
+["wd-Q104889111","Helene Heilbronner",1899,1980,"Memmingen","hei"],
+["wd-Q95246","Konrad Wachsmann",1901,1980,"Frankfurt (Oder)","wa"],
+["st-n4174364001","Liselotte Sussmann",1930,1980,"Windeck Rosbach","su"],
+["st-n3753250526","Marie Weinberg",1895,1980,"Emmerich am Rhein","wein"],
+["wd-Q54165628","Siegfried Sonnenschein",1909,1980,"Dresden","so"]
+],
+"year":1980}

@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"PL",
+"label":"Częstochowa",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95116503","Ela Faktor",1872,"death","Częstochowa",50.80964,19.12217],
+["wd-Q95108352","Fela Faktor",1902,"death","Częstochowa",50.80964,19.12217],
+["wd-Q95129458","Groinem Frank",null,"death","Częstochowa",50.80964,19.12217],
+["wd-Q95127476","Laizer Frumer",1911,"death","Częstochowa",50.80964,19.12217],
+["wd-Q95127059","Mekhael Feige",1857,"death","Częstochowa",50.80964,19.12217],
+["wd-Q95109048","Moshe Frak",1904,"death","Częstochowa",50.80964,19.12217],
+["wd-Q95108077","Pinkhas Plotzkin",1895,"death","Częstochowa",50.80964,19.12217],
+["wd-Q95119632","Shalom Praport",1896,"death","Częstochowa",50.80964,19.12217],
+["wd-Q95126062","Tzesha Pashchik",1916,"death","Częstochowa",50.80964,19.12217],
+["wd-Q94976025","Yehoshua Goldberg",null,"death","Częstochowa",50.80964,19.12217],
+["wd-Q95119891","Yisrael Feifer",1889,"death","Częstochowa",50.80964,19.12217]
+],
+"slug":"czestochowa"}

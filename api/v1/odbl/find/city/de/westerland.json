@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Westerland",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q132862124","Heinrich Bohnoff",1902,null,"Westerland","bo"],
+["st-Q132862052","Johanna Herold",1883,1944,"Westerland","her"],
+["st-Q132861975","Karl Jessen",1882,null,"Westerland","je"],
+["st-Q132862027","Karl Quaas",1895,null,"Westerland","q"],
+["st-Q132862065","Käthe Siegert",1894,null,"Westerland","sie"],
+["st-Q132862020","Kurt Brüggen",1910,null,"Westerland","bru"],
+["st-Q132861938","Max Feddersen",1900,null,"Westerland","fe"],
+["st-Q132861947","Nikolaus Ehlers",1907,null,"Westerland","eh"]
+],
+"slug":"westerland"}

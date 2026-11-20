@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"country":"DE",
+"label":"Passau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13988392624","ANNA KATHINKA BURIAN",1882,1941,"Passau","bu"],
+["st-n13988392625","EMIL BURIAN",1877,1941,"Passau","bu"],
+["st-n13988392623","GERTRUD KAROLINA BURIAN",1908,null,"Passau","bu"],
+["st-n13988378576","HENRIETTE PICK",1874,null,"Passau","pi"],
+["st-n13988378767","ILSE GRÜNEBAUM",1910,null,"Passau","gru"],
+["st-n13988392622","KURT BURIAN",1913,null,"Passau","bu"],
+["st-n13988352260","LILLY PICK",1902,null,"Passau","pi"],
+["st-n13988378768","MARGARETE GRÜNEBAUM",1884,1941,"Passau","gru"],
+["st-n13988344095","MARGOT GRÜNBAUM",1911,null,"Passau","gru"],
+["st-n13988367283","PAULA PICK",1904,null,"Passau","pi"],
+["st-n13988367282","ROBERT WEILHEIMER",1900,null,"Passau","weil"],
+["st-n13988337012","ROSA GRÜNEBAUM",1912,null,"Passau","gru"]
+],
+"slug":"passau"}

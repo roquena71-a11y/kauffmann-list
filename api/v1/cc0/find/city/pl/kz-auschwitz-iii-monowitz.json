@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"PL",
+"label":"KZ Auschwitz III Monowitz",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q45839615","Arthur Drucker",1910,1943,"KZ Auschwitz III Monowitz","dr"],
+["wd-Q132138713","Edith Wiener",1906,1942,"KZ Auschwitz III Monowitz","wie"],
+["wd-Q71738416","Harry Son",1880,1942,"KZ Auschwitz III Monowitz","so"],
+["wd-Q105654493","Hermann Levie",1927,1944,"KZ Auschwitz III Monowitz","levi"],
+["wd-Q95112787","Ilona Goldberger",1890,1944,"KZ Auschwitz III Monowitz","goldb"]
+],
+"slug":"kz-auschwitz-iii-monowitz"}

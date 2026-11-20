@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"PL",
+"label":"Rzeszów",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94976463","Dodi Aron",null,1942,"Rzeszów","ar"],
+["wd-Q95108013","Feiga Tepel",1894,1943,"Rzeszów","te"],
+["wd-Q95107554","Kuba Perl",1897,1943,"Rzeszów","per"],
+["wd-Q94977035","Liza Fuks",1898,1942,"Rzeszów","fuk"],
+["wd-Q94976163","Mia Fortreflikh",1878,1943,"Rzeszów","fo"],
+["wd-Q95125880","Sala Perl",1911,1943,"Rzeszów","per"],
+["wd-Q95116692","Sheindl Platzer",1922,1942,"Rzeszów","pl"],
+["wd-Q94976208","Tzila Losberg",1901,1943,"Rzeszów","los"],
+["wd-Q94976565","Tzila Perl",1908,1943,"Rzeszów","per"]
+],
+"slug":"rzeszow"}

@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"DE",
+"label":"Rostock",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q137922492","Gustav Posner",1906,1933,"Rostock","pos"],
+["wd-Q137922528","Julius David",1891,1943,"Rostock","da"],
+["wd-Q137922580","Martin Levy",1883,1941,"Rostock","levy"],
+["wd-Q137922558","Paul Rothschild",1892,1942,"Rostock","rot"],
+["wd-Q137809482","Richard Josephy",1890,1944,"Rostock","jo"]
+],
+"slug":"rostock"}

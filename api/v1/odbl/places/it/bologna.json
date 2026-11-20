@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"IT",
+"label":"Bologna",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q141632401","Adelaide di Segni Calò",1896,"memorial","Strada Maggiore 13",44.49349,11.3481],
+["wd-Q109829504","Adelchi Baroncini",1889,"memorial","Via Rimesse 25",44.495,11.37266],
+["wd-Q141632818","Alberta Calò",1935,"memorial","Strada Maggiore 13",44.4935,11.34809],
+["wd-Q141629780","Armando Mazzoli",1895,"memorial","Via Rimesse 12",44.49575,11.37245],
+["wd-Q141632817","Aureliano Calò",1932,"memorial","Strada Maggiore 13",44.4935,11.3481],
+["wd-Q141632511","David Calò",1917,"memorial","Strada Maggiore 13",44.49349,11.3481],
+["wd-Q141633601","Emanuele Giovanelli",1928,"memorial","Viale Oriani 26",44.48543,11.36064],
+["wd-Q106718115","Jole Baroncini",1917,"memorial","Via Rimesse 25",44.495,11.37266],
+["wd-Q141638288","Leone Alberto Orvieto",1866,"memorial","Via de' Gombruti 9",44.4936,11.33722],
+["wd-Q141638289","Margherita Cantoni Orvieto",1872,"memorial","Via de' Gombruti 9",44.49361,11.33722],
+["wd-Q3848582","Mario Finzi",1913,"memorial",null,44.48795,11.34718],
+["wd-Q111722320","Primo Biagini",1891,"memorial",null,44.48933,11.36733],
+["wd-Q141629876","Teresa Benini Baroncini",1893,"memorial","Via Rimesse 25",44.495,11.37266]
+],
+"slug":"bologna"}

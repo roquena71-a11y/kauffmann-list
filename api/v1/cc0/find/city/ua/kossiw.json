@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"UA",
+"label":"Kossiw",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95108705","Asnat Pribulski",1920,1942,"Kossiw","pri"],
+["wd-Q94975064","Berl Ernst",1900,1942,"Kossiw","er"],
+["wd-Q94976374","Elkhanan Pribulski",1912,1942,"Kossiw","pri"],
+["wd-Q94975537","Mordekhai Plakh",null,1941,"Kossiw","pl"],
+["wd-Q95106778","Sara Shisel",null,1941,"Kossiw","sh"],
+["wd-Q95108221","Srul Fuks",1910,1943,"Kossiw","fuk"],
+["wd-Q94975923","Yisrael Fuks",1909,1942,"Kossiw","fuk"]
+],
+"slug":"kossiw"}

@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3011566324","Alma Deuring",1901,1989,"Radolfzell","de"],
+["wd-Q15439248","Dorle Rath",1921,1989,"Ahrensburg","ra"],
+["wd-Q96204795","Fritz Heinrich Guggenheimer",1920,1989,"Memmingen","gu"],
+["wd-Q115197182","Herta Schäfer",1911,1989,"Tübingen","scha"],
+["wd-Q95191421","Käthe Neumann",1903,1989,"Berlin","neu"],
+["wd-Q108698189","Sophie Wertheimer",1903,1989,"Nürnberg","wer"]
+],
+"year":1989}

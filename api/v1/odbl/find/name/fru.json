@@ -1,0 +1,12 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"fru",
+"rows":[
+["fruchter","st-n3956274761","Hanni Fruchter",1913,null,"Duisburg","fru"],
+["fruchtzweig","st-n2432838548","Emilie Fruchtzweig",1885,null,"Dorsten","fru"],
+["fruh","wd-Q104652376","Julia Früh",1874,1940,"München","fru"],
+["fruhling","st-Q98805274","Günther Frühling",1911,1944,"Hamburg","fru"],
+["fruitman","st-n10737999180","Friederika Fruitman",1882,null,null,"fru"],
+["frumet","st-n2596111034","Esther Frümet Gawrylowicz",1883,null,"Frankfurt am Main","ga"],
+["frusz","st-n7242332635","Mayern Frusz",null,null,"Bruxelles - Brussel","fru"]
+]}

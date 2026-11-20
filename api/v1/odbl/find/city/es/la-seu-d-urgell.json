@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"ES",
+"label":"la Seu d'Urgell",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13942158834","Antoni Vial Candia",1912,null,"la Seu d'Urgell","ca"],
+["st-n13942183228","Josep Sans Sansa",1912,null,"la Seu d'Urgell","san"],
+["st-n13942095469","Remicio Morella Giraut",1904,null,"la Seu d'Urgell","gi"],
+["st-n13942158835","Victorià Córdoba Bordoll",1916,null,"la Seu d'Urgell","bo"]
+],
+"slug":"la-seu-d-urgell"}

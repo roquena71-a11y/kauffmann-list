@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"PL",
+"label":"Chełm",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95107297","Anshil Perlberg",1912,"death","Chełm",51.13333,23.48333],
+["wd-Q95119550","Arie Fudim",1902,"death","Chełm",51.13333,23.48333],
+["wd-Q94976300","Brakha Druker",1914,"death","Chełm",51.13333,23.48333],
+["wd-Q94976767","David Ferber",1895,"death","Chełm",51.13333,23.48333],
+["wd-Q95127988","Ester Meirovitz",1917,"death","Chełm",51.13333,23.48333],
+["wd-Q94976046","Rakhel Marnof",1882,"death","Chełm",51.13333,23.48333],
+["wd-Q94975497","Rakhel Shtorkh",1898,"death","Chełm",51.13333,23.48333],
+["wd-Q95123256","Rakhel Zeidenfeld",1885,"death","Chełm",51.13333,23.48333],
+["wd-Q95107100","Tzvi Vaksman",1900,"death","Chełm",51.13333,23.48333],
+["wd-Q95109110","Yehudit Prusak",1882,"death","Chełm",51.13333,23.48333],
+["wd-Q95115918","Yitzkhak Perlberg",1880,"death","Chełm",51.13333,23.48333]
+],
+"slug":"chem"}

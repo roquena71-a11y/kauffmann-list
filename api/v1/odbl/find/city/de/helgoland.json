@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Helgoland",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q121245103","Erich Paul Jansen Friedrichs",1890,1945,"Helgoland","fri"],
+["st-n1821312158","Georg Eduard Braun",1902,null,"Helgoland","bra"],
+["st-n1821312157","Heinrich Karl Wilhelm Prüss",1889,1944,"Helgoland","pr"],
+["st-n1821312156","Karl Fnouka",1908,null,"Helgoland","fn"],
+["st-n1821312155","Kurt Arthur Pester",1908,null,"Helgoland","pe"],
+["st-n2422302143","Martin Otto Wachtel",null,null,"Helgoland","wa"]
+],
+"slug":"helgoland"}

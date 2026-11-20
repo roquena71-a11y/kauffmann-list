@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"het",
+"rows":[
+["hetemann","wd-Q104701490","Hedwig Hetemann",1866,1943,"Konzentrationslager Theresienstadt","het"],
+["hettlerova","wd-Q104700471","Berta Hettlerová",1860,1942,null,"het"],
+["hettmann","wd-Q104702304","Jeanette Hettmann",1875,null,null,"het"],
+["hettmann","wd-Q104703990","Siegmund Hettmann",1886,null,null,"het"],
+["hetty","wd-Q104423656","Hetty Cohn",1900,null,null,"cohn"],
+["hetty","wd-Q105654409","Hetty Kwieser",1932,1944,"KZ Auschwitz","kw"],
+["hetty","wd-Q105655710","Hetty Teixeira Mattos",1915,1944,"KZ Auschwitz","mat"],
+["hetty","wd-Q105461738","Hetty Wittenbecher",1894,null,null,"wit"]
+]}

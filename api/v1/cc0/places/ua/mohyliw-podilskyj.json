@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"UA",
+"label":"Mohyliw-Podilskyj",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95128633","Adelia Bikvan",null,"death","Mohyliw-Podilskyj",48.45,27.78333],
+["wd-Q95110499","Asher Gun",1900,"death","Mohyliw-Podilskyj",48.45,27.78333],
+["wd-Q94975979","Danil Shamis",1870,"death","Mohyliw-Podilskyj",48.45,27.78333],
+["wd-Q94975993","Dora Bikvan",null,"death","Mohyliw-Podilskyj",48.45,27.78333],
+["wd-Q95123277","Khana Bikhler",1917,"death","Mohyliw-Podilskyj",48.45,27.78333],
+["wd-Q95114534","Motel Felner",1898,"death","Mohyliw-Podilskyj",48.45,27.78333],
+["wd-Q95121074","Otilia Hauben",1884,"death","Mohyliw-Podilskyj",48.45,27.78333],
+["wd-Q94976012","Rafail Kheifetz",null,"death","Mohyliw-Podilskyj",48.45,27.78333],
+["wd-Q95110965","Sara Herer",1900,"death","Mohyliw-Podilskyj",48.45,27.78333],
+["wd-Q95125703","Shloima Mendelovici",1900,"death","Mohyliw-Podilskyj",48.45,27.78333],
+["wd-Q95120021","Sonia Tolchiner",1880,"death","Mohyliw-Podilskyj",48.45,27.78333],
+["wd-Q95119660","Tauba Surkis",1899,"death","Mohyliw-Podilskyj",48.45,27.78333],
+["wd-Q95107074","Zusel Drukman",1910,"death","Mohyliw-Podilskyj",48.45,27.78333]
+],
+"slug":"mohyliw-podilskyj"}

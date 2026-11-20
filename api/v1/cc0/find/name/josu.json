@@ -1,0 +1,16 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"josu",
+"rows":[
+["josua","wd-Q105362374","Heinrich Josua Levison",1873,1942,"Konzentrationslager Theresienstadt","levi"],
+["josua","wd-Q104220146","Josua Baumöhl",1872,null,null,"bau"],
+["josua","wd-Q104411642","Josua Borger",1886,null,null,"bor"],
+["josua","wd-Q105354582","Josua Epstein",1887,null,null,"ep"],
+["josua","wd-Q104652065","Josua Falk Friedländer",1871,1942,"Konzentrationslager Theresienstadt","friedl"],
+["josua","wd-Q104657972","Josua Gillis",1866,1942,"Konzentrationslager Theresienstadt","gi"],
+["josua","wd-Q105366069","Josua Lublinski",1869,1943,"Konzentrationslager Theresienstadt","lu"],
+["josua","wd-Q133519647","Josua Messias",1875,1943,"KZ Auschwitz","mes"],
+["josua","wd-Q105455726","Josua Pinner",1873,1943,"Konzentrationslager Theresienstadt","pin"],
+["josua","wd-Q105457457","Josua Sommer",1869,null,null,"so"],
+["josub","wd-Q105460839","Josub Wechsler",1870,null,null,"wec"]
+]}

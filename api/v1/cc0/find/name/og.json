@@ -1,0 +1,9 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"og",
+"rows":[
+["oga","wd-Q95124757","Oga Feler",1900,1944,"KZ Auschwitz","fel"],
+["oglon","wd-Q105471039","Sali Oglon",1905,null,null,"og"],
+["ogutsch","wd-Q105454940","Jenny Ogutsch",1888,1942,"Konzentrationslager Theresienstadt","og"],
+["ogutsch","wd-Q105454942","Wilhelm Ogutsch",1893,1944,"Konzentrationslager Theresienstadt","og"]
+]}

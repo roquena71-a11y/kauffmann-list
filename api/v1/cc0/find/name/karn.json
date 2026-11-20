@@ -1,0 +1,22 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"karn",
+"rows":[
+["karna","wd-Q105518310","Karla Kárná",1890,null,null,"kar"],
+["karner","wd-Q105650907","Karel Karner",1891,null,null,"kar"],
+["karner","wd-Q105643760","Vilém Karner",1907,1943,null,"kar"],
+["karnerova","wd-Q105643761","Hedvika Karnerová",1885,null,null,"kar"],
+["karnerova","wd-Q105518304","Hilda Karnerová",1894,null,null,"kar"],
+["karnet","wd-Q105518306","Artur Karnet",1877,null,null,"kar"],
+["karnetova","wd-Q105518307","Irma Karnetová",1881,null,null,"kar"],
+["karnetova","wd-Q105518308","Irma Karnetová",1898,1943,"Konzentrationslager Theresienstadt","kar"],
+["karniol","wd-Q105464820","Salomon Karniol",1874,null,null,"kar"],
+["karniol","wd-Q105464819","Therese Karniol",1883,null,null,"kar"],
+["karniol","wd-Q105464821","Wilhelmine Karniol",1872,null,null,"kar"],
+["karnowski","wd-Q55881190","Jakob Karnowski",1880,1942,null,"kar"],
+["karnowski","wd-Q105354763","Marta Karnowski",1872,null,null,"kar"],
+["karnowski","wd-Q55881192","Regina Karnowski",1884,1942,null,"kar"],
+["karnowski","wd-Q105354762","Salomon Karnowski",1875,1943,"Konzentrationslager Theresienstadt","kar"],
+["karny","wd-Q105657755","Emil Kárný",1886,1941,"KZ Mauthausen","kar"],
+["karny","wd-Q105518311","Viktor Kárný",1886,null,null,"kar"]
+]}

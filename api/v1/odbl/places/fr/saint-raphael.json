@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"FR",
+"label":"Saint-Raphaël",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13034606414","Alain Krupnik",1937,"memorial","Place Sadi Carnot",43.42511,6.76871],
+["st-n13034606413","Bertha Krupnik née Bielinki",1911,"memorial","Place Sadi Carnot",43.42512,6.76871],
+["st-n13034606416","Édouard Abramzyk",1924,"memorial","Boulevard Félix Martin",43.42367,6.76767],
+["st-n13034606412","Gaston Krupnik",1938,"memorial","Place Sadi Carnot",43.42512,6.76872],
+["st-n13034606417","Jacques Baudino",1923,"memorial","800 Boulevard Jacques Baudino",43.43699,6.77949],
+["st-n13034606418","Jane Blaustein",1915,"memorial","72 Avenue de Villepey",43.42083,6.78781],
+["st-n13034606419","Lazare Blaustein dit Lucien",1889,"memorial","72 Avenue de Villepey",43.42083,6.78782],
+["st-n13034606411","Lya Monique Elhut",1935,"memorial","Place de la République",43.4254,6.76947],
+["st-n13034606410","Renée Elhut née Marcu dite Marquis",1913,"memorial","Place de la République",43.42539,6.76947],
+["st-n13034606415","Yehuda Krupnik",1909,"memorial","Place Sadi Carnot",43.42511,6.7687]
+],
+"slug":"saint-raphael"}

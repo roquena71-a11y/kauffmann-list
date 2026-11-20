@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"oz",
+"rows":[
+["ozer","wd-Q94975827","Ozer Fuks",1914,1943,"Lublin","fuk"],
+["ozer","wd-Q95124126","Ozer Glazel",1885,1942,"Roschyschtsche","gla"],
+["ozer","wd-Q95127880","Ozer Pikholtz",1900,1942,"Terebowlja","pik"],
+["ozer","wd-Q95116969","Ozer Pshedborski",null,1942,"Ghetto Litzmannstadt","ps"],
+["ozer","wd-Q95116068","Ozer Shiler",1923,1941,"Lwiw","sh"],
+["oziash","wd-Q95122938","Oziash Bildner",1921,1942,"Czernowitz","bi"],
+["oziasz","wd-Q105512652","Oziasz Laskier",1927,1945,"Kleine Festung Theresienstadt","las"],
+["ozwiklitzer","wd-Q105463249","Hedwig Ozwiklitzer",1868,1943,"Konzentrationslager Theresienstadt","rosenb"]
+]}

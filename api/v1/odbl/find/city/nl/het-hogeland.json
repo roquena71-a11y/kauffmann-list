@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"country":"NL",
+"label":"Het Hogeland",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13810975864","Elias Maurits van der Zijl",1880,null,"Het Hogeland","zi"],
+["st-n5966349279","Lewi van Geuns",1874,1942,"Het Hogeland","ge"],
+["st-n5966349278","Rachel van Geuns-Cohen",1877,1942,"Het Hogeland","ge"]
+],
+"slug":"het-hogeland"}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"kind":"birth",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105460838","Alfred Wechsler",1849,1942,"Hannover","wec"],
+["st-Q67578146","Amalie Löwensberg",1849,1943,"Mainz","lowens"],
+["wd-Q98363440","Henriette Gottschalk",1849,1942,"Hannover","got"],
+["wd-Q132137857","Isaak Lindenberger",1849,null,"Berlin","lin"],
+["wd-Q133249999","Johanna Heim",1849,1942,"Berlin","hei"],
+["wd-Q105367346","Klara Marx",1849,1942,"Linden","mar"],
+["st-n14201848301","Paulina Elzas-Gersons",1849,1943,"Gouda","el"],
+["st-n13540492287","Prof. Dr. Otto Lenel",1849,1935,"Freiburg im Breisgau","len"],
+["wd-Q104805764","Rosalie Hofmann",1849,1942,"Berlin","hof"]
+],
+"year":1849}

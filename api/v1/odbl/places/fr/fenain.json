@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"FR",
+"label":"Fenain",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q140003038","Alexandre Lesne",1920,"memorial","15 Rue Desandrouin",50.3583,3.30279],
+["wd-Q140002850","André Bridoux",1922,"memorial","16 Rue Desandrouin",50.35822,3.30323],
+["wd-Q140003182","Antoine Levrangi",1903,"memorial","6 Rue Pierre Bosquet",50.3577,3.30318],
+["wd-Q140002919","Édouard Dannel",1908,"memorial","24 Rue Desandrouin",50.35818,3.30413],
+["wd-Q3060971","Eusebio Ferrari",1919,"memorial","19 Rue de Nos Résistants",50.35787,3.30157],
+["wd-Q140003007","Fortuné Dubois",1896,"memorial","26 Rue Wladimir Lénine",50.35871,3.30024],
+["wd-Q140002878","Guido Brancadoro",1921,"memorial","9 Rue de Nos Résistants",50.35831,3.30109],
+["wd-Q140002794","Jules Bridoux",1920,"memorial","16 Rue Desandrouin",50.35822,3.30324],
+["wd-Q140002955","Pierre Dorchies",1922,"memorial","15 Rue Wladimir Lénine",50.3583,3.30039]
+],
+"slug":"fenain"}

@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"DE",
+"label":"Rheinau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13690534873","Berta Bloch",1884,1942,"Rheinau","blo"],
+["st-n13754504805","Berta Fritsch",1916,1940,"Rheinau","fri"],
+["st-n13689700921","Berta Kahnheimer",1890,1942,"Rheinau","kah"],
+["st-n13690534874","Frieda Bloch",1886,1942,"Rheinau","blo"],
+["st-n13689700920","Hermann Kahnheimer",1882,1942,"Rheinau","kah"],
+["st-n13689700922","Hermine Kaufmann",1897,1942,"Rheinau","kau"],
+["st-n13689700923","Hugo Kaufmann",1889,1942,"Rheinau","kau"],
+["st-n10044198660","Jenny Hammel",1891,null,"Rheinau","ham"],
+["st-n13690534875","Josef Bloch",1877,1942,"Rheinau","blo"],
+["st-n10044198661","Julchen Hammel",1889,null,"Rheinau","ham"],
+["st-n10044198662","Leo Braunschweig",1878,null,"Rheinau","bra"],
+["st-n13754504807","Rosa Duttweiler",1922,1940,"Rheinau","du"],
+["st-n13754504806","Sophie Bürkel",1900,1941,"Rheinau","bu"]
+],
+"slug":"rheinau"}

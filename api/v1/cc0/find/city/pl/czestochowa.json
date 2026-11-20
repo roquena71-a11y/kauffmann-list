@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"country":"PL",
+"label":"Częstochowa",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95116503","Ela Faktor",1872,1942,"Częstochowa","fak"],
+["wd-Q95108352","Fela Faktor",1902,1942,"Częstochowa","fak"],
+["wd-Q95129458","Groinem Frank",null,1940,"Częstochowa","frank_"],
+["wd-Q95127476","Laizer Frumer",1911,1942,"Częstochowa","fru"],
+["wd-Q95127059","Mekhael Feige",1857,1942,"Częstochowa","fei"],
+["wd-Q95109048","Moshe Frak",1904,1942,"Częstochowa","frak"],
+["wd-Q95108077","Pinkhas Plotzkin",1895,1943,"Częstochowa","pl"],
+["wd-Q95119632","Shalom Praport",1896,1943,"Częstochowa","pra"],
+["wd-Q95126062","Tzesha Pashchik",1916,1943,"Częstochowa","pa"],
+["wd-Q94976025","Yehoshua Goldberg",null,1942,"Częstochowa","goldb"],
+["wd-Q95119891","Yisrael Feifer",1889,1943,"Częstochowa","fei"]
+],
+"slug":"czestochowa"}

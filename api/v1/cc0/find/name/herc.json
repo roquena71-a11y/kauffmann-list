@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"herc",
+"rows":[
+["herckova","wd-Q104706468","Františka Hercková",1857,null,null,"herc"],
+["hercman","wd-Q104703123","Otto Hercman",null,1942,"KZ Auschwitz","herc"],
+["herczeg","wd-Q104706471","Armin Herczeg",1898,null,null,"herc"],
+["herczeg","wd-Q105507938","Armin Herczeg Wallesz",1855,1942,"Konzentrationslager Theresienstadt","wal"],
+["herczeg","wd-Q95107270","Lili Herczeg",null,1945,"KZ Auschwitz","herc"],
+["herczegova","wd-Q104706472","Věra Herczegová",1909,null,null,"herc"]
+]}

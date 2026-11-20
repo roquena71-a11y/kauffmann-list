@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"berd",
+"rows":[
+["berdach","wd-Q104249302","Hugo Berdach",1872,1942,"Konzentrationslager Theresienstadt","berd"],
+["berdach","wd-Q104249305","Julius Berdach",1864,1943,"Konzentrationslager Theresienstadt","berd"],
+["berdach","wd-Q104249307","Karl Berdach",1863,1943,"Konzentrationslager Theresienstadt","berd"],
+["berdach","wd-Q104249309","Katharina Berdach",1869,null,null,"berd"],
+["berdach","wd-Q104249311","Max Berdach",1869,null,null,"berd"],
+["berdach","wd-Q104249314","Olga Berdach",1865,1942,"Konzentrationslager Theresienstadt","ra"],
+["berdach","wd-Q104249316","Regine Berdach",1872,null,null,"berd"],
+["berditschewski","wd-Q104249317","Rosalie Berditschewski",1866,1944,"Konzentrationslager Theresienstadt","berd"]
+]}

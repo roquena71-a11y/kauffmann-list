@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Bad Soden am Taunus",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q133231303","Elsa Nossbaum",1892,null,"Bad Soden am Taunus","no"],
+["st-n7372521536","Else Maier",1906,null,"Bad Soden am Taunus","mai"],
+["st-Q133231299","Eva Kallner",1915,null,"Bad Soden am Taunus","kal"],
+["st-n9950857286","Familie Sara Kallner",1873,null,"Bad Soden am Taunus","kal"],
+["st-n13159289671","Heinrich Dosse",1899,null,"Bad Soden am Taunus","do"],
+["st-n9950806974","Mina Kraft",1878,null,"Bad Soden am Taunus","kr"],
+["st-n7502172698","Siegbert Maier",1927,null,"Bad Soden am Taunus","mai"]
+],
+"slug":"bad-soden-am-taunus"}

@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"az",
+"rows":[
+["azriel","wd-Q95127015","Azriel Faust",1918,1942,"Ropczyce","fau"],
+["azriel","wd-Q94976918","Azriel Kohl",null,1942,"KZ Auschwitz","kohl"],
+["azriel","wd-Q95111430","Azriel Paril",1890,1943,"Vernichtungslager Belzec","pa"],
+["azriel","wd-Q95106499","Azriel Peretzman",1912,1942,"Riwne","per"],
+["azriel","wd-Q95107823","Azriel Zauer",1916,1942,"Kutno","za"]
+]}

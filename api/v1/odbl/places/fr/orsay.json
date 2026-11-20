@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"FR",
+"label":"Orsay",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13107589934","Abraham Hinerman",1893,"memorial","18 Boulevard de Mondétour",48.68459,2.18348],
+["st-n13107589929","Gitla Kuperberg",1895,"memorial","40 Rue de Montlhéry",48.68827,2.18254],
+["st-n13107589936","Lazare Parzenczewski",1889,"memorial","15 bis Rue Archangé",48.69758,2.18621],
+["st-n13107589935","Sabine Hinerman née Sztulman",1893,"memorial","18 Boulevard de Mondétour",48.68459,2.18348],
+["st-n13107589937","Sarah Parzenczewski",1888,"memorial","15 bis Rue Archangé",48.69758,2.18621]
+],
+"slug":"orsay"}

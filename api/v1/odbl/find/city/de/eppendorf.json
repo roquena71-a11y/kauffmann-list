@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"DE",
+"label":"Eppendorf",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4253044444","Anna Katzenstein",1907,1943,"Eppendorf","kat"],
+["st-n4253044443","Dr. Ludwig Katzenstein",1887,1943,"Eppendorf","kat"],
+["st-n4253044442","Friedrich Katzenstein",1889,null,"Eppendorf","kat"],
+["st-Q125947468","Ludwig Katzenstein, Dr.",1887,1943,"Eppendorf","dr"]
+],
+"slug":"eppendorf"}

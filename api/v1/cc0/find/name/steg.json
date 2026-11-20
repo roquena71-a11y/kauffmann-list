@@ -1,0 +1,12 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"steg",
+"rows":[
+["steg","wd-Q105613774","Heřman Šteg",1898,null,null,"steg"],
+["steger","wd-Q105606352","Gustav Steger",1886,null,null,"steg"],
+["steger","wd-Q105504776","Ida Steger",1864,1943,"Konzentrationslager Theresienstadt","steg"],
+["steger","wd-Q105504778","Ignaz Heinrich Steger",1868,1942,"Konzentrationslager Theresienstadt","steg"],
+["stegerova","wd-Q105606353","Margareta Stegerová",1892,null,null,"steg"],
+["stegman","wd-Q105458062","Frieda Stegman",1896,null,null,"steg"],
+["stegova","wd-Q105613775","Kateřina Štegová",1903,null,null,"steg"]
+]}

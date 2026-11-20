@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"kab",
+"rows":[
+["kaba","st-n3687523549","Adalbert Bela Kaba-Klein",1895,null,"Binz","kab"],
+["kabaker","wd-Q132144308","Alice Kabaker",1902,null,"Berlin","kab"],
+["kabaker","wd-Q132144310","Herbert Kabaker",1896,null,"Berlin","kab"],
+["kabaker","wd-Q132144311","Liselotte Kabaker",1927,1942,"Berlin","kab"],
+["kabot","st-n3282514677","Otto Kabot",1916,null,"Köln","kab"]
+]}

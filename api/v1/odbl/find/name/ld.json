@@ -1,0 +1,8 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"ld",
+"rows":[
+["lda","st-n9743059352","lda Eitel Menschenfreund",1894,null,"Magdeburg","men"],
+["lda","st-n9678547532","lda Hartkopf",1890,1944,"Magdeburg","har"],
+["ldessa","st-n9712104164","ldessa Gryncajgier",1903,null,"Magdeburg","gry"]
+]}

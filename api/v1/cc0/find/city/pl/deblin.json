@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"PL",
+"label":"Dęblin",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95111752","Arie Halbesberg",1895,1943,"Dęblin","hal"],
+["wd-Q95108540","Boris Schweid",1905,1942,"Dęblin","schwe"],
+["wd-Q95124401","Dvora Futerman",1905,1943,"Dęblin","fut"],
+["wd-Q95126010","Malka Futerman",1900,1943,"Dęblin","fut"],
+["wd-Q94977191","Matis Grinbaum",null,1944,"Dęblin","gri"],
+["wd-Q95108680","Motel Fridman",1922,1942,"Dęblin","frid"]
+],
+"slug":"deblin"}

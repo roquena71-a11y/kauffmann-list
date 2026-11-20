@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"AT",
+"label":"Haigermoos",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2641099382","Eduard Demestra",1941,null,"Haigermoos","de"],
+["st-n2641099384","Konrad Kerndlbacher",1941,null,"Haigermoos","ke"],
+["st-n2641099386","Maria Daniel",1935,1941,"Haigermoos","da"],
+["st-n2641099387","Maria Held",1941,null,"Haigermoos","hel"],
+["st-n2641099388","Maria Leimberger",1941,null,"Haigermoos","lei"],
+["st-n2641099393","Rudolf Haas",1941,1941,"Haigermoos","haa"]
+],
+"slug":"haigermoos"}

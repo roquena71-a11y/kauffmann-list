@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"SU",
+"label":"Bels",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95111327","Henia Perl",1920,"death","Bels",50.38333,24.01667],
+["wd-Q95106145","Keila Lekhner",1924,"death","Bels",50.38333,24.01667],
+["wd-Q95112490","Khaia Bilitz",1884,"death","Bels",50.38333,24.01667],
+["wd-Q95117363","Khasia Propis",1884,"death","Bels",50.38333,24.01667],
+["wd-Q94975725","Leibish Langer",1919,"death","Bels",50.38333,24.01667],
+["wd-Q94976345","Mala Perl",1892,"death","Bels",50.38333,24.01667]
+],
+"slug":"bels"}

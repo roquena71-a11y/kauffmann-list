@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Haßfurt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131743214","Babette Goldmann",1888,null,"Haßfurt","goldm"],
+["st-Q131743207","Cäcilie Rosenthal",1921,null,"Haßfurt","rosent"],
+["st-Q131743208","Friedel Rosenthal",1915,null,"Haßfurt","rosent"],
+["st-Q131743209","Hermann Rosenthal",1914,null,"Haßfurt","rosent"],
+["st-Q131743210","Jonas Rosenthal",1879,null,"Haßfurt","rosent"],
+["st-Q131743215","Julius Goldmann",1882,null,"Haßfurt","goldm"],
+["st-Q131743211","Karoline Rosenthal",1922,null,"Haßfurt","rosent"],
+["st-Q131743212","Selma Rosenthal",1885,null,"Haßfurt","rosent"],
+["st-Q131743213","Therese Rosenthal",1928,null,"Haßfurt","rosent"]
+],
+"slug":"hafurt"}

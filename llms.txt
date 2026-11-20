@@ -1,0 +1,56 @@
+# Lista Kauffmann
+
+> Free, open map and static JSON data of Stolpersteine (Germany and other European countries, see the app for the full list) and victims of the Shoah: 180,743 people records across 2 licence families, each with its sources. Cada placa, cada nombre, cada historia. Nunca olvidar. · Jede Platte, jeder Name, jede Geschichte. · Every plaque, every name, every story.
+
+Este archivo es informativo y NO tiene valor jurídico propio: lo que obliga son las licencias de los datos. (This file is informational and has no legal force: the data licences bind.)
+
+Personal, non-commercial; no third-party trackers (only our own cookieless visit counter). Never invent data: if a field is missing in a record, say it is not recorded. Data date: 2026-11-20.
+
+## Start here
+
+- [Full agent guide (llms-full.txt)](https://roquena71-a11y.github.io/kauffmann-list/llms-full.txt): step-by-step how to find a person, normalisation code, citation template, licences.
+- [OpenAPI 3.1](https://roquena71-a11y.github.io/kauffmann-list/api/v1/openapi.json): every static endpoint with schemas and examples.
+- [API catalogue](https://roquena71-a11y.github.io/kauffmann-list/api/v1/index.json): licence families, endpoints, usage rules.
+- [Person record JSON Schema](https://roquena71-a11y.github.io/kauffmann-list/api/v1/schema/person.schema.json)
+- [Statistics](https://roquena71-a11y.github.io/kauffmann-list/api/v1/stats.json)
+
+## Find a person (static files, GET only)
+
+- [Search manifest – cc0 (CC0-1.0)](https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/find/index.json): 118,254 people. By name: `https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/find/name/<prefix>.json`; by place: `find/city/index.json` → `find/city/<cc>/<slug>.json`; by year: `find/year/birth|death/<yyyy>.json`.
+- [Search manifest – odbl (ODbL-1.0)](https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/find/index.json): 62,489 people. By name: `https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/find/name/<prefix>.json`; by place: `find/city/index.json` → `find/city/<cc>/<slug>.json`; by year: `find/year/birth|death/<yyyy>.json`.
+
+1. Normalise a word of the name with fold(): lowercase, ß→ss, strip accents, ä→a ö→o ü→u, ae/oe/ue→a/o/u, keep a-z0-9 (Müller → `muller`).
+2. Try the first 6, 5, … 1 letters of that key (pad short keys with `_`) until a prefix exists in `name.prefixes` of the manifest.
+3. Open `find/name/<prefix>.json`, keep rows whose first value (token) starts with your key, compare full name and years. Hyphenated names: split fold() on spaces and search each token. Particles/titles (von, van, de, zu, Dr., Prof.…) and words of 1 letter are not indexed: search the surname.
+4. Each row ends with `people_prefix`: open `<family>/people/by-surname/<people_prefix>.json` and take the person whose `id` equals the row id. That record holds `sources[]` (original URLs), `links[]`, memorials and inscription.
+5. The same person can exist in both families (linked by Wikidata Qid in `identifiers.wikidata`); check both and keep each licence separate.
+
+## Cite
+
+- Always cite: **Lista Kauffmann** + the person link + the original source from `sources[].url` + data date + licence.
+- Person link (opens it in the map): odbl → `https://roquena71-a11y.github.io/kauffmann-list/#s=<memorials[0].memorial_id>` (the plaque); cc0 → `https://roquena71-a11y.github.io/kauffmann-list/#p=<id>`. Machine-readable record: `https://roquena71-a11y.github.io/kauffmann-list/api/v1/<family>/people/by-surname/<people_prefix>.json` (object with that id).
+- Template: `{name} ({birth}–{death}). Lista Kauffmann, ficha {id}, {permalink}. Fuente: {source_url}. Datos de {generated}. Licencia {license} ({attribution}).`
+- Use only fields present in the record. Do not add biography, family, motives or dates that are not in `sources[]`.
+
+## Licences
+
+- `api/v1/odbl/`, `data/search/`: ODbL 1.0, derived from OpenStreetMap (© OpenStreetMap contributors, https://www.openstreetmap.org/copyright) + Wikidata (CC0). Share-alike and attribution if you redistribute the database or a substantial extract.
+- `api/v1/cc0/`: Wikidata only, CC0 1.0.
+- Wikipedia text is never copied (links only; CC BY-SA 4.0).
+- Documentation and catalogues: CC0 1.0. Each data file states its licence in `meta.license`.
+- [Complete plaque database (ODbL)](https://roquena71-a11y.github.io/kauffmann-list/data/stones.json): transcription of public street memorials, not person records.
+
+## Scope and care
+
+La API de personas (api/v1) excluye a las personas posiblemente vivas (sin indicio de muerte y nacidas hace menos de 110 años, o sin año) y quita los enlaces a fichas de registro de posibles supervivientes nacidos desde 1916. data/search/ y data/stones.json NO son fichas de personas: son transcripciones de placas públicas (memoriales físicos en la calle) e incluyen TODAS las placas, también las de personas posiblemente vivas. data/search/ solo contiene nombre tal como figura en la placa, dirección, coordenadas y año; data/stones.json es la base de placas completa (OpenStreetMap + Wikidata) con la inscripción y las etiquetas y enlaces que esas placas tienen en OSM/Wikidata. Para datos de personas usa api/v1.
+
+- Do not use this data to harass, to build lists of descendants, for ethnic-religious profiling of living people, for denialism or antisemitic purposes.
+- Do not present inferences as facts; point to the primary source. Records can contain errors.
+
+## Optional
+
+- [Map and app](https://roquena71-a11y.github.io/kauffmann-list/): 3D map, search by name or address (JavaScript).
+- [Schema.org JSON-LD](https://roquena71-a11y.github.io/kauffmann-list/kauffmann-list.jsonld)
+- [Sitemap](https://roquena71-a11y.github.io/kauffmann-list/sitemap.xml)
+- [Project (for institutions)](https://roquena71-a11y.github.io/kauffmann-list/proyecto/)
+- Corrections or removal of a record: fix it in OpenStreetMap or Wikidata, or ask the project (https://github.com/roquena71-a11y/kauffmann-list).

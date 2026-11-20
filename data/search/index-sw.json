@@ -1,0 +1,15 @@
+{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"sw",
+"rows":[
+["n14201621099","Hester Swaep","Oosthaven 10","Gouda",52.009932,4.711171,"1923","st-n14201621099"],
+["n7155040522","Berek Swiatlowski","Rue Jorez - Jorezstraat 47","Anderlecht",50.839494,4.332716,null,"st-n7155040522"],
+["n7155040523","Pesah Swiatlowski-Koronczyk","Rue Jorez - Jorezstraat 47","Anderlecht",50.839499,4.332707,null,"st-n7155040523"],
+["n13046364018","Maurice Swierc","135 Rue Pierre Mauroy","Lille",50.633839,3.068028,null,"st-n13046364018"],
+["n7155040524","Wolf Swierczynski","Boulevard de la Révision - Herzieningslaan 28","Anderlecht",50.836085,4.329139,null,"st-n7155040524"],
+["Q135296344","Michail Swiridenko","Goldsteinstraße 145, 60528 Frankfurt am Main","Frankfurt am Main",50.08377,8.633204,"1900","st-Q135296344"],
+["n13987539810","Wanda Switaiski","Jakobstraße GGÜ 9, 44789 Bochum","Bochum",51.472762,7.218187,"1920","st-n13987539810"],
+["Q135296345","Zdenek Switek","Goldsteinstraße 145, 60528 Frankfurt am Main","Frankfurt am Main",50.08377,8.633204,"1924","st-Q135296345"],
+["n13299542759","Schmul Franz Switytzki","Weißenseer Weg 32, 13055 Berlin","Berlin",52.534074,13.475639,"1882","wd-Q132143911"],
+["n13112610346","Dora Swyck","31 Rue des Drapiers","Le Havre",49.487337,0.108658,null,"st-n13112610346"]
+]}

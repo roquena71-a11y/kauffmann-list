@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Weissach",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n14287434655","Edith Zloczower",1934,1942,"Weissach","zl"],
+["st-n14287434658","Eugen Hermann Hettler",1913,1940,"Weissach","het"],
+["st-n14287434657","Georg Friedrich Alle",1902,null,"Weissach","al"],
+["st-n14287434656","Gerda Metzger",1939,1943,"Weissach","met"],
+["st-Q141751938","Gerda Metzger (Weissach)",1939,1943,"Weissach","met"],
+["st-n14287434654","Heinrich Zloczower",1905,1943,"Weissach","zl"],
+["st-n14287434652","Kläre Zloczower",1908,1942,"Weissach","zl"],
+["st-n14285795797","Marie Christine Ruf",1878,1940,"Weissach","ru"],
+["st-n14287434653","Stefan Zloczower",1936,1940,"Weissach","zl"]
+],
+"slug":"weissach"}

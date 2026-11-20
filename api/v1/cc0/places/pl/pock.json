@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"PL",
+"label":"Płock",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95127033","David Pshekhatzki",1880,"death","Płock",52.55,19.7],
+["wd-Q95117337","Freidel Grubel",1900,"death","Płock",52.55,19.7],
+["wd-Q95111348","Hersh Farba",1904,"death","Płock",52.55,19.7],
+["wd-Q95117324","Leizer Vaserman",1880,"death","Płock",52.55,19.7],
+["wd-Q95129383","Mendel Farba",1898,"death","Płock",52.55,19.7],
+["wd-Q94975609","Shalom Bibua",1880,"death","Płock",52.55,19.7],
+["wd-Q95122909","Shmuel Pshekhatzki",1900,"death","Płock",52.55,19.7],
+["wd-Q95120202","Tzirel Plovinski",1878,"death","Płock",52.55,19.7],
+["wd-Q95118549","Tzvia Farba",1895,"death","Płock",52.55,19.7],
+["wd-Q95108519","Yehuda Plovinski",1898,"death","Płock",52.55,19.7],
+["wd-Q95127236","Zelda Farba",1900,"death","Płock",52.55,19.7]
+],
+"slug":"pock"}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"UA",
+"label":"Skalat",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95125236","Beta Fogelman",1902,"death","Skalat",49.43333,25.98333],
+["wd-Q95117033","Bila Porulos",1863,"death","Skalat",49.43333,25.98333],
+["wd-Q95109220","Gotshalk Perel",1880,"death","Skalat",49.43333,25.98333],
+["wd-Q95112336","Izak Preminger",1874,"death","Skalat",49.43333,25.98333],
+["wd-Q94976249","Perel Fridman",1870,"death","Skalat",49.43333,25.98333],
+["wd-Q94976487","Yisrael Fogelman",1926,"death","Skalat",49.43333,25.98333]
+],
+"slug":"skalat"}

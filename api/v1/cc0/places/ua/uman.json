@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"UA",
+"label":"Uman",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95111183","Bentzion Belenki",null,"death","Uman",48.75,30.21667],
+["wd-Q95113706","Khaim Piatigorski",1878,"death","Uman",48.75,30.21667],
+["wd-Q95126338","Moshe Formalski",1900,"death","Uman",48.75,30.21667],
+["wd-Q95107664","Sara Formalski",1918,"death","Uman",48.75,30.21667]
+],
+"slug":"uman"}

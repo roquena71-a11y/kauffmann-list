@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"PL",
+"label":"Sandomierz",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94975908","Dvora Hauzer",1886,"death","Sandomierz",50.68333,21.75],
+["wd-Q95115375","Reizil Prizant",1923,"death","Sandomierz",50.68333,21.75],
+["wd-Q95120071","Tzipora Trefler",1892,"death","Sandomierz",50.68333,21.75]
+],
+"slug":"sandomierz"}

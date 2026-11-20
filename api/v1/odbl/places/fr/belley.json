@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"FR",
+"label":"Belley",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13041338124","Henri-Chaim Goldberg",1930,"memorial","Rue du Promenoir",45.76269,5.68933],
+["st-n13041338123","Majer-Marcel Bulka",1929,"memorial","Rue du Promenoir",45.76268,5.68933],
+["st-n13041338125","Maurice Gerenstein",1931,"memorial","Rue du Promenoir",45.76269,5.68933],
+["st-n13041338126","Max-Marcel Balsam",1931,"memorial","Rue du Promenoir",45.76269,5.68933]
+],
+"slug":"belley"}

@@ -1,0 +1,12 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"stem",
+"rows":[
+["stemmer","wd-Q105505145","Charlotte Stemmer",1900,null,null,"stem"],
+["stemmer","wd-Q105505146","Paula Stemmer",1877,1943,"Konzentrationslager Theresienstadt","stem"],
+["stempel","wd-Q105458538","Rosa Stempel",1867,1942,"Konzentrationslager Theresienstadt","stem"],
+["stempel","wd-Q105458539","Sali Stempel",1863,null,null,"stem"],
+["stempel","wd-Q95113677","Sara Stempel",1908,1942,"Warschau","stem"],
+["stempel","wd-Q105609589","Schame Stempel",1862,1942,"Konzentrationslager Theresienstadt","stem"],
+["stempelova","wd-Q105609588","Albina Stempelová",1908,null,null,"stem"]
+]}

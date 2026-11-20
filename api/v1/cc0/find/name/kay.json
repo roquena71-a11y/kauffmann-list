@@ -1,0 +1,12 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"kay",
+"rows":[
+["kayser","wd-Q105464099","Alice Kayser",1867,null,null,"kay"],
+["kayser","wd-Q105654311","Anna Kayser-Josephs",1883,1944,"KZ Auschwitz","kay"],
+["kayser","wd-Q105355353","Auguste Kayser",1856,1942,"Konzentrationslager Theresienstadt","kay"],
+["kayser","wd-Q105355354","Elsbeth Kayser",1870,1943,"Konzentrationslager Theresienstadt","kay"],
+["kayser","wd-Q106470201","Herbert Kayser",1893,null,null,"kay"],
+["kayser","wd-Q105355355","Martha Kayser",1877,1943,"Konzentrationslager Theresienstadt","kay"],
+["kayser","wd-Q105355356","Sara Kayser",1860,1942,"Konzentrationslager Theresienstadt","kay"]
+]}

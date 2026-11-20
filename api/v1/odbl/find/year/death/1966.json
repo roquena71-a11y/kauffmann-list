@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q55682507","Benno Süsskind",1900,1966,"Coesfeld","su"],
+["wd-Q55881211","Dr. Ludwig Stoss",1887,1966,"Neu-Ulm","sto"],
+["wd-Q107525712","Hedda Holzer",1895,1966,"Freising","hol"],
+["wd-Q1611454","Hermann Henneicke",1886,1966,"Neunkirchen","hen"],
+["wd-Q94743598","Jenny Gertz",1891,1966,"Hamburg","ge"],
+["st-n2527378913","Josef Kleinmann",1879,1966,"Baden-Baden","kl"],
+["wd-Q94819565","Leopold Hirsch",1876,1966,"Tübingen","hirsch"],
+["wd-Q15854721","Stolperstein für Willy Jentsch",1892,1966,"Frankfurt (Oder)","je"]
+],
+"year":1966}

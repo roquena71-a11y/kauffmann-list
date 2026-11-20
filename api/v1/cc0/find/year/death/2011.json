@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"kind":"death",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q142109702","Lamberg, Susi",1925,2011,null,"su"],
+["wd-Q59919062","Leon Weinstein",1910,2011,"Los Angeles","weins"],
+["wd-Q94125527","Luba Gurdus",1914,2011,null,"gur"],
+["wd-Q142184190","Magda Fein",1920,2011,null,"fei"]
+],
+"year":2011}

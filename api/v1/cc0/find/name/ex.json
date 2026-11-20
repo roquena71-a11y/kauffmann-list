@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ex",
+"rows":[
+["examus","wd-Q116957661","Alfred Examus",1907,1945,"Außenlager Tröglitz/Rehmsdorf","ex"],
+["examus","wd-Q116994070","Erna Examus",1898,1945,"KZ Stutthof","ex"],
+["examus","wd-Q104549177","Julius Examus",1861,null,null,"ex"],
+["exelbirth","wd-Q104544695","Chana Exelbirth",1875,null,null,"ex"],
+["exl","wd-Q104545704","Max Exl",1881,null,null,"ex"],
+["exnerova","wd-Q104545705","Marie Exnerová",1877,null,null,"ex"]
+]}

@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"DE",
+"label":"Sontra",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13611299458","Betty-Eva Plaut",1938,null,"Sontra","pl"],
+["st-n13609559844","Cäcilie Heilbrunn",1857,null,"Sontra","hei"],
+["st-n13610054116","Emma Katzenstein",1875,null,"Sontra","kat"],
+["st-n13610192169","Gerda Plaut",1910,null,"Sontra","pl"],
+["st-n13610192157","Helene Heilbrunn",1891,null,"Sontra","hei"],
+["st-n13609517713","Hermann Rothschild",1880,1945,"Sontra","rot"],
+["st-n13610192158","Hugo Heilbrunn",1884,null,"Sontra","hei"],
+["st-n13610192159","Leopold Heilbrunn",1886,null,"Sontra","hei"],
+["st-n13610192160","Lieschen Heilbrunn",1894,null,"Sontra","hei"],
+["st-n13610192170","Ludwig Plaut",1907,null,"Sontra","pl"],
+["st-n13610192162","Meier Harry Heilbrunn",1916,null,"Sontra","hei"],
+["st-n13610192174","Meta Rothschild",1885,null,"Sontra","rot"],
+["st-n13610192161","Mirjam Heilbrunn",1914,null,"Sontra","hei"]
+],
+"slug":"sontra"}

@@ -1,0 +1,8 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"hev",
+"rows":[
+["heverova","wd-Q104707366","Julie Heverová",1888,null,null,"hev"],
+["hevesi","wd-Q104703872","Armin Hevesi",1901,null,null,"hev"],
+["hevesi","wd-Q104703873","Berta Hevesi",1872,null,null,"hev"]
+]}

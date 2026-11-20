@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Dillingen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11664721648","Alice Cahn",1908,1944,"Dillingen","ca"],
+["st-n11664742894","Flora Levy",1912,null,"Dillingen","levy"],
+["st-n4776892665","Johanna Levy",1865,null,"Dillingen","levy"],
+["st-n11700935467","Julia Weiler",1887,null,"Dillingen","weil"],
+["wd-Q105362836","Lion Levy",1865,1942,"Dillingen","levy"],
+["st-n12756653869","Martha Weiler",1899,null,"Dillingen","weil"],
+["st-n11701656885","Moritz Weiler",1889,null,"Dillingen","weil"],
+["st-n3432169465","Paul Cahn",1897,null,"Dillingen","ca"],
+["st-n11664742895","Rosine Levy",1881,null,"Dillingen","levy"],
+["wd-Q134974811","Simon Levy",1877,1944,"Dillingen","levy"]
+],
+"slug":"dillingen"}

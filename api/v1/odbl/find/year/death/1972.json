@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q134425960","Emmy Wernerová",1904,1972,"Brno","wer"],
+["wd-Q100784543","Gustav Adler",1890,1972,"Ravensburg","ad"],
+["st-n3011539508","Josef Bleicher",1887,1972,"Radolfzell","ble"],
+["st-n3011539509","Lotte Bleicher",1899,1972,"Radolfzell","ble"],
+["wd-Q85867691","Robert Arthur Winkler",1898,1972,"Bonn","wi"]
+],
+"year":1972}

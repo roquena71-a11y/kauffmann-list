@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Rosenheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12942467274","Alexander Wiener",1873,1942,"Rosenheim","wi"],
+["st-n12942871316","Charlotte Wiener",1914,null,"Rosenheim","wi"],
+["wd-Q1382944","Ewald Thunig",1897,1991,"Rosenheim","th"],
+["st-n12942871317","Frieda Wiener",1873,null,"Rosenheim","wi"],
+["st-n12942871319","Isidor Camnitzer",1865,null,"Rosenheim","ca"],
+["st-n12942871318","Katharina Reichner",1905,null,"Rosenheim","rei"]
+],
+"slug":"rosenheim"}

@@ -29,3 +29,5 @@ Datos de trabajo: V20_DATA=/workspace/v20-data-r2 (copia; near/pbf enlazados). I
 ## 10:25 pipeline build
 - (corregido 10:45) El primer build en línea había sobrescrito páginas de lista de la caché con datos de hoy y desalineaba los lotes; restaurada la caché desde la del árbol v20 y build --offline con ambas fuentes OK.
 - 10:45 build OK (--offline --generated 2026-11-20, stolpersteine_de + wikidata_holocaust_victims): odbl 72.038 registros → 62.489 publicadas; cc0 133.301 → 118.254; validate 0 errores, 4 avisos de tamaño. Lanzado run-all REQUIRE_OAV=1 (venv-ci, sin SKIP) → /workspace/v20-data-r2/runall_r2.log
+
+## 11:36 run-all REQUIRE_OAV=1 completo (venv-ci, sin SKIP_COUNTRY_BUTTONS): OK, EXIT 0 (country-buttons-check: FALLOS ninguno). Log: /workspace/v20-data-r2/runall_r2.log. Nada subido (sin push) ni publicado; no se ejecutaron auditorías.

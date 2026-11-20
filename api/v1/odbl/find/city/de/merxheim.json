@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"country":"DE",
+"label":"Merxheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105373606","Bernhard Michel",1886,1942,"Merxheim","mi"],
+["st-n13241484483","Berthold Michel",1895,1943,"Merxheim","mi"],
+["st-n13241484478","Daniel Michel",1873,null,"Merxheim","mi"],
+["wd-Q105373614","Elvira Michel",1869,1943,"Merxheim","mi"],
+["st-n13241484476","Hermann Levy",1903,null,"Merxheim","levy"],
+["st-n13241484474","Herta Levy",1902,null,"Merxheim","levy"],
+["st-n13241484481","Jakob Michel",1900,1942,"Merxheim","mi"],
+["st-n13241484480","Julius Michel",1897,null,"Merxheim","mi"],
+["st-n13241484482","Salomon Michel",1893,1943,"Merxheim","mi"],
+["st-n13241484477","Sophie Michel",1879,null,"Merxheim","mi"],
+["st-n13241484479","Walter Michel",1901,1942,"Merxheim","mi"]
+],
+"slug":"merxheim"}

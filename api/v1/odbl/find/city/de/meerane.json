@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"country":"DE",
+"label":"Meerane",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n9534939189","Alfred Born",1886,null,"Meerane","bo"],
+["st-n9534939185","Anna Marie Funk",1896,1940,"Meerane","fu"],
+["st-n9534939184","Flora Ella Bauch",1892,1941,"Meerane","bau"],
+["st-n9534939190","Frida Blumenthal",1884,1933,"Meerane","blu"],
+["st-n9534939191","Georg Salzmann",1889,1938,"Meerane","sal"],
+["st-Q125973959","Gustav Kurt Marci",1886,1943,"Meerane","mar"],
+["st-n9534939183","Gustav Kurt Marci",1886,1943,"Meerane","mar"],
+["wd-Q105461428","Josef Wertheim",1859,1942,"Meerane","wer"],
+["st-n9534939186","Martha Lina Erben",1884,1941,"Meerane","er"],
+["st-n9534939187","Martin Hochmuth",1895,1941,"Meerane","hoc"],
+["st-n9543406058","Willy Wertheim",1893,1935,"Meerane","wer"]
+],
+"slug":"meerane"}

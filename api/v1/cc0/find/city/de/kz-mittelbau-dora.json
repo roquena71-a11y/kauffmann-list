@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"country":"DE",
+"label":"KZ Mittelbau-Dora",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104207467","Egon Abraham",1913,1945,"KZ Mittelbau-Dora","ab"],
+["wd-Q104249367","Fritz Berets",1906,1945,"KZ Mittelbau-Dora","bere"],
+["wd-Q104448764","Kurt Ehrlich",1911,1945,"KZ Mittelbau-Dora","eh"]
+],
+"slug":"kz-mittelbau-dora"}

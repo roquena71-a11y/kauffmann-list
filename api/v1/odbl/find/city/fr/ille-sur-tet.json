@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"FR",
+"label":"Ille-sur-Têt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13069175541","Gerda Hirch Manheimer",1909,1945,"Ille-sur-Têt","man"],
+["st-n13069175544","Hélène Schochet Beniacar",1914,1944,"Ille-sur-Têt","ben"],
+["st-n13069175540","Jacqueline Manheimer",1935,1944,"Ille-sur-Têt","man"],
+["st-n13069205904","Jacques Deit",1923,null,"Ille-sur-Têt","de"],
+["st-n13069175543","Johanna Klein Manheimer",1878,1944,"Ille-sur-Têt","man"],
+["st-n13069205903","Louis Boyer",1899,1944,"Ille-sur-Têt","bo"],
+["st-n13069175545","Michel Beniacar",1937,1944,"Ille-sur-Têt","ben"],
+["st-n13069175546","Sadia Beniacar",1913,1945,"Ille-sur-Têt","ben"],
+["st-n13069175542","Wilhem Manheimer",1900,1943,"Ille-sur-Têt","man"]
+],
+"slug":"ille-sur-tet"}

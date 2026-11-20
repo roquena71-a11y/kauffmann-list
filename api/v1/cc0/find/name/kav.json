@@ -1,0 +1,14 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"kav",
+"rows":[
+["kavalkova","wd-Q105519965","Julie Kaválková",1909,null,null,"kav"],
+["kavan","wd-Q105651615","Bedřich Kavan",1891,null,null,"kav"],
+["kavan","wd-Q105642554","Emil Kavan",1904,null,null,"kav"],
+["kavan","wd-Q105642696","Karel Kavan",1910,null,null,"kav"],
+["kavanova","wd-Q105642555","Helena Kavanová",1904,null,null,"kav"],
+["kavanova","wd-Q105519966","Julie Kavanová",1889,null,"KZ Auschwitz","kav"],
+["kaveblum","wd-Q95111360","Feiga Kaveblum",1888,1943,"KZ Auschwitz","kav"],
+["kavenova","wd-Q105519967","Charlotta Kavenová",1899,null,null,"kav"],
+["kavka","wd-Q95127897","Rakhel Kavka",1922,1942,"Warschau","kav"]
+]}

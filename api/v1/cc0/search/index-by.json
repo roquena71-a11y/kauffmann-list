@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"by",
+"rows":[
+["wd-Q104421268","Albert Byck",1865,"Zbąszyń",52.25306,15.91778,"by"],
+["wd-Q104420766","Antschel Adolf Byck",1872,null,null,null,"by"],
+["wd-Q104420768","Rachel Rosa Byck",1876,null,null,null,"by"],
+["wd-Q104420552","Therese Byck",1865,"Bydgoszcz",53.11667,18.0,"by"],
+["wd-Q104420767","Berisch Byk",1858,"Konzentrationslager Theresienstadt",50.51028,14.14972,"by"],
+["wd-Q104421270","Dora Byk",1865,"Konzentrationslager Theresienstadt",50.51028,14.14972,"by"],
+["wd-Q104421271","Johanna Byk",1874,null,null,null,"by"],
+["wd-Q104421272","Leo Byk",1863,"Hradec nad Moravicí",49.871,17.87587,"by"],
+["wd-Q104421269","Moritz Byk",1861,"Zbąszyń",52.25306,15.91778,"by"],
+["wd-Q104421273","Johanna Bykiel",1866,"Grabow",53.27884,11.56453,"by"],
+["wd-Q104421274","Herta Byttiner",1908,"Duisburg",51.43222,6.76111,"by"]
+]}

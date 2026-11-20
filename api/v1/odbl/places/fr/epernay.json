@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"FR",
+"label":"Épernay",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13027217662","Colette Levy",1922,"memorial","27 Rue du Faubourg d'Igny",49.04713,3.95339],
+["st-n13027217665","Félix Levy",1887,"memorial","27 Rue du Faubourg d'Igny",49.04712,3.95339],
+["st-n13027217663","Robert Levy",1921,"memorial","27 Rue du Faubourg d'Igny",49.04712,3.95339],
+["st-n13027217664","Yvonne Levy née Picard",1897,"memorial","27 Rue du Faubourg d'Igny",49.04713,3.95339]
+],
+"slug":"epernay"}

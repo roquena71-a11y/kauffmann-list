@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"let",
+"rows":[
+["letchinko","st-n13112431037","Sifra Letchinko",1903,1942,"Le Havre","let"],
+["letocha","wd-Q132140338","Liesbet Letocha",1886,1942,"Berlin","let"],
+["letona","st-n13633348191","José López de Letona Angulo",1906,null,"Rubí","an"],
+["letterhaus","wd-Q102467","Bernhard Letterhaus",1894,1944,"Köln","let"],
+["lettery","st-n12951141325","Maria Lettery",1915,1941,"Horhausen (Westerwald)","let"],
+["letzelter","st-Q137367659","Charlotte Letzelter",1906,1940,"Konstanz","let"]
+]}

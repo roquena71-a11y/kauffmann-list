@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"beb",
+"rows":[
+["beba","wd-Q95114314","Beba Farber",1905,1943,"Białystok","far"],
+["beba","wd-Q95106351","Beba Perl",1922,1944,"Kamjanez-Podilskyj","per"],
+["bebes","wd-Q94975681","Bela Bebes",1927,1942,"Sarny","beb"],
+["bebes","wd-Q95123292","Bluma Bebes",1895,1942,"Sarny","beb"],
+["bebes","wd-Q95123069","Zanvil Bebes",1902,1942,"Sarny","beb"]
+]}

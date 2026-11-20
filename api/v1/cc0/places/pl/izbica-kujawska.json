@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"PL",
+"label":"Izbica Kujawska",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95111294","Chaia Magaril",1885,"death","Izbica Kujawska",52.41944,18.76028],
+["wd-Q95109876","Khana Platzner",1912,"death","Izbica Kujawska",52.41944,18.76028],
+["wd-Q94976042","Shlomo Platzner",null,"death","Izbica Kujawska",52.41944,18.76028]
+],
+"slug":"izbica-kujawska"}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q131924085","Alfred Moser",1897,1987,"Frankfurt-Innenstadt II","mo"],
+["st-n4995426922","Erich Leffmann",1908,1987,"Kleve","lef"],
+["wd-Q19960237","Grete Kusber",1907,1987,"Gronau (Westf.)","ku"],
+["wd-Q1557522","Guy Kurt Lachmann",1906,1987,"Neunkirchen","lac"],
+["wd-Q1635730","Hugo Spiegel",1905,1987,"Warendorf","sp"],
+["wd-Q102115575","Kurt Frank",1911,1987,"Sigmaringen","fra"],
+["wd-Q19758007","Kurt Levy",1911,1987,"Bonn","levy"]
+],
+"year":1987}

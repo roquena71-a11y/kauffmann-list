@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Muggensturm",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12617777971","August Kilthau",1915,1974,"Muggensturm","ki"],
+["st-n12458524042","Frieda Heimann",1910,null,"Muggensturm","hei"],
+["st-n12617777972","Gerhard Zittel",1883,1962,"Muggensturm","zi"],
+["st-n10779321254","Karl Hornung",1925,1940,"Muggensturm","hor"],
+["st-n10774161906","Lorenz Knapp",1901,1939,"Muggensturm","kn"],
+["wd-Q104806049","Margarethe Hummell",1878,1944,"Muggensturm","hu"],
+["st-n12458524043","Mathilde Heimann",1890,1935,"Muggensturm","hei"],
+["st-n12458524044","Moritz Heimann",1880,1943,"Muggensturm","hei"]
+],
+"slug":"muggensturm"}

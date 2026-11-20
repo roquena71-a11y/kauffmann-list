@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ret",
+"rows":[
+["reti","wd-Q106471248","Eduard Reti",1889,null,null,"ret"],
+["retschi","wd-Q105503893","Rachel Retschi Schwarz",1866,1942,"Konzentrationslager Theresienstadt","schwar"],
+["retschury","wd-Q105472387","Elise Retschury",1865,1943,"Konzentrationslager Theresienstadt","ret"],
+["retter","wd-Q105579614","Osvald Retter",1884,null,null,"ret"],
+["retterova","wd-Q105579613","Adéla Retterová",1891,null,null,"ret"]
+]}

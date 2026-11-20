@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":14,
+"kind":"birth",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105354726","Abraham Kapusta",1847,1943,"Konzentrationslager Theresienstadt","kap"],
+["wd-Q105389778","Berta Sandberg",1847,1943,"Konzentrationslager Theresienstadt","san"],
+["wd-Q94975671","David Paner",1847,1942,"Rymanów","pa"],
+["wd-Q105355170","Elkana Kaufmann",1847,1942,"Konzentrationslager Theresienstadt","kau"],
+["wd-Q105518368","Hynek Karpeles",1847,1942,"Konzentrationslager Theresienstadt","kar"],
+["wd-Q104684460","Johanna Gumpel",1847,1942,"Konzentrationslager Theresienstadt","gum"],
+["wd-Q105373028","Johanna Meyer",1847,1942,"Konzentrationslager Theresienstadt","mey"],
+["wd-Q105373782","Joel Ruben Mindus",1847,1942,"Konzentrationslager Theresienstadt","mi"],
+["wd-Q105458752","Karoline Stern",1847,1942,"Konzentrationslager Theresienstadt","stern_"],
+["wd-Q105353865","Louisa Klempfnerová",1847,1942,"Konzentrationslager Theresienstadt","klem"],
+["wd-Q105608135","Marie Steinerová",1847,1942,"Konzentrationslager Theresienstadt","steine"],
+["wd-Q104702986","Paula Hirschel",1847,1943,"Konzentrationslager Theresienstadt","hirsch"],
+["wd-Q105575124","Rosa Pollaková",1847,1942,"Konzentrationslager Theresienstadt","pollak"],
+["wd-Q105617614","Růžena Waklerová",1847,1942,"Konzentrationslager Theresienstadt","wak"]
+],
+"year":1847}

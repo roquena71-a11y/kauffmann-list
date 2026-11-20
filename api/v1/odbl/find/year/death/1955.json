@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q133753204","Adolf Moses",1890,1955,"Hannover","mo"],
+["st-n6379080291","Emanuel Rosenthal",1901,1955,"Neu-Ulm","rosent"],
+["wd-Q129262241","Gottlieb Wolf",1885,1955,"Hannover","wolf_"],
+["wd-Q24691993","Hans Türkheim",1889,1955,"Hamburg","tu"],
+["wd-Q324915","Milly Witkop",1877,1955,"Berlin","wi"],
+["wd-Q55881201","Siegfried Bauland",1886,1955,"Neu-Ulm","bau"],
+["wd-Q87973","Viktor Kafka",1881,1955,"Hamburg","kaf"]
+],
+"year":1955}

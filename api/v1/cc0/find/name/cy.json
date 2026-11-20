@@ -1,0 +1,23 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"cy",
+"rows":[
+["cyklik","wd-Q104409066","Chaja Borensztajn-Cyklik",1908,null,null,"bor"],
+["cymes","wd-Q80159386","Chaim Cymes",1902,1942,"KZ Auschwitz","cy"],
+["cyna","wd-Q95112608","Cyna Perlshtein",1916,1942,"Wasilków","per"],
+["cyngler","wd-Q104420366","Meier Cyngler",1922,1945,"Kleine Festung Theresienstadt","cy"],
+["cypa","wd-Q105455984","Cypa Poliwoda",1912,null,null,"poli"],
+["cypie","wd-Q104208583","Cypie Adlerstein",1866,1942,"Terezín","ad"],
+["cypora","wd-Q104252304","Cypora Binder",1877,1943,"Konzentrationslager Theresienstadt","bi"],
+["cypre","wd-Q104674560","Cypre Gold",1857,1942,"Konzentrationslager Theresienstadt","gold_"],
+["cyra","wd-Q105556945","Cyra Lieserová",1900,null,null,"lie"],
+["cyril","wd-Q104249521","Cyril Berger",1882,1943,"Konzentrationslager Theresienstadt","berge"],
+["cyril","wd-Q104805151","Cyril Horvát",1896,1943,"Konzentrationslager Lety","hor"],
+["cyrila","wd-Q105567824","Cyrila Nováková",1898,null,null,"no"],
+["cyrla","wd-Q104421258","Cyrla Butterweich",1877,null,null,"bu"],
+["cytrynowicz","wd-Q105109693","Jacques Cytrynowicz",1893,1942,"Oświęcim","cy"],
+["cywa","wd-Q105354481","Cywa Birnbaum",1876,null,null,"bi"],
+["cyzner","wd-Q104420240","Annie Cyzner",1934,1944,"KZ Auschwitz","cy"],
+["cyzner","wd-Q104420242","Doertje Cyzner-Polak",1907,1944,"KZ Auschwitz","cy"],
+["cyzner","wd-Q104420245","Jecheskel Cyzner",1902,1945,null,"cy"]
+]}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q47526079","Benjamin Kedar-Kopfstein",1923,2013,"Braunschweig","ke"],
+["wd-Q131922716","Friedrich Schafranek",1924,2013,"Frankfurt am Main","scha"],
+["wd-Q123238529","Hans Katz",1927,2013,"Northeim","kat"],
+["wd-Q100272702","Kurt Bacharach",1912,2013,"Memmingen","bac"],
+["st-n9183808296","Lotte Rosbasch",1915,2013,"Baden-Baden","rosb"]
+],
+"year":2013}

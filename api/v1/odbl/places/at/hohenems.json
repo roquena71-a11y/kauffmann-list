@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"AT",
+"label":"Hohenems",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q135984693","Alois Weil",1878,"memorial","Schweizer Straße 19",47.36521,9.68829],
+["wd-Q104703570","Clara Heimann",1866,"memorial","Schweizer Straße 5",47.36475,9.68875],
+["st-Q135984690","Frieda Nagelberg",1889,"memorial","Kaiserin-Elisabeth-Straße 2",47.36057,9.68003],
+["st-n2961965277","Frieda Nagelberg",1889,"memorial","Kaiserin-Elisabeth-Straße 2",47.36328,9.68256],
+["st-Q135983971","Gisela Figdor",1882,"memorial","Kaiserin-Elisabeth-Straße 2",47.36057,9.68003],
+["st-n2961965278","Gisela Figdor",1882,"memorial","Kaiserin-Elisabeth-Straße 2",47.36329,9.68257],
+["wd-Q98318097","Hans Elkan",1900,"memorial","Schweizer Straße 35",47.36597,9.68769],
+["wd-Q104447383","Helene Elkan",1879,"memorial","Schweizer Straße 35",47.36598,9.68768],
+["st-n2961946396","Louis Weil",1878,"memorial","Schweizer Straße 1",47.36533,9.68814],
+["st-n2961965270","Markus Silberstein",1904,"memorial","Burgstraße 7",47.36158,9.68978],
+["wd-Q104703548","Sophie Hauser",1863,"memorial","Schweizer Straße 35",47.36598,9.68768],
+["wd-Q101063562","Theodor Elkan",1864,"memorial","Schweizer Straße 35",47.36597,9.68768]
+],
+"slug":"hohenems"}

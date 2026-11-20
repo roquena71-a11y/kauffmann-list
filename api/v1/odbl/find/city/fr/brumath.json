@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"FR",
+"label":"Brumath",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13092832260","Blanche Bombet née Raphaël",1884,1944,"Brumath","ra"],
+["st-n13092832261","Clémence Bombet",1886,1944,"Brumath","bo"],
+["st-n13092832258","Gabrielle Bicard née Weill",1902,1943,"Brumath","weil"],
+["st-n13028620673","Joseph Mathis",1891,1945,"Brumath","mat"],
+["st-n13028620672","Léon Loeb",1905,1943,"Brumath","lob"],
+["st-n13028620674","Louis Marcel Weinum",1924,1942,"Brumath","wein"],
+["st-n13092832264","Philippe Feldenweg",1901,1944,"Brumath","fe"],
+["st-n13092832262","Pierre Bombet",1906,1943,"Brumath","bo"],
+["st-n13092832259","Théophile Bicard",1889,1943,"Brumath","bi"]
+],
+"slug":"brumath"}

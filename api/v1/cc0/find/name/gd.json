@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"gd",
+"rows":[
+["gdaliyahu","wd-Q95123392","Gdaliyahu Chertok",1913,1942,"Lublin","ch"],
+["gdaliyahu","wd-Q95108024","Gdaliyahu Levin",null,1943,"Warschauer Ghetto","levi"],
+["gdaliyahu","wd-Q95122992","Gdaliyahu Liner",1880,1942,"Vernichtungslager Sobibor","lin"],
+["gdaliyahu","wd-Q95119682","Gdaliyahu Plakhta",null,1942,"Białystok","pl"],
+["gdaliyahu","wd-Q94976200","Gdaliyahu Plotetzki",null,1941,"Białystok","pl"]
+]}

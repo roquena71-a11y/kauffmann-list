@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"country":"DE",
+"label":"Haren (Ems)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q130577140","Bela de Vries",1887,null,"Haren (Ems)","v"],
+["st-Q130576640","Erich Sternberg",1904,1945,"Haren (Ems)","stern"],
+["st-Q130576824","Gottfried Frank",1872,null,"Haren (Ems)","fra"],
+["st-Q130576881","Isaak Frank",1876,null,"Haren (Ems)","fra"],
+["st-Q130576926","Iwan Frank",1923,null,"Haren (Ems)","fra"],
+["st-Q130576705","Leopold Sternberg",1886,null,"Haren (Ems)","stern"],
+["wd-Q105459077","Levi Sternberg",1867,1942,"Haren (Ems)","stern"],
+["st-Q130576749","Lotte Sternberg",1924,null,"Haren (Ems)","stern"],
+["st-Q130576675","Regine Sternberg",1906,null,"Haren (Ems)","stern"],
+["st-Q130576995","Sally de Vries",1881,null,"Haren (Ems)","v"],
+["st-Q130576852","Sara Frank",1880,null,"Haren (Ems)","fra"]
+],
+"slug":"haren-ems"}

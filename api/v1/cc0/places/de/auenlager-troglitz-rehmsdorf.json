@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"DE",
+"label":"Außenlager Tröglitz/Rehmsdorf",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q116957661","Alfred Examus",1907,"death","Außenlager Tröglitz/Rehmsdorf",51.0667,12.2],
+["wd-Q123235878","Esriel Judin",1887,"death","Außenlager Tröglitz/Rehmsdorf",51.0667,12.2],
+["wd-Q123127656","Hugo Dahlheim",1880,"death","Außenlager Tröglitz/Rehmsdorf",51.0667,12.2]
+],
+"slug":"auenlager-troglitz-rehmsdorf"}

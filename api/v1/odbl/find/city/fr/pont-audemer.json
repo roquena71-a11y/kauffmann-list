@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":2,
+"country":"FR",
+"label":"Pont-Audemer",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13113016395","Bronislawa Aszendorf née Redner",1907,null,"Pont-Audemer","red"],
+["st-n13113016396","Isaac Aszendorf",1902,1942,"Pont-Audemer","as"]
+],
+"slug":"pont-audemer"}

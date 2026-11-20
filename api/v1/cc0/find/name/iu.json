@@ -1,0 +1,16 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"iu",
+"rows":[
+["iudkes","wd-Q95122132","Eli Iudkes",1900,1943,"Białystok","i"],
+["iudl","wd-Q95115665","Iudl Furer",1905,1944,"Włodawa","fur"],
+["iunger","wd-Q94975662","Herman Iunger",1893,1944,"KZ Auschwitz","i"],
+["iunger","wd-Q95125646","Khava Iunger",1891,1944,"KZ Auschwitz","i"],
+["iunger","wd-Q95123710","Zoltan Iunger",1924,1944,"KZ Auschwitz","i"],
+["iungman","wd-Q95112779","Sara Iungman",1887,1943,"Vernichtungslager Belzec","i"],
+["iuster","wd-Q94975543","Yehoshua Iuster",1881,1942,"Bukarest","i"],
+["iuz","wd-Q95121783","Khana Iuz",null,1942,"Beresne","i"],
+["iuz","wd-Q95120039","Rakhel Iuz",null,1942,"Beresne","i"],
+["iuz","wd-Q95115522","Sara Iuz",null,1942,"Beresne","i"],
+["iuz","wd-Q95108436","Sonia Iuz",1915,1942,"Beresne","i"]
+]}

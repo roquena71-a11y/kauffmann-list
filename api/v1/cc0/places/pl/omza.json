@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"PL",
+"label":"Łomża",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95109819","Abram Grundovitz",1899,"death","Łomża",53.18333,22.08333],
+["wd-Q95113740","Golda Goldsher",null,"death","Łomża",53.18333,22.08333],
+["wd-Q95119181","Hersh Pridakhi",1910,"death","Łomża",53.18333,22.08333],
+["wd-Q95109141","Natan Pridakhi",1880,"death","Łomża",53.18333,22.08333],
+["wd-Q95122218","Rakhel Paritzki",1920,"death","Łomża",53.18333,22.08333],
+["wd-Q95115041","Shalom Pridakhi",1901,"death","Łomża",53.18333,22.08333],
+["wd-Q95111343","Shoshana Pridakhi",1903,"death","Łomża",53.18333,22.08333],
+["wd-Q95109706","Tzvi Pshetitzki",1898,"death","Łomża",53.18333,22.08333],
+["wd-Q94975490","Tzvia Pridakhi",1880,"death","Łomża",53.18333,22.08333]
+],
+"slug":"omza"}

@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"CZ",
+"label":"Holice",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13113055644","Arnold Neumann",null,"memorial",null,50.06881,15.98844],
+["st-n13113055643","Irena Neumannová",null,"memorial",null,50.06881,15.98844]
+],
+"slug":"holice"}

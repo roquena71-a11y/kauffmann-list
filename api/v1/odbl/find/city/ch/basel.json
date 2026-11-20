@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"country":"CH",
+"label":"Basel",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q135583608","Anna Maria Böhringer",1885,null,"Basel","bo"],
+["wd-Q135767231","Armin Weiss",1895,null,"Basel","weis"],
+["wd-Q133264064","Edmée Hirsch-Ditisheim",1907,null,"Basel","hirsch"],
+["wd-Q142101789","Emma Markstahler",1907,1944,"Basel","mar"],
+["wd-Q135616534","Gaston Dreher",1907,null,"Basel","dr"],
+["wd-Q142115410","Hans Weinberg",1907,null,"Basel","wein"],
+["wd-Q115973104","Hella Olstein",1905,1943,"Basel","ol"],
+["wd-Q135652032","Kurt Preuss",1910,null,"Basel","pr"],
+["wd-Q135479409","Margot Braunschweig",1920,null,"Basel","bra"],
+["wd-Q135479333","Rebekka Braunschweig",1894,null,"Basel","bra"],
+["wd-Q135623632","Robert Kehrli",1897,null,"Basel","ke"]
+],
+"slug":"basel"}

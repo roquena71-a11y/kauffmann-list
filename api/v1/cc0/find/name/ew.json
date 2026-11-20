@@ -1,0 +1,22 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ew",
+"rows":[
+["ewala","wd-Q105579966","Ewala Ritterová",1863,1942,"Konzentrationslager Theresienstadt","ri"],
+["ewald","wd-Q104549174","Emma Ewald",1865,1943,"Konzentrationslager Theresienstadt","ew"],
+["ewald","wd-Q104653650","Ewald Friedländer",1880,1944,"KZ Auschwitz","friedl"],
+["ewald","wd-Q104673816","Ewald Grodszinsky",1891,null,null,"gro"],
+["ewald","wd-Q104806782","Ewald Hans Jacoby",1888,null,null,"jac"],
+["ewald","wd-Q105642946","Ewald Pfau",1896,1942,null,"pf"],
+["ewald","wd-Q105523815","Ewald Philipp Kohn",1913,1945,"KZ Dachau","kohn_"],
+["ewald","wd-Q105461869","Ewald Wolf",1907,null,null,"wolf_"],
+["ewald","wd-Q105656280","Ewald Wolff",1931,1944,"KZ Auschwitz","wolff"],
+["ewald","wd-Q105643263","Ewald Zeller",1903,1942,null,"ze"],
+["ewald","wd-Q105642964","Max Ewald Pollak",1875,1942,null,"pollak"],
+["ewella","wd-Q105642771","Ewella Kornfeldová",1883,null,null,"kor"],
+["ewenstein","wd-Q104549170","Anna Ewenstein",1864,null,null,"ew"],
+["ewenstein","wd-Q104549172","Isidor Ewenstein",1884,1943,"Konzentrationslager Theresienstadt","ew"],
+["ewenstein","wd-Q21547294","Josef Ewenstein",1865,null,null,"ew"],
+["ewh","wd-Q104544255","Anna Ewh",1875,1944,"Konzentrationslager Theresienstadt","laz"],
+["ewinsohn","wd-Q104549176","Pauline Ewinsohn",1871,null,null,"ew"]
+]}

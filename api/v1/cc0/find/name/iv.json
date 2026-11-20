@@ -1,0 +1,21 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"iv",
+"rows":[
+["ivan","wd-Q135457572","Alain Charles Yvon Ivan Berr",1942,1945,"KZ Auschwitz","berr"],
+["ivan","wd-Q104421690","Ivan Bretschneider",1892,null,null,"bre"],
+["ivan","wd-Q104683922","Ivan Grüner",1861,1943,"Konzentrationslager Theresienstadt","grune"],
+["ivan","wd-Q104699783","Ivan Hamlisch",1942,1943,"Konzentrationslager Theresienstadt","ham"],
+["ivan","wd-Q105650633","Ivan Heinz Löwenstern",1908,null,null,"lowen"],
+["ivan","wd-Q105555961","Ivan Lederer",1941,1942,"Konzentrationslager Theresienstadt","led"],
+["ivan","wd-Q115057808","Ivan Müllner",1887,1942,"Camp de Rivesaltes","mul"],
+["ivan","wd-Q105574165","Ivan Polák",1929,1945,"KZ Dachau","pola"],
+["ivan","wd-Q94976686","Ivan Pun",1926,1944,"KZ Auschwitz","pu"],
+["ivanovszky","wd-Q104808444","Wilhelmine Ivanovszky",1868,1942,"Konzentrationslager Theresienstadt","i"],
+["ivanyi","wd-Q104808445","Max Ivanyi",1875,null,null,"i"],
+["ivanyi","wd-Q104808446","Sali Ivanyi",1877,null,null,"i"],
+["ivo","wd-Q105580354","Ivo Rosenbaum",1934,1944,null,"rosenb"],
+["ivo","wd-Q105614174","Ivo Tausk",1936,1943,"Konzentrationslager Theresienstadt","taus"],
+["ivonna","wd-Q104658206","Ivonna Glaserová",1930,1943,"Konzentrationslager Theresienstadt","gla"],
+["ivonne","wd-Q105654248","Ivonne C. Bromet",1932,1944,"KZ Auschwitz","bro"]
+]}

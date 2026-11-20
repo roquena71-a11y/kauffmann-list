@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"rop",
+"rows":[
+["ropaschinski","wd-Q105354377","Gertrud Ropaschinski",1871,1944,"Konzentrationslager Theresienstadt","rop"],
+["roper","wd-Q105464421","Adolf Röper",1865,1943,"Konzentrationslager Theresienstadt","rop"],
+["roper","wd-Q105472654","Aron Roper",1862,1942,"Konzentrationslager Theresienstadt","rop"],
+["roper","wd-Q106471268","Max Röper",1891,null,null,"rop"],
+["roper","wd-Q105457077","Regine Röper",1890,null,null,"rop"],
+["roper","wd-Q105457078","Sarah Röper",1864,1942,"Konzentrationslager Theresienstadt","rop"]
+]}

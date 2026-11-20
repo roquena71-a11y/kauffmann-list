@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"als",
+"rows":[
+["alsberg","wd-Q104209103","Albert Alsberg",1866,1943,"Terezín","al"],
+["alsberg","wd-Q104209104","Emma Alsberg",1857,1942,"Terezín","al"],
+["alsberg","wd-Q104209106","Ernst Alsberg",1879,null,null,"al"],
+["alsberg","wd-Q106406365","Gertrud Alsberg",1895,null,null,"al"],
+["alsberg","wd-Q104209107","Jenny Alsberg",1873,1943,"Terezín","al"],
+["alsberg","wd-Q104209109","Laura Alsberg",1861,1943,"Terezín","al"],
+["alsterova","wd-Q104209114","Hana Alsterová",1878,null,null,"al"],
+["alsterova","wd-Q104209116","Regina Alsterová",1904,null,null,"al"]
+]}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Weißwasser/Oberlausitz",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q126007741","Estera Graumann",1896,null,"Weißwasser/Oberlausitz","gra"],
+["st-Q126007691","Gerda Pese",1908,null,"Weißwasser/Oberlausitz","pe"],
+["st-Q126007712","Hermann Altmann, Dr.",1873,null,"Weißwasser/Oberlausitz","dr"],
+["st-Q125699663","Margarete Pese",1880,null,"Weißwasser/Oberlausitz","pe"],
+["st-Q126007737","Martha Altmann",1893,null,"Weißwasser/Oberlausitz","al"],
+["st-Q126007738","Ruth Altmann",1913,null,"Weißwasser/Oberlausitz","al"]
+],
+"slug":"weiwasser-oberlausitz"}

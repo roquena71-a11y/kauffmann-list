@@ -1,0 +1,98 @@
+# Lista Kauffmann – full guide for AI agents
+
+> Cada placa, cada nombre, cada historia. Nunca olvidar. · Jede Platte, jeder Name, jede Geschichte. · Every plaque, every name, every story.
+
+Este archivo es informativo y NO tiene valor jurídico propio: lo que obliga son las licencias de los datos.
+
+Site: https://roquena71-a11y.github.io/kauffmann-list/ · API root: https://roquena71-a11y.github.io/kauffmann-list/api/v1/ · Data date: 2026-11-20 · Static files only (GitHub Pages): no keys, no rate limit of our own, GET only. Please be polite: fetch only the files you need, cache them, and prefer `find/` over crawling `people/`.
+
+## 1. What is here
+
+- **cc0** (CC0-1.0, 118,254 people): Registros solo de Wikidata (CC0): personas con identificador en bases de datos sobre la Shoah y la persecución nazi (no todas son víctimas mortales; ver fate y death_date). Sin coordenadas ni ids de OpenStreetMap; publicados aparte de la familia ODbL.
+- **odbl** (ODbL-1.0, 62,489 people): Derivative Database (ODbL 1.0) de Stolpersteine (OpenStreetMap + Wikidata). Share-alike: si redistribuyes la base o un extracto sustancial, debe seguir bajo ODbL 1.0 con atribución.
+- Possibly-living people are excluded from all person records. `data/search/` and `data/stones.json` are transcriptions of public street plaques, not person records.
+
+## 2. Find a person by name
+
+Normalise with fold() (Müller → `muller`, Großmann → `grossmann`, Bär → `bar`, Maier stays `maier`):
+
+```python
+import re, unicodedata
+def fold(s):                 # identical to pipeline/util.py fold()
+    s = str(s or '').lower().replace('ß','ss').replace('ä','a').replace('ö','o').replace('ü','u')
+    s = s.translate(str.maketrans({'ł':'l','ø':'o','đ':'d','ð':'d','þ':'th','æ':'ae','œ':'oe','ı':'i'}))
+    s = ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
+    s = s.replace('ae','a').replace('oe','o').replace('ue','u')
+    return re.sub(r'[^a-z0-9]+', ' ', s).strip()
+```
+
+```javascript
+function fold(s){            // identical to pipeline/util.py fold()
+  s = String(s||'').toLowerCase().replace(/ß/g,'ss').replace(/ä/g,'a').replace(/ö/g,'o').replace(/ü/g,'u')
+        .replace(/ł/g,'l').replace(/ø/g,'o').replace(/đ/g,'d').replace(/ð/g,'d').replace(/þ/g,'th').replace(/æ/g,'ae')
+        .replace(/œ/g,'oe').replace(/ı/g,'i');
+  s = s.normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  return s.replace(/ae/g,'a').replace(/oe/g,'o').replace(/ue/g,'u').replace(/[^a-z0-9]+/g,' ').trim();
+}
+```
+
+1. Read `<family>/find/index.json` → `name.prefixes` (prefix → number of rows).
+2. key = fold(word). For n in 6..1: prefix = (key + '_'*6)[:n]; the first prefix present in `name.prefixes` is the file.
+3. GET `<family>/find/name/<prefix>.json`. Rows are `[token, id, name, birth_year, death_year, place, people_prefix]`. Keep rows whose `token` starts with key.
+   Not indexed by name: text in parentheses (e.g. `Robert Eger (Arbeit)` is found as `robert`/`eger`, not as `arbeit`: drop the parenthesised text before folding), particles and titles (von, van, de, der, zu, vom, Dr., Prof.…), words shorter than 2 letters, and memorials without a name (see below). Hyphenated names are indexed one token per part: fold('Müller-Großmann') = `muller grossmann`, so split fold() output on spaces and search each token (a surname alone is enough).
+4. Disambiguate with full name, years and place. If several people remain, say so; do not choose silently.
+5. GET `<family>/people/by-surname/<people_prefix>.json` and take the object whose `id` equals the row id. It has `sources[]`, `links[]`, `memorials[]` (address, inscription), `deportations[]`, `identifiers`.
+
+Example path: `https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/find/name/<prefix>.json` and `https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/find/name/<prefix>.json`.
+
+## 3. Find people by place
+
+1. GET `<family>/find/city/index.json`. Rows are `[key, country, slug, label, count, pages]`; `aliases` maps alternative names (Cologne → koln) to a key.
+2. key = fold(place name) without spaces (Frankfurt am Main → `frankfurtammain`).
+3. GET `<family>/find/city/<country in lowercase>/<slug>.json` (extra pages: `<slug>~2.json`). Rows use the common person row `[id, name, birth_year, death_year, place, people_prefix]`.
+4. Places are memorial locations and places of death, never places of birth.
+
+## 4. Find people by year
+
+`<family>/find/year/birth/<yyyy>.json` and `<family>/find/year/death/<yyyy>.json`; the available years and counts are in `find/index.json` → `year`. Rows as above. Only years 1700–2100 are listed (out-of-range dates, usually source typos, stay in the record but not in the year files; see `year.range`). Files hold at most 4000 rows: when `count` > 4000 read the extra pages `<yyyy>~2.json`, `<yyyy>~3.json`… (field `pages`).
+
+## 5. Other lookups
+
+- By id: `<family>/person/<shard>.json` (shard = last 2 chars of the id, lowercase, other chars → `_`) → `people_prefix`.
+- By external id (Wikidata Qid, Gedenkbuch, Yad Vashem, USHMM, Arolsen…): `<family>/ids/<scheme>.json`.
+- By address on the map: `data/search/index-<prefix>.json` (plaque text only, includes all plaques).
+- All endpoints with schemas and examples: [openapi.json](https://roquena71-a11y.github.io/kauffmann-list/api/v1/openapi.json).
+
+## 6. How to cite
+
+Minimum: **Lista Kauffmann** + person link + original source + data date + licence.
+
+- Person link (opens it in the map): odbl → `https://roquena71-a11y.github.io/kauffmann-list/#s=<memorials[0].memorial_id>` (the plaque); cc0 → `https://roquena71-a11y.github.io/kauffmann-list/#p=<id>`. Machine record: `https://roquena71-a11y.github.io/kauffmann-list/api/v1/<family>/people/by-surname/<people_prefix>.json` (object with that id).
+- Original source: each `sources[].url` (OpenStreetMap node, Wikidata item…) and, when present, `links[]` (Gedenkbuch, Yad Vashem, USHMM, municipal pages).
+- Template:
+
+```
+{name} ({birth}–{death}). Lista Kauffmann, ficha {id}, {permalink}. Fuente: {source_url}. Datos de {generated}. Licencia {license} ({attribution}).
+```
+
+- Licence text: odbl → `ODbL-1.0`, attribution `© OpenStreetMap contributors` + Wikidata (CC0); cc0 → `CC0-1.0`, Wikidata.
+- Write only what the record says. Missing death date → say "no consta"/"not recorded". Never fill gaps from memory.
+- Records without a name (anonymous memorials, `name` = null; they exist in the person files and in the place/year files, not in `find/name/`): cite them as "sin nombre" / "no name recorded", never as "None" or "null".
+- `meta.attribution` is a list: join it with "; " when you write the citation.
+
+## 7. Rules
+
+- Cita siempre: 'Lista Kauffmann' + enlace a la ficha + la fuente original (sources[] de cada registro).
+- Respeta la licencia de cada familia: ODbL 1.0 (share-alike + atribución '© OpenStreetMap contributors') en odbl/, CC0 en cc0/. Hoy solo se publican esas dos familias; los datos de una institución aparecerían únicamente con su permiso por escrito y su propia licencia.
+- No combines registros de familias distintas en un mismo objeto para redistribuirlo; crúzalos solo por identificador (Qid de Wikidata o id institucional).
+- No presentes inferencias como hechos: los datos proceden de placas y bases abiertas y pueden contener errores; remite a la fuente primaria.
+- Prohibido usar estos datos para acosar, elaborar listas de descendientes, perfiles étnico-religiosos de personas vivas, negacionismo o fines antisemitas.
+- Usa api/v1 para datos de personas; data/search/ y data/stones.json son transcripciones de placas, no fichas (ver scope).
+
+## 8. Scope
+
+La API de personas (api/v1) excluye a las personas posiblemente vivas (sin indicio de muerte y nacidas hace menos de 110 años, o sin año) y quita los enlaces a fichas de registro de posibles supervivientes nacidos desde 1916. data/search/ y data/stones.json NO son fichas de personas: son transcripciones de placas públicas (memoriales físicos en la calle) e incluyen TODAS las placas, también las de personas posiblemente vivas. data/search/ solo contiene nombre tal como figura en la placa, dirección, coordenadas y año; data/stones.json es la base de placas completa (OpenStreetMap + Wikidata) con la inscripción y las etiquetas y enlaces que esas placas tienen en OSM/Wikidata. Para datos de personas usa api/v1.
+
+## 9. Corrections and removal
+
+Correct the original in OpenStreetMap or Wikidata, or ask the project to remove a record (https://github.com/roquena71-a11y/kauffmann-list). Removals are applied at the next build.

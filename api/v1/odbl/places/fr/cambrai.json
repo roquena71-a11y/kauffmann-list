@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"FR",
+"label":"Cambrai",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13046481205","Ernest Gaillard",1893,"memorial","22 Rue Saint-Georges",50.17136,3.23477],
+["st-n13046481206","Joseph Macner",1897,"memorial","8 Rue Victor Ramette",50.17686,3.23043],
+["st-n13046481207","Marcel Macner",1937,"memorial","8 Rue Victor Ramette",50.17686,3.23043],
+["st-n13046481203","Meyer Hubschman",1901,"memorial","24 Rue de Bohain",50.16756,3.24557],
+["st-n13046481204","Robert Defossez",1920,"memorial","5 Rue la Porte Notre-Dame",50.17765,3.23513],
+["st-n13046481208","Sara Macner née Glass",1908,"memorial","8 Rue Victor Ramette",50.17686,3.23043]
+],
+"slug":"cambrai"}

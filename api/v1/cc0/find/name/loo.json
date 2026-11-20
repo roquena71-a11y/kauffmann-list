@@ -1,0 +1,17 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"loo",
+"rows":[
+["loofmann","wd-Q105365910","Katharine Loofmann",1890,1943,"Konzentrationslager Theresienstadt","loo"],
+["loos","wd-Q5125148","Claire Beck Loos",1904,1942,"Riga","loo"],
+["loose","wd-Q105365912","Auguste Loose",1864,1942,"Konzentrationslager Theresienstadt","loo"],
+["loose","wd-Q105354287","Jenny Loose",1867,1942,"Konzentrationslager Theresienstadt","loo"],
+["loose","wd-Q105365915","Julie Loose",1873,1944,"Konzentrationslager Theresienstadt","kro"],
+["loose","wd-Q105365918","Julius Loose",1873,null,null,"loo"],
+["loose","wd-Q105365920","Lina Loose",1870,null,null,"mari"],
+["looser","wd-Q105365921","Bertha Looser",1870,null,null,"loo"],
+["looser","wd-Q105365923","Elisabeth Looser",1876,1942,"Konzentrationslager Theresienstadt","loo"],
+["looser","wd-Q105365924","Klara Looser",1876,1942,"Ghetto Theresienstadt","loo"],
+["looser","wd-Q105365925","Pinkus Looser",1874,1944,"Konzentrationslager Theresienstadt","loo"],
+["looser","wd-Q105354300","Simon Looser",1864,1942,"Konzentrationslager Theresienstadt","loo"]
+]}

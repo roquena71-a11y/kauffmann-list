@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Roetgen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11563937410","Anazobi Gudowskai",1939,null,"Roetgen","gu"],
+["st-n12725566764","Bronislaw Budas",1943,null,"Roetgen","bu"],
+["st-n12725566767","Lora Mischenko",1943,null,"Roetgen","mi"],
+["st-n12725566765","Milania Kondrat",1874,null,"Roetgen","kon"],
+["st-n11563937412","Paul Butko",1915,null,"Roetgen","bu"],
+["st-n12725566766","Sophia Owerzarz",1876,null,"Roetgen","ow"]
+],
+"slug":"roetgen"}

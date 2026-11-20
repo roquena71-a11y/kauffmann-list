@@ -1,0 +1,18 @@
+{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"sh",
+"rows":[
+["n8946377422","Sacha Shapiro",null,"Fontenay-sous-Bois",48.854544,2.460893,null,"st-n8946377422"],
+["n3302881204","Dr. Herman Ernst Sheets","Helmholtzstraße 3b, Dresden","Dresden",51.030113,13.724671,"1908","st-n3302881204"],
+["n13677159103","Dov Shimoni","Rosenstraße 20, 99310 Arnstadt","Arnstadt",50.834984,10.942567,"1921",null],
+["n5383538740","Ilse Shindel","Elisenstraße 9","Solingen",51.168593,7.084749,"1914","st-n5383538740"],
+["n13067653176","Isaac Shishi","Donore Avenue 8","Dublin",53.333234,-6.282927,null,"st-n13067653176"],
+["n13233578819","Eva Shotland","Kirkegata 10","Tromsø",69.648487,18.955885,null,"wd-Q138607274"],
+["n13233305528","Harry Simon Shotland","Hvedings gate 3","Harstad",68.799838,16.540352,null,"wd-Q138607764"],
+["n13233305530","Isak Shotland","Hvedings gate 3","Harstad",68.799838,16.540354,null,"wd-Q138359452"],
+["n13233668043","Isak Shotland","Peter Bechs gate 14","Mosjøen",65.838659,13.190421,null,"wd-Q138359451"],
+["Q44179024","Marie Dvoretsky f. Shotland","Sandgata 11","Trondheim",63.432421,10.390052,null,null],
+["n12818375506","Meyer Leib Shotland","Kirkegata 10","Tromsø",69.648485,18.955889,null,"wd-Q138359450"],
+["n13233578816","Rebekka Sakolsky født Shotland","Strandgata 36","Tromsø",69.6482,18.95688,null,"wd-Q138607376"],
+["Q44177753","Salomon Chaim Shotland","Kirkegata 10","Tromsø",69.648506,18.955872,null,null]
+]}

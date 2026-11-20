@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Nienburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n5173438643","Anna Dessauer",1908,null,"Nienburg","de"],
+["st-n5173438642","Emma Seelig",1895,null,"Nienburg","se"],
+["st-n5171874718","Ernst Rose",1909,null,"Nienburg","rose_"],
+["wd-Q104211473","Frieda Abraham",1860,1942,"Nienburg","ab"],
+["st-n5173521666","Gustav Dessauer",1879,null,"Nienburg","de"],
+["st-n5173438645","Heinz Dessauer",1912,null,"Nienburg","de"],
+["st-n5173438644","Ilse Dessauer",1908,null,"Nienburg","de"],
+["st-n3508268195","Karl Bergen",1903,1943,"Nienburg","berg"],
+["st-n5173438640","Leo Seelig",1894,null,"Nienburg","se"],
+["st-n5173438646","Sophie Edelstein",1868,null,"Nienburg","ed"]
+],
+"slug":"nienburg"}

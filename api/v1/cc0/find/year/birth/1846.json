@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"birth",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105363569","Adolf Lewy",1846,1943,"Konzentrationslager Theresienstadt","lew"],
+["wd-Q105563874","Bedřich May",1846,1942,"Konzentrationslager Theresienstadt","may"],
+["wd-Q105469700","Betty Mittler",1846,1944,"Konzentrationslager Theresienstadt","mi"],
+["wd-Q105354036","Isaac Neumann",1846,null,"Konzentrationslager Theresienstadt","neuman"],
+["wd-Q105639713","Regina Wodaková",1846,1942,"Konzentrationslager Theresienstadt","wod"],
+["wd-Q105619945","Rosalie Weissová",1846,1943,"Konzentrationslager Theresienstadt","weisso"]
+],
+"year":1846}

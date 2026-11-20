@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"ES",
+"label":"Mollet del Vallès",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13461845388","Antonio López Tarragona",1910,"memorial","Carrer del Compte d'Urgell, 26",41.54278,2.21184],
+["st-n13461887198","Joan Molins Maynou",1911,"memorial","Carrer de Berenguer III, 10-12",41.53776,2.21202],
+["st-n13461831822","Joan Tura Ros",1912,"memorial","Carrer del Compte d'Urgell, 21",41.54267,2.21203],
+["st-n13461870710","Josep Fortuny Torrens",1902,"memorial","Carrer de Gaietà Ventalló, 4",41.53881,2.21378],
+["st-n13461815134","Pere Cuyàs Niubó",1905,"memorial","Ronda d'Orient, 4",41.5343,2.21791],
+["st-n13461920824","Vicenç Bachs Vilà",1906,"memorial","Carrer de Fèlix Ferran, 4",41.53809,2.20807]
+],
+"slug":"mollet-del-valles"}

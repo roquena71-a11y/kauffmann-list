@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"y",
+"rows":[
+["wd-Q95127676","Dora Yakubovich",1893,"KZ Auschwitz",50.03583,19.17833,"y"],
+["wd-Q95113663","Dov Yakubovitz",1908,"KZ Auschwitz",50.03583,19.17833,"y"],
+["wd-Q94976750","Menashe Yakubovitz",1890,"Biecz",49.73596,21.26301,"y"],
+["wd-Q95129467","Naomi Yakubovitz",1907,"Nowy Korczyn",50.29917,20.80889,"y"],
+["wd-Q95117315","Rakhel Yakubovitz",1921,"Dąbrowa Górnicza",50.33087,19.20789,"y"],
+["wd-Q94976117","Yaakov Yakubovitz",null,"Vernichtungslager Kulmhof",52.15389,18.72306,"y"],
+["wd-Q95113666","Frida Yavno",null,"Minsk",53.90225,27.56184,"y"],
+["wd-Q95110648","Khaia Yedvabnik",1905,"KZ Auschwitz",50.03583,19.17833,"y"],
+["wd-Q95107612","Shalom Yedvabnik",1893,"Vernichtungslager Treblinka",52.63111,22.05306,"y"],
+["wd-Q95107032","David Yurist",null,"Kamjanez-Podilskyj",48.68056,26.58056,"y"],
+["wd-Q2602123","Yva",1900,"Berlin",52.51667,13.38333,"y"]
+]}

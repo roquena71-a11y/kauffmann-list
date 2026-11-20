@@ -1,0 +1,9 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"hee",
+"rows":[
+["heemstra","st-n4589500662","Baron Ir. Theodore Willem Lodewijk van Heemstra",1883,1945,"Zutphen","hee"],
+["heer","st-n12100195882","Margarethe de Heer",1890,null,null,"hee"],
+["heer","st-n12100195884","Pieter de Heer",1885,null,null,"hee"],
+["heere","st-Q108772049","Johann Heere",1905,1941,"Bremen","hee"]
+]}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"PL",
+"label":"Kolno",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95124836","Iakha Kornetzki",1889,1941,"Kolno","kor"],
+["wd-Q95122774","Icie Presberg",1900,1942,"Kolno","pre"],
+["wd-Q95113623","Sheindl Presberg",1900,1942,"Kolno","pre"],
+["wd-Q95109966","Shmuel Presberg",1916,1942,"Kolno","pre"],
+["wd-Q95125045","Yaakov Presberg",1885,1942,"Kolno","pre"],
+["wd-Q95119125","Yisrael Kornetzki",1929,1941,"Kolno","kor"]
+],
+"slug":"kolno"}

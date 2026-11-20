@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"CH",
+"label":"Biel/Bienne",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q134412447","Clara Winograd-Pintschuk",1903,"memorial","Karl-Neuhaus-Strasse 40, 2502 Biel/Bienne",47.13591,7.24516],
+["wd-Q134424935","Laja \"Lili\" Sonabend",1904,"memorial","Mon Désirweg/Sonabend-Platz",47.13608,7.26158],
+["wd-Q134424878","Simon Sonabend",1899,"memorial","Mon Désirweg/Sonabend-Platz",47.13608,7.26158]
+],
+"slug":"biel-bienne"}

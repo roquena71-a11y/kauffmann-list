@@ -1,0 +1,20 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"hag",
+"rows":[
+["hagelberg","wd-Q104685062","Adele Hagelberg",1871,null,null,"hag"],
+["hagelberg","wd-Q104685063","Jenny Hagelberg",1874,null,null,"bu"],
+["hagelberg","wd-Q104685065","Johanna Hagelberg",1871,null,null,"hag"],
+["hagen","wd-Q109888216","Hermann Carl Hagen",1886,1942,null,"hag"],
+["hagenaar","wd-Q104685735","Alexander Hagenaar",1905,1945,null,"hag"],
+["hagenow","wd-Q104685066","Gudella Hagenow",1868,null,null,"hag"],
+["hagenow","wd-Q106391730","Ida Hagenow",1880,1944,"Konzentrationslager Theresienstadt","hag"],
+["hagenow","wd-Q104685068","Max Alfred Hagenow",1868,1942,"Konzentrationslager Theresienstadt","hag"],
+["hagenow","wd-Q104685069","William Wolf Hagenow",1871,1944,"Konzentrationslager Theresienstadt","hag"],
+["hager","wd-Q104687313","Helene Hager",1882,1943,"Konzentrationslager Theresienstadt","hag"],
+["hager","wd-Q104685071","Hugo Hager",1871,null,null,"hag"],
+["hager","wd-Q104687315","Schulim Hager",1895,null,null,"hag"],
+["hagg","wd-Q104685073","Rebecka Maria Hagg",1860,1943,"Konzentrationslager Theresienstadt","hag"],
+["hagler","wd-Q104685596","Jindřich Hágler",1912,1941,"Łódź","hag"],
+["hagner","wd-Q104685075","Johanna Hagner",1878,null,null,"hag"]
+]}

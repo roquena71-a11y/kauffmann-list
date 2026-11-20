@@ -1,0 +1,22 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"io",
+"rows":[
+["ioakhim","wd-Q95107484","Yitzkhak Ioakhim",1913,1945,"KZ Stutthof","i"],
+["iokhel","wd-Q94975098","Iokhel Fogelman",1925,1942,"Ghetto Litzmannstadt","fo"],
+["iokhel","wd-Q95109491","Iokhel Pariski",null,1942,"Vilnius","pa"],
+["iokhimovitz","wd-Q95112361","Moshe Iokhimovitz",null,1944,"Ghetto Litzmannstadt","i"],
+["ionas","wd-Q95109325","Ionas Renert",1891,1942,"Transnistrien","ren"],
+["ionash","wd-Q95126770","Ionash Leitner",1874,1944,"KZ Auschwitz","lei"],
+["iosef","wd-Q94975607","Iosef Seifer",null,1940,"Transnistrien","sei"],
+["iosef","wd-Q94976363","Khulda Iosef",1875,1942,"Terezín","i"],
+["iosefina","wd-Q95125074","Iosefina Pik",1907,1944,"KZ Auschwitz","pik"],
+["iosi","wd-Q95117047","Iosi Shidlo",1926,1943,"Vernichtungslager Treblinka","sh"],
+["ioske","wd-Q94977132","Ioske Witenberg",null,1942,"Vernichtungslager Belzec","wit"],
+["iosovitz","wd-Q95107079","Ben Iosovitz",1922,1944,"Polen","i"],
+["iosupovitz","wd-Q95126031","David Iosupovitz",1912,1943,"Łódź","i"],
+["iozef","wd-Q95108028","Iozef Shvartz",1889,1944,"KZ Auschwitz","sh"],
+["iozefin","wd-Q95111700","Iozefin Farago",1898,1944,"KZ Auschwitz","far"],
+["iozek","wd-Q95109042","Iozek Fallek",1906,1942,"Krakau","fal"],
+["iozio","wd-Q95127512","Iozio Pres",1895,1941,"Lwiw","pre"]
+]}

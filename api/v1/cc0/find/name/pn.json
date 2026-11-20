@@ -1,0 +1,16 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"pn",
+"rows":[
+["pnina","wd-Q95107777","Pnina Perkovitz",1896,1944,"KZ Auschwitz","per"],
+["pnina","wd-Q95115368","Pnina Perlshtein",1914,1942,"Sarny","per"],
+["pnina","wd-Q95111388","Pnina Preger",1890,1942,"KZ Auschwitz","pre"],
+["pnina","wd-Q95128774","Pnina Rozen",null,1942,"Vernichtungslager Belzec","roz"],
+["pniover","wd-Q95120902","Liza Pniover",1885,1942,"Lwiw","pn"],
+["pniover","wd-Q95106078","Zigmund Pniover",1878,1942,"Lwiw","pn"],
+["pniower","wd-Q105455924","Benno Pniower",1866,1943,"Konzentrationslager Theresienstadt","pn"],
+["pniower","wd-Q105455925","Bianca Pniower",1865,null,null,"pn"],
+["pniower","wd-Q105455926","Else Pniower",1877,1944,"Konzentrationslager Theresienstadt","pn"],
+["pniower","wd-Q105464487","Käthe Pniower",1869,1943,"Ghetto Theresienstadt","pn"],
+["pniower","wd-Q105455929","Rosa Pniower",1868,1944,"Konzentrationslager Theresienstadt","pn"]
+]}

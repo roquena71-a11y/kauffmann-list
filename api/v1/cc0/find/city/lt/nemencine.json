@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"LT",
+"label":"Nemenčinė",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95106047","Arie Perevozkin",1910,1942,"Nemenčinė","per"],
+["wd-Q95119817","Liba Perevozkin",1890,1942,"Nemenčinė","per"],
+["wd-Q94977106","Sara Levinson",1900,1942,"Nemenčinė","levi"],
+["wd-Q95125541","Sara Pruzhan",1910,1942,"Nemenčinė","pru"],
+["wd-Q95117184","Shlomo Pruzhan",1905,1942,"Nemenčinė","pru"],
+["wd-Q95125753","Yehoshua Perevozkin",1908,1942,"Nemenčinė","per"]
+],
+"slug":"nemencine"}

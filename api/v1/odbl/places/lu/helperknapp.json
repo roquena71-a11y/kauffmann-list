@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"LU",
+"label":"Helperknapp",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13082848254","Jean Ginter",1897,"memorial","1A Bill",49.76387,6.03981],
+["st-n13082848255","Willy Bertemes",1909,"memorial","8 Grevenknapp",49.762,6.03292]
+],
+"slug":"helperknapp"}

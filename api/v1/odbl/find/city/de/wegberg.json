@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Wegberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n10593959392","Bertha Salm",1893,null,"Wegberg","sal"],
+["wd-Q44736495","Franz Stappers",1884,1945,"Wegberg","sta"],
+["st-n10593959391","Ilse Salm",1923,null,"Wegberg","sal"],
+["st-n10593997294","Irma Salm",1896,null,"Wegberg","sal"],
+["st-n10593997296","Jakob Salm",1888,null,"Wegberg","sal"],
+["st-n10593959389","Kurt Salm",1925,null,"Wegberg","sal"],
+["st-n10593959390","Lotte Salm",1925,null,"Wegberg","sal"],
+["wd-Q106155103","Matthias Eickels",1887,1942,"Wegberg","ei"],
+["st-n10593905516","Moses Salm",1889,null,"Wegberg","sal"]
+],
+"slug":"wegberg"}

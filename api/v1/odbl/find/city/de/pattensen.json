@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Pattensen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q106921149","Annaliese Baruch",1911,null,"Pattensen","bar"],
+["st-Q106921150","Hermann Neufeld",1896,null,"Pattensen","neu"],
+["wd-Q104207743","Jacob Abt",1869,1940,"Pattensen","ab"],
+["wd-Q123116872","Johanne Blumenthal",1898,null,"Pattensen","blu"],
+["st-Q106921144","Martha Moses",1892,null,"Pattensen","mo"],
+["st-Q106921140","Martin Cohn",1867,null,"Pattensen","cohn"],
+["st-Q106921143","Meta Neufeld",1885,null,"Pattensen","neu"],
+["wd-Q123116921","Oskar Blumenthal",1891,null,"Pattensen","blu"],
+["st-Q106921142","Paula Frank",1891,1943,"Pattensen","fra"]
+],
+"slug":"pattensen"}

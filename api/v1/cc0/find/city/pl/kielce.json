@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"PL",
+"label":"Kielce",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94975085","Dvora Federman",1903,1943,"Kielce","fed"],
+["wd-Q95116938","Eliahu Fonaroff",1900,1941,"Kielce","fo"],
+["wd-Q95110372","Hirsh Fonaroff",1901,1941,"Kielce","fo"],
+["wd-Q95119539","Moshe Fonaroff",1897,1941,"Kielce","fo"],
+["wd-Q94975080","Reizel Feigenblat",1869,1941,"Kielce","fei"],
+["wd-Q95117744","Rivka Proshovski",1904,1941,"Kielce","pro"],
+["wd-Q95107577","Sara Goldberg",1888,1942,"Kielce","goldb"],
+["wd-Q95113728","Yosef Gutman",1885,1942,"Kielce","gutm"]
+],
+"slug":"kielce"}

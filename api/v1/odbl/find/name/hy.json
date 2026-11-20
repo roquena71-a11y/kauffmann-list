@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"hy",
+"rows":[
+["hyacinthe","st-n13908462637","Hyacinthe Mars",1908,1942,"Petite-Forêt","mar"],
+["hyam","st-n13021346173","Hyam Goldman",1869,null,"St Peter","goldm"],
+["hymans","st-n684827969","Elli Adele Hymans",1905,null,"Hamburg","hy"],
+["hymans","st-n684827968","Leonhardt Hymans",1898,null,"Hamburg","hy"],
+["hynek","st-n12522965133","Hynek Lasch",1884,1943,"Sušice","las"],
+["hynek","wd-Q105580189","Hynek Roger",1875,1944,"Bremen","rog"]
+]}

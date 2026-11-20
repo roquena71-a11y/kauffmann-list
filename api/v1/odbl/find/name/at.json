@@ -1,0 +1,22 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"at",
+"rows":[
+["ateo","st-n11559385601","Ateo Castellani",1925,1945,"Milano","ca"],
+["athanasius","wd-Q15456505","Athanasius Gerster",1877,1945,"Dogern","ge"],
+["athur","st-n4454948606","Athur Herz",1890,1943,"Lingen","her"],
+["atlas","st-n4879438870","Auguste Gitta Atlas",1885,1942,"Düsseldorf","at"],
+["atlas","st-n4879438871","Szaje Oswald Atlas",1885,1942,"Düsseldorf","at"],
+["atsch","st-n3956856889","Anna-Maria Atsch",1918,1943,"Duisburg","at"],
+["atsch","st-n3956856897","Ida Atsch",null,1943,"Duisburg","at"],
+["atsch","st-n3956856901","Klara Atsch",null,1943,"Duisburg","at"],
+["atsch","st-n3956856914","Rosa Atsch",null,1943,"Duisburg","at"],
+["attal","st-n9472624796","Ada Attal",1896,null,"Livorno","at"],
+["attal","st-n9472624795","Benito Attal",1934,1944,"Livorno","at"],
+["attal","st-n3310917114","Dina Bona Attal",1899,1944,"Livorno","at"],
+["attias","st-n11559491100","Sara Attias Varon",1906,null,"Milano","v"],
+["attila","wd-Q737772","Petschauer Attila",1904,1943,"Budapest","at"],
+["attilio","st-n7161241865","Attilio Emilio Mena",null,null,"Adro","men"],
+["attilio","st-n13017677439","Attilio Tison",1904,1941,"Audun-le-Tiche","ti"],
+["attilio","st-n11570810026","Umberto Attilio Morandini",null,null,"Imperia","mo"]
+]}

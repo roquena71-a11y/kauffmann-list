@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"PL",
+"label":"Dąbrowa Górnicza",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95125421","Frida Falk",1910,1942,"Dąbrowa Górnicza","fal"],
+["wd-Q94977316","Khaim Forshner",1894,1942,"Dąbrowa Górnicza","fo"],
+["wd-Q94976124","Lea Fogel",1896,1942,"Dąbrowa Górnicza","fo"],
+["wd-Q95117315","Rakhel Yakubovitz",1921,1941,"Dąbrowa Górnicza","y"],
+["wd-Q94976784","Simkha Gorset",1887,1942,"Dąbrowa Górnicza","gor"]
+],
+"slug":"dabrowa-gornicza"}

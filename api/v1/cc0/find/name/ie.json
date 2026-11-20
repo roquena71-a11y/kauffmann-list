@@ -1,0 +1,12 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ie",
+"rows":[
+["ieger","wd-Q95106494","Naftali Ieger",1888,1943,"Vernichtungslager Treblinka","i"],
+["iela","wd-Q94977014","Iela Preis",1918,1944,"KZ Auschwitz","pre"],
+["ielin","wd-Q94976478","Barukh Ielin",1900,1942,"Warschau","i"],
+["ielinek","wd-Q95108997","Leopold Ielinek",1915,1944,"Budapest","i"],
+["ieni","wd-Q95125757","Ieni Presburger",1921,1944,"KZ Auschwitz","pre"],
+["iente","wd-Q94976320","Iente Farbshtein",1908,1943,"KZ Majdanek","far"],
+["ies","wd-Q141681618","Ies Voet",1878,1943,"Vernichtungslager Sobibor","vo"]
+]}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q1037494","Carl Diez",1877,1969,"Radolfzell","di"],
+["wd-Q115641689","Dr. Dago Rynar",1897,1969,"Bretestraße 5","ry"],
+["wd-Q109569292","Dr. Heinz Oppenheim",1907,1969,"Tübingen","op"],
+["wd-Q108697830","Erich Wertheimer",1896,1969,"Nürnberg","wer"],
+["wd-Q132140532","Gertrud Anker",1894,1969,"Berlin","an"],
+["wd-Q1582856","Hans Venedey",1902,1969,"Konstanz","v"],
+["st-n3011566326","Ludwig Deuring",1889,1969,"Radolfzell","de"],
+["wd-Q152388","Theodor W. Adorno",1903,1969,"Frankfurt am Main","ad"],
+["wd-Q102115351","Werner Frank",1913,1969,"Sigmaringen","fra"]
+],
+"year":1969}

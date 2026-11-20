@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"LT",
+"label":"Jonava",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95128834","Efraim Druskin",null,"death","Jonava",55.07222,24.28056],
+["wd-Q95109815","Feiga Plotnik",1880,"death","Jonava",55.07222,24.28056],
+["wd-Q95118224","Khina Shlomovitz",1910,"death","Jonava",55.07222,24.28056],
+["wd-Q95124466","Leizer Manusovich",1873,"death","Jonava",55.07222,24.28056],
+["wd-Q95113709","Meir Pashkovski",1905,"death","Jonava",55.07222,24.28056],
+["wd-Q95109901","Pesakh Graber",1922,"death","Jonava",55.07222,24.28056],
+["wd-Q94976802","Sheina Manusovich",1880,"death","Jonava",55.07222,24.28056],
+["wd-Q95117216","Yaakov Plotnik",1920,"death","Jonava",55.07222,24.28056],
+["wd-Q95113972","Yehudit Riklis",1910,"death","Jonava",55.07222,24.28056],
+["wd-Q94975484","Yosef Druskin",1921,"death","Jonava",55.07222,24.28056]
+],
+"slug":"jonava"}

@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"berw",
+"rows":[
+["berwald","wd-Q1374578","Ludwig Berwald",1883,1942,"Ghetto Litzmannstadt","berw"],
+["berwaldova","wd-Q104251508","Hedvika Berwaldová",1875,1942,"Łódź","berw"],
+["berwin","wd-Q93253389","Beate Berwin",1885,1971,null,"berw"],
+["berwin","wd-Q104251511","Lina Berwin",1888,null,null,"berw"],
+["berwin","wd-Q104251513","Martin Berwin",1886,null,null,"berw"],
+["berwin","wd-Q104251516","Regina Berwin",1866,1942,"Konzentrationslager Theresienstadt","berw"]
+]}

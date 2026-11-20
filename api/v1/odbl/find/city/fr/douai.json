@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"FR",
+"label":"Douai",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13096308472","Adolphe Sokolski",1898,null,"Douai","so"],
+["st-n13096308470","Arlette Sokolski",1938,1942,"Douai","so"],
+["st-n13096308469","Francine Sokolski",1939,1942,"Douai","so"],
+["st-n13096308461","Henri Redlus",1926,null,"Douai","red"],
+["st-n13096308465","Herman Rosenblit",1894,1942,"Douai","rosenb"],
+["st-n13096308460","Isaak-Oscar Zaidman",1903,null,"Douai","za"],
+["st-n13096308464","Isidor Rosenblit",1928,null,"Douai","rosenb"],
+["st-n13096308462","Jacob Slomnicki",1906,1945,"Douai","sl"],
+["st-n13096308468","Jacqueline Sokolski",1936,1942,"Douai","so"],
+["st-n13096308467","Joseph Strycharz",1906,1942,"Douai","str"],
+["st-n13096308463","Laja Slomnicki née Pruszicka",1902,null,"Douai","pr"],
+["st-n13096308466","Nathan Strycharz",1897,1943,"Douai","str"],
+["st-n13096308471","Sosia Sokolski née Gruszka",1918,1942,"Douai","gru"]
+],
+"slug":"douai"}

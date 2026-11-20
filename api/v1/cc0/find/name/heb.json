@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"heb",
+"rows":[
+["hebak","wd-Q104705330","Robert Hebák",1887,null,null,"heb"],
+["hebakova","wd-Q104705326","Berta Hebáková",1897,null,null,"heb"],
+["hebakova","wd-Q104705329","Olga Hebáková",1894,null,null,"heb"],
+["hebenstreit","wd-Q104703206","Czarne Hebenstreit",1866,1942,"Konzentrationslager Theresienstadt","hab"],
+["heber","wd-Q104703571","Alexander Heber",1874,null,"Vernichtungslager Treblinka","heb"],
+["heber","wd-Q104703572","Babette Heber",1886,null,null,"heb"],
+["heber","wd-Q104703573","Jakob Heber",1865,null,null,"heb"],
+["heber","wd-Q104703574","Samuel Heber",1885,1943,"Konzentrationslager Theresienstadt","heb"]
+]}

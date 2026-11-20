@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Ahrensburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q99616671","Alice Nathan",1871,null,"Ahrensburg","na"],
+["st-n2670244594","Anneliese Oelte",1934,1945,"Ahrensburg","ol"],
+["wd-Q139116249","Carl Ullrich",1889,1944,"Ahrensburg","u"],
+["wd-Q15439248","Dorle Rath",1921,1989,"Ahrensburg","ra"],
+["wd-Q104530211","Hugo Rath",1876,null,"Ahrensburg","ra"],
+["st-Q99616761","Jenny Nathan",1856,null,"Ahrensburg","na"],
+["st-n2670244605","Magnus Lehmann",1885,null,"Ahrensburg","leh"],
+["wd-Q104530210","Veronika Rath",1883,1938,"Ahrensburg","ra"]
+],
+"slug":"ahrensburg"}

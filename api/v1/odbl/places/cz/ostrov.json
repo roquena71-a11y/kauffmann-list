@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"CZ",
+"label":"Ostrov",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q137513020","Amalie Löwenstein",1880,"memorial","Staré náměstí 21",50.30474,12.93895],
+["st-Q137511643","Ernst Keller",1881,"memorial","Dlouhá 105",50.30343,12.94108],
+["st-Q137512661","Fritz Erich Löwenstein",1918,"memorial","Nádražní 297",50.30096,12.94646],
+["st-Q137511912","Kamilla Löwy",1872,"memorial","Husova 39",50.30524,12.93933],
+["st-Q137512829","Louise Löwenstein",1886,"memorial","Nádražní 297",50.30096,12.94646]
+],
+"slug":"ostrov"}

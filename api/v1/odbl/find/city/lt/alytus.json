@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"LT",
+"label":"Alytus",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13198040620","Hiršas Kalmanavičius",1887,1941,"Alytus","kal"],
+["st-n13198040618","Mendelis Bokšickis",1898,1941,"Alytus","bo"],
+["st-n13198040619","Šeinė Kronzonaitė-Bokšickienė",1891,1943,"Alytus","kr"],
+["st-n13198040621","Šmuelis Beiralas",1883,1942,"Alytus","bei"]
+],
+"slug":"alytus"}

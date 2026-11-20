@@ -1,0 +1,16 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"rew",
+"rows":[
+["rewald","wd-Q105456838","Adolf Rewald",1867,1942,"Konzentrationslager Theresienstadt","rew"],
+["rewald","wd-Q105456839","Emma Rewald",1858,null,null,"rew"],
+["rewald","wd-Q105464145","Franziska Rewald",1869,1942,"Ghetto Theresienstadt","rew"],
+["rewald","wd-Q94918646","Hans Rewald",1886,1944,"Oświęcim","rew"],
+["rewald","wd-Q105456841","Henriette Rewald",1872,null,null,"rew"],
+["rewald","wd-Q105354584","Hermann Rewald",1873,null,null,"rew"],
+["rewald","wd-Q105456842","Jenny Rewald",1864,1943,"Konzentrationslager Theresienstadt","rew"],
+["rewald","wd-Q2177746","Ruth Rewald",1906,1942,"Oświęcim","rew"],
+["rewald","wd-Q106468179","Tillie Rewald",1868,1942,"Konzentrationslager Theresienstadt","rew"],
+["rewsin","wd-Q105456843","Golda Rewsin",1870,1942,"Konzentrationslager Theresienstadt","rew"],
+["rewzin","wd-Q95106815","Bella Rewzin",null,1942,"Vernichtungslager Treblinka","rew"]
+]}

@@ -1,0 +1,9 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"kar_",
+"rows":[
+["kar","wd-Q105654272","Anna Kar Hoop",1920,1945,null,"hoo"],
+["kar","wd-Q105654273","Clara Kar",1936,1944,"KZ Auschwitz","kar"],
+["kar","wd-Q105654274","Elisabeth Kar Cohen",1912,null,null,"cohe"],
+["kar","wd-Q105655253","Kar. Rachel Roostveldt",1914,null,null,"roo"]
+]}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"PL",
+"label":"Wyszków",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95119704","Freidel Paskovitz",1874,"death","Wyszków",52.59278,21.4584],
+["wd-Q95125490","Khana Pshititzki",1907,"death","Wyszków",52.59278,21.4584],
+["wd-Q95120163","Rakhel Paskovitz",1891,"death","Wyszków",52.59278,21.4584],
+["wd-Q95113652","Rivka Paskovitz",1910,"death","Wyszków",52.59278,21.4584]
+],
+"slug":"wyszkow"}

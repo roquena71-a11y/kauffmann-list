@@ -1,0 +1,7 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"ai",
+"rows":[
+["aimable","wd-Q55340136","Aimable Martel",1920,1942,"Sin-le-Noble","mar"],
+["aizen","st-n5873182626","Susanne Aizen",1924,1943,"Leipzig","ai"]
+]}

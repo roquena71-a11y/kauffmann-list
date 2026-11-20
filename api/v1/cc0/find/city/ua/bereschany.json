@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"UA",
+"label":"Bereschany",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95124270","Alfred Berger",1914,1942,"Bereschany","berge"],
+["wd-Q95127909","Golda Laks",1918,1942,"Bereschany","lak"],
+["wd-Q95106109","Meir Fas",null,1943,"Bereschany","fas"],
+["wd-Q95108301","Mozes Rozenblit",1908,1942,"Bereschany","roz"],
+["wd-Q95116824","Sara Meiblum",null,1941,"Bereschany","mei"],
+["wd-Q95106007","Tova Mates",1916,1942,"Bereschany","mat"],
+["wd-Q95106328","Zalman Tur",1883,1941,"Bereschany","tu"],
+["wd-Q95127087","Zeev Fas",1924,1943,"Bereschany","fas"]
+],
+"slug":"bereschany"}

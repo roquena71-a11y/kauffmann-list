@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n10768060589","Charlotte Eggarter",1895,1983,"Baden-Baden","eg"],
+["wd-Q1629286","Dr. Horst Berkowitz",1898,1983,"Hannover","berk"],
+["wd-Q109500","Harry Naujoks",1901,1983,"Hamburg","na"],
+["wd-Q105595061","Heinz Pappenheimer",1900,1983,"Aalen","pa"],
+["st-n4585433995","Johannes H. Burgers",1918,1983,"Zutphen","bu"],
+["wd-Q2163637","Rolf Merzbacher",1924,1983,"Konstanz","mer"]
+],
+"year":1983}

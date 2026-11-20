@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"PL",
+"label":"Siedlce",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94977114","Aharon Federman",1894,"death","Siedlce",52.18333,22.28333],
+["wd-Q95107933","Feiga Furmanski",1884,"death","Siedlce",52.18333,22.28333],
+["wd-Q94975939","Mindla Shenker",1875,"death","Siedlce",52.18333,22.28333],
+["wd-Q95116440","Rakhel Grinbaum",null,"death","Siedlce",52.18333,22.28333],
+["wd-Q95128962","Sara Iablokovich",1923,"death","Siedlce",52.18333,22.28333],
+["wd-Q95120955","Yisrael Librent",1919,"death","Siedlce",52.18333,22.28333],
+["wd-Q95124499","Yosef Milberger",null,"death","Siedlce",52.18333,22.28333]
+],
+"slug":"siedlce"}

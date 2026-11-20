@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Bönen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3810851044","Adolf Poppert",1888,null,"Bönen","po"],
+["st-n3810851045","Clara Poppert",1887,null,"Bönen","po"],
+["st-n3810851046","Eva Kaufmann",1885,null,"Bönen","kau"],
+["st-n3810851047","Gerda Laronne",1911,null,"Bönen","lar"],
+["st-n3810851048","Laura Keil",1879,null,"Bönen","ke"],
+["st-n3810851049","Lisa Haalmann",1915,null,"Bönen","haa"],
+["st-n3810851050","Ruth Linge",1907,null,"Bönen","lin"],
+["st-n3810851051","Sally Brandenstein",1879,1942,"Bönen","bra"]
+],
+"slug":"bonen"}

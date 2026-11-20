@@ -1,0 +1,16 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"mars",
+"rows":[
+["mars","wd-Q105367185","Berta Mars",1884,null,null,"mars"],
+["mars","wd-Q105367186","Siegmund Mars",1874,1943,"Konzentrationslager Theresienstadt","mars"],
+["marscha","wd-Q105456045","Marscha Leiba Pomper",1875,null,null,"pom"],
+["marschend","wd-Q105367187","Rosa Marschend",1858,1943,"Konzentrationslager Theresienstadt","mars"],
+["marschik","wd-Q105469421","Christian Marschik",1871,1943,"Konzentrationslager Theresienstadt","mars"],
+["marschik","wd-Q105469422","Heinrich Marschik",1868,1942,"Konzentrationslager Theresienstadt","mars"],
+["marschik","wd-Q105469423","Jakob Marschik",1866,1943,"Konzentrationslager Theresienstadt","mars"],
+["marschikova","wd-Q105563338","Helena Marschiková",1870,null,null,"mars"],
+["marsik","wd-Q105563344","Jiří Maršik",1921,1942,"KZ Majdanek","mars"],
+["marsik","wd-Q105563355","Rudolf Maršik",1890,null,null,"mars"],
+["marsikova","wd-Q105563340","Berta Maršiková",1891,null,null,"mars"]
+]}

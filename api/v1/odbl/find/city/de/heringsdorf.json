@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Heringsdorf",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n5246171228","Elisabeth Saulmann",1906,1940,"Heringsdorf","sau"],
+["st-n5246171230","Erich Saulmann",1938,1940,"Heringsdorf","sau"],
+["st-n5246171227","Eva Karla Saulmann",1936,1940,"Heringsdorf","sau"],
+["st-n5246171229","Hilde Ruth Saulmann",1930,1940,"Heringsdorf","sau"],
+["st-n5246171231","Ilso Rose Saulmann",1928,1940,"Heringsdorf","sau"],
+["st-n5244567404","Margarete Pörutz",1880,1940,"Heringsdorf","po"],
+["st-n5244567405","Siegmund Pörutz",1874,1941,"Heringsdorf","po"]
+],
+"slug":"heringsdorf"}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"PL",
+"label":"Kłodawa",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94976000","Bila Pashdetzki",1897,1942,"Kłodawa","pa"],
+["wd-Q95111017","David Pashdetzki",1922,1942,"Kłodawa","pa"],
+["wd-Q94975750","Rakhel Pashdetzki",1924,1942,"Kłodawa","pa"],
+["wd-Q95127079","Reuven Pashdetzki",1920,1942,"Kłodawa","pa"],
+["wd-Q95115813","Rivka Pazhenchevski",1902,1942,"Kłodawa","pa"],
+["wd-Q95122002","Sender Pashdetzki",1897,1942,"Kłodawa","pa"]
+],
+"slug":"kodawa"}

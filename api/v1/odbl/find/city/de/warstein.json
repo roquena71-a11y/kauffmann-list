@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Warstein",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3559341572","Bertha Kaufmann",1880,null,"Warstein","kau"],
+["st-n3559341574","Friede Kaufmann",1893,null,"Warstein","kau"],
+["st-n3559341576","Irma Gonsenhäuser",1898,null,"Warstein","gon"],
+["st-n3559341577","Julius Gonsenhäuser",1895,1938,"Warstein","gon"],
+["st-n3559341579","Margot Kaufmann",1915,null,"Warstein","kau"],
+["st-n3559341580","Moritz Kaufmann",1885,null,"Warstein","kau"],
+["st-n3559341581","Regina Cohn",1890,null,"Warstein","cohn"],
+["st-n3559341582","Walter Cohn",1913,null,"Warstein","cohn"],
+["st-n3559341583","Willi Cohn",1883,null,"Warstein","cohn"]
+],
+"slug":"warstein"}

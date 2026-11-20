@@ -1,0 +1,11 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"pt",
+"rows":[
+["wd-Q105577871","Jan Ptáček",1889,null,null,null,"pt"],
+["wd-Q105577873","Ladislav Ptáček",1892,null,null,null,"pt"],
+["wd-Q95119847","Moshe Ptashkin",1926,"Pinsk",52.11528,26.10306,"pt"],
+["wd-Q94976057","Volf Ptashkin",1935,"Pinsk",52.11528,26.10306,"pt"],
+["wd-Q105577876","Emanuel Ptic",1892,null,null,null,"pt"],
+["wd-Q105577877","Chaja Pticová",1899,null,null,null,"pt"]
+]}

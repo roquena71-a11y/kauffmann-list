@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n8568826262","Adam Kaim",1913,1999,"Bamberg","kai"],
+["wd-Q76602","Gerhard Herzberg",1904,1999,"Darmstadt","her"],
+["wd-Q132139684","Käthe Beutler",1896,1999,"Berlin","beu"],
+["st-n988282666","Liesel Rosenthal",1905,1999,"Baden-Baden","rosent"],
+["wd-Q126814955","Margot Katz",1923,1999,"Hannover","kat"],
+["wd-Q1736990","Wolfgang Lesser",1923,1999,"Stralsund","les"]
+],
+"year":1999}

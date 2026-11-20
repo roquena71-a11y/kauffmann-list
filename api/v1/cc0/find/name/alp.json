@@ -1,0 +1,17 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"alp",
+"rows":[
+["alpar","wd-Q104209092","MUDr. Evžen Alpar",1904,null,null,"al"],
+["alper","wd-Q104209094","Sophie Alper",1894,null,null,"al"],
+["alpert","wd-Q104209099","Berta Alpert",1889,null,null,"al"],
+["alpert","wd-Q95114658","Moshe Alpert",1886,1942,"Vernichtungslager Treblinka","al"],
+["alpert","wd-Q104209102","Paul Alpert",1892,null,null,"al"],
+["alphons","wd-Q104207089","Alphons Abel",1866,1943,"Terezín","ab"],
+["alphons","wd-Q104450249","Alphons Elkeles",1896,null,null,"el"],
+["alphons","wd-Q104542411","Alphons Feibelmann",1859,1942,"Konzentrationslager Theresienstadt","fei"],
+["alphons","wd-Q104651915","Alphons Friedberg",1885,1943,"Konzentrationslager Theresienstadt","friedb"],
+["alphons","wd-Q104685914","Alphons Haas",1895,1945,null,"haa"],
+["alphons","wd-Q104807126","Alphons Jonas",1865,1942,"Konzentrationslager Theresienstadt","jo"],
+["alphons","wd-Q105361632","Alphons Leipziger",1877,1943,"Konzentrationslager Theresienstadt","lei"]
+]}

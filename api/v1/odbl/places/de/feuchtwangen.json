@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"DE",
+"label":"Feuchtwangen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134591640","Abraham Gutmann",1870,"memorial","Hindenburgstraße 6, Feuchtwangen",49.16852,10.33182],
+["st-Q134591647","Adele Löwenstein",1898,"memorial","Hindenburgstraße 6, Feuchtwangen",49.16852,10.33182],
+["st-Q134591641","Amalie Gutmann",1872,"memorial","Hindenburgstraße 6, Feuchtwangen",49.16852,10.33182],
+["st-Q134591650","Berta Neumann",1895,"memorial","Museumstraße 19, Feuchtwangen",49.16775,10.33366],
+["st-Q134591642","Ernst Gutmann",1902,"memorial","Hindenburgstraße 6, Feuchtwangen",49.16852,10.33182],
+["st-Q134591652","Jost Joachim Neumann",1925,"memorial","Museumstraße 19, Feuchtwangen",49.16775,10.33366],
+["st-Q134591648","Julius Löwenstein",1887,"memorial","Hindenburgstraße 6, Feuchtwangen",49.16852,10.33182],
+["st-Q134591643","Kurt Gutmann",1910,"memorial","Hindenburgstraße 6, Feuchtwangen",49.16852,10.33182],
+["st-Q134591653","Leo Neumann",1895,"memorial","Museumstraße 19, Feuchtwangen",49.16775,10.33366],
+["st-Q134591644","Manfred Gutmann",1908,"memorial","Hindenburgstraße 6, Feuchtwangen",49.16852,10.33182],
+["st-Q134591645","Max Gutmann",1899,"memorial","Hindenburgstraße 6, Feuchtwangen",49.16852,10.33182]
+],
+"slug":"feuchtwangen"}

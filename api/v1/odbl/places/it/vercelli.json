@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"IT",
+"label":"Vercelli",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q125707538","Adele Carmi",null,"memorial",null,45.32553,8.42547],
+["wd-Q125707454","Annetta Jona",null,"memorial",null,45.32593,8.42482],
+["wd-Q125707530","Delia Segre Maroni",null,"memorial",null,45.3254,8.42457],
+["wd-Q116651474","Enrichetta Jona",null,"memorial",null,45.3258,8.42553],
+["wd-Q116652179","Felice Jona",null,"memorial",null,45.3258,8.42553],
+["wd-Q113250495","Giuseppe Emanuele Leblis",null,"memorial",null,45.32729,8.42094],
+["wd-Q116645777","Regina Jona Segre",null,"memorial",null,45.32581,8.42553]
+],
+"slug":"vercelli"}

@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"FR",
+"label":"Sotteville-lès-Rouen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13116752620","Diamante Kavayero",1932,"memorial","48 Rue du Cours",49.42416,1.08925],
+["st-n13116752621","Élie Kavayero",1928,"memorial","48 Rue du Cours",49.42416,1.08925],
+["st-n13116752622","Esther Kavayero",1926,"memorial","48 Rue du Cours",49.42416,1.08926],
+["st-n13116752619","Estréa Garguir née Schimoula",1874,"memorial","48 Rue du Cours",49.42416,1.08926],
+["st-n13116752627","Jacques Cohen",1882,"memorial","9 Rue Armand Carrel",49.42012,1.08371],
+["st-n13116752625","Kalo Mizrahi née Abeni",1909,"memorial","31 Rue du Cours",49.42486,1.09073],
+["st-n13116752628","Mathilde Cohen née Ménaché",1905,"memorial","9 Rue Armand Carrel",49.42012,1.08371],
+["st-n13116752618","Moïse Kavayero",1898,"memorial","48 Rue du Cours",49.42416,1.08926],
+["st-n13116752617","Perla Kavayero née Garguir",1900,"memorial","48 Rue du Cours",49.42416,1.08925],
+["st-n13116752626","Raphaël Mizrahi",1908,"memorial","31 Rue du Cours",49.42486,1.09073],
+["st-n13116752624","Sarah Kavayero",1923,"memorial","48 Rue du Cours",49.42417,1.08926],
+["st-n13116752623","Suzanne Kavayero",1936,"memorial","48 Rue du Cours",49.42416,1.08925],
+["st-n13116752629","Victor Cohen",1928,"memorial","9 Rue Armand Carrel",49.42012,1.08371]
+],
+"slug":"sotteville-les-rouen"}

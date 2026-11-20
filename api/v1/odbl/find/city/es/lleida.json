@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"country":"ES",
+"label":"Lleida",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12558586780","Benet Morelló Pintó",null,1942,"Lleida","pi"],
+["st-n12558645953","Casimir Vila Saló",1892,null,"Lleida","sal"],
+["st-n12558645954","Ramon Alandí Qui",1907,null,"Lleida","q"]
+],
+"slug":"lleida"}

@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Höchberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104450069","Emanuel Eldod",1863,1942,"Höchberg","el"],
+["wd-Q104450186","Miriam Eldod",1872,1942,"Höchberg","el"],
+["st-Q131743231","Raphael Kurzmann",1886,null,"Höchberg","ku"],
+["st-n2509194299","Recha Eldod",1880,1942,"Höchberg","el"],
+["st-n2509194296","Rifka Eldod",1902,1942,"Höchberg","el"],
+["st-Q131743228","Salomon Bravmann",1885,null,"Höchberg","bra"],
+["st-Q131743229","Selma Bravmann",1887,null,"Höchberg","bra"],
+["st-n2509194320","Stoplpersteine Bravmann",1885,null,"Höchberg","bra"],
+["st-Q131743230","Theresia Kurzmann",1880,null,"Höchberg","ku"]
+],
+"slug":"hochberg"}

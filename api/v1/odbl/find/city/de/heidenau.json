@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Heidenau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11565263735","Boleslaw Zimakowski",1909,null,"Heidenau","zi"],
+["st-n12495121942","Elsa Emmy Reiner",1877,null,"Heidenau","rei"],
+["st-n12495121943","Horst Wilhelm Reiner",1907,null,"Heidenau","rei"],
+["st-n12495121944","Käthe Reiner",1909,null,"Heidenau","rei"],
+["st-n12495121941","Maximilian Reiner",1877,null,"Heidenau","rei"],
+["st-n9164904427","Paul Gröger",1873,null,"Heidenau","gro"],
+["st-n11565263733","Wilhelm Bellmann",1888,1940,"Heidenau","bel"]
+],
+"slug":"heidenau"}

@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"LV",
+"label":"Libau",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q120483643","Erich Rosenstern",1899,1944,"Libau","rosens"],
+["wd-Q94977111","Fania Ulman",1920,1942,"Libau","u"],
+["wd-Q94975526","Fuka Gutman",1912,1941,"Libau","gutm"],
+["wd-Q124157793","Gustav Cohen",1903,1944,"Libau","cohe"],
+["wd-Q95107883","Khana Dorbian",1910,1941,"Libau","do"],
+["wd-Q95111447","Meita Prisman",1898,1941,"Libau","pri"],
+["wd-Q95110767","Rakhel Freid",1878,1941,"Libau","frei"],
+["wd-Q95106038","Zalman Brilowitz",1923,1941,"Libau","bri"],
+["wd-Q95121336","Zalman Diamant",1906,1941,"Libau","di"]
+],
+"slug":"libau"}

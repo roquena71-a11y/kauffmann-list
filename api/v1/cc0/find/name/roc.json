@@ -1,0 +1,22 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"roc",
+"rows":[
+["rocha","wd-Q105457038","Pinja Rocha Riwosch",1874,1943,"Konzentrationslager Theresienstadt","ri"],
+["rochelsohn","wd-Q105457056","Margarete Rochelsohn",1886,1944,"Konzentrationslager Theresienstadt","roc"],
+["rochelsohn","wd-Q105512351","Rosa Rochelsohn",1874,1943,"Konzentrationslager Theresienstadt","roc"],
+["rochhandler","wd-Q105580202","Pinchas Rochhändler",1889,null,null,"roc"],
+["rochhandlerova","wd-Q105580198","Laura Rochhändlerová",1895,null,null,"roc"],
+["rochla","wd-Q104673484","Rochla Gorodysziz",1872,null,null,"gor"],
+["rochmann","wd-Q105457058","Abraham Rochmann",1872,null,null,"roc"],
+["rochmann","wd-Q105457059","Robert Rochmann",1895,null,null,"roc"],
+["rochme","wd-Q105510932","Rochme Wolfmann",1863,1942,"Konzentrationslager Theresienstadt","wolfm"],
+["rochmis","wd-Q105472600","Elsa Rochmis",1904,null,null,"roc"],
+["rochocz","wd-Q105457060","Martha Rochocz",1873,null,null,"roc"],
+["rockert","wd-Q105472604","Paula Rockert",1864,null,null,"roc"],
+["rockmann","wd-Q105457061","Margot Rockmann",1899,null,null,"roc"],
+["rockmann","wd-Q106468185","Paula Rockmann",1882,1944,"Konzentrationslager Theresienstadt","roc"],
+["rockmann","wd-Q105457063","Richard Rockmann",1908,null,null,"roc"],
+["roco","wd-Q105655225","Engelina Roco-Bonewit",1896,1944,"KZ Auschwitz","roc"],
+["roco","wd-Q105655188","Salomon Roco",1895,1945,null,"roc"]
+]}

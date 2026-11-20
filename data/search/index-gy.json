@@ -1,0 +1,10 @@
+{"columns":["stone_id","name","address","locality","lat","lon","jg","person_id"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","description":"Índice ligero para buscar placas en el mapa sin descargar data/stones.json. Solo datos de la placa (nombre, dirección, año JG). person_id apunta a la ficha en api/v1/odbl si existe.","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"gy",
+"rows":[
+["n12803763966","Max Planck Gymnasium","Sichelstraße 3, Trier","Trier",49.756814,6.646977,null,null],
+["n11886375578","Faragó György","1111 Budapest, Bartók Béla út 52.","Budapest",47.478215,19.048946,null,"st-n11886375578"],
+["n12437436899","Surán György","1054 Budapest, Báthory utca 24","Budapest",47.506386,19.054013,null,"st-n12437436899"],
+["n11823002429","Dr. Sándor Gyula","1051 Budapest, Október 6. utca 13.","Budapest",47.501101,19.050981,null,"st-n11823002429"],
+["n13046758707","Dr. Sándor Gyuláné","1051 Budapest, Október 6. utca 13.","Budapest",47.501096,19.050982,null,"st-n13046758707"]
+]}

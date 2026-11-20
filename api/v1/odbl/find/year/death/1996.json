@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104674305","Erich Gottschalk",1906,1996,"Bochum","got"],
+["wd-Q25939348","Ernst Schwitters",1918,1996,"Hannover","schw"],
+["wd-Q1292397","Friedrich Zängerle",1911,1996,"Rüsselsheim am Main","za"],
+["wd-Q216411","Gerhard Durlacher",1928,1996,"Baden-Baden","du"],
+["wd-Q6510422","Karl-Heinz Herzberg",1902,1996,"Berlin","her"]
+],
+"year":1996}

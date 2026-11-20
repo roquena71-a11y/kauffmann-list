@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"FR",
+"label":"Metz",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13012023459","Élie Bloch",1909,"memorial","17 Rue du Sablon",49.10764,6.17163],
+["st-n13012023460","Georgette Bloch née Samuel",1918,"memorial","17 Rue du Sablon",49.10764,6.17163],
+["st-n13798809645","Henri Gerstenhaben",1898,"memorial","22 Avenue Leclerc de Hauteclocque",49.10854,6.16982],
+["st-n13798809648","Jeanne Gerstenhaben née Weil",1889,"memorial","6 Rue Clovis",49.10668,6.17086],
+["st-n13798809646","Léon Bleitrach",1899,"memorial","26 Rue Pasteur",49.10832,6.17093],
+["st-n13012023461","Myriam Bloch",1937,"memorial","17 Rue du Sablon",49.10763,6.17163],
+["st-n13798809649","Othon Gerstenhaben",1897,"memorial","6 Rue Clovis",49.10668,6.17086],
+["st-n13798809647","Simone Claire Gerstenhaben",1931,"memorial","6 Rue Clovis",49.10668,6.17086],
+["st-n13012023457","Stéphanie Hoffnung",1921,"memorial","4 Rue du XXe-Corps-Américain",49.10441,6.16602]
+],
+"slug":"metz"}

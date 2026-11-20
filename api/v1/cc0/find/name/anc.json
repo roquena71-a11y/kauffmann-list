@@ -1,0 +1,16 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"anc",
+"rows":[
+["ancerl","wd-Q104209595","Leopold Ančerl",1873,null,null,"an"],
+["ancerlova","wd-Q104209596","Ida Ančerlová",1884,null,null,"an"],
+["ancerlova","wd-Q104209597","Valerie Ančerlová",1908,null,null,"an"],
+["anchel","wd-Q95121680","Anchel Bogner",1865,1942,"Lwiw","bog"],
+["anchel","wd-Q95110099","Anchel Piasechni",1903,1942,"KZ Auschwitz","pia"],
+["anchel","wd-Q95122319","Anchel Preshov",1881,1943,"KZ Auschwitz","pre"],
+["ancherlik","wd-Q104209598","JUDr. Karel Ancherlik",1890,1942,"Łódź","an"],
+["ancona","wd-Q105462886","Clara Ricardo-Ancona",1863,1945,"Konzentrationslager Theresienstadt","ri"],
+["ancona","wd-Q104209600","Estella Ancona-Vicyra",1899,null,null,"an"],
+["ancona","wd-Q140183649","Joseph d'Ancona",1911,1945,"KZ Bergen-Belsen","da"],
+["ancona","wd-Q104209599","Simcha Selina Ancona",1899,null,null,"an"]
+]}

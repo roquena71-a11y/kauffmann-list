@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"death",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q124351378","Annalee Roettgen",1923,2014,"New York City","rot"],
+["wd-Q94765794","Ella Michel",1920,2014,"Porto Alegre","mi"],
+["wd-Q142068472","Eva Grünwald",1927,2014,null,"grunw"],
+["wd-Q7218959","Naftālî Lau-Lāvîʾ",1928,2014,"Israel","lau"],
+["wd-Q111334131","Rose Marie Sterenberg-Gompertz",1919,2014,"Drachten","gom"],
+["wd-Q4018047","Walter Zwi Bacharach",1928,2014,null,"bac"]
+],
+"year":2014}

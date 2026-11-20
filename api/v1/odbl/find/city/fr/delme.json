@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"FR",
+"label":"Delme",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13019509454","Aline Moyse",1876,1944,"Delme","mo"],
+["st-n13019509455","Ernest Moyse",1872,1944,"Delme","mo"],
+["st-n13019509450","Irène Levy",1912,1944,"Delme","levy"],
+["st-n13019509453","Noémie Vormus",1873,1944,"Delme","v"],
+["st-n13019509451","Raymond Levy",1906,1944,"Delme","levy"]
+],
+"slug":"delme"}

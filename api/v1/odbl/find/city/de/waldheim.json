@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Waldheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q126007608","Aron Adalbert Kosterlitz",1907,null,"Waldheim","kos"],
+["st-Q126007511","Bernhard Rubinstein",1875,1940,"Waldheim","ru"],
+["st-Q126007551","Eugen Becker",1879,null,"Waldheim","bec"],
+["st-Q125699611","Eugen Heymann",1885,1940,"Waldheim","hey"],
+["st-Q126007552","Hermann Aussenberg",1899,1940,"Waldheim","au"],
+["st-Q126007607","Jenny Kosterlitz",1898,null,"Waldheim","kos"],
+["wd-Q105356203","Josef Kosterlitz",1899,1945,"Waldheim","kos"],
+["st-Q126007553","Marie Heller",1906,null,"Waldheim","hel"],
+["st-Q126007554","Sally Jacobs",1900,null,"Waldheim","jac"]
+],
+"slug":"waldheim"}

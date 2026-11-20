@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"NO",
+"label":"Tromsø",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q138710050","Daniel Caplan",1870,1943,"Tromsø","ca"],
+["wd-Q138607274","Eva Shotland",1908,1943,"Tromsø","sh"],
+["wd-Q138607231","Herman Smith",1907,1943,"Tromsø","sm"],
+["wd-Q138607390","Hertze Caplan",1913,1943,"Tromsø","ca"],
+["wd-Q138359450","Meyer Leib Shotland",1878,1943,"Tromsø","sh"],
+["wd-Q138607325","Moritz Klein",1911,1943,"Tromsø","kl"],
+["wd-Q138607376","Rebekka Sakolsky født Shotland",1912,1943,"Tromsø","sh"],
+["wd-Q138607761","Ruth Sakolsky",1940,1943,"Tromsø","sak"],
+["wd-Q138359430","Selik Sakolsky",1887,1943,"Tromsø","sak"],
+["wd-Q96241565","Solly Caplan",1908,1942,"Tromsø","ca"]
+],
+"slug":"troms"}

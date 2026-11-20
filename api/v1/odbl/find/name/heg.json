@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"heg",
+"rows":[
+["hegemann","st-n795261818","Robert Hegemann",1903,1940,"Bielefeld","heg"],
+["hegenbart","wd-Q15839709","Paul Hegenbart",1884,1945,"Berlin","heg"],
+["hegener","st-n12373746500","Heinrich Hegener",1913,null,null,"heg"],
+["heger","st-Q52817194","Mathilde Heger",1881,null,"Bremen","heg"],
+["heger","st-Q52817199","Nathan Heger",1876,null,"Bremen","heg"],
+["hegselmann","st-n12431124016","Maria Hegselmann",1891,1941,"Ahlen","heg"]
+]}

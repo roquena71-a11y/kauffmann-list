@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"country":"PL",
+"label":"SS-Ausbildungs- und Arbeitslager Trawniki",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q58358600","Annemarie Loepert",1929,1942,"SS-Ausbildungs- und Arbeitslager Trawniki","lop"],
+["wd-Q58363991","Käthe Henriette Salomon",1900,1942,"SS-Ausbildungs- und Arbeitslager Trawniki","sal"],
+["wd-Q1145577","Margarethe Kahn",1880,1942,"SS-Ausbildungs- und Arbeitslager Trawniki","kah"]
+],
+"slug":"ss-ausbildungs-und-arbeitslager-trawniki"}

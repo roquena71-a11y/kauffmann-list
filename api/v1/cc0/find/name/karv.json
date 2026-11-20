@@ -1,0 +1,8 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"karv",
+"rows":[
+["karvan","wd-Q105518491","Josef Karvan",1922,1945,"KZ Dachau","kar"],
+["karvan","wd-Q105518492","Otto Karvan",1884,1944,"Konzentrationslager Theresienstadt","kar"],
+["karvanova","wd-Q105518490","Berta Karvanová",1900,null,null,"kar"]
+]}

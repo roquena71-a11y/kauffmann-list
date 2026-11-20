@@ -1,0 +1,16 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"hep",
+"rows":[
+["hepner","wd-Q104701600","Else Hepner",1877,1942,"Ghetto Theresienstadt","hep"],
+["hepner","wd-Q104701601","Esther Hepner",1865,1942,"Konzentrationslager Theresienstadt","hep"],
+["hepner","wd-Q104701602","Lina Hepner",1885,1943,"KZ Auschwitz","hep"],
+["hepner","wd-Q104701603","Max Hepner",1875,1944,"Konzentrationslager Theresienstadt","hep"],
+["hepner","wd-Q104701604","Rosa Hepner",1863,1942,"Ghetto Theresienstadt","hep"],
+["hepner","wd-Q104701605","Salo Hepner",1865,1943,"Konzentrationslager Theresienstadt","hep"],
+["heppenheimer","wd-Q104700622","Robert Heppenheimer",1893,null,null,"hep"],
+["heppner","wd-Q104701606","Adah Heppner",1896,null,null,"hep"],
+["heppner","wd-Q104701607","Alfons Heppner",1869,null,null,"hep"],
+["heppner","wd-Q104701608","Bertha Heppner",1873,null,null,"hep"],
+["heppner","wd-Q104701609","Else Heppner",1905,null,null,"hep"]
+]}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"ES",
+"label":"la Seu d'Urgell",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13942158834","Antoni Vial Candia",1912,"memorial","Carrer de les Eres, 4",42.35878,1.46069],
+["st-n13942183228","Josep Sans Sansa",1912,"memorial",null,42.3562,1.46199],
+["st-n13942095469","Remicio Morella Giraut",1904,"memorial","Carrer del Carmen, 17",42.35783,1.46026],
+["st-n13942158835","Victorià Córdoba Bordoll",1916,"memorial","Placeta de Sant Nicolau, 12",42.35836,1.46119]
+],
+"slug":"la-seu-d-urgell"}

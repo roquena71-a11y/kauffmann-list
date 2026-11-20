@@ -1,0 +1,16 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"mad",
+"rows":[
+["madchen","wd-Q104218654","Madchen Bähr",1863,1943,"Terezín","bah"],
+["madeleine","wd-Q105654249","Madeleine Bromet",1934,1944,"KZ Auschwitz","bro"],
+["madeleine","wd-Q105599825","Madeleine Schücková",1879,null,null,"schu"],
+["madeleine","wd-Q104805603","Sylvia Madeleine Kahn",1943,1944,"KZ Auschwitz","kah"],
+["madelong","wd-Q105366234","Cäcilie Madelong",1875,null,null,"mad"],
+["madelong","wd-Q105366235","Ida Madelong",1871,null,null,"mad"],
+["madelong","wd-Q105366236","Mathilde Madelong",1877,1944,"Konzentrationslager Theresienstadt","mad"],
+["mader","wd-Q105366237","Klara Mader",1872,1942,"Konzentrationslager Theresienstadt","mad"],
+["maderova","wd-Q105561900","Gertruda Maděrová",1888,null,null,"mad"],
+["madlena","wd-Q105639980","Madlena Wolfová",1883,null,null,"wolfo"],
+["mador","wd-Q105512790","Georg Mador",1911,1945,null,"mad"]
+]}

@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"FR",
+"label":"Tournan-en-Brie",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13105872430","Arthur James Leoboldti",1873,"memorial","11 Boulevard Isaac Pereire",48.74069,2.75905],
+["st-n13105872429","Fanny Marguerite Leoboldti née Bloch",1886,"memorial","11 Boulevard Isaac Pereire",48.74069,2.75905],
+["st-n13105872428","Pierre Girard",1922,"memorial","1 Place Edmond de Rothschild",48.74051,2.764]
+],
+"slug":"tournan-en-brie"}

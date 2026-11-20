@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n9241697564","Anna Neu",1877,1949,"Odernheim am Glan","neu"],
+["wd-Q99032298","Dorothea Mendelssohn Bartholdy",1875,1949,"Hamburg","bar"],
+["wd-Q95235125","Dr. Fritz Rose",1876,1949,"Ravensburg","rose_"],
+["wd-Q1634932","Dr. Hugo Fuchs",1878,1949,"Chemnitz","fu"],
+["wd-Q55881207","Emil Neumann",1876,1949,"Neu-Ulm","neu"],
+["wd-Q1704235","Josef Averesch",1902,1949,"Trier","av"],
+["wd-Q1912946","Max Leuteritz",1884,1949,"Hamburg","leu"],
+["wd-Q1937279","Minna Faßhauer",1858,1949,"Mitte","fa"],
+["wd-Q141416601","Siegfried Sondermann",1919,1949,"Ravensburg","so"],
+["wd-Q132137808","William Ledermann",1871,1949,"Berlin","led"]
+],
+"year":1949}

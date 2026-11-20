@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q102115232","Anna Frank",1889,1968,"Sigmaringen","fra"],
+["st-n5435561509","Hermann Bausen",1896,1968,"Baden-Baden","bau"],
+["wd-Q1825277","Lily Grosser",1884,1968,"Frankfurt am Main","gro"],
+["wd-Q62605689","Susanne Rosenthal",1910,1968,"Stuttgart","rosent"]
+],
+"year":1968}

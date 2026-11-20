@@ -1,0 +1,15 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"maro",
+"rows":[
+["marody","wd-Q105563326","Arnošt Marody",1896,1944,"Konzentrationslager Theresienstadt","maro"],
+["marodyova","wd-Q105563329","Berta Marodyová",1907,null,null,"maro"],
+["marodyova","wd-Q105563333","Marie Marodyová",1869,1943,"Konzentrationslager Theresienstadt","maro"],
+["marodyova","wd-Q105650645","Růžena Marodyová",1894,null,null,"maro"],
+["maroko","wd-Q95121616","Asher Maroko",1893,1943,"Polen","maro"],
+["maroko","wd-Q95110512","Rakhel Maroko",1926,1944,"KZ Stutthof","maro"],
+["marold","wd-Q105597085","Marold Schiller",1890,null,null,"schi"],
+["marons","wd-Q105655248","Marons Rooselaar",1915,null,null,"roo"],
+["maros","wd-Q105469420","Marie Maros",1862,1942,"Konzentrationslager Theresienstadt","maro"],
+["marosiova","wd-Q105563335","Berta Marosiová",1904,null,null,"maro"]
+]}

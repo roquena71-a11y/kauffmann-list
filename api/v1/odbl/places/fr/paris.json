@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"FR",
+"label":"Paris",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13063962647","Abraham Pfefer",1868,"memorial","7 Rue Geoffroy l'Angevin",48.86063,2.35419],
+["st-n13063962648","Anna Schwartz",1922,"memorial","23 Rue d'Enghien",48.87193,2.35104],
+["st-n13063962650","Chaja Rajchgod dite Hélène née Grodnicki",1921,"memorial","81 Rue du Temple",48.86151,2.35638],
+["st-n13063962649","Daniel Rajchgod",1925,"memorial","24 Rue Rambuteau",48.86098,2.35437],
+["st-n13063962652","David Grodnicki",1890,"memorial","1 Rue Perrée",48.86385,2.3626],
+["st-n13063962651","Hersz Rajchgod dit Henri",1921,"memorial","81 Rue du Temple",48.86151,2.35638],
+["st-n13515928738","Jean Béroujon dit Laroux",null,"memorial",null,48.84247,2.35141],
+["st-n13469245598","Joseph Gerson",1909,"memorial","20 Rue Poissonnière",48.86945,2.34786],
+["st-n13063962653","Ruya Grodnicki née Hedzberg",1893,"memorial","1 Rue Perrée",48.86385,2.3626],
+["st-n13515858683","Yvonne Lucienne Lemoine",1895,"memorial","2 Rue Jacques Cœur",48.85185,2.36713]
+],
+"slug":"paris"}

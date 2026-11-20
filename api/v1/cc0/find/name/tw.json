@@ -1,0 +1,14 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"tw",
+"rows":[
+["twardowits","wd-Q105513317","Lipe Twardowits",1915,1945,"Konzentrationslager Theresienstadt","tw"],
+["twiasschor","wd-Q105460195","Lea Twiasschor",1864,null,null,"tw"],
+["twiasschor","wd-Q105460196","Meier Twiasschor",1863,null,null,"tw"],
+["tworoger","wd-Q105460198","Anna Tworoger",1871,1944,"Konzentrationslager Theresienstadt","tw"],
+["tworoger","wd-Q105460199","Gertrud Tworoger",1898,1945,"Konzentrationslager Neuengamme","tw"],
+["tworoger","wd-Q105460200","Käthe Tworoger",1886,null,null,"tw"],
+["tworoger","wd-Q105460201","Margarethe Tworoger",1874,1942,"Konzentrationslager Theresienstadt","tw"],
+["tworoger","wd-Q105460197","Nathan Tworoger",1863,1943,"Konzentrationslager Theresienstadt","tw"],
+["tworoger","wd-Q105460202","Nathan Tworoger",1887,null,null,"tw"]
+]}

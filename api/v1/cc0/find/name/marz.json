@@ -1,0 +1,21 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"marz",
+"rows":[
+["marz","wd-Q105561940","Alfred März",1890,null,null,"marz"],
+["marz","wd-Q105561944","Artur März",1896,null,null,"marz"],
+["marz","wd-Q105561949","Leopold März",1889,null,null,"marz"],
+["marz","wd-Q105561951","Ludvík März",1886,null,null,"marz"],
+["marz","wd-Q105561952","Marek März",1854,1943,"Konzentrationslager Theresienstadt","marz"],
+["marz","wd-Q105353810","Otto März",1897,null,null,"marz"],
+["marz","wd-Q105366253","Pola März",1907,null,null,"marz"],
+["marzel","wd-Q95117875","Yosef Marzel",null,1942,"KZ Auschwitz","marz"],
+["marzon","wd-Q105366254","Blima Märzon",1859,1942,"Konzentrationslager Theresienstadt","marz"],
+["marzova","wd-Q105561943","Anna Märzová",1892,null,null,"marz"],
+["marzova","wd-Q105561946","Hildegarda Märzová",1899,null,null,"marz"],
+["marzova","wd-Q105561954","Meta Märzová",1906,null,null,"marz"],
+["marzova","wd-Q105561955","Sofie Märzová",1859,1943,"Konzentrationslager Theresienstadt","marz"],
+["marzova","wd-Q105561956","Valerie Märzová",1900,null,null,"marz"],
+["marzova","wd-Q105561957","Zdenka Märzová",1892,null,null,"marz"],
+["marzynski","wd-Q105367189","Betty Marzynski",1860,null,null,"marz"]
+]}

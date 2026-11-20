@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"BE",
+"label":"Brüssel",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95125536","Ida Hirsh",1877,1943,"Brüssel","hirsh"],
+["wd-Q94977175","Moritz Girsh",1874,1943,"Brüssel","gi"],
+["wd-Q3372212","Paul Sobol",1926,2020,"Brüssel","so"],
+["wd-Q52905924","Tobias Schiff",1925,1999,"Brüssel","schi"],
+["wd-Q94977123","Yehudit Sheratzki",1902,1942,"Brüssel","sh"]
+],
+"slug":"brussel"}

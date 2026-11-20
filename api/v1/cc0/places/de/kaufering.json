@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"DE",
+"label":"Kaufering",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105642330","Alfred Weis",1906,"death","Kaufering",48.08333,10.88333],
+["wd-Q104544688","David Ettinger",1889,"death","Kaufering",48.08333,10.88333],
+["wd-Q105503174","Emanuel Schrott",1899,"death","Kaufering",48.08333,10.88333],
+["wd-Q104447455","Gustav Engelmann",1912,"death","Kaufering",48.08333,10.88333],
+["wd-Q104211354","Jiří Back",1909,"death","Kaufering",48.08333,10.88333],
+["wd-Q105510979","Max Wollner",1921,"death","Kaufering",48.08333,10.88333],
+["wd-Q104654356","Paul Fürst",1910,"death","Kaufering",48.08333,10.88333],
+["wd-Q104447459","Walter Engelmann",1907,"death","Kaufering",48.08333,10.88333],
+["wd-Q105639249","Zdeněk Winter",1915,"death","Kaufering",48.08333,10.88333]
+],
+"slug":"kaufering"}

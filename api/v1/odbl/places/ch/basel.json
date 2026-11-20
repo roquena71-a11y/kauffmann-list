@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"CH",
+"label":"Basel",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q135583608","Anna Maria Böhringer",1885,"memorial","Erlenstrasse 14, 4058 Basel",47.56808,7.59912],
+["wd-Q135767231","Armin Weiss",1895,"memorial",null,47.55703,7.58666],
+["wd-Q133264064","Edmée Hirsch-Ditisheim",1907,"memorial","Spalenring 140",47.5552,7.57565],
+["wd-Q142101789","Emma Markstahler",1907,"memorial","Strassburgerallee 68",47.56262,7.56995],
+["wd-Q135616534","Gaston Dreher",1907,"memorial","Mostackerstrasse 15",47.55522,7.58174],
+["wd-Q142115410","Hans Weinberg",1907,"memorial","Barfüsserplatz 3",47.55511,7.58967],
+["wd-Q115973104","Hella Olstein",1905,"memorial","Hegenheimerstrasse 22",47.56048,7.57337],
+["wd-Q135652032","Kurt Preuss",1910,"memorial","Rappoltshof 7",47.56267,7.593],
+["wd-Q135479409","Margot Braunschweig",1920,"memorial","Hegenheimerstrasse 96, 4055 Basel",47.56162,7.56855],
+["wd-Q135479333","Rebekka Braunschweig",1894,"memorial","Hegenheimerstrasse 96, 4055 Basel",47.56162,7.56856],
+["wd-Q135623632","Robert Kehrli",1897,"memorial","Utengasse 43",47.55947,7.5945]
+],
+"slug":"basel"}

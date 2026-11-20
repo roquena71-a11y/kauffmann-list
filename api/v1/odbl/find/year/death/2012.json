@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q24999","Cordelia Edvardson",1929,2012,"Berlin","ed"],
+["wd-Q126877094","Dirk Samulon",1918,2012,"Hannover","sam"],
+["wd-Q55678887","Elfried Naumann",1925,2012,"Bad Lippspringe","na"],
+["wd-Q98754999","Hildegard Kahn",1924,2012,"Lisberg","kah"],
+["wd-Q899264","Martin Fleischmann",1892,2012,"Berlin","fl"]
+],
+"year":2012}

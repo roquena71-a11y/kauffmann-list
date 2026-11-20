@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Nabburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n742664602","Friedel Bruckmann",1925,null,"Nabburg","bru"],
+["st-n742664597","Gerta Bruckmann",1892,null,"Nabburg","bru"],
+["st-n742664610","Günther Bruckmann",1927,null,"Nabburg","bru"],
+["st-n742664599","Irma Rosenhein",1895,null,"Nabburg","rosenh"],
+["st-n742664590","Sally Bruckmann",1890,null,"Nabburg","bru"],
+["st-n742664604","Waltraut Bruckmann",1930,null,"Nabburg","bru"],
+["st-n742664607","Werner Bruckmann",1920,null,"Nabburg","bru"]
+],
+"slug":"nabburg"}

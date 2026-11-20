@@ -1,0 +1,14 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ky",
+"rows":[
+["kychenthal","wd-Q105360557","Louis Kychenthal",1863,1943,"Konzentrationslager Theresienstadt","ky"],
+["kyjovska","wd-Q105560372","Hilda Kyjovská",1899,null,null,"ky"],
+["kysela","wd-Q105657725","Jiří Kysela",1920,1943,"KZ Auschwitz","ky"],
+["kyselova","wd-Q105560373","Olga Kyselová",1895,null,null,"ky"],
+["kyser","wd-Q11992489","Vítězslav Kyšer",1898,1942,"Justizvollzugsanstalt Plötzensee","ky"],
+["kywe","wd-Q104420271","Kywe Buschbaum",1893,null,null,"bu"],
+["kywi","wd-Q105654411","Bernd Kywi",1921,1944,"KZ Auschwitz","ky"],
+["kywi","wd-Q105655433","Ernestine Salmagné-Kywi",1893,1944,null,"sal"],
+["kywi","wd-Q105654412","Kurt Kywi",1895,1945,null,"ky"]
+]}

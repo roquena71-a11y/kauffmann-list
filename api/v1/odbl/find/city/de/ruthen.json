@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"country":"DE",
+"label":"Rüthen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6580597054","Abraham 'Albert' Pollack",1862,1939,"Rüthen","po"],
+["st-n6580597059","Albert Stern",1866,1942,"Rüthen","stern"],
+["st-n6580597051","Anita Pollack",1910,null,"Rüthen","po"],
+["st-n6580597058","Clara Weiss",1890,1942,"Rüthen","weis"],
+["st-n6580597053","Emma Pollack",1898,null,"Rüthen","po"],
+["st-n6580597052","Erna Pollack",1907,null,"Rüthen","po"],
+["st-n6580597055","Hedwig Pollack",1876,null,"Rüthen","po"],
+["st-n6580597049","Leo Alexander",1903,null,"Rüthen","al"],
+["st-n6590987828","Mathilde Ruthenburg",1865,null,"Rüthen","ru"],
+["st-n6580597060","Salomon 'Sally' Pollack",1866,1937,"Rüthen","po"],
+["st-n6580597050","Willi Alexander",1900,null,"Rüthen","al"]
+],
+"slug":"ruthen"}

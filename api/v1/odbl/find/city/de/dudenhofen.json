@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"DE",
+"label":"Dudenhofen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12581670346","Adolf Reinhardt",1877,null,"Dudenhofen","rei"],
+["st-n12581670345","Amalie Reinhardt",1875,null,"Dudenhofen","rei"],
+["st-n12581670344","Helene Klasen",1882,null,"Dudenhofen","kl"],
+["st-n11625059851","Regine Raphael",null,null,"Dudenhofen","ra"]
+],
+"slug":"dudenhofen"}

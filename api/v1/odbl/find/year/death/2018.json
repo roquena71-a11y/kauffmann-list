@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n9183841465","Ferna Ackermann",1935,2018,"Baden-Baden","ac"],
+["wd-Q134426030","Heda Wernerová",1928,2018,"Brno","wer"],
+["wd-Q105103058","Helga Becker-Leeser",1928,2018,"Dülmen","bec"]
+],
+"year":2018}

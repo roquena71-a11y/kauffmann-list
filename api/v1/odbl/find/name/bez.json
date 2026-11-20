@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"bez",
+"rows":[
+["bezalel","wd-Q132138618","Bezalel Arthour Hendel",1887,null,"Berlin","hen"],
+["bezen","st-n800161078","Aron Bezen",1899,null,"Hamburg","bez"],
+["bezen","st-n800161204","Bilha Erna Bezen",1939,null,"Hamburg","bez"],
+["bezen","st-n800161149","Erna Bezen",1905,null,"Hamburg","bez"],
+["bezen","st-n1690456525","Hannelore Bezen",1931,null,"Hamburg","bez"],
+["bezen","st-n800161029","Leonhard Bezen",1938,null,"Hamburg","bez"]
+]}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Eibenstock",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q136764819","Bertha Fleischer",1895,null,"Eibenstock","fl"],
+["wd-Q105389487","Emma Salomon",1864,1940,"Eibenstock","sal"],
+["st-Q136764919","Erwine Levy",1873,null,"Eibenstock","levy"],
+["st-Q136764818","Harry Fleischer",1889,null,"Eibenstock","fl"],
+["st-Q136764917","Helene Rosen",1910,null,"Eibenstock","rosen_"],
+["st-Q136764907","Louis Levy",1871,null,"Eibenstock","levy"]
+],
+"slug":"eibenstock"}

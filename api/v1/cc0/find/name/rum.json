@@ -1,0 +1,20 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"rum",
+"rows":[
+["rum","wd-Q105455000","Clementine Oppenheim-Rum",1854,1942,"Konzentrationslager Theresienstadt","op"],
+["rumianek","wd-Q95118339","Yitzkhak Rumianek",1892,1942,"Płońsk","ru"],
+["rumianek","wd-Q94975948","Zisa Rumianek",1922,1942,"Płońsk","ru"],
+["rummelsburg","wd-Q105389073","Ida Rummelsburg",1885,null,null,"ru"],
+["rummelsburg","wd-Q105389074","Isidor Rummelsburg",1874,1944,"Konzentrationslager Theresienstadt","ru"],
+["rummelsburg","wd-Q105389077","Joseph Rummelsburg",1891,null,null,"ru"],
+["rummlerova","wd-Q105595500","Bedřiška Rummlerová",1910,null,null,"ru"],
+["rumpler","wd-Q105595501","Bedřich Rumpler",1878,null,null,"ru"],
+["rumpler","wd-Q105595503","Oskar Rumpler",1875,null,null,"ru"],
+["rumpler","wd-Q105595504","Oskar Rumpler",1890,null,null,"ru"],
+["rumplerova","wd-Q105595502","Helena Rumplerová",1887,null,null,"ru"],
+["rumplerova","wd-Q105597490","Klementina Rumplerová",1888,null,null,"ru"],
+["rumplerova","wd-Q105595506","Recha Rumplerová",1882,null,null,"ru"],
+["rumpus","wd-Q105389079","Zilla Rumpus",1881,1944,"Ghetto Theresienstadt","ru"],
+["rumsteinova","wd-Q105595507","Tila Rumsteinová",1856,null,null,"ru"]
+]}

@@ -1,0 +1,12 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ml",
+"rows":[
+["mladkova","wd-Q105564889","Berta Mládková",1885,null,null,"ml"],
+["mlaver","wd-Q94975714","Gitel Mlaver",1870,1942,"Warschauer Ghetto","ml"],
+["mlcochova","wd-Q105657789","Helena Mlcochová",1916,1942,"KZ Auschwitz","ml"],
+["mlicko","wd-Q105511114","Maria Zarsky-Mlicko",1870,1942,"Konzentrationslager Theresienstadt","za"],
+["mlnarikova","wd-Q105564890","Bedřiška Mlnariková",1889,null,null,"ml"],
+["mlodzik","wd-Q105373856","Selma Mlodzik",1875,null,null,"ml"],
+["mlynarzewicz","wd-Q105373857","Meyer Mlynarzewicz",1872,null,"Konzentrationslager Theresienstadt","ml"]
+]}

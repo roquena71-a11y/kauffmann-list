@@ -1,0 +1,18 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"leu",
+"rows":[
+["leubuscher","st-Q141744458","Adolf Leubuscher",1887,null,"Guben","leu"],
+["leubuscher","wd-Q132136397","Daniel Leubuscher",1894,1942,"Berlin","leu"],
+["leubuscher","st-Q141744466","Edith Leubuscher",1896,null,"Guben","leu"],
+["leubuscher","wd-Q105362087","Selma Leubuscher",1871,1940,"Berlin","leu"],
+["leuchtag","st-n8087770362","Salomon Leuchtag",1887,null,"Würselen","leu"],
+["leudesdorff","wd-Q104421281","Jenny Cahen-Leudesdorff",1865,1943,"Berlin","ca"],
+["leupold","st-n7539004768","Alfred Leupold",1894,1942,"Dresden","leu"],
+["leuschel","st-n3430339090","Martin Leuschel",1905,1933,"Hamburg","leu"],
+["leuschner","st-n10170558861","Arthur Leuschner",1894,1945,"Dresden","leu"],
+["leuschner","wd-Q105361810","Henriette Leuschner",1859,1940,"Hamburg","leu"],
+["leuteritz","wd-Q1912946","Max Leuteritz",1884,1949,"Hamburg","leu"],
+["leuthold","wd-Q105362098","Salomon Leuthold",1893,1943,"Bad Kissingen","leu"],
+["leuwer","wd-Q25937667","Johanna Leuwer",1871,1943,"Bremen","leu"]
+]}

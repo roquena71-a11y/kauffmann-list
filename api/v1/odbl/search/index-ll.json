@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"ll",
+"rows":[
+["st-n13426865519","Valentìn Fouce Llana",null,"Madrid",40.44071,-3.69788,"ll"],
+["st-n8928166335","Vicens Gené Llanet",1888,"Figueres",42.2675,2.96083,"ll"],
+["st-n13397853836","Roberto Llaneza",1902,"Barcelona",41.37036,2.13879,"ll"],
+["st-n7261115561","Francesc Valls Llinares",1896,"Castellar del Vallès",41.61626,2.08809,"ll"],
+["st-n13521158587","Francesc Sas Llop",1912,"Sabadell",41.55343,2.11235,"ll"],
+["st-n13506057530","Narcís Canales Llopart",1912,"Sabadell",41.55961,2.10589,"ll"],
+["st-n13021473675","Esther Pauline Lloyd",1906,"St Clement",49.17747,-2.09192,"ll"]
+]}

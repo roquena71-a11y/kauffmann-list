@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"BE",
+"label":"Berchem-Sainte-Agathe - Sint-Agatha-Berchem",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7164883594","Joseph Mordka Halter",1890,"memorial","Chaussée de Gand - Gentsesteenweg 1116",50.86258,4.2998],
+["st-n7164883596","Ryfka Horowitz",1892,"memorial","Chaussée de Gand - Gentsesteenweg 1116",50.86259,4.29979]
+],
+"slug":"berchem-sainte-agathe-sint-agatha-berchem"}

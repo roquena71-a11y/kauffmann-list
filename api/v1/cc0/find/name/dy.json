@@ -1,0 +1,22 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"dy",
+"rows":[
+["dybekova","wd-Q104446591","Kateřina Dybeková",1893,null,null,"dy"],
+["dyhrenfurth","wd-Q104449817","Ella Dyhrenfurth",1870,1942,"Konzentrationslager Theresienstadt","dy"],
+["dyhrenfurth","wd-Q104449818","Gertrude Dyhrenfurth",1873,1942,"Konzentrationslager Theresienstadt","dy"],
+["dyhrenfurth","wd-Q104449819","Mathilde Dyhrenfurth",1874,null,null,"dy"],
+["dym","wd-Q95125680","Shimon Dym",1886,1941,"Belgrad","dy"],
+["dymak","wd-Q104449820","Lina Dymak",1862,null,null,"dy"],
+["dymant","wd-Q104449821","Moses Dymant",1870,null,null,"dy"],
+["dymova","wd-Q104448381","Irma Dymová",1898,null,null,"dy"],
+["dyner","wd-Q104446636","Mendel Dyner",1893,1942,"KZ Majdanek","dy"],
+["dynerova","wd-Q104446638","Lea Dynerová",1902,null,null,"dy"],
+["dynes","wd-Q104447129","Pessie Dynes",1865,null,null,"dy"],
+["dynska","wd-Q104448384","Dora Dynská",1877,null,null,"dy"],
+["dynski","wd-Q104448385","Heinrich Dynski",1869,1942,"Konzentrationslager Theresienstadt","dy"],
+["dyonisius","wd-Q105471464","Dyonisius Poch",1867,1944,"Konzentrationslager Theresienstadt","poc"],
+["dyrenfurth","wd-Q104449822","Margarete Dyrenfurth",1862,null,null,"dy"],
+["dyrenfurth","wd-Q106469377","Paul Dyrenfurth",1864,null,null,"dy"],
+["dyrenfurthova","wd-Q104446783","Gertrude Dyrenfurthová",1870,1942,"Konzentrationslager Theresienstadt","dy"]
+]}

@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3303996690","Gerald Steinhart",1914,2001,"Dresden","stei"],
+["wd-Q131918787","Günther Seligmann",1914,2001,"Ronnenberg","se"],
+["wd-Q94929705","Heinz Gärtner",1916,2001,"Hamburg","ga"],
+["st-n10768060592","Ilse Schwarz",1908,2001,"Baden-Baden","schw"]
+],
+"year":2001}

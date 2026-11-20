@@ -1,0 +1,20 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"mak",
+"rows":[
+["makarsky","st-Q131551774","Iwan Makarsky",1912,1943,"Stuttgart","mak"],
+["makkabi","st-n9568482044","Turnverein Hasmonäa Makkabi",null,null,"Wien","mak"],
+["makow","wd-Q141959996","Rosa Sticki-Makow",1908,null,"Zurich","sti"],
+["makower","st-n7289497784","Maurice Makower",null,null,"Fontenay-sous-Bois","mak"],
+["makowiak","st-Q136192840","Elisabeth Makowiak",1912,null,"Gelsenkirchen","mak"],
+["makowski","wd-Q133074502","Benjamin Makowski",1900,1944,"Strasbourg","mak"],
+["makowski","wd-Q133074504","Denise Makowski",1931,1944,"Strasbourg","mak"],
+["makowski","wd-Q133074506","Elie Makowski",1930,1944,"Strasbourg","mak"],
+["makowski","wd-Q133074508","Gerson Makowski",1912,1943,"Strasbourg","mak"],
+["makowski","wd-Q133074509","Gilbert Makowski",1940,1944,"Strasbourg","mak"],
+["makowski","st-n11947030617","Jaques Makowski",1906,1944,"Strasbourg","mak"],
+["makowski","wd-Q133074517","Selma Makowski",1899,1944,"Strasbourg","mak"],
+["makowski","st-n1688789164","Walter Makowski",1915,1941,"Hamburg","mak"],
+["maks","st-n7295275245","Maks Bohm",1922,null,"Bruxelles - Brussel","bo"],
+["makuch","st-Q134177197","Josef Makuch",1902,null,"Bruchsal","mak"]
+]}

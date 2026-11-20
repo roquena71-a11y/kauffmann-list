@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"CZ",
+"label":"Brünn",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105657673","Ernie Löwenheim",1906,"death","Brünn",49.19528,16.60833],
+["wd-Q105657849","Hans Neugebauer",1922,"death","Brünn",49.19528,16.60833],
+["wd-Q95121806","Oto Pik",1895,"death","Brünn",49.19528,16.60833]
+],
+"slug":"brunn"}

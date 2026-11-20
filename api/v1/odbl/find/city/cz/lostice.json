@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"CZ",
+"label":"Loštice",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n9394141645","Bedřich Fuchs",null,null,"Loštice","fu"],
+["st-n9394200860","Charlota Knӧpflmacherová",null,null,"Loštice","kn"],
+["st-n9394141647","Frieda Fuchsová",null,null,"Loštice","fu"],
+["st-n9394141646","Leopold Fuchs",null,null,"Loštice","fu"],
+["st-n9394141648","Margareta Fuchsová",null,null,"Loštice","fu"],
+["st-n9394200858","Otto Knӧpflmacher",null,null,"Loštice","kn"],
+["st-n9394200859","Zikmund Knӧpflmacher",null,null,"Loštice","kn"]
+],
+"slug":"lostice"}

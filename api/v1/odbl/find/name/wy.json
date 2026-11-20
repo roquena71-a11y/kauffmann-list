@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"wy",
+"rows":[
+["wydra","st-Q106328286","Jankel Simon Wydra",1874,null,"Leipzig","wy"],
+["wydra","st-Q106328287","Osias Wydra",1905,null,"Leipzig","wy"],
+["wydra","st-Q106328288","Rebecca Regina Wydra",1882,null,"Leipzig","wy"],
+["wygodzinski","wd-Q1347360","Martha Wygodzinski",1869,1943,"Berlin","wy"],
+["wyk","st-n12195131416","Gelli van der Wyk",1906,null,null,"wy"],
+["wysocki","st-n11286469031","Franciszek Wysocki",1909,1941,"Düren","wy"],
+["wysocki","wd-Q132136942","Josef Wysocki",1898,1943,"Berlin","wy"],
+["wysocki","st-Q132672800","Max Wysocki",1908,null,"Kiel","wy"]
+]}

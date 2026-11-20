@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"country":"FR",
+"label":"Barr",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13946512744","Achille Ellenbogen",1879,1943,"Barr","el"],
+["st-n13946512746","Alfred Arnold",1901,1945,"Barr","ar"],
+["st-n13946512743","Ceslaw Sieradzki",1925,1941,"Barr","sie"],
+["st-n13946512745","Corinne Bloch née Moise",1885,1943,"Barr","mo"],
+["st-n13017911860","Elie Bloch",1909,1943,"Barr","blo"],
+["st-n13017911859","Georgette Bloch née Samuel",1918,1943,"Barr","sam"],
+["st-n13946473141","Henri Weill",1933,1944,"Barr","weil"],
+["st-n13946473143","Jacques Isaac Weill",1898,1944,"Barr","weil"],
+["st-n13946473140","Lise Weill",1940,1944,"Barr","weil"],
+["st-n13946473142","Lucie Weill née Schwartz",1903,1944,"Barr","schw"],
+["st-n13017911858","Myriam Bloch",1937,1943,"Barr","blo"],
+["st-n13946512747","Oscar Hosch",1916,1944,"Barr","hos"]
+],
+"slug":"barr"}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"CZ",
+"label":"Teplice",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105616052","Alfred Urbach",1859,1942,"Teplice","u"],
+["wd-Q105605917","Dr. Bruno Spitzer",null,1942,"Teplice","sp"],
+["wd-Q105598575","Emil Schling",1881,1942,"Teplice","schl"],
+["wd-Q105555844","Heinrich Lederer",1875,null,"Teplice","led"],
+["wd-Q105642854","Hugo Löbl",1875,1942,"Teplice","lob"],
+["wd-Q105616078","Klara Urbach",1866,null,"Teplice","u"],
+["wd-Q104655317","Max Freund",1876,1942,"Teplice","fre"],
+["wd-Q104655408","Walter Freund",1925,1942,"Teplice","fre"]
+],
+"slug":"teplice"}

@@ -1,0 +1,20 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"ef",
+"rows":[
+["efim","wd-Q216654","Efim Schachmeister",1894,1944,"Berlin","scha"],
+["efim","wd-Q132137210","Emil Efim Siedner",1880,null,"Berlin","sie"],
+["efimow","st-n9807199970","Wassili Efimow",1921,1944,"Hamburg","ef"],
+["efira","st-n12881026309","Abraham Efira",1904,null,"Saint-Gilles - Sint-Gillis","ef"],
+["efira","st-n7155040526","Flora Van Praag-Efira",1906,null,"Anderlecht","pr"],
+["efraim","st-Q99692879","Edgar Efraim Hirsch",1897,null,"Hamburg","hirsch"],
+["efraim","wd-Q132144070","Efraim Adlerfliegel",1891,null,"Berlin","ad"],
+["efraim","st-n3758951631","Efraim Lexandrowitz",1915,null,"Lübeck","lex"],
+["efraim","st-n776860712","Efraim Schäfer",1887,1942,"Darmstadt","scha"],
+["efraim","wd-Q132135753","Ferdinand Efraim Traub",1871,1943,"Berlin","tr"],
+["efraim","st-n9662716161","Isaak Efraim Linker",1934,null,"Ludwigshafen am Rhein","lin"],
+["efrem","st-n12453758150","Efrem Olonetzky",1910,null,"Stuttgart","ol"],
+["efrem","wd-Q104449916","Rosalie Efrem",1876,1943,"Berlin","ef"],
+["efroim","st-Q136956306","Efroim Szykman",1892,1940,"Hamburg","sz"],
+["efros","wd-Q132137719","Fritz Efros",1891,1942,"Berlin","ef"]
+]}

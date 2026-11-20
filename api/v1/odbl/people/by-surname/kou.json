@@ -1,0 +1,6 @@
+{"count":1,
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"people":[
+{"fate":"murdered","fate_basis":"inscription_text","field_sources":{"fate":["stolpersteine_de"],"name":["stolpersteine_de"]},"id":"st-n7288829819","identifiers":{"osm":["n7288829819"]},"memorials":[{"country":"FR","image":"https://commons.wikimedia.org/wiki/File:Stolperstein_für_Bazi_Koupervasser_(Fontenay-sous-Bois).jpg","inscription":"Ici habitait BAZI KOUPERVASSER Née 1890 Internée Drancy Déportée 1942 Auschwitz Assassinée 1.8.1943","lat":48.8479555,"locality":"Fontenay-sous-Bois","lon":2.4597717,"memorial_id":"n7288829819","source_id":"stolpersteine_de","type":"stolperstein"}],"name":"Bazi Koupervasser","sources":[{"attribution":"© OpenStreetMap contributors (ODbL 1.0) + Wikidata (CC0 1.0)","license":"ODbL-1.0","record_id":"n7288829819","retrieved":"2026-11-04","source_id":"stolpersteine_de","url":"https://www.openstreetmap.org/node/7288829819"}]}
+],
+"prefix":"kou"}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"death",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q133875346","Adolf Hein",1882,1935,"Hannover","hei"],
+["wd-Q138546791","Eliazer Asscher",1878,1935,"Amsterdam","as"],
+["wd-Q97461093","Emil Kitzinger",1873,1935,"Memmingen","ki"],
+["wd-Q20980189","Ernst Delbanco",1869,1935,"Hamburg","de"],
+["wd-Q2214673","Sally Epstein",1907,1935,"Berlin-Plötzensee","ep"]
+],
+"year":1935}

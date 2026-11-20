@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"UA",
+"label":"Sokal",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95125616","Cesarine Reinert",1907,"death","Sokal",50.48333,24.28333],
+["wd-Q95110562","Klara Vert",1914,"death","Sokal",50.48333,24.28333],
+["wd-Q95116175","Lipa Poizner",1910,"death","Sokal",50.48333,24.28333],
+["wd-Q95113669","Mordekhai Fesler",null,"death","Sokal",50.48333,24.28333]
+],
+"slug":"sokal"}

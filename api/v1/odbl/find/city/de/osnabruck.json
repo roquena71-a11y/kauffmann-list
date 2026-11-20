@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"country":"DE",
+"label":"Osnabrück",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q4256516","Auguste van Pels",1900,1945,"Osnabrück","pe"],
+["st-n1686952760","Bernhard Christel Wiechmann",1921,1942,"Osnabrück","wi"],
+["st-n2622872604","Dr. Ernst Jacobson",1884,1938,"Osnabrück","jac"],
+["wd-Q215572","Felix Nussbaum",1904,1944,"Hamburg","nu"],
+["st-Q88099984","Friedrich Wilhelm Harstick",1913,null,"Osnabrück","har"],
+["st-Q88101243","Georg Piel",1902,null,"Osnabrück","pi"],
+["wd-Q559674","Hermann van Pels",1898,1944,"Osnabrück","pe"],
+["wd-Q75980","Johannes Prassek",1911,1943,"Osnabrück","pr"],
+["st-n2622872606","Margarete Jacobson",1899,null,"Osnabrück","jac"],
+["wd-Q69984","Peter van Pels",1928,1945,"Osnabrück","pe"],
+["wd-Q55857921","Philipp Nussbaum",1872,1944,"Osnabrück","nu"],
+["wd-Q106088242","Rahel Nussbaum",1873,1944,"Osnabrück","nu"]
+],
+"slug":"osnabruck"}

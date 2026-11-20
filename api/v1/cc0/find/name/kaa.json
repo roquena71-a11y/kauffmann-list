@@ -1,0 +1,19 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"kaa",
+"rows":[
+["kaan","wd-Q104805185","Filip Kaan",1880,null,null,"kaa"],
+["kaan","wd-Q104805189","Zikmund Kaan",1883,null,null,"kaa"],
+["kaanova","wd-Q104805184","Arnoštka Kaanová",1899,null,null,"kaa"],
+["kaanova","wd-Q104805187","Růžena Kaanová",1882,null,null,"kaa"],
+["kaas","wd-Q104805582","Abraham Kaas",1907,1945,"KZ Buchenwald","kaa"],
+["kaas","wd-Q104805585","Emanuel Kaas",1876,1944,"Konzentrationslager Theresienstadt","kaa"],
+["kaas","wd-Q104805587","Hans Kaas",1940,1944,"KZ Auschwitz","kaa"],
+["kaas","wd-Q104805588","Sophie Kaas-Troostwijk",1915,null,null,"kaa"],
+["kaatje","wd-Q115060248","Kaatje Benninga",1898,1943,"Vernichtungslager Sobibor","ben"],
+["kaatje","wd-Q104420154","Kaatje Colthof Dantzich",1901,1944,"KZ Auschwitz","da"],
+["kaatje","wd-Q104653636","Kaatje Frenk",1890,1944,"KZ Auschwitz","fren"],
+["kaatz","wd-Q137922578","Anna Kaatz",1892,1942,"KZ Auschwitz","kaa"],
+["kaatz","wd-Q104807962","Johanna Kaatz",1877,null,null,"kaa"],
+["kaatz","wd-Q104807435","Sophie Kaatz",1877,1944,"Konzentrationslager Theresienstadt","kaa"]
+]}

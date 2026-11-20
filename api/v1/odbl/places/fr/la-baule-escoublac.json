@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"FR",
+"label":"La Baule-Escoublac",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13094348675","Ernest See",1864,"memorial","5 Avenue du Parc",47.28084,-2.36538],
+["st-n13094348677","Freddy Besso",1929,"memorial","2 Avenue de Lorraine",47.28138,-2.37627],
+["st-n13094348679","Jacqueline Besso",1924,"memorial","2 Avenue de Lorraine",47.28138,-2.37627],
+["st-n13094348672","Jacques Fischer",1925,"memorial","5 Avenue du Parc",47.28084,-2.36538],
+["st-n13094348678","Janine Besso",1927,"memorial","2 Avenue de Lorraine",47.28138,-2.37627],
+["st-n13094348676","Linda Besso née Bentata",1903,"memorial","2 Avenue de Lorraine",47.28138,-2.37627],
+["st-n13094348671","Max Fischer",1892,"memorial","5 Avenue du Parc",47.28084,-2.36538],
+["st-n13094348674","Pierre Fischer",1928,"memorial","5 Avenue du Parc",47.28084,-2.36538],
+["st-n13094348673","Suzanne Fischer née See",1893,"memorial","5 Avenue du Parc",47.28084,-2.36538]
+],
+"slug":"la-baule-escoublac"}

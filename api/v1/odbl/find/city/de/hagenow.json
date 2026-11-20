@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"country":"DE",
+"label":"Hagenow",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q100748252","Dora Davidsohn",1912,null,"Hagenow","da"],
+["st-Q100747746","Dr. Hans A. Sommerfeld",1894,null,"Hagenow","so"],
+["st-Q100748414","Gerda Davidsohn",1909,null,"Hagenow","da"],
+["st-Q100748028","Hanna Meinungen",1940,null,"Hagenow","mei"],
+["st-Q100748445","Heinz Davidsohn",1906,null,"Hagenow","da"],
+["st-Q100747906","Hermann Meinungen",1900,null,"Hagenow","mei"],
+["st-Q100748011","Käthe Meinungen",1904,null,"Hagenow","mei"],
+["st-Q100748123","Kurt Meyerheim",1907,null,"Hagenow","meyerh"],
+["st-Q100747540","Margarete Sommerfeld",1892,null,"Hagenow","so"],
+["st-Q100747847","Samuel Meinungen",1867,null,"Hagenow","mei"],
+["st-Q100748207","Thea Meyerheim",1910,null,"Hagenow","meyerh"]
+],
+"slug":"hagenow"}

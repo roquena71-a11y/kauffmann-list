@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"NL",
+"label":"Wolvega",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n14210486899","Abraham Delmonte",1908,1940,"Wolvega","de"],
+["st-n14210486900","Elsje Mendels-Davidson",1884,1943,"Wolvega","men"],
+["st-n14210530001","Emanuel Mendels",1878,1944,"Wolvega","men"],
+["st-n14210530003","Hendrica Mendels",1882,1943,"Wolvega","men"],
+["st-n14210530002","Levi Mendels",1885,1943,"Wolvega","men"]
+],
+"slug":"wolvega"}

@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"PL",
+"label":"Ghetto Piaski",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q98582169","Ida Heilbronner",1878,"death","Ghetto Piaski",51.13333,22.86667],
+["wd-Q104869753","Josef Günzburger",1883,"death","Ghetto Piaski",51.13333,22.86667],
+["wd-Q104869590","Rosalie Günzburger",1893,"death","Ghetto Piaski",51.1388,22.84853]
+],
+"slug":"ghetto-piaski"}

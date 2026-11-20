@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"SE",
+"label":"Stockholm",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q81041488","Curt Moses",1886,"memorial","Gumshornsgatan 6",59.33578,18.08956],
+["wd-Q80913948","Erich Holewa",1896,"memorial","Kungsholmstorg 6",59.32755,18.04269],
+["wd-Q58425875","Hans Eduard Szybilski",1907,"memorial","Apelbergsgatan 36",59.33641,18.06451]
+],
+"slug":"stockholm"}

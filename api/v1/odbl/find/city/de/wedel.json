@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"DE",
+"label":"Wedel",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q100989424","Betty Elkeles",1885,1940,"Wedel","el"],
+["st-Q100989419","Franz Hinrich Borchert",1912,null,"Wedel","bo"],
+["st-Q100989412","Gertrud Kroll",1895,1944,"Wedel","kr"],
+["st-Q100989425","Helene Johannsen",1879,null,"Wedel","jo"],
+["st-Q100989392","Karl Timm",1919,1942,"Wedel","ti"]
+],
+"slug":"wedel"}

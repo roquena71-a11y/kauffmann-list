@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"FR",
+"label":"Metz",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13012023459","Élie Bloch",1909,1943,"Metz","blo"],
+["st-n13012023460","Georgette Bloch née Samuel",1918,1943,"Metz","sam"],
+["st-n13798809645","Henri Gerstenhaben",1898,1944,"Metz","ge"],
+["st-n13798809648","Jeanne Gerstenhaben née Weil",1889,1944,"Metz","weil"],
+["st-n13798809646","Léon Bleitrach",1899,1943,"Metz","ble"],
+["st-n13012023461","Myriam Bloch",1937,1943,"Metz","blo"],
+["st-n13798809649","Othon Gerstenhaben",1897,1944,"Metz","ge"],
+["st-n13798809647","Simone Claire Gerstenhaben",1931,1944,"Metz","ge"],
+["st-n13012023457","Stéphanie Hoffnung",1921,1942,"Metz","hof"]
+],
+"slug":"metz"}

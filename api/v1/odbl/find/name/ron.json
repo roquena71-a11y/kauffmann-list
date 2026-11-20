@@ -1,0 +1,21 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"ron",
+"rows":[
+["ronai","st-n11823004238","Rónai Béla",1896,1945,"Budapest","bel"],
+["ronald","st-n1707810939","Ronald Leonhard Moczydlower",1938,null,"Hamburg","mo"],
+["ronald","st-n11281660835","Ronald Michael Gobas",1926,1942,"Weener","gob"],
+["ronald","st-n9896941130","Ronald Seeger",1934,null,"Hannover","se"],
+["rondaan","st-n14210470167","Lolle Rondaan",1919,1944,"Bitgum","ron"],
+["rondahl","wd-Q73289507","Elise Roendahl",1875,1943,"Wuppertal","ron"],
+["rones","wd-Q132136243","Erwin Rones",1909,null,"Berlin","ron"],
+["roni","st-n12981629807","Roni Rothfels",1898,1942,"Bebra","rot"],
+["ronia","st-n842454931","Ronia Appermann",1908,null,"Hamburg","ap"],
+["ronie","st-n9712104148","Ronie Masche Kreisel",1892,null,"Magdeburg","kr"],
+["ronkat","st-n3768167588","Anna Maria Ronkat",1904,1940,"Radolfzell","ron"],
+["ronkat","st-Q137714349","Anna Ronkat",1904,1940,"Radolfzell am Bodensee","ron"],
+["ronnau","st-n673934675","Robert Rönnau",1885,null,"Hamburg","ron"],
+["ronneberger","wd-Q105457208","Heinz Ronneberger",1919,null,"Berlin","ron"],
+["ronnekamp","wd-Q132144037","Alice Rönnekamp",1903,null,"Berlin","ron"],
+["ronsheim","st-n9828910920","Nanny Ronsheim",1908,null,"Hannover","ron"]
+]}

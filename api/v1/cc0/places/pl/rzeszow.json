@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"PL",
+"label":"Rzeszów",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94976463","Dodi Aron",null,"death","Rzeszów",50.04111,21.99889],
+["wd-Q95108013","Feiga Tepel",1894,"death","Rzeszów",50.04111,21.99889],
+["wd-Q95107554","Kuba Perl",1897,"death","Rzeszów",50.04111,21.99889],
+["wd-Q94977035","Liza Fuks",1898,"death","Rzeszów",50.04111,21.99889],
+["wd-Q94976163","Mia Fortreflikh",1878,"death","Rzeszów",50.04111,21.99889],
+["wd-Q95125880","Sala Perl",1911,"death","Rzeszów",50.04111,21.99889],
+["wd-Q95116692","Sheindl Platzer",1922,"death","Rzeszów",50.04111,21.99889],
+["wd-Q94976208","Tzila Losberg",1901,"death","Rzeszów",50.04111,21.99889],
+["wd-Q94976565","Tzila Perl",1908,"death","Rzeszów",50.04111,21.99889]
+],
+"slug":"rzeszow"}

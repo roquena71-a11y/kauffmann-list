@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13274781221","Babette Oettinger",1863,1951,"Ulm","ot"],
+["st-n3753256630","Balduin Nathan",1872,1951,"Emmerich am Rhein","na"],
+["wd-Q15455088","Bernhard Ketzlick",1907,1951,"Hamm","ke"],
+["wd-Q95893533","Dr. Leo Gutmann",1875,1951,"Gotha","gu"],
+["wd-Q63225053","Dr. Moritz Willi Katzenstein",1874,1951,"Bielefeld","kat"],
+["wd-Q131752351","Iwan Cohen",1888,1951,"Ronnenberg","cohe"],
+["st-n13566519218","Josef Dreifuss",1884,1951,"Freiburg im Breisgau","dr"],
+["wd-Q107221","Julius Bamberger",1880,1951,"Bremen","bam"],
+["wd-Q17265650","Martin Mayer",1875,1951,"Hamburg","may"],
+["st-n5669032776","Rosa Busch",1885,1951,"Mülheim an der Ruhr","bu"]
+],
+"year":1951}

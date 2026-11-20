@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"PL",
+"label":"Żelechów",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95125554","Ester Frakter",1889,1942,"Żelechów","frak"],
+["wd-Q95119615","Khaim Frekhter",1887,1942,"Żelechów","frek"],
+["wd-Q94975821","Paia Peretz",1883,1942,"Żelechów","per"],
+["wd-Q95113741","Pesa Frekhter",1916,1942,"Żelechów","frek"],
+["wd-Q95116720","Sheindel Frekhter",1915,1942,"Żelechów","frek"]
+],
+"slug":"zelechow"}

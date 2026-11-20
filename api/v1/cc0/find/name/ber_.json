@@ -1,0 +1,17 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ber_",
+"rows":[
+["ber","wd-Q95124976","Ber Fuks",1924,1942,"Ghetto Litzmannstadt","fuk"],
+["ber","wd-Q95109871","Ber Huber",1890,1943,"Ghetto Litzmannstadt","hu"],
+["ber","wd-Q95127996","Ber Kleinbaum",1898,1942,"Polen","kleinb"],
+["ber","wd-Q94975946","Ber Levinson",1888,1944,"Vilnius","levi"],
+["ber","wd-Q95113803","Ber Novak",null,1940,"Polen","no"],
+["ber","wd-Q94976089","Ber Pertzovski",1878,1942,"Luzk","per"],
+["ber","wd-Q95112878","Ber Presman",1912,1943,"Vilnius","pre"],
+["ber","wd-Q94976416","Fania Ber",null,1942,"Kostopil","ber_"],
+["ber","wd-Q105510881","Mayer Ber Wolf",1902,null,null,"wolf_"],
+["ber","wd-Q95127707","Michal Ber",1880,1940,"Polen","ber_"],
+["ber","wd-Q104543194","Mojzez Ber Frankfurter",1868,1942,"Konzentrationslager Theresienstadt","frankf"],
+["ber","wd-Q95124554","Moshe Ber",1926,1942,"Kostopil","ber_"]
+]}

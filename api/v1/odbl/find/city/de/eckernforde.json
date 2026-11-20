@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Eckernförde",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6500213481","Heinrich Otto",1888,null,"Eckernförde","ot"],
+["st-Q132200927","Helmuth Kock",1907,null,"Eckernförde","koc"],
+["st-n6500275253","Helmuth Kock",1907,null,"Eckernförde","koc"],
+["st-n6500566053","Hermann Ivers",1892,1942,"Eckernförde","i"],
+["st-n6500687844","Hilde Faehse",1903,null,"Eckernförde","fa"],
+["st-n6500687845","Otto Faehse",1900,null,"Eckernförde","fa"],
+["wd-Q133614398","Richard Vosgerau",1889,1945,"Eckernförde","v"]
+],
+"slug":"eckernforde"}

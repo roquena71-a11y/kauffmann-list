@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"FR",
+"label":"Belfort",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13192852511","Chaja Gerszenfisz née Bermann",1897,"memorial","16 Rue Pierre et Michel Dreyfus-Schmidt",47.63875,6.8595],
+["st-n13192852509","Gustave Christen",1886,"memorial","122 Avenue Jean Jaurès",47.6503,6.85236],
+["st-n13192852512","Jacob Gerszenfisz",1896,"memorial","16 Rue Pierre et Michel Dreyfus-Schmidt",47.63875,6.8595],
+["st-n13192852510","Joseph Gerszenfisz",null,"memorial","16 Rue Pierre et Michel Dreyfus-Schmidt",47.63875,6.8595],
+["st-n12349001962","Madeleine 'Mado' Blum",1928,"memorial","13 Faubourg de France",47.63693,6.85663]
+],
+"slug":"belfort"}

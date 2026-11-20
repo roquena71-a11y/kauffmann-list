@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Schorndorf",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n677558890","Anton Guttenberger",1892,null,"Schorndorf","gu"],
+["st-n677558888","Berta Guttenberger",1926,null,"Schorndorf","gu"],
+["wd-Q19959705","Elisabeth Guttenberger",1931,2024,"Schorndorf","gu"],
+["st-n677559556","Heinrich Talmon Gross",1882,null,"Schorndorf","gro"],
+["st-n677559013","Johanna Guttenberger",1893,null,"Schorndorf","gu"],
+["st-n677559012","Johannes Guttenberger",1929,null,"Schorndorf","gu"],
+["st-n677558887","Karl Eckstein",1934,null,"Schorndorf","ec"],
+["st-n677559014","Maria Guttenberger",1928,null,"Schorndorf","gu"]
+],
+"slug":"schorndorf"}

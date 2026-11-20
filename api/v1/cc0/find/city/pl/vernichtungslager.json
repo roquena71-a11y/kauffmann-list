@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"PL",
+"label":"Vernichtungslager",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q216222","Arthur Goldstein",1887,1943,"Vernichtungslager","goldst"],
+["wd-Q5649992","Hans Erl",1882,1942,"Vernichtungslager","er"],
+["wd-Q1793805","Kurt Lilien",1882,1943,"Vernichtungslager","lil"],
+["wd-Q6558985","Lisl Frank",1911,1945,"Vernichtungslager","frank_"],
+["wd-Q13360805","Marie Jonas",1893,1944,"Vernichtungslager","jo"]
+],
+"slug":"vernichtungslager"}

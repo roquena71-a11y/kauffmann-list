@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"pn",
+"rows":[
+["wd-Q95120902","Liza Pniover",1885,"Lwiw",49.84195,24.03159,"pn"],
+["wd-Q95106078","Zigmund Pniover",1878,"Lwiw",49.84195,24.03159,"pn"],
+["wd-Q105455924","Benno Pniower",1866,"Konzentrationslager Theresienstadt",50.51028,14.14972,"pn"],
+["wd-Q105455925","Bianca Pniower",1865,"Štítina",49.91486,18.0125,"pn"],
+["wd-Q105455926","Else Pniower",1877,"Berlin",52.51667,13.38333,"pn"],
+["wd-Q104549218","Frieda Fabisch",1879,null,null,null,"pn"],
+["wd-Q105464487","Käthe Pniower",1869,"Breslau",51.11,17.0325,"pn"],
+["wd-Q105455929","Rosa Pniower",1868,"Konzentrationslager Theresienstadt",50.51028,14.14972,"pn"]
+]}

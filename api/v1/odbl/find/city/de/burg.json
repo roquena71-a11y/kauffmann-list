@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Burg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7671782638","Alfred Badrian",1907,1942,"Burg","bad"],
+["st-n3671151378","Chaya Erna Schuster",1903,null,"Burg","schu"],
+["st-n7671782639","Emil Badrian",1859,1942,"Burg","bad"],
+["st-n3671151382","Jenny Hürtig",1886,null,"Burg","hu"],
+["wd-Q1511970","Johannes Gerhard Kratzat",1909,1944,"Burg","kr"],
+["st-n7671782656","Marianne Henriette Heine",1895,1944,"Burg","hei"],
+["st-n2382090344","Willi Max Beenke",1913,1944,"Burg","bee"]
+],
+"slug":"burg"}

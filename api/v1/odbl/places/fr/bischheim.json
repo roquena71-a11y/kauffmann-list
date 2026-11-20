@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"FR",
+"label":"Bischheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13921353291","Charles Herm",1922,"memorial","4 Rue Charles Herm",48.61462,7.75053],
+["st-n13921305896","Jacques Salomon",1885,"memorial","43 Rue des Abeilles",48.61241,7.7555],
+["st-n13921353293","Jeanne Sternheim",1916,"memorial","12 Rue de la Robertsau",48.61352,7.75591],
+["st-n13921305895","Pauline Salomon née Weill",1880,"memorial","43 Rue des Abeilles",48.6124,7.7555],
+["st-n13921353292","Pierre Klotz",1912,"memorial","23 Rue Waldteufel",48.61333,7.7527],
+["wd-Q138026793","Robert Kieffer",1920,"memorial","1 Rue Louis Kieffer",48.61222,7.75584]
+],
+"slug":"bischheim"}

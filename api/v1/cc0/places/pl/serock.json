@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"PL",
+"label":"Serock",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94976418","Aharon Paskovitz",1906,"death","Serock",52.51306,21.06944],
+["wd-Q95106557","Ester Pszenica",1902,"death","Serock",52.51306,21.06944],
+["wd-Q95127398","Pesakh Pszenica",1917,"death","Serock",52.51306,21.06944],
+["wd-Q95110808","Yaakov Paskovitz",1904,"death","Serock",52.51306,21.06944],
+["wd-Q95116196","Yosef Paskovitz",1897,"death","Serock",52.51306,21.06944]
+],
+"slug":"serock"}

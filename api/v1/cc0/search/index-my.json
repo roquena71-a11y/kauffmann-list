@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"my",
+"rows":[
+["wd-Q105565931","Joj Myler",1894,null,null,null,"my"],
+["wd-Q105565932","Lota Mylerová",1904,null,null,null,"my"],
+["wd-Q105374863","Alice Myrants",1900,null,null,null,"my"],
+["wd-Q105374860","Hedwig Myrants",1874,"Lubliniec",50.66897,18.6844,"my"],
+["wd-Q105374858","Max Myrants",1867,"Sompolno",52.38806,18.50167,"my"],
+["wd-Q105512906","Max Myrets",null,null,null,null,"my"],
+["wd-Q105643916","Arnošt Myška",1899,null,null,null,"my"],
+["wd-Q105565935","František Myška",1902,"Vodňany",49.14798,14.17515,"my"],
+["wd-Q105565936","Josef Myška",1900,null,null,null,"my"],
+["wd-Q105565934","Anna Myšková",1876,null,null,null,"my"],
+["wd-Q105643917","Helena Myšková",1899,null,null,null,"my"]
+]}

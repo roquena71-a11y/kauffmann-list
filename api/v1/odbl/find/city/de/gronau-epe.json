@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Gronau-Epe",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n9721415858","Anna Eichenwald",1904,null,"Gronau-Epe","ei"],
+["st-n9721415856","Bertha Pagener",1872,null,"Gronau-Epe","pa"],
+["st-n9721415861","Hannelore Eichenwald",1931,1944,"Gronau-Epe","ei"],
+["st-n9721415859","Käthe Pagener",1909,1945,"Gronau-Epe","pa"],
+["st-n9721415860","Liesel Eichenwald",1936,1944,"Gronau-Epe","ei"],
+["st-n9721415857","Max Eichenwald",1898,null,"Gronau-Epe","ei"],
+["st-n9721415855","Simon Pagener",1872,null,"Gronau-Epe","pa"]
+],
+"slug":"gronau-epe"}

@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"steh",
+"rows":[
+["stehlickova","wd-Q105606354","Paula Stehlíčková",1906,null,null,"steh"],
+["stehlik","wd-Q105458063","Carola Stehlik",1874,1943,"Ghetto Theresienstadt","steh"],
+["stehlik","wd-Q105504780","Franziska Stehlik",1871,null,null,"steh"],
+["stehlikova","wd-Q105606356","Emilie Stehliková",1888,null,null,"steh"],
+["stehning","wd-Q105458064","Elsbeth Stehning",1873,null,null,"steh"]
+]}

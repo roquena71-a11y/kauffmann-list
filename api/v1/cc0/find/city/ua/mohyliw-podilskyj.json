@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"UA",
+"label":"Mohyliw-Podilskyj",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95128633","Adelia Bikvan",null,1941,"Mohyliw-Podilskyj","bi"],
+["wd-Q95110499","Asher Gun",1900,1941,"Mohyliw-Podilskyj","gun"],
+["wd-Q94975979","Danil Shamis",1870,1943,"Mohyliw-Podilskyj","sh"],
+["wd-Q94975993","Dora Bikvan",null,1941,"Mohyliw-Podilskyj","bi"],
+["wd-Q95123277","Khana Bikhler",1917,1944,"Mohyliw-Podilskyj","bi"],
+["wd-Q95114534","Motel Felner",1898,1942,"Mohyliw-Podilskyj","fel"],
+["wd-Q95121074","Otilia Hauben",1884,1941,"Mohyliw-Podilskyj","hau"],
+["wd-Q94976012","Rafail Kheifetz",null,1941,"Mohyliw-Podilskyj","kh"],
+["wd-Q95110965","Sara Herer",1900,1942,"Mohyliw-Podilskyj","here"],
+["wd-Q95125703","Shloima Mendelovici",1900,1941,"Mohyliw-Podilskyj","men"],
+["wd-Q95120021","Sonia Tolchiner",1880,1941,"Mohyliw-Podilskyj","to"],
+["wd-Q95119660","Tauba Surkis",1899,1942,"Mohyliw-Podilskyj","su"],
+["wd-Q95107074","Zusel Drukman",1910,1942,"Mohyliw-Podilskyj","dr"]
+],
+"slug":"mohyliw-podilskyj"}

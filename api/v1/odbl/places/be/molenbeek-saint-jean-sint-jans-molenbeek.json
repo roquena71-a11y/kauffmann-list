@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"BE",
+"label":"Molenbeek-Saint-Jean - Sint-Jans-Molenbeek",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7164883602","Doba Dora Libeskind",1926,"memorial","Chaussée de Gand - Steenweg op Gent 87",50.85427,4.33662],
+["st-n7164883600","Hindera Estera Elberg-Bitter",1899,"memorial","Rue de la Princesse - Prinsesstraat 14",50.84877,4.33038],
+["st-n7164883599","Joseph Elberg",1888,"memorial","Rue de la Princesse - Prinsesstraat 14",50.84877,4.33037],
+["st-n7164883601","Szifra Léa Libeskind",1924,"memorial","Chaussée de Gand - Steenweg op Gent 87",50.85428,4.33661]
+],
+"slug":"molenbeek-saint-jean-sint-jans-molenbeek"}

@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q137544630","Alice Maier",1899,1981,"Konstanz","mai"],
+["st-n3217017098","Benno Durlacher",1898,1981,"Baden-Baden","du"],
+["wd-Q108023","Elfriede Paul",1900,1981,"Berlin","pa"],
+["st-n11052767010","Emil Liebmann",1855,1981,"Offenbach am Main","lie"],
+["wd-Q84960","Greta Kuckhoff",1902,1981,"Frankfurt (Oder)","ku"],
+["st-n7948210152","Josefine Fetzer",1910,1981,"Radolfzell","fe"],
+["wd-Q137560663","Laura Hirsch",1887,1981,"Konstanz","hirsch"],
+["wd-Q108337781","Lilly Silberstein",1892,1981,"Berlin","sil"],
+["st-n3748463693","Richard Gompertz",1892,1981,"Emmerich","gom"],
+["st-n7280232133","Rosa Lebrecht",1887,1981,"Ulm","leb"],
+["wd-Q55594653","Ruth Waldmann",1905,1981,"Ulm","wa"],
+["wd-Q108532327","Stolperstein für Dr. Iwan Jacob Grün",1900,1981,"Frankfurt (Oder)","gru"],
+["wd-Q96728594","Ursula Guggenheimer",1922,1981,"Memmingen","gu"]
+],
+"year":1981}

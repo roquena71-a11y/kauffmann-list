@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"kh",
+"rows":[
+["wd-Q95127401","Yaakov Khaba",1887,"Vernichtungslager Treblinka",52.63111,22.05306,"kh"],
+["wd-Q94975710","Isser Khadash",1908,"Marijampolė",54.55667,23.35444,"kh"],
+["wd-Q95123543","Moshe Khaiat",1907,"Riwne",50.61972,26.25139,"kh"],
+["wd-Q95125476","Galya Khait",null,"Winnyzja",49.23722,28.46722,"kh"],
+["wd-Q94976410","Avraham Khamut",1900,"Beresne",51.0,26.75,"kh"],
+["wd-Q95110182","Zalman Khanchik",1926,"Bilopillja",51.1474,34.30254,"kh"],
+["wd-Q95119657","Yoel Kharap",1900,"Lwiw",49.84195,24.03159,"kh"],
+["wd-Q94976382","Yohana Khaskalovitz",1884,"KZ Auschwitz",50.03583,19.17833,"kh"],
+["wd-Q95115412","Khaia Khatzek",null,"Pułtusk",52.71667,21.1,"kh"],
+["wd-Q94976012","Rafail Kheifetz",null,"Mohyliw-Podilskyj",48.45,27.78333,"kh"],
+["wd-Q95119584","Filip Khirer",1900,"Drohobytsch",49.35,23.5,"kh"],
+["wd-Q94975747","Khlavno Khlebovski",null,"KZ Auschwitz",50.03583,19.17833,"kh"],
+["wd-Q95108063","Aba Khoina",1890,"Vernichtungslager Sobibor",51.44699,23.59414,"kh"],
+["wd-Q95128177","Sara Khudi",1911,"Oświęcim",50.03806,19.22139,"kh"],
+["wd-Q95124514","Khana Khudis",1927,"Dachau",48.26028,11.43417,"kh"],
+["wd-Q95123178","Emanuel Khumski",1924,"Brańsk",52.7444,22.83774,"kh"],
+["wd-Q105465088","Opfer des Holocaust",1868,"Lipník nad Bečvou",49.52755,17.58634,"kh"],
+["wd-Q105465089","Zilli Khuner",1870,"Konzentrationslager Theresienstadt",50.51028,14.14972,"kh"]
+]}

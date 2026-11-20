@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"FR",
+"label":"Tragny",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13797010907","Camille David née Bénédict",1875,"memorial","2 Rue des Acacias",48.96007,6.37739],
+["st-n13797010908","David David",1873,"memorial","2 Rue des Acacias",48.96007,6.37739],
+["st-n13797010905","Hélène David",1903,"memorial","2 Rue des Acacias",48.96007,6.37739],
+["st-n13797010906","Julien David",1905,"memorial","2 Rue des Acacias",48.96007,6.37739]
+],
+"slug":"tragny"}

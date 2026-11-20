@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"DE",
+"label":"Adelsheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105615540","Berta Alexander",1886,null,"Adelsheim","al"],
+["wd-Q105616074","Max Alexander",1874,1942,"Adelsheim","al"],
+["wd-Q105616925","Salomon Neuberger",1872,1941,"Adelsheim","neu"],
+["wd-Q105616992","Selma Neuberger",1883,null,"Adelsheim","neu"],
+["wd-Q105616889","Sigmund Emil Neuberger",1874,1942,"Adelsheim","neu"]
+],
+"slug":"adelsheim"}

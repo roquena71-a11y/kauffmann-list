@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"ES",
+"label":"Caldes de Montbui",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13729454428","Alexandre Folch Gómez",1910,"memorial","Carrer Major, 105",41.63529,2.16309],
+["st-n13729265472","Isidre Malla Carreras",1912,"memorial","Carrer del Forn, 7",41.63419,2.16238],
+["st-n13729309008","Josep Ferrer Espelt",1906,"memorial",null,41.63044,2.16742],
+["st-n13729358436","Josep Manuel Blavi",1897,"memorial",null,41.63232,2.16365],
+["st-n13729265296","Josep Maria Catafau Rabadà",1914,"memorial","Avinguda de Pi i Margall, 109",41.62891,2.16677],
+["st-n13729370932","Marcel Ramon Comas",1910,"memorial","Carrer de Madella, 4",41.63345,2.16299],
+["st-n13729223641","Pasqual Gimeno Cervera",1890,"memorial","Carrer del General Padrós, 43",41.62799,2.16563],
+["st-n13729268203","Pere Torrades Ramiro",1916,"memorial","Carrer de Sant Felix, 23",41.63008,2.1667],
+["st-n13729267555","Ricardo López López",1921,"memorial","Carrer d'Avel·li Xalabarder, 15",41.63079,2.16822]
+],
+"slug":"caldes-de-montbui"}

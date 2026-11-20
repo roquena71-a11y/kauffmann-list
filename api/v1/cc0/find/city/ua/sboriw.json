@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"UA",
+"label":"Sboriw",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94975865","Ester Frosh",1925,1944,"Sboriw","fro"],
+["wd-Q94975118","Gitel Frosh",1900,1943,"Sboriw","fro"],
+["wd-Q95117006","Khaia Prager",1892,1942,"Sboriw","pra"],
+["wd-Q94975114","Yeshayahu Frosh",1926,1944,"Sboriw","fro"],
+["wd-Q95122508","Yosef Frosh",1924,1943,"Sboriw","fro"]
+],
+"slug":"sboriw"}

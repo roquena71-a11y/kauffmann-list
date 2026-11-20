@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"FR",
+"label":"Soultz-Haut-Rhin",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13072808258","Benjamin Bloch",1897,"memorial","42 Rue Jean-Jaurès",47.88617,7.22843],
+["st-n13072808255","Dora Bloch née Siesel",1905,"memorial","42 Rue Jean-Jaurès",47.88617,7.22843],
+["st-n13072808257","Max Moni Reich",1924,"memorial","20 Rue des Vosges",47.88517,7.22823],
+["st-n13072808256","Pierre Bloch",1931,"memorial","42 Rue Jean-Jaurès",47.88617,7.22843]
+],
+"slug":"soultz-haut-rhin"}

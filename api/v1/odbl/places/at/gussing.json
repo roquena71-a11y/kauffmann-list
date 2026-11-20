@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"AT",
+"label":"Güssing",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q136221504","Aladar Latzer",1892,"memorial","P. Gratian Leser-Straße 4",47.05926,16.32421],
+["st-Q136221651","Elsa Latzer",1903,"memorial","P. Gratian Leser-Straße 4",47.05926,16.32421],
+["st-Q136221652","Helene Latzer",1868,"memorial","P. Gratian Leser-Straße 4",47.05926,16.32421],
+["st-Q136221653","Ida Grünfeld",1886,"memorial","Hauptplatz 7",47.05927,16.32195],
+["st-Q136221654","Jakob Grünfeld",1865,"memorial","Hauptplatz 7",47.05927,16.32195],
+["st-Q136221655","Leopold Latzer",1857,"memorial","P. Gratian Leser-Straße 4",47.05926,16.32421],
+["st-Q136221656","Oskar Mayer",1888,"memorial","Hauptstraße 4",47.05867,16.32105],
+["st-Q136229029","Piroska Mayer",1896,"memorial","Hauptstraße 4",47.05867,16.32105],
+["st-Q136229187","Samuel Latzer",1878,"memorial","P. Gratian Leser-Straße 6",47.05927,16.32483]
+],
+"slug":"gussing"}

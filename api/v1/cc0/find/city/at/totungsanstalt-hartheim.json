@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"AT",
+"label":"Tötungsanstalt Hartheim",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q100324152","Albert Froehlich",1920,1940,"Tötungsanstalt Hartheim","fro"],
+["wd-Q102318913","Berta Heimann",1886,1940,"Tötungsanstalt Hartheim","hei"],
+["wd-Q98767743","Bertha Weill",1878,1940,"Tötungsanstalt Hartheim","weil"],
+["wd-Q101114773","Berthold Sturm",1881,1940,"Tötungsanstalt Hartheim","stu"],
+["wd-Q113547329","Ernst Stichert",1898,1942,"Tötungsanstalt Hartheim","sti"],
+["wd-Q102318350","Gertrud Oppenheimer",1878,1940,"Tötungsanstalt Hartheim","op"],
+["wd-Q102146003","Gertrud Sonder",1876,1940,"Tötungsanstalt Hartheim","so"],
+["wd-Q100601009","Oswald Feis",1872,1940,"Tötungsanstalt Hartheim","fei"],
+["wd-Q102327372","Sofie Wiesengrund",1894,1940,"Tötungsanstalt Hartheim","wie"],
+["wd-Q2562743","Werner Sylten",1893,1942,"Tötungsanstalt Hartheim","sy"]
+],
+"slug":"totungsanstalt-hartheim"}

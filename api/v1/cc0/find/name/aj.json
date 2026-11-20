@@ -1,0 +1,12 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"aj",
+"rows":[
+["ajakobi","wd-Q104208711","Emma Ajakobi",1870,null,null,"aj"],
+["ajakobi","wd-Q104208715","Johanna Ajakobi",1872,null,null,"aj"],
+["ajakobi","wd-Q104208718","Karoline Ajakobi",1873,1942,"Terezín","aj"],
+["ajakobi","wd-Q104208721","Magdalene Ajakobi",1862,1942,"Konzentrationslager Theresienstadt","aj"],
+["ajakoby","wd-Q104208725","Johanna Ajakoby",1872,null,null,"aj"],
+["ajbuszyc","wd-Q94976718","Mendel Ajbuszyc",null,1942,"Polen","aj"],
+["ajnhorn","wd-Q141913138","Frymeta Ajnhorn",1928,1945,null,"aj"]
+]}

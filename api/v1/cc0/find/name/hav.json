@@ -1,0 +1,18 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"hav",
+"rows":[
+["havas","wd-Q104704011","Istvan Havas",1919,1945,"Kleine Festung Theresienstadt","hav"],
+["havas","wd-Q104703111","Juraj Havas",1911,1941,"KZ Mauthausen","hav"],
+["havelburg","wd-Q104700762","Ida Havelburg",1878,null,null,"hav"],
+["havelka","wd-Q104702446","Jana Havelka-Hendel",1919,1945,"Konzentrationslager Theresienstadt","hav"],
+["havelkova","wd-Q104705278","Růžena Havelková",1889,null,null,"hav"],
+["havelland","wd-Q104703203","Nathan Havelland",1873,1944,"Konzentrationslager Theresienstadt","hav"],
+["havirova","wd-Q104701191","Marta Havířová",1909,null,null,"hav"],
+["havlickova","wd-Q104705279","Anna Havlíčková",1883,null,null,"hav"],
+["havlinova","wd-Q104705280","Anna Havlinová",1894,null,null,"hav"],
+["havlinova","wd-Q104705282","Gertruda Havlinová",1914,null,null,"spie"],
+["havlova","wd-Q104705276","Marta Havlová",1891,null,null,"hav"],
+["havova","wd-Q104705283","Olga Hávová",1887,null,null,"hav"],
+["havrankova","wd-Q104705284","Růžena Havránková",1893,null,null,"hav"]
+]}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q125422406","Albert Mannsbach",1901,1965,"Coesfeld","man"],
+["wd-Q86213","Alice Herz",1882,1965,"Berlin","her"],
+["wd-Q133574723","Edith Heinrich",1887,1965,"Hannover","hei"],
+["st-n8685608852","Ernst Kirchweger",1898,1965,"Wien","ki"],
+["wd-Q60544942","Fritz Adler",1888,1965,"Frankfurt am Main","ad"],
+["wd-Q22694410","Hermann Joseph Vell",1894,1965,"Gelsenkirchen","v"],
+["wd-Q116060676","Wilhelm Pertz",1893,1965,"Köln","pe"]
+],
+"year":1965}

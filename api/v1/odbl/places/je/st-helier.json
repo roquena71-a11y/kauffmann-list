@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"JE",
+"label":"St Helier",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13021664957","Emma Constance Marshall",1894,"memorial","Tiverton, 13, Chevalier Road",49.18823,-2.10149],
+["st-n13021664956","Nathan Davidson",1881,"memorial","35, Stopford Road",49.1895,-2.10061],
+["st-n13021664961","Victor Emanuel",1870,"memorial","13, Royal Crescent, Don Road",49.18236,-2.09911]
+],
+"slug":"st-helier"}

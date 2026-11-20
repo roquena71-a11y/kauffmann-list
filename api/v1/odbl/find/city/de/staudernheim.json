@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Staudernheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104807122","Adolf Jonas",1885,1940,"Staudernheim","jo"],
+["wd-Q104807133","Berta Jonas",1889,1943,"Staudernheim","jo"],
+["st-n13234389643","Carola Katharina Oppenheimer",1915,null,"Staudernheim","op"],
+["st-n13234389642","Frieda Eichel",1891,null,"Staudernheim","ei"],
+["st-n13234389644","Jenny Oppenheimer",1881,1942,"Staudernheim","op"],
+["st-n13234389649","Johanna Mayer",1880,null,"Staudernheim","may"],
+["st-n13234389647","Mathilde Marx",1878,null,"Staudernheim","mar"],
+["st-n13235409534","Moses Marx",1878,1934,"Staudernheim","mar"],
+["st-n13234389648","Ruben Oppenheimer",1881,1942,"Staudernheim","op"]
+],
+"slug":"staudernheim"}

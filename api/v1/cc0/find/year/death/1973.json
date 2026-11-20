@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"kind":"death",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q126724409","Lilly Rothschild-Goldschmidt-Salomons",1892,1973,null,"goldsc"],
+["wd-Q2157073","Robert Feix",1893,1973,"Igls","fei"],
+["wd-Q111149176","Walter Friedjung",1906,1973,"London","friedj"]
+],
+"year":1973}

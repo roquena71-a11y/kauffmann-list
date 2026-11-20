@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3746252387","Erna Albersheim",1907,1986,"Emmerich","al"],
+["wd-Q137560302","Gustav Hirsch",1919,1986,"Konstanz","hirsch"],
+["wd-Q133543343","Ilse Kornberg",1923,1986,"Hannover","kor"],
+["st-n6766501977","Robert Marx",1912,1986,null,"mar"]
+],
+"year":1986}

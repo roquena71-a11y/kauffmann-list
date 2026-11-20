@@ -1,0 +1,12 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ruf",
+"rows":[
+["rufeisenova","wd-Q105595491","Berta Rufeisenová",1900,null,null,"ru"],
+["rufeisenova","wd-Q105595492","Gitel Rufeisenová",1896,null,null,"ru"],
+["rufeisenova","wd-Q105595493","Josefina Rufeisenová",1887,null,null,"ru"],
+["rufeisenova","wd-Q105595494","Karolina Rufeisenová",1864,1943,"Konzentrationslager Theresienstadt","ru"],
+["rufeisenova","wd-Q105595495","Nelly Rufeisenová",1909,null,null,"ru"],
+["rufeisenova","wd-Q105595497","Regina Rufeisenová",1874,null,null,"ru"],
+["rufka","wd-Q105559367","Rufka Löwyová",1893,null,null,"lowyo"]
+]}

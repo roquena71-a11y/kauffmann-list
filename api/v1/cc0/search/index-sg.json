@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"sg",
+"rows":[
+["wd-Q105601806","Erich Sgalitzer",1913,"München",48.1375,11.575,"sg"],
+["wd-Q105657618","Heinrich Sgalitzer",1915,"KZ Flossenbürg",49.73556,12.35583,"sg"],
+["wd-Q105601807","Jindřich Sgalitzer",1915,"München",48.1375,11.575,"sg"],
+["wd-Q105601809","Leo Sgalitzer",1889,null,null,null,"sg"],
+["wd-Q105601814","Richard Sgalitzer",1882,"Prag",50.0875,14.42139,"sg"],
+["wd-Q105601804","Bedřiška Sgalitzerová",1892,null,null,null,"sg"],
+["wd-Q105601811","Lily Sgalitzerová",1898,null,null,null,"sg"],
+["wd-Q105601813","Markéta Sgalitzerová",1899,null,null,null,"sg"],
+["wd-Q105601818","Karel Sgall",1880,null,null,null,"sg"],
+["wd-Q105601823","Ota Sgall",1894,"Litomyšl",49.87206,16.31058,"sg"],
+["wd-Q105392278","Meinhard Sgaller",1898,"Posen",52.40833,16.93361,"sg"],
+["wd-Q105460268","Regina Ullmann",1866,"Konzentrationslager Theresienstadt",50.51028,14.14972,"sg"],
+["wd-Q105601824","Felix Sgallitzer",1888,null,null,null,"sg"],
+["wd-Q105601816","Bedřiška Sgallová",1868,null,null,null,"sg"],
+["wd-Q105601820","Micie Sgallová",1911,"Litomyšl",49.87206,16.31058,"sg"]
+]}

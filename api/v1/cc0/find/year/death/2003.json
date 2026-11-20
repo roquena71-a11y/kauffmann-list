@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"kind":"death",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q137686730","Betsy van Wezel-Halberstadt",1908,2003,"Amsterdam","wez"],
+["wd-Q2589281","Betty Trompetter",1917,2003,"Voorburg","tr"],
+["wd-Q3119472","Guido Zembsch-Schreve",1916,2003,"Belgien","ze"],
+["wd-Q142139337","Ilona Bornstein",1921,2003,null,"bor"],
+["wd-Q16015753","Janny Brandes-Brilleslijper",1916,2003,"Amsterdam","bra"],
+["wd-Q133394727","Joost Benvenuto de Klerk",1915,2003,"Amsterdam","kler"],
+["wd-Q104964346","Lazar Stuhl",1930,2003,null,"stu"],
+["wd-Q138547219","Myrte Heimans",1926,2003,"Amsterdam","hei"],
+["wd-Q67198422","Rudolf Jan Polak",1916,2003,"Amsterdam","pola"],
+["wd-Q108534074","Simon Peereboom",1923,2003,null,"pee"]
+],
+"year":2003}

@@ -1,0 +1,20 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"sw",
+"rows":[
+["swaan","st-n8883674659","Leentje de Swaan Arons",1896,null,"Groningen","ar"],
+["swaan","st-n12873890551","Sara Messcher-Swaan",1910,null,"Rijswijk","mes"],
+["swap","st-n14201621099","Hester Swaep",1923,1942,"Gouda","sw"],
+["swetlana","st-n13628737388","Swetlana Harkawtschuk",1944,1944,"Hamburg","har"],
+["swiatlowski","st-n7155040522","Berek Swiatlowski",1905,1943,"Anderlecht","sw"],
+["swiatlowski","st-n7155040523","Pesah Swiatlowski-Koronczyk",1913,null,"Anderlecht","sw"],
+["swierc","st-n13046364018","Maurice Swierc",1899,1944,"Lille","sw"],
+["swierc","st-n13935700444","Rachel Swierc née Galek",1897,1943,"Lille","ga"],
+["swierczynski","st-n7155040524","Wolf Swierczynski",1913,1942,"Anderlecht","sw"],
+["swiridenko","st-Q135296344","Michail Swiridenko",1900,1945,"Frankfurt am Main","sw"],
+["switaiski","st-n13987539810","Wanda Switaiski",1920,1944,"Bochum","sw"],
+["switek","st-Q135296345","Zdenek Switek",1924,1944,"Frankfurt am Main","sw"],
+["switkes","wd-Q132143837","Luise Switkes Vel Wittels",1884,null,"Berlin","wi"],
+["switytzki","wd-Q132143911","Schmul Franz Switytzki",1882,1942,"Berlin","sw"],
+["swyck","st-n13112610346","Dora Swyck",1889,1943,"Le Havre","sw"]
+]}

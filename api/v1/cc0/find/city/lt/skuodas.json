@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"LT",
+"label":"Skuodas",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95119841","Batsheva Perlgur",1908,1941,"Skuodas","per"],
+["wd-Q95118415","Bentzion Fogelman",1894,1941,"Skuodas","fo"],
+["wd-Q94975652","Hesel Pralgever",1905,1941,"Skuodas","pra"],
+["wd-Q95107505","Mikhel Fogelman",1909,1941,"Skuodas","fo"],
+["wd-Q95117806","Pesia Pralgever",1901,1941,"Skuodas","pra"],
+["wd-Q95115941","Yehuda Fogelman",null,1941,"Skuodas","fo"],
+["wd-Q94975624","Yeshayahu Fogelman",1911,1941,"Skuodas","fo"]
+],
+"slug":"skuodas"}

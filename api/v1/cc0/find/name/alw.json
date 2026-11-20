@@ -1,0 +1,15 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"alw",
+"rows":[
+["alwin","wd-Q104652957","Alwin Gerson",1866,1943,"Konzentrationslager Theresienstadt","ger"],
+["alwin","wd-Q104806051","Alwin Hurtig",1875,1944,"Konzentrationslager Theresienstadt","hu"],
+["alwin","wd-Q104806592","Alwin Jakobowitz",1882,1943,"Konzentrationslager Theresienstadt","jak"],
+["alwin","wd-Q106472057","Alwin Wolfenstein",1882,null,null,"wolfe"],
+["alwine","wd-Q104208832","Alwine Alexander",1881,null,null,"al"],
+["alwine","wd-Q104673827","Alwine Grohmann",1893,null,null,"gro"],
+["alwine","wd-Q104701336","Alwine Heine",1863,1943,"Konzentrationslager Theresienstadt","hei"],
+["alwine","wd-Q105360001","Alwine Krone",1867,1943,"Konzentrationslager Theresienstadt","kro"],
+["alwine","wd-Q105361584","Alwine Leib",1871,1942,"Konzentrationslager Theresienstadt","lei"],
+["alwine","wd-Q105390089","Minna Alwine Schaul",1872,1943,"Konzentrationslager Theresienstadt","scha"]
+]}

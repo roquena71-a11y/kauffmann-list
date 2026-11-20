@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":2,
+"country":"FR",
+"label":"La Voulte-sur-Rhône",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13250930104","Joseph Hertz",1884,null,"La Voulte-sur-Rhône","her"],
+["st-n13250930106","Pierre Lazarus",1910,1945,"La Voulte-sur-Rhône","laz"]
+],
+"slug":"la-voulte-sur-rhone"}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104889031","Alfred Michael Heilbronner",1897,1973,"Memmingen","hei"],
+["wd-Q134238955","Anna Neuberg",1893,1973,"Hannover","neu"],
+["wd-Q110576046","Ernst Busch",1887,1973,"Berlin","bu"],
+["wd-Q116693875","Julius Speier",1912,1973,"Salzkotten","sp"],
+["st-n3753250525","Julius Weinberg",1902,1973,"Emmerich am Rhein","wein"],
+["st-n13955455728","Margarethe Zingler",1885,1973,"Gelsenkirchen","zi"],
+["wd-Q63421","Max Brauer",1887,1973,"Hamburg","bra"],
+["st-n4210388395","Meier Andorn",1872,1973,"Essen","an"],
+["wd-Q131839483","Siegfried Seligmann",1881,1973,"Ronnenberg","se"]
+],
+"year":1973}

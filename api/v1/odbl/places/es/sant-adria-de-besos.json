@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"ES",
+"label":"Sant Adrià de Besòs",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13350780327","Alfredo Rionda Menèndez",1918,"memorial","Placeta de Francesc Macià",41.42817,2.22342],
+["st-n9432057429","Antonio Conesa Montes",1914,"memorial",null,41.42817,2.22343],
+["st-n13350774132","José Álvarez Menéndez",1912,"memorial","Placeta de Francesc Macià",41.42817,2.22342]
+],
+"slug":"sant-adria-de-besos"}

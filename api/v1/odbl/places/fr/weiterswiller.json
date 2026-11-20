@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"FR",
+"label":"Weiterswiller",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13146806258","Henri Samuel",1888,"memorial","3 Rue Principale",48.85233,7.41587],
+["st-n13146806255","Jacques Samuel",1880,"memorial","3 Rue Principale",48.85233,7.41586],
+["st-n13146806249","Joachim Schuler",1880,"memorial","12 Rue Principale",48.85338,7.41295],
+["st-n13146806250","Jonas Lévy",1886,"memorial","1 Rue des Juifs",48.85289,7.41336],
+["st-n13146806251","Minette Lévy née Lévy",1885,"memorial","1 Rue des Juifs",48.85289,7.41335],
+["st-n13146806253","Nanette Nelly Haehnel",1912,"memorial","21 Rue Principale",48.85313,7.41325],
+["st-n13146806256","Palmyre Samuel née Lévy",1887,"memorial","3 Rue Principale",48.85233,7.41586],
+["st-n13146806257","Pierre Samuel",1926,"memorial","3 Rue Principale",48.85233,7.41586],
+["st-n13146806248","René Huser",1923,"memorial","2 Rue des Tilleuls",48.85312,7.41346],
+["st-n13146806252","Simon Haehnel",1877,"memorial","21 Rue Principale",48.85313,7.41325]
+],
+"slug":"weiterswiller"}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Esssen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12331539699","David Weis",1881,null,"Esssen","weis"],
+["st-n12331491112","Heinrich Gelles",1885,null,"Esssen","ge"],
+["st-n4173949923","Hermann Kaminski",1873,1942,"Esssen","kam"],
+["st-n12331491109","Joachim Gelles",1936,null,"Esssen","ge"],
+["st-n12331491110","Josua Gelles",1936,null,"Esssen","ge"],
+["st-n12331491111","Olga Gelles",1901,null,"Esssen","ge"],
+["st-n12331539697","Richard Weis",1916,null,"Esssen","weis"],
+["st-n12331539698","Rosa Weis",1884,null,"Esssen","weis"]
+],
+"slug":"esssen"}

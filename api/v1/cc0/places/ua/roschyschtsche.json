@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"UA",
+"label":"Roschyschtsche",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95121702","Avigdor Perl",1910,"death","Roschyschtsche",50.91306,25.27],
+["wd-Q95113743","Khaim Tchorz",1916,"death","Roschyschtsche",50.91306,25.27],
+["wd-Q95128798","Khava Perl",1890,"death","Roschyschtsche",50.91306,25.27],
+["wd-Q95119680","Leib Pregel",1902,"death","Roschyschtsche",50.91306,25.27],
+["wd-Q95106533","Leibel Soroko",1900,"death","Roschyschtsche",50.91306,25.27],
+["wd-Q95112003","Meir Rider",1890,"death","Roschyschtsche",50.91306,25.27],
+["wd-Q95122843","Moshe Kohen",1892,"death","Roschyschtsche",50.91306,25.27],
+["wd-Q95124126","Ozer Glazel",1885,"death","Roschyschtsche",50.91306,25.27],
+["wd-Q94976903","Reuven Shneider",1910,"death","Roschyschtsche",50.91306,25.27],
+["wd-Q94975708","Shlomo Perl",1900,"death","Roschyschtsche",50.91306,25.27],
+["wd-Q95125331","Yankel Prives",1892,"death","Roschyschtsche",50.91306,25.27],
+["wd-Q95107731","Yitzkhak Reizman",1887,"death","Roschyschtsche",50.91306,25.27],
+["wd-Q94976106","Zalman Pregel",1913,"death","Roschyschtsche",50.91306,25.27]
+],
+"slug":"roschyschtsche"}

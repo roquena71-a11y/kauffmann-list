@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Birkenfeld",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n10048651572","Doris Senator",1930,null,"Birkenfeld","se"],
+["wd-Q1508809","Gerhard Storm",1888,1942,"Birkenfeld","sto"],
+["st-n9612283465","Ida Schiffmann",1878,null,"Birkenfeld","schi"],
+["st-n10048651573","Lydia Senator",1889,null,"Birkenfeld","se"],
+["st-n10048651574","Max Senator",1889,1942,"Birkenfeld","se"],
+["st-n10110691075","Otto Pick",1882,1945,"Birkenfeld","pi"],
+["st-n9612283464","Rosa Schiffmann",1877,null,"Birkenfeld","schi"]
+],
+"slug":"birkenfeld"}

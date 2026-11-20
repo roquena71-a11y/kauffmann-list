@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Wettenberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q128795981","Karl Drescher",1864,1944,"Wettenberg","dr"],
+["st-Q128796123","Klara Schleenbecker",1897,null,"Wettenberg","schl"],
+["st-Q128796105","Louis Schleenbecker",1897,null,"Wettenberg","schl"],
+["st-Q128796092","Margarethe Bechthold",1898,null,"Wettenberg","bec"],
+["st-Q128795967","Mathilde Schwalb",1902,1941,"Wettenberg","schw"],
+["st-Q128796131","Wilfried Bender",1934,1943,"Wettenberg","ben"],
+["st-Q128795999","Wilhelm Bechthold",1902,1942,"Wettenberg","bec"],
+["st-Q128796099","Wilhelmine Bechthold",1893,null,"Wettenberg","bec"]
+],
+"slug":"wettenberg"}

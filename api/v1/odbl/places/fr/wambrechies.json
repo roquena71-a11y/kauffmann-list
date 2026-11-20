@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"FR",
+"label":"Wambrechies",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13043259003","Kléber Mélet",1913,"memorial","25 Rue de Marquette",50.68879,3.05701],
+["st-n13043259004","Maurice Dechaumont",1903,"memorial","56 Rue du Général Leclerc",50.68626,3.04937]
+],
+"slug":"wambrechies"}

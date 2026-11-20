@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q85970","Edith Hahn Beer",1914,2009,"Aschersleben","bee"],
+["wd-Q134285066","Gerd Neuberg",1925,2009,"Hannover","neu"],
+["wd-Q1512057","Gerhard Leo",1923,2009,"Rheinsberg","leo"],
+["wd-Q141551902","Margot Carola Levi",1926,2009,"Überlingen","levi"]
+],
+"year":2009}

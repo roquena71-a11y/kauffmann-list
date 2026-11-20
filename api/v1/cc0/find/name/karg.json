@@ -1,0 +1,19 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"karg",
+"rows":[
+["karger","wd-Q105354737","Bianka Karger",1862,1942,"Konzentrationslager Theresienstadt","kar"],
+["karger","wd-Q105354738","Elise Karger",1870,1944,"Konzentrationslager Theresienstadt","kar"],
+["karger","wd-Q115416162","Franz Karger",1917,1997,"Wien","kar"],
+["karger","wd-Q105354739","Georg Karger",1886,null,null,"kar"],
+["karger","wd-Q105354740","Isidor Karger",1865,1943,"Konzentrationslager Theresienstadt","kar"],
+["karger","wd-Q105354741","Julchen Karger",1870,null,null,"kar"],
+["karger","wd-Q105354742","Lina Karger",1859,1942,"Konzentrationslager Theresienstadt","kar"],
+["karger","wd-Q105354743","Lina Karger",1875,1943,"Konzentrationslager Theresienstadt","kar"],
+["karger","wd-Q105354744","Margarete Karger",1873,1943,"Konzentrationslager Theresienstadt","kar"],
+["karger","wd-Q105354745","Marie Karger",1869,null,null,"kar"],
+["karger","wd-Q105354746","Martha Karger",1870,1942,"Konzentrationslager Theresienstadt","kar"],
+["karger","wd-Q105354747","Martha Karger",1873,1942,"Konzentrationslager Theresienstadt","kar"],
+["karger","wd-Q105464813","Melanie Karger",1895,null,null,"kar"],
+["karger","wd-Q105354748","Ruth Karger",1900,1943,"Konzentrationslager Theresienstadt","kar"]
+]}

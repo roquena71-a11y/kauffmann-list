@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"DE",
+"label":"Homburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q141636455","Alice Clementine Salmon",1908,null,"Homburg","sal"],
+["st-Q141636392","Berta Graber",1877,null,"Homburg","gra"],
+["st-Q141636441","Eugen Oppenheimer",1869,null,"Homburg","op"],
+["st-Q141636416","Fischel Simon Frommer",1884,null,"Homburg","fro"],
+["st-Q141636423","Franz Josef Frommer",1914,null,"Homburg","fro"],
+["st-Q141636444","Friederike Oppenheimer",1873,null,"Homburg","op"],
+["st-Q141636487","Friedrich Wolf",1920,null,"Homburg","wolf_"],
+["st-Q141636489","Heinrich Wolf",1894,null,"Homburg","wolf_"],
+["st-Q141636494","Irma Wolf",1892,null,"Homburg","wolf_"],
+["st-Q141636431","Johanna Frommer",1878,null,"Homburg","fro"],
+["st-Q141636471","Karl Salmon",1901,null,"Homburg","sal"],
+["st-Q141636477","Paula Salmon",1896,null,"Homburg","sal"],
+["st-Q141636481","Rosa Salmon",1867,1940,"Homburg","sal"]
+],
+"slug":"homburg"}

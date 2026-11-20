@@ -1,0 +1,18 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"fry",
+"rows":[
+["fryc","st-Q76137806","Golda Fryc",1899,null,"Hamburg","fry"],
+["fryc","st-Q76138019","Schaje Fryc",1895,null,"Hamburg","fry"],
+["fryda","st-n12229160773","Betty Fryda",1896,null,"Bochum","fry"],
+["fryda","st-n4478018051","Betty Fryda",1896,null,"Meppen","fry"],
+["fryda","st-n12229145983","Emil Fryda",1883,null,"Bochum","fry"],
+["fryder","st-n4221673689","Josef Fryder",1912,null,"Lübeck","fry"],
+["fryderyk","wd-Q104805988","Fryderyk Horowitz",1887,1943,"Berlin","hor"],
+["frydman","st-n7155040518","Lea Nysenholc-Frydman",1909,null,"Anderlecht","ny"],
+["frydman","st-n12244065598","Pinkus Frydman",1907,null,"Saint-Gilles - Sint-Gillis","fry"],
+["frydman","st-n12244065597","Sura Frydman Zylberstejn",1906,null,"Saint-Gilles - Sint-Gillis","zy"],
+["frymet","wd-Q105456152","Frymet F. Praiss",1864,1942,"Berlin","pr"],
+["frymy","st-Q127374336","Frymy Weinberger",1885,null,"Leipzig","wein"],
+["frysz","st-n7242332637","Esther Zaslavsky-Frysz",1892,1944,"Bruxelles - Brussel","za"]
+]}

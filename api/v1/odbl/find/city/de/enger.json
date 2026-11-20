@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Enger",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n706502010","Adele Spanier",1881,null,"Enger","sp"],
+["st-n10183317730","Bertha Marx",1882,null,"Enger","mar"],
+["st-n706502001","Helene de Vries",1881,null,"Enger","v"],
+["st-n706501985","Jonas de Vries",1877,null,"Enger","v"],
+["st-n706501977","Ludwig Lehmann de Fries",1903,null,"Enger","fri"],
+["st-n706501967","Max Spanier",1878,null,"Enger","sp"]
+],
+"slug":"enger"}

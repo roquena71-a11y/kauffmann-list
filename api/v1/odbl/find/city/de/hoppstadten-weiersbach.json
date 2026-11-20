@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Hoppstädten-Weiersbach",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n10047222179","Dr. Alex Lewin",1888,null,"Hoppstädten-Weiersbach","lew"],
+["st-n10047222181","Elise Eppstein",1848,null,"Hoppstädten-Weiersbach","ep"],
+["st-n10047222186","Gerda Stern",1909,null,"Hoppstädten-Weiersbach","stern"],
+["st-n10047222185","Julius Stern",1912,null,"Hoppstädten-Weiersbach","stern"],
+["st-n10047222183","Liselotte Stern",1923,null,"Hoppstädten-Weiersbach","stern"],
+["st-n10047222182","Margit Stern",1924,null,"Hoppstädten-Weiersbach","stern"],
+["st-n10047222180","Ottilie Katzenberg",1875,null,"Hoppstädten-Weiersbach","kat"],
+["st-n10047222188","Sigmund Stern",1883,null,"Hoppstädten-Weiersbach","stern"],
+["st-n10047222187","Sophie Stern",1886,null,"Hoppstädten-Weiersbach","stern"]
+],
+"slug":"hoppstadten-weiersbach"}

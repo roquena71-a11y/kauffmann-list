@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Gersthofen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134615714","Alois Dureder",1899,null,"Gersthofen","du"],
+["st-Q134615718","Georg Kottmair",1909,null,"Gersthofen","kot"],
+["st-Q134615738","Gino Rossi",1925,1945,"Gersthofen","ross"],
+["st-Q134615717","Herrmann Wilhelm Jensch",1907,null,"Gersthofen","je"],
+["st-Q134615735","Johann Mayer",1919,1941,"Gersthofen","may"],
+["st-Q134615724","Johann Stegmüller",1910,null,"Gersthofen","steg"],
+["st-Q134615716","Josef Heim",1908,1940,"Gersthofen","hei"],
+["st-Q134615734","Kreszenz Maria Hartmann",1878,1940,"Gersthofen","har"],
+["st-Q134615713","Rosa Deisenhofer",1907,null,"Gersthofen","de"],
+["st-Q134615737","Viktoria Pfundmeier",1905,null,"Gersthofen","pf"]
+],
+"slug":"gersthofen"}

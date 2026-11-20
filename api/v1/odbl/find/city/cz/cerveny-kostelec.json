@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"CZ",
+"label":"Červený Kostelec",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n14135503530","Antonín Burdych ml.",1905,1942,"Červený Kostelec","ml"],
+["st-n14135503532","Antonín Burdych st.",1874,1942,"Červený Kostelec","st_"],
+["st-n14135431365","Jiří Potůček-Tolar",1919,1942,"Červený Kostelec","po"],
+["st-n14135503531","Josefa Burdychová",1876,1942,"Červený Kostelec","bu"],
+["st-n14135503529","Milada Burdychová",1905,1942,"Červený Kostelec","bu"]
+],
+"slug":"cerveny-kostelec"}

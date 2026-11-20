@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"rosy",
+"rows":[
+["rosy","wd-Q106593581","Charlotte Rosy Liebhold",1881,1943,"Konzentrationslager Theresienstadt","lie"],
+["rosy","wd-Q104446950","Rösy Diamant",1862,null,null,"di"],
+["rosy","wd-Q104687095","Rösy Gutherz",1872,1943,"Konzentrationslager Theresienstadt","guth"],
+["rosy","wd-Q108813743","Rosy Lilienfeld",1896,1942,"KZ Auschwitz","lil"],
+["rosy","wd-Q105464211","Rosy Philippsohn",1873,1944,"Konzentrationslager Theresienstadt","ph"],
+["rosy","wd-Q105460780","Rosy Wartenberg",1873,1944,"Konzentrationslager Theresienstadt","war"]
+]}

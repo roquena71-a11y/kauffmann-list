@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"LT",
+"label":"Panevėžys",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95127783","Berta Levit",1893,"death","Panevėžys",55.725,24.36389],
+["wd-Q95125547","Fania Katz",1903,"death","Panevėžys",55.725,24.36389],
+["wd-Q95129392","Gesia Markus",1922,"death","Panevėžys",55.725,24.36389],
+["wd-Q95107463","Hirsh Elitzur",1868,"death","Panevėžys",55.725,24.36389],
+["wd-Q95109921","Mikhalina Milner",1926,"death","Panevėžys",55.725,24.36389],
+["wd-Q95125980","Moshe Katz",1903,"death","Panevėžys",55.725,24.36389]
+],
+"slug":"panevezys"}

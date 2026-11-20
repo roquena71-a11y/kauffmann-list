@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"country":"PL",
+"label":"Żychlin",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95114638","Arie Printz",1905,1942,"Żychlin","pri"],
+["wd-Q95110989","David Plotzki",1870,1942,"Żychlin","pl"],
+["wd-Q95125125","Tzirel Plotzki",1868,1942,"Żychlin","pl"]
+],
+"slug":"zychlin"}

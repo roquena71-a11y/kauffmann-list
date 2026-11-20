@@ -1,0 +1,21 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"sw",
+"rows":[
+["swaab","wd-Q105655706","Hendrika Swaab-Marchand",1904,1945,null,"sw"],
+["swaab","wd-Q105655707","Juda Swaab",1904,1945,null,"sw"],
+["swarsensky","wd-Q105459819","Amalie Swarsensky",1863,1942,"Konzentrationslager Theresienstadt","sw"],
+["swarte","wd-Q129357317","Andries de Swarte",1903,1943,"Vernichtungslager Sobibor","sw"],
+["swarts","wd-Q56596742","Samuël Swarts",1917,1944,"Oosterbeek","sw"],
+["swarzenski","wd-Q105459820","Margarete Swarzenski",1881,1943,"Konzentrationslager Theresienstadt","sw"],
+["swatonova","wd-Q105611243","Marta Swatoňová",1899,null,null,"sw"],
+["swiadoschz","wd-Q105459818","Emma Swiadoschz",1874,1944,"Konzentrationslager Theresienstadt","sw"],
+["swiatlo","wd-Q95108604","Meir Światło",1916,1942,"Vernichtungslager Treblinka","sw"],
+["swidkes","wd-Q105506053","Salo Swidkes",1855,1943,"Konzentrationslager Theresienstadt","sw"],
+["swierczewski","wd-Q95116509","Avraham Świerczewski",null,1943,"Ghetto Litzmannstadt","sw"],
+["swijit","wd-Q105655043","Jansje Parra Swijit",1884,null,null,"sw"],
+["swirski","wd-Q105459821","Lea Swirski",1872,1942,"Konzentrationslager Theresienstadt","katz"],
+["swoboda","wd-Q105506050","Adolf Swoboda",1862,1942,"Konzentrationslager Theresienstadt","sw"],
+["swoboda","wd-Q105611241","Walter Swoboda",1889,null,null,"sw"],
+["swobodova","wd-Q105611223","Hildegarda Swobodová",1905,null,null,"sw"]
+]}

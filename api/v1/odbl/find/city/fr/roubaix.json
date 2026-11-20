@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"FR",
+"label":"Roubaix",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q136102052","Alexandre Raby",1888,1943,"Roubaix","ra"],
+["st-n13043829775","Charlotte Rosenberg née Keller",1900,null,"Roubaix","ke"],
+["st-n13042209313","Édouard Pieters",1903,1942,"Roubaix","pi"],
+["wd-Q136103053","Flore Raby",1913,null,"Roubaix","ra"],
+["wd-Q830456","Jean Lebas",1878,1944,"Roubaix","leb"],
+["st-n13043829776","Joseph Rosenberg",1893,1945,"Roubaix","rosenb"],
+["st-n13042209314","Marcelle Pieters née Reynaert",1908,1945,"Roubaix","rey"],
+["wd-Q136757208","Nelly Devienne",1912,1945,"Roubaix","de"]
+],
+"slug":"roubaix"}

@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"mr",
+"rows":[
+["mr","wd-Q104411303","Mr. Ph. Alice Bognerová",1904,null,null,"bog"],
+["mracnova","wd-Q105565295","Anna Mračnová",1892,null,null,"mr"],
+["mraczkova","wd-Q105565294","Rosalie Mraczková",1877,null,null,"mr"],
+["mrazkova","wd-Q105565296","Henriette Mrázková",1885,null,null,"mr"],
+["mrosek","wd-Q1895001","Margarete Mrosek",1902,1945,"Hamburg","mr"]
+]}

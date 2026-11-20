@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"FR",
+"label":"Douai",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13096308472","Adolphe Sokolski",1898,"memorial","58 Rue du Champ Fleuri",50.3766,3.07924],
+["st-n13096308470","Arlette Sokolski",1938,"memorial","58 Rue du Champ Fleuri",50.3766,3.07923],
+["st-n13096308469","Francine Sokolski",1939,"memorial","58 Rue du Champ Fleuri",50.3766,3.07923],
+["st-n13096308461","Henri Redlus",1926,"memorial","197 Rue Morel",50.37381,3.08736],
+["st-n13096308465","Herman Rosenblit",1894,"memorial","71 Rue des Malvaux",50.37331,3.08168],
+["st-n13096308460","Isaak-Oscar Zaidman",1903,"memorial","44 Rue des Minimes",50.36772,3.07955],
+["st-n13096308464","Isidor Rosenblit",1928,"memorial","71 Rue des Malvaux",50.37331,3.08168],
+["st-n13096308462","Jacob Slomnicki",1906,"memorial","114 Rue de Paris",50.36673,3.08115],
+["st-n13096308468","Jacqueline Sokolski",1936,"memorial","58 Rue du Champ Fleuri",50.3766,3.07924],
+["st-n13096308467","Joseph Strycharz",1906,"memorial","4656 Route de Douai",50.40986,3.13309],
+["st-n13096308463","Laja Slomnicki née Pruszicka",1902,"memorial","114 Rue de Paris",50.36673,3.08115],
+["st-n13096308466","Nathan Strycharz",1897,"memorial","4656 Route de Douai",50.40986,3.13309],
+["st-n13096308471","Sosia Sokolski née Gruszka",1918,"memorial","58 Rue du Champ Fleuri",50.3766,3.07924]
+],
+"slug":"douai"}

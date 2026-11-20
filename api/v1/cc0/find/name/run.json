@@ -1,0 +1,19 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"run",
+"rows":[
+["rund","wd-Q105389081","Adele Rund",1876,null,null,"ru"],
+["rund","wd-Q105595508","Alfred Rund",1877,1943,"Konzentrationslager Theresienstadt","ru"],
+["rund","wd-Q105473302","Bernhard Eduard Rund",1858,1942,"Konzentrationslager Theresienstadt","ru"],
+["rund","wd-Q105389084","Bertha Rund",1870,1942,"Ghetto Theresienstadt","ru"],
+["rund","wd-Q105389086","Clara Rund",1868,null,null,"ru"],
+["rund","wd-Q105389088","Clothilde Rund",1872,null,null,"ru"],
+["rund","wd-Q105389092","Dagobert Rund",1868,1942,"Konzentrationslager Theresienstadt","ru"],
+["rund","wd-Q105389094","Eugen Rund",1871,null,null,"ru"],
+["rund","wd-Q105473304","Otto Rund",1863,1942,"Konzentrationslager Theresienstadt","ru"],
+["rund","wd-Q105389095","Rosalie Rund",1862,null,null,"ru"],
+["rundt","wd-Q106821683","Josef Rundt",1890,1942,"KZ Majdanek","ru"],
+["runes","wd-Q105473306","Josefine Runes",1865,null,null,"ru"],
+["runge","wd-Q105389096","Helene Runge",1866,1943,"Konzentrationslager Theresienstadt","ru"],
+["rungeova","wd-Q105595509","Pavla Rungeová",1876,1943,"Konzentrationslager Theresienstadt","ru"]
+]}

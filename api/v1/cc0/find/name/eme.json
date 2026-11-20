@@ -1,0 +1,17 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"eme",
+"rows":[
+["emerich","wd-Q104447415","Arnold Emerich",1869,1943,"Konzentrationslager Theresienstadt","em"],
+["emerich","wd-Q104207827","Emerich Acs",1912,null,null,"ac"],
+["emerich","wd-Q104249542","Emerich Berger",1894,null,null,"berge"],
+["emerich","wd-Q104408819","Emerich Böck",1881,1943,"Konzentrationslager Theresienstadt","boc"],
+["emerich","wd-Q104421913","Emerich Brodavka",1895,null,null,"bro"],
+["emerich","wd-Q104423456","Emerich Deutsch",1890,null,null,"de"],
+["emerich","wd-Q104449376","Emerich Elefant",1912,null,null,"el"],
+["emerich","wd-Q105563245","Emerich Markus",1896,null,null,"mark"],
+["emerich","wd-Q105611278","Emerich Szabadi",1896,null,null,"sz"],
+["emerich","wd-Q105614323","Emerich Taussig",1866,null,null,"taus"],
+["emerich","wd-Q105617752","Emerich Wallerstein",1897,null,null,"wal"],
+["emerich","wd-Q105640345","Emerich Wurzel",1892,null,null,"wu"]
+]}

@@ -1,0 +1,12 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ard",
+"rows":[
+["ardel","wd-Q104209898","Adolf Ardel",1887,null,null,"ar"],
+["ardel","wd-Q104209899","Adolf Ardel",1893,null,null,"ar"],
+["ardel","wd-Q104209900","Klara Ardel",1876,1943,"Terezín","ar"],
+["ardel","wd-Q104209901","Regina Ardel",1889,null,null,"ar"],
+["ardel","wd-Q104209902","Salomon Rasiel Ardel",1879,1943,"Konzentrationslager Theresienstadt","ar"],
+["ardo","wd-Q104209904","Melanie Ardo",1863,1943,"Terezín","ar"],
+["ardova","wd-Q104209905","Alžběta Ardová",1913,null,null,"ar"]
+]}

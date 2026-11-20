@@ -1,0 +1,9 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"rov",
+"rows":[
+["rovenska","wd-Q105595334","Valerie Rovenská",1893,null,null,"rov"],
+["rovensky","wd-Q105650838","Ota Rovenský",1886,null,null,"rov"],
+["rovensky","wd-Q105595333","Pavel Rovenský",1890,null,null,"rov"],
+["rovensky","wd-Q105595335","Viktor Rovenský",1893,null,null,"rov"]
+]}

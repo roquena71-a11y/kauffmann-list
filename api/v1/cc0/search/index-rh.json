@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"rh",
+"rows":[
+["wd-Q105456848","Paula Rhee",1869,"Konzentrationslager Theresienstadt",50.51028,14.14972,"rh"],
+["wd-Q105456849","Elisabeth Rheinberg",1870,"Breslau",51.11,17.0325,"rh"],
+["wd-Q105456853","Max Rheinberg",1861,"Konzentrationslager Theresienstadt",50.51028,14.14972,"rh"],
+["wd-Q105456856","Julie Rheinfelder",1874,"Schweinfurt",50.05,10.23333,"rh"],
+["wd-Q105456861","Emanuel Rheinheimer",1869,null,null,null,"rh"],
+["wd-Q105456866","Bertha Rheinhold",1865,"Celle",52.62556,10.0825,"rh"],
+["wd-Q105456869","Elise Rheinhold",1865,"Celle",52.62556,10.0825,"rh"],
+["wd-Q105456651","Max Rheinhold",1872,"Koblenz",50.35972,7.59778,"rh"],
+["wd-Q105354007","Selma Rheinhold",1875,"Köln",50.94222,6.95778,"rh"],
+["wd-Q105456873","Ludmilla Rheinstein",1891,null,null,null,"rh"],
+["wd-Q105655201","Abraham Rhijn",1898,"Amsterdam",52.36667,4.88333,"rh"],
+["wd-Q105655203","Cilly Seraphine Rhijn",1931,"Zandvoort",52.37125,4.53306,"rh"],
+["wd-Q60005406","P.D. van Rhijn",1874,"Amsterdam",52.36667,4.88333,"rh"],
+["wd-Q105472392","Melanie Rhon",1874,"Konzentrationslager Theresienstadt",50.51028,14.14972,"rh"]
+]}

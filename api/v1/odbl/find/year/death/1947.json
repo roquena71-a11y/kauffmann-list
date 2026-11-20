@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q15211068","Bernhard Görge",1890,1947,"Bremerhaven","gor"],
+["wd-Q709527","Dr. Arthur Goldschmidt",1873,1947,"Reinbek","golds"],
+["st-n792649857","Elisabeth Herrmanns",1910,1947,"Bonn","her"],
+["wd-Q1556433","Gustav Stolper",1888,1947,"Berlin","sto"],
+["wd-Q73289393","Hildegard H. Ebbinghaus",1891,1947,"Wuppertal","eb"],
+["wd-Q100272181","Isak Bacharach",1882,1947,"Memmingen","bac"],
+["wd-Q109342255","Jakob Oppenheim",1874,1947,"Tübingen","op"],
+["wd-Q19287716","Karl Wiehe",1882,1947,"Bückeburg","wi"],
+["wd-Q126814456","Meta Katz",1894,1947,"Hannover","kat"],
+["wd-Q2281696","Siddy Wronsky",1883,1947,"Berlin","wr"],
+["st-n3768167596","Wilhelm Haaf",1893,1947,"Radolfzell","haa"]
+],
+"year":1947}

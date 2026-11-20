@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"UA",
+"label":"Sambir",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94975493","Bluma Feler",1898,"death","Sambir",49.51667,23.2],
+["wd-Q95124348","Etel Prich",1887,"death","Sambir",49.51667,23.2],
+["wd-Q95125069","Gusta Zeiden",1870,"death","Sambir",49.51667,23.2],
+["wd-Q95128805","Liba Feler",1921,"death","Sambir",49.51667,23.2],
+["wd-Q95108564","Lishe Volman",1902,"death","Sambir",49.51667,23.2],
+["wd-Q95111407","Mikhal Fesel",1908,"death","Sambir",49.51667,23.2],
+["wd-Q95110306","Tila Fuks",1918,"death","Sambir",49.51667,23.2],
+["wd-Q94975581","Yekhezkel Feler",1894,"death","Sambir",49.51667,23.2]
+],
+"slug":"sambir"}

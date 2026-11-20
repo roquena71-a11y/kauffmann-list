@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"FR",
+"label":"Lautenbach",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13565624728","Charles Galliath",1886,"memorial","9 Rue Saint-Michel",47.93821,7.18054],
+["st-n13565624729","Émile Weber",1878,"memorial","Route de Soultzmatt",47.93822,7.17928],
+["st-n13565624727","Mathilde Galliath née Gerrer",1887,"memorial","9 Rue Saint-Michel",47.93821,7.18054]
+],
+"slug":"lautenbach"}

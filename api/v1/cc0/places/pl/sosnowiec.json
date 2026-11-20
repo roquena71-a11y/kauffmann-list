@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"PL",
+"label":"Sosnowiec",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95127206","Falk Plotzkin",1893,"death","Sosnowiec",50.3,19.16667],
+["wd-Q94976954","Feiga Perl",1898,"death","Sosnowiec",50.3,19.16667],
+["wd-Q95119312","Icie Slomnitzki",1898,"death","Sosnowiec",50.3,19.16667],
+["wd-Q95127941","Ita Plotzkin",1895,"death","Sosnowiec",50.3,19.16667],
+["wd-Q94977257","Khaim Preseizen",1887,"death","Sosnowiec",50.3,19.16667],
+["wd-Q94975130","Shlomo Zabner",1912,"death","Sosnowiec",50.3,19.16667]
+],
+"slug":"sosnowiec"}

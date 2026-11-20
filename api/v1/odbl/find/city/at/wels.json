@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"AT",
+"label":"Wels",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q1516528","August Wörndl",1894,null,"Wels","wor"],
+["wd-Q22132529","Elfriede Grünberg",1929,null,"Wels","gru"],
+["st-n10748684429","Ernestine Grünberg",1897,null,"Wels","gru"],
+["st-n10748669165","Ignaz Rößler",1887,null,"Wels","ross"],
+["wd-Q20746580","Karl Ammer",1898,null,"Wels","am"],
+["st-n10748685347","Klara Grünberg",1899,null,"Wels","gru"]
+],
+"slug":"wels"}

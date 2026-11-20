@@ -1,0 +1,20 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"wl",
+"rows":[
+["wladimir","st-n13484177490","Wladimir Hejenka",1945,null,"Hamburg","hej"],
+["wladimir","st-n3345308730","Wladimir Huntschenko",1926,1944,"Salzburg","hu"],
+["wladimir","st-n12753834145","Wladimir Kolomichev",1925,null,null,"kol"],
+["wladimir","st-n3345308731","Wladimir Slesarow",1924,1943,"Salzburg","sl"],
+["wladimir","st-n13484554067","Wladimir Warschewa",1945,null,"Hamburg","wa"],
+["wladislaus","st-Q131369662","Wladislaus Kokott",1886,1938,"Schöningen","kok"],
+["wladislaus","st-Q139941044","Wladislaus Pawlitzki",1895,1940,"Senftenberg","pa"],
+["wladislaw","st-n13507747633","Wladislaw Kopera",1913,null,"Freiburg im Breisgau","kop"],
+["wladislaw","st-n14065005292","Wladislaw Maciejczyk",1944,null,"Hamburg","mac"],
+["wladislawa","st-Q131600050","Paijak Wladislawa",1907,null,"Osterholz-Scharmbeck","wl"],
+["wladyslaw","st-n3345308732","Wladyslaw Jan Kowal",1913,1943,"Salzburg","kow"],
+["wladyslaw","wd-Q132140671","Wladyslaw Waghalter",1885,1940,"Berlin","wa"],
+["wloch","st-n13815075424","Léopold Wloch",1897,1944,"Diemeringen","wl"],
+["wlodarczyk","st-n9770484271","Josef Wlodarczyk",1915,null,"Ahlen","wl"],
+["wlodzimierz","st-n14065005290","Wlodzimierz Lipka",1944,null,"Hamburg","lip"]
+]}

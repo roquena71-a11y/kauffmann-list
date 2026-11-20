@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"CZ",
+"label":"Rakovník",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11968863688","Eliška Reimannová",null,"memorial",null,50.10478,13.72835],
+["st-n11968863689","Hugo Reimann",null,"memorial",null,50.10477,13.72835],
+["st-n11383180037","Josef Švarc",null,"memorial",null,50.10447,13.72749],
+["st-n11351398118","Karel Švarc",null,"memorial",null,50.10448,13.72749],
+["st-n11383180038","Růžena Švarcová",null,"memorial",null,50.10447,13.72749]
+],
+"slug":"rakovnik"}

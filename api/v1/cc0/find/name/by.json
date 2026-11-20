@@ -1,0 +1,17 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"by",
+"rows":[
+["byck","wd-Q104421268","Albert Byck",1865,1942,"Konzentrationslager Theresienstadt","by"],
+["byck","wd-Q104420766","Antschel Adolf Byck",1872,null,null,"by"],
+["byck","wd-Q104420768","Rachel Rosa Byck",1876,null,null,"by"],
+["byck","wd-Q104420552","Therese Byck",1865,1944,"Konzentrationslager Theresienstadt","by"],
+["byk","wd-Q104420767","Berisch Byk",1858,1942,"Konzentrationslager Theresienstadt","by"],
+["byk","wd-Q104421270","Dora Byk",1865,1943,"Konzentrationslager Theresienstadt","by"],
+["byk","wd-Q104421271","Johanna Byk",1874,null,null,"by"],
+["byk","wd-Q104421272","Leo Byk",1863,null,null,"by"],
+["byk","wd-Q104421269","Moritz Byk",1861,1942,"Konzentrationslager Theresienstadt","by"],
+["bykiel","wd-Q104421273","Johanna Bykiel",1866,1944,"Konzentrationslager Theresienstadt","by"],
+["byrl","wd-Q95116988","Byrl Pertman",1890,1941,"KZ Majdanek","per"],
+["byttiner","wd-Q104421274","Herta Byttiner",1908,null,null,"by"]
+]}

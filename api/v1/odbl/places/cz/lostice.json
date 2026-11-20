@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"CZ",
+"label":"Loštice",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n9394141645","Bedřich Fuchs",null,"memorial",null,49.74447,16.92532],
+["st-n9394200860","Charlota Knӧpflmacherová",null,"memorial",null,49.74532,16.92781],
+["st-n9394141647","Frieda Fuchsová",null,"memorial",null,49.74447,16.92532],
+["st-n9394141646","Leopold Fuchs",null,"memorial",null,49.74447,16.92533],
+["st-n9394141648","Margareta Fuchsová",null,"memorial",null,49.74447,16.92532],
+["st-n9394200858","Otto Knӧpflmacher",null,"memorial",null,49.74532,16.92781],
+["st-n9394200859","Zikmund Knӧpflmacher",null,"memorial",null,49.74532,16.92781]
+],
+"slug":"lostice"}

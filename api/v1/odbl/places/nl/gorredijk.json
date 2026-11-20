@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"NL",
+"label":"Gorredijk",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n14240147754","Bertha Scholten",1872,"memorial","Hoofdstraat 2",53.00446,6.06453],
+["st-n14240147763","Dina Leefsma-de Vries",1917,"memorial","Langewâl 28",53.00169,6.06696],
+["st-n14240147759","Eliazar van der Kaars",1876,"memorial","Kerkewal 56",53.00535,6.05847],
+["st-n14240147757","Emanuel van der Kaars",1886,"memorial","Kerkewal 56",53.00535,6.05847],
+["st-n14240147751","Esther Colthof",1925,"memorial","Langewâl 38",53.00134,6.0678],
+["st-n14240147762","Izak Leefsma",1917,"memorial","Langewâl 28",53.00169,6.06696],
+["st-n14240147761","Jacob Leefsma",1935,"memorial","Langewâl 28",53.00169,6.06696],
+["st-n14240147758","Johanna van der Kaars-Goldsmith",1870,"memorial","Kerkewal 56",53.00535,6.05847],
+["st-n14240147760","Jozef Leefsma",1892,"memorial","Langewâl 28",53.00169,6.06696],
+["st-n14240147752","Lina Colthof-Gudema",1881,"memorial","Langewâl 38",53.00134,6.0678],
+["st-n14240147764","Magalina Leefsma",1918,"memorial","Langewâl 28",53.00169,6.06696],
+["st-n14240147753","Marcus Colthof",1889,"memorial","Langewâl 38",53.00134,6.0678],
+["st-n14240147755","Matje Leefsma-Wolf",1911,"memorial","Langewâl 48",53.00097,6.06866]
+],
+"slug":"gorredijk"}

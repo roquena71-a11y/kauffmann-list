@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"FR",
+"label":"Brumath",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13092832260","Blanche Bombet née Raphaël",1884,"memorial","23 Rue du Général Rampont",48.72949,7.71338],
+["st-n13092832261","Clémence Bombet",1886,"memorial","23 Rue du Général Rampont",48.72949,7.71338],
+["st-n13092832258","Gabrielle Bicard née Weill",1902,"memorial","26 Rue du Général Rampont",48.72932,7.71373],
+["st-n13028620673","Joseph Mathis",1891,"memorial","65 Rue du Général Rampont",48.72897,7.71544],
+["st-n13028620672","Léon Loeb",1905,"memorial","2 Impasse des Chanvriers",48.72857,7.71436],
+["st-n13028620674","Louis Marcel Weinum",1924,"memorial","65 Rue du Général Duport",48.73291,7.70267],
+["st-n13092832264","Philippe Feldenweg",1901,"memorial","Cour du Château",48.73098,7.70903],
+["st-n13092832262","Pierre Bombet",1906,"memorial","23 Rue du Général Rampont",48.72949,7.71338],
+["st-n13092832259","Théophile Bicard",1889,"memorial","26 Rue du Général Rampont",48.72932,7.71374]
+],
+"slug":"brumath"}

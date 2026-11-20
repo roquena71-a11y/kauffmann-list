@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"country":"PL",
+"label":"Posen",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95120852","Khaim Falbinski",1904,1941,"Posen","fal"],
+["wd-Q95116527","Leib Frost",1914,1942,"Posen","fro"],
+["wd-Q95109444","Rivka Fridman",1870,1940,"Posen","frid"]
+],
+"slug":"posen"}

@@ -1,0 +1,19 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"iw",
+"rows":[
+["iwan","wd-Q104808447","Gisela Iwan",1873,null,null,"i"],
+["iwan","wd-Q104219539","Iwan Bauchwitz",1893,1943,"Terezín","bau"],
+["iwan","wd-Q105354501","Iwan Blumenhein",1897,null,null,"blu"],
+["iwan","wd-Q104543111","Iwan Fränkel",1886,null,null,"franke"],
+["iwan","wd-Q104673866","Iwan Gross",1899,null,null,"gro"],
+["iwan","wd-Q126679439","Iwan Kanteman",1908,1945,"KZ-Außenlager Langenstein-Zwieberge","kan"],
+["iwan","wd-Q105365198","Iwan Löwenstein",1867,1942,"Konzentrationslager Theresienstadt","lowen"],
+["iwan","wd-Q105392131","Iwan Seligmann",1875,1944,"Konzentrationslager Theresienstadt","sel"],
+["iwan","wd-Q105392132","Iwan Seligmann",1891,null,null,"sel"],
+["iwan","wd-Q105460648","Iwan Wallach",1875,1942,"Konzentrationslager Theresienstadt","wal"],
+["iwnicki","wd-Q104808448","Berta Iwnicki",1914,null,null,"i"],
+["iwnicki","wd-Q104808450","Chane Iwnicki",1883,null,null,"i"],
+["iwnicki","wd-Q104808451","Manes Iwnicki",1879,null,null,"i"],
+["iwry","wd-Q104808452","Fischl Gödl Iwry",1866,1942,"Konzentrationslager Theresienstadt","i"]
+]}

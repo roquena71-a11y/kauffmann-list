@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"BE",
+"label":"Menen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12365814417","Desiré Vanzieleghem",1893,"memorial","Oude Leielaan 83 Menen",50.79511,3.11875],
+["st-n12369298030","Edouard Vanhoof",1897,"memorial","Grote Markt Menen voor Belfort",50.79613,3.12061],
+["st-n12369298031","Jean Marie Monteyne",1922,"memorial","Grote Markt Menen voor Belfort",50.79611,3.12061],
+["st-n12365795172","Jules Slambrouck",1900,"memorial","Ontvoogdingsstraat 67 Menen",50.79909,3.11842],
+["st-n11301889790","Julien Cagnie",1899,"memorial","Koningin Astridlaan 38 Menen Lauwe",50.79598,3.18097],
+["st-n12365814374","Maurice Van de Steene",1924,"memorial","Rijselstraat 45 Menen",50.79433,3.12222],
+["st-n12369298032","Remi Lernout",1890,"memorial","Grote Markt Menen voor Belfort",50.79609,3.12061]
+],
+"slug":"menen"}

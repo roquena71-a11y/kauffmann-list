@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"DE",
+"label":"Dachau",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95111942","Arie Proveler",1878,"death","Dachau",48.26028,11.43417],
+["wd-Q111722059","Arpad Schönfeld",1901,"death","Dachau",48.26028,11.43417],
+["wd-Q114705728","Franz Gerhard Kohn",1881,"death","Dachau",48.26028,11.43417],
+["wd-Q29905857","Hilde Kotanyi",1875,"death","Dachau",48.26028,11.43417],
+["wd-Q106871123","Hugo Koretz",1890,"death","Dachau",48.26028,11.43417],
+["wd-Q95124514","Khana Khudis",1927,"death","Dachau",48.26028,11.43417],
+["wd-Q95108361","Moshe Folkman",1895,"death","Dachau",48.26028,11.43417],
+["wd-Q94976710","Pavel Klabin",1918,"death","Dachau",48.26028,11.43417],
+["wd-Q95110040","Uri Veinberg",null,"death","Dachau",48.26028,11.43417],
+["wd-Q1573160","Wilhelm Aron",1907,"death","Dachau",48.26028,11.43417],
+["wd-Q95107198","Yurgis Levinas",1912,"death","Dachau",48.26028,11.43417],
+["wd-Q95110463","Zeev Gelbard",1877,"death","Dachau",48.26028,11.43417],
+["wd-Q95116875","Zigfrid Tuker",1901,"death","Dachau",48.26028,11.43417]
+],
+"slug":"dachau"}

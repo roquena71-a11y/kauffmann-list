@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"country":"DE",
+"label":"Sarstedt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131369644","Alice Liebmann",1905,null,"Sarstedt","lie"],
+["st-Q131369618","Anna Neuberg",1879,null,"Sarstedt","neu"],
+["st-Q131369641","Fritz Liebmann",1897,null,"Sarstedt","lie"],
+["st-Q131369633","Gisela Neuberg",1909,null,"Sarstedt","neu"],
+["st-Q131369623","Helene Aschenbrandt",1895,null,"Sarstedt","as"],
+["st-Q131369632","Ida Neuberg",1879,null,"Sarstedt","neu"],
+["st-Q131369621","Milian Aschenbrandt",1892,null,"Sarstedt","as"],
+["st-Q131369615","Otto Neuberg",1867,null,"Sarstedt","neu"],
+["st-Q131369635","Paula Gliksmann",1914,null,"Sarstedt","gl"],
+["st-Q131369609","Robert Neuberg",1860,null,"Sarstedt","neu"],
+["st-Q131369629","Sally Aschenbrandt",1939,null,"Sarstedt","as"],
+["st-Q131369638","Werner Freundlich",1922,null,"Sarstedt","fre"]
+],
+"slug":"sarstedt"}

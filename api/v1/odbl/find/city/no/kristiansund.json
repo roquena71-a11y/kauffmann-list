@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"country":"NO",
+"label":"Kristiansund",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q138692636","Emanuel Fischer",1923,1943,"Kristiansund","fi"],
+["wd-Q138607197","Esther Hirsch",1905,1943,"Kristiansund","hirsch"],
+["wd-Q138606786","Frida Hirsch født Dublinsky",1868,1943,"Kristiansund","du"],
+["wd-Q138607026","Gusta Fischer født Bermann",1893,1943,"Kristiansund","berm"],
+["wd-Q138359214","Hermann Fischer",1893,1943,"Kristiansund","fi"],
+["wd-Q138359272","Jacob Joel Hirsch",1866,1943,"Kristiansund","hirsch"],
+["wd-Q138607731","Judith Fischer",1930,1943,"Kristiansund","fi"],
+["wd-Q138686641","Rolff Wolf Hirsch",1897,null,"Kristiansund","hirsch"],
+["wd-Q138607733","Ruth Fischer",1931,1943,"Kristiansund","fi"],
+["wd-Q138607030","Sara Granstein født Borøchstein",1894,1943,"Kristiansund","bo"],
+["wd-Q138607749","Theodor Fischer",1937,1943,"Kristiansund","fi"]
+],
+"slug":"kristiansund"}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Torgau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q104889582","Doris Kukurutz Torgau",1892,null,"Torgau","to"],
+["st-n7247935534","Dr. Kurt Behmack",1887,null,"Torgau","beh"],
+["st-n7247859382","Gerdrut Isaacsohn",1882,null,"Torgau","i"],
+["st-n7247844675","Gertrud Ahlfeld",1897,null,"Torgau","ah"],
+["st-n7247844676","Luise Ahlfeld",1902,null,"Torgau","ah"],
+["st-n7247859383","Max Isaacsohn",1883,null,"Torgau","i"],
+["st-Q104889559","Max Kukurutz Torgau",1891,null,"Torgau","to"],
+["st-n7247844677","Selmar Ahlfeld",1889,1937,"Torgau","ah"]
+],
+"slug":"torgau"}

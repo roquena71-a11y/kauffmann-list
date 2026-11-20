@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"death",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q17371716","Abba Glauberman",1917,1974,"Odessa","gla"],
+["wd-Q115812282","Dr. Albert Rosenthal",1890,1974,null,"rosent"],
+["wd-Q108063761","Gisa Wurzel",1902,1974,"Wien","wu"],
+["wd-Q108873743","Herbert Graf von Schallenberg",1901,1974,"Weidling","scha"],
+["wd-Q115869846","Jenő Gergely",1880,1974,"Montreal","ger"],
+["wd-Q125319774","Joseph Sloghem",1890,1974,"Amsterdam","sl"],
+["wd-Q111240517","Vera Modigliani",1888,1974,"Rom","mod"]
+],
+"year":1974}

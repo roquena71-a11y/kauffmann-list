@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Alfhausen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105366925","Antonie Marcus",1874,1942,"Alfhausen","mar"],
+["wd-Q104807188","Elise Jonge",1904,1940,"Bremen","jo"],
+["wd-Q105372978","Hugo Meyer",1882,1944,"Alfhausen","meyer_"],
+["st-n4227011523","Mathilde Meyer",1887,null,"Alfhausen","meyer_"],
+["wd-Q104807193","Pauline de Jonge",1877,1942,"Alfhausen","jo"],
+["st-n4227011564","Rosa de Jonge",1878,1940,"Alfhausen","jo"],
+["st-n4227011565","Siegfried Meyer",1887,1938,"Alfhausen","meyer_"]
+],
+"slug":"alfhausen"}

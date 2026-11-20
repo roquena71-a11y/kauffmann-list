@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"JE",
+"label":"St Saviour",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13021473673","Erica Richardson born Oljenick",1883,null,"St Saviour","ol"],
+["wd-Q19325872","Harold Le Druillenec",1911,null,"St Saviour","dr"],
+["st-n13021249318","Jean Marie Rossi",1898,null,"St Saviour","ross"],
+["st-n13021473674","John Max Finkelstein",1882,null,"St Saviour","fi"]
+],
+"slug":"st-saviour"}

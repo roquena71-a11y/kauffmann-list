@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":2,
+"country":"DE",
+"label":"Halle (Saale)",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q695508","Arnold Japha",1877,1943,"Halle (Saale)","jap"],
+["wd-Q15451298","Martin Kochmann",1878,1936,"Halle (Saale)","koc"]
+],
+"slug":"halle-saale"}

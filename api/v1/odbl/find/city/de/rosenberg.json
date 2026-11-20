@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"DE",
+"label":"Rosenberg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q126974608","Elise Heimberger",1866,null,"Rosenberg","hei"],
+["st-Q104419575","Jette Schorsch",1867,1941,"Rosenberg","scho"],
+["st-Q104419394","Klara Rothschild",1866,1941,"Rosenberg","rot"],
+["st-Q104420106","Susanna Schorsch",1872,1941,"Rosenberg","scho"],
+["st-Q104416763","Walter Viktor Hecht",1910,null,"Rosenberg","hec"]
+],
+"slug":"rosenberg"}

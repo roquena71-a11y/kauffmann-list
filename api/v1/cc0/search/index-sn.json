@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"sn",
+"rows":[
+["wd-Q105611478","Arnošt Šnabl",1888,null,null,null,"sn"],
+["wd-Q105611477","Anna Šnablová",1904,null,null,null,"sn"],
+["wd-Q105613681","Tereza Šnablová",1864,null,null,null,"sn"],
+["wd-Q133519447","Pollij Messias-Snapper",1871,"Amsterdam",52.36667,4.88333,"sn"],
+["wd-Q108133810","Louis Antoine Snell",1880,"Bojonegoro",-7.155,111.89,"sn"],
+["wd-Q125392639","Sal Snijder",1898,"Amsterdam",52.36667,4.88333,"sn"],
+["wd-Q105655600","Maurits Snijders",1888,"Amsterdam",52.36667,4.88333,"sn"],
+["wd-Q105655601","Simon Snijders",1897,"Amsterdam",52.36667,4.88333,"sn"],
+["wd-Q105655603","Sophia Snijders-Pesper",1892,null,null,null,"sn"],
+["wd-Q105655599","Eva Snijders-Plukker",1891,"Amsterdam",52.36667,4.88333,"sn"],
+["wd-Q105655604","Josef Snyders",1909,null,null,null,"sn"]
+]}

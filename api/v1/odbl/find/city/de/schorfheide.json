@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Schorfheide",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4413877810","Alma Leiser",1882,null,"Schorfheide","lei"],
+["st-n4413877811","Elise Leiser",1883,null,"Schorfheide","lei"],
+["st-n14031855800","Eugen Epstein",1908,null,"Schorfheide","ep"],
+["st-n4413877812","Florentine Leiser",1879,null,"Schorfheide","lei"],
+["st-n4413877813","Friedemann Leiser",1877,null,"Schorfheide","lei"],
+["st-n4413861695","Hertha Mahler",1908,null,"Schorfheide","mah"],
+["st-n14031945901","Margot Epstein",1913,null,"Schorfheide","ep"],
+["st-n4413861696","Moritz Mahler",1875,null,"Schorfheide","mah"],
+["st-n4413861994","Ruth Thea Mahler",1918,null,"Schorfheide","mah"]
+],
+"slug":"schorfheide"}

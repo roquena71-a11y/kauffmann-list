@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"kw",
+"rows":[
+["wd-Q105560371","Rudolf Kwacz",1891,null,null,null,"kw"],
+["wd-Q105560369","Elsa Kwaczová",1892,null,null,null,"kw"],
+["wd-Q105466256","Jakob Kwalinsky",1860,"Konzentrationslager Theresienstadt",50.51028,14.14972,"kw"],
+["wd-Q105360549","Simon Kwaskowski",1874,null,null,null,"kw"],
+["wd-Q105468989","Fritz Kweller",1877,"Charlottenburg",52.51667,13.3,"kw"],
+["wd-Q105466257","Schifra Kweller",1860,"Konzentrationslager Theresienstadt",50.51028,14.14972,"kw"],
+["wd-Q129435907","Nathan Kwetsie",1878,"Den Haag",52.08,4.31,"kw"],
+["wd-Q105654408","Henri Kwieser",1903,"Amsterdam",52.36667,4.88333,"kw"],
+["wd-Q105654409","Hetty Kwieser",1932,"Amsterdam",52.36667,4.88333,"kw"],
+["wd-Q105654410","Mirjam Kwieser-Cohen",1908,"Amsterdam",52.36667,4.88333,"kw"],
+["wd-Q105360551","Martin Kwilecki",1874,null,null,null,"kw"]
+]}

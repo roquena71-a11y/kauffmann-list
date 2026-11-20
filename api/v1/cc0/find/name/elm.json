@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"elm",
+"rows":[
+["elma","wd-Q105388372","Elma-Elsa Rosenthal",1873,null,null,"rosent"],
+["elma","wd-Q104808696","Elma Jacob",1869,1944,"Konzentrationslager Theresienstadt","jac"],
+["elma","wd-Q105464214","Elma Kronheim",1875,1943,null,"el"],
+["elma","wd-Q105579373","Elma Reissová",1882,null,null,"reis"],
+["elmiera","wd-Q104652007","Elmiera Friedländer",1866,null,null,"friedl"]
+]}

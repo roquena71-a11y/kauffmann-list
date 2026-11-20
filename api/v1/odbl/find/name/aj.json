@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"aj",
+"rows":[
+["ajakobi","st-n7120057495","Emma Ajakobi",1870,null,"Kempen","aj"],
+["ajakobi","st-n7120057497","Johanna Ajakobi",1872,null,"Kempen","aj"],
+["ajakobi","st-n7120057498","Karoline Ajakobi",1873,1942,"Kempen","aj"],
+["ajakobi","st-n7120057496","Magdalene Ajakobi",1862,1942,"Kempen","aj"],
+["ajsenberg","st-n3956274755","Chaja Ajsenberg",1894,null,"Duisburg","aj"],
+["ajsenberg","st-n3956274759","Emma-Anna Ajsenberg",1924,1942,"Duisburg","aj"]
+]}

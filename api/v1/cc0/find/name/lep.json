@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"lep",
+"rows":[
+["lepehne","wd-Q105353882","Anna Lepehne",1865,1942,"Konzentrationslager Theresienstadt","lep"],
+["lepehne","wd-Q105361861","Berta Lepehne",1867,1943,"Konzentrationslager Theresienstadt","lep"],
+["lepehne","wd-Q105361863","Clara Lepehne",1865,1943,"Konzentrationslager Theresienstadt","lep"],
+["lepmann","wd-Q105361864","Sofie Lepmann",1875,1942,"Konzentrationslager Theresienstadt","lep"],
+["leppek","wd-Q105361867","Leo Leppek",1897,1944,"KZ Dachau","lep"],
+["leppmann","wd-Q105361870","Wilhelm Leppmann",1866,1942,"Konzentrationslager Theresienstadt","lep"],
+["leppmann","wd-Q15435607","Wolfgang Leppmann",1902,1943,"KZ Auschwitz","lep"],
+["lepsi","wd-Q105556561","Josefina Lepší",1896,null,null,"lep"]
+]}

@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"NL",
+"label":"Utrecht",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n10203445700","Abraham Meijer Hamburger",1918,null,"Utrecht","ham"],
+["st-n10203429792","Alida de Vries",1924,null,"Utrecht","v"],
+["st-n13430202926","Anna Hamburger-RoodFeld",1891,null,"Utrecht","ham"],
+["st-n13430202927","Jacob de Vries",1882,null,"Utrecht","v"],
+["st-n13430202924","Jonas Hamburger",1920,null,"Utrecht","ham"],
+["st-n13430202929","Klara de Vries-Norden",1893,null,"Utrecht","v"],
+["st-n10203471033","Klara Ellenberg",1897,null,"Utrecht","el"],
+["st-n13430202923","Louis Hartog Frijda",1885,null,"Utrecht","fri"],
+["st-n13430202925","Meijer Hamburger",1891,null,"Utrecht","ham"],
+["st-n10203466731","Mietje Frijda-Leverpoll",1885,null,"Utrecht","fri"],
+["st-n13430202928","Sara de Vries",1922,null,"Utrecht","v"],
+["st-n10203456842","Sara Elisabeth van Gelderen",1898,null,"Utrecht","ge"],
+["st-n13430202922","Theresia van Gelderen",1897,null,"Utrecht","ge"]
+],
+"slug":"utrecht"}

@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"country":"BE",
+"label":"Gent",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7142994202","Camille Haegeman",1904,1945,"Gent","hag"],
+["st-n7142994208","Charles Colyn",1888,1944,"Gent","col"],
+["st-n7142994206","Gustave Labens",1912,1945,"Gent","lab"],
+["st-n7142994204","Julius Matthys",1905,1945,"Gent","mat"],
+["st-n7142994210","Marcel Levy",1900,null,"Gent","levy"],
+["st-n7142994211","Margueritte Bloch",1900,null,"Gent","blo"],
+["wd-Q105047305","Martha Geiringer",1912,null,"Gent","ge"],
+["st-n7142994205","Maurice Wanzele",1907,1944,"Gent","wa"],
+["st-n7295275263","Ovchie Lempert",1908,null,"Gent","lem"],
+["st-n7142994207","Roger Lammertyn",1922,1945,"Gent","lam"],
+["st-n7142994209","Sophie Loeb-Bloch",1873,null,"Gent","lob"],
+["st-n7142994203","Victor De Paepe",1902,1945,"Gent","pa"]
+],
+"slug":"gent"}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"AT",
+"label":"Leoben",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6816203637","Berta Werdisheim",1885,null,"Leoben","wer"],
+["st-n6816203641","David Spiess",1909,null,"Leoben","sp"],
+["st-n6816203639","Klara Scheck",1872,1942,"Leoben","sche"],
+["st-n6816203635","Max Werdisheim",1886,1943,"Leoben","wer"],
+["st-n6816203633","Roman Cebaus",1892,1944,"Leoben","ce"],
+["st-n6816203642","Simon Trevisani",1884,1944,"Leoben","tr"]
+],
+"slug":"leoben"}

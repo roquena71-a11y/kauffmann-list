@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Sinsheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134931272","Bianca 'Berta' Adler",1873,null,"Sinsheim","ad"],
+["st-Q134931374","Emilie Kohn",1871,null,"Sinsheim","koh"],
+["st-Q134931462","Erna Kohn",1904,null,"Sinsheim","koh"],
+["st-Q134931643","Fanny Ledermann",1871,null,"Sinsheim","led"],
+["st-Q134931654","Fred 'Sallo' Ledermann",1899,null,"Sinsheim","led"],
+["st-n13709197341","Friederike Häussler",1888,1940,"Sinsheim","hau"],
+["st-Q134931672","Hildegard Wolf",1912,null,"Sinsheim","wolf_"],
+["st-Q134931555","Max Kohn",1865,null,"Sinsheim","koh"],
+["st-Q134931650","Moritz Ledermann",1865,null,"Sinsheim","led"],
+["st-Q134931678","Saly Wolf",1902,null,"Sinsheim","wolf_"]
+],
+"slug":"sinsheim"}

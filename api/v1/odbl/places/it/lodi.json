@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"IT",
+"label":"Lodi",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q55815938","Ettore Archinti",1878,"memorial",null,45.31561,9.50057],
+["wd-Q106718218","Luigi Giulio Marzagalli",null,"memorial",null,45.31259,9.50044],
+["wd-Q106718031","Luigi Vincenzo Marzagalli",null,"memorial",null,45.31427,9.50758],
+["st-n10885308102","Pietro Santi",1911,"memorial",null,45.31245,9.49968]
+],
+"slug":"lodi"}

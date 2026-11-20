@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"PL",
+"label":"Biała Podlaska",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95112117","Aizik Rames",1924,1942,"Biała Podlaska","ra"],
+["wd-Q95113653","Braindel Goldvaser",1887,1942,"Biała Podlaska","goldv"],
+["wd-Q95116451","Eliahu Pakman",1901,1942,"Biała Podlaska","pa"],
+["wd-Q95118650","Ester Perlman",1896,1944,"Biała Podlaska","per"],
+["wd-Q95118324","Gitel Pakman",1924,1942,"Biała Podlaska","pa"],
+["wd-Q94976469","Menakhem Pshekupnik",1872,1942,"Biała Podlaska","ps"],
+["wd-Q95122836","Miriam Pakman",1907,1942,"Biała Podlaska","pa"],
+["wd-Q95109597","Moshe Frater",1900,1942,"Biała Podlaska","frat"],
+["wd-Q95107644","Moshe Perlshtein",1900,1940,"Biała Podlaska","per"],
+["wd-Q95128922","Pinkhas Frater",1924,1942,"Biała Podlaska","frat"],
+["wd-Q95114735","Reizl Pshekupnik",1877,1942,"Biała Podlaska","ps"],
+["wd-Q94976617","Shimon Likhtenshtein",1881,1942,"Biała Podlaska","lik"],
+["wd-Q94977131","Yenta Sherman",1897,1942,"Biała Podlaska","sh"]
+],
+"slug":"biaa-podlaska"}

@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"LT",
+"label":"Švenčionys",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94977008","Khaia Pirei",null,"death","Švenčionys",55.13333,26.15556],
+["wd-Q95109662","Yeshayahu Gordon",1871,"death","Švenčionys",55.13333,26.15556]
+],
+"slug":"svencionys"}

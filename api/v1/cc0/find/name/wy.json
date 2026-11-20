@@ -1,0 +1,17 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"wy",
+"rows":[
+["wydor","wd-Q140834177","Helene Wydor",1907,1942,"KZ Auschwitz","rosenz"],
+["wygodzinski","wd-Q105462529","Adele Wygodzinski",1880,null,null,"wy"],
+["wygodzinski","wd-Q105462531","Helene Wygodzinski",1870,null,null,"wy"],
+["wygodzinski","wd-Q1347360","Martha Wygodzinski",1869,1943,"Konzentrationslager Theresienstadt","wy"],
+["wyk","wd-Q105462532","Frummet Wyk",1862,1942,"Konzentrationslager Theresienstadt","wy"],
+["wyk","wd-Q105462533","Isaak Wyk",1907,null,null,"wy"],
+["wyk","wd-Q105462534","Meier Wyk",1901,null,null,"wy"],
+["wykowski","wd-Q105462536","Aron Wykowski",1884,1943,"Konzentrationslager Theresienstadt","wy"],
+["wykowski","wd-Q105462537","Johanna Wykowski",1889,null,null,"wy"],
+["wynschenk","wd-Q105656338","Elisabeth Wynschenk Loggen",1913,null,null,"log"],
+["wynschenk","wd-Q105656342","Maurits Wynschenk",1913,null,null,"wy"],
+["wyprut","wd-Q105462538","Betty Wyprut",1867,1944,"Konzentrationslager Theresienstadt","wy"]
+]}

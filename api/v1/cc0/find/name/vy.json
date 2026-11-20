@@ -1,0 +1,15 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"vy",
+"rows":[
+["vyborna","wd-Q105617327","Pavla Výborná",1904,null,null,"vy"],
+["vycichlova","wd-Q105642397","Jindřiška Vyčichlová",1880,null,null,"vy"],
+["vyletelova","wd-Q105617328","Helena Výletělová",1906,null,null,"vy"],
+["vymolova","wd-Q105617329","Anna Vymolová",1904,null,null,"vy"],
+["vysoka","wd-Q105617330","Marie Vysoká",1865,1943,"Konzentrationslager Theresienstadt","vy"],
+["vyth","wd-Q105655891","Berta Vyth",1890,1944,"KZ Auschwitz","vy"],
+["vyth","wd-Q105460508","Lina Vyth",1874,null,null,"vy"],
+["vyth","wd-Q106471879","Max Vyth",1881,null,null,"vy"],
+["vytopilova","wd-Q105617333","Marta Vytopilová",1891,null,null,"vy"],
+["vytvarova","wd-Q105617334","Malva Výtvarová",1885,null,null,"vy"]
+]}

@@ -1,0 +1,15 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"gy",
+"rows":[
+["gyorfalvyova","wd-Q104684872","Anna Györfalvyová",1882,1943,"Konzentrationslager Theresienstadt","gy"],
+["gyorg","wd-Q104208586","Györg Adorjan",1902,1945,"Konzentrationslager Theresienstadt","ad"],
+["gyorgy","wd-Q95123918","Gyorgy Klein",1930,1944,"KZ Auschwitz","klein_"],
+["gyori","wd-Q104687140","Ernst Johann Györi",1881,1942,"Konzentrationslager Theresienstadt","gy"],
+["gyula","wd-Q105472844","Bela Gyula Rosenfeld",1870,null,null,"rosenf"],
+["gyula","wd-Q104806319","Gyula Jakobovits",1893,1945,"Konzentrationslager Theresienstadt","jak"],
+["gyula","wd-Q105471045","Gyula Okszhorn",1893,null,null,"ok"],
+["gyula","wd-Q95127286","Gyula Roth",1927,1944,"KZ Auschwitz","rot"],
+["gyulaiova","wd-Q104685403","Františka Gyulaiová",1894,null,null,"gy"],
+["gyulaiova","wd-Q105517724","Jana Gyulaiová",1873,null,null,"gy"]
+]}

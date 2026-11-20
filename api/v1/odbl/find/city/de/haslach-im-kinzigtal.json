@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"DE",
+"label":"Haslach im Kinzigtal",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q137875557","Artur Bloch",1901,null,"Haslach im Kinzigtal","blo"],
+["st-Q137875320","Emma Bergheimer",1883,null,"Haslach im Kinzigtal","berg"],
+["st-Q137875567","Ernst Moser",1906,1940,"Haslach im Kinzigtal","mo"],
+["st-Q137875570","Franz Ruschmann",1910,1942,"Haslach im Kinzigtal","ru"],
+["st-Q137875565","Fritz Mannheimer",1888,null,"Haslach im Kinzigtal","man"],
+["st-Q137875559","Joseph Bloch",1870,null,"Haslach im Kinzigtal","blo"],
+["st-Q137875560","Josephine Bloch",1875,null,"Haslach im Kinzigtal","blo"],
+["st-Q137875574","Julius Weil",1886,null,"Haslach im Kinzigtal","weil"],
+["st-Q137875562","Ludwig Bloch",1906,1945,"Haslach im Kinzigtal","blo"],
+["st-Q137875569","Lydia Müller",1888,null,"Haslach im Kinzigtal","mu"],
+["st-Q137875564","Sigmund Bloch",1878,1942,"Haslach im Kinzigtal","blo"],
+["st-Q137875575","Sophie Weil",1863,null,"Haslach im Kinzigtal","weil"],
+["st-Q137875572","Wendelin Schille",1884,1940,"Haslach im Kinzigtal","schi"]
+],
+"slug":"haslach-im-kinzigtal"}

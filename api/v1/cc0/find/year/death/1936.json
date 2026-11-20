@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"death",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q74697","Etkar André",1894,1936,"Hamburg","an"],
+["wd-Q131922630","Fritz Binswanger",1894,1936,null,"bi"],
+["wd-Q1252888","Gotthard Laske",1882,1936,"Berlin","las"],
+["wd-Q21056578","Hans Abraham Ochs",1928,1936,"Köln","oc"],
+["wd-Q1454171","Hugo Daffner",1882,1936,"KZ Dachau","da"],
+["wd-Q15451298","Martin Kochmann",1878,1936,"Halle (Saale)","koc"]
+],
+"year":1936}

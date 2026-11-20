@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"kind":"death",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q2379508","Ab Caransa",1927,2006,"Amsterdam","ca"],
+["wd-Q124378333","Hanni Vogelweid",1923,2006,"Kalifornien","vo"],
+["wd-Q124400981","Moshe Rafalowicz",1919,2006,null,"ra"],
+["wd-Q124401841","Stanley M. Garstka",1916,2006,null,"ga"]
+],
+"year":2006}

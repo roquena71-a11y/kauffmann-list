@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"kab",
+"rows":[
+["kabacnik","wd-Q104805193","Pavel Kabáčnik",1880,null,null,"kab"],
+["kabacnikova","wd-Q104805190","Cecilie Kabáčniková",1884,null,null,"kab"],
+["kabacnikova","wd-Q104805191","Hermína Kabáčniková",1906,null,null,"kab"],
+["kabacnikova","wd-Q104805192","Josefa Kabáčniková",1905,null,null,"kab"],
+["kabrnova","wd-Q104805194","Adolfina Kabrnová",1895,null,null,"kab"]
+]}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"UA",
+"label":"Brody",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95109976","Berel Brak",1888,"death","Brody",50.07806,25.15417],
+["wd-Q95128063","Hinda Kahana",1902,"death","Brody",50.07806,25.15417],
+["wd-Q95116027","Khana Glantz",1910,"death","Brody",50.07806,25.15417],
+["wd-Q94976082","Moshe Halpern",1915,"death","Brody",50.07806,25.15417],
+["wd-Q94975150","Rakhel Fridman",1860,"death","Brody",50.07806,25.15417],
+["wd-Q95110081","Zelda Fortgang",1906,"death","Brody",50.07806,25.15417]
+],
+"slug":"brody"}

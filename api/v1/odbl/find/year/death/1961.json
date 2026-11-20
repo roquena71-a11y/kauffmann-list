@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2527378870","Adolf Deutsch",1879,1961,"Baden-Baden","de"],
+["wd-Q100782441","Arnold Löwensteiner",1876,1961,"Memmingen","lowens"],
+["st-n4480207166","Dr. Arthur Flehinger",1884,1961,"Baden-Baden","fl"],
+["wd-Q16937695","Edgar Hahnewald",1884,1961,"Dresden","hah"],
+["wd-Q107527127","Emma Reissermeyer",1884,1961,"Freising","rei"],
+["st-n10768060594","Ernst Schwarz",1898,1961,"Baden-Baden","schw"],
+["wd-Q130549749","Harry Seligmann",1881,1961,"Ronnenberg","se"],
+["wd-Q131920029","Marcel Traugott",1882,1961,"Frankfurt am Main","tr"],
+["st-n11295655274","Willy Giebe",1881,1961,"Iserlohn","gi"]
+],
+"year":1961}

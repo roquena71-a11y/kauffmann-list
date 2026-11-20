@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"LV",
+"label":"Ludsen",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94977040","Ana Piryatinski",1875,"death","Ludsen",56.54389,27.72111],
+["wd-Q95107068","Liba Sandler",null,"death","Ludsen",56.54389,27.72111],
+["wd-Q94975500","Shmuel Piratinski",1870,"death","Ludsen",56.54389,27.72111],
+["wd-Q95106031","Sonya Sandler",1923,"death","Ludsen",56.54389,27.72111]
+],
+"slug":"ludsen"}

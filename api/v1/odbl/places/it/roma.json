@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":13,
+"country":"IT",
+"label":"Roma",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11300371556","Alberto Di Segni",1913,"memorial","Via del Porto Fluviale 35",41.87229,12.47681],
+["st-n12794784634","Antonio Risi",1901,"memorial",null,41.91835,12.55081],
+["st-n10313301195","Colomba di Segni",1902,"memorial","Viale di Trastevere 114",41.88263,12.46841],
+["st-n11032473808","Dario Di Cori",1905,"memorial","Viale di Trastevere 114",41.88107,12.46707],
+["st-n10313301197","Fortunata Fiorentino",1926,"memorial","Viale di Trastevere 114",41.88262,12.46842],
+["st-n11032473806","Gamma Di Laudadio",1879,"memorial","Viale di Trastevere 114",41.88109,12.46709],
+["st-n10313301198","Lello Fiorentino",1929,"memorial","Viale di Trastevere 114",41.88263,12.46842],
+["st-n10313301196","Leone Fiorentino",1924,"memorial","Viale di Trastevere 114",41.88262,12.46841],
+["st-n11032473805","Mario Mosé Toscano",1877,"memorial","Viale di Trastevere 114",41.88109,12.46709],
+["st-n11032426203","Rebecca Toscano",1865,"memorial","Viale di Trastevere 114",41.88108,12.46708],
+["st-n11032426204","Rosa Toscano",1880,"memorial","Viale di Trastevere 114",41.88108,12.46709],
+["st-n10313301194","Salvatore Fiorentino",1902,"memorial","Viale di Trastevere 114",41.88262,12.46841],
+["st-n10035816993","Umberto Spizzichino",1918,"memorial",null,41.91201,12.5031]
+],
+"slug":"roma"}

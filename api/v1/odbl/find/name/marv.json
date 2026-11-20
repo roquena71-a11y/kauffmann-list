@@ -1,0 +1,8 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"marv",
+"rows":[
+["marvanyko","st-n1725269523","Ella Marvanykö",1899,null,"Hamburg","mar"],
+["marvanyko","st-n1725269531","Ilonka Rebecca Marvanykö",1922,null,"Hamburg","mar"],
+["marvanyko","st-n1725269534","Mariza Eva Marvanykö",1927,null,"Hamburg","mar"]
+]}

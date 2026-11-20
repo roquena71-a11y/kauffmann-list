@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"CZ",
+"label":"Plzeň",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105523927","Hana Kohnová",1924,"memorial",null,49.74211,13.36729],
+["st-n11935032714","Jiří Freund",null,"memorial",null,49.73405,13.36352],
+["wd-Q105574230","Marie Poláková",1891,"memorial",null,49.74821,13.37891],
+["wd-Q105524701","Melanie Kohnová",1892,"memorial",null,49.74211,13.36729],
+["wd-Q105524864","Otokar Kohn",1889,"memorial",null,49.74211,13.36729],
+["wd-Q535540","Věra Kohnová",1929,"memorial",null,49.74211,13.36729]
+],
+"slug":"plzen"}

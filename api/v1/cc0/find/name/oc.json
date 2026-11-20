@@ -1,0 +1,20 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"oc",
+"rows":[
+["ocadlikova","wd-Q105567977","Helena Ocadliková",1900,null,null,"oc"],
+["ochs","wd-Q105454877","Berta Ochs",1862,1942,"Konzentrationslager Theresienstadt","oc"],
+["ochs","wd-Q105454878","Charlotte Ochs",1866,1943,"Ghetto Theresienstadt","oc"],
+["ochs","wd-Q104701955","Eva Heimann-Ochs",1914,1944,"KZ Auschwitz","hei"],
+["ochs","wd-Q105654996","Gertrud Ochs",1893,null,null,"oc"],
+["ochs","wd-Q21056578","Hans Abraham Ochs",1928,1936,"Köln","oc"],
+["ochs","wd-Q105463008","Isidor Ochs",1887,null,null,"oc"],
+["ochs","wd-Q105454879","Karl Ochs",1877,1943,"Konzentrationslager Theresienstadt","oc"],
+["ochs","wd-Q105654997","Marlene Ochs",1933,1944,"KZ Auschwitz","oc"],
+["ochs","wd-Q105454880","Mathilde Ochs",1867,1943,"Konzentrationslager Theresienstadt","oc"],
+["ochs","wd-Q105454881","Mathilde Ochs",1875,1943,"Ghetto Theresienstadt","oc"],
+["ochs","wd-Q105471018","Max Ochs",1878,1943,"Konzentrationslager Theresienstadt","oc"],
+["ochs","wd-Q105654999","Paula Ochs",1904,null,null,"oc"],
+["ochs","wd-Q105655000","Waldemard Ochs",1894,null,null,"oc"],
+["ochsenhaut","wd-Q105454882","Perl Ochsenhaut",1869,null,null,"oc"]
+]}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"PL",
+"label":"Nowy Targ",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95106590","Aleksander Faber",1900,1942,"Nowy Targ","fab"],
+["wd-Q95108944","Chaim Mickenbrun",null,1942,"Nowy Targ","mi"],
+["wd-Q95118896","David Datner",1868,1941,"Nowy Targ","da"],
+["wd-Q94976480","Roza Faber",1900,1942,"Nowy Targ","fab"]
+],
+"slug":"nowy-targ"}

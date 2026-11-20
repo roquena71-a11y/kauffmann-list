@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"wy",
+"rows":[
+["wd-Q105462529","Adele Wygodzinski",1880,null,null,null,"wy"],
+["wd-Q105462531","Helene Wygodzinski",1870,"Magdeburg",52.13159,11.63996,"wy"],
+["wd-Q1347360","Martha Wygodzinski",1869,"Berlin",52.51667,13.38333,"wy"],
+["wd-Q105462532","Frummet Wyk",1862,"Emden",53.36694,7.20611,"wy"],
+["wd-Q105462533","Isaak Wyk",1907,"Emden",53.36694,7.20611,"wy"],
+["wd-Q105462534","Meier Wyk",1901,"Emden",53.36694,7.20611,"wy"],
+["wd-Q105462536","Aron Wykowski",1884,"Konzentrationslager Theresienstadt",50.51028,14.14972,"wy"],
+["wd-Q105462537","Johanna Wykowski",1889,null,null,null,"wy"],
+["wd-Q105656342","Maurits Wynschenk",1913,null,null,null,"wy"],
+["wd-Q105462538","Betty Wyprut",1867,"Konzentrationslager Theresienstadt",50.51028,14.14972,"wy"]
+]}

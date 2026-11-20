@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"death",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q128599083","Jan Baptist Vermeulen",1904,1992,"Geffen","ve"],
+["wd-Q2787514","Jetty Cantor",1903,1992,"Hilversum","ca"],
+["wd-Q80186311","Mihály András Rónai",1913,1992,"Budapest","ron"],
+["wd-Q135488420","Norbert Margulies",1894,1992,"Los Angeles","marg"],
+["wd-Q108919532","Viktor Zentner",1900,1992,null,"ze"]
+],
+"year":1992}

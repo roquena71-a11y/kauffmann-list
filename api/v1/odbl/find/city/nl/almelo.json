@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"NL",
+"label":"Almelo",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3872372190","Benjamin Northeimer",1884,1942,"Almelo","no"],
+["st-n3872372191","David Lion Mendels",1909,1944,"Almelo","men"],
+["st-n3872372192","Elisabeth Berg-Bos",1875,1943,"Almelo","berg"],
+["st-n3872372193","Jacob Jozef Berg",1905,1943,"Almelo","berg"],
+["st-n3872372194","Joseph Berg",1909,1944,"Almelo","berg"],
+["st-n3872372195","Joseph Meijers",1890,1943,"Almelo","mei"],
+["st-n3872372196","Kaatje Northeimer-Frankenhuis",1885,1942,"Almelo","no"],
+["st-n3872372197","Levi Berg",1882,1943,"Almelo","berg"],
+["st-n3872372198","Rosalie Meijers Caffé",1894,1943,"Almelo","ca"],
+["st-n3872372199","Sophia Marlena Spanjer-Berg",1912,1943,"Almelo","sp"]
+],
+"slug":"almelo"}

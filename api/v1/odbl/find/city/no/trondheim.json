@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"NO",
+"label":"Trondheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q138359408","Abraham Samuel Philipsohn",1866,1943,"Trondheim","ph"],
+["wd-Q138606945","Frida Zukmann født Philipsohn",1888,1943,"Trondheim","ph"],
+["wd-Q138607371","Maja Philipsohn",1912,1943,"Trondheim","ph"],
+["wd-Q138359406","Phillip Philipsohn",1897,null,"Trondheim","ph"],
+["wd-Q138359407","Rosa Esther Philipsohn",1903,1943,"Trondheim","ph"]
+],
+"slug":"trondheim"}

@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12617777971","August Kilthau",1915,1974,"Muggensturm","ki"],
+["wd-Q115812282","Dr. Albert Rosenthal",1890,1974,"Büren","rosent"],
+["wd-Q94924824","Dr. Eugen Fried",1880,1974,"Baden-Baden","fri"],
+["st-n3753302122","Johanna Sander",1891,1974,"Emmerich am Rhein","san"],
+["wd-Q91507","Joseph Wulf",1912,1974,"Chemnitz","wu"],
+["st-n12862832083","Kurt Gottlob Falk",1910,1974,"Baden-Baden","fa"],
+["wd-Q55881236","Max Krippel",1908,1974,"Ulm","kr"],
+["wd-Q94892078","Moritz Schlesinger",1886,1974,"Berlin","schl"],
+["st-n3217017114","Oskar Netter",1902,1974,"Baden-Baden","net"],
+["st-n2527378960","Robert Nachmann",1884,1974,"Baden-Baden","na"],
+["st-n7280145191","Wilhelm Lebrecht",1880,1974,"Ulm","leb"]
+],
+"year":1974}

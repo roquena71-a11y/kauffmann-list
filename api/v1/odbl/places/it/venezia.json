@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"IT",
+"label":"Venezia",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n5401353526","Achille Aboaf",1891,"memorial",null,45.4452,12.3277],
+["st-n5410060741","Adele Dina",null,"memorial",null,45.44526,12.3324],
+["st-n5410060743","Alberto Leone Todesco",null,"memorial",null,45.44526,12.33239],
+["st-n5401353521","Edoardo Bassani",null,"memorial",null,45.44559,12.32678],
+["st-n5410060742","Marco Todesco",null,"memorial",null,45.44526,12.33239]
+],
+"slug":"venezia"}

@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"marz",
+"rows":[
+["marz","st-n12791877932","Ludwig März",1897,null,"Penzberg","mar"],
+["marzagalli","wd-Q106718218","Luigi Giulio Marzagalli",null,null,"Lodi","mar"],
+["marzagalli","wd-Q106718031","Luigi Vincenzo Marzagalli",null,null,"Lodi","mar"],
+["marzec","st-n11565266229","Boleslaw Marzec",1916,null,"Tostedt","mar"],
+["marzel","st-n14065005281","Marzel Keyl",1944,null,"Hamburg","ke"]
+]}

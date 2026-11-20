@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"DE",
+"label":"Hamm",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q19594127","Andreas Schillack",1898,1944,"Hamm","schi"],
+["wd-Q15455088","Bernhard Ketzlick",1907,1951,"Hamm","ke"],
+["st-n12373755992","Charlotte Gerson",1876,null,"Hamm","ge"],
+["st-n12373755993","Ernst Gerson",1864,null,"Hamm","ge"],
+["st-n12373755991","Hildegard Hilde Gerson",1911,null,"Hamm","ge"]
+],
+"slug":"hamm"}

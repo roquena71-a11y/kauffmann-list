@@ -1,0 +1,19 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ala",
+"rows":[
+["aladar","wd-Q104422100","Aladar Broll",1895,null,null,"bro"],
+["aladar","wd-Q104691950","Aladar Grünwald",1916,null,null,"grunw"],
+["aladar","wd-Q104812050","Aladar Jozsef",1906,null,null,"jo"],
+["aladar","wd-Q105525523","Aladar Kollmann",1912,null,null,"kol"],
+["aladar","wd-Q105594073","Aladar Rottmann",1913,1942,"KZ Majdanek","rot"],
+["aladar","wd-Q105596038","Aladar Salzberger",1906,null,null,"sal"],
+["aladar","wd-Q105618287","Aladar Weil",1905,null,null,"weil"],
+["aladar","wd-Q105638473","Aladar Wertheimer",1907,null,null,"wer"],
+["aladar","wd-Q105641322","Aladar Zuckermann",1902,null,null,"zu"],
+["aladar","wd-Q104222656","Alfred Aladar Franz Bekes",1868,1942,"Konzentrationslager Theresienstadt","bek"],
+["alain","wd-Q135457572","Alain Charles Yvon Ivan Berr",1942,1945,"KZ Auschwitz","berr"],
+["alatko","wd-Q94975072","Gisia Alatko",null,1940,"Vilnius","al"],
+["alatko","wd-Q95124596","Leib Alatko",1921,1943,"Vilnius","al"],
+["alazraka","wd-Q104208747","Terezie Alazraká",1892,null,null,"al"]
+]}

@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"country":"DE",
+"label":"Bad Salzdetfurth",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13290765617","Hans Dammann",1902,1938,"Bad Salzdetfurth","da"],
+["st-n13290766256","Joseph Müller",1894,1944,"Bad Salzdetfurth","mu"],
+["st-n13294042083","Margarethe Friedmann",1886,null,"Bad Salzdetfurth","fri"]
+],
+"slug":"bad-salzdetfurth"}

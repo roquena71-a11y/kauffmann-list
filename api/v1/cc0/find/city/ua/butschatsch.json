@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"UA",
+"label":"Butschatsch",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95125769","Dvora Shvartz",1891,1942,"Butschatsch","sh"],
+["wd-Q95122791","Eli Furshmid",null,1943,"Butschatsch","fur"],
+["wd-Q95108770","Khana Landau",1866,1943,"Butschatsch","land"],
+["wd-Q95108321","Khava Pikholtz",1920,1942,"Butschatsch","pik"],
+["wd-Q95116470","Leon Folkenfok",1899,1943,"Butschatsch","fo"],
+["wd-Q94976540","Malka Folkenflik",1880,1942,"Butschatsch","fo"],
+["wd-Q95111583","Nisan Pekhman",null,1942,"Butschatsch","pek"],
+["wd-Q95106117","Ratza Preminger",1899,1943,"Butschatsch","pre"]
+],
+"slug":"butschatsch"}

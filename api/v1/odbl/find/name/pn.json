@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"pn",
+"rows":[
+["pnina","st-Q135234750","Pnina Perl Rosenberg",1903,null,"Kassel","rosenb"],
+["pnina","st-n778073500","Pnina Plawner",1926,null,"Eislingen","pl"],
+["pniower","wd-Q132140626","Anni Pniower",1887,null,"Berlin","pn"],
+["pniower","wd-Q105455925","Bianca Pniower",1865,1940,"Berlin","pn"],
+["pniower","wd-Q132135825","Franz Pniower",1877,null,"Berlin","pn"],
+["pniower","wd-Q132135824","Gertrud Pniower",1890,null,"Berlin","pn"],
+["pniower","wd-Q132548077","Gertrud Pniower",1900,null,"Berlin","pn"],
+["pniower","wd-Q105455929","Rosa Pniower",1868,1944,"Hamburg","pn"]
+]}

@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"PL",
+"label":"Piaski",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q98406992","Eugen Teltscher",1883,"death","Piaski",51.13892,22.84856],
+["wd-Q45195033","Frieda Cohn",1894,"death","Piaski",51.13892,22.84856],
+["wd-Q19502528","Hedwig Reiling",1880,"death","Piaski",51.13892,22.84856],
+["wd-Q107528129","Irma Holzer",1896,"death","Piaski",51.13892,22.84856],
+["wd-Q105702678","Kurt Moses",1908,"death","Piaski",51.13892,22.84856]
+],
+"slug":"piaski"}

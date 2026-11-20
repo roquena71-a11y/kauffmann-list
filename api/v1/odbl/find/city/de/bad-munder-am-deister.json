@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Bad Münder am Deister",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q63950349","Eugen Herze",1896,null,"Bad Münder am Deister","her"],
+["wd-Q104700062","Frieda Hammerschlag",1867,1942,"Bad Münder am Deister","ham"],
+["st-Q63950395","Hedwig Chana Herze",1891,null,"Bad Münder am Deister","her"],
+["wd-Q105454679","Helene Ney",1865,1940,"Bad Münder am Deister","ney"],
+["wd-Q104700101","Henny Hammerschlag",1870,1943,"Bad Münder am Deister","ham"],
+["st-Q63950457","Hermann Friedheim",1891,1943,"Bad Münder am Deister","fri"],
+["wd-Q133249396","Ingrid Friedheim",1936,null,"Bad Münder am Deister","fri"],
+["st-Q63950505","Sophie Friedheim",1909,null,"Bad Münder am Deister","fri"]
+],
+"slug":"bad-munder-am-deister"}

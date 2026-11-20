@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"PL",
+"label":"Pacanów",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95106807","Leibish Perl",1912,1942,"Pacanów","per"],
+["wd-Q95108511","Pinkhas Perl",1908,1942,"Pacanów","per"],
+["wd-Q95118867","Ratzel Fridman",1885,1942,"Pacanów","frid"],
+["wd-Q95114166","Tzira Perel",1910,1942,"Pacanów","per"]
+],
+"slug":"pacanow"}

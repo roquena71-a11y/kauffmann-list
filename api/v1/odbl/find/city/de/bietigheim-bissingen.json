@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"country":"DE",
+"label":"Bietigheim-Bissingen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3892029970","Emil Weil",1901,1940,"Bietigheim-Bissingen","weil"],
+["st-n11920088515","Emma Sofie Grözinger",1893,1940,"Bietigheim-Bissingen","gro"],
+["st-n5169016402","Erna Unkel",1923,1945,"Bietigheim-Bissingen","u"],
+["st-n3892029971","Eugen Brust",1912,1940,"Bietigheim-Bissingen","bru"],
+["st-n3841225714","Frida Ziegelmaier",1901,1940,"Bietigheim-Bissingen","zi"],
+["st-n4285793878","Gustav Strenger",1896,1940,"Bietigheim-Bissingen","str"],
+["st-n12864229196","Karl Binder",1905,null,"Bietigheim-Bissingen","bi"],
+["st-n5169016401","Karl Reinhardt",1886,1940,"Bietigheim-Bissingen","rei"],
+["st-n4285793879","Lydia Mack",1897,1940,"Bietigheim-Bissingen","mac"],
+["st-n4285793880","Marie Sick",1884,1940,"Bietigheim-Bissingen","sic"],
+["st-n5169016400","Walter Haas",1921,1940,"Bietigheim-Bissingen","haa"]
+],
+"slug":"bietigheim-bissingen"}

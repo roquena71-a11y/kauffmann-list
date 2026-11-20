@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"FR",
+"label":"La Baule-Escoublac",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13094348675","Ernest See",1864,1942,"La Baule-Escoublac","se"],
+["st-n13094348677","Freddy Besso",1929,1942,"La Baule-Escoublac","bes"],
+["st-n13094348679","Jacqueline Besso",1924,1942,"La Baule-Escoublac","bes"],
+["st-n13094348672","Jacques Fischer",1925,1942,"La Baule-Escoublac","fi"],
+["st-n13094348678","Janine Besso",1927,1942,"La Baule-Escoublac","bes"],
+["st-n13094348676","Linda Besso née Bentata",1903,1942,"La Baule-Escoublac","ben"],
+["st-n13094348671","Max Fischer",1892,1942,"La Baule-Escoublac","fi"],
+["st-n13094348674","Pierre Fischer",1928,1942,"La Baule-Escoublac","fi"],
+["st-n13094348673","Suzanne Fischer née See",1893,1942,"La Baule-Escoublac","se"]
+],
+"slug":"la-baule-escoublac"}

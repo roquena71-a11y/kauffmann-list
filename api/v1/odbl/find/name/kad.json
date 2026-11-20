@@ -1,0 +1,23 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"kad",
+"rows":[
+["kadden","st-Q100987984","Berta Blanka Kadden",1866,null,"Rathenow","kad"],
+["kadden","st-n12438845073","David Kadden",1869,null,null,"kad"],
+["kadden","st-n8402157131","Kurt Kadden",1915,null,"Essen","kad"],
+["kadden","st-n8402157132","Meta Kadden",1890,1941,"Essen","kad"],
+["kadden","st-n8402157133","Moritz Kadden",1881,1941,"Essen","kad"],
+["kadeerewa","st-n10759958035","Michel Kadeerewa",1944,null,"Bad Gandersheim","kad"],
+["kader","st-n3878309739","Isser Kader",1895,null,"Rendsburg","kad"],
+["kader","st-n3878309738","Regina Kader",1906,null,"Rendsburg","kad"],
+["kadisch","wd-Q132137470","Adolf Abraham Kadisch",1878,null,"Berlin","kad"],
+["kadisch","st-n8274277128","Adolf Kadisch",1878,null,"Berlin","kad"],
+["kadisch","wd-Q132138571","Auguste Kadisch",1892,null,"Berlin","kad"],
+["kadisch","wd-Q132138572","Berthold Kadisch",1878,null,"Berlin","kad"],
+["kadisch","wd-Q132137471","Hedwig Kadisch",1879,null,"Berlin","kad"],
+["kadisch","wd-Q132140777","Heinz Kadisch",1914,null,"Berlin","kad"],
+["kadisch","wd-Q132138573","Horst Joachim Kadisch",1920,null,"Berlin","kad"],
+["kadisch","wd-Q132140776","Lina Kadisch",1880,null,"Berlin","kad"],
+["kadisch","wd-Q132140775","Siegfried Kadisch",1877,null,"Berlin","kad"],
+["kadt","st-n13954162046","Anna van Dantzig-De Kadt",1879,null,"Rotterdam","kad"]
+]}

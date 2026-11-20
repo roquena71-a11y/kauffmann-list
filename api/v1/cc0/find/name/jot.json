@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"jot",
+"rows":[
+["jottkowitz","wd-Q104807354","Else Jottkowitz",1890,null,null,"jo"],
+["jottkowitz","wd-Q104807355","Frieda Jottkowitz",1873,1942,"Konzentrationslager Theresienstadt","jo"],
+["jottkowitz","wd-Q104807356","Georg Jottkowitz",1880,null,null,"jo"],
+["jottkowitz","wd-Q104807359","Josef Jottkowitz",1876,null,null,"jo"],
+["jottkowitz","wd-Q104812049","Leopold Jottkowitz",1904,null,null,"jo"],
+["jottkowitzova","wd-Q104812047","Edita Jottkowitzová",1905,null,null,"jo"]
+]}

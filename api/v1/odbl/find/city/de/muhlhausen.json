@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Mühlhausen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105460910","Bertha Weil",1865,1943,"Mühlhausen","weil"],
+["st-Q134773528","Cäcilie Weil",1891,null,"Mühlhausen","weil"],
+["st-Q134773530","Lazarus Weil",1890,null,"Mühlhausen","weil"],
+["st-Q134773531","Leopold Friedrich Weil",1888,null,"Mühlhausen","weil"],
+["st-Q134773523","Martha Neustädter",1888,null,"Mühlhausen","neu"],
+["wd-Q105463864","Rebekka Weil",1859,1942,"Mühlhausen","weil"],
+["st-Q134773525","Siegfried Neustädter",1885,null,"Mühlhausen","neu"],
+["st-Q134773520","Simon Freising",1857,null,"Mühlhausen","fre"],
+["st-Q134773521","Thekla Freising",1900,null,"Mühlhausen","fre"]
+],
+"slug":"muhlhausen"}

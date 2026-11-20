@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"PL",
+"label":"Gorlice",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94975139","David Pentzak",1882,"death","Gorlice",49.65563,21.16035],
+["wd-Q95106602","Dov Feler",1899,"death","Gorlice",49.65563,21.16035],
+["wd-Q94975836","Ester Pentzak",1884,"death","Gorlice",49.65563,21.16035],
+["wd-Q95107955","Lea Plachek",1885,"death","Gorlice",49.65563,21.16035],
+["wd-Q94976795","Mikhael Plachek",1885,"death","Gorlice",49.65563,21.16035],
+["wd-Q95120469","Pinkhas Pentzak",1872,"death","Gorlice",49.65563,21.16035],
+["wd-Q95126333","Sima Pentzak",1904,"death","Gorlice",49.65563,21.16035],
+["wd-Q94976819","Yeshayahu Perl",1907,"death","Gorlice",49.65563,21.16035]
+],
+"slug":"gorlice"}

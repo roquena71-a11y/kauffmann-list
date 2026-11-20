@@ -1,0 +1,6 @@
+{"count":1,
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"people":[
+{"birth_date":"1901-06-11","fate":"unknown","field_sources":{"birth_date":["wikidata_holocaust_victims"],"fate":["wikidata_holocaust_victims"],"given_name":["wikidata_holocaust_victims"],"name":["wikidata_holocaust_victims"]},"given_name":"Eliška","id":"wd-Q105568268","identifiers":{"holocaust_cz":["112066"],"wikidata":"Q105568268"},"links":[{"label":"Eliška Ondrušková","source_id":"wikidata_holocaust_victims","type":"wikidata","url":"https://www.wikidata.org/wiki/Q105568268"},{"source_id":"wikidata_holocaust_victims","type":"holocaust_cz","url":"https://www.holocaust.cz/en/database-of-victims/victim/112066/"}],"name":"Eliška Ondrušková","sources":[{"attribution":"Wikidata (CC0 1.0)","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","record_id":"Q105568268","retrieved":"2026-11-20","source_id":"wikidata_holocaust_victims","url":"https://www.wikidata.org/wiki/Q105568268"}]}
+],
+"prefix":"on"}

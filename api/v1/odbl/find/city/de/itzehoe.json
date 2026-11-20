@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Itzehoe",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4875435173","Aaron Rieder",1897,null,"Itzehoe","ri"],
+["st-n4875435178","Alice Eichwald",1903,null,"Itzehoe","ei"],
+["st-n4875435176","Elisabeth Abraham",1908,null,"Itzehoe","ab"],
+["st-n4875435171","Erika Rieder",1931,null,"Itzehoe","ri"],
+["st-n4875435179","Erna Gortakowski",1891,null,"Itzehoe","gor"],
+["st-n4875435172","Gisela Rieder",1900,null,"Itzehoe","ri"],
+["st-n4875435170","Hannelore Rieder",1897,null,"Itzehoe","ri"],
+["st-n4875435174","Hermann Abraham",1896,null,"Itzehoe","ab"],
+["st-n4875435177","Ilse Gortakowski",1916,null,"Itzehoe","gor"],
+["st-n4875435180","Sophie Eichwald",1864,null,"Itzehoe","ei"]
+],
+"slug":"itzehoe"}

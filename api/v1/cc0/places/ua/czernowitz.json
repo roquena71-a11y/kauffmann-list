@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"UA",
+"label":"Czernowitz",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95121595","Koka Farer",1903,"death","Czernowitz",48.29083,25.93444],
+["wd-Q95108455","Leib Pikar",1923,"death","Czernowitz",48.29083,25.93444],
+["wd-Q95119642","Leib Shvartz",null,"death","Czernowitz",48.29083,25.93444],
+["wd-Q95111234","Levi Bikhler",1924,"death","Czernowitz",48.29083,25.93444],
+["wd-Q95122089","Meir Harabadzhiu",1910,"death","Czernowitz",48.29083,25.93444],
+["wd-Q95122938","Oziash Bildner",1921,"death","Czernowitz",48.29083,25.93444],
+["wd-Q95109604","Peretz Felig",1920,"death","Czernowitz",48.29083,25.93444]
+],
+"slug":"czernowitz"}

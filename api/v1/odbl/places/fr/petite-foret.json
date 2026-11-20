@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"FR",
+"label":"Petite-Forêt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13908462637","Hyacinthe Mars",1908,"memorial","42 Rue Lénine",50.37049,3.47703],
+["st-n13908462636","René Franck",1910,"memorial","139 Rue Jean-Jaurès",50.36586,3.48336]
+],
+"slug":"petite-foret"}

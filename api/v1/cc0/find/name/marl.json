@@ -1,0 +1,9 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"marl",
+"rows":[
+["marle","wd-Q105511599","Ignaz Marle",1898,1943,"Konzentrationslager Theresienstadt","marl"],
+["marle","wd-Q105511604","Laura Marle",1875,null,"Konzentrationslager Theresienstadt","marl"],
+["marlene","wd-Q105654997","Marlene Ochs",1933,1944,"KZ Auschwitz","oc"],
+["marli","wd-Q104673170","Marli Goldschmidt",1871,null,null,"goldsc"]
+]}

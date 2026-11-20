@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"LU",
+"label":"Schifflange",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13051099895","Eugène Biren",1914,1942,"Schifflange","bi"],
+["st-n13051099896","Eugénie Cerf",1887,1944,"Schifflange","ce"],
+["st-n13051099897","Renée Cerf",1915,1944,"Schifflange","ce"],
+["st-n13051099898","Salomon Cerf",1882,1941,"Schifflange","ce"]
+],
+"slug":"schifflange"}

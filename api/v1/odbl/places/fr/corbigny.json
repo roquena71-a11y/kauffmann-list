@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"FR",
+"label":"Corbigny",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13101619979","Fajga Silberstein née Breslauer",1899,"memorial","2 Rue des Forges",47.25636,3.68253],
+["st-n13101619970","Ferdinand Conchodon",1892,"memorial","32 Rue de Clamecy",47.26167,3.68101],
+["st-n13101619978","Jacques Silberstein",1900,"memorial","2 Rue des Forges",47.25636,3.68253],
+["st-n13101619977","Lucile Silberstein",1927,"memorial","2 Rue des Forges",47.25636,3.68253],
+["st-n13101619974","Marcel Peigne",1922,"memorial","1 Route de Saint-Saulge",47.25369,3.67767],
+["st-n13101619969","René Cornu",1924,"memorial","9 Place de l'Hôtel de Ville",47.25734,3.68447],
+["st-n13101619971","Roger Dache",1922,"memorial","1 Quai des Capucins",47.2582,3.68585],
+["st-n13101619972","Salomon Cory",1917,"memorial","13 Rue de l'Abbaye",47.25866,3.68247]
+],
+"slug":"corbigny"}

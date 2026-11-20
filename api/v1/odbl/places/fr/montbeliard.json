@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"FR",
+"label":"Montbéliard",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13798935143","Blanche Greilsammer née Bickert",1905,"memorial","4 Passage de la Fleur",47.5106,6.79625],
+["st-n13798935144","Colette Greilsammer",1938,"memorial","4 Passage de la Fleur",47.5106,6.79625],
+["st-n13798935145","Jacqueline Greilsammer",1932,"memorial","4 Passage de la Fleur",47.5106,6.79625]
+],
+"slug":"montbeliard"}

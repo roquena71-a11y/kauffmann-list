@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"LT",
+"label":"Ghetto Kauen",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q561428","Anna Klein",1883,"death","Ghetto Kauen",54.906,23.889],
+["wd-Q106869904","Ilse Boehm",1901,"death","Ghetto Kauen",54.906,23.889],
+["wd-Q106869892","Josef Basch",1879,"death","Ghetto Kauen",54.906,23.889],
+["wd-Q106821101","Karl Lenk",1883,"death","Ghetto Kauen",54.906,23.889],
+["wd-Q106820564","Olga Hlawatsch",1880,"death","Ghetto Kauen",54.906,23.889]
+],
+"slug":"ghetto-kauen"}

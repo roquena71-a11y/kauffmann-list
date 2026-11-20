@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"FR",
+"label":"Paris",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13063962647","Abraham Pfefer",1868,1943,"Paris","pf"],
+["st-n13063962648","Anna Schwartz",1922,1942,"Paris","schw"],
+["st-n13063962650","Chaja Rajchgod dite Hélène née Grodnicki",1921,1942,"Paris","gro"],
+["st-n13063962649","Daniel Rajchgod",1925,1942,"Paris","ra"],
+["st-n13063962652","David Grodnicki",1890,1942,"Paris","gro"],
+["st-n13063962651","Hersz Rajchgod dit Henri",1921,1943,"Paris","hen"],
+["st-n13515928738","Jean Béroujon dit Laroux",null,null,"Paris","lar"],
+["st-n13469245598","Joseph Gerson",1909,1944,"Paris","ge"],
+["st-n13063962653","Ruya Grodnicki née Hedzberg",1893,1942,"Paris","hed"],
+["st-n13515858683","Yvonne Lucienne Lemoine",1895,1944,"Paris","lem"]
+],
+"slug":"paris"}

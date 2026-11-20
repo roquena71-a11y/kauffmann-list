@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"RU",
+"label":"Sankt Petersburg",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95116831","David Novoselski",1903,1942,"Sankt Petersburg","no"],
+["wd-Q95127227","Gedaly Kotlyar",null,1942,"Sankt Petersburg","kot"],
+["wd-Q95123385","Khaim Perlov",1903,1942,"Sankt Petersburg","per"],
+["wd-Q95110380","Khaim Ugoretz",1873,1942,"Sankt Petersburg","u"],
+["wd-Q94975617","Maria Moroshek",1909,1943,"Sankt Petersburg","mor"],
+["wd-Q95120181","Nina Gisin",1871,1941,"Sankt Petersburg","gi"],
+["wd-Q95119476","Revekka Gurevich",1888,1942,"Sankt Petersburg","gur"],
+["wd-Q95125246","Volf Friger",1923,1943,"Sankt Petersburg","frig"],
+["wd-Q95116293","Yakov Berezin",1912,1941,"Sankt Petersburg","bere"]
+],
+"slug":"sankt-petersburg"}

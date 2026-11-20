@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"CZ",
+"label":"Kutná Hora",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105563225","Amálie Markusová",1871,"memorial",null,49.94948,15.27006],
+["st-n14332013011","Arnošt Platovský",1885,"memorial",null,49.9491,15.26611],
+["st-n14332013008","Berta Schwalbová",1875,"memorial",null,49.94928,15.26768],
+["st-n14332013012","Eva Platovská",1924,"memorial",null,49.9491,15.26611],
+["st-n14332013009","Helena Scheinová",1909,"memorial",null,49.94928,15.26768],
+["st-n14332013010","Marta Scheinová",1910,"memorial",null,49.94928,15.26769],
+["st-n14332013013","Valerie Platovská",1894,"memorial",null,49.9491,15.26611]
+],
+"slug":"kutna-hora"}

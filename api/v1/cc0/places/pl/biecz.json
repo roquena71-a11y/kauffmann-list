@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"PL",
+"label":"Biecz",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95111478","Eliahu Feler",1860,"death","Biecz",49.73596,21.26301],
+["wd-Q95117067","Khuma Feler",1907,"death","Biecz",49.73596,21.26301],
+["wd-Q94976750","Menashe Yakubovitz",1890,"death","Biecz",49.73596,21.26301],
+["wd-Q95112301","Roza Feler",1865,"death","Biecz",49.73596,21.26301],
+["wd-Q95120254","Yokheved Feler",1912,"death","Biecz",49.73596,21.26301]
+],
+"slug":"biecz"}

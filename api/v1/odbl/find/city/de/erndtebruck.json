@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Erndtebrück",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2359365866","Arthur Winter",1888,null,"Erndtebrück","wi"],
+["st-n2359365867","Bella Simon",1896,null,"Erndtebrück","sim"],
+["st-n2359365868","Betty Moses",1892,null,"Erndtebrück","mo"],
+["st-n2359365869","Friederike Dickhaut",1874,null,"Erndtebrück","di"],
+["st-n2359365870","Heinz Simon",1928,null,"Erndtebrück","sim"],
+["st-n2359365871","Inge Simon",1930,null,"Erndtebrück","sim"],
+["st-n2359365872","Kurt Winter",1921,null,"Erndtebrück","wi"],
+["st-n2359365873","Luise Winter",1899,null,"Erndtebrück","wi"],
+["st-n2359365874","Moritz Moses",1875,null,"Erndtebrück","mo"],
+["st-n2359365933","Ruth Winter",1928,null,"Erndtebrück","wi"]
+],
+"slug":"erndtebruck"}

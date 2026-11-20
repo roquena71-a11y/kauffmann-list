@@ -1,0 +1,6 @@
+{"count":1,
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"people":[
+{"birth_date":"1857","fate":"died_in_persecution","fate_basis":"inscription_text","field_sources":{"birth_date":["stolpersteine_de"],"fate":["stolpersteine_de"],"name":["stolpersteine_de"]},"id":"st-Q58007808","identifiers":{},"memorials":[{"country":"DE","inscription":"Hier wohnte Isidor Beringer Jg. 1857 Opfer des Pogroms 1938 tot an den Folgen 27.11.1938","lat":50.3941897,"locality":"Limburg an der Lahn","lon":8.0376976,"memorial_id":"Q58007808","source_id":"stolpersteine_de","type":"stolperstein"}],"name":"Isidor Beringer","places":[{"country":"DE","label":"Limburg an der Lahn","locality":"Limburg an der Lahn","role":"residence","source_id":"stolpersteine_de"}],"sources":[{"attribution":"Wikidata (CC0 1.0)","license":"CC0-1.0","record_id":"Q58007808","retrieved":"2026-11-04","source_id":"stolpersteine_de","url":"https://www.wikidata.org/wiki/Q58007808"}]}
+],
+"prefix":"beri"}

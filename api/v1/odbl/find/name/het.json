@@ -1,0 +1,20 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"het",
+"rows":[
+["hetemann","st-n6814298156","Hedwig Hetemann",1866,null,"Weimar","het"],
+["hetkamp","wd-Q18684149","Auguste Hetkamp",1885,1944,"Oberhausen","het"],
+["hetti","st-n2320433451","Hetti Goldwein",1894,null,null,"goldw"],
+["hetti","st-n12438845233","Hetti Jacobs",1909,null,null,"jac"],
+["hetti","st-n12996961123","Hetti Rosenbaum",1905,null,"Allendorf (Eder)","rosenb"],
+["hetti","st-n3282670786","Hetti Schild",1887,1943,"Köln","schi"],
+["hettler","st-Q134267565","Anneliese Hettler",1939,null,"Mühlacker","het"],
+["hettler","st-n14287434658","Eugen Hermann Hettler",1913,1940,"Weissach","het"],
+["hettler","st-Q134267563","Friedrich Theodor Hettler",1934,null,"Mühlacker","het"],
+["hettler","st-Q134267562","Ludwig Karl Hettler",1938,null,"Mühlacker","het"],
+["hettler","st-Q134267564","Margarete Rosemarie Hettler",1935,null,"Mühlacker","het"],
+["hettler","st-Q134267561","Mathilda Anna Hettler",1915,null,"Mühlacker","het"],
+["hettler","st-Q134267560","Theodor Louis Hettler",1900,null,"Mühlacker","het"],
+["hetty","st-n976529125","Hetty Stern",1898,null,"Frankfurt am Main","stern"],
+["hetzer","st-n7463941748","Rosa Hetzer",1901,1940,"Würzburg","het"]
+]}

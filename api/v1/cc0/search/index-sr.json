@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"sr",
+"rows":[
+["wd-Q105613704","Věra Šrajbrová",1901,null,null,null,"sr"],
+["wd-Q105613705","Gustav Šrajer",1888,null,null,null,"sr"],
+["wd-Q105613706","Ida Šrajerová",1893,null,null,null,"sr"],
+["wd-Q105606176","Rajsel Srebrniková",1873,null,null,null,"sr"],
+["wd-Q105613711","Rudolf Šreier",1882,null,null,null,"sr"],
+["wd-Q105613710","Augustina Šreierová",1883,null,null,null,"sr"],
+["wd-Q105457987","Berek Sril",1866,"Konzentrationslager Theresienstadt",50.51028,14.14972,"sr"],
+["wd-Q105606177","Olga Srncová",1874,null,null,null,"sr"],
+["wd-Q130386891","Leopold Srnsky",1894,"Žďár nad Sázavou",49.56267,15.93928,"sr"],
+["wd-Q105457988","Esther Srolucz",1897,null,null,null,"sr"],
+["wd-Q105606178","Jana Srostliková",1886,null,null,null,"sr"],
+["wd-Q105606179","Ottilie Sruhová",1873,"Konzentrationslager Theresienstadt",50.51028,14.14972,"sr"],
+["wd-Q105606180","Eduard Srulowicz",1880,null,null,null,"sr"],
+["wd-Q105606181","Marie Srulowiczová",1895,null,null,null,"sr"]
+]}

@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Leverkusen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3987666042","Albert Joseph",1881,null,"Leverkusen","jo"],
+["st-n1150830114","Antonie Benjamin",1880,null,"Leverkusen","ben"],
+["st-n1150830115","Emma Benjamin",1883,null,"Leverkusen","ben"],
+["st-n1129397956","Günter Salomon",1917,null,"Leverkusen","sal"],
+["st-n1150830113","Helene Benjamin",1874,null,"Leverkusen","ben"],
+["st-n1129338134","Paula Schulte",1886,null,"Leverkusen","schu"],
+["st-n1129398972","Peter Neuenheuser",1877,1940,"Leverkusen","neu"],
+["st-n1129344196","Siegmund Salomon",1883,null,"Leverkusen","sal"],
+["st-n1129397952","Sophia Salomon",1883,null,"Leverkusen","sal"]
+],
+"slug":"leverkusen"}

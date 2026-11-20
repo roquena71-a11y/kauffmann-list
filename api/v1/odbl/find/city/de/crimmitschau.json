@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Crimmitschau",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12077558943","Anne-Marie Roessler",1892,null,"Crimmitschau","ross"],
+["st-Q125935725","Frida Haurwitz",1886,1942,"Crimmitschau","hau"],
+["wd-Q127869419","Hedwig Pinthus, Dr.",1893,1942,"Crimmitschau","dr"],
+["st-Q125935841","Irma Himmelweit",1914,1942,"Crimmitschau","him"],
+["wd-Q104701799","Laura Hertmann",1859,1943,"Crimmitschau","her"],
+["st-Q125935919","Lisbeth Heidemann",1889,null,"Crimmitschau","hei"],
+["st-Q125935818","Ludwig Haurwitz",1875,1942,"Crimmitschau","hau"]
+],
+"slug":"crimmitschau"}

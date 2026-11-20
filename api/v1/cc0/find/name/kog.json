@@ -1,0 +1,20 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"kog",
+"rows":[
+["kogan","wd-Q105355931","Berta Kogan",1889,1942,"Konzentrationslager Theresienstadt","kog"],
+["kogan","wd-Q95125932","Dudu Kogan",1922,1942,"Sarny","kog"],
+["kogan","wd-Q105465457","Klothilde Kogan",1903,null,null,"kog"],
+["kogan","wd-Q94976168","Peisya Kogan",null,1941,"Dserschinsk","kog"],
+["koganowsky","wd-Q105465458","Jetty Koganowsky",1878,null,null,"kog"],
+["kogler","wd-Q105522026","Adolf Kögler",1916,null,null,"kog"],
+["kogler","wd-Q105522027","Mořic Kögler",1890,null,null,"kog"],
+["koglerova","wd-Q105522029","Regina Köglerová",1888,null,null,"kog"],
+["kogos","wd-Q105522436","Leiser Kogos",1885,null,null,"kog"],
+["kogosova","wd-Q105522434","Berta Kogosová",1885,null,null,"kog"],
+["kogusova","wd-Q105650944","Leopoldina Kogusová",1885,null,null,"kog"],
+["kogut","wd-Q95115658","Bronche Kogut",1910,1942,"Vernichtungslager Treblinka","kog"],
+["kogut","wd-Q105355934","David Kogut",1877,1943,"Konzentrationslager Theresienstadt","kog"],
+["kogut","wd-Q105355936","Debora Kogut",1876,1942,"Konzentrationslager Theresienstadt","sie"],
+["kogut","wd-Q105355937","Hedwig Kogut",1909,1942,"Konzentrationslager Theresienstadt","kog"]
+]}

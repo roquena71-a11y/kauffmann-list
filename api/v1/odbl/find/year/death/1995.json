@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6594243148","Ernst Babtschinsky",1921,1995,"Kronach","bab"],
+["wd-Q97367","Gertrud Luckner",1900,1995,"Freiburg im Breisgau","lu"],
+["wd-Q55594633","Martha Frenkel",1906,1995,"Ulm","fre"],
+["wd-Q110484522","Pauline Steinhardt",1905,1995,"Nürnberg","stei"],
+["wd-Q55594635","Rudolf Moos",1910,1995,"Ulm","mo"],
+["wd-Q105612998","Siegfried Pappenheimer",1925,1995,"Aalen","pa"]
+],
+"year":1995}

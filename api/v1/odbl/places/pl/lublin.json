@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"PL",
+"label":"Lublin",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13089123347","Abram Cygielman",null,"memorial",null,51.24911,22.56652],
+["st-n13195720438","Bela Mandelsberg-Szyldkraut",null,"memorial",null,51.24777,22.56837],
+["st-n13195720439","Bela Szpiro-Nisenbaum",null,"memorial",null,51.24779,22.56747],
+["wd-Q828120","Henio Żytomirski",null,"memorial",null,51.25064,22.56551],
+["st-n13195720440","Jakub Hersz Nisenbaum",null,"memorial",null,51.24779,22.56746],
+["st-n13089123346","Lejb Cygielman",null,"memorial",null,51.24911,22.56652],
+["st-n13301627369","Maria Rechtszaft",null,"memorial",null,51.24927,22.56168],
+["st-n13243414796","Rejzla Rubinfajer",null,"memorial",null,51.24082,22.56835]
+],
+"slug":"lublin"}

@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"LU",
+"label":"Grevenmacher",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13056557005","Felix Hayum",1893,"memorial","33 Rue de Trèves",49.67972,6.44435],
+["st-n13056557002","Max Bonem",1893,"memorial","25 Rue de Luxembourg",49.67948,6.4392],
+["st-n13056557001","Raphael Cahen",1895,"memorial","38 Rue Sainte-Catherine",49.68107,6.44181],
+["st-n13056557003","Selma Sommer",1885,"memorial","19 Grand-Rue",49.67927,6.44129],
+["st-n13056557006","Siegmund Hayum",1891,"memorial","33 Rue de Trèves",49.67972,6.44435]
+],
+"slug":"grevenmacher"}

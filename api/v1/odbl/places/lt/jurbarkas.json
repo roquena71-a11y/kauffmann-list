@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"LT",
+"label":"Jurbarkas",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13202639074","Abelis Benjaminas Berkoveris",1902,"memorial","Kauno g. 46",55.07627,22.76746],
+["st-n13202639082","Feigė-Zislė Berkoverienė-Freimanaitė",1891,"memorial","Kauno g. 46",55.07629,22.76746],
+["st-n13202639084","Hana Berkoverytė",1926,"memorial","Kauno g. 46",55.07629,22.76746],
+["st-n13202639080","Ita Berkoverienė-Goldšteinaitė",1872,"memorial","Kauno g. 46",55.07629,22.76746],
+["st-n13202639081","Jokūbas-Girša Berkoveris",1894,"memorial","Kauno g. 46",55.07629,22.76746],
+["st-n13202639076","Risa Berkoverytė",1931,"memorial","Kauno g. 46",55.07628,22.76746],
+["st-n13202639075","Rivka Berkoverienė-Leščytė",1902,"memorial","Kauno g. 46",55.07627,22.76746],
+["st-n13202639078","Sara Dratvinienė-Berkoverytė",1910,"memorial","Kauno g. 46",55.07628,22.76746],
+["st-n13202639079","Simonas Berkoveris",1867,"memorial","Kauno g. 46",55.07628,22.76746],
+["st-n13202639083","Šlioma-Elija Berkoveris",1925,"memorial","Kauno g. 46",55.07629,22.76746],
+["st-n13202639077","Zalmanas Dratvinas",1905,"memorial","Kauno g. 46",55.07628,22.76746]
+],
+"slug":"jurbarkas"}

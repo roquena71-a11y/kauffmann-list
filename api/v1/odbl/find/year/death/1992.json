@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q55594727","Dora Barth",1901,1992,"Ulm","bar"],
+["st-n3746252386","Dr. Erich Albersheim",1897,1992,"Emmerich","al"],
+["wd-Q1360683","Ernst Wolff",1905,1992,"Baden-Baden","wolff"],
+["wd-Q1562631","H. W. Katz",1906,1992,"Gera","kat"],
+["wd-Q1705646","Josef Schleifstein",1915,1992,"Leipzig","schl"],
+["st-n3217017113","Lilly Lust",1889,1992,"Baden-Baden","lu"],
+["wd-Q55594713","Lottie Barth",1920,1992,"Ulm","bar"]
+],
+"year":1992}

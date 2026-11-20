@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"kart",
+"rows":[
+["kartagener","wd-Q105518560","Naftali Kartagener",1894,null,null,"kar"],
+["karten","wd-Q105464861","Michel Karten",1865,1943,"Konzentrationslager Theresienstadt","kar"],
+["karter","wd-Q105641948","Arnošt Karter",1909,1944,"KZ-Außenlager Schwarzheide","kar"],
+["karter","wd-Q105518486","Erich Karter",1915,1942,null,"kar"],
+["karter","wd-Q105518488","Max Karter",1878,null,null,"kar"],
+["karterova","wd-Q105518487","Hana Karterová",1875,null,null,"kar"],
+["karterova","wd-Q105518489","Saly Karterová",1885,null,null,"kar"],
+["kartuson","wd-Q105354814","Moses Kartuson",1869,null,null,"kar"]
+]}

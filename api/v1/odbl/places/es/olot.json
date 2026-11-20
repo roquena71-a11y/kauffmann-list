@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"ES",
+"label":"Olot",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13871581583","Albert Sala Cros",1909,"memorial",null,42.1831,2.48469],
+["st-n13871600646","Angel Artola Casals",1903,"memorial",null,42.18312,2.48465],
+["st-n13871582049","Joaquim Jutglar Frigola",1903,"memorial",null,42.18312,2.48468],
+["st-n13871617056","Josep Picola Busquets",1912,"memorial",null,42.1831,2.48472],
+["st-n13871630323","Lluís Soy Vilanova",1940,"memorial",null,42.18312,2.48471]
+],
+"slug":"olot"}

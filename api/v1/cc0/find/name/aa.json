@@ -1,0 +1,21 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"aa",
+"rows":[
+["aach","wd-Q104207051","Johanna Aach",1883,null,null,"aa"],
+["aach","wd-Q104207053","Leopold Aach",1873,1942,"Terezín","aa"],
+["aal","wd-Q104207057","Barbara Aal",1938,1944,"KZ Auschwitz","aa"],
+["aal","wd-Q104207059","Fritz Aal",1913,1945,null,"aa"],
+["aal","wd-Q104207062","Julia Aal-Broches",1915,1944,"KZ Auschwitz","aa"],
+["aal","wd-Q104207060","Jutta Aal",1860,1942,"Terezín","aa"],
+["aal","wd-Q104207061","Pauline Aal",1872,null,null,"aa"],
+["aaltja","wd-Q105655807","Aaltja Voolen",1884,null,null,"vo"],
+["aaltje","wd-Q105654558","Aaltje Grietje Lisser-Wolf",1908,null,null,"lis"],
+["aaltje","wd-Q105655082","Aaltje Pijpemann-Coster",1906,null,null,"pij"],
+["aaron","wd-Q95124710","Aaron Cok",1875,1944,"KZ Auschwitz","cok"],
+["aaron","wd-Q104207063","Emmy Aaron",1877,null,null,"aa"],
+["aaron","wd-Q104207064","Johanna Aaron",1874,1942,"Terezín","aa"],
+["aaron","wd-Q104207065","Karl Aaron",1881,null,null,"aa"],
+["aaron","wd-Q104207067","Ortrun Aaron",1902,1944,"Terezín","aa"],
+["aaron","wd-Q104207069","Rosa Aaron",1853,1942,"Terezín","aa"]
+]}

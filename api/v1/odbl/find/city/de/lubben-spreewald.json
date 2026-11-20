@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Lübben (Spreewald)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104408797","Albert Bock",1870,1943,"Lübben (Spreewald)","bo"],
+["st-Q141443886","Frieda Moses",1893,null,"Lübben (Spreewald)","mo"],
+["wd-Q105461941","Johanna Wolff",1859,1942,"Lübben (Spreewald)","wolff"],
+["st-Q141441255","Julius Burchardi",1878,null,"Lübben (Spreewald)","bu"],
+["wd-Q105374319","Julius Moses",1883,1940,"Lübben (Spreewald)","mo"],
+["st-Q141441249","Minna Burchardi",1878,null,"Lübben (Spreewald)","bu"],
+["st-Q141444210","Rosalie Kassel",1911,1942,"Lübben (Spreewald)","kas"],
+["st-Q100926805","Sophie-Charlotte Astrich",1893,null,"Lübben (Spreewald)","as"]
+],
+"slug":"lubben-spreewald"}

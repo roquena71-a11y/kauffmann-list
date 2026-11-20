@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"mara",
+"rows":[
+["mara","wd-Q105366778","Jakob Mara",1886,null,null,"mara"],
+["maradyova","wd-Q105657711","Irma Maradyová",1886,1945,"KZ Ravensbrück","mara"],
+["maranova","wd-Q105562931","Marta Mařanová",1898,null,null,"mara"],
+["maranzenbaum","wd-Q105642612","Chaim Maranzenbaum",1879,null,null,"mara"],
+["maranzenbaumova","wd-Q105642614","Anna Maranzenbaumová",1890,null,null,"mara"]
+]}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"DE",
+"label":"Nordstadt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n10000113702","Anna Lina Hoffman",1884,null,"Nordstadt","hof"],
+["st-n10000113703","Siegmund Hoffmann",1883,null,"Nordstadt","hof"],
+["st-Q130724196","Ursula Hoffmann",1914,null,"Nordstadt","hof"],
+["st-n10000113701","Ursula Hoffmann",1914,null,"Nordstadt","hof"]
+],
+"slug":"nordstadt"}

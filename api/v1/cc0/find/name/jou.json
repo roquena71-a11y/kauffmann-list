@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"jou",
+"rows":[
+["jourdan","wd-Q104807361","Adolf Jourdan",1862,1942,"Konzentrationslager Theresienstadt","jo"],
+["jourdan","wd-Q104807362","Gustav Jourdan",1857,1942,"Konzentrationslager Theresienstadt","jo"],
+["jourdan","wd-Q104807363","Klara Jourdan",1865,1942,"Konzentrationslager Theresienstadt","jo"],
+["jourdan","wd-Q104807364","Klara Jourdan",1874,null,null,"jo"],
+["jourdan","wd-Q104807365","Marie Jourdan",1874,1942,"Konzentrationslager Theresienstadt","jo"],
+["jourdan","wd-Q104807366","Rosalie Jourdan",1867,1942,"Konzentrationslager Theresienstadt","jo"]
+]}

@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Kirchheim unter Teck",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q131624821","Auguste Reutlinger",1898,null,"Kirchheim unter Teck","reu"],
+["wd-Q105456804","Babette Reutlinger",1860,1940,"Kirchheim unter Teck","reu"],
+["st-Q131624815","Clara Sarah Goldschmidt",1901,null,"Kirchheim unter Teck","golds"],
+["st-Q131624777","Elya Rytschkow",null,null,"Kirchheim unter Teck","ry"],
+["st-Q131624760","Emil Salmon",1888,null,"Kirchheim unter Teck","sal"],
+["st-Q131624737","Hannchen Reutlinger",1901,null,"Kirchheim unter Teck","reu"],
+["st-Q131624785","Sally Reutlinger",1895,null,"Kirchheim unter Teck","reu"],
+["st-Q131624802","Stefan Sydoriw",1925,null,"Kirchheim unter Teck","sy"],
+["st-Q131624774","Wasily Kutscherow",null,null,"Kirchheim unter Teck","ku"],
+["st-Q131624829","Wolf Reutlinger",1901,null,"Kirchheim unter Teck","reu"]
+],
+"slug":"kirchheim-unter-teck"}

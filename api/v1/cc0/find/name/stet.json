@@ -1,0 +1,19 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"stet",
+"rows":[
+["stettaur","wd-Q105459148","Hermine Stettauer",1873,1943,"Konzentrationslager Theresienstadt","stet"],
+["stettenheim","wd-Q105459149","Else Stettenheim",1874,null,null,"stet"],
+["stettiner","wd-Q105459151","Gertrud Stettiner",1879,1942,"Konzentrationslager Theresienstadt","stet"],
+["stettiner","wd-Q105459150","Hugo Stettiner",1867,1942,"Konzentrationslager Theresienstadt","stet"],
+["stettner","wd-Q105610158","František Stettner",1904,null,null,"stet"],
+["stettner","wd-Q105610160","Hugo Stettner",1895,null,null,"stet"],
+["stettner","wd-Q105655666","Katharina Stettner-Zuckermann",1888,null,null,"stet"],
+["stettner","wd-Q105505492","Paula Stettner",1870,null,null,"stet"],
+["stettnerova","wd-Q105610156","Cecilie Stettnerová",1874,1943,"Konzentrationslager Theresienstadt","stet"],
+["stettnerova","wd-Q105610157","Elsa Stettnerová",1899,null,null,"stet"],
+["stettnerova","wd-Q105610161","Ida Stettnerová",1900,null,null,"stet"],
+["stettnerova","wd-Q105610162","Jetty Stettnerová",1857,1942,"Konzentrationslager Theresienstadt","stet"],
+["stettnerova","wd-Q105610163","Josefa Stettnerová",1901,null,null,"stet"],
+["stettnerova","wd-Q105610164","Julie Stettnerová",1868,1943,"Konzentrationslager Theresienstadt","stet"]
+]}

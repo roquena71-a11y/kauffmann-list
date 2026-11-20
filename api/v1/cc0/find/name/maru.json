@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"maru",
+"rows":[
+["marum","wd-Q105367195","Alice Marum",1904,1945,"Konzentrationslager Theresienstadt","maru"],
+["marum","wd-Q105367196","Ida Marum",1873,null,null,"maru"],
+["marum","wd-Q105367197","Karl Marum",1867,1942,"Konzentrationslager Theresienstadt","maru"],
+["marum","wd-Q91187","Ludwig Marum",1882,1934,"KZ Kislau","maru"],
+["marum","wd-Q105367198","Sophie Marum",1870,1944,"Konzentrationslager Theresienstadt","maru"],
+["maruska","wd-Q104656159","Maruška Friedmannová",1911,null,null,"friedm"]
+]}

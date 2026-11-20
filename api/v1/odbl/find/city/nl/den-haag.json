@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"country":"NL",
+"label":"Den Haag",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7808882095","Elisabeth Hakkert-Hamburger",1883,1942,"Den Haag","hak"],
+["st-n7808860167","Henny Hakkert",1919,1943,"Den Haag","hak"],
+["st-n7808842546","Meijer Levi Hakkert",1875,1942,"Den Haag","hak"]
+],
+"slug":"den-haag"}

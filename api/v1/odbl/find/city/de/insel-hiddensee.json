@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Insel Hiddensee",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q78422","Adolf Reichwein",1898,1944,"Berlin","rei"],
+["wd-Q1095144","Clara Arnheim",1865,1942,"Berlin","ar"],
+["wd-Q1434857","Henni Lehmann",1863,1937,"Insel Hiddensee","leh"],
+["wd-Q272713","Julie Wolfthorn",1864,1944,"Berlin","wolft"],
+["wd-Q1795538","Käthe Loewenthal",1877,1942,"Stuttgart","lowent"],
+["st-n2674760649","Susanne Ritscher",1878,null,"Insel Hiddensee","ri"]
+],
+"slug":"insel-hiddensee"}

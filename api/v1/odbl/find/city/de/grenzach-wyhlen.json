@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Grenzach-Wyhlen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12620245357","Anna Bloch",1898,null,"Grenzach-Wyhlen","blo"],
+["st-Q136345943","Berta Bloch",null,null,"Grenzach-Wyhlen","blo"],
+["st-Q136348564","Josephine Bloch",1871,null,"Grenzach-Wyhlen","blo"],
+["st-Q136348595","Karl Bloch",1896,1942,"Grenzach-Wyhlen","blo"],
+["st-Q136348747","Leopold Stein",1893,null,"Grenzach-Wyhlen","stei"],
+["st-Q136348615","Paula Bloch",1905,null,"Grenzach-Wyhlen","blo"],
+["st-Q136348657","Salomon Bloch",1867,null,"Grenzach-Wyhlen","blo"],
+["st-Q136348670","Selma Bloch",1896,null,"Grenzach-Wyhlen","blo"],
+["st-Q136348812","Toni Stein",1900,null,"Grenzach-Wyhlen","stei"]
+],
+"slug":"grenzach-wyhlen"}

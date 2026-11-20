@@ -1,0 +1,8 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"fr_",
+"rows":[
+["fr","wd-Q104088593","Chaja Fr. Nordmannová",1898,null,null,"no"],
+["fr","wd-Q105555377","Jiří Fr. Kummermann",1927,1945,"KZ Dachau","ku"],
+["fr","wd-Q105559926","Josef Fr. Lustig",1914,null,null,"lu"]
+]}

@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"US",
+"label":"Los Angeles",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q124429949","Cantor Leopold Szneer",1921,2016,"Los Angeles","sz"],
+["wd-Q31138965","Hanna Kohner",1919,1990,"Los Angeles","kohne"],
+["wd-Q124395260","Isak Springer",1917,2005,"Los Angeles","spr"],
+["wd-Q59919062","Leon Weinstein",1910,2011,"Los Angeles","weins"],
+["wd-Q98382225","Marianne Melitta Bauer",1885,1980,"Los Angeles","bau"],
+["wd-Q135488420","Norbert Margulies",1894,1992,"Los Angeles","marg"],
+["wd-Q94838793","Robert Lichtenstern",1874,1955,"Los Angeles","lic"]
+],
+"slug":"los-angeles"}

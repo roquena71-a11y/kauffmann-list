@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"DE",
+"label":"Naunhof",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q125988541","Arthur Kieschnick",1907,1940,"Naunhof","ki"],
+["st-Q125688033","Marie Mindel Naundorf",1892,1942,"Naunhof","na"],
+["st-Q125988568","Max Moses Ratner",1913,1942,"Naunhof","ra"],
+["st-Q125988557","Mosey Witensohn",1901,null,"Naunhof","wi"],
+["st-Q125988573","Robert Arthur Niesar",1903,1940,"Naunhof","ni"]
+],
+"slug":"naunhof"}

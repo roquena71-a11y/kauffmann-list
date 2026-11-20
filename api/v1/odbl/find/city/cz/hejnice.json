@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"CZ",
+"label":"Hejnice",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12748061147","Hans Kaufmann",1896,null,"Hejnice","kau"],
+["st-n12748061144","Heda Kaufmann",1905,null,"Hejnice","kau"],
+["wd-Q105643770","Hilda Kaufmann",1912,null,"Hejnice","kau"],
+["wd-Q105643765","Petr René Kaufmann",1934,null,"Hejnice","kau"],
+["wd-Q18565539","Viktor Kaufmann",1900,1945,"Hejnice","kau"],
+["st-n12748061143","Walter Kaufmann",1897,null,"Hejnice","kau"]
+],
+"slug":"hejnice"}

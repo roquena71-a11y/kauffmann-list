@@ -1,0 +1,16 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"sap",
+"rows":[
+["sapershtein","wd-Q95122168","Hirsh Sapershtein",1897,1942,"Łódź","sap"],
+["saphier","wd-Q105473505","Magdalena Saphier",1877,null,null,"sap"],
+["saphierstein","wd-Q105389848","Frieda Saphierstein",1887,null,null,"sap"],
+["saphir","wd-Q105473499","Elsa Saphir",1900,1942,"Konzentrationslager Theresienstadt","sap"],
+["saphir","wd-Q105473500","Estella Saphir",1862,1942,"Konzentrationslager Theresienstadt","sap"],
+["saphir","wd-Q105473503","Friederike Saphir",1879,null,null,"sap"],
+["saphir","wd-Q105473502","Friedrich Saphir",1868,null,null,"sap"],
+["saphir","wd-Q105596161","Kurt Saphir",1901,1942,"KZ Majdanek","sap"],
+["saphirova","wd-Q105354310","Rosa Saphirová",1871,1942,"Konzentrationslager Theresienstadt","sap"],
+["saphra","wd-Q105389849","Wilhelm Saphra",1868,1942,"Konzentrationslager Theresienstadt","sap"],
+["sapsovicova","wd-Q105611323","Zora Šapšovičová",1929,1943,"Konzentrationslager Theresienstadt","sap"]
+]}

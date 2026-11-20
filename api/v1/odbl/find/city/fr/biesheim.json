@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"FR",
+"label":"Biesheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13075948231","André Abraham Samuel",1925,1944,"Biesheim","sam"],
+["st-n13075948230","Camille Bicard",1903,1943,"Biesheim","bi"],
+["st-n13075948228","Fernande Seligmann née Bicard",1895,1944,"Biesheim","bi"],
+["st-n13075948232","Henriette Samuel née Ullmann",1889,1944,"Biesheim","u"],
+["st-n13075948225","Isaac Rottenberg",1884,1944,"Biesheim","rot"],
+["st-n13075948224","Mélanie Rottenberg née Alexandre",1893,1944,"Biesheim","al"],
+["st-n13075948229","Renée Seligmann",1933,1944,"Biesheim","se"],
+["st-n13075948233","Simon Samuel",1879,1944,"Biesheim","sam"]
+],
+"slug":"biesheim"}

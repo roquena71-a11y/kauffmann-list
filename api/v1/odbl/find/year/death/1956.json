@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n954766953","Emilie Fleischer",1876,1956,"Baden-Baden","fl"],
+["wd-Q1515033","Gerson Stern",1874,1956,"Kiedrich","stern"],
+["wd-Q137575703","Hermann Dreher",1887,1956,"Konstanz","dr"],
+["wd-Q125422936","Hermann Mannsbach",1899,1956,"Coesfeld","man"],
+["wd-Q18020961","Hugo Meister",1901,1956,"Gotha","mei"],
+["wd-Q95287149","Konrad Zäh",1877,1956,"Wendlingen am Neckar","za"],
+["wd-Q96105652","Max Guggenheimer",1880,1956,"Memmingen","gu"],
+["wd-Q104127447","Max Immelen",1883,1956,"Berlin","i"],
+["wd-Q2149105","Richard Borowski",1894,1956,"Einbeck","bo"],
+["wd-Q107352006","Wilhelm Lübcke",1882,1956,"Hamburg","lu"]
+],
+"year":1956}

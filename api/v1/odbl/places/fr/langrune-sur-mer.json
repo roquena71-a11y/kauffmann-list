@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"FR",
+"label":"Langrune-sur-Mer",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12149545225","Henri Renobert",1922,"memorial","1 Rue de Tailleville",49.32028,-0.37655],
+["st-n13112691205","Irène Raoult née Bodin-Hullin",1890,"memorial","13 Rue Mare Dupuy",49.32243,-0.37364],
+["st-n12149545221","Jean Guittard",1921,"memorial","25 Promenade Aristide Briand",49.32627,-0.37194],
+["st-n12149545224","Marcel Raoult",1885,"memorial","13 Rue Mare Dupuy",49.32243,-0.37364],
+["st-n12149545223","Pierre Harivel",1900,"memorial","53 Rue de la Mer",49.32367,-0.3718]
+],
+"slug":"langrune-sur-mer"}

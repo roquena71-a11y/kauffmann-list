@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"LV",
+"label":"Libau",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q120483643","Erich Rosenstern",1899,"death","Libau",56.50833,21.01111],
+["wd-Q94977111","Fania Ulman",1920,"death","Libau",56.50833,21.01111],
+["wd-Q94975526","Fuka Gutman",1912,"death","Libau",56.50833,21.01111],
+["wd-Q124157793","Gustav Cohen",1903,"death","Libau",56.50833,21.01111],
+["wd-Q95107883","Khana Dorbian",1910,"death","Libau",56.50833,21.01111],
+["wd-Q95111447","Meita Prisman",1898,"death","Libau",56.50833,21.01111],
+["wd-Q95110767","Rakhel Freid",1878,"death","Libau",56.50833,21.01111],
+["wd-Q95106038","Zalman Brilowitz",1923,"death","Libau",56.50833,21.01111],
+["wd-Q95121336","Zalman Diamant",1906,"death","Libau",56.50833,21.01111]
+],
+"slug":"libau"}

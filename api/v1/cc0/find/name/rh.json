@@ -1,0 +1,21 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"rh",
+"rows":[
+["rhee","wd-Q105456848","Paula Rhee",1869,1942,"Konzentrationslager Theresienstadt","rh"],
+["rheinberg","wd-Q105456849","Elisabeth Rheinberg",1870,1942,"Konzentrationslager Theresienstadt","rh"],
+["rheinberg","wd-Q105456853","Max Rheinberg",1861,1942,"Konzentrationslager Theresienstadt","rh"],
+["rheinfelder","wd-Q105456856","Julie Rheinfelder",1874,1942,"Konzentrationslager Theresienstadt","rh"],
+["rheinheimer","wd-Q105456861","Emanuel Rheinheimer",1869,null,null,"rh"],
+["rheinheimer","wd-Q105456864","Jenny Rheinheimer",1877,null,null,"weinh"],
+["rheinhold","wd-Q105456866","Bertha Rheinhold",1865,1942,"Konzentrationslager Theresienstadt","rh"],
+["rheinhold","wd-Q105456869","Elise Rheinhold",1865,1942,"Konzentrationslager Theresienstadt","rh"],
+["rheinhold","wd-Q105456651","Max Rheinhold",1872,1944,"Konzentrationslager Theresienstadt","rh"],
+["rheinhold","wd-Q105354007","Selma Rheinhold",1875,1945,"Konzentrationslager Theresienstadt","rh"],
+["rheinstein","wd-Q105456873","Ludmilla Rheinstein",1891,null,null,"rh"],
+["rhijn","wd-Q105655201","Abraham Rhijn",1898,1945,"KZ Dachau","rh"],
+["rhijn","wd-Q105655203","Cilly Seraphine Rhijn",1931,1944,"KZ Auschwitz","rh"],
+["rhijn","wd-Q60005406","P.D. van Rhijn",1874,1942,"KZ Auschwitz","rh"],
+["rhijn","wd-Q105655204","Rebecca Rhijn Vliet",1898,1944,"KZ Auschwitz","vl"],
+["rhon","wd-Q105472392","Melanie Rhon",1874,1943,"Konzentrationslager Theresienstadt","rh"]
+]}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n1129986316","Else Less",1877,1959,"Baden-Baden","les"],
+["st-n4174364000","Georg Sussmann",1893,1959,"Windeck Rosbach","su"],
+["wd-Q107194","George Grosz",1881,1959,"Berlin","gro"],
+["wd-Q94893974","Karl Jäckle",1885,1959,"Singen (Hohentwiel)","jac"],
+["wd-Q136719038","Theodor Heymann",1885,1959,"Hannover","hey"]
+],
+"year":1959}

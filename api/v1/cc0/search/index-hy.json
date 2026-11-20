@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"hy",
+"rows":[
+["wd-Q104811232","Pavel Hybš",1927,"Slaný",50.23054,14.08701,"hy"],
+["wd-Q104811233","Rudolf Hybš",1886,null,null,null,"hy"],
+["wd-Q104811234","Rudolf Hybš",1895,"Pravonín",49.63565,14.94342,"hy"],
+["wd-Q104811227","Albína Hybšová",1886,null,null,null,"hy"],
+["wd-Q104811228","Arnoštka Hybšová",1886,null,null,null,"hy"],
+["wd-Q104811230","Eliška Hybšová",1904,null,null,null,"hy"],
+["wd-Q104811235","Cilla Hye-Hyeburgová",1869,"Brünn",49.19528,16.60833,"hy"],
+["wd-Q104806071","Antonie Hyngaard",1860,"Konzentrationslager Theresienstadt",50.51028,14.14972,"hy"],
+["wd-Q104811236","Anna Hynková",1901,null,null,null,"hy"],
+["wd-Q104806645","Jaroslav Hysek",1910,"KZ Auschwitz",50.03583,19.17833,"hy"]
+]}

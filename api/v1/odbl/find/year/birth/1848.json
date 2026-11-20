@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":14,
+"kind":"birth",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n9399470681","Charlotte Bloch",1848,null,"Konstanz","blo"],
+["st-n10047222181","Elise Eppstein",1848,null,"Hoppstädten-Weiersbach","ep"],
+["st-n14165047931","Elka Schiff",1848,null,"Münster","schi"],
+["wd-Q60835428","Heinrich Marum",1848,1942,"Bad Sobernheim","mar"],
+["st-n8729402118","Hermann Emanuel",1848,1943,"Steinfurt","em"],
+["st-Q138135745","Isaak Hofeler",1848,null,"Eichstetten am Kaiserstuhl","hof"],
+["wd-Q105455331","Jakob Pasch",1848,1942,"Berlin","pa"],
+["st-Q138828234","Joseph de Vries",1848,null,"Steinfurt","v"],
+["st-n3921205342","Ludwig Hartog",1848,1939,"Goch","har"],
+["wd-Q132398901","Moritz Nathan Oppenheim",1848,1933,"Frankfurt am Main","op"],
+["st-n12438783830","Naftali Heine",1848,1935,null,"hei"],
+["wd-Q132360651","Rosalie Borchardt",1848,1939,"Berlin","bo"],
+["st-n6754230267","Seligmann Salomon",1848,1943,"Puderbach","sal"],
+["st-Q134436868","Sophie Klieneberger",1848,null,"Bad Homburg vor der Höhe","kl"]
+],
+"year":1848}

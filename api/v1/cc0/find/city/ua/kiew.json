@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"UA",
+"label":"Kiew",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95109608","Khaim Galinski",1900,1941,"Kiew","ga"],
+["wd-Q95111791","Moses Grushko",null,1941,"Kiew","grus"],
+["wd-Q95110666","Naftali Itkis",1862,1941,"Kiew","i"],
+["wd-Q94977010","Naum Aizenberg",1901,1941,"Kiew","ai"],
+["wd-Q95125639","Yefim Aizenberg",1925,1941,"Kiew","ai"],
+["wd-Q95111046","Yehuda Frizler",1905,1941,"Kiew","friz"],
+["wd-Q95109550","Yudko Chaikovski",1908,1941,"Kiew","ch"]
+],
+"slug":"kiew"}

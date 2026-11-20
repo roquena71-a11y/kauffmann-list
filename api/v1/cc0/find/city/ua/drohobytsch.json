@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"UA",
+"label":"Drohobytsch",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95119811","Berl Bilig",1884,1942,"Drohobytsch","bi"],
+["wd-Q95129685","Bluma Toikhner",1908,1942,"Drohobytsch","to"],
+["wd-Q95119584","Filip Khirer",1900,1942,"Drohobytsch","kh"],
+["wd-Q95111526","Fredi Kreizberg",1924,1942,"Drohobytsch","kre"],
+["wd-Q95112498","Henia Federshneider",1898,1941,"Drohobytsch","fed"],
+["wd-Q94975741","Moshe Faustner",1909,1942,"Drohobytsch","fau"],
+["wd-Q95106174","Pina Lev",1885,1942,"Drohobytsch","lev_"]
+],
+"slug":"drohobytsch"}

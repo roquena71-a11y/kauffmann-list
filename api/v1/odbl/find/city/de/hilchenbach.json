@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"DE",
+"label":"Hilchenbach",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n1742506532","Arno Alfred Holländer",1928,null,"Hilchenbach","hol"],
+["st-n1742506505","Artur Holländer",1925,null,"Hilchenbach","hol"],
+["st-n1742506510","Bianca Schäfer",1886,null,"Hilchenbach","scha"],
+["st-n1742506514","Elisabetha 'Gerti' Holländer",1900,null,"Hilchenbach","hol"],
+["st-n1742506519","Herz Stern",1858,null,"Hilchenbach","stern"],
+["st-n1742506521","Joseph Holländer",1884,null,"Hilchenbach","hol"],
+["st-n1742506567","Julie Holländer",1886,null,"Hilchenbach","hol"],
+["st-n1742506524","Karl Schäfer",1881,null,"Hilchenbach","scha"],
+["st-n1742506528","Karoline 'Lina' Stern",1859,null,"Hilchenbach","stern"],
+["st-n1742506580","Lothar Holländer",1933,null,"Hilchenbach","hol"],
+["st-n7560422380","Robert König",1904,1945,"Hilchenbach","kon"],
+["st-n1742506563","Röschen Hony",1868,null,"Hilchenbach","hon"],
+["st-n1742506585","Willi Holländer",1893,null,"Hilchenbach","hol"]
+],
+"slug":"hilchenbach"}

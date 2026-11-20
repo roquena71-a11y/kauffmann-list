@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"PL",
+"label":"Bełżyce",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q131930648","Albert Michel",1898,"death","Bełżyce",51.17427,22.28024],
+["wd-Q95108385","Avraham Pres",1889,"death","Bełżyce",51.17427,22.28024],
+["wd-Q95116893","Ester Pres",1924,"death","Bełżyce",51.17427,22.28024],
+["wd-Q94976916","Kalman Pres",1886,"death","Bełżyce",51.17427,22.28024],
+["wd-Q94975870","Moshe Bibel",null,"death","Bełżyce",51.17427,22.28024],
+["wd-Q95125437","Ptakhia Praker",1915,"death","Bełżyce",51.17427,22.28024],
+["wd-Q95126964","Shaul Pres",1922,"death","Bełżyce",51.17427,22.28024]
+],
+"slug":"bezyce"}

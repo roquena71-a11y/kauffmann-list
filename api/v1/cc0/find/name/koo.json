@@ -1,0 +1,15 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"koo",
+"rows":[
+["kooker","wd-Q105654361","Godefroid Kooker",1904,null,null,"koo"],
+["koopmann","wd-Q105356063","Alice Koopmann",1858,1942,"Konzentrationslager Theresienstadt","koo"],
+["koopmann","wd-Q105356064","Anna Koopmann",1868,null,null,"koo"],
+["koopmann","wd-Q105356065","Jenny Koopmann",1860,null,null,"koo"],
+["koopmann","wd-Q105356066","Julius Koopmann",1870,1942,"Konzentrationslager Theresienstadt","koo"],
+["koopmann","wd-Q105356067","Leonhard Koopmann",1862,1943,"Konzentrationslager Theresienstadt","koo"],
+["koopmann","wd-Q105356068","Sara Koopmann",1861,1942,"Konzentrationslager Theresienstadt","koo"],
+["koopmann","wd-Q105356069","Sybilla Koopmann",1875,1942,"Konzentrationslager Theresienstadt","koo"],
+["koopmannova","wd-Q105651821","Gertruda Koopmannová",1907,null,null,"koo"],
+["koord","wd-Q104248534","Henriette Belinfante-Koord",1904,1944,"KZ Auschwitz","bel"]
+]}

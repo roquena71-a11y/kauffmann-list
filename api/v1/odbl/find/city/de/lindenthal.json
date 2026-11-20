@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"DE",
+"label":"Lindenthal",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q816995","Benedikt Schmittmann",1872,1939,"Düsseldorf","schm"],
+["st-n3244761363","Dr. Alfred Jacobsohn",1890,null,"Lindenthal","jac"],
+["st-n11991746461","Dr. Bruno Kisch",1890,null,"Lindenthal","ki"],
+["st-n3234968550","Elsa Buchholz",1900,null,"Lindenthal","bu"],
+["wd-Q1336531","Emil Meirowsky",1876,1960,"Lindenthal","mei"],
+["st-n3234968552","Eugen Frank",1885,null,"Lindenthal","fra"],
+["st-n3244761365","Hans Ballin",1887,null,"Lindenthal","bal"],
+["st-n3244690022","Jan Pierre May",null,null,"Lindenthal","may"],
+["st-n3256799829","Karl Heublein",null,1945,"Lindenthal","heu"],
+["st-n3244794419","Käthe Niessen",1891,null,"Lindenthal","ni"],
+["wd-Q104209109","Laura Alsberg",1861,1943,"Lindenthal","al"],
+["st-n3234968553","Leo Leeser",1871,1942,"Lindenthal","lee"],
+["wd-Q28736882","Martha Heublein",1898,1945,"Lindenthal","heu"]
+],
+"slug":"lindenthal"}

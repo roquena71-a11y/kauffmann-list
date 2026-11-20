@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"lez",
+"rows":[
+["lezer","st-n14135521479","Alfred Lezer",1937,null,"Zwolle","lez"],
+["lezer","st-n8883674648","Carolina Kats-Lezer",1859,null,"Groningen","kat"],
+["lezer","st-n14135521480","Coenraad Lezer",1935,null,"Zwolle","lez"],
+["lezer","st-n14135521478","Henriette Lezer-Fischel",1908,null,"Zwolle","lez"],
+["lezer","st-n14135521481","Lion Gerzinus Lezer",1905,null,"Zwolle","lez"],
+["lezer","st-n14252199542","Salomon Lezer",1872,null,"Zwolle","lez"]
+]}

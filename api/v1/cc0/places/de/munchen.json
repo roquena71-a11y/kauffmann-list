@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"DE",
+"label":"München",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q107559242","Adolf Hofheimer",1869,"death","München",48.1375,11.575],
+["wd-Q94975146","Bertha Proelsdorfer",1890,"death","München",48.1375,11.575],
+["wd-Q68545","Friedrich Moritz Hartogs",1874,"death","München",48.1375,11.575],
+["wd-Q104653799","Hugo Freund",1900,"death","München",48.1375,11.575],
+["wd-Q15444706","Karl Alexander Neumeyer",1869,"death","München",48.1375,11.575],
+["wd-Q125857284","Karl Kipp",1896,"death","München",48.1375,11.575],
+["wd-Q16218820","Moritz Heymann",1870,"death","München",48.1375,11.575],
+["wd-Q124444477","Selma Rosengart",1861,"death","München",48.1375,11.575]
+],
+"slug":"munchen"}

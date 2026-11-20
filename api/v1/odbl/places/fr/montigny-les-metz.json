@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"FR",
+"label":"Montigny-lès-Metz",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13013647744","Achille Alexandre",1885,"memorial","108 Rue de Pont-à-Mousson",49.10143,6.15652],
+["wd-Q534343","Charles Delestraint",1879,"memorial","10 Allée de Londres",49.10586,6.16036],
+["st-n13013647745","Claude Alexandre",1943,"memorial","108 Rue de Pont-à-Mousson",49.10143,6.15652],
+["st-n13017756284","Denise Bernard",1926,"memorial","20 Rue Saint-Ladre",49.09768,6.15601],
+["st-n4580502668","Félix Peupion",1882,"memorial","10 Rue Charles de Gaulle",49.10686,6.16168],
+["st-n13017756282","Georgette Bernard",1890,"memorial","20 Rue Saint-Ladre",49.09768,6.15601],
+["st-n13017756283","Lucienne Bernard",1922,"memorial","20 Rue Saint-Ladre",49.09768,6.15601],
+["st-n13020848565","Marcel Ney",1923,"memorial","6 Rue de Marly",49.09372,6.16252],
+["st-n13020848564","Paul Simminger",1911,"memorial","2 Rue Saint-Louis",49.1011,6.15645]
+],
+"slug":"montigny-les-metz"}

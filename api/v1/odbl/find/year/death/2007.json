@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q551193","Anja Lundholm",1918,2007,"Krefeld","lu"],
+["wd-Q100785132","Brigitte Adler",1931,2007,"Ravensburg","ad"],
+["wd-Q141551828","Hanny Lore Levi",1924,2007,"Überlingen","levi"],
+["wd-Q1661359","Peter Erlanger",1926,2007,"Ravensburg","er"],
+["wd-Q102782","Thomas G. Rosenmeyer",1920,2007,"Hamburg","rosenm"],
+["wd-Q140591499","Vera Haas",1925,2007,"Hannover","haa"]
+],
+"year":2007}

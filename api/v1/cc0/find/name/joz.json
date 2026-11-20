@@ -1,0 +1,19 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"joz",
+"rows":[
+["jozef","wd-Q104673503","Józef Gostkorzcewicz",1929,1945,"Konzentrationslager Theresienstadt","gos"],
+["jozef","wd-Q104673791","Jozef-Joel Grebermann",1868,1942,"Konzentrationslager Theresienstadt","gre"],
+["jozef","wd-Q104805590","Jozef Kahane",1897,1945,"KZ Auschwitz","kah"],
+["jozef","wd-Q105513122","Józef Schmalz",1908,1945,"Konzentrationslager Theresienstadt","schm"],
+["jozef","wd-Q105657702","Jozef Tausik",1884,1943,"KZ Auschwitz","taus"],
+["jozefa","wd-Q105512955","Józefa Perlmann",1905,1945,"Konzentrationslager Theresienstadt","per"],
+["jozefina","wd-Q94976338","Jozefina Rozsa",1892,1944,"KZ Auschwitz","kohn_"],
+["jozeph","wd-Q59532944","Jozeph Michman",1914,2009,"Jerusalem","mel"],
+["jozeph","wd-Q105654993","Ralph Jozeph Oettinger",1933,1944,"KZ Auschwitz","ot"],
+["jozsef","wd-Q104812050","Aladar Jozsef",1906,null,null,"jo"],
+["jozsef","wd-Q95108525","Jozsef Buchler",1872,1944,"KZ Auschwitz","bu"],
+["jozsef","wd-Q94975065","Jozsef Fodor",null,1944,"KZ Auschwitz","fo"],
+["jozsef","wd-Q131471625","József Sipos",1877,null,null,"sip"],
+["jozsef","wd-Q95118287","Jozsef Weiss",1892,1944,"KZ Auschwitz","weiss_"]
+]}

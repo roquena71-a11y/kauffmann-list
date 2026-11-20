@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"FR",
+"label":"L'Aiguillon-la-Presqu'île",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13039489384","Alexandre Lambert",1921,1943,"L'Aiguillon-la-Presqu'île","lam"],
+["st-n13039489382","Jean Rossignol",1921,1944,"L'Aiguillon-la-Presqu'île","ross"],
+["st-n13039489383","René Paris",1921,1943,"L'Aiguillon-la-Presqu'île","pa"],
+["st-n13039489381","Roger Roulland",1921,1943,"L'Aiguillon-la-Presqu'île","rou"]
+],
+"slug":"l-aiguillon-la-presqu-ile"}

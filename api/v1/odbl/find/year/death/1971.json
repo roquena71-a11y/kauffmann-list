@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q140937262","Charlotte Schimmelpfennig",1897,1971,"Sassnitz","schi"],
+["wd-Q1431611","Friedrich Wilhelm Schilling",1902,1971,"Leipzig","schi"],
+["wd-Q141552004","Julie Levi",1894,1971,"Überlingen","levi"],
+["wd-Q1732349","Karl Meitmann",1891,1971,"Hamburg","mei"],
+["wd-Q1400549","Lucie Adelsberger",1895,1971,"Berlin","ad"],
+["wd-Q1876617","Luise Herrmann-Ries",1904,1971,"Neunkirchen","her"],
+["st-n13286210631","Marie Odenheimer",1897,1971,null,"od"],
+["wd-Q140591152","Siegfried Haas",1896,1971,"Hannover","haa"]
+],
+"year":1971}

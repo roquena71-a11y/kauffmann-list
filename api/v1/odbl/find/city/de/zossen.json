@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Zossen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104549247","Alexander Falk",1884,1940,"Zossen","fa"],
+["wd-Q104549250","Charlotte Falk",1897,1940,"Zossen","fa"],
+["st-Q136710029","Felix Bernhard Falk",1921,null,"Zossen","fa"],
+["st-Q136710041","Gerda Juliane Falk",1925,null,"Zossen","fa"],
+["wd-Q105462869","Lesser Weinberg",1872,1943,"Berlin","wein"],
+["wd-Q105461085","Martha Weinberg",1875,1944,"Berlin","wein"],
+["wd-Q136709671","Werner Paul Robert Dalen",1879,1942,"Zossen","da"]
+],
+"slug":"zossen"}

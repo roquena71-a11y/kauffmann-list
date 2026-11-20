@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"herd",
+"rows":[
+["herdan","wd-Q98406818","Johanna Herdan",1909,1993,null,"herd"],
+["herdan","wd-Q98406721","Richard Herdan",1900,1966,"Südafrika","herd"],
+["herdan","wd-Q104706473","Vítězslav Herdan",1894,1942,"Konzentrationslager Theresienstadt","herd"],
+["herdanova","wd-Q104701437","Margit Herdanová",1899,null,null,"herd"],
+["herdlitzka","wd-Q104703712","Charlotte Herdlitzka",1858,1942,"Konzentrationslager Theresienstadt","herd"]
+]}

@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"AD",
+"label":"Andorra la Vella",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13195770451","Càndid Rossell Rial",1909,"memorial","Antic Carrer Major",42.50721,1.52082],
+["st-n13195770452","Salvador Montanya Codina",1917,"memorial","18 Carrer de la Vall",42.50688,1.52114]
+],
+"slug":"andorra-la-vella"}

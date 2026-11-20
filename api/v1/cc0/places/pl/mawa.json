@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"PL",
+"label":"Mława",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94975658","Dvora Perlberg",1874,"death","Mława",53.11667,20.36667],
+["wd-Q95127012","Moshe Podiast",1920,"death","Mława",53.11667,20.36667],
+["wd-Q95128197","Yekhezkel Pesa",1911,"death","Mława",53.11667,20.36667],
+["wd-Q95111823","Yisrael Fater",1889,"death","Mława",53.11667,20.36667]
+],
+"slug":"mawa"}

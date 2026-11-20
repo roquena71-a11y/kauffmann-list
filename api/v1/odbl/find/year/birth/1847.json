@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"kind":"birth",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105355170","Elka Kaufmann",1847,1942,"Rotenburg an der Fulda","kau"],
+["wd-Q132135602","Franziska Ury",1847,null,"Berlin","u"],
+["st-n12438845012","Helene Mayer",1847,1935,null,"may"],
+["wd-Q105373028","Johanna Meyer",1847,1942,"Freiburg im Breisgau","meyer_"],
+["st-n12438783884","Johanna Morsbach",1847,1941,null,"mo"],
+["wd-Q105373782","Joel Mindus",1847,1943,"Badbergen","mi"],
+["st-n6776291506","Julius Deichmann",1847,1939,"Hoya","de"],
+["st-n6116970188","Leopold Herz",1847,null,"Euskirchen-Flamersheim","her"],
+["st-n10134671540","Meir Pels",1847,null,"Weener","pe"],
+["st-n14016062532","Rosa Seliger",1847,null,null,"se"],
+["st-n12438783853","Sara Gross",1847,null,null,"gro"]
+],
+"year":1847}

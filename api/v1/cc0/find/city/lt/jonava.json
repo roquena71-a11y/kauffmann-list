@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"LT",
+"label":"Jonava",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95128834","Efraim Druskin",null,1941,"Jonava","dr"],
+["wd-Q95109815","Feiga Plotnik",1880,1942,"Jonava","pl"],
+["wd-Q95118224","Khina Shlomovitz",1910,1941,"Jonava","sh"],
+["wd-Q95124466","Leizer Manusovich",1873,1941,"Jonava","man"],
+["wd-Q95113709","Meir Pashkovski",1905,1941,"Jonava","pa"],
+["wd-Q95109901","Pesakh Graber",1922,1941,"Jonava","gra"],
+["wd-Q94976802","Sheina Manusovich",1880,1941,"Jonava","man"],
+["wd-Q95117216","Yaakov Plotnik",1920,1942,"Jonava","pl"],
+["wd-Q95113972","Yehudit Riklis",1910,1941,"Jonava","ri"],
+["wd-Q94975484","Yosef Druskin",1921,1941,"Jonava","dr"]
+],
+"slug":"jonava"}

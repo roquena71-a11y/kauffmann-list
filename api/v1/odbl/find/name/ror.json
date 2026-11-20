@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"ror",
+"rows":[
+["ror","st-Q52822897","Gertrud Roer",1906,null,"Bremen","ror"],
+["ror","st-Q140456431","Isaak Roer",1885,null,"Düren","ror"],
+["ror","st-Q52824024","Reinhold Roer",1938,null,"Bremen","ror"],
+["ror","st-Q140456441","Sara Roer",1885,null,"Düren","ror"],
+["ror","st-Q52824028","Walter Roer",1907,null,"Bremen","ror"],
+["rore","st-n13484203802","Claudette Suzanne Roere",1945,null,"Hamburg","ror"]
+]}

@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"DE",
+"label":"Bad Lausick",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11902166848","Bruno Ernst Hönig",1907,null,"Bad Lausick","hon"],
+["st-Q125925840","Dora Baunack",1907,null,"Bad Lausick","bau"],
+["st-Q125925892","Else Hirsch",1903,null,"Bad Lausick","hirsch"],
+["st-Q125925888","Fanny Hirsch",1900,null,"Bad Lausick","hirsch"],
+["st-n12466570409","Friedrich Kaubisch",1895,null,"Bad Lausick","kau"],
+["wd-Q126283337","Johanna Charlotte Michaelis",1899,1942,"Bad Lausick","mi"],
+["st-n12511768775","Karl Köppel",1893,null,"Bad Lausick","kop"],
+["st-Q125925890","Margarethe Hirsch",1902,null,"Bad Lausick","hirsch"],
+["st-Q125925896","Max Hirsch",1908,null,"Bad Lausick","hirsch"],
+["st-n12466638805","Max Lohmann",1896,null,"Bad Lausick","loh"],
+["wd-Q104702871","Siegmund Hirsch",1860,1942,"Bad Lausick","hirsch"],
+["st-Q125925887","Sophie Hirsch",1894,null,"Bad Lausick","hirsch"],
+["st-Q125925826","Walter Baunack",1905,null,"Bad Lausick","bau"]
+],
+"slug":"bad-lausick"}

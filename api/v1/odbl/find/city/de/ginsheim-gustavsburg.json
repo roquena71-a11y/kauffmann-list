@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"DE",
+"label":"Ginsheim-Gustavsburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q132734023","Erna Wiesenfeld",1904,null,"Ginsheim-Gustavsburg","wi"],
+["st-Q132733981","Hans Rauch",1914,null,"Ginsheim-Gustavsburg","ra"],
+["st-Q132734001","Julius Wiesenfeld",1879,null,"Ginsheim-Gustavsburg","wi"],
+["st-Q132734030","Maria Frida Bremser",1906,1944,"Ginsheim-Gustavsburg","bre"],
+["st-Q132733954","Otto Wanner",1884,null,"Ginsheim-Gustavsburg","wa"]
+],
+"slug":"ginsheim-gustavsburg"}

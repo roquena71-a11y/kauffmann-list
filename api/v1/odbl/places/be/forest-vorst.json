@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"BE",
+"label":"Forest - Vorst",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7184475028","Balcia Branicka",null,"memorial","Rue Rodenbach - Rodenbachstraat 73",50.81848,4.34418],
+["st-n7184475027","Cerla U. Bukowska-Branicki",1891,"memorial","Rue Rodenbach - Rodenbachstraat 73",50.81847,4.34416],
+["st-n7184475029","Louis Heyligers",1878,"memorial","Rue Rodenbach - Rodenbachstraat 73",50.81847,4.34415],
+["st-n7184475030","René Brems",null,"memorial","Rue Rodenbach - Rodenbachstraat 73",50.81282,4.32467],
+["st-n7184475031","Szmul (Samuel) Potasznik",1909,"memorial","Avenue des Tropiques - Keerkringenlaan 11",50.81527,4.32577]
+],
+"slug":"forest-vorst"}

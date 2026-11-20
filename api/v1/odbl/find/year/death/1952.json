@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q20980207","Erwin Jacobsthal",1879,1952,"Hamburg","jac"],
+["st-n910661551","Karl Amborn",1890,1952,"Offenbach am Main","am"],
+["wd-Q52288003","Konrad Dobriner",1902,1952,"München","do"],
+["wd-Q57465","Kurt Schumacher",1895,1952,"Hannover","schu"],
+["wd-Q55881206","Paula Neumann",1886,1952,"Neu-Ulm","neu"],
+["wd-Q132138622","Ruth Judith Goslar",1901,1952,"Berlin","gos"],
+["wd-Q141758461","Samuel Hoffmann",1876,1952,"Bischofswerda","hof"],
+["st-n2177613830","Selma Jung",1877,1952,"Siegen","ju"],
+["wd-Q96105394","Sophie Guggenheimer",1882,1952,"Memmingen","gu"],
+["wd-Q141552119","Wilhelm Levi",1861,1952,"Überlingen","levi"]
+],
+"year":1952}

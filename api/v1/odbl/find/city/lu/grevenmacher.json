@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"LU",
+"label":"Grevenmacher",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13056557005","Felix Hayum",1893,1942,"Grevenmacher","hay"],
+["st-n13056557002","Max Bonem",1893,1943,"Grevenmacher","bo"],
+["st-n13056557001","Raphael Cahen",1895,1943,"Grevenmacher","ca"],
+["st-n13056557003","Selma Sommer",1885,null,"Grevenmacher","so"],
+["st-n13056557006","Siegmund Hayum",1891,1942,"Grevenmacher","hay"]
+],
+"slug":"grevenmacher"}

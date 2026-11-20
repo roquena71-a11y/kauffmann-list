@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Velbert",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3132929396","Adolf Nathan",1886,null,"Velbert","na"],
+["st-n3133504086","Bella Isaac",1899,null,"Velbert","i"],
+["st-n3132929397","Betty Nathan",1888,null,"Velbert","na"],
+["st-n3133504087","Cilla Caspari",1880,null,"Velbert","ca"],
+["st-n3133504088","Louis Caspari",1873,null,"Velbert","ca"],
+["st-n3133504089","Walter Isaac",1899,null,"Velbert","i"]
+],
+"slug":"velbert"}

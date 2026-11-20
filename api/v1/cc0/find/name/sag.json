@@ -1,0 +1,18 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"sag",
+"rows":[
+["sagan","wd-Q105389320","Klara Sagan",1883,null,null,"sag"],
+["sagan","wd-Q105463069","Moses Sagan",1882,null,null,"sag"],
+["sagel","wd-Q105473385","Betti Sagel",1868,null,null,"sag"],
+["sagel","wd-Q105389321","Hedwig Sagel",1886,null,null,"sag"],
+["sagel","wd-Q105595704","Heřman Sagel",1896,1942,null,"sag"],
+["sagel","wd-Q106471350","Konrad Sagel",1874,null,null,"sag"],
+["sagelova","wd-Q105595707","Žofie Sagelová",1904,null,null,"sag"],
+["sager","wd-Q105595708","Josef Sager-Sandel",1898,null,null,"sag"],
+["sager","wd-Q105389323","Lina Sager",1882,null,null,"sag"],
+["sagherova","wd-Q104088637","Berta Sagherová",1897,null,null,"sag"],
+["sagherova","wd-Q105595712","Truda Sagherová",1909,null,null,"sag"],
+["sagl","wd-Q105641903","Zikmund Sagl",1892,null,null,"sag"],
+["saglova","wd-Q105595713","Terezie Saglová",1880,null,null,"sag"]
+]}

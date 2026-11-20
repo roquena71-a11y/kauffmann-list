@@ -1,0 +1,16 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"rem",
+"rows":[
+["remak","wd-Q105456813","Hedwig Remak",1873,null,null,"rem"],
+["remak","wd-Q105456812","Kurt Josef Remak",1897,null,null,"rem"],
+["remak","wd-Q105456814","Malvine Remak",1868,1942,"Konzentrationslager Theresienstadt","rem"],
+["remak","wd-Q76220","Robert Remak",1888,1942,"KZ Auschwitz","rem"],
+["remes","wd-Q105642351","Adolf Remes",1882,null,null,"rem"],
+["remi","wd-Q105472363","Hermann Remi",1881,null,null,"rem"],
+["remi","wd-Q105579583","Viktor Remi",1902,null,null,"rem"],
+["remiova","wd-Q105579582","Elsa Remiová",1906,null,null,"rem"],
+["remiova","wd-Q105580224","Hedvika Remiová",1878,null,null,"rem"],
+["remiova","wd-Q105580562","Yvona Remiová",1908,null,null,"rem"],
+["remy","wd-Q834721","Rémy Dumoncel",1888,1945,"Konzentrationslager Neuengamme","du"]
+]}

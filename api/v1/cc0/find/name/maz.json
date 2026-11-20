@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"maz",
+"rows":[
+["mazer","wd-Q105474034","Sofie Mazer",1874,null,"Konzentrationslager Theresienstadt","maz"],
+["mazliach","wd-Q105657714","Gabriel Mazliach",1883,1944,"Kleine Festung Theresienstadt","maz"],
+["mazliach","wd-Q105564156","Jacques Mazliach",1885,null,null,"maz"],
+["mazliach","wd-Q105469546","Paula Mazliach",1868,1943,"Konzentrationslager Theresienstadt","maz"],
+["mazura","wd-Q105466402","Joachim Langbank-Mazura",1875,null,null,"lang"]
+]}

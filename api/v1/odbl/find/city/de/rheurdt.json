@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"country":"DE",
+"label":"Rheurdt",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6289178976","Bernhard Leiser",1901,null,"Rheurdt","lei"],
+["st-n6289178979","Frieda Seelmann",1888,null,"Rheurdt","se"],
+["st-n6289178981","Friedrich Seelmann",1888,null,"Rheurdt","se"],
+["st-n6289178978","Hans Leiser",1938,null,"Rheurdt","lei"],
+["st-n6289178983","Jakob David",1865,null,"Rheurdt","da"],
+["st-n6289179187","Kaufmann, Amalie",1889,null,"Rheurdt","am"],
+["st-n6289179186","Kaufmann, Georg",1891,null,"Rheurdt","ge"],
+["st-n6289179185","Kaufmann, Margot",1930,null,"Rheurdt","mar"],
+["st-n6289178984","Kaufmann, Paula",1902,null,"Rheurdt","pa"],
+["st-n6289178977","Martha Leiser",1897,null,"Rheurdt","lei"],
+["st-n6289178975","Moses David",1884,null,"Rheurdt","da"],
+["st-n6289178982","Rosette David",1856,null,"Rheurdt","da"]
+],
+"slug":"rheurdt"}

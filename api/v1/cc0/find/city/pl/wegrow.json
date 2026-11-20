@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"PL",
+"label":"Węgrów",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95110173","Abram Pshepiorka",1910,1943,"Węgrów","ps"],
+["wd-Q94975641","Dvora Pitak",1909,1942,"Węgrów","pit"],
+["wd-Q95111364","Shlomo Pitak",1912,1942,"Węgrów","pit"],
+["wd-Q95126592","Shmuel Halbershtat",1897,1942,"Węgrów","hal"],
+["wd-Q95128263","Yaakov Pitak",1882,1942,"Węgrów","pit"],
+["wd-Q95111395","Yaakov Prashker",null,1945,"Węgrów","pra"],
+["wd-Q95116134","Yosef Pshepiorka",1896,1943,"Węgrów","ps"]
+],
+"slug":"wegrow"}

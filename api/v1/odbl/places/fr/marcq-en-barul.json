@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"FR",
+"label":"Marcq-en-Barœul",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13935738968","Albert Bailleul",1908,"memorial","1 Rue de Menin",50.66917,3.07681],
+["st-n13935738969","Marceau Deltombe",1911,"memorial","3 Rue Adolphe Torgue",50.66428,3.07665]
+],
+"slug":"marcq-en-barul"}

@@ -1,0 +1,20 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"rog",
+"rows":[
+["rog","wd-Q105654269","Lena Gans-Roeg",1913,1944,"KZ Auschwitz","ga"],
+["rogasner","wd-Q105457109","Elise Rogasner",1898,null,null,"rog"],
+["rogasner","wd-Q106471264","Ludwig Rogasner",1889,null,null,"rog"],
+["rogel","wd-Q105580185","Abraham Rogel",1887,null,null,"rog"],
+["roger","wd-Q105580186","Hanuš Roger",1908,null,null,"rog"],
+["roger","wd-Q105580187","Herbert Roger",1913,null,null,"rog"],
+["roger","wd-Q105580189","Hynek Roger",1875,1944,"Konzentrationslager Theresienstadt","rog"],
+["roger","wd-Q105580191","Josef Roger",1876,null,null,"rog"],
+["roger","wd-Q105580192","Kurt Roger",1907,null,null,"rog"],
+["rogerova","wd-Q105650780","Elsa Rogerová",1893,null,null,"rog"],
+["rogerova","wd-Q105651203","Emilie Rogerová",1875,null,null,"rog"],
+["rogerova","wd-Q105580188","Hilda Rogerová",1885,null,null,"rog"],
+["rogerova","wd-Q105580190","Jana Rogerová",1886,null,null,"rog"],
+["rogosinski","wd-Q105457112","Helma Rogosinski",1871,1942,"Konzentrationslager Theresienstadt","rog"],
+["rogow","wd-Q105457114","Moses Rogow",1863,1943,"Konzentrationslager Theresienstadt","rog"]
+]}

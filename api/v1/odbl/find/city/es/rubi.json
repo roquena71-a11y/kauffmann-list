@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"ES",
+"label":"Rubí",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13633382310","Andreu Vidal Almirall",1912,null,"Rubí","al"],
+["st-n13633347101","Antoni Òdena Òdena",1905,null,"Rubí","od"],
+["st-n13633353835","Antoni Pereña Salas",1895,null,"Rubí","sal"],
+["st-n13633415319","Enric Aragonès Campderròs",1904,null,"Rubí","ca"],
+["st-n13633400174","Francesc Bartroli Creus",1911,null,"Rubí","cr"],
+["st-n13633368326","Gregori Beltran Jardiel",1919,null,"Rubí","jar"],
+["st-n13633319930","Jesús Montroig Cuartero",1904,null,"Rubí","cu"],
+["st-n13633359744","Joaquim Rusiñol Folch",1912,null,"Rubí","fo"],
+["st-n13633348191","José López de Letona Angulo",1906,null,"Rubí","an"]
+],
+"slug":"rubi"}

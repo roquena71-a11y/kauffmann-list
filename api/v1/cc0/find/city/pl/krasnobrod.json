@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"PL",
+"label":"Krasnobród",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95108661","Ita Giter",1892,1942,"Krasnobród","gi"],
+["wd-Q95119990","Khaim Veinberg",1892,1942,"Krasnobród","ve"],
+["wd-Q95123107","Meir Lian",1892,1942,"Krasnobród","lia"],
+["wd-Q95123485","Simkha Berland",1917,1943,"Krasnobród","berl"],
+["wd-Q95119950","Yosef Tentzer",1924,1942,"Krasnobród","te"]
+],
+"slug":"krasnobrod"}

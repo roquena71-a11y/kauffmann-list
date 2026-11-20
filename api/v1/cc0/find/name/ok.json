@@ -1,0 +1,14 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ok",
+"rows":[
+["okker","wd-Q105654335","Roshel Klijnkramer-Okker",1893,1944,"KZ Auschwitz","kli"],
+["okonski","wd-Q105454952","Johanna Okonski",1873,1943,"Konzentrationslager Theresienstadt","krz"],
+["okowski","wd-Q105454950","Elise Okowski",1872,null,null,"ok"],
+["okowski","wd-Q105454951","Neumann Okowski",1874,null,null,"ok"],
+["okshorn","wd-Q95107210","Khana Okshorn",1923,1943,"Lwiw","ok"],
+["okszhorn","wd-Q105471045","Gyula Okszhorn",1893,null,null,"ok"],
+["okun","wd-Q105454953","Rosalie Sonja Okun",1899,null,null,"ok"],
+["okuniewsky","wd-Q105454954","Berta Okuniewsky",1863,1942,"Konzentrationslager Theresienstadt","ok"],
+["okunski","wd-Q105454956","Elisabeth Okunski",1869,1942,"Konzentrationslager Theresienstadt","ok"]
+]}

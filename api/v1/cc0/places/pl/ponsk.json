@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"PL",
+"label":"Płońsk",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95129436","Aba Fordanski",1897,"death","Płońsk",52.62333,20.37528],
+["wd-Q94976451","Basha Pshigoda",1918,"death","Płońsk",52.62333,20.37528],
+["wd-Q95113839","Dvora Parzeczewska",1880,"death","Płońsk",52.62333,20.37528],
+["wd-Q95125383","Eliahu Pashdetzki",1917,"death","Płońsk",52.62333,20.37528],
+["wd-Q95115391","Leibel Fogel",1918,"death","Płońsk",52.62333,20.37528],
+["wd-Q95124254","Meir Fordanski",1923,"death","Płońsk",52.62333,20.37528],
+["wd-Q95110773","Shabtai Piasechni",1883,"death","Płońsk",52.62333,20.37528],
+["wd-Q94975771","Yekhiel Pshigoda",1892,"death","Płońsk",52.62333,20.37528],
+["wd-Q95118339","Yitzkhak Rumianek",1892,"death","Płońsk",52.62333,20.37528],
+["wd-Q94976724","Yosef Pashdetzki",1923,"death","Płońsk",52.62333,20.37528],
+["wd-Q94975948","Zisa Rumianek",1922,"death","Płońsk",52.62333,20.37528]
+],
+"slug":"ponsk"}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"München",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q107559242","Adolf Hofheimer",1869,1942,"München","hof"],
+["wd-Q94975146","Bertha Proelsdorfer",1890,1943,"München","pro"],
+["wd-Q68545","Friedrich Moritz Hartogs",1874,1943,"München","har"],
+["wd-Q104653799","Hugo Freund",1900,1942,"München","freun"],
+["wd-Q15444706","Karl Alexander Neumeyer",1869,1941,"München","neume"],
+["wd-Q125857284","Karl Kipp",1896,1959,"München","ki"],
+["wd-Q16218820","Moritz Heymann",1870,1937,"München","hey"],
+["wd-Q124444477","Selma Rosengart",1861,1938,"München","roseng"]
+],
+"slug":"munchen"}

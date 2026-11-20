@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"aw",
+"rows":[
+["awigdor","wd-Q95110842","Awigdor Scherer",1898,1941,"Buchara","sche"],
+["awner","wd-Q104211061","Ida Awner",1875,null,null,"aw"],
+["awrum","wd-Q104549235","Awrum Fajarowicz",1872,1943,"Konzentrationslager Theresienstadt","faj"],
+["awrum","wd-Q104654374","Awrum Fuks",1870,null,null,"fuk"],
+["awschey","wd-Q138606818","Awschey Iskin",1877,1942,null,"i"]
+]}

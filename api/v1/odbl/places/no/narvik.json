@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"NO",
+"label":"Narvik",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q138607078","Bertha Sonja Fischer født Bermann",1897,"memorial","Kongens gate 14",68.43436,17.42531],
+["wd-Q138359215","David Fischer",1899,"memorial","Kongens gate 14",68.43436,17.42531],
+["wd-Q138692638","Idar Fischer",1931,"memorial","Kongens gate 14",68.43436,17.42531],
+["wd-Q138687321","Isak Pickelner",1887,"memorial","Dronningens gate 46",68.43737,17.42867],
+["wd-Q138607164","Jacob Caplan",1903,"memorial","Kongens gate 56",68.43978,17.43122],
+["wd-Q138607723","Lillian Lea Fischer",1928,"memorial","Kongens gate 14",68.43436,17.42531],
+["wd-Q138607044","Martin Mendel Fischer",1895,"memorial","Kongens gate 14",68.43436,17.42531],
+["wd-Q138359217","Samuel Fischer",1907,"memorial","Kongens gate 14",68.43436,17.42531],
+["wd-Q138359216","Wulf Fischer",1922,"memorial","Kongens gate 14",68.43436,17.42531]
+],
+"slug":"narvik"}

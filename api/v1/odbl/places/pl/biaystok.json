@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"PL",
+"label":"Białystok",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12120098274","Abraham Suchowolski",null,"memorial",null,53.13628,23.14389],
+["st-n12120098280","Betty Raszkin",null,"memorial",null,53.13357,23.1507],
+["st-n12120098271","Dawid Pisar",null,"memorial",null,53.13628,23.14388],
+["st-n14105520044","Ester Kracowska",null,"memorial",null,53.13306,23.15389],
+["st-n12120098275","Feigl Suchowolska",null,"memorial",null,53.13629,23.14389],
+["st-n12120098273","Helena Pisar",null,"memorial",null,53.13629,23.14388],
+["st-n12120098281","Jakub Raszkin",null,"memorial",null,53.13357,23.1507],
+["st-n12120098278","Jakub Szapiro",null,"memorial",null,53.13357,23.15069],
+["st-n14105520042","Julek Kracowski",null,"memorial",null,53.13306,23.15389],
+["st-n12120098277","Maria Szapiro",null,"memorial",null,53.13357,23.15069],
+["st-n12120098276","Mojżesz Tropp",null,"memorial",null,53.13357,23.15069],
+["st-n14105520045","Samuel Kracowski",null,"memorial",null,53.13306,23.15389]
+],
+"slug":"biaystok"}

@@ -1,0 +1,20 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"mak",
+"rows":[
+["makhla","wd-Q95129339","Makhla Bilkis",1883,1942,"Transnistrien","bi"],
+["makhla","wd-Q94977314","Makhla Perlgerikht",1914,1942,"KZ Auschwitz","per"],
+["makhlis","wd-Q95107051","Lipa Makhlis",1891,1942,"Riwne","mak"],
+["makler","wd-Q105562348","Hanani Makler",1895,1941,"Kleine Festung Theresienstadt","mak"],
+["makova","wd-Q105651052","Hermína Maková",1900,null,null,"mak"],
+["makovcova","wd-Q105562350","Valerie Makovcová",1906,null,null,"mak"],
+["makovetzki","wd-Q95120644","Sunya Makovetzki",1927,1941,"Bilopillja","mak"],
+["makowski","wd-Q105366455","Franziska Makowski",1864,null,null,"mak"],
+["maks","wd-Q95119864","Maks Bornshtein",1906,1942,"Ghetto Litzmannstadt","bor"],
+["maks","wd-Q95116221","Maks Flasser",1906,1942,"Iwano-Frankiwsk","fla"],
+["maks","wd-Q95119307","Maks Indich",1890,1942,"Vernichtungslager Treblinka","i"],
+["maks","wd-Q95119690","Maks Morgenshtern",1888,1940,"Polen","mor"],
+["maks","wd-Q95115226","Maks Platzker",1889,1942,"Iwano-Frankiwsk","pl"],
+["maks","wd-Q94976734","Maks Rager",1910,1942,"Iwano-Frankiwsk","ra"],
+["maksimilian","wd-Q95111304","Maksimilian Sheinfeld",null,1944,"KZ Auschwitz","sh"]
+]}

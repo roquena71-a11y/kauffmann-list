@@ -1,0 +1,23 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"bej",
+"rows":[
+["bejach","wd-Q1145021","Curt Bejach",1890,1944,"KZ Auschwitz","bej"],
+["bejachova","wd-Q104222590","Julie Bejachová",1903,null,null,"bej"],
+["bejarano","wd-Q1370012","Esther Bejarano",1924,2021,"Hamburg","bej"],
+["bejkovska","wd-Q104222592","Anna Bejkovská",1894,1943,"Terezín","bej"],
+["bejkovska","wd-Q104222595","Anna Bejkovská",1875,null,null,"ben"],
+["bejkovska","wd-Q104222598","Evženie Bejkovská",1904,null,null,"bej"],
+["bejkovska","wd-Q104222608","Flora Bejkovská",1886,null,null,"bej"],
+["bejkovska","wd-Q104222612","Jana Bejkovská",1869,null,null,"bej"],
+["bejkovska","wd-Q104222616","Julie Bejkovská",1890,null,null,"bej"],
+["bejkovska","wd-Q104222619","Marta Bejkovská",1892,1943,"Terezín","bej"],
+["bejkovska","wd-Q104222624","Olga Bejkovská",1876,null,null,"bej"],
+["bejkovska","wd-Q104222626","Regina Bejkovská",1901,null,null,"bej"],
+["bejkovsky","wd-Q104222635","Erwin Bejkovský",1900,1942,"KZ Mauthausen","bej"],
+["bejkovsky","wd-Q104222639","František Bejkovský",1907,null,null,"bej"],
+["bejkovsky","wd-Q104222641","Josef Bejkovský",1893,1945,null,"bej"],
+["bejkovsky","wd-Q104222643","Karel Bejkovský",1891,null,null,"bej"],
+["bejkovsky","wd-Q104222648","Ota Bejkovský",1889,null,null,"bej"],
+["bejkovsky","wd-Q104222653","Zikmund Bejkovský",1870,1942,"Terezín","bej"]
+]}

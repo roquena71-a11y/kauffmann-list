@@ -1,0 +1,12 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"row",
+"rows":[
+["rowald","wd-Q105388962","Felix Rowald",1874,null,null,"row"],
+["rowe","wd-Q105388963","Michaelis Rowe",1869,1942,"Konzentrationslager Theresienstadt","row"],
+["rowelski","wd-Q105388964","Isidor Rowelski",1881,1944,"Konzentrationslager Theresienstadt","row"],
+["rowelski","wd-Q105388965","Jenny Rowelski",1894,null,null,"row"],
+["rowelski","wd-Q105388966","Sara Rowelski",1866,1944,"Ghetto Theresienstadt","row"],
+["rowinska","wd-Q105595337","Eliška Rowinská",1900,null,null,"row"],
+["rowinsky","wd-Q105595338","Jakub Rowinský",1892,1942,"KZ Majdanek","row"]
+]}

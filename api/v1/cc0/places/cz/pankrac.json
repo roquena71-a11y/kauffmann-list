@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"CZ",
+"label":"Pankrác",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105657751","Jiří Kohn",1896,"death","Pankrác",50.05861,14.43889],
+["wd-Q105564652","Josef Metzger",1874,"death","Pankrác",50.05861,14.43889],
+["wd-Q105642438","Pavel Seiner",1902,"death","Pankrác",50.0564,14.4349]
+],
+"slug":"pankrac"}

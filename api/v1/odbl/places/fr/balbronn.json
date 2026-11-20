@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":12,
+"country":"FR",
+"label":"Balbronn",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13076227880","Arthur Lévy",1889,"memorial","48 Rue Balbach",48.58381,7.43882],
+["st-n13076227884","Edmond Lévy",1905,"memorial","17 Rue Neuve",48.58497,7.43881],
+["st-n13076227879","Irène Lévy",1924,"memorial","48 Rue Balbach",48.58381,7.43881],
+["st-n13076227877","Isaac Schwartz",null,"memorial","59 Rue Balbach",48.58391,7.43768],
+["st-n13076034497","Marcel Lévy",1904,"memorial","146 Rue du Cercle",48.58419,7.43552],
+["st-n13076227883","Moïse Roth",1873,"memorial","29 Rue des Tonneliers",48.58439,7.43836],
+["st-n13076227875","Reine Weil née Weill",1893,"memorial","66 Rue du Château",48.58327,7.43724],
+["st-n13076227876","Robert Schwartz",1909,"memorial","59 Rue Balbach",48.58391,7.43768],
+["st-n13076227881","Rosa Lévy née Deutsch",1896,"memorial","48 Rue Balbach",48.58381,7.43881],
+["st-n13076227882","Rosa Roth née Lévy",1872,"memorial","29 Rue des Tonneliers",48.58439,7.43836],
+["st-n13076034496","Suzanne Lévy née Weill",1904,"memorial","146 Rue du Cercle",48.58419,7.43551],
+["st-n13076227878","Yvonne Lévy",1925,"memorial","48 Rue Balbach",48.58381,7.43881]
+],
+"slug":"balbronn"}

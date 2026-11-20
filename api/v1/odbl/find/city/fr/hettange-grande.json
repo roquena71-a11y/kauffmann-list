@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"FR",
+"label":"Hettange-Grande",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13798897710","Alfred Lévy",1868,1944,"Hettange-Grande","levy"],
+["st-n13798897719","Berthe Lévy",1901,1944,"Hettange-Grande","levy"],
+["st-n13798897717","Blanche Lévy",1901,1945,"Hettange-Grande","levy"],
+["st-n13798897718","Camille Lévy",1881,1944,"Hettange-Grande","levy"],
+["st-n13798897711","Clémence Lévy",1890,1944,"Hettange-Grande","levy"],
+["st-n13798897715","Florence Lévy",1914,1944,"Hettange-Grande","levy"],
+["st-n13798897712","Germaine Gothon Lévy",1914,1944,"Hettange-Grande","levy"],
+["st-n13798897716","Joseph Lévy",1915,1944,"Hettange-Grande","levy"],
+["st-n13798897714","Marcelle Caen",1912,1945,"Hettange-Grande","ca"],
+["st-n13798897713","Salomon Lévy",1880,1944,"Hettange-Grande","levy"]
+],
+"slug":"hettange-grande"}

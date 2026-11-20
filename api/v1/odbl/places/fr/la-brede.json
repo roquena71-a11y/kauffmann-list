@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"FR",
+"label":"La Brède",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13072573513","Jean Baillet",1920,"memorial","1 Chemin d'Avignon",44.68481,-0.52968],
+["st-n13072573512","Jean-René Lasserre",1915,"memorial","Place du Devoir de Mémoire",44.68215,-0.52634],
+["st-n13072573524","Jean Sudrat",1909,"memorial","11 Rue Latapie",44.68159,-0.52795]
+],
+"slug":"la-brede"}

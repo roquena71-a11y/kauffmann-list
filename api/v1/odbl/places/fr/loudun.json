@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"FR",
+"label":"Loudun",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13064499310","Bajla Apter née Ciesla",1896,"memorial","11 Rue du Clos Salé",47.0151,0.08359],
+["st-n13064499306","Beile Dyment",1927,"memorial","11 Rue du Clos Salé",47.01509,0.08359],
+["st-n13064499309","Georges Apter",1896,"memorial","11 Rue du Clos Salé",47.01509,0.08359],
+["st-n13064499304","Justin Isner",1889,"memorial","17 Boulevard Jean Pascault",47.00516,0.0815],
+["st-n13064499303","Martha Guttman née Elkisch",1878,"memorial","3 Rue des Visitandines",47.0114,0.07803],
+["st-n13064499307","Maurice Dyment",1935,"memorial","11 Rue du Clos Salé",47.01509,0.08359],
+["st-n13064499305","Régine Rein",1937,"memorial","32 Rue de la Porte Mirebeau",47.00578,0.08472],
+["st-n13064499308","Sara Dyment",1930,"memorial","11 Rue du Clos Salé",47.01509,0.08359]
+],
+"slug":"loudun"}

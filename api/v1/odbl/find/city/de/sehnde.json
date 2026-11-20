@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Sehnde",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105455215","Else Osterwald",1881,1944,"Uelzen","os"],
+["st-Q106989721","Hans-Georg Rose",1927,null,"Sehnde","rose_"],
+["st-Q106989607","Hans-Leo Brumsack",1915,null,"Sehnde","bru"],
+["st-Q106989699","Klara Rose",1857,null,"Sehnde","rose_"],
+["st-Q106989723","Paula Königheim",1869,1942,"Sehnde","kon"],
+["st-Q106989728","Salli Schragenheim",1875,1942,"Sehnde","schr"],
+["st-Q106989708","Siegfried Rose",1883,null,"Sehnde","rose_"],
+["st-Q106989714","Thea Rose",1891,null,"Sehnde","rose_"]
+],
+"slug":"sehnde"}

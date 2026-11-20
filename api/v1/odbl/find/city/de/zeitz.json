@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Zeitz",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q126020448","Auguste Lewy",1867,null,"Zeitz","lew"],
+["wd-Q105372349","Bertha Mendelsohn",1870,1944,"Zeitz","men"],
+["st-Q126020374","Emma Esther Mendelsohn",1888,null,"Zeitz","men"],
+["st-n2674803219","Gustav Baruch Flörsheim",1894,1943,"Zeitz","fl"],
+["st-Q126020458","Hermann Blumenthal",1875,null,"Zeitz","blu"],
+["st-n2674803229","Hilda Flörsheim",1891,1941,"Zeitz","fl"],
+["st-n2674803238","Ingeborg Flörsheim",1923,1943,"Zeitz","fl"],
+["st-Q126020470","Lydia Blumenthal",1868,null,"Zeitz","blu"],
+["wd-Q105882358","Siegfried Fürst",1889,1942,"Zeitz","fu"],
+["st-Q126020387","Siegfried Mendelsohn",1892,1942,"Zeitz","men"]
+],
+"slug":"zeitz"}

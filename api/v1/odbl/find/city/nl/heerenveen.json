@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"NL",
+"label":"Heerenveen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n14224537636","Aron Smeer",1873,1943,"Heerenveen","sm"],
+["st-n14224537644","Gerrit Leefsma",1883,1943,"Heerenveen","lee"],
+["st-n14224537641","Izaak Leefsma",1911,1943,"Heerenveen","lee"],
+["st-n14224537634","Jeltje van Loon-Smeer",1879,1942,"Heerenveen","loo"],
+["st-n14224537638","Johanna Bloch",1856,1941,"Heerenveen","blo"],
+["st-n14224537637","Mietje Smeer-Slager",null,1942,"Heerenveen","sm"],
+["st-n14224537643","Reina Leefsma-van Dam",1879,1943,"Heerenveen","da"],
+["st-n14224537639","Salomon Machiel Noach",1879,1944,"Heerenveen","no"],
+["st-n14224537635","Salomon van Loon",1876,1942,"Heerenveen","loo"],
+["st-n14224537632","Samuël Wolf",1881,1941,"Heerenveen","wolf_"]
+],
+"slug":"heerenveen"}

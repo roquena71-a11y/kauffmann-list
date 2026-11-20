@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Sögel",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105461031","Adda Weinberg",1934,1940,"Sögel","wein"],
+["wd-Q105461035","Alfred Weinberg",1928,1940,"Sögel","wein"],
+["wd-Q104806612","Arthur Jacobs",1933,1940,"Sögel","jac"],
+["wd-Q104806930","Georg Jakobs",1902,1940,"Sögel","jak"],
+["wd-Q104806617","Hedwig Jakobs",1898,1940,"Sögel","jak"],
+["wd-Q105461065","Isaac Weinberg",1885,1940,"Sögel","wein"],
+["st-Q140529910","Johanna Jacobs",1865,null,"Sögel","jac"],
+["wd-Q105461086","Martin Weinberg",1930,1940,"Sögel","wein"],
+["wd-Q105461092","Resi Weinberg",1929,1940,"Sögel","wein"],
+["wd-Q105461094","Rosa Weinberg",1899,1940,"Sögel","wein"]
+],
+"slug":"sogel"}

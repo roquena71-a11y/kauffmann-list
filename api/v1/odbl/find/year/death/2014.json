@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q77141","Alexander Grothendieck",1928,2014,"Berlin","gro"],
+["wd-Q94765794","Ella Michel",1920,2014,"Hamburg","mi"],
+["st-n7280404829","Hans Lebrecht",1915,2014,"Ulm","leb"],
+["wd-Q141434978","Ilse Neuberger",1920,2014,"Leutkirch im Algäu","neu"],
+["wd-Q96108875","Lotte Lore Michaelis",1913,2014,"Memmingen","mi"],
+["wd-Q3898065","Paul Gerhard Vogel",1921,2014,"Berlin","v"],
+["wd-Q69094","Ralph Giordano",1923,2014,"Hamburg","gi"],
+["wd-Q55594655","Selma Behr",1920,2014,"Ulm","beh"]
+],
+"year":2014}

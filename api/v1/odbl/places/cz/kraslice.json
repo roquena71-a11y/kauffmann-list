@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"CZ",
+"label":"Kraslice",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13901729278","Anna Bienenfeld",1906,"memorial",null,50.33064,12.50745],
+["st-n13901731571","Gustav Kohn",1873,"memorial",null,50.33064,12.50743],
+["st-n13901726489","Ida Kohn",1882,"memorial",null,50.33064,12.50742],
+["st-n13901711066","Marta Zentner",1909,"memorial",null,50.33063,12.50744],
+["st-n13901704234","Otto Kohn",1911,"memorial",null,50.33063,12.50743],
+["st-n13901687533","Therese Kohn",1908,"memorial",null,50.33064,12.50744]
+],
+"slug":"kraslice"}

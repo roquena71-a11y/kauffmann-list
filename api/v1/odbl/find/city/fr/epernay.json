@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"FR",
+"label":"Épernay",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13027217662","Colette Levy",1922,1942,"Épernay","levy"],
+["st-n13027217665","Félix Levy",1887,1942,"Épernay","levy"],
+["st-n13027217663","Robert Levy",1921,1943,"Épernay","levy"],
+["st-n13027217664","Yvonne Levy née Picard",1897,1942,"Épernay","pi"]
+],
+"slug":"epernay"}

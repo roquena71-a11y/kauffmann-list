@@ -1,0 +1,22 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"kaa",
+"rows":[
+["kaars","st-n14240147759","Eliazar van der Kaars",1876,1942,"Gorredijk","kaa"],
+["kaars","st-n14240147757","Emanuel van der Kaars",1886,1942,"Gorredijk","kaa"],
+["kaars","st-n14240147758","Johanna van der Kaars-Goldsmith",1870,1942,"Gorredijk","kaa"],
+["kaasch","wd-Q132144000","Wienand Kaasch",1890,1945,"Berlin","kaa"],
+["kaatje","wd-Q115060248","Kaatje Benninga",1898,1943,"Hamburg","ben"],
+["kaatje","st-n3872372196","Kaatje Northeimer-Frankenhuis",1885,1942,"Almelo","no"],
+["kaatje","st-n14135499325","Kaatje van Blijdenstijn-Levie",1887,null,"Zwolle","bli"],
+["kaatje","st-n14202371918","Kaatje van Hasselt-Bernard",1871,1943,"Gouda","has"],
+["kaatz","st-Q134691184","Alexander Kaatz",1903,null,"Pfungstadt","kaa"],
+["kaatz","st-n2027837075","Anna Kaatz",null,null,"Rostock","kaa"],
+["kaatz","st-Q134691186","Erich Kaatz",1911,null,"Pfungstadt","kaa"],
+["kaatz","st-n8661578389","Frieda Kaatz",1890,1942,"Rostock","kaa"],
+["kaatz","st-Q134691185","Hilde Kaatz",1910,null,"Pfungstadt","kaa"],
+["kaatz","wd-Q104807962","Johanna Kaatz",1877,1940,"Pfungstadt","kaa"],
+["kaatz","st-n8661578388","Louise Kaatz",1900,1942,"Rostock","kaa"],
+["kaatz","st-Q134691182","Max Kaatz",1869,null,"Pfungstadt","kaa"],
+["kaatz","st-Q134691187","Ruth Kaatz",1914,null,"Pfungstadt","kaa"]
+]}

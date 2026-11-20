@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"CH",
+"label":"St. Gallen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q134881862","Arthur B. Vogt",1912,"memorial","Kolosseumstrasse 21",47.43759,9.39213],
+["wd-Q134455785","Martha Wodiunig",1906,"memorial",null,47.42132,9.37374],
+["wd-Q134454971","Szloma Sochaczewski",1904,"memorial","Rosenbergstrasse 44",47.42383,9.36899]
+],
+"slug":"st-gallen"}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"UA",
+"label":"Schytomyr",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94976083","Aron Shtraim",null,"death","Schytomyr",50.25444,28.65778],
+["wd-Q95116985","Khaika Shtraim",null,"death","Schytomyr",50.25444,28.65778],
+["wd-Q95106921","Pinkhas Hesses",1855,"death","Schytomyr",50.25444,28.65778],
+["wd-Q95127586","Reizya Landa",1860,"death","Schytomyr",50.25444,28.65778],
+["wd-Q95111867","Shabtai Levit",1895,"death","Schytomyr",50.25444,28.65778],
+["wd-Q94976968","Tzilya Shtraim",null,"death","Schytomyr",50.25444,28.65778]
+],
+"slug":"schytomyr"}

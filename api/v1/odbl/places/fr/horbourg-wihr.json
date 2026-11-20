@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"FR",
+"label":"Horbourg-Wihr",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13119348511","Adolphe Dreyfus",1895,"memorial","44 Grand'Rue",48.08106,7.39302],
+["st-n13119348510","Claude Dreyfus",1928,"memorial","44 Grand'Rue",48.08106,7.39301],
+["st-n13119348509","Émilie Dreyfus née Worms",1898,"memorial","44 Grand'Rue",48.08106,7.39302],
+["st-n13119348507","Lucie Carpe",1889,"memorial","28 Grand'Rue",48.08133,7.39135],
+["st-n13119348508","Marguerite Lévy née Bickart",1880,"memorial","28 Grand'Rue",48.08133,7.39135],
+["st-n13119348506","Théodore Lévy",1879,"memorial","28 Grand'Rue",48.08132,7.39135]
+],
+"slug":"horbourg-wihr"}

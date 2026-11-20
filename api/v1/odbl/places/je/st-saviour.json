@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"JE",
+"label":"St Saviour",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13021473673","Erica Richardson born Oljenick",1883,"memorial","8, Overseas, Dicq Road",49.17828,-2.09527],
+["wd-Q19325872","Harold Le Druillenec",1911,"memorial","Westdene, Langley Avenue",49.19648,-2.08969],
+["st-n13021249318","Jean Marie Rossi",1898,"memorial","Ypriana, 3, Chestnut Avenue, Maufant",49.21001,-2.06257],
+["st-n13021473674","John Max Finkelstein",1882,"memorial","Mon Desir, Bagot, Georgetown Road",49.1794,-2.09103]
+],
+"slug":"st-saviour"}

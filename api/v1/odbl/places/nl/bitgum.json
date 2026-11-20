@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"NL",
+"label":"Bitgum",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n14210470167","Lolle Rondaan",1919,"memorial","Berltsumerdyk 2",53.23794,5.68378],
+["st-n14210470168","Wijbe Dijkstra",1894,"memorial","Berltsumerdyk 3",53.23818,5.68248]
+],
+"slug":"bitgum"}

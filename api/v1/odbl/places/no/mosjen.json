@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"NO",
+"label":"Mosjøen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13233668041","Abraham Feidelmann",1893,"memorial","Elvegata 19",65.83412,13.19612],
+["wd-Q138359451","Isak Shotland",1892,"memorial","Peter Bechs gate 14",65.83866,13.19042],
+["st-n13233668042","Moses Schapiro",1887,"memorial","Skolegata 12",65.83837,13.19302]
+],
+"slug":"mosjen"}

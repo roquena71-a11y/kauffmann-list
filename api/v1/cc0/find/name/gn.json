@@ -1,0 +1,10 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"gn",
+"rows":[
+["gnadenfeld","wd-Q104653164","Elly Gnadenfeld",1910,null,null,"gn"],
+["gnadenfeld","wd-Q104653165","Rosa Gnadenfeld",1880,1944,"Konzentrationslager Theresienstadt","gn"],
+["gnana","wd-Q95127289","Gnana Liblikh",1898,1942,"Krakau","lib"],
+["gnick","wd-Q104654671","Karoline Gnick",1870,1942,"Konzentrationslager Theresienstadt","gn"],
+["gnoss","wd-Q105724379","Friedrich Wilhelm Gnoss",1889,1944,"Konzentrationslager Neuengamme","gn"]
+]}

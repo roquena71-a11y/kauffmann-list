@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"elz",
+"rows":[
+["elza","wd-Q94975105","Elza Berental",1898,1942,"Transnistrien","bere"],
+["elza","wd-Q95111209","Elza Perlman",1881,1942,"KZ Auschwitz","per"],
+["elza","wd-Q95108087","Elza Proper",1891,1944,"KZ Auschwitz","pro"],
+["elzas","wd-Q104446721","Fritz Elzas",1914,1944,"Czechowice-Dziedzice","el"],
+["elzas","wd-Q104446809","Rebecca Elzas",1925,1945,"Konzentrationslager Theresienstadt","el"],
+["elzholz","wd-Q104447413","Adele Elzholz",1874,1943,"Konzentrationslager Theresienstadt","el"]
+]}

@@ -1,0 +1,18 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"bey",
+"rows":[
+["bey","st-n4660248777","Fritz von der Bey",1932,1943,"Mülheim an der Ruhr","bey"],
+["beyer","st-n8572696655","Alfred Beyer",1876,1944,"Rostock","bey"],
+["beyer","st-Q125870614","Eva Beyer",1937,null,"Leipzig","bey"],
+["beyer","st-n6465477277","Hermann Beyer",1906,null,"Röbel/Müritz","bey"],
+["beyer","st-n11962079110","Kurt Beyer",1899,1941,"Schkeuditz","bey"],
+["beyer","st-n6465477276","Kurt Beyer",1903,null,"Röbel/Müritz","bey"],
+["beyer","st-Q125870593","Margarete Herta Beyer",1914,null,"Leipzig","bey"],
+["beyer","st-n8572696653","Margarethe Beyer",1882,1944,"Rostock","bey"],
+["beyer","wd-Q104251685","Robert Beyer",1870,1943,"Röbel/Müritz","bey"],
+["beyer","wd-Q104251688","Selma Beyer",1874,1942,"Hamburg","bey"],
+["beyerlein","st-n3394396735","Lina Beyerlein",1882,null,"Höxter","bey"],
+["beyla","st-n12543703949","Beyla Rosenberg",1892,null,"Wismar","rosenb"],
+["beyth","st-n6366157554","Reinhard Beyth",1923,1940,"Bielefeld","bey"]
+]}

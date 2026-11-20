@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"UA",
+"label":"Kropywnyzkyj",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94975656","Dina Palotash",1891,1941,"Kropywnyzkyj","pa"],
+["wd-Q95107921","Feibel Palotash",1914,1941,"Kropywnyzkyj","pa"],
+["wd-Q94976150","Fiodor Lozovski",1904,1942,"Kropywnyzkyj","loz"],
+["wd-Q95120506","Guta Surname unknown",null,1941,"Kropywnyzkyj","u"],
+["wd-Q95129312","Rakhel Palotash",1914,1941,"Kropywnyzkyj","pa"],
+["wd-Q95119693","Shmuel Palotash",1920,1941,"Kropywnyzkyj","pa"],
+["wd-Q95119467","Tzvi Palotash",1889,1941,"Kropywnyzkyj","pa"]
+],
+"slug":"kropywnyzkyj"}

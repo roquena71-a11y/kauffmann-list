@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"PL",
+"label":"Bełżyce",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q131930648","Albert Michel",1898,null,"Bełżyce","mi"],
+["wd-Q95108385","Avraham Pres",1889,1942,"Bełżyce","pre"],
+["wd-Q95116893","Ester Pres",1924,1942,"Bełżyce","pre"],
+["wd-Q94976916","Kalman Pres",1886,1942,"Bełżyce","pre"],
+["wd-Q94975870","Moshe Bibel",null,1942,"Bełżyce","bi"],
+["wd-Q95125437","Ptakhia Praker",1915,1943,"Bełżyce","pra"],
+["wd-Q95126964","Shaul Pres",1922,1942,"Bełżyce","pre"]
+],
+"slug":"bezyce"}

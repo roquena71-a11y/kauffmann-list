@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"DE",
+"label":"Sassnitz",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3947825431","Anna Marie Wittschekowski",1918,1944,"Sassnitz","wi"],
+["wd-Q140937262","Charlotte Schimmelpfennig",1897,1971,"Sassnitz","schi"],
+["st-n12766472660","Franz Duqué",1892,null,"Sassnitz","du"],
+["st-Q101072755","Hans Baale",1895,1943,"Sassnitz","baa"],
+["st-n3947825436","Hermann Bebert",1905,1945,"Sassnitz","beb"],
+["st-n3947825438","Lazar Lemo",null,null,"Sassnitz","lem"],
+["st-Q101072740","Stanislaw Bielecki",1907,null,"Sassnitz","bi"]
+],
+"slug":"sassnitz"}

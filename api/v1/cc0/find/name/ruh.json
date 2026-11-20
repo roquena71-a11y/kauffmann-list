@@ -1,0 +1,19 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ruh",
+"rows":[
+["ruhemann","wd-Q105389065","Anna Ruhemann",1866,1942,"Ghetto Theresienstadt","ru"],
+["ruhemann","wd-Q105389066","Else Ruhemann",1874,1943,"Konzentrationslager Theresienstadt","ru"],
+["ruhemann","wd-Q105389067","Emma Ruhemann",1865,1942,"Ghetto Theresienstadt","ru"],
+["ruhemann","wd-Q105464566","Jakob Ruhemann",1861,1944,"Konzentrationslager Theresienstadt","ru"],
+["ruhemann","wd-Q105464575","Kurt Ruhemann",1897,1944,"Konzentrationslager Theresienstadt","ru"],
+["ruhemann","wd-Q105389062","Margarete Ruhemann",1863,null,null,"ru"],
+["ruhhalter","wd-Q105389097","Arnold Aron Ruhhalter",1882,null,null,"ru"],
+["ruhm","wd-Q105354215","Felix Ruhm",1868,1943,"Konzentrationslager Theresienstadt","ru"],
+["ruhm","wd-Q105389068","Hedwig Ruhm",1872,null,null,"sac"],
+["ruhm","wd-Q105389064","Henriette Ruhm",1869,null,null,"ru"],
+["ruhr","wd-Q105389069","Sophie Ruhr",1863,1942,"Konzentrationslager Theresienstadt","ru"],
+["ruhstadt","wd-Q105389070","Henriette Ruhstadt",1851,1942,"Konzentrationslager Theresienstadt","ru"],
+["ruhstadt","wd-Q106468221","Selma Ruhstadt",1889,null,null,"ru"],
+["ruhstadt","wd-Q94819340","Siegfried Ruhstadt",1880,1944,null,"ru"]
+]}

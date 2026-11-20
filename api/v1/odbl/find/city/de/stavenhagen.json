@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"country":"DE",
+"label":"Stavenhagen",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q101010963","Arthur Lewin",1882,null,"Stavenhagen","lew"],
+["st-Q101010971","Bernhard Lewin",1913,null,"Stavenhagen","lew"],
+["st-Q101011015","Edith Lewin",1913,null,"Stavenhagen","lew"],
+["st-Q101010958","Emma Lewin",1879,null,"Stavenhagen","lew"],
+["st-Q101010938","Erich Jacobsohn",1910,null,"Stavenhagen","jac"],
+["st-Q101010924","Hans Jacobsohn",1882,null,"Stavenhagen","jac"],
+["st-Q101010879","Harry Barthelt",1928,1943,"Stavenhagen","bar"],
+["st-Q101010933","Heinz Jacobsohn",1924,null,"Stavenhagen","jac"],
+["st-Q101010964","Hugo Dosmar",1881,null,"Stavenhagen","do"],
+["st-Q101010930","Käte Jacobsohn",1886,null,"Stavenhagen","jac"],
+["st-Q101010950","Max Lewin",1884,null,"Stavenhagen","lew"],
+["st-Q101010992","Rosalie Lewin",1882,null,"Stavenhagen","lew"]
+],
+"slug":"stavenhagen"}

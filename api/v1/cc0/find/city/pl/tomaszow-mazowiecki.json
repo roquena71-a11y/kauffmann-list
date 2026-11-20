@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"PL",
+"label":"Tomaszów Mazowiecki",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95125341","Frania Przedborski",1917,1943,"Tomaszów Mazowiecki","prz"],
+["wd-Q95120961","Heniek Przedborski",1923,1943,"Tomaszów Mazowiecki","prz"],
+["wd-Q94975989","Lola Przedborski",1918,1943,"Tomaszów Mazowiecki","prz"],
+["wd-Q95111356","Sina Likhtenfeld",1880,1943,"Tomaszów Mazowiecki","lik"]
+],
+"slug":"tomaszow-mazowiecki"}

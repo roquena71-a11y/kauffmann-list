@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ax",
+"rows":[
+["axel","wd-Q105512851","Axel Metz",1903,1944,"Konzentrationslager Theresienstadt","met"],
+["axelrad","wd-Q104211064","Hilde Axelrad",1910,1942,"Terezín","ax"],
+["axelrad","wd-Q104211065","Lea Axelrad",1882,null,null,"ax"],
+["axelradova","wd-Q104211067","Arnoštka Axelradová",1902,null,null,"ax"],
+["axelradova","wd-Q104211069","Debora Axelradová",1906,null,null,"ax"],
+["axelradova","wd-Q104211071","Mincia Axelradová",1893,null,null,"ax"]
+]}

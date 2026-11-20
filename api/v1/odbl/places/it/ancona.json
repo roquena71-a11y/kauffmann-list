@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"IT",
+"label":"Ancona",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7212911641","Achille Guglielmi",1879,"memorial",null,43.61299,13.53438],
+["st-n7212911642","Elsa Zamorani",1883,"memorial",null,43.61299,13.53438],
+["st-n7168085834","Franco Coen Beninfante",1902,"memorial",null,43.61958,13.50967],
+["st-n7212911640","Gino Guglielmi",1911,"memorial",null,43.61299,13.53438],
+["wd-Q3764745","Gino Tommasi",1895,"memorial",null,43.61406,13.52534],
+["st-n13533632869","Lamberto Morbidelli",null,"memorial","Via Esino 90",43.60768,13.45675],
+["st-n7168085835","Lucio Coen Beninfante",1906,"memorial",null,43.61958,13.50967]
+],
+"slug":"ancona"}

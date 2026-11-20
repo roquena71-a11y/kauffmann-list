@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3217017115","Dr. Paul Kahn",1886,1967,"Baden-Baden","kah"],
+["wd-Q135400893","Elfriede Grotefendt",1883,1967,"Hannover","gro"],
+["wd-Q126364779","Erna Stern",1894,1967,"Kiedrich","stern"],
+["wd-Q116009719","Louis Rosenthal",1885,1967,"Büren","rosent"],
+["wd-Q100272284","Luise Bacharach",1887,1967,"Memmingen","bac"],
+["wd-Q55594723","Siegmund Weglein",1887,1967,"Ulm","weg"]
+],
+"year":1967}

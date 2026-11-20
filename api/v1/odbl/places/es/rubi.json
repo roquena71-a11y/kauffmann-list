@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"ES",
+"label":"Rubí",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13633382310","Andreu Vidal Almirall",1912,"memorial","Carrer de Sant Miquel, 13",41.49057,2.03312],
+["st-n13633347101","Antoni Òdena Òdena",1905,"memorial","Carretera de Terrassa, 33",41.49316,2.0302],
+["st-n13633353835","Antoni Pereña Salas",1895,"memorial","Carrer Nou, 7",41.4925,2.03268],
+["st-n13633415319","Enric Aragonès Campderròs",1904,"memorial","Carrer Narcís Menard, 15",41.49336,2.03105],
+["st-n13633400174","Francesc Bartroli Creus",1911,"memorial","Carrer de Sant Jaume, 16",41.49007,2.03192],
+["st-n13633368326","Gregori Beltran Jardiel",1919,"memorial","Carrer Magallanes, 33",41.49143,2.03422],
+["st-n13633319930","Jesús Montroig Cuartero",1904,"memorial","Carrer del Pintor Murillo, 13",41.48807,2.02955],
+["st-n13633359744","Joaquim Rusiñol Folch",1912,"memorial","Carrer de Sant Pere, 5",41.48967,2.03243],
+["st-n13633348191","José López de Letona Angulo",1906,"memorial","Carrer de Rafel Casanova, 12",41.4931,2.03165]
+],
+"slug":"rubi"}

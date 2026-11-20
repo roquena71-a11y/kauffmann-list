@@ -1,0 +1,16 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"elt",
+"rows":[
+["eltbogen","wd-Q104447409","Eva Eltbogen",1852,1942,"Konzentrationslager Theresienstadt","el"],
+["elte","wd-Q104446720","Elisabeth Elte-Speijer",1896,1944,"KZ Auschwitz","el"],
+["elte","wd-Q138680517","Freddy Elte",1929,1942,"KZ Auschwitz","el"],
+["elte","wd-Q2655668","Harry Elte",1880,1944,"Konzentrationslager Theresienstadt","el"],
+["elter","wd-Q104447411","David Elter",1891,null,null,"el"],
+["elter","wd-Q105615952","Elter Getzel Ulreich",1901,null,null,"u"],
+["elter","wd-Q104447412","Hendla Elter",1896,null,null,"el"],
+["eltermann","wd-Q104450299","Taube Eltermann",1860,1942,"Konzentrationslager Theresienstadt","el"],
+["elters","wd-Q104449474","Jan Elters",1888,null,null,"el"],
+["eltersova","wd-Q104449473","Barbora Eltersová",1889,null,null,"el"],
+["eltzova","wd-Q104449476","Eleonora Eltzová",1882,null,null,"el"]
+]}

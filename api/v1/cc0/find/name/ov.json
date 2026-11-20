@@ -1,0 +1,12 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ov",
+"rows":[
+["ovander","wd-Q105455254","Elsbeth Ovander",1876,1944,"Konzentrationslager Theresienstadt","bi"],
+["oven","wd-Q106855909","Emanuel van Oven",1888,1943,"Szopienice","ov"],
+["overste","wd-Q105654324","Rachel Kisch-Overste",1889,1944,"KZ Auschwitz","ki"],
+["overweg","wd-Q105655013","Emma Overweg",1937,1944,"KZ Auschwitz","ov"],
+["overweg","wd-Q105655014","Leonhard Overweg",1897,null,null,"ov"],
+["overweg","wd-Q105655015","Nolles Overweg",1935,1944,"KZ Auschwitz","ov"],
+["ovicz","wd-Q105512940","David Ovicz",1923,1945,"Konzentrationslager Theresienstadt","ov"]
+]}

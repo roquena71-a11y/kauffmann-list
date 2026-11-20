@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"PL",
+"label":"Piotrków Trybunalski",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95106128","Dvora Plakhchinski",1898,"death","Piotrków Trybunalski",51.4,19.68333],
+["wd-Q94976814","Eliezer Venglishevski",1904,"death","Piotrków Trybunalski",51.4,19.68333],
+["wd-Q95113549","Feigel Libeskind",1909,"death","Piotrków Trybunalski",51.4,19.68333],
+["wd-Q95112293","Fishel Plakhchinski",1897,"death","Piotrków Trybunalski",51.4,19.68333],
+["wd-Q95126715","Heniek Pravda",1911,"death","Piotrków Trybunalski",51.4,19.68333],
+["wd-Q95118067","Khaim Rozenblat",1916,"death","Piotrków Trybunalski",51.4,19.68333],
+["wd-Q95113894","Lea Pirotzki",1910,"death","Piotrków Trybunalski",51.4,19.68333],
+["wd-Q94975102","Lea Plakhchinski",1900,"death","Piotrków Trybunalski",51.4,19.68333],
+["wd-Q95107383","Moshe Plakhchinski",1899,"death","Piotrków Trybunalski",51.4,19.68333],
+["wd-Q95110828","Shlomo Plakhchinski",1881,"death","Piotrków Trybunalski",51.4,19.68333],
+["wd-Q94977087","Tzirel Shvartz",1877,"death","Piotrków Trybunalski",51.4,19.68333]
+],
+"slug":"piotrkow-trybunalski"}

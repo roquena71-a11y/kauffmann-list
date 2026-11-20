@@ -1,0 +1,23 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"haf",
+"rows":[
+["hafner","wd-Q104687302","Chaje Hafner",1873,null,null,"haf"],
+["hafner","wd-Q95106184","Feiga Hafner",1896,1943,"KZ Auschwitz","haf"],
+["hafner","wd-Q104687304","Friederike Hafner",1879,null,null,"so"],
+["hafner","wd-Q95120604","Gizela Hafner",1881,1941,"Zagreb","haf"],
+["hafner","wd-Q104687307","Jakob Hafner",1873,null,"Konzentrationslager Theresienstadt","haf"],
+["hafner","wd-Q104687309","Karl Hafner",1873,1942,"Konzentrationslager Theresienstadt","haf"],
+["haft","wd-Q105517977","Adolf Haft",1896,null,null,"haf"],
+["haftel","wd-Q104913529","Ida Haftel",1872,null,null,"haf"],
+["haftel","wd-Q105517986","Leopold Haftel",1859,1942,"Konzentrationslager Theresienstadt","haf"],
+["haftel","wd-Q105517984","Otto Haftel",1895,1942,"KZ Majdanek","haf"],
+["haftelova","wd-Q105517979","Ernestina Haftelová",1861,1942,"Konzentrationslager Theresienstadt","haf"],
+["haftelova","wd-Q105517981","Helena Haftelová",1882,null,null,"haf"],
+["haftelova","wd-Q105517982","Hilda Haftelová",1908,null,null,"haf"],
+["haftelova","wd-Q105517983","Jolanka Haftelová",1894,null,null,"haf"],
+["haftka","wd-Q94977186","Rifka Haftka",1890,1943,"Zduńska Wola","haf"],
+["haftler","wd-Q104685924","Esther Haftler-Müller",1896,1944,"KZ Auschwitz","haf"],
+["haftler","wd-Q104685925","Regina Haftler",1934,1944,"KZ Auschwitz","haf"],
+["haftler","wd-Q104685927","Sientje Haftler",1904,1945,"KZ Auschwitz","haf"]
+]}

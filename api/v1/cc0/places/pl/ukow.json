@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"PL",
+"label":"Łuków",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95126084","Eliahu Peltzman",null,"death","Łuków",51.91667,22.38333],
+["wd-Q94976326","Hinda Kukva",1870,"death","Łuków",51.91667,22.38333],
+["wd-Q95113778","Lea Pekht",1921,"death","Łuków",51.91667,22.38333],
+["wd-Q95125847","Liba Zhezhak",1902,"death","Łuków",51.91667,22.38333],
+["wd-Q95106013","Malka Prenovitz",1890,"death","Łuków",51.91667,22.38333],
+["wd-Q94976103","Matl Faktor",1882,"death","Łuków",51.91667,22.38333],
+["wd-Q95112483","Tzipa Pekht",1897,"death","Łuków",51.91667,22.38333],
+["wd-Q95122745","Tzvi Prenovitz",1892,"death","Łuków",51.91667,22.38333],
+["wd-Q95112686","Yaakov Nisenkorn",1890,"death","Łuków",51.91667,22.38333],
+["wd-Q95125698","Yaakov Peltzman",1907,"death","Łuków",51.91667,22.38333],
+["wd-Q95118717","Yekhiel Rozenblum",null,"death","Łuków",51.91667,22.38333]
+],
+"slug":"ukow"}

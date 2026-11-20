@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"PL",
+"label":"Biłgoraj",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95115392","Dvora Presberger",1886,1942,"Biłgoraj","pre"],
+["wd-Q95108505","Gershon Feifer",1921,1943,"Biłgoraj","fei"],
+["wd-Q95106097","Heniya Lipman",1910,1940,"Biłgoraj","lip"],
+["wd-Q95125786","Pesia Feifer",1891,1943,"Biłgoraj","fei"],
+["wd-Q94977005","Tevel Fuks",1885,1943,"Biłgoraj","fuk"],
+["wd-Q95128906","Volf Feifer",1890,1943,"Biłgoraj","fei"]
+],
+"slug":"bigoraj"}

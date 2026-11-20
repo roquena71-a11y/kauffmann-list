@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"DE",
+"label":"Marktbreit",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q134726338","Abraham Goldbach",1881,null,"Marktbreit","goldb"],
+["st-Q134726336","Carola Bolley",1908,1942,"Marktbreit","bo"],
+["st-Q134726343","Clara Oppenheimer",1882,null,"Marktbreit","op"],
+["st-Q134726337","Esther Friedländer",1909,null,"Marktbreit","fri"],
+["st-Q134726340","Frieda Lauber",1892,null,"Marktbreit","lau"],
+["st-Q134726344","Jetta Ida Rosenberg",1881,null,"Marktbreit","rosenb"],
+["st-Q134726346","Jette Wolfrom",1880,null,"Marktbreit","wolfr"],
+["st-Q134726341","Karl Lauber",1884,null,"Marktbreit","lau"],
+["st-Q134726339","Klara Goldbach",1889,null,"Marktbreit","goldb"],
+["st-Q134726345","Mendel Samuel Rosenberg",1880,null,"Marktbreit","rosenb"]
+],
+"slug":"marktbreit"}

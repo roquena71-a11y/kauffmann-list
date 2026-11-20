@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"PL",
+"label":"Zduńska Wola",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95118307","Izio Pik",1920,1942,"Zduńska Wola","pik"],
+["wd-Q94977186","Rifka Haftka",1890,1943,"Zduńska Wola","haf"],
+["wd-Q95128051","Sara Falbinski",1882,1942,"Zduńska Wola","fal"],
+["wd-Q95116952","Volf Pshibilski",1891,1942,"Zduńska Wola","ps"],
+["wd-Q95109260","Zeev Falbinski",1883,1940,"Zduńska Wola","fal"]
+],
+"slug":"zdunska-wola"}

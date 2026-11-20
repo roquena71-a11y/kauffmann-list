@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Linden-Limmer",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q107098048","Else Speier",1898,1940,"Linden-Limmer","sp"],
+["wd-Q106898701","Hans Goldschmidt",1902,null,"Linden-Limmer","golds"],
+["wd-Q106899704","Hella Goldschmidt",1913,1945,"Linden-Limmer","golds"],
+["st-Q61409839","Johanna Goldschmidt",1878,null,"Linden-Limmer","golds"],
+["wd-Q107098086","Lore Speier",1923,1940,"Linden-Limmer","sp"],
+["wd-Q107098111","Ludwig Speier",1887,1940,"Linden-Limmer","sp"]
+],
+"slug":"linden-limmer"}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"IE",
+"label":"Dublin",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13067653175","Ephraim Saks",1915,1942,"Dublin","sak"],
+["wd-Q56036390","Ettie Gluck born Steinberg",1914,1942,"Dublin","stei"],
+["st-n13067653176","Isaac Shishi",1891,1941,"Dublin","sh"],
+["st-n13067653179","Jeanne (Lena) Saks",1918,1942,"Dublin","sak"],
+["st-n13067653177","Leon Gluck",1939,1942,"Dublin","gl"],
+["st-n13067653178","Wojteck Gluck",1912,1942,"Dublin","gl"]
+],
+"slug":"dublin"}

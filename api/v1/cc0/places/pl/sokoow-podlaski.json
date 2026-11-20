@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"PL",
+"label":"Sokołów Podlaski",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94977329","David Pshezhetzki",1890,"death","Sokołów Podlaski",52.4,22.25],
+["wd-Q95110968","Gitel Pshezhetzki",1890,"death","Sokołów Podlaski",52.4,22.25],
+["wd-Q95127019","Hersh Fudenberg",1889,"death","Sokołów Podlaski",52.4,22.25],
+["wd-Q95119629","Khaim Pshepiorka",1915,"death","Sokołów Podlaski",52.4,22.25],
+["wd-Q95125497","Khana Farbshtein",1920,"death","Sokołów Podlaski",52.4,22.25],
+["wd-Q94976059","Malka Pshepiorka",1887,"death","Sokołów Podlaski",52.4,22.25],
+["wd-Q95115366","Pesakh Farbiash",1876,"death","Sokołów Podlaski",52.4,22.25],
+["wd-Q95123407","Yaakov Fudenberg",1909,"death","Sokołów Podlaski",52.4,22.25]
+],
+"slug":"sokoow-podlaski"}

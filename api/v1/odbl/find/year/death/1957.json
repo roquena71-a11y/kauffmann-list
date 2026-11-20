@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n3009166494","Georg Alfred Grein",1906,1957,"Radolfzell","gre"],
+["wd-Q18655279","Hanka Grothendieck",1900,1957,"Berlin","gro"],
+["wd-Q1302486","Heinrich Schroth",1902,1957,"Solingen","schr"],
+["wd-Q1612344","Hermann Petri",1883,1957,"Neunkirchen","pe"],
+["wd-Q29570796","Ludwig Meyer",1886,1957,"Coburg","meyer_"],
+["wd-Q137444195","Pauline Gutjahr",1878,1957,"Konstanz","gu"]
+],
+"year":1957}

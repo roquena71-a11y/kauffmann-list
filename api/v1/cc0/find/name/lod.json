@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"lod",
+"rows":[
+["loddy","wd-Q104218646","Loddy Bahlsen",1872,1943,"Terezín","bah"],
+["lode","wd-Q105364648","Elfriede Lode",1893,1943,"Konzentrationslager Theresienstadt","katz"],
+["loder","wd-Q44085428","Regina Löder",1898,1943,null,"lod"],
+["lodewijk","wd-Q142184225","Lodewijk Hildesheim",1895,1943,"Ozimek","hil"],
+["lodewijk","wd-Q105654642","Lodewijk Lopes-Cardozo",1910,1945,null,"lop"],
+["lodewijk","wd-Q105655468","Lodewijk Sarlouis",1884,1944,"KZ Auschwitz","sar"]
+]}

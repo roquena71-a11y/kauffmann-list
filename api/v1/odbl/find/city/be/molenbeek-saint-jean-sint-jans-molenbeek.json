@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"BE",
+"label":"Molenbeek-Saint-Jean - Sint-Jans-Molenbeek",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7164883602","Doba Dora Libeskind",1926,1942,"Molenbeek-Saint-Jean - Sint-Jans-Molenbeek","lib"],
+["st-n7164883600","Hindera Estera Elberg-Bitter",1899,null,"Molenbeek-Saint-Jean - Sint-Jans-Molenbeek","el"],
+["st-n7164883599","Joseph Elberg",1888,null,"Molenbeek-Saint-Jean - Sint-Jans-Molenbeek","el"],
+["st-n7164883601","Szifra Léa Libeskind",1924,1942,"Molenbeek-Saint-Jean - Sint-Jans-Molenbeek","lib"]
+],
+"slug":"molenbeek-saint-jean-sint-jans-molenbeek"}

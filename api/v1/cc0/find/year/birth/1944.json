@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":14,
+"kind":"birth",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104420058","Albert Cohen",1944,1944,"KZ Auschwitz","cohe"],
+["wd-Q104808819","Alice Hoffmann",1944,1945,"Konzentrationslager Theresienstadt","hof"],
+["wd-Q104447514","Chaje Ellberger",1944,1944,"Konzentrationslager Theresienstadt","el"],
+["wd-Q105566065","Dan Nathan",1944,1944,"Konzentrationslager Theresienstadt","na"],
+["wd-Q105655594","Eddy Sloog",1944,1944,"KZ Auschwitz","sl"],
+["wd-Q104544295","Ellen Fogel-Cary",1944,1944,"KZ Auschwitz","fo"],
+["wd-Q105599325","Eva Schönbaum",1944,1945,"Konzentrationslager Theresienstadt","scho"],
+["wd-Q105654215","Harry Ronald Rosenbaum",1944,1944,"KZ Auschwitz","rosenb"],
+["wd-Q104544350","Jechaval Freimann",1944,1944,"KZ Auschwitz","frei"],
+["wd-Q105655386","Liesel Rosenthal",1944,1944,"KZ Auschwitz","rosent"],
+["wd-Q105655899","Maud Waag",1944,1945,"KZ Auschwitz","waa"],
+["wd-Q104211501","Michael Adler",1944,1945,"Terezín","ad"],
+["wd-Q105654536","Renée Lieblein",1944,1944,"KZ Auschwitz","lie"],
+["wd-Q106470865","Tana Moses",1944,1944,"Konzentrationslager Theresienstadt","mos"]
+],
+"year":1944}

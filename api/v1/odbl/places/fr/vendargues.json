@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"FR",
+"label":"Vendargues",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13066259502","Augustin Bulinges",1915,"memorial","22 Chemin de Bannières",43.6619,3.96514],
+["st-n13066259503","Henri Gaillard",1922,"memorial","7 Place de la Mairie",43.65678,3.9695],
+["st-n13066259504","Pierre Cayrel",1922,"memorial","7 Place de la Mairie",43.65679,3.9695]
+],
+"slug":"vendargues"}

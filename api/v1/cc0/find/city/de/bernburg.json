@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"DE",
+"label":"Bernburg",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95110710","Alfred Lowe",1869,1940,"Bernburg","lowe_"],
+["wd-Q106820710","Feiga Kalb",1895,1942,"Bernburg","kal"],
+["wd-Q3784832","Henny Schermann",1912,1942,"Bernburg","sche"],
+["wd-Q106869957","Leo Hansel",1914,null,"Bernburg","han"],
+["wd-Q106819927","Rudolf Fanta",1879,1942,"Bernburg","fan"],
+["wd-Q106819971","Selma Fiedler",1891,1942,"Bernburg","fie"]
+],
+"slug":"bernburg"}

@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"FI",
+"label":"Helsinki",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6787944216","Elias Kopelowsky",1882,"memorial",null,60.16795,24.9386],
+["st-n5666091194","Franz Olof Kollmann",1941,"memorial",null,60.19764,24.87785],
+["st-n11716782879","Hans Korn",1919,"memorial",null,60.15991,24.94672],
+["st-n11716782880","Heinrich Huppert",1896,"memorial",null,60.17902,24.95318],
+["st-n5666108973","Janka Kollmann",1910,"memorial",null,60.19765,24.87782],
+["st-n11716782881","Kurt Huppert",1931,"memorial",null,60.17901,24.95318],
+["st-n5666091193","Tri. Georg Kollmann",1912,"memorial",null,60.19763,24.87788]
+],
+"slug":"helsinki"}

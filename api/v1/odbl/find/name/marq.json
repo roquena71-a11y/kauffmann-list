@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"marq",
+"rows":[
+["marquard","st-n6504343532","Wilhelm Marquard",1905,1943,"Harburg","mar"],
+["marquardt","st-n1688789100","Fritz Marquardt",1916,1944,"Hamburg","mar"],
+["marquardt","st-n9806896131","Georg Marquardt",1928,1941,"Ahlen","mar"],
+["marquardt","st-n13057672294","Wilhelm Marquardt",1908,null,null,"mar"],
+["marquina","st-n13429616602","Mariano Marquina Tallada",null,null,"Madrid","ta"],
+["marquis","st-n13034606410","Renée Elhut née Marcu dite Marquis",1913,1944,"Saint-Raphaël","mar"],
+["marqus","st-n13540040216","Emili Marques Aracil",1908,null,"Sabadell","ar"],
+["marquz","st-n13432694218","Andrés González Márquez",null,null,"Guadalix de la Sierra","mar"]
+]}

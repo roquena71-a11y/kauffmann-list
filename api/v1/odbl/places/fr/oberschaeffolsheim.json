@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"FR",
+"label":"Oberschaeffolsheim",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13815452703","Caroline Lévy née Bompet",1873,"memorial","31 Rue du Général de Gaulle",48.58669,7.6511],
+["st-n13815452704","Isidore Lévy",1871,"memorial","31 Rue du Général de Gaulle",48.58669,7.6511],
+["st-n13815452702","Sylvain Lévy",1900,"memorial","31 Rue du Général de Gaulle",48.58669,7.6511]
+],
+"slug":"oberschaeffolsheim"}

@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"NL",
+"label":"Waskemeer",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n14206640756","Geertje van Hasselt-Nieweg",1904,"memorial","Meester van Hasseltweg 11",53.05685,6.27875],
+["st-n14206640754","Hermi van Hasselt",1928,"memorial","Meester van Hasseltweg 11",53.05685,6.27875],
+["st-n14206640757","Simon van Hasselt",1900,"memorial","Meester van Hasseltweg 11",53.05685,6.27875],
+["st-n14206640755","Sophia van Hasselt",1933,"memorial","Meester van Hasseltweg 11",53.05685,6.27875]
+],
+"slug":"waskemeer"}

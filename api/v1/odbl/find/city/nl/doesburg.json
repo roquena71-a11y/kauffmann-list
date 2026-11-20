@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"NL",
+"label":"Doesburg",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q98448907","Abraham Meijers",1885,null,"Doesburg","mei"],
+["st-Q98448920","Helena Levie-Meijers",1875,null,"Doesburg","levi"],
+["st-Q98447889","Jacob Meijers",1888,null,"Doesburg","mei"],
+["st-Q98448487","Johanna Katz",1925,null,"Doesburg","kat"],
+["st-Q98447454","Johanna Meijers-Walg",1888,null,"Doesburg","mei"],
+["st-Q98448917","Manus Levie",1879,null,"Doesburg","levi"],
+["st-Q98448654","Mozes Katz",1874,null,"Doesburg","kat"],
+["st-Q98448826","Rosette Walg",1882,null,"Doesburg","wa"],
+["st-Q98448223","Sijbilla Katz-van Dijk",1883,null,"Doesburg","di"]
+],
+"slug":"doesburg"}

@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"country":"DE",
+"label":"Oelde",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q99534326","Anny Hope",1912,null,"Oelde","hop"],
+["st-Q99534318","Else Hope",1910,null,"Oelde","hop"],
+["st-Q99436800","Else Schreiber",1897,null,"Oelde","schr"],
+["st-Q99534305","Fritz Hope",1906,null,"Oelde","hop"],
+["st-Q99534299","Gertrud Hope",1905,null,"Oelde","hop"],
+["st-Q99437130","Hans Hope",1905,null,"Oelde","hop"],
+["st-Q99437162","Hilde Hope",1907,null,"Oelde","hop"],
+["st-Q99534282","Jenny Hope",1879,null,"Oelde","hop"],
+["st-Q99436922","Leo Schreiber",1897,null,"Oelde","schr"],
+["st-Q99437026","Max Hope",1874,null,"Oelde","hop"],
+["st-Q99437075","Nathalie Hope",1875,null,"Oelde","hop"],
+["st-Q99436575","Sophia Aschenberg",1866,null,"Oelde","as"]
+],
+"slug":"oelde"}

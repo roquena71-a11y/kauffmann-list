@@ -1,0 +1,13 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"sah",
+"rows":[
+["sahlmann","wd-Q105389325","Julie Sahlmann",1875,1944,"Konzentrationslager Theresienstadt","sah"],
+["sahm","wd-Q105389326","Bertha Sahm",1880,null,null,"neuman"],
+["sahm","wd-Q105389327","Falk Sahm",1872,null,null,"sah"],
+["sahm","wd-Q105389404","Falk Sahm",1870,null,null,"sah"],
+["sahm","wd-Q105389328","Lina Sahm",1876,null,null,"sah"],
+["sahmer","wd-Q105389329","Gabriel Sahmer",1857,1942,"Konzentrationslager Theresienstadt","sah"],
+["sahulova","wd-Q105595716","Julie Sahulová",1912,null,null,"sah"],
+["sahulova","wd-Q105595718","Marie Sahulová",1859,1942,"Konzentrationslager Theresienstadt","sah"]
+]}

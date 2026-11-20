@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":5,
+"country":"LV",
+"label":"Rēzekne",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95120221","Bunya Surname unknown",null,"death","Rēzekne",56.50667,27.33083],
+["wd-Q95117072","Lea Druyan",null,"death","Rēzekne",56.50667,27.33083],
+["wd-Q94975623","Sara Izraelit",1897,"death","Rēzekne",56.50667,27.33083],
+["wd-Q95112027","Yshai Levin",1890,"death","Rēzekne",56.50667,27.33083],
+["wd-Q95111055","Zalman Fonarov",1907,"death","Rēzekne",56.50667,27.33083]
+],
+"slug":"rezekne"}

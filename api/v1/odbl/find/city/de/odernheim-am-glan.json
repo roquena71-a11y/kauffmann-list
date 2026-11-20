@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"country":"DE",
+"label":"Odernheim am Glan",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n9241697564","Anna Neu",1877,1949,"Odernheim am Glan","neu"],
+["st-n9241697561","Herta Maier",1907,null,"Odernheim am Glan","mai"],
+["st-n9241697563","Ludwig Maier",1906,null,"Odernheim am Glan","mai"],
+["st-n9241697560","Werner Ferdinand Neu",1913,null,"Odernheim am Glan","neu"]
+],
+"slug":"odernheim-am-glan"}

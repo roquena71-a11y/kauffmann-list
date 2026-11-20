@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"country":"DE",
+"label":"Brakel",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n11916497151","Erich Königheim",1916,null,"Brakel","kon"],
+["st-n11916497146","Julius Lobbenberg",1872,null,"Brakel","lob"],
+["st-n11916497152","Kurt Weiler",1901,null,"Brakel","weil"],
+["st-n11916497153","Margarete Weiler",1877,1942,"Brakel","weil"],
+["st-n11914031390","Margarethe Rothenberg",1907,null,"Brakel","rot"],
+["st-n11916497147","Martin Heineberg",1911,null,"Brakel","hei"],
+["st-n11914031389","Nathaan Rothenberg",1909,null,"Brakel","rot"],
+["st-n11914031392","Nathan Rothenberg",1876,1943,"Brakel","rot"],
+["st-n11916497149","Otto Flechtheim",1876,1942,"Brakel","fl"],
+["st-n11916497148","Richard Flechtheim",1888,null,"Brakel","fl"],
+["st-n11914031391","Rika Rothenberg",1880,null,"Brakel","rot"],
+["st-n11914031388","Werner Rothenberg",1912,null,"Brakel","rot"]
+],
+"slug":"brakel"}

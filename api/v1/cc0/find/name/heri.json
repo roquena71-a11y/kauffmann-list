@@ -1,0 +1,9 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"heri",
+"rows":[
+["heribert","wd-Q131921994","Heribert Adam",1912,1943,null,"ad"],
+["heringova","wd-Q104706475","Irena Heringová",1902,null,null,"heri"],
+["herisch","wd-Q104703706","Heinrich Herisch",1860,1942,"Konzentrationslager Theresienstadt","heri"],
+["herisch","wd-Q104703714","Pauline Herisch",1870,1943,"Konzentrationslager Theresienstadt","heri"]
+]}

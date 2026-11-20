@@ -1,0 +1,14 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"had",
+"rows":[
+["hadasa","wd-Q95113678","Hadasa Goldberg",null,1942,"Warschauer Ghetto","goldb"],
+["hadasa","wd-Q95128026","Hadasa Perl",1922,1943,"KZ Auschwitz","per"],
+["hadassa","wd-Q105654441","Hadassa Alida Laufgang-Santcroos",1918,1944,"KZ Auschwitz","lau"],
+["hadassa","wd-Q105593919","Hadassa Rothová",1911,null,null,"rot"],
+["hadassah","wd-Q131870051","Käthe Hadassah Lichtenberg",1913,1945,"KZ Bergen-Belsen","lic"],
+["hadda","wd-Q104685054","Martin Hadda",1859,1943,"Konzentrationslager Theresienstadt","had"],
+["hadekova","wd-Q105517974","Markéta Hadeková",1904,null,null,"had"],
+["haderova","wd-Q105517975","Malvína Haderová",1888,null,null,"had"],
+["hadrawa","wd-Q104687300","Rosa Hadrawa",1858,1942,"Konzentrationslager Theresienstadt","had"]
+]}

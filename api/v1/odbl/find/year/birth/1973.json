@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"kind":"birth",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105392583","Celestine Silberstein",1973,1943,"Freiberg","sil"],
+["st-n10798999529","Helga Dietz",1973,1944,"Hamburg","di"],
+["wd-Q104408658","Max Markus Blumhof",1973,1943,"Würzburg","blu"]
+],
+"year":1973}

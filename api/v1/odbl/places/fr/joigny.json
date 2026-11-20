@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"FR",
+"label":"Joigny",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13796325181","André Sampic",1875,"memorial","24 Rue Saint-Jacques",47.9834,3.39288],
+["st-n13796325180","Gustave Weil",1881,"memorial","21 Rue Pasteur",47.98298,3.39248],
+["st-n13796325179","Hélène Weil née Weil",1895,"memorial","21 Rue Pasteur",47.98298,3.39247],
+["wd-Q62654628","Irène Rossel née Chiot",1898,"memorial","28 Rue d'Epizy",47.98379,3.37531],
+["st-n13796325175","Jean Hémery",1900,"memorial","8 Allée de Villeroy",47.97954,3.40119],
+["st-n13796325178","René Parigot",1922,"memorial","Quai du 1er Dragons",47.98094,3.39974],
+["st-n13796325176","Roger Varrey dit Victor",1923,"memorial","54 Avenue Roger Varrey",47.97891,3.40622],
+["st-n13796325177","Sabatia Morand née Toros",1920,"memorial","44 Rue Basse Pêcherie",47.98167,3.39808]
+],
+"slug":"joigny"}

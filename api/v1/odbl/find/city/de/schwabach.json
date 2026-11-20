@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Schwabach",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n4352614389","Berta Gerstle",1898,1942,"Schwabach","ge"],
+["st-Q134960039","David Bleicher",1882,null,"Schwabach","ble"],
+["st-n4352613988","Justin Gerstle",1892,1942,"Schwabach","ge"],
+["st-Q134960043","Manuel Graf",1879,null,"Schwabach","gra"],
+["st-Q134960040","Ottilie Ecia Bleicher",1886,null,"Schwabach","ble"],
+["st-Q134960045","Salomon Mannes",1871,null,"Schwabach","man"],
+["st-Q134960044","Sarah Graf",1878,null,"Schwabach","gra"],
+["st-Q134960046","Walter Philipp Tuchmann",1891,null,"Schwabach","tu"]
+],
+"slug":"schwabach"}

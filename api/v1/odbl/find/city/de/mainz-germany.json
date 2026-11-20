@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"DE",
+"label":"Mainz (Germany)",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n6796965628","Dr. Karl Moritz Ladenburg",1895,1942,"Mainz (Germany)","lad"],
+["st-n6796844874","Dr. Walter Nathan",1889,null,"Mainz (Germany)","na"],
+["st-n6796871866","Elisabeth Nathan",1897,null,"Mainz (Germany)","na"],
+["st-n6796952630","Johanna Fridberg",1894,null,"Mainz (Germany)","fri"],
+["st-n6796943187","Malka Amalie Zitronenbaum",1893,null,"Mainz (Germany)","zi"],
+["st-n6796922075","Oiasz `Oskar` Zitronenbaum",1888,null,"Mainz (Germany)","zi"],
+["st-n6796973534","Siegfried Ladenburg",1899,1942,"Mainz (Germany)","lad"],
+["st-n6796988748","Theodor Alfred Fridberg",1887,null,"Mainz (Germany)","fri"]
+],
+"slug":"mainz-germany"}

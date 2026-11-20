@@ -1,0 +1,23 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ley",
+"rows":[
+["leya","wd-Q95123786","Leya Shlyakhov",null,1941,"Baraniwka","sh"],
+["leyde","wd-Q106470606","Leo Leyde",1875,null,null,"ley"],
+["leyden","wd-Q1460771","Friedrich Leyden",1891,1944,"Konzentrationslager Theresienstadt","ley"],
+["leyens","wd-Q105363681","Helene Leyens",1862,null,null,"ley"],
+["leyens","wd-Q105363684","Klara Leyens",1869,null,null,"ley"],
+["leyser","wd-Q105363685","Alice Leyser",1877,1943,"Konzentrationslager Theresienstadt","ley"],
+["leyser","wd-Q105363686","Arthur Leyser",1875,null,null,"ley"],
+["leyser","wd-Q105361656","Auguste Leyser",1872,1943,"Konzentrationslager Theresienstadt","ley"],
+["leyser","wd-Q105363688","Flora Leyser",1885,null,null,"ley"],
+["leyser","wd-Q105556743","Jan Leyser",1894,null,null,"ley"],
+["leyser","wd-Q105363689","Julius Leyser",1872,1943,"Konzentrationslager Theresienstadt","ley"],
+["leyser","wd-Q105363690","Louis Leyser",1890,null,null,"ley"],
+["leyser","wd-Q105363691","Maria Leyser",1870,null,null,"ley"],
+["leyser","wd-Q105363695","Moritz Leyser",1866,null,null,"ley"],
+["leyser","wd-Q105654306","Paul Leyser Kaufmann",1894,1944,null,"kau"],
+["leyser","wd-Q105363696","Paula Leyser",1873,null,null,"ley"],
+["leyser","wd-Q73289531","Selma Leyser",1897,1944,null,"ley"],
+["leyser","wd-Q105363698","Willi Leyser",1865,null,null,"ley"]
+]}

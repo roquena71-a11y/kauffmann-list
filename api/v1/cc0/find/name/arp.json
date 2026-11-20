@@ -1,0 +1,23 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"arp",
+"rows":[
+["arpad","wd-Q104423418","Arpad Deutsch",1913,null,null,"de"],
+["arpad","wd-Q104656832","Arpad Fuchs",1903,null,null,"fuc"],
+["arpad","wd-Q104707754","Arpad Hirschberger",1885,null,null,"hirsch"],
+["arpad","wd-Q104812244","Arpad Kafka",1892,null,null,"kaf"],
+["arpad","wd-Q105519712","Arpad Kaufer",1886,null,null,"kau"],
+["arpad","wd-Q105512533","Arpad Klein",1906,1945,"Konzentrationslager Theresienstadt","klein_"],
+["arpad","wd-Q105465507","Arpad Kohn",1915,null,null,"kohn_"],
+["arpad","wd-Q105558570","Arpad Löwy",1901,1942,null,"lowy_"],
+["arpad","wd-Q105563220","Arpad Markstein",1897,null,null,"mark"],
+["arpad","wd-Q105563305","Arpad Marmorstein",1906,null,null,"marm"],
+["arpad","wd-Q105513456","Arpad Neumann",1880,1945,"Konzentrationslager Theresienstadt","neuman"],
+["arpad","wd-Q111722059","Arpad Schönfeld",1901,1945,"Dachau","scho"],
+["arpad","wd-Q105600392","Arpad Schwarz",1902,null,null,"schwar"],
+["arpad","wd-Q105354032","Arpad Sigmund",1885,1945,"Konzentrationslager Theresienstadt","sig"],
+["arpad","wd-Q105617772","Arpad Wallesz",1899,null,null,"wal"],
+["arpad","wd-Q105513354","Árpád Weinberger",1905,1945,"Konzentrationslager Theresienstadt","weinb"],
+["arpad","wd-Q105638476","Arpád Wertheimer",1890,null,null,"wer"],
+["arpad","wd-Q105573643","Jakub Arpad Platschik",1896,null,null,"pl"]
+]}

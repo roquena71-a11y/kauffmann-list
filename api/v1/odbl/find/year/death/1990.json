@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n7948210150","Anna Fetzer",1897,1990,"Radolfzell","fe"],
+["wd-Q1596783","Dr. Heinrich Bollinger",1916,1990,"Freiburg im Breisgau","bo"],
+["wd-Q1795550","Dr. Käthe Starke-Goldschmidt",1905,1990,"Hamburg","sta"],
+["st-n3748493041","Erna Frederike Kempenich",1902,1990,"Emmerich","ke"],
+["st-n9183808298","Frieda Rosbasch",1903,1990,"Baden-Baden","rosb"],
+["wd-Q132140024","Julius Fritz Steinwasser",1924,1990,"Berlin","stei"],
+["wd-Q83493958","Kurt Dehne",1901,1990,"Frankfurt am Main","de"],
+["wd-Q2561885","Werner Neander Lansburgh",1912,1990,"Berlin","lan"]
+],
+"year":1990}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ly",
+"rows":[
+["wd-Q104684572","Hedwig Guth",1862,"Altenkirchen",50.68722,7.64556,"ly"],
+["wd-Q105363741","Hedwig Lychenheim",1882,"Bad Schwartau",53.91944,10.6975,"ly"],
+["wd-Q105360736","Jeanette Lychenheim",1859,"Berlin",52.51667,13.38333,"ly"],
+["wd-Q105366181","Lea Lychenheim",1883,"Bad Schwartau",53.91944,10.6975,"ly"],
+["wd-Q105469191","Sima Gittel Lyner",1862,"Konzentrationslager Theresienstadt",50.51028,14.14972,"ly"],
+["wd-Q105366182","Anne Lyon",1876,"Iserlohn",51.38333,7.66667,"ly"],
+["wd-Q105366183","Ernst Lyon",1869,null,null,null,"ly"],
+["wd-Q105366185","Flora Lyon",1867,"Gniewkowo",52.9,18.41667,"ly"],
+["wd-Q105366186","Helene Lyon",1855,"Konzentrationslager Theresienstadt",50.51028,14.14972,"ly"],
+["wd-Q104424228","Henriette Czarlinski",1866,"Konzentrationslager Theresienstadt",50.51028,14.14972,"ly"],
+["wd-Q95111686","Ceszek Lyubchanski",1914,"Łódź",51.75,19.46667,"ly"]
+]}

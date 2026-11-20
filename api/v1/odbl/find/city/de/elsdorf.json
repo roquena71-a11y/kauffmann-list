@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"country":"DE",
+"label":"Elsdorf",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n2783521189","Betty Stern geb Hausmann",1904,1943,"Elsdorf","hau"],
+["st-n2785938923","Carla Simon",1929,null,"Elsdorf","sim"],
+["st-n2783521191","Ernst Hausmann",1902,null,"Elsdorf","hau"],
+["st-n2783521192","Helmut Julius Hausmann",1920,1943,"Elsdorf","hau"],
+["st-n2783521193","Hugo Stern",1864,1943,"Elsdorf","stern"],
+["st-n2785938936","Ilse Simon",1922,null,"Elsdorf","sim"],
+["st-n2782964672","Lena Lina Hausmann",1865,1942,"Elsdorf","hau"],
+["st-n2782954855","Michael Hausmann",1864,1942,"Elsdorf","hau"],
+["st-n2786516685","Michael Hausmann",1861,null,"Elsdorf","hau"],
+["st-n1563599975","Selma Simon",1892,null,"Elsdorf","sim"],
+["st-n2786516723","Sigismund Hausmann",1868,null,"Elsdorf","hau"]
+],
+"slug":"elsdorf"}

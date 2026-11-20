@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"FR",
+"label":"Malakoff",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n13104263040","Eugène Avaulée",1906,"memorial","14 Rue Hoche",48.8159,2.29026],
+["st-n13104263039","Louis Girard",1904,"memorial","14 Rue Hoche",48.8159,2.29026],
+["st-n13808866953","Lucien Gerber",1901,"memorial","22 Rue Voltaire",48.82261,2.30998]
+],
+"slug":"malakoff"}

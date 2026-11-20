@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"country":"PL",
+"label":"Ulanów",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95121169","Guta Bosis",null,1942,"Ulanów","bos"],
+["wd-Q95111800","Markus Fortgang",1917,1942,"Ulanów","fo"],
+["wd-Q95108815","Sara Fortgang",1924,1942,"Ulanów","fo"],
+["wd-Q95125267","Shlomo Fortgang",1912,1942,"Ulanów","fo"],
+["wd-Q95126666","Zinaida Gelman",1893,1944,"Ulanów","gel"]
+],
+"slug":"ulanow"}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q215597","Benno Elkan",1877,1960,"Frankfurt am Main","el"],
+["wd-Q106603263","Daniel Dublon",1895,1960,"Lüneburg","du"],
+["wd-Q1336531","Emil Meirowsky",1876,1960,"Lindenthal","mei"],
+["st-n3768167589","Ernst Ludwig Kreer",1878,1960,"Radolfzell","kr"],
+["wd-Q11709650","Hermann Josephy",1887,1960,"Hamburg","jo"],
+["wd-Q1573184","Robert Grumbach",1875,1960,"Freiburg im Breisgau","gru"],
+["wd-Q131769731","Stolperstein dedicated to Fritz Epstein",1877,1960,"Frankfurt-Innenstadt II","ep"]
+],
+"year":1960}

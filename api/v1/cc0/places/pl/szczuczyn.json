@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"PL",
+"label":"Szczuczyn",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95123320","Batia Tzaletzki",1909,"death","Szczuczyn",53.56667,22.3],
+["wd-Q95119153","David Shvartzberg",1902,"death","Szczuczyn",53.56667,22.3],
+["wd-Q95109648","Dvora Tzaletzki",1930,"death","Szczuczyn",53.56667,22.3],
+["wd-Q95110848","Feigel Surname unknown",1903,"death","Szczuczyn",53.56667,22.3],
+["wd-Q94976453","Kopel Laber",null,"death","Szczuczyn",53.56667,22.3],
+["wd-Q94975512","Taiba Rubinshtein",null,"death","Szczuczyn",53.56667,22.3],
+["wd-Q95110638","Tzipka Shvartzberg",null,"death","Szczuczyn",53.56667,22.3],
+["wd-Q95120690","Yona Shvartzberg",1899,"death","Szczuczyn",53.56667,22.3]
+],
+"slug":"szczuczyn"}

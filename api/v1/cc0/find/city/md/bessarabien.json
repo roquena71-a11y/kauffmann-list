@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"MD",
+"label":"Bessarabien",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q94977143","David Peltzman",1910,1942,"Bessarabien","pel"],
+["wd-Q94977085","Dvora Veinshtein",1870,1940,"Bessarabien","ve"],
+["wd-Q95128953","Lea Lika",1890,1940,"Bessarabien","lik"],
+["wd-Q95126758","Rakhel Prutzki",1875,1941,"Bessarabien","pru"],
+["wd-Q95120512","Rakhel Veinshenker",1905,1941,"Bessarabien","ve"],
+["wd-Q94976273","Sabina Grinberg",1900,1943,"Bessarabien","gri"],
+["wd-Q94975685","Sara Zibenberg",1875,1941,"Bessarabien","zi"],
+["wd-Q94975075","Sheindl Kornfeld",1892,1941,"Bessarabien","kor"]
+],
+"slug":"bessarabien"}

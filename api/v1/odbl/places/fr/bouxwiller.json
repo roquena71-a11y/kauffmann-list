@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"FR",
+"label":"Bouxwiller",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q131415116","Benno Malz",1925,"memorial","75 Grand'Rue",48.82609,7.47911],
+["wd-Q131415117","Charles Moog",1877,"memorial","3 Rue des Sables",48.82451,7.48011],
+["wd-Q131415112","Henriette Joseph Safar née Marx",1889,"memorial","10 Rue des Roses",48.82543,7.48087],
+["wd-Q131415113","Jacques Joseph",1923,"memorial","10 Rue des Roses",48.82543,7.48087],
+["wd-Q131415111","Maurice Bloch",1882,"memorial","4 Place du Château",48.82561,7.48378],
+["st-n13141137599","Myrtil Joseph",1882,"memorial","10 Rue des Roses",48.82543,7.48087],
+["wd-Q131415115","Roger Joseph",1921,"memorial","10 Rue des Roses",48.82543,7.48087],
+["wd-Q131415118","Samuel Rothkopf",1920,"memorial","60 Grand'Rue",48.82523,7.48018]
+],
+"slug":"bouxwiller"}

@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":9,
+"country":"PL",
+"label":"KZ Dachau",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q105643593","Antonín Popper",1894,"death","KZ Dachau",51.7732,19.4804],
+["wd-Q104674029","Artur Gottlieb",1898,"death","KZ Dachau",48.2699,11.4683],
+["wd-Q105643215","Bedřich G. Treulich",1905,"death","KZ Dachau",51.7732,19.4804],
+["wd-Q105644017","Erich Schwarz",1905,"death","KZ Dachau",48.2699,11.4683],
+["wd-Q105643656","Franz Sinek",1900,"death","KZ Dachau",51.7732,19.4804],
+["wd-Q105644204","Karel Vohryzek",1894,"death","KZ Dachau",51.7732,19.4804],
+["wd-Q105642898","Karl Anton Müller",1901,"death","KZ Dachau",51.7732,19.4804],
+["wd-Q104653385","Leopold Fried",1906,"death","KZ Dachau",48.2699,11.4683],
+["wd-Q105642718","Paul Klement",1906,"death","KZ Dachau",51.7732,19.4804]
+],
+"slug":"kz-dachau"}

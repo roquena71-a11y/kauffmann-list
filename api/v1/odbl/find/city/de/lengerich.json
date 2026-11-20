@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"country":"DE",
+"label":"Lengerich",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q104700951","Abraham Heilbronn",1874,1943,"Lengerich","hei"],
+["wd-Q104701947","Bendix Heilbronn",1883,1944,"Lengerich","hei"],
+["st-Q131300068","Berta Heilbronn",1909,null,"Lengerich","hei"],
+["st-Q131300098","Emil Heilbronn",1920,1945,"Lengerich","hei"],
+["st-Q131300120","Johanna Heilbronn",1899,null,"Lengerich","hei"],
+["st-Q131300042","Josef Heilbronn",1880,null,"Lengerich","hei"],
+["st-Q131300077","Julius Heilbronn",1914,null,"Lengerich","hei"],
+["st-Q131300066","Leonard Heilbronn",1908,1942,"Lengerich","hei"],
+["st-Q131300084","Meinhard Heilbronn",1916,null,"Lengerich","hei"],
+["wd-Q104700975","Meta Heilbronn",1878,1943,"Lengerich","hei"],
+["st-Q131300070","Paul Heilbronn",1912,1945,"Lengerich","hei"],
+["st-Q131300048","Rosa Heilbronn",1901,null,"Lengerich","hei"]
+],
+"slug":"lengerich"}

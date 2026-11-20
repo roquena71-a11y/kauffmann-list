@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"FR",
+"label":"Duclair",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-n12953521957","Jean Neel",null,"memorial","132 Rue de Verdun",49.48233,0.8742],
+["st-n13116245509","Otto Fernand Ulrikson dit Strand",1899,"memorial",null,49.47932,0.86997],
+["st-n13116245506","Raymond Lacheray",1907,"memorial","Place du Général de Gaulle",49.4822,0.87566]
+],
+"slug":"duclair"}

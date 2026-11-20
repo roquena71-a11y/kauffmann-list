@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"country":"DE",
+"label":"Aue",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["st-Q125658630","Bernd Ludwig Kaiser",1915,null,"Aue","kai"],
+["st-n11911780043","Betty Schüftan",1897,null,"Aue","schu"],
+["st-n11911753883","David Thorn",1865,1938,"Aue","th"],
+["st-Q127370772","Dieter Kreinberg",1928,null,"Aue","kr"],
+["st-Q125658556","Gerda Kaiser",1910,null,"Aue","kai"],
+["st-n11911782067","Hertha Thorn",1902,null,"Aue","th"],
+["st-Q125658654","Lina Kaiser",1880,null,"Aue","kai"],
+["st-n11911783403","Max Schüftan",1894,null,"Aue","schu"],
+["wd-Q105460010","Rosette Thorn",1867,1940,"Aue","th"]
+],
+"slug":"aue"}

@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"country":"PL",
+"label":"Włodawa",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q95115445","David Biler",1920,1941,"Włodawa","bi"],
+["wd-Q95123722","Dwora Firchtreiber",1892,1942,"Włodawa","fir"],
+["wd-Q95126678","Eliahu Bikman",1916,1942,"Włodawa","bi"],
+["wd-Q95122670","Golda Pshedmeiski",null,1943,"Włodawa","ps"],
+["wd-Q95129334","Henia Furer",1907,1944,"Włodawa","fur"],
+["wd-Q95115665","Iudl Furer",1905,1944,"Włodawa","fur"],
+["wd-Q95117197","Josef Fichtreiber",null,1940,"Włodawa","fic"],
+["wd-Q95110871","Leja Fichtrajber",1917,1942,"Włodawa","fic"],
+["wd-Q95120805","Liba Fikhtreiber",1894,1942,"Włodawa","fik"],
+["wd-Q95111362","Meir Fichtrajber",1917,1942,"Włodawa","fic"],
+["wd-Q95117011","Mose Fihtreiber",1895,1942,"Włodawa","fih"],
+["wd-Q95110576","Natan Fikhtreiber",1924,1942,"Włodawa","fik"],
+["wd-Q95106240","Sheindl Samelson",1920,1942,"Włodawa","sam"]
+],
+"slug":"wodawa"}

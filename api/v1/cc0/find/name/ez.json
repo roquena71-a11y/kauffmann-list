@@ -1,0 +1,9 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"prefix":"ez",
+"rows":[
+["ezaias","wd-Q104220286","Ezaiáš Bayer",1897,null,null,"bay"],
+["ezra","wd-Q95120809","Ezra Fogel",1896,1941,"Kamjanez-Podilskyj","fo"],
+["ezra","wd-Q104545166","Ezra Moses Fränkel",1877,1942,"Konzentrationslager Theresienstadt","franke"],
+["ezra","wd-Q94975988","Ezra Veis",1882,1944,"KZ Auschwitz","ve"]
+]}

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":6,
+"country":"DE",
+"label":"Frankfurt am Main",
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q1359410","Ernst Marbach",1893,"death","Frankfurt am Main",50.11056,8.68222],
+["wd-Q101844","Georg Kalischer",1873,"death","Frankfurt am Main",50.11056,8.68222],
+["wd-Q61952352","Moritz James Oppenheimer",1879,"death","Frankfurt am Main",50.11056,8.68222],
+["wd-Q1408154","Otto Loewe",1878,"death","Frankfurt am Main",50.11056,8.68222],
+["wd-Q55683341","Otto Rothschild",1872,"death","Frankfurt am Main",50.11056,8.68222],
+["wd-Q72999","Paul Epstein",1871,"death","Frankfurt am Main",50.11056,8.68222]
+],
+"slug":"frankfurt-am-main"}

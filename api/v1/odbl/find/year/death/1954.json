@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"death",
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"page":1,
+"pages":1,
+"rows":[
+["wd-Q2645355","Alfred Kästner",1882,1954,"Leipzig","kas"],
+["st-n9183808297","Alfred Rosbasch",1912,1954,"Baden-Baden","rosb"],
+["wd-Q1358733","Ernst Honigmann",1892,1954,"Berlin","hon"],
+["wd-Q110953359","Ferdinand Zeeb",1894,1954,"Tübingen","ze"],
+["wd-Q121236","Gustav Dahrendorf",1901,1954,"Hamburg","da"],
+["wd-Q134415712","Max Löw-Beer",1902,1954,"Brno","lowb"]
+],
+"year":1954}

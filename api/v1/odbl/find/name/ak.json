@@ -1,0 +1,11 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"prefix":"ak",
+"rows":[
+["akos","wd-Q492403","Andor Ákos",1893,1940,"Kempten","ak"],
+["akovenko","st-Q76419209","Olesâ Âkovenko",null,null,"Burgwedel","ak"],
+["akselrad","st-n7463962986","Hannelore Akselrad",1929,null,"Würzburg","ak"],
+["akselrad","st-n7463962987","Mathilde Hasenberg, gesch. Akselrad",1907,null,"Würzburg","ak"],
+["aksstein","st-n3975799505","Leo Aksstein",1894,null,"Alsdorf","ak"],
+["akulewitsch","st-n7502524925","Lore Akulewitsch",1921,null,"Esslingen","ak"]
+]}
