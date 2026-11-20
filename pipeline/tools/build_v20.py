@@ -73,7 +73,7 @@ for w in wd.values():
 
 def wd_name(w):
     lb = (w['label'] or '').strip()
-    m = re.match(r'^Stolperstein (?:dedicated to|for|für|pour|voor) (.+)$', lb, re.I)
+    m = re.match(r'^Stolperstein (?:dedicated to|for|of|für|pour|voor|per|para|til|för|dla) (.+)$', lb, re.I)
     if not m: return None
     n = m.group(1).strip()
     n = re.sub(r',\s*f\.\s*', ' f. ', n)
@@ -240,7 +240,12 @@ for q, w in sorted(wd.items()):
     if q in used_wd: continue
     nm = wd_name(w)
     base = {'n': nm or w['label']}
-    if not nm: P(q, 'el ítem de Wikidata no es una piedra de una persona con nombre (etiqueta: «%s»)' % (w['label'] or '')[:70], **base); continue
+    if not nm:
+        lb = (w['label'] or '').strip()
+        why_ = ('el ítem de Wikidata no tiene etiqueta en el idioma consultado' if not lb else
+                'la etiqueta de Wikidata («%s») no tiene el patrón «Stolperstein para NOMBRE»: el nombre va en otra forma gramatical (p. ej. genitivo checo) y no se usa como nombre; recuperable con la etiqueta «mul» más confirmación de posición' % lb[:60] if re.match(r'^Stolperstein\s+\S', lb, re.I) else
+                'la etiqueta de Wikidata («%s») no sigue el patrón «Stolperstein für/for/voor… NOMBRE»; no se deduce el nombre' % lb[:60])
+        P(q, why_, **base); continue
     nm, wy_b, wy_d = strip_years(nm)
     nm, why = clean_name(nm)
     if not nm or COLLECTIVE_RE.search(nm): P(q, why or 'nombre colectivo en Wikidata', **base); continue

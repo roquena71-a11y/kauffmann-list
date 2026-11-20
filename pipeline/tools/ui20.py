@@ -52,6 +52,12 @@ def main():
     a = a.replace("posApprox:'Ungefähre Position (Gebäude laut Adresse in OpenStreetMap)',", "posApprox:'Ungefähre Position (Gebäude laut Adresse in OpenStreetMap)', posApproxPhoto:'Ungefähre Position (die des Fotos des Steins auf Wikimedia Commons, mit der Adresse in OpenStreetMap geprüft)',", 1)
     a = a.replace("posApprox:'Approximate position (the building, from its address in OpenStreetMap)',", "posApprox:'Approximate position (the building, from its address in OpenStreetMap)', posApproxPhoto:'Approximate position (that of the stone’s photo on Wikimedia Commons, checked against the address in OpenStreetMap)',", 1)
     a = a.replace("s.gm?T('posApprox'):''", "s.gm?T(/^commons/.test(s.gm)?'posApproxPhoto':'posApprox'):''", 1)
+    # v20r2 (auditoría B, W8): fechas de instantánea reales por grupo de países
+    V = "(m.v20_added||{})"
+    a = a.replace("OpenStreetMap (instantánea ${m.osm_snapshot}) y Wikidata (${m.wikidata_snapshot})", "OpenStreetMap (instantánea ${m.osm_snapshot.slice(0,10)} para Alemania, Irlanda, Suecia, Jersey, Finlandia y Rumanía; ${%s.snapshot_osm.slice(0,10)}, refrescada el 2026-11-20, para el resto) y Wikidata (${m.wikidata_snapshot} para esos países; ${%s.snapshot_wikidata} para el resto)" % (V, V), 1)
+    a = a.replace("OpenStreetMap (Stand ${m.osm_snapshot}) und Wikidata (${m.wikidata_snapshot})", "OpenStreetMap (Stand ${m.osm_snapshot.slice(0,10)} für Deutschland, Irland, Schweden, Jersey, Finnland und Rumänien; ${%s.snapshot_osm.slice(0,10)}, am 2026-11-20 aufgefrischt, für die übrigen) und Wikidata (${m.wikidata_snapshot} für diese Länder; ${%s.snapshot_wikidata} für die übrigen)" % (V, V), 1)
+    a = a.replace("OpenStreetMap (snapshot ${m.osm_snapshot}) and Wikidata (${m.wikidata_snapshot})", "OpenStreetMap (snapshot ${m.osm_snapshot.slice(0,10)} for Germany, Ireland, Sweden, Jersey, Finland and Romania; ${%s.snapshot_osm.slice(0,10)}, refreshed on 2026-11-20, for the rest) and Wikidata (${m.wikidata_snapshot} for those countries; ${%s.snapshot_wikidata} for the rest)" % (V, V), 1)
+    assert a.count('snapshot_osm.slice') == 3
     for lang in OLD: assert OLD[lang] not in a or lang == '', lang
     (R / 'app3d.js').write_text(a, encoding='utf-8')
     # index.html / jsonld / agents
