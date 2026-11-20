@@ -154,7 +154,8 @@ def solve(PB, lines, RW, need, h2, inside, keep_min=1.5, min_dot=0.5):
     if best is None: return None, (dH, ht)
     return best[1], (dH, ht)
 
-def process_cc(cc, stones, N, extra, legit, only=None):
+def process_cc(cc, stones, N, extra, legit, only=None, comp=None):
+    comp = comp or {}
     sel = [s for s in stones if (s.get('cc') or 'DE') == cc]
     if only is None:
         for s in sel: s.pop('dla', None); s.pop('dlo', None)
@@ -182,6 +183,10 @@ def process_cc(cc, stones, N, extra, legit, only=None):
                 shift, info = solve(PB, lines, RW, nd, h2, insd, keep_min=km, min_dot=md)
                 if shift is not None: tier = k; break
             status = 'revisar' if shift is None else 'ajustada'
+        cm = comp.get(g[0]['id'])
+        if cm:   # compensación de la separación entre grupos de la app (hasta 8 m): se resta lo que la app mueve el dibujo respecto al plan
+            if shift is None and status in ('ok', 'ajustada'): shift = (0.0, 0.0); status = 'ajustada'
+            if shift is not None: shift = (shift[0] + cm[0], shift[1] + cm[1])
         if status == 'ok': n_ok += len(g); continue
         for s in g:
             r = {'id': s['id'], 'n': s.get('n'), 'cc': cc, 'la': s['la'], 'lo': s['lo'], 'grupo': len(g), 'grupo_id': g[0]['id'], 'extra_m': round(extra.get(g[0]['id'], 0), 2),
@@ -199,6 +204,7 @@ def main():
     extra = {}
     xf = Path(__file__).with_name('sidewalk-extra20.json')
     if xf.exists(): extra.update(json.load(open(xf)))
+    cf = Path(__file__).with_name('sidewalk-comp20.json'); comp = json.load(open(cf)) if cf.exists() else {}
     legit = set(json.load(open(D / 'legit_inside.json'))) if (D / 'legit_inside.json').exists() else set()
     have = sorted({(s.get('cc') or 'DE') for s in S} - set(V19))
     if ccs: have = [c for c in have if c in ccs]
@@ -207,7 +213,7 @@ def main():
         if not ((D / ('near/%s.json' % cc)).exists() or (D / ('near/%s.pkl' % cc)).exists()): print('sin datos de edificios:', cc); continue
         N = load_near(cc); ts[cc] = N.ts
         only = set(json.load(open(D / 'changed_groups.json'))) if '--only' in sys.argv else None
-        t, nok = process_cc(cc, S, N, extra, legit, only)
+        t, nok = process_cc(cc, S, N, extra, legit, only, comp)
         if only is not None:
             pv = json.load(open(R / 'data/sidewalk-v20.json', encoding='utf-8'))
             t = [r for r in pv['stones'] if r['cc'] == cc and r['grupo_id'] not in only] + t

@@ -10,7 +10,7 @@ args = [a for a in sys.argv[1:] if not a.startswith('--')]
 ccs = sorted(p.stem for p in (D / 'out').glob('??.json')) if '--all' in sys.argv else args
 data = json.load(open(R / 'data/stones.json', encoding='utf-8')); S = data['stones']
 import subprocess
-V19IDS = {r['id'] for r in json.loads(subprocess.run(['git', 'show', 'HEAD:data/stones.json'], cwd=R, capture_output=True, text=True, check=True).stdout)['stones']}   # registros publicados en la v19
+V19IDS = {r['id'] for r in json.loads(subprocess.run(['git', 'show', '49e7725:data/stones.json'], cwd=R, capture_output=True, text=True, check=True).stdout)['stones']}   # registros publicados en la v19
 S = [s for s in S if s['id'] in V19IDS and s.get('gm') != 'commons:coordinates']
 # v20: 15 placas que la v19 contó como Alemania caen, según el límite administrativo (admin_level=2) de OSM, en LU/AT/PL/CH: se corrige su país (el contenido no cambia)
 TRUE = {('%s%d' % (e['type'][0], e['id'])): e['cc'] for e in json.load(open(D / 'osm_all_cc.json', encoding='utf-8'))}
