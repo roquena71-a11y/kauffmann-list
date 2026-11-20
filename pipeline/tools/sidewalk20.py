@@ -217,6 +217,9 @@ def process_cc(cc, stones, N, extra, legit, only=None, comp=None, angs=None, ali
                 shift, info = solve(PB, lines, RW, okf, insd, keep_min=km, min_dot=md, tstep=ts)
                 if shift is not None: tier = k; break
             status = 'revisar' if shift is None else 'ajustada'
+        sp = (comp or {}).get(g[0]['id'])
+        if sp and status in ('ok', 'ajustada') and okf((sp[0], sp[1])):
+            shift = (sp[0], sp[1]); status = 'ajustada'; tier = 9   # separación entre grupos (la app ya no los separa: grupos fijos)
         if status == 'ok': n_ok += len(g); continue
         for s in g:
             r = {'id': s['id'], 'n': s.get('n'), 'cc': cc, 'la': s['la'], 'lo': s['lo'], 'grupo': len(g), 'grupo_id': g[0]['id'], 'extra_m': round(extra.get(g[0]['id'], 0), 2),

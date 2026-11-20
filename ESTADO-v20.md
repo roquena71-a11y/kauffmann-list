@@ -31,3 +31,5 @@ Dir de trabajo: /workspace/countries-proto-v20 (copia de v19 = 49e7725, origin/m
 ## 03:40 Hallazgo: check/auditorías miden la chincheta 2D en la posición DIBUJADA; solver exacto ahora exige 2D también en las casillas 3D. Comp desactivado (grupos fijos). Relanzado loop21 completo (DE tarda ~15 min). 'revisar' DE 46 antes del cambio (grupos grandes).
 
 ## 04:00 loop21 it1: 1460 fallos (DE 1384, resto ~76) de 11134; converge. 'revisar' DE 48 (grupos grandes) → se documentarán si persisten.
+
+## 04:22 ui20 ejecutado (base app3d.js = 7f726e0 con grupos fijos). 27 países (DE + 26). separate20.py escrito (separación entre grupos, usa sidewalk-comp20.json como desplazamiento total, a ejecutar tras loop21). loop21: fallos 1460→512→256→131.

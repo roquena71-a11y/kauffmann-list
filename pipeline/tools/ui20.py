@@ -16,7 +16,8 @@ NAMES = {  # cc: (es, de, en, palabras extra de búsqueda)
  'AT': ('Austria', 'Österreich', 'Austria', 'osterreich oesterreich'), 'FR': ('Francia', 'Frankreich', 'France', ''), 'NL': ('Países Bajos', 'Niederlande', 'Netherlands', 'holanda holland nederland'),
  'CZ': ('Chequia', 'Tschechien', 'Czechia', 'republica checa czech republic cesko'), 'NO': ('Noruega', 'Norwegen', 'Norway', 'norge'), 'LT': ('Lituania', 'Litauen', 'Lithuania', 'lietuva'),
 }
-def head(p): return subprocess.run(['git', 'show', '49e7725:' + p], cwd=R, capture_output=True, text=True, check=True).stdout
+# app3d.js parte de 7f726e0 (grupos fijos de v20); lo demás, de la v19 (49e7725)
+def head(p): return subprocess.run(['git', 'show', ('7f726e0:' if p == 'app3d.js' else '49e7725:') + p], cwd=R, capture_output=True, text=True, check=True).stdout
 def main():
     S = json.load(open(R / 'data/stones.json', encoding='utf-8'))['stones']
     from collections import Counter
