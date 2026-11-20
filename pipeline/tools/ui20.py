@@ -64,4 +64,4 @@ def main():
     h = re.sub(r'"keywords": \[[^\]]*\]', lambda m: '"keywords": [' + ', '.join('"%s"' % x for x in ['Stolpersteine', 'Stumbling Stones', 'Holocaust', 'Shoah', 'memorial'] + [NAMES[c][2] for c in order] + ['genealogy', 'victims of National Socialism', 'Gunter Demnig']) + ']', h, count=1) if False else m.group(0), h, count=1)
     (R / 'index.html').write_text(h, encoding='utf-8')
     print('países', order, 'cortos', short)
-main()
+if __name__ == '__main__': main()
