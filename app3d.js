@@ -296,7 +296,7 @@ function buildStones(){
     else (byAddr.get(k) || byAddr.set(k,[]).get(k)).push(s);
   }
   let clusters = [];
-  for (const list of byAddr.values()) clusters.push(...clusterByDist(list, 15));
+  for (const [k, list] of byAddr) clusters.push(...clusterByDist(list, /\d/.test(k) ? 15 : 8));
   clusters.push(...clusterByDist(noAddr, 3.5));
   // Same recorded point, different wording of the address (or a shared wrong coordinate):
   // join them so the columns form one grid instead of sitting on top of each other.

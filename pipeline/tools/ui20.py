@@ -57,6 +57,10 @@ def main():
     a = a.replace("OpenStreetMap (instantánea ${m.osm_snapshot}) y Wikidata (${m.wikidata_snapshot})", "OpenStreetMap (instantánea ${m.osm_snapshot.slice(0,10)} para Alemania, Irlanda, Suecia, Jersey, Finlandia y Rumanía; ${%s.snapshot_osm.slice(0,10)}, refrescada el 2026-11-20, para el resto) y Wikidata (${m.wikidata_snapshot} para esos países; ${%s.snapshot_wikidata} para el resto)" % (V, V), 1)
     a = a.replace("OpenStreetMap (Stand ${m.osm_snapshot}) und Wikidata (${m.wikidata_snapshot})", "OpenStreetMap (Stand ${m.osm_snapshot.slice(0,10)} für Deutschland, Irland, Schweden, Jersey, Finnland und Rumänien; ${%s.snapshot_osm.slice(0,10)}, am 2026-11-20 aufgefrischt, für die übrigen) und Wikidata (${m.wikidata_snapshot} für diese Länder; ${%s.snapshot_wikidata} für die übrigen)" % (V, V), 1)
     a = a.replace("OpenStreetMap (snapshot ${m.osm_snapshot}) and Wikidata (${m.wikidata_snapshot})", "OpenStreetMap (snapshot ${m.osm_snapshot.slice(0,10)} for Germany, Ireland, Sweden, Jersey, Finland and Romania; ${%s.snapshot_osm.slice(0,10)}, refreshed on 2026-11-20, for the rest) and Wikidata (${m.wikidata_snapshot} for those countries; ${%s.snapshot_wikidata} for the rest)" % (V, V), 1)
+    # v20r3 (auditoría C ronda 2): una dirección sin número de casa (solo la calle) agrupa a <=8 m, no a 15 m (si no, Brahmsallee/Grindelallee forman un grupo de 42/22 columnas repartidas en 76 m)
+    _old = "for (const list of byAddr.values()) clusters.push(...clusterByDist(list, 15));"
+    assert _old in a
+    a = a.replace(_old, "for (const [k, list] of byAddr) clusters.push(...clusterByDist(list, /\\d/.test(k) ? 15 : 8));", 1)
     assert a.count('snapshot_osm.slice') == 3
     _chk = re.sub(r'instantánea \$\{m\.osm_snapshot[^`]*?para el resto\)|Stand \$\{m\.osm_snapshot[^`]*?für die übrigen\)|snapshot \$\{m\.osm_snapshot[^`]*?for the rest\)', '', a)   # el texto de «Acerca de» nombra a propósito los países de la v19
     for lang in OLD: assert OLD[lang] not in _chk or lang == '', lang

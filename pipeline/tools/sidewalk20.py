@@ -79,6 +79,11 @@ def _extra_near(N, cc):
         g = [(p['lat'], p['lon']) for p in h.get('geometry', [])]
         if len(g) >= 2: N.add_h(hid, g, h.get('tags') or {})
 
+def has_number(a):
+    """Como addrKey de app3d.js: la dirección lleva número de casa (se ignoran los códigos postales de 5 cifras)."""
+    import re
+    return bool(re.search(r'\d', re.sub(r'\b\d{5}\b', '', a or '')))
+
 def groups_of(stones):
     """Agrupación como la de la app (clusterByDist): enlace simple; 15 m entre placas con la misma dirección (addrKey), 3,5 m sin dirección."""
     par = list(range(len(stones)))
@@ -90,7 +95,7 @@ def groups_of(stones):
         a = s.get('a'); k = ('A', (s.get('c') or '').strip().lower(), a.strip().lower()) if a else ('N',)
         byk[k].append(i)
     for k, idx in byk.items():
-        lim = 15.0 if k[0] == 'A' else 3.5
+        lim = (15.0 if has_number(k[2]) else 8.0) if k[0] == 'A' else 3.5   # v20r3 (auditoría C ronda 2): una dirección sin número de casa (solo la calle) no agrupa a >8 m (Brahmsallee/Grindelallee)
         grid = defaultdict(list)
         for i in idx:
             s = stones[i]; grid[(math.floor(s['la'] / 0.0003), math.floor(s['lo'] / 0.0005))].append(i)
@@ -197,8 +202,44 @@ def solve(PB, lines, RW, okf, inside, keep_min=1.5, min_dot=0.5, tstep=0.05):
     if best is None: return None, (dH, ht)
     return best[1], (dH, ht)
 
+
+CLEAR_LEVELS = (1.5, 1.0, 0.6, 0.3, 0.1)   # v20r3: holgura del CENTRO de cada columna/chincheta a la huella (m) en la colocación «relajada»
+def solve_relaxed(PB, RW, lines, pins, sl, street=None, tstep=0.25):
+    """v20r3 (auditoría C ronda 2): grupos para los que no hay hueco con las holguras completas: se busca la posición más cercana al origen en la que el CENTRO de todas las
+    columnas (y de las chinchetas 2D) queda FUERA de todo edificio con holgura decreciente (fila pegada a la fachada; la columna puede rozar la pared) y fuera de la calzada
+    (>=2 m de toda vía rodada). Con `street` (nombre de la calle de la dirección) el grupo debe quedar a <=9 m de esa calle. Primero dentro del tope de 25 m, luego hasta 40 m."""
+    if PB is None: return None, 0
+    sl0 = [(0.0, 0.0)] if not sl else sl
+    pts0 = [(px + sx, py + sy) for (px, py) in pins for (sx, sy) in ([(0.0, 0.0)])] + [(0.0, 0.0)]
+    sline = None
+    if street:
+        ls_ = [ls for ls, tg in lines if (tg.get('name') or '').strip().lower() == street.strip().lower()]
+        sline = unary_union(ls_) if ls_ else None
+    def okr(q, c, road):
+        for (px, py) in pins:
+            if PB.distance(Point(px + q[0], py + q[1])) < c: return False
+        for (sx, sy) in sl0:
+            p = Point(q[0] + sx, q[1] + sy)
+            if PB.distance(p) < c: return False
+            if road and RW is not None and RW.distance(p) < 2.0 and not (street and sline is not None and False): return False
+            if sline is not None and sline.distance(p) > 9.0: return False
+        return True
+    for cap in (_TMAX[0], 40.0):
+        for road in (True, False):
+            for k, c in enumerate(CLEAR_LEVELS):
+                best = None
+                for a in range(0, 360, 5):
+                    ux, uy = math.cos(math.radians(a)), math.sin(math.radians(a)); t = 0.0
+                    while t <= cap:
+                        q = (ux * t, uy * t)
+                        if (best is None or t < best[0]) and okr(q, c, road): best = (t, q); break
+                        t += tstep
+                if best: return best[1], 10 + k + (0 if cap <= _TMAX[0] else 20)
+    return None, 0
+
 def process_cc(cc, stones, N, extra, legit, only=None, comp=None, angs=None, alias=None):
     angs = angs or {}; alias = alias or set()
+    ff = Path(__file__).with_name('sidewalk-facade20.json'); FACADE = json.load(open(ff)) if ff.exists() else {}   # v20r3: grupos que se dibujan en fila pegada a la fachada de la calle de su dirección
     sel = [s for s in stones if (s.get('cc') or 'DE') == cc]
     if only is None:
         for s in sel: s.pop('dla', None); s.pop('dlo', None)
@@ -223,14 +264,17 @@ def process_cc(cc, stones, N, extra, legit, only=None, comp=None, angs=None, ali
         fit0 = okf((0.0, 0.0))
         if all(s['id'] in legit for s in g) and (insd or not fit0):
             status = 'legitima'
-        elif insd or not fit0:
+        elif insd or not fit0 or g[0]['id'] in FACADE:
             # niveles: 1-2 solo hacia la acera sin invadir la calzada; 3-4 la cuadrícula puede pisar el borde de la calzada (acera estrecha)
             plan = [(1.5, 0.5), (0.4, 0.5), (0.4, -1.01), (-1, -1.01)]
             ts = 0.05 if len(g) <= 6 else 0.1
             shift, tier = None, 0
-            for k, (km, md) in enumerate(plan, 1):
-                shift, info = solve(PB, lines, RW, okf, insd, keep_min=km, min_dot=md, tstep=ts)
-                if shift is not None: tier = k; break
+            if g[0]['id'] not in FACADE:
+                for k, (km, md) in enumerate(plan, 1):
+                    shift, info = solve(PB, lines, RW, okf, insd, keep_min=km, min_dot=md, tstep=ts)
+                    if shift is not None: tier = k; break
+            if shift is None:   # v20r3: colocación relajada (centros fuera de edificios y de la calzada; fila pegada a la fachada)
+                shift, tier = solve_relaxed(PB, RW, lines, pins, slots(nv, ang or 0.0), FACADE.get(g[0]['id']))
             status = 'revisar' if shift is None else 'ajustada'
         sp = (comp or {}).get(g[0]['id'])
         if sp and status in ('ok', 'ajustada') and okf((sp[0], sp[1])):
