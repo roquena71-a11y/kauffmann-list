@@ -8,7 +8,8 @@ const S = D.stones, base = M.meta.previous_records;
 assert(base === 65832 && S.length >= base + 29 && S.length === D.meta.count, 'base 65832 + 29 + v20');
 const added = S.slice(base, base + 29), old = S.slice(0, base);
 assert(D.meta.v19_added.records === 29 && D.meta.v19_added.countries.JE === 20 && D.meta.v19_added.countries.FI === 7 && D.meta.v19_added.countries.RO === 2, 'meta.v19_added');
-const strip = s => { const { dla, dlo, ...r } = s; if (['LU', 'AT', 'PL', 'CH'].includes(r.cc)) delete r.cc; return r; };   // v20: dla/dlo (posición de dibujo) y cc de los 15 registros alemanes reasignados a LU/AT/PL/CH (fuera de Alemania) no cuentan como cambio de la base
+const FIX = (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'data/v20-added-20261120.json'), 'utf8')).base_fixes || {}; } catch (e) { return {}; } })();   // v20r3: los únicos cambios de la base (fechas b/d que no eran fechas, 7 municipios que eran calle) están documentados con su valor anterior
+const strip = s => { let { dla, dlo, ...r } = s; const fx = FIX[r.id] || {}; for (const [k, v] of Object.entries(fx)) { if (k === '_keys') continue; if (v === null || v === undefined) delete r[k]; else r[k] = v; } if (fx._keys) { const o = {}; for (const k of fx._keys) if (k in r) o[k] = r[k]; for (const k of Object.keys(r)) if (!(k in o)) o[k] = r[k]; r = o; } if (['LU', 'AT', 'PL', 'CH'].includes(r.cc)) delete r.cc; return r; };   // v20: dla/dlo (posición de dibujo) y cc de los 15 registros alemanes reasignados a LU/AT/PL/CH (fuera de Alemania) no cuentan como cambio de la base
 const h = crypto.createHash('sha256').update(JSON.stringify(old.map(strip))).digest('hex');
 assert(h === M.meta.previous_sha256_json_list, 'base intacta (sha256, sin dla/dlo) ' + h);
 const cnt = cc => added.filter(s => s.cc === cc).length;
