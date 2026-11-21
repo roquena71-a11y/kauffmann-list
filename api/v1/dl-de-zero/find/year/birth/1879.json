@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"kind":"birth",
+"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln (https://open.nrw/dataset/stolpersteine-koln-k)","Stadt Krefeld (https://www.krefeld.de/de/vermessung/digitale-geodaten/)","Stadt Mönchengladbach (https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093)","Stadt Viersen / KRZN (https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83)","Stadt Moers / KRZN (https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4)","Stadt Xanten / KRZN (https://www.govdata.de/suche/daten/stolpersteine-xanten138aa)","Stadt Erkrath (https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974)","Stadt Dormagen / Rhein-Kreis Neuss (https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json","family":"dl-de-zero","generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","source_url":"https://www.govdata.de/dl-de/zero-2-0"},
+"page":1,
+"pages":1,
+"rows":[
+["xa-113","Benny Oster",1879,null,"Xanten","o"],
+["xa-125","Cornelia Thalmann",1879,1942,"Xanten","t"],
+["kr-521","Hedwig Leib geb. Cahn",1879,1944,"Krefeld","c"],
+["xa-187","Hermine Willner",1879,1944,"Xanten","w"],
+["vie-419","Leo Bruch",1879,1943,"Viersen","b"],
+["kr-123","Olga Bruckmann",1879,null,"Krefeld","b"],
+["mo-427","Rosa Bloch",1879,null,"Moers","b"],
+["vie-101","Sibilla Heymann",1879,1942,"Viersen","h"],
+["vie-205","Sofia Lifges",1879,1942,"Viersen","l"]
+],
+"year":1879}

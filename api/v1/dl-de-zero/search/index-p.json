@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln (https://open.nrw/dataset/stolpersteine-koln-k)","Stadt Krefeld (https://www.krefeld.de/de/vermessung/digitale-geodaten/)","Stadt Mönchengladbach (https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093)","Stadt Viersen / KRZN (https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83)","Stadt Moers / KRZN (https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4)","Stadt Xanten / KRZN (https://www.govdata.de/suche/daten/stolpersteine-xanten138aa)","Stadt Erkrath (https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974)","Stadt Dormagen / Rhein-Kreis Neuss (https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json","family":"dl-de-zero","generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","source_url":"https://www.govdata.de/dl-de/zero-2-0"},
+"prefix":"p",
+"rows":[
+["kr-427","Helmuth Pappenheimer",1923,"Krefeld",51.33699,6.58699,"p"],
+["kr-428","Werner Pappenheimer",1927,"Krefeld",51.33699,6.58699,"p"],
+["xa-169","Carl Passmann",1905,"Xanten",51.66117,6.45552,"p"],
+["xa-175","Erna Passmann",1904,"Xanten",51.66116,6.45553,"p"],
+["xa-171","Helga Passmann",1931,"Xanten",51.66116,6.45553,"p"],
+["xa-173","Hermann Passmann",1929,"Xanten",51.66115,6.45554,"p"],
+["xa-164","Jacob Passmann",1878,"Xanten",51.66117,6.45551,"p"],
+["xa-166","Johanna Passmann",1881,"Xanten",51.66116,6.45552,"p"],
+["xa-177","Levy Passmann",1884,"Xanten",51.66116,6.45554,"p"],
+["kr-88","Hedwig Willner geb. Pins",1883,"Krefeld",51.32652,6.5624,"p"],
+["kr-709","Paul Plänksken",1904,"Krefeld",51.3729,6.55783,"p"],
+["kr-67","Heinrich (Heiner) Plum",null,"Krefeld",51.33125,6.56505,"p"],
+["mo-405","Otto Preul",1878,"Moers",51.44893,6.63277,"p"]
+]}

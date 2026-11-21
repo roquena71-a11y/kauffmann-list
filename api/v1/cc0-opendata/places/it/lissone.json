@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"IT",
+"label":"Lissone",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-95","Aldo Fumagalli",1921,"memorial","via Fleming ang. Jenner",45.61223,9.26232],
+["mz-126","Ambrogio Avvoi",1894,"memorial","via Oslavia, 19",45.60769,9.24668],
+["mz-17","Attilio Mazzi",1885,"memorial","via Matteotti, 10",45.60818,9.23625],
+["mz-148","Fernando Cassanmagnago",1924,"memorial","via Mazzini, 6",45.60684,9.24292],
+["mz-40","Gianfranco de Capitani da Vimercate",1925,"memorial","via Padre Reginaldo Giussani, 59",45.60739,9.23707],
+["mz-62","Giulio Colzani",1911,"memorial","via Piave, 1",45.60651,9.24309],
+["mz-2","Mario Bettega",1918,"memorial","Campo sportivo Bettega, via Dante 30",45.61163,9.233]
+],
+"slug":"lissone"}

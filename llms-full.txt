@@ -9,8 +9,11 @@ Site: https://roquena71-a11y.github.io/kauffmann-list/ · API root: https://roqu
 ## 1. What is here
 
 - **cc-by** (CC-BY, 228 people): Placas añadidas de la lista abierta de Stolpersteine de Berlín (CSV). Solo nombre, dirección, año de nacimiento y coordenadas; no se copian las biografías de stolpersteine-berlin.de. Familia separada: no se fusiona con ODbL ni con CC0.
+- **cc-by-4** (CC-BY-4.0, 111 people): Placas añadidas bajo Creative Commons Attribution 4.0 International (Den Haag, Memmingen, Firenze). Familia separada de cc-by (Berlín, versión no especificada en origen), ODbL y CC0.
 - **cc0** (CC0-1.0, 118,254 people): Registros solo de Wikidata (CC0): personas con identificador en bases de datos sobre la Shoah y la persecución nazi (no todas son víctimas mortales; ver fate y death_date). Sin coordenadas ni ids de OpenStreetMap; publicados aparte de la familia ODbL.
-- **dl-de-zero** (dl-de/zero-2-0, 0 people): Placas añadidas del JSON abierto Stolpersteine Köln (Open.NRW / Offene Daten Köln). No se copian las biografías de museenkoeln.de/nsdok.de. Familia separada: no se fusiona con ODbL ni con CC0.
+- **cc0-opendata** (CC0-1.0, 196 people): Placas añadidas de conjuntos municipales bajo CC0 1.0 (Monza e Brianza, Grevenbroich). Separadas de la familia cc0 (solo Wikidata) y de ODbL.
+- **dl-de-by** (dl-de/by-2-0, 0 people): Placas añadidas bajo Datenlizenz Deutschland – Namensnennung – Version 2.0 (Dresden). Familia separada: requiere atribución explícita.
+- **dl-de-zero** (dl-de/zero-2-0, 361 people): Placas añadidas de conjuntos municipales alemanes bajo Datenlizenz Deutschland – Zero – Version 2.0 (Köln, Krefeld, Mönchengladbach, Viersen, Moers [GDI-DE], Xanten, Erkrath, Dormagen). No se copian biografías; familia separada de ODbL y CC0.
 - **odbl** (ODbL-1.0, 62,519 people): Derivative Database (ODbL 1.0) de Stolpersteine (OpenStreetMap + Wikidata). Share-alike: si redistribuyes la base o un extracto sustancial, debe seguir bajo ODbL 1.0 con atribución.
 - Possibly-living people are excluded from all person records. `data/search/` and `data/stones.json` are transcriptions of public street plaques, not person records.
 
@@ -69,7 +72,7 @@ Example path: `https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/find/
 
 Minimum: **Lista Kauffmann** + person link + original source + data date + licence.
 
-- Person link (opens it in the map): odbl → `https://roquena71-a11y.github.io/kauffmann-list/#s=<memorials[0].memorial_id>` (the plaque); cc0 → `https://roquena71-a11y.github.io/kauffmann-list/#p=<id>`. Machine record: `https://roquena71-a11y.github.io/kauffmann-list/api/v1/<family>/people/by-surname/<people_prefix>.json` (object with that id).
+- Person link (opens it in the map): cc0 → `https://roquena71-a11y.github.io/kauffmann-list/#p=<id>`; memorial families (odbl, cc-by, cc-by-4, dl-de-zero, dl-de-by, cc0-opendata) → `https://roquena71-a11y.github.io/kauffmann-list/#s=<memorials[0].memorial_id>` (the plaque). Machine record: `https://roquena71-a11y.github.io/kauffmann-list/api/v1/<family>/people/by-surname/<people_prefix>.json` (object with that id).
 - Original source: each `sources[].url` (OpenStreetMap node, Wikidata item…) and, when present, `links[]` (Gedenkbuch, Yad Vashem, USHMM, municipal pages).
 - Template:
 
@@ -77,7 +80,7 @@ Minimum: **Lista Kauffmann** + person link + original source + data date + licen
 {name} ({birth}–{death}). Lista Kauffmann, ficha {id}, {permalink}. Fuente: {source_url}. Datos de {generated}. Licencia {license} ({attribution}).
 ```
 
-- Licence text: odbl → `ODbL-1.0`, attribution `© OpenStreetMap contributors` + Wikidata (CC0); cc0 → `CC0-1.0`, Wikidata; cc-by → Creative Commons Attribution (cc-by), Koordinierungsstelle Stolpersteine Berlin (version 3.0 vs 4.0 not stated on the dataset page); dl-de-zero → `dl-de/zero-2-0`, Stadt Köln / NS-Dokumentationszentrum.
+- Licence text: see `meta.license` and `meta.attribution` of each family (`odbl` ODbL-1.0, `cc0` CC0-1.0 Wikidata, `cc0-opendata` CC0-1.0 municipal open data, `cc-by` Berlin, `cc-by-4` CC-BY-4.0, `dl-de-zero` dl-de/zero-2-0, `dl-de-by` dl-de/by-2-0).
 - Write only what the record says. Missing death date → say "no consta"/"not recorded". Never fill gaps from memory.
 - Records without a name (anonymous memorials, `name` = null; they exist in the person files and in the place/year files, not in `find/name/`): cite them as "sin nombre" / "no name recorded", never as "None" or "null".
 - `meta.attribution` is a list: join it with "; " when you write the citation.
@@ -85,7 +88,7 @@ Minimum: **Lista Kauffmann** + person link + original source + data date + licen
 ## 7. Rules
 
 - Cita siempre: 'Lista Kauffmann' + enlace a la ficha + la fuente original (sources[] de cada registro).
-- Respeta la licencia de cada familia: ODbL 1.0 (share-alike + atribución '© OpenStreetMap contributors') en odbl/; CC0 en cc0/; Creative Commons Attribution (cc-by) en cc-by/ (Koordinierungsstelle Stolpersteine Berlin; no se copian las biografías de stolpersteine-berlin.de; el catálogo no precisa si es CC BY 3.0 o 4.0); Datenlizenz Deutschland – Zero – Version 2.0 en dl-de-zero/ (Stadt Köln / NS-Dokumentationszentrum; no se copian las biografías de museenkoeln.de). Cada familia se publica por separado. Otras fuentes institucionales solo con permiso claro y su propia licencia.
+- Respeta la licencia de cada familia: ODbL 1.0 (share-alike + atribución '© OpenStreetMap contributors') en odbl/; CC0 en cc0/ (solo Wikidata) y cc0-opendata/ (Monza e Brianza, Grevenbroich); Creative Commons Attribution (cc-by) en cc-by/ (Berlín; versión 3.0 vs 4.0 no declarada en origen) y CC BY 4.0 en cc-by-4/ (Den Haag, Memmingen, Firenze); dl-de/zero-2-0 en dl-de-zero/ (Köln, Mönchengladbach, Krefeld, Viersen, Moers GDI-DE, Xanten, Erkrath, Dormagen); dl-de/by-2-0 en dl-de-by/ (Dresden). No se copian biografías salvo campos estructurados o inscripciones literales permitidas. Cada familia se publica por separado.
 - No combines registros de familias distintas en un mismo objeto para redistribuirlo; crúzalos solo por identificador (Qid de Wikidata o id institucional).
 - No presentes inferencias como hechos: los datos proceden de placas y bases abiertas y pueden contener errores; remite a la fuente primaria.
 - Prohibido usar estos datos para acosar, elaborar listas de descendientes, perfiles étnico-religiosos de personas vivas, negacionismo o fines antisemitas.
@@ -93,7 +96,7 @@ Minimum: **Lista Kauffmann** + person link + original source + data date + licen
 
 ## 8. Scope
 
-La API de personas (api/v1) excluye a las personas posiblemente vivas (sin indicio de muerte y nacidas hace menos de 110 años, o sin año) y quita los enlaces a fichas de registro de posibles supervivientes nacidos desde 1916. data/search/ y data/stones.json NO son fichas de personas: son transcripciones de placas públicas (memoriales físicos en la calle) e incluyen TODAS las placas, también las de personas posiblemente vivas. data/search/ solo contiene nombre tal como figura en la placa, dirección, coordenadas y año; data/stones.json es la base de placas completa (OpenStreetMap + Wikidata) con la inscripción y las etiquetas y enlaces que esas placas tienen en OSM/Wikidata. Las placas añadidas de listas municipales están en data/berlin-added-*.json (CC BY) y data/koeln-added-*.json (dl-de/zero-2-0), fuera de stones.json y de data/search/ (estos dos siguen siendo solo ODbL); el mapa las carga aparte. La API las publica en las familias cc-by y dl-de-zero; la regla de posiblemente vivas se aplica igual (sin indicio de muerte y nacidas hace menos de 110 años, o sin año, no hay ficha). Para datos de personas usa api/v1.
+La API de personas (api/v1) excluye a las personas posiblemente vivas (sin indicio de muerte y nacidas hace menos de 110 años, o sin año) y quita los enlaces a fichas de registro de posibles supervivientes nacidos desde 1916. data/search/ y data/stones.json NO son fichas de personas: son transcripciones de placas públicas (memoriales físicos en la calle) e incluyen TODAS las placas, también las de personas posiblemente vivas. data/search/ solo contiene nombre tal como figura en la placa, dirección, coordenadas y año; data/stones.json es la base de placas completa (OpenStreetMap + Wikidata) con la inscripción y las etiquetas y enlaces que esas placas tienen en OSM/Wikidata. Las placas añadidas de listas municipales abiertas están en data/*-added-*.json (Berlín CC BY; Köln, Mönchengladbach, Krefeld, Viersen, Moers GDI-DE, Xanten, Erkrath y Dormagen bajo dl-de/zero-2-0; Dresden bajo dl-de/by-2-0; Den Haag, Memmingen y Firenze bajo CC BY 4.0; Monza e Brianza y Grevenbroich bajo CC0 1.0), fuera de stones.json y de data/search/ (estos dos siguen siendo solo ODbL); el mapa las carga aparte. La API las publica por familia de licencia en api/v1/ (cc-by, cc-by-4, dl-de-zero, dl-de-by, cc0-opendata); la regla de posiblemente vivas se aplica igual (sin indicio de muerte y nacidas hace menos de 110 años, o sin año, no hay ficha). Para datos de personas usa api/v1.
 
 ## 9. Corrections and removal
 

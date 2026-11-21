@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"IT",
+"label":"Giussano",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-118","Giuseppe Erminio Cazzaniga",1918,"memorial","piazza Moro, 1",45.69227,9.20552],
+["mz-60","Giuseppe Fumagalli",1907,"memorial","palazzo comunale",45.6921,9.20553],
+["mz-93","Mario Barzaghi",1915,"memorial","palazzo comunale",45.69195,9.20551]
+],
+"slug":"giussano"}

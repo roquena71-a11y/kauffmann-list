@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"prefix":"m",
+"rows":[
+["mz-166","Giulio Mandelli",1909,"Brugherio",45.5512,9.30042,"m"],
+["mz-38","Amabile Marelli",1918,"Lentate sul Seveso",45.66835,9.12827,"m"],
+["mz-1","Arturo Martinelli",1916,"Cesano Maderno",45.62717,9.14728,"m"],
+["mz-66","Pietro Massari",1906,"Monza",45.58608,9.26289,"m"],
+["mz-156","Ezio Angelo Mauri",1915,"Seveso",45.64631,9.13869,"m"],
+["mz-17","Attilio Mazzi",1885,"Lissone",45.60818,9.23625,"m"],
+["mz-163","Enrico Meregalli",1917,"Biassono",45.63028,9.27741,"m"],
+["mz-164","Mario Meregalli",1915,"Biassono",45.63028,9.27752,"m"],
+["mz-20","Vincenzo Meroni",1911,"Meda",45.66239,9.15682,"m"],
+["mz-122","Ernesto Messa",1894,"Monza",45.58313,9.2886,"m"],
+["mz-92","Mario Michelini",1909,"Desio",45.61677,9.20708,"m"],
+["mz-32","Antonio Moi",1092,"Bovisio Masciago",45.61196,9.1476,"m"],
+["mz-98","Vincenzo Moino",1899,"Monza",45.5812,9.27629,"m"],
+["mz-65","Luigi Montrasio",1909,"Monza",45.57149,9.31068,"m"],
+["mz-76","Virginio Morganti",1922,"Villasanta",45.60687,9.30209,"m"],
+["gv-10","Caroline Moses",1882,"Grevenbroich",51.06398,6.56419,"m"],
+["mz-52","Gennaro Motta",1909,"Bernareggio",45.64947,9.4117,"m"]
+]}

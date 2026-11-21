@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"s",
+"rows":[
+["dh-288","Hanna (Annetje) Sarphati",1890,"Den Haag",52.08128,4.29577,"s"],
+["fi-324267_2","Elena Segrè",1920,"Firenze",43.7772,11.27449,"s"],
+["fi-324267_1","Giulio Segrè",1878,"Firenze",43.7772,11.27449,"s"],
+["fi-324267_3","Lidia Segrè",1910,"Firenze",43.7772,11.27449,"s"],
+["fi-327874_1","Affortunata Servi",1881,"Firenze",43.77338,11.24707,"s"],
+["fi-327874_2","Irma Servi",1883,"Firenze",43.77338,11.24707,"s"],
+["fi-313602_1","Giuseppe Siebzehner",1863,"Firenze",43.77435,11.26883,"s"],
+["fi-328710_2","Laura Perugia Socal",1874,"Firenze",43.76504,11.24808,"s"],
+["fi-330785_1","Alfredo Spizzichino",1869,"Firenze",43.78444,11.22933,"s"],
+["fi-330785_2","Fernanda Servi Spizzichino",1875,"Firenze",43.78444,11.22933,"s"],
+["fi-330785_3","Rina Spizzichino",1920,"Firenze",43.78444,11.22933,"s"],
+["mm-109","Marie Stetter",null,"Memmingen",47.9849,10.17992,"s"],
+["dh-297","Leo Swaab",1903,"Den Haag",52.07837,4.31899,"s"]
+]}

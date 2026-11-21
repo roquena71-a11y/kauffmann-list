@@ -58,22 +58,22 @@
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "attribution": [
-        "Stadt Memmingen (open.bydata, CC BY 4.0, https://open.bydata.de/api/hub/repo/datasets/stolpersteine_01)",
+        "Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)",
+        "Geodaten Stadt Memmingen",
         "Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"
       ],
       "source_url": "https://creativecommons.org/licenses/by/4.0/",
-      "description": "Placas añadidas bajo Creative Commons Attribution 4.0 International (Memmingen, Firenze). Familia separada de cc-by (Berlín, versión no especificada en origen), ODbL y CC0."
+      "description": "Placas añadidas bajo Creative Commons Attribution 4.0 International (Den Haag, Memmingen, Firenze). Familia separada de cc-by (Berlín, versión no especificada en origen), ODbL y CC0."
     },
     "cc0-opendata": {
       "license": "CC0-1.0",
       "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
       "attribution": [
-        "Gemeente Den Haag (CC0 1.0, https://data.overheid.nl/dataset/stolpersteine)",
-        "Regione Lombardia, Monza e Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)",
+        "Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)",
         "Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"
       ],
       "source_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "description": "Placas añadidas de conjuntos municipales bajo CC0 1.0 (Den Haag, Monza e Brianza, Grevenbroich). Separadas de la familia cc0 (solo Wikidata) y de ODbL."
+      "description": "Placas añadidas de conjuntos municipales bajo CC0 1.0 (Monza e Brianza, Grevenbroich). Separadas de la familia cc0 (solo Wikidata) y de ODbL."
     }
   }
 }

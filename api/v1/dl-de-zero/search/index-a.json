@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln (https://open.nrw/dataset/stolpersteine-koln-k)","Stadt Krefeld (https://www.krefeld.de/de/vermessung/digitale-geodaten/)","Stadt Mönchengladbach (https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093)","Stadt Viersen / KRZN (https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83)","Stadt Moers / KRZN (https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4)","Stadt Xanten / KRZN (https://www.govdata.de/suche/daten/stolpersteine-xanten138aa)","Stadt Erkrath (https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974)","Stadt Dormagen / Rhein-Kreis Neuss (https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json","family":"dl-de-zero","generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","source_url":"https://www.govdata.de/dl-de/zero-2-0"},
+"prefix":"a",
+"rows":[
+["vie-304","Bernhard Dr. Abraham",1878,"Viersen",51.25593,6.39386,"a"],
+["vie-307","Grete Abraham",1885,"Viersen",51.25593,6.39386,"a"],
+["xa-103","Alex Alexander",1883,"Xanten",51.6602,6.45544,"a"],
+["xa-99","Hedwig Alexander",1888,"Xanten",51.66019,6.45543,"a"],
+["xa-109","Ilse Alexander",1927,"Xanten",51.66018,6.45547,"a"],
+["xa-101","Johanna Alexander",1882,"Xanten",51.66018,6.45545,"a"],
+["xa-105","Olga Alexander",1897,"Xanten",51.66017,6.45547,"a"],
+["xa-107","Ruth Alexander",1925,"Xanten",51.66019,6.45545,"a"],
+["mo-478","Sofi Hoffmann geb. Argelas",1886,"Moers",51.4574,6.66232,"a"],
+["kr-42","Dr. Ernst Ascher",1876,"Krefeld",51.34162,6.57622,"a"]
+]}

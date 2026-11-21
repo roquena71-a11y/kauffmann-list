@@ -1,0 +1,9 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"j",
+"rows":[
+["jack","fi-328713_4","Jack Ziegler",1939,null,"Firenze","z"],
+["jacobson","dh-293","Abraham Jacobson",1886,null,"Den Haag","j"],
+["jenny","fi-327877_5","Jenny Passigli",1883,1944,"Firenze","p"],
+["jong","dh-308","Salomon Philip de Jong",1871,null,"Den Haag","j"]
+]}

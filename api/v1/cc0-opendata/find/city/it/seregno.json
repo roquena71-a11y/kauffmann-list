@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":10,
+"country":"IT",
+"label":"Seregno",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-6","Alberto Gani",1934,1944,"Seregno","g"],
+["mz-155","Claudio Appennini",1920,1945,"Seregno","a"],
+["mz-133","Ernesto Spinelli",1915,1945,"Seregno","s"],
+["mz-5","Ester Gani",1928,1945,"Seregno","g"],
+["mz-24","Ferdinando Silva",1909,1944,"Seregno","s"],
+["mz-44","Giovanni Re",1891,1945,"Seregno","r"],
+["mz-3","Giuseppe Gani",1895,1944,"Seregno","g"],
+["mz-101","Luigi Battista Somaschini",1922,1944,"Seregno","s"],
+["mz-4","Regina Gani",1926,1945,"Seregno","g"],
+["mz-7","Speranza Zaccar",1900,1944,"Seregno","z"]
+],
+"slug":"seregno"}

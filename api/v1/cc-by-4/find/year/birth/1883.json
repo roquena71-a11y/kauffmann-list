@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"birth",
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["fi-327878_1","Ione Coen",1883,1944,"Firenze","c"],
+["fi-327874_2","Irma Servi",1883,1943,"Firenze","s"],
+["fi-327877_5","Jenny Passigli",1883,1944,"Firenze","p"],
+["fi-328713_2","Rachele Lindenbaum Plessner",1883,null,"Firenze","p"],
+["fi-330783_3","Umberto Lascar",1883,null,"Firenze","l"]
+],
+"year":1883}

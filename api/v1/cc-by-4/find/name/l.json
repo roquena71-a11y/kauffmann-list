@@ -1,0 +1,23 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"l",
+"rows":[
+["lascar","fi-330783_4","Ada Procaccia Lascar",1885,null,"Firenze","l"],
+["lascar","fi-330783_2","Luciana Lascar",1925,null,"Firenze","l"],
+["lascar","fi-330783_3","Umberto Lascar",1883,null,"Firenze","l"],
+["lascar","fi-330783_1","Wanda Lascar",1923,null,"Firenze","l"],
+["laura","fi-328710_2","Laura Perugia Socal",1874,1944,"Firenze","s"],
+["leeuwen","dh-307","Hester van Leeuwen",1871,null,"Den Haag","l"],
+["lelia","fi-329394_2","Lelia Bemporad Millul",1893,1944,"Firenze","m"],
+["leo","dh-297","Leo Swaab",1903,null,"Den Haag","s"],
+["leone","fi-324268","Leone Camerino",1870,1943,"Firenze","c"],
+["leone","fi-327877_2","Leone Passigli",1913,1944,"Firenze","p"],
+["levy","fi-324264","Rudolf Levy",1875,1944,"Firenze","l"],
+["lidia","fi-324267_3","Lidia Segrè",1910,null,"Firenze","s"],
+["liliana","fi-327877_4","Liliana Passigli",1916,1944,"Firenze","p"],
+["liliana","fi-328713_3","Liliana Ziegler",1937,null,"Firenze","z"],
+["lina","fi-324265_4","Anna Lina Fiano",1894,null,"Firenze","f"],
+["lindenbaum","fi-328713_2","Rachele Lindenbaum Plessner",1883,null,"Firenze","p"],
+["luciana","fi-330783_2","Luciana Lascar",1925,null,"Firenze","l"],
+["lumini","fi-328709_4","Carlo Lumini",1902,1944,"Firenze","l"]
+]}

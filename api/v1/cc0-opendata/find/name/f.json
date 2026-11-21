@@ -1,0 +1,22 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"prefix":"f",
+"rows":[
+["federico","mz-67","Federico Gaviraghi",1903,1944,"Monza","g"],
+["felice","mz-96","Felice Capellini",1920,1943,"Meda","c"],
+["ferdinando","mz-24","Ferdinando Silva",1909,1944,"Seregno","s"],
+["fernando","mz-148","Fernando Cassanmagnago",1924,1945,"Lissone","c"],
+["ferrari","mz-129","Luigi Ferrari",1906,1945,"Monza","f"],
+["ferruccio","mz-9","Ferruccio Sala",1920,1945,"Bovisio Masciago","s"],
+["follini","mz-13","Mario Follini",1897,1944,"Cogliate","f"],
+["francesco","mz-50","Francesco Caglio",1909,1944,"Arcore","c"],
+["francesco","mz-107","Francesco Cazzaniga",1922,1945,"Verano Brianza","c"],
+["francesco","mz-112","Francesco Ghianda",1909,1945,"Bovisio Masciago","g"],
+["franco","mz-104","Franco Crippa",1927,1945,"Varedo","c"],
+["frattini","mz-79","Amedeo Frattini",1901,1945,"Albiate","f"],
+["friedrich","gv-26","Friedrich Theisebach",1888,1944,"Grevenbroich","t"],
+["fritz","gv-27","Fritz Stern",1923,2021,"Grevenbroich","s"],
+["fumagalli","mz-95","Aldo Fumagalli",1921,1943,"Lissone","f"],
+["fumagalli","mz-139","Carlo Fumagalli",1923,1945,"Vimercate","f"],
+["fumagalli","mz-60","Giuseppe Fumagalli",1907,1945,"Giussano","f"]
+]}

@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"kind":"birth",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-53","Amedeo Bettini",1909,1945,"Bovisio Masciago","b"],
+["mz-83","Antonio Casiraghi",1909,1945,"Biassono","c"],
+["mz-94","Carlo Ambrogio Vergani",1909,1944,"Lentate sul Seveso","v"],
+["mz-88","Clarino Basilico",1909,1944,"Cogliate","b"],
+["mz-24","Ferdinando Silva",1909,1944,"Seregno","s"],
+["mz-50","Francesco Caglio",1909,1944,"Arcore","c"],
+["mz-112","Francesco Ghianda",1909,1945,"Bovisio Masciago","g"],
+["mz-52","Gennaro Motta",1909,1944,"Bernareggio","m"],
+["mz-166","Giulio Mandelli",1909,1944,"Brugherio","m"],
+["mz-158","Giulio Viganò",1909,1944,"Veduggio con Colzano","v"],
+["mz-65","Luigi Montrasio",1909,1944,"Monza","m"],
+["mz-92","Mario Michelini",1909,1945,"Desio","m"],
+["mz-102","Piero Gorla",1909,1945,"Seveso","g"]
+],
+"year":1909}

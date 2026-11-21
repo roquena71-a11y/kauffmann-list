@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"prefix":"p",
+"rows":[
+["mz-145","Carlo Parazzini",1922,"Lentate sul Seveso",45.66635,9.11258,"p"],
+["mz-121","Antonio Gambacorti Passerini",1903,"Monza",45.58249,9.27242,"p"],
+["mz-131","Dorotea (Dora) Pisetzky",1892,"Monza",45.58246,9.29457,"p"],
+["mz-34","Albino Pisoni",1913,"Brugherio",45.55115,9.29911,"p"],
+["mz-99","Giovanni Poli",1903,"Monza",45.56956,9.32144,"p"],
+["mz-130","Alessandro Pozzi",1910,"Monza",45.58259,9.27702,"p"],
+["mz-150","Angelo Pozzoli",1918,"Meda",45.66222,9.15616,"p"],
+["mz-165","Natale Prada",1917,"Ceriano Laghetto",45.62901,9.07733,"p"],
+["mz-124","Carlo Prina",1896,"Monza",45.58586,9.2724,"p"]
+]}

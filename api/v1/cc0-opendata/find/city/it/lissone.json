@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"country":"IT",
+"label":"Lissone",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-95","Aldo Fumagalli",1921,1943,"Lissone","f"],
+["mz-126","Ambrogio Avvoi",1894,1945,"Lissone","a"],
+["mz-17","Attilio Mazzi",1885,1945,"Lissone","m"],
+["mz-148","Fernando Cassanmagnago",1924,1945,"Lissone","c"],
+["mz-40","Gianfranco de Capitani da Vimercate",1925,1944,"Lissone","v"],
+["mz-62","Giulio Colzani",1911,1945,"Lissone","c"],
+["mz-2","Mario Bettega",1918,1945,"Lissone","b"]
+],
+"slug":"lissone"}

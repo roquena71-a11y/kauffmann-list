@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"IT",
+"label":"Bernareggio",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-31","Agostino Corno",1896,"memorial","palazzo comunale",45.64953,9.41172],
+["mz-8","Attilio Galbiati",1913,"memorial","Palazzo Comunale, via Pertini, 46",45.64959,9.41175],
+["mz-52","Gennaro Motta",1909,"memorial","palazzo comunale",45.64947,9.4117],
+["mz-110","Lauro Vezzani",1912,"memorial","via Pertini, 46",45.64942,9.41167]
+],
+"slug":"bernareggio"}

@@ -1,0 +1,18 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln (https://open.nrw/dataset/stolpersteine-koln-k)","Stadt Krefeld (https://www.krefeld.de/de/vermessung/digitale-geodaten/)","Stadt Mönchengladbach (https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093)","Stadt Viersen / KRZN (https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83)","Stadt Moers / KRZN (https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4)","Stadt Xanten / KRZN (https://www.govdata.de/suche/daten/stolpersteine-xanten138aa)","Stadt Erkrath (https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974)","Stadt Dormagen / Rhein-Kreis Neuss (https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json","family":"dl-de-zero","generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","source_url":"https://www.govdata.de/dl-de/zero-2-0"},
+"prefix":"o",
+"rows":[
+["olga","xa-105","Olga Alexander",1897,null,"Xanten","a"],
+["olga","kr-123","Olga Bruckmann",1879,null,"Krefeld","b"],
+["olga","kr-405","Olga Grünberg geb. Barsdorf",1881,1944,"Krefeld","b"],
+["orscheck","mo-477","Katharina Nühlen geb. Orscheck",1905,1940,"Moers","o"],
+["oster","xa-113","Benny Oster",1879,null,"Xanten","o"],
+["oster","xa-129","Karl Oster",1894,null,"Xanten","o"],
+["oster","xa-132","Margarethe Oster",1902,null,"Xanten","o"],
+["oster","xa-115","Regine Oster",1882,null,"Xanten","o"],
+["oster","xa-123","Siegmund Oster",1877,null,"Xanten","o"],
+["otto","kr-903","Dr. Otto Konrad Strauß",1909,1994,"Krefeld","s"],
+["otto","vie-326","Otto Bruch",1880,1962,"Viersen","b"],
+["otto","vie-399","Otto Gehrmann",1878,1936,"Viersen","g"],
+["otto","mo-405","Otto Preul",1878,1944,"Moers","p"]
+]}

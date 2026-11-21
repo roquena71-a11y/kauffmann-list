@@ -1,0 +1,3 @@
+{"columns":["country","slug","label","count","lat","lon","pages"],
+"meta":{"attribution":["Datenquelle: Landeshauptstadt Dresden, dl-de/by-2-0, opendata.dresden.de"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-by/index.json","family":"dl-de-by","generated":"2026-11-21","license":"dl-de/by-2-0","license_url":"https://www.govdata.de/dl-de/by-2-0","source_url":"https://opendata.dresden.de/"},
+"rows":[]}

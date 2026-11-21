@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":10,
+"country":"IT",
+"label":"Seregno",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-6","Alberto Gani",1934,"memorial","via Trabattoni, 83",45.65332,9.20456],
+["mz-155","Claudio Appennini",1920,"memorial","via San Benedetto ang. via Stefano da Seregno",45.64695,9.21221],
+["mz-133","Ernesto Spinelli",1915,"memorial","via Santa Valeria",45.65313,9.19769],
+["mz-5","Ester Gani",1928,"memorial","via Trabattoni, 83",45.65332,9.20454],
+["mz-24","Ferdinando Silva",1909,"memorial","Piazza Caprera, 3",45.65117,9.20344],
+["mz-44","Giovanni Re",1891,"memorial","piazza Martiri della Libertà",45.64949,9.2057],
+["mz-3","Giuseppe Gani",1895,"memorial","via Trabattoni, 83",45.65332,9.20451],
+["mz-101","Luigi Battista Somaschini",1922,"memorial","via Cavour",45.64982,9.21173],
+["mz-4","Regina Gani",1926,"memorial","via Trabattoni, 83",45.65332,9.20452],
+["mz-7","Speranza Zaccar",1900,"memorial","via Trabattoni, 83",45.65332,9.20457]
+],
+"slug":"seregno"}

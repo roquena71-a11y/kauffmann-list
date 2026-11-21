@@ -1,0 +1,9 @@
+{"aliases":[],
+"columns":["key","country","slug","label","count","pages"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"rows":[
+["memmingen","DE","memmingen","Memmingen",2,1],
+["firenze","IT","firenze","Firenze",94,1],
+["denhaag","NL","den-haag","Den Haag",15,1]
+],
+"rule":"key = nombre del lugar normalizado: fold() (minúsculas, ß→ss, sin acentos, ä/ae→a, ö/oe→o, ü/ue→u) y sin espacios ni guiones. Busca la clave en rows; si hay varias filas (mismo nombre en otro país) usa country. Archivo: city/<country en minúsculas>/<slug>.json; páginas extra <slug>~2.json. aliases = nombres alternativos conocidos (exónimos) → key."}

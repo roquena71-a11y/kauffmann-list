@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"prefix":"r",
+"rows":[
+["mz-143","Mario Radice",1907,"Cesano Maderno",45.62818,9.14669,"r"],
+["mz-44","Giovanni Re",1891,"Seregno",45.64949,9.2057,"r"],
+["mz-46","Piero Redaelli",1923,"Verano Brianza",45.68748,9.23105,"r"],
+["mz-142","Angelo Reguzzi",1923,"Cesano Maderno",45.62822,9.14668,"r"],
+["mz-78","Domenico Rigamonti",1901,"Agrate Brianza",45.57939,9.3782,"r"],
+["mz-82","Alfonso Riva",1924,"Besana in Brianza",45.70035,9.28836,"r"],
+["mz-73","Domenico Riva",1914,"Triuggio",45.66864,9.27487,"r"],
+["mz-108","Carlo Rivolta",1911,"Agrate Brianza",45.57462,9.3519,"r"],
+["mz-127","Valentino Rivolta",1913,"Macherio",45.63955,9.26769,"r"],
+["mz-151","Matteoldani Rizzardi",1924,"Monza",45.58984,9.28758,"r"],
+["mz-119","Luigi Romanò",1921,"Lentate sul Seveso",45.6891,9.12705,"r"],
+["mz-57","Mario Romanò",1914,"Cesano Maderno",45.62417,9.16719,"r"],
+["mz-100","Cesare Ronco",1910,"Ornago",45.60889,9.40526,"r"],
+["mz-10","Riccardo Ronzoni",1911,"Briosco",45.7081,9.23629,"r"],
+["mz-75","Ambrogio Luigi Rossi",1895,"Vedano al Lambro",45.61096,9.27543,"r"],
+["gv-71","Recha Rothenberg",1881,"Grevenbroich",51.04471,6.57819,"r"],
+["mz-161","Albino Rovati",1907,"Agrate",45.57856,9.37832,"r"]
+]}

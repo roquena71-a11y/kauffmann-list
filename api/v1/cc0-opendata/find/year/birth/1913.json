@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"kind":"birth",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-51","Achille Tagliabue",1913,1944,"Barlassina","t"],
+["mz-34","Albino Pisoni",1913,1945,"Brugherio","p"],
+["mz-134","Alessandro Caslini",1913,1944,"Seveso","c"],
+["mz-8","Attilio Galbiati",1913,1944,"Bernareggio","g"],
+["mz-54","Edoardo Colombo",1913,1945,"Brugherio","c"],
+["mz-85","Gioachino Teruzzi",1913,1944,"Brugherio","t"],
+["mz-115","Giulio Besana",1913,1945,"Cavenago","b"],
+["gv-35","Hertha Schmitz",1913,1945,"Grevenbroich","s"],
+["mz-97","Libero Casarini",1913,1945,"Monza","c"],
+["mz-116","Luigi Camisasca",1913,1944,"Cesano Maderno","c"],
+["mz-127","Valentino Rivolta",1913,1945,"Macherio","r"]
+],
+"year":1913}

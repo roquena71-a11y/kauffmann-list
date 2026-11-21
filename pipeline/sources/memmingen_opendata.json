@@ -8,7 +8,7 @@
   "adapter": "generic_tabular",
   "license": "CC-BY-4.0",
   "license_url": "https://creativecommons.org/licenses/by/4.0/",
-  "attribution": "Stadt Memmingen, Stolpersteine Memmingen (CC BY 4.0, https://open.bydata.de/api/hub/repo/datasets/stolpersteine_01)",
+  "attribution": "Geodaten Stadt Memmingen",
   "homepage": "https://open.bydata.de/api/hub/repo/datasets/stolpersteine_01",
   "license_family": "cc-by-4",
   "id_prefix": "mm",

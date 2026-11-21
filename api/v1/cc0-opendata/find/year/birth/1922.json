@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"kind":"birth",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-105","Albert Giussani",1922,1945,"Veduggio con Colzano","g"],
+["mz-146","Carlo Caronni",1922,1945,"Lentate sul Seveso","c"],
+["mz-145","Carlo Parazzini",1922,1944,"Lentate sul Seveso","p"],
+["mz-107","Francesco Cazzaniga",1922,1945,"Verano Brianza","c"],
+["mz-101","Luigi Battista Somaschini",1922,1944,"Seregno","s"],
+["mz-39","Luigi Colombo",1922,1945,"Limbiate","c"],
+["mz-144","Luigi Sala",1922,1944,"Desio","s"],
+["mz-77","Vincenzo Vergani",1922,1945,"Vimercate","v"],
+["mz-76","Virginio Morganti",1922,1945,"Villasanta","m"]
+],
+"year":1922}

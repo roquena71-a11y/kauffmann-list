@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"country":"IT",
+"label":"Lentate sul Seveso",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-38","Amabile Marelli",1918,1945,"Lentate sul Seveso","m"],
+["mz-94","Carlo Ambrogio Vergani",1909,1944,"Lentate sul Seveso","v"],
+["mz-146","Carlo Caronni",1922,1945,"Lentate sul Seveso","c"],
+["mz-145","Carlo Parazzini",1922,1944,"Lentate sul Seveso","p"],
+["mz-61","Gaetano Venturini",1921,1943,"Lentate sul Seveso","v"],
+["mz-119","Luigi Romanò",1921,1945,"Lentate sul Seveso","r"]
+],
+"slug":"lentate-sul-seveso"}

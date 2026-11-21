@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":3,
+"country":"IT",
+"label":"Nova Milanese",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-43","Amedeo Scuratti",1899,"memorial","via San Sebastiano, 1",45.58871,9.19821],
+["mz-70","Mario Sironi",1925,"memorial","via Madonnina, 5",45.58923,9.20135],
+["mz-23","Mario Vanzati",1911,"memorial","vicolo Cortelunga",45.59065,9.20174]
+],
+"slug":"nova-milanese"}

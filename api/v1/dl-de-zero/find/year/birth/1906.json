@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"birth",
+"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln (https://open.nrw/dataset/stolpersteine-koln-k)","Stadt Krefeld (https://www.krefeld.de/de/vermessung/digitale-geodaten/)","Stadt Mönchengladbach (https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093)","Stadt Viersen / KRZN (https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83)","Stadt Moers / KRZN (https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4)","Stadt Xanten / KRZN (https://www.govdata.de/suche/daten/stolpersteine-xanten138aa)","Stadt Erkrath (https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974)","Stadt Dormagen / Rhein-Kreis Neuss (https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json","family":"dl-de-zero","generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","source_url":"https://www.govdata.de/dl-de/zero-2-0"},
+"page":1,
+"pages":1,
+"rows":[
+["kr-467","Anton Tappesser",1906,1944,"Krefeld","t"],
+["vie-405","Artur Bruch",1906,null,"Viersen","b"],
+["kr-425","Charlotte Steinberg geb. Hirtz",1906,1942,"Krefeld","h"],
+["kr-431","Heinz Schriesheimer",1906,1941,"Krefeld","s"],
+["vie-366","Hermann Cohen",1906,1945,"Viersen","c"],
+["kr-780","Käthe Thönnissen",1906,null,"Krefeld","t"]
+],
+"year":1906}

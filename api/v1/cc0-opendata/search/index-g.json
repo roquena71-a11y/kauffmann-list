@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"prefix":"g",
+"rows":[
+["mz-8","Attilio Galbiati",1913,"Bernareggio",45.64959,9.41175,"g"],
+["mz-6","Alberto Gani",1934,"Seregno",45.65332,9.20456,"g"],
+["mz-5","Ester Gani",1928,"Seregno",45.65332,9.20454,"g"],
+["mz-3","Giuseppe Gani",1895,"Seregno",45.65332,9.20451,"g"],
+["mz-4","Regina Gani",1926,"Seregno",45.65332,9.20452,"g"],
+["mz-160","Carlo Gaviraghi",1919,"Agrate",45.57896,9.3797,"g"],
+["mz-67","Federico Gaviraghi",1903,"Monza",45.59788,9.26505,"g"],
+["mz-112","Francesco Ghianda",1909,"Bovisio Masciago",45.61199,9.14771,"g"],
+["mz-19","Rinaldo Giorgetti",1915,"Meda",45.6624,9.15681,"g"],
+["mz-105","Albert Giussani",1922,"Veduggio con Colzano",45.73549,9.26826,"g"],
+["mz-106","Mario Giussani",1923,"Veduggio con Colzano",45.73548,9.26813,"g"],
+["mz-140","Umberto Giussani",1912,"Cesano Maderno",45.62824,9.14669,"g"],
+["gv-58","Margarete Goldstein",1902,"Grevenbroich",51.08789,6.59192,"g"],
+["mz-102","Piero Gorla",1909,"Seveso",45.6475,9.13872,"g"],
+["mz-86","Umberto Guasconi",2023,"Ceriano Laghetto",45.62499,9.07949,"g"],
+["mz-16","Elda Levi Gutemberg",1894,"Limbiate",45.60382,9.12353,"g"]
+]}

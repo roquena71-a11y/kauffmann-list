@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln (https://open.nrw/dataset/stolpersteine-koln-k)","Stadt Krefeld (https://www.krefeld.de/de/vermessung/digitale-geodaten/)","Stadt Mönchengladbach (https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093)","Stadt Viersen / KRZN (https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83)","Stadt Moers / KRZN (https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4)","Stadt Xanten / KRZN (https://www.govdata.de/suche/daten/stolpersteine-xanten138aa)","Stadt Erkrath (https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974)","Stadt Dormagen / Rhein-Kreis Neuss (https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json","family":"dl-de-zero","generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","source_url":"https://www.govdata.de/dl-de/zero-2-0"},
+"prefix":"w",
+"rows":[
+["kr-424","Selma Hirtz geb. Waldbaum",1864,"Krefeld",51.33699,6.58699,"w"],
+["kr-547","Helene Weinberg",1888,"Krefeld",51.34924,6.61805,"w"],
+["xa-185","Frieda Wertheim",1889,"Xanten",51.66419,6.45181,"w"],
+["kr-430","Karolina Kanthal geb. Wertheim",1871,"Krefeld",51.33839,6.56364,"w"],
+["kr-443","Rosa Glauberg geb. Wertheim",1870,"Krefeld",51.33839,6.56364,"w"],
+["mo-526","Heinrich Wichert",1919,"Moers",51.46439,6.64557,"w"],
+["kr-13","Erna Goldstein geb. Wihl",1892,"Krefeld",51.33749,6.57852,"w"],
+["kr-12","Friedrich-Josef Wihl",1889,"Krefeld",51.33749,6.57852,"w"],
+["kr-87","Edith Willner",null,"Krefeld",51.32652,6.5624,"w"],
+["xa-187","Hermine Willner",1879,"Xanten",51.66115,6.45555,"w"],
+["kr-86","Irma de Vries geb. Willner",null,"Krefeld",51.32652,6.5624,"w"],
+["vie-331","Karl Martin Wins",1883,"Viersen",51.26992,6.39116,"w"],
+["xa-161","Albertine Wolff",1872,"Xanten",51.66013,6.45969,"w"],
+["vie-219","Sybilla Wolff",1859,"Viersen",51.28597,6.36943,"w"],
+["kr-485","Wilhelmine Meyer geb. Wolff",1864,"Krefeld",51.33313,6.56127,"w"],
+["mo-404","Katharina Wöllenweber",1904,"Moers",51.44951,6.63425,"w"],
+["mo-485","Ignatz Wozniak",1920,"Moers",51.45512,6.64435,"w"]
+]}

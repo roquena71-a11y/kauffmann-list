@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":11,
+"country":"IT",
+"label":"Cesano Maderno",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-142","Angelo Reguzzi",1923,"memorial","Piazza Esedra",45.62822,9.14668],
+["mz-1","Arturo Martinelli",1916,"memorial","Palazzo Comunale, piazza Arese 12",45.62717,9.14728],
+["mz-12","Clara Levi",1929,"memorial","via Duca d'Aosta, 1",45.62467,9.14739],
+["mz-56","Ettore Diotti",1908,"memorial","via Manzoni, 20",45.62081,9.15367],
+["mz-36","Leontino Bertaggia",1921,"memorial","via Magenta, 3",45.63397,9.12347],
+["mz-116","Luigi Camisasca",1913,"memorial","via San Bernardo",45.6384,9.18611],
+["mz-87","Luigi Cermenati",1912,"memorial","via Dante, 30",45.62505,9.14567],
+["mz-143","Mario Radice",1907,"memorial","Piazza Esedra",45.62818,9.14669],
+["mz-57","Mario Romanò",1914,"memorial","via San Luigi monumento ai caduti",45.62417,9.16719],
+["mz-141","Massimo Colombo",1923,"memorial","Piazza Esedra",45.6282,9.14669],
+["mz-140","Umberto Giussani",1912,"memorial","Piazza Esedra",45.62824,9.14669]
+],
+"slug":"cesano-maderno"}

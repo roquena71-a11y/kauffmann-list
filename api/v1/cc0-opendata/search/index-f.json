@@ -1,0 +1,11 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"prefix":"f",
+"rows":[
+["mz-129","Luigi Ferrari",1906,"Monza",45.56918,9.24298,"f"],
+["mz-13","Mario Follini",1897,"Cogliate",45.64791,9.07921,"f"],
+["mz-79","Amedeo Frattini",1901,"Albiate",45.65727,9.25532,"f"],
+["mz-95","Aldo Fumagalli",1921,"Lissone",45.61223,9.26232,"f"],
+["mz-139","Carlo Fumagalli",1923,"Vimercate",45.61343,9.36999,"f"],
+["mz-60","Giuseppe Fumagalli",1907,"Giussano",45.6921,9.20553,"f"]
+]}

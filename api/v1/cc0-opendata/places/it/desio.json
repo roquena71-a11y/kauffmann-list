@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":7,
+"country":"IT",
+"label":"Desio",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-15","Anna Haselnuss",1915,"memorial","corso Italia, 90",45.62263,9.20838],
+["mz-117","don Mauro Bonzi",1904,"memorial","via Due Palme, 2",45.62191,9.20889],
+["mz-14","Leah Elertt Haselnuss",1882,"memorial","corso Italia, 90",45.62259,9.20839],
+["mz-37","Luigi Briani",1900,"memorial","piazza XXV Aprile, 11",45.6199,9.21568],
+["mz-144","Luigi Sala",1922,"memorial","Piazzetta Cavour",45.61701,9.21168],
+["mz-59","Luigi Scalfi",1921,"memorial","via Garibaldi, 59",45.61632,9.20692],
+["mz-92","Mario Michelini",1909,"memorial","via Garibaldi, 13",45.61677,9.20708]
+],
+"slug":"desio"}

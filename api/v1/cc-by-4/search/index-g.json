@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"g",
+"rows":[
+["fi-313684","David Genazzani",1907,"Firenze",43.77036,11.26106,"g"],
+["fi-313681_3","Mario Melli Genazzani",1924,"Firenze",43.77101,11.25793,"g"],
+["fi-329393_2","Benvenuta Russo Graziani",1898,"Firenze",43.7707,11.26605,"g"],
+["fi-329393_4","Haim Vitale Graziani",1931,"Firenze",43.7707,11.26605,"g"],
+["fi-329393_1","Raffaello Graziani",1891,"Firenze",43.7707,11.26605,"g"],
+["fi-329393_5","Sara Graziani",1935,"Firenze",43.7707,11.26605,"g"],
+["dh-226_2","Esther Grünebaum-Abrahams",1876,"Den Haag",52.09064,4.32356,"g"],
+["fi-324305_1","Alberto Guetta",1922,"Firenze",43.77938,11.24456,"g"],
+["fi-324305_2","Pierluigi Guetta",1925,"Firenze",43.77938,11.24456,"g"]
+]}

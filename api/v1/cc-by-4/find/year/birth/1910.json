@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"kind":"birth",
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["fi-328707","Aldo Campagnano",1910,1944,"Firenze","c"],
+["fi-327879","Giulio Cesare Forti",1910,null,"Firenze","f"],
+["fi-324267_3","Lidia Segrè",1910,null,"Firenze","s"],
+["dh-289","Willem Barriël",1910,null,"Den Haag","b"]
+],
+"year":1910}

@@ -1,0 +1,22 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"b",
+"rows":[
+["bacelli","fi-327873","Galileo Bacelli",1901,1945,"Firenze","b"],
+["baldini","fi-324269","Bruno Baldini",1895,1945,"Firenze","b"],
+["barriel","dh-289","Willem Barriël",1910,null,"Den Haag","b"],
+["bassano","fi-330784_1","Bianca Bassano Cutri’",1875,1944,"Firenze","c"],
+["bassano","fi-330784_2","Rita Bassano",1880,1944,"Firenze","b"],
+["bemporad","fi-329394_2","Lelia Bemporad Millul",1893,1944,"Firenze","m"],
+["benedetti","fi-324263","Angela Todesco Benedetti",1893,1944,"Firenze","b"],
+["benvenuta","fi-329393_2","Benvenuta Russo Graziani",1898,1944,"Firenze","g"],
+["betje","dh-296_1","Betje Helena Konraad",1909,null,"Den Haag","k"],
+["bianca","fi-330784_1","Bianca Bassano Cutri’",1875,1944,"Firenze","c"],
+["blomkoper","dh-291","Izak Bloemkoper",1913,null,"Den Haag","b"],
+["bondi","fi-324267_4","Gina Cave Bondì",1882,null,"Firenze","b"],
+["bruno","fi-328709_2","Bruno Anichini",1911,1944,"Firenze","a"],
+["bruno","fi-324269","Bruno Baldini",1895,1945,"Firenze","b"],
+["bruno","fi-327870","Bruno Cagli",1904,1944,"Firenze","c"],
+["bruno","fi-327881","Bruno Corsi",1912,1944,"Firenze","c"],
+["bruno","fi-330788_2","Bruno Moscato",1897,null,"Firenze","m"]
+]}

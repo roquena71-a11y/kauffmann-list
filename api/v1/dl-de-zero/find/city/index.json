@@ -1,5 +1,10 @@
 {"aliases":[],
 "columns":["key","country","slug","label","count","pages"],
-"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln, Stolpersteine Köln (Datenlizenz Deutschland – Zero – Version 2.0, https://open.nrw/dataset/stolpersteine-koln-k)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json","family":"dl-de-zero","generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","source_url":"https://open.nrw/dataset/stolpersteine-koln-k"},
-"rows":[],
+"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln (https://open.nrw/dataset/stolpersteine-koln-k)","Stadt Krefeld (https://www.krefeld.de/de/vermessung/digitale-geodaten/)","Stadt Mönchengladbach (https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093)","Stadt Viersen / KRZN (https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83)","Stadt Moers / KRZN (https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4)","Stadt Xanten / KRZN (https://www.govdata.de/suche/daten/stolpersteine-xanten138aa)","Stadt Erkrath (https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974)","Stadt Dormagen / Rhein-Kreis Neuss (https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json","family":"dl-de-zero","generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","source_url":"https://www.govdata.de/dl-de/zero-2-0"},
+"rows":[
+["krefeld","DE","krefeld","Krefeld",157,1],
+["mors","DE","moers","Moers",50,1],
+["viersen","DE","viersen","Viersen",114,1],
+["xanten","DE","xanten","Xanten",40,1]
+],
 "rule":"key = nombre del lugar normalizado: fold() (minúsculas, ß→ss, sin acentos, ä/ae→a, ö/oe→o, ü/ue→u) y sin espacios ni guiones. Busca la clave en rows; si hay varias filas (mismo nombre en otro país) usa country. Archivo: city/<country en minúsculas>/<slug>.json; páginas extra <slug>~2.json. aliases = nombres alternativos conocidos (exónimos) → key."}

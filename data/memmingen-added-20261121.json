@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated": "2026-11-21T21:22:45+01:00",
-    "count": 9,
+    "generated": "2026-11-21T22:47:10+01:00",
+    "count": 7,
     "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
     "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "attribution": [
-      "Stadt Memmingen, Stolpersteine Memmingen (CC BY 4.0, https://open.bydata.de/api/hub/repo/datasets/stolpersteine_01)"
+      "Geodaten Stadt Memmingen"
     ],
     "source_url": "https://open.bydata.de/api/hub/repo/datasets/stolpersteine_01",
     "note": "Placas añadidas en v22 a partir de la fuente abierta citada. No se copian biografías salvo campos de lista o inscripción literal permitida por la licencia. la/lo son las coordenadas de la fuente; dla/dlo son solo la posición de dibujo (reglas de v20/v21).",
@@ -102,19 +102,6 @@
       "dlo": 10.1801924
     },
     {
-      "id": "mm-29",
-      "src": "memmingen",
-      "lic": "cc-by-4",
-      "n": "Edith Günzburger geb. Eis",
-      "la": 47.9825524,
-      "lo": 10.1763315,
-      "a": "Moltkestraße 8",
-      "c": "Memmingen",
-      "cc": "DE",
-      "dla": 47.9825704,
-      "dlo": 10.1763315
-    },
-    {
       "id": "mm-80",
       "src": "memmingen",
       "lic": "cc-by-4",
@@ -126,19 +113,6 @@
       "cc": "DE",
       "dla": 47.9850652,
       "dlo": 10.17996
-    },
-    {
-      "id": "mm-88",
-      "src": "memmingen",
-      "lic": "cc-by-4",
-      "n": "Lore Lotte Guggenheimer geb. Michaelis",
-      "la": 47.9861574,
-      "lo": 10.1820814,
-      "a": "Kalchstraße 8",
-      "c": "Memmingen",
-      "cc": "DE",
-      "dla": 47.9861664,
-      "dlo": 10.1820814
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-11-21T21:22:45+01:00",
-    "count": 5,
+    "generated": "2026-11-21T22:47:10+01:00",
+    "count": 3,
     "license": "Datenlizenz Deutschland – Namensnennung – Version 2.0",
     "license_url": "https://www.govdata.de/dl-de/by-2-0",
     "attribution": [
@@ -15,34 +15,6 @@
     }
   },
   "stones": [
-    {
-      "id": "dr-1119",
-      "src": "dresden",
-      "lic": "dl-de-by",
-      "n": "Leonhart Natowitz",
-      "la": 51.0520317,
-      "lo": 13.7567489,
-      "a": "Pestalozzistraße 17",
-      "c": "Dresden",
-      "cc": "DE",
-      "lb": "https://stolpersteine-dresden.de/details/?stein_id=227",
-      "dla": 51.0520247,
-      "dlo": 13.7567903
-    },
-    {
-      "id": "dr-1360",
-      "src": "dresden",
-      "lic": "dl-de-by",
-      "n": "Waldemar Theodor Steinhart",
-      "la": 51.0472959,
-      "lo": 13.7218749,
-      "a": "Rosenstraße 39",
-      "c": "Dresden",
-      "cc": "DE",
-      "lb": "https://stolpersteine-dresden.de/details/?stein_id=346",
-      "dla": 51.0472959,
-      "dlo": 13.7218749
-    },
     {
       "id": "dr-1417",
       "src": "dresden",

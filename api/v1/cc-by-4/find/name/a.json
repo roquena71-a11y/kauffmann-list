@@ -1,0 +1,23 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"a",
+"rows":[
+["abraham","dh-293","Abraham Jacobson",1886,null,"Den Haag","j"],
+["abrahams","dh-226_2","Esther Grünebaum-Abrahams",1876,null,"Den Haag","g"],
+["ada","fi-330783_4","Ada Procaccia Lascar",1885,null,"Firenze","l"],
+["affortunata","fi-327874_1","Affortunata Servi",1881,1943,"Firenze","s"],
+["alatri","fi-327894","Vittoria Alatri",1871,1944,"Firenze","a"],
+["albertina","fi-327875_3","Albertina Cassuto",1889,null,"Firenze","c"],
+["alberto","fi-324305_1","Alberto Guetta",1922,1944,"Firenze","g"],
+["aldo","fi-328707","Aldo Campagnano",1910,1944,"Firenze","c"],
+["alessandro","fi-327885_1","Alessandro Valobra",1869,1943,"Firenze","v"],
+["alfredo","fi-330785_1","Alfredo Spizzichino",1869,1944,"Firenze","s"],
+["amalia","fi-313602_2","Amalia Koretz",1871,1944,"Firenze","k"],
+["angela","fi-324263","Angela Todesco Benedetti",1893,1944,"Firenze","b"],
+["angelo","fi-324304_2","Umberto Angelo Volterra",1886,1944,"Firenze","v"],
+["anichini","fi-328709_2","Bruno Anichini",1911,1944,"Firenze","a"],
+["anna","fi-327875_5","Anna Ferro",1932,null,"Firenze","f"],
+["anna","fi-324265_4","Anna Lina Fiano",1894,null,"Firenze","f"],
+["annetta","fi-324266_1","Annetta Disegni Vogelmann",1904,1944,"Firenze","v"],
+["archimede","fi-324303","Archimede Piani",1903,1944,"Firenze","p"]
+]}

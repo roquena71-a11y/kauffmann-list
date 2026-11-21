@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-11-21T21:22:45+01:00",
+    "generated": "2026-11-21T22:47:10+01:00",
     "count": 170,
     "license": "Datenlizenz Deutschland – Zero – Version 2.0",
     "license_url": "https://www.govdata.de/dl-de/zero-2-0",
@@ -425,7 +425,7 @@
       "id": "mg-23_2",
       "src": "moenchengladbach",
       "lic": "dl-de-zero",
-      "n": "Vogel, Kurt, Dr.",
+      "n": "Dr. Kurt Vogel",
       "la": 51.1998539,
       "lo": 6.4411722,
       "a": "Schillerstraße 63",

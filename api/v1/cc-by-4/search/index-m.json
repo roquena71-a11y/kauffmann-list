@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"m",
+"rows":[
+["dh-290","Hendrik van Maanen",1882,"Den Haag",52.07063,4.30162,"m"],
+["dh-50","George Maduro",1916,"Den Haag",52.09349,4.2763,"m"],
+["mm-108","Karl Metzeler",null,"Memmingen",47.95832,10.18291,"m"],
+["fi-329394_1","Egisto Mario Millul",1890,"Firenze",43.79583,11.23161,"m"],
+["fi-329394_2","Lelia Bemporad Millul",1893,"Firenze",43.79583,11.23161,"m"],
+["fi-327884","Daria Mondolfi",1867,"Firenze",43.78091,11.2697,"m"],
+["fi-327883","Cesare Mori",1895,"Firenze",43.75597,11.29011,"m"],
+["fi-330788_2","Bruno Moscato",1897,"Firenze",43.76906,11.24083,"m"],
+["fi-330788_1","Fiammetta Moscato",1884,"Firenze",43.76906,11.24083,"m"]
+]}

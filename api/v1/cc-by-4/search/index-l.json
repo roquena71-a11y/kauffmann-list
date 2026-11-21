@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"l",
+"rows":[
+["fi-330783_4","Ada Procaccia Lascar",1885,"Firenze",43.77423,11.25769,"l"],
+["fi-330783_2","Luciana Lascar",1925,"Firenze",43.77423,11.25769,"l"],
+["fi-330783_3","Umberto Lascar",1883,"Firenze",43.77423,11.25769,"l"],
+["fi-330783_1","Wanda Lascar",1923,"Firenze",43.77423,11.25769,"l"],
+["dh-307","Hester van Leeuwen",1871,"Den Haag",52.07706,4.29975,"l"],
+["fi-324264","Rudolf Levy",1875,"Firenze",43.76633,11.24737,"l"],
+["fi-328709_4","Carlo Lumini",1902,"Firenze",43.76684,11.27683,"l"]
+]}

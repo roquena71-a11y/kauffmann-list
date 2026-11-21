@@ -1,0 +1,14 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"e",
+"rows":[
+["egisto","fi-329394_1","Egisto Mario Millul",1890,1944,"Firenze","m"],
+["elena","fi-324267_2","Elena Segrè",1920,null,"Firenze","s"],
+["emanul","dh-287_2","Emanuel Van Wijnbergen",1904,null,"Den Haag","w"],
+["enrica","fi-328705","Enrica Calabresi",1891,1944,"Firenze","c"],
+["enrico","fi-324307_1","Enrico Castelli",1869,1944,"Firenze","c"],
+["enrico","fi-327872_1","Enrico Dalla Volta",1894,1944,"Firenze","v"],
+["enzo","fi-328712_2","Enzo Passigli",1896,1944,"Firenze","p"],
+["ernesto","fi-324308_1","Ernesto Calò",1877,1944,"Firenze","c"],
+["esther","dh-226_2","Esther Grünebaum-Abrahams",1876,null,"Den Haag","g"]
+]}

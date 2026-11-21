@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"p",
+"rows":[
+["fi-328711","Goffredo Paggi",1913,"Firenze",43.77512,11.2573,"p"],
+["fi-328712_2","Enzo Passigli",1896,"Firenze",43.79083,11.2522,"p"],
+["fi-327877_3","Giuseppe Passigli",1923,"Firenze",43.80709,11.2397,"p"],
+["fi-327877_1","Goffredo Passigli",1889,"Firenze",43.80709,11.2397,"p"],
+["fi-327877_5","Jenny Passigli",1883,"Firenze",43.80709,11.2397,"p"],
+["fi-327877_2","Leone Passigli",1913,"Firenze",43.80709,11.2397,"p"],
+["fi-327877_4","Liliana Passigli",1916,"Firenze",43.80709,11.2397,"p"],
+["fi-328712_3","Rodolfo Passigli",1899,"Firenze",43.79083,11.2522,"p"],
+["fi-328712_1","Stella Passigli",1867,"Firenze",43.79083,11.2522,"p"],
+["fi-328710_1","Gilberto Perugia",1881,"Firenze",43.76504,11.24808,"p"],
+["fi-324303","Archimede Piani",1903,"Firenze",43.77244,11.28084,"p"],
+["fi-328713_2","Rachele Lindenbaum Plessner",1883,"Firenze",43.79969,11.25642,"p"],
+["fi-330787","Vasco Poggesi",1922,"Firenze",43.75568,11.28911,"p"]
+]}

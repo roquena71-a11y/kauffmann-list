@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":9,
+"kind":"death",
+"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln (https://open.nrw/dataset/stolpersteine-koln-k)","Stadt Krefeld (https://www.krefeld.de/de/vermessung/digitale-geodaten/)","Stadt Mönchengladbach (https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093)","Stadt Viersen / KRZN (https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83)","Stadt Moers / KRZN (https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4)","Stadt Xanten / KRZN (https://www.govdata.de/suche/daten/stolpersteine-xanten138aa)","Stadt Erkrath (https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974)","Stadt Dormagen / Rhein-Kreis Neuss (https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json","family":"dl-de-zero","generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","source_url":"https://www.govdata.de/dl-de/zero-2-0"},
+"page":1,
+"pages":1,
+"rows":[
+["xa-163","Adeleide Buschhoff",1885,1940,"Xanten","b"],
+["mo-480","Ernst Hartmann",1901,1940,"Moers","h"],
+["vie-409","Erwin Bruch",1914,1940,"Viersen","b"],
+["vie-367","Feiga Rosenmann",1887,1940,"Viersen","r"],
+["mo-399","Friedrich Jirsak",1885,1940,"Moers","j"],
+["kr-845","Georg Meurers",1908,1940,"Krefeld","m"],
+["mo-463","Heinz Josef Isaacson",1914,1940,"Moers","i"],
+["mo-474","Johann Schürmann",1895,1940,"Moers","s"],
+["mo-477","Katharina Nühlen geb. Orscheck",1905,1940,"Moers","o"]
+],
+"year":1940}

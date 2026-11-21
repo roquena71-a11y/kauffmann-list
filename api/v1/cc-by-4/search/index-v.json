@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"v",
+"rows":[
+["fi-327885_1","Alessandro Valobra",1869,"Firenze",43.78219,11.29796,"v"],
+["fi-327885_2","Violetta Valobra",1920,"Firenze",43.78219,11.29796,"v"],
+["fi-324306","Piero Viterbo",1922,"Firenze",43.7765,11.24622,"v"],
+["fi-324266_1","Annetta Disegni Vogelmann",1904,"Firenze",43.77507,11.27454,"v"],
+["fi-324266_2","Sissel Vogelmann",1935,"Firenze",43.77507,11.27454,"v"],
+["fi-327872_1","Enrico Dalla Volta",1894,"Firenze",43.78296,11.25494,"v"],
+["fi-327872_2","Margherita Dalla Volta",1903,"Firenze",43.78296,11.25494,"v"],
+["fi-327872_3","Riccardo Dalla Volta",1862,"Firenze",43.78296,11.25494,"v"],
+["fi-324304_1","Gastone Volterra",1887,"Firenze",43.77531,11.23748,"v"],
+["fi-324304_2","Umberto Angelo Volterra",1886,"Firenze",43.77531,11.23748,"v"]
+]}

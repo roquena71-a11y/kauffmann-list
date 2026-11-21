@@ -27,7 +27,7 @@ const SHELL = ['./','index.html',
   'fonts/NGS6v5_NC0k9P9H4TbFzsQ.woff2',
   'geo/de-states.json',
   'vendor/maplibre/maplibre-gl.js','vendor/maplibre/maplibre-gl.css',
-  '2d/','2d/index.html','2d/app.js','2d/style.css',
+  '2d/','2d/index.html','2d/app.js?v=23','2d/style.css',
   'vendor/leaflet/leaflet.js','vendor/leaflet/leaflet.css','vendor/leaflet.markercluster/leaflet.markercluster.js','vendor/leaflet.markercluster/MarkerCluster.css',
   'icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL.map(u => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting())); });

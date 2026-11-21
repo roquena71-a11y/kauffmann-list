@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"birth",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-121","Antonio Gambacorti Passerini",1903,1944,"Monza","p"],
+["mz-90","Battista Crippa",1903,1944,"Cornate d'Adda","c"],
+["mz-67","Federico Gaviraghi",1903,1944,"Monza","g"],
+["mz-99","Giovanni Poli",1903,1944,"Monza","p"],
+["mz-89","Mario Brioschi",1903,1944,"Concorezzo","b"]
+],
+"year":1903}

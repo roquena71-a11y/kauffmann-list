@@ -12,7 +12,7 @@
         "Stumbling Stones",
         "אבני נגף"
       ],
-      "description": "Open, searchable map and dataset of the Stolpersteine (memorial plaques for victims of National Socialism) that open data (OpenStreetMap, Wikidata) allows us to verify in Germany, Netherlands, France, Austria, Norway, Czechia, Italy, Spain, Belgium, Luxembourg, Hungary, Lithuania, Switzerland, Poland, Slovakia, Jersey, Croatia, Denmark, Guernsey, Finland, Andorra, Ireland, Sweden, Latvia, Romania, United Kingdom and Liechtenstein, so families anywhere can find a plaque by name, surname or address and see its data and story. Motto: Cada placa, cada nombre, cada historia. Nunca olvidar.",
+      "description": "Open, searchable map and dataset of the Stolpersteine (memorial plaques for victims of National Socialism) that open data (OpenStreetMap, Wikidata, Berlin Open Data, Köln Open.NRW, and 13 municipal open-data lists added in v22 across Germany, the Netherlands and Italy) allows us to verify in Germany, Netherlands, France, Austria, Norway, Czechia, Italy, Spain, Belgium, Luxembourg, Hungary, Lithuania, Switzerland, Poland, Slovakia, Jersey, Croatia, Denmark, Guernsey, Finland, Andorra, Ireland, Sweden, Latvia, Romania, United Kingdom and Liechtenstein, so families anywhere can find a plaque by name, surname or address and see its data and story. Motto: Cada placa, cada nombre, cada historia. Nunca olvidar.",
       "inLanguage": [
         "es",
         "de",
@@ -201,6 +201,97 @@
           "url": "https://open.nrw/dataset/stolpersteine-koln-k",
           "license": "https://www.govdata.de/dl-de/zero-2-0",
           "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Stolpersteine Den Haag (Gemeente Den Haag)",
+          "url": "https://data.overheid.nl/dataset/stolpersteine",
+          "license": "https://creativecommons.org/licenses/by/4.0/",
+          "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Stolpersteine Krefeld (Offene Geodaten)",
+          "url": "https://www.krefeld.de/de/vermessung/digitale-geodaten/",
+          "license": "https://www.govdata.de/dl-de/zero-2-0",
+          "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Stolpersteine Mönchengladbach (Open.NRW)",
+          "url": "https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093",
+          "license": "https://www.govdata.de/dl-de/zero-2-0",
+          "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Pietre d'inciampo Monza e Brianza (Provincia di Monza e della Brianza)",
+          "url": "https://www.dati.lombardia.it/d/42ik-bq75",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Stolpersteine Kreis Viersen (GDI-DE / KRZN)",
+          "url": "https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83",
+          "license": "https://www.govdata.de/dl-de/zero-2-0",
+          "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Pietre d'Inciampo Firenze (Comune di Firenze)",
+          "url": "https://dati.toscana.it/dataset/pietre-d-inciampo",
+          "license": "https://creativecommons.org/licenses/by/4.0/",
+          "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Stolpersteine Moers (GDI-DE)",
+          "url": "https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4",
+          "license": "https://www.govdata.de/dl-de/zero-2-0",
+          "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Stolpersteine Xanten (GovData / KRZN)",
+          "url": "https://www.govdata.de/suche/daten/stolpersteine-xanten138aa",
+          "license": "https://www.govdata.de/dl-de/zero-2-0",
+          "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Stolpersteine Grevenbroich (Rhein-Kreis Neuss)",
+          "url": "https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Geodaten Stadt Memmingen (Stolpersteine Memmingen)",
+          "url": "https://open.bydata.de/api/hub/repo/datasets/stolpersteine_01",
+          "license": "https://creativecommons.org/licenses/by/4.0/",
+          "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Stolpersteine Erkrath (GDI-DE)",
+          "url": "https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974",
+          "license": "https://www.govdata.de/dl-de/zero-2-0",
+          "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Stolpersteine Dresden (Datenquelle: Landeshauptstadt Dresden, dl-de/by-2-0, opendata.dresden.de)",
+          "url": "https://opendata.dresden.de/",
+          "license": "https://www.govdata.de/dl-de/by-2-0",
+          "dateModified": "2026-11-21"
+        },
+        {
+          "@type": "Dataset",
+          "name": "Stolpersteine Dormagen (Rhein-Kreis Neuss)",
+          "url": "https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/",
+          "license": "https://www.govdata.de/dl-de/zero-2-0",
+          "dateModified": "2026-11-21"
         }
       ],
       "dateModified": "2026-11-21",
@@ -213,7 +304,7 @@
         {
           "@type": "PropertyValue",
           "name": "Stolpersteine on the map (ODbL plus 15 municipal open-data lists)",
-          "value": 75085
+          "value": 75123
         },
         {
           "@type": "PropertyValue",
@@ -308,10 +399,31 @@
         },
         {
           "@type": "DataDownload",
-          "name": "Person records, dl-de/zero-2-0 family (Köln Stolpersteine)",
+          "name": "Person records, dl-de/zero-2-0 family (Köln, Mönchengladbach, Krefeld, Viersen, Moers, Xanten, Erkrath, Dormagen)",
           "encodingFormat": "application/json",
           "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json",
           "license": "https://www.govdata.de/dl-de/zero-2-0"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Person records, dl-de/by-2-0 family (Dresden)",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-by/index.json",
+          "license": "https://www.govdata.de/dl-de/by-2-0"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Person records, CC BY 4.0 family (Den Haag, Memmingen, Firenze)",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json",
+          "license": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Person records, CC0 1.0 municipal family (Monza e Brianza, Grevenbroich)",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json",
+          "license": "https://creativecommons.org/publicdomain/zero/1.0/"
         }
       ],
       "subjectOf": {
@@ -388,7 +500,7 @@
         "@type": "ContactPoint",
         "email": "listakauffmann@gmail.com"
       },
-      "description": "Goal: no stone and no victim left out. Status 2026-11-21, in preparation, not published: 72,110 stones (ODbL, OpenStreetMap + Wikidata) plus 290 from Berlin Open Data and 1,550 from Köln Open.NRW (map total 73,950) in 27 countries (67,670 in Germany, of which 65,830 are in the ODbL dataset) mapped from open data; an estimated 40,000+ German stones are not yet in open data (Stiftung Spuren counts 116,000+ in 31 countries). No charitable status is claimed and no partnership is agreed. Biography texts shown only from Wikipedia CC BY-SA on a certain match (4,038, Germany only); official pages and archive records are linked, not copied. Pending: public release."
+      "description": "Goal: no stone and no victim left out. Status 2026-11-21, in preparation, not published: 72,110 stones (ODbL, OpenStreetMap + Wikidata) plus 290 from Berlin Open Data, 1,550 from Köln Open.NRW, and 1,173 from 13 municipal open-data lists added in v22 (map total 75,123) in 27 countries (68,280 in Germany, of which 65,830 are in the ODbL dataset; 1,590 in the Netherlands; 731 in Italy) mapped from open data; an estimated 40,000+ German stones are not yet in open data (Stiftung Spuren counts 116,000+ in 31 countries). No charitable status is claimed and no partnership is agreed. Biography texts shown only from Wikipedia CC BY-SA on a certain match (4,038, Germany only); official pages and archive records are linked, not copied. Pending: public release."
     },
     {
       "@type": "WebPage",

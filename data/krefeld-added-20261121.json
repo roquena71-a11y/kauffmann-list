@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-11-21T21:22:45+01:00",
-    "count": 174,
+    "generated": "2026-11-21T22:47:10+01:00",
+    "count": 173,
     "license": "Datenlizenz Deutschland – Zero – Version 2.0",
     "license_url": "https://www.govdata.de/dl-de/zero-2-0",
     "attribution": [
@@ -1898,8 +1898,8 @@
       "b": "1876-11-27",
       "d": "1942-09-19",
       "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/195.pdf",
-      "dla": 51.3311649,
-      "dlo": 6.5633158,
+      "dla": 51.3311604,
+      "dlo": 6.5632889,
       "w": [
         "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Ludwig_Leib_und_Hedwig_Leib"
       ]
@@ -1917,8 +1917,8 @@
       "b": "1879-09-28",
       "d": "1944",
       "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/196.pdf",
-      "dla": 51.3311802,
-      "dlo": 6.5633054,
+      "dla": 51.3311653,
+      "dlo": 6.5633143,
       "w": [
         "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Ludwig_Leib_und_Hedwig_Leib"
       ]
@@ -2498,8 +2498,8 @@
       "cc": "DE",
       "fate": "survived",
       "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/68.pdf",
-      "dla": 51.3266186,
-      "dlo": 6.5662015,
+      "dla": 51.3266184,
+      "dlo": 6.5661923,
       "w": [
         "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Michael_Levy,_Rosa_Levy,_Max_Levy,_Paul_Levy,_Trude_Levy,_Hilde_Levy_und_Erich_Levy"
       ]
@@ -2516,8 +2516,8 @@
       "cc": "DE",
       "fate": "survived",
       "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/69.pdf",
-      "dla": 51.3266337,
-      "dlo": 6.5661902,
+      "dla": 51.3266331,
+      "dlo": 6.5662049,
       "w": [
         "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Michael_Levy,_Rosa_Levy,_Max_Levy,_Paul_Levy,_Trude_Levy,_Hilde_Levy_und_Erich_Levy"
       ]
@@ -2555,8 +2555,8 @@
       "b": "1899-01-02",
       "fate": "murdered",
       "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/70.pdf",
-      "dla": 51.3266487,
-      "dlo": 6.5661789,
+      "dla": 51.3266477,
+      "dlo": 6.5662174,
       "w": [
         "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Michael_Levy,_Rosa_Levy,_Max_Levy,_Paul_Levy,_Trude_Levy,_Hilde_Levy_und_Erich_Levy"
       ]
@@ -2593,8 +2593,8 @@
       "d": "1943-02-12",
       "fate": "murdered",
       "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/71.pdf",
-      "dla": 51.3266116,
-      "dlo": 6.5661775,
+      "dla": 51.3266263,
+      "dlo": 6.5661688,
       "w": [
         "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Michael_Levy,_Rosa_Levy,_Max_Levy,_Paul_Levy,_Trude_Levy,_Hilde_Levy_und_Erich_Levy"
       ]
@@ -2612,8 +2612,8 @@
       "d": "1943-02-12",
       "fate": "murdered",
       "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/72.pdf",
-      "dla": 51.3266266,
-      "dlo": 6.5661662,
+      "dla": 51.3266409,
+      "dlo": 6.5661814,
       "w": [
         "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Michael_Levy,_Rosa_Levy,_Max_Levy,_Paul_Levy,_Trude_Levy,_Hilde_Levy_und_Erich_Levy"
       ]
@@ -2670,8 +2670,8 @@
       "cc": "DE",
       "fate": "survived",
       "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/74.pdf",
-      "dla": 51.3266416,
-      "dlo": 6.5661548,
+      "dla": 51.3266556,
+      "dlo": 6.566194,
       "w": [
         "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Michael_Levy,_Rosa_Levy,_Max_Levy,_Paul_Levy,_Trude_Levy,_Hilde_Levy_und_Erich_Levy"
       ]
@@ -3333,24 +3333,6 @@
       "dlo": 6.563345,
       "w": [
         "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Rosa_Strauss,_Franz_Strauss,_Dr._Otto_Konrad_Strauss_und_Karola_Strauss"
-      ]
-    },
-    {
-      "id": "kr-96",
-      "src": "krefeld",
-      "lic": "dl-de-zero",
-      "n": "Kurt (Keith) Zanders (Saunders)",
-      "la": 51.3320385,
-      "lo": 6.549208,
-      "a": "Preußenring 13",
-      "c": "Krefeld",
-      "cc": "DE",
-      "fate": "fled",
-      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/96.pdf",
-      "dla": 51.3320565,
-      "dlo": 6.549208,
-      "w": [
-        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Siegmund_Zanders,_Maria_Anna_Zanders,_Edith_Zanders,_Kurt_Zanders_und_Helmut_Zanders"
       ]
     },
     {

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated": "2026-11-21T21:22:45+01:00",
-    "count": 308,
-    "license": "Creative Commons Zero 1.0 Universal (CC0 1.0)",
-    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "generated": "2026-11-21T22:47:10+01:00",
+    "count": 306,
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
     "attribution": [
-      "Gemeente Den Haag, Stolpersteine Den Haag (CC0 1.0, https://data.overheid.nl/dataset/stolpersteine)"
+      "Gemeente Den Haag, Stolpersteine Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)"
     ],
     "source_url": "https://data.overheid.nl/dataset/stolpersteine",
     "note": "Placas añadidas en v22 a partir de la fuente abierta citada. No se copian biografías salvo campos de lista o inscripción literal permitida por la licencia. la/lo son las coordenadas de la fuente; dla/dlo son solo la posición de dibujo (reglas de v20/v21).",
@@ -18,7 +18,7 @@
     {
       "id": "dh-1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Henri Weijl",
       "la": 52.0779047,
       "lo": 4.2727194,
@@ -31,7 +31,7 @@
     {
       "id": "dh-10",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "David Luteraan",
       "la": 52.1116493,
       "lo": 4.2903669,
@@ -44,7 +44,7 @@
     {
       "id": "dh-100",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Maurits Duveen",
       "la": 52.0782477,
       "lo": 4.3263403,
@@ -57,7 +57,7 @@
     {
       "id": "dh-102",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Juda Turfrijer",
       "la": 52.077168,
       "lo": 4.3257389,
@@ -70,7 +70,7 @@
     {
       "id": "dh-103",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Max Splitter",
       "la": 52.1118456,
       "lo": 4.2967875,
@@ -83,7 +83,7 @@
     {
       "id": "dh-104",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Benjamin Jas",
       "la": 52.1116705,
       "lo": 4.297788,
@@ -96,7 +96,7 @@
     {
       "id": "dh-105",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Adolph van Oven",
       "la": 52.0903348,
       "lo": 4.2981123,
@@ -109,7 +109,7 @@
     {
       "id": "dh-106",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Karel Polak",
       "la": 52.1061109,
       "lo": 4.2795294,
@@ -122,7 +122,7 @@
     {
       "id": "dh-108",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Baruch Splitter",
       "la": 52.1086156,
       "lo": 4.2968959,
@@ -135,7 +135,7 @@
     {
       "id": "dh-109",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Robert Karl Herrmann",
       "la": 52.0979112,
       "lo": 4.3210951,
@@ -148,7 +148,7 @@
     {
       "id": "dh-11",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Levi de Groot",
       "la": 52.1107832,
       "lo": 4.2858359,
@@ -161,7 +161,7 @@
     {
       "id": "dh-110",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Ester Kwetsie-van Leeuwen",
       "la": 52.0693608,
       "lo": 4.3175939,
@@ -174,7 +174,7 @@
     {
       "id": "dh-111",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Bernard Jacob Mol",
       "la": 52.1091316,
       "lo": 4.2839403,
@@ -187,7 +187,7 @@
     {
       "id": "dh-112",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Juda Hermele",
       "la": 52.0748132,
       "lo": 4.3138611,
@@ -200,7 +200,7 @@
     {
       "id": "dh-114",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Barend Hagenaar",
       "la": 52.0773689,
       "lo": 4.300054,
@@ -213,7 +213,7 @@
     {
       "id": "dh-115",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Florence Gezang-Goudeket",
       "la": 52.0693786,
       "lo": 4.2287099,
@@ -226,7 +226,7 @@
     {
       "id": "dh-116",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Flora Henriette Loeb-Polak",
       "la": 52.0822101,
       "lo": 4.2857239,
@@ -239,7 +239,7 @@
     {
       "id": "dh-118",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Mendel Monderer",
       "la": 52.0722452,
       "lo": 4.3226724,
@@ -252,7 +252,7 @@
     {
       "id": "dh-119",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Sara Fresco-van Leeuwen",
       "la": 52.070894,
       "lo": 4.3167033,
@@ -265,7 +265,7 @@
     {
       "id": "dh-12",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Heiman Spier",
       "la": 52.1107129,
       "lo": 4.2864193,
@@ -278,7 +278,7 @@
     {
       "id": "dh-120",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Eliazer Salomon Bego",
       "la": 52.0584738,
       "lo": 4.3294439,
@@ -291,8 +291,8 @@
     {
       "id": "dh-122",
       "src": "denhaag",
-      "lic": "cc0-opendata",
-      "n": "Gerrit Jan Bakker | Erelijst van Gevallenen 1940-1945",
+      "lic": "cc-by-4",
+      "n": "Gerrit Jan Bakker",
       "la": 52.0573531,
       "lo": 4.32864,
       "a": "Paets van Troostwijkstraat 115",
@@ -304,7 +304,7 @@
     {
       "id": "dh-123",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Eduard Faynleijbe",
       "la": 52.0858693,
       "lo": 4.3420105,
@@ -317,7 +317,7 @@
     {
       "id": "dh-124",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Annette Katan",
       "la": 52.0940671,
       "lo": 4.32642,
@@ -330,7 +330,7 @@
     {
       "id": "dh-125",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Francisca Möller",
       "la": 52.0825167,
       "lo": 4.2563758,
@@ -343,7 +343,7 @@
     {
       "id": "dh-126",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Mozes Benjamin Meijer",
       "la": 52.0742043,
       "lo": 4.3120102,
@@ -356,7 +356,7 @@
     {
       "id": "dh-127",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Jo Allers",
       "la": 52.079018,
       "lo": 4.2886696,
@@ -369,7 +369,7 @@
     {
       "id": "dh-128",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hartog Mol",
       "la": 52.0757233,
       "lo": 4.3227397,
@@ -382,7 +382,7 @@
     {
       "id": "dh-129",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Abraham Bloemkoper",
       "la": 52.0748776,
       "lo": 4.3241598,
@@ -395,7 +395,7 @@
     {
       "id": "dh-13",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Ester Bego",
       "la": 52.1102016,
       "lo": 4.2873414,
@@ -408,7 +408,7 @@
     {
       "id": "dh-130",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Jacob Levie de Reeder",
       "la": 52.0754832,
       "lo": 4.3235189,
@@ -421,7 +421,7 @@
     {
       "id": "dh-131",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Jacques Mossel",
       "la": 52.0753801,
       "lo": 4.3236787,
@@ -434,7 +434,7 @@
     {
       "id": "dh-132",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Bernhard Kamerling",
       "la": 52.0704088,
       "lo": 4.2595576,
@@ -447,7 +447,7 @@
     {
       "id": "dh-133",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Johan Louis Voorzanger",
       "la": 52.0705846,
       "lo": 4.2593939,
@@ -460,7 +460,7 @@
     {
       "id": "dh-134",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Emanuel Micheels",
       "la": 52.0970687,
       "lo": 4.2742172,
@@ -473,7 +473,7 @@
     {
       "id": "dh-135",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Bernard Sanders",
       "la": 52.0960585,
       "lo": 4.275163,
@@ -486,7 +486,7 @@
     {
       "id": "dh-136",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Maurits van Mentz",
       "la": 52.095722,
       "lo": 4.2777372,
@@ -499,7 +499,7 @@
     {
       "id": "dh-137",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Siegfried Adolph Lewenstein",
       "la": 52.0805121,
       "lo": 4.3338294,
@@ -512,7 +512,7 @@
     {
       "id": "dh-138",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Alice Löwenstern-Jarecki",
       "la": 52.0792948,
       "lo": 4.3360144,
@@ -525,7 +525,7 @@
     {
       "id": "dh-139",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Aäron van Leeuwen",
       "la": 52.0729699,
       "lo": 4.3165295,
@@ -538,7 +538,7 @@
     {
       "id": "dh-14",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Joseph Kunstenaar",
       "la": 52.1090858,
       "lo": 4.2893111,
@@ -551,7 +551,7 @@
     {
       "id": "dh-140",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Uscher Schaje Zellermajer",
       "la": 52.0801635,
       "lo": 4.3234442,
@@ -564,7 +564,7 @@
     {
       "id": "dh-141",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Maurits Dessaur",
       "la": 52.0754141,
       "lo": 4.3258401,
@@ -577,7 +577,7 @@
     {
       "id": "dh-142",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Meijer de Vries",
       "la": 52.0796151,
       "lo": 4.3392781,
@@ -590,7 +590,7 @@
     {
       "id": "dh-143",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Aron van Dijk",
       "la": 52.1112934,
       "lo": 4.2794447,
@@ -603,7 +603,7 @@
     {
       "id": "dh-144",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Sara Roosnek",
       "la": 52.0850482,
       "lo": 4.3446473,
@@ -616,7 +616,7 @@
     {
       "id": "dh-145",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Juda Maurits Bolle",
       "la": 52.0735194,
       "lo": 4.3180267,
@@ -629,7 +629,7 @@
     {
       "id": "dh-146",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Roosje de Vries-de Jong",
       "la": 52.0787028,
       "lo": 4.2793877,
@@ -642,7 +642,7 @@
     {
       "id": "dh-147",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Jozef Splitter",
       "la": 52.111348,
       "lo": 4.2950631,
@@ -655,7 +655,7 @@
     {
       "id": "dh-148",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Izrael Splitter",
       "la": 52.1113305,
       "lo": 4.2953122,
@@ -668,7 +668,7 @@
     {
       "id": "dh-149",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Betje de Vries-Israëls",
       "la": 52.1114101,
       "lo": 4.2959494,
@@ -681,7 +681,7 @@
     {
       "id": "dh-15",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Kitty Julie de la Parra",
       "la": 52.08485,
       "lo": 4.2872576,
@@ -694,7 +694,7 @@
     {
       "id": "dh-150",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Moses Sealtiel",
       "la": 52.0736517,
       "lo": 4.3137647,
@@ -707,7 +707,7 @@
     {
       "id": "dh-151",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Arthur Agnes Tack",
       "la": 52.0833713,
       "lo": 4.3431498,
@@ -720,7 +720,7 @@
     {
       "id": "dh-152",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Paulina van Geens-Silberstein",
       "la": 52.0654226,
       "lo": 4.3117436,
@@ -733,7 +733,7 @@
     {
       "id": "dh-153",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Samuel Henriquez de Granada",
       "la": 52.0832325,
       "lo": 4.2828138,
@@ -746,7 +746,7 @@
     {
       "id": "dh-154",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Evaline Geziene Bronkhorst-de Beer",
       "la": 52.0853346,
       "lo": 4.3353481,
@@ -759,8 +759,8 @@
     {
       "id": "dh-155",
       "src": "denhaag",
-      "lic": "cc0-opendata",
-      "n": "Frederik Willem Franx - Nationaal Monument Kamp Vught (nmkampvught.nl)",
+      "lic": "cc-by-4",
+      "n": "Frederik Willem Franx",
       "la": 52.0785063,
       "lo": 4.2680506,
       "a": "Thomsonlaan 95",
@@ -772,7 +772,7 @@
     {
       "id": "dh-156",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Robert Jakobus Spanjaard",
       "la": 52.0830251,
       "lo": 4.3460396,
@@ -785,7 +785,7 @@
     {
       "id": "dh-157",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Isidore Eduard Kaas",
       "la": 52.0902917,
       "lo": 4.2725552,
@@ -798,7 +798,7 @@
     {
       "id": "dh-158",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Alfred Kardorff",
       "la": 52.0898167,
       "lo": 4.2726598,
@@ -811,7 +811,7 @@
     {
       "id": "dh-159",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hesje van Ments",
       "la": 52.0900731,
       "lo": 4.2726802,
@@ -824,7 +824,7 @@
     {
       "id": "dh-16",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Jetje Meliono",
       "la": 52.0766979,
       "lo": 4.2787787,
@@ -837,7 +837,7 @@
     {
       "id": "dh-160",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Nafthalie Keizer",
       "la": 52.0891748,
       "lo": 4.2730102,
@@ -850,7 +850,7 @@
     {
       "id": "dh-161",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Joseph Pronkhorst",
       "la": 52.0663623,
       "lo": 4.3012731,
@@ -863,7 +863,7 @@
     {
       "id": "dh-162",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Antje Versteege-Mossel",
       "la": 52.1000941,
       "lo": 4.3137609,
@@ -876,7 +876,7 @@
     {
       "id": "dh-163",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Henry Kerdijk",
       "la": 52.0954572,
       "lo": 4.3258558,
@@ -889,7 +889,7 @@
     {
       "id": "dh-164",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Imre König",
       "la": 52.0851015,
       "lo": 4.3473727,
@@ -902,7 +902,7 @@
     {
       "id": "dh-166",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Meijer Andries Lezer",
       "la": 52.0831034,
       "lo": 4.338041,
@@ -915,7 +915,7 @@
     {
       "id": "dh-167",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Abraham Konijn",
       "la": 52.0821776,
       "lo": 4.3391353,
@@ -928,7 +928,7 @@
     {
       "id": "dh-168",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Joseph Petrus Marie Kleijheeg",
       "la": 52.0866092,
       "lo": 4.344473,
@@ -941,7 +941,7 @@
     {
       "id": "dh-169",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Gerhard van Straten",
       "la": 52.0880591,
       "lo": 4.3447669,
@@ -954,7 +954,7 @@
     {
       "id": "dh-17",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Isaäc Mozes Cohen",
       "la": 52.0767496,
       "lo": 4.2658161,
@@ -967,7 +967,7 @@
     {
       "id": "dh-171",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Abraham van der Kloot",
       "la": 52.0642611,
       "lo": 4.3011324,
@@ -980,7 +980,7 @@
     {
       "id": "dh-172",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Rosa Josephine Cohen",
       "la": 52.0901461,
       "lo": 4.2735995,
@@ -993,7 +993,7 @@
     {
       "id": "dh-174",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Willem Michel Louis Cohen",
       "la": 52.089787,
       "lo": 4.2736272,
@@ -1006,7 +1006,7 @@
     {
       "id": "dh-175",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Isaac David",
       "la": 52.0824014,
       "lo": 4.2912206,
@@ -1019,7 +1019,7 @@
     {
       "id": "dh-176",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Lydia van Raalte-van den Bergh",
       "la": 52.101338,
       "lo": 4.3118219,
@@ -1032,7 +1032,7 @@
     {
       "id": "dh-177",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Salomon van Dijk",
       "la": 52.0599323,
       "lo": 4.2694031,
@@ -1045,7 +1045,7 @@
     {
       "id": "dh-178",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Tjerk Kloostra",
       "la": 52.0560306,
       "lo": 4.2991123,
@@ -1058,7 +1058,7 @@
     {
       "id": "dh-179",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Betsy Bruinette van Lier-van Raalte",
       "la": 52.0959547,
       "lo": 4.2796419,
@@ -1069,22 +1069,9 @@
       "dlo": 4.2796419
     },
     {
-      "id": "dh-18",
-      "src": "denhaag",
-      "lic": "cc0-opendata",
-      "n": "Meyer Levie Hakkert",
-      "la": 52.0873974,
-      "lo": 4.2721265,
-      "a": "Van Boetzelaerlaan 6",
-      "c": "Den Haag",
-      "cc": "NL",
-      "dla": 52.0874148,
-      "dlo": 4.2721341
-    },
-    {
       "id": "dh-181",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Salomon van Gelder",
       "la": 52.0739275,
       "lo": 4.316517,
@@ -1097,7 +1084,7 @@
     {
       "id": "dh-182",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Leo Jacques Spier",
       "la": 52.0926315,
       "lo": 4.266381,
@@ -1110,7 +1097,7 @@
     {
       "id": "dh-184",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Daniel Sanders",
       "la": 52.0765514,
       "lo": 4.3041645,
@@ -1123,7 +1110,7 @@
     {
       "id": "dh-185",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Grietje Joel-Sanders",
       "la": 52.0741354,
       "lo": 4.3263233,
@@ -1136,7 +1123,7 @@
     {
       "id": "dh-186",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Levi Hakker",
       "la": 52.0752363,
       "lo": 4.3289924,
@@ -1149,7 +1136,7 @@
     {
       "id": "dh-187",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Rebecca Wijnman",
       "la": 52.0752363,
       "lo": 4.3289924,
@@ -1162,7 +1149,7 @@
     {
       "id": "dh-188",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hijman Lelie",
       "la": 52.0751844,
       "lo": 4.3283104,
@@ -1175,7 +1162,7 @@
     {
       "id": "dh-189",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hendrika Marianna Hirsch-van der Rijn",
       "la": 52.0696429,
       "lo": 4.2292616,
@@ -1188,7 +1175,7 @@
     {
       "id": "dh-19",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Mindel Kacz-Flachs",
       "la": 52.1119933,
       "lo": 4.2897371,
@@ -1201,7 +1188,7 @@
     {
       "id": "dh-190",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Anthony Julius Vieijra",
       "la": 52.1168804,
       "lo": 4.2870033,
@@ -1214,7 +1201,7 @@
     {
       "id": "dh-191",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Simche Minzer",
       "la": 52.0837236,
       "lo": 4.2929499,
@@ -1227,7 +1214,7 @@
     {
       "id": "dh-192",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Herman Salomon van Moppes",
       "la": 52.0680469,
       "lo": 4.2770511,
@@ -1240,20 +1227,21 @@
     {
       "id": "dh-193",
       "src": "denhaag",
-      "lic": "cc0-opendata",
-      "n": "Walter Eylenburg (born 14 December 1929) ? Dokin",
+      "lic": "cc-by-4",
+      "n": "Walter Eylenburg",
       "la": 52.101864,
       "lo": 4.3597775,
       "a": "Zuidwerfplein 12",
       "c": "Den Haag",
       "cc": "NL",
+      "b": "1929-12-14",
       "dla": 52.101864,
       "dlo": 4.3597775
     },
     {
       "id": "dh-194",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Emanuel de Vries",
       "la": 52.0728305,
       "lo": 4.3274454,
@@ -1266,7 +1254,7 @@
     {
       "id": "dh-195",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Mietje de Leeuw",
       "la": 52.0732369,
       "lo": 4.327953,
@@ -1279,7 +1267,7 @@
     {
       "id": "dh-196",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Henriette Gosler-Blits",
       "la": 52.0732216,
       "lo": 4.3279383,
@@ -1292,7 +1280,7 @@
     {
       "id": "dh-198",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Joseph van Raalte",
       "la": 52.1039144,
       "lo": 4.3214307,
@@ -1305,7 +1293,7 @@
     {
       "id": "dh-199",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Lodewijk Eduard Martinus van Raalte",
       "la": 52.0977441,
       "lo": 4.3186645,
@@ -1318,7 +1306,7 @@
     {
       "id": "dh-2",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Levie Polak",
       "la": 52.0842103,
       "lo": 4.3303995,
@@ -1331,7 +1319,7 @@
     {
       "id": "dh-20",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Henriette Czopp-Katz",
       "la": 52.1120176,
       "lo": 4.2900168,
@@ -1344,7 +1332,7 @@
     {
       "id": "dh-200",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Germaine Rüff",
       "la": 52.0906027,
       "lo": 4.3198899,
@@ -1357,7 +1345,7 @@
     {
       "id": "dh-202",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Albert Wolff",
       "la": 52.0826699,
       "lo": 4.3400091,
@@ -1370,7 +1358,7 @@
     {
       "id": "dh-203",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Nardus Schrijver",
       "la": 52.0814009,
       "lo": 4.3387468,
@@ -1383,7 +1371,7 @@
     {
       "id": "dh-204",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Aäron Fresco",
       "la": 52.0818033,
       "lo": 4.3369934,
@@ -1396,7 +1384,7 @@
     {
       "id": "dh-205",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Philip Fresco",
       "la": 52.076122,
       "lo": 4.3137418,
@@ -1409,7 +1397,7 @@
     {
       "id": "dh-206",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Barend Fresco",
       "la": 52.061714,
       "lo": 4.32491,
@@ -1422,7 +1410,7 @@
     {
       "id": "dh-207",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Herbert Vieyra (Vieijra)",
       "la": 52.0701335,
       "lo": 4.3135482,
@@ -1435,7 +1423,7 @@
     {
       "id": "dh-208",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Benjamin Sternfeld",
       "la": 52.0882734,
       "lo": 4.3043417,
@@ -1448,7 +1436,7 @@
     {
       "id": "dh-209",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hindrik Frans Luursema",
       "la": 52.0846205,
       "lo": 4.3129988,
@@ -1461,7 +1449,7 @@
     {
       "id": "dh-21",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Cornelis Rademakers",
       "la": 52.0673709,
       "lo": 4.3026292,
@@ -1474,7 +1462,7 @@
     {
       "id": "dh-210",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Betsie Mahler",
       "la": 52.0799869,
       "lo": 4.3027528,
@@ -1487,7 +1475,7 @@
     {
       "id": "dh-211",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Moses Barsam",
       "la": 52.1123712,
       "lo": 4.2889195,
@@ -1500,7 +1488,7 @@
     {
       "id": "dh-212",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Philip Barend Koekkoek",
       "la": 52.0835874,
       "lo": 4.2807183,
@@ -1513,7 +1501,7 @@
     {
       "id": "dh-213",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Nathan Davids",
       "la": 52.0956139,
       "lo": 4.280691,
@@ -1526,7 +1514,7 @@
     {
       "id": "dh-214",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "dr. Philippus Joseph Drenthem Soesman",
       "la": 52.0798353,
       "lo": 4.280021,
@@ -1539,7 +1527,7 @@
     {
       "id": "dh-215",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Herman Philip Polak",
       "la": 52.0928693,
       "lo": 4.2726346,
@@ -1552,7 +1540,7 @@
     {
       "id": "dh-216",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "David van Geuns",
       "la": 52.0934318,
       "lo": 4.2778991,
@@ -1565,7 +1553,7 @@
     {
       "id": "dh-217",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Siegfried Paul Elsbach",
       "la": 52.0742345,
       "lo": 4.2823217,
@@ -1578,7 +1566,7 @@
     {
       "id": "dh-218",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Johan Frederik Ernst Belinfante",
       "la": 52.0671822,
       "lo": 4.2483841,
@@ -1591,7 +1579,7 @@
     {
       "id": "dh-219",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Joseph Spetter",
       "la": 52.063485,
       "lo": 4.2569988,
@@ -1604,7 +1592,7 @@
     {
       "id": "dh-22",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Simon van den Bergh",
       "la": 52.1088171,
       "lo": 4.2961654,
@@ -1617,7 +1605,7 @@
     {
       "id": "dh-220",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Abraham de Wilde",
       "la": 52.06966,
       "lo": 4.2543012,
@@ -1630,7 +1618,7 @@
     {
       "id": "dh-221",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Lijda van Straten",
       "la": 52.0793014,
       "lo": 4.2897216,
@@ -1643,7 +1631,7 @@
     {
       "id": "dh-222",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Georg Frans van 't Sant",
       "la": 52.0739593,
       "lo": 4.2755198,
@@ -1656,7 +1644,7 @@
     {
       "id": "dh-223",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Wiebe Geskus",
       "la": 52.0631938,
       "lo": 4.2882616,
@@ -1669,7 +1657,7 @@
     {
       "id": "dh-224",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Maarten Marijnis",
       "la": 52.0593758,
       "lo": 4.2787942,
@@ -1682,7 +1670,7 @@
     {
       "id": "dh-225",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Goos Mante",
       "la": 52.0948495,
       "lo": 4.3239609,
@@ -1695,7 +1683,7 @@
     {
       "id": "dh-226_1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Moritz Grünebaum",
       "la": 52.090644,
       "lo": 4.3235581,
@@ -1708,7 +1696,7 @@
     {
       "id": "dh-226_2",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Esther Grünebaum-Abrahams",
       "la": 52.090644,
       "lo": 4.3235581,
@@ -1722,7 +1710,7 @@
     {
       "id": "dh-227",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Izak Klein",
       "la": 52.0898922,
       "lo": 4.3418943,
@@ -1735,7 +1723,7 @@
     {
       "id": "dh-228",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Max Ringer",
       "la": 52.0835776,
       "lo": 4.3313296,
@@ -1748,7 +1736,7 @@
     {
       "id": "dh-229",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Georges Henri Drunet",
       "la": 52.0850314,
       "lo": 4.3446418,
@@ -1761,7 +1749,7 @@
     {
       "id": "dh-23",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Barend Koekoek",
       "la": 52.1089125,
       "lo": 4.2963579,
@@ -1774,7 +1762,7 @@
     {
       "id": "dh-230",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Mozes Cohen",
       "la": 52.0808786,
       "lo": 4.3334022,
@@ -1787,7 +1775,7 @@
     {
       "id": "dh-231",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Lion Kunstenaar",
       "la": 52.0818704,
       "lo": 4.3274251,
@@ -1800,7 +1788,7 @@
     {
       "id": "dh-232",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Henry Johan Louis de la Parra",
       "la": 52.0883245,
       "lo": 4.3414503,
@@ -1813,7 +1801,7 @@
     {
       "id": "dh-233",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Isaäc Zion",
       "la": 52.0833936,
       "lo": 4.3338774,
@@ -1826,7 +1814,7 @@
     {
       "id": "dh-234",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hinde Ruchel Meijers-Ringer",
       "la": 52.0823097,
       "lo": 4.3404614,
@@ -1839,7 +1827,7 @@
     {
       "id": "dh-235",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Salomon Nabarro",
       "la": 52.0841011,
       "lo": 4.3454379,
@@ -1852,7 +1840,7 @@
     {
       "id": "dh-236",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Rika Willink-Pinto",
       "la": 52.092032,
       "lo": 4.2984952,
@@ -1865,7 +1853,7 @@
     {
       "id": "dh-237",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Maurits Philip Lansberg",
       "la": 52.0820928,
       "lo": 4.2993282,
@@ -1878,7 +1866,7 @@
     {
       "id": "dh-238",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Carolina Zwaaf-Wolf",
       "la": 52.0803079,
       "lo": 4.2987002,
@@ -1891,7 +1879,7 @@
     {
       "id": "dh-239",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Mordechai Winkel",
       "la": 52.0688227,
       "lo": 4.3164386,
@@ -1904,7 +1892,7 @@
     {
       "id": "dh-24",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Karel de Lange",
       "la": 52.0772917,
       "lo": 4.275149,
@@ -1917,7 +1905,7 @@
     {
       "id": "dh-241",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Elisabeth Knorringa-Vlessing",
       "la": 52.0737542,
       "lo": 4.3254156,
@@ -1930,7 +1918,7 @@
     {
       "id": "dh-242",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Leiser Klausner",
       "la": 52.0749759,
       "lo": 4.3239596,
@@ -1943,7 +1931,7 @@
     {
       "id": "dh-243",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Kallmann Klausner",
       "la": 52.0739879,
       "lo": 4.3270984,
@@ -1956,7 +1944,7 @@
     {
       "id": "dh-244",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Rosetta van Praagh-Godfried",
       "la": 52.0736843,
       "lo": 4.3280296,
@@ -1969,7 +1957,7 @@
     {
       "id": "dh-245",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Isaak Benjamin Klausner",
       "la": 52.0739345,
       "lo": 4.3284756,
@@ -1982,7 +1970,7 @@
     {
       "id": "dh-246",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Lasar Ringer",
       "la": 52.0736053,
       "lo": 4.3275455,
@@ -1995,7 +1983,7 @@
     {
       "id": "dh-247",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Aron Ringer",
       "la": 52.0728476,
       "lo": 4.3274892,
@@ -2008,7 +1996,7 @@
     {
       "id": "dh-248",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Eva Godfried-Kisch",
       "la": 52.0732494,
       "lo": 4.3279578,
@@ -2021,7 +2009,7 @@
     {
       "id": "dh-249",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "David Michael Erich Bloemendaal",
       "la": 52.0728201,
       "lo": 4.327437,
@@ -2034,7 +2022,7 @@
     {
       "id": "dh-25",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Robert Ferrand Klein",
       "la": 52.0771114,
       "lo": 4.2743698,
@@ -2047,7 +2035,7 @@
     {
       "id": "dh-250",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Benjamin Isaacs",
       "la": 52.0602345,
       "lo": 4.3298946,
@@ -2060,7 +2048,7 @@
     {
       "id": "dh-251",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hartog Winkel",
       "la": 52.0617102,
       "lo": 4.3251764,
@@ -2073,7 +2061,7 @@
     {
       "id": "dh-252",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Julius Korijn",
       "la": 52.0976702,
       "lo": 4.2753285,
@@ -2086,7 +2074,7 @@
     {
       "id": "dh-253",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Alexander Hamburger",
       "la": 52.0936473,
       "lo": 4.2764304,
@@ -2099,7 +2087,7 @@
     {
       "id": "dh-254",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hedwig Dorothea Ziermans-Sluzewski",
       "la": 52.0806296,
       "lo": 4.2774937,
@@ -2112,7 +2100,7 @@
     {
       "id": "dh-255",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Karel Abraham van der Hal",
       "la": 52.066818,
       "lo": 4.2480582,
@@ -2125,7 +2113,7 @@
     {
       "id": "dh-256",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Henriette Cohen",
       "la": 52.068261,
       "lo": 4.2585073,
@@ -2138,7 +2126,7 @@
     {
       "id": "dh-257",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Schoontje Snijders",
       "la": 52.0698025,
       "lo": 4.2532147,
@@ -2151,7 +2139,7 @@
     {
       "id": "dh-258",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Simon Wijnschenk",
       "la": 52.072689,
       "lo": 4.2622759,
@@ -2164,7 +2152,7 @@
     {
       "id": "dh-259",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Salomon Jager",
       "la": 52.0738737,
       "lo": 4.2640744,
@@ -2177,7 +2165,7 @@
     {
       "id": "dh-26",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Marianne Elisabeth Jacobson",
       "la": 52.0766285,
       "lo": 4.2730473,
@@ -2190,7 +2178,7 @@
     {
       "id": "dh-260",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Johannes Pieter Steenbergen",
       "la": 52.078603,
       "lo": 4.2850127,
@@ -2203,7 +2191,7 @@
     {
       "id": "dh-261",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Benjamin Wolf Pool",
       "la": 52.0788342,
       "lo": 4.2740759,
@@ -2216,7 +2204,7 @@
     {
       "id": "dh-262",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Max Katzenstein",
       "la": 52.1113469,
       "lo": 4.2949934,
@@ -2229,7 +2217,7 @@
     {
       "id": "dh-263",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Gerrit Guit",
       "la": 52.0922467,
       "lo": 4.2578597,
@@ -2242,7 +2230,7 @@
     {
       "id": "dh-264",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Abraham Simons",
       "la": 52.098499,
       "lo": 4.2768411,
@@ -2255,7 +2243,7 @@
     {
       "id": "dh-265",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Philip Kronig",
       "la": 52.0827211,
       "lo": 4.2825647,
@@ -2268,7 +2256,7 @@
     {
       "id": "dh-266",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Herman Fekete",
       "la": 52.0785929,
       "lo": 4.3066871,
@@ -2281,7 +2269,7 @@
     {
       "id": "dh-267",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Mozes Levie 'Max' van der Sluis",
       "la": 52.061081,
       "lo": 4.3369477,
@@ -2294,7 +2282,7 @@
     {
       "id": "dh-268",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Franciscus Arnoldus Frans Postma",
       "la": 52.0605197,
       "lo": 4.3285051,
@@ -2307,7 +2295,7 @@
     {
       "id": "dh-269",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Aron Nol van Dijk",
       "la": 52.0688803,
       "lo": 4.2580528,
@@ -2320,7 +2308,7 @@
     {
       "id": "dh-27",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Izaak van Creveld",
       "la": 52.0765198,
       "lo": 4.2727383,
@@ -2333,7 +2321,7 @@
     {
       "id": "dh-270",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Clara Jacoby-Mendel",
       "la": 52.0779373,
       "lo": 4.2651437,
@@ -2346,7 +2334,7 @@
     {
       "id": "dh-271",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Jette van Trommel-Cohen",
       "la": 52.0783377,
       "lo": 4.2695294,
@@ -2359,7 +2347,7 @@
     {
       "id": "dh-272",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Johannes Gerardus Snijdoodt",
       "la": 52.0765516,
       "lo": 4.2839812,
@@ -2372,7 +2360,7 @@
     {
       "id": "dh-273",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Johan Hendrik Heijer",
       "la": 52.0641572,
       "lo": 4.2762603,
@@ -2385,7 +2373,7 @@
     {
       "id": "dh-274",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Johannes Franciscus van Bommel",
       "la": 52.0514142,
       "lo": 4.2382337,
@@ -2398,7 +2386,7 @@
     {
       "id": "dh-275",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Louis van Messel",
       "la": 52.0777952,
       "lo": 4.3327985,
@@ -2411,7 +2399,7 @@
     {
       "id": "dh-276",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Nathan de Wit",
       "la": 52.0853898,
       "lo": 4.3492876,
@@ -2424,7 +2412,7 @@
     {
       "id": "dh-277",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Liza Kan-van Zwanenberg",
       "la": 52.0942705,
       "lo": 4.3287912,
@@ -2437,7 +2425,7 @@
     {
       "id": "dh-278",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Josef Barchasch",
       "la": 52.0844158,
       "lo": 4.3481919,
@@ -2450,7 +2438,7 @@
     {
       "id": "dh-279",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Luc Sassenus",
       "la": 52.0805717,
       "lo": 4.3365228,
@@ -2463,7 +2451,7 @@
     {
       "id": "dh-28",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Philip Elias",
       "la": 52.0944553,
       "lo": 4.3110784,
@@ -2476,7 +2464,7 @@
     {
       "id": "dh-280",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Simon Tobias van Blankenstein",
       "la": 52.100661,
       "lo": 4.3191678,
@@ -2489,7 +2477,7 @@
     {
       "id": "dh-281",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "David van Hessen",
       "la": 52.0973429,
       "lo": 4.3213674,
@@ -2502,8 +2490,8 @@
     {
       "id": "dh-282",
       "src": "denhaag",
-      "lic": "cc0-opendata",
-      "n": "Leonardus Josephus Maria 'Leo'Coppes",
+      "lic": "cc-by-4",
+      "n": "Leonardus Josephus Maria 'Leo' Coppes",
       "la": 52.0762642,
       "lo": 4.3171668,
       "a": "Spui 191",
@@ -2515,7 +2503,7 @@
     {
       "id": "dh-283",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Benjamin Mozes Levits",
       "la": 52.0738527,
       "lo": 4.3125269,
@@ -2528,7 +2516,7 @@
     {
       "id": "dh-284",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Leon Tokkie",
       "la": 52.0744414,
       "lo": 4.3146668,
@@ -2541,7 +2529,7 @@
     {
       "id": "dh-285",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Ester Bobbe",
       "la": 52.0719604,
       "lo": 4.3197671,
@@ -2554,7 +2542,7 @@
     {
       "id": "dh-286_1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Raphaël Sarphait",
       "la": 52.0841031,
       "lo": 4.3454119,
@@ -2568,7 +2556,7 @@
     {
       "id": "dh-286_2",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Flora Sarphait",
       "la": 52.0841031,
       "lo": 4.3454119,
@@ -2582,7 +2570,7 @@
     {
       "id": "dh-287_1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Meta Van Wijnbergen",
       "la": 52.084922,
       "lo": 4.3452052,
@@ -2596,7 +2584,7 @@
     {
       "id": "dh-287_2",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Emanuel Van Wijnbergen",
       "la": 52.084922,
       "lo": 4.3452052,
@@ -2610,7 +2598,7 @@
     {
       "id": "dh-288",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hanna (Annetje) Sarphati",
       "la": 52.081281,
       "lo": 4.2957687,
@@ -2624,7 +2612,7 @@
     {
       "id": "dh-289",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Willem Barriël",
       "la": 52.0659992,
       "lo": 4.307167,
@@ -2638,7 +2626,7 @@
     {
       "id": "dh-29",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "David Hamme",
       "la": 52.0878903,
       "lo": 4.3463491,
@@ -2651,7 +2639,7 @@
     {
       "id": "dh-290",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hendrik van Maanen",
       "la": 52.0706303,
       "lo": 4.3016153,
@@ -2665,7 +2653,7 @@
     {
       "id": "dh-291",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Izak Bloemkoper",
       "la": 52.0993305,
       "lo": 4.3167909,
@@ -2679,7 +2667,7 @@
     {
       "id": "dh-293",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Abraham Jacobson",
       "la": 52.0869703,
       "lo": 4.3388652,
@@ -2693,7 +2681,7 @@
     {
       "id": "dh-294_1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Maurits Davidson",
       "la": 52.1101558,
       "lo": 4.2795313,
@@ -2701,40 +2689,27 @@
       "c": "Den Haag",
       "cc": "NL",
       "b": "1885",
-      "dla": 52.1101441,
-      "dlo": 4.2795322
+      "dla": 52.1101497,
+      "dlo": 4.2795222
     },
     {
       "id": "dh-294_2",
       "src": "denhaag",
-      "lic": "cc0-opendata",
-      "n": "H Davidson",
-      "la": 52.1101558,
-      "lo": 4.2795313,
-      "a": "Gevers Deynootweg 47",
-      "c": "Den Haag",
-      "cc": "NL",
-      "dla": 52.1101563,
-      "dlo": 4.2795504
-    },
-    {
-      "id": "dh-294_3",
-      "src": "denhaag",
-      "lic": "cc0-opendata",
-      "n": "riette Hester Davidson",
+      "lic": "cc-by-4",
+      "n": "Henriette Hester Davidson",
       "la": 52.1101558,
       "lo": 4.2795313,
       "a": "Gevers Deynootweg 47",
       "c": "Den Haag",
       "cc": "NL",
       "b": "1886",
-      "dla": 52.1101553,
-      "dlo": 4.2795122
+      "dla": 52.1101619,
+      "dlo": 4.2795404
     },
     {
       "id": "dh-295",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Céline E. Gerzon",
       "la": 52.0800279,
       "lo": 4.2503116,
@@ -2748,34 +2723,21 @@
     {
       "id": "dh-296_1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
-      "n": "Betje Hel Konraad",
-      "la": 52.0777294,
-      "lo": 4.281833,
-      "a": "Daguerrestraat 39",
-      "c": "Den Haag",
-      "cc": "NL",
-      "dla": 52.0777117,
-      "dlo": 4.2818384
-    },
-    {
-      "id": "dh-296_2",
-      "src": "denhaag",
-      "lic": "cc0-opendata",
-      "n": "a Konraad",
+      "lic": "cc-by-4",
+      "n": "Betje Helena Konraad",
       "la": 52.0777294,
       "lo": 4.281833,
       "a": "Daguerrestraat 39",
       "c": "Den Haag",
       "cc": "NL",
       "b": "1909",
-      "dla": 52.07772,
-      "dlo": 4.2818618
+      "dla": 52.0777258,
+      "dlo": 4.2818248
     },
     {
-      "id": "dh-296_3",
+      "id": "dh-296_2",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Sara Konraad",
       "la": 52.0777294,
       "lo": 4.281833,
@@ -2783,13 +2745,13 @@
       "c": "Den Haag",
       "cc": "NL",
       "b": "1933",
-      "dla": 52.0777261,
-      "dlo": 4.2818249
+      "dla": 52.0777342,
+      "dlo": 4.2818482
     },
     {
       "id": "dh-297",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Leo Swaab",
       "la": 52.078366,
       "lo": 4.3189874,
@@ -2803,7 +2765,7 @@
     {
       "id": "dh-298",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Matje Glaser Pront",
       "la": 52.0882378,
       "lo": 4.2760373,
@@ -2816,7 +2778,7 @@
     {
       "id": "dh-299",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Gerard Tax",
       "la": 52.0694754,
       "lo": 4.3288602,
@@ -2829,7 +2791,7 @@
     {
       "id": "dh-3",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Emanuel Bobbe",
       "la": 52.0829607,
       "lo": 4.331783,
@@ -2842,7 +2804,7 @@
     {
       "id": "dh-30",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Bernard Mendels",
       "la": 52.079294,
       "lo": 4.3375164,
@@ -2855,7 +2817,7 @@
     {
       "id": "dh-300_1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Abraham Lorsch",
       "la": 52.1093721,
       "lo": 4.2799536,
@@ -2868,7 +2830,7 @@
     {
       "id": "dh-300_2",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Dora Lorsch",
       "la": 52.1093721,
       "lo": 4.2799536,
@@ -2881,7 +2843,7 @@
     {
       "id": "dh-301_1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Bernard Frank",
       "la": 52.073119,
       "lo": 4.3226043,
@@ -2894,7 +2856,7 @@
     {
       "id": "dh-301_2",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Sara Frank van Gelderen",
       "la": 52.073119,
       "lo": 4.3226043,
@@ -2907,7 +2869,7 @@
     {
       "id": "dh-301_4",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Reina Sophia de Hartogh",
       "la": 52.073119,
       "lo": 4.3226043,
@@ -2920,7 +2882,7 @@
     {
       "id": "dh-302",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Alfred de la Bella",
       "la": 52.0841237,
       "lo": 4.3140263,
@@ -2933,7 +2895,7 @@
     {
       "id": "dh-303_1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hana Sura Bornsztajn-Heber",
       "la": 52.0698977,
       "lo": 4.3197744,
@@ -2946,7 +2908,7 @@
     {
       "id": "dh-303_2",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Szaja Abram Bornsztajn",
       "la": 52.0698977,
       "lo": 4.3197744,
@@ -2959,7 +2921,7 @@
     {
       "id": "dh-303_3",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Pinchas Bornsztajn",
       "la": 52.0698977,
       "lo": 4.3197744,
@@ -2972,7 +2934,7 @@
     {
       "id": "dh-303_4",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Jacob Bornsztajn",
       "la": 52.0698977,
       "lo": 4.3197744,
@@ -2985,7 +2947,7 @@
     {
       "id": "dh-303_5",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Chava Leesha Bornsztajn",
       "la": 52.0698977,
       "lo": 4.3197744,
@@ -2998,7 +2960,7 @@
     {
       "id": "dh-304_1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Michel Boutelje",
       "la": 52.0733241,
       "lo": 4.3034947,
@@ -3011,7 +2973,7 @@
     {
       "id": "dh-304_2",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Lea Boutelje-Lorsch",
       "la": 52.0733241,
       "lo": 4.3034947,
@@ -3024,7 +2986,7 @@
     {
       "id": "dh-304_3",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Simon Boutelje",
       "la": 52.0733241,
       "lo": 4.3034947,
@@ -3037,7 +2999,7 @@
     {
       "id": "dh-305_1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Marianne Zwarenstein-van Rees",
       "la": 52.0780087,
       "lo": 4.335609,
@@ -3050,7 +3012,7 @@
     {
       "id": "dh-305_2",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Izaak Koekoek",
       "la": 52.0780087,
       "lo": 4.335609,
@@ -3063,7 +3025,7 @@
     {
       "id": "dh-305_3",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Suzanna Koekoek-Zwarentein",
       "la": 52.0780087,
       "lo": 4.335609,
@@ -3074,22 +3036,35 @@
       "dlo": 4.3355902
     },
     {
-      "id": "dh-306",
+      "id": "dh-306_1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
-      "n": "Davids Zeelander Grietje Zeelander-Cohen",
+      "lic": "cc-by-4",
+      "n": "Davids Zeelander",
       "la": 52.0770134,
       "lo": 4.2996499,
       "a": "Sirtemastraat 34",
       "c": "Den Haag",
       "cc": "NL",
-      "dla": 52.0770168,
-      "dlo": 4.2996404
+      "dla": 52.0770134,
+      "dlo": 4.2996311
+    },
+    {
+      "id": "dh-306_2",
+      "src": "denhaag",
+      "lic": "cc-by-4",
+      "n": "Grietje Zeelander-Cohen",
+      "la": 52.0770134,
+      "lo": 4.2996499,
+      "a": "Sirtemastraat 34",
+      "c": "Den Haag",
+      "cc": "NL",
+      "dla": 52.0770229,
+      "dlo": 4.2996532
     },
     {
       "id": "dh-307",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hester van Leeuwen",
       "la": 52.077059,
       "lo": 4.2997485,
@@ -3103,7 +3078,7 @@
     {
       "id": "dh-308",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Salomon Philip de Jong",
       "la": 52.1025608,
       "lo": 4.3187184,
@@ -3117,7 +3092,7 @@
     {
       "id": "dh-309",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Bauke Schokker",
       "la": 52.0605487,
       "lo": 4.3228111,
@@ -3131,7 +3106,7 @@
     {
       "id": "dh-31",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Frederik de Jong",
       "la": 52.0877426,
       "lo": 4.3431775,
@@ -3144,7 +3119,7 @@
     {
       "id": "dh-310_1",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Levij Barend van Hoorn",
       "la": 52.0634278,
       "lo": 4.2752471,
@@ -3157,7 +3132,7 @@
     {
       "id": "dh-310_2",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Anna van Hoorn-Lezer",
       "la": 52.0634278,
       "lo": 4.2752471,
@@ -3170,7 +3145,7 @@
     {
       "id": "dh-310_3",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Aäron van Hoorn",
       "la": 52.0634278,
       "lo": 4.2752471,
@@ -3183,7 +3158,7 @@
     {
       "id": "dh-32",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Marie Hakker",
       "la": 52.0877606,
       "lo": 4.3452133,
@@ -3196,7 +3171,7 @@
     {
       "id": "dh-34",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Alexander de Groot",
       "la": 52.0904119,
       "lo": 4.3425683,
@@ -3209,7 +3184,7 @@
     {
       "id": "dh-35",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Jetje Rebecca de Leeuw-Akker",
       "la": 52.0788073,
       "lo": 4.3336125,
@@ -3222,7 +3197,7 @@
     {
       "id": "dh-36",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Isaac van den Berg",
       "la": 52.0786708,
       "lo": 4.3338423,
@@ -3235,7 +3210,7 @@
     {
       "id": "dh-38",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Isaäc Joels",
       "la": 52.0808002,
       "lo": 4.286218,
@@ -3248,7 +3223,7 @@
     {
       "id": "dh-39",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Andries Jonas van Rood",
       "la": 52.0832033,
       "lo": 4.3437299,
@@ -3261,7 +3236,7 @@
     {
       "id": "dh-4",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Mozes Samuel van Trommel",
       "la": 52.1149764,
       "lo": 4.2877437,
@@ -3274,7 +3249,7 @@
     {
       "id": "dh-40",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Christiaan Jansen",
       "la": 52.1097789,
       "lo": 4.2805331,
@@ -3287,7 +3262,7 @@
     {
       "id": "dh-41",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Joseph Moses van der Hal",
       "la": 52.1001952,
       "lo": 4.2764559,
@@ -3300,7 +3275,7 @@
     {
       "id": "dh-42",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Johan Noort",
       "la": 52.0655715,
       "lo": 4.2851435,
@@ -3313,7 +3288,7 @@
     {
       "id": "dh-43",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Lodewijk Otto Meijers",
       "la": 52.0653539,
       "lo": 4.2840597,
@@ -3326,7 +3301,7 @@
     {
       "id": "dh-44",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Salomon Frank",
       "la": 52.0829935,
       "lo": 4.3329084,
@@ -3339,7 +3314,7 @@
     {
       "id": "dh-48",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Betje Alter-Hakker",
       "la": 52.070894,
       "lo": 4.3167033,
@@ -3352,7 +3327,7 @@
     {
       "id": "dh-49",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Ruben Meijer",
       "la": 52.0930865,
       "lo": 4.273121,
@@ -3365,7 +3340,7 @@
     {
       "id": "dh-5",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Henri Raphalowiz",
       "la": 52.0588113,
       "lo": 4.3257589,
@@ -3378,7 +3353,7 @@
     {
       "id": "dh-50",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "George Maduro",
       "la": 52.0934882,
       "lo": 4.2762969,
@@ -3393,7 +3368,7 @@
     {
       "id": "dh-51",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Nathan Mendels",
       "la": 52.0934082,
       "lo": 4.2762208,
@@ -3406,7 +3381,7 @@
     {
       "id": "dh-52",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Antonius Mijnsberge",
       "la": 52.0699382,
       "lo": 4.250842,
@@ -3419,7 +3394,7 @@
     {
       "id": "dh-53",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Jacob Moses",
       "la": 52.0796395,
       "lo": 4.2777598,
@@ -3432,7 +3407,7 @@
     {
       "id": "dh-54",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Meijer van Dam",
       "la": 52.0742409,
       "lo": 4.3241859,
@@ -3445,7 +3420,7 @@
     {
       "id": "dh-55",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hartog van Os",
       "la": 52.0882787,
       "lo": 4.3365535,
@@ -3458,7 +3433,7 @@
     {
       "id": "dh-56",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Adèle Springer-van der Wieken",
       "la": 52.1099774,
       "lo": 4.2788346,
@@ -3471,7 +3446,7 @@
     {
       "id": "dh-57",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Samuel Simon Kunstenaar",
       "la": 52.1101821,
       "lo": 4.2791396,
@@ -3484,7 +3459,7 @@
     {
       "id": "dh-58",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Lina Hartog-Konski",
       "la": 52.110539,
       "lo": 4.2796802,
@@ -3497,7 +3472,7 @@
     {
       "id": "dh-59",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Harri van Ments",
       "la": 52.0766764,
       "lo": 4.2621876,
@@ -3510,7 +3485,7 @@
     {
       "id": "dh-6",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Anton Herman Jozef van Straaten",
       "la": 52.081365,
       "lo": 4.337656,
@@ -3523,7 +3498,7 @@
     {
       "id": "dh-60",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Judith de la Parra-Samson",
       "la": 52.0767062,
       "lo": 4.261832,
@@ -3536,7 +3511,7 @@
     {
       "id": "dh-63",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Berendina Wolf-Parfumeur",
       "la": 52.0767368,
       "lo": 4.2612848,
@@ -3549,7 +3524,7 @@
     {
       "id": "dh-64",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Simon Isaac Eliasar",
       "la": 52.1148289,
       "lo": 4.2871485,
@@ -3562,7 +3537,7 @@
     {
       "id": "dh-65",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Gerard van den Dorpel",
       "la": 52.1150859,
       "lo": 4.2867208,
@@ -3575,7 +3550,7 @@
     {
       "id": "dh-66",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Mozes van Tijn",
       "la": 52.0695659,
       "lo": 4.3097017,
@@ -3588,7 +3563,7 @@
     {
       "id": "dh-67",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Simon van Daelen",
       "la": 52.1123054,
       "lo": 4.2885573,
@@ -3601,7 +3576,7 @@
     {
       "id": "dh-69",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Isaac van Leeuwen",
       "la": 52.1125166,
       "lo": 4.2896532,
@@ -3614,7 +3589,7 @@
     {
       "id": "dh-7",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Louise Paula Cohen",
       "la": 52.0749727,
       "lo": 4.3160787,
@@ -3627,7 +3602,7 @@
     {
       "id": "dh-70",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Barend van Bever",
       "la": 52.1119955,
       "lo": 4.2932738,
@@ -3640,7 +3615,7 @@
     {
       "id": "dh-71",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Marcus Drukker",
       "la": 52.1071995,
       "lo": 4.2798758,
@@ -3653,7 +3628,7 @@
     {
       "id": "dh-72",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Emile Cohen",
       "la": 52.0821753,
       "lo": 4.2970682,
@@ -3666,7 +3641,7 @@
     {
       "id": "dh-73",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Naphtali Abrahams",
       "la": 52.086338,
       "lo": 4.339154,
@@ -3679,7 +3654,7 @@
     {
       "id": "dh-74",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Margarete Spanjaard-Herz",
       "la": 52.0828256,
       "lo": 4.3430712,
@@ -3692,7 +3667,7 @@
     {
       "id": "dh-75",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Betje Hakker-van Leeuwen",
       "la": 52.0711542,
       "lo": 4.32002,
@@ -3705,7 +3680,7 @@
     {
       "id": "dh-76",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Jacob Lobe",
       "la": 52.0733625,
       "lo": 4.3075696,
@@ -3718,7 +3693,7 @@
     {
       "id": "dh-77",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Henriette Hester Davidson-de Vries",
       "la": 52.0804784,
       "lo": 4.2740833,
@@ -3731,7 +3706,7 @@
     {
       "id": "dh-78",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Rachel Tilmont-de Jong",
       "la": 52.0842287,
       "lo": 4.3487727,
@@ -3744,7 +3719,7 @@
     {
       "id": "dh-79",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Thekla Mendels-Marx",
       "la": 52.0794925,
       "lo": 4.333962,
@@ -3757,7 +3732,7 @@
     {
       "id": "dh-8",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Jacob Zadok Blok",
       "la": 52.0852911,
       "lo": 4.2992218,
@@ -3770,7 +3745,7 @@
     {
       "id": "dh-80",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Wolf Ikkersheim",
       "la": 52.0646957,
       "lo": 4.3106649,
@@ -3783,7 +3758,7 @@
     {
       "id": "dh-81",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hadasse Alter-van Leeuwen",
       "la": 52.0713848,
       "lo": 4.3184735,
@@ -3796,7 +3771,7 @@
     {
       "id": "dh-82",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Sophia van Geens",
       "la": 52.0702946,
       "lo": 4.3196082,
@@ -3809,7 +3784,7 @@
     {
       "id": "dh-83",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Elische Münzer",
       "la": 52.0700112,
       "lo": 4.3199103,
@@ -3822,7 +3797,7 @@
     {
       "id": "dh-84",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Willem Jan Petrus van Unen",
       "la": 52.0565956,
       "lo": 4.3183819,
@@ -3835,7 +3810,7 @@
     {
       "id": "dh-85",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Jacques Joseph Kalker",
       "la": 52.0881926,
       "lo": 4.3381693,
@@ -3848,7 +3823,7 @@
     {
       "id": "dh-86",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Cornelis Gerhard Anton de Kom",
       "la": 52.0820213,
       "lo": 4.3431881,
@@ -3861,7 +3836,7 @@
     {
       "id": "dh-87",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Marinus Julius Simons",
       "la": 52.090403,
       "lo": 4.3190274,
@@ -3874,7 +3849,7 @@
     {
       "id": "dh-88",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Benjamin van Dantzig",
       "la": 52.0843448,
       "lo": 4.345324,
@@ -3887,7 +3862,7 @@
     {
       "id": "dh-89",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Gerson de Levie",
       "la": 52.0843267,
       "lo": 4.3456021,
@@ -3900,7 +3875,7 @@
     {
       "id": "dh-9",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Josua Toorenburg",
       "la": 52.1114703,
       "lo": 4.2899435,
@@ -3913,7 +3888,7 @@
     {
       "id": "dh-90",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Frederik Alter",
       "la": 52.1061547,
       "lo": 4.2736244,
@@ -3926,7 +3901,7 @@
     {
       "id": "dh-91",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Judica Mozes",
       "la": 52.0648955,
       "lo": 4.2598312,
@@ -3939,7 +3914,7 @@
     {
       "id": "dh-92",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Hans Paradies",
       "la": 52.1101123,
       "lo": 4.2954382,
@@ -3952,7 +3927,7 @@
     {
       "id": "dh-93",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Elias Viskoper",
       "la": 52.0707383,
       "lo": 4.3202069,
@@ -3965,7 +3940,7 @@
     {
       "id": "dh-94",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Arthur Levin",
       "la": 52.0658526,
       "lo": 4.3285697,
@@ -3978,7 +3953,7 @@
     {
       "id": "dh-95",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Adolf Mendels",
       "la": 52.0755235,
       "lo": 4.3069201,
@@ -3991,7 +3966,7 @@
     {
       "id": "dh-96",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Herman Salomonson",
       "la": 52.0917202,
       "lo": 4.3078005,
@@ -4004,7 +3979,7 @@
     {
       "id": "dh-97",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Max Marchand",
       "la": 52.0830231,
       "lo": 4.3406184,
@@ -4017,7 +3992,7 @@
     {
       "id": "dh-98",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Joseph Emanuel Kalker",
       "la": 52.0842968,
       "lo": 4.3395327,
@@ -4030,7 +4005,7 @@
     {
       "id": "dh-99",
       "src": "denhaag",
-      "lic": "cc0-opendata",
+      "lic": "cc-by-4",
       "n": "Heiman Isak van der Hoek",
       "la": 52.0641802,
       "lo": 4.3271519,

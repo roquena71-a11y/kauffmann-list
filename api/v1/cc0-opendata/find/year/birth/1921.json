@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"birth",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-95","Aldo Fumagalli",1921,1943,"Lissone","f"],
+["mz-91","Ambrogio Corbetta",1921,1944,"Corezzana","c"],
+["mz-135","Carlo Vittorio Sironi",1921,1945,"Triuggio","s"],
+["mz-61","Gaetano Venturini",1921,1943,"Lentate sul Seveso","v"],
+["mz-36","Leontino Bertaggia",1921,1945,"Cesano Maderno","b"],
+["mz-119","Luigi Romanò",1921,1945,"Lentate sul Seveso","r"],
+["mz-59","Luigi Scalfi",1921,1944,"Desio","s"]
+],
+"year":1921}

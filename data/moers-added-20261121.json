@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-11-21T21:22:45+01:00",
-    "count": 51,
+    "generated": "2026-11-21T22:47:10+01:00",
+    "count": 50,
     "license": "Datenlizenz Deutschland – Zero – Version 2.0",
     "license_url": "https://www.govdata.de/dl-de/zero-2-0",
     "attribution": [
@@ -30,23 +30,6 @@
       "fate": "murdered",
       "dla": 51.4518731,
       "dlo": 6.6268683,
-      "w": [
-        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
-      ]
-    },
-    {
-      "id": "mo-392",
-      "src": "moers",
-      "lic": "dl-de-zero",
-      "n": "Helene Hella Bähr geb. Haas",
-      "la": 51.4532496,
-      "lo": 6.6266784,
-      "a": "Rathausplatz 1",
-      "c": "Moers",
-      "cc": "DE",
-      "b": "1893-04-21",
-      "dla": 51.4532563,
-      "dlo": 6.6266971,
       "w": [
         "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
       ]

@@ -1,0 +1,11 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":2,
+"kind":"birth",
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["fi-330788_1","Fiammetta Moscato",1884,null,"Firenze","m"],
+["fi-327880","Giulio Forti",1884,1944,"Firenze","f"]
+],
+"year":1884}

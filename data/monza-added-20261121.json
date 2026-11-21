@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated": "2026-11-21T21:22:45+01:00",
+    "generated": "2026-11-21T22:47:10+01:00",
     "count": 162,
     "license": "Creative Commons Zero 1.0 Universal (CC0 1.0)",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "attribution": [
-      "Regione Lombardia, Pietre d'inciampo Monza e Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)"
+      "Provincia di Monza e della Brianza, Pietre d'inciampo Monza e Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)"
     ],
     "source_url": "https://www.dati.lombardia.it/d/42ik-bq75",
     "note": "Placas añadidas en v22 a partir de la fuente abierta citada. No se copian biografías salvo campos de lista o inscripción literal permitida por la licencia. la/lo son las coordenadas de la fuente; dla/dlo son solo la posición de dibujo (reglas de v20/v21).",
@@ -555,8 +555,8 @@
       "d": "1945-03-17",
       "fate": "murdered",
       "lb": "https://www.provincia.mb.it/pietredinciampomb/le-vittime/vittorio-rivolta",
-      "dla": 45.639586,
-      "dlo": 9.2676381
+      "dla": 45.6396347,
+      "dlo": 9.2677259
     },
     {
       "id": "mz-128",
@@ -1201,8 +1201,8 @@
       "d": "1944-09-02",
       "fate": "deported",
       "lb": "https://www.provincia.mb.it/pietredinciampomb/le-vittime/rovati-albino",
-      "dla": 45.5785546,
-      "dlo": 9.3783213
+      "dla": 45.5786395,
+      "dlo": 9.3784269
     },
     {
       "id": "mz-162",
@@ -2237,7 +2237,7 @@
       "fate": "murdered",
       "lb": "https://www.provincia.mb.it/pietredinciampomb/le-vittime/giorgio-levi",
       "dla": 45.584896,
-      "dlo": 9.2747905
+      "dlo": 9.2749189
     },
     {
       "id": "mz-7",
@@ -2746,7 +2746,7 @@
       "d": "1944-05-31",
       "fate": "murdered",
       "lb": "https://www.provincia.mb.it/pietredinciampomb/le-vittime/vincenzo-moino",
-      "dla": 45.5811979,
+      "dla": 45.581153,
       "dlo": 9.2762865
     },
     {

@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"birth",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-15","Anna Haselnuss",1915,1944,"Desio","h"],
+["mz-133","Ernesto Spinelli",1915,1945,"Seregno","s"],
+["mz-156","Ezio Angelo Mauri",1915,1944,"Seveso","m"],
+["mz-93","Mario Barzaghi",1915,1944,"Giussano","b"],
+["mz-164","Mario Meregalli",1915,1945,"Biassono","m"],
+["mz-19","Rinaldo Giorgetti",1915,1945,"Meda","g"],
+["mz-107-149","Vitale Balconi",1915,1945,"Agrate Brianza","b"]
+],
+"year":1915}

@@ -1,0 +1,13 @@
+{"columns":["id","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"rows":[
+["fi-324265_4","f"],
+["fi-324267_4","b"],
+["fi-327875_4","f"],
+["fi-327877_4","p"],
+["fi-328709_4","l"],
+["fi-328713_4","z"],
+["fi-329393_4","g"],
+["fi-330783_4","l"]
+],
+"shard":"_4"}

@@ -1,0 +1,11 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":1,
+"country":"IT",
+"label":"Cavenago Brianza",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-162","Ambrogio Sala",1911,"memorial","via Parini, 1",45.58509,9.41715]
+],
+"slug":"cavenago-brianza"}

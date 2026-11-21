@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Verify rendered (_dla/_dlo) placement of all 1,135 Batch-1 stones against OSM buildings,
-OSM highways (with width/est_width across <=80 m), all 73,950 existing rendered stones,
-and rigid 1.85 m intra-group grid. Blocks kl-contador and *.workers.dev.
+"""Verify rendered (_dla/_dlo) placement of all Batch-1 stones against complete OSM buildings
+(including relation multipolygons), OSM highways (with width/est_width across <=80 m), all 73,950
+existing rendered stones, and rigid 1.85 m intra-group grid. Blocks kl-contador and *.workers.dev.
 """
 from __future__ import annotations
 
 import asyncio
 import json
 import math
+import os
 import pickle
 import sys
 import time
@@ -16,11 +17,7 @@ from pathlib import Path
 from playwright.async_api import async_playwright
 
 R = Path(__file__).resolve().parents[1]
-V22_DATA = Path("/workspace/v22-data")
 sys.path.insert(0, str(R / "pipeline" / "tools"))
-_sp = Path("/workspace/venv-se/lib/python3.13/site-packages")
-if _sp.exists() and str(_sp) not in sys.path:
-    sys.path.insert(0, str(_sp))
 
 import sidewalk20 as SW  # noqa: E402
 import roadway20 as RWY  # noqa: E402
@@ -35,13 +32,29 @@ GRID_TOL = 0.08
 MAXMOVE = 25.0
 ROAD_Q_RC = 4
 ROAD_RAD = 80.0
-EXPECT_NEW = 1135
 BLOCK_HOSTS = ("kl-contador", "workers.dev")
 V22_SRCS = {
     "moenchengladbach", "denhaag", "krefeld", "monza", "viersen",
     "memmingen", "moers", "grevenbroich", "firenze", "xanten",
     "dresden", "erkrath", "dormagen",
 }
+
+
+def resolve_near_dir() -> Path:
+    if os.environ.get("V22_NEAR_DIR"):
+        return Path(os.environ["V22_NEAR_DIR"])
+    if os.environ.get("V22_DATA"):
+        return Path(os.environ["V22_DATA"]) / "near"
+    raise SystemExit("FAIL: set V22_DATA or V22_NEAR_DIR pointing to OSM geometry pickles")
+
+
+def expected_new_count() -> int:
+    total = 0
+    for src in sorted(V22_SRCS):
+        p = R / "data" / f"{src}-added-20261121.json"
+        if p.exists():
+            total += len(json.load(open(p))["stones"])
+    return total
 
 
 def dist_eq(la1, lo1, la2, lo2):
@@ -52,8 +65,19 @@ def dist_cons(la1, lo1, la2, lo2):
     return max(hav(la1, lo1, la2, lo2), dist_eq(la1, lo1, la2, lo2))
 
 
-def load_near_pkl(path: Path) -> SW.Near:
+def load_near_pkl(path: Path, cc: str) -> SW.Near:
+    if not path.exists():
+        raise SystemExit(f"FAIL: missing near pickle {path}")
     d = pickle.load(open(path, "rb"))
+    rel_buildings = sum(1 for bid in d["buildings"] if str(bid).startswith("r"))
+    width_tags = sum(1 for _, t in d["highways"].values() if "width" in t or "est_width" in t)
+    if rel_buildings == 0:
+        raise SystemExit(f"FAIL: {path} has 0 relation multipolygon buildings (incomplete OSM extract)")
+    if cc == "IT" and len(d["buildings"]) < 200000:
+        raise SystemExit(f"FAIL: {path} has only {len(d['buildings'])} buildings (expected >=200000 complete IT extract)")
+    if width_tags == 0:
+        raise SystemExit(f"FAIL: {path} has 0 highways with width/est_width tags")
+
     N = SW.Near()
     N.ts = d.get("osm_timestamp")
     for bid, (o, i, t) in d["buildings"].items():
@@ -69,16 +93,22 @@ def square(x, y, ang=0.0, half=COL_HALF):
                     for dx, dy in ((-half, -half), (half, -half), (half, half), (-half, half))])
 
 
-async def dump(url):
+async def dump(url, expect_total):
     t0 = time.time()
     blocked, allowed, errs = [], set(), []
+    chrome_bin = os.environ.get("CHROME_BIN", "/usr/bin/google-chrome")
+    launch_kw = {
+        "headless": True,
+        "args": [
+            "--use-gl=swiftshader", "--enable-unsafe-swiftshader",
+            "--ignore-gpu-blocklist", "--disable-dev-shm-usage",
+        ],
+    }
+    if Path(chrome_bin).exists():
+        launch_kw["executable_path"] = chrome_bin
+
     async with async_playwright() as p:
-        browser = await p.chromium.launch(
-            executable_path="/usr/bin/google-chrome",
-            headless=True,
-            args=["--use-gl=swiftshader", "--enable-unsafe-swiftshader",
-                  "--ignore-gpu-blocklist", "--disable-dev-shm-usage"],
-        )
+        browser = await p.chromium.launch(**launch_kw)
         ctx = await browser.new_context(viewport={"width": 1280, "height": 800},
                                         service_workers="block", locale="es-ES")
         page = await ctx.new_page()
@@ -102,7 +132,7 @@ async def dump(url):
         await page.route("**/*", route_handler)
         await page.goto(url, wait_until="load", timeout=120000)
         await page.wait_for_function(
-            "typeof DATA!=='undefined' && DATA.length>=75085 && DATA.every(s=>s._dla!==undefined || s._aliasOf)",
+            f"typeof DATA!=='undefined' && DATA.length>={expect_total} && DATA.every(s=>s._dla!==undefined || s._aliasOf)",
             timeout=600000,
         )
         rows = await page.evaluate("""() => DATA.map(s => ({
@@ -113,21 +143,29 @@ async def dump(url):
         print(f"  dumped v22: n={len(rows)} blocked={len(blocked)} errs={len(errs)} t={round(time.time()-t0,1)}s", flush=True)
         if any("kl-contador" in h or "workers.dev" in h for h in allowed):
             raise SystemExit(f"FAIL: forbidden host {sorted(allowed)}")
+        if errs:
+            raise SystemExit(f"FAIL: page errors {errs[:3]}")
         await browser.close()
     return rows
 
 
 async def main():
+    if len(sys.argv) < 2:
+        print("usage: v22-new-render-placement.py <url_v22>", file=sys.stderr)
+        sys.exit(2)
+    near_dir = resolve_near_dir()
+    expect_new = expected_new_count()
+    assert expect_new > 0, "no Batch-1 data files found"
     url = sys.argv[1].rstrip("/") + "/index.html?intro=0&lang=es"
-    rows = await dump(url)
+    rows = await dump(url, 73950 + expect_new)
     vis_new = [r for r in rows if r.get("src") in V22_SRCS and not r.get("alias") and r.get("_dla") is not None]
     vis_old = [r for r in rows if r.get("src") not in V22_SRCS and not r.get("alias") and r.get("_dla") is not None]
-    assert len(vis_new) == EXPECT_NEW, f"expected {EXPECT_NEW}, got {len(vis_new)}"
+    assert len(vis_new) == expect_new, f"expected {expect_new}, got {len(vis_new)}"
 
     nears = {
-        "DE": load_near_pkl(V22_DATA / "near" / "DE-batch1.pkl"),
-        "NL": load_near_pkl(V22_DATA / "near" / "NL-denhaag.pkl"),
-        "IT": load_near_pkl(V22_DATA / "near" / "IT-batch1.pkl"),
+        "DE": load_near_pkl(near_dir / "DE-batch1.pkl", "DE"),
+        "NL": load_near_pkl(near_dir / "NL-denhaag.pkl", "NL"),
+        "IT": load_near_pkl(near_dir / "IT-batch1.pkl", "IT"),
     }
 
     cell = 8.0

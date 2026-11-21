@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":4,
+"country":"IT",
+"label":"Biassono",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-111","Ambrogio Cassanmagnago",1901,"memorial","via San Martino, 2",45.63078,9.27495],
+["mz-83","Antonio Casiraghi",1909,"memorial","via Dante, 13",45.6338,9.27346],
+["mz-163","Enrico Meregalli",1917,"memorial","via Umberto I, 46",45.63028,9.27741],
+["mz-164","Mario Meregalli",1915,"memorial","via Umberto 1, 46",45.63028,9.27752]
+],
+"slug":"biassono"}

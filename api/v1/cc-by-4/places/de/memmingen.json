@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":2,
+"country":"DE",
+"label":"Memmingen",
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mm-108","Karl Metzeler",null,"memorial","Im Dickenreis 11",47.95832,10.18291],
+["mm-109","Marie Stetter",null,"memorial","Herrenstraße 3",47.9849,10.17992]
+],
+"slug":"memmingen"}

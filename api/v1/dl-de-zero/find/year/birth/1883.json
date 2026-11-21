@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":14,
+"kind":"birth",
+"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln (https://open.nrw/dataset/stolpersteine-koln-k)","Stadt Krefeld (https://www.krefeld.de/de/vermessung/digitale-geodaten/)","Stadt Mönchengladbach (https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093)","Stadt Viersen / KRZN (https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83)","Stadt Moers / KRZN (https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4)","Stadt Xanten / KRZN (https://www.govdata.de/suche/daten/stolpersteine-xanten138aa)","Stadt Erkrath (https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974)","Stadt Dormagen / Rhein-Kreis Neuss (https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json","family":"dl-de-zero","generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","source_url":"https://www.govdata.de/dl-de/zero-2-0"},
+"page":1,
+"pages":1,
+"rows":[
+["xa-86","Adele Stern",1883,null,"Xanten","s"],
+["kr-118","Albrecht Bruckmann",1883,null,"Krefeld","b"],
+["xa-103","Alex Alexander",1883,null,"Xanten","a"],
+["xa-141","Arthur Seldis",1883,null,"Xanten","s"],
+["vie-142","Channa Knoll",1883,1941,"Viersen","k"],
+["xa-97","Elsa Brogholter",1883,null,"Xanten","b"],
+["xa-84","Elsa Stern",1883,1941,"Xanten","s"],
+["kr-88","Hedwig Willner geb. Pins",1883,1943,"Krefeld","p"],
+["vie-149","Hermann Simons",1883,1941,"Viersen","s"],
+["mo-449","Jenny Callmann",1883,null,"Moers","c"],
+["vie-331","Karl Martin Wins",1883,1933,"Viersen","w"],
+["xa-90","Leo Buschoff",1883,null,"Xanten","b"],
+["kr-660","Louise Ferlings",1883,null,"Krefeld","f"],
+["mo-436","Siegmund Leyser",1883,null,"Moers","l"]
+],
+"year":1883}

@@ -1,0 +1,14 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"r",
+"rows":[
+["rachele","fi-328713_2","Rachele Lindenbaum Plessner",1883,null,"Firenze","p"],
+["raffallo","fi-329393_1","Raffaello Graziani",1891,1944,"Firenze","g"],
+["renata","fi-324307_2","Olga Renata Castelli",1919,1944,"Firenze","c"],
+["riccardo","fi-327872_3","Riccardo Dalla Volta",1862,1944,"Firenze","v"],
+["rina","fi-330785_3","Rina Spizzichino",1920,null,"Firenze","s"],
+["rita","fi-330784_2","Rita Bassano",1880,1944,"Firenze","b"],
+["rodolfo","fi-328712_3","Rodolfo Passigli",1899,1944,"Firenze","p"],
+["rudolf","fi-324264","Rudolf Levy",1875,1944,"Firenze","l"],
+["russo","fi-329393_2","Benvenuta Russo Graziani",1898,1944,"Firenze","g"]
+]}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","role","detail","lat","lon"],
+"count":8,
+"country":"IT",
+"label":"Meda",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-150","Angelo Pozzoli",1918,"memorial","piazza della Repubblica",45.66222,9.15616],
+["mz-18","Antonio Busnelli",1911,"memorial","Palazzo Comunale, p.za Municipio, 4",45.66241,9.15679],
+["mz-96","Felice Capellini",1920,"memorial","piazza Repubblica",45.66218,9.15625],
+["mz-63","Leonardo Cazzaniga",1919,"memorial","piazza della Repubblica",45.6621,9.15641],
+["mz-41","Luigi Cattaneo",1923,"memorial","piazza della Repubblica",45.66214,9.15633],
+["mz-128","Piero Besana",1924,"memorial","piazza della Repubblica",45.66206,9.15648],
+["mz-19","Rinaldo Giorgetti",1915,"memorial","Palazzo Comunale, p.za Municipio, 4",45.6624,9.15681],
+["mz-20","Vincenzo Meroni",1911,"memorial","Palazzo Comunale, p.za Municipio, 4",45.66239,9.15682]
+],
+"slug":"meda"}

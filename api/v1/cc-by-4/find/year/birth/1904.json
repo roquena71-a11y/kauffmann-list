@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"kind":"birth",
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["fi-324266_1","Annetta Disegni Vogelmann",1904,1944,"Firenze","v"],
+["fi-327870","Bruno Cagli",1904,1944,"Firenze","c"],
+["dh-287_2","Emanuel Van Wijnbergen",1904,null,"Den Haag","w"],
+["fi-328709_3","Guido Cambi",1904,1944,"Firenze","c"]
+],
+"year":1904}

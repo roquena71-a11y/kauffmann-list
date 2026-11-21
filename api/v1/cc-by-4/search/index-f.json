@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"prefix":"f",
+"rows":[
+["fi-329395","Salvatore Fantini",1909,"Firenze",43.76476,11.24745,"f"],
+["fi-327875_5","Anna Ferro",1932,"Firenze",43.78986,11.25361,"f"],
+["fi-327875_2","Giuseppe Ferro",1902,"Firenze",43.78986,11.25361,"f"],
+["fi-327875_4","Mario Ferro",1926,"Firenze",43.78986,11.25361,"f"],
+["fi-327875_1","Ugo Ferro",1930,"Firenze",43.78986,11.25361,"f"],
+["fi-324265_4","Anna Lina Fiano",1894,"Firenze",43.77251,11.27676,"f"],
+["fi-327879","Giulio Cesare Forti",1910,"Firenze",43.77756,11.24969,"f"],
+["fi-327880","Giulio Forti",1884,"Firenze",43.77336,11.27258,"f"]
+]}

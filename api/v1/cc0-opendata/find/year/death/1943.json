@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"kind":"death",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-95","Aldo Fumagalli",1921,1943,"Lissone","f"],
+["mz-149","Aldo Villa",1923,1943,"Macherio","v"],
+["mz-21","Alessandro Colombo",1875,1943,"Monza","c"],
+["mz-42","Enrico Bracesco",1910,1943,"Monza","b"],
+["mz-96","Felice Capellini",1920,1943,"Meda","c"],
+["mz-61","Gaetano Venturini",1921,1943,"Lentate sul Seveso","v"],
+["mz-22","Ilda Zamorani",1880,1943,"Monza","z"],
+["mz-63","Leonardo Cazzaniga",1919,1943,"Meda","c"],
+["gv-66","Paula Katz",1919,1943,"Grevenbroich","k"],
+["gv-70","Recha Katz",1939,1943,"Grevenbroich","k"],
+["gv-76","Sara Kaufmann",1859,1943,"Grevenbroich","k"]
+],
+"year":1943}

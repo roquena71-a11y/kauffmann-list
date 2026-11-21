@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"death",
+"meta":{"attribution":["Gemeente Den Haag (CC BY 4.0, https://data.overheid.nl/dataset/stolpersteine)","Geodaten Stadt Memmingen","Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by-4/index.json","family":"cc-by-4","generated":"2026-11-21","license":"CC-BY-4.0","license_url":"https://creativecommons.org/licenses/by/4.0/","source_url":"https://creativecommons.org/licenses/by/4.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["fi-327874_1","Affortunata Servi",1881,1943,"Firenze","s"],
+["fi-327885_1","Alessandro Valobra",1869,1943,"Firenze","v"],
+["fi-327885_3","Giulia Giuditta Colombo",1880,1943,"Firenze","c"],
+["fi-327874_2","Irma Servi",1883,1943,"Firenze","s"],
+["fi-324268","Leone Camerino",1870,1943,"Firenze","c"],
+["fi-324265_3","Manlio Della Torre",1935,1943,"Firenze","t"]
+],
+"year":1943}

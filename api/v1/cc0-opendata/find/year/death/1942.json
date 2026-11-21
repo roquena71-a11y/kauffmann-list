@@ -1,0 +1,21 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":12,
+"kind":"death",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["gv-2","Alexander Baum",1855,1942,"Grevenbroich","b"],
+["gv-11","Cilly Claessens",1907,1942,"Grevenbroich","c"],
+["gv-22","Eva Kaufmann",1885,1942,"Grevenbroich","k"],
+["gv-30","Hedwig Oberschützky",1886,1942,"Grevenbroich","o"],
+["gv-50","Julius Katz",1884,1942,"Grevenbroich","k"],
+["gv-58","Margarete Goldstein",1902,1942,"Grevenbroich","g"],
+["gv-63","Minna Stern",1861,1942,"Grevenbroich","s"],
+["gv-68","Philipp Kaufmann",1895,1942,"Grevenbroich","k"],
+["gv-69","Philipp Sachs",1898,1942,"Grevenbroich","s"],
+["gv-72","Regina Weber",1859,1942,"Grevenbroich","w"],
+["gv-77","Selka Kaufmann",null,1942,"Grevenbroich","k"],
+["gv-80","Sibilla Kaufmann",1893,1942,"Grevenbroich","k"]
+],
+"year":1942}

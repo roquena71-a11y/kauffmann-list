@@ -1,0 +1,22 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":13,
+"kind":"birth",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-149","Aldo Villa",1923,1943,"Macherio","v"],
+["mz-64","Angelo Beretta",1923,1945,"Monza","b"],
+["mz-142","Angelo Reguzzi",1923,1944,"Cesano Maderno","r"],
+["mz-159","Angelo Torricelli",1923,1944,"Veduggio con Colzano","t"],
+["mz-139","Carlo Fumagalli",1923,1945,"Vimercate","f"],
+["mz-33","Egidio Annoni",1923,1945,"Briosco","a"],
+["mz-137","Emilio Cazzaniga",1923,1944,"Verano Brianza","c"],
+["gv-27","Fritz Stern",1923,2021,"Grevenbroich","s"],
+["mz-55","Giovanni Cesana",1923,1944,"Carate Brianza","c"],
+["mz-41","Luigi Cattaneo",1923,1944,"Meda","c"],
+["mz-106","Mario Giussani",1923,1945,"Veduggio con Colzano","g"],
+["mz-141","Massimo Colombo",1923,1944,"Cesano Maderno","c"],
+["mz-46","Piero Redaelli",1923,1944,"Verano Brianza","r"]
+],
+"year":1923}

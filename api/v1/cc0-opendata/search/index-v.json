@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"prefix":"v",
+"rows":[
+["mz-23","Mario Vanzati",1911,"Nova Milanese",45.59065,9.20174,"v"],
+["mz-28","Alessandro Varisco",1900,"Villasanta",45.61424,9.31017,"v"],
+["mz-61","Gaetano Venturini",1921,"Lentate sul Seveso",45.67447,9.11481,"v"],
+["mz-94","Carlo Ambrogio Vergani",1909,"Lentate sul Seveso",45.68668,9.10362,"v"],
+["mz-77","Vincenzo Vergani",1922,"Vimercate",45.61344,9.36995,"v"],
+["mz-110","Lauro Vezzani",1912,"Bernareggio",45.64942,9.41167,"v"],
+["mz-158","Giulio Viganò",1909,"Veduggio con Colzano",45.73539,9.26779,"v"],
+["mz-149","Aldo Villa",1923,"Macherio",45.64016,9.26969,"v"],
+["mz-40","Gianfranco de Capitani da Vimercate",1925,"Lissone",45.60739,9.23707,"v"],
+["mz-74","Angelo Vimercati",1908,"Vedano al Lambro",45.60847,9.26271,"v"],
+["mz-81","carlo Visconti",1920,"Barlassina",45.65702,9.12857,"v"],
+["mz-45","Carlo Vismara",1912,"Triuggio",45.66601,9.25764,"v"],
+["gv-19","Emma Vossen",1881,"Grevenbroich",51.09869,6.6127,"v"],
+["gv-43","Josef Vossen",1886,"Grevenbroich",51.09869,6.6127,"v"]
+]}

@@ -1,0 +1,18 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"country":"IT",
+"label":"Meda",
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"page":1,
+"pages":1,
+"rows":[
+["mz-150","Angelo Pozzoli",1918,1944,"Meda","p"],
+["mz-18","Antonio Busnelli",1911,1945,"Meda","b"],
+["mz-96","Felice Capellini",1920,1943,"Meda","c"],
+["mz-63","Leonardo Cazzaniga",1919,1943,"Meda","c"],
+["mz-41","Luigi Cattaneo",1923,1944,"Meda","c"],
+["mz-128","Piero Besana",1924,1944,"Meda","b"],
+["mz-19","Rinaldo Giorgetti",1915,1945,"Meda","g"],
+["mz-20","Vincenzo Meroni",1911,1945,"Meda","m"]
+],
+"slug":"meda"}

@@ -1,0 +1,13 @@
+{"count_people":0,
+"endpoints":{"find_city":"dl-de-by/find/city/{country}/{slug}.json","find_city_index":"dl-de-by/find/city/index.json","find_index":"dl-de-by/find/index.json","find_name":"dl-de-by/find/name/{prefix}.json","find_year":"dl-de-by/find/year/{birth|death}/{year}.json","ids":"dl-de-by/ids/{scheme}.json","people":"dl-de-by/people/by-surname/{prefix}.json","person_lookup":"dl-de-by/person/{shard}.json","place":"dl-de-by/places/{country}/{slug}.json","places_index":"dl-de-by/places/index.json","search":"dl-de-by/search/index-{prefix}.json","stats":"dl-de-by/stats.json"},
+"family":"dl-de-by",
+"find":{"birth_years":0,"cities":0,"death_years":0,"example":{},"index":"dl-de-by/find/index.json","name_prefixes":0},
+"id_schemes":[],
+"meta":{"attribution":["Datenquelle: Landeshauptstadt Dresden, dl-de/by-2-0, opendata.dresden.de"],"description":"Placas añadidas bajo Datenlizenz Deutschland – Namensnennung – Version 2.0 (Dresden). Familia separada: requiere atribución explícita.","family":"dl-de-by","full_database":null,"generated":"2026-11-21","license":"dl-de/by-2-0","license_url":"https://www.govdata.de/dl-de/by-2-0","notice":"Datos conmemorativos con fuente por registro. Pueden contener errores: verifica en la fuente primaria. No presentes inferencias como hechos. Correcciones/retirada: ver index.json (corrections).","schema":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/schema/person.schema.json","source_url":"https://opendata.dresden.de/","sources":[{"attribution":"Datenquelle: Landeshauptstadt Dresden, dl-de/by-2-0, opendata.dresden.de","homepage":"https://opendata.dresden.de/","id":"dresden_opendata","license":"dl-de/by-2-0","license_url":"https://www.govdata.de/dl-de/by-2-0","name":"Stolpersteine Dresden (OpenDataPortal Dresden)"}]},
+"people_prefixes":[],
+"person_shard_chars":2,
+"person_shard_rule":"shard = los 2 últimos caracteres del id en minúsculas, otros caracteres → '_' (JS: id.slice(-2).toLowerCase().replace(/[^a-z0-9]/g,'_')). person/<shard>.json da el people_prefix; la ficha completa está en people/by-surname/<people_prefix>.json.",
+"person_shards":[],
+"places":0,
+"search_prefixes":[],
+"surname_prefix_rule":"clave = apellido normalizado: minúsculas, ß→ss, sin acentos, ä/ae→a, ö/oe→o, ü/ue→u, solo a-z, sin partículas iniciales (von, van, de, zu…). Si la fuente no da apellido, se usa el último token del nombre (solo para particionar; no se publica como apellido). Probar clave[:6], clave[:5], … clave[:1] (rellenando con '_') y usar el primero que exista en la lista de prefijos."}
