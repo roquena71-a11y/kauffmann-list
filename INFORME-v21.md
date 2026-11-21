@@ -4,6 +4,7 @@ Preparación en el worktree `/workspace/kl-v21`, rama `v21`, partiendo de `b142f
 
 - Inicio: 2026-11-21 09:32:11 CET
 - Fin (tests oficiales): 2026-11-21 11:47:46 CET
+- Commit local: 2026-11-21 11:49:54 CET (`316362af`)
 - Datos de trabajo: `/workspace/v21-data` (no se ha tocado `/workspace/v20-data-r4`)
 - `data/stones.json` sigue siendo solo ODbL (72.110 placas OSM + Wikidata). Las listas municipales van en archivos y familias de licencia aparte.
 
@@ -107,7 +108,7 @@ Ninguna de estas opciones rellena años inventados.
 ## Worktree y commit
 
 - Worktree: `/workspace/kl-v21`, rama `v21`, creada desde `b142fa48` (v20 publicada).
-- Commit: solo local, en esta rama; hash en `ESTADO-v21.md` tras el `git commit`. Sin push y sin `publicar.yml`.
+- Commit local (sin push): `316362af884fedb20c9273ec8b3e558d018fa414` (`316362af`), 2026-11-21 11:49:54 CET, padre `b142fa48`. Sin `publicar.yml`.
 - `data/stones.json` intacto (72.110, solo ODbL). `data/search/` regenerado con la misma fecha `generated=2026-11-21`, sigue siendo solo ODbL (72.110).
 
 ## Dudas (no bloquean la preparación)

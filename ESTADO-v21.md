@@ -92,4 +92,5 @@ Colocar las 1.949 (dla/dlo, reglas v20; familias de API separadas; textos; tests
 - Resultado: **`run-all: OK` / `EXIT:0`**. 58 unitarios OK, ai-door 0 errores, ai-sim 20/20 ×2, sidewalk v19 y v20 (9.329), mapa 2D, fila de países, Hassall, atribución, country-buttons 10 tamaños.
 - Log: `/workspace/v21-data/out/run-all.log`. `tests-end-ok.txt` a las 11:47:46 CET.
 - INFORME-v21.md actualizado (tests + opciones de la API de Colonia sin inventar fechas). Sin push, sin `publicar.yml`, sin hits al contador, sin borrar nada.
-- Commit local a continuación en `/workspace/kl-v21` (rama `v21`), excluyendo `__pycache__` y `pipeline/cache`.
+- Commit local (sin push): `316362af884fedb20c9273ec8b3e558d018fa414` (`316362af`), 2026-11-21 11:49:54 CET, padre `b142fa48`. Mensaje: «v21: Berlín CC BY y Colonia DL-DE Zero, colocación, API, INFORME, run-all OK». Excluidos `__pycache__` y `pipeline/cache`. `data/stones.json` no forma parte del commit (sigue intacto).
+- Cierre de la sesión de preparación: 2026-11-21 11:50 CET (inicio 09:32:11 CET).
