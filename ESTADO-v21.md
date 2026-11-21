@@ -146,3 +146,7 @@ Colocar las 1.949 (dla/dlo, reglas v20; familias de API separadas; textos; tests
 ## 13:34 Commit local A+B+C (sin push)
 
 - Se incluye el código, docs, API, tests y JSON municipales de las correcciones A+B+C. Se excluyen `__pycache__` y `pipeline/cache`. `data/stones.json` no entra (sha256 intacto). Sin push y sin `publicar.yml`.
+
+## 13:34 Commit local A+B+C hecho
+
+- `fad34d85457373878e9b17526127b845583c0021` (`fad34d85`), 2026-11-21 13:34:38 CET, rama `v21`, padre `54cdee54`. 154 archivos. Sin push, sin `publicar.yml`, sin hits al contador, sin borrar nada del disco. `stones.json` sha256 `2834ce9ab8747a04bfda2004ae5f83c7cc8d31b99bcdbc64128c670298fc09dc`.

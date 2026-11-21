@@ -91,7 +91,7 @@ El mapa carga las 1.550 placas nuevas de Colonia; la API de esa familia sigue en
 ## Worktree y commit
 
 - Worktree: `/workspace/kl-v21`, rama `v21`, creada desde `b142fa48` (v20 publicada). Padre de esta corrección: `54cdee54`.
-- Commit: solo local, en esta rama, tras el run-all. Sin push y sin `publicar.yml`.
+- Commit local (sin push): `fad34d85457373878e9b17526127b845583c0021` (`fad34d85`), 2026-11-21 13:34:38 CET, padre `54cdee54`. Mensaje: «v21: correcciones de auditorías A, B y C (dedupe, textos, layout del cliente, test de render, run-all OK)». Excluidos `__pycache__` y `pipeline/cache`. `data/stones.json` no forma parte del commit (sigue intacto).
 - `data/stones.json` intacto (72.110, solo ODbL, sha256 `2834ce9ab8747a04bfda2004ae5f83c7cc8d31b99bcdbc64128c670298fc09dc`).
 
 ## Dudas (no bloquean la preparación)
