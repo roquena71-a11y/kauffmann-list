@@ -13,12 +13,12 @@ SCOPE = ("La API de personas (api/v1) excluye a las personas posiblemente vivas 
          "físicos en la calle) e incluyen TODAS las placas, también las de personas posiblemente vivas. data/search/ solo "
          "contiene nombre tal como figura en la placa, dirección, coordenadas y año; data/stones.json es la base de placas "
          "completa (OpenStreetMap + Wikidata) con la inscripción y las etiquetas y enlaces que esas placas tienen en "
-         "OSM/Wikidata. Las placas añadidas de listas municipales están en data/berlin-added-*.json (CC BY) y data/koeln-added-*.json (dl-de/zero-2-0), fuera de stones.json y de data/search/ (estos dos siguen siendo solo ODbL); el mapa las carga aparte. La API las publica en las familias cc-by y dl-de-zero; la regla de posiblemente vivas se aplica igual (sin indicio de muerte y nacidas hace menos de 110 años, o sin año, no hay ficha). Para datos de personas usa api/v1.")
+         "OSM/Wikidata. Las placas añadidas de listas municipales abiertas están en data/*-added-*.json (Berlín CC BY; Köln, Mönchengladbach, Krefeld, Viersen, Moers GDI-DE, Xanten, Erkrath y Dormagen bajo dl-de/zero-2-0; Dresden bajo dl-de/by-2-0; Memmingen y Firenze bajo CC BY 4.0; Den Haag, Monza e Brianza y Grevenbroich bajo CC0 1.0), fuera de stones.json y de data/search/ (estos dos siguen siendo solo ODbL); el mapa las carga aparte. La API las publica por familia de licencia en api/v1/ (cc-by, cc-by-4, dl-de-zero, dl-de-by, cc0-opendata); la regla de posiblemente vivas se aplica igual (sin indicio de muerte y nacidas hace menos de 110 años, o sin año, no hay ficha). Para datos de personas usa api/v1.")
 DOC_LICENSE = {"name": "CC0-1.0", "url": "https://creativecommons.org/publicdomain/zero/1.0/"}
 
 USAGE_RULES = [
     "Cita siempre: 'Lista Kauffmann' + enlace a la ficha + la fuente original (sources[] de cada registro).",
-    "Respeta la licencia de cada familia: ODbL 1.0 (share-alike + atribución '© OpenStreetMap contributors') en odbl/; CC0 en cc0/; Creative Commons Attribution (cc-by) en cc-by/ (Koordinierungsstelle Stolpersteine Berlin; no se copian las biografías de stolpersteine-berlin.de; el catálogo no precisa si es CC BY 3.0 o 4.0); Datenlizenz Deutschland – Zero – Version 2.0 en dl-de-zero/ (Stadt Köln / NS-Dokumentationszentrum; no se copian las biografías de museenkoeln.de). Cada familia se publica por separado. Otras fuentes institucionales solo con permiso claro y su propia licencia.",
+    "Respeta la licencia de cada familia: ODbL 1.0 (share-alike + atribución '© OpenStreetMap contributors') en odbl/; CC0 en cc0/ (solo Wikidata) y cc0-opendata/ (Den Haag, Monza e Brianza, Grevenbroich); Creative Commons Attribution (cc-by) en cc-by/ (Berlín; versión 3.0 vs 4.0 no declarada en origen) y CC BY 4.0 en cc-by-4/ (Memmingen, Firenze); dl-de/zero-2-0 en dl-de-zero/ (Köln, Mönchengladbach, Krefeld, Viersen, Moers GDI-DE, Xanten, Erkrath, Dormagen); dl-de/by-2-0 en dl-de-by/ (Dresden). No se copian biografías salvo campos estructurados o inscripciones literales permitidas. Cada familia se publica por separado.",
     "No combines registros de familias distintas en un mismo objeto para redistribuirlo; crúzalos solo por identificador (Qid de Wikidata o id institucional).",
     "No presentes inferencias como hechos: los datos proceden de placas y bases abiertas y pueden contener errores; remite a la fuente primaria.",
     "Prohibido usar estos datos para acosar, elaborar listas de descendientes, perfiles étnico-religiosos de personas vivas, negacionismo o fines antisemitas.",
@@ -66,7 +66,7 @@ def write_catalog(w, fam_indexes, fam_stats, families, sources, generated, repor
         ],
         "schema": "schema/person.schema.json",
         "agent_guide": {"llms_txt": SITE + "/llms.txt", "llms_full_txt": SITE + "/llms-full.txt"},
-        "citation": {"template": CITE_TEMPLATE, "person_link": {"odbl": SITE + "/#s={memorials[0].memorial_id}", "cc-by": SITE + "/#s={memorials[0].memorial_id}", "dl-de-zero": SITE + "/#s={memorials[0].memorial_id}", "cc0": SITE + "/#p={id}"},
+        "citation": {"template": CITE_TEMPLATE, "person_link": {fid: (SITE + "/#p={id}" if fid == "cc0" else SITE + "/#s={memorials[0].memorial_id}") for fid in fams},
                      "record": API + "/<familia>/people/by-surname/{people_prefix}.json (objeto con ese id)",
                      "rule": "Cita 'Lista Kauffmann' + enlace de la ficha + la fuente original (sources[].url) + fecha de los datos + licencia. Solo campos presentes en la ficha."},
         "openapi": "openapi.json",
@@ -103,7 +103,7 @@ def _ex(fam_indexes, fid):
 # ---------------------------------------------------------------- OpenAPI 3.1
 
 _META_SCHEMA = {"type": "object", "required": ["license", "attribution", "source_url", "generated"], "properties": {
-    "family": {"type": "string"}, "license": {"type": "string", "examples": ["ODbL-1.0", "CC0-1.0", "CC-BY", "dl-de/zero-2-0"]},
+    "family": {"type": "string"}, "license": {"type": "string", "examples": ["ODbL-1.0", "CC0-1.0", "CC-BY", "CC-BY-4.0", "dl-de/zero-2-0", "dl-de/by-2-0"]},
     "license_url": {"type": ["string", "null"], "format": "uri"},
     "attribution": {"type": "array", "items": {"type": "string"}},
     "source_url": {"type": "string", "format": "uri"}, "generated": {"type": "string", "format": "date"},
@@ -233,7 +233,7 @@ def openapi(fam_indexes, families, generated):
                                  pattern="^[0-9]{4}(~[0-9]+)?$", example=str(ex_year.get("year")) if ex_year else None)],
             "responses": _resp("{meta, kind, year, count, columns, rows}", _ref("FindYearFile"))}}
     row_desc = ("Cada fila = [id, name, birth_year, death_year, place, people_prefix]. La ficha completa (con sources[]) está en "
-                "<familia>/people/by-surname/{people_prefix}.json, objeto con id == fila.id. Enlace humano: odbl, cc-by y dl-de-zero → SITE/#s={memorials[0].memorial_id} "
+                "<familia>/people/by-surname/{people_prefix}.json, objeto con id == fila.id. Enlace humano: cc0 → SITE/#p={id}; demás familias con memorial → SITE/#s={memorials[0].memorial_id} "
                 "(abre la placa en el mapa); cc0 → SITE/#p={id}. `name` puede ser null (memorial anónimo): no cites 'None', escribe 'sin nombre'.")
     name_row_desc = ("Cada fila = [token, id, name, birth_year, death_year, place, people_prefix]: la fila de PersonRow con la palabra del "
                      "nombre que coincidió (token) DELANTE. Filtra por token; el resto como PersonRow.")
@@ -353,7 +353,7 @@ def llms_txt(fam_indexes, families, generated):
     a("## Cite")
     a("")
     a("- Always cite: **Lista Kauffmann** + the person link + the original source from `sources[].url` + data date + licence.")
-    a("- Person link (opens it in the map): odbl, cc-by and dl-de-zero → `%s/#s=<memorials[0].memorial_id>` (the plaque); cc0 → `%s/#p=<id>`. Machine-readable record: `%s/<family>/people/by-surname/<people_prefix>.json` (object with that id)." % (SITE, SITE, API))
+    a("- Person link (opens it in the map): cc0 → `%s/#p=<id>`; all memorial families (odbl, cc-by, cc-by-4, dl-de-zero, dl-de-by, cc0-opendata) → `%s/#s=<memorials[0].memorial_id>` (the plaque). Machine-readable record: `%s/<family>/people/by-surname/<people_prefix>.json` (object with that id)." % (SITE, SITE, API))
     a("- Template: `%s`" % CITE_TEMPLATE)
     a("- Use only fields present in the record. Do not add biography, family, motives or dates that are not in `sources[]`.")
     a("")
@@ -362,7 +362,10 @@ def llms_txt(fam_indexes, families, generated):
     a("- `api/v1/odbl/`, `data/search/`, `data/stones.json`: ODbL 1.0, derived from OpenStreetMap (© OpenStreetMap contributors, https://www.openstreetmap.org/copyright) + Wikidata (CC0). Share-alike and attribution if you redistribute the database or a substantial extract.")
     a("- `api/v1/cc0/`: Wikidata only, CC0 1.0.")
     a("- `api/v1/cc-by/`, `data/berlin-added-*.json`: Creative Commons Attribution (cc-by), Koordinierungsstelle Stolpersteine Berlin, https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin. The catalogue lists license_id cc-by; the version (3.0 vs 4.0) is not stated on the dataset page. Names, address, birth year and coordinates only; biographies from stolpersteine-berlin.de are never copied.")
-    a("- `api/v1/dl-de-zero/`, `data/koeln-added-*.json`: Datenlizenz Deutschland – Zero – Version 2.0, Stadt Köln / NS-Dokumentationszentrum, https://open.nrw/dataset/stolpersteine-koln-k and https://www.govdata.de/dl-de/zero-2-0. Biographies from museenkoeln.de are never copied.")
+    a("- `api/v1/cc-by-4/`, `data/memmingen-added-*.json`, `data/firenze-added-*.json`: CC BY 4.0 (Stadt Memmingen / open.bydata; Comune di Firenze / dati.toscana.it).")
+    a("- `api/v1/dl-de-zero/`, `data/koeln-added-*.json`, `data/moenchengladbach-added-*.json`, `data/krefeld-added-*.json`, `data/viersen-added-*.json`, `data/moers-added-*.json`, `data/xanten-added-*.json`, `data/erkrath-added-*.json`, `data/dormagen-added-*.json`: Datenlizenz Deutschland – Zero – Version 2.0 (https://www.govdata.de/dl-de/zero-2-0). No prose biographies copied.")
+    a("- `api/v1/dl-de-by/`, `data/dresden-added-*.json`: Datenlizenz Deutschland – Namensnennung – Version 2.0 (`Datenquelle: Landeshauptstadt Dresden, dl-de/by-2-0, opendata.dresden.de`).")
+    a("- `api/v1/cc0-opendata/`, `data/denhaag-added-*.json`, `data/monza-added-*.json`, `data/grevenbroich-added-*.json`: CC0 1.0 municipal open datasets (kept separate from Wikidata `api/v1/cc0/`).")
     a("- Wikipedia text is never copied (links only; CC BY-SA 4.0).")
     a("- Documentation and catalogues: CC0 1.0. Each data file states its licence in `meta.license`.")
     a("- [Complete ODbL plaque database](%s): transcription of public street memorials from OSM + Wikidata, not person records, and not mixed with the municipal additions." % FULL_DOWNLOAD)
@@ -464,7 +467,7 @@ def llms_full_txt(fam_indexes, families, generated):
     a("")
     a("Minimum: **Lista Kauffmann** + person link + original source + data date + licence.")
     a("")
-    a("- Person link (opens it in the map): odbl → `%s/#s=<memorials[0].memorial_id>` (the plaque); cc0 → `%s/#p=<id>`. Machine record: `%s/<family>/people/by-surname/<people_prefix>.json` (object with that id)." % (SITE, SITE, API))
+    a("- Person link (opens it in the map): cc0 → `%s/#p=<id>`; memorial families (odbl, cc-by, cc-by-4, dl-de-zero, dl-de-by, cc0-opendata) → `%s/#s=<memorials[0].memorial_id>` (the plaque). Machine record: `%s/<family>/people/by-surname/<people_prefix>.json` (object with that id)." % (SITE, SITE, API))
     a("- Original source: each `sources[].url` (OpenStreetMap node, Wikidata item…) and, when present, `links[]` (Gedenkbuch, Yad Vashem, USHMM, municipal pages).")
     a("- Template:")
     a("")
@@ -472,7 +475,7 @@ def llms_full_txt(fam_indexes, families, generated):
     a(CITE_TEMPLATE)
     a("```")
     a("")
-    a("- Licence text: odbl → `ODbL-1.0`, attribution `© OpenStreetMap contributors` + Wikidata (CC0); cc0 → `CC0-1.0`, Wikidata; cc-by → Creative Commons Attribution (cc-by), Koordinierungsstelle Stolpersteine Berlin (version 3.0 vs 4.0 not stated on the dataset page); dl-de-zero → `dl-de/zero-2-0`, Stadt Köln / NS-Dokumentationszentrum.")
+    a("- Licence text: see `meta.license` and `meta.attribution` of each family (`odbl` ODbL-1.0, `cc0` CC0-1.0 Wikidata, `cc0-opendata` CC0-1.0 municipal open data, `cc-by` Berlin, `cc-by-4` CC-BY-4.0, `dl-de-zero` dl-de/zero-2-0, `dl-de-by` dl-de/by-2-0).")
     a("- Write only what the record says. Missing death date → say \"no consta\"/\"not recorded\". Never fill gaps from memory.")
     a("- Records without a name (anonymous memorials, `name` = null; they exist in the person files and in the place/year files, not in `find/name/`): cite them as \"sin nombre\" / \"no name recorded\", never as \"None\" or \"null\".")
     a("- `meta.attribution` is a list: join it with \"; \" when you write the citation.")

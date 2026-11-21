@@ -1,0 +1,56 @@
+{
+  "id": "dresden_opendata",
+  "name": "Stolpersteine Dresden (OpenDataPortal Dresden)",
+  "description": "GeoJSON abierto de Landeshauptstadt Dresden, licencia Datenlizenz Deutschland – Namensnennung – Version 2.0 (dl-de/by-2-0).",
+  "phase": 1,
+  "enabled": true,
+  "publish_allowed": true,
+  "adapter": "generic_tabular",
+  "license": "dl-de/by-2-0",
+  "license_url": "https://www.govdata.de/dl-de/by-2-0",
+  "attribution": "Datenquelle: Landeshauptstadt Dresden, dl-de/by-2-0, opendata.dresden.de",
+  "homepage": "https://opendata.dresden.de/",
+  "license_family": "dl-de-by",
+  "id_prefix": "dr",
+  "priority": 20,
+  "input": {
+    "path": "data/dresden-added-20261121.json",
+    "format": "json",
+    "records_path": "stones",
+    "retrieved": "2026-11-21"
+  },
+  "mapping": {
+    "name": "n",
+    "places": [
+      {
+        "role": "memorial",
+        "label": "a",
+        "locality": "c",
+        "lat": "la",
+        "lon": "lo",
+        "country": "cc"
+      }
+    ],
+    "record_id": {
+      "column": "id",
+      "strip_prefix": "dr-"
+    },
+    "memorials": [
+      {
+        "type": "stolperstein",
+        "memorial_id": "id",
+        "address": "a",
+        "locality": "c",
+        "country": "cc",
+        "lat": "la",
+        "lon": "lo"
+      }
+    ],
+    "links": [
+      {
+        "type": "local_biography",
+        "url": "lb"
+      }
+    ]
+  }
+}

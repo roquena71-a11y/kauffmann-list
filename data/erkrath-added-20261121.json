@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "generated": "2026-11-21T21:22:45+01:00",
+    "count": 4,
+    "license": "Datenlizenz Deutschland – Zero – Version 2.0",
+    "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+    "attribution": [
+      "Stadt Erkrath, Stolpersteine Erkrath (Datenlizenz Deutschland – Zero – Version 2.0, https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974)"
+    ],
+    "source_url": "https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974",
+    "note": "Placas añadidas en v22 a partir de la fuente abierta citada. No se copian biografías salvo campos de lista o inscripción literal permitida por la licencia. la/lo son las coordenadas de la fuente; dla/dlo son solo la posición de dibujo (reglas de v20/v21).",
+    "placement": {
+      "osm_timestamp": "2026-11-18T21:21:02Z",
+      "rules": ">=0.5 m de edificios, <=25 m, >=1.55 m entre grupos (incl. 73.950 existentes), malla 1.85 m, nunca en calzada ni dentro de un edificio"
+    }
+  },
+  "stones": [
+    {
+      "id": "erk-396",
+      "src": "erkrath",
+      "lic": "dl-de-zero",
+      "n": "Bertha Mayer",
+      "la": 51.2219337,
+      "lo": 6.9019343,
+      "a": "Düsselstraße 13",
+      "c": "Erkrath",
+      "cc": "DE",
+      "lb": "https://gisdata.krzn.de/files/Stolpersteine/Erkrath/396.pdf",
+      "dla": 51.2219337,
+      "dlo": 6.9019343
+    },
+    {
+      "id": "erk-397",
+      "src": "erkrath",
+      "lic": "dl-de-zero",
+      "n": "Otto Lukat",
+      "la": 51.2187303,
+      "lo": 6.9053314,
+      "a": "Rathelbecker Weg 17",
+      "c": "Erkrath",
+      "cc": "DE",
+      "lb": "https://gisdata.krzn.de/files/Stolpersteine/Erkrath/397.pdf",
+      "dla": 51.2187291,
+      "dlo": 6.9053383
+    },
+    {
+      "id": "erk-398",
+      "src": "erkrath",
+      "lic": "dl-de-zero",
+      "n": "Peter Hupertz",
+      "la": 51.2191492,
+      "lo": 6.9054552,
+      "a": "Rathelbecker Weg 11",
+      "c": "Erkrath",
+      "cc": "DE",
+      "lb": "https://gisdata.krzn.de/files/Stolpersteine/Erkrath/398.pdf",
+      "dla": 51.2191514,
+      "dlo": 6.9054614
+    },
+    {
+      "id": "erk-399",
+      "src": "erkrath",
+      "lic": "dl-de-zero",
+      "n": "Tomasz Brzostowicz",
+      "la": 51.2084012,
+      "lo": 6.950372,
+      "a": "Sedentaler Straße 18",
+      "c": "Erkrath",
+      "cc": "DE",
+      "lb": "https://gisdata.krzn.de/files/Stolpersteine/Erkrath/399.pdf",
+      "dla": 51.2084012,
+      "dlo": 6.950372
+    }
+  ]
+}

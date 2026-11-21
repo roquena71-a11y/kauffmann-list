@@ -33,10 +33,47 @@
       "license": "dl-de/zero-2-0",
       "license_url": "https://www.govdata.de/dl-de/zero-2-0",
       "attribution": [
-        "Stadt Köln / NS-Dokumentationszentrum der Stadt Köln, Stolpersteine Köln (Datenlizenz Deutschland – Zero – Version 2.0, https://open.nrw/dataset/stolpersteine-koln-k)"
+        "Stadt Köln / NS-Dokumentationszentrum der Stadt Köln (https://open.nrw/dataset/stolpersteine-koln-k)",
+        "Stadt Krefeld (https://www.krefeld.de/de/vermessung/digitale-geodaten/)",
+        "Stadt Mönchengladbach (https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093)",
+        "Stadt Viersen / KRZN (https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83)",
+        "Stadt Moers / KRZN (https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4)",
+        "Stadt Xanten / KRZN (https://www.govdata.de/suche/daten/stolpersteine-xanten138aa)",
+        "Stadt Erkrath (https://registry.gdi-de.org/id/de.nw/6e74ad36-9ad0-488a-a5e1-95352a55b974)",
+        "Stadt Dormagen / Rhein-Kreis Neuss (https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/)"
       ],
-      "source_url": "https://open.nrw/dataset/stolpersteine-koln-k",
-      "description": "Placas añadidas del JSON abierto Stolpersteine Köln (Open.NRW / Offene Daten Köln). No se copian las biografías de museenkoeln.de/nsdok.de. Familia separada: no se fusiona con ODbL ni con CC0."
+      "source_url": "https://www.govdata.de/dl-de/zero-2-0",
+      "description": "Placas añadidas de conjuntos municipales alemanes bajo Datenlizenz Deutschland – Zero – Version 2.0 (Köln, Krefeld, Mönchengladbach, Viersen, Moers [GDI-DE], Xanten, Erkrath, Dormagen). No se copian biografías; familia separada de ODbL y CC0."
+    },
+    "dl-de-by": {
+      "license": "dl-de/by-2-0",
+      "license_url": "https://www.govdata.de/dl-de/by-2-0",
+      "attribution": [
+        "Datenquelle: Landeshauptstadt Dresden, dl-de/by-2-0, opendata.dresden.de"
+      ],
+      "source_url": "https://opendata.dresden.de/",
+      "description": "Placas añadidas bajo Datenlizenz Deutschland – Namensnennung – Version 2.0 (Dresden). Familia separada: requiere atribución explícita."
+    },
+    "cc-by-4": {
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": [
+        "Stadt Memmingen (open.bydata, CC BY 4.0, https://open.bydata.de/api/hub/repo/datasets/stolpersteine_01)",
+        "Comune di Firenze / Regione Toscana (CC BY 4.0, https://dati.toscana.it/dataset/pietre-d-inciampo)"
+      ],
+      "source_url": "https://creativecommons.org/licenses/by/4.0/",
+      "description": "Placas añadidas bajo Creative Commons Attribution 4.0 International (Memmingen, Firenze). Familia separada de cc-by (Berlín, versión no especificada en origen), ODbL y CC0."
+    },
+    "cc0-opendata": {
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": [
+        "Gemeente Den Haag (CC0 1.0, https://data.overheid.nl/dataset/stolpersteine)",
+        "Regione Lombardia, Monza e Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)",
+        "Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"
+      ],
+      "source_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "description": "Placas añadidas de conjuntos municipales bajo CC0 1.0 (Den Haag, Monza e Brianza, Grevenbroich). Separadas de la familia cc0 (solo Wikidata) y de ODbL."
     }
   }
 }

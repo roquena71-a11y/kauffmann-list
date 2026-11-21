@@ -1,0 +1,50 @@
+{
+  "id": "dormagen_opendata",
+  "name": "Stolpersteine Dormagen (Rhein-Kreis Neuss)",
+  "description": "GeoJSON abierto del portal Rhein-Kreis Neuss, licencia Datenlizenz Deutschland – Zero – Version 2.0. No se copian las biografías de geschichte.",
+  "phase": 1,
+  "enabled": true,
+  "publish_allowed": true,
+  "adapter": "generic_tabular",
+  "license": "dl-de/zero-2-0",
+  "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+  "attribution": "Stadt Dormagen / Rhein-Kreis Neuss, Stolpersteine Dormagen (Datenlizenz Deutschland – Zero – Version 2.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/)",
+  "homepage": "https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/",
+  "license_family": "dl-de-zero",
+  "id_prefix": "dor",
+  "priority": 20,
+  "input": {
+    "path": "data/dormagen-added-20261121.json",
+    "format": "json",
+    "records_path": "stones",
+    "retrieved": "2026-11-21"
+  },
+  "mapping": {
+    "name": "n",
+    "places": [
+      {
+        "role": "memorial",
+        "label": "a",
+        "locality": "c",
+        "lat": "la",
+        "lon": "lo",
+        "country": "cc"
+      }
+    ],
+    "record_id": {
+      "column": "id",
+      "strip_prefix": "dor-"
+    },
+    "memorials": [
+      {
+        "type": "stolperstein",
+        "memorial_id": "id",
+        "address": "a",
+        "locality": "c",
+        "country": "cc",
+        "lat": "la",
+        "lon": "lo"
+      }
+    ]
+  }
+}

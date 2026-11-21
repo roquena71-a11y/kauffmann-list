@@ -1,0 +1,968 @@
+{
+  "meta": {
+    "generated": "2026-11-21T21:22:45+01:00",
+    "count": 51,
+    "license": "Datenlizenz Deutschland – Zero – Version 2.0",
+    "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+    "attribution": [
+      "Stadt Moers / KRZN, Stolpersteine Moers (Datenlizenz Deutschland – Zero – Version 2.0, https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4)"
+    ],
+    "source_url": "https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4",
+    "note": "Placas añadidas en v22 a partir de la fuente abierta citada. No se copian biografías salvo campos de lista o inscripción literal permitida por la licencia. la/lo son las coordenadas de la fuente; dla/dlo son solo la posición de dibujo (reglas de v20/v21).",
+    "placement": {
+      "osm_timestamp": "2026-11-18T21:21:02Z",
+      "rules": ">=0.5 m de edificios, <=25 m, >=1.55 m entre grupos (incl. 73.950 existentes), malla 1.85 m, nunca en calzada ni dentro de un edificio"
+    }
+  },
+  "stones": [
+    {
+      "id": "mo-372",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Wilhelm Flecken",
+      "la": 51.4518753,
+      "lo": 6.6268692,
+      "a": "Pfefferstraße 6",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1908",
+      "d": "1942-06-04",
+      "fate": "murdered",
+      "dla": 51.4518731,
+      "dlo": 6.6268683,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-392",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Helene Hella Bähr geb. Haas",
+      "la": 51.4532496,
+      "lo": 6.6266784,
+      "a": "Rathausplatz 1",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1893-04-21",
+      "dla": 51.4532563,
+      "dlo": 6.6266971,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-399",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Friedrich Jirsak",
+      "la": 51.4881878,
+      "lo": 6.5893986,
+      "a": "Lauffstraße 9",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1885",
+      "d": "1940-01-04",
+      "dla": 51.4881856,
+      "dlo": 6.5893977,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-404",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Katharina Wöllenweber",
+      "la": 51.4495117,
+      "lo": 6.6342532,
+      "a": "Augustastraße 8",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1904",
+      "d": "1941-04-17",
+      "fate": "murdered",
+      "dla": 51.4495083,
+      "dlo": 6.6342626,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-405",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Otto Preul",
+      "la": 51.4489288,
+      "lo": 6.6327674,
+      "a": "Hopfenstraße 28",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1878",
+      "d": "1944-09-15",
+      "fate": "murdered",
+      "dla": 51.448923,
+      "dlo": 6.632762,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-409",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Helene Kaufmann",
+      "la": 51.4513166,
+      "lo": 6.6267949,
+      "a": "Steinstraße 21",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1888",
+      "d": "1941",
+      "fate": "murdered",
+      "dla": 51.4513148,
+      "dlo": 6.6268279,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-411",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Friedrich Kaufmann",
+      "la": 51.451317,
+      "lo": 6.6267937,
+      "a": "Steinstraße 21",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1889",
+      "d": "1941",
+      "fate": "murdered",
+      "dla": 51.4513228,
+      "dlo": 6.6268045,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-412",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Jenny Leyser geb. Meier",
+      "la": 51.4512977,
+      "lo": 6.626874,
+      "a": "Steinstraße 19",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1848-08-18",
+      "fate": "murdered",
+      "dla": 51.4512999,
+      "dlo": 6.6269004,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-413",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Wilhelm Kaufmann",
+      "la": 51.4513179,
+      "lo": 6.6267912,
+      "a": "Steinstraße 21",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1895",
+      "d": "1941",
+      "fate": "murdered",
+      "dla": 51.4513002,
+      "dlo": 6.6268151,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-414",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Karl Coppel",
+      "la": 51.44707,
+      "lo": 6.6285442,
+      "a": "Prinzenstraße 5",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1881-11-17",
+      "fate": "murdered",
+      "dla": 51.4470075,
+      "dlo": 6.6285894,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-415",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Gudula Coppel geb. Jonas",
+      "la": 51.4470681,
+      "lo": 6.6285469,
+      "a": "Prinzenstraße 5",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1894-01-02",
+      "fate": "murdered",
+      "dla": 51.4470084,
+      "dlo": 6.6285627,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-416",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Günter Coppel",
+      "la": 51.4470691,
+      "lo": 6.6285455,
+      "a": "Prinzenstraße 5",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1930",
+      "fate": "murdered",
+      "dla": 51.4469909,
+      "dlo": 6.628588,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-418",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Helene Leyser",
+      "la": 51.4512978,
+      "lo": 6.6268708,
+      "a": "Steinstraße 19",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1887-11-08",
+      "fate": "murdered",
+      "dla": 51.4513061,
+      "dlo": 6.6268757,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-419",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Louis Leyser",
+      "la": 51.4512987,
+      "lo": 6.6268683,
+      "a": "Steinstraße 19",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1890-02-22",
+      "d": "1945-02-21",
+      "fate": "murdered",
+      "dla": 51.4513124,
+      "dlo": 6.626851,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-420",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Julie Leyser",
+      "la": 51.4512994,
+      "lo": 6.626869,
+      "a": "Steinstraße 19",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1893-04-14",
+      "d": "1945-02-21",
+      "fate": "murdered",
+      "dla": 51.4512845,
+      "dlo": 6.6268904,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-421",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Hugo Leyser",
+      "la": 51.4512986,
+      "lo": 6.6268715,
+      "a": "Steinstraße 19",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1889-02-27",
+      "fate": "murdered",
+      "dla": 51.4512907,
+      "dlo": 6.6268657,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-425",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Ilse Bloch",
+      "la": 51.4514088,
+      "lo": 6.6264445,
+      "a": "Steinstraße 13",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1908",
+      "fate": "murdered",
+      "dla": 51.4514141,
+      "dlo": 6.626464,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-426",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Julius Bloch",
+      "la": 51.4514085,
+      "lo": 6.6264459,
+      "a": "Steinstraße 13",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1876",
+      "fate": "murdered",
+      "dla": 51.451422,
+      "dlo": 6.6264405,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-427",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Rosa Bloch",
+      "la": 51.4514082,
+      "lo": 6.6264472,
+      "a": "Steinstraße 13",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1879",
+      "fate": "murdered",
+      "dla": 51.4513995,
+      "dlo": 6.6264512,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-436",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Siegmund Leyser",
+      "la": 51.4512969,
+      "lo": 6.6268733,
+      "a": "Steinstraße 21",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1883-02-17",
+      "fate": "murdered",
+      "dla": 51.4513082,
+      "dlo": 6.6267917,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-441",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Ilse Schmidt",
+      "la": 51.4869606,
+      "lo": 6.5972771,
+      "a": "Lerschstraße 25",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1940-06-20",
+      "d": "1943-02-08",
+      "fate": "murdered",
+      "dla": 51.4869606,
+      "dlo": 6.5972771,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-443",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Siegfried Callmann",
+      "la": 51.458213,
+      "lo": 6.6346024,
+      "a": "Baerler Straße 62",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1892-05-18",
+      "d": "1945-02-06",
+      "fate": "murdered",
+      "dla": 51.4582049,
+      "dlo": 6.6346278,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-446",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Leni Callmann",
+      "la": 51.4582148,
+      "lo": 6.6346,
+      "a": "Baerler Straße 62",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1924-09-26",
+      "d": "1944-07-19",
+      "fate": "murdered",
+      "dla": 51.4582187,
+      "dlo": 6.6346131,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-447",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Adelheit Adele Sternberg",
+      "la": 51.4582144,
+      "lo": 6.6346038,
+      "a": "Baerler Straße 62",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1871-01-27",
+      "d": "1942-09-06",
+      "fate": "murdered",
+      "dla": 51.4582326,
+      "dlo": 6.6345984,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-448",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Rosa Sternberg",
+      "la": 51.4582149,
+      "lo": 6.6346032,
+      "a": "Baerler Straße 62",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1873-07-17",
+      "d": "1942-09-29",
+      "fate": "murdered",
+      "dla": 51.4581957,
+      "dlo": 6.6346055,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-449",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Jenny Callmann",
+      "la": 51.4582136,
+      "lo": 6.6346016,
+      "a": "Baerler Straße 62",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1883-01-01",
+      "fate": "murdered",
+      "dla": 51.4582096,
+      "dlo": 6.6345908,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-450",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Ernst-Ludwig Callmann",
+      "la": 51.4582142,
+      "lo": 6.6346008,
+      "a": "Baerler Straße 62",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1923-02-09",
+      "fate": "murdered",
+      "dla": 51.4582234,
+      "dlo": 6.6345761,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-451",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Wilhelm Küsters",
+      "la": 51.447717,
+      "lo": 6.6279276,
+      "a": "Filder Straße 6",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1919",
+      "d": "1943-10-06",
+      "fate": "murdered",
+      "dla": 51.447717,
+      "dlo": 6.6279276,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-452",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Hubert Hanssen",
+      "la": 51.4463384,
+      "lo": 6.6280563,
+      "a": "Filder Straße 34",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1890",
+      "d": "1944-03-17",
+      "fate": "murdered",
+      "dla": 51.4463403,
+      "dlo": 6.6280581,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-454",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Peter Mill",
+      "la": 51.4474043,
+      "lo": 6.6293417,
+      "a": "Wiedstraße 14",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1910",
+      "d": "1941-05-27",
+      "fate": "murdered",
+      "dla": 51.4474088,
+      "dlo": 6.6293417,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-460",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Leopold Isaacson",
+      "la": 51.4509199,
+      "lo": 6.6309873,
+      "a": "Homberger Straße 13",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1880-08-11",
+      "d": "1938-01-25",
+      "dla": 51.4509032,
+      "dlo": 6.6310142,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-461",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Rosa Isaacson geb. Kann",
+      "la": 51.4509196,
+      "lo": 6.6309892,
+      "a": "Homberger Straße 13",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1886-03-27",
+      "d": "1936-07-06",
+      "fate": "murdered",
+      "dla": 51.4509135,
+      "dlo": 6.6309933,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-462",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Ernst-Wilhelm Isaacson",
+      "la": 51.4509188,
+      "lo": 6.6309868,
+      "a": "Homberger Straße 13",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1914-09-08",
+      "fate": "murdered",
+      "dla": 51.4508901,
+      "dlo": 6.6309976,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-463",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Heinz Josef Isaacson",
+      "la": 51.4509184,
+      "lo": 6.6309886,
+      "a": "Homberger Straße 13",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1914-09-08",
+      "d": "1940",
+      "dla": 51.4509005,
+      "dlo": 6.6309767,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-473",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Christina Leonhards geb. Köhnen",
+      "la": 51.446732,
+      "lo": 6.6690374,
+      "a": "Engelbertstraße 50",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1882-08-17",
+      "d": "1944-02-03",
+      "fate": "murdered",
+      "dla": 51.446732,
+      "dlo": 6.6690374,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-474",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Johann Schürmann",
+      "la": 51.4482273,
+      "lo": 6.6763893,
+      "a": "Schmale Straße 2",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1895-05-24",
+      "d": "1940-03-08",
+      "fate": "murdered",
+      "dla": 51.4482343,
+      "dlo": 6.6763475,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-475",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Gertrud Coblenz",
+      "la": 51.4491255,
+      "lo": 6.6740092,
+      "a": "Karlstraße 86",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1886",
+      "d": "1941-07-29",
+      "fate": "murdered",
+      "dla": 51.4491233,
+      "dlo": 6.674003,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-476",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Gustav Grünewald",
+      "la": 51.4496902,
+      "lo": 6.6703059,
+      "a": "Homberger Straße 342",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1869-04-12",
+      "d": "1943-12-31",
+      "fate": "murdered",
+      "dla": 51.4496902,
+      "dlo": 6.6703059,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-477",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Katharina Nühlen geb. Orscheck",
+      "la": 51.4575072,
+      "lo": 6.6570385,
+      "a": "Westerbruchstraße 33",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1905-11-26",
+      "d": "1940-04-04",
+      "fate": "murdered",
+      "dla": 51.4575029,
+      "dlo": 6.6570404,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-478",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Sofi Hoffmann geb. Argelas",
+      "la": 51.4573993,
+      "lo": 6.6623249,
+      "a": "Westerbruchstraße 90",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1886-05-10",
+      "d": "1941-05-19",
+      "fate": "murdered",
+      "dla": 51.4573993,
+      "dlo": 6.6623249,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-479",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Pauline Hätzel",
+      "la": 51.4548988,
+      "lo": 6.6715905,
+      "a": "Kornstraße 18",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1911-11-08",
+      "d": "1941-03-07",
+      "fate": "murdered",
+      "dla": 51.4548988,
+      "dlo": 6.6715905,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-480",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Ernst Hartmann",
+      "la": 51.4549396,
+      "lo": 6.6461085,
+      "a": "Beuthener Straße 1",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1901-08-04",
+      "d": "1940-04-02",
+      "fate": "murdered",
+      "dla": 51.4549396,
+      "dlo": 6.6461085,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-485",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Ignatz Wozniak",
+      "la": 51.4551188,
+      "lo": 6.6443486,
+      "a": "Donaustraße 32",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1920-10-13",
+      "d": "1944-01-28",
+      "fate": "murdered",
+      "dla": 51.4551188,
+      "dlo": 6.6443486,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-486",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Herbert ter Stein",
+      "la": 51.4456509,
+      "lo": 6.6261408,
+      "a": "Blumenstraße 15",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1902",
+      "d": "1944-03-08",
+      "fate": "murdered",
+      "dla": 51.4456509,
+      "dlo": 6.6261408,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-501",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Fanny Vollmann geb. Buschhoff",
+      "la": 51.4523231,
+      "lo": 6.6264158,
+      "a": "Kirchstraße 11",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1876",
+      "dla": 51.4523029,
+      "dlo": 6.6264227,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-504",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Simon Vollmann",
+      "la": 51.452324,
+      "lo": 6.6264163,
+      "a": "Kirchstraße 11",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1873",
+      "d": "1944-03-14",
+      "fate": "murdered",
+      "dla": 51.4523173,
+      "dlo": 6.6264094,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-522",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Felix Leiss",
+      "la": 51.4577213,
+      "lo": 6.640566,
+      "a": "Ruhrstraße 76",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1914",
+      "d": "1943-02-04",
+      "fate": "murdered",
+      "dla": 51.4577096,
+      "dlo": 6.640603,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-523",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Johanna Christen geb. Leiss",
+      "la": 51.4577224,
+      "lo": 6.6405696,
+      "a": "Ruhrstraße 76",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1920",
+      "d": "1943-02-04",
+      "fate": "murdered",
+      "dla": 51.4577256,
+      "dlo": 6.6405961,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-524",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Wilhelm Christen",
+      "la": 51.4577229,
+      "lo": 6.6405683,
+      "a": "Ruhrstraße 76",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1916",
+      "d": "1943-02-04",
+      "fate": "murdered",
+      "dla": 51.4577053,
+      "dlo": 6.6405773,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-525",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Karl Mondorf",
+      "la": 51.4633198,
+      "lo": 6.6435998,
+      "a": "Bismarckstraße 70",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1873",
+      "d": "1943-09-21",
+      "fate": "murdered",
+      "dla": 51.4633198,
+      "dlo": 6.6435998,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    },
+    {
+      "id": "mo-526",
+      "src": "moers",
+      "lic": "dl-de-zero",
+      "n": "Heinrich Wichert",
+      "la": 51.4643944,
+      "lo": 6.6455702,
+      "a": "Bismarckstraße 52",
+      "c": "Moers",
+      "cc": "DE",
+      "b": "1919",
+      "d": "1943-03-23",
+      "fate": "murdered",
+      "dla": 51.4643944,
+      "dlo": 6.6455702,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Moers"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "memmingen_opendata",
+  "name": "Stolpersteine Memmingen (open.bydata)",
+  "description": "GeoPackage abierto de Memmingen (open.bydata / GovData), licencia Creative Commons Attribution 4.0 (CC BY 4.0).",
+  "phase": 1,
+  "enabled": true,
+  "publish_allowed": true,
+  "adapter": "generic_tabular",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Stadt Memmingen, Stolpersteine Memmingen (CC BY 4.0, https://open.bydata.de/api/hub/repo/datasets/stolpersteine_01)",
+  "homepage": "https://open.bydata.de/api/hub/repo/datasets/stolpersteine_01",
+  "license_family": "cc-by-4",
+  "id_prefix": "mm",
+  "priority": 20,
+  "input": {
+    "path": "data/memmingen-added-20261121.json",
+    "format": "json",
+    "records_path": "stones",
+    "retrieved": "2026-11-21"
+  },
+  "mapping": {
+    "name": "n",
+    "places": [
+      {
+        "role": "memorial",
+        "label": "a",
+        "locality": "c",
+        "lat": "la",
+        "lon": "lo",
+        "country": "cc"
+      }
+    ],
+    "record_id": {
+      "column": "id",
+      "strip_prefix": "mm-"
+    },
+    "memorials": [
+      {
+        "type": "stolperstein",
+        "memorial_id": "id",
+        "address": "a",
+        "locality": "c",
+        "country": "cc",
+        "lat": "la",
+        "lon": "lo"
+      }
+    ],
+    "death_date": "d",
+    "fate": "fate"
+  }
+}

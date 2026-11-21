@@ -1,0 +1,54 @@
+{
+  "id": "grevenbroich_opendata",
+  "name": "Stolpersteine Grevenbroich (Rhein-Kreis Neuss)",
+  "description": "GeoJSON abierto del portal Rhein-Kreis Neuss, licencia CC0 1.0.",
+  "phase": 1,
+  "enabled": true,
+  "publish_allowed": true,
+  "adapter": "generic_tabular",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "attribution": "Stadt Grevenbroich / Rhein-Kreis Neuss, Stolpersteine Grevenbroich (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)",
+  "homepage": "https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/",
+  "license_family": "cc0-opendata",
+  "id_prefix": "gv",
+  "priority": 20,
+  "input": {
+    "path": "data/grevenbroich-added-20261121.json",
+    "format": "json",
+    "records_path": "stones",
+    "retrieved": "2026-11-21"
+  },
+  "mapping": {
+    "name": "n",
+    "places": [
+      {
+        "role": "memorial",
+        "label": "a",
+        "locality": "c",
+        "lat": "la",
+        "lon": "lo",
+        "country": "cc"
+      }
+    ],
+    "record_id": {
+      "column": "id",
+      "strip_prefix": "gv-"
+    },
+    "memorials": [
+      {
+        "type": "stolperstein",
+        "memorial_id": "id",
+        "address": "a",
+        "locality": "c",
+        "country": "cc",
+        "lat": "la",
+        "lon": "lo",
+        "inscription": "i"
+      }
+    ],
+    "birth_date": "b",
+    "death_date": "d",
+    "fate": "fate"
+  }
+}

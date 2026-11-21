@@ -531,15 +531,30 @@ class TestNetworkAdapters(BuildCase):
 class TestRepoConfig(unittest.TestCase):
     def test_all_sources_valid_and_phase2_closed(self):
         srcs = load_sources()
-        self.assertEqual(sorted(srcs), ["arolsen", "berlin_opendata", "bundesarchiv_gedenkbuch", "koeln_opendata",
-                                        "osm_stolpersteine_europe",
-                                        "stolpersteine_de", "ushmm", "wikidata_holocaust_victims", "yadvashem"])
+        self.assertEqual(sorted(srcs), ['arolsen', 'berlin_opendata', 'bundesarchiv_gedenkbuch', 'denhaag_opendata', 'dormagen_opendata', 'dresden_opendata', 'erkrath_opendata', 'firenze_opendata', 'grevenbroich_opendata', 'koeln_opendata', 'krefeld_opendata', 'memmingen_opendata', 'moenchengladbach_opendata', 'moers_opendata', 'monza_opendata', 'osm_stolpersteine_europe', 'stolpersteine_de', 'ushmm', 'viersen_opendata', 'wikidata_holocaust_victims', 'xanten_opendata', 'yadvashem'])
         for s in srcs.values():
             if s["phase"] == 2:
                 self.assertFalse(s["publish_allowed"])
                 self.assertFalse(s["enabled"])
                 self.assertEqual(s["license_family"], "partners/" + s["id"])
         self.assertFalse(srcs["osm_stolpersteine_europe"]["enabled"])
+
+
+    def test_every_enabled_source_is_in_publicar_yml(self):
+        import re
+        srcs = load_sources()
+        enabled = sorted(sid for sid, cfg in srcs.items() if cfg.get("enabled"))
+        yml_path = os.path.join(REPO_ROOT, ".github", "workflows", "publicar.yml")
+        with open(yml_path, encoding="utf-8") as f:
+            yml = f.read()
+        m = re.search(r"python3\s+-m\s+pipeline\s+build[^\n]*--sources\s+([^\s\n]+)", yml)
+        self.assertIsNotNone(m, "publicar.yml must specify --sources")
+        listed = [x.strip() for x in m.group(1).split(",") if x.strip()]
+        self.assertEqual(len(listed), len(set(listed)), "duplicate source in publicar.yml --sources")
+        missing = [sid for sid in enabled if sid not in listed]
+        self.assertEqual(missing, [], f"enabled sources missing from publicar.yml --sources: {missing}")
+        disabled_listed = [sid for sid in listed if not srcs.get(sid, {}).get("enabled")]
+        self.assertEqual(disabled_listed, [], f"unknown or disabled sources in publicar.yml --sources: {disabled_listed}")
 
     def test_suppressed_file_only_ids(self):
         data = load_json(os.path.join(PIPELINE_DIR, "suppressed.json"))

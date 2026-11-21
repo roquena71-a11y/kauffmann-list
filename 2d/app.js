@@ -46,11 +46,24 @@ $('#q').addEventListener('input', () => { clearTimeout(search._t); search._t = s
 $('#results').addEventListener('click', e => { const b = e.target.closest('button'); if (b) show(byId.get(b.dataset.id)); });
 
 Promise.all([
-  fetch('../data/stones.json').then(r => r.json()),
-  fetch('../data/berlin-added-20261121.json').then(r => r.json()),
-  fetch('../data/koeln-added-20261121.json').then(r => r.json())
-]).then(([j, berlin, koeln]) => {
-  DATA = j.stones.concat((berlin && berlin.stones) || [], (koeln && koeln.stones) || []);
+  '../data/stones.json',
+  '../data/berlin-added-20261121.json',
+  '../data/koeln-added-20261121.json',
+  '../data/moenchengladbach-added-20261121.json',
+  '../data/denhaag-added-20261121.json',
+  '../data/krefeld-added-20261121.json',
+  '../data/monza-added-20261121.json',
+  '../data/viersen-added-20261121.json',
+  '../data/memmingen-added-20261121.json',
+  '../data/moers-added-20261121.json',
+  '../data/grevenbroich-added-20261121.json',
+  '../data/firenze-added-20261121.json',
+  '../data/xanten-added-20261121.json',
+  '../data/dresden-added-20261121.json',
+  '../data/erkrath-added-20261121.json',
+  '../data/dormagen-added-20261121.json'
+].map(u => fetch(u).then(r => r.json()))).then(parts => {
+  DATA = parts.reduce((acc, p) => acc.concat((p && p.stones) || []), []);
   for (const s of DATA) {
     s._t = norm([s.n, s.a, s.c, s.cd].join(' ')).split(' ');
     byId.set(s.id, s);

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "generated": "2026-11-21T21:22:45+01:00",
+    "count": 5,
+    "license": "Datenlizenz Deutschland – Namensnennung – Version 2.0",
+    "license_url": "https://www.govdata.de/dl-de/by-2-0",
+    "attribution": [
+      "Datenquelle: Landeshauptstadt Dresden, dl-de/by-2-0, opendata.dresden.de"
+    ],
+    "source_url": "https://opendata.dresden.de/",
+    "note": "Placas añadidas en v22 a partir de la fuente abierta citada. No se copian biografías salvo campos de lista o inscripción literal permitida por la licencia. la/lo son las coordenadas de la fuente; dla/dlo son solo la posición de dibujo (reglas de v20/v21).",
+    "placement": {
+      "osm_timestamp": "2026-11-18T21:21:02Z",
+      "rules": ">=0.5 m de edificios, <=25 m, >=1.55 m entre grupos (incl. 73.950 existentes), malla 1.85 m, nunca en calzada ni dentro de un edificio"
+    }
+  },
+  "stones": [
+    {
+      "id": "dr-1119",
+      "src": "dresden",
+      "lic": "dl-de-by",
+      "n": "Leonhart Natowitz",
+      "la": 51.0520317,
+      "lo": 13.7567489,
+      "a": "Pestalozzistraße 17",
+      "c": "Dresden",
+      "cc": "DE",
+      "lb": "https://stolpersteine-dresden.de/details/?stein_id=227",
+      "dla": 51.0520247,
+      "dlo": 13.7567903
+    },
+    {
+      "id": "dr-1360",
+      "src": "dresden",
+      "lic": "dl-de-by",
+      "n": "Waldemar Theodor Steinhart",
+      "la": 51.0472959,
+      "lo": 13.7218749,
+      "a": "Rosenstraße 39",
+      "c": "Dresden",
+      "cc": "DE",
+      "lb": "https://stolpersteine-dresden.de/details/?stein_id=346",
+      "dla": 51.0472959,
+      "dlo": 13.7218749
+    },
+    {
+      "id": "dr-1417",
+      "src": "dresden",
+      "lic": "dl-de-by",
+      "n": "Norman Jaffe",
+      "la": 51.0498351,
+      "lo": 13.7663649,
+      "a": "Holbeinstraße 46",
+      "c": "Dresden",
+      "cc": "DE",
+      "lb": "https://stolpersteine-dresden.de/details/?stein_id=431",
+      "dla": 51.049862,
+      "dlo": 13.7664392
+    },
+    {
+      "id": "dr-1422",
+      "src": "dresden",
+      "lic": "dl-de-by",
+      "n": "Leonard Katz",
+      "la": 51.0457683,
+      "lo": 13.77042,
+      "a": "Fetscherstraße 25",
+      "c": "Dresden",
+      "cc": "DE",
+      "lb": "https://stolpersteine-dresden.de/details/?stein_id=434",
+      "dla": 51.0457625,
+      "dlo": 13.7704545
+    },
+    {
+      "id": "dr-962",
+      "src": "dresden",
+      "lic": "dl-de-by",
+      "n": "Harriet Saalheimer",
+      "la": 51.0610798,
+      "lo": 13.7488123,
+      "a": "Oberer Kreuzweg 6",
+      "c": "Dresden",
+      "cc": "DE",
+      "lb": "https://stolpersteine-dresden.de/details/?stein_id=99",
+      "dla": 51.0610957,
+      "dlo": 13.748787
+    }
+  ]
+}

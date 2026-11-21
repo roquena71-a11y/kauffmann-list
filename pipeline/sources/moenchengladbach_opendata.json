@@ -1,0 +1,56 @@
+{
+  "id": "moenchengladbach_opendata",
+  "name": "Stolpersteine Mönchengladbach (Open.NRW)",
+  "description": "Shapefile abierto de Stolpersteine en Mönchengladbach (Open.NRW / GovData), licencia Datenlizenz Deutschland – Zero – Version 2.0.",
+  "phase": 1,
+  "enabled": true,
+  "publish_allowed": true,
+  "adapter": "generic_tabular",
+  "license": "dl-de/zero-2-0",
+  "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+  "attribution": "Stadt Mönchengladbach, Stolpersteine (Datenlizenz Deutschland – Zero – Version 2.0, https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093)",
+  "homepage": "https://ckan.open.nrw.de/dataset/59e9bcd1-8096-42da-83ff-10d84f867093",
+  "license_family": "dl-de-zero",
+  "id_prefix": "mg",
+  "priority": 20,
+  "input": {
+    "path": "data/moenchengladbach-added-20261121.json",
+    "format": "json",
+    "records_path": "stones",
+    "retrieved": "2026-11-21"
+  },
+  "mapping": {
+    "name": "n",
+    "places": [
+      {
+        "role": "memorial",
+        "label": "a",
+        "locality": "c",
+        "lat": "la",
+        "lon": "lo",
+        "country": "cc"
+      }
+    ],
+    "record_id": {
+      "column": "id",
+      "strip_prefix": "mg-"
+    },
+    "memorials": [
+      {
+        "type": "stolperstein",
+        "memorial_id": "id",
+        "address": "a",
+        "locality": "c",
+        "country": "cc",
+        "lat": "la",
+        "lon": "lo"
+      }
+    ],
+    "links": [
+      {
+        "type": "local_biography",
+        "url": "lb"
+      }
+    ]
+  }
+}

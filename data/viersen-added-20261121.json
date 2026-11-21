@@ -1,0 +1,2287 @@
+{
+  "meta": {
+    "generated": "2026-11-21T21:22:45+01:00",
+    "count": 122,
+    "license": "Datenlizenz Deutschland – Zero – Version 2.0",
+    "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+    "attribution": [
+      "Stadt Viersen / KRZN, Stolpersteine Viersen (Datenlizenz Deutschland – Zero – Version 2.0, https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83)"
+    ],
+    "source_url": "https://registry.gdi-de.org/id/de.nw/e90f5c3f-ab6b-4c12-a392-b06d617bed83",
+    "note": "Placas añadidas en v22 a partir de la fuente abierta citada. No se copian biografías salvo campos de lista o inscripción literal permitida por la licencia. la/lo son las coordenadas de la fuente; dla/dlo son solo la posición de dibujo (reglas de v20/v21).",
+    "placement": {
+      "osm_timestamp": "2026-11-18T21:21:02Z",
+      "rules": ">=0.5 m de edificios, <=25 m, >=1.55 m entre grupos (incl. 73.950 existentes), malla 1.85 m, nunca en calzada ni dentro de un edificio"
+    }
+  },
+  "stones": [
+    {
+      "id": "vie-101",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Sibilla Heymann",
+      "la": 51.2588161,
+      "lo": 6.3812668,
+      "a": "Kaiserstraße 42",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1879-03-09",
+      "d": "1942-07-24",
+      "fate": "murdered",
+      "dla": 51.2588161,
+      "dlo": 6.381254,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-141",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Hersch Knoll",
+      "la": 51.2614211,
+      "lo": 6.3868798,
+      "a": "Süchtelner Straße 29",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1880-04-15",
+      "d": "1941-12-11",
+      "fate": "murdered",
+      "dla": 51.2613963,
+      "dlo": 6.3868912,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-142",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Channa Knoll",
+      "la": 51.2614211,
+      "lo": 6.3868798,
+      "a": "Süchtelner Straße 29",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1883-07-14",
+      "d": "1941-12-11",
+      "fate": "murdered",
+      "dla": 51.2614101,
+      "dlo": 6.3868765,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-143",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Berta Nussbaum",
+      "la": 51.2547904,
+      "lo": 6.3890574,
+      "a": "Geschwister-Scholl-Straße 12",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1868-09-24",
+      "d": "1942-07-24",
+      "fate": "murdered",
+      "dla": 51.2547807,
+      "dlo": 6.3890569,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-144",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Annie Nussbaum",
+      "la": 51.2547904,
+      "lo": 6.3890574,
+      "a": "Geschwister-Scholl-Straße 12",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1899-02-14",
+      "d": "1942-07-24",
+      "fate": "murdered",
+      "dla": 51.254795,
+      "dlo": 6.3890434,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-145",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Israel Nussbaum",
+      "la": 51.2547904,
+      "lo": 6.3890574,
+      "a": "Geschwister-Scholl-Straße 12",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1869-03-24",
+      "d": "1942-07-24",
+      "fate": "murdered",
+      "dla": 51.2547723,
+      "dlo": 6.3890341,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-146",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Albert Simons",
+      "la": 51.2545032,
+      "lo": 6.3963891,
+      "a": "Große Bruchstraße 40",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1892-08-14",
+      "d": "1941-10-26",
+      "fate": "murdered",
+      "dla": 51.2545941,
+      "dlo": 6.3962041,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-147",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Liselotte Simons",
+      "la": 51.2545032,
+      "lo": 6.3963891,
+      "a": "Große Bruchstraße 40",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1923-04-26",
+      "d": "1941-10-26",
+      "fate": "murdered",
+      "dla": 51.2546051,
+      "dlo": 6.396224,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-148",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Emma Simons",
+      "la": 51.2545032,
+      "lo": 6.3963891,
+      "a": "Große Bruchstraße 40",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1885-10-27",
+      "d": "1941-10-26",
+      "fate": "murdered",
+      "dla": 51.2546161,
+      "dlo": 6.3962439,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-149",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Hermann Simons",
+      "la": 51.2545032,
+      "lo": 6.3963891,
+      "a": "Große Bruchstraße 40",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1883-01-25",
+      "d": "1941-12-11",
+      "fate": "murdered",
+      "dla": 51.2546065,
+      "dlo": 6.3961865,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-150",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Lore Simons",
+      "la": 51.2545032,
+      "lo": 6.3963891,
+      "a": "Große Bruchstraße 40",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1919-05-02",
+      "d": "1935-12-28",
+      "fate": "murdered",
+      "dla": 51.2546175,
+      "dlo": 6.3962064,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-151",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Henriette Simons",
+      "la": 51.2545032,
+      "lo": 6.3963891,
+      "a": "Große Bruchstraße 40",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1921-11-05",
+      "d": "1941-10-26",
+      "fate": "murdered",
+      "dla": 51.2546286,
+      "dlo": 6.3962263,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-152",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Ruth Simons",
+      "la": 51.2545032,
+      "lo": 6.3963891,
+      "a": "Große Bruchstraße 40",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1920-07-20",
+      "d": "1941-10-26",
+      "fate": "murdered",
+      "dla": 51.254619,
+      "dlo": 6.3961689,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-153",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Johanna Simons",
+      "la": 51.2545032,
+      "lo": 6.3963891,
+      "a": "Große Bruchstraße 40",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1884-07-27",
+      "d": "1941-12-11",
+      "fate": "murdered",
+      "dla": 51.25463,
+      "dlo": 6.3961888,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-161",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Erich Simons",
+      "la": 51.2561401,
+      "lo": 6.3870817,
+      "a": "Petersstraße 25",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1919-07-18",
+      "d": "1941-12-11",
+      "fate": "murdered",
+      "dla": 51.2561367,
+      "dlo": 6.387091,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-162",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Arno Hirsch",
+      "la": 51.2512584,
+      "lo": 6.3331015,
+      "a": "Hühnermarkt 18",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1931-03-15",
+      "d": "1941-12-11",
+      "fate": "murdered",
+      "dla": 51.251245,
+      "dlo": 6.3331343,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-164",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Hirsch",
+      "la": 51.2512584,
+      "lo": 6.3331015,
+      "a": "Hühnermarkt 18",
+      "c": "Viersen",
+      "cc": "DE",
+      "d": "1941-12-11",
+      "fate": "murdered",
+      "dla": 51.2512544,
+      "dlo": 6.3331124,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-165",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Elfriede Hirsch",
+      "la": 51.2512584,
+      "lo": 6.3331015,
+      "a": "Hühnermarkt 18",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1899-08-03",
+      "d": "1941-12-11",
+      "fate": "murdered",
+      "dla": 51.2512313,
+      "dlo": 6.3331193,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-166",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Selma Hoffstadt",
+      "la": 51.2507143,
+      "lo": 6.3371316,
+      "a": "Schulstraße 18",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1890-08-25",
+      "d": "1941-12-11",
+      "fate": "murdered",
+      "dla": 51.2507157,
+      "dlo": 6.3371439,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-167",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Helmut Hoffstadt",
+      "la": 51.2507143,
+      "lo": 6.3371316,
+      "a": "Schulstraße 18",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1920-04-08",
+      "d": "1941-12-11",
+      "fate": "murdered",
+      "dla": 51.2507219,
+      "dlo": 6.3371193,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-168",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Rosetta Marx",
+      "la": 51.2535504,
+      "lo": 6.3385005,
+      "a": "Viersener Straße 47",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1874-07-29",
+      "d": "1942-07-25",
+      "fate": "murdered",
+      "dla": 51.2535428,
+      "dlo": 6.3385402,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-169",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Leopold Marx",
+      "la": 51.2535504,
+      "lo": 6.3385005,
+      "a": "Viersener Straße 47",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1882-11-28",
+      "d": "1941-12-11",
+      "fate": "murdered",
+      "dla": 51.2535468,
+      "dlo": 6.3385145,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-170",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Eva Marx",
+      "la": 51.2535504,
+      "lo": 6.3385005,
+      "a": "Viersener Straße 47",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1876-10-17",
+      "d": "1942-07-25",
+      "fate": "murdered",
+      "dla": 51.2535508,
+      "dlo": 6.3384887,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-171",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Peter Kamps",
+      "la": 51.2610536,
+      "lo": 6.387275,
+      "a": "Süchtelner Straße 15",
+      "c": "Viersen",
+      "cc": "DE",
+      "fate": "murdered",
+      "dla": 51.2610493,
+      "dlo": 6.3872731,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-201",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Netta Baum",
+      "la": 51.2853936,
+      "lo": 6.3717122,
+      "a": "Lindenplatz 2a",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1870-10-11",
+      "d": "1942",
+      "fate": "murdered",
+      "dla": 51.2853916,
+      "dlo": 6.3716937,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-202",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Martha Eckstein",
+      "la": 51.2853936,
+      "lo": 6.3717122,
+      "a": "Lindenplatz 2a",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1903-07-15",
+      "d": "1942-04-22",
+      "fate": "murdered",
+      "dla": 51.2854011,
+      "dlo": 6.3717155,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-203",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Berta Eckstein",
+      "la": 51.2853936,
+      "lo": 6.3717122,
+      "a": "Lindenplatz 2a",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1869-11-21",
+      "d": "1942",
+      "fate": "murdered",
+      "dla": 51.2854051,
+      "dlo": 6.3716785,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-204",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Isidor Baum",
+      "la": 51.2853936,
+      "lo": 6.3717122,
+      "a": "Lindenplatz 2a",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1864-06-08",
+      "d": "1942-09-21",
+      "fate": "murdered",
+      "dla": 51.2854147,
+      "dlo": 6.3717002,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-205",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Sofia Lifges",
+      "la": 51.2859029,
+      "lo": 6.370019,
+      "a": "Hochstraße 39",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1879-04-20",
+      "d": "1942-09-26",
+      "fate": "murdered",
+      "dla": 51.2859042,
+      "dlo": 6.370023,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-206",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Sarah Lifges",
+      "la": 51.2859029,
+      "lo": 6.370019,
+      "a": "Hochstraße 39",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1863-01-25",
+      "d": "1942-09-23",
+      "fate": "murdered",
+      "dla": 51.2859149,
+      "dlo": 6.3700433,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-207",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Jakob Lifges",
+      "la": 51.2859029,
+      "lo": 6.370019,
+      "a": "Hochstraße 39",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1869-02-18",
+      "d": "1942-09-26",
+      "fate": "murdered",
+      "dla": 51.2859169,
+      "dlo": 6.3700059,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-216",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Carl Loeser",
+      "la": 51.2859671,
+      "lo": 6.3694338,
+      "a": "Hindenburgstraße 3",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1882-09-06",
+      "d": "1942-03-26",
+      "fate": "murdered",
+      "dla": 51.2858823,
+      "dlo": 6.3693656,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-218",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Jakob Lion",
+      "la": 51.2859671,
+      "lo": 6.3694338,
+      "a": "Hindenburgstraße 3",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1865-10-28",
+      "d": "1942-09-21",
+      "fate": "murdered",
+      "dla": 51.2858902,
+      "dlo": 6.369389,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-219",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Sybilla Wolff",
+      "la": 51.2859671,
+      "lo": 6.3694338,
+      "a": "Hindenburgstraße 3",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1859-01-29",
+      "d": "1942-09-19",
+      "fate": "murdered",
+      "dla": 51.2858981,
+      "dlo": 6.3694123,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-220",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Emilie Minna Hirsch",
+      "la": 51.2859671,
+      "lo": 6.3694338,
+      "a": "Hindenburgstraße 3",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1877-02-04",
+      "d": "1942",
+      "fate": "murdered",
+      "dla": 51.285897,
+      "dlo": 6.369353,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-221",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Gertrud Steinhardt",
+      "la": 51.2859671,
+      "lo": 6.3694338,
+      "a": "Hindenburgstraße 3",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1897-05-31",
+      "d": "1942",
+      "fate": "murdered",
+      "dla": 51.2859049,
+      "dlo": 6.3693763,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-222",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Egon Karl Steinhardt",
+      "la": 51.2859671,
+      "lo": 6.3694338,
+      "a": "Hindenburgstraße 3",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1929-07-26",
+      "d": "1942",
+      "fate": "murdered",
+      "dla": 51.2859127,
+      "dlo": 6.3693997,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-223",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Helene Sostberg",
+      "la": 51.2859671,
+      "lo": 6.3694338,
+      "a": "Hindenburgstraße 3",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1908-07-06",
+      "d": "1941",
+      "fate": "murdered",
+      "dla": 51.2859116,
+      "dlo": 6.3693403,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-304",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Bernhard Dr. Abraham",
+      "la": 51.2559301,
+      "lo": 6.3938601,
+      "a": "Bahnhofstraße 30",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1878-03-01",
+      "d": "1958-03-17",
+      "fate": "murdered",
+      "dla": 51.2559256,
+      "dlo": 6.3938493,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-307",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Grete Abraham",
+      "la": 51.2559306,
+      "lo": 6.3938599,
+      "a": "Bahnhofstraße 30",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1885-11-20",
+      "dla": 51.2559312,
+      "dlo": 6.3938743,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-322",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Hermann Dortans",
+      "la": 51.2509491,
+      "lo": 6.3335302,
+      "a": "Moselstraße 10",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1898-10-06",
+      "d": "1976-08-08",
+      "fate": "survived",
+      "dla": 51.2508208,
+      "dlo": 6.3336045,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-323",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Berta Bruch",
+      "la": 51.2464529,
+      "lo": 6.3321072,
+      "a": "Waldnieler Straße 2",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1891-05-29",
+      "fate": "murdered",
+      "dla": 51.2464343,
+      "dlo": 6.3321069,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-324",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Abraham Icak Brzozowski",
+      "la": 51.2445376,
+      "lo": 6.3352077,
+      "a": "Rheindahlener Straße 38",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1899-03-27",
+      "d": "1942-04-11",
+      "fate": "murdered",
+      "dla": 51.2445346,
+      "dlo": 6.3352258,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-325",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Heinrich Hillebrandt",
+      "la": 51.2492161,
+      "lo": 6.3384375,
+      "a": "Hospitalstraße 56",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1900-12-06",
+      "fate": "survived",
+      "dla": 51.2492021,
+      "dlo": 6.3384563,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-326",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Otto Bruch",
+      "la": 51.2555309,
+      "lo": 6.3387302,
+      "a": "Martin-Luther-Straße 25",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1880-07-25",
+      "d": "1962-07-29",
+      "fate": "fled",
+      "dla": 51.2555124,
+      "dlo": 6.3387539,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-327",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Augusta Goldschmidt",
+      "la": 51.255598,
+      "lo": 6.3345763,
+      "a": "Tilburger Straße 22",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1901-08-10",
+      "d": "1943-05-28",
+      "fate": "fled",
+      "dla": 51.2555791,
+      "dlo": 6.3345783,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-328",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Maria Gerdes",
+      "la": 51.2538949,
+      "lo": 6.335687,
+      "a": "Viersener Straße 16",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1901-12-16",
+      "d": "1943-07-14",
+      "fate": "murdered",
+      "dla": 51.2538994,
+      "dlo": 6.335687,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-329",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Heinrich Kamps",
+      "la": 51.2450388,
+      "lo": 6.4163027,
+      "a": "Immelnbusch 7",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1902-03-03",
+      "d": "1943-04-27",
+      "fate": "murdered",
+      "dla": 51.2450388,
+      "dlo": 6.4163027,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-330",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Berta Gehrmann",
+      "la": 51.2521307,
+      "lo": 6.4195735,
+      "a": "Düpp 3",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1877-01-08",
+      "fate": "survived",
+      "dla": 51.2521178,
+      "dlo": 6.4195761,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-331",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Karl Martin Wins",
+      "la": 51.2699155,
+      "lo": 6.3911627,
+      "a": "Oberrahserstraße 170",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1883-04-03",
+      "d": "1933-03-06",
+      "fate": "murdered",
+      "dla": 51.2699155,
+      "dlo": 6.3911627,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-332",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Leopold Baum",
+      "la": 51.2865338,
+      "lo": 6.376051,
+      "a": "Tönisvorster Straße 46",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1860-10-13",
+      "d": "1942-11-07",
+      "fate": "murdered",
+      "dla": 51.2865408,
+      "dlo": 6.3760442,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-334",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Alfred Höhn",
+      "la": 51.2574029,
+      "lo": 6.3825841,
+      "a": "Konrad-Adenauer-Ring 11",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1920-05-26",
+      "dla": 51.2573682,
+      "dlo": 6.3825913,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-335",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Richard Goossens",
+      "la": 51.2590006,
+      "lo": 6.3822436,
+      "a": "Kaiserstraße 18",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1909-09-09",
+      "d": "1943-05-14",
+      "fate": "murdered",
+      "dla": 51.2590006,
+      "dlo": 6.3822436,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-336",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Helene Rothenstein",
+      "la": 51.2495283,
+      "lo": 6.3942973,
+      "a": "Gladbacher Straße 70",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1874-12-24",
+      "dla": 51.2495283,
+      "dlo": 6.3942973,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-337",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Sophie Katzenstein",
+      "la": 51.2532536,
+      "lo": 6.3929817,
+      "a": "Hauptstraße 139",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1886",
+      "fate": "fled",
+      "dla": 51.2532471,
+      "dlo": 6.3929899,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-338",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Franziska Casparius",
+      "la": 51.2583856,
+      "lo": 6.3877678,
+      "a": "Hauptstraße 16",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1876-10-04",
+      "d": "1942-05-07",
+      "fate": "murdered",
+      "dla": 51.2583613,
+      "dlo": 6.3877802,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-339",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Eva Nathan",
+      "la": 51.2592701,
+      "lo": 6.3895946,
+      "a": "Goetersstraße 30",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1858-10-07",
+      "d": "1943-01-31",
+      "fate": "murdered",
+      "dla": 51.2592701,
+      "dlo": 6.3895946,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-341",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Irene Bönheim",
+      "la": 51.2561916,
+      "lo": 6.3940343,
+      "a": "Königsallee 22a",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1917-10-02",
+      "fate": "fled",
+      "dla": 51.256187,
+      "dlo": 6.3942669,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-342",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Gudrun Gordon",
+      "la": 51.2561916,
+      "lo": 6.3940343,
+      "a": "Königsallee 22a",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1931-09-17",
+      "fate": "fled",
+      "dla": 51.2562024,
+      "dlo": 6.394257,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-343",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Carola Harris",
+      "la": 51.2561916,
+      "lo": 6.3940343,
+      "a": "Königsallee 22a",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1916-07-29",
+      "fate": "fled",
+      "dla": 51.2561808,
+      "dlo": 6.3942422,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-344",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Charlotte Levy",
+      "la": 51.2561916,
+      "lo": 6.3940343,
+      "a": "Königsallee 22a",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1895-07-25",
+      "fate": "fled",
+      "dla": 51.2561962,
+      "dlo": 6.3942323,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-346",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Rudolf Miltz",
+      "la": 51.2603367,
+      "lo": 6.3889233,
+      "a": "Rektoratstraße 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1900-08-30",
+      "fate": "murdered",
+      "dla": 51.2601549,
+      "dlo": 6.3887493,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-347",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Josef Miltz",
+      "la": 51.2603367,
+      "lo": 6.3889233,
+      "a": "Rektoratstraße 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1936-02-11",
+      "fate": "murdered",
+      "dla": 51.2601568,
+      "dlo": 6.3887757,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-348",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Irene Miltz",
+      "la": 51.2603367,
+      "lo": 6.3889233,
+      "a": "Rektoratstraße 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1930-12-15",
+      "fate": "murdered",
+      "dla": 51.2601588,
+      "dlo": 6.3888021,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-349",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Hilde Schawlow",
+      "la": 51.2603367,
+      "lo": 6.3889233,
+      "a": "Rektoratstraße 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1924-11-20",
+      "d": "1944",
+      "fate": "murdered",
+      "dla": 51.2601714,
+      "dlo": 6.3887462,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-350",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Frieda Miltz",
+      "la": 51.2603367,
+      "lo": 6.3889233,
+      "a": "Rektoratstraße 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1901-07-01",
+      "fate": "murdered",
+      "dla": 51.2601733,
+      "dlo": 6.3887726,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-351",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Bela Miltz",
+      "la": 51.2603367,
+      "lo": 6.3889233,
+      "a": "Rektoratstraße 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1941-04-18",
+      "fate": "murdered",
+      "dla": 51.2601753,
+      "dlo": 6.3887989,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-352",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Moritz Cahn",
+      "la": 51.2603367,
+      "lo": 6.3889233,
+      "a": "Rektoratstraße 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1905",
+      "dla": 51.2601879,
+      "dlo": 6.3887431,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-353",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Jakob Cahn",
+      "la": 51.2603367,
+      "lo": 6.3889233,
+      "a": "Rektoratstraße 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1875-08-25",
+      "d": "1956-08-14",
+      "dla": 51.2601898,
+      "dlo": 6.3887695,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-354",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Hermine Cahn",
+      "la": 51.2603367,
+      "lo": 6.3889233,
+      "a": "Rektoratstraße 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1874-06-03",
+      "d": "1945-10-20",
+      "dla": 51.2601918,
+      "dlo": 6.3887958,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-355",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Heinz Casparius",
+      "la": 51.2583856,
+      "lo": 6.3877678,
+      "a": "Hauptstraße 16",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1907-06-09",
+      "d": "1943-01-21",
+      "fate": "fled",
+      "dla": 51.2583773,
+      "dlo": 6.3877731,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-363",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Freida-Perle Casparius",
+      "la": 51.2583856,
+      "lo": 6.3877678,
+      "a": "Hauptstraße 16",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1907",
+      "fate": "fled",
+      "dla": 51.2583933,
+      "dlo": 6.387766,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-364",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Alice Cohen",
+      "la": 51.2583856,
+      "lo": 6.3877678,
+      "a": "Hauptstraße 16",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1939-12-29",
+      "fate": "survived",
+      "dla": 51.2583569,
+      "dlo": 6.3877546,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-365",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Berta Cohen",
+      "la": 51.2583856,
+      "lo": 6.3877678,
+      "a": "Hauptstraße 16",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1915-05-29",
+      "fate": "survived",
+      "dla": 51.2583729,
+      "dlo": 6.3877475,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-366",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Hermann Cohen",
+      "la": 51.2583856,
+      "lo": 6.3877678,
+      "a": "Hauptstraße 16",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1906-07-09",
+      "d": "1945-01-26",
+      "fate": "fled",
+      "dla": 51.2583889,
+      "dlo": 6.3877404,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-367",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Feiga Rosenmann",
+      "la": 51.2583856,
+      "lo": 6.3877678,
+      "a": "Hauptstraße 16",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1887-03-12",
+      "d": "1940-04-19",
+      "fate": "murdered",
+      "dla": 51.2583525,
+      "dlo": 6.387729,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-368",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Hermann Rosenmann",
+      "la": 51.2583856,
+      "lo": 6.3877678,
+      "a": "Hauptstraße 16",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1920-07-09",
+      "d": "1994-05-07",
+      "fate": "murdered",
+      "dla": 51.2583685,
+      "dlo": 6.3877219,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-369",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Simon Rosenmann",
+      "la": 51.2583856,
+      "lo": 6.3877678,
+      "a": "Hauptstraße 16",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1887-10-15",
+      "d": "1942-02-22",
+      "fate": "murdered",
+      "dla": 51.2583845,
+      "dlo": 6.3877148,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-381",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Lieselotte Höhn",
+      "la": 51.2574029,
+      "lo": 6.3825841,
+      "a": "Konrad-Adenauer-Ring 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1922-06-26",
+      "dla": 51.2573833,
+      "dlo": 6.3825802,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-382",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Sibilla Höhn",
+      "la": 51.2574029,
+      "lo": 6.3825841,
+      "a": "Konrad-Adenauer-Ring 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1890-03-10",
+      "dla": 51.2573902,
+      "dlo": 6.3826044,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-383",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Höhn",
+      "la": 51.2574029,
+      "lo": 6.3825841,
+      "a": "Konrad-Adenauer-Ring 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "dla": 51.2573971,
+      "dlo": 6.3826286,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-384",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Jakob Höhn",
+      "la": 51.2574029,
+      "lo": 6.3825841,
+      "a": "Konrad-Adenauer-Ring 9",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1913-03-27",
+      "d": "1943-02-13",
+      "fate": "murdered",
+      "dla": 51.2573984,
+      "dlo": 6.3825692,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-385",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Helene Höhn",
+      "la": 51.2574029,
+      "lo": 6.3825841,
+      "a": "Konrad-Adenauer-Ring 11",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1914-06-09",
+      "d": "1944",
+      "fate": "murdered",
+      "dla": 51.2573751,
+      "dlo": 6.3826154,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-386",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Alma Höhn",
+      "la": 51.2574029,
+      "lo": 6.3825841,
+      "a": "Konrad-Adenauer-Ring 11",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1919-04-29",
+      "d": "1944",
+      "fate": "murdered",
+      "dla": 51.257382,
+      "dlo": 6.3826396,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-387",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "David Katzenstein",
+      "la": 51.2532536,
+      "lo": 6.3929817,
+      "a": "Hauptstraße 139",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1876",
+      "d": "1948",
+      "fate": "fled",
+      "dla": 51.2532601,
+      "dlo": 6.3929735,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-388",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Herbert Levy",
+      "la": 51.2844131,
+      "lo": 6.3647677,
+      "a": "Hindenburgstraße 66",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1932-05-04",
+      "fate": "murdered",
+      "dla": 51.2843887,
+      "dlo": 6.3647761,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-391",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Martha Marga Marx",
+      "la": 51.2844131,
+      "lo": 6.3647677,
+      "a": "Hindenburgstraße 66",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1890-08-05",
+      "d": "1944-03-31",
+      "fate": "murdered",
+      "dla": 51.2843969,
+      "dlo": 6.3647992,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-392",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Julius Marx",
+      "la": 51.2844131,
+      "lo": 6.3647677,
+      "a": "Hindenburgstraße 66",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1890-06-04",
+      "d": "1942-04-18",
+      "fate": "murdered",
+      "dla": 51.2844051,
+      "dlo": 6.3648222,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-393",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Erich Werner Marx",
+      "la": 51.2844131,
+      "lo": 6.3647677,
+      "a": "Hindenburgstraße 66",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1923-06-25",
+      "d": "1944-06-27",
+      "fate": "murdered",
+      "dla": 51.2844031,
+      "dlo": 6.3647629,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-394",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Margarete Levy",
+      "la": 51.2844131,
+      "lo": 6.3647677,
+      "a": "Hindenburgstraße 66",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1893-07-22",
+      "fate": "murdered",
+      "dla": 51.2844113,
+      "dlo": 6.364786,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-397",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Kurt Baum",
+      "la": 51.2865338,
+      "lo": 6.376051,
+      "a": "Tönisvorster Straße 46",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1903-12-16",
+      "d": "1942-10-27",
+      "fate": "murdered",
+      "dla": 51.2865475,
+      "dlo": 6.3760685,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-398",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Senta Baum",
+      "la": 51.2865338,
+      "lo": 6.376051,
+      "a": "Tönisvorster Straße 46",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1916-05-18",
+      "d": "1942-09-29",
+      "fate": "murdered",
+      "dla": 51.286556,
+      "dlo": 6.3760335,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-399",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Otto Gehrmann",
+      "la": 51.2521307,
+      "lo": 6.4195735,
+      "a": "Düpp 3",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1878-12-06",
+      "d": "1936-11-04",
+      "fate": "murdered",
+      "dla": 51.2521293,
+      "dlo": 6.4195954,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-401",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Walter Gehrmann",
+      "la": 51.2521307,
+      "lo": 6.4195735,
+      "a": "Düpp 3",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1914-08-12",
+      "d": "1937-03-10",
+      "fate": "fled",
+      "dla": 51.2521299,
+      "dlo": 6.4195578,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-402",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Kurt Bruch",
+      "la": 51.255598,
+      "lo": 6.3345763,
+      "a": "Tilburger Straße 22",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1912-08-04",
+      "fate": "fled",
+      "dla": 51.2555955,
+      "dlo": 6.3345825,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-403",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Ernst Bruch",
+      "la": 51.255598,
+      "lo": 6.3345763,
+      "a": "Tilburger Straße 22",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1909-10-09",
+      "d": "1978-12-26",
+      "fate": "fled",
+      "dla": 51.2556119,
+      "dlo": 6.3345867,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-404",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Erna Ries",
+      "la": 51.255598,
+      "lo": 6.3345763,
+      "a": "Tilburger Straße 22",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1907-08-10",
+      "d": "2001-01-10",
+      "fate": "fled",
+      "dla": 51.2555818,
+      "dlo": 6.334552,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-405",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Artur Bruch",
+      "la": 51.255598,
+      "lo": 6.3345763,
+      "a": "Tilburger Straße 22",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1906-04-24",
+      "fate": "fled",
+      "dla": 51.2555982,
+      "dlo": 6.3345563,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-406",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Hilde Bruch",
+      "la": 51.255598,
+      "lo": 6.3345763,
+      "a": "Tilburger Straße 22",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1904-03-11",
+      "d": "1984-12-15",
+      "fate": "fled",
+      "dla": 51.2556146,
+      "dlo": 6.3345605,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-408",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Else Strauss",
+      "la": 51.2555309,
+      "lo": 6.3387302,
+      "a": "Martin-Luther-Straße 25",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1912-11-30",
+      "d": "2006-07-19",
+      "fate": "fled",
+      "dla": 51.2555277,
+      "dlo": 6.338764,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-409",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Erwin Bruch",
+      "la": 51.2555309,
+      "lo": 6.3387302,
+      "a": "Martin-Luther-Straße 25",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1914-12-01",
+      "d": "1940",
+      "fate": "fled",
+      "dla": 51.2555431,
+      "dlo": 6.3387741,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-410",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Helmuth Bruch",
+      "la": 51.2555309,
+      "lo": 6.3387302,
+      "a": "Martin-Luther-Straße 25",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1917-09-02",
+      "d": "1976-05-26",
+      "fate": "fled",
+      "dla": 51.2555187,
+      "dlo": 6.3387294,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-411",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Werner Bruch",
+      "la": 51.2555309,
+      "lo": 6.3387302,
+      "a": "Martin-Luther-Straße 25",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1921-08-28",
+      "d": "1972-06-17",
+      "fate": "fled",
+      "dla": 51.2555341,
+      "dlo": 6.3387394,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-412",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Josefine Hillebrandt",
+      "la": 51.2492161,
+      "lo": 6.3384375,
+      "a": "Hospitalstraße 56",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1899",
+      "fate": "survived",
+      "dla": 51.2492041,
+      "dlo": 6.3384299,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-413",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Ernst-Karl Brzozowski",
+      "la": 51.2445376,
+      "lo": 6.3352077,
+      "a": "Rheindahlener Straße 38",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1933-04-05",
+      "d": "1957-01-20",
+      "fate": "survived",
+      "dla": 51.244549,
+      "dlo": 6.3352125,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-414",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Wilhelmine Brzozowski",
+      "la": 51.2445376,
+      "lo": 6.3352077,
+      "a": "Rheindahlener Straße 38",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1904-01-11",
+      "d": "1983-11-23",
+      "fate": "survived",
+      "dla": 51.2445262,
+      "dlo": 6.3352029,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-415",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Herbert 'Max' Bruch",
+      "la": 51.2464529,
+      "lo": 6.3321072,
+      "a": "Waldnieler Straße 2",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1920-09-05",
+      "fate": "fled",
+      "dla": 51.2464491,
+      "dlo": 6.332119,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-416",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Erich Bruch",
+      "la": 51.2464529,
+      "lo": 6.3321072,
+      "a": "Waldnieler Straße 2",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1916-10-24",
+      "d": "1996-05-13",
+      "fate": "fled",
+      "dla": 51.2464639,
+      "dlo": 6.3321311,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-417",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Bruch",
+      "la": 51.2464529,
+      "lo": 6.3321072,
+      "a": "Waldnieler Straße 2",
+      "c": "Viersen",
+      "cc": "DE",
+      "dla": 51.2464419,
+      "dlo": 6.3320833,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-418",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Irmgard Bruch",
+      "la": 51.2464529,
+      "lo": 6.3321072,
+      "a": "Waldnieler Straße 2",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1925-06-07",
+      "d": "1944",
+      "fate": "murdered",
+      "dla": 51.2464567,
+      "dlo": 6.3320954,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-419",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Leo Bruch",
+      "la": 51.2464529,
+      "lo": 6.3321072,
+      "a": "Waldnieler Straße 2",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1879-02-04",
+      "d": "1943",
+      "fate": "murdered",
+      "dla": 51.2464715,
+      "dlo": 6.3321075,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-420",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Maria Dortans",
+      "la": 51.2509491,
+      "lo": 6.3335302,
+      "a": "Moselstraße 10",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1904",
+      "fate": "survived",
+      "dla": 51.2508305,
+      "dlo": 6.3335829,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-421",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Ernst Dortans",
+      "la": 51.2509491,
+      "lo": 6.3335302,
+      "a": "Moselstraße 10",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1928-05-31",
+      "d": "2013-03-13",
+      "fate": "survived",
+      "dla": 51.2508073,
+      "dlo": 6.3335889,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-422",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Bernd Schmerler",
+      "la": 51.2614211,
+      "lo": 6.3868798,
+      "a": "Süchtelner Straße 29",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1920-04-04",
+      "d": "1945",
+      "fate": "murdered",
+      "dla": 51.261424,
+      "dlo": 6.3868618,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-423",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Paula Schmerler",
+      "la": 51.2614211,
+      "lo": 6.3868798,
+      "a": "Süchtelner Straße 29",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1894-03-04",
+      "d": "1943",
+      "fate": "murdered",
+      "dla": 51.2613871,
+      "dlo": 6.386869,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-424",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Salomon Schmerler",
+      "la": 51.2614211,
+      "lo": 6.3868798,
+      "a": "Süchtelner Straße 29",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1891-04-06",
+      "d": "1942",
+      "fate": "murdered",
+      "dla": 51.261401,
+      "dlo": 6.3868544,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-425",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Erna Marx",
+      "la": 51.2535504,
+      "lo": 6.3385005,
+      "a": "Viersener Straße 47",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1892-07-23",
+      "fate": "murdered",
+      "dla": 51.2535267,
+      "dlo": 6.3385338,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-426",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Gisela Marx",
+      "la": 51.2535504,
+      "lo": 6.3385005,
+      "a": "Viersener Straße 47",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1925-04-24",
+      "d": "2012-08-20",
+      "fate": "murdered",
+      "dla": 51.2535307,
+      "dlo": 6.3385081,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-43",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Alfred Stern",
+      "la": 51.2515879,
+      "lo": 6.3351471,
+      "a": "Alter Markt 14",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1880-02-11",
+      "fate": "murdered",
+      "dla": 51.2515938,
+      "dlo": 6.3351574,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-62",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Paul Stern",
+      "la": 51.2515879,
+      "lo": 6.3351471,
+      "a": "Alter Markt 14",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1884-02-26",
+      "fate": "murdered",
+      "dla": 51.2515998,
+      "dlo": 6.3351326,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-63",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Alma Stern",
+      "la": 51.2515879,
+      "lo": 6.3351471,
+      "a": "Alter Markt 14",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1884-05-16",
+      "fate": "murdered",
+      "dla": 51.2515783,
+      "dlo": 6.3351477,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    },
+    {
+      "id": "vie-81",
+      "src": "viersen",
+      "lic": "dl-de-zero",
+      "n": "Jakob Heymann",
+      "la": 51.2588161,
+      "lo": 6.3812668,
+      "a": "Kaiserstraße 42",
+      "c": "Viersen",
+      "cc": "DE",
+      "b": "1888-10-10",
+      "d": "1942-07-24",
+      "fate": "murdered",
+      "dla": 51.2588206,
+      "dlo": 6.3812796,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Viersen"
+      ]
+    }
+  ]
+}

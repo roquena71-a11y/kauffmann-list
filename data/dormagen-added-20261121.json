@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "generated": "2026-11-21T21:22:45+01:00",
+    "count": 2,
+    "license": "Datenlizenz Deutschland – Zero – Version 2.0",
+    "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+    "attribution": [
+      "Stadt Dormagen / Rhein-Kreis Neuss, Stolpersteine Dormagen (Datenlizenz Deutschland – Zero – Version 2.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/)"
+    ],
+    "source_url": "https://opendata.rhein-kreis-neuss.de/explore/dataset/dormagen-stolpersteine/",
+    "note": "Placas añadidas en v22 a partir de la fuente abierta citada. No se copian biografías salvo campos de lista o inscripción literal permitida por la licencia. la/lo son las coordenadas de la fuente; dla/dlo son solo la posición de dibujo (reglas de v20/v21).",
+    "placement": {
+      "osm_timestamp": "2026-11-18T21:21:02Z",
+      "rules": ">=0.5 m de edificios, <=25 m, >=1.55 m entre grupos (incl. 73.950 existentes), malla 1.85 m, nunca en calzada ni dentro de un edificio"
+    }
+  },
+  "stones": [
+    {
+      "id": "dor-17",
+      "src": "dormagen",
+      "lic": "dl-de-zero",
+      "n": "David Dahl",
+      "la": 51.0921968,
+      "lo": 6.8426076,
+      "a": "Kölner Straße 56",
+      "c": "Dormagen",
+      "cc": "DE",
+      "dla": 51.0922476,
+      "dlo": 6.8426885
+    },
+    {
+      "id": "dor-39",
+      "src": "dormagen",
+      "lic": "dl-de-zero",
+      "n": "Ernst Junghans",
+      "la": 51.1253141,
+      "lo": 6.8383033,
+      "a": "Westerburgstraße 7",
+      "c": "Dormagen",
+      "cc": "DE",
+      "dla": 51.12535,
+      "dlo": 6.8384025
+    }
+  ]
+}

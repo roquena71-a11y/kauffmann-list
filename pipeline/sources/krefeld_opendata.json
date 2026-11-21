@@ -1,0 +1,63 @@
+{
+  "id": "krefeld_opendata",
+  "name": "Stolpersteine Krefeld (Offene Geodaten)",
+  "description": "GeoJSON abierto de la ciudad de Krefeld, licencia Datenlizenz Deutschland – Zero – Version 2.0. No se copian resúmenes editoriales de INSCHRIFT.",
+  "phase": 1,
+  "enabled": true,
+  "publish_allowed": true,
+  "adapter": "generic_tabular",
+  "license": "dl-de/zero-2-0",
+  "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+  "attribution": "Stadt Krefeld, Stolpersteine Krefeld (Datenlizenz Deutschland – Zero – Version 2.0, https://www.krefeld.de/de/vermessung/digitale-geodaten/)",
+  "homepage": "https://www.krefeld.de/de/vermessung/digitale-geodaten/",
+  "license_family": "dl-de-zero",
+  "id_prefix": "kr",
+  "priority": 20,
+  "input": {
+    "path": "data/krefeld-added-20261121.json",
+    "format": "json",
+    "records_path": "stones",
+    "retrieved": "2026-11-21"
+  },
+  "mapping": {
+    "name": "n",
+    "places": [
+      {
+        "role": "memorial",
+        "label": "a",
+        "locality": "c",
+        "lat": "la",
+        "lon": "lo",
+        "country": "cc"
+      }
+    ],
+    "record_id": {
+      "column": "id",
+      "strip_prefix": "kr-"
+    },
+    "memorials": [
+      {
+        "type": "stolperstein",
+        "memorial_id": "id",
+        "address": "a",
+        "locality": "c",
+        "country": "cc",
+        "lat": "la",
+        "lon": "lo"
+      }
+    ],
+    "birth_date": "b",
+    "death_date": "d",
+    "fate": "fate",
+    "links": [
+      {
+        "type": "local_biography",
+        "url": "lb"
+      },
+      {
+        "type": "wikipedia_list_entry",
+        "url": "w.0"
+      }
+    ]
+  }
+}

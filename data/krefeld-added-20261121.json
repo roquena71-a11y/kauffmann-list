@@ -1,0 +1,3377 @@
+{
+  "meta": {
+    "generated": "2026-11-21T21:22:45+01:00",
+    "count": 174,
+    "license": "Datenlizenz Deutschland – Zero – Version 2.0",
+    "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+    "attribution": [
+      "Stadt Krefeld, Stolpersteine Krefeld (Datenlizenz Deutschland – Zero – Version 2.0, https://www.krefeld.de/de/vermessung/digitale-geodaten/)"
+    ],
+    "source_url": "https://www.krefeld.de/de/vermessung/digitale-geodaten/",
+    "note": "Placas añadidas en v22 a partir de la fuente abierta citada. No se copian biografías salvo campos de lista o inscripción literal permitida por la licencia. la/lo son las coordenadas de la fuente; dla/dlo son solo la posición de dibujo (reglas de v20/v21).",
+    "placement": {
+      "osm_timestamp": "2026-11-18T21:21:02Z",
+      "rules": ">=0.5 m de edificios, <=25 m, >=1.55 m entre grupos (incl. 73.950 existentes), malla 1.85 m, nunca en calzada ni dentro de un edificio"
+    }
+  },
+  "stones": [
+    {
+      "id": "kr-10",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Alfred Coppel",
+      "la": 51.3562929,
+      "lo": 6.6466345,
+      "a": "Bahnhofstraße 48",
+      "c": "Krefeld",
+      "cc": "DE",
+      "d": "1944-11-15",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/10.pdf",
+      "dla": 51.3563062,
+      "dlo": 6.6466086,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Anna_Herz,_Hedwig_Herz,_Hermann_Herz,_Elisabeth_Herz_und_Antonie_Coppel,_Alfred_Coppel"
+      ]
+    },
+    {
+      "id": "kr-100",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Emma Italiander geb. Grünewald",
+      "la": 51.3339344,
+      "lo": 6.566542,
+      "a": "Rheinstraße 67",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1865-01-30",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/100.pdf",
+      "dla": 51.3339091,
+      "dlo": 6.5665325,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Albert_Italiander,_Emma_Italiander,_Siegfried_Italiander,_Johanna_Wyngaard_und_Martha_Hildach"
+      ]
+    },
+    {
+      "id": "kr-101",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Siegfried Italiander",
+      "la": 51.3339344,
+      "lo": 6.566542,
+      "a": "Rheinstraße 67",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1891-05-06",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/101.pdf",
+      "dla": 51.3339149,
+      "dlo": 6.5665574,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Albert_Italiander,_Emma_Italiander,_Siegfried_Italiander,_Johanna_Wyngaard_und_Martha_Hildach"
+      ]
+    },
+    {
+      "id": "kr-102",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Martha Hildach geb. Italiander",
+      "la": 51.3339344,
+      "lo": 6.566542,
+      "a": "Rheinstraße 67",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1895-02-21",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/102.pdf",
+      "dla": 51.3339208,
+      "dlo": 6.5665824,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Albert_Italiander,_Emma_Italiander,_Siegfried_Italiander,_Johanna_Wyngaard_und_Martha_Hildach"
+      ]
+    },
+    {
+      "id": "kr-103",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Johanna Wyngaard geb. Italiander",
+      "la": 51.3339344,
+      "lo": 6.566542,
+      "a": "Rheinstraße 67",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1893-04-05",
+      "d": "1944-12-30",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/103.pdf",
+      "dla": 51.3339247,
+      "dlo": 6.5665232,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Albert_Italiander,_Emma_Italiander,_Siegfried_Italiander,_Johanna_Wyngaard_und_Martha_Hildach"
+      ]
+    },
+    {
+      "id": "kr-11",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Hedwig Herz",
+      "la": 51.3562929,
+      "lo": 6.6466345,
+      "a": "Bahnhofstraße 48",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/11.pdf",
+      "dla": 51.3563071,
+      "dlo": 6.6466352,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Anna_Herz,_Hedwig_Herz,_Hermann_Herz,_Elisabeth_Herz_und_Antonie_Coppel,_Alfred_Coppel"
+      ]
+    },
+    {
+      "id": "kr-113",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Bernhard Sommer",
+      "la": 51.3323991,
+      "lo": 6.5752151,
+      "a": "Seidenstraße 45",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1888-07-09",
+      "d": "1942-04-29",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/113.pdf",
+      "dla": 51.3323911,
+      "dlo": 6.5752189,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Bernhard_Sommer_und_Helene_Sommer"
+      ]
+    },
+    {
+      "id": "kr-114",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Helene Sommer geb. Michel",
+      "la": 51.3323991,
+      "lo": 6.5752151,
+      "a": "Seidenstraße 45",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1885-05-16",
+      "d": "1942-05-07",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/114.pdf",
+      "dla": 51.3324071,
+      "dlo": 6.5752113,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Bernhard_Sommer_und_Helene_Sommer"
+      ]
+    },
+    {
+      "id": "kr-118",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Albrecht Bruckmann",
+      "la": 51.3276592,
+      "lo": 6.5648863,
+      "a": "Südwall 34",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1883-01-08",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/118.pdf",
+      "dla": 51.3277438,
+      "dlo": 6.564856,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Elfriede_Bruckmann,_Thekla_Bruckmann,_Olga_Bruckmann,_Albrecht_Bruckmann,_Mirijam_Bruckmann,_Anita_Bruckmann,_Jenny_Bruckmann_und_Sara_Marcus,_Willy_Marcus,_Ingeborg_Lotte_Marcus"
+      ]
+    },
+    {
+      "id": "kr-119",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Anita Bruckmann",
+      "la": 51.3276592,
+      "lo": 6.5648863,
+      "a": "Südwall 34",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/119.pdf",
+      "dla": 51.3277487,
+      "dlo": 6.5648814,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Elfriede_Bruckmann,_Thekla_Bruckmann,_Olga_Bruckmann,_Albrecht_Bruckmann,_Mirijam_Bruckmann,_Anita_Bruckmann,_Jenny_Bruckmann_und_Sara_Marcus,_Willy_Marcus,_Ingeborg_Lotte_Marcus"
+      ]
+    },
+    {
+      "id": "kr-12",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Friedrich-Josef Wihl",
+      "la": 51.3374949,
+      "lo": 6.5785185,
+      "a": "Bogenstraße 73",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1889-07-20",
+      "d": "1942-05-08",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/12.pdf",
+      "dla": 51.3375195,
+      "dlo": 6.5785341,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Alfred_Goldstein,_Erna_Goldstein,_Edgar_Goldstein_und_Friedrich-Josef_Wihl"
+      ]
+    },
+    {
+      "id": "kr-120",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Elfriede Bruckmann",
+      "la": 51.3276592,
+      "lo": 6.5648863,
+      "a": "Südwall 34",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1894-06-20",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/120.pdf",
+      "dla": 51.3277536,
+      "dlo": 6.5649068,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Elfriede_Bruckmann,_Thekla_Bruckmann,_Olga_Bruckmann,_Albrecht_Bruckmann,_Mirijam_Bruckmann,_Anita_Bruckmann,_Jenny_Bruckmann_und_Sara_Marcus,_Willy_Marcus,_Ingeborg_Lotte_Marcus"
+      ]
+    },
+    {
+      "id": "kr-121",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Jenny Bruckmann",
+      "la": 51.3276592,
+      "lo": 6.5648863,
+      "a": "Südwall 34",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/121.pdf",
+      "dla": 51.3277584,
+      "dlo": 6.5649323,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Elfriede_Bruckmann,_Thekla_Bruckmann,_Olga_Bruckmann,_Albrecht_Bruckmann,_Mirijam_Bruckmann,_Anita_Bruckmann,_Jenny_Bruckmann_und_Sara_Marcus,_Willy_Marcus,_Ingeborg_Lotte_Marcus"
+      ]
+    },
+    {
+      "id": "kr-122",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Mirijam Bruckmann geb. Eisner",
+      "la": 51.3276592,
+      "lo": 6.5648863,
+      "a": "Südwall 34",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1882-07-31",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/122.pdf",
+      "dla": 51.3277597,
+      "dlo": 6.5648482,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Elfriede_Bruckmann,_Thekla_Bruckmann,_Olga_Bruckmann,_Albrecht_Bruckmann,_Mirijam_Bruckmann,_Anita_Bruckmann,_Jenny_Bruckmann_und_Sara_Marcus,_Willy_Marcus,_Ingeborg_Lotte_Marcus"
+      ]
+    },
+    {
+      "id": "kr-123",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Olga Bruckmann",
+      "la": 51.3276592,
+      "lo": 6.5648863,
+      "a": "Südwall 34",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1879-09-12",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/123.pdf",
+      "dla": 51.3277646,
+      "dlo": 6.5648736,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Elfriede_Bruckmann,_Thekla_Bruckmann,_Olga_Bruckmann,_Albrecht_Bruckmann,_Mirijam_Bruckmann,_Anita_Bruckmann,_Jenny_Bruckmann_und_Sara_Marcus,_Willy_Marcus,_Ingeborg_Lotte_Marcus"
+      ]
+    },
+    {
+      "id": "kr-124",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Thekla Bruckmann",
+      "la": 51.3276592,
+      "lo": 6.5648863,
+      "a": "Südwall 34",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1890-12-09",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/124.pdf",
+      "dla": 51.3277694,
+      "dlo": 6.564899,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Elfriede_Bruckmann,_Thekla_Bruckmann,_Olga_Bruckmann,_Albrecht_Bruckmann,_Mirijam_Bruckmann,_Anita_Bruckmann,_Jenny_Bruckmann_und_Sara_Marcus,_Willy_Marcus,_Ingeborg_Lotte_Marcus"
+      ]
+    },
+    {
+      "id": "kr-125",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Willi Marcus",
+      "la": 51.3276592,
+      "lo": 6.5648863,
+      "a": "Südwall 34",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1885-01-11",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/125.pdf",
+      "dla": 51.3277743,
+      "dlo": 6.5649244,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Elfriede_Bruckmann,_Thekla_Bruckmann,_Olga_Bruckmann,_Albrecht_Bruckmann,_Mirijam_Bruckmann,_Anita_Bruckmann,_Jenny_Bruckmann_und_Sara_Marcus,_Willy_Marcus,_Ingeborg_Lotte_Marcus"
+      ]
+    },
+    {
+      "id": "kr-126",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Sara Marcus geb. Bruckmann",
+      "la": 51.3276592,
+      "lo": 6.5648863,
+      "a": "Südwall 34",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1888-03-28",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/126.pdf",
+      "dla": 51.3277755,
+      "dlo": 6.5648403,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Elfriede_Bruckmann,_Thekla_Bruckmann,_Olga_Bruckmann,_Albrecht_Bruckmann,_Mirijam_Bruckmann,_Anita_Bruckmann,_Jenny_Bruckmann_und_Sara_Marcus,_Willy_Marcus,_Ingeborg_Lotte_Marcus"
+      ]
+    },
+    {
+      "id": "kr-127",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Ingeborg Lotte Marcus",
+      "la": 51.3276592,
+      "lo": 6.5648863,
+      "a": "Südwall 34",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/127.pdf",
+      "dla": 51.3277804,
+      "dlo": 6.5648658,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Elfriede_Bruckmann,_Thekla_Bruckmann,_Olga_Bruckmann,_Albrecht_Bruckmann,_Mirijam_Bruckmann,_Anita_Bruckmann,_Jenny_Bruckmann_und_Sara_Marcus,_Willy_Marcus,_Ingeborg_Lotte_Marcus"
+      ]
+    },
+    {
+      "id": "kr-13",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Erna Goldstein geb. Wihl",
+      "la": 51.3374949,
+      "lo": 6.5785185,
+      "a": "Bogenstraße 73",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1892-11-03",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/13.pdf",
+      "dla": 51.3375226,
+      "dlo": 6.5785079,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Alfred_Goldstein,_Erna_Goldstein,_Edgar_Goldstein_und_Friedrich-Josef_Wihl"
+      ]
+    },
+    {
+      "id": "kr-130",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Sara Klara Koppel geb. Falk",
+      "la": 51.3363813,
+      "lo": 6.5781515,
+      "a": "Uerdinger Straße 109",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1859-05-16",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/130.pdf",
+      "dla": 51.3363813,
+      "dlo": 6.5781515,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Sara_Koppel"
+      ]
+    },
+    {
+      "id": "kr-14",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Alfred Goldstein",
+      "la": 51.3374949,
+      "lo": 6.5785185,
+      "a": "Bogenstraße 73",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1889-08-10",
+      "d": "1944-12-24",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/14.pdf",
+      "dla": 51.3375031,
+      "dlo": 6.5785291,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Alfred_Goldstein,_Erna_Goldstein,_Edgar_Goldstein_und_Friedrich-Josef_Wihl"
+      ]
+    },
+    {
+      "id": "kr-15",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Edgar Goldstein",
+      "la": 51.3374949,
+      "lo": 6.5785185,
+      "a": "Bogenstraße 73",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/15.pdf",
+      "dla": 51.3375063,
+      "dlo": 6.5785029,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Alfred_Goldstein,_Erna_Goldstein,_Edgar_Goldstein_und_Friedrich-Josef_Wihl"
+      ]
+    },
+    {
+      "id": "kr-17",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Max Mayer",
+      "la": 51.3557372,
+      "lo": 6.6500699,
+      "a": "Bruchstraße 35",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1896-10-02",
+      "d": "1945-05-13",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/17.pdf",
+      "dla": 51.3557198,
+      "dlo": 6.6500891,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Max_Mayer,_Rosel_Mayer,_Ruth_Mayer,_Alfred_Mayer_und_Doris_Mayer"
+      ]
+    },
+    {
+      "id": "kr-18",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Rosel Mayer geb. Kaufmann",
+      "la": 51.3557372,
+      "lo": 6.6500699,
+      "a": "Bruchstraße 35",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1896-04-15",
+      "d": "1945",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/18.pdf",
+      "dla": 51.3557355,
+      "dlo": 6.6500806,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Max_Mayer,_Rosel_Mayer,_Ruth_Mayer,_Alfred_Mayer_und_Doris_Mayer"
+      ]
+    },
+    {
+      "id": "kr-19",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Ruth Mayer",
+      "la": 51.3557372,
+      "lo": 6.6500699,
+      "a": "Bruchstraße 35",
+      "c": "Krefeld",
+      "cc": "DE",
+      "d": "1944-07-11",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/19.pdf",
+      "dla": 51.3557513,
+      "dlo": 6.6500721,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Max_Mayer,_Rosel_Mayer,_Ruth_Mayer,_Alfred_Mayer_und_Doris_Mayer"
+      ]
+    },
+    {
+      "id": "kr-20",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Alfred Mayer",
+      "la": 51.3557372,
+      "lo": 6.6500699,
+      "a": "Bruchstraße 35",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/20.pdf",
+      "dla": 51.3557145,
+      "dlo": 6.6500639,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Max_Mayer,_Rosel_Mayer,_Ruth_Mayer,_Alfred_Mayer_und_Doris_Mayer"
+      ]
+    },
+    {
+      "id": "kr-21",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Doris Mayer",
+      "la": 51.3557372,
+      "lo": 6.6500699,
+      "a": "Bruchstraße 35",
+      "c": "Krefeld",
+      "cc": "DE",
+      "d": "1944",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/21.pdf",
+      "dla": 51.3557302,
+      "dlo": 6.6500554,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Max_Mayer,_Rosel_Mayer,_Ruth_Mayer,_Alfred_Mayer_und_Doris_Mayer"
+      ]
+    },
+    {
+      "id": "kr-22",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Bruno De Beer",
+      "la": 51.3328072,
+      "lo": 6.5768525,
+      "a": "Dießemer Straße 89",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1887-05-20",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/22.pdf",
+      "dla": 51.3328038,
+      "dlo": 6.5768705,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Bruno_de_Beer,_Johanna_de_Beer,_Ida_de_Beer_und_Rudolf_de_Beer"
+      ]
+    },
+    {
+      "id": "kr-23",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Ida De Beer",
+      "la": 51.3328072,
+      "lo": 6.5768525,
+      "a": "Dießemer Straße 89",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/23.pdf",
+      "dla": 51.3328184,
+      "dlo": 6.5768579,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Bruno_de_Beer,_Johanna_de_Beer,_Ida_de_Beer_und_Rudolf_de_Beer"
+      ]
+    },
+    {
+      "id": "kr-24",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Johanna De Beer geb. Katz",
+      "la": 51.3328072,
+      "lo": 6.5768525,
+      "a": "Dießemer Straße 89",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1894-10-11",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/24.pdf",
+      "dla": 51.332796,
+      "dlo": 6.5768471,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Bruno_de_Beer,_Johanna_de_Beer,_Ida_de_Beer_und_Rudolf_de_Beer"
+      ]
+    },
+    {
+      "id": "kr-25",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Rudolf De Beer",
+      "la": 51.3328072,
+      "lo": 6.5768525,
+      "a": "Dießemer Straße 89",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/25.pdf",
+      "dla": 51.3328106,
+      "dlo": 6.5768345,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Bruno_de_Beer,_Johanna_de_Beer,_Ida_de_Beer_und_Rudolf_de_Beer"
+      ]
+    },
+    {
+      "id": "kr-299",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Amalie Schaffrath geb. Gompertz",
+      "la": 51.3521895,
+      "lo": 6.6500109,
+      "a": "Oberstraße 37",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1861-03-09",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/139.pdf",
+      "dla": 51.3521509,
+      "dlo": 6.6499761,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Alfred_Lorant,_Bertha_Lorant,_Inge_Lorant_und_Amalie_Schaffrath,_Ernst_Schaffrath,_Edith_Schaffrath,_Karl_Schaffrath,_Regine_Schaffrath"
+      ]
+    },
+    {
+      "id": "kr-300",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Edith Schaffrath geb. Davids",
+      "la": 51.3521895,
+      "lo": 6.6500109,
+      "a": "Oberstraße 37",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1903",
+      "d": "1942",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/141.pdf",
+      "dla": 51.3521593,
+      "dlo": 6.649999,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Alfred_Lorant,_Bertha_Lorant,_Inge_Lorant_und_Amalie_Schaffrath,_Ernst_Schaffrath,_Edith_Schaffrath,_Karl_Schaffrath,_Regine_Schaffrath"
+      ]
+    },
+    {
+      "id": "kr-301",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Regine Schaffrath geb. Schnock",
+      "la": 51.3521895,
+      "lo": 6.6500109,
+      "a": "Oberstraße 37",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1912",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/143.pdf",
+      "dla": 51.3521678,
+      "dlo": 6.6500219,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Alfred_Lorant,_Bertha_Lorant,_Inge_Lorant_und_Amalie_Schaffrath,_Ernst_Schaffrath,_Edith_Schaffrath,_Karl_Schaffrath,_Regine_Schaffrath"
+      ]
+    },
+    {
+      "id": "kr-302",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Alfred Lorant",
+      "la": 51.3521895,
+      "lo": 6.6500109,
+      "a": "Oberstraße 37",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1886-08-01",
+      "d": "1938-12-06",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/144.pdf",
+      "dla": 51.3521652,
+      "dlo": 6.6499626,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Alfred_Lorant,_Bertha_Lorant,_Inge_Lorant_und_Amalie_Schaffrath,_Ernst_Schaffrath,_Edith_Schaffrath,_Karl_Schaffrath,_Regine_Schaffrath"
+      ]
+    },
+    {
+      "id": "kr-31",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Karl (Samuel) Merländer",
+      "la": 51.3411684,
+      "lo": 6.5802687,
+      "a": "Friedrich-Ebert-Straße 42",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1867-12-14",
+      "d": "1938-12-25",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/31.pdf",
+      "dla": 51.3411684,
+      "dlo": 6.5802687,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Karl_Merländer_und_Richard_Merländer"
+      ]
+    },
+    {
+      "id": "kr-319",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Ernst Schaffrath",
+      "la": 51.3521895,
+      "lo": 6.6500109,
+      "a": "Oberstraße 37",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1901-01-12",
+      "d": "1942",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/140.pdf",
+      "dla": 51.3521736,
+      "dlo": 6.6499855,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Alfred_Lorant,_Bertha_Lorant,_Inge_Lorant_und_Amalie_Schaffrath,_Ernst_Schaffrath,_Edith_Schaffrath,_Karl_Schaffrath,_Regine_Schaffrath"
+      ]
+    },
+    {
+      "id": "kr-320",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Karl Schaffrath",
+      "la": 51.3521895,
+      "lo": 6.6500109,
+      "a": "Oberstraße 37",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1902-12-16",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/142.pdf",
+      "dla": 51.3521821,
+      "dlo": 6.6500084,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Alfred_Lorant,_Bertha_Lorant,_Inge_Lorant_und_Amalie_Schaffrath,_Ernst_Schaffrath,_Edith_Schaffrath,_Karl_Schaffrath,_Regine_Schaffrath"
+      ]
+    },
+    {
+      "id": "kr-321",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Bertha Lorant geb. Schaffrath",
+      "la": 51.3521895,
+      "lo": 6.6500109,
+      "a": "Oberstraße 37",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1899-11-07",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/145.pdf",
+      "dla": 51.3521795,
+      "dlo": 6.649949,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Alfred_Lorant,_Bertha_Lorant,_Inge_Lorant_und_Amalie_Schaffrath,_Ernst_Schaffrath,_Edith_Schaffrath,_Karl_Schaffrath,_Regine_Schaffrath"
+      ]
+    },
+    {
+      "id": "kr-322",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Inge Lorant",
+      "la": 51.3521895,
+      "lo": 6.6500109,
+      "a": "Oberstraße 37",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1931-05-25",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/146.pdf",
+      "dla": 51.3521879,
+      "dlo": 6.6499719,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Alfred_Lorant,_Bertha_Lorant,_Inge_Lorant_und_Amalie_Schaffrath,_Ernst_Schaffrath,_Edith_Schaffrath,_Karl_Schaffrath,_Regine_Schaffrath"
+      ]
+    },
+    {
+      "id": "kr-35",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Anna Hermes",
+      "la": 51.3426764,
+      "lo": 6.5515879,
+      "a": "Geldernsche Straße 175",
+      "c": "Krefeld",
+      "cc": "DE",
+      "d": "1943-05-05",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/35.pdf",
+      "dla": 51.3426721,
+      "dlo": 6.551586,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Anna_Hermes"
+      ]
+    },
+    {
+      "id": "kr-359",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Carl Becker",
+      "la": 51.3309586,
+      "lo": 6.569525,
+      "a": "Dreikönigenstraße 29",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1885-02-13",
+      "d": "1953-09-01",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/148.pdf",
+      "dla": 51.3309586,
+      "dlo": 6.569525,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Agnes_Barsdorf,_Irma_Barsdorf,_Julius_Gr%C3%BCnberg_und_Olga_Gr%C3%BCnberg"
+      ]
+    },
+    {
+      "id": "kr-36",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Wilhelm Conrads",
+      "la": 51.340508,
+      "lo": 6.588787,
+      "a": "Germaniastraße 51",
+      "c": "Krefeld",
+      "cc": "DE",
+      "d": "1941",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/36.pdf",
+      "dla": 51.3405147,
+      "dlo": 6.588787,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Willi_Conrads"
+      ]
+    },
+    {
+      "id": "kr-399",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Josefa Flock",
+      "la": 51.3419254,
+      "lo": 6.5527372,
+      "a": "Geldernsche Straße 147",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1920-02-19",
+      "d": "1943-02-10",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/149.pdf",
+      "dla": 51.3419232,
+      "dlo": 6.5527372,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Josefa_Flock"
+      ]
+    },
+    {
+      "id": "kr-400",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "August Kaiser",
+      "la": 51.3632861,
+      "lo": 6.6425055,
+      "a": "Schützenstraße 17",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1889-02-07",
+      "d": "1944-01-24",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/150.pdf",
+      "dla": 51.3632883,
+      "dlo": 6.6425055,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#August_Kaiser"
+      ]
+    },
+    {
+      "id": "kr-401",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Johannes Böckling",
+      "la": 51.3288141,
+      "lo": 6.5634337,
+      "a": "Stephanstraße 62",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1908-06-18",
+      "d": "1943-01-07",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/151.pdf",
+      "dla": 51.3288163,
+      "dlo": 6.5634337,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Johannes_B%C3%B6ckling"
+      ]
+    },
+    {
+      "id": "kr-402",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Agnes Barsdorf geb. Goetz",
+      "la": 51.3284143,
+      "lo": 6.5670522,
+      "a": "Südwall 11",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1855-11-21",
+      "d": "1942-12-22",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/152.pdf",
+      "dla": 51.3283262,
+      "dlo": 6.5671151,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Agnes_Barsdorf,_Irma_Barsdorf,_Julius_Gr%C3%BCnberg_und_Olga_Gr%C3%BCnberg"
+      ]
+    },
+    {
+      "id": "kr-403",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Irma Barsdorf geb. Strauss",
+      "la": 51.3284143,
+      "lo": 6.5670522,
+      "a": "Südwall 11",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1886-10-11",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/153.pdf",
+      "dla": 51.3283309,
+      "dlo": 6.5671406,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Agnes_Barsdorf,_Irma_Barsdorf,_Julius_Gr%C3%BCnberg_und_Olga_Gr%C3%BCnberg"
+      ]
+    },
+    {
+      "id": "kr-404",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Julius Grünberg",
+      "la": 51.3284143,
+      "lo": 6.5670522,
+      "a": "Südwall 11",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1876-12-15",
+      "d": "1942-11-25",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/154.pdf",
+      "dla": 51.3283421,
+      "dlo": 6.5671075,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Agnes_Barsdorf,_Irma_Barsdorf,_Julius_Gr%C3%BCnberg_und_Olga_Gr%C3%BCnberg"
+      ]
+    },
+    {
+      "id": "kr-405",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Olga Grünberg geb. Barsdorf",
+      "la": 51.3284143,
+      "lo": 6.5670522,
+      "a": "Südwall 11",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1881-12-16",
+      "d": "1944-05-15",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/155.pdf",
+      "dla": 51.3283468,
+      "dlo": 6.567133,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Agnes_Barsdorf,_Irma_Barsdorf,_Julius_Gr%C3%BCnberg_und_Olga_Gr%C3%BCnberg"
+      ]
+    },
+    {
+      "id": "kr-406",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Jakob Lücker",
+      "la": 51.3331908,
+      "lo": 6.5719797,
+      "a": "Philadelphiastraße 128",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1912-03-14",
+      "d": "1937-02-18",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/156.pdf",
+      "dla": 51.3331972,
+      "dlo": 6.5719899,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Jakob_L%C3%BCcker"
+      ]
+    },
+    {
+      "id": "kr-41",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Paul Vogt",
+      "la": 51.3406287,
+      "lo": 6.5765665,
+      "a": "Hohenzollernstraße 2",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1929",
+      "d": "1943",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/41.pdf",
+      "dla": 51.3406512,
+      "dlo": 6.5766288,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Paul_Vogt"
+      ]
+    },
+    {
+      "id": "kr-419",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Gottfried Gompertz",
+      "la": 51.3507782,
+      "lo": 6.5923086,
+      "a": "Wilhelmshofallee 182",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1872-02-27",
+      "d": "1942-09-21",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/157.pdf",
+      "dla": 51.3507674,
+      "dlo": 6.5923078,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Gottfried_Gompertz,_Luise_Gompertz_und_Rosalie_Gompertz"
+      ]
+    },
+    {
+      "id": "kr-42",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Dr. Ernst Ascher",
+      "la": 51.3416218,
+      "lo": 6.5762231,
+      "a": "Hohenzollernstraße 24",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1876-01-12",
+      "d": "1944",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/42.pdf",
+      "dla": 51.3416266,
+      "dlo": 6.5762307,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Dr._Ernst_Ascher"
+      ]
+    },
+    {
+      "id": "kr-420",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Rosalie Gompertz geb. Selig",
+      "la": 51.3507795,
+      "lo": 6.5923085,
+      "a": "Wilhelmshofallee 182",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1884-08-06",
+      "d": "1942-09-21",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/158.pdf",
+      "dla": 51.3507782,
+      "dlo": 6.592328,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Gottfried_Gompertz,_Luise_Gompertz_und_Rosalie_Gompertz"
+      ]
+    },
+    {
+      "id": "kr-421",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Luise Gompertz",
+      "la": 51.3507795,
+      "lo": 6.5923106,
+      "a": "Wilhelmshofallee 182",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1907-12-22",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/159.pdf",
+      "dla": 51.35078,
+      "dlo": 6.5922905,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Gottfried_Gompertz,_Luise_Gompertz_und_Rosalie_Gompertz"
+      ]
+    },
+    {
+      "id": "kr-422",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Eugen Hirtz",
+      "la": 51.336994,
+      "lo": 6.5869889,
+      "a": "Grenzstraße 59",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1905",
+      "d": "1942-05-14",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/160.pdf",
+      "dla": 51.3370008,
+      "dlo": 6.5870132,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Simon_Hirtz,_Selma_Hirtz,_Eugen_Hirtz,_Charlotte_Steinberg,_Hilde_Pappenheimer,_Helmuth_Pappenheimer_und_Werner_Pappenheimer"
+      ]
+    },
+    {
+      "id": "kr-423",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Simon Hirtz",
+      "la": 51.336994,
+      "lo": 6.5869889,
+      "a": "Grenzstraße 59",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1869-11-13",
+      "d": "1942-09-01",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/161.pdf",
+      "dla": 51.3370159,
+      "dlo": 6.5870024,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Simon_Hirtz,_Selma_Hirtz,_Eugen_Hirtz,_Charlotte_Steinberg,_Hilde_Pappenheimer,_Helmuth_Pappenheimer_und_Werner_Pappenheimer"
+      ]
+    },
+    {
+      "id": "kr-424",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Selma Hirtz geb. Waldbaum",
+      "la": 51.336994,
+      "lo": 6.5869889,
+      "a": "Grenzstraße 59",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1864-09-23",
+      "d": "1942-09-01",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/162.pdf",
+      "dla": 51.3369788,
+      "dlo": 6.5869997,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Simon_Hirtz,_Selma_Hirtz,_Eugen_Hirtz,_Charlotte_Steinberg,_Hilde_Pappenheimer,_Helmuth_Pappenheimer_und_Werner_Pappenheimer"
+      ]
+    },
+    {
+      "id": "kr-425",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Charlotte Steinberg geb. Hirtz",
+      "la": 51.336994,
+      "lo": 6.5869889,
+      "a": "Grenzstraße 59",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1906",
+      "d": "1942",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/163.pdf",
+      "dla": 51.336994,
+      "dlo": 6.5869889,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Simon_Hirtz,_Selma_Hirtz,_Eugen_Hirtz,_Charlotte_Steinberg,_Hilde_Pappenheimer,_Helmuth_Pappenheimer_und_Werner_Pappenheimer"
+      ]
+    },
+    {
+      "id": "kr-426",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Hilde Pappenheimer geb. Hirtz",
+      "la": 51.336994,
+      "lo": 6.5869889,
+      "a": "Grenzstraße 59",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1900",
+      "d": "1942-04-22",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/164.pdf",
+      "dla": 51.3370092,
+      "dlo": 6.5869781,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Simon_Hirtz,_Selma_Hirtz,_Eugen_Hirtz,_Charlotte_Steinberg,_Hilde_Pappenheimer,_Helmuth_Pappenheimer_und_Werner_Pappenheimer"
+      ]
+    },
+    {
+      "id": "kr-427",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Helmuth Pappenheimer",
+      "la": 51.336994,
+      "lo": 6.5869889,
+      "a": "Grenzstraße 57",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1923",
+      "d": "1942-04-22",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/165.pdf",
+      "dla": 51.3369856,
+      "dlo": 6.587024,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Simon_Hirtz,_Selma_Hirtz,_Eugen_Hirtz,_Charlotte_Steinberg,_Hilde_Pappenheimer,_Helmuth_Pappenheimer_und_Werner_Pappenheimer"
+      ]
+    },
+    {
+      "id": "kr-428",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Werner Pappenheimer",
+      "la": 51.336994,
+      "lo": 6.5869889,
+      "a": "Grenzstraße 59",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1927",
+      "d": "1942-04-22",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/166.pdf",
+      "dla": 51.3369721,
+      "dlo": 6.5869754,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Simon_Hirtz,_Selma_Hirtz,_Eugen_Hirtz,_Charlotte_Steinberg,_Hilde_Pappenheimer,_Helmuth_Pappenheimer_und_Werner_Pappenheimer"
+      ]
+    },
+    {
+      "id": "kr-429",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Felix Kaufmann",
+      "la": 51.340169,
+      "lo": 6.5769949,
+      "a": "Bismarckplatz 43",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1858-07-03",
+      "d": "1942-08-11",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/167.pdf",
+      "dla": 51.3401713,
+      "dlo": 6.576981,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Felix_Kaufmann"
+      ]
+    },
+    {
+      "id": "kr-43",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Leopold Spanier",
+      "la": 51.3426681,
+      "lo": 6.5758632,
+      "a": "Hohenzollernstraße 46",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1871-07-14",
+      "d": "1943",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/43.pdf",
+      "dla": 51.3426647,
+      "dlo": 6.5758736,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Leopold_Spanier_und_Rosa_Spanier"
+      ]
+    },
+    {
+      "id": "kr-430",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Karolina Kanthal geb. Wertheim",
+      "la": 51.3383947,
+      "lo": 6.5636355,
+      "a": "Ostwall 265",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1871-12-29",
+      "d": "1942-09-01",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/173.pdf",
+      "dla": 51.3383977,
+      "dlo": 6.5636232,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Rosa_Glauberg_und_Karolina_Kanthal"
+      ]
+    },
+    {
+      "id": "kr-431",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Heinz Schriesheimer",
+      "la": 51.327489,
+      "lo": 6.5590451,
+      "a": "Tannenstraße 141",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1906-07-23",
+      "d": "1941",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/174.pdf",
+      "dla": 51.3274871,
+      "dlo": 6.5590433,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Heinz_Schriesheimer"
+      ]
+    },
+    {
+      "id": "kr-439",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Albert Bach",
+      "la": 51.3346444,
+      "lo": 6.5670476,
+      "a": "Luisenstraße 146",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1895-09-12",
+      "d": "1942",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/168.pdf",
+      "dla": 51.334756,
+      "dlo": 6.5669567,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Albert_Bach,_Henriette_Bach,_Henry_Bach_und_Walter_Bach"
+      ]
+    },
+    {
+      "id": "kr-44",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Rosa Spanier geb. Leven",
+      "la": 51.3426681,
+      "lo": 6.5758632,
+      "a": "Hohenzollernstraße 46",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1877-03-25",
+      "d": "1943",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/44.pdf",
+      "dla": 51.342681,
+      "dlo": 6.575868,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Leopold_Spanier_und_Rosa_Spanier"
+      ]
+    },
+    {
+      "id": "kr-440",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Henriette Bach geb. Schnitzler",
+      "la": 51.3346444,
+      "lo": 6.5670476,
+      "a": "Luisenstraße 146",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1894-11-23",
+      "d": "1944",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/169.pdf",
+      "dla": 51.3347717,
+      "dlo": 6.5669479,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Albert_Bach,_Henriette_Bach,_Henry_Bach_und_Walter_Bach"
+      ]
+    },
+    {
+      "id": "kr-441",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Henry Bach",
+      "la": 51.3346444,
+      "lo": 6.5670475,
+      "a": "Luisenstraße 146",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1923-10-09",
+      "d": "1945-01-10",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/170.pdf",
+      "dla": 51.3347505,
+      "dlo": 6.5669316,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Albert_Bach,_Henriette_Bach,_Henry_Bach_und_Walter_Bach"
+      ]
+    },
+    {
+      "id": "kr-442",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Walter Bach",
+      "la": 51.3346444,
+      "lo": 6.5670476,
+      "a": "Luisenstraße 146",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1929-11-29",
+      "d": "1943-09-03",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/171.pdf",
+      "dla": 51.3347662,
+      "dlo": 6.5669228,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Albert_Bach,_Henriette_Bach,_Henry_Bach_und_Walter_Bach"
+      ]
+    },
+    {
+      "id": "kr-443",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Rosa Glauberg geb. Wertheim",
+      "la": 51.3383916,
+      "lo": 6.5636375,
+      "a": "Ostwall 261",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1870-09-01",
+      "d": "1943-04-21",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/172.pdf",
+      "dla": 51.3383819,
+      "dlo": 6.5636312,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Rosa_Glauberg_und_Karolina_Kanthal"
+      ]
+    },
+    {
+      "id": "kr-45",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Rudolf Müller",
+      "la": 51.3443195,
+      "lo": 6.5765168,
+      "a": "Hohenzollernstraße 79",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1868-07-31",
+      "d": "1943",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/45.pdf",
+      "dla": 51.3443114,
+      "dlo": 6.5764997,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Rudolf_Müller_und_Sophie_Müller"
+      ]
+    },
+    {
+      "id": "kr-46",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Sophie Müller geb. Hirsch",
+      "la": 51.3443195,
+      "lo": 6.5765168,
+      "a": "Hohenzollernstraße 79",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1877-05-26",
+      "d": "1943",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/46.pdf",
+      "dla": 51.3443276,
+      "dlo": 6.5765052,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Rudolf_Müller_und_Sophie_Müller"
+      ]
+    },
+    {
+      "id": "kr-467",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Anton Tappesser",
+      "la": 51.3402158,
+      "lo": 6.5874469,
+      "a": "Germaniastraße 31",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1906-07-28",
+      "d": "1944",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/175.pdf",
+      "dla": 51.3402158,
+      "dlo": 6.5874469,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Anton_Tappesser"
+      ]
+    },
+    {
+      "id": "kr-479",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Grete Schaumburger",
+      "la": 51.3412773,
+      "lo": 6.5578795,
+      "a": "Inrather Straße 22",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1923-05-11",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/176.pdf",
+      "dla": 51.3411843,
+      "dlo": 6.5577454,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Siegmund_Schaumburger,_Sabine_Schaumburger,_Grete_Schaumburger_und_Hans_Schaumburger"
+      ]
+    },
+    {
+      "id": "kr-480",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Hans Schaumburger",
+      "la": 51.3412773,
+      "lo": 6.5578795,
+      "a": "Inrather Straße 22",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1930-12-27",
+      "d": "1943",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/177.pdf",
+      "dla": 51.3411935,
+      "dlo": 6.5577233,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Siegmund_Schaumburger,_Sabine_Schaumburger,_Grete_Schaumburger_und_Hans_Schaumburger"
+      ]
+    },
+    {
+      "id": "kr-481",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Sabine Schaumburger geb. Bruckman",
+      "la": 51.3412773,
+      "lo": 6.5578795,
+      "a": "Inrather Straße 22",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1895-06-05",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/178.pdf",
+      "dla": 51.3411705,
+      "dlo": 6.5577307,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Siegmund_Schaumburger,_Sabine_Schaumburger,_Grete_Schaumburger_und_Hans_Schaumburger"
+      ]
+    },
+    {
+      "id": "kr-482",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Siegmund Schaumburger",
+      "la": 51.3412773,
+      "lo": 6.5578795,
+      "a": "Inrather Straße 22",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1895-09-24",
+      "d": "1942-06-24",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/179.pdf",
+      "dla": 51.3411797,
+      "dlo": 6.5577085,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Siegmund_Schaumburger,_Sabine_Schaumburger,_Grete_Schaumburger_und_Hans_Schaumburger"
+      ]
+    },
+    {
+      "id": "kr-483",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Emil Meyer",
+      "la": 51.3331275,
+      "lo": 6.5612668,
+      "a": "Klosterstraße 6",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1891-01-31",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/180.pdf",
+      "dla": 51.3331207,
+      "dlo": 6.5613059,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Valentin_Meyer,_Wilhelmine_Meyer,_Emil_Meyer,_Hedwig_Simons,_Berthold_Simons_und_Hans_Simons"
+      ]
+    },
+    {
+      "id": "kr-484",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Valentin Meyer",
+      "la": 51.3331275,
+      "lo": 6.5612668,
+      "a": "Klosterstraße 6",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1861-03-30",
+      "d": "1942",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/181.pdf",
+      "dla": 51.3331366,
+      "dlo": 6.5612982,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Valentin_Meyer,_Wilhelmine_Meyer,_Emil_Meyer,_Hedwig_Simons,_Berthold_Simons_und_Hans_Simons"
+      ]
+    },
+    {
+      "id": "kr-485",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Wilhelmine Meyer geb. Wolff",
+      "la": 51.3331275,
+      "lo": 6.5612668,
+      "a": "Klosterstraße 6",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1864-08-23",
+      "d": "1942-02-18",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/182.pdf",
+      "dla": 51.3331525,
+      "dlo": 6.5612905,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Valentin_Meyer,_Wilhelmine_Meyer,_Emil_Meyer,_Hedwig_Simons,_Berthold_Simons_und_Hans_Simons"
+      ]
+    },
+    {
+      "id": "kr-486",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Berthold Simons",
+      "la": 51.3331275,
+      "lo": 6.5612668,
+      "a": "Klosterstraße 6",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1890",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/183.pdf",
+      "dla": 51.3331159,
+      "dlo": 6.5612804,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Valentin_Meyer,_Wilhelmine_Meyer,_Emil_Meyer,_Hedwig_Simons,_Berthold_Simons_und_Hans_Simons"
+      ]
+    },
+    {
+      "id": "kr-487",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Hans Simons",
+      "la": 51.3331275,
+      "lo": 6.5612668,
+      "a": "Klosterstraße 6",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1921-05-23",
+      "d": "1942-04-22",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/184.pdf",
+      "dla": 51.3331318,
+      "dlo": 6.5612727,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Valentin_Meyer,_Wilhelmine_Meyer,_Emil_Meyer,_Hedwig_Simons,_Berthold_Simons_und_Hans_Simons"
+      ]
+    },
+    {
+      "id": "kr-499",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Hedwig Simons geb. Meyer",
+      "la": 51.3331275,
+      "lo": 6.5612668,
+      "a": "Klosterstraße 6",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1892-06-30",
+      "d": "1942-04-22",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/185.pdf",
+      "dla": 51.3331478,
+      "dlo": 6.5612651,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Valentin_Meyer,_Wilhelmine_Meyer,_Emil_Meyer,_Hedwig_Simons,_Berthold_Simons_und_Hans_Simons"
+      ]
+    },
+    {
+      "id": "kr-500",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Arthur Servos",
+      "la": 51.3238628,
+      "lo": 6.5656694,
+      "a": "Saumstraße 15",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1888-04-11",
+      "d": "1942-06-15",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/186.pdf",
+      "dla": 51.3238566,
+      "dlo": 6.5656522,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Moritz_Servos,_Arthur_Servos,_Josef_Servos,_Martha_Servos,_Heinz_Servos_und_Kurt_Servos"
+      ]
+    },
+    {
+      "id": "kr-501",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Heinz Servos",
+      "la": 51.3238628,
+      "lo": 6.5656694,
+      "a": "Saumstraße 15",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1921-10-16",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/187.pdf",
+      "dla": 51.3238644,
+      "dlo": 6.5656756,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Moritz_Servos,_Arthur_Servos,_Josef_Servos,_Martha_Servos,_Heinz_Servos_und_Kurt_Servos"
+      ]
+    },
+    {
+      "id": "kr-502",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Josef Servos",
+      "la": 51.3238628,
+      "lo": 6.5656694,
+      "a": "Saumstraße 15",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1887-01-07",
+      "d": "1944-03-26",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/188.pdf",
+      "dla": 51.3238722,
+      "dlo": 6.5656991,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Moritz_Servos,_Arthur_Servos,_Josef_Servos,_Martha_Servos,_Heinz_Servos_und_Kurt_Servos"
+      ]
+    },
+    {
+      "id": "kr-503",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Kurt Servos",
+      "la": 51.3238628,
+      "lo": 6.5656694,
+      "a": "Saumstraße 15",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1924-06-17",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/189.pdf",
+      "dla": 51.3238713,
+      "dlo": 6.5656397,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Moritz_Servos,_Arthur_Servos,_Josef_Servos,_Martha_Servos,_Heinz_Servos_und_Kurt_Servos"
+      ]
+    },
+    {
+      "id": "kr-504",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Martha Servos geb. Koopmann",
+      "la": 51.3238628,
+      "lo": 6.5656694,
+      "a": "Saumstraße 15",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1896-03-30",
+      "d": "1944-08-16",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/190.pdf",
+      "dla": 51.3238791,
+      "dlo": 6.5656632,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Moritz_Servos,_Arthur_Servos,_Josef_Servos,_Martha_Servos,_Heinz_Servos_und_Kurt_Servos"
+      ]
+    },
+    {
+      "id": "kr-505",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Moritz Servos",
+      "la": 51.3238628,
+      "lo": 6.5656694,
+      "a": "Saumstraße 15",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1890-08-06",
+      "d": "1942-06-15",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/191.pdf",
+      "dla": 51.3238869,
+      "dlo": 6.5656866,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Moritz_Servos,_Arthur_Servos,_Josef_Servos,_Martha_Servos,_Heinz_Servos_und_Kurt_Servos"
+      ]
+    },
+    {
+      "id": "kr-506",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Aurel Billstein",
+      "la": 51.3195447,
+      "lo": 6.5614107,
+      "a": "Gladbacher Straße 165",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1901-09-29",
+      "d": "1996-02-12",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/192.pdf",
+      "dla": 51.3195447,
+      "dlo": 6.5614107,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Aurel_Billstein"
+      ]
+    },
+    {
+      "id": "kr-507",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Peter Zanders",
+      "la": 51.3173223,
+      "lo": 6.5599271,
+      "a": "Gladbacher Straße 231",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1890-10-05",
+      "d": "1968-10-14",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/193.pdf",
+      "dla": 51.3173223,
+      "dlo": 6.5599271,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Peter_Zanders"
+      ]
+    },
+    {
+      "id": "kr-519",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Albert Behr",
+      "la": 51.3324409,
+      "lo": 6.5665889,
+      "a": "Ostwall 155",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1915-01-06",
+      "d": "1943-03-01",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/194.pdf",
+      "dla": 51.3324409,
+      "dlo": 6.5665889,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Albert_Behr"
+      ]
+    },
+    {
+      "id": "kr-520",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Ludwig Leib",
+      "la": 51.3311745,
+      "lo": 6.5633124,
+      "a": "Hochstraße 73",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1876-11-27",
+      "d": "1942-09-19",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/195.pdf",
+      "dla": 51.3311649,
+      "dlo": 6.5633158,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Ludwig_Leib_und_Hedwig_Leib"
+      ]
+    },
+    {
+      "id": "kr-521",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Hedwig Leib geb. Cahn",
+      "la": 51.3311745,
+      "lo": 6.5633124,
+      "a": "Hochstraße 73",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1879-09-28",
+      "d": "1944",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/196.pdf",
+      "dla": 51.3311802,
+      "dlo": 6.5633054,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Ludwig_Leib_und_Hedwig_Leib"
+      ]
+    },
+    {
+      "id": "kr-546",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Leopold Herzberger",
+      "la": 51.3492377,
+      "lo": 6.6180537,
+      "a": "Verberger Straße 28",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1867-09-07",
+      "d": "1942-08-25",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/205.pdf",
+      "dla": 51.3492229,
+      "dlo": 6.6180504,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Leopold_Herzberger_und_Helene_Weinberg"
+      ]
+    },
+    {
+      "id": "kr-547",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Helene Weinberg",
+      "la": 51.3492377,
+      "lo": 6.6180537,
+      "a": "Verberger Straße 28",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1888-05-01",
+      "d": "1942",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/206.pdf",
+      "dla": 51.3492388,
+      "dlo": 6.6180427,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Leopold_Herzberger_und_Helene_Weinberg"
+      ]
+    },
+    {
+      "id": "kr-579",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Franziska Wihl geb. Hartoch",
+      "la": 51.3279022,
+      "lo": 6.5661506,
+      "a": "Südwall 22",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1888-02-17",
+      "d": "1943-04-06",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/207.pdf",
+      "dla": 51.3279044,
+      "dlo": 6.5661506,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Franziska_Wihl"
+      ]
+    },
+    {
+      "id": "kr-59",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Moritz Frank",
+      "la": 51.325735,
+      "lo": 6.5640974,
+      "a": "Lewerentzstraße 21",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1880-03-09",
+      "d": "1942-08-22",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/59.pdf",
+      "dla": 51.325735,
+      "dlo": 6.5640974,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Moritz_Frank"
+      ]
+    },
+    {
+      "id": "kr-6",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Anna Herz geb. Kaufmann",
+      "la": 51.3562929,
+      "lo": 6.6466345,
+      "a": "Bahnhofstraße 48",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1873-05-20",
+      "d": "1942-09-26",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/6.pdf",
+      "dla": 51.3563079,
+      "dlo": 6.6466618,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Anna_Herz,_Hedwig_Herz,_Hermann_Herz,_Elisabeth_Herz_und_Antonie_Coppel,_Alfred_Coppel"
+      ]
+    },
+    {
+      "id": "kr-600",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Friedrich Ferlings",
+      "la": 51.3243791,
+      "lo": 6.5515196,
+      "a": "Hermannstraße 14",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1903-02-05",
+      "d": "1945-12-31",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/208.pdf",
+      "dla": 51.3243825,
+      "dlo": 6.5515343,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Friedrich_Ferlings"
+      ]
+    },
+    {
+      "id": "kr-601",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Josef Gimnicher",
+      "la": 51.3343968,
+      "lo": 6.5563444,
+      "a": "Gartenstraße 61",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1848-11-15",
+      "d": "1942-10-14",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/209.pdf",
+      "dla": 51.3343877,
+      "dlo": 6.5563503,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Josef_Gimnicher_und_Sara_Gimnicher"
+      ]
+    },
+    {
+      "id": "kr-602",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Sara Gimnicher geb. Levy",
+      "la": 51.3343968,
+      "lo": 6.5563444,
+      "a": "Gartenstraße 61",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1855-01-06",
+      "d": "1943-01-09",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/210.pdf",
+      "dla": 51.3343924,
+      "dlo": 6.5563758,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Josef_Gimnicher_und_Sara_Gimnicher"
+      ]
+    },
+    {
+      "id": "kr-603",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Emma Goldstein",
+      "la": 51.3492351,
+      "lo": 6.6180547,
+      "a": "Verberger Straße 25",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1862-07-12",
+      "d": "1942-08-23",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/211.pdf",
+      "dla": 51.3492277,
+      "dlo": 6.6180759,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Emma_Goldstein_und_Rosa_Goldstein"
+      ]
+    },
+    {
+      "id": "kr-604",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Rosa Goldstein",
+      "la": 51.3492352,
+      "lo": 6.6180547,
+      "a": "Verberger Straße 25",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1858-06-18",
+      "d": "1943-02-17",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/212.pdf",
+      "dla": 51.3492436,
+      "dlo": 6.6180682,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Emma_Goldstein_und_Rosa_Goldstein"
+      ]
+    },
+    {
+      "id": "kr-619",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Sofie Goldstein",
+      "la": 51.3308912,
+      "lo": 6.5696457,
+      "a": "Dreikönigenstraße 28",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1867-07-28",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/213.pdf",
+      "dla": 51.3309047,
+      "dlo": 6.5696457,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Sofie_Goldstein"
+      ]
+    },
+    {
+      "id": "kr-639",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Gumpert Adolf Hirsch",
+      "la": 51.3256181,
+      "lo": 6.5633056,
+      "a": "Lewerentzstraße 34",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1885-12-10",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/214.pdf",
+      "dla": 51.3256271,
+      "dlo": 6.5632923,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Gumpert_Adolf_Hirsch,_Mathilde_Hirsch_und_Ernst_Hirsch"
+      ]
+    },
+    {
+      "id": "kr-640",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Mathilde Hirsch",
+      "la": 51.3256182,
+      "lo": 6.5633055,
+      "a": "Lewerentzstraße 34",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1895-07-27",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/215.pdf",
+      "dla": 51.3256272,
+      "dlo": 6.5633188,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Gumpert_Adolf_Hirsch,_Mathilde_Hirsch_und_Ernst_Hirsch"
+      ]
+    },
+    {
+      "id": "kr-643",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Werner Samuel",
+      "la": 51.376635,
+      "lo": 6.5088967,
+      "a": "Klever Straße 49",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1918-04-26",
+      "d": "2010-03-22",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/218.pdf",
+      "dla": 51.3766316,
+      "dlo": 6.5089134,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Werner_Samuel_und_Heinz_Samuel"
+      ]
+    },
+    {
+      "id": "kr-644",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Heinz Samuel",
+      "la": 51.376635,
+      "lo": 6.5088967,
+      "a": "Klever Straße 49",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1920-03-13",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/219.pdf",
+      "dla": 51.3766474,
+      "dlo": 6.5089049,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Werner_Samuel_und_Heinz_Samuel"
+      ]
+    },
+    {
+      "id": "kr-645",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Franz Strauß",
+      "la": 51.3276975,
+      "lo": 6.5633292,
+      "a": "Südwall 55",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1905-09-24",
+      "d": "1956-11-04",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/220.pdf",
+      "dla": 51.3276696,
+      "dlo": 6.5633281,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Franz_Strauss_und_Karola_Strauss"
+      ]
+    },
+    {
+      "id": "kr-646",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Karola Strauß",
+      "la": 51.3276973,
+      "lo": 6.5633289,
+      "a": "Südwall 55",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1904-09-23",
+      "d": "2000-06-27",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/221.pdf",
+      "dla": 51.3276748,
+      "dlo": 6.5633534,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Franz_Strauss_und_Karola_Strauss"
+      ]
+    },
+    {
+      "id": "kr-647",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Gertrud Bell",
+      "la": 51.3299807,
+      "lo": 6.5645378,
+      "a": "Dreikönigenstraße 77",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1903-08-27",
+      "d": "1943-02-02",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/222.pdf",
+      "dla": 51.3299624,
+      "dlo": 6.5645747,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Gertrud_Bell"
+      ]
+    },
+    {
+      "id": "kr-659",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Johann Labey",
+      "la": 51.328904,
+      "lo": 6.53603,
+      "a": "St. Töniser Straße 157",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1905-10-25",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/223.pdf",
+      "dla": 51.3288945,
+      "dlo": 6.5360452,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Johann_Labey"
+      ]
+    },
+    {
+      "id": "kr-660",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Louise Ferlings",
+      "la": 51.3243784,
+      "lo": 6.551519,
+      "a": "Hermannstraße 14",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1883-10-17",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/224.pdf",
+      "dla": 51.3243983,
+      "dlo": 6.5515259,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Louise_Ferlings"
+      ]
+    },
+    {
+      "id": "kr-661",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Henriette Clara Esser",
+      "la": 51.3350799,
+      "lo": 6.5667875,
+      "a": "Luisenstraße 158",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1902-01-25",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/225.pdf",
+      "dla": 51.3350916,
+      "dlo": 6.5667983,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Henriette_Clara_Esser"
+      ]
+    },
+    {
+      "id": "kr-662",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Ernst Goldstein",
+      "la": 51.3359971,
+      "lo": 6.5492976,
+      "a": "Westparkstraße 13",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1891-05-27",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/226.pdf",
+      "dla": 51.3359969,
+      "dlo": 6.5493164,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Ernst_Goldstein,_Lydia_Goldstein_und_Vera_Goldstein"
+      ]
+    },
+    {
+      "id": "kr-663",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Lydia Goldstein",
+      "la": 51.3359964,
+      "lo": 6.5492976,
+      "a": "Westparkstraße 13",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1907-01-19",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/227.pdf",
+      "dla": 51.3360086,
+      "dlo": 6.5492976,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Ernst_Goldstein,_Lydia_Goldstein_und_Vera_Goldstein"
+      ]
+    },
+    {
+      "id": "kr-664",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Vera Goldstein",
+      "la": 51.3359971,
+      "lo": 6.5492976,
+      "a": "Westparkstraße 13",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1935-06-15",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/228.pdf",
+      "dla": 51.3359851,
+      "dlo": 6.5492976,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Ernst_Goldstein,_Lydia_Goldstein_und_Vera_Goldstein"
+      ]
+    },
+    {
+      "id": "kr-665",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Johanna Chrobog",
+      "la": 51.3340628,
+      "lo": 6.6006562,
+      "a": "Schönwasserstraße 1",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1891-01-13",
+      "d": "1967-11-12",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/229.pdf",
+      "dla": 51.3340628,
+      "dlo": 6.6006562,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Johanna_Chrobog"
+      ]
+    },
+    {
+      "id": "kr-666",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Wilhelm Raades",
+      "la": 51.3311956,
+      "lo": 6.5689149,
+      "a": "Luisenstraße 75",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1903-03-24",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/230.pdf",
+      "dla": 51.3311861,
+      "dlo": 6.5688997,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Wilhelm_Raades"
+      ]
+    },
+    {
+      "id": "kr-667",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Sofie Gruyters",
+      "la": 51.3394855,
+      "lo": 6.5902513,
+      "a": "Uerdinger Straße 266",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1886-08-25",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/231.pdf",
+      "dla": 51.3394855,
+      "dlo": 6.5902513,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Sofie_Gruyters"
+      ]
+    },
+    {
+      "id": "kr-668",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Franz Van Lin",
+      "la": 51.3342616,
+      "lo": 6.5629331,
+      "a": "Königstraße 170",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1912-02-21",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/232.pdf",
+      "dla": 51.3342616,
+      "dlo": 6.5629331,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Franz_van_Lin"
+      ]
+    },
+    {
+      "id": "kr-67",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Heinrich (Heiner) Plum",
+      "la": 51.3312475,
+      "lo": 6.5650495,
+      "a": "Lohstraße 58",
+      "c": "Krefeld",
+      "cc": "DE",
+      "d": "1950-08-24",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/67.pdf",
+      "dla": 51.3312533,
+      "dlo": 6.5650549,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Heinrich_Plum"
+      ]
+    },
+    {
+      "id": "kr-68",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Erich Levy",
+      "la": 51.3266243,
+      "lo": 6.5661728,
+      "a": "Neusser Straße 38",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/68.pdf",
+      "dla": 51.3266186,
+      "dlo": 6.5662015,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Michael_Levy,_Rosa_Levy,_Max_Levy,_Paul_Levy,_Trude_Levy,_Hilde_Levy_und_Erich_Levy"
+      ]
+    },
+    {
+      "id": "kr-69",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Hilde Levy geb. Behr",
+      "la": 51.3266243,
+      "lo": 6.5661728,
+      "a": "Neusser Straße 38",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/69.pdf",
+      "dla": 51.3266337,
+      "dlo": 6.5661902,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Michael_Levy,_Rosa_Levy,_Max_Levy,_Paul_Levy,_Trude_Levy,_Hilde_Levy_und_Erich_Levy"
+      ]
+    },
+    {
+      "id": "kr-7",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Hermann Herz",
+      "la": 51.3562929,
+      "lo": 6.6466345,
+      "a": "Bahnhofstraße 48",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1899-12-07",
+      "d": "1942-04-22",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/7.pdf",
+      "dla": 51.3563228,
+      "dlo": 6.6466072,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Anna_Herz,_Hedwig_Herz,_Hermann_Herz,_Elisabeth_Herz_und_Antonie_Coppel,_Alfred_Coppel"
+      ]
+    },
+    {
+      "id": "kr-70",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Max Levy",
+      "la": 51.3266243,
+      "lo": 6.5661728,
+      "a": "Neusser Straße 38",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1899-01-02",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/70.pdf",
+      "dla": 51.3266487,
+      "dlo": 6.5661789,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Michael_Levy,_Rosa_Levy,_Max_Levy,_Paul_Levy,_Trude_Levy,_Hilde_Levy_und_Erich_Levy"
+      ]
+    },
+    {
+      "id": "kr-709",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Paul Plänksken",
+      "la": 51.372902,
+      "lo": 6.5578252,
+      "a": "Lönspfad 18",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1904-02-28",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/242.pdf",
+      "dla": 51.3728903,
+      "dlo": 6.5578144,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Paul_Pl%C3%A4nksken"
+      ]
+    },
+    {
+      "id": "kr-71",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Michael Levy",
+      "la": 51.3266243,
+      "lo": 6.5661728,
+      "a": "Neusser Straße 38",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1870-02-23",
+      "d": "1943-02-12",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/71.pdf",
+      "dla": 51.3266116,
+      "dlo": 6.5661775,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Michael_Levy,_Rosa_Levy,_Max_Levy,_Paul_Levy,_Trude_Levy,_Hilde_Levy_und_Erich_Levy"
+      ]
+    },
+    {
+      "id": "kr-72",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Paul Levy",
+      "la": 51.3266243,
+      "lo": 6.5661728,
+      "a": "Neusser Straße 38",
+      "c": "Krefeld",
+      "cc": "DE",
+      "d": "1943-02-12",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/72.pdf",
+      "dla": 51.3266266,
+      "dlo": 6.5661662,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Michael_Levy,_Rosa_Levy,_Max_Levy,_Paul_Levy,_Trude_Levy,_Hilde_Levy_und_Erich_Levy"
+      ]
+    },
+    {
+      "id": "kr-723",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Dr. Hans Finkelstein",
+      "la": 51.3544718,
+      "lo": 6.6459611,
+      "a": "Wehrstraße 12",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1885-05-17",
+      "d": "1938-12-30",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/246.pdf",
+      "dla": 51.3544637,
+      "dlo": 6.645965,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Dr._Hans_Finkelstein_und_Berthold_Finkelstein"
+      ]
+    },
+    {
+      "id": "kr-724",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Berthold Finkelstein",
+      "la": 51.3544718,
+      "lo": 6.6459611,
+      "a": "Wehrstraße 12",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1925-12-23",
+      "d": "1996-10-27",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/247.pdf",
+      "dla": 51.3544799,
+      "dlo": 6.6459716,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Dr._Hans_Finkelstein_und_Berthold_Finkelstein"
+      ]
+    },
+    {
+      "id": "kr-74",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Trude Levy geb. Meyer",
+      "la": 51.3266243,
+      "lo": 6.5661728,
+      "a": "Neusser Straße 38",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/74.pdf",
+      "dla": 51.3266416,
+      "dlo": 6.5661548,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Michael_Levy,_Rosa_Levy,_Max_Levy,_Paul_Levy,_Trude_Levy,_Hilde_Levy_und_Erich_Levy"
+      ]
+    },
+    {
+      "id": "kr-75",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Hermann Goldschmidt",
+      "la": 51.3556964,
+      "lo": 6.6490705,
+      "a": "Niederstraße 38",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1872-02-07",
+      "d": "1943-12-16",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/75.pdf",
+      "dla": 51.3556921,
+      "dlo": 6.6490479,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Hermann_Goldschmidt_und_Jeanette_Goldschmidt"
+      ]
+    },
+    {
+      "id": "kr-759",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Josef Mahler",
+      "la": 51.330327,
+      "lo": 6.5541762,
+      "a": "Roßstraße 243",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1894-12-11",
+      "d": "1943-09-01",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/248.pdf",
+      "dla": 51.3303185,
+      "dlo": 6.5541769,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Josef_Mahler_und_Hedwig_Mahler"
+      ]
+    },
+    {
+      "id": "kr-76",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Jeanette Goldschmidt geb. Leven",
+      "la": 51.3556964,
+      "lo": 6.6490705,
+      "a": "Niederstraße 38",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1866-01-10",
+      "d": "1939-10-22",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/76.pdf",
+      "dla": 51.355694,
+      "dlo": 6.6490744,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Hermann_Goldschmidt_und_Jeanette_Goldschmidt"
+      ]
+    },
+    {
+      "id": "kr-760",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Hedwig Mahler",
+      "la": 51.330327,
+      "lo": 6.5541762,
+      "a": "Roßstraße 243",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1897-04-03",
+      "d": "1943-09-17",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/249.pdf",
+      "dla": 51.3303343,
+      "dlo": 6.5541685,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Josef_Mahler_und_Hedwig_Mahler"
+      ]
+    },
+    {
+      "id": "kr-761",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Johann \"Hans\" Bruster",
+      "la": 51.3457731,
+      "lo": 6.5975202,
+      "a": "Friedrich-Ebert-Straße 240",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1914-06-23",
+      "d": "1978-05-30",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/252.pdf",
+      "dla": 51.3457731,
+      "dlo": 6.5975202,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Johann_'Hans'_Bruster"
+      ]
+    },
+    {
+      "id": "kr-764",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Waclaw Ryszka",
+      "la": 51.3299807,
+      "lo": 6.5645378,
+      "a": "Dreikönigenstraße 77",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1916-07-11",
+      "d": "1942-01-14",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/250.pdf",
+      "dla": 51.3299784,
+      "dlo": 6.564567,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Waclaw_Ryszka_und_K%C3%A4the_Th%C3%B6nnissen"
+      ]
+    },
+    {
+      "id": "kr-77",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Erna Frankenberg",
+      "la": 51.3384281,
+      "lo": 6.5622285,
+      "a": "Nordstraße 15",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "deported",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/77.pdf",
+      "dla": 51.3384257,
+      "dlo": 6.5622158,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Erna_Frankenberg_und_Else_Frankenberg"
+      ]
+    },
+    {
+      "id": "kr-78",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Else Frankenberg",
+      "la": 51.3384281,
+      "lo": 6.5622285,
+      "a": "Nordstraße 15",
+      "c": "Krefeld",
+      "cc": "DE",
+      "d": "1942-04-20",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/78.pdf",
+      "dla": 51.3384305,
+      "dlo": 6.5622412,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Erna_Frankenberg_und_Else_Frankenberg"
+      ]
+    },
+    {
+      "id": "kr-780",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Käthe Thönnissen",
+      "la": 51.3299807,
+      "lo": 6.5645378,
+      "a": "Dreikönigenstraße 83",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1906-09-10",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/251.pdf",
+      "dla": 51.3299576,
+      "dlo": 6.5645492,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Waclaw_Ryszka_und_K%C3%A4the_Th%C3%B6nnissen"
+      ]
+    },
+    {
+      "id": "kr-8",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Elisabeth Herz geb. Katz",
+      "la": 51.3562929,
+      "lo": 6.6466345,
+      "a": "Bahnhofstraße 48",
+      "c": "Krefeld",
+      "cc": "DE",
+      "d": "1942-04-22",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/8.pdf",
+      "dla": 51.3563237,
+      "dlo": 6.6466338,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Anna_Herz,_Hedwig_Herz,_Hermann_Herz,_Elisabeth_Herz_und_Antonie_Coppel,_Alfred_Coppel"
+      ]
+    },
+    {
+      "id": "kr-84",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Meta Joseph geb. Willner",
+      "la": 51.3265189,
+      "lo": 6.5623961,
+      "a": "Oelschlägerstraße 63",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "deported",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/84.pdf",
+      "dla": 51.3265021,
+      "dlo": 6.5623874,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Meta_Joseph,_Hedwig_Willner,_Irma_de_Vries,_Liselotte_Voss_und_Edith_Willner"
+      ]
+    },
+    {
+      "id": "kr-841",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Betty Kaufmann geb. Halperin",
+      "la": 51.3715775,
+      "lo": 6.5109534,
+      "a": "Krefelder Straße 33",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1914-07-03",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/254.pdf",
+      "dla": 51.3715753,
+      "dlo": 6.5109525,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Karl_Kaufmann_und_Betty_Kaufmann"
+      ]
+    },
+    {
+      "id": "kr-842",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Josef Hellenbrock geb. Halperin",
+      "la": 51.3431909,
+      "lo": 6.5526027,
+      "a": "Hülser Straße 113",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1900-01-26",
+      "d": "1977-04-07",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/255.pdf",
+      "dla": 51.343187,
+      "dlo": 6.5525991,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Josef_Hellenbrock"
+      ]
+    },
+    {
+      "id": "kr-843",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Heinrich Malina",
+      "la": 51.3197421,
+      "lo": 6.5389542,
+      "a": "Reichsstraße 22",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1887-02-04",
+      "d": "1964-06-08",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/256.pdf",
+      "dla": 51.3197421,
+      "dlo": 6.5389542,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Heinrich_Malina"
+      ]
+    },
+    {
+      "id": "kr-844",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Johannes Thabor",
+      "la": 51.3313379,
+      "lo": 6.5726303,
+      "a": "Alte Linner Straße 62",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1878-10-03",
+      "d": "1949-08-27",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/257.pdf",
+      "dla": 51.3313466,
+      "dlo": 6.5726266,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Johannes_Thabor"
+      ]
+    },
+    {
+      "id": "kr-845",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Georg Meurers",
+      "la": 51.3325947,
+      "lo": 6.5559112,
+      "a": "St.-Anton-Straße 116",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1908-10-05",
+      "d": "1940-02-20",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/260.pdf",
+      "dla": 51.3325947,
+      "dlo": 6.5559112,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Georg_Meurers"
+      ]
+    },
+    {
+      "id": "kr-846",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Luise B.",
+      "la": 51.32949,
+      "lo": 6.5622551,
+      "a": "Dreikönigenstraße 98",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1920-01-26",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/261.pdf",
+      "dla": 51.3293859,
+      "dlo": 6.5622998,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Luise_Bykowski"
+      ]
+    },
+    {
+      "id": "kr-849",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Arthur Friedberg",
+      "la": 51.3342009,
+      "lo": 6.569946,
+      "a": "Elisabethstraße 142",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1882-01-11",
+      "d": "1938-10-30",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/263.pdf",
+      "dla": 51.3341907,
+      "dlo": 6.5700844
+    },
+    {
+      "id": "kr-85",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Liselotte Voss geb. Willner",
+      "la": 51.3265189,
+      "lo": 6.5623961,
+      "a": "Oelschlägerstraße 63",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "survived",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/85.pdf",
+      "dla": 51.3265188,
+      "dlo": 6.5623878,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Meta_Joseph,_Hedwig_Willner,_Irma_de_Vries,_Liselotte_Voss_und_Edith_Willner"
+      ]
+    },
+    {
+      "id": "kr-850",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Ellen Friedberg",
+      "la": 51.3341914,
+      "lo": 6.5699506,
+      "a": "Elisabethstraße 142",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1912-08-17",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/264.pdf",
+      "dla": 51.3342066,
+      "dlo": 6.5700765
+    },
+    {
+      "id": "kr-851",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Margarethe Friedberg",
+      "la": 51.3342139,
+      "lo": 6.5699517,
+      "a": "Elisabethstraße 142",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1914-12-15",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/265.pdf",
+      "dla": 51.3342224,
+      "dlo": 6.5700685
+    },
+    {
+      "id": "kr-852",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Ingeborg Lore Friedberg",
+      "la": 51.3342033,
+      "lo": 6.5699553,
+      "a": "Elisabethstraße 142",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1920-05-25",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/266.pdf",
+      "dla": 51.3341857,
+      "dlo": 6.5700591
+    },
+    {
+      "id": "kr-86",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Irma de Vries geb. Willner",
+      "la": 51.3265189,
+      "lo": 6.5623961,
+      "a": "Oelschlägerstraße 63",
+      "c": "Krefeld",
+      "cc": "DE",
+      "d": "1943",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/86.pdf",
+      "dla": 51.3265354,
+      "dlo": 6.5623883,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Meta_Joseph,_Hedwig_Willner,_Irma_de_Vries,_Liselotte_Voss_und_Edith_Willner"
+      ]
+    },
+    {
+      "id": "kr-87",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Edith Willner",
+      "la": 51.3265189,
+      "lo": 6.5623961,
+      "a": "Oelschlägerstraße 63",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/87.pdf",
+      "dla": 51.3265024,
+      "dlo": 6.5623608,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Meta_Joseph,_Hedwig_Willner,_Irma_de_Vries,_Liselotte_Voss_und_Edith_Willner"
+      ]
+    },
+    {
+      "id": "kr-879",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Alma Friedberg geb. Lifschiz",
+      "la": 51.3342109,
+      "lo": 6.5699401,
+      "a": "Elisabethstraße 142",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1893-04-30",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/262.pdf",
+      "dla": 51.3342016,
+      "dlo": 6.5700511
+    },
+    {
+      "id": "kr-88",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Hedwig Willner geb. Pins",
+      "la": 51.3265189,
+      "lo": 6.5623961,
+      "a": "Oelschlägerstraße 63",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1883-07-31",
+      "d": "1943",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/88.pdf",
+      "dla": 51.326519,
+      "dlo": 6.5623612,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Meta_Joseph,_Hedwig_Willner,_Irma_de_Vries,_Liselotte_Voss_und_Edith_Willner"
+      ]
+    },
+    {
+      "id": "kr-880",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Leo Halperin",
+      "la": 51.3308422,
+      "lo": 6.5657066,
+      "a": "Petersstraße 99",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1889-02-27",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/258.pdf",
+      "dla": 51.3308501,
+      "dlo": 6.5657027,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Leo_Halperin_und_Chone_Riwa_Halperin"
+      ]
+    },
+    {
+      "id": "kr-881",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Chone Riwa Halperin",
+      "la": 51.3308422,
+      "lo": 6.5657066,
+      "a": "Petersstraße 101",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1891-12-23",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/259.pdf",
+      "dla": 51.3308343,
+      "dlo": 6.5657105,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Leo_Halperin_und_Chone_Riwa_Halperin"
+      ]
+    },
+    {
+      "id": "kr-899",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Salomon Gimnicher",
+      "la": 51.3268263,
+      "lo": 6.5676727,
+      "a": "Petersstraße 9",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1881-12-08",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/267.pdf",
+      "dla": 51.3267695,
+      "dlo": 6.567608,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Salomon_Gimnicher,_Meta_Fanny_Gimnicher,_Ilse_Gimnicher_und_Max_Rudi_Gimnicher"
+      ]
+    },
+    {
+      "id": "kr-9",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Antonie Coppel geb. Herz",
+      "la": 51.3562929,
+      "lo": 6.6466345,
+      "a": "Bahnhofstraße 48",
+      "c": "Krefeld",
+      "cc": "DE",
+      "d": "1944-12-01",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/9.pdf",
+      "dla": 51.3563245,
+      "dlo": 6.6466604,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Anna_Herz,_Hedwig_Herz,_Hermann_Herz,_Elisabeth_Herz_und_Antonie_Coppel,_Alfred_Coppel"
+      ]
+    },
+    {
+      "id": "kr-900",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Meta Fanny Gimnicher",
+      "la": 51.3268256,
+      "lo": 6.5676735,
+      "a": "Petersstraße 9",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1891-07-12",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/268.pdf",
+      "dla": 51.3267854,
+      "dlo": 6.5676001,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Salomon_Gimnicher,_Meta_Fanny_Gimnicher,_Ilse_Gimnicher_und_Max_Rudi_Gimnicher"
+      ]
+    },
+    {
+      "id": "kr-901",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Ilse Gimnicher",
+      "la": 51.326826,
+      "lo": 6.5676719,
+      "a": "Petersstraße 9",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1920-07-12",
+      "d": "1920-10-02",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/269.pdf",
+      "dla": 51.3267646,
+      "dlo": 6.5675826,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Salomon_Gimnicher,_Meta_Fanny_Gimnicher,_Ilse_Gimnicher_und_Max_Rudi_Gimnicher"
+      ]
+    },
+    {
+      "id": "kr-902",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Max Rudi Gimnicher",
+      "la": 51.3268253,
+      "lo": 6.5676726,
+      "a": "Petersstraße 9",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1927-03-19",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/270.pdf",
+      "dla": 51.3267804,
+      "dlo": 6.5675747,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Salomon_Gimnicher,_Meta_Fanny_Gimnicher,_Ilse_Gimnicher_und_Max_Rudi_Gimnicher"
+      ]
+    },
+    {
+      "id": "kr-903",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Dr. Otto Konrad Strauß",
+      "la": 51.3276975,
+      "lo": 6.5633292,
+      "a": "Südwall 55",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1909-04-02",
+      "d": "1994-04-21",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/271.pdf",
+      "dla": 51.3276854,
+      "dlo": 6.5633198,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Rosa_Strauss,_Franz_Strauss,_Dr._Otto_Konrad_Strauss_und_Karola_Strauss"
+      ]
+    },
+    {
+      "id": "kr-904",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Rosa Strauß",
+      "la": 51.3276975,
+      "lo": 6.5633292,
+      "a": "Südwall 55",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1875-03-16",
+      "d": "1966-12-16",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/Krefeld/272.pdf",
+      "dla": 51.3276906,
+      "dlo": 6.563345,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Rosa_Strauss,_Franz_Strauss,_Dr._Otto_Konrad_Strauss_und_Karola_Strauss"
+      ]
+    },
+    {
+      "id": "kr-96",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Kurt (Keith) Zanders (Saunders)",
+      "la": 51.3320385,
+      "lo": 6.549208,
+      "a": "Preußenring 13",
+      "c": "Krefeld",
+      "cc": "DE",
+      "fate": "fled",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/96.pdf",
+      "dla": 51.3320565,
+      "dlo": 6.549208,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Siegmund_Zanders,_Maria_Anna_Zanders,_Edith_Zanders,_Kurt_Zanders_und_Helmut_Zanders"
+      ]
+    },
+    {
+      "id": "kr-99",
+      "src": "krefeld",
+      "lic": "dl-de-zero",
+      "n": "Albert Italiander",
+      "la": 51.3339344,
+      "lo": 6.566542,
+      "a": "Rheinstraße 67",
+      "c": "Krefeld",
+      "cc": "DE",
+      "b": "1860-02-20",
+      "d": "1943-10-07",
+      "fate": "murdered",
+      "lb": "https://gisdata.krzn.de/files/stolpersteine/krefeld/99.pdf",
+      "dla": 51.3339305,
+      "dlo": 6.5665481,
+      "w": [
+        "https://de.wikipedia.org/wiki/Liste_der_Stolpersteine_in_Krefeld#Albert_Italiander,_Emma_Italiander,_Siegfried_Italiander,_Johanna_Wyngaard_und_Martha_Hildach"
+      ]
+    }
+  ]
+}

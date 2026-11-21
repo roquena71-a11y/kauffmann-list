@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "generated": "2026-11-21T21:22:45+01:00",
+    "count": 9,
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": [
+      "Stadt Memmingen, Stolpersteine Memmingen (CC BY 4.0, https://open.bydata.de/api/hub/repo/datasets/stolpersteine_01)"
+    ],
+    "source_url": "https://open.bydata.de/api/hub/repo/datasets/stolpersteine_01",
+    "note": "Placas añadidas en v22 a partir de la fuente abierta citada. No se copian biografías salvo campos de lista o inscripción literal permitida por la licencia. la/lo son las coordenadas de la fuente; dla/dlo son solo la posición de dibujo (reglas de v20/v21).",
+    "placement": {
+      "osm_timestamp": "2026-11-18T21:21:02Z",
+      "rules": ">=0.5 m de edificios, <=25 m, >=1.55 m entre grupos (incl. 73.950 existentes), malla 1.85 m, nunca en calzada ni dentro de un edificio"
+    }
+  },
+  "stones": [
+    {
+      "id": "mm-108",
+      "src": "memmingen",
+      "lic": "cc-by-4",
+      "n": "Karl Metzeler",
+      "la": 47.9583202,
+      "lo": 10.1829103,
+      "a": "Im Dickenreis 11",
+      "c": "Memmingen",
+      "cc": "DE",
+      "d": "1940-09-05",
+      "fate": "murdered",
+      "dla": 47.9583202,
+      "dlo": 10.1829103
+    },
+    {
+      "id": "mm-109",
+      "src": "memmingen",
+      "lic": "cc-by-4",
+      "n": "Marie Stetter",
+      "la": 47.9848985,
+      "lo": 10.1799206,
+      "a": "Herrenstraße 3",
+      "c": "Memmingen",
+      "cc": "DE",
+      "d": "1944-04-27",
+      "fate": "murdered",
+      "dla": 47.9849043,
+      "dlo": 10.179953
+    },
+    {
+      "id": "mm-117",
+      "src": "memmingen",
+      "lic": "cc-by-4",
+      "n": "Irma Feibelmann geb. Gutmann",
+      "la": 47.9854314,
+      "lo": 10.1799629,
+      "a": "Herrenstraße 14",
+      "c": "Memmingen",
+      "cc": "DE",
+      "fate": "fled",
+      "dla": 47.9853306,
+      "dlo": 10.1802216
+    },
+    {
+      "id": "mm-118",
+      "src": "memmingen",
+      "lic": "cc-by-4",
+      "n": "Jakob Feibelmann",
+      "la": 47.9854314,
+      "lo": 10.1799629,
+      "a": "Herrenstraße 14",
+      "c": "Memmingen",
+      "cc": "DE",
+      "fate": "fled",
+      "dla": 47.9853469,
+      "dlo": 10.1802167
+    },
+    {
+      "id": "mm-119",
+      "src": "memmingen",
+      "lic": "cc-by-4",
+      "n": "Heinz Feibelmann",
+      "la": 47.9854314,
+      "lo": 10.1799629,
+      "a": "Herrenstraße 14",
+      "c": "Memmingen",
+      "cc": "DE",
+      "fate": "fled",
+      "dla": 47.9853273,
+      "dlo": 10.1801973
+    },
+    {
+      "id": "mm-120",
+      "src": "memmingen",
+      "lic": "cc-by-4",
+      "n": "Maria Feibelmann",
+      "la": 47.9854314,
+      "lo": 10.1799629,
+      "a": "Herrenstraße 14",
+      "c": "Memmingen",
+      "cc": "DE",
+      "fate": "fled",
+      "dla": 47.9853436,
+      "dlo": 10.1801924
+    },
+    {
+      "id": "mm-29",
+      "src": "memmingen",
+      "lic": "cc-by-4",
+      "n": "Edith Günzburger geb. Eis",
+      "la": 47.9825524,
+      "lo": 10.1763315,
+      "a": "Moltkestraße 8",
+      "c": "Memmingen",
+      "cc": "DE",
+      "dla": 47.9825704,
+      "dlo": 10.1763315
+    },
+    {
+      "id": "mm-80",
+      "src": "memmingen",
+      "lic": "cc-by-4",
+      "n": "Anna Maria Guggenheimer geb. Meitinger",
+      "la": 47.9850341,
+      "lo": 10.1799332,
+      "a": "Herrenstraße 7",
+      "c": "Memmingen",
+      "cc": "DE",
+      "dla": 47.9850652,
+      "dlo": 10.17996
+    },
+    {
+      "id": "mm-88",
+      "src": "memmingen",
+      "lic": "cc-by-4",
+      "n": "Lore Lotte Guggenheimer geb. Michaelis",
+      "la": 47.9861574,
+      "lo": 10.1820814,
+      "a": "Kalchstraße 8",
+      "c": "Memmingen",
+      "cc": "DE",
+      "dla": 47.9861664,
+      "dlo": 10.1820814
+    }
+  ]
+}

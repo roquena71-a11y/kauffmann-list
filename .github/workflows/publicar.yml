@@ -48,7 +48,7 @@ jobs:
 
       - name: Generar datos
         # --strict: si una fuente falla no se publica nada y sigue en línea la versión anterior.
-        run: python3 -m pipeline build --strict --sources stolpersteine_de,wikidata_holocaust_victims,berlin_opendata,koeln_opendata
+        run: python3 -m pipeline build --strict --sources stolpersteine_de,wikidata_holocaust_victims,berlin_opendata,koeln_opendata,moenchengladbach_opendata,denhaag_opendata,krefeld_opendata,monza_opendata,viersen_opendata,memmingen_opendata,moers_opendata,grevenbroich_opendata,firenze_opendata,xanten_opendata,dresden_opendata,erkrath_opendata,dormagen_opendata
 
       - name: Validar
         run: python3 -m pipeline validate

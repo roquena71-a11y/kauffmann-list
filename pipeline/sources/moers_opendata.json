@@ -1,0 +1,59 @@
+{
+  "id": "moers_opendata",
+  "name": "Stolpersteine Moers (GDI-DE, dl-de/zero-2-0)",
+  "description": "Dataset abierto del registro GDI-DE para Moers (distinto del conjunto cerrado de Moers), licencia Datenlizenz Deutschland – Zero – Version 2.0.",
+  "phase": 1,
+  "enabled": true,
+  "publish_allowed": true,
+  "adapter": "generic_tabular",
+  "license": "dl-de/zero-2-0",
+  "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+  "attribution": "Stadt Moers / KRZN, Stolpersteine Moers (Datenlizenz Deutschland – Zero – Version 2.0, https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4)",
+  "homepage": "https://registry.gdi-de.org/id/de.nw/eaf69e88-5199-46d4-ae77-574fa5c9a0d4",
+  "license_family": "dl-de-zero",
+  "id_prefix": "mo",
+  "priority": 20,
+  "input": {
+    "path": "data/moers-added-20261121.json",
+    "format": "json",
+    "records_path": "stones",
+    "retrieved": "2026-11-21"
+  },
+  "mapping": {
+    "name": "n",
+    "places": [
+      {
+        "role": "memorial",
+        "label": "a",
+        "locality": "c",
+        "lat": "la",
+        "lon": "lo",
+        "country": "cc"
+      }
+    ],
+    "record_id": {
+      "column": "id",
+      "strip_prefix": "mo-"
+    },
+    "memorials": [
+      {
+        "type": "stolperstein",
+        "memorial_id": "id",
+        "address": "a",
+        "locality": "c",
+        "country": "cc",
+        "lat": "la",
+        "lon": "lo"
+      }
+    ],
+    "birth_date": "b",
+    "death_date": "d",
+    "fate": "fate",
+    "links": [
+      {
+        "type": "wikipedia_list_entry",
+        "url": "w.0"
+      }
+    ]
+  }
+}
