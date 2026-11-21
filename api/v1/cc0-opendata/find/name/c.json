@@ -1,5 +1,5 @@
 {"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
-"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-22","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
 "prefix":"c",
 "rows":[
 ["caglio","mz-50","Francesco Caglio",1909,1944,"Arcore","c"],
@@ -41,11 +41,9 @@
 ["cesana","mz-55","Giovanni Cesana",1923,1944,"Carate Brianza","c"],
 ["cesare","mz-157","Cesare Barna",1925,1944,"Varedo","b"],
 ["cesare","mz-100","Cesare Ronco",1910,1945,"Ornago","r"],
-["cilly","gv-11","Cilly Claessens",1907,1942,"Grevenbroich","c"],
 ["cirillo","mz-80","Cirillo Castello",1911,1944,"Arcore","c"],
 ["clara","mz-12","Clara Levi",1929,1945,"Cesano Maderno","l"],
 ["clarino","mz-88","Clarino Basilico",1909,1944,"Cogliate","b"],
-["classens","gv-11","Cilly Claessens",1907,1942,"Grevenbroich","c"],
 ["claudio","mz-155","Claudio Appennini",1920,1945,"Seregno","a"],
 ["colombo","mz-21","Alessandro Colombo",1875,1943,"Monza","c"],
 ["colombo","mz-49","Anacleto Colombo",1900,1944,"Albiate","c"],

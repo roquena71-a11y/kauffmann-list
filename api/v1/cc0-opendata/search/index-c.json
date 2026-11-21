@@ -1,5 +1,5 @@
 {"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
-"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-22","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
 "prefix":"c",
 "rows":[
 ["mz-50","Francesco Caglio",1909,"Arcore",45.62692,9.32153,"c"],
@@ -24,7 +24,6 @@
 ["mz-153","Mario Certa",1889,"Monza",45.57693,9.29667,"c"],
 ["mz-35","Augusto Cesana",1897,"Carate Brianza",45.67836,9.23491,"c"],
 ["mz-55","Giovanni Cesana",1923,"Carate Brianza",45.67699,9.23485,"c"],
-["gv-11","Cilly Claessens",1907,"Grevenbroich",51.124,6.66104,"c"],
 ["mz-21","Alessandro Colombo",1875,"Monza",45.58765,9.26685,"c"],
 ["mz-49","Anacleto Colombo",1900,"Albiate",45.65757,9.25813,"c"],
 ["mz-54","Edoardo Colombo",1913,"Brugherio",45.55105,9.29916,"c"],

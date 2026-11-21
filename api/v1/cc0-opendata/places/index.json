@@ -1,7 +1,7 @@
 {"columns":["country","slug","label","count","lat","lon","pages"],
-"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
+"meta":{"attribution":["Provincia di Monza e della Brianza (CC0 1.0, https://www.dati.lombardia.it/d/42ik-bq75)","Stadt Grevenbroich / Rhein-Kreis Neuss (CC0 1.0, https://opendata.rhein-kreis-neuss.de/explore/dataset/grevenbroich-stolpersteine-gv-18012023/)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0-opendata/index.json","family":"cc0-opendata","generated":"2026-11-22","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://creativecommons.org/publicdomain/zero/1.0/"},
 "rows":[
-["DE","grevenbroich","Grevenbroich",35,51.09392,6.5929,1],
+["DE","grevenbroich","Grevenbroich",34,51.09304,6.5909,1],
 ["IT","agrate","Agrate",2,45.57876,9.37901,1],
 ["IT","agrate-brianza","Agrate Brianza",3,45.57699,9.36038,1],
 ["IT","aiucrzio","Aiucrzio",1,45.64017,9.4142,1],

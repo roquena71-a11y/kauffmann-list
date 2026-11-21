@@ -34,7 +34,7 @@ const SPECS = [
   { file: 'data/firenze-added-20261121.json',          src: 'firenze',          lic: 'cc-by-4',      prefix: 'fi-',  cc: 'IT', count: 95,  allowInsc: true },
   { file: 'data/moers-added-20261121.json',            src: 'moers',            lic: 'dl-de-zero',   prefix: 'mo-',  cc: 'DE', count: 50,  allowInsc: false },
   { file: 'data/xanten-added-20261121.json',           src: 'xanten',           lic: 'dl-de-zero',   prefix: 'xa-',  cc: 'DE', count: 43,  allowInsc: false },
-  { file: 'data/grevenbroich-added-20261121.json',     src: 'grevenbroich',     lic: 'cc0-opendata', prefix: 'gv-',  cc: 'DE', count: 36,  allowInsc: true },
+  { file: 'data/grevenbroich-added-20261121.json',     src: 'grevenbroich',     lic: 'cc0-opendata', prefix: 'gv-',  cc: 'DE', count: 35,  allowInsc: true },
   { file: 'data/memmingen-added-20261121.json',        src: 'memmingen',        lic: 'cc-by-4',      prefix: 'mm-',  cc: 'DE', count: 7,   allowInsc: false, attribution: 'Geodaten Stadt Memmingen', exactAttr: true },
   { file: 'data/erkrath-added-20261121.json',          src: 'erkrath',          lic: 'dl-de-zero',   prefix: 'erk-', cc: 'DE', count: 4,   allowInsc: false },
   { file: 'data/dresden-added-20261121.json',          src: 'dresden',          lic: 'dl-de-by',     prefix: 'dr-',  cc: 'DE', count: 3,   allowInsc: false },
@@ -75,7 +75,7 @@ for (const sp of SPECS) {
   }
 }
 
-assert.strictEqual(total, 1173, 'expected 1173 Batch 1 stones');
+assert.strictEqual(total, 1172, 'expected 1172 Batch 1 stones');
 
 // Regression checks for Auditor A findings:
 // 1. Den Haag web titles stripped & multi-person splits clean
@@ -96,7 +96,7 @@ assert.strictEqual(byId.get('mg-23_2').n, 'Dr. Kurt Vogel');
 // 3. Firenze individual split & death date
 assert.strictEqual(byId.get('fi-328705').d, '1944-01-20');
 // 4. Missed duplicates removed
-for (const dupId of ['dh-18', 'dr-1119', 'mo-392', 'kr-96', 'mm-29', 'fi-330786', 'fi-330786_1', 'fi-330786_2']) {
+for (const dupId of ['dh-18', 'dr-1119', 'mo-392', 'kr-96', 'mm-29', 'fi-330786', 'fi-330786_1', 'fi-330786_2', 'gv-11']) {
   assert(!byId.has(dupId), `duplicate ${dupId} should not be present`);
 }
 

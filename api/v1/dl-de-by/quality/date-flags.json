@@ -1,4 +1,4 @@
 {"columns":["id","name","birth_date","death_date","flags"],
-"meta":{"attribution":["Datenquelle: Landeshauptstadt Dresden, dl-de/by-2-0, opendata.dresden.de"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-by/index.json","family":"dl-de-by","generated":"2026-11-21","license":"dl-de/by-2-0","license_url":"https://www.govdata.de/dl-de/by-2-0","source_url":"https://opendata.dresden.de/"},
+"meta":{"attribution":["Datenquelle: Landeshauptstadt Dresden, dl-de/by-2-0, opendata.dresden.de"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-by/index.json","family":"dl-de-by","generated":"2026-11-22","license":"dl-de/by-2-0","license_url":"https://www.govdata.de/dl-de/by-2-0","source_url":"https://opendata.dresden.de/"},
 "rows":[],
 "rule":"Fechas dudosas marcadas y NO corregidas: nacimiento < 1800 o posterior al año de los datos, muerte < 1800 o posterior, nacimiento posterior a la muerte. Verificar en la fuente."}

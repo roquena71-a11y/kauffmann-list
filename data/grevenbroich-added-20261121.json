@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-11-21T22:47:10+01:00",
-    "count": 36,
+    "generated": "2026-11-22T00:03:02+01:00",
+    "count": 35,
     "license": "Creative Commons Zero 1.0 Universal (CC0 1.0)",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "attribution": [
@@ -29,23 +29,6 @@
       "i": "Hier wohnte\nCaroline Baum\nGesch. Moses\nJg. 1882\nUnfreiwillig verzogen \n1939 Aachen\nSchicksal unbekannt",
       "dla": 51.0639711,
       "dlo": 6.5642152
-    },
-    {
-      "id": "gv-11",
-      "src": "grevenbroich",
-      "lic": "cc0-opendata",
-      "n": "Cilly Claessens",
-      "la": 51.1239955,
-      "lo": 6.6610424,
-      "a": "Herzogstraße 21",
-      "c": "Grevenbroich",
-      "cc": "DE",
-      "b": "1907-12-15",
-      "d": "1942-08-31",
-      "fate": "murdered",
-      "i": "Hier wohnte\nCilly Hirsch\nVerh. Claessens\nJg. 1907\nFlucht 1935 Belgien/Holland\nInterniert Westerbork\nDeportiert 1942 Auschwitz\nErmordet 31.8.1942",
-      "dla": 51.1239955,
-      "dlo": 6.6610424
     },
     {
       "id": "gv-12",

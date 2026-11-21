@@ -27,5 +27,5 @@
 {"ids":["wd-Q137837602","wd-Q138049758"],"key":["yad_vashem","11595609"],"reason":"different_wikidata"},
 {"ids":["wd-Q105454395","wd-Q105454410"],"key":["yad_vashem","11600326"],"reason":"different_wikidata"}
 ],
-"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-22","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
 "rule":"Registros que comparten un identificador pero tienen Qid distinto o año de nacimiento incompatible. NO se han fusionado."}

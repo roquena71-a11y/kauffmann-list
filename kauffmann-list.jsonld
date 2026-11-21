@@ -304,7 +304,7 @@
         {
           "@type": "PropertyValue",
           "name": "Stolpersteine on the map (ODbL plus 15 municipal open-data lists)",
-          "value": 75123
+          "value": 75122
         },
         {
           "@type": "PropertyValue",
@@ -500,7 +500,7 @@
         "@type": "ContactPoint",
         "email": "listakauffmann@gmail.com"
       },
-      "description": "Goal: no stone and no victim left out. Status 2026-11-21, in preparation, not published: 72,110 stones (ODbL, OpenStreetMap + Wikidata) plus 290 from Berlin Open Data, 1,550 from Köln Open.NRW, and 1,173 from 13 municipal open-data lists added in v22 (map total 75,123) in 27 countries (68,280 in Germany, of which 65,830 are in the ODbL dataset; 1,590 in the Netherlands; 731 in Italy) mapped from open data; an estimated 40,000+ German stones are not yet in open data (Stiftung Spuren counts 116,000+ in 31 countries). No charitable status is claimed and no partnership is agreed. Biography texts shown only from Wikipedia CC BY-SA on a certain match (4,038, Germany only); official pages and archive records are linked, not copied. Pending: public release."
+      "description": "Goal: no stone and no victim left out. Status 2026-11-21, in preparation, not published: 72,110 stones (ODbL, OpenStreetMap + Wikidata) plus 290 from Berlin Open Data, 1,550 from Köln Open.NRW, and 1,172 from 13 municipal open-data lists added in v22 (map total 75,122) in 27 countries (68,279 in Germany, of which 65,830 are in the ODbL dataset; 1,590 in the Netherlands; 731 in Italy) mapped from open data; an estimated 40,000+ German stones are not yet in open data (Stiftung Spuren counts 116,000+ in 31 countries). No charitable status is claimed and no partnership is agreed. Biography texts shown only from Wikipedia CC BY-SA on a certain match (4,038, Germany only); official pages and archive records are linked, not copied. Pending: public release."
     },
     {
       "@type": "WebPage",

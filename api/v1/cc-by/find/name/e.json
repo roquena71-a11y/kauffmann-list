@@ -1,5 +1,5 @@
 {"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
-"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-22","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
 "prefix":"e",
 "rows":[
 ["ebstein","ber-11387","Gertrud Ebstein",1890,null,"Berlin","e"],
