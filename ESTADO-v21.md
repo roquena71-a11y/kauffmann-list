@@ -150,3 +150,28 @@ Colocar las 1.949 (dla/dlo, reglas v20; familias de API separadas; textos; tests
 ## 13:34 Commit local A+B+C hecho
 
 - `fad34d85457373878e9b17526127b845583c0021` (`fad34d85`), 2026-11-21 13:34:38 CET, rama `v21`, padre `54cdee54`. 154 archivos. Sin push, sin `publicar.yml`, sin hits al contador, sin borrar nada del disco. `stones.json` sha256 `2834ce9ab8747a04bfda2004ae5f83c7cc8d31b99bcdbc64128c670298fc09dc`.
+
+## 13:48 Auditoría C ronda 2 — FAIL; se corrigen las 100 nuevas en archivo
+
+- Informe: `/workspace/audits/v21/C/auditoria-C-ronda2.md` sobre `26d8eedd` / `fad34d85`. Las 72.110 de v20 se dibujan idénticas a `b142fa48` (PASS). Auditor A ronda 2 PASSED. B sigue en marcha (no se toca su worktree ni 8899). C: no se toca `/workspace/audits/v21/C/wt` ni 8941/8942.
+- F1 GRAVE: 22 nuevas con columna a <0,5 m de edificio (Rubensstraße 33, Schaevenstraße 4, Wißmannstraße 1a). Hay que usar la huella 1,2 m, no solo el centro.
+- F2 GRAVE: 34 nuevas sobre calzada en 10 direcciones (Solinger Straße 1, Im Dau 12, Luxemburger Straße 37, …). Aplicar la regla de calzada de v20; si no hay acera, documentar en CSV como v20.
+- F3 GRAVE: 75 pares nuevos–v20 <1,55 m (44 placas, 13 racimos). Además A1: las 4 de Jakordenstraße 17 comparten un mismo dla/dlo y hay que mallarlas.
+- Plan: recalcular `dla`/`dlo` de archivo de esas nuevas (sin mover v20, sin cambiar cuentas/nombres/dedupe de A), tope 25 m o excepción documentada; tests sobre la posición renderizada. Luego run-all oficial.
+
+## 13:52 C ronda 2: se recalculan dla/dlo de las nuevas (sin tocar v20)
+
+- Causa raíz: el constructor guardaba el origen+desplazamiento del grupo y confiaba en que el cliente mallara; el cliente v21 clava las nuevas al archivo, así que 1.486 placas de 396 grupos quedan apiladas en el mismo punto. De ahí F1/F2/F3 y el aviso de Jakordenstraße 17.
+- Se escribe un reparador que calcula la posición final de cada columna (malla 1,85 m) en el `dla`/`dlo` de archivo: huella 1,2 m a ≥0,5 m de edificios, centro fuera de calzada (regla v20), ≥1,55 m de las 72.110 dibujadas, ≤25 m o excepción. `la`/`lo`, nombres y cuentas no se tocan.
+
+## 14:00 C ronda 2: dla/dlo recalculados; tests de archivo OK; arranca run-all oficial
+
+- Reparador `/workspace/v21-data/scripts/repair_v21_r2.py`: 728 grupos, 1.531 `dla`/`dlo` cambiados, 0 sin hueco, 0 en `calzada-v21.csv`, 0 excepciones >25 m. Máx. 24,9836 m (`ber-11663`; hav() 24,9556 m). Con dla: 1.778 (Berlín 284/290, Colonia 1.494/1.550). Jakordenstraße 17: malla 2×2 a 1,85 m, 8,1–10,4 m de Frieda. Verificación: 0 dentro de edificio, 0 columna <0,5 m, 0 calzada, 0 pares <1,55 m, 0 apiladas. Cuentas/nombres/`la`/`lo` idénticos a `26d8eedd`. `stones.json` intacto.
+- `tests/v21-new-render-placement.py --from-files` OK. `v21-added-test.cjs` OK. En `run-all` el test nuevo vuelca la app y comprueba la posición dibujada.
+- A continuación `REQUIRE_OAV=1 tests/run-all.sh` en `/workspace/venv-v21-ci`, `KL_HTTP_PORT=8960`, `KL_HTTP_PORT_V20=8970`. No se tocan 8941/8942.
+
+## 14:27 run-all oficial C ronda 2 OK — commit local a continuación
+
+- Fin: 2026-11-21 14:26:53 CET (inicio 13:59:33 CET). `REQUIRE_OAV=1`, venv `/workspace/venv-v21-ci`, puertos 8960/8970.
+- Resultado: **`run-all: OK` / `EXIT:0`**. Incluye compare de las 72.110 (idénticas a b142fa48) y `v21-new-render-placement` sobre posiciones dibujadas. country-buttons **FALLOS: ninguno**. Log: `/workspace/v21-data/out/run-all-c-r2.log`.
+- No se tocaron los worktrees ni HTTP de los auditores (C 8941/8942; B en 18899/18970). Sin push ni `publicar.yml`. `stones.json` intacto.

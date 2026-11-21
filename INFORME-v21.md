@@ -50,13 +50,13 @@ Todas las nuevas traían coordenadas. No se inventan nombres ni fechas (`Geburts
 
 - Extracto OSM Berlín+Colonia: timestamp `2026-11-18T21:21:02Z`
 - 730 grupos: 514 solo nuevas, 216 mixtos (970 placas ya publicadas; `stones.json` no se reescribió; `existing_dla_changed = 0`)
-- 1.440 ajustadas (dla/dlo); 400 se quedan en el punto de origen (sin dla)
-- Desplazamientos >25 m: **0**. Máximo: **24,9977 m** (`koeln-95`, `koeln-91`, `koeln-88`, `koeln-86`, `koeln-100`), medido con el mayor de la fórmula equirectangular (`M_LAT=111320`, la de `geo.to_xy`) y el haversine (`R=6371000` de `geo.hav`).
+- 1.778 ajustadas (dla/dlo de la posición final de cada columna); 62 se quedan en el punto de origen (sin dla)
+- Desplazamientos >25 m: **0** (no hace falta `excepciones-25m-v21.csv`). Máximo: **24,9836 m** (`ber-11663`), medido con el mayor de la fórmula equirectangular (`M_LAT=111320`, la de `geo.to_xy`) y el haversine (`R=6371000` de `geo.hav`). Con `hav()` oficial: **24,9556 m** (mismo id).
 - `koeln-562` Kurt (Dr.) Frankenstein, Buchforststraße 2, Köln, quedaba a **25,0011 m** por el redondeo a 7 decimales (el haversine daba 24,973 m; el informe anterior citó 24,97 m y no era exacto). Se reajustó sobre el mismo vector a **24,952 m** (`dlo` 7,0096718 → 7,0096711). `la`/`lo` de origen no se tocan. No hace falta excepción.
-- Berlín: 258/290 con dla. Colonia: 1.182/1.550 con dla
+- Berlín: 284/290 con dla. Colonia: 1.494/1.550 con dla
 - Archivos: `data/berlin-added-20261121.json`, `data/koeln-added-20261121.json`
 - Total en el mapa si se cargan los tres archivos: **73.950** (72.110 ODbL + 1.840)
-- El cliente (`app3d.js`) calcula el layout de v20 **solo** con las 72.110 placas de `stones.json`, con el mismo algoritmo que `b142fa48`. Las placas municipales no entran en agrupación, fusión, ángulo, cuadrícula ni desplazamiento: se dibujan exactamente en el `dla`/`dlo` (o `la`/`lo`) del archivo. Si una nueva es la misma persona que una ya publicada (mismo nombre, ≤25 m, misma `addr_key`), queda como alias de esa primaria y no la sustituye. Todas las nuevas llevan `cc: "DE"`.
+- El cliente (`app3d.js`) calcula el layout de v20 **solo** con las 72.110 placas de `stones.json`, con el mismo algoritmo que `b142fa48`. Las placas municipales no entran en agrupación, fusión, ángulo, cuadrícula ni desplazamiento: se dibujan exactamente en el `dla`/`dlo` (o `la`/`lo`) del archivo, donde el constructor ya ha escrito la casilla final de la malla (paso 1,85 m), con holgura de columna 1,2 m a ≥0,5 m de las fachadas, centro fuera de la calzada (regla de v20) y ≥1,55 m de los grupos de v20 ya dibujados. Si una nueva es la misma persona que una ya publicada (mismo nombre, ≤25 m, misma `addr_key`), queda como alias de esa primaria y no la sustituye. Todas las nuevas llevan `cc: "DE"`.
 
 ## API (build offline, generated=2026-11-21)
 
@@ -82,11 +82,11 @@ El mapa carga las 1.550 placas nuevas de Colonia; la API de esa familia sigue en
 - `index.html` y `kauffmann-list.jsonld` (2026-11-21, sincronizados): 72.110 es solo ODbL; el mapa con las listas municipales suma 73.950.
 - `robots.txt` cita también CC BY (`api/v1/cc-by`) y dl-de/zero-2-0 (`api/v1/dl-de-zero`).
 - `sitemap.xml`: `lastmod` 2026-11-21 en las páginas tocadas; añadidos `api/v1/cc-by/find/index.json` y `api/v1/dl-de-zero/find/index.json`.
-- `tests/v21-added-test.cjs` mide el desplazamiento con `hav()` oficial (R=6.371.000 m) y el tope es 25 m, salvo excepción documentada. Máximo actual: 24,9696 m (`koeln-86`).
+- `tests/v21-added-test.cjs` mide el desplazamiento con `hav()` oficial (R=6.371.000 m) y el tope es 25 m, salvo excepción documentada. Máximo actual: 24,9556 m (`ber-11663`).
 
 ## Tests
 
-`REQUIRE_OAV=1 tests/run-all.sh` oficial sobre el código con las correcciones A+B+C: **OK / EXIT:0**, 2026-11-21 12:57:53–13:30:22 CET, venv `/workspace/venv-v21-ci`, `KL_HTTP_PORT=8960`, `KL_HTTP_PORT_V20=8970`. Log: `/workspace/v21-data/out/run-all-oficial.log`. 58 unitarios OK, ai-door 0 errores, ai-sim 20/20 ×2, sidewalk v19 y v20 (9.329), mapa 2D, comparación de las 72.110 posiciones dibujadas contra `b142fa48` (1.836 nuevas visibles clavadas al archivo; 4 alias de una de v20; 1.840 con `cc=DE`), fila de países, Hassall, atribución, country-buttons (FALLOS: ninguno). Versión de caché `kauffmann-v22-pages` (`?v=22`).
+`REQUIRE_OAV=1 tests/run-all.sh` oficial sobre el código con las correcciones de C ronda 2: **OK / EXIT:0**, 2026-11-21 13:59:33–14:26:53 CET, venv `/workspace/venv-v21-ci`, `KL_HTTP_PORT=8960`, `KL_HTTP_PORT_V20=8970`. Log: `/workspace/v21-data/out/run-all-c-r2.log`. 58 unitarios OK, ai-door 0, ai-sim 20/20 ×2, sidewalk v19 y v20 (9.329), mapa 2D, comparación de las 72.110 contra `b142fa48` (0 movidas; 1.836 nuevas visibles clavadas al archivo; 4 alias; 1.840 con `cc=DE`), `v21-new-render-placement` sobre el volcado renderizado (huella, calzada, 1,55 m, malla, ≤25 m), fila de países, Hassall, atribución, country-buttons (FALLOS: ninguno). Versión de caché `kauffmann-v22-pages` (`?v=22`).
 
 ## Worktree y commit
 
@@ -132,3 +132,14 @@ Informe: `/workspace/audits/v21/C/auditoria-C-ronda1.md` sobre `54cdee54` (cifra
 8. MEDIO, 28 cambios solo de ángulo en v20: **corregido** (el ángulo de calle se calcula solo con las 72.110).
 9. MEDIO, 2 pares entre grupos <1,55 m al renderizar: **corregido en el cliente**. En archivo esas distancias ya eran legales (p. ej. `koeln-1194` frente a `n2283343674` = 5,639 m; `ber-10773` frente a `Q132155276` = 10,33 m).
 10. AVISO, nuevas sin `cc`: **corregido** (`cc: "DE"` en los JSON y en el generador).
+
+## Estado de los hallazgos de la auditoría C (ronda 2)
+
+Informe: `/workspace/audits/v21/C/auditoria-C-ronda2.md` sobre `26d8eedd` / `fad34d85`. Las 72.110 de v20 siguen idénticas a `b142fa48` (PASS de la ronda 2). Auditor A ronda 2: PASSED (cuentas, nombres y dedupe no se han vuelto a tocar: solo `dla`/`dlo` y `move_m`). No se toca el worktree del auditor ni 8941/8942.
+
+El constructor ahora escribe en el archivo la posición final de cada columna (malla de paso 1,85 m). El cliente sigue clavando las nuevas a ese `dla`/`dlo`. `calzada-v21.csv` y `excepciones-25m-v21.csv` existen (0 filas: se encontró hueco legal a ≤25 m para todas). Test nuevo: `tests/v21-new-render-placement.py`.
+
+1. GRAVE, 22 nuevas con la columna a <0,5 m de un edificio (Rubensstraße 33, Schaevenstraße 4, Wißmannstraße 1a; huella 1,2 m): **corregido** en el `dla`/`dlo` de archivo.
+2. GRAVE, 34 nuevas sobre la calzada en 10 direcciones (Solinger Straße 1, Im Dau 12, Luxemburger Straße 37, …): **corregido** (regla de calzada de v20; no hizo falta documentar excepciones).
+3. GRAVE, 75 pares nuevos–v20 a <1,55 m (44 placas, 13 racimos, mín. 0,545 m en Zwirnerstraße 33): **corregido** (cada nueva queda a ≥1,55 m de las 72.110 dibujadas).
+4. AVISO A1, las 4 de Jakordenstraße 17 compartían un `dla`/`dlo`: **corregido** (malla 2×2 a 1,85 m, a 8,1–10,4 m de Frieda Meyer, sin mover v20).

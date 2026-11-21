@@ -50,6 +50,12 @@ if [ -x /usr/bin/google-chrome ] && /usr/bin/python3 -c "import playwright" 2>/d
   sleep 1
   /usr/bin/python3 tests/v21-v20-render-compare.py http://127.0.0.1:${PORT}/ http://127.0.0.1:${V20PORT}/ > /tmp/kl-v20cmp.log 2>&1 || { tail -30 /tmp/kl-v20cmp.log; kill $SRV20; kill $SRV; exit 1; }
   tail -8 /tmp/kl-v20cmp.log
+  # v21: holgura de columna, calzada y 1,55 m entre grupos en la posición DIBUJADA de las nuevas
+  PYTHONPATH="/workspace/venv-se/lib/python3.13/site-packages${PYTHONPATH:+:$PYTHONPATH}" \
+    V20_DATA="${V20_DATA:-/workspace/v21-data/place}" \
+    V20_RENDERED_JSON="${V20_RENDERED_JSON:-/workspace/v21-data/out/v20-rendered-vis.json}" \
+    /usr/bin/python3 tests/v21-new-render-placement.py http://127.0.0.1:${PORT}/ --v20-url http://127.0.0.1:${V20PORT}/ > /tmp/kl-v21place.log 2>&1 || { tail -40 /tmp/kl-v21place.log; kill $SRV20; kill $SRV; exit 1; }
+  tail -12 /tmp/kl-v21place.log
   kill $SRV20
   /usr/bin/python3 tests/country-row-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-row.log 2>&1 || { tail -15 /tmp/kl-row.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-row.log
