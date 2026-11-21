@@ -8,7 +8,12 @@
 - ≥1,55 m respecto a cualquier placa visible de v20 (posición dibujada) y a otros
   grupos nuevos
 - desplazamiento ≤25 m salvo excepción en excepciones-25m-v21*.csv
-- las nuevas de un mismo grupo no comparten el mismo dla (malla usable)
+- las nuevas de un mismo grupo forman una malla de paso 1,85 m (mínimo ≥1,85−0,08 m
+  y al menos un lado ≈1,85 m); no basta con que no compartan el mismo punto a 7 decimales
+- la calzada usa el tag OSM width (o est_width) de todas las vías vehiculares cuyo eje
+  queda a ≤80 m; no se omite una vía por el radio del índice ni por d_center >25 m.
+  Exención de fachada solo si hay edificio a <6 m. Las de calzada-v21.csv se aceptan.
+- se comprueban las 1.840 nuevas
 
 Uso:
   python3 tests/v21-new-render-placement.py <url_v21> [--v20-json FILE] [--v20-url URL]
@@ -43,7 +48,15 @@ import roadway20 as RWY  # noqa: E402
 COL_HALF = 0.60
 MARGIN = 0.50
 COL_GAP = 1.55
+COL_STEP = 1.85
+GRID_TOL = 0.08
 MAXMOVE = 25.0
+ROAD_Q_RC = 4
+ROAD_RAD = 80.0
+EXPECT_NEW = 1840
+# Canario de C ronda 3: esta vía tiene width=11; si el test no la ve, el chequeo está roto.
+WIDTH_CANARY_WAY = "w4490370"
+WIDTH_CANARY_VALUE = "11"
 BLOCK_HOSTS = ("kl-contador", "workers.dev")
 NEW_RE = re.compile(r"^(ber-|koeln-)")
 
@@ -81,6 +94,38 @@ def calzada_exc():
                 if row.get("id"):
                     ids.add(row["id"])
     return ids
+
+
+def tags_extra_path():
+    env = os.environ.get("HIGHWAY_TAGS_EXTRA")
+    if env:
+        return Path(env)
+    v20 = Path(os.environ.get("V20_DATA", "/workspace/v21-data/place"))
+    cands = [
+        v20.resolve().parent / "near" / "highway-tags-extra.json",
+        Path("/workspace/v21-data/near/highway-tags-extra.json"),
+    ]
+    for p in cands:
+        if p.is_file():
+            return p
+    return cands[0]
+
+
+def enrich_highway_tags(N):
+    """Añade width/est_width/sidewalk* del PBF oficial. El extracto near los descarta."""
+    path = tags_extra_path()
+    if not path.is_file():
+        print(f"FAIL: falta el sidecar de tags OSM ({path}). Sin width el chequeo de calzada "
+              f"no habría pillado w4490370 (width=11).", file=sys.stderr)
+        sys.exit(1)
+    extra = json.loads(path.read_text())
+    n = 0
+    for hid, (_pts, t) in N.h.items():
+        if hid in extra:
+            t.update(extra[hid])
+            n += 1
+    sample = extra.get(WIDTH_CANARY_WAY) or (N.h[WIDTH_CANARY_WAY][1] if WIDTH_CANARY_WAY in N.h else None)
+    return n, sample
 
 
 async def dump(url, expect_min, label):
@@ -253,7 +298,18 @@ def check(new_rows, v20_rows):
 
     os.environ.setdefault("V20_DATA", os.environ.get("V20_DATA", "/workspace/v21-data/place"))
     N = SW.load_near("DE")
-    print(f"  near buildings={len(N.b)} highways={len(N.h)} ts={N.ts}", flush=True)
+    n_enr, sample = enrich_highway_tags(N)
+    canary = (N.h.get(WIDTH_CANARY_WAY) or (None, {}))[1]
+    print(f"  near buildings={len(N.b)} highways={len(N.h)} ts={N.ts} "
+          f"enriched={n_enr} {WIDTH_CANARY_WAY}={canary}", flush=True)
+    if str(canary.get("width") or "") != WIDTH_CANARY_VALUE:
+        print(f"FAIL: {WIDTH_CANARY_WAY} no tiene width={WIDTH_CANARY_VALUE} tras enriquecer "
+              f"(tags={canary}, sidecar={sample}). El chequeo de calzada no usaría el width de OSM.",
+              file=sys.stderr)
+        return False
+    if len(new_rows) != EXPECT_NEW:
+        print(f"FAIL: se esperaban {EXPECT_NEW} nuevas, hay {len(new_rows)}", file=sys.stderr)
+        return False
 
     exc25, calz = exceptions_25(), calzada_exc()
     vis_new = [r for r in new_rows if not r.get("alias") and r.get("_dla") is not None]
@@ -336,22 +392,38 @@ def check(new_rows, v20_rows):
             if d_sq < MARGIN - 1e-6:
                 col.append((r["id"], round(d_center, 3), round(d_sq, 3)))
         rd_clear = 99.0
-        for hid in N.around(N.hi, la, lo, 1):
+        # Todas las vías vehiculares a ≤80 m, con semiwidth que honra el tag width.
+        # No se recorta el índice a rc=1 ni se omite la vía si d_center > 25 m.
+        for hid in N.around(N.hi, la, lo, ROAD_Q_RC):
             pts, t = N.h[hid]
-            if not RWY.is_vehicular(t):
+            if not RWY.is_vehicular(t) or len(pts) < 2:
                 continue
             ls = LineString([to_xy(a, c, o) for a, c in pts])
-            if ls.distance(pt) > 80:
+            if ls.distance(pt) > ROAD_RAD:
                 continue
             dd = ls.distance(pt) - RWY.semiwidth(t)
             if dd < rd_clear:
                 rd_clear = dd
-        if d_center >= RWY.BLD_EXEMPT_NEAR and rd_clear < -1e-6 and d_center <= RWY.BLD_NEAR_MAX:
+        # Exención oficial: solo edificio a <6 m. C no salta cuando d_center > 25 m.
+        if d_center >= RWY.BLD_EXEMPT_NEAR and rd_clear < -1e-6:
             if r["id"] not in calz:
                 road.append((r["id"], round(rd_clear, 3), round(d_center, 3)))
 
+    # Malla intra-grupo: paso 1,85 m (pilla apiladas a 0,067 m y mallas irregulares ~1 m).
+    grid_fail = []
+    for g in ng:
+        if len(g) < 2:
+            continue
+        ds = []
+        for i in range(len(g)):
+            for j in range(i + 1, len(g)):
+                ds.append(dist_eq(g[i]["_dla"], g[i]["_dlo"], g[j]["_dla"], g[j]["_dlo"]))
+        if min(ds) < COL_STEP - GRID_TOL or not any(abs(d - COL_STEP) <= GRID_TOL for d in ds):
+            ids = [s["id"] for s in g]
+            grid_fail.append((g[0].get("a"), len(g), round(min(ds), 3), ids[:8]))
+
     ok = True
-    print(f"nuevas visibles comprobadas: {len(vis_new)} (v20 visibles {len(v20_vis)})")
+    print(f"nuevas comprobadas: {len(new_rows)} (visibles sin alias {len(vis_new)}; v20 visibles {len(v20_vis)})")
     if stacked:
         ok = False
         print(f"FAIL: {len(stacked)} placas nuevas comparten dla/dlo con otra (no hay malla), p.ej. {sorted(stacked)[:8]}")
@@ -387,6 +459,11 @@ def check(new_rows, v20_rows):
         print(f"FAIL: {len(over25)} con desplazamiento >25 m sin excepción, p.ej. {over25[:6]}")
     else:
         print("OK: ninguna nueva a >25 m sin excepción documentada")
+    if grid_fail:
+        ok = False
+        print(f"FAIL: {len(grid_fail)} grupos nuevos sin malla de paso 1,85 m, p.ej. {grid_fail[:6]}")
+    else:
+        print("OK: malla intra-grupo de paso 1,85 m en todos los grupos de 2 o más")
     return ok
 
 

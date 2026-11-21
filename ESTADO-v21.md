@@ -181,3 +181,29 @@ Colocar las 1.949 (dla/dlo, reglas v20; familias de API separadas; textos; tests
 - `a8817b903d8482886247dcaf81177f6cc9e6e007` (`a8817b90`), 14:27:17 CET: test `v21-new-render-placement.py`, `calzada-v21.csv`, `excepciones-25m-v21.csv`.
 - `1ce9f27d8a3f48c1ad38628bffcb302e74810236` (`1ce9f27d`), 14:27:27 CET: `dla`/`dlo` de `data/berlin-added-20261121.json` y `data/koeln-added-20261121.json`, INFORME, hook en `run-all.sh`, ESTADO. Padre de la serie: `26d8eedd`. Sin push, sin `publicar.yml`, `stones.json` sha256 `2834ce9ab8747a04bfda2004ae5f83c7cc8d31b99bcdbc64128c670298fc09dc`.
 - El commit inmediatamente posterior en `v21` solo anota estos hashes en ESTADO e INFORME (HEAD de la rama).
+
+## 14:41 Auditoría C ronda 3 — FAIL; se corrige calzada, apilado y malla
+
+- Informe: `/workspace/audits/v21/C/auditoria-C-ronda3.md` sobre `17ef7fcc`. Las 72.110 siguen idénticas a `b142fa48`. A ronda 3 PASSED. B ronda 3 sigue (no se toca su worktree ni puertos). C: no se toca `/workspace/audits/v21/C/wt` ni 8941/8942.
+- F1 GRAVE: `ber-10773` Selma Riese sigue en el mismo dla, −2,608 m en `w4490370` (width=11, semiancho 5,50). El comprobador no usó el `width` de OSM o no vio esa vía. `koeln-2440` Eva Helene Katz −0,114 m en Scheidtweilerstraße `w241680539`.
+- F2 GRAVE: `koeln-86` y `koeln-88` (Bonner Straße 33) a 0,067 m (no idénticos a 7 decimales, el test de apiladas no los pilló).
+- F3 MEDIA: mallas irregulares en Alteburger Straße 11 (mín. 1,003 m) y Zülpicher Platz 4 (mín. 0,923 m). Aviso: `ber-11662`/`ber-11663` a 1,593 m (Paul en el tope de 25 m).
+- Plan: corregir la comprobación de calzada (width OSM, todas las vías al alcance), mallar a paso 1,85 m sin comprimir por el cap individual, mover o documentar; el test debe pillar estos casos en las 1.840. Sin cambiar cuentas/nombres/`la`/`lo`/dedupe.
+
+## 14:53 C ronda 3: 6 grupos / 28 dla corregidos; el test ya pilla los fallos de C
+
+- Causa: el extracto `near` no guardaba `width` de OSM (`w4490370` width=11 se tomaba como residencial 2,50 m). El chequeo usaba rc=1 y saltaba la calzada si no había edificio a ≤25 m (`koeln-2440`, d_center 25,014 m). El cap de 25 m por piedra aplastaba las mallas (Bonner 0,067 m, Alteburger 1,003 m, Zülpicher 0,923 m, Feige 1,593 m).
+- Sidecar de tags del PBF oficial (`2026-11-18T21:21:02Z`): `/workspace/v21-data/near/highway-tags-extra.json`, 157.443 vías enriquecidas en memoria (no se reescribe el pickle ni se commitea el sidecar de 89 MB).
+- Reparador `/workspace/v21-data/scripts/repair_v21_r3.py`, 14:52:27–14:53:00 CET, EXIT:0. 728 grupos, **6 corregidos, 28 dla/dlo cambiados** (3 Berlín: `ber-10773`, `ber-11662`, `ber-11663`; 25 Colonia). 0 sin hueco, 0 filas en `calzada-v21.csv` y `excepciones-25m-v21.csv`. Máx. 24,952 m (`koeln-562`, sin cambio). Con dla: 1.778 (284/290 Berlín, 1.494/1.550 Colonia). Cuentas, nombres, `la`/`lo` y dedupe idénticos a `17ef7fcc`.
+- Selma Riese: dla 52,5198712 / 13,3350472, +5,001 m, `rd_clear` +0,216 m en `w4490370`. Eva Helene Katz: 50,9382734 / 6,9087154, +1,018 m, `rd_clear` +0,249 m en `w241680539`. Bonner / Alteburger / Zülpicher / Feige: malla de paso 1,85 m (mín. 1,846–1,849 m). Verificación oficial (width, todas las vías a 80 m, exención solo <6 m, hueco 1,55 m con v20, tope 25 m): 0 fallos en las 1.840.
+- Test `tests/v21-new-render-placement.py` actualizado: `width` OSM, vías a ≤80 m (rc=4), no omite d_center >25 m, malla intra-grupo 1,85 m, las 1.840. Sobre `17ef7fcc` falla exactamente F1+F2+F3 (calzada −2,608 / −0,114; grupos 0,067 / 1,003 / 0,923 / 1,593). `--from-files` actual: **OK** (~50 s). `v21-added-test.cjs`: **OK**, máx hav() 24,9240 m (`koeln-562`).
+- Arranca `REQUIRE_OAV=1 tests/run-all.sh` en `/workspace/venv-v21-ci`, `KL_HTTP_PORT=8960`, `KL_HTTP_PORT_V20=8970`, 14:59:01 CET. Log: `/workspace/v21-data/out/run-all-c-r3.log`. No se tocan 8941/8942 ni el run-all del auditor B (18891/18971).
+
+
+## 15:28 run-all oficial C ronda 3 OK — commit local a continuación
+
+- Fin: 2026-11-21 15:28:18 CET (inicio 14:59:01 CET). `REQUIRE_OAV=1`, venv `/workspace/venv-v21-ci`, puertos 8960/8970. Log: `/workspace/v21-data/out/run-all-c-r3.log`.
+- Resultado: **`run-all: OK` / `EXIT:0`**. 58 unitarios, ai-door 0, ai-sim 20/20 ×2. Comparación de las 72.110: idénticas a `b142fa48`. `v21-new-render-placement` sobre el volcado renderizado de las 1.840: OK (width=11 en `w4490370`, malla 1,85 m, calzada, 1,55 m, ≤25 m). country-buttons **FALLOS: ninguno**. Sin hits a `kl-contador` ni `*.workers.dev`.
+- No se tocaron los worktrees ni HTTP de los auditores (C 8941/8942; B usó 18891/18971 y ya terminó). Sin push ni `publicar.yml`. `stones.json` intacto (sha256 `2834ce9ab8747a04bfda2004ae5f83c7cc8d31b99bcdbc64128c670298fc09dc`).
+- Commit local a continuación (JSON municipales, test de colocación, INFORME, ESTADO). Se excluyen `__pycache__` y `pipeline/cache`.
+

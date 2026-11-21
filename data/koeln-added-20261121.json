@@ -4960,9 +4960,9 @@
       "c": "Köln",
       "cd": "Braunsfeld",
       "cc": "DE",
-      "dla": 50.9382779,
+      "dla": 50.9382734,
       "dlo": 6.9087154,
-      "move_m": 1.3065
+      "move_m": 1.0176
     },
     {
       "id": "koeln-2099",
@@ -5827,9 +5827,9 @@
       "c": "Köln",
       "cd": "Altstadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=521",
-      "dla": 50.9218235,
-      "dlo": 6.9621809,
-      "move_m": 23.9093,
+      "dla": 50.9218477,
+      "dlo": 6.9621003,
+      "move_m": 18.1884,
       "cc": "DE"
     },
     {
@@ -5843,9 +5843,9 @@
       "c": "Köln",
       "cd": "Altstadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=642",
-      "dla": 50.921825,
-      "dlo": 6.9622047,
-      "move_m": 24.9786,
+      "dla": 50.9218477,
+      "dlo": 6.9621267,
+      "move_m": 19.3534,
       "cc": "DE"
     },
     {
@@ -5859,9 +5859,9 @@
       "c": "Köln",
       "cd": "Altstadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=572",
-      "dla": 50.921833,
-      "dlo": 6.9622161,
-      "move_m": 24.9805,
+      "dla": 50.9218477,
+      "dlo": 6.962153,
+      "move_m": 20.6143,
       "cc": "DE"
     },
     {
@@ -5979,9 +5979,9 @@
       "c": "Köln",
       "cd": "Altstadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=114",
-      "dla": 50.9218401,
-      "dlo": 6.9621809,
-      "move_m": 22.6106,
+      "dla": 50.9218643,
+      "dlo": 6.9621003,
+      "move_m": 16.7439,
       "cc": "DE"
     },
     {
@@ -5995,9 +5995,9 @@
       "c": "Köln",
       "cd": "Altstadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=25",
-      "dla": 50.9218401,
-      "dlo": 6.9622073,
-      "move_m": 23.9986,
+      "dla": 50.9218643,
+      "dlo": 6.9621267,
+      "move_m": 18.0026,
       "cc": "DE"
     },
     {
@@ -6011,9 +6011,9 @@
       "c": "Köln",
       "cd": "Altstadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=235",
-      "dla": 50.9218426,
-      "dlo": 6.9622284,
-      "move_m": 24.9813,
+      "dla": 50.9218643,
+      "dlo": 6.962153,
+      "move_m": 19.3517,
       "cc": "DE"
     },
     {
@@ -6027,9 +6027,9 @@
       "c": "Köln",
       "cd": "Altstadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=800",
-      "dla": 50.9218567,
-      "dlo": 6.9621809,
-      "move_m": 21.3928,
+      "dla": 50.9218809,
+      "dlo": 6.9621003,
+      "move_m": 15.386,
       "cc": "DE"
     },
     {
@@ -6440,9 +6440,9 @@
       "c": "Köln",
       "cd": "Altstadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=644",
-      "dla": 50.9218567,
-      "dlo": 6.9622073,
-      "move_m": 22.8549,
+      "dla": 50.9218809,
+      "dlo": 6.9621267,
+      "move_m": 16.7471,
       "cc": "DE"
     },
     {
@@ -6504,9 +6504,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=2156",
-      "dla": 50.9310752,
-      "dlo": 6.9398456,
-      "move_m": 24.9818,
+      "dla": 50.9311488,
+      "dlo": 6.9401843,
+      "move_m": 16.1535,
       "cc": "DE"
     },
     {
@@ -6520,9 +6520,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=2160",
-      "dla": 50.9310765,
-      "dlo": 6.9398657,
-      "move_m": 23.6985,
+      "dla": 50.9311654,
+      "dlo": 6.9401831,
+      "move_m": 18.0012,
       "cc": "DE"
     },
     {
@@ -6536,9 +6536,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=2155",
-      "dla": 50.9310765,
-      "dlo": 6.9398921,
-      "move_m": 21.9671,
+      "dla": 50.931182,
+      "dlo": 6.9401819,
+      "move_m": 19.8493,
       "cc": "DE"
     },
     {
@@ -6552,9 +6552,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=2168",
-      "dla": 50.9310893,
-      "dlo": 6.939854,
-      "move_m": 24.9796,
+      "dla": 50.9311481,
+      "dlo": 6.9401579,
+      "move_m": 16.1724,
       "cc": "DE"
     },
     {
@@ -6568,9 +6568,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=2167",
-      "dla": 50.9310931,
-      "dlo": 6.9398657,
-      "move_m": 24.3924,
+      "dla": 50.9311647,
+      "dlo": 6.9401568,
+      "move_m": 18.0181,
       "cc": "DE"
     },
     {
@@ -9275,9 +9275,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=1336",
-      "dla": 50.9188664,
-      "dlo": 6.9608302,
-      "move_m": 24.9797,
+      "dla": 50.9188305,
+      "dlo": 6.9603758,
+      "move_m": 8.4961,
       "cc": "DE"
     },
     {
@@ -9291,9 +9291,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=655",
-      "dla": 50.918867,
-      "dlo": 6.9608302,
-      "move_m": 24.9773,
+      "dla": 50.9188305,
+      "dlo": 6.9604021,
+      "move_m": 7.0726,
       "cc": "DE"
     },
     {
@@ -9307,9 +9307,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=1396",
-      "dla": 50.918883,
-      "dlo": 6.9608043,
-      "move_m": 23.1635,
+      "dla": 50.9188471,
+      "dlo": 6.9603494,
+      "move_m": 9.3012,
       "cc": "DE"
     },
     {
@@ -9339,9 +9339,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=248",
-      "dla": 50.918883,
-      "dlo": 6.9608302,
-      "move_m": 24.9797,
+      "dla": 50.9188471,
+      "dlo": 6.9603758,
+      "move_m": 7.5772,
       "cc": "DE"
     },
     {
@@ -9355,9 +9355,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=101",
-      "dla": 50.9188664,
-      "dlo": 6.9608043,
-      "move_m": 23.1634,
+      "dla": 50.9188305,
+      "dlo": 6.9603494,
+      "move_m": 10.0638,
       "cc": "DE"
     },
     {
@@ -11721,9 +11721,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=2164",
-      "dla": 50.9310599,
-      "dlo": 6.9398393,
-      "move_m": 24.92,
+      "dla": 50.9311495,
+      "dlo": 6.9402106,
+      "move_m": 16.3454,
       "cc": "DE"
     },
     {
@@ -11737,9 +11737,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=2158",
-      "dla": 50.9310599,
-      "dlo": 6.9398657,
-      "move_m": 23.1318,
+      "dla": 50.9311661,
+      "dlo": 6.9402095,
+      "move_m": 18.1737,
       "cc": "DE"
     },
     {
@@ -11753,9 +11753,9 @@
       "c": "Köln",
       "cd": "Neustadt/Süd",
       "lb": "https://museenkoeln.de/ns-dokumentationszentrum/default.aspx?s=2523&sfrom=1206&stid=2161",
-      "dla": 50.9310599,
-      "dlo": 6.9398921,
-      "move_m": 21.3545,
+      "dla": 50.9311827,
+      "dlo": 6.9402083,
+      "move_m": 20.0053,
       "cc": "DE"
     },
     {
@@ -14659,9 +14659,9 @@
       "c": "Köln",
       "cd": "Braunsfeld",
       "cc": "DE",
-      "dla": 50.9382613,
+      "dla": 50.9382568,
       "dlo": 6.908689,
-      "move_m": 1.3097
+      "move_m": 1.7016
     },
     {
       "id": "koeln-2438",
@@ -14674,9 +14674,9 @@
       "c": "Köln",
       "cd": "Braunsfeld",
       "cc": "DE",
-      "dla": 50.9382613,
+      "dla": 50.9382568,
       "dlo": 6.9087154,
-      "move_m": 1.3113
+      "move_m": 1.7028
     },
     {
       "id": "koeln-2439",
@@ -14689,9 +14689,9 @@
       "c": "Köln",
       "cd": "Braunsfeld",
       "cc": "DE",
-      "dla": 50.9382779,
+      "dla": 50.9382734,
       "dlo": 6.908689,
-      "move_m": 1.3049
+      "move_m": 1.0156
     },
     {
       "id": "koeln-2454",

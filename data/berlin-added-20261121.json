@@ -610,9 +610,9 @@
       "cd": "Moabit",
       "b": "1880",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10773",
-      "dla": 52.5198663,
-      "dlo": 13.3349908,
-      "move_m": 1.2995,
+      "dla": 52.5198712,
+      "dlo": 13.3350472,
+      "move_m": 5.001,
       "cc": "DE"
     },
     {
@@ -1950,9 +1950,9 @@
       "cd": "Prenzlauer Berg",
       "b": "1909",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11662",
-      "dla": 52.5336659,
+      "dla": 52.5334014,
       "dlo": 13.4077176,
-      "move_m": 23.6258,
+      "move_m": 5.8372,
       "cc": "DE"
     },
     {
@@ -1967,9 +1967,9 @@
       "cd": "Prenzlauer Berg",
       "b": "1908",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11663",
-      "dla": 52.5336781,
-      "dlo": 13.4077299,
-      "move_m": 24.9836,
+      "dla": 52.5334162,
+      "dlo": 13.40773,
+      "move_m": 4.1956,
       "cc": "DE"
     },
     {

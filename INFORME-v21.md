@@ -51,7 +51,7 @@ Todas las nuevas traían coordenadas. No se inventan nombres ni fechas (`Geburts
 - Extracto OSM Berlín+Colonia: timestamp `2026-11-18T21:21:02Z`
 - 730 grupos: 514 solo nuevas, 216 mixtos (970 placas ya publicadas; `stones.json` no se reescribió; `existing_dla_changed = 0`)
 - 1.778 ajustadas (dla/dlo de la posición final de cada columna); 62 se quedan en el punto de origen (sin dla)
-- Desplazamientos >25 m: **0** (no hace falta `excepciones-25m-v21.csv`). Máximo: **24,9836 m** (`ber-11663`), medido con el mayor de la fórmula equirectangular (`M_LAT=111320`, la de `geo.to_xy`) y el haversine (`R=6371000` de `geo.hav`). Con `hav()` oficial: **24,9556 m** (mismo id).
+- Desplazamientos >25 m: **0** (no hace falta `excepciones-25m-v21.csv`). Máximo vigente: **24,952 m** (`koeln-562` Kurt (Dr.) Frankenstein, Buchforststraße 2, Köln; hav oficial 24,9240 m). En C ronda 2 el máximo llegó a 24,9836 m (`ber-11663`); esa pareja se remalló a paso 1,85 m en C ronda 3 y ya no marca el techo.
 - `koeln-562` Kurt (Dr.) Frankenstein, Buchforststraße 2, Köln, quedaba a **25,0011 m** por el redondeo a 7 decimales (el haversine daba 24,973 m; el informe anterior citó 24,97 m y no era exacto). Se reajustó sobre el mismo vector a **24,952 m** (`dlo` 7,0096718 → 7,0096711). `la`/`lo` de origen no se tocan. No hace falta excepción.
 - Berlín: 284/290 con dla. Colonia: 1.494/1.550 con dla
 - Archivos: `data/berlin-added-20261121.json`, `data/koeln-added-20261121.json`
@@ -82,16 +82,17 @@ El mapa carga las 1.550 placas nuevas de Colonia; la API de esa familia sigue en
 - `index.html` y `kauffmann-list.jsonld` (2026-11-21, sincronizados): 72.110 es solo ODbL; el mapa con las listas municipales suma 73.950.
 - `robots.txt` cita también CC BY (`api/v1/cc-by`) y dl-de/zero-2-0 (`api/v1/dl-de-zero`).
 - `sitemap.xml`: `lastmod` 2026-11-21 en las páginas tocadas; añadidos `api/v1/cc-by/find/index.json` y `api/v1/dl-de-zero/find/index.json`.
-- `tests/v21-added-test.cjs` mide el desplazamiento con `hav()` oficial (R=6.371.000 m) y el tope es 25 m, salvo excepción documentada. Máximo actual: 24,9556 m (`ber-11663`).
+- `tests/v21-added-test.cjs` mide el desplazamiento con `hav()` oficial (R=6.371.000 m) y el tope es 25 m, salvo excepción documentada. Máximo actual: **24,9240 m** (`koeln-562`, hav); con el mayor de hav y equirectangular (`M_LAT=111320`): **24,952 m** (mismo id). `ber-11663` ya no es el máximo (tras rehacer su malla en C ronda 3 queda a 4,191 m hav).
 
 ## Tests
 
-`REQUIRE_OAV=1 tests/run-all.sh` oficial sobre el código con las correcciones de C ronda 2: **OK / EXIT:0**, 2026-11-21 13:59:33–14:26:53 CET, venv `/workspace/venv-v21-ci`, `KL_HTTP_PORT=8960`, `KL_HTTP_PORT_V20=8970`. Log: `/workspace/v21-data/out/run-all-c-r2.log`. 58 unitarios OK, ai-door 0, ai-sim 20/20 ×2, sidewalk v19 y v20 (9.329), mapa 2D, comparación de las 72.110 contra `b142fa48` (0 movidas; 1.836 nuevas visibles clavadas al archivo; 4 alias; 1.840 con `cc=DE`), `v21-new-render-placement` sobre el volcado renderizado (huella, calzada, 1,55 m, malla, ≤25 m), fila de países, Hassall, atribución, country-buttons (FALLOS: ninguno). Versión de caché `kauffmann-v22-pages` (`?v=22`).
+`REQUIRE_OAV=1 tests/run-all.sh` oficial sobre el código con las correcciones de C ronda 3: **OK / EXIT:0**, 2026-11-21 14:59:01–15:28:18 CET, venv `/workspace/venv-v21-ci`, `KL_HTTP_PORT=8960`, `KL_HTTP_PORT_V20=8970`. Log: `/workspace/v21-data/out/run-all-c-r3.log`. 58 unitarios OK, ai-door 0, ai-sim 20/20 ×2, sidewalk v19 y v20 (9.329), mapa 2D, comparación de las 72.110 contra `b142fa48` (0 movidas; 1.836 nuevas visibles clavadas al archivo; 4 alias; 1.840 con `cc=DE`; sin hits a `kl-contador` ni `*.workers.dev`), `v21-new-render-placement` sobre el volcado renderizado de las 1.840 (width OSM de `w4490370`, todas las vías a ≤80 m, malla intra-grupo 1,85 m, huella, calzada, 1,55 m, ≤25 m), fila de países, Hassall, atribución, country-buttons (FALLOS: ninguno). Versión de caché `kauffmann-v22-pages` (`?v=22`). El run-all oficial de C ronda 2 (13:59:33–14:26:53 CET, log `run-all-c-r2.log`) permanece como antecedente.
 
 ## Worktree y commit
 
 - Worktree: `/workspace/kl-v21`, rama `v21`, creada desde `b142fa48` (v20 publicada). Padre de esta corrección: `54cdee54`.
-- Commit local C ronda 2 (sin push): `a8817b903d8482886247dcaf81177f6cc9e6e007` (`a8817b90`, tests y CSV) y `1ce9f27d8a3f48c1ad38628bffcb302e74810236` (`1ce9f27d`, dla/dlo, INFORME, hook de run-all), 2026-11-21 14:27 CET, padre `26d8eedd`. Un commit posterior anota estos hashes en ESTADO e INFORME. Mensajes: «v21: colocación final de las 1.840 nuevas (huella, calzada, 1,55 m, malla) y tests de C ronda 2» y «v21: dla/dlo final de Berlín y Colonia, INFORME, run-all de C ronda 2». Excluidos `__pycache__` y `pipeline/cache`. `data/stones.json` no forma parte del commit (sigue intacto). El commit de A+B+C ronda 1 permanece `fad34d85` / `26d8eedd`.
+- Commit local C ronda 2 (sin push): `a8817b90` y `1ce9f27d`, 2026-11-21 14:27 CET, padre `26d8eedd` (hashes anotados en el tip `17ef7fcc`).
+- Commit local C ronda 3 (sin push; el hash se anota en el commit siguiente): `dla`/`dlo` de 28 placas en `data/berlin-added-20261121.json` y `data/koeln-added-20261121.json`, test `tests/v21-new-render-placement.py` (width OSM, todas las vías a ≤80 m, malla 1,85 m, las 1.840), INFORME y ESTADO. Padre: `17ef7fcc`. Excluidos `__pycache__` y `pipeline/cache`. `data/stones.json` no forma parte del commit (sigue intacto).
 - `data/stones.json` intacto (72.110, solo ODbL, sha256 `2834ce9ab8747a04bfda2004ae5f83c7cc8d31b99bcdbc64128c670298fc09dc`).
 
 ## Dudas (no bloquean la preparación)
@@ -143,3 +144,17 @@ El constructor ahora escribe en el archivo la posición final de cada columna (m
 2. GRAVE, 34 nuevas sobre la calzada en 10 direcciones (Solinger Straße 1, Im Dau 12, Luxemburger Straße 37, …): **corregido** (regla de calzada de v20; no hizo falta documentar excepciones).
 3. GRAVE, 75 pares nuevos–v20 a <1,55 m (44 placas, 13 racimos, mín. 0,545 m en Zwirnerstraße 33): **corregido** (cada nueva queda a ≥1,55 m de las 72.110 dibujadas).
 4. AVISO A1, las 4 de Jakordenstraße 17 compartían un `dla`/`dlo`: **corregido** (malla 2×2 a 1,85 m, a 8,1–10,4 m de Frieda Meyer, sin mover v20).
+
+## Estado de los hallazgos de la auditoría C (ronda 3)
+
+Informe: `/workspace/audits/v21/C/auditoria-C-ronda3.md` sobre `17ef7fcc`. Las 72.110 de v20 siguen idénticas a `b142fa48`. Auditor A ronda 3: PASSED (cuentas, nombres, `la`/`lo` y dedupe no se han tocado: solo `dla`/`dlo` y `move_m` de 28 placas). B ronda 3 sigue en su worktree (no se toca). C: no se toca `/workspace/audits/v21/C/wt` ni 8941/8942.
+
+Causa: el extracto OSM cercano descartaba el tag `width` (y `est_width`, `sidewalk*`); `w4490370` se trataba como residencial de semiancho 2,50 m en vez de 5,50. El índice de vías usaba radio 1 y se omitía la calzada si el edificio más cercano estaba a >25 m. Además, el tope de 25 m aplicado piedra a piedra comprimía la malla rígida de 1,85 m. El sidecar `/workspace/v21-data/near/highway-tags-extra.json` (PBF oficial `2026-11-18T21:21:02Z`) enriquece 157.443 vías. El reparador `repair_v21_r3.py` (14:52:27–14:53:00 CET) recolocó **6 grupos / 28 placas** (3 de Berlín, 25 de Colonia); 0 sin hueco; `calzada-v21.csv` y `excepciones-25m-v21.csv` siguen con 0 filas. Con dla: 1.778 (Berlín 284/290, Colonia 1.494/1.550). Máx. 24,952 m (`koeln-562`, sin cambio).
+
+El test `tests/v21-new-render-placement.py` ahora: (1) aplica `width` OSM, (2) mira todas las vías vehiculares a ≤80 m (rc=4; no salta si `d_center` >25 m; exención de fachada solo <6 m), (3) exige malla intra-grupo de paso 1,85 m (±0,08 m), (4) recorre las 1.840. Sobre `17ef7fcc` el test **falla** exactamente en los casos de C: `ber-10773` −2,608 m y `koeln-2440` −0,114 m en calzada; grupos Bonner (mín. 0,067 m), Alteburger (1,003 m), Zülpicher (0,923 m) y Feige (1,593 m). Sobre el árbol actual, `--from-files` en las 1.840: **OK**. Run-all oficial (14:59:01–15:28:18 CET): **OK / EXIT:0** (log `/workspace/v21-data/out/run-all-c-r3.log`).
+
+1. GRAVE F1, `ber-10773` Selma Riese, Solinger Straße 1, seguía en el mismo dla, −2,608 m dentro de `w4490370` (width=11, semiancho 5,50): **corregido**. Nuevo dla 52,5198712 / 13,3350472 (5,001 m del origen). `rd_clear` +0,216 m respecto al eje (distancia al eje 5,716 m). No hizo falta ficha en `calzada-v21.csv`.
+2. GRAVE F1, `koeln-2440` Eva Helene Katz, Melatengürtel 13, −0,114 m en Scheidtweilerstraße `w241680539` (el chequeo la saltaba porque el edificio estaba a 25,014 m): **corregido**. Nuevo dla 50,9382734 / 6,9087154 (1,018 m). `rd_clear` +0,249 m. El grupo de 4 en esa dirección se desplazó con ella.
+3. GRAVE F2, `koeln-86` y `koeln-88` (Bonner Straße 33) apiladas a 0,067 m: **corregido**. Las 5 del grupo quedan en malla de paso 1,85 m (mín. 1,846 m).
+4. MEDIA F3, mallas irregulares en Alteburger Straße 11 (mín. 1,003 m, 8 placas) y Zülpicher Platz 4 (mín. 0,923 m, 8 placas): **corregido** (mín. 1,846 m y 1,847 m; 10 lados ≈1,85 m en cada grupo). Aviso `ber-11662`/`ber-11663` (Choriner Str. 13) a 1,593 m: **corregido** (mín. 1,849 m), sin acercarse al tope de 25 m.
+
