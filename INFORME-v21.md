@@ -91,7 +91,7 @@ El mapa carga las 1.550 placas nuevas de Colonia; la API de esa familia sigue en
 ## Worktree y commit
 
 - Worktree: `/workspace/kl-v21`, rama `v21`, creada desde `b142fa48` (v20 publicada). Padre de esta corrección: `54cdee54`.
-- Commit local (sin push): `fad34d85457373878e9b17526127b845583c0021` (`fad34d85`), 2026-11-21 13:34:38 CET, padre `54cdee54`. Mensaje: «v21: correcciones de auditorías A, B y C (dedupe, textos, layout del cliente, test de render, run-all OK)». Excluidos `__pycache__` y `pipeline/cache`. `data/stones.json` no forma parte del commit (sigue intacto).
+- Commit local C ronda 2 (sin push): `a8817b903d8482886247dcaf81177f6cc9e6e007` (`a8817b90`, tests y CSV) y `1ce9f27d8a3f48c1ad38628bffcb302e74810236` (`1ce9f27d`, dla/dlo, INFORME, hook de run-all), 2026-11-21 14:27 CET, padre `26d8eedd`. Un commit posterior anota estos hashes en ESTADO e INFORME. Mensajes: «v21: colocación final de las 1.840 nuevas (huella, calzada, 1,55 m, malla) y tests de C ronda 2» y «v21: dla/dlo final de Berlín y Colonia, INFORME, run-all de C ronda 2». Excluidos `__pycache__` y `pipeline/cache`. `data/stones.json` no forma parte del commit (sigue intacto). El commit de A+B+C ronda 1 permanece `fad34d85` / `26d8eedd`.
 - `data/stones.json` intacto (72.110, solo ODbL, sha256 `2834ce9ab8747a04bfda2004ae5f83c7cc8d31b99bcdbc64128c670298fc09dc`).
 
 ## Dudas (no bloquean la preparación)

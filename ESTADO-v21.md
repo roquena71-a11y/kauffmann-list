@@ -175,3 +175,9 @@ Colocar las 1.949 (dla/dlo, reglas v20; familias de API separadas; textos; tests
 - Fin: 2026-11-21 14:26:53 CET (inicio 13:59:33 CET). `REQUIRE_OAV=1`, venv `/workspace/venv-v21-ci`, puertos 8960/8970.
 - Resultado: **`run-all: OK` / `EXIT:0`**. Incluye compare de las 72.110 (idénticas a b142fa48) y `v21-new-render-placement` sobre posiciones dibujadas. country-buttons **FALLOS: ninguno**. Log: `/workspace/v21-data/out/run-all-c-r2.log`.
 - No se tocaron los worktrees ni HTTP de los auditores (C 8941/8942; B en 18899/18970). Sin push ni `publicar.yml`. `stones.json` intacto.
+
+## 14:27 Commits locales C ronda 2 (sin push)
+
+- `a8817b903d8482886247dcaf81177f6cc9e6e007` (`a8817b90`), 14:27:17 CET: test `v21-new-render-placement.py`, `calzada-v21.csv`, `excepciones-25m-v21.csv`.
+- `1ce9f27d8a3f48c1ad38628bffcb302e74810236` (`1ce9f27d`), 14:27:27 CET: `dla`/`dlo` de `data/berlin-added-20261121.json` y `data/koeln-added-20261121.json`, INFORME, hook en `run-all.sh`, ESTADO. Padre de la serie: `26d8eedd`. Sin push, sin `publicar.yml`, `stones.json` sha256 `2834ce9ab8747a04bfda2004ae5f83c7cc8d31b99bcdbc64128c670298fc09dc`.
+- El commit inmediatamente posterior en `v21` solo anota estos hashes en ESTADO e INFORME (HEAD de la rama).
