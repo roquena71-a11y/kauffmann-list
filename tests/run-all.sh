@@ -30,23 +30,36 @@ else
 fi
 # v19: columnas DIBUJADAS fuera de los edificios de OSM (necesita playwright + Chrome; si no hay, se omite con aviso)
 if [ -x /usr/bin/google-chrome ] && /usr/bin/python3 -c "import playwright" 2>/dev/null; then
-  python3 -m http.server 8899 --bind 127.0.0.1 >/dev/null 2>&1 & SRV=$!
+  PORT=${KL_HTTP_PORT:-8899}
+  python3 -m http.server "$PORT" --bind 127.0.0.1 >/dev/null 2>&1 & SRV=$!
   sleep 1
-  /usr/bin/python3 tests/sidewalk-render-check.py http://127.0.0.1:8899/ > /tmp/kl-sidewalk.log 2>&1 || { tail -15 /tmp/kl-sidewalk.log; kill $SRV; exit 1; }
+  /usr/bin/python3 tests/sidewalk-render-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-sidewalk.log 2>&1 || { tail -15 /tmp/kl-sidewalk.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-sidewalk.log
-  /usr/bin/python3 tests/sidewalk-render-check20.py http://127.0.0.1:8899/ > /tmp/kl-sidewalk20.log 2>&1 || { tail -15 /tmp/kl-sidewalk20.log; kill $SRV; exit 1; }
+  /usr/bin/python3 tests/sidewalk-render-check20.py http://127.0.0.1:${PORT}/ > /tmp/kl-sidewalk20.log 2>&1 || { tail -15 /tmp/kl-sidewalk20.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-sidewalk20.log
-  /usr/bin/python3 tests/map2d-check.py http://127.0.0.1:8899/ > /tmp/kl-map2d.log 2>&1 || { tail -15 /tmp/kl-map2d.log; kill $SRV; exit 1; }
+  /usr/bin/python3 tests/map2d-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-map2d.log 2>&1 || { tail -15 /tmp/kl-map2d.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-map2d.log
-  /usr/bin/python3 tests/country-row-check.py http://127.0.0.1:8899/ > /tmp/kl-row.log 2>&1 || { tail -15 /tmp/kl-row.log; kill $SRV; exit 1; }
+  # v21: las 72.110 placas de v20 deben dibujarse igual que en b142fa48; las nuevas, en su dla/dlo de archivo.
+  V20_ROOT=${V20_CLIENT:-/workspace/countries-proto-v20r4}
+  if [ ! -d "$V20_ROOT" ]; then
+    echo "FAIL: no está el cliente v20 en $V20_ROOT (hace falta para comparar las 72.110 posiciones dibujadas)"
+    kill $SRV; exit 1
+  fi
+  V20PORT=${KL_HTTP_PORT_V20:-8970}
+  python3 -m http.server "$V20PORT" --bind 127.0.0.1 --directory "$V20_ROOT" >/dev/null 2>&1 & SRV20=$!
+  sleep 1
+  /usr/bin/python3 tests/v21-v20-render-compare.py http://127.0.0.1:${PORT}/ http://127.0.0.1:${V20PORT}/ > /tmp/kl-v20cmp.log 2>&1 || { tail -30 /tmp/kl-v20cmp.log; kill $SRV20; kill $SRV; exit 1; }
+  tail -8 /tmp/kl-v20cmp.log
+  kill $SRV20
+  /usr/bin/python3 tests/country-row-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-row.log 2>&1 || { tail -15 /tmp/kl-row.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-row.log
-  /usr/bin/python3 tests/disc-card-check.py http://127.0.0.1:8899/ > /tmp/kl-disc.log 2>&1 || { tail -15 /tmp/kl-disc.log; kill $SRV; exit 1; }
+  /usr/bin/python3 tests/disc-card-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-disc.log 2>&1 || { tail -15 /tmp/kl-disc.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-disc.log
-  /usr/bin/python3 tests/attribution-check.py http://127.0.0.1:8899/ > /tmp/kl-attr.log 2>&1 || { tail -15 /tmp/kl-attr.log; kill $SRV; exit 1; }
+  /usr/bin/python3 tests/attribution-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-attr.log 2>&1 || { tail -15 /tmp/kl-attr.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-attr.log
   # encuadre de países (9 tamaños + 320x568; ~7 min). SKIP_COUNTRY_BUTTONS=1 lo omite en iteraciones rápidas.
   if [ -z "$SKIP_COUNTRY_BUTTONS" ]; then
-    /usr/bin/python3 tests/country-buttons-check.py http://127.0.0.1:8899/ > /tmp/kl-cb.log 2>&1 || { tail -25 /tmp/kl-cb.log; kill $SRV; exit 1; }
+    /usr/bin/python3 tests/country-buttons-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-cb.log 2>&1 || { tail -25 /tmp/kl-cb.log; kill $SRV; exit 1; }
     tail -1 /tmp/kl-cb.log
   fi
   kill $SRV

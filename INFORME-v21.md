@@ -3,8 +3,9 @@
 Preparación en el worktree `/workspace/kl-v21`, rama `v21`, partiendo de `b142fa48` (v20 publicada). **Sin push, sin publicar, sin correr `publicar.yml`.** Zona horaria: Europe/Berlin (CET, UTC+1).
 
 - Inicio: 2026-11-21 09:32:11 CET
-- Fin (tests oficiales): 2026-11-21 11:47:46 CET
-- Commit local: 2026-11-21 11:49:54 CET (`316362af`)
+- Fin (tests oficiales, ronda inicial): 2026-11-21 11:47:46 CET
+- Commit de aquella ronda: `316362af` / tip `54cdee54` (11:49–11:50 CET)
+- Corrección tras auditoría A (ronda 1, FAIL sobre `54cdee54`): en curso el 2026-11-21 desde las 12:00 CET
 - Datos de trabajo: `/workspace/v21-data` (no se ha tocado `/workspace/v20-data-r4`)
 - `data/stones.json` sigue siendo solo ODbL (72.110 placas OSM + Wikidata). Las listas municipales van en archivos y familias de licencia aparte.
 
@@ -31,27 +32,31 @@ Preparación en el worktree `/workspace/kl-v21`, rama `v21`, partiendo de `b142f
 
 ## Cruce contra las 72.110 placas OSM/Wikidata
 
-Criterio: duplicada clara = mismo `name_key` y (≤25 m o misma `addr_key`); probable (no se importa) = mismo nombre a 25–150 m o a ≤30 km; homónimo a más de 30 km = nueva.
+Criterio: duplicada clara = mismo `name_key` y (≤25 m o misma `addr_key`), **o** el mismo identificador estable de la fuente ya guardado en OSM. En Berlín: `ref` de OSM o el id de `https://www.stolpersteine-berlin.de/…/biografie/{id}` (el mismo que la columna «Url zu Biografie» / `ber-{id}`). En Colonia: el parámetro `stid=` de la URL de nsdok/museenkoeln que trae el JSON (no el `id` del geoportal, que es otro numerador y choca por casualidad con otros `stid`). Probable (no se importa) = mismo nombre a 25–150 m o a ≤30 km; homónimo a más de 30 km = nueva. Las 20 filas de Berlín con `Virtueller-Stein=virtuell` se excluyen del mapa físico y de la API (no son placas en la acera).
 
-| Fuente | Entrada | Duplicadas claras | Probables (fuera) | Nuevas en el mapa |
-| --- | ---: | ---: | ---: | ---: |
-| Berlín | 11.137 | 10.476 | 277 | **384** |
-| Colonia | 2.960 | 1.281 | 114 | **1.565** |
-| Total | 14.097 | 11.757 | 391 | **1.949** |
+| Fuente | Entrada | Duplicadas claras | Probables (fuera) | Virtuales (fuera) | Nuevas en el mapa |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Berlín | 11.137 | 10.763 | 64 | 20 | **290** |
+| Colonia | 2.960 | 1.297 | 113 | 0 | **1.550** |
+| Total | 14.097 | 12.060 | 177 | 20 | **1.840** |
 
-Todas las nuevas traían coordenadas. No se inventan nombres ni fechas (`Geburtsjahr` 0 se omite; 1965 y 1968 se dejan tal cual). 3 placas de Colonia van sin nombre, como en la fuente.
+Las 90 placas que la auditoría A señaló (misma `ref` / URL de biografía, tabla `berlin-missed-dups-ref.csv`) están ahora todas en duplicadas, no en nuevas. De ellas, 3 quedan documentadas como misma `ref` pero lejanas (no se importan como segunda placa sin revisión): `ber-2007` Manfred Ephraim Joel / `n13968440828`, 562 m (OSM tiene además `n8205782058` a 150,8 km con la misma `ref`); `ber-8876` Rolph Eduard Henoch / `n13302465638`, 788 m; `ber-8877` Ernst Peter Henoch / `n13302465640`, 787 m. Josephine / Josefine Huldschinsky (`ber-3776`, `ref=3776`) es la misma placa ya publicada, no una duda.
+
+En Colonia se apartaron 7 «nuevas» que compartían `stid=` con un nodo OSM ya publicado (mismo nombre y dirección, 3–13 m; el OSM suele añadir «geb. …»).
+
+Todas las nuevas traían coordenadas. No se inventan nombres ni fechas (`Geburtsjahr` 0 se omite; 1965 y 1968 se dejan tal cual). 3 placas de Colonia van sin nombre, como en la fuente. Los 11 nombres de Berlín que el parser había invertido por una coma interna se publican ahora exactamente como `Vorname + " " + Nachname` (comillas y corchetes de la fuente; a lo sumo se colapsan espacios). En Colonia se sigue volcando el patrón claro «Apellido, Nombre» del campo único `name`.
 
 ## Colocación (reglas de v20; solo dla/dlo)
 
 - Extracto OSM Berlín+Colonia: timestamp `2026-11-18T21:21:02Z`
-- 821 grupos: 551 solo nuevas, 270 mixtos (1.221 placas ya publicadas; `stones.json` no se reescribió)
-- 1.534 ajustadas (dla/dlo); 415 se quedan en el punto de origen (sin dla)
-- Desplazamientos >25 m: **0**. Máximo: **24,97 m**
-- 920 partían dentro de un edificio. Holgura mínima posterior a edificios: 1,53 m (≥0,5 m)
-- Berlín: 338/384 con dla. Colonia: 1.196/1.565 con dla
+- 730 grupos: 514 solo nuevas, 216 mixtos (970 placas ya publicadas; `stones.json` no se reescribió; `existing_dla_changed = 0`)
+- 1.440 ajustadas (dla/dlo); 400 se quedan en el punto de origen (sin dla)
+- Desplazamientos >25 m: **0**. Máximo: **24,9977 m** (`koeln-95`, `koeln-91`, `koeln-88`, `koeln-86`, `koeln-100`), medido con el mayor de la fórmula equirectangular (`M_LAT=111320`, la de `geo.to_xy`) y el haversine (`R=6371000` de `geo.hav`).
+- `koeln-562` Kurt (Dr.) Frankenstein, Buchforststraße 2, Köln, quedaba a **25,0011 m** por el redondeo a 7 decimales (el haversine daba 24,973 m; el informe anterior citó 24,97 m y no era exacto). Se reajustó sobre el mismo vector a **24,952 m** (`dlo` 7,0096718 → 7,0096711). `la`/`lo` de origen no se tocan. No hace falta excepción.
+- Berlín: 258/290 con dla. Colonia: 1.182/1.550 con dla
 - Archivos: `data/berlin-added-20261121.json`, `data/koeln-added-20261121.json`
-- Total en el mapa si se cargan los tres archivos: **74.059**
-- El cliente (app3d.js) dibuja las placas ya publicadas como en v20; solo coloca alrededor las municipales nuevas, y no toma el ángulo de calle de grupos que no existían en v20. Así no se mueven las de `stones.json`.
+- Total en el mapa si se cargan los tres archivos: **73.950** (72.110 ODbL + 1.840)
+- El cliente (`app3d.js`) calcula el layout de v20 **solo** con las 72.110 placas de `stones.json`, con el mismo algoritmo que `b142fa48`. Las placas municipales no entran en agrupación, fusión, ángulo, cuadrícula ni desplazamiento: se dibujan exactamente en el `dla`/`dlo` (o `la`/`lo`) del archivo. Si una nueva es la misma persona que una ya publicada (mismo nombre, ≤25 m, misma `addr_key`), queda como alias de esa primaria y no la sustituye. Todas las nuevas llevan `cc: "DE"`.
 
 ## API (build offline, generated=2026-11-21)
 
@@ -59,60 +64,71 @@ La regla de posiblemente vivas no se ha relajado (sin indicio de muerte y nacimi
 
 | Familia | Registros de entrada | Publicadas | Excluidas (posiblemente vivas) |
 | --- | ---: | ---: | ---: |
-| cc-by (Berlín) | 384 | **279** | 105 |
-| dl-de-zero (Colonia) | 1.565 | **0** | 1.565 (el JSON no trae fechas) |
+| cc-by (Berlín) | 290 | **228** | 62 |
+| dl-de-zero (Colonia) | 1.550 | **0** | 1.550 (el JSON no trae fechas) |
 | odbl | 72.110 | 62.519 | 8.906 (más otras políticas) |
 | cc0 | 133.301 | 118.254 | 15.047 |
-| Total fichas API |  | **181.052** |  |
+| Total fichas API |  | **181.001** |  |
 
-`pipeline validate`: 0 errores, 4 avisos de tamaño (los de siempre). `data/search/` sigue siendo solo ODbL.
+`pipeline validate` en el build: 0 errores. `data/search/` sigue siendo solo ODbL. `api/v1/index.json` y `api/v1/dl-de-zero/index.json` listan `koeln_opendata` en `sources` (URL https://open.nrw/dataset/stolpersteine-koln-k) aunque haya 0 fichas publicadas.
 
-## Cliente
+El mapa carga las 1.550 placas nuevas de Colonia; la API de esa familia sigue en 0 personas por la regla de 110 años y la ausencia de fechas en la fuente. Opciones, sin inventar datos ni copiar biografías: (1) dejarlo como está; (2) si más adelante la fuente abierta incluye fechas, repetir el build; (3) no raspar museenkoeln.de / nsdok.de; (4) no tratar «aparecer en una lista de Stolpersteine» como prueba de muerte sin un cambio de política explícito.
 
-- Versión de caché: `kauffmann-v21-pages` (`tests/bump-version.py`).
-- Al cargar tres JSON, `style.load` podía dispararse después de asignar `DATA` y antes de `buildStones()`, y montaba la capa `pts` con datos vacíos. `tryAddOverlays()` espera a `POINTS_FC`/`STONES_FC`/`AGG` y no depende de `map.isStyleLoaded()` (en este Chrome a veces sigue en falso tras cargar el estilo).
+## Cliente y documentos públicos
+
+- Versión de caché: `kauffmann-v22-pages` (`tests/bump-version.py`).
+- Al cargar tres JSON, `style.load` podía dispararse después de asignar `DATA` y antes de `buildStones()`, y montaba la capa `pts` con datos vacíos. `tryAddOverlays()` espera a `POINTS_FC`/`STONES_FC`/`AGG` y no depende de `map.isStyleLoaded()`.
+- «Acerca de» (es/de/en): el total del mapa (${count} = 73.950) se parte en 72.110 de OSM/Wikidata (ODbL), 290 de la lista abierta de Berlín (CC BY) y 1.550 de la de Colonia (DL-DE Zero 2.0).
+- `index.html` y `kauffmann-list.jsonld` (2026-11-21, sincronizados): 72.110 es solo ODbL; el mapa con las listas municipales suma 73.950.
+- `robots.txt` cita también CC BY (`api/v1/cc-by`) y dl-de/zero-2-0 (`api/v1/dl-de-zero`).
+- `sitemap.xml`: `lastmod` 2026-11-21 en las páginas tocadas; añadidos `api/v1/cc-by/find/index.json` y `api/v1/dl-de-zero/find/index.json`.
+- `tests/v21-added-test.cjs` mide el desplazamiento con `hav()` oficial (R=6.371.000 m) y el tope es 25 m, salvo excepción documentada. Máximo actual: 24,9696 m (`koeln-86`).
 
 ## Tests
 
-`tests/run-all.sh` con `REQUIRE_OAV=1` en el venv fresco `/workspace/venv-v21-ci`. Arranque: 2026-11-21 11:09:12 CET. Fin: 11:47:46 CET. Log: `/workspace/v21-data/out/run-all.log`.
-
-- `tests/v21-added-test.cjs`: OK (Berlín 384 + Colonia 1.565, sin colisión con `stones.json`)
-- 58 tests unitarios en 5,185 s: OK
-- counter/SW, actualizaciones y versión única v21: OK (`kauffmann-v21-pages`)
-- `pipeline validate` en el suite: 0 errores de meta/esquema/fila en las cuatro familias; 4.152 archivos `find` validados; 730.859 filas frente a la ficha
-- ai-door-check: 0 errores (la familia vacía `dl-de-zero` tiene directorios vacíos y no rompe el chequeo)
-- ai-sim: 20/20 correctas × 2 (seed 1 y 2), 0 avisos
-- sidewalk v19 y v20: OK (ninguna columna ni chincheta a <0,5 m de un edificio en 9.329 placas; 109 residuales ya documentados)
-- mapa 2D: OK (41 chinchetas; el fixture intercepta `data/*-added-*.json` vacío)
-- fila de países en el teléfono, ficha Hassall (es/de/en) y atribución: OK, axe 0
-- `country-buttons-check.py`: **FALLOS: ninguno** (10 tamaños)
-- Resultado oficial: **`run-all: OK` / `EXIT:0`**
-
-No se ha enviado ningún hit a kl-contador ni a `*.workers.dev`. No se ha hecho push ni se ha corrido `publicar.yml`. No se ha borrado nada en la caja.
-
-## API de Colonia: 1.565 placas en el mapa, 0 fichas
-
-El mapa carga las 1.565 placas nuevas de Colonia (`data/koeln-added-20261121.json`). En `api/v1/dl-de-zero/` el build publica **0 personas**. No es un fallo del pipeline: la regla de posiblemente vivas no se ha tocado (`LIVING_YEARS = 110`). Si no hay indicio de muerte y el año de nacimiento falta o es de hace menos de 110 años, no se emite ficha de persona. El mapa sigue mostrando la placa.
-
-El JSON de Offene Daten Köln solo trae `id`, `adresse_original`, `stadtteil`, `name` y `url`. No hay año de nacimiento ni de muerte, así que las 1.565 entran al filtro y salen todas excluidas. En Berlín la misma regla deja fuera 105 de 384 y publica 279, porque el CSV sí trae años de nacimiento (los anteriores a 1916 pasan).
-
-Opciones, **sin inventar datos ni copiar biografías**:
-
-1. **Dejarlo como está** (lo preparado en este worktree). El mapa enseña las 1.565 placas; la API no publica a quien, con los campos disponibles, no se puede descartar como posiblemente viva. Es conservador y coherente con la política vigente.
-2. **Si más adelante la fuente abierta incluye fechas** —un campo del propio JSON o CSV de Offene Daten Köln / Open.NRW—, repetir el build de la familia `dl-de-zero` con esos campos. Hoy no los trae.
-3. **No raspar** museenkoeln.de / nsdok.de para sacar fechas o textos: esa base no declara licencia abierta; solo se guarda el enlace que ya viene en el JSON.
-4. **No tratar «aparecer en una lista de Stolpersteine» como prueba de muerte** sin un cambio de política explícito. Eso relajaría la regla de 110 años para toda la API, no solo para Colonia.
-
-Ninguna de estas opciones rellena años inventados.
+`REQUIRE_OAV=1 tests/run-all.sh` oficial sobre el código con las correcciones A+B+C: **OK / EXIT:0**, 2026-11-21 12:57:53–13:30:22 CET, venv `/workspace/venv-v21-ci`, `KL_HTTP_PORT=8960`, `KL_HTTP_PORT_V20=8970`. Log: `/workspace/v21-data/out/run-all-oficial.log`. 58 unitarios OK, ai-door 0 errores, ai-sim 20/20 ×2, sidewalk v19 y v20 (9.329), mapa 2D, comparación de las 72.110 posiciones dibujadas contra `b142fa48` (1.836 nuevas visibles clavadas al archivo; 4 alias de una de v20; 1.840 con `cc=DE`), fila de países, Hassall, atribución, country-buttons (FALLOS: ninguno). Versión de caché `kauffmann-v22-pages` (`?v=22`).
 
 ## Worktree y commit
 
-- Worktree: `/workspace/kl-v21`, rama `v21`, creada desde `b142fa48` (v20 publicada).
-- Commit local (sin push): `316362af884fedb20c9273ec8b3e558d018fa414` (`316362af`), 2026-11-21 11:49:54 CET, padre `b142fa48`. Sin `publicar.yml`.
-- `data/stones.json` intacto (72.110, solo ODbL). `data/search/` regenerado con la misma fecha `generated=2026-11-21`, sigue siendo solo ODbL (72.110).
+- Worktree: `/workspace/kl-v21`, rama `v21`, creada desde `b142fa48` (v20 publicada). Padre de esta corrección: `54cdee54`.
+- Commit: solo local, en esta rama, tras el run-all. Sin push y sin `publicar.yml`.
+- `data/stones.json` intacto (72.110, solo ODbL, sha256 `2834ce9ab8747a04bfda2004ae5f83c7cc8d31b99bcdbc64128c670298fc09dc`).
 
 ## Dudas (no bloquean la preparación)
 
 - Berlín: el catálogo indica `license_id: cc-by` pero no aclara si es CC BY 3.0 o 4.0.
 - Colonia: la ficha habla de «rund 2.300» / «über 2.400»; esta descarga tiene 2.960 entidades.
-- Josefine / Josephine Huldschinsky en Ahornallee 50 (Berlín): posible la misma persona con grafía distinta; ante la duda se han dejado las dos (no se ha fusionado) y el cliente ya no desplaza las placas ya publicadas de ese grupo.
+- El auditor C devolvió FAIL sobre `54cdee54` (colocación en el cliente renderizado); las correcciones van en este mismo worktree, junto con A y B.
+
+## Estado de los hallazgos de la auditoría A (ronda 1)
+
+1. HIGH, 90 duplicadas por `ref`/URL: **corregido** (las 90 están fuera de nuevas y de `api/v1/cc-by/`; también se aplica `stid=` en Colonia, 7 casos).
+2. HIGH, 11 nombres invertidos por coma interna: **corregido** (`parse_display_name` ya no trata esas comas como «Apellido, Nombre»; los nombres coinciden con la fuente).
+3. HIGH, 2 piedras virtuales: **corregido** (las 20 con `Virtueller-Stein=virtuell` se excluyen del mapa y de la API; criterio documentado).
+4. LOW, máximo 25,001 m en `koeln-562`: **corregido** (reajuste a 24,952 m; el máximo con equirectangular es 24,9977 m; con `hav()` oficial, 24,9696 m; INFORME actualizado).
+5. LOW, `sources` vacío y JSON-LD desfasado: **corregido** (`dl-de-zero` declara `koeln_opendata`; JSON-LD e `index.html` con fecha 2026-11-21 y cifras ODbL 72.110 vs mapa 73.950).
+
+## Estado de los hallazgos de la auditoría B (ronda 1)
+
+Las cifras de B sobre `54cdee54` (384+1.565=74.059, API 279) se han recalculado tras las correcciones de A.
+
+1. MEDIA, «Acerca de» atribuye el total solo a OSM/Wikidata: **corregido** (es/de/en parten 73.950 = 72.110 ODbL + 290 CC BY + 1.550 DL-DE Zero).
+2. MEDIA, JSON-LD/`index.html` en 72.110 y 2026-11-20: **corregido** (fecha 2026-11-21; 72.110 queda como ODbL y se declara el total del mapa 73.950).
+3. MEDIA, `robots.txt` sin las licencias nuevas: **corregido**.
+4. MEDIA, `sitemap.xml` desfasado: **corregido** (`lastmod` 2026-11-21 y find de `cc-by` / `dl-de-zero`).
+5. MEDIA, test v21 con umbral 60 m: **corregido** (`hav()` oficial, tope 25 m, solo excepciones documentadas).
+
+## Estado de los hallazgos de la auditoría C (ronda 1)
+
+Informe: `/workspace/audits/v21/C/auditoria-C-ronda1.md` sobre `54cdee54` (cifras pre-A: 384+1.565). No se toca `/workspace/audits/v21/C/wt` ni sus servidores. Las reglas de colocación deben cumplirse en la posición **dibujada**, no solo en el `dla`/`dlo` del archivo.
+
+1. GRAVE, 146 placas de v20 se mueven al dibujarlas (máx. 14,666 m, Frieda Meyer, Jakordenstraße 17, Köln; 109 a más de 200 m de cualquier nueva): **corregido** (el layout de v20 corre solo sobre las 72.110; test de comparación de las 72.110 contra `b142fa48`).
+2. GRAVE, fusión del grupo de Jakordenstraße 17 (24 de v20 + 4 nuevas): **corregido** (las nuevas no entran en la agrupación).
+3. GRAVE, 61 centros de nuevas dentro de edificios al renderizar: **corregido en el cliente** (se clavan al `dla`/`dlo` del archivo, que el auditor vio por lo general fuera del edificio).
+4. GRAVE, 12 nuevas a más de 25 m al renderizar (máx. 32,002 m) y `koeln-562` a 25,001 m en archivo: **corregido** (sin relayout en el cliente; `koeln-562` ya reajustado en archivo a 24,952 m, hallazgo A4).
+5. GRAVE, 40 nuevas sobre la calzada al renderizar: **corregido en el cliente** (posición = archivo, sin desplazamiento de grupo).
+6. MEDIO, 72 con holgura de columna <0,5 m al renderizar: **corregido en el cliente** (misma política).
+7. MEDIO, alias `ber-6881` desplaza una de v20 2,053 m: **corregido** (una nueva nunca es primaria de una de v20; el centroide de v20 no cambia).
+8. MEDIO, 28 cambios solo de ángulo en v20: **corregido** (el ángulo de calle se calcula solo con las 72.110).
+9. MEDIO, 2 pares entre grupos <1,55 m al renderizar: **corregido en el cliente**. En archivo esas distancias ya eran legales (p. ej. `koeln-1194` frente a `n2283343674` = 5,639 m; `ber-10773` frente a `Q132155276` = 10,33 m).
+10. AVISO, nuevas sin `cc`: **corregido** (`cc: "DE"` en los JSON y en el generador).

@@ -1,12 +1,11 @@
 {"columns":["id","name","birth_year","death_year","place","people_prefix"],
-"count":4,
+"count":3,
 "kind":"birth",
 "meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
 "page":1,
 "pages":1,
 "rows":[
 ["ber-12052","Alice Bertha Rosenberg",1902,null,"Berlin","r"],
-["ber-937","Elsa Tawrigowski genannt Friedländer",1902,null,"Berlin","f"],
 ["ber-8215","Helene Michaelis",1902,null,"Berlin","m"],
 ["ber-12157","Marie Blitz",1902,null,"Berlin","b"]
 ],

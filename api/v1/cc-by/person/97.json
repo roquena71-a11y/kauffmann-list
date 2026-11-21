@@ -2,7 +2,6 @@
 "meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
 "rows":[
 ["ber-11897","g"],
-["ber-12097","w"],
-["ber-7797","c"]
+["ber-12097","w"]
 ],
 "shard":"97"}

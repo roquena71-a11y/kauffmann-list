@@ -7,10 +7,10 @@
    · Archivos de la app → con ?v=N en index.html y en SHELL; nueva versión = URL nueva, nunca mezcla de versiones.
    · Al activarse una versión nueva sobre una anterior, las pestañas abiertas se recargan una vez (también las de una versión
      antigua, que no saben escuchar 'controllerchange'). */
-const VERSION = 'kauffmann-v21-pages';
+const VERSION = 'kauffmann-v22-pages';
 const SHELL = ['./','index.html',
-  // index.html pide estos archivos con ?v=21: así una página nueva nunca se mezcla con archivos viejos de la caché.
-  'style.css?v=21','style3d.css?v=21','mapui.css?v=21','app3d.js?v=21','people.js?v=21','columns.js?v=21','imagery.js?v=21','source-links.js?v=21','dedupe.js?v=21','counter.js?v=21','mapui.js?v=21',
+  // index.html pide estos archivos con ?v=22: así una página nueva nunca se mezcla con archivos viejos de la caché.
+  'style.css?v=22','style3d.css?v=22','mapui.css?v=22','app3d.js?v=22','people.js?v=22','columns.js?v=22','imagery.js?v=22','source-links.js?v=22','dedupe.js?v=22','counter.js?v=22','mapui.js?v=22',
   'manifest.webmanifest',
   'kauffmann-list.jsonld','robots.txt','sitemap.xml','data/bio/manifest.json',
   'proyecto/','proyecto/index.html','proyecto/proyecto.css','proyecto/proyecto.js',

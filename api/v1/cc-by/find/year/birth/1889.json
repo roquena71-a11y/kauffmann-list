@@ -1,11 +1,10 @@
 {"columns":["id","name","birth_year","death_year","place","people_prefix"],
-"count":6,
+"count":5,
 "kind":"birth",
 "meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
 "page":1,
 "pages":1,
 "rows":[
-["ber-2023","Else Goldenthal",1889,null,"Berlin","g"],
 ["ber-12194","Isaak Scheiner",1889,null,"Berlin","s"],
 ["ber-12230","Käthe Meyersohn",1889,null,"Berlin","m"],
 ["ber-11664","Moses Melinger",1889,null,"Berlin","m"],

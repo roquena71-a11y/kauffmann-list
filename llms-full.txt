@@ -8,7 +8,7 @@ Site: https://roquena71-a11y.github.io/kauffmann-list/ · API root: https://roqu
 
 ## 1. What is here
 
-- **cc-by** (CC-BY, 279 people): Placas añadidas de la lista abierta de Stolpersteine de Berlín (CSV). Solo nombre, dirección, año de nacimiento y coordenadas; no se copian las biografías de stolpersteine-berlin.de. Familia separada: no se fusiona con ODbL ni con CC0.
+- **cc-by** (CC-BY, 228 people): Placas añadidas de la lista abierta de Stolpersteine de Berlín (CSV). Solo nombre, dirección, año de nacimiento y coordenadas; no se copian las biografías de stolpersteine-berlin.de. Familia separada: no se fusiona con ODbL ni con CC0.
 - **cc0** (CC0-1.0, 118,254 people): Registros solo de Wikidata (CC0): personas con identificador en bases de datos sobre la Shoah y la persecución nazi (no todas son víctimas mortales; ver fate y death_date). Sin coordenadas ni ids de OpenStreetMap; publicados aparte de la familia ODbL.
 - **dl-de-zero** (dl-de/zero-2-0, 0 people): Placas añadidas del JSON abierto Stolpersteine Köln (Open.NRW / Offene Daten Köln). No se copian las biografías de museenkoeln.de/nsdok.de. Familia separada: no se fusiona con ODbL ni con CC0.
 - **odbl** (ODbL-1.0, 62,519 people): Derivative Database (ODbL 1.0) de Stolpersteine (OpenStreetMap + Wikidata). Share-alike: si redistribuyes la base o un extracto sustancial, debe seguir bajo ODbL 1.0 con atribución.

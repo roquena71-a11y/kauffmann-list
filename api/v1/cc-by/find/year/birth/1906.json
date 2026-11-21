@@ -1,14 +1,11 @@
 {"columns":["id","name","birth_year","death_year","place","people_prefix"],
-"count":5,
+"count":2,
 "kind":"birth",
 "meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
 "page":1,
 "pages":1,
 "rows":[
-["ber-9031",",Elazar\" Steinberg Eli",1906,null,"Berlin","e"],
 ["ber-11958","Gertrud Bindefeld",1906,null,"Berlin","b"],
-["ber-2128","Hanni Riedel",1906,null,"Berlin","r"],
-["ber-8440","Herbert Julius Joel",1906,null,"Berlin","j"],
 ["ber-12303","Herta Cohn",1906,null,"Berlin","c"]
 ],
 "year":1906}

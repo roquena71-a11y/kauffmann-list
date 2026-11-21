@@ -3,17 +3,12 @@
 "prefix":"t",
 "rows":[
 ["tannenbaum","ber-10913","Deborah Tannenbaum",1916,null,"Berlin","t"],
-["tauba","ber-11864","Toni Taube Tauba Rosenzweig",1912,null,"Berlin","r"],
-["taube","ber-11864","Toni Taube Tauba Rosenzweig",1912,null,"Berlin","r"],
-["tawrigowski","ber-937","Elsa Tawrigowski genannt Friedländer",1902,null,"Berlin","f"],
-["tawrigowski","ber-938","Herbert Tawrigowski genannt Friedländer",1905,null,"Berlin","f"],
 ["teitelbaum","ber-11345","Hildegard Teitelbaum",1898,null,"Berlin","t"],
 ["teitelbaum","ber-11346","Isaak Teitelbaum",1888,null,"Berlin","t"],
 ["theodor","ber-11203","Theodor Salomon",1889,null,"Berlin","s"],
 ["therese","ber-11976","Therese Meier",1893,null,"Berlin","m"],
 ["therese","ber-11658","Therese Neumann",1897,null,"Berlin","n"],
 ["tobias","ber-7871","Fanny Tobias",1874,null,"Berlin","t"],
-["toni","ber-11864","Toni Taube Tauba Rosenzweig",1912,null,"Berlin","r"],
 ["trotino","ber-11934","Helene Trotino",1892,null,"Berlin","t"],
 ["trotino","ber-11933","Osias Moses Trotino",1894,null,"Berlin","t"],
 ["turner","ber-11727","Julius Collen Turner",1881,null,"Berlin","t"]

@@ -1,15 +1,13 @@
 {"columns":["id","name","birth_year","death_year","place","people_prefix"],
-"count":8,
+"count":6,
 "kind":"birth",
 "meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
 "page":1,
 "pages":1,
 "rows":[
 ["ber-12169","Alfred Eduard Nathan",1914,null,"Berlin","n"],
-["ber-11981","Dalila Wydra",1914,null,"Berlin","w"],
 ["ber-7460","Elli Smula",1914,null,"Berlin","s"],
 ["ber-10471","Fritz Neumark",1914,null,"Berlin","n"],
-["ber-11616","Käthe Hanna Guttenplan",1914,null,"Berlin","g"],
 ["ber-12229","Lisa Meyersohn",1914,null,"Berlin","m"],
 ["ber-11912","Rudolf Rosenbaum",1914,null,"Berlin","r"],
 ["ber-11776","Selma Holdstein",1914,null,"Berlin","h"]

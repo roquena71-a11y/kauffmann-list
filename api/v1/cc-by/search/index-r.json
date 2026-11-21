@@ -3,11 +3,9 @@
 "prefix":"r",
 "rows":[
 ["ber-12266","Marie Rausnitz",1913,"Berlin",52.49831,13.29833,"r"],
-["ber-5264","Herta Rechelmann",1900,"Berlin",52.51767,13.33865,"r"],
 ["ber-12000","Fritz Regensburger",1888,"Berlin",52.53364,13.41034,"r"],
 ["ber-12001","Ida Regensburger",1900,"Berlin",52.53181,13.41638,"r"],
 ["ber-11971","Dorothea Reichenbach",1866,"Berlin",52.50421,13.32177,"r"],
-["ber-2128","Hanni Riedel",1906,"Berlin",52.49245,13.3932,"r"],
 ["ber-10773","Selma Riese",1880,"Berlin",52.51987,13.33497,"r"],
 ["ber-11913","Gerda Rosenbaum",1910,"Berlin",52.50549,13.32032,"r"],
 ["ber-11912","Rudolf Rosenbaum",1914,"Berlin",52.50549,13.32032,"r"],
@@ -20,9 +18,7 @@
 ["ber-11636","Blime Rosenrauch",1890,"Berlin",52.53075,13.44486,"r"],
 ["ber-12127","Auguste Rosenthal",1890,"Berlin",52.52093,13.35149,"r"],
 ["ber-12126","Max Rosenthal",1884,"Berlin",52.52093,13.35149,"r"],
-["ber-11864","Toni Taube Tauba Rosenzweig",1912,"Berlin",52.52256,13.4039,"r"],
 ["ber-12059","Feodora Rosin",1893,"Berlin",52.53726,13.42222,"r"],
 ["ber-11729","Ludwig Roth",1900,"Berlin",52.50927,13.3987,"r"],
-["ber-10915","Max Moses Rowelski",1908,"Berlin",52.50944,13.40488,"r"],
-["ber-3619","Adolf Russ",1867,"Berlin",52.51735,13.33634,"r"]
+["ber-10915","Max Moses Rowelski",1908,"Berlin",52.50944,13.40488,"r"]
 ]}

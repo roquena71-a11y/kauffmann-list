@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-11-21T10:05:20+01:00",
-    "count": 384,
+    "generated": "2026-11-21T12:09:10+01:00",
+    "count": 290,
     "license": "Creative Commons Attribution (cc-by)",
     "license_url": "https://opendefinition.org/licenses/cc-by/",
     "attribution": [
@@ -16,81 +16,6 @@
   },
   "stones": [
     {
-      "id": "ber-3",
-      "la": 52.51201,
-      "lo": 13.40811,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Herta Abraham",
-      "a": "Wallstraße 84, 10179 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1895",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/3",
-      "dla": 52.5119178,
-      "dlo": 13.4081975
-    },
-    {
-      "id": "ber-264",
-      "la": 52.5173951,
-      "lo": 13.4083914,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Wilfrid Israel",
-      "a": "Spandauer Str. 26 - 32, 10178 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1899",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/264",
-      "dla": 52.5173586,
-      "dlo": 13.4083411
-    },
-    {
-      "id": "ber-342",
-      "la": 52.5238466,
-      "lo": 13.399935293254,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Philipp Kozower",
-      "a": "Oranienburger Str. 9, 10178 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1894",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/342",
-      "dla": 52.5237482,
-      "dlo": 13.3996553
-    },
-    {
-      "id": "ber-343",
-      "la": 52.5238466,
-      "lo": 13.399935293254,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Gisela Kozower",
-      "a": "Oranienburger Str. 9, 10178 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1901",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/343",
-      "dla": 52.5237482,
-      "dlo": 13.3996553
-    },
-    {
-      "id": "ber-346",
-      "la": 52.5238466,
-      "lo": 13.399935293254,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Uri Aron Kozower",
-      "a": "Oranienburger Str. 9, 10178 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1942",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/346",
-      "dla": 52.5237482,
-      "dlo": 13.3996553
-    },
-    {
       "id": "ber-737",
       "la": 52.52511,
       "lo": 13.39754,
@@ -103,7 +28,9 @@
       "b": "1881",
       "lb": "https://www.stolpersteine-berlin.de/biografie/737",
       "dla": 52.5250172,
-      "dlo": 13.3975809
+      "dlo": 13.3975809,
+      "move_m": 10.6834,
+      "cc": "DE"
     },
     {
       "id": "ber-738",
@@ -118,239 +45,9 @@
       "b": "1905",
       "lb": "https://www.stolpersteine-berlin.de/biografie/738",
       "dla": 52.5250172,
-      "dlo": 13.3975809
-    },
-    {
-      "id": "ber-937",
-      "la": 52.492152039988,
-      "lo": 13.3511728,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Elsa Tawrigowski genannt Friedländer",
-      "a": "Barbarossastr. 8, 10781 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1902",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/937",
-      "dla": 52.4921527,
-      "dlo": 13.3511846
-    },
-    {
-      "id": "ber-938",
-      "la": 52.492152039988,
-      "lo": 13.3511728,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Herbert Tawrigowski genannt Friedländer",
-      "a": "Barbarossastr. 8, 10781 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1905",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/938",
-      "dla": 52.4921527,
-      "dlo": 13.3511846
-    },
-    {
-      "id": "ber-939",
-      "la": 52.492152039988,
-      "lo": 13.3511728,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Gerhard Tawrigowski genannt Friedländer",
-      "a": "Barbarossastr. 8, 10781 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1934",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/939",
-      "dla": 52.4921527,
-      "dlo": 13.3511846
-    },
-    {
-      "id": "ber-940",
-      "la": 52.492152039988,
-      "lo": 13.3511728,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Bella Tawrigowski genannt Friedländer",
-      "a": "Barbarossastr. 8, 10781 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1941",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/940",
-      "dla": 52.4921527,
-      "dlo": 13.3511846
-    },
-    {
-      "id": "ber-1237",
-      "la": 52.4724573,
-      "lo": 13.3223362,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "von Erika Brockdorff",
-      "a": "Wilhelmshöher Str. 17, 12161 Berlin",
-      "c": "Berlin",
-      "cd": "Friedenau",
-      "b": "1911",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/1237"
-    },
-    {
-      "id": "ber-1552",
-      "la": 52.5472871,
-      "lo": 13.4157272,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Helena] Becker [Beker] Helene [Lena",
-      "a": "Stargarder Straße 6, 10437 Berlin",
-      "c": "Berlin",
-      "cd": "Prenzlauer Berg",
-      "b": "1893",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/1552",
-      "dla": 52.547296,
-      "dlo": 13.4157357
-    },
-    {
-      "id": "ber-1557",
-      "la": 52.53231,
-      "lo": 13.4222,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Anny] Eckstein Anna [Anni",
-      "a": "Raabestraße 13, 10405 Berlin",
-      "c": "Berlin",
-      "cd": "Prenzlauer Berg",
-      "b": "1907",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/1557",
-      "dla": 52.5322552,
-      "dlo": 13.4221479
-    },
-    {
-      "id": "ber-1572",
-      "la": 52.5412239,
-      "lo": 13.4234935,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Mala, Mali] Gutmann Malcha [Malka",
-      "a": "Raumerstraße 21, 10437 Berlin",
-      "c": "Berlin",
-      "cd": "Prenzlauer Berg",
-      "b": "1908",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/1572",
-      "dla": 52.5412463,
-      "dlo": 13.4235069
-    },
-    {
-      "id": "ber-1610",
-      "la": 52.5444674,
-      "lo": 13.4422141,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Alfons Levy [Lewy]",
-      "a": "Greifswalder Str. 152, 10409 Berlin",
-      "c": "Berlin",
-      "cd": "Prenzlauer Berg",
-      "b": "1888",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/1610",
-      "dla": 52.5444483,
-      "dlo": 13.4422589
-    },
-    {
-      "id": "ber-1698",
-      "la": 52.47921,
-      "lo": 13.44185,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Olga Benario-Prestes",
-      "a": "Innstraße 24, 12043 Berlin",
-      "c": "Berlin",
-      "cd": "Neukölln",
-      "b": "1908",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/1698",
-      "dla": 52.4792119,
-      "dlo": 13.4418469
-    },
-    {
-      "id": "ber-1791",
-      "la": 52.5229885,
-      "lo": 13.5529194,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Margot Edith Braun",
-      "a": "Otto-Nagel-Str. 38, 12683 Berlin",
-      "c": "Berlin",
-      "cd": "Biesdorf",
-      "b": "1923",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/1791",
-      "dla": 52.5229996,
-      "dlo": 13.5529226
-    },
-    {
-      "id": "ber-1946",
-      "la": 52.51347,
-      "lo": 13.42712,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Karl Jacobs",
-      "a": "Krautstr. 29, 0 Berlin",
-      "c": "Berlin",
-      "cd": "Friedrichshain",
-      "b": "1907",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/1946",
-      "dla": 52.5135319,
-      "dlo": 13.4271674
-    },
-    {
-      "id": "ber-2007",
-      "la": 52.505813,
-      "lo": 13.402698,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Manfred Ephraim Joel",
-      "a": "Oranienstraße 144, 10969 Berlin",
-      "c": "Berlin",
-      "cd": "Kreuzberg",
-      "b": "1910",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/2007"
-    },
-    {
-      "id": "ber-2023",
-      "la": 52.499407,
-      "lo": 13.4254938,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Else Goldenthal",
-      "a": "Oranienstraße 206, 10999 Berlin",
-      "c": "Berlin",
-      "cd": "Kreuzberg",
-      "b": "1889",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/2023"
-    },
-    {
-      "id": "ber-2039",
-      "la": 52.499339524131,
-      "lo": 13.425747632541,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Hanne Schnurmacher",
-      "a": "Oranienstraße 207, 10999 Berlin",
-      "c": "Berlin",
-      "cd": "Kreuzberg",
-      "b": "1869",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/2039"
-    },
-    {
-      "id": "ber-2128",
-      "la": 52.49245,
-      "lo": 13.3932,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Hanni Riedel",
-      "a": "Solmsstr. 42, 0 Berlin",
-      "c": "Berlin",
-      "cd": "Kreuzberg",
-      "b": "1906",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/2128",
-      "dla": 52.4924263,
-      "dlo": 13.3934209
+      "dlo": 13.3975809,
+      "move_m": 10.6834,
+      "cc": "DE"
     },
     {
       "id": "ber-2352",
@@ -365,22 +62,9 @@
       "b": "1921",
       "lb": "https://www.stolpersteine-berlin.de/biografie/2352",
       "dla": 52.5202725,
-      "dlo": 13.4472105
-    },
-    {
-      "id": "ber-2354",
-      "la": 52.51424,
-      "lo": 13.42951,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Gertrud Schwarzer",
-      "a": "Kleine Andreasstraße 8/9, 0 Berlin",
-      "c": "Berlin",
-      "cd": "Friedrichshain",
-      "b": "1900",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/2354",
-      "dla": 52.5142424,
-      "dlo": 13.429495
+      "dlo": 13.4472105,
+      "move_m": 2.0467,
+      "cc": "DE"
     },
     {
       "id": "ber-2416",
@@ -395,65 +79,9 @@
       "b": "1864",
       "lb": "https://www.stolpersteine-berlin.de/biografie/2416",
       "dla": 52.5159883,
-      "dlo": 13.2969775
-    },
-    {
-      "id": "ber-2614",
-      "la": 52.49684,
-      "lo": 13.32868,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Ottilie Frankenstein",
-      "a": "Meierottostr. 6, 10719 Berlin",
-      "c": "Berlin",
-      "cd": "Wilmersdorf",
-      "b": "1871",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/2614",
-      "dla": 52.4968619,
-      "dlo": 13.328716
-    },
-    {
-      "id": "ber-2657",
-      "la": 52.512011,
-      "lo": 13.2627858,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Vally Goldschmidt",
-      "a": "Württembergallee 10, 14052 Berlin",
-      "c": "Berlin",
-      "cd": "Charlottenburg",
-      "b": "1887",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/2657",
-      "dla": 52.511933,
-      "dlo": 13.2626961
-    },
-    {
-      "id": "ber-2668",
-      "la": 52.4984,
-      "lo": 13.32204,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Else Gottscho",
-      "a": "Ludwigkirchplatz 2, 10719 Berlin",
-      "c": "Berlin",
-      "cd": "Wilmersdorf",
-      "b": "1893",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/2668",
-      "dla": 52.4984355,
-      "dlo": 13.3220188
-    },
-    {
-      "id": "ber-2973",
-      "la": 52.4903379,
-      "lo": 13.328885,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Fritz Moses",
-      "a": "Landhausstr. 37, 0 Berlin",
-      "c": "Berlin",
-      "cd": "Wilmersdorf",
-      "b": "1903",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/2973"
+      "dlo": 13.2969775,
+      "move_m": 1.8953,
+      "cc": "DE"
     },
     {
       "id": "ber-3467",
@@ -468,20 +96,9 @@
       "b": "1893",
       "lb": "https://www.stolpersteine-berlin.de/biografie/3467",
       "dla": 52.5084698,
-      "dlo": 13.5877465
-    },
-    {
-      "id": "ber-3475",
-      "la": 52.504443116186,
-      "lo": 13.392727184656,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Dorothea Fromm",
-      "a": "Besselstraße 19, 10969 Berlin",
-      "c": "Berlin",
-      "cd": "Kreuzberg",
-      "b": "1908",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/3475"
+      "dlo": 13.5877465,
+      "move_m": 0.6458,
+      "cc": "DE"
     },
     {
       "id": "ber-3545",
@@ -496,7 +113,9 @@
       "b": "1896",
       "lb": "https://www.stolpersteine-berlin.de/biografie/3545",
       "dla": 52.5380812,
-      "dlo": 13.3963221
+      "dlo": 13.3963221,
+      "move_m": 1.9981,
+      "cc": "DE"
     },
     {
       "id": "ber-3615",
@@ -511,7 +130,9 @@
       "b": "1858",
       "lb": "https://www.stolpersteine-berlin.de/biografie/3615",
       "dla": 52.5074098,
-      "dlo": 13.4214958
+      "dlo": 13.4214958,
+      "move_m": 2.9924,
+      "cc": "DE"
     },
     {
       "id": "ber-3616",
@@ -526,52 +147,9 @@
       "b": "1886",
       "lb": "https://www.stolpersteine-berlin.de/biografie/3616",
       "dla": 52.5074098,
-      "dlo": 13.4214958
-    },
-    {
-      "id": "ber-3619",
-      "la": 52.5173504,
-      "lo": 13.3363423,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Adolf Russ",
-      "a": "Schleswiger Ufer 2, 10555 Berlin",
-      "c": "Berlin",
-      "cd": "Hansaviertel",
-      "b": "1867",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/3619",
-      "dla": 52.5173876,
-      "dlo": 13.3363315
-    },
-    {
-      "id": "ber-3776",
-      "la": 52.51661,
-      "lo": 13.27754,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Josephine Huldschinsky",
-      "a": "Ahornallee 50, 14050 Berlin",
-      "c": "Berlin",
-      "cd": "Charlottenburg",
-      "b": "1870",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/3776",
-      "dla": 52.516695,
-      "dlo": 13.2775026
-    },
-    {
-      "id": "ber-3906",
-      "la": 52.538842,
-      "lo": 13.273749,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Charlotte Eisenblätter",
-      "a": "Goebelstraße 99, 13627 Berlin",
-      "c": "Berlin",
-      "cd": "Charlottenburg-Nord",
-      "b": "1903",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/3906",
-      "dla": 52.5388835,
-      "dlo": 13.2737808
+      "dlo": 13.4214958,
+      "move_m": 2.9924,
+      "cc": "DE"
     },
     {
       "id": "ber-4028",
@@ -584,22 +162,8 @@
       "c": "Berlin",
       "cd": "Charlottenburg",
       "b": "1872",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/4028"
-    },
-    {
-      "id": "ber-4134",
-      "la": 52.5042539,
-      "lo": 13.3146283,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Josefine Engel",
-      "a": "Niebuhrstr. 71, 10629 Berlin",
-      "c": "Berlin",
-      "cd": "Charlottenburg",
-      "b": "1890",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/4134",
-      "dla": 52.5040858,
-      "dlo": 13.3145796
+      "lb": "https://www.stolpersteine-berlin.de/biografie/4028",
+      "cc": "DE"
     },
     {
       "id": "ber-4261",
@@ -614,22 +178,9 @@
       "b": "1900",
       "lb": "https://www.stolpersteine-berlin.de/biografie/4261",
       "dla": 52.5005221,
-      "dlo": 13.3168417
-    },
-    {
-      "id": "ber-4368",
-      "la": 52.4919169,
-      "lo": 13.3276124,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Louis ten Brink",
-      "a": "Trautenaustr. 16, 10717 Berlin",
-      "c": "Berlin",
-      "cd": "Wilmersdorf",
-      "b": "1874",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/4368",
-      "dla": 52.4919295,
-      "dlo": 13.3275766
+      "dlo": 13.3168417,
+      "move_m": 2.7996,
+      "cc": "DE"
     },
     {
       "id": "ber-4447",
@@ -644,7 +195,9 @@
       "b": "1897",
       "lb": "https://www.stolpersteine-berlin.de/biografie/4447",
       "dla": 52.5031113,
-      "dlo": 13.3149874
+      "dlo": 13.3149874,
+      "move_m": 13.5393,
+      "cc": "DE"
     },
     {
       "id": "ber-5121",
@@ -659,20 +212,9 @@
       "b": "1866",
       "lb": "https://www.stolpersteine-berlin.de/biografie/5121",
       "dla": 52.5415646,
-      "dlo": 13.4130948
-    },
-    {
-      "id": "ber-5264",
-      "la": 52.51767034471,
-      "lo": 13.33865442632,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Herta Rechelmann",
-      "a": "Bachstraße 1 - 2, 10555 Berlin",
-      "c": "Berlin",
-      "cd": "Hansaviertel",
-      "b": "1900",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/5264"
+      "dlo": 13.4130948,
+      "move_m": 2.299,
+      "cc": "DE"
     },
     {
       "id": "ber-5270",
@@ -685,20 +227,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1886",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/5270"
-    },
-    {
-      "id": "ber-5693",
-      "la": 52.41804,
-      "lo": 13.1606,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Sophie Isenberg",
-      "a": "Wernerstr. 7, 14109 Berlin",
-      "c": "Berlin",
-      "cd": "Wannsee",
-      "b": "1921",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/5693"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/5270",
+      "cc": "DE"
     },
     {
       "id": "ber-5956",
@@ -713,7 +243,9 @@
       "b": "1895",
       "lb": "https://www.stolpersteine-berlin.de/biografie/5956",
       "dla": 52.5028153,
-      "dlo": 13.3031
+      "dlo": 13.3031,
+      "move_m": 6.7943,
+      "cc": "DE"
     },
     {
       "id": "ber-6881",
@@ -726,7 +258,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1896",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/6881"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/6881",
+      "cc": "DE"
     },
     {
       "id": "ber-7376",
@@ -741,7 +274,9 @@
       "b": "1875",
       "lb": "https://www.stolpersteine-berlin.de/biografie/7376",
       "dla": 52.5021902,
-      "dlo": 13.2969518
+      "dlo": 13.2969518,
+      "move_m": 14.1854,
+      "cc": "DE"
     },
     {
       "id": "ber-7390",
@@ -756,7 +291,9 @@
       "b": "1921",
       "lb": "https://www.stolpersteine-berlin.de/biografie/7390",
       "dla": 52.519809,
-      "dlo": 13.3777176
+      "dlo": 13.3777176,
+      "move_m": 2.2962,
+      "cc": "DE"
     },
     {
       "id": "ber-7460",
@@ -769,7 +306,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1914",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/7460"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/7460",
+      "cc": "DE"
     },
     {
       "id": "ber-7517",
@@ -784,7 +322,9 @@
       "b": "1877",
       "lb": "https://www.stolpersteine-berlin.de/biografie/7517",
       "dla": 52.571291,
-      "dlo": 13.4094999
+      "dlo": 13.4094999,
+      "move_m": 14.2798,
+      "cc": "DE"
     },
     {
       "id": "ber-7693",
@@ -799,22 +339,9 @@
       "b": "1898",
       "lb": "https://www.stolpersteine-berlin.de/biografie/7693",
       "dla": 52.5054734,
-      "dlo": 13.4120025
-    },
-    {
-      "id": "ber-7797",
-      "la": 52.50747,
-      "lo": 13.31725,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Jette Croner",
-      "a": "Pestalozzistraße 99 a, 10625 Berlin",
-      "c": "Berlin",
-      "cd": "Charlottenburg",
-      "b": "1868",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/7797",
-      "dla": 52.5074846,
-      "dlo": 13.3175235
+      "dlo": 13.4120025,
+      "move_m": 8.5905,
+      "cc": "DE"
     },
     {
       "id": "ber-7870",
@@ -829,7 +356,9 @@
       "b": "1908",
       "lb": "https://www.stolpersteine-berlin.de/biografie/7870",
       "dla": 52.5135616,
-      "dlo": 13.267006
+      "dlo": 13.267006,
+      "move_m": 11.8352,
+      "cc": "DE"
     },
     {
       "id": "ber-7871",
@@ -844,7 +373,9 @@
       "b": "1874",
       "lb": "https://www.stolpersteine-berlin.de/biografie/7871",
       "dla": 52.5135616,
-      "dlo": 13.267006
+      "dlo": 13.267006,
+      "move_m": 11.8352,
+      "cc": "DE"
     },
     {
       "id": "ber-7951",
@@ -859,67 +390,9 @@
       "b": "1892",
       "lb": "https://www.stolpersteine-berlin.de/biografie/7951",
       "dla": 52.5031878,
-      "dlo": 13.3061441
-    },
-    {
-      "id": "ber-8021",
-      "la": 52.5272945,
-      "lo": 13.4093603,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Berl' Amster Bernhard",
-      "a": "Max-Beer-Straße 50, 10119 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1882",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/8021",
-      "dla": 52.5273161,
-      "dlo": 13.4092277
-    },
-    {
-      "id": "ber-8159",
-      "la": 52.52168,
-      "lo": 13.3374,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Ingrid Eisenstein",
-      "a": "Dortmunder Str. 3, 10555 Berlin",
-      "c": "Berlin",
-      "cd": "Moabit",
-      "b": "1929",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/8159",
-      "dla": 52.5215946,
-      "dlo": 13.3373018
-    },
-    {
-      "id": "ber-8163",
-      "la": 52.52168,
-      "lo": 13.3374,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Johanna Gradwohl",
-      "a": "Dortmunder Str.3 --> Dortmunder Str. 3, 10555 Berlin",
-      "c": "Berlin",
-      "cd": "Moabit",
-      "b": "1919",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/8163",
-      "dla": 52.5215946,
-      "dlo": 13.3373018
-    },
-    {
-      "id": "ber-8205",
-      "la": 52.52168,
-      "lo": 13.3374,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Mathilde Doron",
-      "a": "Dortmunder Straße 3, 10555 Berlin",
-      "c": "Berlin",
-      "cd": "Moabit",
-      "b": "1918",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/8205",
-      "dla": 52.5215946,
-      "dlo": 13.3373018
+      "dlo": 13.3061441,
+      "move_m": 7.8412,
+      "cc": "DE"
     },
     {
       "id": "ber-8215",
@@ -934,22 +407,9 @@
       "b": "1902",
       "lb": "https://www.stolpersteine-berlin.de/biografie/8215",
       "dla": 52.5380812,
-      "dlo": 13.3963221
-    },
-    {
-      "id": "ber-8375",
-      "la": 52.4984654,
-      "lo": 13.3508291,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "genannt Leon Schönfeld Aron Leib",
-      "a": "Motzstraße 11, 10777 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1886",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/8375",
-      "dla": 52.498521,
-      "dlo": 13.3507763
+      "dlo": 13.3963221,
+      "move_m": 1.9981,
+      "cc": "DE"
     },
     {
       "id": "ber-8411",
@@ -964,97 +424,9 @@
       "b": "1874",
       "lb": "https://www.stolpersteine-berlin.de/biografie/8411",
       "dla": 52.5152921,
-      "dlo": 13.4236499
-    },
-    {
-      "id": "ber-8440",
-      "la": 52.5209597,
-      "lo": 13.3420529,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Herbert Julius Joel",
-      "a": "Lessingstr. 28 (alt), 10555 Berlin",
-      "c": "Berlin",
-      "cd": "Hansaviertel",
-      "b": "1906",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/8440",
-      "dla": 52.5209666,
-      "dlo": 13.3421831
-    },
-    {
-      "id": "ber-8876",
-      "la": 52.5068379,
-      "lo": 13.3280294,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Rolph Eduard Henoch",
-      "a": "Fasanenstr. 32, 10623 Berlin",
-      "c": "Berlin",
-      "cd": "Wilmersdorf",
-      "b": "1922",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/8876",
-      "dla": 52.5068291,
-      "dlo": 13.3279752
-    },
-    {
-      "id": "ber-8877",
-      "la": 52.5068379,
-      "lo": 13.3280294,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Ernst Peter Henoch",
-      "a": "Fasanenstr. 32, 10623 Berlin",
-      "c": "Berlin",
-      "cd": "Wilmersdorf",
-      "b": "1926",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/8877",
-      "dla": 52.5068291,
-      "dlo": 13.3279752
-    },
-    {
-      "id": "ber-8884",
-      "la": 52.5036738,
-      "lo": 13.3439492,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Gerda Lisalotta Kaufmann",
-      "a": "Bayreuther Str. 3, 10787 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1922",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/8884",
-      "dla": 52.5036738,
-      "dlo": 13.3442215
-    },
-    {
-      "id": "ber-8894",
-      "la": 52.48055,
-      "lo": 13.34456,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Natalie Grodzenski",
-      "a": "Martin-Luther-Str. 122, 10825 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1882",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/8894",
-      "dla": 52.48055,
-      "dlo": 13.3445253
-    },
-    {
-      "id": "ber-8895",
-      "la": 52.4991121,
-      "lo": 13.3629452,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Gerhard Heinz Priebatsch",
-      "a": "Potsdamer Str. 115, 10783 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1922",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/8895",
-      "dla": 52.4991306,
-      "dlo": 13.3628319
+      "dlo": 13.4236499,
+      "move_m": 6.3915,
+      "cc": "DE"
     },
     {
       "id": "ber-8976",
@@ -1069,65 +441,9 @@
       "b": "1924",
       "lb": "https://www.stolpersteine-berlin.de/biografie/8976",
       "dla": 52.4759415,
-      "dlo": 13.2929278
-    },
-    {
-      "id": "ber-9014",
-      "la": 52.5244912,
-      "lo": 13.4082602,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": ",Philip\" Engelberg Feiwel",
-      "a": "Münzstr. 10, 10178 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1923",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9014",
-      "dla": 52.5245641,
-      "dlo": 13.4080033
-    },
-    {
-      "id": "ber-9031",
-      "la": 52.5273908,
-      "lo": 13.4083075,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": ",Elazar\" Steinberg Eli",
-      "a": "Alte Schönhauser Str. 53, 10119 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1906",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9031"
-    },
-    {
-      "id": "ber-9168",
-      "la": 52.49276,
-      "lo": 13.34717,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Christel Wemer",
-      "a": "Starnberger Str. 2, 10781 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1938",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9168",
-      "dla": 52.4927081,
-      "dlo": 13.3471625
-    },
-    {
-      "id": "ber-9171",
-      "la": 52.4933894,
-      "lo": 13.345777,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Eva Maria Goodall",
-      "a": "Traunsteiner Str. 10, 10781 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1917",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9171",
-      "dla": 52.493511,
-      "dlo": 13.3459768
+      "dlo": 13.2929278,
+      "move_m": 11.1323,
+      "cc": "DE"
     },
     {
       "id": "ber-9234",
@@ -1142,7 +458,9 @@
       "b": "1929",
       "lb": "https://www.stolpersteine-berlin.de/biografie/9234",
       "dla": 52.5018222,
-      "dlo": 13.3119092
+      "dlo": 13.3119092,
+      "move_m": 11.6865,
+      "cc": "DE"
     },
     {
       "id": "ber-9268",
@@ -1157,123 +475,9 @@
       "b": "1868",
       "lb": "https://www.stolpersteine-berlin.de/biografie/9268",
       "dla": 52.5084599,
-      "dlo": 13.3003909
-    },
-    {
-      "id": "ber-9423",
-      "la": 52.476852,
-      "lo": 13.4491109,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Lieselotte \"Esther\" Hirschweh",
-      "a": "Sonnenallee 174, 12059 Berlin",
-      "c": "Berlin",
-      "cd": "Neukölln",
-      "b": "1922",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9423",
-      "dla": 52.4768812,
-      "dlo": 13.4490629
-    },
-    {
-      "id": "ber-9562",
-      "la": 52.5162822,
-      "lo": 13.4248039,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Albert Levy",
-      "a": "Singerstr. 13, 10179 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1909",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9562"
-    },
-    {
-      "id": "ber-9670",
-      "la": 52.5518346,
-      "lo": 13.1993753,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Mathel Dubinsky",
-      "a": "Schönwalder Str. 64, 13585 Berlin",
-      "c": "Berlin",
-      "cd": "Spandau",
-      "b": "1939",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9670"
-    },
-    {
-      "id": "ber-9721",
-      "la": 52.4993781,
-      "lo": 13.3052728,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Thomas Forres",
-      "a": "Kurfürstendamm 160, 10709 Berlin",
-      "c": "Berlin",
-      "cd": "Wilmersdorf",
-      "b": "1926",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9721",
-      "dla": 52.4994081,
-      "dlo": 13.3053012
-    },
-    {
-      "id": "ber-9809",
-      "la": 52.5153497,
-      "lo": 13.4249633,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "verh. Wiesner Mary Krotoczynski",
-      "a": "Lichtenberger Straße 31, 10179 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1922",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9809",
-      "dla": 52.5152256,
-      "dlo": 13.4248456
-    },
-    {
-      "id": "ber-9814",
-      "la": 52.5212707,
-      "lo": 13.3365574,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Margot Szindler",
-      "a": "Dortmunder Str. 10, 10555 Berlin",
-      "c": "Berlin",
-      "cd": "Moabit",
-      "b": "1921",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9814",
-      "dla": 52.5211975,
-      "dlo": 13.3365574
-    },
-    {
-      "id": "ber-9816",
-      "la": 52.5212707,
-      "lo": 13.3365574,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Lilly Blumberg-Strom",
-      "a": "Dortmunder Str. 10, 10555 Berlin",
-      "c": "Berlin",
-      "cd": "Moabit",
-      "b": "1920",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9816",
-      "dla": 52.5211975,
-      "dlo": 13.3365574
-    },
-    {
-      "id": "ber-9826",
-      "la": 52.5215115,
-      "lo": 13.3453364,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Ursula Simon",
-      "a": "Claudiusstr. 6, 10557 Berlin",
-      "c": "Berlin",
-      "cd": "Hansaviertel",
-      "b": "1918",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9826",
-      "dla": 52.5215182,
-      "dlo": 13.3452099
+      "dlo": 13.3003909,
+      "move_m": 7.7923,
+      "cc": "DE"
     },
     {
       "id": "ber-9959",
@@ -1286,7 +490,8 @@
       "c": "Berlin",
       "cd": "Charlottenburg",
       "b": "1864",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/9959"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/9959",
+      "cc": "DE"
     },
     {
       "id": "ber-10063",
@@ -1301,37 +506,9 @@
       "b": "1876",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10063",
       "dla": 52.503681,
-      "dlo": 13.3121259
-    },
-    {
-      "id": "ber-10114",
-      "la": 52.5107162,
-      "lo": 13.2886318,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Marie Blau",
-      "a": "Kaiserdamm 13, 14057 Berlin",
-      "c": "Berlin",
-      "cd": "Charlottenburg",
-      "b": "1881",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/10114",
-      "dla": 52.5106419,
-      "dlo": 13.2886425
-    },
-    {
-      "id": "ber-10180",
-      "la": 52.467976,
-      "lo": 13.5036202,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Alice Ruth Feldmann",
-      "a": "Tabbertstraße 14, 12459 Berlin",
-      "c": "Berlin",
-      "cd": "Oberschöneweide",
-      "b": "1899",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/10180",
-      "dla": 52.4680176,
-      "dlo": 13.5037665
+      "dlo": 13.3121259,
+      "move_m": 8.4954,
+      "cc": "DE"
     },
     {
       "id": "ber-10403",
@@ -1346,22 +523,9 @@
       "b": "1901",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10403",
       "dla": 52.5800685,
-      "dlo": 13.4128359
-    },
-    {
-      "id": "ber-10422",
-      "la": 52.4731704,
-      "lo": 13.4235053,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Ruth Casper",
-      "a": "Schillerpromenade 23, 12049 Berlin",
-      "c": "Berlin",
-      "cd": "Neukölln",
-      "b": "1931",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/10422",
-      "dla": 52.4731634,
-      "dlo": 13.4234399
+      "dlo": 13.4128359,
+      "move_m": 11.1889,
+      "cc": "DE"
     },
     {
       "id": "ber-10471",
@@ -1376,7 +540,9 @@
       "b": "1914",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10471",
       "dla": 52.51162,
-      "dlo": 13.413225
+      "dlo": 13.413225,
+      "move_m": 8.7881,
+      "cc": "DE"
     },
     {
       "id": "ber-10473",
@@ -1391,7 +557,9 @@
       "b": "1917",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10473",
       "dla": 52.51162,
-      "dlo": 13.413225
+      "dlo": 13.413225,
+      "move_m": 8.7881,
+      "cc": "DE"
     },
     {
       "id": "ber-10474",
@@ -1406,7 +574,9 @@
       "b": "1920",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10474",
       "dla": 52.51162,
-      "dlo": 13.413225
+      "dlo": 13.413225,
+      "move_m": 8.7881,
+      "cc": "DE"
     },
     {
       "id": "ber-10475",
@@ -1421,20 +591,9 @@
       "b": "1922",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10475",
       "dla": 52.51162,
-      "dlo": 13.413225
-    },
-    {
-      "id": "ber-10488",
-      "la": 52.510337911776,
-      "lo": 13.419325408984,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Fanny Breitbart",
-      "a": "Köpenicker Straße  60, 10179 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1925",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/10488"
+      "dlo": 13.413225,
+      "move_m": 8.7881,
+      "cc": "DE"
     },
     {
       "id": "ber-10773",
@@ -1449,7 +608,9 @@
       "b": "1880",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10773",
       "dla": 52.5198663,
-      "dlo": 13.3349908
+      "dlo": 13.3349908,
+      "move_m": 1.2995,
+      "cc": "DE"
     },
     {
       "id": "ber-10844",
@@ -1462,20 +623,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1881",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/10844"
-    },
-    {
-      "id": "ber-10847",
-      "la": 52.445389975632,
-      "lo": 13.235848456345,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "STOLPERSCHWELLE Kinderheim Kapellner",
-      "a": "Hermannstraße  11 a, 14163 Berlin",
-      "c": "Berlin",
-      "cd": "Zehlendorf",
-      "kind": "stolperschwelle",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/10847"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/10844",
+      "cc": "DE"
     },
     {
       "id": "ber-10910",
@@ -1488,7 +637,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1910",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/10910"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/10910",
+      "cc": "DE"
     },
     {
       "id": "ber-10911",
@@ -1503,7 +653,9 @@
       "b": "1912",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10911",
       "dla": 52.5186101,
-      "dlo": 13.4172712
+      "dlo": 13.4172712,
+      "move_m": 1.9987,
+      "cc": "DE"
     },
     {
       "id": "ber-10912",
@@ -1516,7 +668,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1921",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/10912"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/10912",
+      "cc": "DE"
     },
     {
       "id": "ber-10913",
@@ -1529,7 +682,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1916",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/10913"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/10913",
+      "cc": "DE"
     },
     {
       "id": "ber-10914",
@@ -1542,7 +696,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1937",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/10914"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/10914",
+      "cc": "DE"
     },
     {
       "id": "ber-10915",
@@ -1557,7 +712,9 @@
       "b": "1908",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10915",
       "dla": 52.5094989,
-      "dlo": 13.4050907
+      "dlo": 13.4050907,
+      "move_m": 15.4781,
+      "cc": "DE"
     },
     {
       "id": "ber-10916",
@@ -1572,7 +729,9 @@
       "b": "1920",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10916",
       "dla": 52.5094989,
-      "dlo": 13.4050907
+      "dlo": 13.4050907,
+      "move_m": 15.4781,
+      "cc": "DE"
     },
     {
       "id": "ber-10917",
@@ -1587,7 +746,9 @@
       "b": "1939",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10917",
       "dla": 52.5094989,
-      "dlo": 13.4050907
+      "dlo": 13.4050907,
+      "move_m": 15.4781,
+      "cc": "DE"
     },
     {
       "id": "ber-10918",
@@ -1602,97 +763,9 @@
       "b": "1942",
       "lb": "https://www.stolpersteine-berlin.de/biografie/10918",
       "dla": 52.5094989,
-      "dlo": 13.4050907
-    },
-    {
-      "id": "ber-10953",
-      "la": 52.5005417,
-      "lo": 13.4062882,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Israel Gran",
-      "a": "Wassertorstraße 22, 10969 Berlin",
-      "c": "Berlin",
-      "cd": "Kreuzberg",
-      "b": "1910",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/10953",
-      "dla": 52.5005128,
-      "dlo": 13.4062661
-    },
-    {
-      "id": "ber-11045",
-      "la": 52.486621,
-      "lo": 13.337652,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Ruth Betty Levy",
-      "a": "Bozener Straße 10, 10825 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1929",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11045",
-      "dla": 52.4864706,
-      "dlo": 13.3374448
-    },
-    {
-      "id": "ber-11058",
-      "la": 52.5032922,
-      "lo": 13.3454915,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Gerda Ben-Jaakow",
-      "a": "Keithstraße 15, 10787 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1922",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11058",
-      "dla": 52.5032922,
-      "dlo": 13.3457106
-    },
-    {
-      "id": "ber-11067",
-      "la": 52.4945533,
-      "lo": 13.364622,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "John Hirschberg",
-      "a": "Kirchbachstraße 16, 10783 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1925",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11067",
-      "dla": 52.4945441,
-      "dlo": 13.3645363
-    },
-    {
-      "id": "ber-11085",
-      "la": 52.4700472,
-      "lo": 13.3281112,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Hannelore Türkel",
-      "a": "Bundesallee 79 a, 12161 Berlin",
-      "c": "Berlin",
-      "cd": "Friedenau",
-      "b": "1920",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11085",
-      "dla": 52.4700472,
-      "dlo": 13.3281569
-    },
-    {
-      "id": "ber-11151",
-      "la": 52.4937294,
-      "lo": 13.3341907,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Emma \"Ena\" Goldschmidt",
-      "a": "Motzstraße 94, 10779 Berlin",
-      "c": "Berlin",
-      "cd": "Wilmersdorf",
-      "b": "1899",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11151",
-      "dla": 52.4937445,
-      "dlo": 13.3341792
+      "dlo": 13.4050907,
+      "move_m": 15.4781,
+      "cc": "DE"
     },
     {
       "id": "ber-11185",
@@ -1707,7 +780,9 @@
       "b": "1864",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11185",
       "dla": 52.5278612,
-      "dlo": 13.4109457
+      "dlo": 13.4109457,
+      "move_m": 3.0914,
+      "cc": "DE"
     },
     {
       "id": "ber-11186",
@@ -1722,7 +797,9 @@
       "b": "1874",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11186",
       "dla": 52.5278612,
-      "dlo": 13.4109457
+      "dlo": 13.4109457,
+      "move_m": 3.0914,
+      "cc": "DE"
     },
     {
       "id": "ber-11202",
@@ -1737,7 +814,9 @@
       "b": "1874",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11202",
       "dla": 52.4457324,
-      "dlo": 13.3168195
+      "dlo": 13.3168195,
+      "move_m": 10.3883,
+      "cc": "DE"
     },
     {
       "id": "ber-11203",
@@ -1752,7 +831,9 @@
       "b": "1889",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11203",
       "dla": 52.4457324,
-      "dlo": 13.3168195
+      "dlo": 13.3168195,
+      "move_m": 10.3883,
+      "cc": "DE"
     },
     {
       "id": "ber-11234",
@@ -1767,7 +848,9 @@
       "b": "1878",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11234",
       "dla": 52.5188252,
-      "dlo": 13.4541439
+      "dlo": 13.4541439,
+      "move_m": 2.1468,
+      "cc": "DE"
     },
     {
       "id": "ber-11235",
@@ -1782,7 +865,9 @@
       "b": "1908",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11235",
       "dla": 52.5183868,
-      "dlo": 13.4543456
+      "dlo": 13.4543456,
+      "move_m": 3.4433,
+      "cc": "DE"
     },
     {
       "id": "ber-11237",
@@ -1797,7 +882,9 @@
       "b": "1905",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11237",
       "dla": 52.5183868,
-      "dlo": 13.4543456
+      "dlo": 13.4543456,
+      "move_m": 3.4433,
+      "cc": "DE"
     },
     {
       "id": "ber-11238",
@@ -1812,7 +899,9 @@
       "b": "1934",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11238",
       "dla": 52.5183868,
-      "dlo": 13.4543456
+      "dlo": 13.4543456,
+      "move_m": 3.4433,
+      "cc": "DE"
     },
     {
       "id": "ber-11239",
@@ -1827,7 +916,9 @@
       "b": "1938",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11239",
       "dla": 52.5183868,
-      "dlo": 13.4543456
+      "dlo": 13.4543456,
+      "move_m": 3.4433,
+      "cc": "DE"
     },
     {
       "id": "ber-11249",
@@ -1842,7 +933,9 @@
       "b": "1881",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11249",
       "dla": 52.5457682,
-      "dlo": 13.4173036
+      "dlo": 13.4173036,
+      "move_m": 13.5322,
+      "cc": "DE"
     },
     {
       "id": "ber-11254",
@@ -1857,7 +950,9 @@
       "b": "1864",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11254",
       "dla": 52.5481471,
-      "dlo": 13.4121848
+      "dlo": 13.4121848,
+      "move_m": 7.3961,
+      "cc": "DE"
     },
     {
       "id": "ber-11255",
@@ -1872,7 +967,9 @@
       "b": "1897",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11255",
       "dla": 52.5392362,
-      "dlo": 13.4055404
+      "dlo": 13.4055404,
+      "move_m": 10.8905,
+      "cc": "DE"
     },
     {
       "id": "ber-11256",
@@ -1887,7 +984,9 @@
       "b": "1894",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11256",
       "dla": 52.5392362,
-      "dlo": 13.4055404
+      "dlo": 13.4055404,
+      "move_m": 10.8905,
+      "cc": "DE"
     },
     {
       "id": "ber-11257",
@@ -1902,7 +1001,9 @@
       "b": "1932",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11257",
       "dla": 52.5392362,
-      "dlo": 13.4055404
+      "dlo": 13.4055404,
+      "move_m": 10.8905,
+      "cc": "DE"
     },
     {
       "id": "ber-11258",
@@ -1917,7 +1018,9 @@
       "b": "1876",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11258",
       "dla": 52.5392362,
-      "dlo": 13.4055404
+      "dlo": 13.4055404,
+      "move_m": 10.8905,
+      "cc": "DE"
     },
     {
       "id": "ber-11259",
@@ -1932,7 +1035,9 @@
       "b": "1863",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11259",
       "dla": 52.5338849,
-      "dlo": 13.4335861
+      "dlo": 13.4335861,
+      "move_m": 1.2486,
+      "cc": "DE"
     },
     {
       "id": "ber-11260",
@@ -1947,7 +1052,9 @@
       "b": "1895",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11260",
       "dla": 52.5338849,
-      "dlo": 13.4335861
+      "dlo": 13.4335861,
+      "move_m": 1.2486,
+      "cc": "DE"
     },
     {
       "id": "ber-11261",
@@ -1962,7 +1069,9 @@
       "b": "1864",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11261",
       "dla": 52.5338849,
-      "dlo": 13.4335861
+      "dlo": 13.4335861,
+      "move_m": 1.2486,
+      "cc": "DE"
     },
     {
       "id": "ber-11324",
@@ -1977,7 +1086,9 @@
       "b": "1909",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11324",
       "dla": 52.529811,
-      "dlo": 13.6349016
+      "dlo": 13.6349016,
+      "move_m": 5.9934,
+      "cc": "DE"
     },
     {
       "id": "ber-11325",
@@ -1992,7 +1103,9 @@
       "b": "1881",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11325",
       "dla": 52.529811,
-      "dlo": 13.6349016
+      "dlo": 13.6349016,
+      "move_m": 5.9934,
+      "cc": "DE"
     },
     {
       "id": "ber-11326",
@@ -2007,7 +1120,9 @@
       "b": "1883",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11326",
       "dla": 52.5260689,
-      "dlo": 13.6213535
+      "dlo": 13.6213535,
+      "move_m": 6.0392,
+      "cc": "DE"
     },
     {
       "id": "ber-11327",
@@ -2022,7 +1137,9 @@
       "b": "1905",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11327",
       "dla": 52.5203936,
-      "dlo": 13.4190185
+      "dlo": 13.4190185,
+      "move_m": 4.2989,
+      "cc": "DE"
     },
     {
       "id": "ber-11328",
@@ -2037,7 +1154,9 @@
       "b": "1900",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11328",
       "dla": 52.520412,
-      "dlo": 13.4190614
+      "dlo": 13.4190614,
+      "move_m": 4.2955,
+      "cc": "DE"
     },
     {
       "id": "ber-11329",
@@ -2052,7 +1171,9 @@
       "b": "1935",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11329",
       "dla": 52.519868,
-      "dlo": 13.4196778
+      "dlo": 13.4196778,
+      "move_m": 1.0455,
+      "cc": "DE"
     },
     {
       "id": "ber-11330",
@@ -2067,22 +1188,9 @@
       "b": "1875",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11330",
       "dla": 52.5348881,
-      "dlo": 13.4003098
-    },
-    {
-      "id": "ber-11342",
-      "la": 52.4713346,
-      "lo": 13.3260084,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Marianne Erika Burstein",
-      "a": "Wiesbadener Straße  85, 12161 Berlin",
-      "c": "Berlin",
-      "cd": "Friedenau",
-      "b": "1911",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11342",
-      "dla": 52.4711625,
-      "dlo": 13.3259586
+      "dlo": 13.4003098,
+      "move_m": 19.2343,
+      "cc": "DE"
     },
     {
       "id": "ber-11345",
@@ -2097,7 +1205,9 @@
       "b": "1898",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11345",
       "dla": 52.5318911,
-      "dlo": 13.4233475
+      "dlo": 13.4233475,
+      "move_m": 12.7401,
+      "cc": "DE"
     },
     {
       "id": "ber-11346",
@@ -2112,7 +1222,9 @@
       "b": "1888",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11346",
       "dla": 52.5318911,
-      "dlo": 13.4233475
+      "dlo": 13.4233475,
+      "move_m": 12.7401,
+      "cc": "DE"
     },
     {
       "id": "ber-11347",
@@ -2127,97 +1239,9 @@
       "b": "1925",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11347",
       "dla": 52.5318911,
-      "dlo": 13.4233475
-    },
-    {
-      "id": "ber-11357",
-      "la": 52.4953758,
-      "lo": 13.3426152,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Ursula Seligmann",
-      "a": "Viktoria-Luise-Platz 12, 10777 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1920",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11357",
-      "dla": 52.4954419,
-      "dlo": 13.3425525
-    },
-    {
-      "id": "ber-11358",
-      "la": 52.4919836,
-      "lo": 13.3471727,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Anneliese Richards",
-      "a": "Barbarossastraße 52, 10781 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1917",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11358",
-      "dla": 52.4920435,
-      "dlo": 13.3470902
-    },
-    {
-      "id": "ber-11359",
-      "la": 52.4919836,
-      "lo": 13.3471727,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Gertrud Else Holsinger",
-      "a": "Barbarossastraße 52, 10781 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1919",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11359",
-      "dla": 52.4920435,
-      "dlo": 13.3470902
-    },
-    {
-      "id": "ber-11360",
-      "la": 52.4919378,
-      "lo": 13.3473082,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Hedwig Lotte Frazier",
-      "a": "Barbarossastraße 52, 10781 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1920",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11360",
-      "dla": 52.4919977,
-      "dlo": 13.3472257
-    },
-    {
-      "id": "ber-11372",
-      "la": 52.4659029,
-      "lo": 13.5096092,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Johanna Herlitz",
-      "a": "Wattstr. 11, 12459 Berlin",
-      "c": "Berlin",
-      "cd": "Oberschöneweide",
-      "b": "1881",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11372",
-      "dla": 52.4658568,
-      "dlo": 13.5095011
-    },
-    {
-      "id": "ber-11380",
-      "la": 52.4924867,
-      "lo": 13.3260205,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Else Recha Linder",
-      "a": "Nassauische Str.  7 - 8, 10717 Berlin",
-      "c": "Berlin",
-      "cd": "Wilmersdorf",
-      "b": "1867",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11380",
-      "dla": 52.4924867,
-      "dlo": 13.3262241
+      "dlo": 13.4233475,
+      "move_m": 12.7401,
+      "cc": "DE"
     },
     {
       "id": "ber-11386",
@@ -2232,7 +1256,9 @@
       "b": "1887",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11386",
       "dla": 52.5212165,
-      "dlo": 13.3309488
+      "dlo": 13.3309488,
+      "move_m": 0.5016,
+      "cc": "DE"
     },
     {
       "id": "ber-11387",
@@ -2247,7 +1273,9 @@
       "b": "1890",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11387",
       "dla": 52.5211969,
-      "dlo": 13.3309917
+      "dlo": 13.3309917,
+      "move_m": 0.4996,
+      "cc": "DE"
     },
     {
       "id": "ber-11389",
@@ -2262,7 +1290,9 @@
       "b": "1901",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11389",
       "dla": 52.5212034,
-      "dlo": 13.330989
+      "dlo": 13.330989,
+      "move_m": 0.4963,
+      "cc": "DE"
     },
     {
       "id": "ber-11390",
@@ -2277,7 +1307,9 @@
       "b": "1873",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11390",
       "dla": 52.581941,
-      "dlo": 13.3919176
+      "dlo": 13.3919176,
+      "move_m": 5.192,
+      "cc": "DE"
     },
     {
       "id": "ber-11391",
@@ -2292,52 +1324,9 @@
       "b": "1880",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11391",
       "dla": 52.581941,
-      "dlo": 13.3919176
-    },
-    {
-      "id": "ber-11405",
-      "la": 52.4648658,
-      "lo": 13.5168631,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Elfriede Laznik",
-      "a": "Griechische Allee 13, 12459 Berlin",
-      "c": "Berlin",
-      "cd": "Oberschöneweide",
-      "b": "1905",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11405",
-      "dla": 52.4647951,
-      "dlo": 13.5168529
-    },
-    {
-      "id": "ber-11426",
-      "la": 52.457089,
-      "lo": 13.3809482,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Erla Unseld",
-      "a": "Burgemeisterstraße 73, 12103 Berlin",
-      "c": "Berlin",
-      "cd": "Tempelhof",
-      "b": "1916",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11426",
-      "dla": 52.4571509,
-      "dlo": 13.3809661
-    },
-    {
-      "id": "ber-11452",
-      "la": 52.4927819,
-      "lo": 13.3343147,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Gerda Luner",
-      "a": "Aschaffenburger Straße 26, 10779 Berlin",
-      "c": "Berlin",
-      "cd": "Wilmersdorf",
-      "b": "1927",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11452",
-      "dla": 52.4929051,
-      "dlo": 13.3344845
+      "dlo": 13.3919176,
+      "move_m": 5.192,
+      "cc": "DE"
     },
     {
       "id": "ber-11468",
@@ -2352,37 +1341,9 @@
       "b": "1903",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11468",
       "dla": 52.5526141,
-      "dlo": 13.4181537
-    },
-    {
-      "id": "ber-11494",
-      "la": 52.4980795,
-      "lo": 13.3591244,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Renate Sandler",
-      "a": "Bülowstraße 17, 10783 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1919",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11494",
-      "dla": 52.4981096,
-      "dlo": 13.3592603
-    },
-    {
-      "id": "ber-11535",
-      "la": 52.495894,
-      "lo": 13.3445917,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Lola Jones",
-      "a": "Winterfeldtstraße 90, 10777 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1919",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11535",
-      "dla": 52.4960761,
-      "dlo": 13.3445655
+      "dlo": 13.4181537,
+      "move_m": 6.0417,
+      "cc": "DE"
     },
     {
       "id": "ber-11536",
@@ -2397,7 +1358,9 @@
       "b": "1888",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11536",
       "dla": 52.525537,
-      "dlo": 13.3407086
+      "dlo": 13.3407086,
+      "move_m": 7.6438,
+      "cc": "DE"
     },
     {
       "id": "ber-11537",
@@ -2412,7 +1375,9 @@
       "b": "1891",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11537",
       "dla": 52.525537,
-      "dlo": 13.3407086
+      "dlo": 13.3407086,
+      "move_m": 7.6438,
+      "cc": "DE"
     },
     {
       "id": "ber-11538",
@@ -2427,7 +1392,9 @@
       "b": "1919",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11538",
       "dla": 52.525537,
-      "dlo": 13.3407086
+      "dlo": 13.3407086,
+      "move_m": 7.6438,
+      "cc": "DE"
     },
     {
       "id": "ber-11539",
@@ -2442,7 +1409,9 @@
       "b": "1890",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11539",
       "dla": 52.5255645,
-      "dlo": 13.4169444
+      "dlo": 13.4169444,
+      "move_m": 8.0905,
+      "cc": "DE"
     },
     {
       "id": "ber-11540",
@@ -2457,7 +1426,9 @@
       "b": "1893",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11540",
       "dla": 52.5255719,
-      "dlo": 13.4168932
+      "dlo": 13.4168932,
+      "move_m": 8.0905,
+      "cc": "DE"
     },
     {
       "id": "ber-11541",
@@ -2472,7 +1443,9 @@
       "b": "1919",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11541",
       "dla": 52.5255719,
-      "dlo": 13.4168932
+      "dlo": 13.4168932,
+      "move_m": 8.0905,
+      "cc": "DE"
     },
     {
       "id": "ber-11542",
@@ -2487,7 +1460,9 @@
       "b": "1927",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11542",
       "dla": 52.5255645,
-      "dlo": 13.4169444
+      "dlo": 13.4169444,
+      "move_m": 8.0905,
+      "cc": "DE"
     },
     {
       "id": "ber-11543",
@@ -2502,7 +1477,9 @@
       "b": "1931",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11543",
       "dla": 52.5255719,
-      "dlo": 13.4168932
+      "dlo": 13.4168932,
+      "move_m": 8.0905,
+      "cc": "DE"
     },
     {
       "id": "ber-11560",
@@ -2517,7 +1494,9 @@
       "b": "1916",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11560",
       "dla": 52.5467821,
-      "dlo": 13.4114513
+      "dlo": 13.4114513,
+      "move_m": 3.4432,
+      "cc": "DE"
     },
     {
       "id": "ber-11574",
@@ -2532,110 +1511,9 @@
       "b": "1896",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11574",
       "dla": 52.5007868,
-      "dlo": 13.3342046
-    },
-    {
-      "id": "ber-11577",
-      "la": 52.4925192,
-      "lo": 13.3467686,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Ruth Henning",
-      "a": "Traunsteiner Straße 6, 10781 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1920",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11577"
-    },
-    {
-      "id": "ber-11583",
-      "la": 52.496065,
-      "lo": 13.3457264,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Susi Reitzes",
-      "a": "Winterfeldtstraße 84, 10777 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1922",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11583",
-      "dla": 52.496065,
-      "dlo": 13.3458931
-    },
-    {
-      "id": "ber-11604",
-      "la": 52.4477896,
-      "lo": 13.3634268,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Gertrud Rosalie Baum",
-      "a": "Attilastraße 114, 12105 Berlin",
-      "c": "Berlin",
-      "cd": "Tempelhof",
-      "b": "1926",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11604",
-      "dla": 52.4477992,
-      "dlo": 13.3634135
-    },
-    {
-      "id": "ber-11606",
-      "la": 52.4887068,
-      "lo": 13.3569583,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Hildegard Kurländer",
-      "a": "Vorbergstraße 15, 10823 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1912",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11606",
-      "dla": 52.4888056,
-      "dlo": 13.357052
-    },
-    {
-      "id": "ber-11616",
-      "la": 52.460833234107,
-      "lo": 13.384055565082,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Käthe Hanna Guttenplan",
-      "a": "Albrechtstraße 119 - 120, 12103 Berlin",
-      "c": "Berlin",
-      "cd": "Tempelhof",
-      "b": "1914",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11616",
-      "dla": 52.4608385,
-      "dlo": 13.3840571
-    },
-    {
-      "id": "ber-11617",
-      "la": 52.460846308342,
-      "lo": 13.384044836246,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Lotte Buchsbaum",
-      "a": "Albrechtstraße 119 - 120, 12103 Berlin",
-      "c": "Berlin",
-      "cd": "Tempelhof",
-      "b": "1920",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11617",
-      "dla": 52.4608516,
-      "dlo": 13.3840464
-    },
-    {
-      "id": "ber-11621",
-      "la": 52.4987529,
-      "lo": 13.3387199,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Evelyn Woods",
-      "a": "Ettaler Straße 5, 10777 Berlin",
-      "c": "Berlin",
-      "cd": "Schöneberg",
-      "b": "1938",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11621",
-      "dla": 52.4987704,
-      "dlo": 13.3386409
+      "dlo": 13.3342046,
+      "move_m": 10.3847,
+      "cc": "DE"
     },
     {
       "id": "ber-11635",
@@ -2650,7 +1528,9 @@
       "b": "1890",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11635",
       "dla": 52.530778,
-      "dlo": 13.4448348
+      "dlo": 13.4448348,
+      "move_m": 2.9946,
+      "cc": "DE"
     },
     {
       "id": "ber-11636",
@@ -2665,7 +1545,9 @@
       "b": "1890",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11636",
       "dla": 52.530778,
-      "dlo": 13.4448348
+      "dlo": 13.4448348,
+      "move_m": 2.9946,
+      "cc": "DE"
     },
     {
       "id": "ber-11637",
@@ -2680,7 +1562,9 @@
       "b": "1924",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11637",
       "dla": 52.530778,
-      "dlo": 13.4448348
+      "dlo": 13.4448348,
+      "move_m": 2.9946,
+      "cc": "DE"
     },
     {
       "id": "ber-11638",
@@ -2695,7 +1579,9 @@
       "b": "1927",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11638",
       "dla": 52.530778,
-      "dlo": 13.4448348
+      "dlo": 13.4448348,
+      "move_m": 2.9946,
+      "cc": "DE"
     },
     {
       "id": "ber-11640",
@@ -2710,7 +1596,9 @@
       "b": "1880",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11640",
       "dla": 52.5303776,
-      "dlo": 13.4191765
+      "dlo": 13.4191765,
+      "move_m": 4.5466,
+      "cc": "DE"
     },
     {
       "id": "ber-11641",
@@ -2725,7 +1613,9 @@
       "b": "1911",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11641",
       "dla": 52.5303776,
-      "dlo": 13.4191765
+      "dlo": 13.4191765,
+      "move_m": 4.5466,
+      "cc": "DE"
     },
     {
       "id": "ber-11642",
@@ -2740,7 +1630,9 @@
       "b": "1912",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11642",
       "dla": 52.5303776,
-      "dlo": 13.4191765
+      "dlo": 13.4191765,
+      "move_m": 4.5466,
+      "cc": "DE"
     },
     {
       "id": "ber-11643",
@@ -2755,7 +1647,9 @@
       "b": "1913",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11643",
       "dla": 52.5303776,
-      "dlo": 13.4191765
+      "dlo": 13.4191765,
+      "move_m": 4.5466,
+      "cc": "DE"
     },
     {
       "id": "ber-11644",
@@ -2770,7 +1664,9 @@
       "b": "1911",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11644",
       "dla": 52.5303776,
-      "dlo": 13.4191765
+      "dlo": 13.4191765,
+      "move_m": 4.5466,
+      "cc": "DE"
     },
     {
       "id": "ber-11646",
@@ -2785,7 +1681,9 @@
       "b": "1920",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11646",
       "dla": 52.5292898,
-      "dlo": 13.409313
+      "dlo": 13.409313,
+      "move_m": 5.9382,
+      "cc": "DE"
     },
     {
       "id": "ber-11647",
@@ -2800,7 +1698,9 @@
       "b": "1885",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11647",
       "dla": 52.5292898,
-      "dlo": 13.409313
+      "dlo": 13.409313,
+      "move_m": 5.9382,
+      "cc": "DE"
     },
     {
       "id": "ber-11648",
@@ -2815,7 +1715,9 @@
       "b": "1895",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11648",
       "dla": 52.5292898,
-      "dlo": 13.409313
+      "dlo": 13.409313,
+      "move_m": 5.9382,
+      "cc": "DE"
     },
     {
       "id": "ber-11649",
@@ -2830,7 +1732,9 @@
       "b": "1923",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11649",
       "dla": 52.5292898,
-      "dlo": 13.409313
+      "dlo": 13.409313,
+      "move_m": 5.9382,
+      "cc": "DE"
     },
     {
       "id": "ber-11650",
@@ -2845,7 +1749,9 @@
       "b": "1917",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11650",
       "dla": 52.5292898,
-      "dlo": 13.409313
+      "dlo": 13.409313,
+      "move_m": 5.9382,
+      "cc": "DE"
     },
     {
       "id": "ber-11651",
@@ -2860,7 +1766,9 @@
       "b": "1864",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11651",
       "dla": 52.5310255,
-      "dlo": 13.4298793
+      "dlo": 13.4298793,
+      "move_m": 10.5904,
+      "cc": "DE"
     },
     {
       "id": "ber-11652",
@@ -2875,7 +1783,9 @@
       "b": "1866",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11652",
       "dla": 52.5310255,
-      "dlo": 13.4298793
+      "dlo": 13.4298793,
+      "move_m": 10.5904,
+      "cc": "DE"
     },
     {
       "id": "ber-11653",
@@ -2890,7 +1800,9 @@
       "b": "1881",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11653",
       "dla": 52.5310255,
-      "dlo": 13.4298793
+      "dlo": 13.4298793,
+      "move_m": 10.5904,
+      "cc": "DE"
     },
     {
       "id": "ber-11654",
@@ -2905,7 +1817,9 @@
       "b": "1882",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11654",
       "dla": 52.5310255,
-      "dlo": 13.4298793
+      "dlo": 13.4298793,
+      "move_m": 10.5904,
+      "cc": "DE"
     },
     {
       "id": "ber-11655",
@@ -2920,7 +1834,9 @@
       "b": "1910",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11655",
       "dla": 52.5310255,
-      "dlo": 13.4298793
+      "dlo": 13.4298793,
+      "move_m": 10.5904,
+      "cc": "DE"
     },
     {
       "id": "ber-11656",
@@ -2935,7 +1851,9 @@
       "b": "1913",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11656",
       "dla": 52.5310255,
-      "dlo": 13.4298793
+      "dlo": 13.4298793,
+      "move_m": 10.5904,
+      "cc": "DE"
     },
     {
       "id": "ber-11657",
@@ -2950,7 +1868,9 @@
       "b": "1891",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11657",
       "dla": 52.5310255,
-      "dlo": 13.4298793
+      "dlo": 13.4298793,
+      "move_m": 10.5904,
+      "cc": "DE"
     },
     {
       "id": "ber-11658",
@@ -2965,7 +1885,9 @@
       "b": "1897",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11658",
       "dla": 52.5310255,
-      "dlo": 13.4298793
+      "dlo": 13.4298793,
+      "move_m": 10.5904,
+      "cc": "DE"
     },
     {
       "id": "ber-11659",
@@ -2980,7 +1902,9 @@
       "b": "1923",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11659",
       "dla": 52.5310255,
-      "dlo": 13.4298793
+      "dlo": 13.4298793,
+      "move_m": 10.5904,
+      "cc": "DE"
     },
     {
       "id": "ber-11661",
@@ -2995,7 +1919,9 @@
       "b": "1901",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11661",
       "dla": 52.5262546,
-      "dlo": 13.4201756
+      "dlo": 13.4201756,
+      "move_m": 5.794,
+      "cc": "DE"
     },
     {
       "id": "ber-11662",
@@ -3010,7 +1936,9 @@
       "b": "1909",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11662",
       "dla": 52.5336688,
-      "dlo": 13.4077238
+      "dlo": 13.4077238,
+      "move_m": 23.918,
+      "cc": "DE"
     },
     {
       "id": "ber-11663",
@@ -3025,7 +1953,9 @@
       "b": "1908",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11663",
       "dla": 52.5336688,
-      "dlo": 13.4077238
+      "dlo": 13.4077238,
+      "move_m": 23.918,
+      "cc": "DE"
     },
     {
       "id": "ber-11664",
@@ -3040,7 +1970,9 @@
       "b": "1889",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11664",
       "dla": 52.5191195,
-      "dlo": 13.424907
+      "dlo": 13.424907,
+      "move_m": 16.3801,
+      "cc": "DE"
     },
     {
       "id": "ber-11665",
@@ -3055,7 +1987,9 @@
       "b": "1894",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11665",
       "dla": 52.5191195,
-      "dlo": 13.424907
+      "dlo": 13.424907,
+      "move_m": 16.3801,
+      "cc": "DE"
     },
     {
       "id": "ber-11666",
@@ -3070,7 +2004,9 @@
       "b": "1920",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11666",
       "dla": 52.5191195,
-      "dlo": 13.424907
+      "dlo": 13.424907,
+      "move_m": 16.3801,
+      "cc": "DE"
     },
     {
       "id": "ber-11667",
@@ -3085,7 +2021,9 @@
       "b": "1923",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11667",
       "dla": 52.5191195,
-      "dlo": 13.424907
+      "dlo": 13.424907,
+      "move_m": 16.3801,
+      "cc": "DE"
     },
     {
       "id": "ber-11680",
@@ -3100,7 +2038,9 @@
       "b": "1886",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11680",
       "dla": 52.529985,
-      "dlo": 13.4239949
+      "dlo": 13.4239949,
+      "move_m": 2.3439,
+      "cc": "DE"
     },
     {
       "id": "ber-11681",
@@ -3115,7 +2055,9 @@
       "b": "1917",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11681",
       "dla": 52.4471462,
-      "dlo": 13.4451249
+      "dlo": 13.4451249,
+      "move_m": 14.9801,
+      "cc": "DE"
     },
     {
       "id": "ber-11702",
@@ -3130,7 +2072,9 @@
       "b": "1883",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11702",
       "dla": 52.5353086,
-      "dlo": 13.3778854
+      "dlo": 13.3778854,
+      "move_m": 1.8998,
+      "cc": "DE"
     },
     {
       "id": "ber-11720",
@@ -3145,7 +2089,9 @@
       "b": "1872",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11720",
       "dla": 52.5033703,
-      "dlo": 13.3026849
+      "dlo": 13.3026849,
+      "move_m": 0.5455,
+      "cc": "DE"
     },
     {
       "id": "ber-11726",
@@ -3160,7 +2106,9 @@
       "b": "1883",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11726",
       "dla": 52.5827287,
-      "dlo": 13.394743
+      "dlo": 13.394743,
+      "move_m": 12.4376,
+      "cc": "DE"
     },
     {
       "id": "ber-11727",
@@ -3175,7 +2123,9 @@
       "b": "1881",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11727",
       "dla": 52.5827287,
-      "dlo": 13.394743
+      "dlo": 13.394743,
+      "move_m": 12.4376,
+      "cc": "DE"
     },
     {
       "id": "ber-11729",
@@ -3190,7 +2140,9 @@
       "b": "1900",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11729",
       "dla": 52.5091647,
-      "dlo": 13.3987134
+      "dlo": 13.3987134,
+      "move_m": 11.586,
+      "cc": "DE"
     },
     {
       "id": "ber-11733",
@@ -3205,7 +2157,9 @@
       "b": "1899",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11733",
       "dla": 52.5827287,
-      "dlo": 13.394743
+      "dlo": 13.394743,
+      "move_m": 12.4376,
+      "cc": "DE"
     },
     {
       "id": "ber-11734",
@@ -3220,7 +2174,9 @@
       "b": "1929",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11734",
       "dla": 52.5827287,
-      "dlo": 13.394743
+      "dlo": 13.394743,
+      "move_m": 12.4376,
+      "cc": "DE"
     },
     {
       "id": "ber-11739",
@@ -3233,7 +2189,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1879",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11739"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/11739",
+      "cc": "DE"
     },
     {
       "id": "ber-11748",
@@ -3248,7 +2205,9 @@
       "b": "1878",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11748",
       "dla": 52.5019112,
-      "dlo": 13.3292007
+      "dlo": 13.3292007,
+      "move_m": 10.09,
+      "cc": "DE"
     },
     {
       "id": "ber-11764",
@@ -3263,7 +2222,9 @@
       "b": "1877",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11764",
       "dla": 52.4188381,
-      "dlo": 13.3129697
+      "dlo": 13.3129697,
+      "move_m": 6.6427,
+      "cc": "DE"
     },
     {
       "id": "ber-11765",
@@ -3278,7 +2239,9 @@
       "b": "1908",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11765",
       "dla": 52.4185671,
-      "dlo": 13.3088733
+      "dlo": 13.3088733,
+      "move_m": 9.2876,
+      "cc": "DE"
     },
     {
       "id": "ber-11766",
@@ -3293,7 +2256,9 @@
       "b": "1913",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11766",
       "dla": 52.4185671,
-      "dlo": 13.3088733
+      "dlo": 13.3088733,
+      "move_m": 9.2876,
+      "cc": "DE"
     },
     {
       "id": "ber-11773",
@@ -3308,7 +2273,9 @@
       "b": "1886",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11773",
       "dla": 52.51681,
-      "dlo": 13.4678787
+      "dlo": 13.4678787,
+      "move_m": 18.3267,
+      "cc": "DE"
     },
     {
       "id": "ber-11774",
@@ -3323,7 +2290,9 @@
       "b": "1892",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11774",
       "dla": 52.51681,
-      "dlo": 13.4678787
+      "dlo": 13.4678787,
+      "move_m": 18.3267,
+      "cc": "DE"
     },
     {
       "id": "ber-11775",
@@ -3338,7 +2307,9 @@
       "b": "1915",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11775",
       "dla": 52.51681,
-      "dlo": 13.4678787
+      "dlo": 13.4678787,
+      "move_m": 18.3267,
+      "cc": "DE"
     },
     {
       "id": "ber-11776",
@@ -3353,7 +2324,9 @@
       "b": "1914",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11776",
       "dla": 52.51681,
-      "dlo": 13.4678787
+      "dlo": 13.4678787,
+      "move_m": 18.3267,
+      "cc": "DE"
     },
     {
       "id": "ber-11777",
@@ -3368,7 +2341,9 @@
       "b": "1896",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11777",
       "dla": 52.5185422,
-      "dlo": 13.4627027
+      "dlo": 13.4627027,
+      "move_m": 6.0898,
+      "cc": "DE"
     },
     {
       "id": "ber-11784",
@@ -3383,7 +2358,9 @@
       "b": "1895",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11784",
       "dla": 52.4991179,
-      "dlo": 13.4373525
+      "dlo": 13.4373525,
+      "move_m": 8.4903,
+      "cc": "DE"
     },
     {
       "id": "ber-11785",
@@ -3398,7 +2375,9 @@
       "b": "1903",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11785",
       "dla": 52.4991179,
-      "dlo": 13.4373525
+      "dlo": 13.4373525,
+      "move_m": 8.4903,
+      "cc": "DE"
     },
     {
       "id": "ber-11786",
@@ -3413,22 +2392,9 @@
       "b": "1938",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11786",
       "dla": 52.4991179,
-      "dlo": 13.4373525
-    },
-    {
-      "id": "ber-11812",
-      "la": 52.5254164,
-      "lo": 13.3918103,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "später auch Schonthal Ruth Esther Hadassah Schönthal",
-      "a": "Oranienburger Straße 37, 10117 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1924",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11812",
-      "dla": 52.5253864,
-      "dlo": 13.3917924
+      "dlo": 13.4373525,
+      "move_m": 8.4903,
+      "cc": "DE"
     },
     {
       "id": "ber-11824",
@@ -3443,7 +2409,9 @@
       "b": "1921",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11824",
       "dla": 52.509215,
-      "dlo": 13.3096846
+      "dlo": 13.3096846,
+      "move_m": 8.4393,
+      "cc": "DE"
     },
     {
       "id": "ber-11836",
@@ -3458,7 +2426,9 @@
       "b": "1881",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11836",
       "dla": 52.5348881,
-      "dlo": 13.4003098
+      "dlo": 13.4003098,
+      "move_m": 19.2343,
+      "cc": "DE"
     },
     {
       "id": "ber-11837",
@@ -3473,7 +2443,9 @@
       "b": "1919",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11837",
       "dla": 52.5348881,
-      "dlo": 13.4003098
+      "dlo": 13.4003098,
+      "move_m": 19.2343,
+      "cc": "DE"
     },
     {
       "id": "ber-11838",
@@ -3488,7 +2460,9 @@
       "b": "1927",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11838",
       "dla": 52.5348881,
-      "dlo": 13.4003098
+      "dlo": 13.4003098,
+      "move_m": 19.2343,
+      "cc": "DE"
     },
     {
       "id": "ber-11856",
@@ -3503,7 +2477,9 @@
       "b": "1926",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11856",
       "dla": 52.5041817,
-      "dlo": 13.3113382
+      "dlo": 13.3113382,
+      "move_m": 4.9924,
+      "cc": "DE"
     },
     {
       "id": "ber-11857",
@@ -3518,7 +2494,9 @@
       "b": "1909",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11857",
       "dla": 52.5086525,
-      "dlo": 13.285441
+      "dlo": 13.285441,
+      "move_m": 5.9957,
+      "cc": "DE"
     },
     {
       "id": "ber-11858",
@@ -3533,7 +2511,9 @@
       "b": "1898",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11858",
       "dla": 52.5086525,
-      "dlo": 13.285441
+      "dlo": 13.285441,
+      "move_m": 5.9957,
+      "cc": "DE"
     },
     {
       "id": "ber-11859",
@@ -3548,37 +2528,9 @@
       "b": "1903",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11859",
       "dla": 52.5086525,
-      "dlo": 13.285441
-    },
-    {
-      "id": "ber-11863",
-      "la": 52.5225575,
-      "lo": 13.403898,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Margot Maria Malka Reiter",
-      "a": "An der Spandauer Brücke 10, 10178 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1919",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11863",
-      "dla": 52.5225685,
-      "dlo": 13.4039368
-    },
-    {
-      "id": "ber-11864",
-      "la": 52.5225575,
-      "lo": 13.403898,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Toni Taube Tauba Rosenzweig",
-      "a": "An der Spandauer Brücke 10, 10178 Berlin",
-      "c": "Berlin",
-      "cd": "Mitte",
-      "b": "1912",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11864",
-      "dla": 52.5225685,
-      "dlo": 13.4039368
+      "dlo": 13.285441,
+      "move_m": 5.9957,
+      "cc": "DE"
     },
     {
       "id": "ber-11865",
@@ -3593,7 +2545,9 @@
       "b": "1876",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11865",
       "dla": 52.5041817,
-      "dlo": 13.3113382
+      "dlo": 13.3113382,
+      "move_m": 4.9924,
+      "cc": "DE"
     },
     {
       "id": "ber-11876",
@@ -3608,7 +2562,9 @@
       "b": "1892",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11876",
       "dla": 52.6311429,
-      "dlo": 13.2861737
+      "dlo": 13.2861737,
+      "move_m": 10.5904,
+      "cc": "DE"
     },
     {
       "id": "ber-11897",
@@ -3623,7 +2579,9 @@
       "b": "1903",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11897",
       "dla": 52.5032094,
-      "dlo": 13.2895879
+      "dlo": 13.2895879,
+      "move_m": 3.2513,
+      "cc": "DE"
     },
     {
       "id": "ber-11909",
@@ -3638,7 +2596,9 @@
       "b": "1880",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11909",
       "dla": 52.5020712,
-      "dlo": 13.3075482
+      "dlo": 13.3075482,
+      "move_m": 2.5019,
+      "cc": "DE"
     },
     {
       "id": "ber-11910",
@@ -3653,7 +2613,9 @@
       "b": "1892",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11910",
       "dla": 52.6311429,
-      "dlo": 13.2861737
+      "dlo": 13.2861737,
+      "move_m": 10.5904,
+      "cc": "DE"
     },
     {
       "id": "ber-11912",
@@ -3668,7 +2630,9 @@
       "b": "1914",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11912",
       "dla": 52.5055483,
-      "dlo": 13.3201673
+      "dlo": 13.3201673,
+      "move_m": 12.1848,
+      "cc": "DE"
     },
     {
       "id": "ber-11913",
@@ -3683,7 +2647,9 @@
       "b": "1910",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11913",
       "dla": 52.5055483,
-      "dlo": 13.3201673
+      "dlo": 13.3201673,
+      "move_m": 12.1848,
+      "cc": "DE"
     },
     {
       "id": "ber-11914",
@@ -3698,7 +2664,9 @@
       "b": "1940",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11914",
       "dla": 52.5070504,
-      "dlo": 13.3281829
+      "dlo": 13.3281829,
+      "move_m": 14.4369,
+      "cc": "DE"
     },
     {
       "id": "ber-11927",
@@ -3713,7 +2681,9 @@
       "b": "1890",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11927",
       "dla": 52.5173869,
-      "dlo": 13.286123
+      "dlo": 13.286123,
+      "move_m": 8.2375,
+      "cc": "DE"
     },
     {
       "id": "ber-11928",
@@ -3728,7 +2698,9 @@
       "b": "1885",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11928",
       "dla": 52.5173869,
-      "dlo": 13.286123
+      "dlo": 13.286123,
+      "move_m": 8.2375,
+      "cc": "DE"
     },
     {
       "id": "ber-11929",
@@ -3743,7 +2715,9 @@
       "b": "1919",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11929",
       "dla": 52.5173869,
-      "dlo": 13.286123
+      "dlo": 13.286123,
+      "move_m": 8.2375,
+      "cc": "DE"
     },
     {
       "id": "ber-11933",
@@ -3758,7 +2732,9 @@
       "b": "1894",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11933",
       "dla": 52.5060911,
-      "dlo": 13.2899617
+      "dlo": 13.2899617,
+      "move_m": 4.8924,
+      "cc": "DE"
     },
     {
       "id": "ber-11934",
@@ -3773,7 +2749,9 @@
       "b": "1892",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11934",
       "dla": 52.5060911,
-      "dlo": 13.2899617
+      "dlo": 13.2899617,
+      "move_m": 4.8924,
+      "cc": "DE"
     },
     {
       "id": "ber-11935",
@@ -3788,7 +2766,9 @@
       "b": "1926",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11935",
       "dla": 52.5060911,
-      "dlo": 13.2899617
+      "dlo": 13.2899617,
+      "move_m": 4.8924,
+      "cc": "DE"
     },
     {
       "id": "ber-11936",
@@ -3803,7 +2783,9 @@
       "b": "1923",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11936",
       "dla": 52.5060911,
-      "dlo": 13.2899617
+      "dlo": 13.2899617,
+      "move_m": 4.8924,
+      "cc": "DE"
     },
     {
       "id": "ber-11941",
@@ -3818,7 +2800,9 @@
       "b": "1892",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11941",
       "dla": 52.5013552,
-      "dlo": 13.3354315
+      "dlo": 13.3354315,
+      "move_m": 8.1869,
+      "cc": "DE"
     },
     {
       "id": "ber-11942",
@@ -3833,7 +2817,9 @@
       "b": "1867",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11942",
       "dla": 52.5013552,
-      "dlo": 13.3354315
+      "dlo": 13.3354315,
+      "move_m": 8.1869,
+      "cc": "DE"
     },
     {
       "id": "ber-11943",
@@ -3848,7 +2834,9 @@
       "b": "1890",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11943",
       "dla": 52.5013552,
-      "dlo": 13.3354315
+      "dlo": 13.3354315,
+      "move_m": 8.1869,
+      "cc": "DE"
     },
     {
       "id": "ber-11944",
@@ -3863,7 +2851,9 @@
       "b": "1901",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11944",
       "dla": 52.5013552,
-      "dlo": 13.3354315
+      "dlo": 13.3354315,
+      "move_m": 8.1869,
+      "cc": "DE"
     },
     {
       "id": "ber-11945",
@@ -3878,7 +2868,9 @@
       "b": "1863",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11945",
       "dla": 52.5013552,
-      "dlo": 13.3354315
+      "dlo": 13.3354315,
+      "move_m": 8.1869,
+      "cc": "DE"
     },
     {
       "id": "ber-11946",
@@ -3893,7 +2885,9 @@
       "b": "1899",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11946",
       "dla": 52.5013552,
-      "dlo": 13.3354315
+      "dlo": 13.3354315,
+      "move_m": 8.1869,
+      "cc": "DE"
     },
     {
       "id": "ber-11947",
@@ -3908,22 +2902,9 @@
       "b": "1911",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11947",
       "dla": 52.5013552,
-      "dlo": 13.3354315
-    },
-    {
-      "id": "ber-11954",
-      "la": 52.4961593,
-      "lo": 13.3364967,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Martha Johanna Hirsch (\"Johanna Thal\")",
-      "a": "Regensburger Straße 9, 10777 Berlin",
-      "c": "Berlin",
-      "cd": "Wilmersdorf",
-      "b": "1886",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11954",
-      "dla": 52.4961219,
-      "dlo": 13.3362672
+      "dlo": 13.3354315,
+      "move_m": 8.1869,
+      "cc": "DE"
     },
     {
       "id": "ber-11958",
@@ -3938,7 +2919,9 @@
       "b": "1906",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11958",
       "dla": 52.5041817,
-      "dlo": 13.3113382
+      "dlo": 13.3113382,
+      "move_m": 4.9924,
+      "cc": "DE"
     },
     {
       "id": "ber-11959",
@@ -3953,7 +2936,9 @@
       "b": "1886",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11959",
       "dla": 52.5041817,
-      "dlo": 13.3113382
+      "dlo": 13.3113382,
+      "move_m": 4.9924,
+      "cc": "DE"
     },
     {
       "id": "ber-11961",
@@ -3968,7 +2953,9 @@
       "b": "1890",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11961",
       "dla": 52.5041817,
-      "dlo": 13.3113382
+      "dlo": 13.3113382,
+      "move_m": 4.9924,
+      "cc": "DE"
     },
     {
       "id": "ber-11962",
@@ -3983,7 +2970,9 @@
       "b": "1918",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11962",
       "dla": 52.5042149,
-      "dlo": 13.3113136
+      "dlo": 13.3113136,
+      "move_m": 1.549,
+      "cc": "DE"
     },
     {
       "id": "ber-11971",
@@ -3998,7 +2987,9 @@
       "b": "1866",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11971",
       "dla": 52.5041959,
-      "dlo": 13.3219401
+      "dlo": 13.3219401,
+      "move_m": 11.7338,
+      "cc": "DE"
     },
     {
       "id": "ber-11976",
@@ -4013,7 +3004,9 @@
       "b": "1893",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11976",
       "dla": 52.5008829,
-      "dlo": 13.3091891
+      "dlo": 13.3091891,
+      "move_m": 10.936,
+      "cc": "DE"
     },
     {
       "id": "ber-11977",
@@ -4028,7 +3021,9 @@
       "b": "1890",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11977",
       "dla": 52.5008829,
-      "dlo": 13.3091891
+      "dlo": 13.3091891,
+      "move_m": 10.936,
+      "cc": "DE"
     },
     {
       "id": "ber-11978",
@@ -4043,7 +3038,9 @@
       "b": "1915",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11978",
       "dla": 52.5008829,
-      "dlo": 13.3091891
+      "dlo": 13.3091891,
+      "move_m": 10.936,
+      "cc": "DE"
     },
     {
       "id": "ber-11979",
@@ -4058,37 +3055,9 @@
       "b": "1918",
       "lb": "https://www.stolpersteine-berlin.de/biografie/11979",
       "dla": 52.5008829,
-      "dlo": 13.3091891
-    },
-    {
-      "id": "ber-11981",
-      "la": 52.4747273,
-      "lo": 13.3378752,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Dalila Wydra",
-      "a": "Stierstraße  3, 12159 Berlin",
-      "c": "Berlin",
-      "cd": "Friedenau",
-      "b": "1914",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11981",
-      "dla": 52.4747379,
-      "dlo": 13.3376769
-    },
-    {
-      "id": "ber-11984",
-      "la": 52.4744157,
-      "lo": 13.337104,
-      "src": "berlin",
-      "lic": "cc-by",
-      "n": "Rudolf Beerwald",
-      "a": "Stierstraße 18, 12159 Berlin",
-      "c": "Berlin",
-      "cd": "Friedenau",
-      "b": "1910",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/11984",
-      "dla": 52.4743239,
-      "dlo": 13.3372547
+      "dlo": 13.3091891,
+      "move_m": 10.936,
+      "cc": "DE"
     },
     {
       "id": "ber-12000",
@@ -4103,7 +3072,9 @@
       "b": "1888",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12000",
       "dla": 52.5335684,
-      "dlo": 13.4102652
+      "dlo": 13.4102652,
+      "move_m": 9.3394,
+      "cc": "DE"
     },
     {
       "id": "ber-12001",
@@ -4118,7 +3089,9 @@
       "b": "1900",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12001",
       "dla": 52.5317294,
-      "dlo": 13.4163053
+      "dlo": 13.4163053,
+      "move_m": 10.0921,
+      "cc": "DE"
     },
     {
       "id": "ber-12003",
@@ -4131,7 +3104,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1876",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12003"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12003",
+      "cc": "DE"
     },
     {
       "id": "ber-12004",
@@ -4144,7 +3118,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1882",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12004"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12004",
+      "cc": "DE"
     },
     {
       "id": "ber-12005",
@@ -4157,7 +3132,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1908",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12005"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12005",
+      "cc": "DE"
     },
     {
       "id": "ber-12006",
@@ -4170,7 +3146,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1886",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12006"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12006",
+      "cc": "DE"
     },
     {
       "id": "ber-12007",
@@ -4185,7 +3162,9 @@
       "b": "1874",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12007",
       "dla": 52.5419072,
-      "dlo": 13.3991024
+      "dlo": 13.3991024,
+      "move_m": 2.2028,
+      "cc": "DE"
     },
     {
       "id": "ber-12008",
@@ -4200,7 +3179,9 @@
       "b": "1875",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12008",
       "dla": 52.5419072,
-      "dlo": 13.3991024
+      "dlo": 13.3991024,
+      "move_m": 2.2028,
+      "cc": "DE"
     },
     {
       "id": "ber-12010",
@@ -4215,7 +3196,9 @@
       "b": "1907",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12010",
       "dla": 52.5419072,
-      "dlo": 13.3991024
+      "dlo": 13.3991024,
+      "move_m": 2.2028,
+      "cc": "DE"
     },
     {
       "id": "ber-12012",
@@ -4230,7 +3213,9 @@
       "b": "1924",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12012",
       "dla": 52.6311429,
-      "dlo": 13.2861737
+      "dlo": 13.2861737,
+      "move_m": 10.5904,
+      "cc": "DE"
     },
     {
       "id": "ber-12035",
@@ -4245,7 +3230,9 @@
       "b": "1881",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12035",
       "dla": 52.506354,
-      "dlo": 13.2845374
+      "dlo": 13.2845374,
+      "move_m": 15.9787,
+      "cc": "DE"
     },
     {
       "id": "ber-12037",
@@ -4260,7 +3247,9 @@
       "b": "1887",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12037",
       "dla": 52.506354,
-      "dlo": 13.2845374
+      "dlo": 13.2845374,
+      "move_m": 15.9787,
+      "cc": "DE"
     },
     {
       "id": "ber-12051",
@@ -4275,7 +3264,9 @@
       "b": "1927",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12051",
       "dla": 52.5120298,
-      "dlo": 13.2977081
+      "dlo": 13.2977081,
+      "move_m": 3.1456,
+      "cc": "DE"
     },
     {
       "id": "ber-12052",
@@ -4290,7 +3281,9 @@
       "b": "1902",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12052",
       "dla": 52.5120298,
-      "dlo": 13.2977081
+      "dlo": 13.2977081,
+      "move_m": 3.1456,
+      "cc": "DE"
     },
     {
       "id": "ber-12054",
@@ -4303,7 +3296,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1880",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12054"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12054",
+      "cc": "DE"
     },
     {
       "id": "ber-12055",
@@ -4316,7 +3310,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1891",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12055"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12055",
+      "cc": "DE"
     },
     {
       "id": "ber-12057",
@@ -4331,7 +3326,9 @@
       "b": "1884",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12057",
       "dla": 52.5369982,
-      "dlo": 13.4344125
+      "dlo": 13.4344125,
+      "move_m": 11.7893,
+      "cc": "DE"
     },
     {
       "id": "ber-12058",
@@ -4346,7 +3343,9 @@
       "b": "1885",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12058",
       "dla": 52.5262295,
-      "dlo": 13.3958361
+      "dlo": 13.3958361,
+      "move_m": 7.0907,
+      "cc": "DE"
     },
     {
       "id": "ber-12059",
@@ -4361,7 +3360,9 @@
       "b": "1893",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12059",
       "dla": 52.5373132,
-      "dlo": 13.4222705
+      "dlo": 13.4222705,
+      "move_m": 6.3431,
+      "cc": "DE"
     },
     {
       "id": "ber-12066",
@@ -4376,7 +3377,9 @@
       "b": "1896",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12066",
       "dla": 52.5315705,
-      "dlo": 13.4435963
+      "dlo": 13.4435963,
+      "move_m": 1.0534,
+      "cc": "DE"
     },
     {
       "id": "ber-12097",
@@ -4391,7 +3394,9 @@
       "b": "1886",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12097",
       "dla": 52.503293,
-      "dlo": 13.3186882
+      "dlo": 13.3186882,
+      "move_m": 3.7968,
+      "cc": "DE"
     },
     {
       "id": "ber-12101",
@@ -4406,7 +3411,9 @@
       "b": "1875",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12101",
       "dla": 52.503293,
-      "dlo": 13.3186882
+      "dlo": 13.3186882,
+      "move_m": 3.7968,
+      "cc": "DE"
     },
     {
       "id": "ber-12102",
@@ -4421,7 +3428,9 @@
       "b": "1968",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12102",
       "dla": 52.503293,
-      "dlo": 13.3186882
+      "dlo": 13.3186882,
+      "move_m": 3.7968,
+      "cc": "DE"
     },
     {
       "id": "ber-12106",
@@ -4436,7 +3445,9 @@
       "b": "1895",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12106",
       "dla": 52.5035506,
-      "dlo": 13.3133243
+      "dlo": 13.3133243,
+      "move_m": 10.8895,
+      "cc": "DE"
     },
     {
       "id": "ber-12107",
@@ -4451,7 +3462,9 @@
       "b": "1910",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12107",
       "dla": 52.5035506,
-      "dlo": 13.3133243
+      "dlo": 13.3133243,
+      "move_m": 10.8895,
+      "cc": "DE"
     },
     {
       "id": "ber-12124",
@@ -4466,7 +3479,9 @@
       "b": "1857",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12124",
       "dla": 52.5352823,
-      "dlo": 13.4090102
+      "dlo": 13.4090102,
+      "move_m": 12.2366,
+      "cc": "DE"
     },
     {
       "id": "ber-12125",
@@ -4481,7 +3496,9 @@
       "b": "1855",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12125",
       "dla": 52.5352823,
-      "dlo": 13.4090102
+      "dlo": 13.4090102,
+      "move_m": 12.2366,
+      "cc": "DE"
     },
     {
       "id": "ber-12126",
@@ -4496,7 +3513,9 @@
       "b": "1884",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12126",
       "dla": 52.5209453,
-      "dlo": 13.3513792
+      "dlo": 13.3513792,
+      "move_m": 7.6944,
+      "cc": "DE"
     },
     {
       "id": "ber-12127",
@@ -4511,7 +3530,9 @@
       "b": "1890",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12127",
       "dla": 52.5209453,
-      "dlo": 13.3513792
+      "dlo": 13.3513792,
+      "move_m": 7.6944,
+      "cc": "DE"
     },
     {
       "id": "ber-12131",
@@ -4524,7 +3545,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1915",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12131"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12131",
+      "cc": "DE"
     },
     {
       "id": "ber-12132",
@@ -4537,7 +3559,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1912",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12132"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12132",
+      "cc": "DE"
     },
     {
       "id": "ber-12150",
@@ -4550,7 +3573,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1938",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12150"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12150",
+      "cc": "DE"
     },
     {
       "id": "ber-12152",
@@ -4563,7 +3587,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1876",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12152"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12152",
+      "cc": "DE"
     },
     {
       "id": "ber-12155",
@@ -4578,7 +3603,9 @@
       "b": "1943",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12155",
       "dla": 52.5366628,
-      "dlo": 13.4267548
+      "dlo": 13.4267548,
+      "move_m": 13.5845,
+      "cc": "DE"
     },
     {
       "id": "ber-12156",
@@ -4593,7 +3620,9 @@
       "b": "1922",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12156",
       "dla": 52.5366628,
-      "dlo": 13.4267548
+      "dlo": 13.4267548,
+      "move_m": 13.5845,
+      "cc": "DE"
     },
     {
       "id": "ber-12157",
@@ -4608,7 +3637,9 @@
       "b": "1902",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12157",
       "dla": 52.5366628,
-      "dlo": 13.4267548
+      "dlo": 13.4267548,
+      "move_m": 13.5845,
+      "cc": "DE"
     },
     {
       "id": "ber-12158",
@@ -4623,7 +3654,9 @@
       "b": "1899",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12158",
       "dla": 52.5366628,
-      "dlo": 13.4267548
+      "dlo": 13.4267548,
+      "move_m": 13.5845,
+      "cc": "DE"
     },
     {
       "id": "ber-12159",
@@ -4638,7 +3671,9 @@
       "b": "1893",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12159",
       "dla": 52.4832041,
-      "dlo": 13.4366979
+      "dlo": 13.4366979,
+      "move_m": 8.0401,
+      "cc": "DE"
     },
     {
       "id": "ber-12160",
@@ -4653,7 +3688,9 @@
       "b": "1921",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12160",
       "dla": 52.5366628,
-      "dlo": 13.4267548
+      "dlo": 13.4267548,
+      "move_m": 13.5845,
+      "cc": "DE"
     },
     {
       "id": "ber-12161",
@@ -4668,7 +3705,9 @@
       "b": "1921",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12161",
       "dla": 52.4832041,
-      "dlo": 13.4366979
+      "dlo": 13.4366979,
+      "move_m": 8.0401,
+      "cc": "DE"
     },
     {
       "id": "ber-12162",
@@ -4683,7 +3722,9 @@
       "b": "1890",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12162",
       "dla": 52.5366628,
-      "dlo": 13.4267548
+      "dlo": 13.4267548,
+      "move_m": 13.5845,
+      "cc": "DE"
     },
     {
       "id": "ber-12163",
@@ -4698,7 +3739,9 @@
       "b": "1898",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12163",
       "dla": 52.5366628,
-      "dlo": 13.4267548
+      "dlo": 13.4267548,
+      "move_m": 13.5845,
+      "cc": "DE"
     },
     {
       "id": "ber-12164",
@@ -4711,7 +3754,8 @@
       "c": "Berlin",
       "cd": "Prenzlauer Berg",
       "b": "1891",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12164"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12164",
+      "cc": "DE"
     },
     {
       "id": "ber-12165",
@@ -4724,7 +3768,8 @@
       "c": "Berlin",
       "cd": "Prenzlauer Berg",
       "b": "1896",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12165"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12165",
+      "cc": "DE"
     },
     {
       "id": "ber-12168",
@@ -4737,7 +3782,8 @@
       "c": "Berlin",
       "cd": "Prenzlauer Berg",
       "b": "1920",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12168"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12168",
+      "cc": "DE"
     },
     {
       "id": "ber-12169",
@@ -4750,7 +3796,8 @@
       "c": "Berlin",
       "cd": "Prenzlauer Berg",
       "b": "1914",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12169"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12169",
+      "cc": "DE"
     },
     {
       "id": "ber-12170",
@@ -4763,7 +3810,8 @@
       "c": "Berlin",
       "cd": "Prenzlauer Berg",
       "b": "1865",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12170"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12170",
+      "cc": "DE"
     },
     {
       "id": "ber-12179",
@@ -4778,7 +3826,9 @@
       "b": "1891",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12179",
       "dla": 52.4966647,
-      "dlo": 13.2985796
+      "dlo": 13.2985796,
+      "move_m": 4.0925,
+      "cc": "DE"
     },
     {
       "id": "ber-12180",
@@ -4793,7 +3843,9 @@
       "b": "1898",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12180",
       "dla": 52.4966647,
-      "dlo": 13.2985796
+      "dlo": 13.2985796,
+      "move_m": 4.0925,
+      "cc": "DE"
     },
     {
       "id": "ber-12181",
@@ -4808,7 +3860,9 @@
       "b": "1921",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12181",
       "dla": 52.4966647,
-      "dlo": 13.2985796
+      "dlo": 13.2985796,
+      "move_m": 4.0925,
+      "cc": "DE"
     },
     {
       "id": "ber-12182",
@@ -4823,7 +3877,9 @@
       "b": "1855",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12182",
       "dla": 52.5031747,
-      "dlo": 13.3239839
+      "dlo": 13.3239839,
+      "move_m": 0.5019,
+      "cc": "DE"
     },
     {
       "id": "ber-12185",
@@ -4838,7 +3894,9 @@
       "b": "1879",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12185",
       "dla": 52.5129267,
-      "dlo": 13.2737317
+      "dlo": 13.2737317,
+      "move_m": 8.5388,
+      "cc": "DE"
     },
     {
       "id": "ber-12191",
@@ -4851,7 +3909,8 @@
       "c": "Berlin",
       "cd": "Friedrichshain",
       "b": "1877",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12191"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12191",
+      "cc": "DE"
     },
     {
       "id": "ber-12193",
@@ -4864,7 +3923,8 @@
       "c": "Berlin",
       "cd": "Friedrichshain",
       "b": "1900",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12193"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12193",
+      "cc": "DE"
     },
     {
       "id": "ber-12194",
@@ -4877,7 +3937,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1889",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12194"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12194",
+      "cc": "DE"
     },
     {
       "id": "ber-12195",
@@ -4890,7 +3951,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1893",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12195"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12195",
+      "cc": "DE"
     },
     {
       "id": "ber-12196",
@@ -4903,7 +3965,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1920",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12196"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12196",
+      "cc": "DE"
     },
     {
       "id": "ber-12197",
@@ -4916,7 +3979,8 @@
       "c": "Berlin",
       "cd": "Mitte",
       "b": "1928",
-      "lb": "https://www.stolpersteine-berlin.de/biografie/12197"
+      "lb": "https://www.stolpersteine-berlin.de/biografie/12197",
+      "cc": "DE"
     },
     {
       "id": "ber-12200",
@@ -4931,7 +3995,9 @@
       "b": "1940",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12200",
       "dla": 52.5370418,
-      "dlo": 13.4198816
+      "dlo": 13.4198816,
+      "move_m": 1.4939,
+      "cc": "DE"
     },
     {
       "id": "ber-12201",
@@ -4946,7 +4012,9 @@
       "b": "1900",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12201",
       "dla": 52.5367386,
-      "dlo": 13.4165696
+      "dlo": 13.4165696,
+      "move_m": 13.3876,
+      "cc": "DE"
     },
     {
       "id": "ber-12202",
@@ -4961,7 +4029,9 @@
       "b": "1910",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12202",
       "dla": 52.5367386,
-      "dlo": 13.4165696
+      "dlo": 13.4165696,
+      "move_m": 13.3876,
+      "cc": "DE"
     },
     {
       "id": "ber-12204",
@@ -4976,7 +4046,9 @@
       "b": "1885",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12204",
       "dla": 52.5367386,
-      "dlo": 13.4165696
+      "dlo": 13.4165696,
+      "move_m": 13.3876,
+      "cc": "DE"
     },
     {
       "id": "ber-12209",
@@ -4991,7 +4063,9 @@
       "b": "1882",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12209",
       "dla": 52.5892654,
-      "dlo": 13.2845126
+      "dlo": 13.2845126,
+      "move_m": 4.5985,
+      "cc": "DE"
     },
     {
       "id": "ber-12210",
@@ -5006,7 +4080,9 @@
       "b": "1887",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12210",
       "dla": 52.5892654,
-      "dlo": 13.2845126
+      "dlo": 13.2845126,
+      "move_m": 4.5985,
+      "cc": "DE"
     },
     {
       "id": "ber-12223",
@@ -5021,7 +4097,9 @@
       "b": "1888",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12223",
       "dla": 52.5114995,
-      "dlo": 13.2997234
+      "dlo": 13.2997234,
+      "move_m": 5.0478,
+      "cc": "DE"
     },
     {
       "id": "ber-12224",
@@ -5036,7 +4114,9 @@
       "b": "1881",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12224",
       "dla": 52.5042649,
-      "dlo": 13.3178802
+      "dlo": 13.3178802,
+      "move_m": 9.0409,
+      "cc": "DE"
     },
     {
       "id": "ber-12225",
@@ -5051,7 +4131,9 @@
       "b": "1885",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12225",
       "dla": 52.5042649,
-      "dlo": 13.3178802
+      "dlo": 13.3178802,
+      "move_m": 9.0409,
+      "cc": "DE"
     },
     {
       "id": "ber-12228",
@@ -5066,7 +4148,9 @@
       "b": "1886",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12228",
       "dla": 52.5132081,
-      "dlo": 13.2987425
+      "dlo": 13.2987425,
+      "move_m": 3.0992,
+      "cc": "DE"
     },
     {
       "id": "ber-12229",
@@ -5081,7 +4165,9 @@
       "b": "1914",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12229",
       "dla": 52.5132081,
-      "dlo": 13.2987425
+      "dlo": 13.2987425,
+      "move_m": 3.0992,
+      "cc": "DE"
     },
     {
       "id": "ber-12230",
@@ -5096,7 +4182,9 @@
       "b": "1889",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12230",
       "dla": 52.5132081,
-      "dlo": 13.2987425
+      "dlo": 13.2987425,
+      "move_m": 3.0992,
+      "cc": "DE"
     },
     {
       "id": "ber-12231",
@@ -5111,7 +4199,9 @@
       "b": "1916",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12231",
       "dla": 52.5132081,
-      "dlo": 13.2987425
+      "dlo": 13.2987425,
+      "move_m": 3.0992,
+      "cc": "DE"
     },
     {
       "id": "ber-12243",
@@ -5126,7 +4216,9 @@
       "b": "1866",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12243",
       "dla": 52.5026345,
-      "dlo": 13.2876394
+      "dlo": 13.2876394,
+      "move_m": 5.9958,
+      "cc": "DE"
     },
     {
       "id": "ber-12250",
@@ -5141,7 +4233,9 @@
       "b": "1885",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12250",
       "dla": 52.503293,
-      "dlo": 13.3186882
+      "dlo": 13.3186882,
+      "move_m": 3.7968,
+      "cc": "DE"
     },
     {
       "id": "ber-12251",
@@ -5156,7 +4250,9 @@
       "b": "1929",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12251",
       "dla": 52.503293,
-      "dlo": 13.3186882
+      "dlo": 13.3186882,
+      "move_m": 3.7968,
+      "cc": "DE"
     },
     {
       "id": "ber-12252",
@@ -5171,7 +4267,9 @@
       "b": "1870",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12252",
       "dla": 52.5041817,
-      "dlo": 13.3113382
+      "dlo": 13.3113382,
+      "move_m": 4.9924,
+      "cc": "DE"
     },
     {
       "id": "ber-12253",
@@ -5186,7 +4284,9 @@
       "b": "1877",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12253",
       "dla": 52.5041817,
-      "dlo": 13.3113382
+      "dlo": 13.3113382,
+      "move_m": 4.9924,
+      "cc": "DE"
     },
     {
       "id": "ber-12254",
@@ -5201,7 +4301,9 @@
       "b": "1882",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12254",
       "dla": 52.5120298,
-      "dlo": 13.2977081
+      "dlo": 13.2977081,
+      "move_m": 3.1456,
+      "cc": "DE"
     },
     {
       "id": "ber-12255",
@@ -5216,7 +4318,9 @@
       "b": "1889",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12255",
       "dla": 52.5120298,
-      "dlo": 13.2977081
+      "dlo": 13.2977081,
+      "move_m": 3.1456,
+      "cc": "DE"
     },
     {
       "id": "ber-12256",
@@ -5231,7 +4335,9 @@
       "b": "1919",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12256",
       "dla": 52.5120298,
-      "dlo": 13.2977081
+      "dlo": 13.2977081,
+      "move_m": 3.1456,
+      "cc": "DE"
     },
     {
       "id": "ber-12258",
@@ -5246,7 +4352,9 @@
       "b": "1919",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12258",
       "dla": 52.5061371,
-      "dlo": 13.2939762
+      "dlo": 13.2939762,
+      "move_m": 1.8969,
+      "cc": "DE"
     },
     {
       "id": "ber-12262",
@@ -5261,7 +4369,9 @@
       "b": "1899",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12262",
       "dla": 52.4674478,
-      "dlo": 13.313956
+      "dlo": 13.313956,
+      "move_m": 6.0461,
+      "cc": "DE"
     },
     {
       "id": "ber-12263",
@@ -5276,7 +4386,9 @@
       "b": "1883",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12263",
       "dla": 52.4872206,
-      "dlo": 13.3290366
+      "dlo": 13.3290366,
+      "move_m": 9.3376,
+      "cc": "DE"
     },
     {
       "id": "ber-12265",
@@ -5291,7 +4403,9 @@
       "b": "1888",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12265",
       "dla": 52.4958824,
-      "dlo": 13.3203889
+      "dlo": 13.3203889,
+      "move_m": 6.09,
+      "cc": "DE"
     },
     {
       "id": "ber-12266",
@@ -5306,7 +4420,9 @@
       "b": "1913",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12266",
       "dla": 52.4983169,
-      "dlo": 13.2983278
+      "dlo": 13.2983278,
+      "move_m": 1.301,
+      "cc": "DE"
     },
     {
       "id": "ber-12267",
@@ -5321,7 +4437,9 @@
       "b": "1905",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12267",
       "dla": 52.446996,
-      "dlo": 13.3337294
+      "dlo": 13.3337294,
+      "move_m": 2.8479,
+      "cc": "DE"
     },
     {
       "id": "ber-12268",
@@ -5336,7 +4454,9 @@
       "b": "1904",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12268",
       "dla": 52.4514488,
-      "dlo": 13.3460667
+      "dlo": 13.3460667,
+      "move_m": 4.3423,
+      "cc": "DE"
     },
     {
       "id": "ber-12269",
@@ -5351,7 +4471,9 @@
       "b": "1900",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12269",
       "dla": 52.4514488,
-      "dlo": 13.3460667
+      "dlo": 13.3460667,
+      "move_m": 4.3423,
+      "cc": "DE"
     },
     {
       "id": "ber-12272",
@@ -5366,7 +4488,9 @@
       "b": "1877",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12272",
       "dla": 52.521409,
-      "dlo": 13.3377654
+      "dlo": 13.3377654,
+      "move_m": 7.5445,
+      "cc": "DE"
     },
     {
       "id": "ber-12273",
@@ -5381,7 +4505,9 @@
       "b": "1878",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12273",
       "dla": 52.521409,
-      "dlo": 13.3377654
+      "dlo": 13.3377654,
+      "move_m": 7.5445,
+      "cc": "DE"
     },
     {
       "id": "ber-12274",
@@ -5396,7 +4522,9 @@
       "b": "1893",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12274",
       "dla": 52.5477021,
-      "dlo": 13.3497829
+      "dlo": 13.3497829,
+      "move_m": 9.9876,
+      "cc": "DE"
     },
     {
       "id": "ber-12275",
@@ -5411,7 +4539,9 @@
       "b": "1900",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12275",
       "dla": 52.5477021,
-      "dlo": 13.3497829
+      "dlo": 13.3497829,
+      "move_m": 9.9876,
+      "cc": "DE"
     },
     {
       "id": "ber-12276",
@@ -5426,7 +4556,9 @@
       "b": "1925",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12276",
       "dla": 52.5477021,
-      "dlo": 13.3497829
+      "dlo": 13.3497829,
+      "move_m": 9.9876,
+      "cc": "DE"
     },
     {
       "id": "ber-12277",
@@ -5441,7 +4573,9 @@
       "b": "1905",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12277",
       "dla": 52.4639149,
-      "dlo": 13.5089984
+      "dlo": 13.5089984,
+      "move_m": 9.843,
+      "cc": "DE"
     },
     {
       "id": "ber-12302",
@@ -5456,7 +4590,9 @@
       "b": "1886",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12302",
       "dla": 52.5227031,
-      "dlo": 13.3364352
+      "dlo": 13.3364352,
+      "move_m": 2.2961,
+      "cc": "DE"
     },
     {
       "id": "ber-12303",
@@ -5471,7 +4607,9 @@
       "b": "1906",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12303",
       "dla": 52.5227031,
-      "dlo": 13.3364352
+      "dlo": 13.3364352,
+      "move_m": 2.2961,
+      "cc": "DE"
     },
     {
       "id": "ber-12304",
@@ -5486,7 +4624,9 @@
       "b": "1936",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12304",
       "dla": 52.5227031,
-      "dlo": 13.3364352
+      "dlo": 13.3364352,
+      "move_m": 2.2961,
+      "cc": "DE"
     },
     {
       "id": "ber-12306",
@@ -5501,7 +4641,9 @@
       "b": "1939",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12306",
       "dla": 52.5227031,
-      "dlo": 13.3364352
+      "dlo": 13.3364352,
+      "move_m": 2.2961,
+      "cc": "DE"
     },
     {
       "id": "ber-12308",
@@ -5516,7 +4658,9 @@
       "b": "1899",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12308",
       "dla": 52.5266304,
-      "dlo": 13.4075923
+      "dlo": 13.4075923,
+      "move_m": 2.0465,
+      "cc": "DE"
     },
     {
       "id": "ber-12309",
@@ -5531,7 +4675,9 @@
       "b": "1934",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12309",
       "dla": 52.5274098,
-      "dlo": 13.4082181
+      "dlo": 13.4082181,
+      "move_m": 9.6875,
+      "cc": "DE"
     },
     {
       "id": "ber-12312",
@@ -5546,7 +4692,9 @@
       "b": "1884",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12312",
       "dla": 52.5326737,
-      "dlo": 13.4299452
+      "dlo": 13.4299452,
+      "move_m": 6.1904,
+      "cc": "DE"
     },
     {
       "id": "ber-12313",
@@ -5561,7 +4709,9 @@
       "b": "1888",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12313",
       "dla": 52.5326737,
-      "dlo": 13.4299452
+      "dlo": 13.4299452,
+      "move_m": 6.1904,
+      "cc": "DE"
     },
     {
       "id": "ber-12315",
@@ -5576,7 +4726,9 @@
       "b": "1913",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12315",
       "dla": 52.5466627,
-      "dlo": 13.4107216
+      "dlo": 13.4107216,
+      "move_m": 3.7933,
+      "cc": "DE"
     },
     {
       "id": "ber-12316",
@@ -5591,7 +4743,9 @@
       "b": "1908",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12316",
       "dla": 52.5466627,
-      "dlo": 13.4107216
+      "dlo": 13.4107216,
+      "move_m": 3.7933,
+      "cc": "DE"
     },
     {
       "id": "ber-12317",
@@ -5606,7 +4760,9 @@
       "b": "1891",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12317",
       "dla": 52.5466627,
-      "dlo": 13.4107216
+      "dlo": 13.4107216,
+      "move_m": 3.7933,
+      "cc": "DE"
     },
     {
       "id": "ber-12318",
@@ -5621,7 +4777,9 @@
       "b": "1895",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12318",
       "dla": 52.5466627,
-      "dlo": 13.4107216
+      "dlo": 13.4107216,
+      "move_m": 3.7933,
+      "cc": "DE"
     },
     {
       "id": "ber-12342",
@@ -5636,7 +4794,9 @@
       "b": "1882",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12342",
       "dla": 52.4912271,
-      "dlo": 13.4294455
+      "dlo": 13.4294455,
+      "move_m": 6.839,
+      "cc": "DE"
     },
     {
       "id": "ber-12343",
@@ -5651,7 +4811,9 @@
       "b": "1884",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12343",
       "dla": 52.4912271,
-      "dlo": 13.4294455
+      "dlo": 13.4294455,
+      "move_m": 6.839,
+      "cc": "DE"
     },
     {
       "id": "ber-12345",
@@ -5666,7 +4828,9 @@
       "b": "1894",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12345",
       "dla": 52.4897442,
-      "dlo": 13.4269414
+      "dlo": 13.4269414,
+      "move_m": 16.1846,
+      "cc": "DE"
     },
     {
       "id": "ber-12348",
@@ -5681,7 +4845,9 @@
       "b": "1901",
       "lb": "https://www.stolpersteine-berlin.de/biografie/12348",
       "dla": 52.4866512,
-      "dlo": 13.4351867
+      "dlo": 13.4351867,
+      "move_m": 9.5876,
+      "cc": "DE"
     }
   ]
 }

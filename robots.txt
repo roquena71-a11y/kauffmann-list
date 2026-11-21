@@ -2,7 +2,7 @@
 # Cada placa, cada nombre, cada historia. Nunca olvidar.
 # Start here for agents: https://roquena71-a11y.github.io/kauffmann-list/llms.txt (short) · https://roquena71-a11y.github.io/kauffmann-list/llms-full.txt (full guide)
 # Machine-readable API: https://roquena71-a11y.github.io/kauffmann-list/api/v1/index.json · OpenAPI 3.1: https://roquena71-a11y.github.io/kauffmann-list/api/v1/openapi.json
-# Data licences: ODbL 1.0 (api/v1/odbl) and CC0 1.0 (api/v1/cc0). Please cache and fetch only what you need.
+# Data licences: ODbL 1.0 (api/v1/odbl), CC0 1.0 (api/v1/cc0), Creative Commons Attribution (api/v1/cc-by), Datenlizenz Deutschland – Zero – Version 2.0 (api/v1/dl-de-zero). Please cache and fetch only what you need.
 
 User-agent: *
 Allow: /

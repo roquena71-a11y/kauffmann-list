@@ -2,7 +2,6 @@
 "meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
 "prefix":"v",
 "rows":[
-["vally","ber-2657","Vally Goldschmidt",1887,null,"Berlin","g"],
 ["vera","ber-12202","Vera Simon",1910,null,"Berlin","s"],
 ["veronika","ber-3467","Elsa Veronika Fischl",1893,null,"Berlin","f"],
 ["vesper","ber-11326","Karl Vesper",1883,null,"Berlin","v"],

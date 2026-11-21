@@ -2,7 +2,6 @@
 "meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
 "prefix":"m",
 "rows":[
-["ber-1572","Mala, Mali] Gutmann Malcha [Malka",1908,"Berlin",52.54122,13.42349,"m"],
 ["ber-12316","Julius Markus",1908,"Berlin",52.54663,13.41073,"m"],
 ["ber-12315","Margot Markus",1913,"Berlin",52.54663,13.41073,"m"],
 ["ber-11764","Rosa Marmor",1877,"Berlin",52.41881,13.31288,"m"],
@@ -20,6 +19,5 @@
 ["ber-3545","Walter Michaelis",1896,"Berlin",52.53808,13.39629,"m"],
 ["ber-738","Alice Mielzynski",1905,"Berlin",52.52511,13.39754,"m"],
 ["ber-737","Ida Mielzynski",1881,"Berlin",52.52511,13.39754,"m"],
-["ber-2973","Fritz Moses",1903,"Berlin",52.49034,13.32888,"m"],
 ["ber-11560","Erika Emilie Mpessa",1916,"Berlin",52.5468,13.41149,"m"]
 ]}

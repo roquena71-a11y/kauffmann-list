@@ -1,12 +1,10 @@
 {"columns":["id","name","birth_year","death_year","place","people_prefix"],
-"count":3,
+"count":1,
 "kind":"birth",
 "meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
 "page":1,
 "pages":1,
 "rows":[
-["ber-1557","Anny] Eckstein Anna [Anni",1907,null,"Berlin","a"],
-["ber-12010","Charlotte Aron",1907,null,"Berlin","a"],
-["ber-1946","Karl Jacobs",1907,null,"Berlin","j"]
+["ber-12010","Charlotte Aron",1907,null,"Berlin","a"]
 ],
 "year":1907}

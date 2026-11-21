@@ -73,7 +73,7 @@ Colocar las 1.949 (dla/dlo, reglas v20; familias de API separadas; textos; tests
 - `map2d-check.py`: el fixture de 41 placas (IE/SE/JE/FI/RO) ahora intercepta también `data/*-added-*.json` (vacío), porque el mapa 2D carga Berlín y Colonia.
 - Al cargar tres JSON, `style.load` podía montar `pts` antes de `buildStones()` (GeoJSON indefinido) y, con `isStyleLoaded()` a veces en falso, las capas no se añadían. `tryAddOverlays()` espera a `POINTS_FC`/`STONES_FC`/`AGG` y reintenta. El recorrido de países (incl. DE en 320×568) dejó de caer el renderer.
 - `country-buttons-check.py` en solitario: **FALLOS: ninguno** (10 tamaños).
-- Versión de caché: `kauffmann-v21-pages`.
+- Versión de caché: `kauffmann-v22-pages`.
 
 ## 11:09 run-all oficial
 
@@ -94,3 +94,55 @@ Colocar las 1.949 (dla/dlo, reglas v20; familias de API separadas; textos; tests
 - INFORME-v21.md actualizado (tests + opciones de la API de Colonia sin inventar fechas). Sin push, sin `publicar.yml`, sin hits al contador, sin borrar nada.
 - Commit local (sin push): `316362af884fedb20c9273ec8b3e558d018fa414` (`316362af`), 2026-11-21 11:49:54 CET, padre `b142fa48`. Mensaje: «v21: Berlín CC BY y Colonia DL-DE Zero, colocación, API, INFORME, run-all OK». Excluidos `__pycache__` y `pipeline/cache`. `data/stones.json` no forma parte del commit (sigue intacto).
 - Cierre de la sesión de preparación: 2026-11-21 11:50 CET (inicio 09:32:11 CET).
+
+## 12:00 Auditoría A ronda 1 — FAIL; se corrige en este worktree
+
+- Informe: `/workspace/audits/v21/A/auditoria-A-ronda1.md` sobre el commit `54cdee54`. No se toca el worktree del auditor (`/workspace/audits/v21/A/wt`). Auditores B y C siguen sobre `54cdee54`.
+- Hallazgos a corregir: (1) 90 de Berlín ya en OSM por `ref`/URL de biografía; (2) `parse_display_name` invierte comas internas; (3) 2 piedras virtuales importadas como físicas; (4) `koeln-562` a 25,001 m; (5) `dl-de-zero.sources` vacío y JSON-LD/index.html con fecha/cifra de v20.
+- En Colonia hay un identificador equivalente: `stid=` en la URL de nsdok/museenkoeln (no el `id` del JSON, que no coincide con OSM). Se usará solo el `stid`.
+
+## 12:13 Correcciones de la auditoría A aplicadas; falta run-all
+
+- Dedupe: Berlín 11.137 → 10.763 dup / 64 probables / 20 virtuales / **290 nuevas**. Colonia 2.960 → 1.297 / 113 / **1.550**. Las 90 de `berlin-missed-dups-ref.csv` son duplicadas. 7 de Colonia por `stid=`. `stones.json` intacto.
+- Nombres de Berlín = `Vorname + Nachname` de la fuente. Piedras `Virtueller-Stein=virtuell` fuera del mapa y de la API.
+- Colocación: 1.440 con dla, 400 en origen, máx. 24,9977 m; `koeln-562` reajustado 25,0011 → 24,952 m. Total mapa 73.950.
+- API: cc-by 290 → 228; dl-de-zero 1.550 → 0 (sources con `koeln_opendata`). Total fichas 181.001.
+- JSON-LD e index.html actualizados (2026-11-21, ODbL 72.110 vs mapa 73.950).
+- Run-all a continuación con `REQUIRE_OAV=1` en `/workspace/venv-v21-ci` y `KL_HTTP_PORT` distinto de 8899 (ese puerto lo usa el auditor B; no se toca su worktree).
+
+## 12:34 Auditoría B ronda 1 — FAIL; se corrige en el mismo worktree
+
+- Informe: `/workspace/audits/v21/B/auditoria-B-ronda1.md` sobre `54cdee54`. No se toca `/workspace/audits/v21/B/wt` ni su servidor en 8899. El auditor C sigue en marcha.
+- Cifras usadas: las posteriores a A (mapa 73.950 = 72.110 + 290 + 1.550; API cc-by 228 / dl-de-zero 0).
+- B1: «Acerca de» es/de/en parte el total por fuente y licencia. B2: ya actualizado con A (JSON-LD e index.html, 2026-11-21). B3: `robots.txt`. B4: `sitemap.xml`. B5: `v21-added-test.cjs` con `hav()` y 25 m (OK en solitario, máx. 24,9696 m).
+- El run-all iniciado a las 12:13 CET (puerto 8960) sigue en country-buttons; no se lanza otro hasta que termine. Después hará falta un run-all oficial sobre el código A+B.
+
+## 12:48 Auditoría C ronda 1 — FAIL; se corrige en el mismo worktree
+
+- Informe y evidencia: `/workspace/audits/v21/C/auditoria-C-ronda1.md` y `/workspace/audits/v21/C/r1/`. Commit auditado: `54cdee54`. No se toca `/workspace/audits/v21/C/wt` ni los HTTP 8941/8942.
+- Causa: `buildStones` de v21 mezclaba las placas municipales en agrupación, fusión, ángulo de calle y desplazamiento, y movía 146 de v20 (máx. 14,666 m; 109 a >200 m, p. ej. Freiburg, Verden, Dresden, Hamburgo).
+- Corrección en `app3d.js`: el layout de `b142fa48` corre solo sobre las 72.110; las nuevas visibles se clavan al `dla`/`dlo` del archivo; una nueva puede ser alias de una primaria de v20, nunca al revés. `cc: "DE"` en los JSON añadidos.
+- Test nuevo: `tests/v21-v20-render-compare.py` (en `run-all`), compara `_dla`/`_dlo`/`_ang` de las 72.110 con el cliente de `/workspace/countries-proto-v20r4` (b142fa48), tolerancia 1 cm / 0,5°, y comprueba que las nuevas visibles coinciden con el archivo. Bloquea `kl-contador` y `*.workers.dev`. No modifica el worktree de v20.
+- El run-all iniciado a las 12:13 CET (puerto 8960, código A, docs B aún a medias, sin el arreglo de C) terminó con `run-all: OK` / `EXIT:0` (log `/workspace/v21-data/out/run-all-ronda2.log`). No cuenta como oficial de A+B+C. A continuación, run-all oficial sobre el árbol completo.
+
+## 12:50 Comparación de renderizado v20/v21 OK; arranca run-all oficial A+B+C
+
+- `tests/v21-v20-render-compare.py` en solitario (v21 :8961, v20 b142fa48 :8970): **OK**, ~40 s. Las 72.110 coinciden en `_dla`/`_dlo`/`_ang` (1 cm / 0,5°). 1.836 nuevas visibles clavadas al archivo; 4 alias de una primaria de v20; 1.840 con `cc=DE`. Total DATA 73.950. Sin hits a `kl-contador` ni `*.workers.dev` (hosts: 127.0.0.1 y tiles.openfreemap.org). Log: `/workspace/v21-data/out/v21-v20-render-compare.log`.
+- A continuación `REQUIRE_OAV=1 tests/run-all.sh` en `/workspace/venv-v21-ci`, `KL_HTTP_PORT=8960`, `KL_HTTP_PORT_V20=8970`. No se tocan 8941/8942.
+
+## 12:53 run-all oficial falló: faltaba subir la versión de caché
+
+- `tests/version-test.cjs`: FAIL porque `app3d.js` cambió sin `tests/bump-version.py`. El resto (incl. `v21-added-test`) había pasado; no se llegó a Playwright.
+- Ejecutado `python3 tests/bump-version.py` → versión **22**, `kauffmann-v22-pages`, `?v=22` en `index.html` y `sw.js`. Huellas actualizadas en `tests/app-version.json`.
+- Se relanza el run-all oficial (`REQUIRE_OAV=1`, `KL_HTTP_PORT=8960`, `KL_HTTP_PORT_V20=8970`).
+
+## 13:30 run-all oficial A+B+C OK — cierre de esta ronda
+
+- Fin: 2026-11-21 13:30:22 CET (inicio 12:57:53 CET). `REQUIRE_OAV=1`, venv `/workspace/venv-v21-ci`, `KL_HTTP_PORT=8960`, `KL_HTTP_PORT_V20=8970`.
+- Resultado: **`run-all: OK` / `EXIT:0`**. Incluye `v21-v20-render-compare` (72.110 idénticas a b142fa48) y country-buttons **FALLOS: ninguno**. Log: `/workspace/v21-data/out/run-all-oficial.log`.
+- Un intento anterior (12:53 CET) falló solo por no haber subido la versión de caché; otro (12:53 con `bash -lc`) perdió el PATH del venv y `REQUIRE_OAV` no encontró el validador. No se reutilizan. Los servidores de los auditores (8941/8942, y 8899 si seguía) no se tocaron.
+- INFORME actualizado. Commit local a continuación, sin push ni `publicar.yml`.
+
+## 13:34 Commit local A+B+C (sin push)
+
+- Se incluye el código, docs, API, tests y JSON municipales de las correcciones A+B+C. Se excluyen `__pycache__` y `pipeline/cache`. `data/stones.json` no entra (sha256 intacto). Sin push y sin `publicar.yml`.

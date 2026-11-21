@@ -451,6 +451,12 @@ def run(source_ids=None, limit=None, offline=False, out=None, site_root=None, fi
                 log("  ✗ esquema %s: %s" % (pid, errs))
             raise SystemExit("%d registros no cumplen el esquema en %s" % (len(errors), fam_id))
         used = sorted(set(s["source_id"] for p in published for s in p["sources"]))
+        # Incluir fuentes de la familia aunque el filtro de posiblemente vivas deje 0 fichas
+        # (p. ej. dl-de-zero / Colonia: el JSON no trae fechas).
+        for sid, cfg in all_sources.items():
+            if cfg.get("license_family") == fam_id and sid in report.get("sources", {}) and sid not in used:
+                used.append(sid)
+        used = sorted(used)
         fidx, fst = write_family(w, fam_id, families[fam_id], published, [all_sources[s] for s in used], generated,
                                  {"possible_duplicates": dups, "blocked_merges": blocked}, shard_chars)
         fidx["merged_records"] = mreport.get("merged_records", 0)

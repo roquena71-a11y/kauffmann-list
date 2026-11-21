@@ -16,4 +16,6 @@ Sitio estático (sin cookies, sin analítica de terceros, sin rastreadores). Tie
 
 Correcciones: en OpenStreetMap o Wikidata para las placas de esas fuentes; en las listas abiertas de Berlín o Colonia (o avisándonos) para las placas añadidas en v21.
 
-**API (regla de posiblemente vivas, sin cambio de política):** de las 384 placas nuevas de Berlín se publican 279 fichas en `api/v1/cc-by/` (105 quedan fuera: nacimiento hace menos de 110 años y sin indicio de muerte en la lista). De las 1.565 de Colonia no se publica ninguna ficha en `api/v1/dl-de-zero/`: el JSON no trae fechas. El mapa sí muestra todas las placas añadidas. No se rellenan fechas ni se copian biografías para evitar esa exclusión.
+**Piedras virtuales (Berlín):** el CSV trae el campo `Virtueller-Stein`. Las 20 filas con valor `virtuell` no se importan como placas físicas ni a la API: no se colocan en la acera. (18 ya coincidían con una placa publicada; 2 no tenían coincidencia y también quedan fuera.)
+
+**API (regla de posiblemente vivas, sin cambio de política):** de las 290 placas nuevas de Berlín se publican 228 fichas en `api/v1/cc-by/` (62 quedan fuera: nacimiento hace menos de 110 años y sin indicio de muerte en la lista). De las 1.550 de Colonia no se publica ninguna ficha en `api/v1/dl-de-zero/`: el JSON no trae fechas. El mapa sí muestra las placas físicas añadidas. No se rellenan fechas ni se copian biografías para evitar esa exclusión.

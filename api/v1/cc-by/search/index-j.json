@@ -2,10 +2,7 @@
 "meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
 "prefix":"j",
 "rows":[
-["ber-1946","Karl Jacobs",1907,"Berlin",52.51347,13.42712,"j"],
 ["ber-12263","Moritz Jacoby",1883,"Berlin",52.48728,13.32913,"j"],
-["ber-8440","Herbert Julius Joel",1906,"Berlin",52.52096,13.34205,"j"],
-["ber-2007","Manfred Ephraim Joel",1910,"Berlin",52.50581,13.4027,"j"],
 ["ber-11259","Israel Julius",1863,"Berlin",52.53389,13.43357,"j"],
 ["ber-12164","Leo Julius",1891,"Berlin",52.52621,13.41828,"j"],
 ["ber-12165","Pauline Julius",1896,"Berlin",52.52624,13.4183,"j"]

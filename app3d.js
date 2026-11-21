@@ -22,7 +22,7 @@ const I18N = {
     about:'Acerca de los datos', close:'Cerrar', noinsc:'No hay transcripción de la inscripción en las fuentes.',
     attribution:'Datos: © <a href="https://www.openstreetmap.org/copyright">colaboradores de OpenStreetMap</a> (ODbL), <a href="https://www.wikidata.org">Wikidata</a> (CC0), Koordinierungsstelle Stolpersteine Berlin (CC BY) y Stadt Köln (dl-de/zero-2-0). Mapa base © OpenStreetMap.',
     aboutHtml:m=>`<h2>Acerca de este mapa</h2><p>Los <em>Stolpersteine</em> («piedras de tropiezo») son placas de latón del artista Gunter Demnig, colocadas frente al último domicilio elegido libremente por personas perseguidas, deportadas o asesinadas por el nazismo.</p>
-      <p>Este mapa reúne <strong>${m.count}</strong> placas en Alemania, Países Bajos, Francia, Austria, Noruega, Chequia, Italia, España, Bélgica, Luxemburgo, Hungría, Lituania, Suiza, Polonia, Eslovaquia, Jersey, Croacia, Dinamarca, Guernsey, Finlandia, Andorra, Irlanda, Suecia, Letonia, Rumanía, Reino Unido y Liechtenstein a partir de datos abiertos: OpenStreetMap (instantánea ${m.osm_snapshot.slice(0,10)} para Alemania, Irlanda, Suecia, Jersey, Finlandia y Rumanía; ${(m.v20_added||{}).snapshot_osm.slice(0,10)}, refrescada el 2026-11-20, para el resto) y Wikidata (${(m.wikidata_added||{}).snapshot||m.wikidata_snapshot} para esos países; ${(m.v20_added||{}).snapshot_wikidata} para el resto). <strong>No están todas</strong>: según la Stiftung Spuren – Gunter Demnig hay más de 116.000 Stolpersteine en Europa, la mayoría en Alemania, y muchas aún no están registradas en datos abiertos. Si no encuentra a su familiar, consulte también <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> y las iniciativas locales (p. ej. <a href="https://www.stolpersteine-berlin.de">Berlín</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburgo</a>).</p>
+      <p>Este mapa reúne <strong>${m.count}</strong> placas en Alemania, Países Bajos, Francia, Austria, Noruega, Chequia, Italia, España, Bélgica, Luxemburgo, Hungría, Lituania, Suiza, Polonia, Eslovaquia, Jersey, Croacia, Dinamarca, Guernsey, Finlandia, Andorra, Irlanda, Suecia, Letonia, Rumanía, Reino Unido y Liechtenstein. De ellas, <strong>${m.odbl_count}</strong> proceden de OpenStreetMap (instantánea ${m.osm_snapshot.slice(0,10)} para Alemania, Irlanda, Suecia, Jersey, Finlandia y Rumanía; ${(m.v20_added||{}).snapshot_osm.slice(0,10)}, refrescada el 2026-11-20, para el resto) y Wikidata (${(m.wikidata_added||{}).snapshot||m.wikidata_snapshot} para esos países; ${(m.v20_added||{}).snapshot_wikidata} para el resto); <strong>${m.berlin_count}</strong> de la lista abierta de Stolpersteine de Berlín (Creative Commons Attribution, cc-by) y <strong>${m.koeln_count}</strong> de la de Colonia (Datenlizenz Deutschland – Zero – Version 2.0). <strong>No están todas</strong>: según la Stiftung Spuren – Gunter Demnig hay más de 116.000 Stolpersteine en Europa, la mayoría en Alemania, y muchas aún no están registradas en datos abiertos. Si no encuentra a su familiar, consulte también <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> y las iniciativas locales (p. ej. <a href="https://www.stolpersteine-berlin.de">Berlín</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburgo</a>).</p>
       <p>Ningún dato ha sido inventado: cada campo procede de las fuentes citadas. Pueden existir errores o duplicados; las correcciones de las placas de OpenStreetMap o Wikidata se hacen en esas fuentes, y las de las listas de Berlín o Colonia en esas listas o avisándonos.</p>
       <p>Posición en el mapa: las columnas se dibujan, en general, sobre la acera. Si el punto registrado cae dentro de un edificio de OpenStreetMap o a menos de medio metro de su fachada, solo se desplaza el dibujo hacia la calle: normalmente menos de 25 m; en 292 placas (grupos grandes o calles sin hueco tras la regla de calzada de v20r4) el dibujo queda más lejos, hasta unos 47 m (lista en «excepciones-25m-v20.csv»), y en 109 no se ha podido dejar medio metro libre (lista en «residuales-acera-v20.csv»). Las que quedarían sobre la calzada de una vía rodada sin hueco de acera se listan en «calzada-v20.csv». Las coordenadas de los datos y de los enlaces «Cómo llegar» siguen siendo las originales.</p>
       <p>Licencias: las placas de OpenStreetMap y Wikidata (<a href="data/stones.json">data/stones.json</a>, <a href="api/v1/odbl/index.json">api/v1/odbl</a>) están bajo <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>. Las añadidas de la lista abierta de Berlín (<a href="data/berlin-added-20261121.json">data/berlin-added-20261121.json</a>, <a href="api/v1/cc-by/index.json">api/v1/cc-by</a>) son <a href="https://opendefinition.org/licenses/cc-by/">Creative Commons Attribution (cc-by)</a>, atribución: Koordinierungsstelle Stolpersteine Berlin; no se copian las biografías de stolpersteine-berlin.de. Las de Colonia (<a href="data/koeln-added-20261121.json">data/koeln-added-20261121.json</a>, <a href="api/v1/dl-de-zero/index.json">api/v1/dl-de-zero</a>) están bajo la <a href="https://www.govdata.de/dl-de/zero-2-0">Datenlizenz Deutschland – Zero – Version 2.0</a> (Stadt Köln / NS-Dokumentationszentrum). Fotos: Wikimedia Commons, cada una con su propia licencia. Detalle en <a href="LICENCIAS.md">LICENCIAS.md</a>.</p>`
@@ -50,7 +50,7 @@ const I18N = {
     about:'Über die Daten', close:'Schließen', noinsc:'Für diesen Stein ist in den Quellen keine Inschrift erfasst.',
     attribution:'Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL), <a href="https://www.wikidata.org">Wikidata</a> (CC0), Koordinierungsstelle Stolpersteine Berlin (CC BY) und Stadt Köln (dl-de/zero-2-0). Kartengrundlage © OpenStreetMap.',
     aboutHtml:m=>`<h2>Über diese Karte</h2><p>Stolpersteine sind Gedenktafeln aus Messing des Künstlers Gunter Demnig, verlegt vor dem letzten frei gewählten Wohnort von Menschen, die im Nationalsozialismus verfolgt, deportiert oder ermordet wurden.</p>
-      <p>Diese Karte zeigt <strong>${m.count}</strong> Steine in Deutschland, Niederlande, Frankreich, Österreich, Norwegen, Tschechien, Italien, Spanien, Belgien, Luxemburg, Ungarn, Litauen, Schweiz, Polen, Slowakei, Jersey, Kroatien, Dänemark, Guernsey, Finnland, Andorra, Irland, Schweden, Lettland, Rumänien, Vereinigtes Königreich und Liechtenstein aus offenen Daten: OpenStreetMap (Stand ${m.osm_snapshot.slice(0,10)} für Deutschland, Irland, Schweden, Jersey, Finnland und Rumänien; ${(m.v20_added||{}).snapshot_osm.slice(0,10)}, am 2026-11-20 aufgefrischt, für die übrigen) und Wikidata (${(m.wikidata_added||{}).snapshot||m.wikidata_snapshot} für diese Länder; ${(m.v20_added||{}).snapshot_wikidata} für die übrigen). <strong>Sie ist unvollständig</strong>: Laut Stiftung Spuren – Gunter Demnig liegen über 116.000 Stolpersteine in Europa, die meisten in Deutschland. Finden Sie einen Namen nicht, sehen Sie bitte auch bei <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> und den lokalen Initiativen nach (z. B. <a href="https://www.stolpersteine-berlin.de">Berlin</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburg</a>).</p>
+      <p>Diese Karte zeigt <strong>${m.count}</strong> Steine in Deutschland, Niederlande, Frankreich, Österreich, Norwegen, Tschechien, Italien, Spanien, Belgien, Luxemburg, Ungarn, Litauen, Schweiz, Polen, Slowakei, Jersey, Kroatien, Dänemark, Guernsey, Finnland, Andorra, Irland, Schweden, Lettland, Rumänien, Vereinigtes Königreich und Liechtenstein. Davon stammen <strong>${m.odbl_count}</strong> aus OpenStreetMap (Stand ${m.osm_snapshot.slice(0,10)} für Deutschland, Irland, Schweden, Jersey, Finnland und Rumänien; ${(m.v20_added||{}).snapshot_osm.slice(0,10)}, am 2026-11-20 aufgefrischt, für die übrigen) und Wikidata (${(m.wikidata_added||{}).snapshot||m.wikidata_snapshot} für diese Länder; ${(m.v20_added||{}).snapshot_wikidata} für die übrigen); <strong>${m.berlin_count}</strong> aus der offenen Berliner Stolperstein-Liste (Creative Commons Attribution, cc-by) und <strong>${m.koeln_count}</strong> aus der Kölner Liste (Datenlizenz Deutschland – Zero – Version 2.0). <strong>Sie ist unvollständig</strong>: Laut Stiftung Spuren – Gunter Demnig liegen über 116.000 Stolpersteine in Europa, die meisten in Deutschland. Finden Sie einen Namen nicht, sehen Sie bitte auch bei <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> und den lokalen Initiativen nach (z. B. <a href="https://www.stolpersteine-berlin.de">Berlin</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburg</a>).</p>
       <p>Es wurden keine Angaben erfunden; jedes Feld stammt aus den genannten Quellen. Fehler oder Doppelungen sind möglich; Korrekturen an Einträgen aus OpenStreetMap oder Wikidata gehören dorthin, Korrekturen an den Berliner oder Kölner Listen in jene Listen oder an uns.</p>
       <p>Position auf der Karte: Die Säulen stehen in der Regel auf dem Gehweg. Liegt ein erfasster Punkt in einem OpenStreetMap-Gebäude oder weniger als einen halben Meter von dessen Fassade entfernt, wird nur die Darstellung zur Straße hin verschoben: normalerweise weniger als 25 m; bei 292 Steinen (große Gruppen oder Straßen ohne freie Stelle nach der Fahrbahnregel von v20r4) liegt die Darstellung weiter entfernt, bis etwa 47 m (Liste in „excepciones-25m-v20.csv“), und bei 109 ließ sich kein halber Meter Abstand freihalten (Liste in „residuales-acera-v20.csv“). Steine auf der Fahrbahn ohne Gehwegplatz stehen in „calzada-v20.csv“. Die Koordinaten in den Daten und in den Routenlinks bleiben die ursprünglichen.</p>
       <p>Lizenzen: Die Stolpersteine aus OpenStreetMap und Wikidata (<a href="data/stones.json">data/stones.json</a>, <a href="api/v1/odbl/index.json">api/v1/odbl</a>) stehen unter der <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>. Die zusätzlich übernommenen Einträge der Berliner Open-Data-Liste (<a href="data/berlin-added-20261121.json">data/berlin-added-20261121.json</a>, <a href="api/v1/cc-by/index.json">api/v1/cc-by</a>) stehen unter <a href="https://opendefinition.org/licenses/cc-by/">Creative Commons Attribution (cc-by)</a>, Namensnennung: Koordinierungsstelle Stolpersteine Berlin; die biografischen Texte von stolpersteine-berlin.de werden nicht übernommen. Die Kölner Einträge (<a href="data/koeln-added-20261121.json">data/koeln-added-20261121.json</a>, <a href="api/v1/dl-de-zero/index.json">api/v1/dl-de-zero</a>) stehen unter der <a href="https://www.govdata.de/dl-de/zero-2-0">Datenlizenz Deutschland – Zero – Version 2.0</a> (Stadt Köln / NS-Dokumentationszentrum). Fotos: Wikimedia Commons mit jeweils eigener Lizenz. Einzelheiten in <a href="LICENCIAS.md">LICENCIAS.md</a>.</p>`
@@ -78,7 +78,7 @@ const I18N = {
     about:'About the data', close:'Close', noinsc:'No transcription of the inscription in the sources.',
     attribution:'Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL), <a href="https://www.wikidata.org">Wikidata</a> (CC0), Koordinierungsstelle Stolpersteine Berlin (CC BY) and City of Cologne (dl-de/zero-2-0). Base map © OpenStreetMap.',
     aboutHtml:m=>`<h2>About this map</h2><p>Stolpersteine (“stumbling stones”) are brass plaques by the artist Gunter Demnig, set in front of the last freely chosen home of people persecuted, deported or murdered under National Socialism.</p>
-      <p>This map shows <strong>${m.count}</strong> stones in Germany, Netherlands, France, Austria, Norway, Czechia, Italy, Spain, Belgium, Luxembourg, Hungary, Lithuania, Switzerland, Poland, Slovakia, Jersey, Croatia, Denmark, Guernsey, Finland, Andorra, Ireland, Sweden, Latvia, Romania, United Kingdom and Liechtenstein from open data: OpenStreetMap (snapshot ${m.osm_snapshot.slice(0,10)} for Germany, Ireland, Sweden, Jersey, Finland and Romania; ${(m.v20_added||{}).snapshot_osm.slice(0,10)}, refreshed on 2026-11-20, for the rest) and Wikidata (${(m.wikidata_added||{}).snapshot||m.wikidata_snapshot} for those countries; ${(m.v20_added||{}).snapshot_wikidata} for the rest). <strong>It is incomplete</strong>: according to Stiftung Spuren – Gunter Demnig there are over 116,000 Stolpersteine in Europe, most of them in Germany. If you cannot find a name, please also check <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> and local initiatives (e.g. <a href="https://www.stolpersteine-berlin.de">Berlin</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburg</a>).</p>
+      <p>This map shows <strong>${m.count}</strong> stones in Germany, Netherlands, France, Austria, Norway, Czechia, Italy, Spain, Belgium, Luxembourg, Hungary, Lithuania, Switzerland, Poland, Slovakia, Jersey, Croatia, Denmark, Guernsey, Finland, Andorra, Ireland, Sweden, Latvia, Romania, United Kingdom and Liechtenstein. Of these, <strong>${m.odbl_count}</strong> come from OpenStreetMap (snapshot ${m.osm_snapshot.slice(0,10)} for Germany, Ireland, Sweden, Jersey, Finland and Romania; ${(m.v20_added||{}).snapshot_osm.slice(0,10)}, refreshed on 2026-11-20, for the rest) and Wikidata (${(m.wikidata_added||{}).snapshot||m.wikidata_snapshot} for those countries; ${(m.v20_added||{}).snapshot_wikidata} for the rest); <strong>${m.berlin_count}</strong> from Berlin’s open Stolpersteine list (Creative Commons Attribution, cc-by) and <strong>${m.koeln_count}</strong> from the Cologne list (Data licence Germany – Zero – Version 2.0). <strong>It is incomplete</strong>: according to Stiftung Spuren – Gunter Demnig there are over 116,000 Stolpersteine in Europe, most of them in Germany. If you cannot find a name, please also check <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> and local initiatives (e.g. <a href="https://www.stolpersteine-berlin.de">Berlin</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburg</a>).</p>
       <p>No data has been invented; every field comes from the cited sources. Errors or duplicates are possible; corrections to OpenStreetMap or Wikidata plaques belong there, and corrections to the Berlin or Cologne lists belong in those lists or with us.</p>
       <p>Position on the map: the columns are, in general, drawn on the pavement. If a recorded point falls inside an OpenStreetMap building or less than half a metre from its façade, only the drawing is moved towards the street: normally less than 25 m; for 292 stones (large groups or streets with no free spot after the v20r4 roadway rule) the drawing ends up further away, up to about 47 m (list in “excepciones-25m-v20.csv”), and for 109 half a metre of clearance could not be kept (list in “residuales-acera-v20.csv”). Stones that would sit on a carriageway with no sidewalk spot are listed in “calzada-v20.csv”. The coordinates in the data and in the directions links stay the original ones.</p>
       <p>Licences: plaques from OpenStreetMap and Wikidata (<a href="data/stones.json">data/stones.json</a>, <a href="api/v1/odbl/index.json">api/v1/odbl</a>) are under <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>. Those added from Berlin’s open list (<a href="data/berlin-added-20261121.json">data/berlin-added-20261121.json</a>, <a href="api/v1/cc-by/index.json">api/v1/cc-by</a>) are under <a href="https://opendefinition.org/licenses/cc-by/">Creative Commons Attribution (cc-by)</a>, attribution: Koordinierungsstelle Stolpersteine Berlin; biographies from stolpersteine-berlin.de are not copied. The Cologne entries (<a href="data/koeln-added-20261121.json">data/koeln-added-20261121.json</a>, <a href="api/v1/dl-de-zero/index.json">api/v1/dl-de-zero</a>) are under the <a href="https://www.govdata.de/dl-de/zero-2-0">Data licence Germany – Zero – Version 2.0</a> (City of Cologne / NS-Dokumentationszentrum). Photos: Wikimedia Commons, each under its own licence. Details in <a href="LICENCIAS.md">LICENCIAS.md</a>.</p>`
@@ -288,9 +288,22 @@ function principalAngle(pts){
   return ang;
 }
 
+function isAddedStone(s){
+  return s.src==='berlin' || s.src==='koeln' || /^(ber-|koeln-)/.test(String(s.id||''));
+}
+
 function buildStones(){
+  // v21: el layout de las 72.110 placas de v20 se calcula SOLO con ese conjunto, igual que en
+  // b142fa48. Las placas municipales no entran en agrupación, ángulo, cuadrícula ni desplazamiento,
+  // y se dibujan exactamente en el dla/dlo (o la/lo) del archivo.
+  const baseAll = DATA.filter(s => !isAddedStone(s));
+  const addedAll = DATA.filter(isAddedStone);
+  for (const s of addedAll){
+    delete s._aliasOf; delete s._also; delete s._ids; delete s._n;
+  }
+
   const byAddr = new Map(), noAddr = [];
-  for (const s of DATA){
+  for (const s of baseAll){
     const k = addrKey(s);
     if (!k) noAddr.push(s);
     else (byAddr.get(k) || byAddr.set(k,[]).get(k)).push(s);
@@ -365,21 +378,13 @@ function buildStones(){
   for (const list of byAddr.values()) mergePeople(list, 25);
   mergePeople(noAddr, 8);
 
-  const isAddedStone = s => s.src==='berlin' || s.src==='koeln' || /^(ber-|koeln-)/.test(String(s.id));
   const groups = clusters.map(g => {
     const vis=g.filter(s=>!s._aliasOf);
     vis.sort((a,b)=> ((a._n||a.n)||'').localeCompare((b._n||b.n)||'','de') || String(a.id).localeCompare(String(b.id)));
-    const base=vis.filter(s=>!isAddedStone(s)), added=vis.filter(s=>isAddedStone(s));
     const la0 = g.reduce((t,s)=>t+s.la,0)/g.length;
     const lo0 = g.reduce((t,s)=>t+s.lo,0)/g.length;
-    const baseLa0 = base.length ? base.reduce((t,s)=>t+s.la,0)/base.length : la0;
-    const baseLo0 = base.length ? base.reduce((t,s)=>t+s.lo,0)/base.length : lo0;
     // v20: grupo «fijo» = todas sus placas traen posición de dibujo calculada en el servidor (dla/dlo, ya fuera de los edificios): la separación de grupos no lo mueve ni lo encoge.
-    // v21: las placas nuevas no entran en esa cuenta de «todas» para no rehacer la cuadrícula de las ya publicadas.
-    return {g:vis, all:g, la0, lo0, origLa:la0, origLo:lo0, baseLa0, baseLo0, base, added,
-      step:COL_STEP, ang:0, sk:streetKey(g[0]),
-      pinned:!!(typeof META!=='undefined' && META && META.layout_pinned) || (g.every(s=>s.sla!=null) && !added.length),
-      hasBase:base.length>0, hasAdded:added.length>0};
+    return {g:vis, all:g, la0, lo0, origLa:la0, origLo:lo0, step:COL_STEP, ang:0, sk:streetKey(g[0]), pinned:!!(typeof META!=='undefined' && META && META.layout_pinned) || g.every(s=>s.sla!=null)};
   });
 
   // Street direction from our own coordinates (not live OSM tiles: those are only in the current view
@@ -387,19 +392,14 @@ function buildStones(){
   // 1) Principal axis of other houses on the same street within 180 m (needs 3 points, or 2 if >12 m apart).
   // 2) If that fails, the elongated cloud of this house's own recorded points.
   // 3) Smooth with the circular mean of neighbouring angles on the same street (80 m), then north–south if still none.
-  function axisOf(pg){ return pg.hasBase ? {la:pg.baseLa0, lo:pg.baseLo0} : {la:pg.la0, lo:pg.lo0}; }
   function neighbors(pg, i, radius, cell, near){
     const pts=[], idxs=[];
     if (!pg.sk) return {pts, idxs};
-    const me=axisOf(pg);
-    const a0=Math.floor(me.la/cell), b0=Math.floor(me.lo/cell);
+    const a0=Math.floor(pg.la0/cell), b0=Math.floor(pg.lo0/cell);
     for (let di=-2;di<=2;di++) for (let dj=-2;dj<=2;dj++)
       for (const j of (near.get(pg.sk+'|'+((a0+di)+':'+(b0+dj)))||[])){
         const o=groups[j];
-        // v21: un grupo que ya existía no toma el ángulo de placas municipales nuevas (mismo ángulo que en v20).
-        if (pg.hasBase && !o.hasBase) continue;
-        const ot=axisOf(o);
-        if (distM(me.la,me.lo,ot.la,ot.lo)<=radius){ pts.push({la:ot.la, lo:ot.lo}); idxs.push(j); }
+        if (distM(pg.la0,pg.lo0,o.la0,o.lo0)<=radius){ pts.push({la:o.la0, lo:o.lo0}); idxs.push(j); }
       }
     return {pts, idxs};
   }
@@ -411,7 +411,7 @@ function buildStones(){
   }
   const cellA=0.001, near=new Map();
   const akey=(sk,la,lo)=>sk+'|'+Math.floor(la/cellA)+':'+Math.floor(lo/cellA);
-  groups.forEach((pg,i)=>{ if (!pg.sk) return; const ax=axisOf(pg); const k=akey(pg.sk,ax.la,ax.lo); (near.get(k)||near.set(k,[]).get(k)).push(i); });
+  groups.forEach((pg,i)=>{ if (!pg.sk) return; const k=akey(pg.sk,pg.la0,pg.lo0); (near.get(k)||near.set(k,[]).get(k)).push(i); });
   groups.forEach((pg,i)=>{
     let ang=null;
     if (pg.sk){
@@ -419,7 +419,7 @@ function buildStones(){
       if (pts.length>=3) ang=principalAngle(pts);
       else if (pts.length===2 && distM(pts[0].la,pts[0].lo,pts[1].la,pts[1].lo)>12) ang=principalAngle(pts);
     }
-    if (ang==null) ang=principalAngle((pg.hasBase?pg.base:pg.all).map(s=>({la:s.la, lo:s.lo})));
+    if (ang==null) ang=principalAngle(pg.all.map(s=>({la:s.la, lo:s.lo})));
     pg._rawAng = ang;
   });
   groups.forEach((pg,i)=>{
@@ -433,44 +433,17 @@ function buildStones(){
     for (const s of pg.all) s._ang=pg.ang;
   });
 
-  function gridLayout(members, la0, lo0, ang, step){
-    const n=members.length, cols=Math.ceil(Math.sqrt(n));
-    const rows=Math.ceil(n/cols)||1;
-    const cos=Math.cos(la0*Math.PI/180), cA=Math.cos(ang||0), sA=Math.sin(ang||0);
-    members.forEach((s,i)=>{
-      const cx=(i%cols)-(cols-1)/2, cy=Math.floor(i/cols)-(rows-1)/2;
-      const east=cx*step*cA - cy*step*sA;
-      const north=cx*step*sA + cy*step*cA;
-      s._dla = la0 + north/M_LAT;
-      s._dlo = lo0 + east/(M_LAT*cos);
-    });
-  }
   function layout(pg){
-    // v21: las placas ya publicadas (OSM/Wikidata) se dibujan como en v20; solo se colocan alrededor las municipales nuevas.
-    if (pg.hasBase && pg.hasAdded){
-      gridLayout(pg.base, pg.baseLa0, pg.baseLo0, pg.ang, pg.step);
-      const cos=Math.cos(pg.baseLa0*Math.PI/180), cA=Math.cos(pg.ang||0), sA=Math.sin(pg.ang||0);
-      const occ = pg.base.map(s=>({la:s._dla, lo:s._dlo}));
-      const cands=[];
-      for (let ring=1; ring<=24; ring++){
-        for (let cx=-ring; cx<=ring; cx++) for (let cy=-ring; cy<=ring; cy++){
-          if (Math.max(Math.abs(cx),Math.abs(cy))!==ring) continue;
-          const east=cx*pg.step*cA - cy*pg.step*sA;
-          const north=cx*pg.step*sA + cy*pg.step*cA;
-          cands.push({la: pg.baseLa0 + north/M_LAT, lo: pg.baseLo0 + east/(M_LAT*cos)});
-        }
-      }
-      for (const s of pg.added){
-        let put=null;
-        for (const c of cands){
-          if (occ.every(o=>distM(c.la,c.lo,o.la,o.lo)>=COL_GAP_MIN)){ put=c; break; }
-        }
-        if (!put) put=cands[cands.length-1] || {la:pg.baseLa0, lo:pg.baseLo0};
-        s._dla=put.la; s._dlo=put.lo; occ.push(put);
-      }
-      return;
-    }
-    gridLayout(pg.g, pg.la0, pg.lo0, pg.ang, pg.step);
+    const n=pg.g.length, cols=Math.ceil(Math.sqrt(n));
+    const rows=Math.ceil(n/cols)||1;
+    const cos=Math.cos(pg.la0*Math.PI/180), cA=Math.cos(pg.ang||0), sA=Math.sin(pg.ang||0);
+    pg.g.forEach((s,i)=>{
+      const cx=(i%cols)-(cols-1)/2, cy=Math.floor(i/cols)-(rows-1)/2;
+      const east=cx*pg.step*cA - cy*pg.step*sA;
+      const north=cx*pg.step*sA + cy*pg.step*cA;
+      s._dla = pg.la0 + north/M_LAT;
+      s._dlo = pg.lo0 + east/(M_LAT*cos);
+    });
   }
   for (const pg of groups) layout(pg);
 
@@ -499,21 +472,11 @@ function buildStones(){
           if (L<0.2){ dx=1; dy=0; L=1; }
           const push=(COL_GAP_MIN-d+0.12)/2;
           const uy=dy/L, ux=dx/L;
-          // v21: no mover un grupo que ya tenía placas publicadas por culpa de una placa municipal nueva.
-          const mixedA=A.hasBase&&A.hasAdded, mixedB=B.hasBase&&B.hasAdded;
-          if ((A.hasBase && B.hasAdded && !B.hasBase) || (B.hasBase && A.hasAdded && !A.hasBase) || mixedA || mixedB){
-            if (A.hasBase && B.hasBase) continue;
-            const moveNew = !A.hasBase; // A es solo-nuevo → se aparta; si no, se aparta B
-            if (moveNew){ shift[gi].dy+=uy*push; shift[gi].dx+=ux*push; shift[gi].hits++; }
-            else { shift[o.gi].dy-=uy*push; shift[o.gi].dx-=ux*push; shift[o.gi].hits++; }
-            if (L<5 && (A.g.length>1 || B.g.length>1)){ if (!A.hasBase) shrink[gi]=true; if (!B.hasBase) shrink[o.gi]=true; }
-          } else {
-            if (A.pinned && B.pinned) continue;   // v20: dos grupos fijos no se mueven (el servidor ya los separó)
-            const moveA = B.pinned ? true : (A.pinned ? false : A.g.length<=B.g.length);
-            if (moveA){ shift[gi].dy+=uy*push; shift[gi].dx+=ux*push; shift[gi].hits++; }
-            else { shift[o.gi].dy-=uy*push; shift[o.gi].dx-=ux*push; shift[o.gi].hits++; }
-            if (L<5 && (A.g.length>1 || B.g.length>1)){ if (!A.pinned) shrink[gi]=true; if (!B.pinned) shrink[o.gi]=true; }
-          }
+          if (A.pinned && B.pinned) continue;   // v20: dos grupos fijos no se mueven (el servidor ya los separó)
+          const moveA = B.pinned ? true : (A.pinned ? false : A.g.length<=B.g.length);
+          if (moveA){ shift[gi].dy+=uy*push; shift[gi].dx+=ux*push; shift[gi].hits++; }
+          else { shift[o.gi].dy-=uy*push; shift[o.gi].dx-=ux*push; shift[o.gi].hits++; }
+          if (L<5 && (A.g.length>1 || B.g.length>1)){ if (!A.pinned) shrink[gi]=true; if (!B.pinned) shrink[o.gi]=true; }
           moved=true;
         }
     }));
@@ -531,9 +494,39 @@ function buildStones(){
     });
   }
 
-  for (const s of DATA){
+  for (const s of baseAll){
     if (s._aliasOf){ const p=byId.get(s._aliasOf); if (p){ s._dla=p._dla; s._dlo=p._dlo; s._ang=p._ang; } }
   }
+
+  // Placas municipales: alias de una ya publicada (sin alterar el primário) o clavadas al dla/dlo del archivo.
+  const baseVis = baseAll.filter(s=>!s._aliasOf);
+  const baseByAddr = new Map();
+  for (const p of baseVis){
+    const k=addrKey(p);
+    if (k) (baseByAddr.get(k)||baseByAddr.set(k,[]).get(k)).push(p);
+  }
+  const baseNoAddr = baseVis.filter(p=>!addrKey(p));
+  for (const s of addedAll){
+    let pri=null, priD=1e9;
+    const ak=addrKey(s);
+    const cands = ak ? (baseByAddr.get(ak)||[]) : baseNoAddr;
+    for (const p of cands){
+      if (!samePerson(s,p)) continue;
+      const d=distM(s.la,s.lo,p.la,p.lo);
+      if (d>25) continue;
+      if (d<priD){ pri=p; priD=d; }
+    }
+    if (pri){
+      s._aliasOf=pri.id;
+      s._dla=pri._dla; s._dlo=pri._dlo; s._ang=pri._ang||0;
+      fillFrom(pri, s);
+      pri._also=(pri._also||[]).concat([s]);
+      pri._ids=(pri._ids||[pri.id]).concat([s.id]);
+    } else {
+      s._dla=s.la; s._dlo=s.lo; s._ang=0;
+    }
+  }
+
   VISIBLE = DATA.filter(s=>!s._aliasOf);
   const feats = VISIBLE.map(s => ({type:'Feature', properties:{id:s.id}, geometry:{type:'Polygon', coordinates:square(s._dlo,s._dla,COL_HALF,s._ang)}}));
   STONES_FC = {type:'FeatureCollection', features:feats};
@@ -798,11 +791,14 @@ async function load(){
   for (const part of added){
     if (part && Array.isArray(part.stones)) DATA = DATA.concat(part.stones);
   }
+  META.odbl_count = j.stones.length;
+  META.berlin_count = (added[0] && added[0].stones) ? added[0].stones.length : 0;
+  META.koeln_count = (added[1] && added[1].stones) ? added[1].stones.length : 0;
   META.count = DATA.length;
   META.v21_added = {
     berlin: (added[0] && added[0].meta) || null,
     koeln: (added[1] && added[1].meta) || null,
-    records: added.reduce((n,p)=>n+((p.stones||[]).length),0)
+    records: (META.berlin_count + META.koeln_count)
   };
   // v19: posición de DIBUJO. Si el archivo trae dla/dlo (placa dentro de un edificio de OSM o a menos de 1 m de la fachada), la columna se dibuja ahí
   // (en la acera, hacia la calle); la coordenada de origen queda en sla/slo y es la que usan «Cómo llegar» y las descargas.
@@ -1113,7 +1109,7 @@ $('#q').addEventListener('input',debounced); $('#city').addEventListener('input'
 $('#results').addEventListener('click',e=>{const b=e.target.closest('button[data-id]'); if(b) openStone(b.dataset.id);});
 document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>{lang=b.dataset.lang; localStorage.setItem('lang',lang); applyI18n(); if (window.KLImagery) KLImagery.refresh(); if(selected) openStone(selected,true); else search();});
 document.querySelectorAll('.basemaps button[data-base]').forEach(b=>b.onclick=()=>setBase(b.dataset.base));
-$('#aboutLink').onclick=e=>{e.preventDefault(); $('#aboutBody').innerHTML=T('aboutHtml')({...META,count:fmtNum(META.count||DATA.length)})+T('privacyHtml')(typeof KLCounter!=='undefined' && KLCounter.isOn()); $('#about').showModal();};
+$('#aboutLink').onclick=e=>{e.preventDefault(); $('#aboutBody').innerHTML=T('aboutHtml')({...META,count:fmtNum(META.count||DATA.length),odbl_count:fmtNum(META.odbl_count||0),berlin_count:fmtNum(META.berlin_count||0),koeln_count:fmtNum(META.koeln_count||0)})+T('privacyHtml')(typeof KLCounter!=='undefined' && KLCounter.isOn()); $('#about').showModal();};
 window.addEventListener('hashchange', route);
 function stoneProps(s){
   return {id:s.id, name:s.n||'', inscription:s.i||'', address:s.a||'', city:s.c||'', city_derived:s.cd||'', country:s.cc||'DE',

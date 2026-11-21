@@ -7,7 +7,6 @@
 ["carl","ber-12312","Carl Coper",1884,null,"Berlin","c"],
 ["caro","ber-12265","Edith Sophie Mathilde Caro",1888,null,"Berlin","c"],
 ["charlotte","ber-12010","Charlotte Aron",1907,null,"Berlin","a"],
-["charlotte","ber-3906","Charlotte Eisenblätter",1903,null,"Berlin","e"],
 ["charna","ber-12343","Charna Litwinschuk",1884,null,"Berlin","l"],
 ["cilli","ber-11836","Crewa Cilli Langdorf",1881,null,"Berlin","l"],
 ["cohn","ber-12303","Herta Cohn",1906,null,"Berlin","c"],
@@ -17,6 +16,5 @@
 ["collen","ber-11727","Julius Collen Turner",1881,null,"Berlin","t"],
 ["coper","ber-12312","Carl Coper",1884,null,"Berlin","c"],
 ["coper","ber-12313","Margarete Coper",1888,null,"Berlin","c"],
-["crewa","ber-11836","Crewa Cilli Langdorf",1881,null,"Berlin","l"],
-["croner","ber-7797","Jette Croner",1868,null,"Berlin","c"]
+["crewa","ber-11836","Crewa Cilli Langdorf",1881,null,"Berlin","l"]
 ]}
