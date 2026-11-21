@@ -22,5 +22,5 @@
 {"ids":["wd-Q132143836","wd-Q68204"],"key":["yad_vashem","11736467"],"reason":"different_wikidata"},
 {"ids":["wd-Q132143836","wd-Q68204"],"key":["yad_vashem","13339928"],"reason":"different_wikidata"}
 ],
-"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-20","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
+"meta":{"attribution":["© OpenStreetMap contributors, ODbL 1.0 (https://www.openstreetmap.org/copyright)","Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json","family":"odbl","generated":"2026-11-21","license":"ODbL-1.0","license_url":"https://opendatacommons.org/licenses/odbl/1-0/","source_url":"https://www.openstreetmap.org/copyright"},
 "rule":"Registros que comparten un identificador pero tienen Qid distinto o año de nacimiento incompatible. NO se han fusionado."}

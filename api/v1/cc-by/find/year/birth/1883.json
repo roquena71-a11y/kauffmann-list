@@ -1,0 +1,13 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":4,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-11726","Frieda Nellhaus",1883,null,"Berlin","n"],
+["ber-11326","Karl Vesper",1883,null,"Berlin","v"],
+["ber-11702","Marie Heinz",1883,null,"Berlin","h"],
+["ber-12263","Moritz Jacoby",1883,null,"Berlin","j"]
+],
+"year":1883}

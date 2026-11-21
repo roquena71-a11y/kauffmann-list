@@ -184,13 +184,37 @@ def row_to_record(row, cfg, retrieved):
                               "license": None, "text_url": None, "source_id": sid})
     rec_url = resolve(m.get("record_url"), row) if m.get("record_url") else None
     prefix = cfg["id_prefix"]
+    memorials = []
+    for mm in m.get("memorials") or []:
+        typ = mm.get("type")
+        typ = typ if isinstance(typ, str) else resolve(typ, row)
+        typ = typ or "stolperstein"
+        mid = resolve(mm.get("memorial_id"), row)
+        address = resolve(mm.get("address"), row)
+        locality = resolve(mm.get("locality"), row)
+        cc = resolve(mm.get("country"), row)
+        lat = _fmt(resolve(mm.get("lat"), row), "number")
+        lon = _fmt(resolve(mm.get("lon"), row), "number")
+        memorials.append({
+            "type": typ,
+            "memorial_id": str(mid) if mid not in (None, "") else None,
+            "inscription": resolve(mm.get("inscription"), row),
+            "address": address,
+            "locality": locality,
+            "country": str(cc).upper() if cc and re.match(r"^[A-Za-z]{2}$", str(cc)) else None,
+            "lat": lat if lat is not None and -90 <= lat <= 90 else None,
+            "lon": lon if lon is not None and -180 <= lon <= 180 else None,
+            "laid": normalize_date(resolve(mm.get("laid"), row)) if mm.get("laid") else None,
+            "image": resolve(mm.get("image"), row),
+            "source_id": sid,
+        })
     rec.update({
         "id": prefix + "-" + re.sub(r"[^A-Za-z0-9_.:-]", "_", rid),
         "subject_type": "person",
         "fate_basis": "source_field" if rec["fate"] != "unknown" else None,
         "deportations": deportations,
         "places": places,
-        "memorials": [],
+        "memorials": memorials,
         "links": links,
         "identifiers": identifiers,
         "sources": [{"source_id": sid, "record_id": rid, "url": rec_url, "license": cfg["license"],

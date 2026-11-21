@@ -1,0 +1,8 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"prefix":"z",
+"rows":[
+["ber-12243","Martha Rachel Zadig",1866,"Berlin",52.50269,13.28762,"z"],
+["ber-5270","Recha Zeidler",1886,"Berlin",52.51627,13.40748,"z"],
+["ber-11574","Paul Robert Zerbe",1896,"Berlin",52.50086,13.33429,"z"]
+]}

@@ -1,0 +1,5 @@
+{"aliases":[],
+"columns":["key","country","slug","label","count","pages"],
+"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln, Stolpersteine Köln (Datenlizenz Deutschland – Zero – Version 2.0, https://open.nrw/dataset/stolpersteine-koln-k)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json","family":"dl-de-zero","generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","source_url":"https://open.nrw/dataset/stolpersteine-koln-k"},
+"rows":[],
+"rule":"key = nombre del lugar normalizado: fold() (minúsculas, ß→ss, sin acentos, ä/ae→a, ö/oe→o, ü/ue→u) y sin espacios ni guiones. Busca la clave en rows; si hay varias filas (mismo nombre en otro país) usa country. Archivo: city/<country en minúsculas>/<slug>.json; páginas extra <slug>~2.json. aliases = nombres alternativos conocidos (exónimos) → key."}

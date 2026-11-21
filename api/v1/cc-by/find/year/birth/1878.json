@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":3,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-11748","Elsa Oestreicher",1878,null,"Berlin","o"],
+["ber-12273","Regina Wolffberg",1878,null,"Berlin","w"],
+["ber-11234","Rosalie Philippsborn",1878,null,"Berlin","p"]
+],
+"year":1878}

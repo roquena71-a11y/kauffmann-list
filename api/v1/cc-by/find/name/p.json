@@ -1,0 +1,21 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"prefix":"p",
+"rows":[
+["paul","ber-11324","Arthur Kurt Paul Weisbrodt",1909,null,"Berlin","w"],
+["paul","ber-3616","Paul Brandes",1886,null,"Berlin","b"],
+["paul","ber-11663","Paul Feige",1908,null,"Berlin","f"],
+["paul","ber-11574","Paul Robert Zerbe",1896,null,"Berlin","z"],
+["paula","ber-4447","Paula Lindberg-Salomon",1897,null,"Berlin","l"],
+["pauline","ber-12165","Pauline Julius",1896,null,"Berlin","j"],
+["perel","ber-11540","Perel Engelard",1893,null,"Berlin","e"],
+["pestachowski","ber-5956","Käthe Pestachowski",1895,null,"Berlin","p"],
+["philipp","ber-342","Philipp Kozower",1894,null,"Berlin","k"],
+["philippsborn","ber-11235","Erwin Philippsborn",1908,null,"Berlin","p"],
+["philippsborn","ber-11234","Rosalie Philippsborn",1878,null,"Berlin","p"],
+["placzek","ber-12006","Alma Placzek",1886,null,"Berlin","p"],
+["placzek","ber-12004","Else Placzek",1882,null,"Berlin","p"],
+["placzek","ber-12003","Leo Placzek",1876,null,"Berlin","p"],
+["pommerening","ber-12066","Herta Pommerening",1896,null,"Berlin","p"],
+["prestes","ber-1698","Olga Benario-Prestes",1908,null,"Berlin","b"]
+]}

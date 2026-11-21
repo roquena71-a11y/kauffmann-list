@@ -185,6 +185,9 @@ def write_family(w, fam_id, fam, persons, sources_used, generated, quality, shar
             where[persons[i]["id"]] = pre
         w.json(base + "people/by-surname/%s.json" % pre,
                {"meta": dmeta, "prefix": pre, "count": len(idx), "people": [persons[i] for i in idx]}, ("people",))
+    if not people_prefixes:
+        for rel in ("people/by-surname", "search", "person", "ids"):
+            os.makedirs(os.path.join(w.root, base + rel), exist_ok=True)
     # 2) Búsqueda ligera (prefijos más gruesos: menos archivos).
     search_buckets = assign_prefixes(keys, max_per=SEARCH_PER_FILE)
     search_prefixes = sorted(search_buckets)

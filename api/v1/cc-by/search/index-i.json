@@ -1,0 +1,9 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"prefix":"i",
+"rows":[
+["ber-11260","Erna Israel",1895,"Berlin",52.53389,13.43357,"i"],
+["ber-12308","Frida Hedwig Israel",1899,"Berlin",52.52664,13.40756,"i"],
+["ber-11261","Minna Israel",1864,"Berlin",52.53389,13.43357,"i"],
+["ber-264","Wilfrid Israel",1899,"Berlin",52.5174,13.40839,"i"]
+]}

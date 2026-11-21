@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-12318","Adolf Grinbaum",1895,null,"Berlin","g"],
+["ber-11784","Dagobert Kurzweg",1895,null,"Berlin","k"],
+["ber-11260","Erna Israel",1895,null,"Berlin","i"],
+["ber-11648","Hedwig Auerbach",1895,null,"Berlin","a"],
+["ber-3","Herta Abraham",1895,null,"Berlin","a"],
+["ber-5956","Käthe Pestachowski",1895,null,"Berlin","p"],
+["ber-12106","Marie Adler",1895,null,"Berlin","a"]
+],
+"year":1895}

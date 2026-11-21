@@ -1,0 +1,4 @@
+{"columns":["id","name","birth_date","death_date","flags"],
+"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln, Stolpersteine Köln (Datenlizenz Deutschland – Zero – Version 2.0, https://open.nrw/dataset/stolpersteine-koln-k)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json","family":"dl-de-zero","generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","source_url":"https://open.nrw/dataset/stolpersteine-koln-k"},
+"rows":[],
+"rule":"Fechas dudosas marcadas y NO corregidas: nacimiento < 1800 o posterior al año de los datos, muerte < 1800 o posterior, nacimiento posterior a la muerte. Verificar en la fuente."}

@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-11185","Adolf Gutschein",1864,null,"Berlin","g"],
+["ber-9959","Fanny Schwarz",1864,null,"Berlin","s"],
+["ber-11254","Fritz Siegfried Krohn",1864,null,"Berlin","k"],
+["ber-2416","Martha Aron",1864,null,"Berlin","a"],
+["ber-11261","Minna Israel",1864,null,"Berlin","i"],
+["ber-11651","Walter Gottfeldt",1864,null,"Berlin","g"]
+],
+"year":1864}

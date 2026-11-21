@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"prefix":"t",
+"rows":[
+["ber-10913","Deborah Tannenbaum",1916,"Berlin",52.51851,13.41741,"t"],
+["ber-11345","Hildegard Teitelbaum",1898,"Berlin",52.53195,13.42318,"t"],
+["ber-11346","Isaak Teitelbaum",1888,"Berlin",52.53195,13.42318,"t"],
+["ber-7871","Fanny Tobias",1874,"Berlin",52.51363,13.26714,"t"],
+["ber-11934","Helene Trotino",1892,"Berlin",52.50607,13.29002,"t"],
+["ber-11933","Osias Moses Trotino",1894,"Berlin",52.50607,13.29002,"t"],
+["ber-11727","Julius Collen Turner",1881,"Berlin",52.58283,13.39468,"t"]
+]}

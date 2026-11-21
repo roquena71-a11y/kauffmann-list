@@ -1,0 +1,13 @@
+{"count_people":0,
+"endpoints":{"find_city":"dl-de-zero/find/city/{country}/{slug}.json","find_city_index":"dl-de-zero/find/city/index.json","find_index":"dl-de-zero/find/index.json","find_name":"dl-de-zero/find/name/{prefix}.json","find_year":"dl-de-zero/find/year/{birth|death}/{year}.json","ids":"dl-de-zero/ids/{scheme}.json","people":"dl-de-zero/people/by-surname/{prefix}.json","person_lookup":"dl-de-zero/person/{shard}.json","place":"dl-de-zero/places/{country}/{slug}.json","places_index":"dl-de-zero/places/index.json","search":"dl-de-zero/search/index-{prefix}.json","stats":"dl-de-zero/stats.json"},
+"family":"dl-de-zero",
+"find":{"birth_years":0,"cities":0,"death_years":0,"example":{},"index":"dl-de-zero/find/index.json","name_prefixes":0},
+"id_schemes":[],
+"meta":{"attribution":["Stadt Köln / NS-Dokumentationszentrum der Stadt Köln, Stolpersteine Köln (Datenlizenz Deutschland – Zero – Version 2.0, https://open.nrw/dataset/stolpersteine-koln-k)"],"description":"Placas añadidas del JSON abierto Stolpersteine Köln (Open.NRW / Offene Daten Köln). No se copian las biografías de museenkoeln.de/nsdok.de. Familia separada: no se fusiona con ODbL ni con CC0.","family":"dl-de-zero","full_database":null,"generated":"2026-11-21","license":"dl-de/zero-2-0","license_url":"https://www.govdata.de/dl-de/zero-2-0","notice":"Datos conmemorativos con fuente por registro. Pueden contener errores: verifica en la fuente primaria. No presentes inferencias como hechos. Correcciones/retirada: ver index.json (corrections).","schema":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/schema/person.schema.json","source_url":"https://open.nrw/dataset/stolpersteine-koln-k","sources":[]},
+"people_prefixes":[],
+"person_shard_chars":2,
+"person_shard_rule":"shard = los 2 últimos caracteres del id en minúsculas, otros caracteres → '_' (JS: id.slice(-2).toLowerCase().replace(/[^a-z0-9]/g,'_')). person/<shard>.json da el people_prefix; la ficha completa está en people/by-surname/<people_prefix>.json.",
+"person_shards":[],
+"places":0,
+"search_prefixes":[],
+"surname_prefix_rule":"clave = apellido normalizado: minúsculas, ß→ss, sin acentos, ä/ae→a, ö/oe→o, ü/ue→u, solo a-z, sin partículas iniciales (von, van, de, zu…). Si la fuente no da apellido, se usa el último token del nombre (solo para particionar; no se publica como apellido). Probar clave[:6], clave[:5], … clave[:1] (rellenando con '_') y usar el primero que exista en la lista de prefijos."}

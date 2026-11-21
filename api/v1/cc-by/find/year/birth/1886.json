@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":11,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-12006","Alma Placzek",1886,null,"Berlin","p"],
+["ber-11773","David Holdstein",1886,null,"Berlin","h"],
+["ber-8375","genannt Leon Schönfeld Aron Leib",1886,null,"Berlin","l"],
+["ber-12302","Ludwig Günther Cohn",1886,null,"Berlin","c"],
+["ber-11680","Martha Freundlich",1886,null,"Berlin","f"],
+["ber-11954","Martha Johanna Hirsch (\"Johanna Thal\")",1886,null,"Berlin","h"],
+["ber-12097","Oskar Wolkenberg",1886,null,"Berlin","w"],
+["ber-3616","Paul Brandes",1886,null,"Berlin","b"],
+["ber-5270","Recha Zeidler",1886,null,"Berlin","z"],
+["ber-11959","Sara Goldstein",1886,null,"Berlin","g"],
+["ber-12228","Siegbert Meyersohn",1886,null,"Berlin","m"]
+],
+"year":1886}

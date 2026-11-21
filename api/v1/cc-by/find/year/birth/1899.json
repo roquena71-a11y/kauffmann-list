@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-10180","Alice Ruth Feldmann",1899,null,"Berlin","f"],
+["ber-11733","Alina Collen",1899,null,"Berlin","c"],
+["ber-12262","Dora Gerson",1899,null,"Berlin","g"],
+["ber-11151","Emma \"Ena\" Goldschmidt",1899,null,"Berlin","g"],
+["ber-12308","Frida Hedwig Israel",1899,null,"Berlin","i"],
+["ber-12158","Hans Blitz",1899,null,"Berlin","b"],
+["ber-11946","Otto Wilhelm Nelki",1899,null,"Berlin","n"],
+["ber-264","Wilfrid Israel",1899,null,"Berlin","i"]
+],
+"year":1899}

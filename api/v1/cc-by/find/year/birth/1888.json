@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-1610","Alfons Levy [Lewy]",1888,null,"Berlin","l"],
+["ber-12265","Edith Sophie Mathilde Caro",1888,null,"Berlin","c"],
+["ber-12000","Fritz Regensburger",1888,null,"Berlin","r"],
+["ber-11346","Isaak Teitelbaum",1888,null,"Berlin","t"],
+["ber-12223","Johannes Lubow",1888,null,"Berlin","l"],
+["ber-12313","Margarete Coper",1888,null,"Berlin","c"],
+["ber-11536","Max Leiser",1888,null,"Berlin","l"]
+],
+"year":1888}

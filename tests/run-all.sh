@@ -10,6 +10,7 @@ node tests/ie-added-test.cjs
 node tests/se-added-test.cjs
 node tests/jefiro-added-test.cjs
 node tests/v20-added-test.cjs
+node tests/v21-added-test.cjs
 python3 tests/v20r2-data-check.py
 python3 tests/v20r4-checks.py
 node tests/sidewalk-test.cjs

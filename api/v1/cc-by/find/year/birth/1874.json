@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-7871","Fanny Tobias",1874,null,"Berlin","t"],
+["ber-11186","Jeanette Gutschein",1874,null,"Berlin","g"],
+["ber-4368","Louis ten Brink",1874,null,"Berlin","b"],
+["ber-11202","Marie Anna Cohn",1874,null,"Berlin","c"],
+["ber-8411","Nathan Simonsohn",1874,null,"Berlin","s"],
+["ber-12007","Salomon Leopold Aron",1874,null,"Berlin","a"]
+],
+"year":1874}

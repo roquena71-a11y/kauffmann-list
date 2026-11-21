@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-12152","Gustav Levy",1876,null,"Berlin","l"],
+["ber-12003","Leo Placzek",1876,null,"Berlin","p"],
+["ber-11865","Martha Hermann",1876,null,"Berlin","h"],
+["ber-11258","Nathan Hechter",1876,null,"Berlin","h"],
+["ber-10063","Sophie Holländer",1876,null,"Berlin","h"]
+],
+"year":1876}

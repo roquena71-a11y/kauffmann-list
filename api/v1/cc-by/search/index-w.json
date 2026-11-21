@@ -1,0 +1,19 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"prefix":"w",
+"rows":[
+["ber-11324","Arthur Kurt Paul Weisbrodt",1909,"Berlin",52.52981,13.63481,"w"],
+["ber-11325","Frida Weisbrodt",1881,"Berlin",52.52981,13.63481,"w"],
+["ber-12180","Lisbeth Wind",1898,"Berlin",52.49665,13.29864,"w"],
+["ber-12179","Walter Wind",1891,"Berlin",52.49665,13.29864,"w"],
+["ber-11654","Fanny Wolff",1882,"Berlin",52.53112,13.42992,"w"],
+["ber-11656","Gerda Wolff",1913,"Berlin",52.53112,13.42992,"w"],
+["ber-11653","Jakob Wolff",1881,"Berlin",52.53112,13.42992,"w"],
+["ber-11655","Marga Wolff",1910,"Berlin",52.53112,13.42992,"w"],
+["ber-12272","Hermann Wolffberg",1877,"Berlin",52.52147,13.33781,"w"],
+["ber-12273","Regina Wolffberg",1878,"Berlin",52.52147,13.33781,"w"],
+["ber-11961","Margareth Wolffsohn",1890,"Berlin",52.50422,13.31129,"w"],
+["ber-12097","Oskar Wolkenberg",1886,"Berlin",52.5033,13.31863,"w"],
+["ber-10403","Hildegard Wöltge",1901,"Berlin",52.58003,13.41269,"w"],
+["ber-11981","Dalila Wydra",1914,"Berlin",52.47473,13.33788,"w"]
+]}

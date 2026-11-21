@@ -1,0 +1,18 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"prefix":"i",
+"rows":[
+["ida","ber-737","Ida Mielzynski",1881,null,"Berlin","m"],
+["ida","ber-12001","Ida Regensburger",1900,null,"Berlin","r"],
+["ilse","ber-11910","Ilse Helene Albertine Kuppenheim",1892,null,"Berlin","k"],
+["irma","ber-11644","Irma Salomon",1911,null,"Berlin","s"],
+["irmgard","ber-11766","Herta Irmgard Berta Hirschmann",1913,null,"Berlin","h"],
+["isaak","ber-12194","Isaak Scheiner",1889,null,"Berlin","s"],
+["isaak","ber-11346","Isaak Teitelbaum",1888,null,"Berlin","t"],
+["isral","ber-11260","Erna Israel",1895,null,"Berlin","i"],
+["isral","ber-12308","Frida Hedwig Israel",1899,null,"Berlin","i"],
+["isral","ber-10953","Israel Gran",1910,null,"Berlin","g"],
+["isral","ber-11259","Israel Julius",1863,null,"Berlin","j"],
+["isral","ber-11261","Minna Israel",1864,null,"Berlin","i"],
+["isral","ber-264","Wilfrid Israel",1899,null,"Berlin","i"]
+]}

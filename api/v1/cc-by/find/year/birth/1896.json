@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-12066","Herta Pommerening",1896,null,"Berlin","p"],
+["ber-11574","Paul Robert Zerbe",1896,null,"Berlin","z"],
+["ber-12165","Pauline Julius",1896,null,"Berlin","j"],
+["ber-6881","Sara Enke",1896,null,"Berlin","e"],
+["ber-3545","Walter Michaelis",1896,null,"Berlin","m"],
+["ber-11777","Walter Schwalba",1896,null,"Berlin","s"]
+],
+"year":1896}

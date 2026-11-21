@@ -1,0 +1,9 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"prefix":"o",
+"rows":[
+["ber-11661","Kurt Jacob Oberski",1901,"Berlin",52.52622,13.42024,"o"],
+["ber-11909","Rudolf Ohrenstein",1880,"Berlin",52.50205,13.30755,"o"],
+["ber-12268","Rose Ollendorff",1904,"Berlin",52.45141,13.34609,"o"],
+["ber-11748","Elsa Oestreicher",1878,"Berlin",52.5019,13.32935,"o"]
+]}

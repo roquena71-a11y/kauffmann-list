@@ -20,12 +20,12 @@ const I18N = {
     directions:'Cómo llegar (Google Maps)', osmDir:'Cómo llegar (OpenStreetMap)', sources:'Fuentes de esta ficha', derived:'(lugar deducido de placas cercanas)', posApprox:'Posición aproximada (del edificio, por su dirección en OpenStreetMap)', posApproxPhoto:'Posición aproximada (la de la foto de la placa en Wikimedia Commons, comprobada con la dirección en OpenStreetMap)', posLabel:'Posición',
     discTitle:'Las fuentes no coinciden', discBody:(a,alt)=>`Esta ficha muestra la dirección y la posición de OpenStreetMap («${a}»; el punto está en esa calle). Otras fuentes dan «${alt}» (a unos 250–330 m). No se sabe con certeza dónde está la piedra. El punto de la fuente no se ha tocado; solo el dibujo se desplaza unos 0,85 m hacia la acera, para que no quede sobre la fachada.`, discAlt:alt=>`Dan «${alt}»:`, discMain:a=>`Dan «${a}»:`,
     about:'Acerca de los datos', close:'Cerrar', noinsc:'No hay transcripción de la inscripción en las fuentes.',
-    attribution:'Datos: © <a href="https://www.openstreetmap.org/copyright">colaboradores de OpenStreetMap</a> (ODbL) y <a href="https://www.wikidata.org">Wikidata</a> (CC0). Mapa base © OpenStreetMap.',
+    attribution:'Datos: © <a href="https://www.openstreetmap.org/copyright">colaboradores de OpenStreetMap</a> (ODbL), <a href="https://www.wikidata.org">Wikidata</a> (CC0), Koordinierungsstelle Stolpersteine Berlin (CC BY) y Stadt Köln (dl-de/zero-2-0). Mapa base © OpenStreetMap.',
     aboutHtml:m=>`<h2>Acerca de este mapa</h2><p>Los <em>Stolpersteine</em> («piedras de tropiezo») son placas de latón del artista Gunter Demnig, colocadas frente al último domicilio elegido libremente por personas perseguidas, deportadas o asesinadas por el nazismo.</p>
       <p>Este mapa reúne <strong>${m.count}</strong> placas en Alemania, Países Bajos, Francia, Austria, Noruega, Chequia, Italia, España, Bélgica, Luxemburgo, Hungría, Lituania, Suiza, Polonia, Eslovaquia, Jersey, Croacia, Dinamarca, Guernsey, Finlandia, Andorra, Irlanda, Suecia, Letonia, Rumanía, Reino Unido y Liechtenstein a partir de datos abiertos: OpenStreetMap (instantánea ${m.osm_snapshot.slice(0,10)} para Alemania, Irlanda, Suecia, Jersey, Finlandia y Rumanía; ${(m.v20_added||{}).snapshot_osm.slice(0,10)}, refrescada el 2026-11-20, para el resto) y Wikidata (${(m.wikidata_added||{}).snapshot||m.wikidata_snapshot} para esos países; ${(m.v20_added||{}).snapshot_wikidata} para el resto). <strong>No están todas</strong>: según la Stiftung Spuren – Gunter Demnig hay más de 116.000 Stolpersteine en Europa, la mayoría en Alemania, y muchas aún no están registradas en datos abiertos. Si no encuentra a su familiar, consulte también <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> y las iniciativas locales (p. ej. <a href="https://www.stolpersteine-berlin.de">Berlín</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburgo</a>).</p>
-      <p>Ningún dato ha sido inventado: cada campo procede de las fuentes citadas. Pueden existir errores o duplicados; las correcciones se hacen en OpenStreetMap o Wikidata.</p>
+      <p>Ningún dato ha sido inventado: cada campo procede de las fuentes citadas. Pueden existir errores o duplicados; las correcciones de las placas de OpenStreetMap o Wikidata se hacen en esas fuentes, y las de las listas de Berlín o Colonia en esas listas o avisándonos.</p>
       <p>Posición en el mapa: las columnas se dibujan, en general, sobre la acera. Si el punto registrado cae dentro de un edificio de OpenStreetMap o a menos de medio metro de su fachada, solo se desplaza el dibujo hacia la calle: normalmente menos de 25 m; en 292 placas (grupos grandes o calles sin hueco tras la regla de calzada de v20r4) el dibujo queda más lejos, hasta unos 47 m (lista en «excepciones-25m-v20.csv»), y en 109 no se ha podido dejar medio metro libre (lista en «residuales-acera-v20.csv»). Las que quedarían sobre la calzada de una vía rodada sin hueco de acera se listan en «calzada-v20.csv». Las coordenadas de los datos y de los enlaces «Cómo llegar» siguen siendo las originales.</p>
-      <p>Licencia de la base de datos: <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>. Fotos: Wikimedia Commons, cada una con su propia licencia.</p>`
+      <p>Licencias: las placas de OpenStreetMap y Wikidata (<a href="data/stones.json">data/stones.json</a>, <a href="api/v1/odbl/index.json">api/v1/odbl</a>) están bajo <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>. Las añadidas de la lista abierta de Berlín (<a href="data/berlin-added-20261121.json">data/berlin-added-20261121.json</a>, <a href="api/v1/cc-by/index.json">api/v1/cc-by</a>) son <a href="https://opendefinition.org/licenses/cc-by/">Creative Commons Attribution (cc-by)</a>, atribución: Koordinierungsstelle Stolpersteine Berlin; no se copian las biografías de stolpersteine-berlin.de. Las de Colonia (<a href="data/koeln-added-20261121.json">data/koeln-added-20261121.json</a>, <a href="api/v1/dl-de-zero/index.json">api/v1/dl-de-zero</a>) están bajo la <a href="https://www.govdata.de/dl-de/zero-2-0">Datenlizenz Deutschland – Zero – Version 2.0</a> (Stadt Köln / NS-Dokumentationszentrum). Fotos: Wikimedia Commons, cada una con su propia licencia. Detalle en <a href="LICENCIAS.md">LICENCIAS.md</a>.</p>`
   },
   de: {
     title:'Kauffmann-Liste', subtitle:'Stolpersteine in Deutschland und 26 weiteren Ländern Europas · Ein Name, ein Leben.',
@@ -48,12 +48,12 @@ const I18N = {
     directions:'Route (Google Maps)', osmDir:'Route (OpenStreetMap)', sources:'Quellen dieses Eintrags', derived:'(Ort aus benachbarten Steinen abgeleitet)', posApprox:'Ungefähre Position (Gebäude laut Adresse in OpenStreetMap)', posApproxPhoto:'Ungefähre Position (die des Fotos des Steins auf Wikimedia Commons, mit der Adresse in OpenStreetMap geprüft)', posLabel:'Position',
     discTitle:'Die Quellen widersprechen sich', discBody:(a,alt)=>`Dieser Eintrag zeigt Adresse und Position aus OpenStreetMap („${a}“; der Punkt liegt an dieser Straße). Andere Quellen nennen „${alt}“ (etwa 250–330 m entfernt). Wo der Stein wirklich liegt, ist nicht sicher. Der Quellpunkt ist unverändert; nur die Darstellung ist etwa 0,85 m auf den Gehweg versetzt, damit sie nicht auf der Fassade liegt.`, discAlt:alt=>`Nennen „${alt}“:`, discMain:a=>`Nennen „${a}“:`,
     about:'Über die Daten', close:'Schließen', noinsc:'Für diesen Stein ist in den Quellen keine Inschrift erfasst.',
-    attribution:'Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL) und <a href="https://www.wikidata.org">Wikidata</a> (CC0). Kartengrundlage © OpenStreetMap.',
+    attribution:'Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL), <a href="https://www.wikidata.org">Wikidata</a> (CC0), Koordinierungsstelle Stolpersteine Berlin (CC BY) und Stadt Köln (dl-de/zero-2-0). Kartengrundlage © OpenStreetMap.',
     aboutHtml:m=>`<h2>Über diese Karte</h2><p>Stolpersteine sind Gedenktafeln aus Messing des Künstlers Gunter Demnig, verlegt vor dem letzten frei gewählten Wohnort von Menschen, die im Nationalsozialismus verfolgt, deportiert oder ermordet wurden.</p>
       <p>Diese Karte zeigt <strong>${m.count}</strong> Steine in Deutschland, Niederlande, Frankreich, Österreich, Norwegen, Tschechien, Italien, Spanien, Belgien, Luxemburg, Ungarn, Litauen, Schweiz, Polen, Slowakei, Jersey, Kroatien, Dänemark, Guernsey, Finnland, Andorra, Irland, Schweden, Lettland, Rumänien, Vereinigtes Königreich und Liechtenstein aus offenen Daten: OpenStreetMap (Stand ${m.osm_snapshot.slice(0,10)} für Deutschland, Irland, Schweden, Jersey, Finnland und Rumänien; ${(m.v20_added||{}).snapshot_osm.slice(0,10)}, am 2026-11-20 aufgefrischt, für die übrigen) und Wikidata (${(m.wikidata_added||{}).snapshot||m.wikidata_snapshot} für diese Länder; ${(m.v20_added||{}).snapshot_wikidata} für die übrigen). <strong>Sie ist unvollständig</strong>: Laut Stiftung Spuren – Gunter Demnig liegen über 116.000 Stolpersteine in Europa, die meisten in Deutschland. Finden Sie einen Namen nicht, sehen Sie bitte auch bei <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> und den lokalen Initiativen nach (z. B. <a href="https://www.stolpersteine-berlin.de">Berlin</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburg</a>).</p>
-      <p>Es wurden keine Angaben erfunden; jedes Feld stammt aus den genannten Quellen. Fehler oder Doppelungen sind möglich; Korrekturen erfolgen in OpenStreetMap bzw. Wikidata.</p>
+      <p>Es wurden keine Angaben erfunden; jedes Feld stammt aus den genannten Quellen. Fehler oder Doppelungen sind möglich; Korrekturen an Einträgen aus OpenStreetMap oder Wikidata gehören dorthin, Korrekturen an den Berliner oder Kölner Listen in jene Listen oder an uns.</p>
       <p>Position auf der Karte: Die Säulen stehen in der Regel auf dem Gehweg. Liegt ein erfasster Punkt in einem OpenStreetMap-Gebäude oder weniger als einen halben Meter von dessen Fassade entfernt, wird nur die Darstellung zur Straße hin verschoben: normalerweise weniger als 25 m; bei 292 Steinen (große Gruppen oder Straßen ohne freie Stelle nach der Fahrbahnregel von v20r4) liegt die Darstellung weiter entfernt, bis etwa 47 m (Liste in „excepciones-25m-v20.csv“), und bei 109 ließ sich kein halber Meter Abstand freihalten (Liste in „residuales-acera-v20.csv“). Steine auf der Fahrbahn ohne Gehwegplatz stehen in „calzada-v20.csv“. Die Koordinaten in den Daten und in den Routenlinks bleiben die ursprünglichen.</p>
-      <p>Datenbanklizenz: <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>. Fotos: Wikimedia Commons mit jeweils eigener Lizenz.</p>`
+      <p>Lizenzen: Die Stolpersteine aus OpenStreetMap und Wikidata (<a href="data/stones.json">data/stones.json</a>, <a href="api/v1/odbl/index.json">api/v1/odbl</a>) stehen unter der <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>. Die zusätzlich übernommenen Einträge der Berliner Open-Data-Liste (<a href="data/berlin-added-20261121.json">data/berlin-added-20261121.json</a>, <a href="api/v1/cc-by/index.json">api/v1/cc-by</a>) stehen unter <a href="https://opendefinition.org/licenses/cc-by/">Creative Commons Attribution (cc-by)</a>, Namensnennung: Koordinierungsstelle Stolpersteine Berlin; die biografischen Texte von stolpersteine-berlin.de werden nicht übernommen. Die Kölner Einträge (<a href="data/koeln-added-20261121.json">data/koeln-added-20261121.json</a>, <a href="api/v1/dl-de-zero/index.json">api/v1/dl-de-zero</a>) stehen unter der <a href="https://www.govdata.de/dl-de/zero-2-0">Datenlizenz Deutschland – Zero – Version 2.0</a> (Stadt Köln / NS-Dokumentationszentrum). Fotos: Wikimedia Commons mit jeweils eigener Lizenz. Einzelheiten in <a href="LICENCIAS.md">LICENCIAS.md</a>.</p>`
   },
   en: {
     title:'Kauffmann List', subtitle:'Stolpersteine in Germany and 26 other European countries · One name, one life.',
@@ -76,12 +76,12 @@ const I18N = {
     directions:'Directions (Google Maps)', osmDir:'Directions (OpenStreetMap)', sources:'Sources for this record', derived:'(place inferred from nearby stones)', posApprox:'Approximate position (the building, from its address in OpenStreetMap)', posApproxPhoto:'Approximate position (that of the stone’s photo on Wikimedia Commons, checked against the address in OpenStreetMap)', posLabel:'Position',
     discTitle:'Sources disagree', discBody:(a,alt)=>`This record shows the address and position from OpenStreetMap (“${a}”; the point lies on that street). Other sources give “${alt}” (about 250–330 m away). It is not certain where the stone is. The source point is untouched; only the drawing is shifted about 0.85 m onto the pavement so it does not sit on the façade.`, discAlt:alt=>`Give “${alt}”:`, discMain:a=>`Give “${a}”:`,
     about:'About the data', close:'Close', noinsc:'No transcription of the inscription in the sources.',
-    attribution:'Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL) and <a href="https://www.wikidata.org">Wikidata</a> (CC0). Base map © OpenStreetMap.',
+    attribution:'Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL), <a href="https://www.wikidata.org">Wikidata</a> (CC0), Koordinierungsstelle Stolpersteine Berlin (CC BY) and City of Cologne (dl-de/zero-2-0). Base map © OpenStreetMap.',
     aboutHtml:m=>`<h2>About this map</h2><p>Stolpersteine (“stumbling stones”) are brass plaques by the artist Gunter Demnig, set in front of the last freely chosen home of people persecuted, deported or murdered under National Socialism.</p>
       <p>This map shows <strong>${m.count}</strong> stones in Germany, Netherlands, France, Austria, Norway, Czechia, Italy, Spain, Belgium, Luxembourg, Hungary, Lithuania, Switzerland, Poland, Slovakia, Jersey, Croatia, Denmark, Guernsey, Finland, Andorra, Ireland, Sweden, Latvia, Romania, United Kingdom and Liechtenstein from open data: OpenStreetMap (snapshot ${m.osm_snapshot.slice(0,10)} for Germany, Ireland, Sweden, Jersey, Finland and Romania; ${(m.v20_added||{}).snapshot_osm.slice(0,10)}, refreshed on 2026-11-20, for the rest) and Wikidata (${(m.wikidata_added||{}).snapshot||m.wikidata_snapshot} for those countries; ${(m.v20_added||{}).snapshot_wikidata} for the rest). <strong>It is incomplete</strong>: according to Stiftung Spuren – Gunter Demnig there are over 116,000 Stolpersteine in Europe, most of them in Germany. If you cannot find a name, please also check <a href="https://www.stolpersteine.eu">stolpersteine.eu</a> and local initiatives (e.g. <a href="https://www.stolpersteine-berlin.de">Berlin</a>, <a href="https://www.stolpersteine-hamburg.de">Hamburg</a>).</p>
-      <p>No data has been invented; every field comes from the cited sources. Errors or duplicates are possible; corrections belong in OpenStreetMap or Wikidata.</p>
+      <p>No data has been invented; every field comes from the cited sources. Errors or duplicates are possible; corrections to OpenStreetMap or Wikidata plaques belong there, and corrections to the Berlin or Cologne lists belong in those lists or with us.</p>
       <p>Position on the map: the columns are, in general, drawn on the pavement. If a recorded point falls inside an OpenStreetMap building or less than half a metre from its façade, only the drawing is moved towards the street: normally less than 25 m; for 292 stones (large groups or streets with no free spot after the v20r4 roadway rule) the drawing ends up further away, up to about 47 m (list in “excepciones-25m-v20.csv”), and for 109 half a metre of clearance could not be kept (list in “residuales-acera-v20.csv”). Stones that would sit on a carriageway with no sidewalk spot are listed in “calzada-v20.csv”. The coordinates in the data and in the directions links stay the original ones.</p>
-      <p>Database licence: <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>. Photos: Wikimedia Commons, each under its own licence.</p>`
+      <p>Licences: plaques from OpenStreetMap and Wikidata (<a href="data/stones.json">data/stones.json</a>, <a href="api/v1/odbl/index.json">api/v1/odbl</a>) are under <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a>. Those added from Berlin’s open list (<a href="data/berlin-added-20261121.json">data/berlin-added-20261121.json</a>, <a href="api/v1/cc-by/index.json">api/v1/cc-by</a>) are under <a href="https://opendefinition.org/licenses/cc-by/">Creative Commons Attribution (cc-by)</a>, attribution: Koordinierungsstelle Stolpersteine Berlin; biographies from stolpersteine-berlin.de are not copied. The Cologne entries (<a href="data/koeln-added-20261121.json">data/koeln-added-20261121.json</a>, <a href="api/v1/dl-de-zero/index.json">api/v1/dl-de-zero</a>) are under the <a href="https://www.govdata.de/dl-de/zero-2-0">Data licence Germany – Zero – Version 2.0</a> (City of Cologne / NS-Dokumentationszentrum). Photos: Wikimedia Commons, each under its own licence. Details in <a href="LICENCIAS.md">LICENCIAS.md</a>.</p>`
   }
 };
 /* ---- additions for the 3D view ---- */
@@ -99,7 +99,7 @@ const EXTRA = {
        wpCite:'Texto de Wikipedia, sin cambios.', wpAuthors:'Autores de Wikipedia', wpRev:'revisión',
        berlinBio:'Biografía oficial, Stolpersteine Berlin', hamburgBio:'Biografía oficial, Stolpersteine Hamburg', bremenBio:'Biografía oficial, Stolpersteine Bremen',
        describedAt:'Enlace citado en Wikidata', contribNote:'El formulario para aportar o corregir una historia todavía no está abierto. Esta página no se ha publicado.',
-       attribution3d:'Datos: © <a href="https://www.openstreetmap.org/copyright">colaboradores de OpenStreetMap</a> (ODbL) y <a href="https://www.wikidata.org">Wikidata</a> (CC0). Mapa base: <a href="https://openfreemap.org">OpenFreeMap</a> © OpenMapTiles.' },
+       attribution3d:'Datos: © <a href="https://www.openstreetmap.org/copyright">colaboradores de OpenStreetMap</a> (ODbL), <a href="https://www.wikidata.org">Wikidata</a> (CC0), Koordinierungsstelle Stolpersteine Berlin (CC BY) y Stadt Köln (dl-de/zero-2-0). Mapa base: <a href="https://openfreemap.org">OpenFreeMap</a> © OpenMapTiles.' },
   de:{ remember:'Aller gedenken', baseNight:'Nacht', baseDay:'Tag', baseHoy:'Heute', baseSat:'2016', sourcesBtn:'Quellen', pause:'Anhalten', resume:'Fortsetzen', exit:'Beenden',
        replay:'Einführung', project:'Über das Projekt', dlGeo:'GeoJSON herunterladen', dlKml:'KML herunterladen',
        classic:'Klassische 2D-Karte', dataapi:'Offene Daten und API', searchPh:'Vorname, Nachname oder Adresse (Straße und Ort)…',
@@ -113,7 +113,7 @@ const EXTRA = {
        wpCite:'Wikipedia-Text, unverändert.', wpAuthors:'Wikipedia-Autorinnen und Autoren', wpRev:'Version',
        berlinBio:'Offizielle Biografie, Stolpersteine Berlin', hamburgBio:'Offizielle Biografie, Stolpersteine Hamburg', bremenBio:'Offizielle Biografie, Stolpersteine Bremen',
        describedAt:'Bei Wikidata genannter Link', contribNote:'Das Formular für Ergänzungen und Korrekturen ist noch nicht geöffnet. Diese Seite ist nicht veröffentlicht.',
-       attribution3d:'Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL) und <a href="https://www.wikidata.org">Wikidata</a> (CC0). Karte: <a href="https://openfreemap.org">OpenFreeMap</a> © OpenMapTiles.' },
+       attribution3d:'Daten: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a> (ODbL), <a href="https://www.wikidata.org">Wikidata</a> (CC0), Koordinierungsstelle Stolpersteine Berlin (CC BY) und Stadt Köln (dl-de/zero-2-0). Karte: <a href="https://openfreemap.org">OpenFreeMap</a> © OpenMapTiles.' },
   en:{ remember:'Remember them all', baseNight:'Night', baseDay:'Day', baseHoy:'Today', baseSat:'2016', sourcesBtn:'Sources', pause:'Pause', resume:'Resume', exit:'Exit',
        replay:'Introduction', project:'About the project', dlGeo:'Download GeoJSON', dlKml:'Download KML',
        classic:'Classic 2D map', dataapi:'Open data and API', searchPh:'First name, surname or address (street and city)…',
@@ -127,7 +127,7 @@ const EXTRA = {
        wpCite:'Wikipedia text, unchanged.', wpAuthors:'Wikipedia authors', wpRev:'revision',
        berlinBio:'Official biography, Stolpersteine Berlin', hamburgBio:'Official biography, Stolpersteine Hamburg', bremenBio:'Official biography, Stolpersteine Bremen',
        describedAt:'Link recorded in Wikidata', contribNote:'The form for contributions and corrections is not open yet. This site has not been published.',
-       attribution3d:'Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL) and <a href="https://www.wikidata.org">Wikidata</a> (CC0). Base map: <a href="https://openfreemap.org">OpenFreeMap</a> © OpenMapTiles.' }
+       attribution3d:'Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL), <a href="https://www.wikidata.org">Wikidata</a> (CC0), Koordinierungsstelle Stolpersteine Berlin (CC BY) and City of Cologne (dl-de/zero-2-0). Base map: <a href="https://openfreemap.org">OpenFreeMap</a> © OpenMapTiles.' }
 };
 for (const l in EXTRA) Object.assign(I18N[l], EXTRA[l]);
 Object.assign(I18N.es, {pitchTo3d:'3D: ver en ángulo', pitchTo2d:'2D: ver desde arriba', pitchFlatOnly:'La foto de 1945 se ve solo desde arriba', rotLeft:'Girar a la izquierda', rotNorth:'Mirar al norte', rotRight:'Girar a la derecha'});
@@ -365,13 +365,21 @@ function buildStones(){
   for (const list of byAddr.values()) mergePeople(list, 25);
   mergePeople(noAddr, 8);
 
+  const isAddedStone = s => s.src==='berlin' || s.src==='koeln' || /^(ber-|koeln-)/.test(String(s.id));
   const groups = clusters.map(g => {
     const vis=g.filter(s=>!s._aliasOf);
     vis.sort((a,b)=> ((a._n||a.n)||'').localeCompare((b._n||b.n)||'','de') || String(a.id).localeCompare(String(b.id)));
+    const base=vis.filter(s=>!isAddedStone(s)), added=vis.filter(s=>isAddedStone(s));
     const la0 = g.reduce((t,s)=>t+s.la,0)/g.length;
     const lo0 = g.reduce((t,s)=>t+s.lo,0)/g.length;
+    const baseLa0 = base.length ? base.reduce((t,s)=>t+s.la,0)/base.length : la0;
+    const baseLo0 = base.length ? base.reduce((t,s)=>t+s.lo,0)/base.length : lo0;
     // v20: grupo «fijo» = todas sus placas traen posición de dibujo calculada en el servidor (dla/dlo, ya fuera de los edificios): la separación de grupos no lo mueve ni lo encoge.
-    return {g:vis, all:g, la0, lo0, origLa:la0, origLo:lo0, step:COL_STEP, ang:0, sk:streetKey(g[0]), pinned:!!(typeof META!=='undefined' && META && META.layout_pinned) || g.every(s=>s.sla!=null)};
+    // v21: las placas nuevas no entran en esa cuenta de «todas» para no rehacer la cuadrícula de las ya publicadas.
+    return {g:vis, all:g, la0, lo0, origLa:la0, origLo:lo0, baseLa0, baseLo0, base, added,
+      step:COL_STEP, ang:0, sk:streetKey(g[0]),
+      pinned:!!(typeof META!=='undefined' && META && META.layout_pinned) || (g.every(s=>s.sla!=null) && !added.length),
+      hasBase:base.length>0, hasAdded:added.length>0};
   });
 
   // Street direction from our own coordinates (not live OSM tiles: those are only in the current view
@@ -379,14 +387,19 @@ function buildStones(){
   // 1) Principal axis of other houses on the same street within 180 m (needs 3 points, or 2 if >12 m apart).
   // 2) If that fails, the elongated cloud of this house's own recorded points.
   // 3) Smooth with the circular mean of neighbouring angles on the same street (80 m), then north–south if still none.
+  function axisOf(pg){ return pg.hasBase ? {la:pg.baseLa0, lo:pg.baseLo0} : {la:pg.la0, lo:pg.lo0}; }
   function neighbors(pg, i, radius, cell, near){
     const pts=[], idxs=[];
     if (!pg.sk) return {pts, idxs};
-    const a0=Math.floor(pg.la0/cell), b0=Math.floor(pg.lo0/cell);
+    const me=axisOf(pg);
+    const a0=Math.floor(me.la/cell), b0=Math.floor(me.lo/cell);
     for (let di=-2;di<=2;di++) for (let dj=-2;dj<=2;dj++)
       for (const j of (near.get(pg.sk+'|'+((a0+di)+':'+(b0+dj)))||[])){
         const o=groups[j];
-        if (distM(pg.la0,pg.lo0,o.la0,o.lo0)<=radius){ pts.push({la:o.la0, lo:o.lo0}); idxs.push(j); }
+        // v21: un grupo que ya existía no toma el ángulo de placas municipales nuevas (mismo ángulo que en v20).
+        if (pg.hasBase && !o.hasBase) continue;
+        const ot=axisOf(o);
+        if (distM(me.la,me.lo,ot.la,ot.lo)<=radius){ pts.push({la:ot.la, lo:ot.lo}); idxs.push(j); }
       }
     return {pts, idxs};
   }
@@ -398,7 +411,7 @@ function buildStones(){
   }
   const cellA=0.001, near=new Map();
   const akey=(sk,la,lo)=>sk+'|'+Math.floor(la/cellA)+':'+Math.floor(lo/cellA);
-  groups.forEach((pg,i)=>{ if (!pg.sk) return; const k=akey(pg.sk,pg.la0,pg.lo0); (near.get(k)||near.set(k,[]).get(k)).push(i); });
+  groups.forEach((pg,i)=>{ if (!pg.sk) return; const ax=axisOf(pg); const k=akey(pg.sk,ax.la,ax.lo); (near.get(k)||near.set(k,[]).get(k)).push(i); });
   groups.forEach((pg,i)=>{
     let ang=null;
     if (pg.sk){
@@ -406,7 +419,7 @@ function buildStones(){
       if (pts.length>=3) ang=principalAngle(pts);
       else if (pts.length===2 && distM(pts[0].la,pts[0].lo,pts[1].la,pts[1].lo)>12) ang=principalAngle(pts);
     }
-    if (ang==null) ang=principalAngle(pg.all.map(s=>({la:s.la, lo:s.lo})));
+    if (ang==null) ang=principalAngle((pg.hasBase?pg.base:pg.all).map(s=>({la:s.la, lo:s.lo})));
     pg._rawAng = ang;
   });
   groups.forEach((pg,i)=>{
@@ -420,17 +433,44 @@ function buildStones(){
     for (const s of pg.all) s._ang=pg.ang;
   });
 
-  function layout(pg){
-    const n=pg.g.length, cols=Math.ceil(Math.sqrt(n));
+  function gridLayout(members, la0, lo0, ang, step){
+    const n=members.length, cols=Math.ceil(Math.sqrt(n));
     const rows=Math.ceil(n/cols)||1;
-    const cos=Math.cos(pg.la0*Math.PI/180), cA=Math.cos(pg.ang||0), sA=Math.sin(pg.ang||0);
-    pg.g.forEach((s,i)=>{
+    const cos=Math.cos(la0*Math.PI/180), cA=Math.cos(ang||0), sA=Math.sin(ang||0);
+    members.forEach((s,i)=>{
       const cx=(i%cols)-(cols-1)/2, cy=Math.floor(i/cols)-(rows-1)/2;
-      const east=cx*pg.step*cA - cy*pg.step*sA;
-      const north=cx*pg.step*sA + cy*pg.step*cA;
-      s._dla = pg.la0 + north/M_LAT;
-      s._dlo = pg.lo0 + east/(M_LAT*cos);
+      const east=cx*step*cA - cy*step*sA;
+      const north=cx*step*sA + cy*step*cA;
+      s._dla = la0 + north/M_LAT;
+      s._dlo = lo0 + east/(M_LAT*cos);
     });
+  }
+  function layout(pg){
+    // v21: las placas ya publicadas (OSM/Wikidata) se dibujan como en v20; solo se colocan alrededor las municipales nuevas.
+    if (pg.hasBase && pg.hasAdded){
+      gridLayout(pg.base, pg.baseLa0, pg.baseLo0, pg.ang, pg.step);
+      const cos=Math.cos(pg.baseLa0*Math.PI/180), cA=Math.cos(pg.ang||0), sA=Math.sin(pg.ang||0);
+      const occ = pg.base.map(s=>({la:s._dla, lo:s._dlo}));
+      const cands=[];
+      for (let ring=1; ring<=24; ring++){
+        for (let cx=-ring; cx<=ring; cx++) for (let cy=-ring; cy<=ring; cy++){
+          if (Math.max(Math.abs(cx),Math.abs(cy))!==ring) continue;
+          const east=cx*pg.step*cA - cy*pg.step*sA;
+          const north=cx*pg.step*sA + cy*pg.step*cA;
+          cands.push({la: pg.baseLa0 + north/M_LAT, lo: pg.baseLo0 + east/(M_LAT*cos)});
+        }
+      }
+      for (const s of pg.added){
+        let put=null;
+        for (const c of cands){
+          if (occ.every(o=>distM(c.la,c.lo,o.la,o.lo)>=COL_GAP_MIN)){ put=c; break; }
+        }
+        if (!put) put=cands[cands.length-1] || {la:pg.baseLa0, lo:pg.baseLo0};
+        s._dla=put.la; s._dlo=put.lo; occ.push(put);
+      }
+      return;
+    }
+    gridLayout(pg.g, pg.la0, pg.lo0, pg.ang, pg.step);
   }
   for (const pg of groups) layout(pg);
 
@@ -459,11 +499,21 @@ function buildStones(){
           if (L<0.2){ dx=1; dy=0; L=1; }
           const push=(COL_GAP_MIN-d+0.12)/2;
           const uy=dy/L, ux=dx/L;
-          if (A.pinned && B.pinned) continue;   // v20: dos grupos fijos no se mueven (el servidor ya los separó)
-          const moveA = B.pinned ? true : (A.pinned ? false : A.g.length<=B.g.length);
-          if (moveA){ shift[gi].dy+=uy*push; shift[gi].dx+=ux*push; shift[gi].hits++; }
-          else { shift[o.gi].dy-=uy*push; shift[o.gi].dx-=ux*push; shift[o.gi].hits++; }
-          if (L<5 && (A.g.length>1 || B.g.length>1)){ if (!A.pinned) shrink[gi]=true; if (!B.pinned) shrink[o.gi]=true; }
+          // v21: no mover un grupo que ya tenía placas publicadas por culpa de una placa municipal nueva.
+          const mixedA=A.hasBase&&A.hasAdded, mixedB=B.hasBase&&B.hasAdded;
+          if ((A.hasBase && B.hasAdded && !B.hasBase) || (B.hasBase && A.hasAdded && !A.hasBase) || mixedA || mixedB){
+            if (A.hasBase && B.hasBase) continue;
+            const moveNew = !A.hasBase; // A es solo-nuevo → se aparta; si no, se aparta B
+            if (moveNew){ shift[gi].dy+=uy*push; shift[gi].dx+=ux*push; shift[gi].hits++; }
+            else { shift[o.gi].dy-=uy*push; shift[o.gi].dx-=ux*push; shift[o.gi].hits++; }
+            if (L<5 && (A.g.length>1 || B.g.length>1)){ if (!A.hasBase) shrink[gi]=true; if (!B.hasBase) shrink[o.gi]=true; }
+          } else {
+            if (A.pinned && B.pinned) continue;   // v20: dos grupos fijos no se mueven (el servidor ya los separó)
+            const moveA = B.pinned ? true : (A.pinned ? false : A.g.length<=B.g.length);
+            if (moveA){ shift[gi].dy+=uy*push; shift[gi].dx+=ux*push; shift[gi].hits++; }
+            else { shift[o.gi].dy-=uy*push; shift[o.gi].dx-=ux*push; shift[o.gi].hits++; }
+            if (L<5 && (A.g.length>1 || B.g.length>1)){ if (!A.pinned) shrink[gi]=true; if (!B.pinned) shrink[o.gi]=true; }
+          }
           moved=true;
         }
     }));
@@ -534,7 +584,18 @@ const GOLD = ['interpolate',['linear'],['zoom'], 5,'#c6a15b', 12,'#e0bc62', 17,'
 function setBuildingsVisible(on){
   if (map && map.getLayer('bldg3d')) map.setLayoutProperty('bldg3d', 'visibility', on ? 'visible' : 'none');
 }
+function tryAddOverlays(){
+  if (!map || !POINTS_FC || !STONES_FC || !AGG || !AGG.length){ if (map) map._pendingOverlays=true; return; }
+  if (map.getSource('pts')) return;
+  try { addOverlays(); map._pendingOverlays=false; }
+  catch (e) { console.warn('addOverlays', e); map._pendingOverlays=true; }
+}
 function addOverlays(){
+  // v21: no montar capas hasta que load() haya construido POINTS_FC/STONES_FC/AGG.
+  // Con tres archivos de datos, style.load puede dispararse después de asignar DATA
+  // y antes de buildStones(); si no, se añade 'pts' con undefined (aviso de GeoJSON) y las capas quedan a medias.
+  if (!POINTS_FC || !STONES_FC || typeof AGG==='undefined' || !AGG){ if (map) map._pendingOverlays=true; return; }
+  if (map.getSource('pts')) return;
   const firstSymbol = (map.getStyle().layers.find(l=>l.type==='symbol')||{}).id;
   const narrow = matchMedia('(max-width: 760px)').matches;
   if (map.getSource('openmaptiles')){
@@ -713,7 +774,7 @@ function initMap(){
   map.addControl(new maplibregl.GeolocateControl({trackUserLocation:false}), 'top-right');
   map.on('error', e => console.warn('map error', e && e.error && e.error.message));
   map.once('style.load', ()=>{
-    if (DATA.length) addOverlays(); else map._pendingOverlays = true;
+    tryAddOverlays();
     if (!intro && base === 'hoy' && window.KLImagery) KLImagery.setHoy(true);
   });
   map.on('click','stones', e => { const f=e.features && e.features[0]; if (f) openStone(f.properties.id, true); });
@@ -731,6 +792,18 @@ async function load(){
   $('#status').textContent = T('loading');
   const j = await (await fetch('data/stones.json')).json();
   META = j.meta; DATA = j.stones;
+  // v21: listas municipales en archivos y licencias aparte (no se mezclan en stones.json / ODbL).
+  const addedFiles = ['data/berlin-added-20261121.json', 'data/koeln-added-20261121.json'];
+  const added = await Promise.all(addedFiles.map(u => fetch(u).then(r => { if (!r.ok) throw new Error(u+' '+r.status); return r.json(); })));
+  for (const part of added){
+    if (part && Array.isArray(part.stones)) DATA = DATA.concat(part.stones);
+  }
+  META.count = DATA.length;
+  META.v21_added = {
+    berlin: (added[0] && added[0].meta) || null,
+    koeln: (added[1] && added[1].meta) || null,
+    records: added.reduce((n,p)=>n+((p.stones||[]).length),0)
+  };
   // v19: posición de DIBUJO. Si el archivo trae dla/dlo (placa dentro de un edificio de OSM o a menos de 1 m de la fachada), la columna se dibuja ahí
   // (en la acera, hacia la calle); la coordenada de origen queda en sla/slo y es la que usan «Cómo llegar» y las descargas.
   for (const s of DATA){ if (s.dla != null && s.dlo != null){ s.sla = s.la; s.slo = s.lo; s.la = s.dla; s.lo = s.dlo; } }
@@ -745,8 +818,9 @@ async function load(){
   }
   CITY_STATS = [...cities.entries()].sort((a,b)=>b[1].n-a[1].n);
   $('#cities').innerHTML = [...cities.entries()].sort((a,b)=>a[0].localeCompare(b[0],'de')).map(([c,o])=>`<option value="${esc(c)}">${esc(c)} (${o.n})</option>`).join('');
-  if (map.isStyleLoaded() || map._pendingOverlays) { if (!map.getSource('stones')) addOverlays(); }
-  else map.once('style.load', ()=>{ if (!map.getSource('stones')) addOverlays(); });
+  tryAddOverlays();
+  if (!map.getSource('pts')) map.once('style.load', tryAddOverlays);
+  if (!map.getSource('pts')) requestAnimationFrame(tryAddOverlays);
   if (window.KLImagery) KLImagery.onData();
   $('#status').textContent = T('ready')(fmtNum(DATA.length));
   route();
@@ -919,6 +993,24 @@ function openStone(id, fromMap){
   for (const r of recs){ const u=osmUrl(r); if (u && !seenSrc.has(u)){ seenSrc.add(u); src.push(`<li><a href="${u}" target="_blank" rel="noopener noreferrer">OpenStreetMap</a></li>`); } }
   for (const r of recs){ if (r.wd && !seenSrc.has('wd:'+r.wd)){ seenSrc.add('wd:'+r.wd); src.push(`<li><a href="https://www.wikidata.org/wiki/${esc(r.wd)}" target="_blank" rel="noopener noreferrer">Wikidata ${esc(r.wd)}</a></li>`); } }
   for (const r of recs){ if (r.p && !seenSrc.has('p:'+r.p)){ seenSrc.add('p:'+r.p); src.push(`<li><a href="https://www.wikidata.org/wiki/${esc(r.p)}" target="_blank" rel="noopener noreferrer">Wikidata (persona/Person) ${esc(r.p)}</a></li>`); } }
+  for (const r of recs){
+    if ((r.src==='berlin' || r.lic==='cc-by') && !seenSrc.has('berlin-od')){
+      seenSrc.add('berlin-od');
+      src.push('<li><a href="https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin" target="_blank" rel="noopener noreferrer">Liste der Stolpersteine Berlin (Open Data, CC BY)</a></li>');
+    }
+    if (r.lb && r.src==='berlin' && !seenSrc.has('lb:'+r.lb)){
+      seenSrc.add('lb:'+r.lb);
+      src.push(`<li><a href="${esc(r.lb)}" target="_blank" rel="noopener noreferrer">${T('berlinBio')}</a></li>`);
+    }
+    if ((r.src==='koeln' || r.lic==='dl-de-zero') && !seenSrc.has('koeln-od')){
+      seenSrc.add('koeln-od');
+      src.push('<li><a href="https://open.nrw/dataset/stolpersteine-koln-k" target="_blank" rel="noopener noreferrer">Stolpersteine Köln (Open.NRW, dl-de/zero-2-0)</a></li>');
+    }
+    if (r.lb && r.src==='koeln' && !seenSrc.has('lb:'+r.lb)){
+      seenSrc.add('lb:'+r.lb);
+      src.push(`<li><a href="${esc(r.lb)}" target="_blank" rel="noopener noreferrer">NS-Dokumentationszentrum der Stadt Köln</a></li>`);
+    }
+  }
   const photo = s.img ? `<figure class="photo"><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${commonsThumb(s.img,480)}" alt="${esc(s.n||'')}"></a><figcaption><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer">${T('photo')}</a></figcaption></figure>` : '';
   const d = $('#detail');
   d.innerHTML = `<button class="back" id="back">${T('back')}</button>

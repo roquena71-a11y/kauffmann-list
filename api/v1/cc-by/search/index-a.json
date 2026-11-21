@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"prefix":"a",
+"rows":[
+["ber-3","Herta Abraham",1895,"Berlin",52.51201,13.40811,"a"],
+["ber-7693","Leo Adler",1898,"Berlin",52.50551,13.41189,"a"],
+["ber-12106","Marie Adler",1895,"Berlin",52.50359,13.31318,"a"],
+["ber-1557","Anny] Eckstein Anna [Anni",1907,"Berlin",52.53231,13.4222,"a"],
+["ber-12010","Charlotte Aron",1907,"Berlin",52.5419,13.39907,"a"],
+["ber-12008","Helene Aron",1875,"Berlin",52.5419,13.39907,"a"],
+["ber-2416","Martha Aron",1864,"Berlin",52.51599,13.29701,"a"],
+["ber-12007","Salomon Leopold Aron",1874,"Berlin",52.5419,13.39907,"a"],
+["ber-11647","Aron Leib Auerbach",1885,"Berlin",52.52934,13.40935,"a"],
+["ber-11648","Hedwig Auerbach",1895,"Berlin",52.52934,13.40935,"a"]
+]}

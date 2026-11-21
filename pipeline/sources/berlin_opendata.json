@@ -1,0 +1,64 @@
+{
+  "id": "berlin_opendata",
+  "name": "Liste der Stolpersteine Berlin (Open Data)",
+  "description": "CSV de la Koordinierungsstelle Stolpersteine Berlin publicado en Berlin Open Data. Solo los campos de la lista (nombre, dirección, año de nacimiento, coordenadas). No se copian las biografías (copyright de los autores, Impressum de stolpersteine-berlin.de).",
+  "phase": 1,
+  "enabled": true,
+  "publish_allowed": true,
+  "adapter": "generic_tabular",
+  "license": "CC-BY",
+  "license_url": "https://opendefinition.org/licenses/cc-by/",
+  "attribution": "Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)",
+  "homepage": "https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin",
+  "license_family": "cc-by",
+  "id_prefix": "ber",
+  "priority": 20,
+  "input": {
+    "path": "data/berlin-added-20261121.json",
+    "format": "json",
+    "records_path": "stones",
+    "retrieved": "2026-11-21"
+  },
+  "mapping": {
+    "name": "n",
+    "birth_date": {
+      "column": "b",
+      "format": "year"
+    },
+    "places": [
+      {
+        "role": "memorial",
+        "label": "a",
+        "locality": "c",
+        "lat": "la",
+        "lon": "lo",
+        "country": {
+          "const": "DE"
+        }
+      }
+    ],
+    "links": [
+      {
+        "type": "local_biography",
+        "url": "lb"
+      }
+    ],
+    "record_id": {
+      "column": "id",
+      "strip_prefix": "ber-"
+    },
+    "memorials": [
+      {
+        "type": "stolperstein",
+        "memorial_id": "id",
+        "address": "a",
+        "locality": "c",
+        "country": {
+          "const": "DE"
+        },
+        "lat": "la",
+        "lon": "lo"
+      }
+    ]
+  }
+}

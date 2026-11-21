@@ -1,0 +1,23 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"prefix":"n",
+"rows":[
+["ber-12169","Alfred Eduard Nathan",1914,"Berlin",52.52619,13.41827,"n"],
+["ber-12035","Hugo Nathansohn",1881,"Berlin",52.50621,13.28454,"n"],
+["ber-12037","Maria Nathansohn",1887,"Berlin",52.50621,13.28454,"n"],
+["ber-12185","Adelheid Nathanson",1879,"Berlin",52.51286,13.27367,"n"],
+["ber-11942","Ernestine Nelki",1867,"Berlin",52.50129,13.33536,"n"],
+["ber-11943","Fritz Nelki",1890,"Berlin",52.50129,13.33536,"n"],
+["ber-11944","Heinrich Walter Nelki",1901,"Berlin",52.50129,13.33536,"n"],
+["ber-11945","Hermann Nelki",1863,"Berlin",52.50129,13.33536,"n"],
+["ber-11946","Otto Wilhelm Nelki",1899,"Berlin",52.50129,13.33536,"n"],
+["ber-11947","Wolf Nelki",1911,"Berlin",52.50129,13.33536,"n"],
+["ber-11726","Frieda Nellhaus",1883,"Berlin",52.58283,13.39468,"n"],
+["ber-4261","Else Neuländer-Simon",1900,"Berlin",52.50052,13.31688,"n"],
+["ber-11739","Abraham Hirsch Neumann",1879,"Berlin",52.51046,13.40149,"n"],
+["ber-11237","Emil Neumann",1905,"Berlin",52.51842,13.45436,"n"],
+["ber-10844","Rosa Reha Neumann",1881,"Berlin",52.51046,13.40149,"n"],
+["ber-11657","Siegfried Neumann",1891,"Berlin",52.53112,13.42992,"n"],
+["ber-11658","Therese Neumann",1897,"Berlin",52.53112,13.42992,"n"],
+["ber-10471","Fritz Neumark",1914,"Berlin",52.51156,13.41313,"n"]
+]}

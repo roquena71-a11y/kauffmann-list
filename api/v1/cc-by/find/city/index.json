@@ -1,0 +1,7 @@
+{"aliases":[],
+"columns":["key","country","slug","label","count","pages"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"rows":[
+["berlin","DE","berlin","Berlin",279,1]
+],
+"rule":"key = nombre del lugar normalizado: fold() (minúsculas, ß→ss, sin acentos, ä/ae→a, ö/oe→o, ü/ue→u) y sin espacios ni guiones. Busca la clave en rows; si hay varias filas (mismo nombre en otro país) usa country. Archivo: city/<country en minúsculas>/<slug>.json; páginas extra <slug>~2.json. aliases = nombres alternativos conocidos (exónimos) → key."}

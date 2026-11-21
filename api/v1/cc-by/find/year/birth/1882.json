@@ -1,0 +1,16 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":7,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-12209","Albert Martin Fröhlich",1882,null,"Berlin","f"],
+["ber-8021","Berl' Amster Bernhard",1882,null,"Berlin","b"],
+["ber-12004","Else Placzek",1882,null,"Berlin","p"],
+["ber-11654","Fanny Wolff",1882,null,"Berlin","w"],
+["ber-12342","Fritz Litwinschuk",1882,null,"Berlin","l"],
+["ber-8894","Natalie Grodzenski",1882,null,"Berlin","g"],
+["ber-12254","Victor Rosenfeld",1882,null,"Berlin","r"]
+],
+"year":1882}

@@ -162,7 +162,8 @@ for fam in sorted(os.listdir(os.path.join(ROOT, "api/v1"))):
     fam_idx = load("api/v1/%s/index.json" % fam)
     fam_meta = fam_idx["meta"]
     facts, nameless = {}, set()
-    for fn in os.listdir(os.path.join(fdir, "people", "by-surname")):
+    people_dir = os.path.join(fdir, "people", "by-surname")
+    for fn in (os.listdir(people_dir) if os.path.isdir(people_dir) else []):
         with open(os.path.join(fdir, "people", "by-surname", fn), encoding="utf-8") as f:
             pk = json.load(f)
         for p in pk["people"]:

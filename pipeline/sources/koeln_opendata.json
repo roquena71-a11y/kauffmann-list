@@ -1,0 +1,60 @@
+{
+  "id": "koeln_opendata",
+  "name": "Stolpersteine Köln (Open.NRW / Offene Daten Köln)",
+  "description": "JSON del geoportal de la Stadt Köln, licencia Datenlizenz Deutschland – Zero – Version 2.0. No se copian las biografías de museenkoeln.de / nsdok.de; solo se enlaza la URL incluida en el JSON.",
+  "phase": 1,
+  "enabled": true,
+  "publish_allowed": true,
+  "adapter": "generic_tabular",
+  "license": "dl-de/zero-2-0",
+  "license_url": "https://www.govdata.de/dl-de/zero-2-0",
+  "attribution": "Stadt Köln / NS-Dokumentationszentrum der Stadt Köln, Stolpersteine Köln (Datenlizenz Deutschland – Zero – Version 2.0, https://open.nrw/dataset/stolpersteine-koln-k)",
+  "homepage": "https://open.nrw/dataset/stolpersteine-koln-k",
+  "license_family": "dl-de-zero",
+  "id_prefix": "koeln",
+  "priority": 20,
+  "input": {
+    "path": "data/koeln-added-20261121.json",
+    "format": "json",
+    "records_path": "stones",
+    "retrieved": "2026-11-21"
+  },
+  "mapping": {
+    "name": "n",
+    "places": [
+      {
+        "role": "memorial",
+        "label": "a",
+        "locality": "c",
+        "lat": "la",
+        "lon": "lo",
+        "country": {
+          "const": "DE"
+        }
+      }
+    ],
+    "links": [
+      {
+        "type": "local_biography",
+        "url": "lb"
+      }
+    ],
+    "record_id": {
+      "column": "id",
+      "strip_prefix": "koeln-"
+    },
+    "memorials": [
+      {
+        "type": "stolperstein",
+        "memorial_id": "id",
+        "address": "a",
+        "locality": "c",
+        "country": {
+          "const": "DE"
+        },
+        "lat": "la",
+        "lon": "lo"
+      }
+    ]
+  }
+}

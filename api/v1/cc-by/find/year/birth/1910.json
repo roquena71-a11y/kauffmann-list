@@ -1,0 +1,17 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":8,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-11913","Gerda Rosenbaum",1910,null,"Berlin","r"],
+["ber-10910","Herbert Oswald Lewin",1910,null,"Berlin","l"],
+["ber-10953","Israel Gran",1910,null,"Berlin","g"],
+["ber-12107","Magdalena Smedresman",1910,null,"Berlin","s"],
+["ber-2007","Manfred Ephraim Joel",1910,null,"Berlin","j"],
+["ber-11655","Marga Wolff",1910,null,"Berlin","w"],
+["ber-11984","Rudolf Beerwald",1910,null,"Berlin","b"],
+["ber-12202","Vera Simon",1910,null,"Berlin","s"]
+],
+"year":1910}

@@ -31,9 +31,9 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 10 10%22%3E%3Crect width=%2210%22 height=%2210%22 fill=%22%23c6a15b%22/%3E%3C/svg%3E">
 <link rel="stylesheet" href="fonts/fonts.css">
 <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="style.css?v=20">
-<link rel="stylesheet" href="style3d.css?v=20">
-<link rel="stylesheet" href="mapui.css?v=20">
+<link rel="stylesheet" href="style.css?v=21">
+<link rel="stylesheet" href="style3d.css?v=21">
+<link rel="stylesheet" href="mapui.css?v=21">
 <noscript><style>
   /* Sin JavaScript no hay intro ni mapa: se muestra el texto, la cabecera, los enlaces a los datos y el pie */
   .intro,html:not(.intro-skip) body .side,html:not(.intro-skip) body .mapwrap,html:not(.intro-skip) body .topright{display:none!important}
@@ -79,8 +79,8 @@
     <p>Mapa libre de los Stolpersteine y de las víctimas de la Shoah. Cada placa, cada nombre, cada historia. Nunca olvidar. El mapa necesita JavaScript; los datos no.</p>
     <ul>
       <li><a href="llms.txt">llms.txt</a> · <a href="llms-full.txt">llms-full.txt</a> (instrucciones para agentes de IA / for AI agents)</li>
-      <li><a href="api/v1/index.json">API JSON</a> · <a href="api/v1/openapi.json">OpenAPI 3.1</a> · <a href="api/v1/odbl/find/index.json">búsqueda ODbL</a> · <a href="api/v1/cc0/find/index.json">búsqueda CC0</a></li>
-      <li><a href="data/stones.json">data/stones.json</a> (ODbL) · <a href="sitemap.xml">sitemap.xml</a> · <a href="proyecto/">Sobre el proyecto</a> · <a href="2d/">Mapa clásico 2D</a></li>
+      <li><a href="api/v1/index.json">API JSON</a> · <a href="api/v1/openapi.json">OpenAPI 3.1</a> · <a href="api/v1/odbl/find/index.json">búsqueda ODbL</a> · <a href="api/v1/cc0/find/index.json">búsqueda CC0</a> · <a href="api/v1/cc-by/find/index.json">búsqueda CC BY (Berlín)</a> · <a href="api/v1/dl-de-zero/find/index.json">búsqueda dl-de/zero-2-0 (Colonia)</a></li>
+      <li><a href="data/stones.json">data/stones.json</a> (ODbL) · <a href="data/berlin-added-20261121.json">data/berlin-added-20261121.json</a> (CC BY) · <a href="data/koeln-added-20261121.json">data/koeln-added-20261121.json</a> (dl-de/zero-2-0) · <a href="sitemap.xml">sitemap.xml</a> · <a href="proyecto/">Sobre el proyecto</a> · <a href="2d/">Mapa clásico 2D</a></li>
     </ul>
   </section>
 </noscript>
@@ -189,7 +189,9 @@
       "license": "https://opendatacommons.org/licenses/odbl/1-0/",
       "isBasedOn": [
         {"@type": "Dataset", "name": "OpenStreetMap (memorial=stolperstein)", "url": "https://www.openstreetmap.org", "license": "https://opendatacommons.org/licenses/odbl/1-0/", "dateModified": "2026-11-18"},
-        {"@type": "Dataset", "name": "Wikidata", "url": "https://www.wikidata.org", "license": "https://creativecommons.org/publicdomain/zero/1.0/", "dateModified": "2026-11-20"}
+        {"@type": "Dataset", "name": "Wikidata", "url": "https://www.wikidata.org", "license": "https://creativecommons.org/publicdomain/zero/1.0/", "dateModified": "2026-11-20"},
+        {"@type": "Dataset", "name": "Liste der Stolpersteine Berlin (Open Data)", "url": "https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin", "license": "https://opendefinition.org/licenses/cc-by/", "dateModified": "2026-11-21"},
+        {"@type": "Dataset", "name": "Stolpersteine Köln (Open.NRW)", "url": "https://open.nrw/dataset/stolpersteine-koln-k", "license": "https://www.govdata.de/dl-de/zero-2-0", "dateModified": "2026-11-21"}
       ],
       "dateModified": "2026-11-20",
       "variableMeasured": [
@@ -211,7 +213,9 @@
       "distribution": [
         {"@type": "DataDownload", "name": "Stolpersteine database (plaque transcriptions)", "encodingFormat": "application/json", "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/data/stones.json", "license": "https://opendatacommons.org/licenses/odbl/1-0/"},
         {"@type": "DataDownload", "name": "Person records, ODbL family (static JSON API)", "encodingFormat": "application/json", "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/odbl/index.json", "license": "https://opendatacommons.org/licenses/odbl/1-0/"},
-        {"@type": "DataDownload", "name": "Person records, CC0 family (Wikidata, static JSON API)", "encodingFormat": "application/json", "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json", "license": "https://creativecommons.org/publicdomain/zero/1.0/"}
+        {"@type": "DataDownload", "name": "Person records, CC0 family (Wikidata, static JSON API)", "encodingFormat": "application/json", "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json", "license": "https://creativecommons.org/publicdomain/zero/1.0/"},
+        {"@type": "DataDownload", "name": "Person records, CC BY family (Berlin Open Data Stolpersteine)", "encodingFormat": "application/json", "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json", "license": "https://opendefinition.org/licenses/cc-by/"},
+        {"@type": "DataDownload", "name": "Person records, dl-de/zero-2-0 family (Köln Stolpersteine)", "encodingFormat": "application/json", "contentUrl": "https://roquena71-a11y.github.io/kauffmann-list/api/v1/dl-de-zero/index.json", "license": "https://www.govdata.de/dl-de/zero-2-0"}
       ],
       "subjectOf": {"@id": "#api"}
     },
@@ -273,14 +277,14 @@
 }
 </script>
 <script src="vendor/maplibre/maplibre-gl.js"></script>
-<script src="imagery.js?v=20"></script>
-<script src="source-links.js?v=20"></script>
-<script src="dedupe.js?v=20"></script>
-<script src="app3d.js?v=20"></script>
-<script src="columns.js?v=20"></script>
-<script src="people.js?v=20"></script>
-<script src="mapui.js?v=20"></script>
-<script src="counter.js?v=20"></script>
+<script src="imagery.js?v=21"></script>
+<script src="source-links.js?v=21"></script>
+<script src="dedupe.js?v=21"></script>
+<script src="app3d.js?v=21"></script>
+<script src="columns.js?v=21"></script>
+<script src="people.js?v=21"></script>
+<script src="mapui.js?v=21"></script>
+<script src="counter.js?v=21"></script>
 <script>
 /* Service worker: la página nueva llega siempre (HTML y datos primero de la red; ver sw.js).
    Si se activa una versión nueva mientras la página está abierta, se recarga una sola vez. */

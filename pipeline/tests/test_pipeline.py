@@ -531,7 +531,8 @@ class TestNetworkAdapters(BuildCase):
 class TestRepoConfig(unittest.TestCase):
     def test_all_sources_valid_and_phase2_closed(self):
         srcs = load_sources()
-        self.assertEqual(sorted(srcs), ["arolsen", "bundesarchiv_gedenkbuch", "osm_stolpersteine_europe",
+        self.assertEqual(sorted(srcs), ["arolsen", "berlin_opendata", "bundesarchiv_gedenkbuch", "koeln_opendata",
+                                        "osm_stolpersteine_europe",
                                         "stolpersteine_de", "ushmm", "wikidata_holocaust_victims", "yadvashem"])
         for s in srcs.values():
             if s["phase"] == 2:

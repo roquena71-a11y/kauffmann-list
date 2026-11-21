@@ -1,0 +1,12 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"prefix":"p",
+"rows":[
+["ber-5956","Käthe Pestachowski",1895,"Berlin",52.50281,13.303,"p"],
+["ber-11235","Erwin Philippsborn",1908,"Berlin",52.51842,13.45436,"p"],
+["ber-11234","Rosalie Philippsborn",1878,"Berlin",52.51881,13.45416,"p"],
+["ber-12006","Alma Placzek",1886,"Berlin",52.53169,13.39005,"p"],
+["ber-12004","Else Placzek",1882,"Berlin",52.53167,13.39006,"p"],
+["ber-12003","Leo Placzek",1876,"Berlin",52.53168,13.39004,"p"],
+["ber-12066","Herta Pommerening",1896,"Berlin",52.53156,13.4436,"p"]
+]}

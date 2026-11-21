@@ -1,0 +1,15 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":6,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-11537","Elli Leiser",1891,null,"Berlin","l"],
+["ber-12055","Else Feldheim",1891,null,"Berlin","f"],
+["ber-12164","Leo Julius",1891,null,"Berlin","j"],
+["ber-12317","Lina Grinbaum",1891,null,"Berlin","g"],
+["ber-11657","Siegfried Neumann",1891,null,"Berlin","n"],
+["ber-12179","Walter Wind",1891,null,"Berlin","w"]
+],
+"year":1891}

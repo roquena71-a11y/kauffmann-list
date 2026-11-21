@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-11641","Hans Salomon",1911,null,"Berlin","s"],
+["ber-11644","Irma Salomon",1911,null,"Berlin","s"],
+["ber-11342","Marianne Erika Burstein",1911,null,"Berlin","b"],
+["ber-1237","von Erika Brockdorff",1911,null,"Berlin","b"],
+["ber-11947","Wolf Nelki",1911,null,"Berlin","n"]
+],
+"year":1911}

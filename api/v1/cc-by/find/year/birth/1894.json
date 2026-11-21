@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-11256","Henriette Heidemann",1894,null,"Berlin","h"],
+["ber-12345","Marie Anne Bauchwitz",1894,null,"Berlin","b"],
+["ber-11933","Osias Moses Trotino",1894,null,"Berlin","t"],
+["ber-342","Philipp Kozower",1894,null,"Berlin","k"],
+["ber-11665","Szeindel Melinger",1894,null,"Berlin","m"]
+],
+"year":1894}

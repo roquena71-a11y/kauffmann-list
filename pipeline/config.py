@@ -33,7 +33,7 @@ def validate_source(cfg, adapters):
     if cfg["adapter"] not in adapters:
         errs.append("adaptador desconocido: %s" % cfg["adapter"])
     fam = cfg["license_family"]
-    if not re.match(r"^[a-z0-9_]+(/[a-z0-9_]+)?$", fam):
+    if not re.match(r"^[a-z0-9_-]+(/[a-z0-9_-]+)?$", fam):  # v21: también cc-by y dl-de-zero
         errs.append("license_family inválida")
     if cfg["phase"] == 2 and fam != "partners/" + cfg["id"]:
         errs.append("una fuente de fase 2 debe tener su propia familia 'partners/%s' (nunca se mezcla con OSM)" % cfg["id"])

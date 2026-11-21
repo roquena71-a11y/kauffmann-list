@@ -1456,5 +1456,5 @@
 {"birth_year":1878,"ids":["wd-Q105559469","wd-Q105559471"],"name_key":"zofie lowyova"},
 {"birth_year":1925,"ids":["wd-Q104658333","wd-Q75728924"],"name_key":"zuzana glaserova"}
 ],
-"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-20","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
+"meta":{"attribution":["Wikidata (CC0 1.0, https://www.wikidata.org)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc0/index.json","family":"cc0","generated":"2026-11-21","license":"CC0-1.0","license_url":"https://creativecommons.org/publicdomain/zero/1.0/","source_url":"https://www.wikidata.org/wiki/Wikidata:Licensing"},
 "rule":"Mismo nombre normalizado y mismo año de nacimiento, sin identificador compartido. NO se han fusionado."}

@@ -1,0 +1,14 @@
+{"columns":["token","id","name","birth_year","death_year","place","people_prefix"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"prefix":"d",
+"rows":[
+["dagobert","ber-11784","Dagobert Kurzweg",1895,null,"Berlin","k"],
+["dalila","ber-11981","Dalila Wydra",1914,null,"Berlin","w"],
+["david","ber-11773","David Holdstein",1886,null,"Berlin","h"],
+["david","ber-11859","David Smedresman",1903,null,"Berlin","s"],
+["deborah","ber-10913","Deborah Tannenbaum",1916,null,"Berlin","t"],
+["dora","ber-12210","Dora Fröhlich",1887,null,"Berlin","f"],
+["dora","ber-12262","Dora Gerson",1899,null,"Berlin","g"],
+["dorothea","ber-3475","Dorothea Fromm",1908,null,"Berlin","f"],
+["dorothea","ber-11971","Dorothea Reichenbach",1866,null,"Berlin","r"]
+]}

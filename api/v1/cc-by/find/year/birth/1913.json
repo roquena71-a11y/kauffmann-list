@@ -1,0 +1,14 @@
+{"columns":["id","name","birth_year","death_year","place","people_prefix"],
+"count":5,
+"kind":"birth",
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"page":1,
+"pages":1,
+"rows":[
+["ber-11656","Gerda Wolff",1913,null,"Berlin","w"],
+["ber-11643","Helmut Salomon",1913,null,"Berlin","s"],
+["ber-11766","Herta Irmgard Berta Hirschmann",1913,null,"Berlin","h"],
+["ber-12315","Margot Markus",1913,null,"Berlin","m"],
+["ber-12266","Marie Rausnitz",1913,null,"Berlin","r"]
+],
+"year":1913}

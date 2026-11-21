@@ -20,6 +20,9 @@ async def main():
         pg = await ctx.new_page(); errs = []; reqs = []
         pg.on('pageerror', lambda e: errs.append(str(e))); pg.on('request', lambda r: reqs.append(r.url))
         await pg.route('**/data/stones.json', lambda r: r.fulfill(status=200, content_type='application/json', body=json.dumps(SUB, ensure_ascii=False)))
+        # v21: el mapa 2D también carga las listas municipales; en este fixture no hacen falta (solo IE/SE/JE/FI/RO).
+        empty_added = json.dumps({'meta': {}, 'stones': []})
+        await pg.route('**/data/*-added-*.json', lambda r: r.fulfill(status=200, content_type='application/json', body=empty_added))
         await pg.route('**/tile.openstreetmap.org/**', lambda r: r.abort())
         await pg.route('**/*.workers.dev/**', lambda r: r.abort())
         await pg.goto(BASE + '2d/index.html', wait_until='load')

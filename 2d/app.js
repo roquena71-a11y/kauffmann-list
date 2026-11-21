@@ -45,8 +45,12 @@ function search(){
 $('#q').addEventListener('input', () => { clearTimeout(search._t); search._t = setTimeout(search, 160); });
 $('#results').addEventListener('click', e => { const b = e.target.closest('button'); if (b) show(byId.get(b.dataset.id)); });
 
-fetch('../data/stones.json').then(r => r.json()).then(j => {
-  DATA = j.stones;
+Promise.all([
+  fetch('../data/stones.json').then(r => r.json()),
+  fetch('../data/berlin-added-20261121.json').then(r => r.json()),
+  fetch('../data/koeln-added-20261121.json').then(r => r.json())
+]).then(([j, berlin, koeln]) => {
+  DATA = j.stones.concat((berlin && berlin.stones) || [], (koeln && koeln.stones) || []);
   for (const s of DATA) {
     s._t = norm([s.n, s.a, s.c, s.cd].join(' ')).split(' ');
     byId.set(s.id, s);

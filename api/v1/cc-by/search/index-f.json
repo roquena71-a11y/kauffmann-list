@@ -1,0 +1,20 @@
+{"columns":["id","name","birth_year","locality","lat","lon","people_prefix"],
+"meta":{"attribution":["Koordinierungsstelle Stolpersteine Berlin, Liste der Stolpersteine Berlin (Creative Commons Attribution (cc-by), https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin)"],"catalog":"https://roquena71-a11y.github.io/kauffmann-list/api/v1/cc-by/index.json","family":"cc-by","generated":"2026-11-21","license":"CC-BY","license_url":"https://opendefinition.org/licenses/cc-by/","source_url":"https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin"},
+"prefix":"f",
+"rows":[
+["ber-11662","Edith Feige",1909,"Berlin",52.53345,13.40772,"f"],
+["ber-11663","Paul Feige",1908,"Berlin",52.53345,13.40772,"f"],
+["ber-12054","Benno Feldheim",1880,"Berlin",52.51235,13.41052,"f"],
+["ber-12055","Else Feldheim",1891,"Berlin",52.51235,13.41052,"f"],
+["ber-10180","Alice Ruth Feldmann",1899,"Berlin",52.46798,13.50362,"f"],
+["ber-7517","Frida Fischer",1877,"Berlin",52.57136,13.40968,"f"],
+["ber-3467","Elsa Veronika Fischl",1893,"Berlin",52.50847,13.58774,"f"],
+["ber-2614","Ottilie Frankenstein",1871,"Berlin",52.49684,13.32868,"f"],
+["ber-11680","Martha Freundlich",1886,"Berlin",52.53001,13.424,"f"],
+["ber-12058","Bianca Friedländer",1885,"Berlin",52.52627,13.39591,"f"],
+["ber-937","Elsa Tawrigowski genannt Friedländer",1902,"Berlin",52.49215,13.35117,"f"],
+["ber-938","Herbert Tawrigowski genannt Friedländer",1905,"Berlin",52.49215,13.35117,"f"],
+["ber-12209","Albert Martin Fröhlich",1882,"Berlin",52.58922,13.28452,"f"],
+["ber-12210","Dora Fröhlich",1887,"Berlin",52.58922,13.28452,"f"],
+["ber-3475","Dorothea Fromm",1908,"Berlin",52.50444,13.39273,"f"]
+]}
