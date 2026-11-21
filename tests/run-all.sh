@@ -26,7 +26,7 @@ if [ -f api/v1/openapi.json ] && [ -f llms-full.txt ]; then
   python3 tests/ai-sim.py . --n 10 --seed 1 | tail -1
   python3 tests/ai-sim.py . --n 10 --seed 2 | tail -1
 else
-  echo "(omitido: ai-door-check y ai-sim necesitan el sitio generado: python3 -m pipeline build --strict --sources stolpersteine_de,wikidata_holocaust_victims)"
+  echo "(omitido: ai-door-check y ai-sim necesitan el sitio generado: python3 -m pipeline build --strict --sources stolpersteine_de,wikidata_holocaust_victims,berlin_opendata,koeln_opendata)"
 fi
 # v19: columnas DIBUJADAS fuera de los edificios de OSM (necesita playwright + Chrome; si no hay, se omite con aviso)
 if [ -x /usr/bin/google-chrome ] && /usr/bin/python3 -c "import playwright" 2>/dev/null; then
