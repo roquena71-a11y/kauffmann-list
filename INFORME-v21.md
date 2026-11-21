@@ -92,7 +92,7 @@ El mapa carga las 1.550 placas nuevas de Colonia; la API de esa familia sigue en
 
 - Worktree: `/workspace/kl-v21`, rama `v21`, creada desde `b142fa48` (v20 publicada). Padre de esta corrección: `54cdee54`.
 - Commit local C ronda 2 (sin push): `a8817b90` y `1ce9f27d`, 2026-11-21 14:27 CET, padre `26d8eedd` (hashes anotados en el tip `17ef7fcc`).
-- Commit local C ronda 3 (sin push; el hash se anota en el commit siguiente): `dla`/`dlo` de 28 placas en `data/berlin-added-20261121.json` y `data/koeln-added-20261121.json`, test `tests/v21-new-render-placement.py` (width OSM, todas las vías a ≤80 m, malla 1,85 m, las 1.840), INFORME y ESTADO. Padre: `17ef7fcc`. Excluidos `__pycache__` y `pipeline/cache`. `data/stones.json` no forma parte del commit (sigue intacto).
+- Commit local C ronda 3 (sin push): `1df214863b1bf620ecab15654c345edf0ec04c04` (`1df21486`), 2026-11-21 15:32 CET, padre `17ef7fcc`: `dla`/`dlo` de 28 placas en `data/berlin-added-20261121.json` y `data/koeln-added-20261121.json`, test `tests/v21-new-render-placement.py` (width OSM, todas las vías a ≤80 m, malla 1,85 m, las 1.840), INFORME y ESTADO. Padre: `17ef7fcc`. Excluidos `__pycache__` y `pipeline/cache`. `data/stones.json` no forma parte del commit (sigue intacto).
 - `data/stones.json` intacto (72.110, solo ODbL, sha256 `2834ce9ab8747a04bfda2004ae5f83c7cc8d31b99bcdbc64128c670298fc09dc`).
 
 ## Dudas (no bloquean la preparación)

@@ -207,3 +207,7 @@ Colocar las 1.949 (dla/dlo, reglas v20; familias de API separadas; textos; tests
 - No se tocaron los worktrees ni HTTP de los auditores (C 8941/8942; B usó 18891/18971 y ya terminó). Sin push ni `publicar.yml`. `stones.json` intacto (sha256 `2834ce9ab8747a04bfda2004ae5f83c7cc8d31b99bcdbc64128c670298fc09dc`).
 - Commit local a continuación (JSON municipales, test de colocación, INFORME, ESTADO). Se excluyen `__pycache__` y `pipeline/cache`.
 
+
+## 15:32 Commit local C ronda 3 (sin push)
+
+- `1df214863b1bf620ecab15654c345edf0ec04c04` (`1df21486`), 2026-11-21 2026-11-21 15:32:34 CET, rama `v21`, padre `17ef7fcc`. Archivos: dla/dlo de Berlín y Colonia (28 placas), `tests/v21-new-render-placement.py`, INFORME, ESTADO. Excluidos `__pycache__` y `pipeline/cache`. Sin push, sin `publicar.yml`, sin hits al contador, sin borrar nada del disco. `stones.json` sha256 `2834ce9ab8747a04bfda2004ae5f83c7cc8d31b99bcdbc64128c670298fc09dc`.
