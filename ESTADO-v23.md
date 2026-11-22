@@ -1,8 +1,8 @@
-# ESTADO v23 — Mobile UX, Compass, Initial Framing & Performance (Rounds 1–2)
+# ESTADO v23 — Mobile UX, Compass, Initial Framing & Performance (Rounds 1–3)
 
 - **Branch:** `v23` (from `b45fcb95`, v22; local only, not pushed)
 - **Worktree:** `/workspace/kl-v23`
-- **App / SW version:** `v25` (`tests/bump-version.py`, `kauffmann-v25-pages`)
+- **App / SW version:** `v26` (`tests/bump-version.py`, `kauffmann-v26-pages`)
 - **Date:** 2026-11-22
 
 ## 1. Round 1 + Round 2 Fixes Implemented
@@ -59,3 +59,30 @@
   - `tests/v23-ux-and-perf-check.py` (UX + 2D offline real-SW + 4G/2×CPU load + street-zoom budget): **OK**.
 - **`publicar.yml` simulation (`--offline`, `REQUIRE_OAV=1`, `bwrap`):**
   - `pipeline build --strict --offline`, `pipeline validate`, `ai-door-check.py`, `ai-sim.py` (`20/20`), `version-test.cjs` (`v25`), `rsync` to `/tmp/kl-v23-site` (`16,085` files): **OK**.
+
+
+## 4. Round 3 — 2D Mobile Map Height (auditor A)
+
+Pre-existing bug on `ff39b1b1` (`v25`): on phone viewports (`390×844`, `360×800`) `/2d/` `#map` had **height 0**, so Leaflet initialized but painted nothing. Cause: `@media (max-width: 760px)` set `.layout { height: auto; flex-direction: column-reverse }` while `#map { flex: 1 }` (`flex-basis: 0%`) in a content-sized column, so the later `#map { height: 48vh }` did not give the item a used height.
+
+**Fix (`2d/style.css`, `2d/index.html`, `2d/app.js`):**
+- `body` is a column flex filling `100dvh`; `.layout` / `#map` grow into the remaining space (`min-height: 0`).
+- On `max-width: 760px`, the map stays `flex: 1 1 auto` with `min-height: 45vh` (search panel `max-height: 38vh` below); desktop side-by-side layout is unchanged.
+- `#map` has `role="region"` `aria-label="Mapa 2D"`; `:focus-visible` outline on controls (WCAG 2.2 AA). Gold square marker styling in `2d/app.js` is unchanged.
+- `map.invalidateSize()` on `resize` / `visualViewport` and after init so Leaflet picks up the filled viewport.
+- New `tests/map2d-mobile-check.py` (fails on `ff39b1b1` with `height: 0` at `390×844`/`360×800`; passes after the fix, also checks desktop `1280×800` and a rendered Leaflet pane), wired into `tests/run-all.sh` after `map2d-check.py`.
+- App / SW bumped to **`v26`** (`python3 tests/bump-version.py`) so phones fetch the new `2d/style.css?v=26`, `2d/app.js?v=26`, and `counter.js?v=26`.
+
+**Optional safe cleanups (`app3d.js`):**
+- Removed unused worker hooks `__wAsk` / `__w` from `load()`.
+- After `buildStones()`, `pts` and `a0` are updated from `VISIBLE` (alias dots no longer remain in the early overview). Data unchanged (`75,122` / `VISIBLE = 74,979`).
+
+**Screenshot:** `/workspace/v23-data/shots/after-2d-mobile-390x844.png` (`#map` `390×459` px, clusters and search visible).
+
+**Verification** (fresh venv `/tmp/v23-r3-venv`, `REQUIRE_OAV=1 tests/run-all.sh`, no skips, counters blocked via `bwrap`):
+- `tests/map2d-mobile-check.py`: **OK** (fails on `ff39b1b1` with `#map` height 0; passes after the fix).
+- All Node JS/data/dedupe/sidewalk/counter/update-flow/version (`v26`) checks: **OK**.
+- `pipeline/tests` (`68 tests`), `ai-door-check.py` (`0` errors, `4,519` find files, `733,929` rows), `ai-sim.py` (`20/20` seeds 1 & 2): **OK**.
+- `sidewalk-render-check.py`, `sidewalk-render-check20.py` (`9,329` stones), `map2d-check.py`, `v21-v20-render-compare.py` (`75,122`, v20 identical), `v21-new-render-placement.py`, `v22-render-compare.py` (`73,950` `moved=0 ang_only=0`, `1,172` `pin_fail=0`), `v22-new-render-placement.py` (`0` violations): **OK**.
+- `country-row-check.py`, `disc-card-check.py`, `attribution-check.py`, `v23-ux-and-perf-check.py` (`street_zoom=78ms/543ms`), `country-buttons-check.py` (`FALLOS: ninguno`): **OK**.
+- Final line: `run-all: OK`. Data unchanged (`API` families intact; map dump `n=75122`).

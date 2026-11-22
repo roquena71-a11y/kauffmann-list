@@ -3,6 +3,10 @@ const norm = s => String(s||'').toLowerCase().replace(/ß/g,'ss').replace(/ä/g,
 const $ = s => document.querySelector(s);
 let DATA = [], byId = new Map();
 const map = L.map('map', {zoomControl:true}).setView([51.1, 10.4], 6);
+const resizeMap = () => { try { map.invalidateSize(); } catch (e) {} };
+window.addEventListener('resize', resizeMap);
+if (window.visualViewport) visualViewport.addEventListener('resize', resizeMap);
+setTimeout(resizeMap, 0);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   attribution: '&copy; OpenStreetMap'

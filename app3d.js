@@ -882,12 +882,8 @@ async function load(){
   ];
   const pre = (typeof window !== 'undefined' && window.__klPre) || {};
   const fetchJson = u => fetch(u).then(r => { if (!r.ok) throw new Error(u+' '+r.status); return r.json(); });
-  const getJson = u => {
-    const p = pre[u] || (pre.__wAsk ? pre.__wAsk(u) : null);
-    return p ? Promise.resolve(p).catch(() => fetchJson(u)) : fetchJson(u);
-  };
+  const getJson = u => pre[u] ? Promise.resolve(pre[u]).catch(() => fetchJson(u)) : fetchJson(u);
   const [j, ...added] = await Promise.all([getJson('data/stones.json'), ...addedFiles.map(([, u]) => getJson(u))]);
-  if (pre.__w) { try { pre.__w.terminate(); } catch (_) {} delete pre.__w; delete pre.__wAsk; }
   META = j.meta; DATA = j.stones;
   const odblLen = j.stones.length;
   const addedCounts = {}, addedMeta = {};
@@ -921,13 +917,18 @@ async function load(){
   // Pintar la vista general (luz dorada y columnas a0) en cuanto llega el JSON, antes de buildStones().
   POINTS_FC = {type:'FeatureCollection', features: DATA.map(s => ({type:'Feature', properties:{}, geometry:{type:'Point', coordinates:[s.lo, s.la]}}))};
   buildAgg([LEVELS[0]]);
-  const agg0 = AGG[0];
+  let agg0 = AGG[0];
   tryAddOverlays();
   await new Promise(r => setTimeout(r, 0));
   buildStones();
+  // Sustituir el a0/pts provisional (todo DATA) por VISIBLE, sin los alias.
+  buildAgg([LEVELS[0]]);
+  agg0 = AGG[0];
   AGG = [agg0];
   if (map && map.getSource('pts')) {
-    // Añadir a1..a3, luces de casas, clusters y columnas de calle sin volver a trocear los 75k puntos de 'pts'.
+    if (POINTS_FC) map.getSource('pts').setData(POINTS_FC);
+    if (map.getSource('a0')) map.getSource('a0').setData(agg0.fc);
+    // Añadir a1..a3, luces de casas, clusters y columnas de calle.
     for (const {L, fc} of AGG) {
       if (L.min >= 7.5 && map.getZoom() < 6.5) continue;
       if (map.getSource(L.id)) { map.getSource(L.id).setData(fc); continue; }

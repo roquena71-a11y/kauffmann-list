@@ -42,6 +42,8 @@ if [ -x "$CHROME" ] && "$PYTHON" -c "import playwright" 2>/dev/null; then
   tail -1 /tmp/kl-sidewalk20.log
   "$PYTHON" tests/map2d-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-map2d.log 2>&1 || { tail -15 /tmp/kl-map2d.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-map2d.log
+  "$PYTHON" tests/map2d-mobile-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-map2d-mobile.log 2>&1 || { tail -15 /tmp/kl-map2d-mobile.log; kill $SRV; exit 1; }
+  tail -1 /tmp/kl-map2d-mobile.log
   # v21: las 72.110 placas de v20 deben dibujarse igual que en b142fa48; las nuevas, en su dla/dlo de archivo.
   V20_ROOT=${V20_CLIENT:-/workspace/countries-proto-v20r4}
   if [ -d "$V20_ROOT" ]; then
