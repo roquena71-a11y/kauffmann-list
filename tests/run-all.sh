@@ -91,6 +91,8 @@ if [ -x "$CHROME" ] && "$PYTHON" -c "import playwright" 2>/dev/null; then
   tail -1 /tmp/kl-disc.log
   "$PYTHON" tests/attribution-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-attr.log 2>&1 || { tail -15 /tmp/kl-attr.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-attr.log
+  "$PYTHON" tests/v23-ux-and-perf-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-v23ux.log 2>&1 || { tail -20 /tmp/kl-v23ux.log; kill $SRV; exit 1; }
+  tail -3 /tmp/kl-v23ux.log
   # encuadre de países (9 tamaños + 320x568; ~7 min). SKIP_COUNTRY_BUTTONS=1 lo omite en iteraciones rápidas.
   if [ -z "$SKIP_COUNTRY_BUTTONS" ]; then
     "$PYTHON" tests/country-buttons-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-cb.log 2>&1 || { tail -25 /tmp/kl-cb.log; kill $SRV; exit 1; }

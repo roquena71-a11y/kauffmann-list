@@ -73,15 +73,12 @@ async def run_axe(pg):
 
 
 async def block_counters(pg, seen_blocked):
-    async def handler(route):
-        u = route.request.url
-        if any(h in u for h in BLOCK_HOSTS):
-            seen_blocked.append(u)
-            await route.abort()
-        else:
-            await route.continue_()
+    async def abort_h(route):
+        seen_blocked.append(route.request.url)
+        await route.abort()
 
-    await pg.route('**/*', handler)
+    await pg.route('**/*kl-contador*', abort_h)
+    await pg.route('**/*.workers.dev/**', abort_h)
 
 
 async def check_ux(base_url: str):
@@ -216,7 +213,7 @@ async def check_ux(base_url: str):
         await pg.wait_for_timeout(200)
 
         # Rotate map -> compact single square compass appears, WCAG 2.2 AA + target size >= 24px, tap resets to 0
-        await pg.evaluate('map.jumpTo({bearing: 35})')
+        await pg.evaluate('void map.jumpTo({bearing: 35})')
         await pg.wait_for_timeout(300)
         rot = await pg.evaluate("""() => {
             const rb = document.getElementById('rotBtns');
@@ -247,7 +244,7 @@ async def check_ux(base_url: str):
         assert await pg.evaluate("document.getElementById('rotBtns').hidden") is True, "compass did not hide at north"
 
         # Zooming in mounts deferred 3D columns seamlessly
-        await pg.evaluate('map.jumpTo({center:[13.4,52.5], zoom:16.5, pitch:45, bearing:0})')
+        await pg.evaluate('void map.jumpTo({center:[-6.283,53.333], zoom:16.5, pitch:0, bearing:0})')
         await pg.wait_for_timeout(500)
         assert await pg.evaluate("!!map.getLayer('stones')") is True, "deferred 3D stones layer did not mount on zoom in"
 
@@ -325,7 +322,7 @@ async def check_load_budget():
         assert fcp <= 1500, f"FCP {fcp}ms exceeded 1500ms budget"
         assert t_dcl <= 2500, f"DCL {t_dcl}ms exceeded 2500ms budget"
         assert t_ov <= 12500, f"overlays {t_ov}ms exceeded 12500ms 4G-2xCPU budget (v22 baseline ~18800ms)"
-        print(f"OK v23 load budget (412x915 gzip 4G 20Mbps 2xCPU): fcp={fcp}ms dcl={t_dcl}ms vis={t_vis}ms overlays={t_ov}ms")
+        print(flush=True); print(f"OK v23 load budget (412x915 gzip 4G 20Mbps 2xCPU): fcp={fcp}ms dcl={t_dcl}ms vis={t_vis}ms overlays={t_ov}ms")
     finally:
         httpd.shutdown()
 

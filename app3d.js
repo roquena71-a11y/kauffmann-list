@@ -634,7 +634,7 @@ function setBuildingsVisible(on){
   if (map && map.getLayer('bldg3d')) map.setLayoutProperty('bldg3d', 'visibility', on ? 'visible' : 'none');
 }
 function tryAddOverlays(){
-  if (!map || !POINTS_FC || (!STONES_FC && !(typeof window!=='undefined' && window.KLCols)) || !AGG || !AGG.length){ if (map) map._pendingOverlays=true; return; }
+  if (!map || !map.getStyle() || !map.getStyle().layers || !POINTS_FC || (!STONES_FC && !(typeof window!=='undefined' && window.KLCols)) || !AGG || !AGG.length){ if (map) map._pendingOverlays=true; return; }
   if (map.getSource('pts')) return;
   try { addOverlays(); map._pendingOverlays=false; }
   catch (e) { console.warn('addOverlays', e); map._pendingOverlays=true; }
