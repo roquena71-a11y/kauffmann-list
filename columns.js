@@ -12,7 +12,7 @@
   const q = new URLSearchParams(location.search);
   let current = +(q.get('modelo') || 1);   // modelo elegido: 1 · Esquinas suaves (los otros solo con ?modelo= o ?modelos=1)
   if (!MODELS[current]) current = 1;
-  let layerIds = [], sourceIds = [], firstSym = null;
+  let layerIds = [], sourceIds = [], firstSym = null, pendingAdd = false;
   let T = 1, animating = false;
 
   function poly(lo, la, halfM, rad, ang){
@@ -45,8 +45,15 @@
     for (const id of sourceIds) if (map.getSource(id)) map.removeSource(id);
     layerIds = []; sourceIds = [];
   }
-  function add(firstSymbol){
+  function add(firstSymbol, force){
     if (firstSymbol !== undefined) firstSym = firstSymbol;
+    if (!map || !VISIBLE || !VISIBLE.length) return;
+    if (!force && map.getZoom() < 12.5 && !q.has('modelos') && !selected){
+      remove();
+      pendingAdd = true;
+      return;
+    }
+    pendingAdd = false;
     remove();
     const M = MODELS[current], before = map.getLayer('sel-glow') ? 'sel-glow' : undefined;
     M.parts.forEach((p, i) => {
@@ -73,7 +80,12 @@
     const step = now => { const k = Math.min(1, (now - t0) / dur); setT(k); if (k < 1) requestAnimationFrame(step); else animating = false; };
     setT(0); requestAnimationFrame(step);
   }
+  function ensureCols(){
+    if (!pendingAdd || !map) return;
+    if (map.getZoom() >= 12.5 || selected || q.has('modelos')) add(undefined, true);
+  }
   function filterSel(){
+    if (pendingAdd && selected && map && map.getZoom() >= 12.5) add(undefined, true);
     const f = selected ? ['!=', ['get','id'], selected] : null;
     for (const id of layerIds) if (map.getLayer(id)) map.setFilter(id, f);
     if (selected && map.getZoom() >= 14.6){
@@ -83,7 +95,7 @@
   }
   function setModel(n){
     if (!MODELS[n]) return; current = n;
-    add(); rise(); paintPicker();
+    add(undefined, true); rise(); paintPicker();
   }
 
   // subir cuando se entra a escala de calle
@@ -100,24 +112,53 @@
     map.getContainer().appendChild(d); paintPicker();   // dentro del mapa
   }
 
-  // ---------- botones de giro ----------
+  // ---------- brújula compacta (solo visible cuando el mapa está girado) ----------
+  function normBearing(deg){
+    let b = ((deg || 0) % 360 + 360) % 360;
+    return b > 180 ? b - 360 : b;
+  }
+  function updateCompass(updateLabel){
+    const d = document.getElementById('rotBtns'); if (!d || !map) return;
+    const b = normBearing(map.getBearing());
+    const rotated = Math.abs(b) >= 1;
+    d.hidden = !rotated;
+    if (!rotated) return;
+    const needle = d.querySelector('.kl-compass-needle');
+    if (needle) needle.style.transform = `rotate(${(-b).toFixed(1)}deg)`;
+    if (updateLabel !== false) relabel(Math.round(Math.abs(b)));
+  }
   function rotateButtons(){
     if (document.getElementById('rotBtns')) return;
-    const d = document.createElement('div'); d.id = 'rotBtns';
-    d.innerHTML = '<button data-r="-45" title="Girar a la izquierda" aria-label="Girar a la izquierda">⟲</button>' +
-                  '<button data-r="0" title="Mirar al norte" aria-label="Mirar al norte">N</button>' +
-                  '<button data-r="45" title="Girar a la derecha" aria-label="Girar a la derecha">⟳</button>';
-    d.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; const r = +b.dataset.r;
-      map.easeTo({bearing: r === 0 ? 0 : map.getBearing() + r, duration: 900, essential:true}); });
+    const d = document.createElement('div'); d.id = 'rotBtns'; d.hidden = true;
+    d.innerHTML = '<button type="button" id="rotNorth" data-r="0" title="Mirar al norte" aria-label="Mirar al norte">' +
+                  '<svg class="kl-compass-svg" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">' +
+                  '<g class="kl-compass-needle">' +
+                  '<polygon points="12,2.5 15.2,11.5 12,10 8.8,11.5" fill="currentColor"/>' +
+                  '<polygon points="12,21.5 15.2,12.5 12,14 8.8,12.5" fill="currentColor" opacity="0.35"/>' +
+                  '</g>' +
+                  '<text x="12" y="14.5" text-anchor="middle" font-size="6.5" font-weight="700" fill="currentColor" opacity="0.9">N</text>' +
+                  '</svg></button>';
+    d.addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      const dur = matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 500;
+      map.easeTo({bearing: 0, duration: dur, essential: true});
+    });
     map.getContainer().appendChild(d);           // dentro del mapa, también en el móvil
+    map.on('rotate', () => updateCompass(false));
+    map.on('rotateend', () => updateCompass(true));
+    map.on('moveend', () => updateCompass(true));
     relabel();
+    updateCompass(true);
   }
-  // textos de los botones de giro en el idioma elegido (ES/DE/EN, definidos en app3d.js)
-  function relabel(){
+  // texto de la brújula en el idioma elegido (ES/DE/EN, definidos en app3d.js)
+  function relabel(deg){
     // (aquí «T» es la variable de animación de este archivo, así que se lee la tabla I18N de app3d.js directamente)
     const d = document.getElementById('rotBtns'); if (!d || typeof I18N === 'undefined' || typeof lang === 'undefined') return;
-    const tr = I18N[lang] || I18N.es, keys = {'-45':'rotLeft', '0':'rotNorth', '45':'rotRight'};
-    d.querySelectorAll('button[data-r]').forEach(b => { const v = tr[keys[b.dataset.r]]; if (typeof v === 'string') { b.title = v; b.setAttribute('aria-label', v); } });
+    const b = d.querySelector('button[data-r="0"]'); if (!b) return;
+    const tr = I18N[lang] || I18N.es;
+    const nDeg = typeof deg === 'number' ? deg : Math.round(Math.abs(window.map ? normBearing(map.getBearing()) : 0));
+    const v = (nDeg >= 1 && typeof tr.rotNorthDeg === 'function') ? tr.rotNorthDeg(nDeg) : tr.rotNorth;
+    if (typeof v === 'string') { b.title = v; b.setAttribute('aria-label', v); }
   }
 
   // ---------- nombre al pasar el cursor o al tocar (solo s.n del dato; nunca se inventa) ----------
@@ -175,6 +216,7 @@
 
   window.KLCols = { add, filterSel, setModel, rise, MODELS, relabel };
   const boot = () => { if (!window.map || !map.on) return setTimeout(boot, 200);
+    map.on('zoom', ensureCols); map.on('moveend', ensureCols);
     map.on('zoomend', watchZoom); rotateButtons(); picker(); bindTip(); };
   boot();
 })();

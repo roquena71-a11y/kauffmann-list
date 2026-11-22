@@ -31,9 +31,9 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 10 10%22%3E%3Crect width=%2210%22 height=%2210%22 fill=%22%23c6a15b%22/%3E%3C/svg%3E">
 <link rel="stylesheet" href="fonts/fonts.css">
 <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
-<link rel="stylesheet" href="style.css?v=23">
-<link rel="stylesheet" href="style3d.css?v=23">
-<link rel="stylesheet" href="mapui.css?v=23">
+<link rel="stylesheet" href="style.css?v=24">
+<link rel="stylesheet" href="style3d.css?v=24">
+<link rel="stylesheet" href="mapui.css?v=24">
 <noscript><style>
   /* Sin JavaScript no hay intro ni mapa: se muestra el texto, la cabecera, los enlaces a los datos y el pie */
   .intro,html:not(.intro-skip) body .side,html:not(.intro-skip) body .mapwrap,html:not(.intro-skip) body .topright{display:none!important}
@@ -52,6 +52,9 @@
     var seen = false;
     try { seen = localStorage.getItem('kauffmann.introSeen') === '1'; } catch (e) {}
     if ((seen && !force) || skip) document.documentElement.classList.add('intro-skip');
+    if (typeof fetch === 'function') {
+      window.__klPre = { 'data/stones.json': fetch('data/stones.json') };
+    }
   })();
 </script>
 </head>
@@ -87,7 +90,7 @@
 
 <main class="layout">
   <aside class="side" id="side">
-    <button type="button" id="sheetHandle" class="sheet-handle" aria-controls="side" aria-expanded="false" data-i18n-aria="sheetOpen" aria-label="Mostrar resultados"><span aria-hidden="true"></span></button>
+    <button type="button" id="sheetHandle" class="sheet-handle" aria-controls="side" aria-expanded="false" data-i18n-aria="sheetOpen" aria-label="Mostrar resultados"><span class="sheet-bar" aria-hidden="true"></span><span class="sheet-lbl" data-i18n="sheetCollapsed">Buscar · Países</span></button>
     <div class="search">
       <label for="q" class="vh" data-i18n="searchLabel">Buscar</label>
       <input id="q" type="search" autocomplete="off" spellcheck="false" data-i18n-ph="searchPh" placeholder="Nombre, apellido o dirección…">
@@ -696,14 +699,14 @@
 }
 </script>
 <script src="vendor/maplibre/maplibre-gl.js"></script>
-<script src="imagery.js?v=23"></script>
-<script src="source-links.js?v=23"></script>
-<script src="dedupe.js?v=23"></script>
-<script src="app3d.js?v=23"></script>
-<script src="columns.js?v=23"></script>
-<script src="people.js?v=23"></script>
-<script src="mapui.js?v=23"></script>
-<script src="counter.js?v=23"></script>
+<script src="imagery.js?v=24"></script>
+<script src="source-links.js?v=24"></script>
+<script src="dedupe.js?v=24"></script>
+<script src="app3d.js?v=24"></script>
+<script src="columns.js?v=24"></script>
+<script src="people.js?v=24"></script>
+<script src="mapui.js?v=24"></script>
+<script src="counter.js?v=24"></script>
 <script>
 /* Service worker: la página nueva llega siempre (HTML y datos primero de la red; ver sw.js).
    Si se activa una versión nueva mientras la página está abierta, se recarga una sola vez. */

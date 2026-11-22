@@ -78,8 +78,14 @@ body.dark .countries .n{color:#e0bc62}
     border:0;border-top:1px solid #3a4e6b;border-radius:14px 14px 0 0;box-shadow:0 -8px 24px rgba(0,0,0,.45);overflow:hidden;
     transition:height .22s ease;padding-bottom:env(safe-area-inset-bottom)}
   html.js .side.dragging{transition:none}
-  html.js .sheet-handle{display:flex;justify-content:center;align-items:center;width:100%;height:24px;flex:none;border:0;background:transparent;cursor:grab;padding:0;touch-action:none}
-  html.js .sheet-handle span{width:44px;height:5px;border-radius:3px;background:#8d99ab}
+  html.js .sheet-handle{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;width:100%;height:28px;flex:none;border:0;background:transparent;color:#d6d0c4;cursor:grab;padding:0;touch-action:none}
+  html.js .sheet-handle .sheet-bar{width:44px;height:5px;border-radius:3px;background:#8d99ab}
+  html.js .sheet-handle .sheet-lbl{display:none;font:600 .8rem/1 var(--sans, Heebo, sans-serif);letter-spacing:.02em;color:#f0d48a}
+  html.js .side[data-sheet=collapsed] .sheet-handle{height:46px;cursor:pointer}
+  html.js .side[data-sheet=collapsed] .sheet-handle .sheet-lbl{display:block}
+  html.js .side[data-sheet=collapsed] .search,
+  html.js .side[data-sheet=collapsed] .results,
+  html.js .side[data-sheet=collapsed] .detail{display:none}
   html.js .sheet-handle:focus-visible{outline-offset:-3px}
   html.js .search{padding:0 .75rem .6rem;touch-action:none}
   html.js .search input{font-size:16px;min-height:46px}
@@ -94,9 +100,9 @@ body.dark .countries .n{color:#e0bc62}
   html.js .countries.more-open{max-height:11.5rem;overflow-y:auto;overscroll-behavior:contain}   /* v20: abierta, la lista tiene scroll propio (más específico que overflow:visible de arriba) */
   html.js .results,html.js .detail{overscroll-behavior:contain}
   html.js .results button{min-height:44px}
-  /* controles del mapa por encima de la hoja */
-  html.js #rotBtns{top:auto;bottom:calc(var(--sheet-h) + 46px);left:10px;right:auto;transform:none;flex-direction:row;gap:6px}
-  html.js #rotBtns button{width:40px;height:40px}
+  /* brújula compacta sobre el mapa (por encima de la hoja y la atribución) */
+  html.js #rotBtns{top:auto;bottom:calc(var(--sheet-h) + 44px);left:10px;right:auto;transform:none}
+  html.js #rotBtns button{width:36px;height:36px}
   html.js body.layers-open #rotBtns{display:none}
   html.js .aerial-hud{top:calc(var(--top-h) + 10px);bottom:auto;left:64px;right:60px;transform:none;width:auto}
   html.js .imgcredit{bottom:calc(var(--sheet-h) + 84px);left:8px;right:8px}

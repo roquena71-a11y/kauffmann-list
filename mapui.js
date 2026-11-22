@@ -41,18 +41,21 @@
   const DEFAULT_BOUNDS = [[-6.4, 47.2], [15.1, 55.1]];   // Alemania + Irlanda (antes de cargar los datos)
 
   /* ---------- medidas de la pantalla del teléfono ---------- */
+  const COLLAPSED_H = 46;
   let sheet = 'peek', peekH = 150;
   function topH(){ return isMobile() && top ? top.getBoundingClientRect().height : 0; }
   function vh(){ return window.innerHeight || document.documentElement.clientHeight; }
   function measurePeek(){
     if (!isMobile()) return;
     const search = side.querySelector('.search'), filters = side.querySelector('.filters');
+    if (!search || getComputedStyle(search).display === 'none') return;
     const fh = (filters && getComputedStyle(filters).display !== 'none') ? filters.getBoundingClientRect().height + 8 : 0;
     peekH = Math.round(handle.getBoundingClientRect().height + search.getBoundingClientRect().height - fh);
     peekH = Math.max(96, Math.min(peekH, Math.round(vh() * (isLand() ? 0.5 : 0.4))));   // v19: en horizontal la hoja cerrada puede llegar a la mitad para que se vea la fila de países entera
   }
   function heightFor(st){
     const max = vh() - topH() - 6;
+    if (st === 'collapsed' && !isLand()) return COLLAPSED_H;
     if (st === 'full' || (st === 'half' && isLand())) return max;
     if (st === 'half'){
       let hh = Math.min(max, Math.max(peekH + 120, Math.round(vh() * 0.5)));
@@ -69,13 +72,14 @@
   }
   function setSheet(st, opts){
     if (!isMobile()){ side.removeAttribute('data-sheet'); side.style.height = ''; paintVars(0); return; }
+    if (isLand() && st === 'collapsed') st = 'peek';
     sheet = st; side.dataset.sheet = st;
     if (st === 'peek') measurePeek();
     const h = heightFor(st);
     side.style.height = h + 'px';
     paintVars(h);
-    handle.setAttribute('aria-expanded', st === 'peek' ? 'false' : 'true');
-    const lab = T(st === 'peek' ? 'sheetOpen' : st === 'half' ? 'sheetFull' : 'sheetClose');
+    handle.setAttribute('aria-expanded', (st === 'collapsed' || st === 'peek') ? 'false' : 'true');
+    const lab = st === 'collapsed' ? `${T('sheetCollapsed')} — ${T('sheetOpen')}` : T('sheetClose');
     handle.setAttribute('aria-label', lab); handle.title = lab;
     if (!(opts && opts.quiet) && window.map) setTimeout(() => map.resize(), 0);
   }
@@ -88,40 +92,62 @@
   };
 
   /* ---------- hoja inferior (teléfono) ---------- */
-  function cycle(){ if (isLand()) { setSheet(sheet === 'peek' ? 'full' : 'peek'); return; } setSheet(sheet === 'peek' ? 'half' : sheet === 'half' ? 'full' : 'peek'); }
-  handle.addEventListener('click', e => { if (dragMoved) { e.preventDefault(); return; } cycle(); });
+  function toggleTap(){
+    if (isLand()) { setSheet(sheet === 'peek' ? 'full' : 'peek'); return; }
+    if (sheet === 'collapsed') setSheet(!$('#detail').hidden || ($('#q').value && $('#results').children.length) ? 'half' : 'peek');
+    else setSheet('collapsed');
+  }
+  handle.addEventListener('click', e => { if (dragMoved) { e.preventDefault(); return; } toggleTap(); });
   handle.addEventListener('keydown', e => {
-    if (e.key === 'ArrowUp'){ e.preventDefault(); setSheet(sheet === 'peek' ? 'half' : 'full'); }
-    else if (e.key === 'ArrowDown'){ e.preventDefault(); setSheet(sheet === 'full' ? 'half' : 'peek'); }
-    else if (e.key === 'Escape' && sheet !== 'peek'){ e.preventDefault(); setSheet('peek'); }
+    if (e.key === 'ArrowUp'){ e.preventDefault(); setSheet(sheet === 'collapsed' ? 'peek' : sheet === 'peek' ? 'half' : 'full'); }
+    else if (e.key === 'ArrowDown'){ e.preventDefault(); setSheet(sheet === 'full' ? 'half' : sheet === 'half' ? 'peek' : 'collapsed'); }
+    else if (e.key === 'Escape' && sheet !== 'collapsed'){ e.preventDefault(); setSheet('collapsed'); }
   });
   // Arrastrar la hoja (asa o cabecera de búsqueda, sin contar el campo de texto). También se puede con el botón (WCAG 2.5.7).
   let drag = null, dragMoved = false;
   function onDown(e){
     if (!isMobile() || e.button > 0) return;
     if (e.target.closest('input,select,textarea,a,.countries button')) return;
-    drag = {y: e.clientY, h: side.getBoundingClientRect().height, t: performance.now(), id: e.pointerId}; dragMoved = false;
+    drag = {y: e.clientY, h: side.getBoundingClientRect().height, t: performance.now(), id: e.pointerId, start: sheet}; dragMoved = false;
   }
   function onMove(e){
     if (!drag || e.pointerId !== drag.id) return;
     const dy = e.clientY - drag.y;
     if (!dragMoved && Math.abs(dy) < 6) return;
-    if (!dragMoved){ dragMoved = true; side.classList.add('dragging'); try { e.target.setPointerCapture(e.pointerId); } catch (_) {} }
-    const h = Math.max(peekH * 0.8, Math.min(heightFor('full'), drag.h - dy));
+    if (!dragMoved){
+      dragMoved = true;
+      side.classList.add('dragging');
+      if (side.dataset.sheet === 'collapsed') side.dataset.sheet = 'drag';
+      try { e.target.setPointerCapture(e.pointerId); } catch (_) {}
+    }
+    const minH = isLand() ? peekH * 0.8 : heightFor('collapsed');
+    const h = Math.max(minH, Math.min(heightFor('full'), drag.h - dy));
     side.style.height = h + 'px';
+    paintVars(h);
     e.preventDefault();
   }
   function onUp(e){
     if (!drag || e.pointerId !== drag.id) return;
     const d = drag; drag = null; side.classList.remove('dragging');
     if (!dragMoved) return;
-    const h = side.getBoundingClientRect().height, v = (e.clientY - d.y) / Math.max(1, performance.now() - d.t);
+    const h = side.getBoundingClientRect().height, dy = e.clientY - d.y, v = dy / Math.max(1, performance.now() - d.t);
+    const states = isLand() ? ['peek', 'full'] : ['collapsed', 'peek', 'half', 'full'];
     let st;
-    if (v > 0.6) st = sheet === 'full' && h > heightFor('half') * 0.8 ? 'half' : 'peek';
-    else if (v < -0.6) st = h > heightFor('half') + 40 ? 'full' : 'half';
-    else st = ['peek', 'half', 'full'].map(s => [s, Math.abs(heightFor(s) - h)]).sort((a, b) => a[1] - b[1])[0][0];
+    if (v > 0.45){
+      if (d.start === 'full' && h > heightFor('half') * 0.85) st = 'half';
+      else if (d.start !== 'peek' && h > peekH * 0.82 && !isLand()) st = 'peek';
+      else st = isLand() ? 'peek' : 'collapsed';
+    } else if (v < -0.45){
+      if (d.start === 'collapsed' && h < heightFor('half') * 0.72) st = 'peek';
+      else if (h > heightFor('half') + 40) st = 'full';
+      else st = isLand() ? 'full' : 'half';
+    } else {
+      if (!isLand() && d.start === 'peek' && dy >= 28) st = 'collapsed';
+      else if (!isLand() && d.start === 'collapsed' && dy <= -28) st = h > heightFor('half') * 0.75 ? (h > heightFor('half') + 40 ? 'full' : 'half') : 'peek';
+      else st = states.map(s => [s, Math.abs(heightFor(s) - h)]).sort((a, b) => a[1] - b[1])[0][0];
+    }
     setSheet(st);
-    setTimeout(() => { dragMoved = false; }, 0);
+    setTimeout(() => { dragMoved = false; }, 50);
   }
   for (const el of [handle, side.querySelector('.search')]){
     el.addEventListener('pointerdown', onDown);
@@ -131,8 +157,8 @@
   }
   // Escribir, ver resultados o abrir una ficha: la hoja sube a la mitad.
   const q = $('#q');
-  q.addEventListener('focus', () => { if (isMobile() && sheet === 'peek') setSheet('half'); });
-  const grow = () => { if (isMobile() && sheet === 'peek') setSheet('half'); };
+  q.addEventListener('focus', () => { if (isMobile() && (sheet === 'peek' || sheet === 'collapsed')) setSheet('half'); });
+  const grow = () => { if (isMobile() && (sheet === 'peek' || sheet === 'collapsed')) setSheet('half'); };
   new MutationObserver(() => { const open = !$('#detail').hidden; side.classList.toggle('has-detail', open); if (open) grow(); }).observe($('#detail'), {attributes: true, attributeFilter: ['hidden']});
   new MutationObserver(() => { if ($('#results').children.length && document.activeElement === q) grow(); }).observe($('#results'), {childList: true});
 
@@ -239,9 +265,9 @@
     for (const c of COUNTRIES){ w = Math.min(w, c.w); s = Math.min(s, c.s); e = Math.max(e, c.e); n = Math.max(n, c.nn); }
     return [[w - 0.2, s - 0.2], [e + 0.2, n + 0.2]];
   }
-  // Cámara que muestra todas las placas (cálculo propio en Mercator: cameraForBounds de MapLibre aleja de más con el mapa inclinado).
-  function fitCamera(bounds){
-    const el = map.getContainer(), p = padding();
+  // Cámara en Mercator (cameraForBounds de MapLibre aleja de más con el mapa inclinado).
+  function fitCamera(bounds, pad){
+    const el = map.getContainer(), p = pad || padding();
     const W = Math.max(50, el.clientWidth - p.left - p.right), H = Math.max(50, el.clientHeight - p.top - p.bottom);
     const mx = lo => (lo + 180) / 360, my = la => { const r = la * Math.PI / 180; return (1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2; };
     const [[w, s], [e, n]] = bounds;
@@ -254,12 +280,19 @@
     const lon = X * 360 - 180, lat = Math.atan(Math.sinh(Math.PI * (1 - 2 * Y))) * 180 / Math.PI;
     return {center: [lon, lat], zoom};
   }
+  // Encuadre inicial centrado en Europa central/occidental (evita encoger el mapa al mundo entero por extremos en el Ártico o el sur).
+  const HOME_BOUNDS = [[-6.4, 45.2], [17.5, 55.6]];
+  function homePadding(){
+    if (isLand()) return {top: topH() + 16, bottom: 24, left: Math.round(side.getBoundingClientRect().width) + 16, right: 56};
+    if (isMobile()) return {top: topH() + 12, bottom: Math.round(heightFor(sheet === 'collapsed' ? 'collapsed' : 'peek')) + 28, left: 14, right: 14};
+    return {top: 20, bottom: 80, left: 20, right: 56};
+  }
   function homeCamera(){
     if (!window.map) return {};
     let cam = null;
-    try { cam = fitCamera(dataBounds()); } catch (e) {}
+    try { cam = fitCamera(HOME_BOUNDS, homePadding()); } catch (e) {}
     if (!cam || !isFinite(cam.zoom)) return {};
-    return {center: cam.center, zoom: Math.max(1, Math.min(cam.zoom - 0.15, 6)), pitch: isMobile() ? 40 : 50, bearing: -8};
+    return {center: cam.center, zoom: Math.max(3.2, Math.min(cam.zoom, 6)), pitch: isMobile() ? 40 : 50, bearing: 0};
   }
   let userMoved = false;
   const deep = () => /#s=/.test(location.hash) || /[?&](q|vigil)=/.test(location.search);
@@ -346,7 +379,7 @@
       if (!isMobile()) return;
       let hit = [];
       try { hit = map.queryRenderedFeatures(e.point).filter(f => f.layer && !quiet.has(f.layer.id) && f.layer.source !== 'openmaptiles' && f.layer.source !== 'eox'); } catch (_) {}
-      if (!hit.length && sheet !== 'peek' && $('#detail').hidden) setSheet('peek');
+      if (!hit.length && (sheet === 'half' || sheet === 'full') && $('#detail').hidden) setSheet('peek');
     });
     map.on('dragstart', () => { if (isMobile() && sheet === 'full') setSheet('half'); });
   })();

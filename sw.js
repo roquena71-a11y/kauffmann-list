@@ -7,10 +7,10 @@
    · Archivos de la app → con ?v=N en index.html y en SHELL; nueva versión = URL nueva, nunca mezcla de versiones.
    · Al activarse una versión nueva sobre una anterior, las pestañas abiertas se recargan una vez (también las de una versión
      antigua, que no saben escuchar 'controllerchange'). */
-const VERSION = 'kauffmann-v23-pages';
+const VERSION = 'kauffmann-v24-pages';
 const SHELL = ['./','index.html',
-  // index.html pide estos archivos con ?v=23: así una página nueva nunca se mezcla con archivos viejos de la caché.
-  'style.css?v=23','style3d.css?v=23','mapui.css?v=23','app3d.js?v=23','people.js?v=23','columns.js?v=23','imagery.js?v=23','source-links.js?v=23','dedupe.js?v=23','counter.js?v=23','mapui.js?v=23',
+  // index.html pide estos archivos con ?v=24: así una página nueva nunca se mezcla con archivos viejos de la caché.
+  'style.css?v=24','style3d.css?v=24','mapui.css?v=24','app3d.js?v=24','people.js?v=24','columns.js?v=24','imagery.js?v=24','source-links.js?v=24','dedupe.js?v=24','counter.js?v=24','mapui.js?v=24',
   'manifest.webmanifest',
   'kauffmann-list.jsonld','robots.txt','sitemap.xml','data/bio/manifest.json',
   'proyecto/','proyecto/index.html','proyecto/proyecto.css','proyecto/proyecto.js',
@@ -27,7 +27,7 @@ const SHELL = ['./','index.html',
   'fonts/NGS6v5_NC0k9P9H4TbFzsQ.woff2',
   'geo/de-states.json',
   'vendor/maplibre/maplibre-gl.js','vendor/maplibre/maplibre-gl.css',
-  '2d/','2d/index.html','2d/app.js?v=23','2d/style.css',
+  '2d/','2d/index.html','2d/app.js?v=24','2d/style.css',
   'vendor/leaflet/leaflet.js','vendor/leaflet/leaflet.css','vendor/leaflet.markercluster/leaflet.markercluster.js','vendor/leaflet.markercluster/MarkerCluster.css',
   'icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL.map(u => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting())); });
@@ -52,14 +52,14 @@ const isFresh = (url, req) => req.mode === 'navigate' || /\.html$|\/$/.test(url.
   url.pathname.includes('/data/') || url.pathname.includes('/api/') || /\.(json|jsonld|txt|xml|webmanifest)$/.test(url.pathname);
 // Clave de caché: las páginas se guardan sin «?q=…»/«#…» (una sola copia por página, no una por búsqueda).
 const keyFor = (req, url) => req.mode === 'navigate' ? new Request(url.origin + url.pathname) : req;
-const SLOW_MS = 4500;   // red lenta: pasado este tiempo, si hay copia guardada se muestra la copia (y la red la renueva por detrás)
+const SLOW_MS = 1800;   // red lenta: pasado este tiempo, si hay copia guardada se muestra la copia (y la red la renueva por detrás)
 // Tope de copias en tiempo de ejecución: como mucho MAX_RT respuestas de /data/ y otras tantas de /api/; se borran las más antiguas.
 const MAX_RT = 40;
 async function trim(c, url) {
   const part = url.pathname.includes('/api/') ? '/api/' : url.pathname.includes('/data/') ? '/data/' : null;
   if (!part) return;
   const keep = new Set(SHELL.map(u => new URL(u, self.location.href).href));
-  const core = p => /\/data\/(stones\.json|bio\/manifest\.json)$/.test(p);   // las placas y el índice de biografías no se borran nunca
+  const core = p => /\/data\/(stones\.json|bio\/manifest\.json|[^/]+-added-\d+\.json)$/.test(p);   // las placas, listas municipales y el índice de biografías no se borran nunca
   const ks = (await c.keys()).filter(k => { const p = new URL(k.url).pathname; return p.includes(part) && !keep.has(k.url) && !core(p); });
   for (const k of ks.slice(0, Math.max(0, ks.length - MAX_RT))) await c.delete(k);
 }

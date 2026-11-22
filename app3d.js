@@ -130,9 +130,9 @@ const EXTRA = {
        attribution3d:'Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL), <a href="https://www.wikidata.org">Wikidata</a> (CC0), Koordinierungsstelle Stolpersteine Berlin (CC BY) and municipal open datasets (dl-de/zero-2-0, dl-de/by-2-0, CC BY 4.0, CC0). Base map: <a href="https://openfreemap.org">OpenFreeMap</a> © OpenMapTiles.' }
 };
 for (const l in EXTRA) Object.assign(I18N[l], EXTRA[l]);
-Object.assign(I18N.es, {pitchTo3d:'3D: ver en ángulo', pitchTo2d:'2D: ver desde arriba', pitchFlatOnly:'La foto de 1945 se ve solo desde arriba', rotLeft:'Girar a la izquierda', rotNorth:'Mirar al norte', rotRight:'Girar a la derecha'});
-Object.assign(I18N.de, {pitchTo3d:'3D: schräg ansehen', pitchTo2d:'2D: von oben ansehen', pitchFlatOnly:'Das Luftbild von 1945 gibt es nur von oben', rotLeft:'Nach links drehen', rotNorth:'Nach Norden ausrichten', rotRight:'Nach rechts drehen'});
-Object.assign(I18N.en, {pitchTo3d:'3D: view at an angle', pitchTo2d:'2D: view from above', pitchFlatOnly:'The 1945 photo can only be viewed from above', rotLeft:'Rotate left', rotNorth:'Face north', rotRight:'Rotate right'});
+Object.assign(I18N.es, {pitchTo3d:'3D: ver en ángulo', pitchTo2d:'2D: ver desde arriba', pitchFlatOnly:'La foto de 1945 se ve solo desde arriba', rotLeft:'Girar a la izquierda', rotNorth:'Mirar al norte', rotNorthDeg:d=>`Mirar al norte (${d}°)`, rotRight:'Girar a la derecha', sheetCollapsed:'Buscar · Países'});
+Object.assign(I18N.de, {pitchTo3d:'3D: schräg ansehen', pitchTo2d:'2D: von oben ansehen', pitchFlatOnly:'Das Luftbild von 1945 gibt es nur von oben', rotLeft:'Nach links drehen', rotNorth:'Nach Norden ausrichten', rotNorthDeg:d=>`Nach Norden ausrichten (${d}°)`, rotRight:'Nach rechts drehen', sheetCollapsed:'Suche · Länder'});
+Object.assign(I18N.en, {pitchTo3d:'3D: view at an angle', pitchTo2d:'2D: view from above', pitchFlatOnly:'The 1945 photo can only be viewed from above', rotLeft:'Rotate left', rotNorth:'Face north', rotNorthDeg:d=>`Face north (${d}°)`, rotRight:'Rotate right', sheetCollapsed:'Search · Countries'});
 // Privacy note in «Acerca de»: honest in both states of the visit counter (counter.js; own counter in contador/, on since v13).
 Object.assign(I18N.es, {privacyHtml:on=>on
   ? '<p><strong>Privacidad.</strong> Sin cookies, sin publicidad y sin perfiles. Contamos las visitas con un contador propio (código abierto, en una cuenta personal de Cloudflare): solo se envía la sección visitada, nunca el nombre buscado ni la ficha abierta. Como cualquier servidor, Cloudflare recibe la dirección IP y el navegador para entregar la petición; nuestro contador no los lee ni los guarda, no tiene registros activados y solo guarda el número de visitas por día. Si su navegador pide «no rastrear», su visita no se cuenta.</p>'
@@ -215,9 +215,11 @@ function square(lo, la, halfM, ang){
 // Individual columns: stones of the same house are laid out as a neat grid around the true point
 // (same size everywhere: 1.20 m wide, 16 m tall). The detail panel and directions still use the recorded coordinates.
 const COL_HALF = 0.60, COL_STEP = 1.85, COL_H = 16, COL_GAP_MIN = 1.55;
+const DE_COLLATOR = typeof Intl !== 'undefined' ? new Intl.Collator('de') : null;
+const _foldAddr = t => (t||'').toLowerCase().replace(/ß/g,'ss').replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue');
 function addrKey(s){
-  const fold = t => (t||'').toLowerCase().replace(/ß/g,'ss').replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue');
-  let a = fold(s.a)
+  if (s._ak !== undefined) return s._ak;
+  let a = _foldAddr(s.a)
     .replace(/\b\d{5}\b/g,'')
     .replace(/\b(deutschland|germany)\b/g,'')
     .replace(/[.,;/]/g,' ')
@@ -228,7 +230,7 @@ function addrKey(s){
   // Keep street + house number; drop trailing place names so "… 14, Berlin-Tempelhof" matches "… 14".
   const m = a.match(/^(.*?)(\d+\s*[a-z]?)(?:\s+|$)/);
   if (m) a = (m[1]+m[2]).replace(/\s+/g,' ').trim();
-  return a;
+  return (s._ak = a);
 }
 function streetKey(s){ return addrKey(s).replace(/\d+\s*[a-z]?$/i,'').trim(); }
 function distM(la1,lo1,la2,lo2){
@@ -241,10 +243,30 @@ function clusterByDist(list, maxD){
   if (n === 1) return [list.slice()];
   const parent = list.map((_,i)=>i);
   const find = i => parent[i]===i ? i : (parent[i]=find(parent[i]));
-  for (let i=0;i<n;i++) for (let j=i+1;j<n;j++)
-    if (distM(list[i].la,list[i].lo,list[j].la,list[j].lo) <= maxD){
-      const a=find(i), b=find(j); if (a!==b) parent[a]=b;
+  if (n <= 40){
+    for (let i=0;i<n;i++) for (let j=i+1;j<n;j++)
+      if (distM(list[i].la,list[i].lo,list[j].la,list[j].lo) <= maxD){
+        const a=find(i), b=find(j); if (a!==b) parent[a]=b;
+      }
+  } else {
+    const cell = Math.max(maxD / M_LAT * 3.5, 0.0001);
+    const grid = new Map();
+    for (let i=0;i<n;i++){
+      const k = Math.floor(list[i].la / cell) + ':' + Math.floor(list[i].lo / cell);
+      let arr = grid.get(k); if (!arr){ arr = []; grid.set(k, arr); }
+      arr.push(i);
     }
+    for (let i=0;i<n;i++){
+      const a0 = Math.floor(list[i].la / cell), b0 = Math.floor(list[i].lo / cell);
+      for (let di=-1;di<=1;di++) for (let dj=-1;dj<=1;dj++){
+        const arr = grid.get((a0+di) + ':' + (b0+dj));
+        if (!arr) continue;
+        for (const j of arr) if (j > i && distM(list[i].la,list[i].lo,list[j].la,list[j].lo) <= maxD){
+          const a=find(i), b=find(j); if (a!==b) parent[a]=b;
+        }
+      }
+    }
+  }
   const m = new Map();
   list.forEach((s,i)=> (m.get(find(i)) || m.set(find(i),[]).get(find(i))).push(s));
   return [...m.values()];
@@ -265,7 +287,7 @@ function fillFrom(pri, o){
   if (!pri.img && o.img) pri.img = o.img;
   if (!pri.wd && o.wd) pri.wd = o.wd;
   if (!pri.p && o.p) pri.p = o.p;
-  if (!pri.a && o.a) pri.a = o.a;
+  if (!pri.a && o.a){ pri.a = o.a; delete pri._ak; }
   if (!pri.c && o.c) pri.c = o.c;
   if (!pri.laid && o.laid) pri.laid = o.laid;
   if (!pri.wp && o.wp) pri.wp = o.wp;
@@ -402,7 +424,7 @@ function buildStones(){
 
   const groups = clusters.map(g => {
     const vis=g.filter(s=>!s._aliasOf);
-    vis.sort((a,b)=> ((a._n||a.n)||'').localeCompare((b._n||b.n)||'','de') || String(a.id).localeCompare(String(b.id)));
+    if (vis.length > 1) vis.sort((a,b)=> (DE_COLLATOR ? DE_COLLATOR.compare((a._n||a.n)||'', (b._n||b.n)||'') : ((a._n||a.n)||'').localeCompare((b._n||b.n)||'','de')) || String(a.id).localeCompare(String(b.id)));
     const la0 = g.reduce((t,s)=>t+s.la,0)/g.length;
     const lo0 = g.reduce((t,s)=>t+s.lo,0)/g.length;
     // v20: grupo «fijo» = todas sus placas traen posición de dibujo calculada en el servidor (dla/dlo, ya fuera de los edificios): la separación de grupos no lo mueve ni lo encoge.
@@ -417,12 +439,20 @@ function buildStones(){
   function neighbors(pg, i, radius, cell, near){
     const pts=[], idxs=[];
     if (!pg.sk) return {pts, idxs};
+    const sm = near.get(pg.sk);
+    if (!sm) return {pts, idxs};
     const a0=Math.floor(pg.la0/cell), b0=Math.floor(pg.lo0/cell);
-    for (let di=-2;di<=2;di++) for (let dj=-2;dj<=2;dj++)
-      for (const j of (near.get(pg.sk+'|'+((a0+di)+':'+(b0+dj)))||[])){
-        const o=groups[j];
-        if (distM(pg.la0,pg.lo0,o.la0,o.lo0)<=radius){ pts.push({la:o.la0, lo:o.lo0}); idxs.push(j); }
+    for (let di=-2;di<=2;di++){
+      const row=(a0+di+500000)*1000000;
+      for (let dj=-2;dj<=2;dj++){
+        const bucket=sm.get(row+(b0+dj+500000));
+        if (!bucket) continue;
+        for (let k=0;k<bucket.length;k++){
+          const j=bucket[k], o=groups[j];
+          if (distM(pg.la0,pg.lo0,o.la0,o.lo0)<=radius){ pts.push({la:o.la0, lo:o.lo0}); idxs.push(j); }
+        }
       }
+    }
     return {pts, idxs};
   }
   function meanAngle(angs){
@@ -432,8 +462,13 @@ function buildStones(){
     let m=0.5*Math.atan2(y,x); if (m<0) m+=Math.PI; return m;
   }
   const cellA=0.001, near=new Map();
-  const akey=(sk,la,lo)=>sk+'|'+Math.floor(la/cellA)+':'+Math.floor(lo/cellA);
-  groups.forEach((pg,i)=>{ if (!pg.sk) return; const k=akey(pg.sk,pg.la0,pg.lo0); (near.get(k)||near.set(k,[]).get(k)).push(i); });
+  groups.forEach((pg,i)=>{
+    if (!pg.sk) return;
+    let sm=near.get(pg.sk); if (!sm){ sm=new Map(); near.set(pg.sk, sm); }
+    const k=(Math.floor(pg.la0/cellA)+500000)*1000000 + (Math.floor(pg.lo0/cellA)+500000);
+    let b=sm.get(k); if (!b){ b=[]; sm.set(k,b); }
+    b.push(i);
+  });
   groups.forEach((pg,i)=>{
     let ang=null;
     if (pg.sk){
@@ -472,7 +507,7 @@ function buildStones(){
   // If two houses sit very close, shrink the grid a little and nudge the smaller field so columns never overlap.
   // Do not move a field more than 8 m from its recorded point.
   const maxShift = 8;
-  for (let iter=0; iter<16; iter++){
+  if (groups.some(pg => !pg.pinned)) for (let iter=0; iter<16; iter++){
     const cell=0.0002, grid=new Map();
     const key=(la,lo)=>Math.floor(la/cell)+':'+Math.floor(lo/cell);
     groups.forEach((pg,gi)=> pg.g.forEach(s=>{
@@ -550,8 +585,7 @@ function buildStones(){
   }
 
   VISIBLE = DATA.filter(s=>!s._aliasOf);
-  const feats = VISIBLE.map(s => ({type:'Feature', properties:{id:s.id}, geometry:{type:'Polygon', coordinates:square(s._dlo,s._dla,COL_HALF,s._ang)}}));
-  STONES_FC = {type:'FeatureCollection', features:feats};
+  STONES_FC = (typeof window !== 'undefined' && window.KLCols) ? null : {type:'FeatureCollection', features:VISIBLE.map(s => ({type:'Feature', properties:{id:s.id}, geometry:{type:'Polygon', coordinates:square(s._dlo,s._dla,COL_HALF,s._ang)}}))};
   POINTS_FC = {type:'FeatureCollection', features: VISIBLE.map(s=>({type:'Feature', properties:{}, geometry:{type:'Point', coordinates:[s.lo,s.la]}}))};
   LIGHTS_FC = {type:'FeatureCollection', features: groups.map(pg=>({type:'Feature', properties:{n:pg.g.length}, geometry:{type:'Point', coordinates:[pg.lo0, pg.la0]}}))};
   const ise69 = VISIBLE.filter(s => /Isestr/i.test(s.a||'') && /\b69\b/.test(s.a||'')).length;
@@ -600,7 +634,7 @@ function setBuildingsVisible(on){
   if (map && map.getLayer('bldg3d')) map.setLayoutProperty('bldg3d', 'visibility', on ? 'visible' : 'none');
 }
 function tryAddOverlays(){
-  if (!map || !POINTS_FC || !STONES_FC || !AGG || !AGG.length){ if (map) map._pendingOverlays=true; return; }
+  if (!map || !POINTS_FC || (!STONES_FC && !(typeof window!=='undefined' && window.KLCols)) || !AGG || !AGG.length){ if (map) map._pendingOverlays=true; return; }
   if (map.getSource('pts')) return;
   try { addOverlays(); map._pendingOverlays=false; }
   catch (e) { console.warn('addOverlays', e); map._pendingOverlays=true; }
@@ -609,7 +643,7 @@ function addOverlays(){
   // v21: no montar capas hasta que load() haya construido POINTS_FC/STONES_FC/AGG.
   // Con tres archivos de datos, style.load puede dispararse después de asignar DATA
   // y antes de buildStones(); si no, se añade 'pts' con undefined (aviso de GeoJSON) y las capas quedan a medias.
-  if (!POINTS_FC || !STONES_FC || typeof AGG==='undefined' || !AGG){ if (map) map._pendingOverlays=true; return; }
+  if (!POINTS_FC || (!STONES_FC && !(typeof window!=='undefined' && window.KLCols)) || typeof AGG==='undefined' || !AGG){ if (map) map._pendingOverlays=true; return; }
   if (map.getSource('pts')) return;
   const firstSymbol = (map.getStyle().layers.find(l=>l.type==='symbol')||{}).id;
   const narrow = matchMedia('(max-width: 760px)').matches;
@@ -654,6 +688,7 @@ function addOverlays(){
   // columnas individuales (modelos en columns.js); si no carga, la columna simple de antes
   if (window.KLCols) KLCols.add(firstSymbol);
   else {
+    if (!STONES_FC) STONES_FC = {type:'FeatureCollection', features:VISIBLE.map(s => ({type:'Feature', properties:{id:s.id}, geometry:{type:'Polygon', coordinates:square(s._dlo,s._dla,COL_HALF,s._ang)}}))};
     map.addSource('stones',{type:'geojson', data:STONES_FC, maxzoom:16, buffer:16, tolerance:0});
     map.addLayer({id:'stones', type:'fill-extrusion', source:'stones', minzoom:14.6,
       paint:{'fill-extrusion-color':GOLD, 'fill-extrusion-height':COL_H, 'fill-extrusion-opacity':0.95, 'fill-extrusion-vertical-gradient':true}}, 'sel-glow');
@@ -769,10 +804,10 @@ function initMap(){
   const styleKey = (base === 'hoy' || base === 'sat') ? (base === 'sat' ? 'sat' : 'night') : base;
   const mapOpts = {
     container:'map', style:styleFor(styleKey),
-    center: intro ? [10, 28] : [10.45, 51.0],
-    zoom: intro ? 1.05 : (narrowScreen ? 4.9 : 5.3),
-    pitch: intro ? 0 : (narrowScreen ? 42 : 52),
-    bearing: intro ? -18 : -12,
+    center: intro ? [10, 28] : [6.5, 50.2],
+    zoom: intro ? 1.05 : (narrowScreen ? 3.7 : 4.8),
+    pitch: intro ? 0 : (narrowScreen ? 40 : 50),
+    bearing: intro ? -18 : 0,
     maxPitch:70, attributionControl:{compact:true}, hash:false,
     fadeDuration: narrowScreen ? 0 : 250,
     antialias: !narrowScreen,
@@ -803,10 +838,28 @@ function initMap(){
   map.on('zoomend', refreshSel);
 }
 
+let searchIndexed = false, citiesBuilt = false;
+function ensureSearchIndex(){
+  if (!searchIndexed && DATA && DATA.length){
+    searchIndexed = true;
+    for (const s of DATA){
+      s._t = norm([s.n, s.a, s.sub, cityOf(s), s.cc && s.cc !== 'DE' ? (COUNTRY_WORDS[s.cc] || '') : ''].join(' ')).split(' ');
+      s._c = norm(cityOf(s));
+    }
+  }
+  if (!citiesBuilt && VISIBLE && VISIBLE.length){
+    citiesBuilt = true;
+    const cities = new Map();
+    for (const s of VISIBLE){
+      const c = cityOf(s); if (c){ const o = cities.get(c) || cities.set(c,{n:0,ids:[]}).get(c); o.n++; o.ids.push(s.id); }
+    }
+    CITY_STATS = [...cities.entries()].sort((a,b)=>b[1].n-a[1].n);
+    $('#cities').innerHTML = [...cities.entries()].sort((a,b)=>a[0].localeCompare(b[0],'de')).map(([c,o])=>`<option value="${esc(c)}">${esc(c)} (${o.n})</option>`).join('');
+  }
+}
+
 async function load(){
   $('#status').textContent = T('loading');
-  const j = await (await fetch('data/stones.json')).json();
-  META = j.meta; DATA = j.stones;
   // v21+v22: listas municipales abiertas en archivos y licencias aparte (no se mezclan en stones.json / ODbL).
   const addedFiles = [
     ['berlin', 'data/berlin-added-20261121.json'],
@@ -825,20 +878,23 @@ async function load(){
     ['erkrath', 'data/erkrath-added-20261121.json'],
     ['dormagen', 'data/dormagen-added-20261121.json']
   ];
-  const added = await Promise.all(addedFiles.map(([, u]) => fetch(u).then(r => { if (!r.ok) throw new Error(u+' '+r.status); return r.json(); })));
+  const pre = (typeof window !== 'undefined' && window.__klPre) || {};
+  const getJson = u => (pre[u] || fetch(u)).then(r => { if (!r.ok) throw new Error(u+' '+r.status); return r.json(); });
+  const [j, ...added] = await Promise.all([getJson('data/stones.json'), ...addedFiles.map(([, u]) => getJson(u))]);
+  META = j.meta; DATA = j.stones;
+  const odblLen = j.stones.length;
   const addedCounts = {}, addedMeta = {};
   added.forEach((part, idx) => {
     const key = addedFiles[idx][0];
     const list = (part && Array.isArray(part.stones)) ? part.stones : [];
-    for (const s of list) s._added = true;
-    DATA = DATA.concat(list);
+    for (let i = 0; i < list.length; i++){ list[i]._added = true; DATA.push(list[i]); }
     addedCounts[key] = list.length;
     addedMeta[key] = (part && part.meta) || null;
   });
-  META.odbl_count = j.stones.length;
+  META.odbl_count = odblLen;
   META.berlin_count = addedCounts.berlin || 0;
   META.koeln_count = addedCounts.koeln || 0;
-  META.v22_new_count = DATA.length - j.stones.length - META.berlin_count - META.koeln_count;
+  META.v22_new_count = DATA.length - odblLen - META.berlin_count - META.koeln_count;
   META.count = DATA.length;
   META.v21_added = {
     berlin: addedMeta.berlin,
@@ -847,22 +903,15 @@ async function load(){
   };
   META.v22_added = {
     counts: addedCounts,
-    records: DATA.length - j.stones.length
+    records: DATA.length - odblLen
   };
   // v19: posición de DIBUJO. Si el archivo trae dla/dlo (placa dentro de un edificio de OSM o a menos de 1 m de la fachada), la columna se dibuja ahí
   // (en la acera, hacia la calle); la coordenada de origen queda en sla/slo y es la que usan «Cómo llegar» y las descargas.
-  for (const s of DATA){ if (s.dla != null && s.dlo != null){ s.sla = s.la; s.slo = s.lo; s.la = s.dla; s.lo = s.dlo; } }
   for (const s of DATA){
-    s._t = norm([s.n, s.a, s.sub, cityOf(s), s.cc && s.cc !== 'DE' ? (COUNTRY_WORDS[s.cc] || '') : ''].join(' ')).split(' ');   // v18: «Suecia/Schweden/Sweden», «Irlanda/Irland/Ireland» encuentran sus piedras (Alemania no: sería todo)
-    s._c = norm(cityOf(s)); byId.set(s.id, s);
+    if (s.dla != null && s.dlo != null){ s.sla = s.la; s.slo = s.lo; s.la = s.dla; s.lo = s.dlo; }
+    byId.set(s.id, s);
   }
   buildStones(); buildAgg();
-  const cities = new Map();
-  for (const s of VISIBLE){
-    const c = cityOf(s); if (c){ const o = cities.get(c) || cities.set(c,{n:0,ids:[]}).get(c); o.n++; o.ids.push(s.id); }
-  }
-  CITY_STATS = [...cities.entries()].sort((a,b)=>b[1].n-a[1].n);
-  $('#cities').innerHTML = [...cities.entries()].sort((a,b)=>a[0].localeCompare(b[0],'de')).map(([c,o])=>`<option value="${esc(c)}">${esc(c)} (${o.n})</option>`).join('');
   tryAddOverlays();
   if (!map.getSource('pts')) map.once('style.load', tryAddOverlays);
   if (!map.getSource('pts')) requestAnimationFrame(tryAddOverlays);
@@ -870,9 +919,11 @@ async function load(){
   $('#status').textContent = T('ready')(fmtNum(DATA.length));
   route();
   document.dispatchEvent(new CustomEvent('kl:data'));   // mapui.js: países, vista inicial con todos los países
+  setTimeout(ensureSearchIndex, 60);
 }
 
 function search(){
+  ensureSearchIndex();
   const q = norm($('#q').value), cq = norm($('#city').value), list = $('#results');
   closeDetail(false);
   if (!q && !cq){ list.innerHTML=''; $('#status').textContent=T('ready')(fmtNum(DATA.length)); return; }
@@ -1097,6 +1148,7 @@ let vigil = {on:false, paused:false, stop:0, timers:[], names:[], ni:0};
 function vclear(){ vigil.timers.forEach(clearTimeout); vigil.timers=[]; clearInterval(vigil.nameTimer); map.stop(); }
 function startVigil(){
   if (!DATA.length) return;
+  ensureSearchIndex();
   closeDetail(true);
   vigil.on = true; vigil.paused = false; vigil.stop = -1;
   document.body.classList.add('vigil-on'); $('#vigil').hidden = false;
@@ -1150,6 +1202,7 @@ $('#vigilPause').onclick = e=>{
 
 /* ---------- wiring ---------- */
 let tmr; const debounced=()=>{clearTimeout(tmr); tmr=setTimeout(search,180);};
+$('#q').addEventListener('focus',ensureSearchIndex,{once:true}); $('#city').addEventListener('focus',ensureSearchIndex,{once:true});
 $('#q').addEventListener('input',debounced); $('#city').addEventListener('input',debounced);
 $('#results').addEventListener('click',e=>{const b=e.target.closest('button[data-id]'); if(b) openStone(b.dataset.id);});
 document.querySelectorAll('.lang button').forEach(b=>b.onclick=()=>{lang=b.dataset.lang; localStorage.setItem('lang',lang); applyI18n(); if (window.KLImagery) KLImagery.refresh(); if(selected) openStone(selected,true); else search();});
@@ -1249,11 +1302,11 @@ function closeIntro(fly){
   setTimeout(() => map.resize(), 40);
   if (!fly) {
     try { map.setProjection({type:'mercator'}); } catch (e) {}
-    map.jumpTo(Object.assign({center:[10.45,51.0], zoom:narrowScreen?4.9:5.3, pitch:narrowScreen?42:52, bearing:-12}, (window.KLUI && KLUI.home) ? KLUI.home() : {}));
+    map.jumpTo(Object.assign({center:[6.5,50.2], zoom:narrowScreen?3.7:4.8, pitch:narrowScreen?40:50, bearing:0}, (window.KLUI && KLUI.home) ? KLUI.home() : {}));
     return;
   }
   const dur = reduceMotion ? 0 : 5200;
-  map.flyTo(Object.assign({center:[10.45, 51.05], zoom:narrowScreen?4.9:5.35, pitch:narrowScreen?46:52, bearing:-14}, (window.KLUI && KLUI.home) ? KLUI.home() : {}, {duration:dur, essential:true, curve:1.4}));
+  map.flyTo(Object.assign({center:[6.5, 50.2], zoom:narrowScreen?3.7:4.8, pitch:narrowScreen?40:50, bearing:0}, (window.KLUI && KLUI.home) ? KLUI.home() : {}, {duration:dur, essential:true, curve:1.4}));
   const toMerc = () => { try { map.setProjection({type:'mercator'}); } catch (e) {} };
   if (dur === 0) toMerc(); else map.once('moveend', toMerc);
 }
