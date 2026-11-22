@@ -7,10 +7,10 @@
    · Archivos de la app → con ?v=N en index.html y en SHELL; nueva versión = URL nueva, nunca mezcla de versiones.
    · Al activarse una versión nueva sobre una anterior, las pestañas abiertas se recargan una vez (también las de una versión
      antigua, que no saben escuchar 'controllerchange'). */
-const VERSION = 'kauffmann-v24-pages';
+const VERSION = 'kauffmann-v25-pages';
 const SHELL = ['./','index.html',
-  // index.html pide estos archivos con ?v=24: así una página nueva nunca se mezcla con archivos viejos de la caché.
-  'style.css?v=24','style3d.css?v=24','mapui.css?v=24','app3d.js?v=24','people.js?v=24','columns.js?v=24','imagery.js?v=24','source-links.js?v=24','dedupe.js?v=24','counter.js?v=24','mapui.js?v=24',
+  // index.html pide estos archivos con ?v=25: así una página nueva nunca se mezcla con archivos viejos de la caché.
+  'style.css?v=25','style3d.css?v=25','mapui.css?v=25','app3d.js?v=25','people.js?v=25','columns.js?v=25','imagery.js?v=25','source-links.js?v=25','dedupe.js?v=25','counter.js?v=25','mapui.js?v=25',
   'manifest.webmanifest',
   'kauffmann-list.jsonld','robots.txt','sitemap.xml','data/bio/manifest.json',
   'proyecto/','proyecto/index.html','proyecto/proyecto.css','proyecto/proyecto.js',
@@ -27,8 +27,8 @@ const SHELL = ['./','index.html',
   'fonts/NGS6v5_NC0k9P9H4TbFzsQ.woff2',
   'geo/de-states.json',
   'vendor/maplibre/maplibre-gl.js','vendor/maplibre/maplibre-gl.css',
-  '2d/','2d/index.html','2d/app.js?v=24','2d/style.css',
-  'vendor/leaflet/leaflet.js','vendor/leaflet/leaflet.css','vendor/leaflet.markercluster/leaflet.markercluster.js','vendor/leaflet.markercluster/MarkerCluster.css',
+  '2d/','2d/index.html','2d/app.js?v=25','2d/style.css?v=25',
+  'vendor/leaflet/leaflet.js','vendor/leaflet/leaflet.css','vendor/leaflet.markercluster/leaflet.markercluster.js','vendor/leaflet.markercluster/MarkerCluster.css','vendor/leaflet.markercluster/MarkerCluster.Default.css',
   'icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL.map(u => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => {

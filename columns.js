@@ -12,7 +12,7 @@
   const q = new URLSearchParams(location.search);
   let current = +(q.get('modelo') || 1);   // modelo elegido: 1 · Esquinas suaves (los otros solo con ?modelo= o ?modelos=1)
   if (!MODELS[current]) current = 1;
-  let layerIds = [], sourceIds = [], firstSym = null, pendingAdd = false;
+  let layerIds = [], sourceIds = [], firstSym = null, pendingAdd = false, loadedBox = null;
   let T = 1, animating = false;
 
   function poly(lo, la, halfM, rad, ang){
@@ -29,13 +29,89 @@
     ring.push(ring[0]);
     return [ring];
   }
-  const fcCache = {};
-  function fcFor(half, sides){
-    const k = half + ':' + sides; if (fcCache[k]) return fcCache[k];
+  // Índice espacial ligero sobre VISIBLE para construir solo los polígonos cercanos a la vista (evita congelar el primer zoom a calle).
+  const CELL = 0.05, KEY_STRIDE = 100000;
+  let indexedRows = null, grid = new Map(), indexById = new Map(), featCache = {};
+  const cellKey = (ia, io) => (ia + 50000) * KEY_STRIDE + (io + 50000);
+  function ensureIndex(rows){
+    if (indexedRows === rows) return;
+    indexedRows = rows;
+    grid = new Map();
+    indexById = new Map();
+    featCache = {};
+    for (let i = 0; i < rows.length; i++){
+      const s = rows[i];
+      indexById.set(s.id, i);
+      const k = cellKey(Math.floor(s._dla / CELL), Math.floor(s._dlo / CELL));
+      let b = grid.get(k); if (!b){ b = []; grid.set(k, b); }
+      b.push(i);
+    }
+  }
+  function targetBox(){
+    if (!map) return null;
+    const z = map.getZoom();
+    if (z < 12.5) return null;
+    const PAD_LA = 0.025, PAD_LO = 0.035;
+    let w, s, e, n;
+    try {
+      const b = map.getBounds();
+      w = b.getWest() - PAD_LO; s = b.getSouth() - PAD_LA;
+      e = b.getEast() + PAD_LO; n = b.getNorth() + PAD_LA;
+    } catch (_) {
+      const c = map.getCenter();
+      w = c.lng - 0.05; s = c.lat - 0.04; e = c.lng + 0.05; n = c.lat + 0.04;
+    }
+    const full = z >= 14.0;
+    if (!full){
+      const c = map.getCenter();
+      w = Math.max(w, c.lng - 0.20); e = Math.min(e, c.lng + 0.20);
+      s = Math.max(s, c.lat - 0.14); n = Math.min(n, c.lat + 0.14);
+    }
+    return { w, s, e, n, full };
+  }
+  function boxContains(outer, b){
+    return !!outer && b.getWest() >= outer.w && b.getEast() <= outer.e && b.getSouth() >= outer.s && b.getNorth() <= outer.n;
+  }
+  function fcFor(half, sides, box){
     const rows = (typeof VISIBLE !== 'undefined' && VISIBLE.length) ? VISIBLE : DATA;
-    return fcCache[k] = {type:'FeatureCollection', features: rows.map((s, i) => ({type:'Feature',
-      properties:{id:s.id, r: ((i * 2654435761) >>> 0) % 1000 / 1000},          // retraso fijo por columna (0–1)
-      geometry:{type:'Polygon', coordinates:poly(s._dlo, s._dla, half, sides, s._ang)}}))};
+    ensureIndex(rows);
+    const k = half + ':' + sides;
+    const fc = featCache[k] || (featCache[k] = new Array(rows.length));
+    const getFeat = i => {
+      let f = fc[i];
+      if (!f){
+        const s = rows[i];
+        f = fc[i] = {type:'Feature',
+          properties:{id:s.id, r: ((i * 2654435761) >>> 0) % 1000 / 1000},      // retraso fijo por columna (0–1)
+          geometry:{type:'Polygon', coordinates:poly(s._dlo, s._dla, half, sides, s._ang)}};
+      }
+      return f;
+    };
+    const feats = [];
+    let hasSel = false;
+    const selId = (typeof selected !== 'undefined' && selected) ? selected : null;
+    if (box){
+      const ia0 = Math.floor(box.s / CELL), ia1 = Math.floor(box.n / CELL);
+      const io0 = Math.floor(box.w / CELL), io1 = Math.floor(box.e / CELL);
+      for (let ia = ia0; ia <= ia1; ia++){
+        for (let io = io0; io <= io1; io++){
+          const bucket = grid.get(cellKey(ia, io));
+          if (!bucket) continue;
+          for (let j = 0; j < bucket.length; j++){
+            const idx = bucket[j], s = rows[idx];
+            if (s._dla >= box.s && s._dla <= box.n && s._dlo >= box.w && s._dlo <= box.e){
+              feats.push(getFeat(idx));
+              if (selId && s.id === selId) hasSel = true;
+            }
+          }
+        }
+      }
+    }
+    if (selId && !hasSel){
+      const si = indexById.get(selId);
+      if (si !== undefined) feats.push(getFeat(si));
+    }
+    return {type:'FeatureCollection', features: feats};
   }
   // altura animada: cada columna sube con su propio retraso
   const grow = (v, ring) => ['*', v, ['max', 0, ['min', 1, ['*', ['-', T, ['*', ['get','r'], 0.7]], ring ? 3.3 : 3.3]]]];
@@ -43,7 +119,7 @@
   function remove(){
     for (const id of layerIds) if (map.getLayer(id)) map.removeLayer(id);
     for (const id of sourceIds) if (map.getSource(id)) map.removeSource(id);
-    layerIds = []; sourceIds = [];
+    layerIds = []; sourceIds = []; loadedBox = null;
   }
   function add(firstSymbol, force){
     if (firstSymbol !== undefined) firstSym = firstSymbol;
@@ -55,10 +131,12 @@
     }
     pendingAdd = false;
     remove();
+    const tb = targetBox();
+    loadedBox = tb;
     const M = MODELS[current], before = map.getLayer('sel-glow') ? 'sel-glow' : undefined;
     M.parts.forEach((p, i) => {
       const sid = 'col-' + p.half + '-' + p.rad;
-      if (!map.getSource(sid)){ map.addSource(sid, {type:'geojson', data:fcFor(p.half, p.rad), maxzoom:16, buffer:16, tolerance:0}); sourceIds.push(sid); }
+      if (!map.getSource(sid)){ map.addSource(sid, {type:'geojson', data:fcFor(p.half, p.rad, tb), maxzoom:16, buffer:16, tolerance:0}); sourceIds.push(sid); }
       const id = i === 0 ? 'stones' : 'stones-' + i;          // la capa 'stones' recibe los clics
       map.addLayer({id, type:'fill-extrusion', source:sid, minzoom:14.6, paint:{
         'fill-extrusion-color': p.color === 'GOLD' ? GOLD : p.color,
@@ -81,8 +159,22 @@
     setT(0); requestAnimationFrame(step);
   }
   function ensureCols(){
-    if (!pendingAdd || !map) return;
-    if (map.getZoom() >= 12.5 || selected || q.has('modelos')) add(undefined, true);
+    if (!map || typeof VISIBLE === 'undefined' || !VISIBLE.length) return;
+    const z = map.getZoom();
+    if (pendingAdd){
+      if (z >= 12.5 || selected || q.has('modelos')) add(undefined, true);
+      return;
+    }
+    if (!sourceIds.length || z < 12.5) return;
+    let b;
+    try { b = map.getBounds(); } catch (_) { return; }
+    if (loadedBox && (loadedBox.full || z < 14.0) && boxContains(loadedBox, b)) return;
+    const tb = targetBox();
+    loadedBox = tb;
+    MODELS[current].parts.forEach(p => {
+      const src = map.getSource('col-' + p.half + '-' + p.rad);
+      if (src) src.setData(fcFor(p.half, p.rad, tb));
+    });
   }
   function filterSel(){
     if (pendingAdd && selected && map && map.getZoom() >= 12.5) add(undefined, true);

@@ -302,6 +302,7 @@
     if (!deep() && !introOpen()) map.jumpTo(homeCamera());
   }
   document.addEventListener('kl:data', () => {
+    try { if (window.map && map.getStyle() && map.getStyle().layers) addClusters(); } catch (e) { console.warn('clusters', e); }
     buildCountries();
     if (isMobile()) setSheet(sheet, {quiet: true});
     if (!deep() && !introOpen() && !userMoved && window.map && !map.isMoving()) map.easeTo(Object.assign(homeCamera(), {duration: reduceMotion ? 0 : 600}));

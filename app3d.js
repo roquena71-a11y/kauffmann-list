@@ -476,7 +476,7 @@ function buildStones(){
       if (pts.length>=3) ang=principalAngle(pts);
       else if (pts.length===2 && distM(pts[0].la,pts[0].lo,pts[1].la,pts[1].lo)>12) ang=principalAngle(pts);
     }
-    if (ang==null) ang=principalAngle(pg.all.map(s=>({la:s.la, lo:s.lo})));
+    if (ang==null) ang=principalAngle(pg.all);
     pg._rawAng = ang;
   });
   groups.forEach((pg,i)=>{
@@ -600,9 +600,9 @@ const LEVELS = [
   {id:'a2', dLa:0.015, dLo:0.024,  min:9.5,  max:11.8, k:320,  half:110},
   {id:'a3', dLa:0.004, dLo:0.0064, min:11.8, max:14.6, k:70,   half:28},
 ];
-function buildAgg(){
+function buildAgg(levels){
   const rows = (VISIBLE && VISIBLE.length) ? VISIBLE : DATA;
-  AGG = LEVELS.map(L=>{
+  AGG = (levels || LEVELS).map(L=>{
     const cells = new Map();
     for (const s of rows){
       const k = Math.floor(s.la/L.dLa)+':'+Math.floor(s.lo/L.dLo);
@@ -675,6 +675,7 @@ function addOverlays(){
              'circle-blur':0.65, 'circle-pitch-alignment':'map'}}, firstSymbol);
   }
   for (const {L,fc} of AGG){
+    if (L.min >= 7.5 && map.getZoom() < 6.5) continue;
     map.addSource(L.id,{type:'geojson', data:fc});
     map.addLayer({id:L.id, type:'fill-extrusion', source:L.id, minzoom:L.min, maxzoom:L.max,
       paint:{'fill-extrusion-color':GOLD, 'fill-extrusion-height':['get','h'], 'fill-extrusion-opacity':0.92, 'fill-extrusion-vertical-gradient':true}});
@@ -718,7 +719,8 @@ function ensureVectorStyle(done){
   map.setStyle(styleFor('night'), {diff:false});
   map.once('style.load', () => { addOverlays(); done(); });
 }
-function setBase(b){
+function ensureAllAgg(){ if (AGG && AGG.length === 1 && DATA && DATA.length){ const a0 = AGG[0]; buildAgg(LEVELS.slice(1)); AGG = [a0, ...AGG]; } }
+function setBase(b){ ensureAllAgg();
   if (b==='hoy') {
     base = 'hoy'; localStorage.setItem('base', base); paintBaseButtons();
     ensureVectorStyle(() => { if (window.KLImagery) KLImagery.setHoy(true); });
@@ -879,8 +881,13 @@ async function load(){
     ['dormagen', 'data/dormagen-added-20261121.json']
   ];
   const pre = (typeof window !== 'undefined' && window.__klPre) || {};
-  const getJson = u => (pre[u] || fetch(u)).then(r => { if (!r.ok) throw new Error(u+' '+r.status); return r.json(); });
+  const fetchJson = u => fetch(u).then(r => { if (!r.ok) throw new Error(u+' '+r.status); return r.json(); });
+  const getJson = u => {
+    const p = pre[u] || (pre.__wAsk ? pre.__wAsk(u) : null);
+    return p ? Promise.resolve(p).catch(() => fetchJson(u)) : fetchJson(u);
+  };
   const [j, ...added] = await Promise.all([getJson('data/stones.json'), ...addedFiles.map(([, u]) => getJson(u))]);
+  if (pre.__w) { try { pre.__w.terminate(); } catch (_) {} delete pre.__w; delete pre.__wAsk; }
   META = j.meta; DATA = j.stones;
   const odblLen = j.stones.length;
   const addedCounts = {}, addedMeta = {};
@@ -911,14 +918,61 @@ async function load(){
     if (s.dla != null && s.dlo != null){ s.sla = s.la; s.slo = s.lo; s.la = s.dla; s.lo = s.dlo; }
     byId.set(s.id, s);
   }
-  buildStones(); buildAgg();
+  // Pintar la vista general (luz dorada y columnas a0) en cuanto llega el JSON, antes de buildStones().
+  POINTS_FC = {type:'FeatureCollection', features: DATA.map(s => ({type:'Feature', properties:{}, geometry:{type:'Point', coordinates:[s.lo, s.la]}}))};
+  buildAgg([LEVELS[0]]);
+  const agg0 = AGG[0];
   tryAddOverlays();
-  if (!map.getSource('pts')) map.once('style.load', tryAddOverlays);
-  if (!map.getSource('pts')) requestAnimationFrame(tryAddOverlays);
+  await new Promise(r => setTimeout(r, 0));
+  buildStones();
+  AGG = [agg0];
+  if (map && map.getSource('pts')) {
+    // Añadir a1..a3, luces de casas, clusters y columnas de calle sin volver a trocear los 75k puntos de 'pts'.
+    for (const {L, fc} of AGG) {
+      if (L.min >= 7.5 && map.getZoom() < 6.5) continue;
+      if (map.getSource(L.id)) { map.getSource(L.id).setData(fc); continue; }
+      map.addSource(L.id, {type:'geojson', data:fc});
+      map.addLayer({id:L.id, type:'fill-extrusion', source:L.id, minzoom:L.min, maxzoom:L.max,
+        paint:{'fill-extrusion-color':GOLD, 'fill-extrusion-height':['get','h'], 'fill-extrusion-opacity':0.92, 'fill-extrusion-vertical-gradient':true}});
+    }
+    if (LIGHTS_FC && !map.getSource('house-lights')) {
+      const firstSymbol = (map.getStyle().layers.find(l => l.type === 'symbol') || {}).id;
+      map.addSource('house-lights', {type:'geojson', data:LIGHTS_FC, maxzoom:14});
+      map.addLayer({id:'house-lights', type:'circle', source:'house-lights', minzoom:4, maxzoom:14.2,
+        layout:{visibility: base==='day' ? 'none' : 'visible'},
+        paint:{'circle-radius':['interpolate',['linear'],['zoom'],4,1.15,8,2.1,12,3.4,14,5],
+               'circle-color':'#ffe2a0',
+               'circle-opacity':['interpolate',['linear'],['zoom'],4,0.4,9,0.75,13.5,0.2],
+               'circle-blur':0.65, 'circle-pitch-alignment':'map'}}, firstSymbol);
+    }
+    if (window.KLCols) KLCols.add();
+    else if (!map.getSource('stones')) {
+      map.addSource('stones',{type:'geojson', data:STONES_FC, maxzoom:16, buffer:16, tolerance:0});
+      map.addLayer({id:'stones', type:'fill-extrusion', source:'stones', minzoom:14.6,
+        paint:{'fill-extrusion-color':GOLD, 'fill-extrusion-height':COL_H, 'fill-extrusion-opacity':0.95, 'fill-extrusion-vertical-gradient':true}}, 'sel-glow');
+    }
+  } else {
+    tryAddOverlays();
+    if (!map.getSource('pts')) map.once('style.load', tryAddOverlays);
+    if (!map.getSource('pts')) requestAnimationFrame(tryAddOverlays);
+  }
   if (window.KLImagery) KLImagery.onData();
   $('#status').textContent = T('ready')(fmtNum(DATA.length));
   route();
-  document.dispatchEvent(new CustomEvent('kl:data'));   // mapui.js: países, vista inicial con todos los países
+  document.dispatchEvent(new CustomEvent('kl:data'));   // mapui.js: países, vista inicial con todos los países y clusters
+  const mountRestAgg = () => {
+    ensureAllAgg();
+    if (!map || !map.getStyle() || !AGG || AGG.length < 2) return;
+    for (const {L, fc} of AGG) {
+      if (!map.getSource(L.id)) {
+        map.addSource(L.id, {type:'geojson', data:fc});
+        map.addLayer({id:L.id, type:'fill-extrusion', source:L.id, minzoom:L.min, maxzoom:L.max,
+          paint:{'fill-extrusion-color':GOLD, 'fill-extrusion-height':['get','h'], 'fill-extrusion-opacity':0.92, 'fill-extrusion-vertical-gradient':true}});
+      }
+    }
+  };
+  map.on('zoom', () => { if (map.getZoom() >= 6.5) mountRestAgg(); });
+  setTimeout(mountRestAgg, 350);
   setTimeout(ensureSearchIndex, 60);
 }
 

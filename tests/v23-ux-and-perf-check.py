@@ -243,13 +243,35 @@ async def check_ux(base_url: str):
         assert await pg.evaluate('Math.round(map.getBearing())') == 0, "compass click did not reset north"
         assert await pg.evaluate("document.getElementById('rotBtns').hidden") is True, "compass did not hide at north"
 
-        # Zooming in mounts deferred 3D columns seamlessly
+        # Zooming in mounts deferred 3D columns seamlessly (and jumping/panning across cities loads viewport columns)
         await pg.evaluate('void map.jumpTo({center:[-6.283,53.333], zoom:16.5, pitch:0, bearing:0})')
         await pg.wait_for_timeout(500)
         assert await pg.evaluate("!!map.getLayer('stones')") is True, "deferred 3D stones layer did not mount on zoom in"
+        await pg.evaluate('void map.jumpTo({center:[13.388,52.517], zoom:16.5, pitch:45, bearing:0})')
+        await pg.wait_for_function("map.queryRenderedFeatures({layers:['stones']}).length > 0", timeout=15000)
+        await pg.evaluate('void map.jumpTo({center:[13.425,52.525], zoom:16.5, pitch:45, bearing:0})')
+        await pg.wait_for_function("map.queryRenderedFeatures({layers:['stones']}).length > 0", timeout=15000)
 
         assert not errs, f"page errors: {errs}"
         await ctx.close()
+
+        # 1b) 2D offline check with real Service Worker (guards F1 regression)
+        ctx2d = await b.new_context(viewport={'width': 412, 'height': 915}, is_mobile=True, has_touch=True, locale='es-ES')
+        pg2d = await ctx2d.new_page()
+        errs2d = []
+        pg2d.on('pageerror', lambda e: errs2d.append(str(e)))
+        await block_counters(pg2d, blocked)
+        await pg2d.goto(base_url + '2d/index.html', wait_until='load', timeout=120000)
+        # Register SW via root or check 2d/ registration? Register SW from / first so SW controls /2d/ too (as in normal navigation)
+        await pg2d.goto(base_url + 'index.html?intro=0&lang=es', wait_until='domcontentloaded', timeout=120000)
+        await pg2d.wait_for_function("navigator.serviceWorker && navigator.serviceWorker.ready", timeout=30000)
+        await pg2d.evaluate("navigator.serviceWorker.ready")
+        await pg2d.wait_for_timeout(800)
+        await ctx2d.set_offline(True)
+        await pg2d.goto(base_url + '2d/index.html', wait_until='load', timeout=30000)
+        ok2d = await pg2d.evaluate("!!document.querySelector('#map.leaflet-container') && typeof L !== 'undefined'")
+        assert ok2d and not errs2d, f"2D offline SW failed: ok2d={ok2d} errs={errs2d}"
+        await ctx2d.close()
 
         # 2) Initial view check on 360x780 mobile and 1366x800 desktop
         for name, vp, mob in (('360x780', {'width': 360, 'height': 780}, True), ('1366x800', {'width': 1366, 'height': 800}, False)):
@@ -310,19 +332,39 @@ async def check_load_budget():
 
             await pg.goto(f'http://127.0.0.1:{port}/index.html?intro=0&lang=es', wait_until='domcontentloaded', timeout=120000)
             t_dcl = round((time.perf_counter() - t0) * 1000)
-            await pg.wait_for_function("typeof VISIBLE !== 'undefined' && VISIBLE.length > 74000", timeout=120000)
-            t_vis = round((time.perf_counter() - t0) * 1000)
+            await pg.wait_for_function("window.map && map.getSource('pts') && map.getSource('a0')", timeout=120000)
+            t_pts = round((time.perf_counter() - t0) * 1000)
             await pg.wait_for_function("window.map && map.getSource('pts') && map.getSource('kl-clu')", timeout=120000)
             t_ov = round((time.perf_counter() - t0) * 1000)
+            await pg.wait_for_function("typeof VISIBLE !== 'undefined' && VISIBLE.length > 74000", timeout=120000)
+            t_vis = round((time.perf_counter() - t0) * 1000)
             paints = await pg.evaluate("Object.fromEntries(performance.getEntriesByType('paint').map(x => [x.name, Math.round(x.startTime)]))")
+            sz = await pg.evaluate("""() => new Promise(resolve => {
+                const t0 = performance.now();
+                let syncMs = 0;
+                const check = () => {
+                    const fs = map.getLayer('stones') ? map.queryRenderedFeatures({layers:['stones']}) : [];
+                    if (fs.length > 0 || (performance.now() - t0) > 10000) {
+                        resolve({sync_ms: syncMs, painted_ms: Math.round(performance.now() - t0), count: fs.length});
+                    } else requestAnimationFrame(check);
+                };
+                requestAnimationFrame(() => {
+                    const r0 = performance.now();
+                    void map.jumpTo({center:[13.388, 52.517], zoom:16.5, pitch:45, bearing:0});
+                    syncMs = Math.round(performance.now() - r0);
+                    requestAnimationFrame(check);
+                });
+            })""")
             await b.close()
 
         fcp = paints.get('first-contentful-paint', 9999)
         assert not errs, f"load budget page errors: {errs}"
         assert fcp <= 1500, f"FCP {fcp}ms exceeded 1500ms budget"
         assert t_dcl <= 2500, f"DCL {t_dcl}ms exceeded 2500ms budget"
-        assert t_ov <= 12500, f"overlays {t_ov}ms exceeded 12500ms 4G-2xCPU budget (v22 baseline ~18800ms)"
-        print(flush=True); print(f"OK v23 load budget (412x915 gzip 4G 20Mbps 2xCPU): fcp={fcp}ms dcl={t_dcl}ms vis={t_vis}ms overlays={t_ov}ms")
+        assert t_pts <= 8500, f"overview pts {t_pts}ms exceeded 8500ms 4G-2xCPU budget"
+        assert t_ov <= 11500, f"overlays {t_ov}ms exceeded 11500ms 4G-2xCPU budget (v22 baseline ~18800ms)"
+        assert sz['count'] > 0 and sz['sync_ms'] <= 250 and sz['painted_ms'] <= 2500, f"street zoom budget exceeded: {sz}"
+        print(f"OK v23 load & zoom budget (412x915 gzip 4G 20Mbps 2xCPU): fcp={fcp}ms dcl={t_dcl}ms overview={t_pts}ms overlays={t_ov}ms vis={t_vis}ms street_zoom={sz['sync_ms']}ms/{sz['painted_ms']}ms")
     finally:
         httpd.shutdown()
 
