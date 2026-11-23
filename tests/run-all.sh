@@ -87,6 +87,10 @@ if [ -x "$CHROME" ] && "$PYTHON" -c "import playwright" 2>/dev/null; then
   else
     echo "(omitido: tests/v22-new-render-placement.py necesita V22_DATA o V22_NEAR_DIR con los pickles OSM)"
   fi
+  # v29: alineación con la calle (data/align-v24.json): reglas de colocación sobre las 74.979 visibles + histograma de paralelismo.
+  # Geometría OSM local (V24_V20_NEAR, V24_V21_NEAR, V24_V22_NEAR; por defecto /workspace/v2x-data/near). Si falta, la prueba FALLA (no se omite).
+  "$PYTHON" tests/v24-align-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-v24align.log 2>&1 || { tail -30 /tmp/kl-v24align.log; kill $SRV; exit 1; }
+  grep -E "histograma|v29 <2|reglas:|^OK" /tmp/kl-v24align.log
   "$PYTHON" tests/country-row-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-row.log 2>&1 || { tail -15 /tmp/kl-row.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-row.log
   "$PYTHON" tests/disc-card-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-disc.log 2>&1 || { tail -15 /tmp/kl-disc.log; kill $SRV; exit 1; }
