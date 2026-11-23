@@ -33,3 +33,4 @@ Base: 6aa2adda (paso 1, v28; pendiente del sí de Carlos, NO publicar). Reglas: 
 - 21:32 Paso 1 publicado (origin/main = 6aa2adda). Máquina libre (carga 1,2, sin otras pruebas). run-all #3 lanzado (venv nuevo venv-runall-align3, contador bloqueado con bwrap) → /workspace/v24-data/run-all-align3.log
 - 21:42 run-all #3 en marcha: hasta ahora OK (unittest, ai-door/ai-sim, sidewalk, sidewalk20, v21-v20-render-compare [sin/con alineación], v21-new-render-placement).
 - 21:52 run-all #3: también OK v22-render-compare (sin/con alineación), v22-new-render-placement, v24-align-check, fila de países, Hassall; sigue (attribution-check, luego country-buttons ~20 min).
+- 21:53 run-all #3 FALLÓ en attribution-check (390x844, ficha abierta: '#detail' no se abre en 20 s tras buscar 'Moses'); todo lo anterior OK. Investigando (¿carrera con la carga de align-v24.json?).
