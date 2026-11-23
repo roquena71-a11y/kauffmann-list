@@ -25,3 +25,4 @@ Base: 6aa2adda (paso 1, v28; pendiente del sí de Carlos, NO publicar). Reglas: 
 - 20:23 v24-align-check r5 **OK**: 0 apiladas / 0 <1,55 m / 0 edificio / 0 calzada / 0 >25 m / 0 cuadrícula; paralelismo 100,00 % <2° (30 224 <1°, 1 entre 1–2°) frente a 12,55 % en v28; 0 tramos con dos rumbos. Log /workspace/v24-data/align/check-r5.log.
 - 20:23 bump-version → v29 (version-test OK); run-all.sh ejecuta tests/v24-align-check.py.
 - 20:24 Capturas antes/después (misma cámara) en /workspace/v24-data/shots-align/ (westend, niedenau, eschersheimer, berlin-zimmerstrasse; 0 peticiones al contador). Script /workspace/v24-data/shots-align.py.
+- 20:24 run-all completo lanzado (venv nuevo /workspace/v24-data/venv-runall-align, bwrap con hosts del contador bloqueados, carga 1,0) → /workspace/v24-data/run-all-align.log
