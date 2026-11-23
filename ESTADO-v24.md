@@ -5,7 +5,7 @@
 - **App / SW version:** `v28` (`tests/bump-version.py`, `kauffmann-v28-pages`) after the F1 fix. The audited step-1 code was v27 at `ef592220`.
 - **Date:** 2026-11-23 (Europe/Berlin)
 - **Scope:** Carlos approved three changes step by step. This file covers **step 1 only** (restored contrast + brass plaque, plus the F1 groove-sync fix). Sidewalk alignment is step 2 and is **not** started.
-- **Commits:** `ef592220` (v27 step 1), `b6dc0077` (ESTADO hash note), and the v28 F1 fix (hash filled after that commit). Local only, not pushed.
+- **Commits:** `ef592220` (v27 step 1), `b6dc0077` (ESTADO hash note), and `2716f91e9b9705e4a3a4ff710644e0b6060a1661` (v28 F1 fix). Local only, not pushed.
 
 ## 1. What changed (step 1, v27)
 
