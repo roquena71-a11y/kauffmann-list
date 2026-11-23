@@ -5,7 +5,7 @@
 - **App / SW version:** `v27` (`tests/bump-version.py`, `kauffmann-v27-pages`)
 - **Date:** 2026-11-23 (Europe/Berlin)
 - **Scope:** Carlos approved three changes step by step. This file covers **step 1 only** (restored contrast + brass plaque). Sidewalk alignment is step 2 and is **not** started.
-- **Commit:** `fa767cf40efa07888ea37a9a3b4c302e6d77878d` (local only, not pushed)
+- **Commit:** `ef59222088d487691a3340cb5358c378f597cb28` (local only, not pushed; this line recorded in a follow-up commit)
 
 ## 1. What changed
 
