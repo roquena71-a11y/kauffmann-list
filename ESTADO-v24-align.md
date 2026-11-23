@@ -38,3 +38,5 @@ Base: 6aa2adda (paso 1, v28; pendiente del sí de Carlos, NO publicar). Reglas: 
 - 22:22 Reanudado tras interrupción: run-all #4 sigue vivo (no se relanza). Hasta ahora OK: node/unit, contador/sw/versión v29, sidewalk, sidewalk20, map2d; en marcha v21-v20-render-compare.
 - 22:40 run-all #4: OK también v22 compare/placement, v24-align-check, attribution-check (esta vez OK; el fallo de #3 fue intermitente), v23 UX y presupuesto de carga (overlays 9 564 ms ≤ 11 500; fcp 188, dcl 925, overview 5 383, vis 10 138). En marcha v24-plaque-contrast; falta country-buttons (~20 min).
 - 22:51 run-all #4: v24-plaque-contrast OK; country-buttons en marcha (empezó ~22:41).
+- 23:03 **run-all #4 COMPLETO: RUN_ALL_EXIT:0, «run-all: OK», country-buttons «FALLOS: ninguno», 0 omitidas** (REQUIRE_OAV=1, venv nuevo venv-runall-align4 con playwright 1.65.2 + shapely 2.2.0, Chrome del sistema, contador bloqueado con bwrap/hosts; 22:08–22:59). Presupuesto: overlays 9 564 ms ≤ 11 500 (sin tocar). Log /workspace/v24-data/run-all-align4.log.
+- Estado: PASO 2 LISTO para auditoría. Sin push. data/align-v24.json = r7 (sha 4c52501329b8…).
