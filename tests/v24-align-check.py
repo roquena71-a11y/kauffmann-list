@@ -26,6 +26,7 @@ from geo import hav, M_LAT
 BLOCK = ('kl-contador', 'workers.dev')
 N_DATA, N_VIS = 75122, 74979
 COL_HALF, MARGIN, GAP, STEP, MAXMOVE = 0.60, 0.50, 1.55, 1.85, 25.0
+QTOL = 0.015   # «no más cerca que en v28»: el centro del archivo va en grados·1e7 (±0,6 cm por eje), así que se admite 1,5 cm
 EPS = 1e-6
 
 async def dump(base, off):
@@ -195,7 +196,7 @@ def main():
                     # solo es fallo si la alineación la movió: en v28 la chincheta debía cumplirlo ya (o está documentada y entonces no se mueve)
                     x0, y0 = AG.to_local(S0[i][6], S0[i][7], la0, lo0); p0 = Point(float(x0), float(y0))
                     dc0 = min((float(shapely.distance(p0, B[k])) for k in btree.query(p0, predicate='dwithin', distance=6.5)), default=99.0) if btree is not None else 99.0
-                    if dc0 - ih >= MARGIN - EPS or dc - ih < dc0 - ih - EPS: pin.append((i, round(dc - ih, 3), round(dc0 - ih, 3)))
+                    if dc0 - ih >= MARGIN - EPS or dc - ih < dc0 - ih - QTOL: pin.append((i, round(dc - ih, 3), round(dc0 - ih, 3)))
                 if dc >= RWY.BLD_EXEMPT_NEAR:
                     rc = min((l.distance(pt) - sw for l, sw in veh), default=99.0)
                     if rc < -EPS:
