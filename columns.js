@@ -12,6 +12,20 @@
   const q = new URLSearchParams(location.search);
   let current = +(q.get('modelo') || 1);   // modelo elegido: 1 · Esquinas suaves (los otros solo con ?modelo= o ?modelos=1)
   if (!MODELS[current]) current = 1;
+  // Brass plate on the top face (slightly inset, stepped bevel). No names or invented text —
+  // only geometric grooves. Plaques use a tighter viewport box and a higher minzoom than the
+  // shaft so 75k columns stay cheap at mid-street zoom; grooves only appear up close.
+  const BRASS_RIM = '#7a5720';
+  const BRASS_FACE = '#d6b25a';
+  const BRASS_GROOVE = '#5a3f16';
+  const PLACA_MINZOOM = 16.2;
+  const GROOVE_MINZOOM = 17.8;
+  const PLACA_PARTS = [
+    {half:0.51, rad:0.10, base:16.00, top:16.26, color:BRASS_RIM, op:1},
+    {half:0.43, rad:0.08, base:16.16, top:16.42, color:BRASS_FACE, op:1},
+  ];
+  const partsOf = (n) => MODELS[n].parts.concat(PLACA_PARTS);
+  let loadedPlaqueBox = null;
   let layerIds = [], sourceIds = [], firstSym = null, pendingAdd = false, loadedBox = null;
   let T = 1, animating = false;
 
@@ -28,6 +42,28 @@
       }
     ring.push(ring[0]);
     return [ring];
+  }
+  function rect(lo, la, halfX, halfY, cx, cy, ang){
+    const mLa = 1 / M_LAT, mLo = 1 / (M_LAT * Math.cos(la * Math.PI / 180));
+    const cA = Math.cos(ang||0), sA = Math.sin(ang||0);
+    const pts = [[-halfX,-halfY],[halfX,-halfY],[halfX,halfY],[-halfX,halfY],[-halfX,-halfY]];
+    return pts.map(([x,y]) => {
+      const X = cx + x, Y = cy + y;
+      return [lo + (X*cA - Y*sA) * mLo, la + (X*sA + Y*cA) * mLa];
+    });
+  }
+  // Plaques are only readable up close: pad ~300–400 m around the real viewport, not the
+  // multi-kilometre preload box used for shafts.
+  function plaqueBox(){
+    if (!map) return null;
+    try {
+      const b = map.getBounds();
+      const padLa = 0.003, padLo = 0.004;
+      return { w: b.getWest() - padLo, s: b.getSouth() - padLa, e: b.getEast() + padLo, n: b.getNorth() + padLa, full: true };
+    } catch (_) {
+      const c = map.getCenter();
+      return { w: c.lng - 0.006, s: c.lat - 0.005, e: c.lng + 0.006, n: c.lat + 0.005, full: true };
+    }
   }
   // Índice espacial ligero sobre VISIBLE para construir solo los polígonos cercanos a la vista (evita congelar el primer zoom a calle).
   const CELL = 0.05, KEY_STRIDE = 100000;
@@ -113,13 +149,53 @@
     }
     return {type:'FeatureCollection', features: feats};
   }
+  // Blank engraved-line look: four short grooves as ONE MultiPolygon per stone (not 4 features).
+  const GROOVE_LINES = [
+    {cx:0, cy: 0.22, hx:0.22, hy:0.016},
+    {cx:0, cy: 0.08, hx:0.30, hy:0.016},
+    {cx:0, cy:-0.05, hx:0.30, hy:0.016},
+    {cx:0, cy:-0.18, hx:0.30, hy:0.016},
+  ];
+  function fcGrooves(box){
+    const rows = (typeof VISIBLE !== 'undefined' && VISIBLE.length) ? VISIBLE : DATA;
+    ensureIndex(rows);
+    const feats = [];
+    const selId = (typeof selected !== 'undefined' && selected) ? selected : null;
+    const consider = [];
+    if (box){
+      const ia0 = Math.floor(box.s / CELL), ia1 = Math.floor(box.n / CELL);
+      const io0 = Math.floor(box.w / CELL), io1 = Math.floor(box.e / CELL);
+      for (let ia = ia0; ia <= ia1; ia++){
+        for (let io = io0; io <= io1; io++){
+          const bucket = grid.get(cellKey(ia, io));
+          if (!bucket) continue;
+          for (let j = 0; j < bucket.length; j++){
+            const idx = bucket[j], s = rows[idx];
+            if (s._dla >= box.s && s._dla <= box.n && s._dlo >= box.w && s._dlo <= box.e) consider.push(idx);
+          }
+        }
+      }
+    }
+    if (selId){
+      const si = indexById.get(selId);
+      if (si !== undefined && !consider.includes(si)) consider.push(si);
+    }
+    for (const idx of consider){
+      const s = rows[idx];
+      const r = ((idx * 2654435761) >>> 0) % 1000 / 1000;
+      const polys = GROOVE_LINES.map(L => [rect(s._dlo, s._dla, L.hx, L.hy, L.cx, L.cy, s._ang)]);
+      feats.push({type:'Feature', properties:{id:s.id, r},
+        geometry:{type:'MultiPolygon', coordinates:polys}});
+    }
+    return {type:'FeatureCollection', features: feats};
+  }
   // altura animada: cada columna sube con su propio retraso
   const grow = (v, ring) => ['*', v, ['max', 0, ['min', 1, ['*', ['-', T, ['*', ['get','r'], 0.7]], ring ? 3.3 : 3.3]]]];
 
   function remove(){
     for (const id of layerIds) if (map.getLayer(id)) map.removeLayer(id);
     for (const id of sourceIds) if (map.getSource(id)) map.removeSource(id);
-    layerIds = []; sourceIds = []; loadedBox = null;
+    layerIds = []; sourceIds = []; loadedBox = null; loadedPlaqueBox = null;
   }
   function add(firstSymbol, force){
     if (firstSymbol !== undefined) firstSym = firstSymbol;
@@ -133,23 +209,38 @@
     remove();
     const tb = targetBox();
     loadedBox = tb;
-    const M = MODELS[current], before = map.getLayer('sel-glow') ? 'sel-glow' : undefined;
-    M.parts.forEach((p, i) => {
+    const pb = plaqueBox();
+    loadedPlaqueBox = pb;
+    const parts = partsOf(current), before = map.getLayer('sel-glow') ? 'sel-glow' : undefined;
+    parts.forEach((p, i) => {
       const sid = 'col-' + p.half + '-' + p.rad;
-      if (!map.getSource(sid)){ map.addSource(sid, {type:'geojson', data:fcFor(p.half, p.rad, tb), maxzoom:16, buffer:16, tolerance:0}); sourceIds.push(sid); }
+      const isPlaca = i > 0;
+      const box = isPlaca ? pb : tb;
+      if (!map.getSource(sid)){ map.addSource(sid, {type:'geojson', data:fcFor(p.half, p.rad, box), maxzoom:16, buffer:16, tolerance:0}); sourceIds.push(sid); }
       const id = i === 0 ? 'stones' : 'stones-' + i;          // la capa 'stones' recibe los clics
-      map.addLayer({id, type:'fill-extrusion', source:sid, minzoom:14.6, paint:{
+      map.addLayer({id, type:'fill-extrusion', source:sid, minzoom: isPlaca ? PLACA_MINZOOM : 14.6, paint:{
         'fill-extrusion-color': p.color === 'GOLD' ? GOLD : p.color,
         'fill-extrusion-base': grow(p.base), 'fill-extrusion-height': grow(p.top, p.ring),
         'fill-extrusion-opacity': p.op, 'fill-extrusion-vertical-gradient': true}}, before);
       layerIds.push(id);
     });
+    const gsid = 'col-placa-grooves';
+    if (!map.getSource(gsid)){ map.addSource(gsid, {type:'geojson', data:fcGrooves(pb), maxzoom:16, buffer:16, tolerance:0}); sourceIds.push(gsid); }
+    map.addLayer({id:'stones-grooves', type:'fill-extrusion', source:gsid, minzoom:GROOVE_MINZOOM, paint:{
+      'fill-extrusion-color': BRASS_GROOVE,
+      'fill-extrusion-base': grow(16.30), 'fill-extrusion-height': grow(16.345),
+      'fill-extrusion-opacity': 1, 'fill-extrusion-vertical-gradient': false}}, before);
+    layerIds.push('stones-grooves');
     filterSel();
   }
   function setT(t){
     T = t;
-    MODELS[current].parts.forEach((p, i) => { const id = i === 0 ? 'stones' : 'stones-' + i;
+    partsOf(current).forEach((p, i) => { const id = i === 0 ? 'stones' : 'stones-' + i;
       if (map.getLayer(id)){ map.setPaintProperty(id, 'fill-extrusion-base', grow(p.base)); map.setPaintProperty(id, 'fill-extrusion-height', grow(p.top, p.ring)); } });
+    if (map.getLayer('stones-grooves')){
+      map.setPaintProperty('stones-grooves', 'fill-extrusion-base', grow(16.30));
+      map.setPaintProperty('stones-grooves', 'fill-extrusion-height', grow(16.345));
+    }
     map.triggerRepaint();                        // asegurar que se dibuje el último paso
   }
   function rise(){
@@ -168,13 +259,35 @@
     if (!sourceIds.length || z < 12.5) return;
     let b;
     try { b = map.getBounds(); } catch (_) { return; }
-    if (loadedBox && (loadedBox.full || z < 14.0) && boxContains(loadedBox, b)) return;
+    const shaftsOk = loadedBox && (loadedBox.full || z < 14.0) && boxContains(loadedBox, b);
+    const plaquesOk = z < PLACA_MINZOOM - 0.4 || (loadedPlaqueBox && boxContains(loadedPlaqueBox, b));
+    if (shaftsOk && plaquesOk) return;
+    if (shaftsOk){
+      // Shafts still cover the view: only refresh the tighter plaque/groove sources.
+      const pb = plaqueBox();
+      loadedPlaqueBox = pb;
+      PLACA_PARTS.forEach(p => {
+        const src = map.getSource('col-' + p.half + '-' + p.rad);
+        if (src) src.setData(fcFor(p.half, p.rad, pb));
+      });
+      const gro = map.getSource('col-placa-grooves');
+      if (gro && z >= GROOVE_MINZOOM - 0.4) gro.setData(fcGrooves(pb));
+      return;
+    }
     const tb = targetBox();
     loadedBox = tb;
-    MODELS[current].parts.forEach(p => {
+    const needPlaque = z >= PLACA_MINZOOM - 0.4;
+    const pb = needPlaque ? plaqueBox() : null;
+    loadedPlaqueBox = pb;
+    partsOf(current).forEach((p, i) => {
       const src = map.getSource('col-' + p.half + '-' + p.rad);
-      if (src) src.setData(fcFor(p.half, p.rad, tb));
+      if (!src) return;
+      const isPlaca = i > 0;
+      if (isPlaca && !needPlaque) return;
+      src.setData(fcFor(p.half, p.rad, isPlaca ? pb : tb));
     });
+    const gro = map.getSource('col-placa-grooves');
+    if (gro && z >= GROOVE_MINZOOM - 0.4) gro.setData(fcGrooves(pb || plaqueBox()));
   }
   function filterSel(){
     if (pendingAdd && selected && map && map.getZoom() >= 12.5) add(undefined, true);
@@ -306,7 +419,7 @@
     map.on('zoomend', () => { if (tip && !tip.hidden && map.getZoom() < 14.6){ tipPinned = false; tipHover = false; hideTip(); } });
   }
 
-  window.KLCols = { add, filterSel, setModel, rise, MODELS, relabel };
+  window.KLCols = { add, filterSel, setModel, rise, finish(){ animating=false; setT(1); }, MODELS, relabel, PLACA_MINZOOM, GROOVE_MINZOOM, BRASS_RIM, BRASS_FACE, BRASS_GROOVE };
   const boot = () => { if (!window.map || !map.on) return setTimeout(boot, 200);
     map.on('zoom', ensureCols); map.on('moveend', ensureCols);
     map.on('zoomend', watchZoom); rotateButtons(); picker(); bindTip(); };

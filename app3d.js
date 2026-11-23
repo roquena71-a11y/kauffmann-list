@@ -629,7 +629,12 @@ function satStyle(){
 }
 function styleFor(b){ return b==='sat' ? satStyle() : OFM + (b==='day' ? 'positron' : 'dark'); }
 
-const GOLD = ['interpolate',['linear'],['zoom'], 5,'#c6a15b', 12,'#e0bc62', 17,'#f0d48a'];
+/* v27 contrast: GOLD z5/z12 stops unchanged since 9025a3c0. Street-level #f0d48a
+   sat too close to day buildings #e7e0d2; z17 is #e0b020 so the shaft reads against
+   the façade. Light is restored to 9025a3c0 (polar 35°, intensity 0.5) instead of
+   d1df0526's more lateral light (polar 62°, intensity 0.62), which flattened the top. */
+const GOLD = ['interpolate',['linear'],['zoom'], 5,'#c6a15b', 12,'#e0bc62', 17,'#e0b020'];
+const LIGHT = {anchor:'map', position:[1.4, 210, 35], color:'#fff1d0', intensity:0.5};
 function setBuildingsVisible(on){
   if (map && map.getLayer('bldg3d')) map.setLayoutProperty('bldg3d', 'visibility', on ? 'visible' : 'none');
 }
@@ -694,7 +699,7 @@ function addOverlays(){
     map.addLayer({id:'stones', type:'fill-extrusion', source:'stones', minzoom:14.6,
       paint:{'fill-extrusion-color':GOLD, 'fill-extrusion-height':COL_H, 'fill-extrusion-opacity':0.95, 'fill-extrusion-vertical-gradient':true}}, 'sel-glow');
   }
-  map.setLight({anchor:"map", position:[1.5, 215, 62], color:"#fff1d0", intensity:0.62});
+  map.setLight(LIGHT);
   try { map.setSky(base==='day'
       ? {'sky-color':'#d5e2f0','horizon-color':'#f4f1ea','fog-color':'#efe6d4','sky-horizon-blend':0.6,'horizon-fog-blend':0.55,'fog-ground-blend':0.55,'atmosphere-blend':0.4}
       : {'sky-color':'#07111f','horizon-color':'#1a3358','fog-color':'#101820','sky-horizon-blend':0.55,'horizon-fog-blend':0.55,'fog-ground-blend':0.65,'atmosphere-blend':0.55}); } catch(e){}
@@ -800,7 +805,8 @@ function fixCompassTilt(){
 
 function initMap(){
   const intro = shouldIntro();
-  base = intro ? 'night' : (localStorage.getItem('base') || 'night');
+  const qBase = new URLSearchParams(location.search).get('base');
+  base = intro ? 'night' : (qBase || localStorage.getItem('base') || 'night');
   if (base !== 'night' && base !== 'day' && base !== 'sat' && base !== 'hoy') base = 'night';
   paintBaseButtons();
   const styleKey = (base === 'hoy' || base === 'sat') ? (base === 'sat' ? 'sat' : 'night') : base;
