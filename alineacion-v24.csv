@@ -73,6 +73,7 @@ Q44161388,25,base,"Giesebrechtstr. 18, Charlottenburg-Wilmersdorf",sin_cambio,ex
 Q44161429,2,base,"Leonhardtstr. 19, Charlottenburg-Wilmersdorf",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 Q44161463,1,base,"Kantstr. 148, Charlottenburg-Wilmersdorf",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 Q44162316,1,base,"Spandauer Damm 54, Charlottenburg-Wilmersdorf",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
+Q44178448,10,base,Lakkegata 71,sin_cambio,"ninguna disposición en 1–2 filas (ni la cuadrícula girada) cabe junto a la calle cumpliendo edificios ≥0,5 m, calzada, 25 m y 1,55 m: se deja como estaba"
 Q44180861,1,base,"Güntzelstr. 49, Charlottenburg-Wilmersdorf",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 Q44181334,1,base,"Droysenstr. 6, Charlottenburg-Wilmersdorf",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 Q44199866,1,base,"Feldzeugmeisterstraße 5, 10557 Berlin",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
@@ -91,9 +92,11 @@ Q58045090,6,base,Adelheidstraße 94,sin_cambio,excepción 25 m documentada (exce
 Q95435277,27,base,"Isestraße 69, 20149 Hamburg",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
 Q98925932,2,base,Bosbeekweg 19-21,sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 ber-11254,1,added,"Schönhauser Allee 122, 10437 Berlin",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
+ber-11646,5,added,"Schönhauser Allee  187, 10119 Berlin",sin_cambio,"ninguna disposición en 1–2 filas (ni la cuadrícula girada) cabe junto a la calle cumpliendo edificios ≥0,5 m, calzada, 25 m y 1,55 m: se deja como estaba"
 ber-12058,1,added,"Auguststraße 19, 10117 Berlin",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 ber-12200,1,added,"Kollwitzstraße 76, 10435 Berlin",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 ber-12243,1,added,"Dernburgsrtraße  17, 14057 Berlin",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
+koeln-562,1,added,"Buchforststraße 2, Köln",sin_cambio,"ninguna disposición en 1–2 filas (ni la cuadrícula girada) cabe junto a la calle cumpliendo edificios ≥0,5 m, calzada, 25 m y 1,55 m: se deja como estaba"
 kr-709,1,added,Lönspfad 18,sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 mz-107,1,added,"via Cascina Cavriana, 3",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 n1005900557,2,base,"Am Ochsenzoll 62, Hamburg",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
@@ -119,12 +122,14 @@ n13004828053,1,base,"Villeroystraße Kinderheim, 66798 Wallerfangen",sin_cambio,
 n1305737606,6,base,"Schildstraße 5, Lübeck",sin_cambio,"ninguna disposición en 1–2 filas (ni la cuadrícula girada) cabe junto a la calle cumpliendo edificios ≥0,5 m, calzada, 25 m y 1,55 m: se deja como estaba"
 n13078776972,1,base,"Golddistelweg 22, Hamburg",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 n13202525354,9,base,"Nassauische Straße 54, 10717 Berlin",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
+n13234247557,7,base,"Großstraße 45, 55566 Bad Sobernheim",sin_cambio,"ninguna disposición en 1–2 filas (ni la cuadrícula girada) cabe junto a la calle cumpliendo edificios ≥0,5 m, calzada, 25 m y 1,55 m: se deja como estaba"
 n13342141412,18,base,"Rumfordstraße 28, München",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
 n13540233454,2,base,"Carretera de Barcelona, 558",sin_cambio,"ninguna disposición en 1–2 filas (ni la cuadrícula girada) cabe junto a la calle cumpliendo edificios ≥0,5 m, calzada, 25 m y 1,55 m: se deja como estaba"
 n2486161627,22,base,"Osterfeldstraße 12, Pforzheim",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
 n2986428392,8,base,"Rabestrasse 5, Dessau-Roßlau",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
 n2988325858,1,base,"Brunnenstr.75, Dessau-Roßlau",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 n2988698443,4,base,"Am Sonnenbüchel 45, 88212 Ravensburg",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
+n3372940872,7,base,"Obere Torstraße 1, 76456 Kuppenheim",sin_cambio,"ninguna disposición en 1–2 filas (ni la cuadrícula girada) cabe junto a la calle cumpliendo edificios ≥0,5 m, calzada, 25 m y 1,55 m: se deja como estaba"
 n3441482539,15,base,"Wilhelmstraße 55, Köln",sin_cambio,"ninguna disposición en 1–2 filas (ni la cuadrícula girada) cabe junto a la calle cumpliendo edificios ≥0,5 m, calzada, 25 m y 1,55 m: se deja como estaba"
 n3884129758,1,base,"Erlenstraße 127a, 47055 Duisburg",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 n3891104430,1,base,"Bastenstraße 44, 47167 Duisburg",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"

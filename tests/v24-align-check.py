@@ -5,7 +5,7 @@ Comprueba, sobre las 74 979 placas visibles:
   · cifras 75 122 / 74 979; KLAlign aplicó TODAS las placas del archivo (0 entradas omitidas); la/lo registrados idénticos con y sin alineación y al archivo;
   · posición dibujada = la del archivo (misma fórmula que layout()); las placas que no están en el archivo, idénticas a v28;
   · reglas: ninguna apilada; >=1,55 m entre dos columnas cualesquiera; columna (1,2 m girada) a >=0,5 m de todo edificio de OSM;
-    centro fuera de la calzada (vía rodada, semiancho; exento con edificio a <6 m); <=25 m de su punto registrado; cuadrícula de 1,85 m en filas;
+    chincheta 2D (12 px a z19) con centro a >=semilado+0,5 m de todo edificio si la alineación la movió; centro fuera de la calzada (vía rodada, semiancho; exento con edificio a <6 m); <=25 m de su punto registrado; cuadrícula de 1,85 m en filas;
     las excepciones documentadas (residuales-acera-v20.csv, calzada-v20/21.csv, excepciones-25m-v20/21.csv) solo valen si la placa NO se movió;
   · paralelismo: histograma del error de ángulo entre la fila dibujada y el tramo OSM de su calle (elección de calle propia de esta prueba),
     comparado con v28 (ángulo PCA); mismo tramo → mismo rumbo.
@@ -169,7 +169,7 @@ def main():
     # 3) edificios, calzada, 25 m — por grupo de geometría
     bykey = defaultdict(list)
     for i in vis: bykey[AG.source_key(S1[i][2] or 'DE', S1[i][1] if S1[i][10] else None)].append(i)
-    bld, road, far, doc_used = [], [], [], Counter()
+    bld, road, far, pin, doc_used = [], [], [], [], Counter()
     hist = {'v29': Counter(), 'v28': Counter(), 'v29_cercana': Counter()}; seg_angles = defaultdict(set); nostreet = 0; errs_list = []
     BINS = [1, 2, 5, 10, 20, 45, 91]
     binof = lambda x: next(b for b in BINS if x < b)
@@ -190,6 +190,12 @@ def main():
                 if dsq < MARGIN - EPS:
                     if documented('edif', i): doc_used['edif'] += 1
                     else: bld.append((i, round(dsq, 3), i in changed))
+                ih = 6 * 40075016.686 / (256 * 2 ** 19) * math.cos(math.radians(r[6]))   # chincheta 2D: 12 px a zoom 19 (como sidewalk-render-check20)
+                if dc - ih < MARGIN - EPS and i in changed:
+                    # solo es fallo si la alineación la movió: en v28 la chincheta debía cumplirlo ya (o está documentada y entonces no se mueve)
+                    x0, y0 = AG.to_local(S0[i][6], S0[i][7], la0, lo0); p0 = Point(float(x0), float(y0))
+                    dc0 = min((float(shapely.distance(p0, B[k])) for k in btree.query(p0, predicate='dwithin', distance=6.5)), default=99.0) if btree is not None else 99.0
+                    if dc0 - ih >= MARGIN - EPS or dc - ih < dc0 - ih - EPS: pin.append((i, round(dc - ih, 3), round(dc0 - ih, 3)))
                 if dc >= RWY.BLD_EXEMPT_NEAR:
                     rc = min((l.distance(pt) - sw for l, sw in veh), default=99.0)
                     if rc < -EPS:
@@ -223,8 +229,8 @@ def main():
         print('   %2d–%2d°  v29 %6d   v28 %6d   (v29 frente a la vía más cercana de cualquier tipo: %6d)' % (lo_, b, hist['v29'][b], hist['v28'][b], hist['v29_cercana'][b]))
     print('   v29 <2°: %.2f %%  <5°: %.2f %%  <10°: %.2f %%   ·   v28 <2°: %.2f %%  <5°: %.2f %%' % (pct(hist['v29'], 2), pct(hist['v29'], 5), pct(hist['v29'], 10), pct(hist['v28'], 2), pct(hist['v28'], 5)))
     print('tramos OSM con varios grupos: %d · con rumbos distintos: %d' % (sum(1 for v in seg_angles.values()), len(incons)))
-    print('reglas: apiladas=%d separación<1,55=%d edificio<0,5=%d calzada=%d >25m=%d cuadrícula=%d filas_no_paralelas=%d · excepciones documentadas usadas (placas sin mover): %s' % (len(stacked), len(gap), len(bld), len(road), len(far), len(grid_bad), len(row_bad), dict(doc_used)))
-    for nm, L in (('apiladas', stacked), ('separación', gap), ('edificio', bld), ('calzada', road), ('25 m', far), ('cuadrícula', grid_bad), ('filas', row_bad)):
+    print('reglas: apiladas=%d separación<1,55=%d edificio<0,5=%d calzada=%d >25m=%d cuadrícula=%d filas_no_paralelas=%d chincheta2D<0,5=%d · excepciones documentadas usadas (placas sin mover): %s' % (len(stacked), len(gap), len(bld), len(road), len(far), len(grid_bad), len(row_bad), len(pin), dict(doc_used)))
+    for nm, L in (('apiladas', stacked), ('separación', gap), ('edificio', bld), ('calzada', road), ('25 m', far), ('cuadrícula', grid_bad), ('filas', row_bad), ('chincheta 2D', pin)):
         if L: FAIL.append('%s: %d %s' % (nm, len(L), L[:4]))
     print('   informativo (vía más cercana de cualquier tipo, p. ej. en esquinas): v29 <2° %.2f %%  <10° %.2f %%' % (pct(hist['v29_cercana'], 2), pct(hist['v29_cercana'], 10)))
     if pct(hist['v29'], 2) < 99.0 or pct(hist['v29'], 10) < 99.5: FAIL.append('paralelismo insuficiente: <2° %.2f %%, <10° %.2f %%' % (pct(hist['v29'], 2), pct(hist['v29'], 10)))

@@ -140,7 +140,7 @@ def main():
     cands = sorted(((float(s_), float(t_)) for s_ in np.arange(-S_MAX, S_MAX + 1e-9, S_STEP) for t_ in np.arange(-T_MAX, T_MAX + 1e-9, T_STEP)), key=lambda c: (abs(c[0]) + 2 * abs(c[1]), abs(c[1]), c))
     only = a[a.index('--only') + 1].split(',') if '--only' in a else None
     n_noconv = 0
-    res = []; entries = []; n_changed_ang = 0; n_changed_layout = 0; cats = Counter(); how_c = Counter(); errs_deg = []
+    res = []; entries = []; n_changed_ang = 0; n_changed_layout = 0; cats = Counter(); cats_pin = Counter(); how_c = Counter(); errs_deg = []
     bykey = defaultdict(list)
     for gi, g in enumerate(G): bykey[g['key']].append(gi)
     for key in sorted(bykey, key=lambda k: -len(bykey[k])):
@@ -172,8 +172,13 @@ def main():
             oth = np.array([AG.to_local(p[0], p[1], la0, lo0) for p in oth]) if oth else np.zeros((0, 2))
             # chincheta 2D (12 px a zoom 19, como sidewalk-render-check20): su centro (= el de la columna) a >= semilado + 0,5 m de todo edificio
             pin_r = PIN_PX_HALF * 40075016.686 / (256 * 2 ** 19) * math.cos(math.radians(la0)) + B_CLEAR
-            if btree is not None and btree.query(shapely.points(cur_xy), predicate='dwithin', distance=pin_r).shape[1]:
-                r.update(estado='sin_cambio', motivo='la chincheta 2D ya estaba a <0,5 m de un edificio en v28 (caso documentado o fuera de la muestra): no se mueve para no empeorarlo'); res.append(r); cats['chincheta_v28_justa'] += 1; continue
+            # umbral por placa: semilado+0,53 m; si en v28 ya estaba más cerca (geometría OSM más nueva que la de v20 o residual documentado), no más cerca que en v28
+            pin_thr = np.full(n, pin_r)
+            if btree is not None:
+                p0 = shapely.points(cur_xy); hh = btree.query(p0, predicate='dwithin', distance=pin_r)
+                for k, bi in zip(hh[0], hh[1]): pin_thr[k] = min(pin_thr[k], float(shapely.distance(p0[k], B[bi])))
+            n_pin_rel = int(np.sum(pin_thr < pin_r - 1e-9))
+            if n_pin_rel: cats_pin['grupos_con_umbral_v28'] += 1; cats_pin['placas_con_umbral_v28'] += n_pin_rel
             veh = [(l, RWY.semiwidth(t)) for l, t in lines if RWY.is_vehicular(t)]
             vtree = shapely.STRtree([l for l, _ in veh]) if veh else None
             sl = lambda x, y: d0[0] * (y - q[1]) - d0[1] * (x - q[0])
@@ -194,7 +199,8 @@ def main():
                             sq = AG.squares(C[:, 0], C[:, 1], angq, HALF)
                             hit = btree.query(sq, predicate='dwithin', distance=B_CLEAR)
                             if hit.shape[1]: continue
-                            if btree.query(shapely.points(C), predicate='dwithin', distance=pin_r).shape[1]: continue
+                            pc = shapely.points(C); hh = btree.query(pc, predicate='dwithin', distance=pin_r)
+                            if hh.shape[1] and any(float(shapely.distance(pc[k], B[bi])) < pin_thr[k] - 1e-9 for k, bi in zip(hh[0], hh[1])): continue
                         bad_road = False
                         if vtree is not None:
                             pts = shapely.points(C)
@@ -262,7 +268,7 @@ def main():
         w = csv.writer(f); w.writerow(['id_primera_placa', 'placas', 'tipo', 'direccion', 'estado', 'motivo'])
         for r in sorted(res, key=lambda r: r['id0']):
             if r['estado'] == 'sin_cambio': w.writerow([r['id0'], r['n'], r['kind'], r['a'], r['estado'], r['motivo']])
-    st = {'grupos': len(G), 'placas_visibles': vis_n, 'categorias': dict(cats), 'calle_y_rumbo': {k: v for k, v in how_c.items()},
+    st = {'grupos': len(G), 'placas_visibles': vis_n, 'categorias': dict(cats), 'chincheta_2d': dict(cats_pin), 'calle_y_rumbo': {k: v for k, v in how_c.items()},
           'cambian_angulo_gt2': n_changed_ang, 'esquina_sin_posicion_coherente': n_noconv, 'cambian_disposicion_gt0_1m': n_changed_layout, 'entradas': len(entries),
           'placas_alineadas': sum(len(e) - 4 for e in entries), 'tiempo_s': round(time.time() - t0)}
     print(json.dumps(st, ensure_ascii=False, indent=1))
