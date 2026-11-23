@@ -22,6 +22,6 @@ Base: 6aa2adda (paso 1, v28; pendiente del sí de Carlos, NO publicar). Reglas: 
   Resultado medido antes de perderse (r4): 99,96 % <2°, 0 reglas incumplidas, 1 tramo con dos rumbos (resuelto con la búsqueda coherente).
 - 20:17 Rehecho tras la restauración: guarda _gi (app3d.js), LICENCIAS.md, solver coherente (r5 en marcha), test con empates, tests/align_expected.py, esperas KLAlign (6 pruebas + v24-plaque), v21-new-render-placement con v20 dibujadas de este cliente. venv de trabajo: /workspace/v24-data/venv-s2.
 - 20:21 align r5 (solver coherente, 154 s): 30 225/30 366 grupos (74 089 placas) alineados; sin cambio: 102 sin calle, 28 excepción 25 m, 7 sin hueco, 3 esquina sin posición coherente, 1 legítima en interior. Ángulo cambia >2° en 26 481 grupos; posición >0,1 m en 14 685.
-- 20:27 v24-align-check r5 **OK**: 0 apiladas / 0 <1,55 m / 0 edificio / 0 calzada / 0 >25 m / 0 cuadrícula; paralelismo 100,00 % <2° (30 224 <1°, 1 entre 1–2°) frente a 12,55 % en v28; 0 tramos con dos rumbos. Log /workspace/v24-data/align/check-r5.log.
-- 20:28 bump-version → v29 (version-test OK); run-all.sh ejecuta tests/v24-align-check.py.
-- 20:32 Capturas antes/después (misma cámara) en /workspace/v24-data/shots-align/ (westend, niedenau, eschersheimer, berlin-zimmerstrasse; 0 peticiones al contador). Script /workspace/v24-data/shots-align.py.
+- 20:23 v24-align-check r5 **OK**: 0 apiladas / 0 <1,55 m / 0 edificio / 0 calzada / 0 >25 m / 0 cuadrícula; paralelismo 100,00 % <2° (30 224 <1°, 1 entre 1–2°) frente a 12,55 % en v28; 0 tramos con dos rumbos. Log /workspace/v24-data/align/check-r5.log.
+- 20:23 bump-version → v29 (version-test OK); run-all.sh ejecuta tests/v24-align-check.py.
+- 20:24 Capturas antes/después (misma cámara) en /workspace/v24-data/shots-align/ (westend, niedenau, eschersheimer, berlin-zimmerstrasse; 0 peticiones al contador). Script /workspace/v24-data/shots-align.py.
