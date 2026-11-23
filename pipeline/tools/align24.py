@@ -25,7 +25,7 @@ from geo import M_LAT
 
 R = Path(__file__).resolve().parents[2]
 STEP = 1.85; HALF = 0.60
-B_CLEAR = 0.53; GAP = 1.60; MAXREC = 24.7; ROAD_M = 0.3; EXEMPT = 5.5
+B_CLEAR = 0.53; PIN_PX_HALF = 6; GAP = 1.60; MAXREC = 24.7; ROAD_M = 0.3; EXEMPT = 5.5
 S_MAX, S_STEP, T_MAX, T_STEP = 10.0, 0.5, 3.0, 0.25
 VEH_STREET = RWY.VEH | {'living_street', 'road'}
 PED = {'pedestrian', 'footway', 'path', 'cycleway', 'steps', 'bridleway', 'track'}
@@ -170,6 +170,10 @@ def main():
             rec = np.array([AG.to_local(s['sla'], s['slo'], la0, lo0) for s in ss])
             oth = others_near(la0, lo0, ext + 8 * STEP + S_MAX + 4, own)
             oth = np.array([AG.to_local(p[0], p[1], la0, lo0) for p in oth]) if oth else np.zeros((0, 2))
+            # chincheta 2D (12 px a zoom 19, como sidewalk-render-check20): su centro (= el de la columna) a >= semilado + 0,5 m de todo edificio
+            pin_r = PIN_PX_HALF * 40075016.686 / (256 * 2 ** 19) * math.cos(math.radians(la0)) + B_CLEAR
+            if btree is not None and btree.query(shapely.points(cur_xy), predicate='dwithin', distance=pin_r).shape[1]:
+                r.update(estado='sin_cambio', motivo='la chincheta 2D ya estaba a <0,5 m de un edificio en v28 (caso documentado o fuera de la muestra): no se mueve para no empeorarlo'); res.append(r); cats['chincheta_v28_justa'] += 1; continue
             veh = [(l, RWY.semiwidth(t)) for l, t in lines if RWY.is_vehicular(t)]
             vtree = shapely.STRtree([l for l, _ in veh]) if veh else None
             sl = lambda x, y: d0[0] * (y - q[1]) - d0[1] * (x - q[0])
@@ -190,6 +194,7 @@ def main():
                             sq = AG.squares(C[:, 0], C[:, 1], angq, HALF)
                             hit = btree.query(sq, predicate='dwithin', distance=B_CLEAR)
                             if hit.shape[1]: continue
+                            if btree.query(shapely.points(C), predicate='dwithin', distance=pin_r).shape[1]: continue
                         bad_road = False
                         if vtree is not None:
                             pts = shapely.points(C)
