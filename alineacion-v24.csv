@@ -35,6 +35,7 @@ Q132154705,2,base,"Bundesplatz 17, 10715 Berlin-Wilmersdorf",sin_cambio,"sin cal
 Q132154751,2,base,"Kaiserdamm 10, 14057 Berlin-Charlottenburg",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 Q132155060,13,base,"Droysenstr. 7, 10629 Berlin-Charlottenburg",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
 Q132155153,1,base,"Mendelsohnstraße / Ecke Mollstraße , 10178 Berlin-Mitte",sin_cambio,"ninguna disposición en 1–2 filas (ni la cuadrícula girada) cabe junto a la calle cumpliendo edificios ≥0,5 m, calzada, 25 m y 1,55 m: se deja como estaba"
+Q132155154,1,base,"Mendelssohnstraße / Ecke Mollstraße , 10178 Berlin-Mitte",sin_cambio,esquina: toda posición válida deja el centro de la fila frente a otro tramo con otro rumbo; se deja como estaba
 Q132155200,1,base,"Alexanderstraße 6, 10178 Berlin-Mitte",sin_cambio,"ninguna disposición en 1–2 filas (ni la cuadrícula girada) cabe junto a la calle cumpliendo edificios ≥0,5 m, calzada, 25 m y 1,55 m: se deja como estaba"
 Q132155271,7,base,"Pappelallee 44, 10437 Berlin-Prenzlauer Berg",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 Q132155432,1,base,"Sybelstr. 54, 10629 Berlin-Charlottenburg",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
@@ -64,6 +65,7 @@ Q138608360,1,base,Hagegata 28,sin_cambio,"sin calle OSM a <=30 m (ni peatonal a 
 Q138608382,1,base,St. Olavs plass 1,sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 Q139713321,10,base,"Krämergasse 7, 35083 Wetter (Hessen)",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
 Q139720637,8,base,"Käthe-Kollwitz-Straße 56, 14943 Luckenwalde",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
+Q141639606,3,base,,sin_cambio,esquina: toda posición válida deja el centro de la fila frente a otro tramo con otro rumbo; se deja como estaba
 Q44067803,1,base,"Wilmersdorfer Straße 32, 10585 Berlin",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
 Q44112131,2,base,"Bonhoefferufer 2, Charlottenburg-Wilmersdorf",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 Q44159231,2,base,"Witzlebenstr. 19, Charlottenburg-Wilmersdorf",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
@@ -107,7 +109,7 @@ n12077558943,4,base,"Friedrich-August-Straße 16, Crimmitschau",sin_cambio,"sin 
 n12431088697,1,base,"Förderweg 25, 59229 Ahlen",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 n12438845081,162,base,,sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
 n12442322659,13,base,"Hinter dem Turm 1, 06449 Aschersleben",sin_cambio,"ninguna disposición en 1–2 filas (ni la cuadrícula girada) cabe junto a la calle cumpliendo edificios ≥0,5 m, calzada, 25 m y 1,55 m: se deja como estaba"
-n12461266506,3,base,"Arcisstraße 16, München",sin_cambio,"ninguna disposición en 1–2 filas (ni la cuadrícula girada) cabe junto a la calle cumpliendo edificios ≥0,5 m, calzada, 25 m y 1,55 m: se deja como estaba"
+n12461266506,3,base,"Arcisstraße 16, München",sin_cambio,"placa legítimamente dentro de un edificio (sidewalk-v20.json estado=legitima, p. ej. en un vestíbulo): no se mueve"
 n12624163092,8,base,"Wullenweberstraße 6, 10555 Berlin",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
 n12656972400,19,base,"Bartningallee 7, 10557 Berlin",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
 n12821289794,9,base,"Hirtenstraße 18, 10178 Berlin",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
@@ -132,6 +134,7 @@ n6981815685,1,base,"Weiherhofstraße 102, Konstanz",sin_cambio,"sin calle OSM a 
 n7557912207,1,base,,sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 n7590609985,4,base,"Martinstraße 11, Würzburg",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
 n848506588,2,base,"Grubesallee 21, Hamburg",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
+n8567583655,4,base,"Potsdamer Chaussee 48, 14129 Berlin",sin_cambio,esquina: toda posición válida deja el centro de la fila frente a otro tramo con otro rumbo; se deja como estaba
 n911948424,1,base,"Heusenstammer Weg 31, Offenbach a.M., DE",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
 n9667345560,53,base,"Pfeifferstraße 3–7, Haltestelle Pfeifersche Stiftungen Westseite",sin_cambio,excepción 25 m documentada (excepciones-25m-v20/v21.csv): no se mueve
 n9770451617,1,base,"Baumschulenweg 19 (bei), 39128 Magdeburg",sin_cambio,"sin calle OSM a <=30 m (ni peatonal a <=20 m): patio, parque o cementerio; se deja como estaba"
