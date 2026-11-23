@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """v24: brass plaque present (no text), restored contrast vs buildings (day + night),
-street-zoom / close-zoom budget and mobile heap. Usage:
+street-zoom / close-zoom budget and mobile heap, and grooves staying in sync
+after pan-then-zoom (F1 of auditoría B ronda 1). Usage:
   python3 tests/v24-plaque-contrast-check.py [BASE_URL]
 """
 from __future__ import annotations
@@ -290,6 +291,87 @@ async def measure_zoom(pg, center, zoom, pitch, layer_ids):
     })""", [center, zoom, pitch, layer_ids])
 
 
+
+async def jump_wait(pg, js, pred, ms=800):
+    await pg.evaluate(js)
+    await pg.wait_for_function("window.map && !map.isMoving()", timeout=20000)
+    await pg.wait_for_function(pred, timeout=20000)
+    await pg.wait_for_timeout(ms)
+
+
+async def groove_sync_info(pg):
+    """Source feature counts (serialize) plus painted face/groove counts."""
+    return await pg.evaluate("""() => {
+        const srcLen = (id) => {
+            const s = map.getSource(id);
+            if (!s || typeof s.serialize !== 'function') return -1;
+            const d = s.serialize().data;
+            return d && Array.isArray(d.features) ? d.features.length : -1;
+        };
+        const painted = (id) => map.getLayer(id) ? map.queryRenderedFeatures({layers:[id]}).length : -1;
+        return {
+            z: +map.getZoom().toFixed(2),
+            center: [+map.getCenter().lng.toFixed(4), +map.getCenter().lat.toFixed(4)],
+            srcRim: srcLen('col-0.51-0.1'),
+            srcFace: srcLen('col-0.43-0.08'),
+            srcGr: srcLen('col-placa-grooves'),
+            nFace: painted('stones-2'),
+            nGr: painted('stones-grooves'),
+            nShaft: painted('stones'),
+        };
+    }""")
+
+
+async def check_grooves_after_street_pan(pg):
+    """F1 (auditoría B ronda 1, ef592220): pan at 16.5 then zoom to 18.2.
+
+    On the buggy tree, a pan at 16.5 refreshes rim/face but leaves col-placa-grooves
+    on the previous box; zooming in then short-circuits because plaquesOk is already
+    true, so the new view paints faces and zero grooves. This path must fail there
+    and pass once grooves stay in lockstep with rims/faces.
+    """
+    stones = "window.map && map.getLayer('stones') && map.queryRenderedFeatures({layers:['stones']}).length>0"
+    await jump_wait(
+        pg,
+        "void map.jumpTo({center:[13.388,52.517], zoom:16.5, pitch:45, bearing:0}); if (window.KLCols && KLCols.finish) KLCols.finish()",
+        stones,
+    )
+    start = await groove_sync_info(pg)
+    assert start['nShaft'] > 0 and start['srcRim'] > 0, f"start 16.5 Berlin has no plaques: {start}"
+
+    await jump_wait(
+        pg,
+        "void map.jumpTo({center:[13.455,52.517], zoom:16.5, pitch:45, bearing:0})",
+        stones,
+    )
+    pan = await groove_sync_info(pg)
+    assert pan['srcRim'] > 0 and pan['srcFace'] == pan['srcRim'], f"pan 16.5 rim/face mismatch: {pan}"
+    assert pan['srcRim'] != start['srcRim'], f"pan 16.5 did not change the plaque box (test invalid): before={start} after={pan}"
+    # Sources must stay in sync even below GROOVE_MINZOOM (so a later zoom-in is ready).
+    assert pan['srcGr'] == pan['srcRim'], f"pan 16.5 left grooves stale: after={pan} before={start}"
+
+    await jump_wait(
+        pg,
+        "void map.jumpTo({center:[13.455,52.517], zoom:18.2, pitch:55, bearing:0}); if (window.KLCols && KLCols.finish) KLCols.finish()",
+        stones,
+        1200,
+    )
+    close = await groove_sync_info(pg)
+    assert close['srcGr'] > 0 and close['srcGr'] == close['srcRim'] == close['srcFace'], f"18.2 after pan: groove source stale: {close}"
+    assert close['nFace'] > 0 and close['nGr'] > 0, f"18.2 after pan: faces painted but grooves did not: {close}"
+    assert close['nGr'] == close['nFace'], f"18.2 after pan: painted groove/face counts differ: {close}"
+
+    await jump_wait(
+        pg,
+        "void map.jumpTo({center:[13.455,52.517], zoom:18.2, pitch:55, bearing:40}); if (window.KLCols && KLCols.finish) KLCols.finish()",
+        stones,
+        800,
+    )
+    rot = await groove_sync_info(pg)
+    assert rot['srcGr'] == rot['srcRim'] and rot['nGr'] > 0 and rot['nFace'] > 0, f"18.2 after rotate: grooves lost: {rot}"
+    return {'start': start, 'pan': pan, 'zoom': close, 'rotate': rot}
+
+
 async def main():
     check_source()
     base = (sys.argv[1].rstrip('/') + '/') if len(sys.argv) > 1 else None
@@ -400,6 +482,11 @@ async def main():
                         limit_mb: +(m.jsHeapSizeLimit/1048576).toFixed(1)} : null;
         }""")
         vis = await plaque_info(pg)
+
+        # F1: pan at 16.5 then zoom to 18.2 (and a rotate) — grooves must follow rims/faces.
+        # Run while the browser is still open (asserts and the OK line come after close).
+        sync = await check_grooves_after_street_pan(pg)
+
         await pg.close()
         await ctx.close()
         await b.close()
@@ -417,7 +504,9 @@ async def main():
             f"night col={night['col']} bldg={night.get('bldg')}; "
             f"street16.5={sz['sync_ms']}/{sz['painted_ms']}ms n={sz['count']}; "
             f"close18.5={close['sync_ms']}/{close['painted_ms']}ms n={close['count']}; "
-            f"heap={heap}; plaque_feats={vis['srcCounts']}"
+            f"heap={heap}; plaque_feats={vis['srcCounts']}; "
+            f"groove_sync pan srcRim/srcGr={sync['pan']['srcRim']}/{sync['pan']['srcGr']} "
+            f"z18.2 nFace/nGr={sync['zoom']['nFace']}/{sync['zoom']['nGr']}"
         )
 
 

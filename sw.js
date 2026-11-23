@@ -7,10 +7,10 @@
    · Archivos de la app → con ?v=N en index.html y en SHELL; nueva versión = URL nueva, nunca mezcla de versiones.
    · Al activarse una versión nueva sobre una anterior, las pestañas abiertas se recargan una vez (también las de una versión
      antigua, que no saben escuchar 'controllerchange'). */
-const VERSION = 'kauffmann-v27-pages';
+const VERSION = 'kauffmann-v28-pages';
 const SHELL = ['./','index.html',
-  // index.html pide estos archivos con ?v=27: así una página nueva nunca se mezcla con archivos viejos de la caché.
-  'style.css?v=27','style3d.css?v=27','mapui.css?v=27','app3d.js?v=27','people.js?v=27','columns.js?v=27','imagery.js?v=27','source-links.js?v=27','dedupe.js?v=27','counter.js?v=27','mapui.js?v=27',
+  // index.html pide estos archivos con ?v=28: así una página nueva nunca se mezcla con archivos viejos de la caché.
+  'style.css?v=28','style3d.css?v=28','mapui.css?v=28','app3d.js?v=28','people.js?v=28','columns.js?v=28','imagery.js?v=28','source-links.js?v=28','dedupe.js?v=28','counter.js?v=28','mapui.js?v=28',
   'manifest.webmanifest',
   'kauffmann-list.jsonld','robots.txt','sitemap.xml','data/bio/manifest.json',
   'proyecto/','proyecto/index.html','proyecto/proyecto.css','proyecto/proyecto.js',
@@ -27,7 +27,7 @@ const SHELL = ['./','index.html',
   'fonts/NGS6v5_NC0k9P9H4TbFzsQ.woff2',
   'geo/de-states.json',
   'vendor/maplibre/maplibre-gl.js','vendor/maplibre/maplibre-gl.css',
-  '2d/','2d/index.html','2d/app.js?v=27','2d/style.css?v=27',
+  '2d/','2d/index.html','2d/app.js?v=28','2d/style.css?v=28',
   'vendor/leaflet/leaflet.js','vendor/leaflet/leaflet.css','vendor/leaflet.markercluster/leaflet.markercluster.js','vendor/leaflet.markercluster/MarkerCluster.css','vendor/leaflet.markercluster/MarkerCluster.Default.css',
   'icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL.map(u => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting())); });

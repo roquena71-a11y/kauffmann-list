@@ -25,7 +25,7 @@
     {half:0.43, rad:0.08, base:16.16, top:16.42, color:BRASS_FACE, op:1},
   ];
   const partsOf = (n) => MODELS[n].parts.concat(PLACA_PARTS);
-  let loadedPlaqueBox = null;
+  let loadedPlaqueBox = null, loadedGrooveBox = null;
   let layerIds = [], sourceIds = [], firstSym = null, pendingAdd = false, loadedBox = null;
   let T = 1, animating = false;
 
@@ -195,7 +195,7 @@
   function remove(){
     for (const id of layerIds) if (map.getLayer(id)) map.removeLayer(id);
     for (const id of sourceIds) if (map.getSource(id)) map.removeSource(id);
-    layerIds = []; sourceIds = []; loadedBox = null; loadedPlaqueBox = null;
+    layerIds = []; sourceIds = []; loadedBox = null; loadedPlaqueBox = null; loadedGrooveBox = null;
   }
   function add(firstSymbol, force){
     if (firstSymbol !== undefined) firstSym = firstSymbol;
@@ -226,6 +226,7 @@
     });
     const gsid = 'col-placa-grooves';
     if (!map.getSource(gsid)){ map.addSource(gsid, {type:'geojson', data:fcGrooves(pb), maxzoom:16, buffer:16, tolerance:0}); sourceIds.push(gsid); }
+    loadedGrooveBox = pb;
     map.addLayer({id:'stones-grooves', type:'fill-extrusion', source:gsid, minzoom:GROOVE_MINZOOM, paint:{
       'fill-extrusion-color': BRASS_GROOVE,
       'fill-extrusion-base': grow(16.30), 'fill-extrusion-height': grow(16.345),
@@ -249,6 +250,21 @@
     const step = now => { const k = Math.min(1, (now - t0) / dur); setT(k); if (k < 1) requestAnimationFrame(step); else animating = false; };
     setT(0); requestAnimationFrame(step);
   }
+  function setPlaqueSources(pb){
+    // Rim, face and grooves always share the same tight box so a later zoom-in
+    // (or rotate) never finds faces updated and grooves still on the previous view.
+    loadedPlaqueBox = pb;
+    PLACA_PARTS.forEach(p => {
+      const src = map.getSource('col-' + p.half + '-' + p.rad);
+      if (src) src.setData(fcFor(p.half, p.rad, pb));
+    });
+    setGrooveSource(pb);
+  }
+  function setGrooveSource(pb){
+    const gro = map.getSource('col-placa-grooves');
+    if (gro && pb){ gro.setData(fcGrooves(pb)); loadedGrooveBox = pb; }
+    else loadedGrooveBox = null;
+  }
   function ensureCols(){
     if (!map || typeof VISIBLE === 'undefined' || !VISIBLE.length) return;
     const z = map.getZoom();
@@ -261,17 +277,17 @@
     try { b = map.getBounds(); } catch (_) { return; }
     const shaftsOk = loadedBox && (loadedBox.full || z < 14.0) && boxContains(loadedBox, b);
     const plaquesOk = z < PLACA_MINZOOM - 0.4 || (loadedPlaqueBox && boxContains(loadedPlaqueBox, b));
-    if (shaftsOk && plaquesOk) return;
+    // Grooves are their own freshness flag: a pan at 16.5 can update rim/face
+    // while leaving the groove source stale; zooming in must not short-circuit.
+    const groovesOk = z < GROOVE_MINZOOM - 0.4 || (loadedGrooveBox && boxContains(loadedGrooveBox, b));
+    if (shaftsOk && plaquesOk && groovesOk) return;
     if (shaftsOk){
       // Shafts still cover the view: only refresh the tighter plaque/groove sources.
-      const pb = plaqueBox();
-      loadedPlaqueBox = pb;
-      PLACA_PARTS.forEach(p => {
-        const src = map.getSource('col-' + p.half + '-' + p.rad);
-        if (src) src.setData(fcFor(p.half, p.rad, pb));
-      });
-      const gro = map.getSource('col-placa-grooves');
-      if (gro && z >= GROOVE_MINZOOM - 0.4) gro.setData(fcGrooves(pb));
+      if (!plaquesOk){
+        setPlaqueSources(plaqueBox());
+      } else if (!groovesOk){
+        setGrooveSource(loadedPlaqueBox || plaqueBox());
+      }
       return;
     }
     const tb = targetBox();
@@ -286,8 +302,10 @@
       if (isPlaca && !needPlaque) return;
       src.setData(fcFor(p.half, p.rad, isPlaca ? pb : tb));
     });
-    const gro = map.getSource('col-placa-grooves');
-    if (gro && z >= GROOVE_MINZOOM - 0.4) gro.setData(fcGrooves(pb || plaqueBox()));
+    // Keep grooves on the same box as rim/face whenever plaques are loaded,
+    // even below GROOVE_MINZOOM (the layer itself stays unpainted until 17.8).
+    if (needPlaque) setGrooveSource(pb);
+    else if (!groovesOk) setGrooveSource(pb || plaqueBox());
   }
   function filterSel(){
     if (pendingAdd && selected && map && map.getZoom() >= 12.5) add(undefined, true);

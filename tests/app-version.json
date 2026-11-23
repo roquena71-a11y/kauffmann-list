@@ -1,11 +1,11 @@
 {
- "version": 27,
+ "version": 28,
  "note": "Fuente \u00fanica de la versi\u00f3n. Cambiar solo con tests/bump-version.py",
  "hashes": {
   "2d/app.js": "a15337f10b2f5de7",
   "2d/style.css": "74cf25d886aa6e0e",
   "app3d.js": "79c7d2ad2bb1f537",
-  "columns.js": "17f0a9d568d2fc20",
+  "columns.js": "796fc3166b253eda",
   "counter.js": "782dba7a77e0b611",
   "dedupe.js": "237bdb5d0494ac02",
   "fonts/NGS6v5_NC0k9P9GKTbFzsQ.woff2": "75dd1921c5eb014d",
