@@ -17,7 +17,7 @@ async def main():
         ctx = await b.new_context(viewport={'width': 1280, 'height': 800}, service_workers='block', locale='es-ES')
         pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
         await pg.goto(BASE + 'index.html?intro=0&lang=es', wait_until='load')
-        await pg.wait_for_function("typeof DATA!=='undefined' && DATA.length>60000 && DATA.every(s=>s._dla!==undefined || s._aliasOf)", timeout=180000)
+        await pg.wait_for_function("typeof DATA!=='undefined' && DATA.length>60000 && DATA.every(s=>s._dla!==undefined || s._aliasOf) && (!window.KLAlign || KLAlign.ready)", timeout=180000)
         rows = await pg.evaluate("(ccs) => ({half: COL_HALF, rows: DATA.filter(s => ccs.includes(s.cc)).map(s => ({id: s.id, n: s.n, cc: s.cc, la: s.sla ?? s.la, lo: s.slo ?? s.lo, dla: s._dla, dlo: s._dlo, ang: s._ang, alias: s._aliasOf || null, disp: s.dla ?? null}))})", list(CCS))
         await b.close()
     half = rows['half']; bad = []; res = []

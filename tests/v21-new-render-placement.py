@@ -14,6 +14,8 @@
   queda a ≤80 m; no se omite una vía por el radio del índice ni por d_center >25 m.
   Exención de fachada solo si hay edificio a <6 m. Las de calzada-v21.csv se aceptan.
 - se comprueban las 1.840 nuevas
+- v29: posición DIBUJADA = con la alineación con la calle (data/align-v24.json) ya aplicada; las de v20 se toman
+  de este mismo cliente (no de b142fa48, porque también se alinean)
 
 Uso:
   python3 tests/v21-new-render-placement.py <url_v21> [--v20-json FILE] [--v20-url URL]
@@ -163,7 +165,7 @@ async def dump(url, expect_min, label):
         await page.route("**/*", route_handler)
         await page.goto(url, wait_until="load", timeout=120000)
         await page.wait_for_function(
-            f"typeof DATA!=='undefined' && DATA.length>={expect_min} && DATA.every(s=>s._dla!==undefined || s._aliasOf)",
+            f"typeof DATA!=='undefined' && DATA.length>={expect_min} && DATA.every(s=>s._dla!==undefined || s._aliasOf) && (!window.KLAlign || KLAlign.ready)",
             timeout=600000,
         )
         rows = await page.evaluate("""() => DATA.map(s => ({
@@ -490,7 +492,12 @@ async def main():
         if args.dump_out:
             Path(args.dump_out).write_text(json.dumps({"n": len(all_rows), "rows": all_rows}))
 
-    if args.v20_url and not Path(args.v20_json).exists():
+    if not args.from_files:
+        # v29: las placas de v20 ya no están donde las dejó b142fa48 (alineación con la calle, data/align-v24.json):
+        # la separación de 1,55 m se comprueba contra su posición DIBUJADA ahora en este mismo cliente.
+        v20_rows = [r for r in all_rows if not is_added(r) and not r.get("alias") and r.get("_dla") is not None]
+        print(f"v20 dibujadas en este cliente (con alineación): {len(v20_rows)} visibles", flush=True)
+    elif args.v20_url and not Path(args.v20_json).exists():
         url = args.v20_url.rstrip("/") + "/index.html?intro=0&lang=es"
         print("START v20", url, flush=True)
         v20_rows = await dump(url, 72110, "v20")

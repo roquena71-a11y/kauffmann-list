@@ -149,7 +149,7 @@ async def block_counters(pg, seen):
 
 async def wait_data(pg):
     await pg.wait_for_function(
-        "typeof VISIBLE !== 'undefined' && VISIBLE.length > 74000 && window.map && map.loaded && map.loaded()",
+        "typeof VISIBLE !== 'undefined' && VISIBLE.length > 74000 && window.map && map.loaded && map.loaded() && (!window.KLAlign || KLAlign.ready)",
         timeout=180000,
     )
 

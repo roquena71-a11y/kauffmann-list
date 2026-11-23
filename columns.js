@@ -307,6 +307,13 @@
     if (needPlaque) setGrooveSource(pb);
     else if (!groovesOk) setGrooveSource(pb || plaqueBox());
   }
+  // v29: las posiciones de dibujo (_dla/_dlo/_ang) cambiaron (data/align-v24.json): rehacer índice, caché y fuentes ya montadas.
+  function relayout(){
+    indexedRows = null; featCache = {};
+    if (!map || !sourceIds.length) return;
+    loadedBox = null; loadedPlaqueBox = null; loadedGrooveBox = null;
+    if (map.getZoom() >= 12.5) ensureCols();
+  }
   function filterSel(){
     if (pendingAdd && selected && map && map.getZoom() >= 12.5) add(undefined, true);
     const f = selected ? ['!=', ['get','id'], selected] : null;
@@ -437,7 +444,7 @@
     map.on('zoomend', () => { if (tip && !tip.hidden && map.getZoom() < 14.6){ tipPinned = false; tipHover = false; hideTip(); } });
   }
 
-  window.KLCols = { add, filterSel, setModel, rise, finish(){ animating=false; setT(1); }, MODELS, relabel, PLACA_MINZOOM, GROOVE_MINZOOM, BRASS_RIM, BRASS_FACE, BRASS_GROOVE };
+  window.KLCols = { add, filterSel, relayout, setModel, rise, finish(){ animating=false; setT(1); }, MODELS, relabel, PLACA_MINZOOM, GROOVE_MINZOOM, BRASS_RIM, BRASS_FACE, BRASS_GROOVE };
   const boot = () => { if (!window.map || !map.on) return setTimeout(boot, 200);
     map.on('zoom', ensureCols); map.on('moveend', ensureCols);
     map.on('zoomend', watchZoom); rotateButtons(); picker(); bindTip(); };

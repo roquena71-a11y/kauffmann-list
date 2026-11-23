@@ -132,7 +132,7 @@ async def dump(url, expect_total):
         await page.route("**/*", route_handler)
         await page.goto(url, wait_until="load", timeout=120000)
         await page.wait_for_function(
-            f"typeof DATA!=='undefined' && DATA.length>={expect_total} && DATA.every(s=>s._dla!==undefined || s._aliasOf)",
+            f"typeof DATA!=='undefined' && DATA.length>={expect_total} && DATA.every(s=>s._dla!==undefined || s._aliasOf) && (!window.KLAlign || KLAlign.ready)",
             timeout=600000,
         )
         rows = await page.evaluate("""() => DATA.map(s => ({

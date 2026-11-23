@@ -76,7 +76,7 @@ async def main():
         pg = await ctx.new_page(); errs = []; pg.on('pageerror', lambda e: errs.append(str(e)))
         await pg.route('**/*.workers.dev/**', lambda r: r.abort())
         await pg.goto(BASE + 'index.html?intro=0&lang=es', wait_until='load')
-        await pg.wait_for_function("typeof DATA!=='undefined' && DATA.length>60000 && DATA.every(s=>s._dla!==undefined || s._aliasOf)", timeout=300000)
+        await pg.wait_for_function("typeof DATA!=='undefined' && DATA.length>60000 && DATA.every(s=>s._dla!==undefined || s._aliasOf) && (!window.KLAlign || KLAlign.ready)", timeout=300000)
         rows = await pg.evaluate("(ids) => { const S = new Set(ids); return {half: COL_HALF, rows: DATA.filter(s => S.has(s.id)).map(s => ({id: s.id, n: s.n, cc: s.cc || 'DE', la: s.sla ?? s.la, lo: s.slo ?? s.lo, dla: s._dla, dlo: s._dlo, pla: s.la, plo: s.lo, ang: s._ang, alias: s._aliasOf || null}))} }", sorted(IDS))
         await b.close()
     half = rows['half']; bad = []; res = []; nroad = []

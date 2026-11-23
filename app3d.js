@@ -589,6 +589,8 @@ function buildStones(){
   POINTS_FC = {type:'FeatureCollection', features: VISIBLE.map(s=>({type:'Feature', properties:{}, geometry:{type:'Point', coordinates:[s.lo,s.la]}}))};
   LIGHTS_FC = {type:'FeatureCollection', features: groups.map(pg=>({type:'Feature', properties:{n:pg.g.length}, geometry:{type:'Point', coordinates:[pg.lo0, pg.la0]}}))};
   const ise69 = VISIBLE.filter(s => /Isestr/i.test(s.a||'') && /\b69\b/.test(s.a||'')).length;
+  groups.forEach((pg,i)=>{ for (const s of pg.g) s._gi=i; });   // v29: grupo de dibujo de cada placa visible de la base (comprobación de data/align-v24.json)
+  if (typeof window!=='undefined') window.KLGroups = groups;   // v29: solo lectura (pruebas y herramienta de alineación con la acera)
   var KLMerge = {groups:mergeGroups, extra:mergeExtra, doubtful:mergeDoubt, visible:VISIBLE.length, source:DATA.length, isestr69:ise69};
   if (typeof window!=='undefined') window.KLMerge = KLMerge;
 }
@@ -978,9 +980,58 @@ async function load(){
       }
     }
   };
+  startAlign();
   map.on('zoom', () => { if (map.getZoom() >= 6.5) mountRestAgg(); });
   setTimeout(mountRestAgg, 350);
   setTimeout(ensureSearchIndex, 60);
+}
+
+// v29: cada grupo de columnas mira a su calle de OSM y se dispone en 1–2 filas paralelas al bordillo (pipeline/tools/align24.py).
+// Solo DIBUJO: data/align-v24.json fija _dla/_dlo/_ang; la/lo registrados, el mapa 2D, «Cómo llegar» y las descargas no cambian.
+// Se pide DESPUÉS de montar los cuadros (kl-clu) para no retrasar la carga; los grupos que no están en el archivo se quedan como estaban.
+const KLAlign = {ready:false, applied:0, entries:0, skipped:0, file:'data/align-v24.json', off:/[?&]alignoff=1\b/.test(location.search)};
+if (typeof window!=='undefined') window.KLAlign = KLAlign;
+function applyAlign(j){
+  const step = +j.step || COL_STEP, list = Array.isArray(j.g) ? j.g : [];
+  let n = 0, skipped = 0;
+  for (const e of list){
+    const k = e.length - 4;
+    let ok = k > 0;
+    const gi = (byId.get(e[4])||{})._gi;
+    for (let i = 4; ok && i < e.length; i++){ const s = byId.get(e[i]); if (!s || s._aliasOf || s._gi !== gi) ok = false; }
+    // Un grupo de la base solo se recoloca si la entrada trae TODAS sus placas visibles (si los datos cambian sin rehacer el archivo, se queda como estaba).
+    if (ok && gi !== undefined && window.KLGroups && KLGroups[gi].g.length !== k) ok = false;
+    if (!ok){ skipped++; continue; }
+    const la0 = e[0]/1e7, lo0 = e[1]/1e7, ang = e[2]*Math.PI/1800, cols = e[3];
+    const rows = Math.ceil(k/cols)||1, cos = Math.cos(la0*Math.PI/180), cA = Math.cos(ang), sA = Math.sin(ang);
+    for (let i = 0; i < k; i++){
+      const s = byId.get(e[4+i]);
+      const cx = (i%cols)-(cols-1)/2, cy = Math.floor(i/cols)-(rows-1)/2;
+      const east = cx*step*cA - cy*step*sA;
+      const north = cx*step*sA + cy*step*cA;
+      s._dla = la0 + north/M_LAT;
+      s._dlo = lo0 + east/(M_LAT*cos);
+      s._ang = ang;
+      n++;
+    }
+  }
+  for (const s of DATA) if (s._aliasOf){ const p = byId.get(s._aliasOf); if (p){ s._dla = p._dla; s._dlo = p._dlo; s._ang = p._ang||0; } }
+  KLAlign.applied = n; KLAlign.entries = list.length; KLAlign.skipped = skipped;
+  if (typeof window !== 'undefined' && window.KLCols){ if (KLCols.relayout) KLCols.relayout(); }
+  else if (STONES_FC){
+    STONES_FC = {type:'FeatureCollection', features:VISIBLE.map(s => ({type:'Feature', properties:{id:s.id}, geometry:{type:'Polygon', coordinates:square(s._dlo,s._dla,COL_HALF,s._ang)}}))};
+    if (map && map.getSource('stones')) map.getSource('stones').setData(STONES_FC);
+  }
+  if (selected && map) refreshSel();
+}
+function startAlign(){
+  if (KLAlign.off){ KLAlign.ready = true; return; }
+  const t0 = Date.now();
+  const go = () => fetch(KLAlign.file).then(r => { if (!r.ok) throw new Error(KLAlign.file+' '+r.status); return r.json(); })
+    .then(j => { applyAlign(j); }).catch(e => { KLAlign.error = String(e); console.warn('align', e); })
+    .finally(() => { KLAlign.ready = true; document.dispatchEvent(new CustomEvent('kl:align')); });
+  const wait = () => { if ((map && map.getSource && map.getSource('kl-clu')) || Date.now() - t0 > 15000) go(); else setTimeout(wait, 250); };
+  wait();
 }
 
 function search(){
