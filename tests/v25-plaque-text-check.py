@@ -2,7 +2,8 @@
 """v25 (paso 3): la inscripción escrita en la placa de latón de cada columna (capa WebGL 'plaque-text', plaquetext.js).
 Comprueba en el navegador:
   1. Carga perezosa: plaquetext.js NO se pide en la carga inicial ni a zoom 19; sí al pasar de 19,5.
-  2. Umbrales: zoom 20,2 → nada; 20,8 → solo el nombre; 21,6 → la inscripción entera.
+  2. Umbrales por tamaño de la placa en pantalla (escritorio 1280x800): z20,2 (≈35 px) → nada; z20,8 (≈85 px) → solo el nombre;
+     z21,2 (≈170 px) → la inscripción entera; z21,6 → la cámara queda a la altura de las placas (16 m) → nada, surcos de vuelta.
   3. Solo placas en vista (± 15 %), como mucho 60; nunca la ficha abierta.
   4. Nada inventado: cada placa escrita tiene campo i, y sus palabras son exactamente las de i en mayúsculas (texto completo)
      o un trozo literal de i (nombre). Las placas sin i nunca se escriben (comprobado sobre TODAS las placas cargadas).
@@ -56,7 +57,7 @@ async def main():
         ok(len(pt()) == 1, f'plaquetext.js no pedido (o pedido {len(pt())} veces) a zoom 20,2')
         ok('?v=' in (pt() or [''])[0], 'plaquetext.js sin ?v= (caché del service worker)')
         s0 = await pg.evaluate("KLPlaqueText.state()")
-        ok(s0['drawn'] == 0 and s0['skipped'] == 'zoom', f'a zoom 20,2 no debe escribirse nada: {s0["drawn"]} {s0["skipped"]}')
+        ok(s0['drawn'] == 0 and s0['skipped'] == 'pequena', f'a zoom 20,2 no debe escribirse nada: {s0["drawn"]} {s0["skipped"]} {s0.get("facePx")} px')
 
         CHECK = """(mode) => {
           const st = KLPlaqueText.state(), P = KLPlaqueText, K = KLCols.state(), b = map.getBounds(), out = [];
@@ -78,13 +79,13 @@ async def main():
             if (!flt.includes(q.id)) out.push(q.id + ': surcos no ocultos bajo el texto');
           }
           for (const id of KLCols.state().textIds || []) if (!st.ids.includes(id)) out.push(id + ': surcos ocultos sin texto');
-          return {st: {drawn: st.drawn, mode: st.mode, skipped: st.skipped, inView: st.inView.length, textures: st.textures}, out, flt: flt.length};
+          return {st: {drawn: st.drawn, mode: st.mode, skipped: st.skipped, inView: st.inView.length, textures: st.textures, facePx: st.facePx}, out, flt: flt.length};
         }"""
         res = {}
-        for z, mode, br in [(20.8, 'name', 0), (21.6, 'full', 0), (21.6, 'full', 100)]:
-            await go(z, br)
+        for z, mode, br, pi in [(20.8, 'name', 0, 0), (21.2, 'full', 0, 0), (21.2, 'full', 100, 0), (20.6, 'name', 0, 30)]:
+            await go(z, br, pi)
             r = await pg.evaluate(CHECK, mode)
-            res[(z, br)] = r['st']
+            res[(z, br, pi)] = r['st']
             ok(r['st']['mode'] == mode, f'z{z}: modo {r["st"]["mode"]} ≠ {mode}')
             ok(r['st']['drawn'] >= 3, f'z{z} rumbo {br}: solo {r["st"]["drawn"]} placas escritas')
             ok(r['st']['inView'] <= 60, f'z{z}: {r["st"]["inView"]} placas en vista (> 60)')
@@ -96,8 +97,9 @@ async def main():
         sel_ids = await pg.evaluate("KLPlaqueText.state().ids")
         ok(SPOT[0] not in sel_ids, 'la placa de la ficha abierta también se escribe')
         await pg.evaluate("() => { if (typeof closeDetail === 'function') closeDetail(); else selected = null; map.triggerRepaint(); }")
-        await go(21.6, 0, 50)
-        ok((await pg.evaluate("KLPlaqueText.state().drawn")) >= 3, 'con el mapa inclinado (50°) no se escribe')
+        await go(21.6, 0, 0)
+        cb = await pg.evaluate("[KLPlaqueText.state(), KLCols.state().textIds]")
+        ok(cb[0]['drawn'] == 0 and cb[0]['skipped'] == 'camara' and not cb[1], f'z21,6 (cámara a la altura de las placas): {cb[0]["drawn"]} {cb[0]["skipped"]} {cb[0].get("camAlt")} m; surcos ocultos {len(cb[1])}')
 
         # nada inventado en TODAS las placas cargadas: sin i → no hay textura
         blank = await pg.evaluate("""() => { let n = 0, bad = []; for (const s of DATA){ if (KLPlaqueText.inscOf(s)) continue; n++;
@@ -105,7 +107,7 @@ async def main():
         ok(blank['n'] > 1000 and not blank['bad'], f'placas sin i con texto: {blank}')
 
         # se ve: visible vs oculta, y letras oscuras
-        await go(21.6, 0, 0)
+        await go(21.2, 0, 0)
         on = await pg.screenshot(type='png')
         await pg.evaluate("() => { map.setLayoutProperty('plaque-text', 'visibility', 'none'); map.triggerRepaint(); }")
         await pg.wait_for_timeout(1200)
@@ -129,8 +131,8 @@ async def main():
         await b.close()
     if fails:
         print('FAIL v25-plaque-text:'); [print('  -', f) for f in fails]; sys.exit(1)
-    print(f'OK v25-plaque-text: perezoso (no en la carga ni a z19); z20,2 nada; z20,8 nombre ({res[(20.8,0)]["drawn"]} placas); '
-          f'z21,6 inscripción ({res[(21.6,0)]["drawn"]}; girado 100°: {res[(21.6,100)]["drawn"]}); texto = i en mayúsculas, '
+    print(f'OK v25-plaque-text: perezoso (no en la carga ni a z19); z20,2 nada; z20,8 nombre ({res[(20.8,0,0)]["drawn"]} placas); '
+          f'z21,2 inscripción ({res[(21.2,0,0)]["drawn"]}; girado 100°: {res[(21.2,100,0)]["drawn"]}; inclinado 30° a z20,6: {res[(20.6,0,30)]["drawn"]}); z21,6 cámara a la altura de las placas → nada; texto = i en mayúsculas, '
           f'gira con la placa y cabe en la cara; surcos ocultos solo bajo texto; {blank["n"]} placas sin i siempre lisas; '
           f'{px["diff"]} píxeles cambian ({px["dark"]} más oscuros); contraste {cr:.2f}:1; contador bloqueado ({len(blocked)})')
 

@@ -6,8 +6,15 @@
 (function(root){
   'use strict';
   const INK = '#3a2a10', FACE = '#d6b25a';           // letras grabadas sobre la cara (contraste WCAG ≈ 6:1)
-  const Z_ON = 20, Z_NAME = 20.5, Z_FULL = 21.5;     // capa desde z20; nombre desde 20,5; inscripción completa desde 21,5
+  // Capa desde z20. Qué se escribe depende del tamaño de la placa EN PANTALLA (no solo del zoom): las placas están a 16,4 m y la
+  // cámara de MapLibre baja deprisa (escritorio 1280x800: 33 m a z20,5, 23 m a z21, 16 m a z21,5; teléfono: 43 / 30 / 21 m).
+  // Medido: cara de 0,86 m = 51 px a z20,5 y 124 px a z21 en escritorio; 41 / 79 / 219 px a z20,5 / 21 / 21,5 en teléfono.
+  // Z_NAME / Z_FULL quedan como referencia del plan (≈ escritorio 20,5 / teléfono 21,5).
+  const Z_ON = 20, Z_NAME = 20.5, Z_FULL = 21.5;
+  const PX_NAME = 40, PX_FULL = 100;                 // px de la cara: nombre desde 40 px, inscripción entera desde 100 px
+  const CAM_CLEAR = 1.0;                             // m: con la cámara a menos de 1 m sobre la placa (o debajo) no se escribe
   const MAX_STONES = 60, MAX_TEX = 72;               // placas en vista dibujadas / texturas en caché (LRU)
+  const FACE_HALF_M = 0.43;                         // media cara (columns.js FACE_HALF)
   const LIFT = 0.005;                                // m sobre la cara (16,42 m); los surcos (16,44 m) se ocultan donde hay texto
   const HALF_IN = 0.40;                              // semilado del área de texto (cara: 0,43 m)
 
@@ -65,17 +72,32 @@
     const m = t => measureAt(t, minPx);
     return {px: minPx, lines: wrap(lines, box, m), overflow: true};
   }
+  // Modo según el tamaño de la cara en pantalla (px) y la altura de la cámara sobre la placa (m)
+  function modeFor(z, facePx, camAboveFace){
+    if (z < Z_ON) return [null, 'zoom'];
+    if (!(camAboveFace > CAM_CLEAR)) return [null, 'camara'];
+    if (facePx >= PX_FULL) return ['full', ''];
+    if (facePx >= PX_NAME) return ['name', ''];
+    return [null, 'pequena'];
+  }
   // Contraste WCAG 2.x
   function lum(hex){ const c = [1, 3, 5].map(k => parseInt(hex.slice(k, k + 2), 16) / 255).map(v => v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4)); return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]; }
   function contrast(a, b){ const x = lum(a), y = lum(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); }
-  const API = {INK, FACE, Z_ON, Z_NAME, Z_FULL, fold, hardLines, inscOf, nameLine, linesFor, wrap, fit, contrast};
+  const API = {INK, FACE, Z_ON, Z_NAME, Z_FULL, PX_NAME, PX_FULL, modeFor, fold, hardLines, inscOf, nameLine, linesFor, wrap, fit, contrast};
   if (typeof module !== 'undefined' && module.exports){ module.exports = API; return; }
 
   // ---------- navegador ----------
   const FONT = px => `700 ${px}px "Helvetica Neue", Arial, "Liberation Sans", sans-serif`;
   const mctx = document.createElement('canvas').getContext('2d');
   const measureAt = (t, px) => { mctx.font = FONT(px); return mctx.measureText(t).width; };
-  const modeAt = z => z >= Z_FULL ? 'full' : (z >= Z_NAME ? 'name' : null);
+  // Cámara: distancia al centro (m) = cameraToCenterDistance / px por metro; altura = distancia · cos(inclinación)
+  function camera(faceTop){
+    const t = map.transform, c = map.getCenter(), lat = c.lat * Math.PI / 180;
+    const ppm = t.worldSize / (2 * Math.PI * 6378137 * Math.cos(lat));
+    const D = t.cameraToCenterDistance / ppm, cp = Math.cos(map.getPitch() * Math.PI / 180), alt = D * cp;
+    const facePx = alt > faceTop ? ppm * 2 * FACE_HALF_M * D / (D - faceTop * cp) : 0;
+    return {alt, above: alt - faceTop, facePx};
+  }
   const st = {ids: [], drawn: 0, mode: null, textures: 0, skipped: '', quads: []};
 
   function paint(s, mode){
@@ -164,9 +186,10 @@
     },
     onRemove(m, gl){ for (const e of cache.values()) if (e.tex) gl.deleteTexture(e.tex); cache.clear(); gl.deleteBuffer(this.buf); gl.deleteProgram(this.p); },
     render(gl, args){
-      const z = map.getZoom(), mode = modeAt(z), K = window.KLCols, ks = K && K.state ? K.state() : null;
-      const why = !mode ? 'zoom' : (!ks || !ks.plaqueLayers ? 'sin-placas' : (ks.animating || ks.T < 1 ? 'animando' : ''));
-      st.mode = mode; st.skipped = why;
+      const z = map.getZoom(), K = window.KLCols, ks = K && K.state ? K.state() : null;
+      const cam = camera(ks ? ks.faceTop : 16.42), [mode, mwhy] = modeFor(z, cam.facePx, cam.above);
+      const why = mwhy || (!ks || !ks.plaqueLayers ? 'sin-placas' : (ks.animating || ks.T < 1 ? 'animando' : ''));
+      st.mode = why ? null : mode; st.skipped = why; st.facePx = Math.round(cam.facePx); st.camAlt = +cam.alt.toFixed(1);
       if (why){ st.drawn = 0; st.ids = []; st.quads = []; if (K && K.setTextIds) K.setTextIds([]); return; }
       const M = (args && args.defaultProjectionData && args.defaultProjectionData.mainMatrix) || (args && args.modelViewProjectionMatrix) || args;
       const c = map.getCenter(), ref = maplibregl.MercatorCoordinate.fromLngLat([c.lng, c.lat], 0), k = ref.meterInMercatorCoordinateUnits();
