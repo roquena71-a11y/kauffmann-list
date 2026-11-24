@@ -93,6 +93,29 @@ class TestInscription(unittest.TestCase):
         self.assertTrue(inscription.has_survivor_marker("entkam 1944"))
         self.assertFalse(inscription.has_survivor_marker("Flucht in den Tod"))
 
+    def test_inscription_event_dates_anna_mayer_and_multilingual(self):
+        ev = inscription.inscription_event_dates(
+            "Hier wohnte\nAnna Mayer\nGeb. Sontheimer\nJG. 1870\nDeportiert 1942\nTheresienstadt\nTot 11.10.1942")
+        self.assertEqual(ev["birth"]["value"], "1870")
+        self.assertEqual(ev["death"]["value"], "1942-10-11")
+        self.assertEqual(ev["deportation"]["value"], "1942")
+        ev = inscription.inscription_event_dates(
+            "HERE LIVED VICTOR EMANUEL BORN 1870 PERSECUTED SUICIDE 9.4.1944")
+        self.assertEqual(ev["birth"]["value"], "1870")
+        self.assertEqual(ev["death"]["value"], "1944-04-09")
+        ev = inscription.inscription_event_dates("HIER WOHNTE X geb. 9. Januar 1876 ERMORDET 12.1.1943")
+        self.assertEqual(ev["birth"]["value"], "1876-01-09")
+        self.assertEqual(ev["death"]["value"], "1943-01-12")
+        ev = inscription.inscription_event_dates(
+            "HIT KOM WALTER GERSON FÖDD 1882 DANZIG AVVISAD JUN. 1939 MÖRDAD 12.9.1939 MSZANA DOLNA")
+        self.assertEqual(ev["birth"]["value"], "1882")
+        self.assertEqual(ev["death"]["value"], "1939-09-12")
+        self.assertTrue(inscription.dates_conflict("1876-01-09", "1870"))
+        self.assertFalse(inscription.dates_conflict("1870-01-09", "1870"))
+        self.assertTrue(inscription.dates_day_conflict("1942-10-12", "1942-10-11"))
+        self.assertFalse(inscription.dates_day_conflict("1942-10-11", "1942"))
+
+
 
 class TestSurvivalVsDeath(unittest.TestCase):
     """Auditoría 1: supervivencia como prefijo; 'Tod'/'Todesmarsch' no son muerte si hay marca de supervivencia."""
@@ -636,3 +659,35 @@ class TestSwedishInscriptions(unittest.TestCase):
         self.assertEqual(r["memorials"][0]["locality"], "Stockholm")
         self.assertEqual(r["fate"], "murdered")
         self.assertEqual(r["id"], "wd-Q80913948")
+
+
+class TestStoneDateConflict(unittest.TestCase):
+    def test_anna_mayer_birth_keeps_inscription_and_variant(self):
+        """Si JG. 1870 choca con 1876-01-09, la API usa 1870 y guarda el otro en variants."""
+        from pipeline.adapters.stones import stone_to_record
+        cfg = {"id": "stolpersteine_de", "id_prefix": "st", "license": "ODbL-1.0",
+               "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+               "attribution": "© OpenStreetMap contributors", "link_templates": {}}
+        s = {"id": "n13186756540", "la": 50.0, "lo": 8.9, "src": "osm+wd",
+             "n": "Anna Mayer", "a": "Steinheimer Str. 4, 63500 Seligenstadt",
+             "c": "Seligenstadt", "cc": "DE", "b": "1876-01-09", "d": "1942-10-11",
+             "i": "Hier wohnte\nAnna Mayer\nGeb. Sontheimer\nJG. 1870\nDeportiert 1942\nTheresienstadt\nTot 11.10.1942",
+             "wd": "Q134694679", "p": "Q105371628"}
+        r = stone_to_record(s, {"insc": {"birth": "1870"}}, cfg, "2026-11-24")
+        self.assertEqual(r["birth_date"], "1870")
+        self.assertEqual(r["_variants"]["birth_date"], [{"value": "1876-01-09", "source_id": "stolpersteine_de"}])
+        self.assertEqual(r["death_date"], "1942-10-11")
+        self.assertNotIn("death_date", r.get("_variants") or {})
+
+    def test_death_year_conflict_keeps_inscription(self):
+        from pipeline.adapters.stones import stone_to_record
+        cfg = {"id": "stolpersteine_de", "id_prefix": "st", "license": "ODbL-1.0",
+               "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+               "attribution": "© OpenStreetMap contributors", "link_templates": {}}
+        s = {"id": "n1", "la": 50.0, "lo": 8.9, "src": "osm", "n": "Max Muster",
+             "a": "X 1", "c": "Y", "b": "1900", "d": "1943-02-01",
+             "i": "HIER WOHNTE MAX MUSTER JG. 1900 ERMORDET 11.10.1942"}
+        r = stone_to_record(s, None, cfg, "2026-11-24")
+        self.assertEqual(r["birth_date"], "1900")
+        self.assertEqual(r["death_date"], "1942-10-11")
+        self.assertEqual(r["_variants"]["death_date"], [{"value": "1943-02-01", "source_id": "stolpersteine_de"}])

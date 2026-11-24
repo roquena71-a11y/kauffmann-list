@@ -94,6 +94,9 @@ const EXTRA = {
        nogl:'Este dispositivo no puede mostrar el mapa 3D. <a href="2d/">Abrir el mapa clásico 2D</a>.',
        aggHint:'Acerque el mapa para ver cada placa',
        story:'Su historia', archives:'Archivos', perInscription:'según la inscripción',
+       otherSource:(v,src)=>'otra fuente: '+v+' ('+src+')', noPhoto:'Sin foto todavía',
+       photoCredit:(a,l)=>a?(l?('Foto: '+a+' · '+l):('Foto: '+a)):(l?('Foto: '+l):'Wikimedia Commons'),
+       photoNotStone:'El nombre del archivo no indica que sea la placa (puede ser un retrato o una casa).',
        noStory:'Todavía no tenemos su historia.', helpUs:'¿La conoce? Ayúdenos',
        anonNote:'Esta placa está anonimizada. No añadimos nada que no esté escrito en la piedra.',
        wpCite:'Texto de Wikipedia, sin cambios.', wpAuthors:'Autores de Wikipedia', wpRev:'revisión',
@@ -108,6 +111,9 @@ const EXTRA = {
        nogl:'Dieses Gerät kann die 3D-Karte nicht anzeigen. <a href="2d/">Klassische 2D-Karte öffnen</a>.',
        aggHint:'Hineinzoomen, um jeden Stein zu sehen',
        story:'Die Geschichte', archives:'Archive', perInscription:'laut Inschrift',
+       otherSource:(v,src)=>'andere Quelle: '+v+' ('+src+')', noPhoto:'Noch kein Foto',
+       photoCredit:(a,l)=>a?(l?('Foto: '+a+' · '+l):('Foto: '+a)):(l?('Foto: '+l):'Wikimedia Commons'),
+       photoNotStone:'Der Dateiname spricht nicht für ein Foto des Steins (es kann ein Porträt oder ein Haus sein).',
        noStory:'Wir haben die Geschichte noch nicht.', helpUs:'Kennen Sie sie? Helfen Sie uns',
        anonNote:'Dieser Stein ist anonymisiert. Wir fügen nichts hinzu, was nicht auf dem Stein steht.',
        wpCite:'Wikipedia-Text, unverändert.', wpAuthors:'Wikipedia-Autorinnen und Autoren', wpRev:'Version',
@@ -122,6 +128,9 @@ const EXTRA = {
        nogl:'This device cannot display the 3D map. <a href="2d/">Open the classic 2D map</a>.',
        aggHint:'Zoom in to see each stone',
        story:'Their story', archives:'Archives', perInscription:'as on the inscription',
+       otherSource:(v,src)=>'other source: '+v+' ('+src+')', noPhoto:'No photo yet',
+       photoCredit:(a,l)=>a?(l?('Photo: '+a+' · '+l):('Photo: '+a)):(l?('Photo: '+l):'Wikimedia Commons'),
+       photoNotStone:'The file name does not indicate a photo of the stone (it may be a portrait or a house).',
        noStory:'We do not yet have their story.', helpUs:'Do you know it? Help us',
        anonNote:'This plaque is anonymised. We add nothing that is not written on the stone.',
        wpCite:'Wikipedia text, unchanged.', wpAuthors:'Wikipedia authors', wpRev:'revision',
@@ -200,7 +209,7 @@ function lev(a,b,max){
 }
 
 /* ---------- state ---------- */
-var map; let DATA=[], META={}, byId=new Map(), VISIBLE=[], selected=null, base='night', AGG=[], STONES_FC=null, POINTS_FC=null, LIGHTS_FC=null, CITY_STATS=[];
+var map; let DATA=[], META={}, byId=new Map(), VISIBLE=[], selected=null, base='night', AGG=[], STONES_FC=null, POINTS_FC=null, LIGHTS_FC=null, CITY_STATS=[], DATE_CONFLICTS={}, ADDED_PHOTOS={}, PHOTO_CREDITS=null;
 const cityOf = s => s.c || s.cd || '';
 const countryLabel = s => { const cc=(s.cc||'DE').toUpperCase(); const names=T('countryName')||{}; return names[cc] || cc; };
 
@@ -891,8 +900,10 @@ async function load(){
   const pre = (typeof window !== 'undefined' && window.__klPre) || {};
   const fetchJson = u => fetch(u).then(r => { if (!r.ok) throw new Error(u+' '+r.status); return r.json(); });
   const getJson = u => pre[u] ? Promise.resolve(pre[u]).catch(() => fetchJson(u)) : fetchJson(u);
-  const [j, ...added] = await Promise.all([getJson('data/stones.json'), ...addedFiles.map(([, u]) => getJson(u))]);
+  const [j, dateConf, addedPhotos, ...added] = await Promise.all([getJson('data/stones.json'), getJson('data/date-conflicts-v25.json').catch(() => ({conflicts:{}})), getJson('data/photos-added-v25.json').catch(() => ({photos:{}})), ...addedFiles.map(([, u]) => getJson(u))]);
   META = j.meta; DATA = j.stones;
+  DATE_CONFLICTS = (dateConf && dateConf.conflicts) || {};
+  ADDED_PHOTOS = (addedPhotos && addedPhotos.photos) || {};
   const odblLen = j.stones.length;
   const addedCounts = {}, addedMeta = {};
   added.forEach((part, idx) => {
@@ -916,6 +927,8 @@ async function load(){
     counts: addedCounts,
     records: DATA.length - odblLen
   };
+  // Fotos legales añadidas (sidecar): solo si el registro aún no tiene img. No se tocan la/lo.
+  for (const s of DATA){ if (!s.img && ADDED_PHOTOS[s.id]) s.img = ADDED_PHOTOS[s.id]; }
   // v19: posición de DIBUJO. Si el archivo trae dla/dlo (placa dentro de un edificio de OSM o a menos de 1 m de la fachada), la columna se dibuja ahí
   // (en la acera, hacia la calle); la coordenada de origen queda en sla/slo y es la que usan «Cómo llegar» y las descargas.
   for (const s of DATA){
@@ -1071,11 +1084,37 @@ function search(){
   const more = res.length>LIMIT, shown = res.slice(0,LIMIT);
   $('#status').textContent = res.length ? T('results')(fmtNum(shown.length),more)+(fuzzyOnly?' '+T('similar'):'') : T('none');
   list.innerHTML = shown.map(([,s])=>`<li><button data-id="${esc(s.id)}"><div class="nm">${esc(s.n||'—')}</div>
-    <div class="meta">${esc([plainTxt(s.a)||cityOf(s), s.b?('* '+plainTxt(s.b)):''].filter(Boolean).join(' · '))}</div></button></li>`).join('');
+    <div class="meta">${esc((()=>{ const by=dateFactValue(s,'birth',s.b).primary; return [plainTxt(s.a)||cityOf(s), by?('* '+plainTxt(by)):''].filter(Boolean).join(' · '); })())}</div></button></li>`).join('');
 }
 
 function commonsThumb(f,w){ return 'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f.replace(/ /g,'_'))+'?width='+w; }
 function commonsPage(f){ return 'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(f.replace(/ /g,'_')); }
+function looksLikeStonePhoto(fn){
+  return /stolperstein|stolperschwelle|pietra.?d.?inciampo|struikelsteen|stumble.?stone|pierre.?d.?achoppement|snublestein|snubbelstein|kamen.?u.?tla[cč]ovatele|k[aá]men.?zmizel|stolpersteine/i.test(fn||'');
+}
+function loadPhotoCredits(){
+  if (!PHOTO_CREDITS) PHOTO_CREDITS = fetch('data/photo-credits-v25.json').then(r => r.ok ? r.json() : {credits:{}}).catch(() => ({credits:{}}));
+  return PHOTO_CREDITS;
+}
+function photoCaptionText(fn, credits){
+  const rec = (credits && (credits[fn] || credits[fn && fn.replace(/_/g,' ')])) || {};
+  return T('photoCredit')(rec.a||'', rec.l||'');
+}
+function photoHtml(s){
+  if (!s.img) return `<p class="note" id="photoSlot">${esc(T('noPhoto'))}</p>`;
+  const flag = looksLikeStonePhoto(s.img) ? '' : `<p class="note">${esc(T('photoNotStone'))}</p>`;
+  return `<figure class="photo" id="photoSlot"><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${commonsThumb(s.img,480)}" alt="${esc(s.n||'')}"></a><figcaption><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer">${esc(T('photo'))}</a></figcaption>${flag}</figure>`;
+}
+function paintPhotoCredit(s){
+  if (!s || !s.img) return;
+  loadPhotoCredits().then(pack => {
+    const fig = document.querySelector('#detail figure.photo figcaption');
+    if (!fig || selected !== s.id) return;
+    const credits = (pack && pack.credits) || pack || {};
+    const txt = photoCaptionText(s.img, credits);
+    fig.innerHTML = `<a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer">${esc(txt)}</a>`;
+  }).catch(() => {});
+}
 function wpUrl(v){ if (/^https?:\/\//i.test(String(v||''))) return String(v); const m=/^([a-z\-]+):(.+)$/.exec(v); return m?`https://${m[1]}.wikipedia.org/wiki/${encodeURIComponent(m[2].replace(/ /g,'_'))}`:''; }
 function osmUrl(s){ return /^[nw]\d+$/.test(s.id)?`https://www.openstreetmap.org/${s.id[0]==='n'?'node':'way'}/${s.id.slice(1)}`:''; }
 
@@ -1190,6 +1229,14 @@ function discHtml(s){
     `<br>${esc(T('discAlt')(plainTxt(d.alt)))} ${hostLinks(d.alt_src||[])}`+
     `<br>${esc(T('discMain')(plainTxt(s.a)))} ${hostLinks([...osm, ...(d.main_src||[])])}</div>`;
 }
+function dateFactValue(s, field, structured){
+  const conf = (DATE_CONFLICTS[s.id] || {})[field];
+  if (!conf) return {primary: structured, note: ''};
+  if (conf.ambiguous && !conf.insc) return {primary: structured, note: ''};
+  const primary = conf.insc || structured;
+  const note = (conf.other && conf.other_src) ? T('otherSource')(conf.other, conf.other_src) : '';
+  return {primary: primary, note: note};
+}
 function openStone(id, fromMap){
   let s = byId.get(id); if (!s) return;
   if (s._aliasOf) s = byId.get(s._aliasOf) || s;
@@ -1204,8 +1251,9 @@ function openStone(id, fromMap){
   const inscSeen = new Set(), inscList = [];
   for (const r of [s, ...(s._also||[])]){ if (!r.i) continue; const t = KLDedupe.inscDisplay(r.i), k = KLDedupe.fold(t).replace(/[^a-z0-9]+/g,''); if (!inscSeen.has(k)){ inscSeen.add(k); inscList.push(t); } }
   const insc = inscList.map(t => esc(t).replace(/\s*\|\s*/g,'\n').split(/\n/).filter(Boolean).join('<br>')).join('</div><div class="brassplate">');
-  const facts=[[T('address'),s.a],[T('place'),cityOf(s)+(s.cd&&!s.c?' '+T('derived'):'')],[T('country'),countryLabel(s)],[T('district'),s.sub],[T('born'),s.b],[T('died'),s.d],[T('laid'),s.laid],[T('posLabel'),s.gm?T(/^commons/.test(s.gm)?'posApproxPhoto':'posApprox'):''],[T('type'),s.kind==='stolperschwelle'?T('threshold'):'']]
-    .filter(x=>x[1]).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(plainTxt(v))}</dd>`).join('');
+  const bShow = dateFactValue(s, 'birth', s.b), dShow = dateFactValue(s, 'death', s.d);
+  const facts=[[T('address'),s.a,''],[T('place'),cityOf(s)+(s.cd&&!s.c?' '+T('derived'):''),''],[T('country'),countryLabel(s),''],[T('district'),s.sub,''],[T('born'),bShow.primary,bShow.note],[T('died'),dShow.primary,dShow.note],[T('laid'),s.laid,''],[T('posLabel'),s.gm?T(/^commons/.test(s.gm)?'posApproxPhoto':'posApprox'):'',''],[T('type'),s.kind==='stolperschwelle'?T('threshold'):'','',]]
+    .filter(x=>x[1]).map(([k,v,note])=>`<dt>${esc(k)}</dt><dd>${esc(plainTxt(v))}${note?` <span class="src-tag">${esc(plainTxt(note))}</span>`:''}</dd>`).join('');
   const bio=[]; (s.w||[]).filter(u=>/^https?:\/\//i.test(String(u||''))).forEach(u=>{ let h=u; try{h=new URL(u).hostname.replace(/^www\./,'')}catch(e){} bio.push(`<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(h)}</a></li>`); });
   if (s.wp) bio.push(`<li><a href="${esc(wpUrl(s.wp))}" target="_blank" rel="noopener noreferrer">Wikipedia: ${esc(s.wp.replace(/^[a-z]+:/,''))}</a></li>`);
   if (s.desc) bio.unshift(`<li>${esc(plainTxt(s.desc))}</li>`);
@@ -1228,7 +1276,7 @@ function openStone(id, fromMap){
       }
     }
   }
-  const photo = s.img ? `<figure class="photo"><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${commonsThumb(s.img,480)}" alt="${esc(s.n||'')}"></a><figcaption><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer">${T('photo')}</a></figcaption></figure>` : '';
+  const photo = photoHtml(s);
   const d = $('#detail');
   d.innerHTML = `<button class="back" id="back">${T('back')}</button>
     <h2>${esc(s._n||s.n||'—')}</h2><p class="place">${esc([plainTxt(s.a), s.a&&s.a.includes(cityOf(s))?'':cityOf(s), countryLabel(s)].filter(Boolean).join(', '))}</p>
@@ -1254,6 +1302,7 @@ function openStone(id, fromMap){
   $('#share').onclick = e=>{ navigator.clipboard?.writeText(location.href); e.target.textContent=T('copied'); };
   renderSourceSearch(s, null);
   loadStory(s);
+  paintPhotoCredit(s);
 }
 function closeDetail(restore){
   $('#detail').hidden = true; $('#results').hidden = false;

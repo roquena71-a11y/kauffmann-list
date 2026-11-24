@@ -153,3 +153,225 @@ _JG = re.compile(r"\b(?:jg\.?|jahrgang|geb\.?|geboren)\s*(?:\d{1,2}\.\s?\d{1,2}\
 def birth_year_from_inscription(text):
     m = _JG.search(text or "")
     return m.group(1) if m else None
+
+
+# --- Fechas literales de la inscripción (v25): solo lo que el texto escribe; no se infiere. ---
+
+from .util import date_year
+
+# Palabras de nacimiento, además de jg./geb./geboren (sueco, inglés, finés, rumano, francés, checo, polaco, neerlandés).
+_BIRTH_LEAD = (
+    r"(?:jg\.?|jahrgang|geb(?:oren)?\.?|geboren\s+am|"
+    r"born|född|født|fodt|née|nee|"
+    r"născut[ăa]?|nascut[ao]?|nascuda|nascut|"
+    r"urodzon[ay]|rozen[ay]|rozen|"
+    r"s\.(?=\s*\d)|"  # finés «s. 1941», solo si sigue un número
+    r"\*)"
+)
+_BIRTH_NUM = re.compile(
+    r"(?i)(?:^|[\s|,;/])" + _BIRTH_LEAD + r"\s*(?:am\s+)?(?:(\d{1,2})\.\s*(\d{1,2})\.\s*)?(\d{4})\b"
+)
+_BIRTH_MONTH = re.compile(
+    r"(?i)(?:^|[\s|,;/])" + _BIRTH_LEAD + r"\s*(?:am\s+)?(?:(\d{1,2})\.?\s+)?([A-Za-zÄÖÜäöüß]+)\.?\s+(\d{4})\b"
+)
+
+_DEP_LEAD = re.compile(
+    r"(?i)\b(deportiert|abgeschoben|ausgewiesen|deporterad|deported|deportata|deportata|"
+    r"deportata|deportat[oa]|déporté[es]?|deportata|verschleppt|luovutettiin)\b"
+)
+
+# Fechas numéricas o con mes, en una ventana corta alrededor de una palabra clave.
+_NUM_DATE = re.compile(r"\b(\d{1,2})\.\s*(\d{1,2})\.\s*(\d{4})\b")
+_YEAR_ONLY = re.compile(r"\b((?:1[7-9]|20)\d{2})\b")
+_MONTH_DATE = re.compile(
+    r"\b(?:(\d{1,2})\.?\s+)?([A-Za-zÄÖÜäöüß]+)\.?\s+(\d{4})\b", re.I
+)
+
+
+def _month_date(text):
+    from .util import _MONTHS, _ymd
+    out = []
+    for m in _MONTH_DATE.finditer(text or ""):
+        mon = (m.group(2) or "").lower().rstrip(".")
+        if mon not in _MONTHS:
+            continue
+        out.append((_ymd(m.group(3), _MONTHS[mon], m.group(1)), m.group(0).strip(), m.start(), m.end()))
+    return out
+
+
+def _numeric_dates(text):
+    from .util import _ymd
+    out = []
+    for m in _NUM_DATE.finditer(text or ""):
+        out.append((_ymd(m.group(3), m.group(2), m.group(1)), m.group(0).strip(), m.start(), m.end()))
+    return out
+
+
+def _years_span(text, start, end):
+    """Fechas y años en text[start:end], más precisas primero."""
+    chunk = text[start:end]
+    found = _numeric_dates(chunk) + _month_date(chunk)
+    # Ajustar offsets al texto completo
+    adj = [(v, raw, start + a, start + b) for v, raw, a, b in found]
+    if adj:
+        return adj
+    out = []
+    for m in _YEAR_ONLY.finditer(chunk):
+        y = m.group(1)
+        out.append((y, y, start + m.start(), start + m.end()))
+    return out
+
+
+def _unique_values(pairs):
+    """Lista de valores normalizados en orden de aparición, sin repetir el mismo año compatible."""
+    seen, vals = set(), []
+    for v, raw, *_ in pairs:
+        if not v:
+            continue
+        key = date_year(v)
+        if key in seen:
+            # Si llega una fecha más precisa del mismo año, se sustituye.
+            for i, prev in enumerate(vals):
+                if date_year(prev[0]) == key and len(v) > len(prev[0]):
+                    vals[i] = (v, raw)
+                    break
+            continue
+        seen.add(key)
+        vals.append((v, raw))
+    return vals
+
+
+def _birth_matches(text):
+    from .util import _MONTHS, _ymd
+    t = text or ""
+    hits = []
+    for m in _BIRTH_NUM.finditer(t):
+        d, mo, y = m.group(1), m.group(2), m.group(3)
+        val = _ymd(y, mo, d) if mo else y
+        hits.append((val, m.group(0).strip(), m.start(), m.end()))
+    for m in _BIRTH_MONTH.finditer(t):
+        mon = (m.group(2) or "").lower().rstrip(".")
+        if mon not in _MONTHS:
+            continue
+        val = _ymd(m.group(3), _MONTHS[mon], m.group(1))
+        hits.append((val, m.group(0).strip(), m.start(), m.end()))
+    return hits
+
+
+def _death_windows(text):
+    """Ventanas de fecha ligadas a una palabra de muerte (o †).
+
+    Primero se mira *después* de la palabra, en la misma línea (hasta 45 caracteres).
+    Solo si ahí no hay fecha se acepta una fecha que preceda de inmediato
+    («12.9.1939 MÖRDAD»), no un año más atrás en la frase (evita tomar el
+    nacimiento en «BORN 1870 … SUICIDE 9.4.1944»).
+    """
+    raw = text or ""
+    low = raw.lower()
+    after, before = [], []
+
+    def add_mark(start, end):
+        line_end = raw.find("\n", end)
+        if line_end < 0:
+            line_end = len(raw)
+        line_start = raw.rfind("\n", 0, start) + 1
+        after.append((end, min(line_end, end + 45), start))
+        # Fecha inmediatamente anterior (solo espacios).
+        chunk = raw[line_start:start]
+        m = re.search(r"((?:\d{1,2}\.\s*\d{1,2}\.\s*\d{4})|(?:\d{1,2}\.?\s+[A-Za-zÄÖÜäöüß]+\.?\s+\d{4})|(?:(?:1[7-9]|20)\d{2}))\s*$", chunk)
+        if m:
+            before.append((line_start + m.start(), start, start))
+
+    for m in re.finditer(r"†", raw):
+        add_mark(m.start(), m.end())
+    for rx in (SUICIDE, MURDERED, DIED):
+        for m in rx.finditer(low):
+            add_mark(m.start(), m.end())
+    return after, before
+
+
+def _deportation_windows(text):
+    raw = text or ""
+    low = raw.lower()
+    spans = []
+    for m in _DEP_LEAD.finditer(low):
+        line_end = low.find("\n", m.end())
+        if line_end < 0:
+            line_end = len(low)
+        spans.append((m.start(), min(line_end, m.end() + 60), m.start()))
+    return spans
+
+
+def inscription_event_dates(text):
+    """Fechas de nacimiento, muerte y deportación leídas de la inscripción.
+
+    Devuelve un dict con claves birth, death, deportation. Cada una es:
+      {value, raw, all: [(value, raw), ...]}
+    value es una fecha ISO parcial, o None si no hay ninguna o si hay años distintos
+    (en ese caso all tiene todas y no se elige en silencio).
+    """
+    t = text or ""
+    out = {}
+
+    def pack(role, hits):
+        uniq = _unique_values(hits)
+        years = {date_year(v) for v, _ in uniq}
+        years.discard(None)
+        if not uniq:
+            return
+        if len(years) > 1:
+            out[role] = {"value": None, "raw": None, "all": uniq, "ambiguous": True}
+        else:
+            # La más precisa del único año.
+            best = max(uniq, key=lambda x: len(x[0]))
+            out[role] = {"value": best[0], "raw": best[1], "all": uniq, "ambiguous": False}
+
+    birth_hits = _birth_matches(t)
+    pack("birth", birth_hits)
+    birth_spans = [(a, b) for _v, _r, a, b in birth_hits]
+
+    def not_birth(hits):
+        out = []
+        for v, raw, a, b in hits:
+            if any(a < bb and b > aa for aa, bb in birth_spans):
+                continue
+            out.append((v, raw, a, b))
+        return out
+
+    after, before = _death_windows(t)
+    death_hits = []
+    for a, b, _ in after:
+        death_hits.extend(_years_span(t, a, b))
+    death_hits = not_birth(death_hits)
+    if not death_hits:
+        for a, b, _ in before:
+            death_hits.extend(_years_span(t, a, b))
+        death_hits = not_birth(death_hits)
+    pack("death", death_hits)
+
+    dep_hits = []
+    for a, b, _ in _deportation_windows(t):
+        dep_hits.extend(_years_span(t, a, b))
+    pack("deportation", dep_hits)
+    return out
+
+
+def dates_conflict(structured, insc_value):
+    """True si ambos tienen año y el año no coincide.
+
+    structured / insc_value son fechas ISO parciales o None.
+    Un año (1870) frente a una fecha del mismo año (1870-01-09) no es conflicto.
+    """
+    ys, yi = date_year(structured), date_year(insc_value)
+    return bool(ys and yi and ys != yi)
+
+
+def dates_day_conflict(structured, insc_value):
+    """True si ambos tienen fecha completa (día) del mismo año, pero el día o el mes no coinciden."""
+    if not structured or not insc_value:
+        return False
+    if date_year(structured) != date_year(insc_value):
+        return False
+    if len(str(structured)) < 10 or len(str(insc_value)) < 10:
+        return False
+    return str(structured)[:10] != str(insc_value)[:10]

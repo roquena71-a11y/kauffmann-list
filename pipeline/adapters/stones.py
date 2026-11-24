@@ -66,8 +66,10 @@ def stone_to_record(s, bio_rec, cfg, retrieved):
     if not birth_name and insc_txt:
         birth_name = ins.birth_name_from(insc_txt)
 
-    # Fecha de nacimiento: dato estructurado (OSM/Wikidata) si concuerda con el año de la placa.
-    plaque_birth = normalize_date(insc.get("birth")) or normalize_date(ins.birth_year_from_inscription(insc_txt))
+    # Fechas: si el año de la inscripción y el dato estructurado no coinciden,
+    # la inscripción es la principal y el otro valor queda en variants (nunca se elige en silencio).
+    ev = ins.inscription_event_dates(insc_txt)
+    plaque_birth = normalize_date(insc.get("birth")) or (ev.get("birth") or {}).get("value") or normalize_date(ins.birth_year_from_inscription(insc_txt))
     plaque_year = plaque_birth[:4] if plaque_birth else None
     b = normalize_date(s.get("b"))
     variants = {}
@@ -77,7 +79,13 @@ def stone_to_record(s, bio_rec, cfg, retrieved):
     else:
         birth_date = b or plaque_birth
 
-    death_date = normalize_date(s.get("d")) or _date_in(insc.get("death"))
+    plaque_death = _date_in(insc.get("death")) or (ev.get("death") or {}).get("value")
+    d = normalize_date(s.get("d"))
+    if d and plaque_death and date_year(d) != date_year(plaque_death):
+        death_date = plaque_death
+        variants["death_date"] = [{"value": d, "source_id": sid}]
+    else:
+        death_date = d or plaque_death
     fate_text = " ".join(x for x in (insc_txt, insc.get("deportation"), insc.get("death")) if x)
     fate, fate_basis = ins.fate_from_text(fate_text)
     death_place = ins.death_place_from(insc.get("death") or insc_txt)
