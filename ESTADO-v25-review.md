@@ -34,3 +34,4 @@ Worktree /workspace/kl-v25-review, rama v25-review desde 3e46ab52 (v29 en vivo).
 - 04:29 **run-all COMPLETO: RUN_ALL_EXIT:0, «run-all: OK», country-buttons «FALLOS: ninguno», 0 omitidas** (03:46–04:21, REQUIRE_OAV=1, venv nuevo venv-runall-v25c, contador bloqueado). Overlays 9 798 ms ≤ 11 500 (sin tocar). Log /workspace/v24-data/run-all-v25c.log. Siguen las capturas antes/después.
 - 04:30 Capturas antes(v29 /workspace/kl-v24s2)/después(v30) en marcha: shots-v25-corners.py (reanudable: salta las que ya existen), escritorio y luego teléfono; 2 sitios × (z18.5 50°, z19.5 35°, z20.5 cenital, z20.5 30°).
 - 04:51 Capturas: escritorio 12/16 hechas (Westend completo antes/después; Zimmerstraße antes). Cadena reducida: el teléfono se hará solo a z19.5 35° y z20.5 cenital.
+- 05:00 Capturas escritorio 16/16 (0 peticiones al contador). Lanzado teléfono 390x844 (z19.5 35°, z20.5 cenital).
