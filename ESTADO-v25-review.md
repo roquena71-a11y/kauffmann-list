@@ -31,3 +31,4 @@ Worktree /workspace/kl-v25-review, rama v25-review desde 3e46ab52 (v29 en vivo).
 - 03:47 bump-version → v30 (kauffmann-v30-pages, ?v=30), version-test OK.
 - 03:47 run-all completo lanzado (venv nuevo venv-runall-v25c, bwrap + hosts del contador, carga 0,46; otro agente tiene fetch_commons_credits.py en marcha con nice, ~1 % CPU) → /workspace/v24-data/run-all-v25c.log
 - 03:59 run-all: todo OK hasta v25-corner-check incluido (47 líneas OK); presupuesto overlays 9 798 ms (v29: 9 564), fcp 196, dcl 977, overview 5 488, vis 10 432, street_zoom 128/551 ms. En marcha country-buttons.
+- 04:29 **run-all COMPLETO: RUN_ALL_EXIT:0, «run-all: OK», country-buttons «FALLOS: ninguno», 0 omitidas** (03:46–04:21, REQUIRE_OAV=1, venv nuevo venv-runall-v25c, contador bloqueado). Overlays 9 798 ms ≤ 11 500 (sin tocar). Log /workspace/v24-data/run-all-v25c.log. Siguen las capturas antes/después.
