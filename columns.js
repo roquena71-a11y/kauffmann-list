@@ -20,10 +20,18 @@
   const BRASS_GROOVE = '#5a3f16';
   const PLACA_MINZOOM = 16.2;
   const GROOVE_MINZOOM = 17.8;
+  // v30: marco y cara con esquinas CONCÉNTRICAS (radio del marco = radio de la cara + 0,08 m), así el canto visible
+  // del marco mide 0,08 m en los lados y en las esquinas. 'sid' fija el id de la fuente (antes salía de half/rad).
+  const FACE_HALF = 0.43, FACE_R = 0.035, RIM_HALF = 0.51, RIM_R = FACE_R + (RIM_HALF - FACE_HALF);
   const PLACA_PARTS = [
-    {half:0.51, rad:0.10, base:16.00, top:16.26, color:BRASS_RIM, op:1},
-    {half:0.43, rad:0.08, base:16.16, top:16.42, color:BRASS_FACE, op:1},
+    {sid:'col-0.51-0.1',  half:RIM_HALF,  rad:RIM_R / RIM_HALF,   base:16.00, top:16.26, color:BRASS_RIM, op:1},
+    {sid:'col-0.43-0.08', half:FACE_HALF, rad:FACE_R / FACE_HALF, base:16.16, top:16.42, color:BRASS_FACE, op:1},
   ];
+  // v30: geometría sin cuantizar a la rejilla de z16 (~4,8 cm en lat 50, picos en las esquinas): las placas y los surcos
+  // se trocean hasta z22 (~3 mm) y los fustes hasta z20 (~1,2 cm). Solo afecta a teselas de calle (zoom >= 16).
+  const SHAFT_MAXZOOM = 20, PLACA_MAXZOOM = 22;
+  // Surcos (líneas en blanco) ENCIMA de la cara de latón (16,42 m), no dentro: antes (16,30–16,345) quedaban tapados.
+  const GROOVE_BASE = 16.42, GROOVE_TOP = 16.44;
   const partsOf = (n) => MODELS[n].parts.concat(PLACA_PARTS);
   let loadedPlaqueBox = null, loadedGrooveBox = null;
   let layerIds = [], sourceIds = [], firstSym = null, pendingAdd = false, loadedBox = null;
@@ -213,10 +221,10 @@
     loadedPlaqueBox = pb;
     const parts = partsOf(current), before = map.getLayer('sel-glow') ? 'sel-glow' : undefined;
     parts.forEach((p, i) => {
-      const sid = 'col-' + p.half + '-' + p.rad;
+      const sid = p.sid || ('col-' + p.half + '-' + p.rad);
       const isPlaca = i > 0;
       const box = isPlaca ? pb : tb;
-      if (!map.getSource(sid)){ map.addSource(sid, {type:'geojson', data:fcFor(p.half, p.rad, box), maxzoom:16, buffer:16, tolerance:0}); sourceIds.push(sid); }
+      if (!map.getSource(sid)){ map.addSource(sid, {type:'geojson', data:fcFor(p.half, p.rad, box), maxzoom: isPlaca ? PLACA_MAXZOOM : SHAFT_MAXZOOM, buffer:16, tolerance:0}); sourceIds.push(sid); }
       const id = i === 0 ? 'stones' : 'stones-' + i;          // la capa 'stones' recibe los clics
       map.addLayer({id, type:'fill-extrusion', source:sid, minzoom: isPlaca ? PLACA_MINZOOM : 14.6, paint:{
         'fill-extrusion-color': p.color === 'GOLD' ? GOLD : p.color,
@@ -225,11 +233,11 @@
       layerIds.push(id);
     });
     const gsid = 'col-placa-grooves';
-    if (!map.getSource(gsid)){ map.addSource(gsid, {type:'geojson', data:fcGrooves(pb), maxzoom:16, buffer:16, tolerance:0}); sourceIds.push(gsid); }
+    if (!map.getSource(gsid)){ map.addSource(gsid, {type:'geojson', data:fcGrooves(pb), maxzoom:PLACA_MAXZOOM, buffer:16, tolerance:0}); sourceIds.push(gsid); }
     loadedGrooveBox = pb;
     map.addLayer({id:'stones-grooves', type:'fill-extrusion', source:gsid, minzoom:GROOVE_MINZOOM, paint:{
       'fill-extrusion-color': BRASS_GROOVE,
-      'fill-extrusion-base': grow(16.30), 'fill-extrusion-height': grow(16.345),
+      'fill-extrusion-base': grow(GROOVE_BASE), 'fill-extrusion-height': grow(GROOVE_TOP),
       'fill-extrusion-opacity': 1, 'fill-extrusion-vertical-gradient': false}}, before);
     layerIds.push('stones-grooves');
     filterSel();
@@ -239,8 +247,8 @@
     partsOf(current).forEach((p, i) => { const id = i === 0 ? 'stones' : 'stones-' + i;
       if (map.getLayer(id)){ map.setPaintProperty(id, 'fill-extrusion-base', grow(p.base)); map.setPaintProperty(id, 'fill-extrusion-height', grow(p.top, p.ring)); } });
     if (map.getLayer('stones-grooves')){
-      map.setPaintProperty('stones-grooves', 'fill-extrusion-base', grow(16.30));
-      map.setPaintProperty('stones-grooves', 'fill-extrusion-height', grow(16.345));
+      map.setPaintProperty('stones-grooves', 'fill-extrusion-base', grow(GROOVE_BASE));
+      map.setPaintProperty('stones-grooves', 'fill-extrusion-height', grow(GROOVE_TOP));
     }
     map.triggerRepaint();                        // asegurar que se dibuje el último paso
   }
@@ -255,7 +263,7 @@
     // (or rotate) never finds faces updated and grooves still on the previous view.
     loadedPlaqueBox = pb;
     PLACA_PARTS.forEach(p => {
-      const src = map.getSource('col-' + p.half + '-' + p.rad);
+      const src = map.getSource(p.sid || ('col-' + p.half + '-' + p.rad));
       if (src) src.setData(fcFor(p.half, p.rad, pb));
     });
     setGrooveSource(pb);
@@ -296,7 +304,7 @@
     const pb = needPlaque ? plaqueBox() : null;
     loadedPlaqueBox = pb;
     partsOf(current).forEach((p, i) => {
-      const src = map.getSource('col-' + p.half + '-' + p.rad);
+      const src = map.getSource(p.sid || ('col-' + p.half + '-' + p.rad));
       if (!src) return;
       const isPlaca = i > 0;
       if (isPlaca && !needPlaque) return;

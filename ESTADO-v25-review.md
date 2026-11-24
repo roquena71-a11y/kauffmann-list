@@ -22,3 +22,6 @@ Worktree /workspace/kl-v25-review, rama v25-review desde 3e46ab52 (v29 en vivo).
 ## Fotos nuevas posibles (sin duplicar): P18 actual 969 + imgx 332 + OSM fuera de DE con archivo de Commons 356 → unión 1 650 placas (de 21 503 sin foto). OSM DE: desconocido (Overpass no respondió). Municipales (3 008): sus fuentes no traen foto.
 - Aviso de licencia: la ficha enlaza la página de Commons pero no muestra autor ni licencia (CC BY-SA lo pide) → añadir crédito (extmetadata de la API de Commons) en el mismo arreglo.
 ## Veredicto y plan: ver informe final (resumen al agente principal).
+
+# PASO 1 v25 — esquinas (rama v25-review, desde 3e46ab52)
+- 03:20 columns.js: marco/cara concéntricos (radio cara 0,035 m, marco 0,115 m → canto 0,08 m uniforme), ids de fuente fijos (sid), maxzoom placas+surcos 22 y fustes 20, surcos encima de la cara (16,42–16,44 m). node --check OK. Pendiente: prueba, antialias en teléfono, v30, capturas, run-all.
