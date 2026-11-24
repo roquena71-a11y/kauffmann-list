@@ -72,3 +72,9 @@ Pruebas: unidad (barrido de 445.219 textos de una línea, 134.117 trozos de fech
 sin marcado ni palabras perdidas) y tests/v33-markup-render-check.py (navegador: 129 placas con marcado, fichas 3D enteras,
 listas 3D/2D y 75.122 ventanas 2D; Rosenbaum «Nacimiento: 1908 · deportiert 1942 · ermordet 1943 in Auschwitz»), en run-all.
 Captura: /workspace/v24-data/shots-v25-texto/v33-rosenbaum-ficha-1280x800.png
+
+## 24-11-2026 09:05–09:39 (hora de Berlín) — run-all COMPLETO v33: OK (RUN_ALL_EXIT:0, «FALLOS: ninguno»)
+Venv nuevo (venv-runall-v33), REQUIRE_OAV=1, sin SKIP, contador bloqueado, presupuesto sin cambiar; carga al empezar 1,16 y sin
+otros Chrome. Registro /workspace/v24-data/run-all-v33-0905.log. Presupuesto: fcp 196, overview 5530, overlays 10497 (v32: 9643),
+vis 11151, street_zoom 121/611 ms — dentro del límite; la subida es ruido de carga (v33 solo añade ~1 KB a dedupe.js, ya en la carga).
+v33-markup-render OK; atribución 844x390 sin fallo intermitente.
