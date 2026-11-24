@@ -1199,7 +1199,7 @@ function openStone(id, fromMap){
   history.replaceState(null,'','#s='+encodeURIComponent(id));
   // Merged records (same person, e.g. a second stone or a second Wikidata item): show every distinct inscription.
   const inscSeen = new Set(), inscList = [];
-  for (const r of [s, ...(s._also||[])]){ if (!r.i) continue; const k = KLDedupe.fold(r.i).replace(/[^a-z0-9]+/g,''); if (!inscSeen.has(k)){ inscSeen.add(k); inscList.push(r.i); } }
+  for (const r of [s, ...(s._also||[])]){ if (!r.i) continue; const t = KLDedupe.inscDisplay(r.i), k = KLDedupe.fold(t).replace(/[^a-z0-9]+/g,''); if (!inscSeen.has(k)){ inscSeen.add(k); inscList.push(t); } }
   const insc = inscList.map(t => esc(t).replace(/\s*\|\s*/g,'\n').split(/\n/).filter(Boolean).join('<br>')).join('</div><div class="brassplate">');
   const facts=[[T('address'),s.a],[T('place'),cityOf(s)+(s.cd&&!s.c?' '+T('derived'):'')],[T('country'),countryLabel(s)],[T('district'),s.sub],[T('born'),s.b],[T('died'),s.d],[T('laid'),s.laid],[T('posLabel'),s.gm?T(/^commons/.test(s.gm)?'posApproxPhoto':'posApprox'):''],[T('type'),s.kind==='stolperschwelle'?T('threshold'):'']]
     .filter(x=>x[1]).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');

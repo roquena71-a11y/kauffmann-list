@@ -1,4 +1,4 @@
-/* Kauffmann List v31 — la inscripción escrita en la placa de latón de cada columna (solo de cerca).
+/* Kauffmann List v31–v32 — la inscripción escrita en la placa de latón de cada columna (solo de cerca).
    Se carga sola (perezosa) la primera vez que el mapa llega a zoom >= 19,5; nunca en la carga inicial.
    Capa custom WebGL '3d': un cuadrado texturizado por placa sobre la cara de latón, con letras oscuras grabadas.
    El texto sale SOLO del campo i de nuestros datos (OSM ODbL / Wikidata CC0 / Firenze / Grevenbroich): nunca se inventa;
@@ -22,12 +22,15 @@
   const fold = t => String(t || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/ß/g, 'ss');
   function upper(t){ return String(t).toLocaleUpperCase('de-DE'); }
   // Las mismas líneas que la ficha: «|» y saltos de línea son cortes; nada más se cambia.
+  const DD = (typeof module !== 'undefined' && module.exports && typeof require === 'function') ? require('./dedupe.js') : root.KLDedupe;
+  const show = t => (DD && DD.inscDisplay ? DD.inscDisplay(t) : String(t)).trim();
   function hardLines(i){ return String(i || '').replace(/\s*\|\s*/g, '\n').split(/\n/).map(x => x.trim()).filter(Boolean); }
   // Texto de la placa: el campo i propio o, en registros fusionados, el primero que lo tenga (misma persona, nuestros datos).
   function inscOf(s){
     if (!s) return null;
-    if (s.i && String(s.i).trim()) return String(s.i);
-    for (const r of (s._also || [])) if (r && r.i && String(r.i).trim()) return String(r.i);
+    // v32: texto PARA MOSTRAR (sin <br />, '''…''', [[…|…]], &#…; — KLDedupe.inscDisplay, el mismo que la ficha)
+    if (s.i && String(s.i).trim()){ const t = show(s.i); if (t) return t; }
+    for (const r of (s._also || [])) if (r && r.i && String(r.i).trim()){ const t = show(r.i); if (t) return t; }
     return null;
   }
   // Modo nombre: el trozo de la inscripción (cortes «|», salto o coma) que contiene el nombre de la persona; si no está, nada.
