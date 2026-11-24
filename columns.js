@@ -322,10 +322,31 @@
     loadedBox = null; loadedPlaqueBox = null; loadedGrooveBox = null;
     if (map.getZoom() >= 12.5) ensureCols();
   }
+  // v31: placas con la inscripción escrita (plaquetext.js) no llevan los surcos en blanco debajo de las letras.
+  let textIds = [];
+  function grooveFilter(f){
+    if (!textIds.length) return f;
+    const noText = ['!', ['in', ['get','id'], ['literal', textIds]]];
+    return f ? ['all', f, noText] : noText;
+  }
+  function setTextIds(ids){
+    const next = (ids || []).slice().sort();
+    if (next.length === textIds.length && next.every((x, i) => x === textIds[i])) return;
+    textIds = next;
+    if (map && map.getLayer('stones-grooves')) map.setFilter('stones-grooves', grooveFilter(selected ? ['!=', ['get','id'], selected] : null));
+  }
+  // Altura real (m) de la cara de latón de una placa en este fotograma (misma fórmula que grow() con su retraso r).
+  function topOf(id){
+    const rows = (typeof VISIBLE !== 'undefined' && VISIBLE.length) ? VISIBLE : DATA;
+    ensureIndex(rows);
+    const i = indexById.get(id); if (i === undefined) return null;
+    const r = ((i * 2654435761) >>> 0) % 1000 / 1000;
+    return PLACA_PARTS[1].top * Math.max(0, Math.min(1, (T - r * 0.7) * 3.3));
+  }
   function filterSel(){
     if (pendingAdd && selected && map && map.getZoom() >= 12.5) add(undefined, true);
     const f = selected ? ['!=', ['get','id'], selected] : null;
-    for (const id of layerIds) if (map.getLayer(id)) map.setFilter(id, f);
+    for (const id of layerIds) if (map.getLayer(id)) map.setFilter(id, id === 'stones-grooves' ? grooveFilter(f) : f);
     if (selected && map.getZoom() >= 14.6){
       const s = byId.get(selected); if (s){ tipPinned = true; showTip(s); return; }
     }
@@ -452,7 +473,8 @@
     map.on('zoomend', () => { if (tip && !tip.hidden && map.getZoom() < 14.6){ tipPinned = false; tipHover = false; hideTip(); } });
   }
 
-  window.KLCols = { add, filterSel, relayout, setModel, rise, finish(){ animating=false; setT(1); }, MODELS, relabel, PLACA_MINZOOM, GROOVE_MINZOOM, BRASS_RIM, BRASS_FACE, BRASS_GROOVE };
+  window.KLCols = { add, filterSel, relayout, setModel, rise, finish(){ animating=false; setT(1); }, MODELS, relabel, PLACA_MINZOOM, GROOVE_MINZOOM, BRASS_RIM, BRASS_FACE, BRASS_GROOVE,
+    topOf, setTextIds, state(){ return {T, animating, model: current, faceHalf: FACE_HALF, faceTop: PLACA_PARTS[1].top, grooveTop: GROOVE_TOP, plaqueLayers: layerIds.includes('stones-2')}; } };
   const boot = () => { if (!window.map || !map.on) return setTimeout(boot, 200);
     map.on('zoom', ensureCols); map.on('moveend', ensureCols);
     map.on('zoomend', watchZoom); rotateButtons(); picker(); bindTip(); };

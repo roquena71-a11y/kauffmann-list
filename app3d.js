@@ -981,6 +981,9 @@ async function load(){
     }
   };
   startAlign();
+  // v31: la inscripción escrita en la placa (plaquetext.js) se pide solo al acercarse (zoom >= 19,5), nunca en la carga inicial.
+  const wantText = () => { if (map.getZoom() >= 19.5 && !window.KLPlaqueText && !document.getElementById('kl-plaquetext')) loadPlaqueText(); };
+  map.on('zoomend', wantText); map.on('moveend', wantText);
   map.on('zoom', () => { if (map.getZoom() >= 6.5) mountRestAgg(); });
   setTimeout(mountRestAgg, 350);
   setTimeout(ensureSearchIndex, 60);
@@ -1023,6 +1026,13 @@ function applyAlign(j){
     if (map && map.getSource('stones')) map.getSource('stones').setData(STONES_FC);
   }
   if (selected && map) refreshSel();
+}
+function loadPlaqueText(){
+  if (new URLSearchParams(location.search).has('textooff')) return;   // ?textooff=1: placas en blanco como v30
+  const v = ((document.querySelector('script[src*="columns.js"]') || {}).src || '').match(/[?&]v=(\d+)/);
+  const el = document.createElement('script'); el.id = 'kl-plaquetext'; el.async = true;
+  el.src = 'plaquetext.js' + (v ? '?v=' + v[1] : '');
+  document.head.appendChild(el);
 }
 function startAlign(){
   if (KLAlign.off){ KLAlign.ready = true; return; }

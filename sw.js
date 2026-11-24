@@ -10,7 +10,7 @@
 const VERSION = 'kauffmann-v30-pages';
 const SHELL = ['./','index.html',
   // index.html pide estos archivos con ?v=30: así una página nueva nunca se mezcla con archivos viejos de la caché.
-  'style.css?v=30','style3d.css?v=30','mapui.css?v=30','app3d.js?v=30','people.js?v=30','columns.js?v=30','imagery.js?v=30','source-links.js?v=30','dedupe.js?v=30','counter.js?v=30','mapui.js?v=30',
+  'style.css?v=30','style3d.css?v=30','mapui.css?v=30','app3d.js?v=30','people.js?v=30','columns.js?v=30','imagery.js?v=30','source-links.js?v=30','dedupe.js?v=30','counter.js?v=30','mapui.js?v=30','plaquetext.js?v=30',
   'manifest.webmanifest',
   'kauffmann-list.jsonld','robots.txt','sitemap.xml','data/bio/manifest.json',
   'proyecto/','proyecto/index.html','proyecto/proyecto.css','proyecto/proyecto.js',
