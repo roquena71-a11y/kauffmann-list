@@ -18,3 +18,7 @@ Worktree /workspace/kl-v25-review, rama v25-review desde 3e46ab52 (v29 en vivo).
   c) Surcos a 16,30–16,345 m DENTRO de la cara de latón (16,16–16,42 m): están tapados; solo asoman como puntitos (precisión de profundidad). Por eso la placa se ve «en blanco».
   Experimento exp-mz22 (maxzoom 22 inyectado en el navegador) en marcha para comparar.
 - 03:30 CONFIRMADO con el experimento: westend-z20.5-cenital-RECORTE-arriba-v29-abajo-maxzoom22.png → con maxzoom 16 (v29) las esquinas salen en pico/muesca y el marco con grosor desigual; con maxzoom 22 las esquinas son redondas y el marco uniforme. Los surcos solo asoman como puntitos en ambos (tapados por la cara). Capturas de teléfono 390x844 en marcha.
+- 03:45 Teléfono 390x844 (DPR 2, sin antialias): mismo defecto, mismo arreglo (westend-z20.5-cenital-390x844-RECORTE-izq-v29-der-maxzoom22.png). 0 peticiones al contador en todas las capturas.
+## Fotos nuevas posibles (sin duplicar): P18 actual 969 + imgx 332 + OSM fuera de DE con archivo de Commons 356 → unión 1 650 placas (de 21 503 sin foto). OSM DE: desconocido (Overpass no respondió). Municipales (3 008): sus fuentes no traen foto.
+- Aviso de licencia: la ficha enlaza la página de Commons pero no muestra autor ni licencia (CC BY-SA lo pide) → añadir crédito (extmetadata de la API de Commons) en el mismo arreglo.
+## Veredicto y plan: ver informe final (resumen al agente principal).
