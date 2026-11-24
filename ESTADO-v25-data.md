@@ -88,3 +88,10 @@ Cambios respecto a v25-data:
 - Créditos: autor · licencia (data/photo-credits-v25.json, solo al abrir una ficha con foto). Si el archivo no tiene crédito en
   Commons (las 680 + 1 sin licencia), el pie queda como antes.
 - Versión v34 (kauffmann-v34-pages). Prueba nueva tests/v34-photos-dates-check.py (en run-all). Capturas: /workspace/v24-data/shots-v34/
+
+## 24-11-2026 19:20–19:53 (hora de Berlín) — run-all COMPLETO v34: OK (RUN_ALL_EXIT:0, «FALLOS: ninguno»)
+Venv nuevo (venv-runall-v34), REQUIRE_OAV=1, sin SKIP, contador bloqueado, presupuesto sin cambiar (overlays ≤ 11500 ms).
+Registro /workspace/v24-data/run-all-v34-1920.log. Presupuesto: fcp 196, overview 5485, overlays 9944, vis 10518, street_zoom 115/531 ms.
+v34-photos-dates: 1.621 fotos añadidas (0 sustituidas, la/lo sin cambiar); aviso en 299 (0 en fotos publicadas); 2.435 fechas con
+«otra fuente» en 2.351 placas, 0 en silencio; crédito CC en el pie; 681 fotos publicadas sin crédito en Commons igual que antes
+(680 sin archivo + 1 sin licencia). Pipeline: 48 tests OK.
