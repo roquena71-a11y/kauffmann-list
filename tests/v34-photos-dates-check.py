@@ -86,8 +86,11 @@ async def main():
         await open_detail(pg, ANNA)
         dd = await pg.evaluate("[...document.querySelectorAll('#detail dt')].map(d => [d.innerText, d.nextElementSibling ? d.nextElementSibling.innerText : ''])")
         born = [v for k, v in dd if k.strip().lower().startswith('nacim')]
-        ok(born and born[0].startswith('1870') and 'otra fuente: 1876-01-09' in born[0], f'Anna Mayer: nacimiento «{born}»')
-        if SHOTS: await pg.screenshot(path=os.path.join(SHOTS, 'v34-fecha-anna-mayer-1280x800.png'))
+        ok(born and born[0].startswith('1870') and 'otra fuente: 1876-01-09' in born[0].lower(), f'Anna Mayer: nacimiento «{born}»')
+        if SHOTS:
+            await pg.evaluate("() => { const e = document.querySelector('#detail dl'); if (e) e.scrollIntoView({block: 'center'}); }")
+            await pg.wait_for_timeout(500)
+            await pg.screenshot(path=os.path.join(SHOTS, 'v34-fecha-anna-mayer-1280x800.png'))
         # Carla Moses: aviso + crédito
         await open_detail(pg, WARNED)
         await pg.wait_for_function("document.querySelector('#detail figure.photo figcaption') && document.querySelector('#detail figure.photo figcaption').innerText.startsWith('Foto:')", timeout=60000)
@@ -102,11 +105,14 @@ async def main():
         ok(w and w['cr'] >= 4.5, f'contraste del aviso {w and w["cr"]:.2f} < 4,5')
         cred = await pg.evaluate("async (f) => { const c = (await (await fetch('data/photo-credits-v25.json')).json()).credits; return c[f] || c[f.replace(/_/g, ' ')] || null; }", w['img'] if w else '')
         ok(cred and cred.get('a') and cred['a'] in w['cap'] and cred.get('l') and cred['l'] in w['cap'], f'Carla Moses: crédito «{w and w["cap"]}» ≠ {cred}')
-        if SHOTS: await pg.screenshot(path=os.path.join(SHOTS, 'v34-aviso-carla-moses-1280x800.png'))
+        if SHOTS:
+            await pg.evaluate("() => { const e = document.querySelector('#detail figure.photo'); if (e) e.scrollIntoView({block: 'center'}); }")
+            await pg.wait_for_timeout(2500)
+            await pg.screenshot(path=os.path.join(SHOTS, 'v34-aviso-carla-moses-1280x800.png'))
         # una foto publicada sin aviso, con crédito; y una de las 680 (archivo ya no en Commons) igual que antes
         r680 = await pg.evaluate("""async () => { const c = (await (await fetch('data/photo-credits-v25.json')).json()).credits;
           let gone = 0, goneShown = 0, ex = null, pub = null;
-          for (const s of VISIBLE){ if (!s.img || s._imgAdded) continue; const has = c[s.img] || c[s.img.replace(/_/g, ' ')];
+          for (const s of VISIBLE){ if (!s.img || s._imgAdded) continue; const rec = c[s.img] || c[s.img.replace(/_/g, ' ')], has = rec && (rec.a || rec.l);
             if (!has){ gone++; const h = photoHtml(s); if (h.includes('<figure') && !h.includes('photo-warn') && !/Sin foto/.test(h)) goneShown++; if (!ex) ex = s.id; }
             else if (!pub && /stolperstein/i.test(s.img)) pub = s.id; }
           return {gone, goneShown, ex, pub}; }""")

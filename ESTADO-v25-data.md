@@ -72,3 +72,19 @@ Ficha: si no hay foto, «Sin foto todavía». Si hay, autor y licencia (crédito
 - `data/date-conflicts-v25.json`, `data/photos-added-v25.json`.
 - `app3d.js` — solo ficha (fechas, foto, créditos). No se toca el render 3D.
 - `ESTADO-v25-data.md`.
+
+## 24-11-2026 19:10– (hora de Berlín) — v34: v25-data sobre v33 (f510fbb2, en vivo)
+Rama NUEVA `v25-fotos-fechas` desde f510fbb2, worktree `/workspace/kl-v25-fotos`; ba90a7ca y 86809db7 copiados con cherry-pick
+(63cf96ea, 72e2deaf; v25-data no se reescribe). Conflicto en app3d.js resuelto conservando la limpieza de marcado de v33 (plainTxt).
+Decisiones de Carlos (24-11-2026 19:10): las 299 fotos nuevas que parecen retrato o casa → «Muéstralas con aviso»;
+las 680 fotos publicadas cuyo archivo ya no está en Commons → «Déjalas como están» (ni ocultar ni «Sin foto todavía»).
+Cambios respecto a v25-data:
+- Sidecars (fechas, fotos) perezosos: se piden en paralelo pero no retrasan el mapa; ficha y búsqueda esperan a tenerlos
+  (nunca se elige una fecha en silencio). Las fotos se aplican DESPUÉS de la fusión de duplicados (no cambian qué registro
+  es el principal); si el registro es un alias, la foto pasa al principal si este no tiene.
+- Aviso SOLO en las 299 fotos añadidas cuyo nombre no habla de la placa (v25-data lo ponía también en 4.167 fotos ya publicadas).
+  Texto: «Aviso: puede que esta foto no muestre la placa (quizá es un retrato o la casa).» (es/de/en), recuadro ámbar, contraste 10,97:1.
+- Sin foto: como antes (nada); se quitó «Sin foto todavía».
+- Créditos: autor · licencia (data/photo-credits-v25.json, solo al abrir una ficha con foto). Si el archivo no tiene crédito en
+  Commons (las 680 + 1 sin licencia), el pie queda como antes.
+- Versión v34 (kauffmann-v34-pages). Prueba nueva tests/v34-photos-dates-check.py (en run-all). Capturas: /workspace/v24-data/shots-v34/

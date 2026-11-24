@@ -111,6 +111,9 @@ if [ -x "$CHROME" ] && "$PYTHON" -c "import playwright" 2>/dev/null; then
   # v33: ningún texto de datos se pinta con marcado HTML/wiki (fichas 3D de las placas con marcado, listas, ventanas 2D)
   "$PYTHON" tests/v33-markup-render-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-v33markup.log 2>&1 || { tail -30 /tmp/kl-v33markup.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-v33markup.log
+  # v34: fechas en conflicto (inscripción principal + «otra fuente») y fotos añadidas (créditos CC, aviso en las 299)
+  "$PYTHON" tests/v34-photos-dates-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-v34.log 2>&1 || { tail -30 /tmp/kl-v34.log; kill $SRV; exit 1; }
+  tail -1 /tmp/kl-v34.log
   # encuadre de países (9 tamaños + 320x568; ~7 min). SKIP_COUNTRY_BUTTONS=1 lo omite en iteraciones rápidas.
   if [ -z "$SKIP_COUNTRY_BUTTONS" ]; then
     "$PYTHON" tests/country-buttons-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-cb.log 2>&1 || { tail -25 /tmp/kl-cb.log; kill $SRV; exit 1; }
