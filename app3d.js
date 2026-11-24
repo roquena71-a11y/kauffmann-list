@@ -96,7 +96,7 @@ const EXTRA = {
        story:'Su historia', archives:'Archivos', perInscription:'según la inscripción',
        otherSource:(v,src)=>'otra fuente: '+v+' ('+src+')', noPhoto:'Sin foto todavía',
        photoCredit:(a,l)=>a?(l?('Foto: '+a+' · '+l):('Foto: '+a)):(l?('Foto: '+l):'Wikimedia Commons'),
-       photoNotStone:'El nombre del archivo no indica que sea la placa (puede ser un retrato o una casa).',
+       photoNotStone:'Aviso: puede que esta foto no muestre la placa (quizá es un retrato o la casa).',
        noStory:'Todavía no tenemos su historia.', helpUs:'¿La conoce? Ayúdenos',
        anonNote:'Esta placa está anonimizada. No añadimos nada que no esté escrito en la piedra.',
        wpCite:'Texto de Wikipedia, sin cambios.', wpAuthors:'Autores de Wikipedia', wpRev:'revisión',
@@ -113,7 +113,7 @@ const EXTRA = {
        story:'Die Geschichte', archives:'Archive', perInscription:'laut Inschrift',
        otherSource:(v,src)=>'andere Quelle: '+v+' ('+src+')', noPhoto:'Noch kein Foto',
        photoCredit:(a,l)=>a?(l?('Foto: '+a+' · '+l):('Foto: '+a)):(l?('Foto: '+l):'Wikimedia Commons'),
-       photoNotStone:'Der Dateiname spricht nicht für ein Foto des Steins (es kann ein Porträt oder ein Haus sein).',
+       photoNotStone:'Hinweis: Dieses Foto zeigt möglicherweise nicht den Stein (vielleicht ein Porträt oder das Haus).',
        noStory:'Wir haben die Geschichte noch nicht.', helpUs:'Kennen Sie sie? Helfen Sie uns',
        anonNote:'Dieser Stein ist anonymisiert. Wir fügen nichts hinzu, was nicht auf dem Stein steht.',
        wpCite:'Wikipedia-Text, unverändert.', wpAuthors:'Wikipedia-Autorinnen und Autoren', wpRev:'Version',
@@ -130,7 +130,7 @@ const EXTRA = {
        story:'Their story', archives:'Archives', perInscription:'as on the inscription',
        otherSource:(v,src)=>'other source: '+v+' ('+src+')', noPhoto:'No photo yet',
        photoCredit:(a,l)=>a?(l?('Photo: '+a+' · '+l):('Photo: '+a)):(l?('Photo: '+l):'Wikimedia Commons'),
-       photoNotStone:'The file name does not indicate a photo of the stone (it may be a portrait or a house).',
+       photoNotStone:'Note: this photo may not show the stone (it may be a portrait or the house).',
        noStory:'We do not yet have their story.', helpUs:'Do you know it? Help us',
        anonNote:'This plaque is anonymised. We add nothing that is not written on the stone.',
        wpCite:'Wikipedia text, unchanged.', wpAuthors:'Wikipedia authors', wpRev:'revision',
@@ -900,10 +900,10 @@ async function load(){
   const pre = (typeof window !== 'undefined' && window.__klPre) || {};
   const fetchJson = u => fetch(u).then(r => { if (!r.ok) throw new Error(u+' '+r.status); return r.json(); });
   const getJson = u => pre[u] ? Promise.resolve(pre[u]).catch(() => fetchJson(u)) : fetchJson(u);
-  const [j, dateConf, addedPhotos, ...added] = await Promise.all([getJson('data/stones.json'), getJson('data/date-conflicts-v25.json').catch(() => ({conflicts:{}})), getJson('data/photos-added-v25.json').catch(() => ({photos:{}})), ...addedFiles.map(([, u]) => getJson(u))]);
+  // v34: los sidecars (fechas en conflicto, fotos añadidas) se piden en paralelo pero NO retrasan el mapa; la ficha y la búsqueda los esperan.
+  sidecarsStart();
+  const [j, ...added] = await Promise.all([getJson('data/stones.json'), ...addedFiles.map(([, u]) => getJson(u))]);
   META = j.meta; DATA = j.stones;
-  DATE_CONFLICTS = (dateConf && dateConf.conflicts) || {};
-  ADDED_PHOTOS = (addedPhotos && addedPhotos.photos) || {};
   const odblLen = j.stones.length;
   const addedCounts = {}, addedMeta = {};
   added.forEach((part, idx) => {
@@ -927,8 +927,6 @@ async function load(){
     counts: addedCounts,
     records: DATA.length - odblLen
   };
-  // Fotos legales añadidas (sidecar): solo si el registro aún no tiene img. No se tocan la/lo.
-  for (const s of DATA){ if (!s.img && ADDED_PHOTOS[s.id]) s.img = ADDED_PHOTOS[s.id]; }
   // v19: posición de DIBUJO. Si el archivo trae dla/dlo (placa dentro de un edificio de OSM o a menos de 1 m de la fachada), la columna se dibuja ahí
   // (en la acera, hacia la calle); la coordenada de origen queda en sla/slo y es la que usan «Cómo llegar» y las descargas.
   for (const s of DATA){
@@ -1058,6 +1056,7 @@ function startAlign(){
 }
 
 function search(){
+  if (!SIDECARS_READY){ sidecarsStart().then(search); return; }   // v34: año de la inscripción como principal también en la lista
   ensureSearchIndex();
   const q = norm($('#q').value), cq = norm($('#city').value), list = $('#results');
   closeDetail(false);
@@ -1101,9 +1100,10 @@ function photoCaptionText(fn, credits){
   return T('photoCredit')(rec.a||'', rec.l||'');
 }
 function photoHtml(s){
-  if (!s.img) return `<p class="note" id="photoSlot">${esc(T('noPhoto'))}</p>`;
-  const flag = looksLikeStonePhoto(s.img) ? '' : `<p class="note">${esc(T('photoNotStone'))}</p>`;
-  return `<figure class="photo" id="photoSlot"><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${commonsThumb(s.img,480)}" alt="${esc(s.n||'')}"></a><figcaption><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer">${esc(T('photo'))}</a></figcaption>${flag}</figure>`;
+  if (!s.img) return '';   // sin foto: como antes (nada); decisión de Carlos: no se añade «Sin foto todavía»
+  // aviso SOLO en las fotos añadidas en v34 cuyo nombre no habla de la placa (las 299); las fotos ya publicadas no cambian
+  const flag = (s._imgAdded && !looksLikeStonePhoto(s.img)) ? `<p class="photo-warn" role="note">${esc(T('photoNotStone'))}</p>` : '';
+  return `<figure class="photo" id="photoSlot">${flag}<a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${commonsThumb(s.img,480)}" alt="${esc(s.n||'')}"></a><figcaption><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer">${esc(T('photo'))}</a></figcaption></figure>`;
 }
 function paintPhotoCredit(s){
   if (!s || !s.img) return;
@@ -1229,6 +1229,32 @@ function discHtml(s){
     `<br>${esc(T('discAlt')(plainTxt(d.alt)))} ${hostLinks(d.alt_src||[])}`+
     `<br>${esc(T('discMain')(plainTxt(s.a)))} ${hostLinks([...osm, ...(d.main_src||[])])}</div>`;
 }
+// v34: sidecars de v25-data, cargados aparte (no cuentan en la carga inicial).
+// - data/date-conflicts-v25.json: la fecha de la inscripción es la principal; la otra se muestra como «otra fuente».
+// - data/photos-added-v25.json: 1.621 fotos legales de Commons para placas SIN foto (nunca sustituyen una img existente);
+//   299 cuyo nombre de archivo no habla de la placa llevan un aviso visible (decisión de Carlos, 24-11-2026 19:10).
+// - Las 680 fotos ya publicadas cuyo archivo ya no está en Commons se dejan como están (decisión de Carlos).
+let SIDECARS = null, SIDECARS_READY = false;
+function sidecarsStart(){
+  if (SIDECARS) return SIDECARS;
+  const get = u => fetch(u).then(r => r.ok ? r.json() : null).catch(() => null);
+  SIDECARS = Promise.all([get('data/date-conflicts-v25.json'), get('data/photos-added-v25.json')]).then(async ([dc, ph]) => {
+    DATE_CONFLICTS = (dc && dc.conflicts) || {};
+    ADDED_PHOTOS = (ph && ph.photos) || {};
+    while (!VISIBLE.length) await new Promise(r => setTimeout(r, 50));   // tras la fusión de duplicados: no cambia qué registro es el principal
+    applyAddedPhotos();
+    SIDECARS_READY = true;
+  });
+  return SIDECARS;
+}
+function applyAddedPhotos(){
+  // Solo si el registro no tiene img; si el registro es un alias fusionado (dedupe), la foto pasa a su principal si este no tiene.
+  for (const s of DATA){
+    const f = ADDED_PHOTOS[s.id]; if (!f || s.img) continue;
+    s.img = f; s._imgAdded = true;
+    if (s._aliasOf){ const p = byId.get(s._aliasOf); if (p && !p.img){ p.img = f; p._imgAdded = true; } }
+  }
+}
 function dateFactValue(s, field, structured){
   const conf = (DATE_CONFLICTS[s.id] || {})[field];
   if (!conf) return {primary: structured, note: ''};
@@ -1238,6 +1264,7 @@ function dateFactValue(s, field, structured){
   return {primary: primary, note: note};
 }
 function openStone(id, fromMap){
+  if (!SIDECARS_READY){ sidecarsStart().then(() => openStone(id, fromMap)); return; }   // v34: nunca se elige la fecha en silencio
   let s = byId.get(id); if (!s) return;
   if (s._aliasOf) s = byId.get(s._aliasOf) || s;
   if (document.body.classList.contains('vigil-on')) stopVigil();
