@@ -104,7 +104,9 @@
     const t = map.transform, c = map.getCenter(), lat = c.lat * Math.PI / 180;
     const ppm = t.worldSize / (2 * Math.PI * 6378137 * Math.cos(lat));
     const D = t.cameraToCenterDistance / ppm, cp = Math.cos(map.getPitch() * Math.PI / 180), alt = D * cp;
-    const facePx = alt > faceTop ? ppm * 2 * FACE_HALF_M * D / (D - faceTop * cp) : 0;
+    // tamaño de una placa cuya cara cae en el centro de la pantalla (a lo largo del rayo central: D − altura / cos(inclinación))
+    const near = D - faceTop / Math.max(cp, 0.2);
+    const facePx = alt > faceTop ? ppm * 2 * FACE_HALF_M * D / Math.max(near, 0.5) : 0;
     return {alt, above: alt - faceTop, facePx};
   }
   const st = {ids: [], drawn: 0, mode: null, textures: 0, skipped: '', quads: []};

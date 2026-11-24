@@ -38,17 +38,22 @@ async def main():
         ok(not pt(), f'plaquetext.js pedido en la carga inicial: {pt()}')
         ok(await pg.evaluate("!window.KLPlaqueText"), 'KLPlaqueText presente en la carga inicial')
 
-        async def go(z, bearing=0, pitch=0):
-            return await pg.evaluate("""async ([ids, z, br, pi]) => {
+        async def go(z, bearing=0, pitch=0, lift=False):
+            return await pg.evaluate("""async ([ids, z, br, pi, lift]) => {
               const ss = ids.map(id => byId.get(id)).filter(Boolean);
               const la = ss.reduce((a,s)=>a+s._dla,0)/ss.length, lo = ss.reduce((a,s)=>a+s._dlo,0)/ss.length;
-              map.jumpTo({center:[lo, la], zoom:z, pitch:pi, bearing:br});
+              // lift: centrar la vista en las CARAS (16,42 m), no en el pie: con inclinación p el rayo central toca el suelo
+              // 16,42·tan(p) m más allá de la columna, en la dirección del rumbo.
+              let cla = la, clo = lo;
+              if (lift){ const d = 16.42 * Math.tan(pi * Math.PI / 180), b = br * Math.PI / 180;
+                cla = la + d * Math.cos(b) / 111320; clo = lo + d * Math.sin(b) / (111320 * Math.cos(la * Math.PI / 180)); }
+              map.jumpTo({center:[clo, cla], zoom:z, pitch:pi, bearing:br});
               if (window.KLCols && KLCols.finish) KLCols.finish();
               await new Promise(r => { map.once('idle', r); setTimeout(r, 8000); });
               for (let k = 0; k < 60 && window.KLPlaqueText === undefined && map.getZoom() >= 19.5; k++) await new Promise(r => setTimeout(r, 100));
               if (window.KLPlaqueText){ KLPlaqueText.refresh(); map.triggerRepaint(); await new Promise(r => { map.once('idle', r); setTimeout(r, 8000); }); }
               return ss.length;
-            }""", [SPOT, z, bearing, pitch])
+            }""", [SPOT, z, bearing, pitch, lift])
 
         n = await go(19.0)
         ok(n == 4, f'placas de prueba no encontradas ({n}/4)')
@@ -81,9 +86,35 @@ async def main():
           for (const id of KLCols.state().textIds || []) if (!st.ids.includes(id)) out.push(id + ': surcos ocultos sin texto');
           return {st: {drawn: st.drawn, mode: st.mode, skipped: st.skipped, inView: st.inView.length, textures: st.textures, facePx: st.facePx}, out, flt: flt.length};
         }"""
+        async def seen(z, br, pi, tag):
+            await go(z, br, pi, lift=pi > 0)
+            st = await pg.evaluate("KLPlaqueText.state()")
+            on = await pg.screenshot(type='png')
+            if os.environ.get('V25_TEXT_SHOTS'): open(os.path.join(os.environ['V25_TEXT_SHOTS'], f'check-{tag}.png'), 'wb').write(on)
+            await pg.evaluate("() => { map.setLayoutProperty('plaque-text', 'visibility', 'none'); map.triggerRepaint(); }")
+            await pg.wait_for_timeout(1200)
+            off = await pg.screenshot(type='png')
+            await pg.evaluate("() => { map.setLayoutProperty('plaque-text', 'visibility', 'visible'); map.triggerRepaint(); }")
+            px = await pg.evaluate("""async ([a, b]) => {
+              const load = u => new Promise(r => { const im = new Image(); im.onload = () => r(im); im.src = u; });
+              const [A, B] = await Promise.all([load(a), load(b)]); const cv = document.createElement('canvas'); cv.width = A.width; cv.height = A.height;
+              const g = cv.getContext('2d'); g.drawImage(A, 0, 0); const da = g.getImageData(0, 0, cv.width, cv.height).data; g.drawImage(B, 0, 0); const db = g.getImageData(0, 0, cv.width, cv.height).data;
+              let diff = 0, dark = 0, x0 = 1e9, y0 = 1e9, x1 = -1, y1 = -1; const W = cv.width;
+              for (let k = 0; k < da.length; k += 4){ const d = Math.abs(da[k]-db[k]) + Math.abs(da[k+1]-db[k+1]) + Math.abs(da[k+2]-db[k+2]);
+                if (d > 30){ diff++; const q = k / 4, x = q % W, y = (q - x) / W; x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); if (da[k] + da[k+1] + da[k+2] < db[k] + db[k+1] + db[k+2]) dark++; } }
+              return {diff, dark, x0, y0, x1, y1};
+            }""", ['data:image/png;base64,' + base64.b64encode(on).decode(), 'data:image/png;base64,' + base64.b64encode(off).decode()])
+            box = await pg.evaluate("(() => { const r = map.getCanvas().getBoundingClientRect(); return [r.left, r.top, r.right, r.bottom]; })()")
+            inside = px['x0'] >= box[0] - 1 and px['y0'] >= box[1] - 1 and px['x1'] <= box[2] + 1 and px['y1'] <= box[3] + 1
+            ok(st['drawn'] >= 3, f'{tag}: solo {st["drawn"]} placas escritas')
+            ok(px['diff'] > 500, f'{tag}: la capa no cambia la imagen ({px["diff"]} píxeles): el texto no se ve')
+            ok(px['dark'] > 0.6 * max(1, px['diff']), f'{tag}: las letras no son más oscuras que la cara ({px["dark"]}/{px["diff"]})')
+            ok(inside, f'{tag}: cambios fuera del mapa {px}')
+            px['mode'] = st['mode']; px['drawn'] = st['drawn']; px['facePx'] = st.get('facePx')
+            return px
         res = {}
-        for z, mode, br, pi in [(20.8, 'name', 0, 0), (21.2, 'full', 0, 0), (21.2, 'full', 100, 0), (20.6, 'name', 0, 30)]:
-            await go(z, br, pi)
+        for z, mode, br, pi in [(20.8, 'name', 0, 0), (21.2, 'full', 0, 0), (21.2, 'full', 100, 0), (20.6, 'name', 30, 35)]:
+            await go(z, br, pi, lift=pi > 0)
             r = await pg.evaluate(CHECK, mode)
             res[(z, br, pi)] = r['st']
             ok(r['st']['mode'] == mode, f'z{z}: modo {r["st"]["mode"]} ≠ {mode}')
@@ -106,24 +137,10 @@ async def main():
             for (const m of ['name','full']) if (KLPlaqueText._paint(s, m) !== null) bad.push(s.id); } return {n, bad: bad.slice(0,5)}; }""")
         ok(blank['n'] > 1000 and not blank['bad'], f'placas sin i con texto: {blank}')
 
-        # se ve: visible vs oculta, y letras oscuras
-        await go(21.2, 0, 0)
-        on = await pg.screenshot(type='png')
-        await pg.evaluate("() => { map.setLayoutProperty('plaque-text', 'visibility', 'none'); map.triggerRepaint(); }")
-        await pg.wait_for_timeout(1200)
-        off = await pg.screenshot(type='png')
-        await pg.evaluate("() => { map.setLayoutProperty('plaque-text', 'visibility', 'visible'); map.triggerRepaint(); }")
-        px = await pg.evaluate("""async ([a, b]) => {
-          const load = u => new Promise(r => { const im = new Image(); im.onload = () => r(im); im.src = u; });
-          const [A, B] = await Promise.all([load(a), load(b)]); const cv = document.createElement('canvas'); cv.width = A.width; cv.height = A.height;
-          const g = cv.getContext('2d'); g.drawImage(A, 0, 0); const da = g.getImageData(0, 0, cv.width, cv.height).data; g.drawImage(B, 0, 0); const db = g.getImageData(0, 0, cv.width, cv.height).data;
-          let diff = 0, dark = 0;
-          for (let k = 0; k < da.length; k += 4){ const d = Math.abs(da[k]-db[k]) + Math.abs(da[k+1]-db[k+1]) + Math.abs(da[k+2]-db[k+2]);
-            if (d > 30){ diff++; if (da[k] + da[k+1] + da[k+2] < db[k] + db[k+1] + db[k+2]) dark++; } }
-          return {diff, dark};
-        }""", ['data:image/png;base64,' + base64.b64encode(on).decode(), 'data:image/png;base64,' + base64.b64encode(off).decode()])
-        ok(px['diff'] > 500, f'la capa no cambia la imagen ({px["diff"]} píxeles)')
-        ok(px['dark'] > 0.6 * max(1, px['diff']), f'las letras no son más oscuras que la cara ({px["dark"]}/{px["diff"]})')
+        # se ve: visible vs oculta, y letras oscuras — en planta (z21,2) y con el mapa INCLINADO 35° y girado 30° (z20,6),
+        # con la vista centrada en las caras para que las placas estén dentro de la imagen
+        px = await seen(21.2, 0, 0, 'planta')
+        pxt = await seen(20.6, 30, 35, 'inclinado')
         cr = await pg.evaluate("KLPlaqueText.contrast(KLPlaqueText.INK, KLPlaqueText.FACE)")
         ok(cr >= 4.5, f'contraste {cr:.2f} < 4,5')
         ok(not errs, f'errores de página: {errs[:3]}')
@@ -132,8 +149,8 @@ async def main():
     if fails:
         print('FAIL v25-plaque-text:'); [print('  -', f) for f in fails]; sys.exit(1)
     print(f'OK v25-plaque-text: perezoso (no en la carga ni a z19); z20,2 nada; z20,8 nombre ({res[(20.8,0,0)]["drawn"]} placas); '
-          f'z21,2 inscripción ({res[(21.2,0,0)]["drawn"]}; girado 100°: {res[(21.2,100,0)]["drawn"]}; inclinado 30° a z20,6: {res[(20.6,0,30)]["drawn"]}); z21,6 cámara a la altura de las placas → nada; texto = i en mayúsculas, '
+          f'z21,2 inscripción ({res[(21.2,0,0)]["drawn"]}; girado 100°: {res[(21.2,100,0)]["drawn"]}; inclinado 35°/girado 30° a z20,6: {res[(20.6,30,35)]["drawn"]}); z21,6 cámara a la altura de las placas → nada; texto = i en mayúsculas, '
           f'gira con la placa y cabe en la cara; surcos ocultos solo bajo texto; {blank["n"]} placas sin i siempre lisas; '
-          f'{px["diff"]} píxeles cambian ({px["dark"]} más oscuros); contraste {cr:.2f}:1; contador bloqueado ({len(blocked)})')
+          f'se ve en planta ({px["diff"]} píxeles cambian, {px["dark"]} más oscuros) e inclinado 35° ({pxt["diff"]} / {pxt["dark"]}, modo {pxt["mode"]}, cara {pxt["facePx"]} px); contraste {cr:.2f}:1; contador bloqueado ({len(blocked)})')
 
 asyncio.run(main())
