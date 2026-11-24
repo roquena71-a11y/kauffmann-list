@@ -9,7 +9,7 @@ RESTRICCIÓN mientras auditan el paso 1: nada de run-all, pruebas de presupuesto
 - Donde hay texto se ocultan los surcos de esa placa (filtro en 'stones-grooves').
 - Precisión: matriz con origen local en doble precisión (vértices en metros), sin pérdidas de float32.
 
-## Estado 24-11-2026 05:25 (hora de Berlín) — CÓDIGO LISTO PARA PRUEBAS COMPLETAS (no ejecutadas: esperar permiso)
+## Estado 24-11-2026 05:22 (hora de Berlín) — CÓDIGO LISTO PARA PRUEBAS COMPLETAS (no ejecutadas: esperar permiso)
 Versión v31 (tests/bump-version.py; plaquetext.js?v=31 en el SHELL del service worker). Commits en v25-texto.
 - Cambio respecto al plan: el modo NO depende solo del zoom. Medido (escritorio 1280x800): la cámara está a 33 m a z20,5,
   23 m a z21 y 16 m (¡a la altura de las placas!) a z21,5; teléfono 43 / 30 / 21 m. Cara de 0,86 m en pantalla: escritorio
