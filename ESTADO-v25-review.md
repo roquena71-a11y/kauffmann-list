@@ -17,3 +17,4 @@ Worktree /workspace/kl-v25-review, rama v25-review desde 3e46ab52 (v29 en vivo).
   b) Antialias desactivado en pantallas ≤760 px (antialias:!narrowScreen, también en canvasContextAttributes): en el teléfono, bordes en dientes de sierra.
   c) Surcos a 16,30–16,345 m DENTRO de la cara de latón (16,16–16,42 m): están tapados; solo asoman como puntitos (precisión de profundidad). Por eso la placa se ve «en blanco».
   Experimento exp-mz22 (maxzoom 22 inyectado en el navegador) en marcha para comparar.
+- 03:30 CONFIRMADO con el experimento: westend-z20.5-cenital-RECORTE-arriba-v29-abajo-maxzoom22.png → con maxzoom 16 (v29) las esquinas salen en pico/muesca y el marco con grosor desigual; con maxzoom 22 las esquinas son redondas y el marco uniforme. Los surcos solo asoman como puntitos en ambos (tapados por la cara). Capturas de teléfono 390x844 en marcha.
