@@ -35,4 +35,5 @@ Worktree /workspace/kl-v25-review, rama v25-review desde 3e46ab52 (v29 en vivo).
 - 04:30 Capturas antes(v29 /workspace/kl-v24s2)/después(v30) en marcha: shots-v25-corners.py (reanudable: salta las que ya existen), escritorio y luego teléfono; 2 sitios × (z18.5 50°, z19.5 35°, z20.5 cenital, z20.5 30°).
 - 04:51 Capturas: escritorio 12/16 hechas (Westend completo antes/después; Zimmerstraße antes). Cadena reducida: el teléfono se hará solo a z19.5 35° y z20.5 cenital.
 - 04:57 Capturas escritorio 16/16 (0 peticiones al contador). Lanzado teléfono 390x844 (z19.5 35°, z20.5 cenital).
-- 05:03 Comparación escritorio: /workspace/v24-data/shots-v25-corners/COMPARA-escritorio-1280x800-z20.5-antes-v29-despues-v30.png (script /workspace/v24-data/compare_v25.py). Teléfono en marcha.
+- 04:58 Comparación escritorio: /workspace/v24-data/shots-v25-corners/COMPARA-escritorio-1280x800-z20.5-antes-v29-despues-v30.png (script /workspace/v24-data/compare_v25.py). Teléfono en marcha.
+- 05:05 Teléfono 6/8 (Westend antes/después, Zimmerstraße antes).
