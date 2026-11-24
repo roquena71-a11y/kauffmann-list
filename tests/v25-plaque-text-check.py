@@ -122,6 +122,17 @@ async def main():
             ok(r['st']['inView'] <= 60, f'z{z}: {r["st"]["inView"]} placas en vista (> 60)')
             fails.extend(f'z{z} rumbo {br}: {m}' for m in r['out'][:10])
 
+        # v32: inscripciones con marcado (<br />, '''…''', [[…|…]], &#…;, <b> como separador): limpias en la ficha y en la placa
+        mk = await pg.evaluate("""async (ids) => { const out = [];
+          for (const id of ids){ openStone(id); await new Promise(r => setTimeout(r, 400));
+            const bp = [...document.querySelectorAll('.brassplate')], txt = bp.map(e => e.innerText).join('\\n'), html = bp.map(e => e.innerHTML).join('');
+            const plate = (KLPlaqueText.linesFor(byId.get(id), 'full') || []).join(' / ');
+            const bad = /<|\'\'\'|\\[\\[|\\]\\]|&#|&nbsp;/;
+            out.push({id, ok: bp.length > 0 && !bad.test(txt) && !/&lt;|&amp;#/.test(html) && !bad.test(plate), lines: txt.split('\\n').filter(Boolean).length, txt: txt.slice(0, 90), plate: plate.slice(0, 90)});
+            if (typeof closeDetail === 'function') closeDetail(); }
+          return out; }""", ['n2432838644', 'n8572696652', 'Q73391789', 'Q132183676'])
+        for m in mk: ok(m['ok'], f"marcado visible en {m['id']}: ficha «{m['txt']}» placa «{m['plate']}»")
+        ok(mk[0]['lines'] >= 5 and mk[1]['lines'] >= 4, f"<br>/<b> no son saltos de línea en la ficha: {[(m['id'], m['lines']) for m in mk[:2]]}")
         # ficha abierta: esa placa no se escribe (la ficha muestra la placa grande)
         await pg.evaluate("(id) => { const s = byId.get(id); openStone(id); map.triggerRepaint(); }", SPOT[0])
         await pg.wait_for_timeout(800)
@@ -151,6 +162,6 @@ async def main():
     print(f'OK v25-plaque-text: perezoso (no en la carga ni a z19); z20,2 nada; z20,8 nombre ({res[(20.8,0,0)]["drawn"]} placas); '
           f'z21,2 inscripción ({res[(21.2,0,0)]["drawn"]}; girado 100°: {res[(21.2,100,0)]["drawn"]}; inclinado 35°/girado 30° a z20,6: {res[(20.6,30,35)]["drawn"]}); z21,6 cámara a la altura de las placas → nada; texto = i en mayúsculas, '
           f'gira con la placa y cabe en la cara; surcos ocultos solo bajo texto; {blank["n"]} placas sin i siempre lisas; '
-          f'se ve en planta ({px["diff"]} píxeles cambian, {px["dark"]} más oscuros) e inclinado 35° ({pxt["diff"]} / {pxt["dark"]}, modo {pxt["mode"]}, cara {pxt["facePx"]} px); contraste {cr:.2f}:1; contador bloqueado ({len(blocked)})')
+          f'se ve en planta ({px["diff"]} píxeles cambian, {px["dark"]} más oscuros) e inclinado 35° ({pxt["diff"]} / {pxt["dark"]}, modo {pxt["mode"]}, cara {pxt["facePx"]} px); marcado HTML/wiki limpio en ficha y placa ({len(mk)} casos); contraste {cr:.2f}:1; contador bloqueado ({len(blocked)})')
 
 asyncio.run(main())

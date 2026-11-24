@@ -42,3 +42,14 @@ intermitente de atribución a 844x390.
   35° y rumbo 30° a z20,6: la captura con texto ≠ sin texto (3798 píxeles, 3649 más oscuros), cambios dentro del mapa, modo nombre.
   El tamaño de cara en pantalla ahora se mide a lo largo del rayo central (D − h/cos p), correcto también inclinado.
 - Revisada a ojo la vista de nombre (z20,8): HERMANN ADLER / RUTH ADLER / MARGOT ADLER / AMALIE ADLER, legibles y derechas.
+
+## 24-11-2026 08:12–08:16 (hora de Berlín) — v32: marcado HTML/wiki en inscripciones (nota del auditor A)
+Los 3 auditores aprobaron v31 (fe93a97f). Arreglo SOLO DE PRESENTACIÓN (data/ sin cambios): KLDedupe.inscDisplay (dedupe.js)
+usado por la ficha (app3d.js, placa de latón) y por la placa 3D (plaquetext.js inscOf):
+<br>, <br/>, <br /> → salto; <b> sin ningún </b> (separador roto) → salto; otras etiquetas fuera (espacio si unían palabras);
+'''x''' → x ('' sueltas = comillas reales, se quedan); [[destino|texto]] → texto, [[x]] → x; entidades &#8218; &nbsp; … → carácter.
+Afectadas: 116 inscripciones en 116 placas — 40 con <br>/<b> (las de la nota del auditor A: 35 <br>, 2 <br>+''', 3 <b>),
+64 con '''negrita''', 6 [[enlace]], 6 &#…;. Lista con antes/después (ficha y placa): /workspace/v24-data/review/inscripciones-markup.csv
+(script: /workspace/v24-data/review/make-markup-csv.cjs). «<haft 11.11.1938» (n13378996105) no es etiqueta: se deja igual.
+Pruebas: v25-plaque-text-unit.cjs (no queda marcado; mismas palabras que una referencia independiente; <br> = líneas; 10 casos
+fijos) y v25-plaque-text-check.py (ficha y placa de 4 casos en el navegador). Versión v32 (kauffmann-v32-pages).
