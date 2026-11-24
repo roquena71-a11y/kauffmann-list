@@ -53,3 +53,8 @@ Afectadas: 116 inscripciones en 116 placas — 40 con <br>/<b> (las de la nota d
 (script: /workspace/v24-data/review/make-markup-csv.cjs). «<haft 11.11.1938» (n13378996105) no es etiqueta: se deja igual.
 Pruebas: v25-plaque-text-unit.cjs (no queda marcado; mismas palabras que una referencia independiente; <br> = líneas; 10 casos
 fijos) y v25-plaque-text-check.py (ficha y placa de 4 casos en el navegador). Versión v32 (kauffmann-v32-pages).
+
+## 24-11-2026 08:17–08:48 (hora de Berlín) — run-all COMPLETO v32: OK (RUN_ALL_EXIT:0, «FALLOS: ninguno»)
+Venv nuevo (/workspace/v24-data/venv-runall-v32), REQUIRE_OAV=1, sin SKIP, contador bloqueado, presupuesto sin cambiar; carga al
+empezar 0,91. Registro /workspace/v24-data/run-all-v32-0817.log. Presupuesto (412x915 4G 2xCPU): fcp 176 ms, overview 5347 ms,
+overlays 9643 ms, vis 10227 ms, street_zoom 85/501 ms. Atribución a 844x390 sin fallo intermitente.
