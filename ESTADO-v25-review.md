@@ -25,3 +25,4 @@ Worktree /workspace/kl-v25-review, rama v25-review desde 3e46ab52 (v29 en vivo).
 
 # PASO 1 v25 — esquinas (rama v25-review, desde 3e46ab52)
 - 03:20 columns.js: marco/cara concéntricos (radio cara 0,035 m, marco 0,115 m → canto 0,08 m uniforme), ids de fuente fijos (sid), maxzoom placas+surcos 22 y fustes 20, surcos encima de la cara (16,42–16,44 m). node --check OK. Pendiente: prueba, antialias en teléfono, v30, capturas, run-all.
+- 03:40 tests/v25-corner-check.py (nuevo, en run-all tras v24-plaque): v30 OK (canto 0,079–0,081 m, error radial ≤0,5 mm; autocontrol z16: 0,045–0,10 m / 1–3 cm → falla como debe); contra v29 FALLA (maxzoom 16, surcos dentro de la cara, canto desigual). Captura rápida z20.5 cenital: esquinas redondas, marco uniforme, surcos visibles.

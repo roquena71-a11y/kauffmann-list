@@ -101,6 +101,9 @@ if [ -x "$CHROME" ] && "$PYTHON" -c "import playwright" 2>/dev/null; then
   tail -3 /tmp/kl-v23ux.log
   "$PYTHON" tests/v24-plaque-contrast-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-v24plaque.log 2>&1 || { tail -30 /tmp/kl-v24plaque.log; kill $SRV; exit 1; }
   tail -3 /tmp/kl-v24plaque.log
+  # v25: remates — esquinas redondas, marco uniforme, surcos sobre la cara (geometría real del cliente, cuantización simulada)
+  "$PYTHON" tests/v25-corner-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-v25corner.log 2>&1 || { tail -30 /tmp/kl-v25corner.log; kill $SRV; exit 1; }
+  tail -1 /tmp/kl-v25corner.log
   # encuadre de países (9 tamaños + 320x568; ~7 min). SKIP_COUNTRY_BUTTONS=1 lo omite en iteraciones rápidas.
   if [ -z "$SKIP_COUNTRY_BUTTONS" ]; then
     "$PYTHON" tests/country-buttons-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-cb.log 2>&1 || { tail -25 /tmp/kl-cb.log; kill $SRV; exit 1; }
