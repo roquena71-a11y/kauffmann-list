@@ -1071,7 +1071,7 @@ function search(){
   const more = res.length>LIMIT, shown = res.slice(0,LIMIT);
   $('#status').textContent = res.length ? T('results')(fmtNum(shown.length),more)+(fuzzyOnly?' '+T('similar'):'') : T('none');
   list.innerHTML = shown.map(([,s])=>`<li><button data-id="${esc(s.id)}"><div class="nm">${esc(s.n||'—')}</div>
-    <div class="meta">${esc([s.a||cityOf(s), s.b?('* '+s.b):''].filter(Boolean).join(' · '))}</div></button></li>`).join('');
+    <div class="meta">${esc([plainTxt(s.a)||cityOf(s), s.b?('* '+plainTxt(s.b)):''].filter(Boolean).join(' · '))}</div></button></li>`).join('');
 }
 
 function commonsThumb(f,w){ return 'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(f.replace(/ /g,'_'))+'?width='+w; }
@@ -1140,9 +1140,10 @@ function paintStory(s, rec){
   const insc = rec && rec.insc;
   if (dates){
     const bits = [];
-    if (insc && insc.birth) bits.push(T('born')+': '+insc.birth);
-    if (insc && insc.deportation) bits.push(insc.deportation);
-    if (insc && insc.death) bits.push(insc.death);
+    // v33: trozos de la inscripción (data/bio) sin marcado (<br />, &#8218;…) y en una sola línea; los datos no cambian
+    if (insc && insc.birth) bits.push(T('born')+': '+plainTxt(insc.birth));
+    if (insc && insc.deportation) bits.push(plainTxt(insc.deportation));
+    if (insc && insc.death) bits.push(plainTxt(insc.death));
     if (bits.length){ dates.hidden = false; dates.innerHTML = esc(bits.join(' · '))+' <span class="src-tag">'+esc(T('perInscription'))+'</span>'; }
     else dates.hidden = true;
   }
@@ -1153,7 +1154,7 @@ function paintStory(s, rec){
   if (rec && rec.wp && rec.wp.text){
     const w = rec.wp;
     parts.push(`<div class="section-t">${T('story')}</div>`);
-    parts.push(`<div class="story">${esc(w.text)}</div>`);
+    parts.push(`<div class="story">${esc(KLDedupe.cleanMarkup(w.text))}</div>`);
     parts.push(`<p class="cite">${esc(T('wpCite'))} <a href="${esc(w.permalink)}" target="_blank" rel="noopener noreferrer">${esc(w.title)}</a>, ${esc(T('wpRev'))} ${esc(w.revid)}. <a href="${esc(w.authors)}" target="_blank" rel="noopener noreferrer">${esc(T('wpAuthors'))}</a>. <a href="${esc(w.licenseUrl)}" target="_blank" rel="noopener noreferrer">${esc(w.license)}</a>.</p>`);
   } else if (anon) {
     parts.push(`<p class="help">${esc(T('anonNote'))}</p>`);
@@ -1180,12 +1181,14 @@ function loadStory(s){
 }
 function hostLinks(urls){ return urls.filter(u=>/^https:\/\//i.test(u)).map(u=>{ let h=u; try{h=new URL(u).hostname.replace(/^www\./,'')}catch(e){} return `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(h)}</a>`; }).join(', '); }
 // v19: las fuentes discrepan sobre la dirección (campo disc de data/stones.json): aviso visible en la ficha, con enlaces
+// v33: texto de datos para mostrar en una línea, sin marcado HTML/wiki (KLDedupe.inscInline); los datos no cambian
+function plainTxt(t){ return t == null || t === '' ? '' : (window.KLDedupe && KLDedupe.inscInline ? KLDedupe.inscInline(t) : String(t)); }
 function discHtml(s){
   const d = s.disc; if (!d || !d.alt) return '';
   const osm = osmUrl(s) ? [osmUrl(s)] : [];
-  return `<div class="disc" role="note"><strong>${esc(T('discTitle'))}.</strong> ${esc(T('discBody')(s.a||'', d.alt))}`+
-    `<br>${esc(T('discAlt')(d.alt))} ${hostLinks(d.alt_src||[])}`+
-    `<br>${esc(T('discMain')(s.a||''))} ${hostLinks([...osm, ...(d.main_src||[])])}</div>`;
+  return `<div class="disc" role="note"><strong>${esc(T('discTitle'))}.</strong> ${esc(T('discBody')(plainTxt(s.a), plainTxt(d.alt)))}`+
+    `<br>${esc(T('discAlt')(plainTxt(d.alt)))} ${hostLinks(d.alt_src||[])}`+
+    `<br>${esc(T('discMain')(plainTxt(s.a)))} ${hostLinks([...osm, ...(d.main_src||[])])}</div>`;
 }
 function openStone(id, fromMap){
   let s = byId.get(id); if (!s) return;
@@ -1202,10 +1205,10 @@ function openStone(id, fromMap){
   for (const r of [s, ...(s._also||[])]){ if (!r.i) continue; const t = KLDedupe.inscDisplay(r.i), k = KLDedupe.fold(t).replace(/[^a-z0-9]+/g,''); if (!inscSeen.has(k)){ inscSeen.add(k); inscList.push(t); } }
   const insc = inscList.map(t => esc(t).replace(/\s*\|\s*/g,'\n').split(/\n/).filter(Boolean).join('<br>')).join('</div><div class="brassplate">');
   const facts=[[T('address'),s.a],[T('place'),cityOf(s)+(s.cd&&!s.c?' '+T('derived'):'')],[T('country'),countryLabel(s)],[T('district'),s.sub],[T('born'),s.b],[T('died'),s.d],[T('laid'),s.laid],[T('posLabel'),s.gm?T(/^commons/.test(s.gm)?'posApproxPhoto':'posApprox'):''],[T('type'),s.kind==='stolperschwelle'?T('threshold'):'']]
-    .filter(x=>x[1]).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
+    .filter(x=>x[1]).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(plainTxt(v))}</dd>`).join('');
   const bio=[]; (s.w||[]).filter(u=>/^https?:\/\//i.test(String(u||''))).forEach(u=>{ let h=u; try{h=new URL(u).hostname.replace(/^www\./,'')}catch(e){} bio.push(`<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(h)}</a></li>`); });
   if (s.wp) bio.push(`<li><a href="${esc(wpUrl(s.wp))}" target="_blank" rel="noopener noreferrer">Wikipedia: ${esc(s.wp.replace(/^[a-z]+:/,''))}</a></li>`);
-  if (s.desc) bio.unshift(`<li>${esc(s.desc)}</li>`);
+  if (s.desc) bio.unshift(`<li>${esc(plainTxt(s.desc))}</li>`);
   const recs = [s, ...(s._also||[])];
   const src=[]; const seenSrc=new Set();
   for (const r of recs){ const u=osmUrl(r); if (u && !seenSrc.has(u)){ seenSrc.add(u); src.push(`<li><a href="${u}" target="_blank" rel="noopener noreferrer">OpenStreetMap</a></li>`); } }
@@ -1228,7 +1231,7 @@ function openStone(id, fromMap){
   const photo = s.img ? `<figure class="photo"><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${commonsThumb(s.img,480)}" alt="${esc(s.n||'')}"></a><figcaption><a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer">${T('photo')}</a></figcaption></figure>` : '';
   const d = $('#detail');
   d.innerHTML = `<button class="back" id="back">${T('back')}</button>
-    <h2>${esc(s._n||s.n||'—')}</h2><p class="place">${esc([s.a, s.a&&s.a.includes(cityOf(s))?'':cityOf(s), countryLabel(s)].filter(Boolean).join(', '))}</p>
+    <h2>${esc(s._n||s.n||'—')}</h2><p class="place">${esc([plainTxt(s.a), s.a&&s.a.includes(cityOf(s))?'':cityOf(s), countryLabel(s)].filter(Boolean).join(', '))}</p>
     ${discHtml(s)}
     <p class="dates" id="inscDates" hidden></p>
     <div class="section-t">${T('inscription')}</div>

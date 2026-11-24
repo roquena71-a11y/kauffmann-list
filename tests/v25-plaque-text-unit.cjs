@@ -72,8 +72,48 @@ const EX = [["Hier wohnte<br />'''Walter Rosenbaum'''<br />Jg. 1908", 'Hier wohn
   ['Jg. 1885|<haft 11.11.1938', 'Jg. 1885|<haft 11.11.1938'], ['interniert [[Durchgangslager Westerbork|Westerbork]] deportiert', 'interniert Westerbork deportiert'],
   ['Im Widerstand [[Naturfreunde]]', 'Im Widerstand Naturfreunde']];
 for (const [a, b] of EX) assert(D.inscDisplay(a) === b, `inscDisplay(${JSON.stringify(a)}) = ${JSON.stringify(D.inscDisplay(a))} ≠ ${JSON.stringify(b)}`);
+// ---------- v33: TODO texto de datos que se pinta (ficha, línea de fechas, historia, listas, 2D) sin marcado ----------
+const BAD = /<\/?[a-z][a-z0-9]*(?:\s[^<>]*)?\/?>|'''|\[\[|\]\]|&(#x?[0-9a-f]+|[a-z]+);/i;
+const plain = t => (t == null || t === '') ? '' : D.inscInline(t);
+let sweepStr = 0, sweepFix = 0;
+const checkStr = (where, raw, shown) => {
+  sweepStr++; if (shown !== String(raw)) sweepFix++;
+  assert(!BAD.test(shown), `${where}: marcado visible «${String(shown).slice(0, 100)}»`);
+  assert(!/\n/.test(shown), `${where}: salto de línea en una línea`);
+  assert(dispWords(shown) === refWords2(raw), `${where}: palabras distintas:\n  ${dispWords(shown)}\n  ${refWords2(raw)}`);
+};
+function refWords2(raw){   // como refWords, más restos sueltos «]]» y cualquier entidad conocida
+  let x = String(raw).replace(/\[\[[^\]|]*\|/g, ' ').replace(/<[a-z\/][^<>]*>/gi, ' ').replace(/'''/g, ' ').replace(/\[\[|\]\]/g, ' ');
+  x = x.replace(/&(#x?[0-9a-f]+|[a-z]+);/gi, m => ' ' + D.cleanMarkup(m) + ' ');
+  return x.split(/[^\p{L}\p{N}]+/u).filter(Boolean).join(' ');
+}
+// 1) campos de cada placa que se muestran en una línea (ficha, cabecera, listas de búsqueda 3D/2D, ventana 2D, aviso de dirección)
+for (const s of stones){
+  for (const k of ['n', 'a', 'b', 'd', 'laid', 'sub', 'c', 'cd', 'desc']) if (typeof s[k] === 'string' && s[k]) checkStr(`${s.id}.${k}`, s[k], plain(s[k]));
+  if (s.disc && s.disc.alt) checkStr(`${s.id}.disc.alt`, s.disc.alt, plain(s.disc.alt));
+}
+// 2) data/bio: línea «según la inscripción» (birth/deportation/death) de TODAS las placas, e historias (data/bio/text)
+const BIO = path.join(ROOT, 'data', 'bio'); let bioFields = 0, bioMk = 0, stories = 0, storyMk = 0;
+const mkIds = new Set([...mkStones]);
+for (const f of fs.readdirSync(BIO).filter(f => f.endsWith('.json'))){
+  const j = JSON.parse(fs.readFileSync(path.join(BIO, f), 'utf8'));
+  for (const [id, rec] of Object.entries(j || {})){
+    const ins = rec && rec.insc; if (!ins || typeof ins !== 'object') continue;
+    const bits = [];
+    for (const k of ['birth', 'deportation', 'death']) if (ins[k]){ bioFields++; if (BAD.test(ins[k])) { bioMk++; mkIds.add(id); } checkStr(`bio/${f}:${id}.insc.${k}`, ins[k], plain(ins[k])); bits.push(plain(ins[k])); }
+    assert(!BAD.test(bits.join(' · ')), `bio/${f}:${id}: línea de fechas con marcado`);
+  }
+}
+for (const f of fs.readdirSync(path.join(BIO, 'text')).filter(f => f.endsWith('.json'))){
+  const j = JSON.parse(fs.readFileSync(path.join(BIO, 'text', f), 'utf8')); if (!j || typeof j.text !== 'string') continue;
+  stories++; const t = D.cleanMarkup(j.text); if (t !== j.text) storyMk++;
+  assert(!BAD.test(t), `bio/text/${f}: marcado visible en la historia`);
+  assert(dispWords(t) === refWords2(j.text), `bio/text/${f}: palabras distintas en la historia`);
+}
+assert(bioMk >= 31, `solo ${bioMk} campos de bio con marcado (la auditoría C contó 31 inscripciones)`);
+assert(D.inscInline('deportiert 1942<br />') === 'deportiert 1942' && D.inscInline('ermordet 1943 in<br />Auschwitz') === 'ermordet 1943 in Auschwitz', 'Rosenbaum: línea de fechas');
 const cr = P.contrast(P.INK, P.FACE);
 assert(cr >= 4.5, `contraste ${cr.toFixed(2)} < 4,5`);
 assert(P.contrast('#000000', '#ffffff') > 20.9 && Math.abs(P.contrast('#777777', '#ffffff') - 4.48) < 0.02, 'fórmula de contraste');
 assert(P.Z_ON === 20 && P.Z_NAME === 20.5 && P.Z_FULL === 21.5, 'umbrales de zoom');
-console.log(`OK plaque-text (unidad): ${stones.length} placas, ${withI} con inscripción (texto = ficha en mayúsculas, ${full}), ${stones.length - withI} en blanco; línea del nombre literal en ${named} (sin línea de nombre: ${noName}); ajuste sin perder palabras (no caben ni a la letra mínima y quedan lisas: ${overflow}); marcado HTML/wiki limpio en ${mk} inscripciones de ${mkStones.size} placas (${brLines} con <br>), sin perder palabras; contraste letras/cara ${cr.toFixed(2)}:1`);
+console.log(`OK plaque-text (unidad): ${stones.length} placas, ${withI} con inscripción (texto = ficha en mayúsculas, ${full}), ${stones.length - withI} en blanco; línea del nombre literal en ${named} (sin línea de nombre: ${noName}); ajuste sin perder palabras (no caben ni a la letra mínima y quedan lisas: ${overflow}); marcado HTML/wiki limpio en ${mk} inscripciones de ${mkStones.size} placas (${brLines} con <br>), sin perder palabras; v33 barrido: ${sweepStr} textos de una línea (${sweepFix} limpiados), ${bioFields} trozos de fecha de data/bio (${bioMk} con marcado), ${stories} historias (${storyMk} limpiadas), sin marcado ni palabras perdidas; contraste letras/cara ${cr.toFixed(2)}:1`);

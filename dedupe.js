@@ -24,10 +24,11 @@
   // - [[destino|texto]] → texto; [[texto]] → texto. {{…}} no aparece en los datos y no se toca.
   // - Entidades HTML (&#8218; &#x201A; &nbsp; &amp; &quot; &lt; &gt; &apos; &shy;) → su carácter.
   // - Nada más cambia: ninguna palabra se añade ni se quita (lo comprueba tests/v25-plaque-text-unit.cjs).
-  const ENT = {nbsp: ' ', amp: '&', quot: '"', lt: '<', gt: '>', apos: "'", shy: '', ndash: '–', mdash: '—', lsquo: '‘', rsquo: '’', sbquo: '‚', ldquo: '“', rdquo: '”', bdquo: '„'};
-  function inscDisplay(t) {
+  const ENT = {nbsp: ' ', amp: '&', quot: '"', lt: '<', gt: '>', apos: "'", shy: '\u00ad', ndash: '–', mdash: '—', lsquo: '‘', rsquo: '’', sbquo: '‚', ldquo: '“', rdquo: '”', bdquo: '„'};
+  // Núcleo común: quita el marcado sin tocar espacios ni párrafos (también para textos largos: historia, dirección).
+  function cleanMarkup(t) {
     let x = String(t == null ? '' : t);
-    if (!/[<&'\[]/.test(x)) return x;
+    if (!/[<&'\[\]]/.test(x)) return x;
     x = x.replace(/<br\s*\/?>/gi, '\n');
     if (/<b>/i.test(x) && !/<\/b>/i.test(x)) x = x.replace(/<b>/gi, '\n');
     x = x.replace(/<\/?[a-z][a-z0-9]*(?:\s[^<>]*)?\/?>/gi, (m, off, all) => {
@@ -36,12 +37,25 @@
     });
     x = x.replace(/'''''([^'\n]+?)'''''/g, '$1').replace(/'''([^'\n]+?)'''/g, '$1');
     x = x.replace(/\[\[([^\[\]|\n]*)\|([^\[\]\n]*)\]\]/g, '$2').replace(/\[\[([^\[\]|\n]*)\]\]/g, '$1');
+    x = x.replace(/\[\[|\]\]/g, '');   // restos sueltos de enlaces wiki (p. ej. «Kaufingerstraße]]»): solo los corchetes
     x = x.replace(/&(#x[0-9a-f]+|#[0-9]+|[a-z]+);/gi, (m, e) => {
       if (e[0] === '#') { const c = e[1] === 'x' || e[1] === 'X' ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10); return c > 0 && c < 0x110000 ? String.fromCodePoint(c) : m; }
       const v = ENT[e.toLowerCase()]; return v === undefined ? m : v;
     });
-    return x.replace(/[ \t]*\n[ \t]*/g, '\n').replace(/\n{2,}/g, '\n').replace(/[ \t]{2,}/g, ' ').trim();
+    return x;
   }
+  function inscDisplay(t) {
+    const raw = String(t == null ? '' : t);
+    if (!/[<&'\[\]]/.test(raw)) return raw;
+    return cleanMarkup(raw).replace(/[ \t]*\n[ \t]*/g, '\n').replace(/\n{2,}/g, '\n').replace(/[ \t]{2,}/g, ' ').trim();
+  }
+  // Una sola línea (línea de fechas «según la inscripción», dirección, listas): los saltos pasan a espacio.
+  function inscInline(t) {
+    const raw = String(t == null ? '' : t);
+    if (!/[<&'\[\]\n]/.test(raw)) return raw;
+    return inscDisplay(raw).replace(/\s*\n\s*/g, ' ');
+  }
+
   function yearOf(v) { const m = String(v || '').match(/(1[7-9]|20)\d{2}/); return m ? m[0] : ''; }
   function nameKey(s) {
     let n = fold(s && s.n);
@@ -146,7 +160,7 @@
 
   const api = { fold: fold, yearOf: yearOf, nameKey: nameKey, nameCore: nameCore, isGenericName: isGenericName,
     inscYears: inscYears, birthYears: birthYears, nameInInscription: nameInInscription, osmWdPair: osmWdPair,
-    compare: compare, samePerson: samePerson, inscDisplay: inscDisplay };
+    compare: compare, samePerson: samePerson, inscDisplay: inscDisplay, inscInline: inscInline, cleanMarkup: cleanMarkup };
   root.KLDedupe = api;
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
 })(typeof window !== 'undefined' ? window : globalThis);

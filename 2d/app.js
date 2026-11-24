@@ -16,13 +16,15 @@ const icon = L.divIcon({className:'', iconSize:[12,12], iconAnchor:[6,6],
   html:'<span style="display:block;width:12px;height:12px;background:linear-gradient(135deg,#f0d48a,#c6a15b);border:1px solid #6b5424"></span>'});
 
 function popup(s){
-  const name = s.n || '—';
-  const place = [s.a, s.c || s.cd, s.cc && s.cc!=='DE' ? s.cc : ''].filter(Boolean).join(', ');
+  const name = plainTxt(s.n) || '—';
+  const place = [plainTxt(s.a), s.c || s.cd, s.cc && s.cc!=='DE' ? s.cc : ''].filter(Boolean).join(', ');
   return '<strong>'+esc(name)+'</strong><br>'+esc(place)+
     (s.gm ? '<br><small>Posición aproximada (del edificio, por su dirección en OpenStreetMap)</small>' : '')+
-    (s.disc ? '<br><small>Las fuentes no coinciden en la dirección (OpenStreetMap: «'+esc(s.a)+'»; otras fuentes: «'+esc(s.disc.alt)+'»). Ver la ficha en el mapa 3D.</small>' : '')+
+    (s.disc ? '<br><small>Las fuentes no coinciden en la dirección (OpenStreetMap: «'+esc(plainTxt(s.a))+'»; otras fuentes: «'+esc(plainTxt(s.disc.alt))+'»). Ver la ficha en el mapa 3D.</small>' : '')+
     '<br><a href="../#s='+encodeURIComponent(s.id)+'">Abrir en el mapa 3D</a>';
 }
+// v33: sin marcado HTML/wiki al mostrar (../dedupe.js, KLDedupe.inscInline); los datos no cambian
+function plainTxt(t){ return t == null || t === '' ? '' : (window.KLDedupe && KLDedupe.inscInline ? KLDedupe.inscInline(t) : String(t)); }
 function esc(s){ return String(s??'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 
 // Posición de DIBUJO (v19): dla/dlo si existen (columna sacada de un edificio hacia la acera); la de origen (la/lo) no se toca y es la que usan los enlaces de ruta y los datos.
@@ -44,7 +46,7 @@ function search(){
     if (out.length >= 200) break;
   }
   $('#status').textContent = out.length + ' resultados';
-  list.innerHTML = out.map(s => '<li><button data-id="'+esc(s.id)+'"><b>'+esc(s.n||'—')+'</b><br><small>'+esc(s.a||s.c||'')+'</small></button></li>').join('');
+  list.innerHTML = out.map(s => '<li><button data-id="'+esc(s.id)+'"><b>'+esc(plainTxt(s.n)||'—')+'</b><br><small>'+esc(plainTxt(s.a)||s.c||'')+'</small></button></li>').join('');
 }
 $('#q').addEventListener('input', () => { clearTimeout(search._t); search._t = setTimeout(search, 160); });
 $('#results').addEventListener('click', e => { const b = e.target.closest('button'); if (b) show(byId.get(b.dataset.id)); });

@@ -7,10 +7,10 @@
    · Archivos de la app → con ?v=N en index.html y en SHELL; nueva versión = URL nueva, nunca mezcla de versiones.
    · Al activarse una versión nueva sobre una anterior, las pestañas abiertas se recargan una vez (también las de una versión
      antigua, que no saben escuchar 'controllerchange'). */
-const VERSION = 'kauffmann-v32-pages';
+const VERSION = 'kauffmann-v33-pages';
 const SHELL = ['./','index.html',
-  // index.html pide estos archivos con ?v=32: así una página nueva nunca se mezcla con archivos viejos de la caché.
-  'style.css?v=32','style3d.css?v=32','mapui.css?v=32','app3d.js?v=32','people.js?v=32','columns.js?v=32','imagery.js?v=32','source-links.js?v=32','dedupe.js?v=32','counter.js?v=32','mapui.js?v=32','plaquetext.js?v=32',
+  // index.html pide estos archivos con ?v=33: así una página nueva nunca se mezcla con archivos viejos de la caché.
+  'style.css?v=33','style3d.css?v=33','mapui.css?v=33','app3d.js?v=33','people.js?v=33','columns.js?v=33','imagery.js?v=33','source-links.js?v=33','dedupe.js?v=33','counter.js?v=33','mapui.js?v=33','plaquetext.js?v=33',
   'manifest.webmanifest',
   'kauffmann-list.jsonld','robots.txt','sitemap.xml','data/bio/manifest.json',
   'proyecto/','proyecto/index.html','proyecto/proyecto.css','proyecto/proyecto.js',
@@ -27,7 +27,7 @@ const SHELL = ['./','index.html',
   'fonts/NGS6v5_NC0k9P9H4TbFzsQ.woff2',
   'geo/de-states.json',
   'vendor/maplibre/maplibre-gl.js','vendor/maplibre/maplibre-gl.css',
-  '2d/','2d/index.html','2d/app.js?v=32','2d/style.css?v=32',
+  '2d/','2d/index.html','2d/app.js?v=33','2d/style.css?v=33',
   'vendor/leaflet/leaflet.js','vendor/leaflet/leaflet.css','vendor/leaflet.markercluster/leaflet.markercluster.js','vendor/leaflet.markercluster/MarkerCluster.css','vendor/leaflet.markercluster/MarkerCluster.Default.css',
   'icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL.map(u => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting())); });
