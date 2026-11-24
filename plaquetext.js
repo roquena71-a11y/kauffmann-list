@@ -32,18 +32,27 @@
   }
   // Modo nombre: el trozo de la inscripción (cortes «|», salto o coma) que contiene el nombre de la persona; si no está, nada.
   function nameLine(s){
+    // El nombre tal como está escrito en i: del primer al último término del nombre (campo n) dentro del trozo de i
+    // (separado por «|», salto o coma) que más términos contiene. Siempre un trozo LITERAL de i; si no se encuentra, null.
     const i = inscOf(s); if (!i) return null;
-    const toks = fold(s.n || '').split(/[^a-z0-9]+/).filter(t => t.length >= 2);
-    if (!toks.length) return null;
-    let best = null, bestHits = 0;
+    const toks = new Set(fold(s.n || '').split(/[^a-z0-9]+/).filter(t => t.length >= 2));
+    if (!toks.size) return null;
+    const need = Math.min(2, toks.size);
+    let best = null;
     for (const seg of String(i).split(/\s*[|\n,]\s*/)){
-      const f = ' ' + fold(seg).replace(/[^a-z0-9]+/g, ' ') + ' ';
-      const hits = toks.filter(t => f.includes(' ' + t + ' ')).length;
-      if (hits > bestHits){ best = seg.trim(); bestHits = hits; }
+      const words = [...seg.matchAll(/[\p{L}\p{N}\p{M}'’-]+/gu)];
+      const hit = w => fold(w[0]).split(/[^a-z0-9]+/).filter(t => toks.has(t));
+      for (let a = 0; a < words.length; a++){
+        if (!hit(words[a]).length) continue;
+        let e = a; const got = new Set(hit(words[a]));
+        for (let j = a + 1; j < words.length && j - e <= 2; j++){ const h = hit(words[j]); if (h.length){ e = j; h.forEach(t => got.add(t)); } }
+        if (got.size >= need && (!best || got.size > best.n)) best = {n: got.size, text: seg.slice(words[a].index, words[e].index + words[e][0].length)};
+        a = e;
+      }
     }
-    const need = Math.min(2, toks.length);
-    return best && bestHits >= need ? best : null;
+    return best ? best.text : null;
   }
+
   function linesFor(s, mode){
     if (mode === 'name'){ const l = nameLine(s); return l ? [upper(l)] : null; }
     const i = inscOf(s); if (!i) return null;
