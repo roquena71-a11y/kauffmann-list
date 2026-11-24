@@ -31,3 +31,14 @@ Pruebas:
 - version-test, counter-sw-test, update-flow-test: OK.
 - NO ejecutado (por la restricción de auditoría): run-all completo, presupuesto de carga, capturas grandes.
 Capturas de humo: /workspace/v24-data/texto-smoke/on-z21.2-p0.png (inscripción legible), on-z20.8-p0.png (nombre).
+
+## 24-11-2026 06:18–06:49 (hora de Berlín) — run-all COMPLETO: OK (RUN_ALL_EXIT:0, «FALLOS: ninguno»)
+Paso 1 aprobado por los 3 auditores. Venv nuevo (/workspace/v24-data/venv-runall-v25t), REQUIRE_OAV=1, sin SKIP, contador
+bloqueado (/etc/hosts de bloqueo + rutas), presupuesto sin cambiar. Script /workspace/v24-data/run-all-v25t.sh, registro
+/workspace/v24-data/run-all-v25t-0618.log. Presupuesto de carga (412x915 4G 2xCPU): fcp 196 ms, overview 5406 ms,
+overlays 9839 ms (v30: 9798), vis 10430 ms, street_zoom 129/513 ms — plaquetext.js no entra en la carga. Sin el fallo
+intermitente de atribución a 844x390.
+- Prueba inclinada reforzada (commit 928a7d44): vista centrada en las CARAS (centro desplazado 16,42·tan(p) en el rumbo),
+  35° y rumbo 30° a z20,6: la captura con texto ≠ sin texto (3798 píxeles, 3649 más oscuros), cambios dentro del mapa, modo nombre.
+  El tamaño de cara en pantalla ahora se mide a lo largo del rayo central (D − h/cos p), correcto también inclinado.
+- Revisada a ojo la vista de nombre (z20,8): HERMANN ADLER / RUTH ADLER / MARGOT ADLER / AMALIE ADLER, legibles y derechas.
