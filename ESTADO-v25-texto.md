@@ -58,3 +58,17 @@ fijos) y v25-plaque-text-check.py (ficha y placa de 4 casos en el navegador). Ve
 Venv nuevo (/workspace/v24-data/venv-runall-v32), REQUIRE_OAV=1, sin SKIP, contador bloqueado, presupuesto sin cambiar; carga al
 empezar 0,91. Registro /workspace/v24-data/run-all-v32-0817.log. Presupuesto (412x915 4G 2xCPU): fcp 176 ms, overview 5347 ms,
 overlays 9643 ms, vis 10227 ms, street_zoom 85/501 ms. Atribución a 844x390 sin fallo intermitente.
+
+## 24-11-2026 09:00–09:05 (hora de Berlín) — v33: auditoría C ronda 2, F1 (marcado en la línea «según la inscripción»)
+Informe: /workspace/audits/v24/C/auditoria-C-v25-texto-ronda2.md. Arreglo SOLO al mostrar (data/ sin cambios):
+- dedupe.js: cleanMarkup (núcleo, sin tocar espacios), inscDisplay (ficha/placa) e inscInline (una línea: saltos → espacio);
+  también quita «[[» / «]]» sueltos y &shy; → guion blando real.
+- app3d.js: #inscDates (birth/deportation/death de data/bio) con inscInline; historia (data/bio/text) con cleanMarkup;
+  dirección, descripción, datos de la ficha, aviso de dirección y lista de resultados con inscInline (plainTxt).
+- 2D: ../dedupe.js cargado en 2d/index.html; ventana, lista y aviso con plainTxt.
+- Exportaciones GeoJSON/KML: SIN cambiar (son datos de origen, no presentación).
+Hallado en el barrido además de F1: 3 direcciones con [[enlace|texto]] (Coburg), 10 historias con &shy; / &#x034F; / «]]» suelto.
+Pruebas: unidad (barrido de 445.219 textos de una línea, 134.117 trozos de fecha de data/bio — 33 con marcado —, 4.038 historias;
+sin marcado ni palabras perdidas) y tests/v33-markup-render-check.py (navegador: 129 placas con marcado, fichas 3D enteras,
+listas 3D/2D y 75.122 ventanas 2D; Rosenbaum «Nacimiento: 1908 · deportiert 1942 · ermordet 1943 in Auschwitz»), en run-all.
+Captura: /workspace/v24-data/shots-v25-texto/v33-rosenbaum-ficha-1280x800.png
