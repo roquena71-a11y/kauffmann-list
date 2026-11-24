@@ -37,3 +37,5 @@ Worktree /workspace/kl-v25-review, rama v25-review desde 3e46ab52 (v29 en vivo).
 - 04:57 Capturas escritorio 16/16 (0 peticiones al contador). Lanzado teléfono 390x844 (z19.5 35°, z20.5 cenital).
 - 04:58 Comparación escritorio: /workspace/v24-data/shots-v25-corners/COMPARA-escritorio-1280x800-z20.5-antes-v29-despues-v30.png (script /workspace/v24-data/compare_v25.py). Teléfono en marcha.
 - 05:05 Teléfono 6/8 (Westend antes/después, Zimmerstraße antes).
+- 05:12 Capturas COMPLETAS (escritorio 16, teléfono 8; 0 peticiones al contador). Comparaciones: /workspace/v24-data/shots-v25-corners/COMPARA-escritorio-1280x800-z20.5-antes-v29-despues-v30.png y COMPARA-telefono-390x844-antes-v29-despues-v30.png. En teléfono (sin antialias) los surcos finos se ven algo dentados/discontinuos a z19.5; esquinas y marco correctos.
+- PASO 1 LISTO para auditoría. Sin push.
