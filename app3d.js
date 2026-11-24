@@ -1111,6 +1111,8 @@ function paintPhotoCredit(s){
     const fig = document.querySelector('#detail figure.photo figcaption');
     if (!fig || selected !== s.id) return;
     const credits = (pack && pack.credits) || pack || {};
+    const rec = credits[s.img] || credits[s.img.replace(/_/g,' ')];
+    if (!rec || (!rec.a && !rec.l)) return;   // sin crédito en Commons (p. ej. las 680 cuyo archivo ya no existe): el pie queda como antes
     const txt = photoCaptionText(s.img, credits);
     fig.innerHTML = `<a href="${commonsPage(s.img)}" target="_blank" rel="noopener noreferrer">${esc(txt)}</a>`;
   }).catch(() => {});

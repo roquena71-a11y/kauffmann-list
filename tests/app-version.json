@@ -1,10 +1,10 @@
 {
- "version": 33,
+ "version": 34,
  "note": "Fuente \u00fanica de la versi\u00f3n. Cambiar solo con tests/bump-version.py",
  "hashes": {
   "2d/app.js": "88468005f69d55d8",
   "2d/style.css": "74cf25d886aa6e0e",
-  "app3d.js": "cb803c0f0024e95e",
+  "app3d.js": "08db6cca1c8ea1b0",
   "columns.js": "6f2166d1024ca8f6",
   "counter.js": "782dba7a77e0b611",
   "dedupe.js": "7685c27b7a8abb4e",
@@ -30,7 +30,7 @@
   "proyecto/proyecto.css": "f862d1a94402f07d",
   "proyecto/proyecto.js": "125a15183ac64219",
   "source-links.js": "9d79254800471562",
-  "style.css": "679b61b6430ac5bc",
+  "style.css": "3da59eca6bbea0b0",
   "style3d.css": "1f47323a9af15ae2",
   "vendor/leaflet.markercluster/MarkerCluster.Default.css": "61258232d98d64dc",
   "vendor/leaflet.markercluster/MarkerCluster.css": "614dea0a98ff3f4e",
