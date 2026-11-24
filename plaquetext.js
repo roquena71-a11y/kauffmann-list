@@ -8,7 +8,7 @@
   const INK = '#3a2a10', FACE = '#d6b25a';           // letras grabadas sobre la cara (contraste WCAG ≈ 6:1)
   const Z_ON = 20, Z_NAME = 20.5, Z_FULL = 21.5;     // capa desde z20; nombre desde 20,5; inscripción completa desde 21,5
   const MAX_STONES = 60, MAX_TEX = 72;               // placas en vista dibujadas / texturas en caché (LRU)
-  const LIFT = 0.03;                                 // m sobre la cara (16,42 m): encima de los surcos (16,44 m)
+  const LIFT = 0.005;                                // m sobre la cara (16,42 m); los surcos (16,44 m) se ocultan donde hay texto
   const HALF_IN = 0.40;                              // semilado del área de texto (cara: 0,43 m)
 
   // ---------- texto: funciones puras (también se prueban en node) ----------
@@ -76,7 +76,7 @@
   const mctx = document.createElement('canvas').getContext('2d');
   const measureAt = (t, px) => { mctx.font = FONT(px); return mctx.measureText(t).width; };
   const modeAt = z => z >= Z_FULL ? 'full' : (z >= Z_NAME ? 'name' : null);
-  const st = {ids: [], drawn: 0, mode: null, textures: 0, skipped: '', last: []};
+  const st = {ids: [], drawn: 0, mode: null, textures: 0, skipped: '', quads: []};
 
   function paint(s, mode){
     const lines = linesFor(s, mode); if (!lines) return null;
@@ -167,7 +167,7 @@
       const z = map.getZoom(), mode = modeAt(z), K = window.KLCols, ks = K && K.state ? K.state() : null;
       const why = !mode ? 'zoom' : (!ks || !ks.plaqueLayers ? 'sin-placas' : (ks.animating || ks.T < 1 ? 'animando' : ''));
       st.mode = mode; st.skipped = why;
-      if (why){ st.drawn = 0; st.ids = []; if (K && K.setTextIds) K.setTextIds([]); return; }
+      if (why){ st.drawn = 0; st.ids = []; st.quads = []; if (K && K.setTextIds) K.setTextIds([]); return; }
       const M = (args && args.defaultProjectionData && args.defaultProjectionData.mainMatrix) || (args && args.modelViewProjectionMatrix) || args;
       const c = map.getCenter(), ref = maplibregl.MercatorCoordinate.fromLngLat([c.lng, c.lat], 0), k = ref.meterInMercatorCoordinateUnits();
       // T(ref) · S(k, -k, k): vértices en metros (este, norte, arriba) alrededor del centro de la vista
@@ -184,7 +184,7 @@
       gl.bindBuffer(gl.ARRAY_BUFFER, this.buf);
       gl.enableVertexAttribArray(this.aPos); gl.enableVertexAttribArray(this.aUv);
       gl.vertexAttribPointer(this.aPos, 3, gl.FLOAT, false, 20, 0); gl.vertexAttribPointer(this.aUv, 2, gl.FLOAT, false, 20, 12);
-      const drawn = [], sel = typeof selected !== 'undefined' ? selected : null;
+      const drawn = [], quads = [], sel = typeof selected !== 'undefined' ? selected : null;
       for (const s of inView){
         if (s.id === sel) continue;
         const top = K.topOf(s.id); if (!top) continue;
@@ -202,10 +202,10 @@
         gl.bufferData(gl.ARRAY_BUFFER, d, gl.DYNAMIC_DRAW);
         gl.bindTexture(gl.TEXTURE_2D, e.tex);
         gl.drawArrays(gl.TRIANGLES, 0, 6);
-        drawn.push(s.id);
+        drawn.push(s.id); quads.push({id: s.id, a, half: h, z: zz, up: bd, lines: e.info.lines, px: e.info.px});
       }
       gl.depthMask(true);
-      st.drawn = drawn.length; st.ids = drawn;
+      st.drawn = drawn.length; st.ids = drawn; st.quads = quads;
       if (K.setTextIds) K.setTextIds(drawn);
     }
   };

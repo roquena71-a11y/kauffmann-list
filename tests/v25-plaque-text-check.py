@@ -1,0 +1,137 @@
+#!/usr/bin/env python3
+"""v25 (paso 3): la inscripción escrita en la placa de latón de cada columna (capa WebGL 'plaque-text', plaquetext.js).
+Comprueba en el navegador:
+  1. Carga perezosa: plaquetext.js NO se pide en la carga inicial ni a zoom 19; sí al pasar de 19,5.
+  2. Umbrales: zoom 20,2 → nada; 20,8 → solo el nombre; 21,6 → la inscripción entera.
+  3. Solo placas en vista (± 15 %), como mucho 60; nunca la ficha abierta.
+  4. Nada inventado: cada placa escrita tiene campo i, y sus palabras son exactamente las de i en mayúsculas (texto completo)
+     o un trozo literal de i (nombre). Las placas sin i nunca se escriben (comprobado sobre TODAS las placas cargadas).
+  5. Orientación: el cuadro de texto gira con la placa (_ang de align-v24, múltiplos de 90°), cabe dentro de la cara,
+     y queda «derecho» en pantalla (también con el mapa girado).
+  6. Los surcos finos se ocultan solo donde hay texto (filtro de 'stones-grooves').
+  7. Se ve: captura con la capa visible ≠ oculta; las letras son oscuras (contraste WCAG >= 4,5 con la cara #d6b25a).
+  8. 0 peticiones al contador (bloqueadas) y 0 errores de página.
+Uso: python3 tests/v25-plaque-text-check.py BASE_URL"""
+import asyncio, base64, math, os, sys
+from playwright.async_api import async_playwright
+BASE = sys.argv[1] if len(sys.argv) > 1 else 'http://127.0.0.1:8899/'
+CHROME = os.environ.get('CHROME_BIN', '/usr/bin/google-chrome')
+SPOT = ['Q131924672', 'Q131924669', 'Q131924674', 'Q131924675']   # Westendstraße 82 (Frankfurt), 4 placas con inscripción
+
+async def main():
+    fails = []
+    def ok(c, m):
+        if not c: fails.append(m)
+    async with async_playwright() as p:
+        b = await p.chromium.launch(executable_path=CHROME, headless=True, args=['--use-gl=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'])
+        pg = await (await b.new_context(viewport={'width': 1280, 'height': 800}, service_workers='block', locale='es-ES')).new_page()
+        blocked, errs, reqs = [], [], []
+        pg.on('pageerror', lambda e: errs.append(str(e)))
+        pg.on('request', lambda r: reqs.append(r.url))
+        async def rh(r): blocked.append(r.request.url); await r.abort()
+        await pg.route('**/*.workers.dev/**', rh); await pg.route('**/*kl-contador*', rh)
+        await pg.goto(BASE + 'index.html?intro=0&lang=es&base=day', wait_until='domcontentloaded', timeout=180000)
+        await pg.wait_for_function("typeof VISIBLE!=='undefined' && VISIBLE.length>70000 && window.map && map.loaded && map.loaded() && (!window.KLAlign || KLAlign.ready)", timeout=300000)
+        await pg.wait_for_timeout(1500)
+        pt = lambda: [u for u in reqs if 'plaquetext.js' in u]
+        ok(not pt(), f'plaquetext.js pedido en la carga inicial: {pt()}')
+        ok(await pg.evaluate("!window.KLPlaqueText"), 'KLPlaqueText presente en la carga inicial')
+
+        async def go(z, bearing=0, pitch=0):
+            return await pg.evaluate("""async ([ids, z, br, pi]) => {
+              const ss = ids.map(id => byId.get(id)).filter(Boolean);
+              const la = ss.reduce((a,s)=>a+s._dla,0)/ss.length, lo = ss.reduce((a,s)=>a+s._dlo,0)/ss.length;
+              map.jumpTo({center:[lo, la], zoom:z, pitch:pi, bearing:br});
+              if (window.KLCols && KLCols.finish) KLCols.finish();
+              await new Promise(r => { map.once('idle', r); setTimeout(r, 8000); });
+              for (let k = 0; k < 60 && window.KLPlaqueText === undefined && map.getZoom() >= 19.5; k++) await new Promise(r => setTimeout(r, 100));
+              if (window.KLPlaqueText){ KLPlaqueText.refresh(); map.triggerRepaint(); await new Promise(r => { map.once('idle', r); setTimeout(r, 8000); }); }
+              return ss.length;
+            }""", [SPOT, z, bearing, pitch])
+
+        n = await go(19.0)
+        ok(n == 4, f'placas de prueba no encontradas ({n}/4)')
+        ok(not pt(), 'plaquetext.js pedido a zoom 19 (< 19,5)')
+        await go(20.2)
+        ok(len(pt()) == 1, f'plaquetext.js no pedido (o pedido {len(pt())} veces) a zoom 20,2')
+        ok('?v=' in (pt() or [''])[0], 'plaquetext.js sin ?v= (caché del service worker)')
+        s0 = await pg.evaluate("KLPlaqueText.state()")
+        ok(s0['drawn'] == 0 and s0['skipped'] == 'zoom', f'a zoom 20,2 no debe escribirse nada: {s0["drawn"]} {s0["skipped"]}')
+
+        CHECK = """(mode) => {
+          const st = KLPlaqueText.state(), P = KLPlaqueText, K = KLCols.state(), b = map.getBounds(), out = [];
+          const pl = (b.getEast()-b.getWest())*0.16, pa = (b.getNorth()-b.getSouth())*0.16;
+          const up = t => String(t).toLocaleUpperCase('de-DE'), W = t => up(t).split(/[\\s|]+/).filter(Boolean).join(' ');
+          const flt = JSON.stringify(map.getFilter('stones-grooves') || []);
+          for (const q of st.quads){
+            const s = byId.get(q.id), i = P.inscOf(s);
+            if (!i){ out.push(q.id + ': escrita sin campo i'); continue; }
+            if (q.id === selected) out.push(q.id + ': escrita la ficha abierta');
+            if (s._dla < b.getSouth()-pa || s._dla > b.getNorth()+pa || s._dlo < b.getWest()-pl || s._dlo > b.getEast()+pl) out.push(q.id + ': fuera de vista');
+            const txt = q.lines.join(' ').split(/\\s+/).filter(Boolean).join(' ');
+            if (mode === 'full' && txt !== W(i)) out.push(q.id + ': texto ≠ i en mayúsculas: ' + txt.slice(0, 80));
+            if (mode === 'name'){ const n = P.nameLine(s); if (!n || !String(i).includes(n) || txt !== W(n)) out.push(q.id + ': nombre no literal de i: ' + txt); }
+            const d = ((q.a - (s._ang || 0)) / (Math.PI / 2)); if (Math.abs(d - Math.round(d)) > 1e-6) out.push(q.id + ': no gira con la placa');
+            if (q.half * Math.SQRT2 > K.faceHalf * Math.SQRT2 - 0.01 || q.half > K.faceHalf - 0.02) out.push(q.id + ': el texto se sale de la cara');
+            if (q.up < Math.SQRT1_2 - 1e-6) out.push(q.id + ': texto torcido en pantalla (' + q.up.toFixed(2) + ')');
+            if (Math.abs(q.z - (K.faceTop + 0.005)) > 0.002) out.push(q.id + ': altura ' + q.z);
+            if (!flt.includes(q.id)) out.push(q.id + ': surcos no ocultos bajo el texto');
+          }
+          for (const id of KLCols.state().textIds || []) if (!st.ids.includes(id)) out.push(id + ': surcos ocultos sin texto');
+          return {st: {drawn: st.drawn, mode: st.mode, skipped: st.skipped, inView: st.inView.length, textures: st.textures}, out, flt: flt.length};
+        }"""
+        res = {}
+        for z, mode, br in [(20.8, 'name', 0), (21.6, 'full', 0), (21.6, 'full', 100)]:
+            await go(z, br)
+            r = await pg.evaluate(CHECK, mode)
+            res[(z, br)] = r['st']
+            ok(r['st']['mode'] == mode, f'z{z}: modo {r["st"]["mode"]} ≠ {mode}')
+            ok(r['st']['drawn'] >= 3, f'z{z} rumbo {br}: solo {r["st"]["drawn"]} placas escritas')
+            ok(r['st']['inView'] <= 60, f'z{z}: {r["st"]["inView"]} placas en vista (> 60)')
+            fails.extend(f'z{z} rumbo {br}: {m}' for m in r['out'][:10])
+
+        # ficha abierta: esa placa no se escribe (la ficha muestra la placa grande)
+        await pg.evaluate("(id) => { const s = byId.get(id); openStone(id); map.triggerRepaint(); }", SPOT[0])
+        await pg.wait_for_timeout(800)
+        sel_ids = await pg.evaluate("KLPlaqueText.state().ids")
+        ok(SPOT[0] not in sel_ids, 'la placa de la ficha abierta también se escribe')
+        await pg.evaluate("() => { if (typeof closeDetail === 'function') closeDetail(); else selected = null; map.triggerRepaint(); }")
+        await go(21.6, 0, 50)
+        ok((await pg.evaluate("KLPlaqueText.state().drawn")) >= 3, 'con el mapa inclinado (50°) no se escribe')
+
+        # nada inventado en TODAS las placas cargadas: sin i → no hay textura
+        blank = await pg.evaluate("""() => { let n = 0, bad = []; for (const s of DATA){ if (KLPlaqueText.inscOf(s)) continue; n++;
+            for (const m of ['name','full']) if (KLPlaqueText._paint(s, m) !== null) bad.push(s.id); } return {n, bad: bad.slice(0,5)}; }""")
+        ok(blank['n'] > 1000 and not blank['bad'], f'placas sin i con texto: {blank}')
+
+        # se ve: visible vs oculta, y letras oscuras
+        await go(21.6, 0, 0)
+        on = await pg.screenshot(type='png')
+        await pg.evaluate("() => { map.setLayoutProperty('plaque-text', 'visibility', 'none'); map.triggerRepaint(); }")
+        await pg.wait_for_timeout(1200)
+        off = await pg.screenshot(type='png')
+        await pg.evaluate("() => { map.setLayoutProperty('plaque-text', 'visibility', 'visible'); map.triggerRepaint(); }")
+        px = await pg.evaluate("""async ([a, b]) => {
+          const load = u => new Promise(r => { const im = new Image(); im.onload = () => r(im); im.src = u; });
+          const [A, B] = await Promise.all([load(a), load(b)]); const cv = document.createElement('canvas'); cv.width = A.width; cv.height = A.height;
+          const g = cv.getContext('2d'); g.drawImage(A, 0, 0); const da = g.getImageData(0, 0, cv.width, cv.height).data; g.drawImage(B, 0, 0); const db = g.getImageData(0, 0, cv.width, cv.height).data;
+          let diff = 0, dark = 0;
+          for (let k = 0; k < da.length; k += 4){ const d = Math.abs(da[k]-db[k]) + Math.abs(da[k+1]-db[k+1]) + Math.abs(da[k+2]-db[k+2]);
+            if (d > 30){ diff++; if (da[k] + da[k+1] + da[k+2] < db[k] + db[k+1] + db[k+2]) dark++; } }
+          return {diff, dark};
+        }""", ['data:image/png;base64,' + base64.b64encode(on).decode(), 'data:image/png;base64,' + base64.b64encode(off).decode()])
+        ok(px['diff'] > 500, f'la capa no cambia la imagen ({px["diff"]} píxeles)')
+        ok(px['dark'] > 0.6 * max(1, px['diff']), f'las letras no son más oscuras que la cara ({px["dark"]}/{px["diff"]})')
+        cr = await pg.evaluate("KLPlaqueText.contrast(KLPlaqueText.INK, KLPlaqueText.FACE)")
+        ok(cr >= 4.5, f'contraste {cr:.2f} < 4,5')
+        ok(not errs, f'errores de página: {errs[:3]}')
+        ok(not [u for u in reqs if ('workers.dev' in u or 'kl-contador' in u) and u not in blocked], 'petición al contador no bloqueada')
+        await b.close()
+    if fails:
+        print('FAIL v25-plaque-text:'); [print('  -', f) for f in fails]; sys.exit(1)
+    print(f'OK v25-plaque-text: perezoso (no en la carga ni a z19); z20,2 nada; z20,8 nombre ({res[(20.8,0)]["drawn"]} placas); '
+          f'z21,6 inscripción ({res[(21.6,0)]["drawn"]}; girado 100°: {res[(21.6,100)]["drawn"]}); texto = i en mayúsculas, '
+          f'gira con la placa y cabe en la cara; surcos ocultos solo bajo texto; {blank["n"]} placas sin i siempre lisas; '
+          f'{px["diff"]} píxeles cambian ({px["dark"]} más oscuros); contraste {cr:.2f}:1; contador bloqueado ({len(blocked)})')
+
+asyncio.run(main())

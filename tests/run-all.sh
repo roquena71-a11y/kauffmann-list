@@ -17,6 +17,7 @@ node tests/v22-added-test.cjs
 "$PYTHON" tests/v20r2-data-check.py
 "$PYTHON" tests/v20r4-checks.py
 node tests/sidewalk-test.cjs
+node tests/v25-plaque-text-unit.cjs
 node tests/counter-sw-test.cjs
 node tests/update-flow-test.cjs
 node tests/version-test.cjs
@@ -104,6 +105,9 @@ if [ -x "$CHROME" ] && "$PYTHON" -c "import playwright" 2>/dev/null; then
   # v25: remates — esquinas redondas, marco uniforme, surcos sobre la cara (geometría real del cliente, cuantización simulada)
   "$PYTHON" tests/v25-corner-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-v25corner.log 2>&1 || { tail -30 /tmp/kl-v25corner.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-v25corner.log
+  # v25 paso 3: inscripción escrita en la placa (capa WebGL perezosa; texto solo del campo i)
+  "$PYTHON" tests/v25-plaque-text-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-v25text.log 2>&1 || { tail -30 /tmp/kl-v25text.log; kill $SRV; exit 1; }
+  tail -1 /tmp/kl-v25text.log
   # encuadre de países (9 tamaños + 320x568; ~7 min). SKIP_COUNTRY_BUTTONS=1 lo omite en iteraciones rápidas.
   if [ -z "$SKIP_COUNTRY_BUTTONS" ]; then
     "$PYTHON" tests/country-buttons-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-cb.log 2>&1 || { tail -25 /tmp/kl-cb.log; kill $SRV; exit 1; }

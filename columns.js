@@ -474,7 +474,7 @@
   }
 
   window.KLCols = { add, filterSel, relayout, setModel, rise, finish(){ animating=false; setT(1); }, MODELS, relabel, PLACA_MINZOOM, GROOVE_MINZOOM, BRASS_RIM, BRASS_FACE, BRASS_GROOVE,
-    topOf, setTextIds, state(){ return {T, animating, model: current, faceHalf: FACE_HALF, faceTop: PLACA_PARTS[1].top, grooveTop: GROOVE_TOP, plaqueLayers: layerIds.includes('stones-2')}; } };
+    topOf, setTextIds, state(){ return {T, animating, model: current, faceHalf: FACE_HALF, faceTop: PLACA_PARTS[1].top, grooveTop: GROOVE_TOP, plaqueLayers: layerIds.includes('stones-2'), textIds: textIds.slice()}; } };
   const boot = () => { if (!window.map || !map.on) return setTimeout(boot, 200);
     map.on('zoom', ensureCols); map.on('moveend', ensureCols);
     map.on('zoomend', watchZoom); rotateButtons(); picker(); bindTip(); };
