@@ -41,19 +41,26 @@ Inventario exacto, de consultas reales a datos locales (no se ha usado Overpass;
 - `imgx` ya en nuestros datos: **311** URLs de Commons; **21** omitidas por no ser Commons (p. ej. stolpersteine-bamberg.de, erport-do.de).
 - OSM `wikimedia_commons`/`image` fuera de DE (extractos v20 + FI/JE/RO/SE): **358** placas sin foto con archivo Commons (405 no-Commons omitidas, p. ej. stolpersteine-salzburg.at; 15 categorías omitidas). 351 quedan solo en esta fuente.
 
-**Unión legal: 1.632 placas** (no 1.650: la revisión anterior contó como Commons las 21 `imgx` que no lo son, y hubo un solape distinto). Por origen exclusivo: P18 970, imgx 311, OSM no-DE 351. Por el nombre del archivo: 1.331 parecen foto de la placa, **301** se marcan como posiblemente retrato o casa (no se ocultan; la ficha lo dice).
+**Unión legal confirmada en Commons: 1.621 placas** (la revisión anterior estimó 1.650). Desglose:
+
+- Candidatos locales: 1.632 (P18 970 + imgx Commons 311 + OSM no-DE 351; se omitieron 21 `imgx` y 405 OSM que no son Commons, y 15 categorías).
+- La API de Commons confirmó 1.621. Se omitieron 11 nombres que no existen (etiquetas OSM rotas o archivo borrado; los 11 eran de OSM fuera de DE).
+- Por origen exclusivo final: P18 970, imgx 311, OSM no-DE 340.
+- Por el nombre del archivo: 1.322 parecen foto de la placa, **299** se marcan como posiblemente retrato o casa (no se ocultan; la ficha lo dice).
 
 Aplicación: sidecar `data/photos-added-v25.json` (no se reescribe `stones.json`, no se tocan `la`/`lo`). El cliente asigna `img` solo si faltaba.
 
-Ficha: si no hay foto, «Sin foto todavía». Si hay, se pide autor y licencia (créditos Commons) y, si el nombre del archivo no habla de la placa, un aviso honesto.
+Ficha: si no hay foto, «Sin foto todavía». Si hay, autor y licencia (créditos Commons, carga perezosa al abrir la ficha) y, si el nombre del archivo no habla de la placa, un aviso honesto.
 
-**Créditos Commons:** `pipeline/tools/fetch_commons_credits.py` consulta 52.191 nombres únicos (los ya mostrados + los 1.632 nuevos), en lotes de 40, User-Agent con la URL del proyecto, 0,45 s entre lotes, caché en `/workspace/v24-data/review/commons-extmetadata.json`. Salida prevista: `data/photo-credits-v25.json` (se carga solo al abrir una ficha, no en la carga inicial). En curso al escribir esto.
+**Créditos Commons (terminado, 0 fallos de red):** 52.191 nombres únicos consultados el 24-nov-2026 a las 03:52 Europe/Berlin. 51.563 con autor, 51.564 con licencia. Licencias más frecuentes: CC BY-SA 4.0 (23.987), CC BY-SA 3.0 (16.663), CC0 (5.740), CC BY-SA 3.0 de (3.415). Archivo `data/photo-credits-v25.json` (7,7 MiB; se carga solo al abrir una ficha). Caché de trabajo en `/workspace/v24-data/review/commons-extmetadata.json`.
 
-## Pendiente
+**Dato ya publicado, no se ha cambiado:** 680 placas que *ya* tenían `img` apuntan a un archivo que hoy no está en Commons (626 nombres únicos; p. ej. archivos borrados o renombrados). No se ha tocado `stones.json`. Carlos puede decidir si se ocultan y se muestra «Sin foto todavía».
 
-- Terminar la descarga de créditos y generar `data/photo-credits-v25.json`.
-- Decisión de Carlos: ¿se ocultan las 301 fotos que no parecen de la placa, o solo se avisa?
-- OSM Alemania: sigue sin extracto; no se ha inventado ninguna foto de ahí.
+## Pendiente / decisiones de Carlos
+
+- ¿Se ocultan las 299 fotos nuevas que no parecen de la placa, o solo se avisa? (ahora solo se avisa.)
+- ¿Se ocultan las 680 fotos ya publicadas cuyo archivo ya no está en Commons?
+- OSM Alemania: sigue sin extracto local; no se ha inventado ninguna foto de ahí.
 - No publicar hasta su sí y las 3 auditorías.
 
 ## Archivos tocados (repo)

@@ -94,6 +94,8 @@ def commons_filename(raw):
     # Sin ruta tipo http residual
     if "/" in name and not name.lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".tiff", ".gif", ".webp")):
         return None
+    if not name.lower().endswith((".jpg", ".jpeg", ".png", ".tif", ".tiff", ".gif", ".webp")):
+        return None
     return name
 
 
