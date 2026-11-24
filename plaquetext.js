@@ -81,7 +81,8 @@
   function paint(s, mode){
     const lines = linesFor(s, mode); if (!lines) return null;
     const N = mode === 'full' ? 512 : 256, pad = Math.round(N * 0.035), box = N - 2 * pad;
-    const f = fit(lines, box, measureAt, mode === 'full' ? 64 : 72, mode === 'full' ? 9 : 12);
+    const f = fit(lines, box, measureAt, mode === 'full' ? 64 : 72, mode === 'full' ? 6 : 10);
+    if (f.overflow) return null;   // no cabe ni a la letra mínima: la placa queda lisa (nunca se corta el texto a medias)
     const cv = document.createElement('canvas'); cv.width = cv.height = N;
     const g = cv.getContext('2d');
     g.clearRect(0, 0, N, N);
