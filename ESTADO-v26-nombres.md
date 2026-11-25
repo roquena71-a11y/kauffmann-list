@@ -39,3 +39,10 @@ refresh() agranda el recuadro cuando el mapa está inclinado (getBounds() dejaba
 Prueba tests/v26-nombres-check.py (C1–C3, teléfono 412×915 y escritorio) en run-all.sh. Versión única v35, SW kauffmann-v35-pages.
 Capturas: /workspace/v24-data/shots-v26-nombres/ (JPEG pequeños). Antes = v34 c4fe9ec5; después = esta rama.
 Prueba suelta: OK v26-nombres (contador 0). Falta el run-all completo.
+
+## 25-11-2026 05:37 (hora de Berlín) — run-all completo OK
+`REQUIRE_OAV=1 tests/run-all.sh`, venv `/workspace/v24-data/venv-runall-v34`, contador bloqueado (hosts), sin SKIP.
+Inicio 05:06, fin 05:37 (CET, UTC+1). Exit 0. Log: `/workspace/v24-data/run-all-v26-nombres.log`.
+Presupuesto de overlays **sin subir**: 9442 ms ≤ 11500 (fcp=192, dcl=914, overview=5333, vis=10029, street_zoom=78/475 ms).
+country-buttons: FALLOS: ninguno. v25-plaque-text, v26-nombres, v33 markup, v34 fotos/fechas: OK. 0 omitidas de las que el script exige (v22 compare/placement se omiten como siempre, faltan V21_CLIENT / pickles).
+Commit de cierre (antes de esta nota): 65a2908a. App v35, SW kauffmann-v35-pages. Sin push.
