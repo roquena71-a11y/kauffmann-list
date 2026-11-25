@@ -223,7 +223,7 @@
       gl.vertexAttribPointer(this.aPos, 3, gl.FLOAT, false, 20, 0); gl.vertexAttribPointer(this.aUv, 2, gl.FLOAT, false, 20, 12);
       const drawn = [], quads = [], sel = typeof selected !== 'undefined' ? selected : null;
       for (const s of inView){
-        if (s.id === sel) continue;
+        // v35 C1: también se escribe la placa seleccionada (antes se saltaba y solo quedaba el fuste pálido)
         const top = K.topOf(s.id); if (!top) continue;
         const e = texFor(gl, s, mode); if (!e.tex) continue;
         const A = s._ang || 0, ca = Math.cos(A), sa = Math.sin(A);

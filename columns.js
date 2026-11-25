@@ -333,7 +333,7 @@
     const next = (ids || []).slice().sort();
     if (next.length === textIds.length && next.every((x, i) => x === textIds[i])) return;
     textIds = next;
-    if (map && map.getLayer('stones-grooves')) map.setFilter('stones-grooves', grooveFilter(selected ? ['!=', ['get','id'], selected] : null));
+    if (map && map.getLayer('stones-grooves')) map.setFilter('stones-grooves', grooveFilter(null));
   }
   // Altura real (m) de la cara de latón de una placa en este fotograma (misma fórmula que grow() con su retraso r).
   function topOf(id){
@@ -345,8 +345,8 @@
   }
   function filterSel(){
     if (pendingAdd && selected && map && map.getZoom() >= 12.5) add(undefined, true);
-    const f = selected ? ['!=', ['get','id'], selected] : null;
-    for (const id of layerIds) if (map.getLayer(id)) map.setFilter(id, id === 'stones-grooves' ? grooveFilter(f) : f);
+    // v35 C1: la columna seleccionada se queda (placa, surcos y texto); el resalte es el marco de oro, no un fuste pálido
+    for (const id of layerIds) if (map.getLayer(id)) map.setFilter(id, id === 'stones-grooves' ? grooveFilter(null) : null);
     if (selected && map.getZoom() >= 14.6){
       const s = byId.get(selected); if (s){ tipPinned = true; showTip(s); return; }
     }

@@ -699,9 +699,10 @@ function addOverlays(){
   map.addSource('sel',{type:'geojson', data:selFC()});
   refreshSel && setTimeout(refreshSel,0);
   map.addLayer({id:'sel-glow', type:'circle', source:'sel', filter:['==',['geometry-type'],'Point'],
-    paint:{'circle-radius':['interpolate',['linear'],['zoom'],12,18,18,60], 'circle-color':'#ffd56b', 'circle-opacity':0.45, 'circle-blur':1, 'circle-pitch-alignment':'map'}});
+    paint:{'circle-radius':['interpolate',['linear'],['zoom'],8,16,14.6,28,18,44], 'circle-color':'#ffd56b', 'circle-opacity':0.45, 'circle-blur':1, 'circle-pitch-alignment':'map'}});
+  // v35 C1: marco de oro alrededor de la columna real (hueco: la cara de la placa queda libre). Ya no hay fuste pálido de 34/400 m.
   map.addLayer({id:'sel', type:'fill-extrusion', source:'sel', filter:['==',['geometry-type'],'Polygon'],
-    paint:{'fill-extrusion-color':'#fff3c4', 'fill-extrusion-height':['get','h'], 'fill-extrusion-opacity':1}});
+    paint:{'fill-extrusion-color':'#f0c44a', 'fill-extrusion-height':['get','h'], 'fill-extrusion-base':0, 'fill-extrusion-opacity':0.92, 'fill-extrusion-vertical-gradient':true}});
   // columnas individuales (modelos en columns.js); si no carga, la columna simple de antes
   if (window.KLCols) KLCols.add(firstSymbol);
   else {
@@ -719,12 +720,40 @@ function addOverlays(){
 function selFC(){
   const s = selected && byId.get(selected); if (!s) return {type:'FeatureCollection', features:[]};
   const zoomed = map && map.getZoom() >= 14.6;
-  const feats = [{type:'Feature', properties:{}, geometry:{type:'Point', coordinates:[s._dlo,s._dla]}}];
-  // the remembered person's column: same place, brighter and taller so it stands above the roofs
-  feats.push({type:'Feature', properties:{h: zoomed ? 34 : 400}, geometry:{type:'Polygon', coordinates:square(s._dlo,s._dla, zoomed ? COL_HALF*1.15 : 12, s._ang)}});
+  const feats = [{type:'Feature', properties:{kind:'halo'}, geometry:{type:'Point', coordinates:[s._dlo,s._dla]}}];
+  if (zoomed){
+    // marco fino de oro por fuera del rim (0,51 m): la placa y el texto se siguen viendo
+    const outer = square(s._dlo, s._dla, 0.62, s._ang)[0];
+    const inner = square(s._dlo, s._dla, 0.535, s._ang)[0].slice().reverse();
+    feats.push({type:'Feature', properties:{kind:'frame', h:16.50}, geometry:{type:'Polygon', coordinates:[outer, inner]}});
+  }
   return {type:'FeatureCollection', features:feats};
 }
-function refreshSel(){ const src = map.getSource('sel'); if (src) src.setData(selFC()); if (window.KLCols) KLCols.filterSel(); else if (map.getLayer('stones')) map.setFilter('stones', selected ? ['!=',['get','id'],selected] : null); }
+let selPulseT = 0, selPulseId = 0;
+function stopSelPulse(){
+  if (selPulseId){ cancelAnimationFrame(selPulseId); selPulseId = 0; }
+  if (map && map.getLayer('sel-glow')){
+    map.setPaintProperty('sel-glow', 'circle-radius', ['interpolate',['linear'],['zoom'],8,16,14.6,28,18,44]);
+    map.setPaintProperty('sel-glow', 'circle-opacity', 0.45);
+  }
+}
+function tickSelPulse(){
+  selPulseId = 0;
+  if (!map || !map.getLayer('sel-glow') || !selected || map.getZoom() >= 14.6){ stopSelPulse(); return; }
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){ stopSelPulse(); return; }
+  selPulseT += 0.05;
+  const k = 0.5 + 0.5 * Math.sin(selPulseT);
+  map.setPaintProperty('sel-glow', 'circle-radius', 22 + k * 26);
+  map.setPaintProperty('sel-glow', 'circle-opacity', 0.28 + k * 0.37);
+  selPulseId = requestAnimationFrame(tickSelPulse);
+}
+function refreshSel(){
+  const src = map.getSource('sel'); if (src) src.setData(selFC());
+  if (window.KLCols) KLCols.filterSel();
+  else if (map.getLayer('stones')) map.setFilter('stones', null);
+  if (selected && map && map.getZoom() < 14.6){ if (!selPulseId) tickSelPulse(); }
+  else stopSelPulse();
+}
 
 function paintBaseButtons(){
   document.body.classList.toggle('dark', base!=='day');
