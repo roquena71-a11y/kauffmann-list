@@ -120,5 +120,9 @@ assert(P.Z_ON_NARROW === 19.5 && P.PX_NAME_NARROW === 26, 'umbrales del teléfon
 assert(P.modeFor(20.2, 31, 45)[1] === 'pequena', 'escritorio z20,2 / 31 px sigue en pequeña');
 assert(P.modeFor(20.2, 31, 45, {pxName: P.PX_NAME_NARROW, zOn: P.Z_ON_NARROW})[0] === 'name', 'teléfono z20,2 / 31 px = nombre');
 assert(P.modeFor(19.4, 40, 50, {pxName: P.PX_NAME_NARROW, zOn: P.Z_ON_NARROW})[1] === 'zoom', 'teléfono z19,4 aún no');
+assert(P.CAM_CLEAR === 0.25, 'CAM_CLEAR');
+assert(P.modeFor(21.6, 1319, 0.68)[0] === 'full', 'primer plano inclinado 0,68 m sobre la cara: se escribe');
+assert(P.modeFor(21.6, 1319, 0.20)[1] === 'camara' && P.modeFor(21.6, 1319, 0)[1] === 'camara', 'a 0,25 m o menos: no se escribe');
+
 
 console.log(`OK plaque-text (unidad): ${stones.length} placas, ${withI} con inscripción (texto = ficha en mayúsculas, ${full}), ${stones.length - withI} en blanco; línea del nombre literal en ${named} (sin línea de nombre: ${noName}); ajuste sin perder palabras (no caben ni a la letra mínima y quedan lisas: ${overflow}); marcado HTML/wiki limpio en ${mk} inscripciones de ${mkStones.size} placas (${brLines} con <br>), sin perder palabras; v33 barrido: ${sweepStr} textos de una línea (${sweepFix} limpiados), ${bioFields} trozos de fecha de data/bio (${bioMk} con marcado), ${stories} historias (${storyMk} limpiadas), sin marcado ni palabras perdidas; contraste letras/cara ${cr.toFixed(2)}:1`);

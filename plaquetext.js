@@ -13,7 +13,7 @@
   const Z_ON = 20, Z_NAME = 20.5, Z_FULL = 21.5;
   const PX_NAME = 40, PX_FULL = 100;                 // px de la cara (escritorio): nombre desde 40 px, inscripción entera desde 100 px
   const Z_ON_NARROW = 19.5, PX_NAME_NARROW = 26;     // v35 C2: teléfono (≤760 px): nombre desde ~z20,2 a 42° (cara ≈ 31 px)
-  const CAM_CLEAR = 1.0;                             // m: con la cámara a menos de 1 m sobre la placa (o debajo) no se escribe
+  const CAM_CLEAR = 0.25;                            // v35 C3: solo se oculta el texto si la cámara está a ≤0,25 m de la cara o debajo
   function isNarrow(){ return typeof window !== 'undefined' && window.matchMedia && matchMedia('(max-width: 760px)').matches; }
   function zOn(){ return isNarrow() ? Z_ON_NARROW : Z_ON; }
   function pxName(){ return isNarrow() ? PX_NAME_NARROW : PX_NAME; }
