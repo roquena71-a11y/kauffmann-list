@@ -1022,7 +1022,7 @@ async function load(){
   };
   startAlign();
   // v31: la inscripción escrita en la placa (plaquetext.js) se pide solo al acercarse (zoom >= 19,5), nunca en la carga inicial.
-  const wantText = () => { if (map.getZoom() >= 19.5 && !window.KLPlaqueText && !document.getElementById('kl-plaquetext')) loadPlaqueText(); };
+  const wantText = () => { const z0 = narrowScreen ? 19.0 : 19.5; if (map.getZoom() >= z0 && !window.KLPlaqueText && !document.getElementById('kl-plaquetext')) loadPlaqueText(); };
   map.on('zoomend', wantText); map.on('moveend', wantText);
   map.on('zoom', () => { if (map.getZoom() >= 6.5) mountRestAgg(); });
   setTimeout(mountRestAgg, 350);

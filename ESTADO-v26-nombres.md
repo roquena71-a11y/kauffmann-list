@@ -20,3 +20,7 @@ La columna seleccionada ya no se sustituye por el fuste pálido #fff3c4 de 34 m 
 con placa y texto. Resalte: marco hueco de oro (#f0c44a, 16,50 m, fuera del rim) + el resplandor existente. A zoom <14,6,
 halo circular que pulsa (respeta «reducir movimiento»). KLPlaqueText deja de saltarse el seleccionado; columns.js ya no
 lo filtra de fuste, placa ni surcos.
+
+## 25-11-2026 04:28 (hora de Berlín) — C2 hecho
+Pantalla estrecha (≤760 px): Z_ON 19,5 y PX_NAME 26. En teléfono 412×915 a 42°, z20,2 (cara ≈ 31 px) entra en modo nombre
+(antes «pequeña»). Escritorio sin cambio (z20 / 40 px). plaquetext.js se pide desde z19,0 en teléfono (z19,5 en escritorio).

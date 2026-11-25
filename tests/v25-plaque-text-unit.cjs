@@ -116,4 +116,9 @@ const cr = P.contrast(P.INK, P.FACE);
 assert(cr >= 4.5, `contraste ${cr.toFixed(2)} < 4,5`);
 assert(P.contrast('#000000', '#ffffff') > 20.9 && Math.abs(P.contrast('#777777', '#ffffff') - 4.48) < 0.02, 'fórmula de contraste');
 assert(P.Z_ON === 20 && P.Z_NAME === 20.5 && P.Z_FULL === 21.5, 'umbrales de zoom');
+assert(P.Z_ON_NARROW === 19.5 && P.PX_NAME_NARROW === 26, 'umbrales del teléfono');
+assert(P.modeFor(20.2, 31, 45)[1] === 'pequena', 'escritorio z20,2 / 31 px sigue en pequeña');
+assert(P.modeFor(20.2, 31, 45, {pxName: P.PX_NAME_NARROW, zOn: P.Z_ON_NARROW})[0] === 'name', 'teléfono z20,2 / 31 px = nombre');
+assert(P.modeFor(19.4, 40, 50, {pxName: P.PX_NAME_NARROW, zOn: P.Z_ON_NARROW})[1] === 'zoom', 'teléfono z19,4 aún no');
+
 console.log(`OK plaque-text (unidad): ${stones.length} placas, ${withI} con inscripción (texto = ficha en mayúsculas, ${full}), ${stones.length - withI} en blanco; línea del nombre literal en ${named} (sin línea de nombre: ${noName}); ajuste sin perder palabras (no caben ni a la letra mínima y quedan lisas: ${overflow}); marcado HTML/wiki limpio en ${mk} inscripciones de ${mkStones.size} placas (${brLines} con <br>), sin perder palabras; v33 barrido: ${sweepStr} textos de una línea (${sweepFix} limpiados), ${bioFields} trozos de fecha de data/bio (${bioMk} con marcado), ${stories} historias (${storyMk} limpiadas), sin marcado ni palabras perdidas; contraste letras/cara ${cr.toFixed(2)}:1`);
