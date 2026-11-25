@@ -1072,6 +1072,24 @@ function loadPlaqueText(){
   const v = ((document.querySelector('script[src*="columns.js"]') || {}).src || '').match(/[?&]v=(\d+)/);
   const el = document.createElement('script'); el.id = 'kl-plaquetext'; el.async = true;
   el.src = 'plaquetext.js' + (v ? '?v=' + v[1] : '');
+  el.onerror = () => {   // v35 C5: el script no cargó; etiquetas con el nombre, sin pedir nada a la red
+    if (window.KLPlaqueText) return;
+    const boxOf = () => { let b = document.getElementById('kl-plaque-fb'); if (b) return b;
+      b = document.createElement('div'); b.id = 'kl-plaque-fb'; b.style.cssText = 'position:absolute;inset:0;pointer-events:none;z-index:4;overflow:hidden;';
+      (map.getCanvasContainer() || map.getContainer()).appendChild(b); return b; };
+    const draw = () => { const b = boxOf(); b.innerHTML = ''; if (map.getZoom() < 19.5) return;
+      const c = map.getCenter(), bs = map.getBounds();
+      const rows = (typeof VISIBLE !== 'undefined' && VISIBLE.length) ? VISIBLE : DATA; let n = 0;
+      for (const s of rows){ if (s._aliasOf || s._dla === undefined) continue;
+        if (s._dla < bs.getSouth() || s._dla > bs.getNorth() || s._dlo < bs.getWest() || s._dlo > bs.getEast()) continue;
+        const name = (s.n || '').toLocaleUpperCase('de-DE'); if (!name) continue;
+        const p = map.project([s._dlo, s._dla]);
+        const el2 = document.createElement('div');
+        el2.style.cssText = 'position:absolute;left:'+p.x+'px;top:'+p.y+'px;transform:translate(-50%,-50%);color:#3a2a10;font:700 12px/1.15 sans-serif;text-align:center;text-shadow:0 0 4px #d6b25a;white-space:pre;';
+        el2.textContent = name; b.appendChild(el2); if (++n >= 60) break; }
+    };
+    map.on('move', draw); map.on('moveend', draw); draw();
+  };
   document.head.appendChild(el);
 }
 function startAlign(){

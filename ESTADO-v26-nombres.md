@@ -28,3 +28,8 @@ Pantalla estrecha (≤760 px): Z_ON 19,5 y PX_NAME 26. En teléfono 412×915 a 4
 ## 25-11-2026 04:29 (hora de Berlín) — C3 hecho
 CAM_CLEAR pasa de 1,0 m a 0,25 m. En teléfono 412×915 a 42° y z21,6 (cámara a 0,68 m de la cara) se sigue viendo el texto
 en vez de solo los surcos. Si la cámara está a la altura de la placa o debajo (escritorio ~z21,5+ cenital), no se escribe.
+
+## 25-11-2026 04:30 (hora de Berlín) — C5 (barato) hecho
+Si addLayer / el shader / render fallan, se quita la capa WebGL y se ponen etiquetas HTML sobre la cara (mismo umbral de
+zoom/tamaño). No se envía nada a la red. Si plaquetext.js ni siquiera carga, app3d.js pone el nombre en etiquetas (onerror).
+En el respaldo no se ocultan los surcos (el texto ya no está en la textura). Prueba: KLPlaqueText.startFallback().

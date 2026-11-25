@@ -205,8 +205,9 @@
       this.uM = gl.getUniformLocation(p, 'u_m'); this.uTex = gl.getUniformLocation(p, 'u_tex'); this.uShade = gl.getUniformLocation(p, 'u_shade');
       this.buf = gl.createBuffer(); this.gl = gl;
     },
-    onRemove(m, gl){ for (const e of cache.values()) if (e.tex) gl.deleteTexture(e.tex); cache.clear(); gl.deleteBuffer(this.buf); gl.deleteProgram(this.p); },
+    onRemove(m, gl){ try { for (const e of cache.values()) if (e.tex) gl.deleteTexture(e.tex); cache.clear(); if (this.buf) gl.deleteBuffer(this.buf); if (this.p) gl.deleteProgram(this.p); } catch (e) {} },
     render(gl, args){
+      try { if (st.backend === 'html') return;
       const z = map.getZoom(), K = window.KLCols, ks = K && K.state ? K.state() : null;
       const cam = camera(ks ? ks.faceTop : 16.42), [mode, mwhy] = modeFor(z, cam.facePx, cam.above);
       const why = mwhy || (!ks || !ks.plaqueLayers ? 'sin-placas' : (ks.animating || ks.T < 1 ? 'animando' : ''));
@@ -251,20 +252,75 @@
       gl.depthMask(true);
       st.drawn = drawn.length; st.ids = drawn; st.quads = quads;
       if (K.setTextIds) K.setTextIds(drawn);
+      } catch (e) { startFallback('render'); }
     }
   };
 
+
+  // v35 C5: si la capa WebGL no arranca (shader, addLayer, GPU), las placas no se quedan solo con surcos.
+  // Respaldo: etiquetas HTML sobre la cara (sin pedir nada a la red). Los surcos se dejan ver (el texto ya no está en la textura).
+  st.backend = 'webgl';
+  function projectTop(lng, lat, elev){
+    try {
+      const t = map.transform, ll = new maplibregl.LngLat(lng, lat);
+      if (t.locationPoint && t.locationPoint.length >= 2) return t.locationPoint(ll, elev);
+      const mc = maplibregl.MercatorCoordinate.fromLngLat([lng, lat], elev);
+      if (typeof t.coordinatePoint === 'function') return t.coordinatePoint({x: mc.x, y: mc.y, z: mc.z});
+    } catch (e) {}
+    return map.project([lng, lat]);
+  }
+  function paintHtml(){
+    refresh();
+    const z = map.getZoom(), K = window.KLCols, ks = K && K.state ? K.state() : null;
+    const cam = camera(ks ? ks.faceTop : 16.42), [mode, mwhy] = modeFor(z, cam.facePx, cam.above);
+    const why = mwhy || (!ks || !ks.plaqueLayers ? 'sin-placas' : (ks.animating || ks.T < 1 ? 'animando' : ''));
+    st.mode = why ? null : mode; st.skipped = why; st.facePx = Math.round(cam.facePx); st.camAlt = +cam.alt.toFixed(1);
+    let box = document.getElementById('kl-plaque-fb');
+    if (!box){ box = document.createElement('div'); box.id = 'kl-plaque-fb';
+      box.style.cssText = 'position:absolute;inset:0;pointer-events:none;z-index:4;overflow:hidden;';
+      (map.getCanvasContainer() || map.getContainer()).appendChild(box); }
+    box.innerHTML = '';
+    if (why){ st.drawn = 0; st.ids = []; st.quads = []; if (K && K.setTextIds) K.setTextIds([]); return; }
+    const drawn = [], quads = [], fs = Math.max(9, Math.min(22, Math.round((cam.facePx || 40) / (mode === 'full' ? 9 : 5))));
+    for (const s of inView){
+      const lines = linesFor(s, mode); if (!lines) continue;
+      const top = K && K.topOf ? K.topOf(s.id) : 16.42; if (!top) continue;
+      const p = projectTop(s._dlo, s._dla, top + LIFT);
+      const el = document.createElement('div');
+      el.style.cssText = 'position:absolute;left:'+p.x+'px;top:'+p.y+'px;transform:translate(-50%,-50%);color:'+INK+';font:700 '+fs+'px/1.15 "Helvetica Neue",Arial,sans-serif;text-align:center;white-space:pre;text-shadow:0 0 3px '+FACE+',0 0 6px '+FACE+';';
+      el.textContent = lines.join('\n');
+      box.appendChild(el);
+      drawn.push(s.id); quads.push({id: s.id, a: s._ang || 0, half: HALF_IN, z: top + LIFT, up: 1, lines: lines, px: fs});
+    }
+    st.drawn = drawn.length; st.ids = drawn; st.quads = quads;
+  }
+  function startFallback(why){
+    if (st.backend === 'html') return;
+    st.backend = 'html';
+    if (why && !st.skipped) st.skipped = String(why);
+    try { if (map.getLayer('plaque-text')) map.removeLayer('plaque-text'); } catch (e) {}
+    if (window.KLCols && KLCols.setTextIds) KLCols.setTextIds([]);
+    if (!st._fbOn){ st._fbOn = true; map.on('move', paintHtml); map.on('moveend', () => { refresh(); paintHtml(); }); document.addEventListener('kl:align', paintHtml); }
+    paintHtml();
+  }
   function install(){
     if (!window.map || !map.getStyle || !map.isStyleLoaded()) return setTimeout(install, 300);
+    if (st.backend === 'html'){ paintHtml(); return; }
     if (map.getLayer('plaque-text')) return;
-    const before = map.getLayer('sel-glow') ? 'sel-glow' : undefined;
-    map.addLayer(layer, before);
-    refresh();
-    map.on('moveend', () => { refresh(); map.triggerRepaint(); });
-    document.addEventListener('kl:align', () => { refresh(); map.triggerRepaint(); });
-    map.on('styledata', () => { if (!map.getLayer('plaque-text') && map.isStyleLoaded()) { map.addLayer(layer, map.getLayer('sel-glow') ? 'sel-glow' : undefined); } });
-    map.triggerRepaint();
+    try {
+      const before = map.getLayer('sel-glow') ? 'sel-glow' : undefined;
+      map.addLayer(layer, before);
+      refresh();
+      map.on('moveend', () => { refresh(); map.triggerRepaint(); });
+      document.addEventListener('kl:align', () => { refresh(); map.triggerRepaint(); });
+      map.on('styledata', () => {
+        if (st.backend === 'html') return;
+        try { if (!map.getLayer('plaque-text') && map.isStyleLoaded()) map.addLayer(layer, map.getLayer('sel-glow') ? 'sel-glow' : undefined); }
+        catch (e) { startFallback('styledata'); }
+      });
+      map.triggerRepaint();
+    } catch (e) { startFallback('install'); }
   }
-  root.KLPlaqueText = Object.assign({}, API, {state: () => Object.assign({}, st, {inView: inView.map(s => s.id)}), refresh, layerId: 'plaque-text', _cache: cache, _paint: paint});
+  root.KLPlaqueText = Object.assign({}, API, {state: () => Object.assign({}, st, {inView: inView.map(s => s.id), backend: st.backend}), refresh, startFallback, layerId: 'plaque-text', _cache: cache, _paint: paint});
   install();
 })(typeof window !== 'undefined' ? window : globalThis);
