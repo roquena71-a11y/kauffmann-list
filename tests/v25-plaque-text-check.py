@@ -4,7 +4,7 @@ Comprueba en el navegador:
   1. Carga perezosa: plaquetext.js NO se pide en la carga inicial ni a zoom 19; sí al pasar de 19,5.
   2. Umbrales por tamaño de la placa en pantalla (escritorio 1280x800): z20,2 (≈35 px) → nada; z20,8 (≈85 px) → solo el nombre;
      z21,2 (≈170 px) → la inscripción entera; z21,6 → la cámara queda a la altura de las placas (16 m) → nada, surcos de vuelta.
-  3. Solo placas en vista (± 15 %), como mucho 60; nunca la ficha abierta.
+  3. Solo placas en vista (± 15 %), como mucho 60; la ficha abierta también se escribe (v35 C1).
   4. Nada inventado: cada placa escrita tiene campo i, y sus palabras son exactamente las de i en mayúsculas (texto completo)
      o un trozo literal de i (nombre). Las placas sin i nunca se escriben (comprobado sobre TODAS las placas cargadas).
   5. Orientación: el cuadro de texto gira con la placa (_ang de align-v24, múltiplos de 90°), cabe dentro de la cara,
@@ -72,7 +72,6 @@ async def main():
           for (const q of st.quads){
             const s = byId.get(q.id), i = P.inscOf(s);
             if (!i){ out.push(q.id + ': escrita sin campo i'); continue; }
-            if (q.id === selected) out.push(q.id + ': escrita la ficha abierta');
             if (s._dla < b.getSouth()-pa || s._dla > b.getNorth()+pa || s._dlo < b.getWest()-pl || s._dlo > b.getEast()+pl) out.push(q.id + ': fuera de vista');
             const txt = q.lines.join(' ').split(/\\s+/).filter(Boolean).join(' ');
             if (mode === 'full' && txt !== W(i)) out.push(q.id + ': texto ≠ i en mayúsculas: ' + txt.slice(0, 80));
@@ -133,9 +132,10 @@ async def main():
           return out; }""", ['n2432838644', 'n8572696652', 'Q73391789', 'Q132183676'])
         for m in mk: ok(m['ok'], f"marcado visible en {m['id']}: ficha «{m['txt']}» placa «{m['plate']}»")
         ok(mk[0]['lines'] >= 5 and mk[1]['lines'] >= 4, f"<br>/<b> no son saltos de línea en la ficha: {[(m['id'], m['lines']) for m in mk[:2]]}")
-        # ficha abierta: esa placa no se escribe (la ficha muestra la placa grande)
-        await pg.evaluate("(id) => { const s = byId.get(id); openStone(id); map.triggerRepaint(); }", SPOT[0])
-        await pg.wait_for_timeout(800)
+        # v35 C1: ficha abierta — la placa seleccionada también se escribe (ya no se salta)
+        await go(20.8, 0, 0)
+        await pg.evaluate("""(id) => { openStone(id, true); if (window.KLPlaqueText){ KLPlaqueText.refresh(); map.triggerRepaint(); } }""", SPOT[0])
+        await pg.wait_for_timeout(2500)
         sel_ids = await pg.evaluate("KLPlaqueText.state().ids")
         ok(SPOT[0] in sel_ids, 'la placa de la ficha abierta no se escribe (v35 C1: el seleccionado también lleva texto)')
         await pg.evaluate("() => { if (typeof closeDetail === 'function') closeDetail(); else selected = null; map.triggerRepaint(); }")
