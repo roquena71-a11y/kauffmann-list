@@ -137,7 +137,7 @@ async def main():
         await pg.evaluate("(id) => { const s = byId.get(id); openStone(id); map.triggerRepaint(); }", SPOT[0])
         await pg.wait_for_timeout(800)
         sel_ids = await pg.evaluate("KLPlaqueText.state().ids")
-        ok(SPOT[0] not in sel_ids, 'la placa de la ficha abierta también se escribe')
+        ok(SPOT[0] in sel_ids, 'la placa de la ficha abierta no se escribe (v35 C1: el seleccionado también lleva texto)')
         await pg.evaluate("() => { if (typeof closeDetail === 'function') closeDetail(); else selected = null; map.triggerRepaint(); }")
         await go(21.6, 0, 0)
         cb = await pg.evaluate("[KLPlaqueText.state(), KLCols.state().textIds]")

@@ -114,6 +114,9 @@ if [ -x "$CHROME" ] && "$PYTHON" -c "import playwright" 2>/dev/null; then
   # v34: fechas en conflicto (inscripción principal + «otra fuente») y fotos añadidas (créditos CC, aviso en las 299)
   "$PYTHON" tests/v34-photos-dates-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-v34.log 2>&1 || { tail -30 /tmp/kl-v34.log; kill $SRV; exit 1; }
   tail -1 /tmp/kl-v34.log
+  # v35: nombres en la placa al seleccionar (C1), umbrales del teléfono (C2), primer plano inclinado (C3)
+  "$PYTHON" tests/v26-nombres-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-v26nombres.log 2>&1 || { tail -30 /tmp/kl-v26nombres.log; kill $SRV; exit 1; }
+  tail -1 /tmp/kl-v26nombres.log
   # encuadre de países (9 tamaños + 320x568; ~7 min). SKIP_COUNTRY_BUTTONS=1 lo omite en iteraciones rápidas.
   if [ -z "$SKIP_COUNTRY_BUTTONS" ]; then
     "$PYTHON" tests/country-buttons-check.py http://127.0.0.1:${PORT}/ > /tmp/kl-cb.log 2>&1 || { tail -25 /tmp/kl-cb.log; kill $SRV; exit 1; }

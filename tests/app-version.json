@@ -1,11 +1,11 @@
 {
- "version": 34,
+ "version": 35,
  "note": "Fuente \u00fanica de la versi\u00f3n. Cambiar solo con tests/bump-version.py",
  "hashes": {
   "2d/app.js": "88468005f69d55d8",
   "2d/style.css": "74cf25d886aa6e0e",
-  "app3d.js": "08db6cca1c8ea1b0",
-  "columns.js": "6f2166d1024ca8f6",
+  "app3d.js": "86a9dd7f311c0376",
+  "columns.js": "e39bc3a5516a5c9a",
   "counter.js": "782dba7a77e0b611",
   "dedupe.js": "7685c27b7a8abb4e",
   "fonts/NGS6v5_NC0k9P9GKTbFzsQ.woff2": "75dd1921c5eb014d",
@@ -24,7 +24,7 @@
   "mapui.css": "41e5757647d8422e",
   "mapui.js": "88573b67cc3696b7",
   "people.js": "fc81d436e07a9039",
-  "plaquetext.js": "2363c46a49bf1194",
+  "plaquetext.js": "8ebd2cef7facd00f",
   "proyecto/kauffmann-liste-kurz-de.pdf": "c7e2c46ac59aed04",
   "proyecto/kauffmann-liste-kurz-en.pdf": "b1a6ba9d85e22a35",
   "proyecto/proyecto.css": "f862d1a94402f07d",
