@@ -33,3 +33,9 @@ en vez de solo los surcos. Si la cámara está a la altura de la placa o debajo 
 Si addLayer / el shader / render fallan, se quita la capa WebGL y se ponen etiquetas HTML sobre la cara (mismo umbral de
 zoom/tamaño). No se envía nada a la red. Si plaquetext.js ni siquiera carga, app3d.js pone el nombre en etiquetas (onerror).
 En el respaldo no se ocultan los surcos (el texto ya no está en la textura). Prueba: KLPlaqueText.startFallback().
+
+## 25-11-2026 04:40 (hora de Berlín) — pruebas y retoques
+refresh() agranda el recuadro cuando el mapa está inclinado (getBounds() dejaba fuera las placas junto a la cámara).
+Prueba tests/v26-nombres-check.py (C1–C3, teléfono 412×915 y escritorio) en run-all.sh. Versión única v35, SW kauffmann-v35-pages.
+Capturas: /workspace/v24-data/shots-v26-nombres/ (JPEG pequeños). Antes = v34 c4fe9ec5; después = esta rama.
+Prueba suelta: OK v26-nombres (contador 0). Falta el run-all completo.

@@ -27,8 +27,8 @@ async def boot(ctx, base, lang='es'):
         await pg.evaluate("KLUI.setSheet('collapsed')")
     return pg, blocked, errs, reqs
 
-async def go(pg, ids, z, pitch=0, bearing=0, select=None, lift=False):
-    return await pg.evaluate("""async ([ids, z, pi, br, sel, lift]) => {
+async def go(pg, ids, z, pitch=0, bearing=0, select=None, lift=False, fly=True):
+    return await pg.evaluate("""async ([ids, z, pi, br, sel, lift, fly]) => {
       const ss = ids.map(id => byId.get(id)).filter(Boolean);
       if (!ss.length) return {n: 0};
       const la = ss.reduce((a,s)=>a+s._dla,0)/ss.length, lo = ss.reduce((a,s)=>a+s._dlo,0)/ss.length;
@@ -37,13 +37,15 @@ async def go(pg, ids, z, pitch=0, bearing=0, select=None, lift=False):
         cla = la + d * Math.cos(b) / 111320; clo = lo + d * Math.sin(b) / (111320 * Math.cos(la * Math.PI / 180)); }
       map.jumpTo({center:[clo, cla], zoom:z, pitch:pi, bearing:br});
       if (window.KLCols && KLCols.finish) KLCols.finish();
-      if (sel){ selected = null; openStone(sel, true); }
+      if (window.KLUI && KLUI.setSheet) KLUI.setSheet('collapsed');
+      if (sel){ if (fly) openStone(sel, true); else { selected = sel; refreshSel(); } }
       else if (typeof closeDetail === 'function') closeDetail();
+      if (window.KLUI && KLUI.setSheet) KLUI.setSheet('collapsed');
       await new Promise(r => { map.once('idle', r); setTimeout(r, 8000); });
       for (let k = 0; k < 50 && window.KLPlaqueText === undefined && map.getZoom() >= 19; k++) await new Promise(r => setTimeout(r, 100));
       if (window.KLPlaqueText){ KLPlaqueText.refresh(); map.triggerRepaint(); await new Promise(r => { map.once('idle', r); setTimeout(r, 6000); }); }
       const st = window.KLPlaqueText ? KLPlaqueText.state() : {drawn:0, ids:[], skipped:'no-layer', mode:null};
-      const src = map.getSource('sel'); const data = (src && (src._data || src._options && src._options.data)) || {features:[]};
+      const src = map.getSource('sel'); const data = (src && src.serialize && src.serialize().data) || {features:[]};
       const polys = (data.features || []).filter(f => f.geometry && f.geometry.type === 'Polygon');
       const hs = polys.map(f => f.properties && f.properties.h);
       const paint = map.getLayer('sel') && map.getPaintProperty('sel', 'fill-extrusion-color');
@@ -51,7 +53,7 @@ async def go(pg, ids, z, pitch=0, bearing=0, select=None, lift=False):
       const hidden = window.KLCols && map.getFilter('stones-2');
       return {n: ss.length, st, hs, paint, sel: selected, hidden, glow: !!map.getLayer('sel-glow'),
               camAlt: st.camAlt, facePx: st.facePx, backend: st.backend};
-    }""", [ids, z, pitch, bearing, select, lift])
+    }""", [ids, z, pitch, bearing, select, lift, fly])
 
 async def shot(pg, name):
     if not SHOTS: return
@@ -82,13 +84,13 @@ async def main():
         ok((not r18['hs']) or max(r18['hs']) <= 17, f'C1 z18: fuste alto {r18["hs"]}')
         await shot(pg, 'despues-sonabend-z18-sel-1280x800.jpg')
         # zoom bajo: halo, sin fuste de 400 m
-        r13 = await go(pg, SONABEND, 13, 0, 0, 'n12825380212')
+        r13 = await go(pg, SONABEND, 13, 0, 0, 'n12825380212', fly=False)
         ok(not r13['hs'], f'C1 z13: aún hay polígono de resalte {r13["hs"]}')
         ok(r13['glow'], 'C1 z13: falta el halo sel-glow')
         # inscripción completa cenital
-        rfull = await go(pg, SONABEND, 21.6, 0, 0, None)
+        rfull = await go(pg, SONABEND, 21.2, 0, 0, None)
         ok(rfull['st'].get('mode') == 'full' and rfull['st'].get('drawn', 0) >= 3, f'inscripción completa: {rfull["st"]}')
-        await shot(pg, 'despues-sonabend-z216-full-1280x800.jpg')
+        await shot(pg, 'despues-sonabend-z212-full-1280x800.jpg')
         # Masaccio + Palmero: seleccionado con texto, sin fuste alto
         rm = await go(pg, MASACCIO, 20.8, 0, 0, 'fi-324267_4')
         ok('fi-324267_4' in (rm['st'].get('ids') or []) and (not rm['hs'] or max(rm['hs']) <= 17), f'Masaccio: {rm["st"]} h={rm["hs"]}')

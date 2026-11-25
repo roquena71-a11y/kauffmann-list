@@ -174,7 +174,9 @@
     if (z < zOn()){ inView = []; return; }
     const rows = (typeof VISIBLE !== 'undefined' && VISIBLE.length) ? VISIBLE : DATA;
     const b = map.getBounds(), c = map.getCenter();
-    const pl = (b.getEast() - b.getWest()) * 0.15, pa = (b.getNorth() - b.getSouth()) * 0.15;
+    // a mucha inclinación, getBounds() cubre el suelo lejano y deja fuera las placas junto a la cámara
+    const pad = 0.15 + 0.9 * Math.max(0, Math.tan(map.getPitch() * Math.PI / 180));
+    const pl = (b.getEast() - b.getWest()) * pad, pa = (b.getNorth() - b.getSouth()) * pad;
     const w = b.getWest() - pl, e = b.getEast() + pl, so = b.getSouth() - pa, n = b.getNorth() + pa;
     const cos = Math.cos(c.lat * Math.PI / 180), out = [];
     for (const s of rows){
