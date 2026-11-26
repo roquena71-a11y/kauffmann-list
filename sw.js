@@ -7,10 +7,10 @@
    · Archivos de la app → con ?v=N en index.html y en SHELL; nueva versión = URL nueva, nunca mezcla de versiones.
    · Al activarse una versión nueva sobre una anterior, las pestañas abiertas se recargan una vez (también las de una versión
      antigua, que no saben escuchar 'controllerchange'). */
-const VERSION = 'kauffmann-v36-pages';
+const VERSION = 'kauffmann-v37-pages';
 const SHELL = ['./','index.html',
-  // index.html pide estos archivos con ?v=36: así una página nueva nunca se mezcla con archivos viejos de la caché.
-  'style.css?v=36','style3d.css?v=36','mapui.css?v=36','app3d.js?v=36','people.js?v=36','columns.js?v=36','imagery.js?v=36','source-links.js?v=36','dedupe.js?v=36','counter.js?v=36','mapui.js?v=36','plaquetext.js?v=36',
+  // index.html pide estos archivos con ?v=37: así una página nueva nunca se mezcla con archivos viejos de la caché.
+  'style.css?v=37','style3d.css?v=37','mapui.css?v=37','app3d.js?v=37','people.js?v=37','columns.js?v=37','imagery.js?v=37','source-links.js?v=37','dedupe.js?v=37','counter.js?v=37','mapui.js?v=37','plaquetext.js?v=37',
   'manifest.webmanifest',
   'kauffmann-list.jsonld','robots.txt','sitemap.xml','data/bio/manifest.json',
   'proyecto/','proyecto/index.html','proyecto/proyecto.css','proyecto/proyecto.js',
@@ -27,7 +27,7 @@ const SHELL = ['./','index.html',
   'fonts/NGS6v5_NC0k9P9H4TbFzsQ.woff2',
   'geo/de-states.json',
   'vendor/maplibre/maplibre-gl.js','vendor/maplibre/maplibre-gl.css',
-  '2d/','2d/index.html','2d/app.js?v=36','2d/style.css?v=36',
+  '2d/','2d/index.html','2d/app.js?v=37','2d/style.css?v=37',
   'vendor/leaflet/leaflet.js','vendor/leaflet/leaflet.css','vendor/leaflet.markercluster/leaflet.markercluster.js','vendor/leaflet.markercluster/MarkerCluster.css','vendor/leaflet.markercluster/MarkerCluster.Default.css',
   'icons/icon-192.png','icons/icon-512.png','icons/apple-touch-icon.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL.map(u => new Request(u, { cache: 'reload' })))).then(() => self.skipWaiting())); });
@@ -79,6 +79,8 @@ async function networkFirst(e, req, url) {
   let r;
   try { r = await Promise.race([net, timer]); } catch (err) { r = 'error'; }
   if (r !== 'slow' && r !== 'error' && (r.ok || r.type === 'opaqueredirect')) return r;   // redirección (p. ej. /proyecto → /proyecto/): el navegador la sigue               // lo normal: la versión fresca de la red
+  // v37 (auditoría M1): una dirección que no existe (404 real de la red) muestra 404.html, no la portada guardada
+  if (r !== 'slow' && r !== 'error' && r.status === 404 && req.mode === 'navigate') return (await c.match(key)) || r;
   const hit = await cached;
   if (hit) return hit;                                               // red lenta, sin conexión o error 4xx/5xx → la copia
   if (r === 'slow') { try { return await net; } catch (err) { return Response.error(); } }

@@ -27,6 +27,7 @@ tail -3 /tmp/kl-unittest.log
 # Con el sitio ya generado (python3 -m pipeline build …): comprobaciones sobre los archivos reales y simulación de una IA.
 if [ -f api/v1/openapi.json ] && [ -f llms-full.txt ]; then
   "$PYTHON" tests/ai-door-check.py
+  "$PYTHON" tests/v37-auditoria-check.py | tail -1   # v37: licencias por fuente en llms.txt, dl-de-by, fechas/totales, 404, og:image
   "$PYTHON" tests/ai-sim.py . --n 10 --seed 1 | tail -1
   "$PYTHON" tests/ai-sim.py . --n 10 --seed 2 | tail -1
 else

@@ -1,5 +1,5 @@
 {
- "version": 36,
+ "version": 37,
  "note": "Fuente \u00fanica de la versi\u00f3n. Cambiar solo con tests/bump-version.py",
  "hashes": {
   "2d/app.js": "88468005f69d55d8",
