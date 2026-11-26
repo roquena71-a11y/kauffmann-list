@@ -60,3 +60,10 @@ CSS que map.project (comprobado: z=0 coincide; a 16,42 m, Simon pasa de y=812 a 
 Prueba C5: las dos fallas (startFallback y plaquetext.js abortado); el centro de cada etiqueta dentro del lienzo, y
 cae en la cara (queryRenderedFeatures stones-2/1 o intersección). Capturas en /workspace/v24-data/shots-v26-nombres/.
 App v36, SW kauffmann-v36-pages. Prueba suelta OK. Falta el run-all completo (esperar carga <2 y sin Chrome).
+
+## 26-11-2026 08:10 (hora de Berlín) — run-all completo OK (v36, F1)
+`REQUIRE_OAV=1 tests/run-all.sh`, venv `/workspace/v24-data/venv-runall-v34`, contador bloqueado (hosts), sin SKIP.
+Inicio 07:38, fin 08:10 (CET, UTC+1). Exit 0. Log: `/workspace/v24-data/run-all-v26-nombres-v36.log`.
+Presupuesto de overlays **sin subir**: 9349 ms ≤ 11500 (fcp=192, dcl=928, overview=5283, vis=9914, street_zoom=76/437 ms).
+country-buttons: FALLOS: ninguno. v26-nombres incluye C5 HTML y script-fail (etiquetas sobre la cara y dentro del lienzo).
+Commit: ddcdba4e. App v36, SW kauffmann-v36-pages. Sin push.
