@@ -103,11 +103,23 @@ for rel in ("index.html", "2d/index.html", "proyecto/index.html"):
                  'property="og:image:alt"', 'property="og:title"', 'property="og:description"', 'property="og:image:width" content="1200"'):
         if need not in t:
             err("%s: falta %s" % (rel, need))
-from PIL import Image  # noqa: E402
-im = Image.open(os.path.join(ROOT, "media/og-kauffmann.jpg"))
-sz = os.path.getsize(os.path.join(ROOT, "media/og-kauffmann.jpg"))
-if im.size != (1200, 630) or sz > 200_000:
-    err("og-kauffmann.jpg: %s, %d bytes" % (im.size, sz))
+def jpeg_size(path):   # sin PIL (el venv de run-all no lo tiene): lee el marcador SOF
+    b = open(path, "rb").read()
+    i = 2
+    while i < len(b):
+        if b[i] != 0xFF:
+            i += 1; continue
+        m = b[i + 1]
+        if m in (0xC0, 0xC1, 0xC2):
+            return int.from_bytes(b[i + 7:i + 9], "big"), int.from_bytes(b[i + 5:i + 7], "big")
+        i += 2 + int.from_bytes(b[i + 2:i + 4], "big")
+    return None
+
+
+og = os.path.join(ROOT, "media/og-kauffmann.jpg")
+dims, sz = jpeg_size(og), os.path.getsize(og)
+if dims != (1200, 630) or sz > 200_000:
+    err("og-kauffmann.jpg: %s, %d bytes" % (dims, sz))
 notes.append("M5: og:image 1200×630 %d KB en index, 2d y proyecto; twitter:card summary_large_image" % (sz // 1024))
 
 shots = sys.argv[sys.argv.index("--shots") + 1] if "--shots" in sys.argv else None
@@ -119,8 +131,10 @@ if shots:
     os.makedirs(tmp, exist_ok=True)
     if not os.path.islink(tmp + "/kauffmann-list"):
         os.symlink(ROOT, tmp + "/kauffmann-list")
-    H = functools.partial(http.server.SimpleHTTPRequestHandler, directory=tmp)
-    H.log_message = lambda *a: None
+    class Quiet(http.server.SimpleHTTPRequestHandler):
+        def log_message(self, *a):
+            pass
+    H = functools.partial(Quiet, directory=tmp)
     srv = socketserver.TCPServer(("127.0.0.1", 0), H); port = srv.server_address[1]
     threading.Thread(target=srv.serve_forever, daemon=True).start()
     from playwright.sync_api import sync_playwright
@@ -138,14 +152,12 @@ if shots:
             sw = pg.evaluate("document.documentElement.scrollWidth > innerWidth")
             if sw:
                 err("404 (%s): desborda en horizontal" % name)
-            pg.keyboard.press("Tab")
-            first = pg.evaluate("document.activeElement.textContent.trim()")
             out = os.path.join(shots, name + ".png")
             pg.screenshot(path=out, full_page=True)
+            pg.keyboard.press("Tab")
+            first = pg.evaluate("document.activeElement.textContent.trim()")
             notes.append("captura %s (primer Tab: %s)" % (out, first))
             pg.close()
-        pg = b.new_page(viewport={"width": 1200, "height": 630})
-        pg.goto("http://127.0.0.1:%d/kauffmann-list/media/og-kauffmann.jpg" % port)
         b.close()
     srv.shutdown()
 for n in notes:
