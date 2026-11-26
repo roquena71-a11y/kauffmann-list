@@ -1,5 +1,6 @@
 """Capa para agentes de IA: api/v1/index.json, stats.json, openapi.json, /llms.txt y /.well-known/api-catalog."""
 import os
+import re
 
 from .find import ROW_COLUMNS
 from .util import write_json, write_text
@@ -46,6 +47,8 @@ def write_catalog(w, fam_indexes, fam_stats, families, sources, generated, repor
             "sources": [s["id"] for s in idx["meta"]["sources"]],
             "endpoints": idx["endpoints"],
         }
+        if not idx["count_people"]:   # v37 (auditoría M4)
+            fams[fid]["note_zero_people"] = zero_people_note(fid, sources)
     catalog = {
         "meta": _doc_meta(generated),
         "name": "Lista Kauffmann – API estática de datos abiertos",
@@ -313,8 +316,57 @@ CITE_TEMPLATE = ("{name} ({birth}–{death}). Lista Kauffmann, ficha {id}, {perm
                  "Fuente: {source_url}. Datos de {generated}. Licencia {license} ({attribution}).")
 
 
-def llms_txt(fam_indexes, families, generated):
+ADDED_RE = re.compile(r"^data/([a-z0-9]+)-added-\d+\.json$")
+
+
+def added_files_by_family(sources=None):
+    """v37 (auditoría A2): archivos data/<x>-added-*.json de cada familia, sacados de pipeline/sources/*.json
+    (input.path + license_family), nunca escritos a mano en llms.txt."""
+    if sources is None:
+        from .config import load_sources
+        sources = load_sources()
+    out = {}
+    for sid in sorted(sources):
+        m = ADDED_RE.match(((sources[sid].get("input") or {}).get("path") or ""))
+        if m:
+            out.setdefault(sources[sid]["license_family"], []).append("data/%s-added-*.json" % m.group(1))
+    return out
+
+
+def added_plaques_by_family(sources=None, root=None):
+    """Placas físicas (filas de data/*-added-*.json) por familia: {fam: (n, n_sin_fechas)}. El mapa las dibuja aunque la API no publique fichas."""
+    import json
+    if sources is None:
+        from .config import load_sources
+        sources = load_sources()
+    root = root or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    out = {}
+    for sid in sorted(sources):
+        path = (sources[sid].get("input") or {}).get("path") or ""
+        if ADDED_RE.match(path) and os.path.exists(os.path.join(root, path)):
+            with open(os.path.join(root, path), encoding="utf-8") as f:
+                rows = json.load(f).get("stones") or []
+            n, nd = out.get(sources[sid]["license_family"], (0, 0))
+            out[sources[sid]["license_family"]] = (n + len(rows), nd + sum(1 for r in rows if not r.get("b") and not r.get("d")))
+    return out
+
+
+def zero_people_note(fid, sources=None, root=None):
+    """v37 (auditoría M4): por qué una familia tiene 0 fichas de personas (texto para llms.txt, llms-full.txt e index.json)."""
+    files = added_files_by_family(sources).get(fid) or []
+    n, nodates = added_plaques_by_family(sources, root).get(fid, (0, 0))
+    why = ("the source gives no birth or death dates, so the possibly-living rule (no sign of death and born less than 110 years ago, "
+           "or no year) withholds every record" if n and nodates == n else
+           "every record is withheld by the possibly-living rule (no sign of death and born less than 110 years ago, or no year)")
+    where = (" The %s physical plaque%s %s on the map and in %s." % ("{:,}".format(n), "" if n == 1 else "s", "is" if n == 1 else "are",
+                                                                  ", ".join("`%s`" % f for f in files)) if n else "")
+    return "0 person records: %s.%s" % (why, where)
+
+
+def llms_txt(fam_indexes, families, generated, sources=None):
     n = {f: fam_indexes[f]["count_people"] for f in fam_indexes}
+    added = added_files_by_family(sources)
+    files = lambda fid: "".join(", `%s`" % x for x in added.get(fid, []))
     total = sum(n.values())
     L = []
     a = L.append
@@ -341,6 +393,9 @@ def llms_txt(fam_indexes, families, generated):
     a("")
     for fid in sorted(fam_indexes):
         fam = families[fid]
+        if not n[fid]:   # v37 (M4): no anunciar una búsqueda vacía; explicar por qué
+            a("- %s (%s): %s" % (fid, fam["license"], zero_people_note(fid, sources)))
+            continue
         a("- [Search manifest – %s (%s)](%s/%s/find/index.json): %s people. By name: `%s/%s/find/name/<prefix>.json`; by place: `find/city/index.json` → `find/city/<cc>/<slug>.json`; by year: `find/year/birth|death/<yyyy>.json`." % (
             fid, fam["license"], API, fid, "{:,}".format(n[fid]), API, fid))
     a("")
@@ -361,11 +416,12 @@ def llms_txt(fam_indexes, families, generated):
     a("")
     a("- `api/v1/odbl/`, `data/search/`, `data/stones.json`: ODbL 1.0, derived from OpenStreetMap (© OpenStreetMap contributors, https://www.openstreetmap.org/copyright) + Wikidata (CC0). Share-alike and attribution if you redistribute the database or a substantial extract.")
     a("- `api/v1/cc0/`: Wikidata only, CC0 1.0.")
-    a("- `api/v1/cc-by/`, `data/berlin-added-*.json`: Creative Commons Attribution (cc-by), Koordinierungsstelle Stolpersteine Berlin, https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin. The catalogue lists license_id cc-by; the version (3.0 vs 4.0) is not stated on the dataset page. Names, address, birth year and coordinates only; biographies from stolpersteine-berlin.de are never copied.")
-    a("- `api/v1/cc-by-4/`, `data/memmingen-added-*.json`, `data/firenze-added-*.json`: CC BY 4.0 (Stadt Memmingen / open.bydata; Comune di Firenze / dati.toscana.it).")
-    a("- `api/v1/dl-de-zero/`, `data/koeln-added-*.json`, `data/moenchengladbach-added-*.json`, `data/krefeld-added-*.json`, `data/viersen-added-*.json`, `data/moers-added-*.json`, `data/xanten-added-*.json`, `data/erkrath-added-*.json`, `data/dormagen-added-*.json`: Datenlizenz Deutschland – Zero – Version 2.0 (https://www.govdata.de/dl-de/zero-2-0). No prose biographies copied.")
-    a("- `api/v1/dl-de-by/`, `data/dresden-added-*.json`: Datenlizenz Deutschland – Namensnennung – Version 2.0 (`Datenquelle: Landeshauptstadt Dresden, dl-de/by-2-0, opendata.dresden.de`).")
-    a("- `api/v1/cc0-opendata/`, `data/denhaag-added-*.json`, `data/monza-added-*.json`, `data/grevenbroich-added-*.json`: CC0 1.0 municipal open datasets (kept separate from Wikidata `api/v1/cc0/`).")
+    att = lambda fid: "; ".join(families.get(fid, {}).get("attribution") or [])
+    a("- `api/v1/cc-by/`%s: Creative Commons Attribution (cc-by), Koordinierungsstelle Stolpersteine Berlin, https://daten.berlin.de/datensaetze/liste-der-stolpersteine-berlin. The catalogue lists license_id cc-by; the version (3.0 vs 4.0) is not stated on the dataset page. Names, address, birth year and coordinates only; biographies from stolpersteine-berlin.de are never copied." % files("cc-by"))
+    a("- `api/v1/cc-by-4/`%s: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Attribution: %s. Den Haag: the national catalogue (data.overheid.nl) shows CC0 1.0 for the dataset but CC BY 4.0 for every download; we use a download and keep CC BY 4.0 with attribution." % (files("cc-by-4"), att("cc-by-4")))
+    a("- `api/v1/dl-de-zero/`%s: Datenlizenz Deutschland – Zero – Version 2.0 (https://www.govdata.de/dl-de/zero-2-0). No prose biographies copied." % files("dl-de-zero"))
+    a("- `api/v1/dl-de-by/`%s: Datenlizenz Deutschland – Namensnennung – Version 2.0 (`%s`)." % (files("dl-de-by"), att("dl-de-by")))
+    a("- `api/v1/cc0-opendata/`%s: CC0 1.0 municipal open datasets (kept separate from Wikidata `api/v1/cc0/`). Source credit: %s." % (files("cc0-opendata"), att("cc0-opendata")))
     a("- Wikipedia text is never copied (links only; CC BY-SA 4.0).")
     a("- Documentation and catalogues: CC0 1.0. Each data file states its licence in `meta.license`.")
     a("- [Complete ODbL plaque database](%s): transcription of public street memorials from OSM + Wikidata, not person records, and not mixed with the municipal additions." % FULL_DOWNLOAD)
@@ -421,7 +477,8 @@ def llms_full_txt(fam_indexes, families, generated):
     a("")
     for fid in sorted(fam_indexes):
         fam, idx = families[fid], fam_indexes[fid]
-        a("- **%s** (%s, %s people): %s" % (fid, fam["license"], "{:,}".format(idx["count_people"]), fam.get("description")))
+        a("- **%s** (%s, %s people): %s%s" % (fid, fam["license"], "{:,}".format(idx["count_people"]), fam.get("description"),
+                                              "" if idx["count_people"] else " " + zero_people_note(fid)))
     a("- Possibly-living people are excluded from all person records. `data/search/` and `data/stones.json` are transcriptions of public street plaques, not person records.")
     a("")
     a("## 2. Find a person by name")
