@@ -174,7 +174,7 @@ async def main():
         ctxf = await b.new_context(viewport={'width': 1280, 'height': 800}, service_workers='block', locale='es-ES')
         pf, bf, ef, rf = await boot(ctxf, 'day')
         blocked += bf; errs += ef; reqs += rf
-        await go(pf, SONABEND, 21.3, 40, 0, 'n12825380212', lift=True)
+        await go(pf, SONABEND, 20.8, 42, 0, 'n12825380212', lift=True)
         await pf.evaluate("""() => {
           const t = document.getElementById('stoneTip'); if (t) t.hidden = true;
           if (window.KLUI && KLUI.setSheet) KLUI.setSheet('collapsed');
