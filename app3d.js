@@ -222,15 +222,24 @@ function square(lo, la, halfM, ang){
   return [pts.map(([x,y]) => [lo + (x*cA - y*sA)*mLo, la + (x*sA + y*cA)*mLa])];
 }
 // Píxeles CSS del contenedor del mapa (el mismo espacio que map.project y el overlay #kl-plaque-fb).
-// La cara está a ~16,42 m: se sube el punto según la inclinación (igual que el recuadro flotante en columns.js).
+// coordinatePoint(..., z en metros) usa la matriz 3D de MapLibre (ya escala z con pixelPerMeter).
 function projectPlaque(lng, lat, elev){
-  const p = map.project([lng, lat]);
+  const g = map.project([lng, lat]);
   const h = +elev || 0;
-  if (h){
-    const mpp = 156543.03392 * Math.cos(lat * Math.PI / 180) / Math.pow(2, map.getZoom());
-    p.y -= (h / mpp) * Math.sin(map.getPitch() * Math.PI / 180);
-  }
-  return p;
+  try {
+    const t = map.transform, mc = maplibregl.MercatorCoordinate.fromLngLat([lng, lat]);
+    if (t && typeof t.coordinatePoint === 'function'){
+      const z0 = t.coordinatePoint(mc, 0), z1 = t.coordinatePoint(mc, h);
+      if (z0 && z1 && isFinite(z1.x) && isFinite(z1.y)){
+        if (Math.abs(z0.x - g.x) < 2 && Math.abs(z0.y - g.y) < 2) return z1;
+        const pr = (typeof map.getPixelRatio === 'function' ? map.getPixelRatio() : 0) || window.devicePixelRatio || 1;
+        if (Math.abs(z0.x / pr - g.x) < 2 && Math.abs(z0.y / pr - g.y) < 2) return {x: z1.x / pr, y: z1.y / pr};
+        return {x: g.x + (z1.x - z0.x), y: g.y + (z1.y - z0.y)};
+      }
+    }
+  } catch (e) {}
+  const mpp = 156543.03392 * Math.cos(lat * Math.PI / 180) / Math.pow(2, map.getZoom());
+  return {x: g.x, y: g.y - (h / mpp) * Math.sin(map.getPitch() * Math.PI / 180)};
 }
 // Individual columns: stones of the same house are laid out as a neat grid around the true point
 // (same size everywhere: 1.20 m wide, 16 m tall). The detail panel and directions still use the recorded coordinates.
@@ -1096,15 +1105,18 @@ function loadPlaqueText(){
       const pl = (bs.getEast() - bs.getWest()) * pad, pa = (bs.getNorth() - bs.getSouth()) * pad;
       const w = bs.getWest() - pl, e = bs.getEast() + pl, so = bs.getSouth() - pa, nBound = bs.getNorth() + pa;
       const rows = (typeof VISIBLE !== 'undefined' && VISIBLE.length) ? VISIBLE : DATA; let n = 0;
-      const lat0 = map.getCenter().lat, mpp = 156543.03392 * Math.cos(lat0 * Math.PI / 180) / Math.pow(2, map.getZoom());
-      const fs = Math.max(9, Math.min(22, Math.round((FACE_M / mpp) / 5)));
+      const lat0 = map.getCenter().lat;
+      const mLo0 = 1/(111320 * Math.cos(lat0 * Math.PI / 180));
+      const mid = projectPlaque(map.getCenter().lng, lat0, FACE_H), edge = projectPlaque(map.getCenter().lng + FACE_M * mLo0, lat0, FACE_H);
+      const facePx = Math.max(24, Math.round(Math.hypot(edge.x - mid.x, edge.y - mid.y)));
+      const fs = Math.max(9, Math.min(22, Math.round(facePx / 5)));
       for (const s of rows){ if (s._aliasOf || s._dla === undefined) continue;
         if (s._dla < so || s._dla > nBound || s._dlo < w || s._dlo > e) continue;
         const name = (s.n || '').toLocaleUpperCase('de-DE'); if (!name) continue;
         const p = projectPlaque(s._dlo, s._dla, FACE_H);
         const el2 = document.createElement('div');
         el2.dataset.id = s.id;
-        el2.style.cssText = 'position:absolute;left:'+p.x+'px;top:'+p.y+'px;transform:translate(-50%,-50%);color:#3a2a10;font:700 '+fs+'px/1.15 sans-serif;text-align:center;text-shadow:0 0 4px #d6b25a;white-space:pre;';
+        el2.style.cssText = 'position:absolute;left:'+p.x+'px;top:'+p.y+'px;transform:translate(-50%,-50%);color:#3a2a10;font:700 '+fs+'px/1.15 sans-serif;text-align:center;text-shadow:0 0 4px #d6b25a;white-space:pre-wrap;max-width:'+facePx+'px;box-sizing:border-box;';
         el2.textContent = name; b.appendChild(el2); if (++n >= 60) break; }
     };
     map.on('move', draw); map.on('moveend', draw); draw();

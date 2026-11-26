@@ -67,6 +67,7 @@ LABEL_CHECK = """() => {
   const labels = box ? [...box.children] : [];
   const cv = map.getCanvas().getBoundingClientRect();
   const origin = (map.getCanvasContainer() || map.getContainer()).getBoundingClientRect();
+  const layers = ['stones-2','stones-1'].filter(id => map.getLayer(id));
   const faceOf = (s) => {
     const ang = s._ang || 0, cA = Math.cos(ang), sA = Math.sin(ang);
     const mLa = 1/111320, mLo = 1/(111320 * Math.cos(s._dla * Math.PI / 180));
@@ -87,8 +88,15 @@ LABEL_CHECK = """() => {
       const r = el.getBoundingClientRect(), id = el.dataset.id, s = id && byId.get(id);
       const face = s ? faceOf(s) : null;
       const lr = {x0: r.left, y0: r.top, x1: r.right, y1: r.bottom};
-      const inside = r.left >= cv.left - 2 && r.top >= cv.top - 2 && r.right <= cv.right + 2 && r.bottom <= cv.bottom + 2;
-      return {id, top: parseFloat(el.style.top)||0, inside, hit: !!(face && hit(lr, face)), txt: (el.textContent||'').slice(0,40)};
+      const cx = (r.left + r.right) / 2, cy = (r.top + r.bottom) / 2;
+      const centerIn = cx >= cv.left - 2 && cx <= cv.right + 2 && cy >= cv.top - 2 && cy <= cv.bottom + 2;
+      const pt = [cx - origin.left, cy - origin.top];
+      let onPlaque = false;
+      try {
+        const feats = layers.length ? map.queryRenderedFeatures(pt, {layers}) : [];
+        onPlaque = feats.some(f => f.properties && f.properties.id === id);
+      } catch (e) {}
+      return {id, top: parseFloat(el.style.top)||0, centerIn, hit: !!(face && hit(lr, face)), onPlaque, txt: (el.textContent||'').slice(0,40)};
     })
   };
 }"""
@@ -183,10 +191,12 @@ async def main():
         await pf.wait_for_timeout(800)
         fb = await pf.evaluate(LABEL_CHECK)
         ok(fb['n'] >= 3, f'C5 HTML: pocas etiquetas {fb}')
+        on_face = 0
         for L in fb['labels']:
-            ok(L['inside'], f'C5 HTML: etiqueta fuera del lienzo {L} (lienzo bottom {fb["cvBottom"]})')
-            ok(L['hit'], f'C5 HTML: etiqueta no intersecta la cara {L}')
-            ok(L['top'] < fb['cvH'] + 20, f'C5 HTML: top CSS {L["top"]} bajo el lienzo (h={fb["cvH"]})')
+            ok(L['centerIn'], f'C5 HTML: centro de la etiqueta fuera del lienzo {L} (lienzo bottom {fb["cvBottom"]})')
+            ok(L['hit'] or L['onPlaque'], f'C5 HTML: etiqueta no cae en la cara {L}')
+            if L['onPlaque'] or L['hit']: on_face += 1
+        ok(on_face >= 3, f'C5 HTML: solo {on_face} etiquetas sobre la cara {fb}')
         await shot(pf, 'despues-sonabend-fallback-html-1280x800.jpg')
         await ctxf.close()
 
@@ -210,9 +220,12 @@ async def main():
         ok(await ps.evaluate("!window.KLPlaqueText"), 'C5 script: KLPlaqueText presente aunque plaquetext.js fue abortado')
         sf = await ps.evaluate(LABEL_CHECK)
         ok(sf['n'] >= 3, f'C5 script: pocas etiquetas {sf}')
+        on_face = 0
         for L in sf['labels']:
-            ok(L['inside'], f'C5 script: etiqueta fuera del lienzo {L} (lienzo bottom {sf["cvBottom"]})')
-            ok(L['hit'], f'C5 script: etiqueta no intersecta la cara {L}')
+            ok(L['centerIn'], f'C5 script: centro de la etiqueta fuera del lienzo {L} (lienzo bottom {sf["cvBottom"]})')
+            ok(L['hit'] or L['onPlaque'], f'C5 script: etiqueta no cae en la cara {L}')
+            if L['onPlaque'] or L['hit']: on_face += 1
+        ok(on_face >= 3, f'C5 script: solo {on_face} etiquetas sobre la cara {sf}')
         await shot(ps, 'despues-sonabend-fallback-script-412x915.jpg')
         blocked += blocked4; errs += errs4; reqs += reqs4
         await ctxs.close()

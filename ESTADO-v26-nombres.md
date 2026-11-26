@@ -52,3 +52,11 @@ Causa: projectTop usaba transform.coordinatePoint / un locationPoint que no exis
 del contenedor del lienzo (etiquetas a y=840–1116, el lienzo acaba en ~717). El onerror usaba map.project sin
 elevación (nombres al pie). Arreglo: projectPlaque() = map.project + desplazamiento por 16,42 m · sin(inclinación)
 / mpp, el mismo criterio que el recuadro flotante. Las dos simulaciones se añaden a tests/v26-nombres-check.py.
+
+## 26-11-2026 07:32 (hora de Berlín) — F1 arreglado de verdad (proyección 3D)
+El desplazamiento por sin(inclinación)/mpp solo subía ~188 px; a z20,8 / 42° la base de la columna queda bajo el lienzo
+y las etiquetas seguían abajo. projectPlaque() usa transform.coordinatePoint(mc, z en metros), que es el mismo espacio
+CSS que map.project (comprobado: z=0 coincide; a 16,42 m, Simon pasa de y=812 a y=162, sobre la cara).
+Prueba C5: las dos fallas (startFallback y plaquetext.js abortado); el centro de cada etiqueta dentro del lienzo, y
+cae en la cara (queryRenderedFeatures stones-2/1 o intersección). Capturas en /workspace/v24-data/shots-v26-nombres/.
+App v36, SW kauffmann-v36-pages. Prueba suelta OK. Falta el run-all completo (esperar carga <2 y sin Chrome).

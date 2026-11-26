@@ -292,7 +292,7 @@
       const p = projectTop(s._dlo, s._dla, top + LIFT);
       const el = document.createElement('div');
       el.dataset.id = s.id;
-      el.style.cssText = 'position:absolute;left:'+p.x+'px;top:'+p.y+'px;transform:translate(-50%,-50%);color:'+INK+';font:700 '+fs+'px/1.15 "Helvetica Neue",Arial,sans-serif;text-align:center;white-space:pre;text-shadow:0 0 3px '+FACE+',0 0 6px '+FACE+';';
+      el.style.cssText = 'position:absolute;left:'+p.x+'px;top:'+p.y+'px;transform:translate(-50%,-50%);color:'+INK+';font:700 '+fs+'px/1.15 "Helvetica Neue",Arial,sans-serif;text-align:center;white-space:pre-wrap;max-width:'+Math.max(24, Math.round(cam.facePx||80))+'px;box-sizing:border-box;text-shadow:0 0 3px '+FACE+',0 0 6px '+FACE+';';
       el.textContent = lines.join('\n');
       box.appendChild(el);
       drawn.push(s.id); quads.push({id: s.id, a: s._ang || 0, half: HALF_IN, z: top + LIFT, up: 1, lines: lines, px: fs});
