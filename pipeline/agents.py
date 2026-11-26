@@ -570,4 +570,8 @@ def write_site_files(site_root, fam_indexes, families, generated):
         "license": licenses,
     }]}
     files[".well-known/api-catalog"] = write_json(os.path.join(site_root, ".well-known", "api-catalog"), linkset)
+    # v37 (auditoría A3): fechas y totales de index.html, kauffmann-list.jsonld y sitemap.xml desde los datos
+    from . import sitefacts
+    for rel in sitefacts.apply(site_root, generated):
+        files[rel] = os.path.getsize(os.path.join(site_root, rel))
     return files
