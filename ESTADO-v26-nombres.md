@@ -46,3 +46,9 @@ Inicio 05:06, fin 05:37 (CET, UTC+1). Exit 0. Log: `/workspace/v24-data/run-all-
 Presupuesto de overlays **sin subir**: 9442 ms ≤ 11500 (fcp=192, dcl=914, overview=5333, vis=10029, street_zoom=78/475 ms).
 country-buttons: FALLOS: ninguno. v25-plaque-text, v26-nombres, v33 markup, v34 fotos/fechas: OK. 0 omitidas de las que el script exige (v22 compare/placement se omiten como siempre, faltan V21_CLIENT / pickles).
 Commit de cierre (antes de esta nota): 65a2908a. App v35, SW kauffmann-v35-pages. Sin push.
+
+## 26-11-2026 07:08 (hora de Berlín) — F1 del auditor C (ronda 1)
+Causa: projectTop usaba transform.coordinatePoint / un locationPoint que no existe, en un espacio que no es el CSS
+del contenedor del lienzo (etiquetas a y=840–1116, el lienzo acaba en ~717). El onerror usaba map.project sin
+elevación (nombres al pie). Arreglo: projectPlaque() = map.project + desplazamiento por 16,42 m · sin(inclinación)
+/ mpp, el mismo criterio que el recuadro flotante. Las dos simulaciones se añaden a tests/v26-nombres-check.py.

@@ -60,6 +60,39 @@ async def shot(pg, name):
     os.makedirs(SHOTS, exist_ok=True)
     await pg.screenshot(path=os.path.join(SHOTS, name), type='jpeg', quality=78)
 
+# C5: cada etiqueta HTML debe intersectar la cara (16,42 m) y quedar dentro del lienzo
+LABEL_CHECK = """() => {
+  const FACE_H = 16.42, HALF = 0.43;
+  const box = document.getElementById('kl-plaque-fb');
+  const labels = box ? [...box.children] : [];
+  const cv = map.getCanvas().getBoundingClientRect();
+  const origin = (map.getCanvasContainer() || map.getContainer()).getBoundingClientRect();
+  const faceOf = (s) => {
+    const ang = s._ang || 0, cA = Math.cos(ang), sA = Math.sin(ang);
+    const mLa = 1/111320, mLo = 1/(111320 * Math.cos(s._dla * Math.PI / 180));
+    let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+    for (const [x, y] of [[-HALF,-HALF],[HALF,-HALF],[HALF,HALF],[-HALF,HALF]]){
+      const lo = s._dlo + (x*cA - y*sA)*mLo, la = s._dla + (x*sA + y*cA)*mLa;
+      const p = projectPlaque(lo, la, FACE_H);
+      const cx = origin.left + p.x, cy = origin.top + p.y;
+      x0 = Math.min(x0, cx); y0 = Math.min(y0, cy); x1 = Math.max(x1, cx); y1 = Math.max(y1, cy);
+    }
+    return {x0, y0, x1, y1};
+  };
+  const hit = (a, b) => a.x0 <= b.x1 && a.x1 >= b.x0 && a.y0 <= b.y1 && a.y1 >= b.y0;
+  return {
+    n: labels.length,
+    cvBottom: cv.bottom, cvTop: cv.top, cvH: cv.height,
+    labels: labels.map(el => {
+      const r = el.getBoundingClientRect(), id = el.dataset.id, s = id && byId.get(id);
+      const face = s ? faceOf(s) : null;
+      const lr = {x0: r.left, y0: r.top, x1: r.right, y1: r.bottom};
+      const inside = r.left >= cv.left - 2 && r.top >= cv.top - 2 && r.right <= cv.right + 2 && r.bottom <= cv.bottom + 2;
+      return {id, top: parseFloat(el.style.top)||0, inside, hit: !!(face && hit(lr, face)), txt: (el.textContent||'').slice(0,40)};
+    })
+  };
+}"""
+
 async def main():
     fails = []
     def ok(c, m):
@@ -136,13 +169,61 @@ async def main():
         ok((not rs['hs']) or max(rs['hs']) <= 17, f'Sara noche: fuste alto {rs["hs"]}')
         await shot(pn, 'despues-sara-noche-z212-sel-412x915.jpg')
         await ctxn.close()
+
+        # C5 sim 1: startFallback() — etiquetas HTML sobre la cara (escritorio inclinado, como F1)
+        ctxf = await b.new_context(viewport={'width': 1280, 'height': 800}, service_workers='block', locale='es-ES')
+        pf, bf, ef, rf = await boot(ctxf, 'day')
+        blocked += bf; errs += ef; reqs += rf
+        await go(pf, SONABEND, 21.3, 40, 0, 'n12825380212', lift=True)
+        await pf.evaluate("""() => {
+          const t = document.getElementById('stoneTip'); if (t) t.hidden = true;
+          if (window.KLUI && KLUI.setSheet) KLUI.setSheet('collapsed');
+          KLPlaqueText.startFallback('test');
+        }""")
+        await pf.wait_for_timeout(800)
+        fb = await pf.evaluate(LABEL_CHECK)
+        ok(fb['n'] >= 3, f'C5 HTML: pocas etiquetas {fb}')
+        for L in fb['labels']:
+            ok(L['inside'], f'C5 HTML: etiqueta fuera del lienzo {L} (lienzo bottom {fb["cvBottom"]})')
+            ok(L['hit'], f'C5 HTML: etiqueta no intersecta la cara {L}')
+            ok(L['top'] < fb['cvH'] + 20, f'C5 HTML: top CSS {L["top"]} bajo el lienzo (h={fb["cvH"]})')
+        await shot(pf, 'despues-sonabend-fallback-html-1280x800.jpg')
+        await ctxf.close()
+
+        # C5 sim 2: plaquetext.js bloqueado — nombres en la cara, no al pie (teléfono 412×915)
+        ctxs = await b.new_context(viewport={'width': 412, 'height': 915}, is_mobile=True, has_touch=True, device_scale_factor=2, service_workers='block', locale='es-ES')
+        ps = await ctxs.new_page()
+        blocked4, errs4, reqs4 = [], [], []
+        ps.on('pageerror', lambda e: errs4.append(str(e)))
+        ps.on('request', lambda r: reqs4.append(r.url))
+        async def rh2(r): blocked4.append(r.request.url); await r.abort()
+        await ps.route('**/*.workers.dev/**', rh2); await ps.route('**/*kl-contador*', rh2)
+        await ps.route('**/plaquetext.js*', rh2)
+        await ps.goto(BASE + 'index.html?intro=0&lang=es&base=day', wait_until='domcontentloaded', timeout=180000)
+        await ps.wait_for_function("typeof VISIBLE!=='undefined' && VISIBLE.length>70000 && window.map && map.loaded && map.loaded() && (!window.KLAlign || KLAlign.ready)", timeout=300000)
+        if await ps.evaluate("typeof KLUI!=='undefined' && KLUI.setSheet"):
+            await ps.evaluate("KLUI.setSheet('collapsed')")
+        await go(ps, SONABEND, 20.8, 42, 0, 'n12825380212', lift=True)
+        await ps.wait_for_function("document.getElementById('kl-plaque-fb') && document.getElementById('kl-plaque-fb').children.length>=3", timeout=20000)
+        await ps.evaluate("() => { const t=document.getElementById('stoneTip'); if (t) t.hidden=true; if (KLUI&&KLUI.setSheet) KLUI.setSheet('collapsed'); }")
+        await ps.wait_for_timeout(400)
+        ok(await ps.evaluate("!window.KLPlaqueText"), 'C5 script: KLPlaqueText presente aunque plaquetext.js fue abortado')
+        sf = await ps.evaluate(LABEL_CHECK)
+        ok(sf['n'] >= 3, f'C5 script: pocas etiquetas {sf}')
+        for L in sf['labels']:
+            ok(L['inside'], f'C5 script: etiqueta fuera del lienzo {L} (lienzo bottom {sf["cvBottom"]})')
+            ok(L['hit'], f'C5 script: etiqueta no intersecta la cara {L}')
+        await shot(ps, 'despues-sonabend-fallback-script-412x915.jpg')
+        blocked += blocked4; errs += errs4; reqs += reqs4
+        await ctxs.close()
+
         ok(not errs, f'errores de página: {errs[:3]}')
         ok(not [u for u in reqs if ('workers.dev' in u or 'kl-contador' in u) and u not in blocked], 'petición al contador no bloqueada')
         await b.close()
     if fails:
         print('FAIL v26-nombres:'); [print('  -', f) for f in fails]; sys.exit(1)
     print('OK v26-nombres: C1 seleccionado con texto y marco de oro ~16,5 m (0 fustes 34/400 m, color no #fff3c4) en Sonabend, Masaccio y Palmero; '
-          'halo a z13; C2 teléfono 412×915 p42 z20,2 modo nombre; C3 z21,6 p42 texto visible; Sara noche seleccionada con nombre; '
+          'halo a z13; C2 teléfono 412×915 p42 z20,2 modo nombre; C3 z21,6 p42 texto visible; Sara noche seleccionada con nombre; C5 HTML y script-fail: etiquetas sobre la cara y dentro del lienzo; '
           f'contador bloqueado ({len(blocked)})')
 
 asyncio.run(main())

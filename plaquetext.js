@@ -263,13 +263,15 @@
   // Respaldo: etiquetas HTML sobre la cara (sin pedir nada a la red). Los surcos se dejan ver (el texto ya no está en la textura).
   st.backend = 'webgl';
   function projectTop(lng, lat, elev){
-    try {
-      const t = map.transform, ll = new maplibregl.LngLat(lng, lat);
-      if (t.locationPoint && t.locationPoint.length >= 2) return t.locationPoint(ll, elev);
-      const mc = maplibregl.MercatorCoordinate.fromLngLat([lng, lat], elev);
-      if (typeof t.coordinatePoint === 'function') return t.coordinatePoint({x: mc.x, y: mc.y, z: mc.z});
-    } catch (e) {}
-    return map.project([lng, lat]);
+    // CSS del contenedor del lienzo (no el espacio de transform.coordinatePoint, que dejaba las etiquetas bajo el mapa)
+    if (typeof projectPlaque === 'function') return projectPlaque(lng, lat, elev);
+    const p = map.project([lng, lat]);
+    const h = +elev || 0;
+    if (h){
+      const mpp = 156543.03392 * Math.cos(lat * Math.PI / 180) / Math.pow(2, map.getZoom());
+      p.y -= (h / mpp) * Math.sin(map.getPitch() * Math.PI / 180);
+    }
+    return p;
   }
   function paintHtml(){
     refresh();
@@ -289,6 +291,7 @@
       const top = K && K.topOf ? K.topOf(s.id) : 16.42; if (!top) continue;
       const p = projectTop(s._dlo, s._dla, top + LIFT);
       const el = document.createElement('div');
+      el.dataset.id = s.id;
       el.style.cssText = 'position:absolute;left:'+p.x+'px;top:'+p.y+'px;transform:translate(-50%,-50%);color:'+INK+';font:700 '+fs+'px/1.15 "Helvetica Neue",Arial,sans-serif;text-align:center;white-space:pre;text-shadow:0 0 3px '+FACE+',0 0 6px '+FACE+';';
       el.textContent = lines.join('\n');
       box.appendChild(el);
